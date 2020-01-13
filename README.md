@@ -2,7 +2,7 @@
 
 Replace this readme with your own information about your project. 
 
-Start by briefly describe the assignment in a sentence or two. Keep it short and to the point.
+Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
