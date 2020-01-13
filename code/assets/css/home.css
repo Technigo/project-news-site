@@ -1,0 +1,19 @@
+.main{
+    background-color: lightpink;
+}
+.aside{
+    background-color: orange;
+}
+
+@media only screen and (min-width: 992px){
+    .container{
+        display: flex;
+    }
+    .main {
+        flex: 7;
+        background: orangered;
+    }
+    .aside{
+        flex: 3;
+    }
+}
