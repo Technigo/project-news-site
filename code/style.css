@@ -11,18 +11,37 @@ body {
 /* ID */
 
 /* RESPONSIVE SECTION */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
+/* Extra small devices (phones, max 767 and down) */
+@media only screen and (max-width: 767px) {
   body {
     background-color: aqua;
   }
 
   .flex-container {
-
+    display: flex;
+    flex-direction: column;
   }
 
   .small-card {
-    display: none;
+    background-color: chartreuse;
+    padding: 10px;
+    width: 100vw;
+  }
+
+  img {
+    float: left;
+    object-fit: scale-down;
+    width: 100vw;
+    height: 150px;
+  }
+
+  .small-card:nth-child(2n){
+    background-color: darkmagenta;
+  }
+
+  .small-text {
+    text-align: center;
+
   }
 }
 
@@ -31,11 +50,31 @@ body {
   body {
     background-color: blueviolet;
   }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .small-card {
+    background-color: chartreuse;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   body {
     background-color: brown;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  .small-card {
+    background-color: chartreuse;
   }
 }
