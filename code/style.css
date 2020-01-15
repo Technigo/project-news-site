@@ -1,4 +1,71 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: white;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: 'Radley', serif;
+}
+
+header {
+  background: black;
+  border: 10px solid black;
+  display: flex;
+}
+
+.logo {
+  width: 30%;
+  
+}
+
+nav {
+  background: black;
+}
+
+section {
+  font-family: 'Roboto', sans-serif;
+}
+
+.big-news {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.image-big-news {
+  width: 100%;
+}
+
+.big-news-text {
+  background: #FFD908;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.big-news-paragraph {
+  font-size: 1rem;
+}
+
+.small-news {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.image-small-news {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+footer {
+  background: black;
 }
