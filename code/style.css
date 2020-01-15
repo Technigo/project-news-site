@@ -16,6 +16,43 @@ body {
   body {
   }
 
+  header {
+    width: 100vw;
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px 10px 0px;
+  }
+
+  figure {
+
+  }
+
+  figure > img {
+    object-fit: scale-down;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    border-top: 1px solid #ddd;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .footer-text {
+    text-align: center;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+  }
+
   /* unvisited link */
   a:link {
     color: #000000;
@@ -104,6 +141,11 @@ body {
     clear: both;
     display: table;
   }
+
+  .exclude {
+    display: none;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
