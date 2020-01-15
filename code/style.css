@@ -46,11 +46,11 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
-  .footer-text {
+  .emoji {
     text-align: center;
     padding: 8px;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   /* unvisited link */
@@ -77,7 +77,7 @@ body {
     text-decoration: none;
   }
 
-  .flex-container {
+  .flex-container-small {
     display: flex;
     flex-direction: column;
   }
@@ -115,19 +115,13 @@ body {
     object-fit: scale-down;
     width: 100px;
     height: 90px;
-    padding-left: 10px;
     padding-right: 20px;
-    border-radius: 20px; 
   }
 
   .small-h3 {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
   }
-
-  /* .small-card:nth-child(3n) > img{
-
-  } */
 
   .small-text {
     padding-top: 10px;
@@ -151,20 +145,131 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    background-color: blueviolet;
   }
 
-  .flex-container {
+  header {
+    width: 100vw;
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px 10px 0px;
+  }
+
+  figure {
+
+  }
+
+  figure > img {
+    object-fit: scale-down;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    border-top: 1px solid #ddd;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .emoji {
+    text-align: center;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+  }
+
+  /* unvisited link */
+  a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .flex-container-medium {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+  }
+
+  .large-card {
+    width: 100vw;
+    padding-bottom: 50px;
+  }
+
+  .large-card > img {
+    float: left;
+    object-fit: cover;
+    width: 25vw;
+    height: 150px;
+  }
+
+  .large-h3 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  .large-text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 20px;
   }
 
   .small-card {
-    background-color: chartreuse;
-    /* 35vw should make to cards per row (NEEDS TESTING) */
-    width: 35vw; 
+    width: 50vw;
+    border-top: 1px solid #ddd;
+  }
 
+  .small-card > img {
+    float: left;
+    object-fit: fill;
+    width: 100px;
+    height: 90px;
+    padding-right: 20px;
+  }
+
+  .small-h3 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .small-text {
+    padding-top: 10px;
+    text-decoration: underline dotted;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .exclude {
+    display: none;
   }
 }
 
