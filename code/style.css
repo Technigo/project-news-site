@@ -14,7 +14,30 @@ body {
 /* Extra small devices (phones, max 767 and down) */
 @media only screen and (max-width: 767px) {
   body {
-    background-color: aqua;
+  }
+
+  /* unvisited link */
+  a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: #000000;
+    text-decoration: none;
   }
 
   .flex-container {
@@ -22,26 +45,64 @@ body {
     flex-direction: column;
   }
 
-  .small-card {
-    background-color: chartreuse;
-    padding: 10px;
+  .large-card {
     width: 100vw;
+    padding-bottom: 50px;
   }
 
-  img {
-    float: left;
-    object-fit: scale-down;
+  .large-card > img {
+    object-fit: cover;
     width: 100vw;
     height: 150px;
   }
 
-  .small-card:nth-child(2n){
-    background-color: darkmagenta;
+  .large-h3 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
-  .small-text {
+  .large-text {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+    padding-top: 20px;
+  }
 
+  .small-card {
+    width: 100vw;
+    border-top: 1px solid #ddd;
+  }
+
+  .small-card > img {
+    float: left;
+    object-fit: scale-down;
+    width: 100px;
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 20px; 
+  }
+
+  .small-h3 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* .small-card:nth-child(3n) > img{
+
+  } */
+
+  .small-text {
+    padding-top: 10px;
+    text-decoration: underline dotted;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 
@@ -59,6 +120,9 @@ body {
 
   .small-card {
     background-color: chartreuse;
+    /* 35vw should make to cards per row (NEEDS TESTING) */
+    width: 35vw; 
+
   }
 }
 
