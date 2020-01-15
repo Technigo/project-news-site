@@ -1,3 +1,6 @@
+Technigo Bootcamp assignment 
+Learn about flexbox
+
 # News Site
 
 Replace this readme with your own information about your project. 
