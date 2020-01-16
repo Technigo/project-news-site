@@ -1,4 +1,49 @@
 html {
-  background: #0025ff;
-  color: #fff;
+    color: #fff;
+    background-image: linear-gradient(to top right, #9FACE6, #74ebd5);
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  background-color: #fff;
+  color: #3d65ff;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  position: fixed;
+}
+
+.header h1 {
+  font-size: 96px;
+  font-weight: 200;
+  margin: 0;
+  background: -webkit-linear-gradient(#3d65ff, #c327ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.header a:hover {
+  color: #b035ff;
+}
+
+@font-face {
+  font-family: "Bavro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bavro Regular"), url("Bavro-Regular.woff") format("woff");
+  }
