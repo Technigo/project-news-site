@@ -50,13 +50,18 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 
-header a {
+header h1 a:hover{
+  animation: neonGlow 2s infinite alternate;
   text-decoration: none;
-  color: #a570b9;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(165, 112, 185);
   font-weight: 100;
 }
 
-header a:hover {
+.navbar a:hover {
   opacity: 0.3;
 }
 
@@ -91,14 +96,17 @@ header a:hover {
 }
 
 .small-news {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3px;
+  /* display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%; */
 }
 
 .small-news img{
- width: 25%;
- margin-bottom: 10px;
+ /* width: 25%;
+ margin-bottom: 10px; */
 }
 
 .footer{
@@ -121,3 +129,26 @@ header a:hover {
 }
  
 
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255,255,255,.8),
+                 0 0 20px rgba(255,255,255,.8),
+                 0 0 22px  rgba(255,255,255,.8),
+                 0 0 40px  rgba(240, 100, 240, 0.5),
+                 0 0 60px  rgba(240, 100, 240, 0.5),
+                 0 0 80px  rgba(165, 112, 185),
+                 0 0 100px rgba(240, 100, 240, 0.5),
+                 0 0 140px rgba(240, 100, 240, 0.5),
+                 0 0 200px rgba(165, 112, 185);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255,255,255,.8),
+                 0 0 8px rgba(255,255,255,.8),
+                 0 0 10px rgba(255,255,255,.8),
+                 0 0 20px rgba(240, 100, 240, 0.5),
+                 0 0 30px rgba(240, 100, 240, 0.5),
+                 0 0 40px rgba(240, 100, 240, 0.5),
+                 0 0 50px rgba(165, 112, 185),
+                 0 0 80px rgba(165, 112, 185);
+  }
+}
