@@ -5,27 +5,43 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Radley', serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/*** HEADER ***/
 
 header {
   background: black;
-  border: 10px solid black;
+  height: 30px;
   display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .logo {
   width: 30%;
-  
 }
 
 nav {
-  background: black;
+
 }
 
-section {
-  font-family: 'Roboto', sans-serif;
+nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin-left: 10px;
 }
+
+/*** BIG NEWS SECTION ***/
 
 .big-news {
   display: flex;
@@ -43,29 +59,46 @@ section {
   width: 100%;
 }
 
-h1 {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
 .big-news-paragraph {
   font-size: 1rem;
 }
 
-.small-news {
+/*** OTHER NEWS ***/
+
+.other-news {
+ background: #fff;
+ color: #000;
+ text-align: center;
+ padding: 20px;
+}
+
+.small-news-card {
   display: flex;
   flex-wrap: wrap;
 
+}
+
+.small-news-card a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 5px 5px 0 0 #f4f4f4;
+  margin-bottom: 20px;
 }
 
 .image-small-news {
   width: 100%;
 }
 
-h2 {
-  font-size: 1rem;
-}
+/*** FOOTER ***/
 
 footer {
   background: black;
+  background: black;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
+
+/*** MEDIA QUERIES ***/
