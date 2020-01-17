@@ -5,6 +5,7 @@
 }
 
 body {
+  box-sizing: border-box;
 }
 
 /* CLASSES */
@@ -17,22 +18,7 @@ body {
   }
 
   header {
-    width: 100vw;
-    height: 90px;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0px 10px 0px;
-  }
 
-  figure {
-
-  }
-
-  figure > img {
-    object-fit: scale-down;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   footer {
@@ -84,13 +70,9 @@ body {
 
   .large-card {
     width: 100vw;
-    padding-bottom: 50px;
   }
 
   .large-card > img {
-    object-fit: cover;
-    width: 100vw;
-    height: 150px;
   }
 
   .large-h3 {
@@ -106,16 +88,11 @@ body {
   }
 
   .small-card {
-    width: 100vw;
+    flex-grow: 1;
     border-top: 1px solid #ddd;
   }
 
   .small-card > img {
-    float: left;
-    object-fit: scale-down;
-    width: 100px;
-    height: 90px;
-    padding-right: 20px;
   }
 
   .small-h3 {
@@ -136,7 +113,7 @@ body {
     display: table;
   }
 
-  .exclude {
+  .exclude-mobile {
     display: none;
   }
 
@@ -145,25 +122,11 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
+    
   }
 
   header {
-    width: 100vw;
-    height: 90px;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0px 10px 0px;
-  }
 
-  figure {
-
-  }
-
-  figure > img {
-    object-fit: scale-down;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   footer {
@@ -218,12 +181,8 @@ body {
     padding-bottom: 50px;
   }
 
-  .large-card > img {
-    float: left;
-    object-fit: cover;
-    width: 25vw;
-    height: 150px;
-  }
+  /* .large-card > img {
+  } */
 
   .large-h3 {
     padding-top: 20px;
@@ -238,17 +197,13 @@ body {
   }
 
   .small-card {
-    width: 50vw;
+    flex-grow: 1;
+    min-width: 50%;
     border-top: 1px solid #ddd;
   }
 
-  .small-card > img {
-    float: left;
-    object-fit: fill;
-    width: 100px;
-    height: 90px;
-    padding-right: 20px;
-  }
+  /* .small-card > img {
+  } */
 
   .small-h3 {
     padding-top: 20px;
@@ -268,7 +223,7 @@ body {
     display: table;
   }
 
-  .exclude {
+  .exclude-tablet {
     display: none;
   }
 }
@@ -282,10 +237,20 @@ body {
   .flex-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
+  }
+
+  .large-card {
+    width: 100vw;
   }
 
   .small-card {
     background-color: chartreuse;
+    flex-grow: 1;
+    min-width: 50%;
+  }
+
+  .exclude-desktop {
+    display: none;
   }
 }
