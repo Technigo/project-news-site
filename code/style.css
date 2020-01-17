@@ -1,81 +1,84 @@
-body {
-  background: hsl(231, 100%, 50%);
-  color: #fff;
-  min-height: 100%;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+#box{
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  width: 100%;
+}
 
-/* Style the header */
+/*  Stylethe top navigation bar */
 header {
+  background-color: #333;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+}
+
+footer{
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
-  width: 100%;
-}
-footer{
-  width: 100%;
-}
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
 }
 
 /* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
+header a {
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 0px;
   text-decoration: none;
+  max-width: 25vw;
+  overflow-x: hidden;
+
 }
 
 /* Change color on hover */
-.topnav a:hover {
+header a:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Create three unequal columns that floats next to each other */
-.row {
-  display: flex;
-  padding: 0px;
-  width: 100%;
-}
-
 .column {
-  
-  padding: 0px;
-  width: 25%;
+  width: 100%;
   display: block;
   position: relative;
 }
+/* .column:first-of-type{
+padding-top: 10px;
+}
+
+.column:last-of-type{
+  padding-bottom: 10px;
+  } */
+
 .column p {
   text-align: center;
   margin-block-start: 0px;
   scroll-margin-block-end: 0px;
   position: absolute;
-  bottom: 30px;
-  right: 30px;
-  transform: translate (-50%, -50%);
+  bottom: 10px;
+  right: 10px;
+  overflow-y: hidden;
   z-index: 0;
   color: white;
   text-shadow: 1px 1px 2px black;  
-  max-width: 90%;
+  width: 50%;
+  max-height: 50%;
 }
+
 .column img{
     display: block;
-    position: absolut;
-    width: 400px;
-    height: 400px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -84,6 +87,7 @@ footer{
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 50%;
   font-size: 1.5em;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -94,25 +98,27 @@ footer{
   text-shadow: 1px 1px 2px black; 
 }
 
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both; 
-}*/ 
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
+@media screen and (min-width: 576px) {
+  #box{
+    max-width: 90vw;
+  }
+  .column {
+    width: 50%; 
   }
 }
 
-/* Style the footer */
-.footer {
-  background-color: dodgerblue;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
+
+@media screen and (min-width: 992px) {
+  #box{
+    max-width: 900px;
+  }  
+  .column {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #box{
+    max-width: 1080px;
+  }
 }
