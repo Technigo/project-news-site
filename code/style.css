@@ -6,20 +6,19 @@
   transition-timing-function: ease;  
   text-decoration: none;
   list-style-type: none;
+  color: #a570b9;
 }
 
 html {
-    color: #a570b9;
-    background-image: linear-gradient(-25deg, #616161 0%, rgb(99, 139, 226) 100%);
+    background-image: linear-gradient(-45deg, #2e2d2d 0%, rgb(195, 164, 199) 100%);
     height: 100%;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-body {
+.body {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -28,17 +27,45 @@ body {
   max-width: 1000px;
 }
 
+/* SIDEBAR */
+.sidebar-flex{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.sidebar {
+  height: auto;
+  width: auto; 
+  position: fixed;
+  left: 0;
+  background-color: #EDF3F7;
+  padding-top: 5px;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.521);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar img {
+  width: 32px;
+  height: 32px;
+  margin: 2px 2px 0 2px;
+}
+
+.sidebar a:hover{opacity: 0.3;}
+
 /* HEADER */
 
 header {
-  margin: 20px 0;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.521);
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.521);
   padding: 20px 20px;
+  background-color: #EDF3F7;
+  border-radius: 3px;
 }
 
 header img {margin: -10px -8px;}
@@ -67,25 +94,6 @@ header h1 a:hover{
   padding: 0 20px 15px 20px;
 }
 
-/* SIDEBAR */
-.sidebar {
-  height: auto;
-  width: 60px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-.sidebar img {
-  width: 32px;
-  height: 32px;
-}
-
-
 /* MAIN */
 .main-content {
   background-color: #fff;
@@ -103,10 +111,10 @@ header h1 a:hover{
 
 /* FOOTER */
 footer{
-  background-color: #000000;
-  flex-shrink: 0;
+  background-color: #EDF3F7;
+  border-radius: 3px 3px 0 0;
   padding: 20px 20px 0 20px;
-  box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.521);
+  box-shadow: 0 -6px 10px -6px rgba(0, 0, 0, 0.521);
   margin-top: 20px;
   display: flex;
   flex-direction: column;
