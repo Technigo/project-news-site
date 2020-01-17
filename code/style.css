@@ -4,8 +4,13 @@ html {
 }
 
 body {
-  /* border: 10px solid white;
-  border-radius: 30px; */
+padding: 30px;
+}
+
+img {
+  width: 30%;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 h1 {
@@ -15,4 +20,74 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+font-family: 'Alata', sans-serif;
+font-size: 30px;
+}
 
+.big-news {
+  border: 20px solid rgb(61, 156, 168);
+  border-radius: 35px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+}
+
+.flex-parent {
+  border: 8px solid rgb(61, 156, 168);
+  border-radius: 35px;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+font-family: 'Alata', sans-serif;
+ font-size: 20px; 
+}
+
+@media (max-width: 1023px) {
+  html {
+    background-color: white;
+  }
+
+  h1 {
+    color: rgb(61, 156, 168)
+  }
+
+  h2 {
+    color: rgb(61, 156, 168);
+  }
+
+  h3 {
+    color: rgb(61, 156, 168);
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 668px) {
+  html {
+    background-color: rgb(61, 156, 168);
+  }
+
+  h1 {
+    color: hsl(327, 28%, 74%);
+  }
+
+  h2 {
+    color: hsl(327, 28%, 74%);
+  }
+
+  h3 {
+    color: hsl(327, 28%, 74%);
+  }
+
+  img {
+    width: 90%;
+    float: center;
+  }
+}
