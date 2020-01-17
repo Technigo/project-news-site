@@ -2,12 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
   box-sizing: border-box;
 }
 
+body {
+  
+}
+
+/* CREATE CSS INDEXING PER DEVICE */
 /* CLASSES */
 /* ID */
 
@@ -19,6 +21,18 @@ body {
 
   header {
 
+  }
+
+  .nav-item {
+
+  }
+
+  header > ul > li > a > img {
+    width: 25vw;
+    height: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   footer {
@@ -72,19 +86,27 @@ body {
     width: 100vw;
   }
 
-  .large-card > img {
+  .large-card > article > img {
+  }
+
+  .large-card > article {
+    background-image: url("../img/DT_2020_CROPPED.jpg");
+    background-size: cover;
   }
 
   .large-h3 {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    color: #fff;
   }
 
   .large-text {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top: 20px;
+    color: #fff;
+    padding-bottom: 30px;
   }
 
   .small-card {
@@ -92,16 +114,22 @@ body {
     border-top: 1px solid #ddd;
   }
 
-  .small-card > img {
+  .small-card > article > img {
+    float: left;
+    width: 25vw;
+    height: 15vh;
+    object-fit: cover;
   }
 
   .small-h3 {
     padding-top: 20px;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
   }
 
   .small-text {
     padding-top: 10px;
+    text-align: center;
     text-decoration: underline dotted;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -181,7 +209,7 @@ body {
     padding-bottom: 50px;
   }
 
-  /* .large-card > img {
+  /* .large-card > article > img {
   } */
 
   .large-h3 {
@@ -202,8 +230,12 @@ body {
     border-top: 1px solid #ddd;
   }
 
-  /* .small-card > img {
-  } */
+  .small-card > article > img {
+    float: left;
+    width: 25vw;
+    height: 15vh;
+    object-fit: cover;
+  }
 
   .small-h3 {
     padding-top: 20px;
