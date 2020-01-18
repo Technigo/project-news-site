@@ -3,14 +3,40 @@ html {
   color: #fff;
 }
 
+/* header {
+  position: fixed;
+  background: hsl(327, 28%, 74%)
+} */
+
 body {
 padding: 30px;
+}
+
+.sidebar {
+  width: 30%;
+  overflow: auto;
+  position: relative;
+}
+
+.sidebar a {
+  color: rgb(128, 62, 102);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  font-style: italic;
+  font-size: large;
 }
 
 img {
   width: 30%;
   border-radius: 20px;
   margin: 10px;
+}
+
+img.headline:hover {
+  opacity: 0.4;
 }
 
 h1 {
@@ -44,6 +70,7 @@ font-size: 30px;
   flex-direction: row;
 }
 
+
 h3 {
 font-family: 'Alata', sans-serif;
  font-size: 20px; 
@@ -69,11 +96,26 @@ font-family: 'Alata', sans-serif;
   img {
     width: 50%;
   }
+
+  .flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-child {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  
 }
 
 @media (max-width: 668px) {
   html {
     background-color: rgb(61, 156, 168);
+  }
+
+  .sidebar a {
+    display: block;
   }
 
   h1 {
@@ -100,6 +142,7 @@ font-family: 'Alata', sans-serif;
   }
 
   .flex-parent {
-    display: block;
+    flex-direction: column;
+    width: 90%;
   }
 }
