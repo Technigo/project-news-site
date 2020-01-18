@@ -1,4 +1,111 @@
 html {
-  background: #0025ff;
+  background: #ddf0dd;
   color: #fff;
+}
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: rgb(99, 179, 126);
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logo img {
+height: 37px;
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+}
+
+/* Desktop menu */
+@media all and (min-width: 900px) {
+  .item {
+      display: block;
+      width: auto;
+  }
+
+  .logo {
+      order: 0;
+  }
+
+  .item {
+      order: 1;
+  }
+  .menu li {
+      padding: 15px 10px;
+  }
+
+  .menu li.button {
+      padding-right: 0;
+  }
+
+  
 }
