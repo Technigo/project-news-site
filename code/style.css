@@ -90,10 +90,11 @@
   .large-card > article {
     background-image: url("../img/DT_2020_CROPPED.jpg");
     background-size: cover;
+    height: 40vh;
   }
 
   .large-h3 {
-    padding-top: 20px;
+    padding-top: 15vh;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #fff;
@@ -110,13 +111,16 @@
   .small-card {
     flex-grow: 1;
     border-top: 1px solid #ddd;
+    padding: 2vw;
   }
 
   .small-card > article > img {
     float: left;
     width: 25vw;
-    height: 15vh;
+    height: 25vw;
     object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px grey;
   }
 
   .small-h3 {
@@ -126,11 +130,29 @@
   }
 
   .small-text {
-    padding-top: 10px;
+    padding-top: 3vw;
+    margin-bottom: 2vh;
     text-align: center;
     text-decoration: underline dotted;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+  }
+
+  .small-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .small-tag > li {
+    list-style-type: none;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 5px;
+    background-color: #B557DA;
+    color: #fff;
+    font-size: 1.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 
   .clearfix::after {
@@ -146,7 +168,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
   body {
     
   }
@@ -173,12 +195,36 @@
 
   header > ul > li {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
   }
 
   header > ul > li > a > img {
     width: 15vw;
-    height: 15vh;
+    height: 20vh;
     padding: 10px;
+  }
+
+  .nav-item > a:link {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .nav-item > a:visited {
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+  }
+  
+  .nav-item > a:hover {
+    background-color: #0B6B8B;
+  }
+  
+  .nav-item >  a:active {
+    background-color: #0B6B8B;
   }
 
   footer {
@@ -245,9 +291,10 @@
   } */
 
   .large-h3 {
-    padding-top: 20px;
+    padding-top: 1vw;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 5vw;
   }
 
   .large-text {
@@ -264,21 +311,41 @@
 
   .small-card > article > img {
     float: left;
-    width: 18vw;
-    height: 15vh;
+    width: 12vw;
+    height: 12vw;
     object-fit: cover;
   }
 
   .small-h3 {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1em;
   }
 
   .small-text {
-    padding-top: 10px;
-    text-decoration: underline dotted;
+    padding-top: 1vw;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    font-size: .8em;
+  }
+
+  .small-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .small-tag > li {
+    list-style-type: none;
+    padding: 1vh;
+    margin: 2vh 1vh 1vh 1vh;
+    border-radius: 5px;
+    background-color: #B557DA;
+    color: #fff;
+    font-size: 1.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 
   .clearfix::after {
@@ -317,12 +384,36 @@
 
   header > ul > li {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
   }
 
   header > ul > li > a > img {
     width: 15vw;
     height: 20vh;
     padding: 10px;
+  }
+
+  .nav-item > a:link {
+    background-color: #008CBA;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .nav-item > a:visited {
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+  }
+  
+  .nav-item > a:hover {
+    background-color: #0B6B8B;
+  }
+  
+  .nav-item >  a:active {
+    background-color: #0B6B8B;
   }
 
   footer {
@@ -404,27 +495,50 @@
 
   .small-card {
     flex-grow: 1;
-    min-width: 25%;
+    flex-basis: 20vw;
+    border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
   }
 
+  .small-card:nth-child(4n) {
+    border-right: none;
+  }
+
   .small-card > article > img {
-    float: left;
-    width: 5vw;
-    height: 10vh;
+    width: 100%;
+    height: 20vh;
     object-fit: cover;
   }
 
   .small-h3 {
     padding-top: 2vmin;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
   .small-text {
     padding-top: 1vmin;
-    text-decoration: underline dotted;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    text-align: center;
+    font-size: .8em;
+  }
+
+  .small-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .small-tag > li {
+    list-style-type: none;
+    padding: 1vh;
+    margin: 2vh 1vh 1vh 1vh;
+    border-radius: 5px;
+    background-color: #B557DA;
+    color: #fff;
+    font-size: 1.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 
   .clearfix::after {
