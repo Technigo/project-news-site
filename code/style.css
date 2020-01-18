@@ -1,6 +1,6 @@
 html {
-  background: white;
-  color: black;
+  background:#fff;
+  color: #000;
 }
 
 body {
@@ -9,11 +9,17 @@ body {
 }
 
 h1 {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+h2 {
   font-size: 1.5rem;
   margin: 10px 0;
 }
 
-h2 {
+h3 {
   font-size: 1rem;
 }
 
@@ -21,18 +27,21 @@ h2 {
 
 header {
   background: black;
-  height: 30px;
+  height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 10px;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-  width: 30%;
+  height: 70%;
 }
 
 nav {
-
+ display: inline-block;
 }
 
 nav a {
@@ -44,8 +53,9 @@ nav a {
 /*** BIG NEWS SECTION ***/
 
 .big-news {
+  background: #ffd908;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -54,8 +64,6 @@ nav a {
 }
 
 .big-news-text {
-  background: #FFD908;
-  padding: 10px 20px;
   width: 100%;
 }
 
@@ -69,7 +77,6 @@ nav a {
  background: #fff;
  color: #000;
  text-align: center;
- padding: 20px;
 }
 
 .small-news-card {
@@ -82,8 +89,6 @@ nav a {
   width: 100%;
   text-decoration: none;
   color: #000;
-  box-shadow: 5px 5px 0 0 #f4f4f4;
-  margin-bottom: 20px;
 }
 
 .image-small-news {
@@ -94,7 +99,6 @@ nav a {
 
 footer {
   background: black;
-  background: black;
   height: 30px;
   display: flex;
   align-items: center;
@@ -102,3 +106,61 @@ footer {
 }
 
 /*** MEDIA QUERIES ***/
+
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  .big-news {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .image-big-news {
+    width: 40%;
+  }
+
+  .big-news-text {
+    width: 60%;
+  }
+
+  .other-news {
+    margin: 14px;
+  }
+
+  .small-news-card a {
+    width: 45%;
+    flex-grow: 1;
+    margin: 6px 6px 15px 6px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  header {
+    flex-direction: row-reverse;
+  }
+
+  .big-news {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .image-big-news {
+    width: 50%;
+  }
+
+  .big-news-text {
+    width: 50%;
+  }
+
+  .other-news {
+    margin: 14px;
+  }
+
+  .small-news-card a {
+    width: 23%;
+    flex-grow: 1;
+    margin: 6px 6px 15px 6px;
+  }
+}
