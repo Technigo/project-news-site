@@ -23,6 +23,11 @@ h3 {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /*** HEADER ***/
 
 header {
@@ -46,7 +51,6 @@ nav {
 
 nav a {
   color: #f8f8f8;
-  text-decoration: none;
   margin-left: 10px;
 }
 
@@ -83,12 +87,6 @@ nav a {
   display: flex;
   flex-wrap: wrap;
 
-}
-
-.small-news-card a {
-  width: 100%;
-  text-decoration: none;
-  color: #000;
 }
 
 .image-small-news {
