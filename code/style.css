@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background: #fff;
 }
 
 h1 {
@@ -84,7 +85,6 @@ nav {
 /*** OTHER NEWS ***/
 
 .other-news {
- background: #fff;
  color: #000;
  text-align: center;
 }
@@ -127,6 +127,10 @@ footer {
 
 @media (min-width: 668px) and (max-width: 1024px) {
 
+  body {
+    background: #f8f8f8;
+  }
+
   .website-name {
     display: contents;
   }
@@ -157,10 +161,16 @@ footer {
     width: 45%;
     flex-grow: 1;
     margin: 5px 5px 15px 5px;
+    background: #fff;
+    font-family: 'Radley', serif;
   }
 }
 
 @media (min-width: 1025px) {
+
+  body {
+    background: #f8f8f8;
+  }
 
   .website-name {
     display: contents;
@@ -193,6 +203,8 @@ footer {
   .small-news-card a {
     width: 23%;
     flex-grow: 1;
-    margin: 6px 6px 15px 6px;
+    margin: 8px 8px 15px 8px;
+    background: #fff;
+    font-family: 'Radley', serif;
   }
 }
