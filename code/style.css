@@ -39,6 +39,14 @@ object-fit: cover;
   margin-block-end: 0px;
   }
 
+  .item a{
+    text-decoration: none;
+    color: lightblue;
+  }
+.item a:hover {
+  background-color: #ddd;
+  color: black;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -51,6 +59,7 @@ object-fit: cover;
 /*  Stylethe top navigation bar */
 header {
   background-color: #333;
+  background-image: url(chinese\ pattern.png);
   padding: 20px 0;
   display: flex;
   flex-direction: row;
@@ -59,9 +68,11 @@ header {
 }
 
 footer{
-  background-color: #f1f1f1;
+  background-color: #333;
   padding: 20px;
   text-align: center;
+  color: aquamarine;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/da8aa638653629.5769f4955a6d5.png);
 }
 
 /* Style the topnav links */
@@ -95,20 +106,32 @@ padding-top: 10px;
   padding-bottom: 10px;
   } */
 
-.column p {
-  text-align: center;
-  margin-block-start: 0px;
-  scroll-margin-block-end: 0px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  overflow-y: hidden;
-  z-index: 0;
-  color: white;
-  text-shadow: 1px 1px 2px black;  
-  width: 50%;
-  max-height: 50%;
-}
+  .column a{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    overflow-y: hidden;
+    z-index: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;  
+  }
+  
+  
+  
+  .column a:hover {
+    background-color: azure;
+    color: black;
+    opacity: 0.5;
+  }
+  
+  .column a:active {
+    background-color: azure;
+    color: black;
+    opacity: 1;
+  }
+  
 
 .column img{
     display: block;
