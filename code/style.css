@@ -173,10 +173,6 @@
     
   }
 
-  .exclude-tablet {
-    display: none;
-  }
-
   header {
     border-bottom: 1px solid #ddd;
   }
@@ -225,6 +221,22 @@
   
   .nav-item >  a:active {
     background-color: #0B6B8B;
+  }
+
+  .item-1-order {
+    order: -2;
+  }
+
+  .item-2-order {
+    order: -1;
+  }
+
+  .item-3-order {
+    order: 3;
+  }
+  
+  .item-4-order {
+    order: 4;
   }
 
   footer {
@@ -354,16 +366,16 @@
     display: table;
   }
 
+  .exclude-tablet {
+    display: none;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1080px) {
   body {
     
-  }
-
-  .exclude-desktop {
-    display: none;
   }
 
   header {
@@ -416,6 +428,22 @@
     background-color: #0B6B8B;
   }
 
+  .item-1-order {
+    order: 1;
+  }
+
+  .item-2-order {
+    order: 2;
+  }
+
+  .item-3-order {
+    order: 3;
+  }
+
+  .item-4-order {
+    order: 4;
+  }
+
   footer {
     border-top: 1px solid #ddd;
   }
@@ -458,8 +486,7 @@
     text-decoration: none;
   }
 
-  /* RENAME TO FLEX-CONTAINER TABLET? */
-  .flex-container-medium {
+  .flex-container-desktop {
     display: flex;
     flex-wrap: wrap;
   }
@@ -476,14 +503,23 @@
     object-fit: cover;
   }
 
-  /* .large-card > article {
-  } */
+  .large-card > article {
+    background-image: url("../img/DT_2020_CROPPED.jpg");
+    background-size: cover;
+    height: 80vh;
+  }
+
+.text-block {
+  background-color: #000;
+  opacity: 50%;
+}
 
   .large-h3 {
-    padding-top: 20px;
+    padding-top: 15vw;
     font-family: 'Roboto', sans-serif;
     font-size: 5vw;
     text-align: center;
+    color: #fff;
   }
 
   .large-text {
@@ -491,6 +527,7 @@
     text-align: center;
     padding-top: 20px;
     font-size: 2vw;
+    color: #fff;
   }
 
   .small-card {
@@ -545,6 +582,10 @@
     content: "";
     clear: both;
     display: table;
+  }
+
+  .exclude-desktop {
+    display: none;
   }
 
 }

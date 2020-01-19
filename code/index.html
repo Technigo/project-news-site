@@ -9,20 +9,14 @@
   </head>
   <body>
     
-    <header class="flex-container">
-      <!-- Header med flex-container class -->
-      <!-- UL med 7 st li med olika exlude beroende på device-->
-      <!-- link link img link link link link -->
-      <!-- MOBILE: bara img center -->
-      <!-- TABLET: link link IMG link link -->
-      <!-- DESKTOP: IMG link link link link -->
+    <header>
       <ul>
 
-        <li class="nav-item exclude-mobile exclude-desktop">
+        <li class="nav-item exclude-mobile item-1-order">
           <a href="http://" target="_blank" rel="noopener noreferrer">Fresh</a>
         </li>
 
-        <li class="nav-item exclude-mobile exclude-desktop">
+        <li class="nav-item exclude-mobile item-2-order">
           <a href="http://" target="_blank" rel="noopener noreferrer">Funny</a>
         </li>
 
@@ -32,32 +26,23 @@
           </a>
         </li>
 
-        <li class="nav-item exclude-mobile">
+        <li class="nav-item exclude-mobile item-3-order">
           <a href="http://" target="_blank" rel="noopener noreferrer">Awesome</a>
         </li>
 
-        <li class="nav-item exclude-mobile">
+        <li class="nav-item exclude-mobile item-4-order">
           <a href="http://" target="_blank" rel="noopener noreferrer">Meme</a>
         </li>
 
-        <li class="nav-item exclude-mobile exclude-tablet">
-          <a href="http://" target="_blank" rel="noopener noreferrer">Fresh</a>
-        </li>
-
-        <li class="nav-item exclude-mobile exclude-tablet">
-          <a href="http://" target="_blank" rel="noopener noreferrer">Funny</a>
-        </li>
-
       </ul>
-
     </header>
 
     <section class="flex-container clearfix">
       <!-- The big news content -->
       <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" class="large-card" target="_blank" rel="noopener noreferrer">
         <article>
-          <img src="../img/DT_2020.jpg" class="exclude-mobile" alt="">
-          <h3 class="large-h3 class="small-h3"">Breaking News!</h3>
+          <img src="../img/DT_2020.jpg" class="exclude-mobile exclude-desktop" alt="">
+            <h3 class="large-h3">Breaking News!</h3>
             <p class="large-text">Donalt Trump re-elected! <br>
           See his opening speach right hear
           </p>
@@ -67,7 +52,7 @@
 
 
 
-    <section class="flex-container-small flex-container-medium clearfix">
+    <section class="flex-container-small flex-container-medium flex-container-desktop clearfix">
       <!-- The other news  -->
       <a href="http://" class="small-card clearfix" target="_blank" rel="noopener noreferrer">
         <article>
@@ -160,17 +145,3 @@
 
   </body>
 </html>
-
-<!-- TODO -->
-<!-- 
-1. Decide a them: Clickbait
-*. IMG thumbnails on mobile?
-4. Create a mockup with flexbox thats responsive
-5. STATUS
-
-Donald trump re-elected? rickrolled link?
-Ernst?
-
-
-
- -->
