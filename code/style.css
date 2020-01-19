@@ -1,218 +1,256 @@
-/* GENERAL STYLING */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-* {
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  list-style: none;
   text-decoration: none;
-  list-style-type: none;
-  color: #a570b9;
+  color: #ecf0f1;
+  /* background-image: linear-gradient(218deg, #000, #67817e); */
 }
 
-html {
-    background-image: linear-gradient(-45deg, #2e2d2d, #c3a4c7);
-    height: 100%;
-    background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-}
+body{background-color: #24252A;}
 
-.body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 85vw;
-  max-width: 1000px;
-  min-width: 570px;
-}
-
-/* SIDEBAR */
-
-aside {
-  position: fixed;
-  left: 0;
-  background-color: #EDF3F7;
-  padding: 5px 3px 0 0;
-  border-radius: 0 3px 3px 0;
-  box-shadow: 6px 6px 10px -4px #00000085;
-  display: flex;
-  flex-direction: column;
-}
-
-aside img {
-  width: 32px;
-  height: 32px;
-  margin: 2px 2px 0 2px;
-}
-
-aside a:hover{
-  opacity: 0.3;
-  transition-duration: 0.5s;
+li, a, button{
+  font-size: 500;
+  font-size: 16px;
 }
 
 /* HEADER */
 
-header {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 8px 10px -6px #00000085;
-  padding: 20px 20px;
-  background-color: #EDF3F7;
-  border-radius: 3px;
-}
-
-header img {margin: -10px -8px;}
-
-header h1 {
-  font-size: 85px;
-  font-weight: 200;
+header{
   margin: 0;
-  padding-top: 20px;
-  background: linear-gradient(#3d65ff, #C625FF 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 30px 10%;
+  background-color: rgba(37, 36, 36, 0.9);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
-header h1 a:hover{
-  animation: neonGlow 2s infinite alternate;
-  text-decoration: none;
-  transition-duration: .5s;
+h2{
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: auto;
+  margin: 0;
 }
+
+button{
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: none;
+}
+
+button:hover{background-color: rgba(0, 136, 169, 0.6);}
+
 
 /* NAVBAR */
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px 15px 20px;
+
+span{
+  cursor: pointer;
 }
 
-/* MAIN */
-.main-content {
-  background-color: #fff;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+.nav-toggle{
+  display: none;
+  height: 100%;
 }
-  
-.small-news img{
-  width: 20vw;
-  height: 20vw;
+
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+  top: 7px;
+}
+
+nav{
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: rgba(37, 36, 36, 0.9);
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  margin-left: 1em;
+  margin-bottom: 1em;
+  /* display: inline-block; from yt*/
+  /* padding: 0 20px; from yt*/
+}
+
+nav li a{
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav li a:hover{color: rgba(0, 136, 169, 1);}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* BACKGROUND PIC*/
+
+figure img{
+  max-height: 70vh;
   object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+
+/* BIG NEWS */
+article{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  max-height: 500px;
+}
+
+article img{
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+/* MAIN CONTENT */
+main{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* NEWS */
+main section{
+  max-width: 1000px;
+}
+
+
+/* GRID-COLUMNS */
+img{
+  width: 100%;
+  /* display: block; */
+}
+
+p{
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.grid-group{
+  margin-bottom: 3rem;
 }
 
 /* FOOTER */
 footer{
-  background-color: #EDF3F7;
-  border-radius: 3px 3px 0 0;
-  padding: 20px 20px 0 20px;
-  box-shadow: 0 -6px 10px -6px #00000085;
-  margin-top: 20px;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 10px;
+  margin-top: 30px;
+  background-color: rgba(0, 136, 169, 1);
+  width: 100%;
 }
 
-footer a{
-  color: #a570b9;
-  font-size: 14px;
-}
 
-footer h2 {
-  padding-top: 10px;
-  background: linear-gradient(#3d65ff, #C625FF 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  font-size: 16px;
-}
 
-footer a:hover{
-  opacity: 0.3;
-  transition-duration: .5s;}
-
-ul {padding: 0px;}
-
-h2 {margin: 0px}
-
-.top-footer{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.top-footer-headers{
-  display: flex;
-  flex-direction: column;
-}
-
-.bottom-footer{
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
-  padding: 0 20px;
-}
- 
-/* ANIMATION NEONGLOW */
-@keyframes neonGlow {
-  0% {
-    text-shadow: 0 0 10px rgba(255,255,255,.8),
-                 0 0 20px rgba(255,255,255,.8),
-                 0 0 22px  rgba(255,255,255,.8),
-                 0 0 40px  rgba(240, 100, 240, 0.5),
-                 0 0 60px  rgba(240, 100, 240, 0.5),
-                 0 0 80px  rgba(165, 112, 185),
-                 0 0 100px rgba(240, 100, 240, 0.5),
-                 0 0 140px rgba(240, 100, 240, 0.5),
-                 0 0 200px rgba(165, 112, 185);
+/* MEDIA QUIERES */
+@media (min-width: 500px){
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
-  100% {
-    text-shadow: 0 0 2px rgba(255,255,255,.8),
-                 0 0 8px rgba(255,255,255,.8),
-                 0 0 10px rgba(255,255,255,.8),
-                 0 0 20px rgba(240, 100, 240, 0.5),
-                 0 0 30px rgba(240, 100, 240, 0.5),
-                 0 0 40px rgba(240, 100, 240, 0.5),
-                 0 0 50px rgba(165, 112, 185),
-                 0 0 80px rgba(165, 112, 185);
+  .grid-group{
+    margin-bottom: 0;
   }
 }
 
-/* NAV BUTTONS */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
-
-*, *:before, *:after{
-  box-sizing: border-box;
+@media (min-width: 800px){
+  .grid{
+    grid-template-columns: repeat(4, 1fr);
   }
-    button:hover{cursor: pointer}
+  .nav-toggle-label{
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  h2{
+    grid-column: 2 / span 1;
+  }
+  nav{
+    all: unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-    button {
-      background: transparent; outline: none;
-      position: relative;
-      padding: 0 20px;
-      overflow: hidden;
-      border: none;
-      color: #a570b9;
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-    }
+  nav ul{
+    display: flex;
+    border: 1px solid red;
+  }
+  nav li{
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav li a{
+    opacity: 1;
+  }
 
-    /*button:before (attr data-hover)*/
-    button:hover:before{opacity: 1; transform: translate(0,0);}
-    button:before{
-      content: attr(data-hover);
-      position: absolute;
-      left: 0;
-      width: 100%;
-      opacity: 0;
-      transform: translate(-100%,0);
-      transition: all .3s ease-in-out;
-    }
-      /*button div (button text before hover)*/
-      button:hover div{opacity: 0; transform: translate(100%,0)}
-      button div{
-        transition: all .3s ease-in-out;
-      }
+  button{
+    display: inline;
+  }
+}
+
