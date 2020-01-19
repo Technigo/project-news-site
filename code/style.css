@@ -143,6 +143,7 @@ footer {
     flex-direction: row;
     align-items: center;
     margin: 20px;
+    box-shadow: 3px 3px 0 0 #e2e1e1;
   }
 
   .image-big-news {
@@ -163,6 +164,7 @@ footer {
     margin: 5px 5px 15px 5px;
     background: #fff;
     font-family: 'Radley', serif;
+    box-shadow: 3px 3px 0 0 #e2e1e1;
   }
 }
 
@@ -186,6 +188,7 @@ footer {
     flex-direction: row;
     align-items: center;
     margin: 20px;
+    box-shadow: 5px 5px 0 0 #e2e1e1;
   }
 
   .image-big-news {
@@ -201,10 +204,12 @@ footer {
   }
 
   .small-news-card a {
-    width: 23%;
+    width: 20%;
     flex-grow: 1;
     margin: 8px 8px 15px 8px;
+    padding: 10px;
     background: #fff;
     font-family: 'Radley', serif;
+    box-shadow: 5px 5px 0 0 #e2e1e1;
   }
 }
