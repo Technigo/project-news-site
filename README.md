@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is my first project at Techinigo Bootcamp. The requirement was to create a responsive news site using flex box. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It was very difficualt at first to get a hang of flex box. I re-started the project many times until I could find a design and code that I was somewhat happy with. Next time I would spend more time on the actual sketch and do reseach before starting. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
