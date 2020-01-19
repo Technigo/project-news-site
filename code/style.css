@@ -56,7 +56,7 @@ nav {
 }
 
 .navbar-links a {
-  color: #f8f8f8;
+  color: #fff;
   margin-left: 10px;
 }
 
@@ -92,11 +92,14 @@ nav {
 .small-news-card {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .image-small-news {
   width: 100%;
+}
+
+.small-news-paragraph {
+  font-size: 0.8rem;
 }
 
 /*** FOOTER ***/
@@ -107,7 +110,17 @@ footer {
   height: 45px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-paragraph {
+  font-size: 0.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 0.5rem;
 }
 
 /*** MEDIA QUERIES ***/
