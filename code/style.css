@@ -1,9 +1,109 @@
+main, header, section, aside, footer {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #fcfbfd;
+  color: #de4131;
+  font-family: 'Gelasio', serif;
+  border-radius: 8px;
+}
+
+p {
+  color: black;
+  font-size: medium;
+}
+
+main {
+  background: #fcfbfd;
+  align-content: center;
+  padding: 10px;
+  padding-top: 25px;
+  color: #ffec34;
+  font-size: xx-large;
+}
+
+h1 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: xx-large;
+
+}
+
+.header {
+  margin-top: 20px;
+  text-shadow: 2px 2px 3px rgba(138, 119, 119, 0.658);
+  color: #ffec34;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 17px;
+}
+
+header a {
+text-decoration: none;
+color: #ffec34;
+}
+
+.big-news {
+  background: white;
+}
+
+.big-news img {
+  height: 250px;
+}
+
+.content {
+  background: white;
+  flex: 1;
+    ...
+}
+
+.sidebar {
+  border: 1px solid  #fcfbfd;
+  background: white;
+  flex: 0 1 300px;
+    ...
+}
+
+.footer {
+  border: 1px solid  #fcfbfd;
+  background: white;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: rem-calc(1200);
+}
+
+
+@media screen and (min-width: 640px){
+  .flex-container {
+      display: flex;
+  }    
+}
+
+@media screen and (max-width: 525px){
+  header nav {
+      display: flex;
+      flex-direction: column;
+  }    
+}
+
+
+
+
+
+
+/*
+
 html {
   background: #ddf0dd;
   color: #fff;
 }
 
-/* Basic styling */
+/* Basic styling 
 * {
   box-sizing: border-box;
   padding: 0;
@@ -54,7 +154,17 @@ height: 37px;
   border-bottom: 1px #444 solid;
 }
 
-/* Mobile menu */
+/* footer styling 
+
+footer {
+  background-color: rgb(99, 179, 126);
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  height: 100px;
+} 
+}
+/* Mobile menu 
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +183,7 @@ height: 37px;
   display: block;
 }
 
-/* Tablet menu */
+/* Tablet menu 
 @media all and (min-width: 600px) {
   .menu {
       justify-content: center;
@@ -85,7 +195,7 @@ height: 37px;
 
 }
 
-/* Desktop menu */
+/* Desktop menu 
 @media all and (min-width: 900px) {
   .item {
       display: block;
@@ -109,3 +219,4 @@ height: 37px;
 
   
 }
+*/
