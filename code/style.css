@@ -1,6 +1,7 @@
 html {
   background:#fff;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 100;
   color: #fff;
 }
@@ -26,30 +27,35 @@ h3 {
 a {
   text-decoration: none;
   color: #000;
+  font-size: 0.8rem;
 }
 
 /*** HEADER ***/
 
 header {
   background: black;
-  height: 50px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 20px;
   position: sticky;
   top: 0;
 }
 
+.website-name {
+  display: none;
+}
+
 .logo {
-  height: 70%;
+  height: 60%;
 }
 
 nav {
  display: inline-block;
 }
 
-nav a {
+.navbar-links a {
   color: #f8f8f8;
   margin-left: 10px;
 }
@@ -96,8 +102,9 @@ nav a {
 /*** FOOTER ***/
 
 footer {
-  background: black;
-  height: 30px;
+  background: #000;
+  color: #fff;
+  height: 45px;
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -106,6 +113,14 @@ footer {
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 668px) and (max-width: 1024px) {
+
+  .website-name {
+    display: contents;
+  }
+
+  .logo {
+    display: none;
+  }
 
   .big-news {
     flex-direction: row;
@@ -128,14 +143,20 @@ footer {
   .small-news-card a {
     width: 45%;
     flex-grow: 1;
-    margin: 6px 6px 15px 6px;
+    margin: 5px 5px 15px 5px;
   }
 }
 
 @media (min-width: 1025px) {
 
-  header {
-    flex-direction: row-reverse;
+  .website-name {
+    display: contents;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
   }
 
   .big-news {
