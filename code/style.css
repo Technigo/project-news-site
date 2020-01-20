@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 main, header, section, aside, footer {
   margin: 0;
   padding: 20px;
@@ -26,8 +28,9 @@ h1 {
   padding-bottom: 10px;
   text-align: center;
   font-size: xx-large;
-
 }
+
+/* HEADER, NAV, HAMBURGER */
 
 .header {
   margin-top: 20px;
@@ -50,6 +53,7 @@ left: 20px;
   width: 30px;
   height: 5px;
   background-color: #ffec34;
+  border-radius: 8px;
 }
 
 header nav {
@@ -62,6 +66,8 @@ header a {
 text-decoration: none;
 color: #ffec34;
 }
+
+/* BIG NEWS SECTION */
 
 .big-news {
   background: white;
@@ -85,16 +91,65 @@ h2 {
   padding: 25px;
 }
 
+/* SMALLER NEWS */
+
 .content {
   background: white;
   flex: 1;
+ 
     ...
 }
+
+.small-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+
+.small-news a{
+  width: 210px;
+  height: 150px;
+  padding: 15px;
+  background: rgb(194, 235, 194);
+  text-decoration: none;
+  border-radius: 16px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.small-news h3 {
+  font-size: 22px;
+  text-shadow: 2px 2px 3px rgba(138, 119, 119, 0.658);
+  color: #ffec34;
+  margin: 0;
+}
+
+.small-news-images img {
+  width: 100px;
+  height: 100px;
+}
+
+.small-news-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-news p {
+margin: 0;
+}
+
+/* SIDEBAR AND FOOTER */
 
 .sidebar {
   border: 1px solid  #fcfbfd;
   background: white;
-  flex: 0 1 300px;
+  flex: 0 1 80px;
     ...
 }
 
@@ -108,6 +163,7 @@ h2 {
   max-width: rem-calc(1200);
 }
 
+/* MEDIA QUIERIES */
 
 @media (min-width: 640px) {
   .flex-container {
@@ -142,132 +198,3 @@ h2 {
     display: none;
   }
 }
-
-
-
-
-
-/*
-
-html {
-  background: #ddf0dd;
-  color: #fff;
-}
-
-/* Basic styling 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-nav {
-  background: rgb(99, 179, 126);
-  padding: 5px 20px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  align-items: center;
-}
-
-.logo a:hover {
-  text-decoration: none;
-}
-
-.logo img {
-height: 37px;
-}
-
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
-}
-
-.button.secondary {
-  border-bottom: 1px #444 solid;
-}
-
-/* footer styling 
-
-footer {
-  background-color: rgb(99, 179, 126);
-  display: flex;
-  align-items: flex-end;
-  padding: 10px;
-  height: 100px;
-} 
-}
-/* Mobile menu 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.item {
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
-}
-
-.item.active {
-  display: block;
-}
-
-/* Tablet menu 
-@media all and (min-width: 600px) {
-  .menu {
-      justify-content: center;
-  }
-
-  .logo {
-      flex: 1;
-  }
-
-}
-
-/* Desktop menu 
-@media all and (min-width: 900px) {
-  .item {
-      display: block;
-      width: auto;
-  }
-
-  .logo {
-      order: 0;
-  }
-
-  .item {
-      order: 1;
-  }
-  .menu li {
-      padding: 15px 10px;
-  }
-
-  .menu li.button {
-      padding-right: 0;
-  }
-
-  
-}
-*/
