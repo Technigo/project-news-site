@@ -1,22 +1,166 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/41a2006263.js" crossorigin="anonymous"></script>
+
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+
+  <!-- Some kind of logo and navbar -->
+
+  <header>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav>
+      <a href="">Home</a>
+      <a href="#food">Food</a>
+      <img class="logo" src="wine.svg" alt="logo">
+      <a href="#wines">Wines</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <div>
+      <img class="logosmall" src="wine.svg" alt="logo">
+    </div>
+
+    <div class="name">
+      <p class="name">TableTop</p>
+    </div>
+  </header>
+
+
+  <!-- The big news content -->
+
+  <section class="big-news-container">
+    <div class="big-news">
+      <img src="images/insta_citron_skumpa_mork_haller.jpg" class="big-news-picture" alt="Champagne image">
+      <a href="https://climatenewsnetwork.net/champagne/" target="_blank" rel="noopener noreferrer">
+        <h2>Champagne is getting warmer due to climate change. What will happen to the fresh taste?</h2>
+        <button>Read More</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- The other news  -->
+  <main>
+
+    <section class="small-news">
+      <a href="https://www.systembolaget.se/sok-dryck/?assortmenttext=Fast+sortiment&sellstartdatefrom=2019-12-02&sellstartdateto=2019-12-02&subcategory=Vitt+vin&sortfield=Name&fullassortment=1"
+        target="_blank">
+        <div>
+          <img class="small-news-picture" src="images/citron_vittvin.jpg" alt="table image">
+          <p>New whites in the Monopoly</p>
+          <button>Read More</button>
+      </a>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="small-news">
+      <a href="http://www.decofleur.com/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <img class="small-news-picture" src="images/bukett_kvadrat.jpg" alt="flowers image">
+          <p>Dried flowers are in style</p>
+          <button>Read More</button>
+      </a>
+      </div>
     </section>
-  </body>
+
+    <section class="small-news">
+      <a href="https://www.thespruceeats.com/how-to-preserve-berries-1327687" target="_blank" rel="noopener noreferrer">
+        <div>
+          <img class="small-news-picture" src="images/burksommar2 kvadrat.jpg" alt="wild strawberries image">
+          <p>Save the taste of summer</p>
+          <button>Read More</button>
+      </a>
+      </div>
+    </section>
+
+    <section class="small-news">
+      <a href="https://androuet.se/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <img class="small-news-picture" src="images/ost1.jpg" alt="cheese board image">
+          <p>Cheese pairing like in France</p>
+          <button>Read More</button>
+      </a>
+      </div>
+    </section>
+
+    <section class="small-news">
+      <div id="food">
+        <a href="https://www.vivavinomat.se/recept/friterade-torskbollar/" target="_blank" rel="noopener noreferrer">
+          <div>
+            <img class="small-news-picture" src="images/torskbollar_insta.jpg" alt="deep fried cod image">
+            <p>Spanish tapas for the win!</p>
+            <button>Read More</button>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <section class="small-news">
+      <a href="https://www.vivavinomat.se/recept/restwrap-med-kalvstek-rodbetor/" target="_blank"
+        rel="noopener noreferrer">
+        <div>
+          <img class="small-news-picture" src="images/restwrap_insta.jpg" alt="wrap image">
+          <p>Leftover luxury wrap</p>
+          <button>Read More</button>
+      </a>
+      </div>
+    </section>
+
+    <section class="small-news">
+      <div id="wines">
+        <a href="https://www.systembolaget.se/sok-dryck/?subcategory=R%C3%B6tt%20vin&combinedcountry=Frankrike"
+          target="_blank" rel="noopener noreferrer">
+          <div>
+            <img class="small-news-picture" src="images/hostbukett_vin_insta.jpg" alt="flowers on blue table image">
+            <p>French reds for the weekend</p>
+            <button>Read More</button>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <section class="small-news">
+      <a href="https://www.vivavinomat.se/recept/pizzabullar-med-pesto-orter/" target="_blank"
+        rel="noopener noreferrer">
+        <div>
+          <img class="small-news-picture" src="images/pizzasnurror_insta2.jpg" alt="pizza buns image">
+          <p>Pizza Pesto Buns recipe</p>
+          <button>Read More</button>
+      </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="footer">
+      <div class="contact">
+        <a href="mailto:tabletop@tabletop.se">Send us an email</a>
+      </div>
+
+      <p class="p-footer">Design by Hanna Rüter</p>
+      <div class="flaticon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+  </footer>
+
+
+</body>
+
 </html>
