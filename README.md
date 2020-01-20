@@ -9,4 +9,4 @@ I used flexbox and mediaquery to make it responsive.
 ## View it live
 
 Link to deployed project:
-https://focused-visvesvaraya-fb26f1.netlify.com/code/
+https://lucid-hugle-b21bc4.netlify.com
