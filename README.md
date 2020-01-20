@@ -8,3 +8,4 @@ I struggled mainly with the images, keeping the layout responsive and to not rep
 
 ## View it live
 
+https://silly-kirch-7bc895.netlify.com/
