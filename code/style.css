@@ -1,5 +1,11 @@
+/* Global & general styles */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: #fff;
+  background: #eaeff1;
   color: #000;
   font-family: 'Avenir', 'Helvetica', sans-serif;
 }
@@ -8,55 +14,62 @@ body {
   margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3 {
   line-height: 1;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: .2rem;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
-  color: #000;
-  transition: transform .2s ease-out;
+  color: #0a2fc4;
+  transition: all .15s ease-out;
 }
 
-a:hover {
-  color: #0a2fc4;
+[class*="article"] a:hover {
+  color: #000;
   transform: translateX(5px);
+}
+
+[class*="article"] a::before {
+  content: '––– ';
 }
 
 img {
   width: 100%;
 }
 
-section {
-  margin-top: 3rem;
-}
 
-/* header + nav */
+/* Header & nav */
 
-header {
+header.site-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
   height: 80px;
   padding: 0 2rem; 
+
+  background-color: #0a2fc4;
+  color: #fff;
 }
 
-header > * {
+header.site-header > * {
   flex: 0 1 auto;
   margin: 0;
 }
@@ -65,26 +78,46 @@ header > * {
   width: 50px;
 }
 
-.title {
+.site-title {
   display: none;
-}
-
-nav a {
   margin-left: 3rem;
 }
 
-/* big article section */
+nav.main-nav {
+  margin-left: auto;
+}
 
-.article-big {
+nav.main-nav a {
+  margin-left: 3rem;
+  color: #a4d9f5;
+  border-bottom: 2px solid #a4d9f5;
+}
+
+nav.main-nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+
+/* Featured article section */
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.featured-article {
   display: flex;
   flex-direction: column;
 }
 
-.article-big-text {
+.featured-article-text {
   flex: 0 1 40%;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  background-color: #fff;
 }
-.article-big-img {
+
+.featured-article-img {
   flex: 0 1 60%;
   max-width: 100%;
   position: relative;
@@ -92,36 +125,29 @@ nav a {
 }
 
 
-/* articles grid */
+/* Articles grid */
 
 .articles-grid {
   display: flex;
   flex-direction: column;
-
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem 1rem;
 }
-.article {
+
+.article-item {
+  display: flex;
+  flex-direction: column;
   flex: 0 1 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.article .article-img {
+.article-item .article-img {
+  flex: 0 1 auto;
   max-width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%;
-  overflow: hidden;
-}
-
-.article-big-img img,
+.featured-article-img img,
 .article-img img {
   position: absolute;
   top: 0;
@@ -133,48 +159,73 @@ nav a {
   object-position: 50% 0%;
 }
 
+.ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  overflow: hidden;
+}
+
+.article-text {
+  flex: 1 1 auto;
+  background-color: #fff;
+  padding: 0 1rem 1rem 1rem;
+}
+
+
+/* Footer */
 
 footer {
   padding: 2rem;
   background-color: #0a2fc4;
   color: #fff;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
+
+/* Media queries */
+/* Tablet styles */
+
 @media screen and (min-width: 768px) {
-  .article-big {
+  
+  .site-title {
+    display: inline;
+  }
+
+  main {
+    padding: 3rem 1rem;
+  }
+  
+  .featured-article {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
-  .article-big-img {
-    order: 2;
-  }
-
-  .article-big-text {
-    order: 1;
+  .featured-article-text {
+    padding: 2rem;
   }
 
   .articles-grid {
     flex-direction: row;
     flex-wrap: wrap;
-
+    margin: 3rem -.5rem 0 -.5rem;
   }
-  .article {
+
+  .article-item {
     flex: 0 1 50%;
     padding: 0 .5rem;
   }
 }
 
+/* Desktop styles */
+
 @media screen and (min-width: 992px) {
-  header {
+  header.site-header {
     height: 120px;
   }
-
-  .title {
-    display: inline;
-  }
-  .article {
+  
+  .article-item {
     flex: 0 1 25%;
   }
 }
