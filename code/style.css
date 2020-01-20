@@ -1,4 +1,180 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* Main styling */
+
+body {
+  background-color: #ffe4cc;
+  margin: 0;
+}
+
+h1  {
+  font-size: 60px;
+}
+
+h2  {
+  font-size: 30px;
+}
+
+h3  {
+  font-size: 28px;
+  padding: 16px;
+}
+
+p  {
+  font-family: 'Roboto', sans-serif;
+}
+
+span.name {
+  font-weight: bold;
+}
+
+/*** HEADER ***/
+header  {
+  background-color: #ffdab9;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 16;
+}
+
+header img  {
+  width: 100px;
+}
+
+nav  {
+  display: none;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  display: none;
+}
+
+nav a  {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/*** BIG NEWS ***/
+.big-news  {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.big-news img  {
+  width: 100%;
+}
+
+.big-news a {
+  font-family: 'Roboto', sans-serif;
+  
+}
+  
+/*** SMALL NEWS ***/
+.small-news  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-news a {
+  background-color: #fff1e6;
+  border: 2px solid #ffbb80;
+  border-radius: 5px;
+  width: 100%;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.small-news img  {
+  width: 100%;
+}
+
+.small-news-text {
+  margin: 16px;
+}
+
+/*** FOOTER ***/
+footer  {
+  background-color: #ffdab9;
+  height: 50px;
+}
+
+.footer-nav {
+  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+ 
+}
+
+/*** MEDIA QUERIES TABLET ***/
+@media (min-width: 668px)  {
+
+  header  {
+    justify-content: space-around;
+  }
+
+  h1  {
+    display: inline-block;
+  }
+
+  nav {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+  }
+
+ h2 {
+   display: inline;
+  }
+
+  h3  {
+    display: none;
+  }
+
+  .big-news  {
+    flex-direction: row;
+  }
+
+  .big-news img  {
+    width: 60%;
+    height: 100%;
+  }   
+
+  .big-news div  {
+    width: 40%;
+    margin-left: 30px;
+  }   
+
+  .small-news a  {
+    width: 40%;
+    flex-grow: 1;
+    margin: 16px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/*** MEDIA QUERIES BIG SCREEN ***/
+@media (min-width: 1024px)  {
+  nav  {
+    flex-direction: row;
+  }
+
+  h2  {
+    font-size: 50px;
+  }
+
+  .small-news a  {
+    width: 20%;
+    flex-grow: 1;   
 }
