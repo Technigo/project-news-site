@@ -13,9 +13,6 @@
   --second-font: 'Roboto', sans-serif ;
 }
 
-/* 'Roboto', sans-serif */
-
-
 /*  CSS INDEX 
   1. HEADER
   2. LARGE CARD
@@ -28,6 +25,7 @@
 /* Extra small devices (300-600 px) */
 @media only screen and (min-width: 300px)  and (max-width: 600px) {
   
+  /* HEADER */
   header > ul > li > a > img {
     width: 25vw;
     height: 15vh;
@@ -57,11 +55,12 @@
     text-decoration: none;
   }
 
+  /* LARGE CARD */
   .flex-container-small {
     display: flex;
     flex-direction: column;
   }
-
+  
   .large-card {
     width: 100vw;
   }
@@ -87,6 +86,7 @@
     padding-bottom: 30px;
   }
 
+  /* SMALL CARD */
   .small-card {
     flex-grow: 1;
     border-top: 1px solid #ddd;
@@ -134,6 +134,7 @@
     font-weight: bold;
   }
 
+  /* FOOTER */
   footer {
     border-top: 1px solid #ddd;
   }
@@ -178,6 +179,7 @@
 /* Medium devices (600 - 1080 px) */
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
 
+  /* HEADER */
   header {
     border-bottom: 1px solid #ddd;
   }
@@ -260,6 +262,7 @@
     text-decoration: none;
   }
 
+  /* LARGE CARD */
   .flex-container-medium {
     display: flex;
     flex-wrap: wrap;
@@ -290,6 +293,7 @@
     padding-top: 20px;
   }
 
+    /* SMALL CARD */
   .small-card {
     flex-grow: 1;
     min-width: 50%;
@@ -335,6 +339,7 @@
     font-weight: bold;
   }
 
+  /* FOOTER */
   footer {
     border-top: 1px solid #ddd;
   }
@@ -379,6 +384,7 @@
 /* Extra large devices ( 1080px < ) */
 @media only screen and (min-width: 1080px) {
 
+  /* HEADER */
   header {
     border-bottom: 1px solid #ddd;
   }
@@ -464,6 +470,7 @@
     text-decoration: none;
   }
 
+  /* LARGE CARD */
   .flex-container-desktop {
     display: flex;
     flex-wrap: wrap;
@@ -536,6 +543,7 @@
     color: #fff;
   }
 
+  /* SMALL CARD */
   .small-card {
     flex-grow: 1;
     flex-basis: 20vw;
@@ -584,6 +592,7 @@
     font-weight: bold;
   }
 
+  /* FOOTER */
   footer {
     border-top: 1px solid #ddd;
   }
