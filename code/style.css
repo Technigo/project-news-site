@@ -69,14 +69,17 @@ nav {
 .news {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .news-cards {
-  width: 100%;
+  background-color: #fff;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center; 
   padding-bottom: 12px;
+  margin: 4px;
 }
 
 .news img{
@@ -132,13 +135,12 @@ footer {
   }
 
   .news {
-    display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
   }
 
   .news-cards {
-    width: 50%;
-    align-items: flex-start; 
+    width: 45%;
   }
 }
 
@@ -170,8 +172,12 @@ footer {
     width: 40%;
   }
 
+  .news {
+    justify-content: flex-start;
+  }
+
   .news-cards {
-    width: 25%;
+    width: 24%;
   }
 
   h1 {
