@@ -9,8 +9,11 @@
   --prime-color: #008CBA;
   --second-color: #0B6B8B;
   --tag-color: #B557DA;
-  --prime-font: 'Roboto', sans-serif;
+  --prime-font: 'Alata', sans-serif;
+  --second-font: 'Roboto', sans-serif ;
 }
+
+/* 'Roboto', sans-serif */
 
 
 /*  CSS INDEX 
@@ -364,6 +367,9 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
   }
 
   header > ul > li {
@@ -459,12 +465,45 @@
     height: 80vh;
   }
 
+  .corner-ribbon{
+    width: 350px;
+    background: #e43;
+    position: absolute;
+    top: 180px;
+    left: -90px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 1;
+  }
+  
+  .corner-ribbon.sticky{
+    position: absolute;
+  }
+  
+  .corner-ribbon.shadow{
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+  }
+  
+  .corner-ribbon.top-left{
+    z-index: 1;
+    top: 180px;
+    left: -90px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 1;
+    font-family: var(--prime-font);
+  }
+
   .large-h3 {
-    padding-top: 15vw;
+    padding-top: 13vw;
     font-family: var(--prime-font);
     font-size: 5vw;
-    text-align: center;
     color: #fff;
+    text-align: center;
   }
 
   .large-text {
