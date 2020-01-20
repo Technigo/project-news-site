@@ -145,6 +145,17 @@
     font-family: var(--prime-font);
   }
 
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-icons > li {
+    list-style-type: none;
+    padding: 1vw;
+  }
+
   .emoji {
     text-align: center;
     padding: 8px;
@@ -333,6 +344,17 @@
     text-align: center;
     padding: 15px;
     font-family: var(--prime-font);
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-icons > li {
+    list-style-type: none;
+    padding: 1vw;
   }
 
   .emoji {
@@ -571,6 +593,17 @@
     text-align: center;
     padding: 15px;
     font-family: var(--prime-font);
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-icons > li {
+    list-style-type: none;
+    padding: 1vw;
   }
 
   .emoji {
