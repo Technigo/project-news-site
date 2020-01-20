@@ -34,6 +34,12 @@ h2{
   cursor: pointer;
   margin-left: auto;
   margin: 0;
+  font-size: 30px;
+}
+
+h2 img{
+  height: 30px;
+  width: 30px;
 }
 
 /* NAVBAR */
@@ -223,6 +229,7 @@ footer p, a, label{
 }
 
 /* MEDIA QUIERES */
+
 @media (min-width: 500px){
   .grid{
     display: grid;
@@ -232,7 +239,6 @@ footer p, a, label{
   .grid-group{
     margin-bottom: 0;
   }
-}
 
 @media (min-width: 800px){
   .grid{
