@@ -7,35 +7,31 @@
   <link rel="stylesheet" href="./style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="height=device-height, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
 
 
-  <!-- dont forget the meta tag for responsiveness -->
 </head>
 
 <body>
   <div id="box">
     <header>
-      <!-- <h1>Header</h1>
-      <p>Resize the browser window to see the responsive effect.</p> -->
-      <a href="https://en.wikipedia.org/wiki/Code_review" title="wikipedia on Code review">code review.</a>
-      <a href="https://en.wikipedia.org/wiki/Peer_review" title="wikipedia on Peer review"> peer review.</a>
-      <a href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/"
-        title="Smartbear on Code review">Best practices</a>
+      <!-- Header with a nav-bar -->
+      <nav>
+        <a href="#news-one">Beirut</a>
+        <a href="#news-two">China</a>
+        <a href="#news-three">Health</a>
+        <a href="#news-four"> Austraila</a>
+        <a href="#news-five">Royal family</a>
+        <a href="#news-six">Canada</a>
 
-      <!-- Some kind of logo and navbar -->
-      <!-- <div class="topnav">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-      </div> -->
-
+      </nav>
     </header>
     <main>
       <section class="big-news">
         <!-- The big news content: Trump's impeachment -->
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/White_House%2C_Blue_Sky.jpg"
-          alt="Sorry no picture" class="big-news">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/White_House%2C_Blue_Sky.jpg" alt="white house"
+          class="big-news">
         <div>
 
           <h1 class="item"><a href="https://www.bbc.com/news/world-us-canada-51165024" class="item" target="_blank">
@@ -57,12 +53,11 @@
       </section>
       <section class="row">
         <!--Violence in Beirut  -->
-        <div class="column">
+        <div class="column" id="news-one">
 
 
-          <img src="https://www.state.gov/wp-content/uploads/2019/04/Lebanon-2109x1406.jpg" alt="no picture"
-            class="column">
-          <h2 class="column">Main Content</h2>
+          <img src="https://www.state.gov/wp-content/uploads/2019/04/Lebanon-2109x1406.jpg" alt="Beirut" class="column">
+
           <a href="https://www.bbc.com/news/av/world-middle-east-51162899/lebanon-protests-anti-government-protesters-clash-with-police"
             class="column" target="_blank">Nearly 400 people were injured when protesters and the security forces
             clashed in
@@ -72,12 +67,12 @@
         </div>
 
         <!--China's economy  -->
-        <div class="column">
+        <div class="column" id="news-two">
 
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Beijing_skyline_from_northeast_4th_ring_road.jpg/1200px-Beijing_skyline_from_northeast_4th_ring_road.jpg"
-            alt="no picture" class="column">
-          <h2 class="column">Content two</h2>
+            alt="Bejing" class="column">
+
           <a href="https://www.bbc.com/news/business-51144892" class="column" target="_blank">China's economy grew last
             year at the slowest pace in almost three decades.
           </a>
@@ -88,8 +83,8 @@
 
           <img
             src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg?w=1155&h=1541"
-            alt="no picture" class="column">
-          <h2 class="column">Content three</h2>
+            alt="cup of tea" class="column" id="news-three">
+
           <a href="https://www.medicalnewstoday.com/articles/327521.php#1" class="column" target="_blank">Older adults
             who drink tea are less likely to be depressed.
           </a>
@@ -97,23 +92,22 @@
 
         </div>
         <!--Storms in Austraila -->
-        <div class="column">
+        <div class="column" id="news-four">
 
           <img
             src="https://www.macleans.ca/wp-content/uploads/2020/01/AUSTRALIA-WILDFIRE-TRENHOLM-MACGREGOR-HUTCHINS-JAN10-810x445-1578929560.jpg"
-            alt="no picture" class="column">
-          <h2 class="column">Content four</h2>
+            alt="fire in australia" class="column">
+
           <a href="https://www.bbc.com/news/world-australia-51165032" class="column">Forecasters have warned of severe
             storms in Victoria.</a>
 
         </div>
         <!--The Megan crisis -->
-        <div class="column">
+        <div class="column" id="news-five">
 
 
           <img src="https://i.insider.com/58395d42dd08953f1a8b488c?width=1600&format=jpeg&auto=webp"
             alt="Buckingham Palace" class="column">
-          <h2 class="column">Content three</h2>
 
           <a href="https://www.bbc.com/news/uk-51163865" class="column" target="_blank">Harry and Meghan drop royal
             duties and titles.
@@ -121,11 +115,11 @@
 
         </div>
         <!--Snowstorm in Canada -->
-        <div class="column">
+        <div class="column" id="news-six">
 
-          <img src="https://images.dailyhive.com/20190926110415/canada-snow-september.jpg" alt="no picture"
+          <img src="https://images.dailyhive.com/20190926110415/canada-snow-september.jpg" alt="snow in Canada"
             class="column">
-          <h2 class="column">Content four</h2>
+
           <a href="https://www.bbc.com/news/av/world-us-canada-51168462/canada-snowstorms-state-of-emergency-declared"
             class="column" target="_blank">Canada snowstorms: State of emergency declared.</a>
 
@@ -133,12 +127,12 @@
 
       </section>
 
-
+      <!-- page foot -->
     </main>
-    <footer>
-      <p>Footer</p>
+    <footer class="foot">
+      <p class="foot">By Elephants International News</p>
+      <img src="elephant.jpg" alt="a cute elephant" class="foot">
     </footer>
-
   </div>
 </body>
 
