@@ -13,7 +13,7 @@ p {
 /***** Header *****/
 
 header {
-  background-color: white;
+  background-color: darkred;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -33,8 +33,14 @@ nav {
   justify-content: space-between;
 
 }
+img {
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  margin: 20px;
+}
 
-@media (max-width: 500px) {
+@media (max-width: 667px) {
 .order-1{
   order:1;
 }
@@ -42,7 +48,30 @@ nav {
   order:2;
 }
 }
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
+    flex-direction: row;
+    background-color: darkred;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    background-color: white;
+  }
+  img {
+    width: 40%;
+  }
+}
+
+
 /***** BIG NEWS *****/
+
 
 
 
