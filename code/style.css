@@ -25,6 +25,7 @@ nav{
 nav a {
   color: #EFF0F1;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
   margin-left: 10px;
 }
 
@@ -177,17 +178,17 @@ header{
   height: 150px;
   display: flex;
   align-items: right;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
 }
 
 #hippo {
   height: 50%;
-  padding: 20px;
+  padding: 30px;
 }
 
 nav {
-  display: none;
+  display: flex;
 }
 
 h3{
@@ -238,6 +239,12 @@ width: 50%;
   justify-items: center;  
   flex-direction: row;
   /*justify-content: flex-end;*/
+}
+
+nav a {
+  color: #212322;
+  margin-left: 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .product-img{
