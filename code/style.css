@@ -44,7 +44,7 @@ body {
   margin-left: 40px;
 }
 
-.video-container {
+.image-container {
   z-index: -100;
   width: 100%;
   height: 100%;
@@ -52,10 +52,7 @@ body {
   position:absolute;
   top:0;
   left:0;
-  }
-
-  #video-play {
-    widows: 100%;
+  object-fit: cover;
   }
 
 /****************** Big news style **********************/
@@ -101,6 +98,11 @@ body {
   color: white;
 }
 
+.main-titel-story:hover {
+  text-decoration: underline;
+  color: indianred;
+}
+
 
 .by {
   font-size: 12px;
@@ -119,7 +121,7 @@ body {
 
 h1 {
   color: whit;
-  background-color: url ("paint1.jpg");
+  background-image: url ("paint1.jpg");
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   padding: 30px;
@@ -198,16 +200,6 @@ h1:hover {
     float: center;
     padding-right: 2%;
   }
-}
-
-  /* Style mobile version*/
-  @media only screen and (max-width: 640px) {
-    .video-container {
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    align-content: left;
-  } 
 }
 
 /* Style mobile version*/
