@@ -1,4 +1,261 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+body, html{
+  width: 100%;
+  height: 100%;
 }
+
+body {
+  display: block;
+}
+
+/****************** Sidebar style ***********************/
+
+.navigation {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sidebar-right {
+  margin: 35px;
+  float: right;
+  padding-right: 4%;
+}
+
+.sidebar-right a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+.sidebar-right a:hover {
+  color: blueviolet;
+}
+
+.sidebar-logo {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+/* Style mobile version*/
+@media only screen and (max-width: 640px){
+  .sidebar-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+.video-container {
+  z-index: -100;
+  width:100%;
+  height:85%;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  }
+
+  #video-play {
+    widows: 100%;
+  }
+
+/****************** Big news style **********************/
+
+.big-news-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2px 16px;
+  margin: 30%;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+
+.date {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: white;
+}
+
+.main-titel {
+  padding-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: white;
+}
+
+.subject-story {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1;
+  color: white;
+}
+
+.main-titel-story {
+  padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; 
+  color: white;
+}
+
+
+.by {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1;
+  color: white;
+}
+
+
+/****************** Other news style ***********************/
+
+.other-news {
+  margin-top: 50%;
+}
+
+h1 {
+  color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 2%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 30%;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.flex-container > div {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 1px;
+  justify-content: center;
+}
+
+.art-img {
+  width: 90%;
+  margin: auto;
+} 
+
+.art-img img {
+  display: block;
+   width: 100%;
+   height: 100%s;
+   height: auto; 
+   margin: auto;
+}
+
+.titel-img {
+  padding-top: 3px;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  margin: 0 15px;
+}
+
+.text-img {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin: 0 12px;
+  width: 90%;
+  padding-top: 5px;
+  color: black;
+}
+
+.art-video {
+  width: 90%;
+  width: 90%;
+  margin: auto;
+}
+
+.art-video video {
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+
+
+/****************** media query ***********************/
+
+/* Style mobile version*/
+@media only screen and (max-width: 640px){
+  .navigation {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 300;
+    font: inherit;
+    color: inherit;
+    font-size: 15px;
+  }
+}
+
+/* Style mobile version*/
+@media only screen and (max-width: 640px){
+  .sidebar-right {
+    float: center;
+    padding-right: 2%;
+  }
+}
+
+  /* Style mobile version*/
+  @media only screen and (max-width: 640px) {
+    .video-container {
+    width: 100%;
+    height: 90%;
+    z-index: -100;
+    align-content: left;
+  } 
+}
+
+  /* Style mobile version*/
+@media only screen and (max-width: 640px){
+  .big-news-container{
+   display: block;
+   position: relative;
+   left: 0;
+   width: 100%;
+   margin: 40%;
+   margin-left: 5px;
+   padding: 2px 5px;
+   color: inherit;
+   font-size: 5px;
+  }
+ }
+
+ @media only screen and (max-width: 640px) {
+  .main-titel-story {
+    font-size: 30px; 
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    padding: 4px;
+    margin: 0;
+  }
+}
+
+
