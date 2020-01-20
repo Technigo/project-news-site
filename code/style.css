@@ -1,4 +1,59 @@
-html {
+body {
   background: #0025ff;
   color: #fff;
+  margin: 0;
 }
+
+h1 {
+  font-family: Helvetica;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/**** HEADER ****/
+
+header {
+  background: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+nav {
+  border: 1px solid blue;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .nav-logo {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+}
+
+/**** BIG NEWS ****/
+
+/**** NEWS GRID ****/
