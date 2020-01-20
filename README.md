@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was the first project I did at the Technigo Coding Bootcamp. The focus of the assignment was to create a newssite with a responsive layout for desktop, tablet and mobile screens using Flexbox. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with the creation of the HTML structure of the site, adding all elements that were needed. Thereafter I continued with the CSS styling for the mobile screen size, using Flexbox to create the layout of the page. I wrote media queries for screen sizes over 650px and 900px respectively so that the site would be easy to read, aesthetically pleasing and understandable for all screen sizes. If I had more time I would go over the design of the page to make it less basic and add a more modern feeling to it.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here you can see the project live:  

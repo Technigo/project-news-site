@@ -1,4 +1,180 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background: #e0e1d9;
+  color: #0e271d;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px; 
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #0e271d;
+  text-decoration: none;
+}
+
+
+/*** header section ***/
+
+header {
+  background-color: #e0d2c7;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px; 
+}
+
+.site-name {
+  display: flex;
+  justify-content: row;
+}
+
+.logo {
+  width: 110px;
+}
+
+.nav-logo {
+  display: none;
+}
+
+nav {
+  display: none;
+} 
+
+
+  /*** big news section ***/
+
+.big-news {
+  display: flex; 
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.big-news img {
+  width: 100%;
+}
+
+  /*** news section ***/
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-bottom: 12px;
+}
+
+.news img{
+  width: 95%;
+}
+
+  /*** footer ***/
+
+footer {
+  background-color: #e0d2c7;
+  height: 100px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+}
+
+  /*** media queries ***/
+
+@media (min-width: 650px){
+  header {
+    justify-content: space-between;
+  }
+
+  .site-name {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    width: 110px;
+    display: inline-block;
+  }
+
+  .big-news {
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .big-news-text {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .big-news img {
+    width: 50%;
+  }
+
+  .news {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .news-cards {
+    width: 50%;
+    align-items: flex-start; 
+  }
+}
+
+
+@media (min-width: 900px) {
+
+  .site-name {
+    display: flex;
+    justify-content: row;
+  }
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  nav a {
+    margin-left: 18px;
+  }
+
+  .logo {
+    display: inline;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .big-news img {
+    width: 40%;
+  }
+
+  .news-cards {
+    width: 25%;
+  }
+
+  h1 {
+    display: inline; 
+  }
 }
