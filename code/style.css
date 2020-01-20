@@ -1,11 +1,12 @@
 
 body, html{
-  width: 100%;
-  height: 100%;
+  background-color:white;
+  margin: 0;
 }
 
 body {
-  display: block;
+  margin: 0;
+  background-color: white;
 }
 
 /****************** Sidebar style ***********************/
@@ -35,7 +36,7 @@ body {
 }
 
 .sidebar-right a:hover {
-  color: blueviolet;
+  color: rgba(230, 151, 141, 0.612);
 }
 
 .sidebar-logo {
@@ -43,18 +44,10 @@ body {
   margin-left: 40px;
 }
 
-/* Style mobile version*/
-@media only screen and (max-width: 640px){
-  .sidebar-logo {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-}
-
 .video-container {
   z-index: -100;
-  width:100%;
-  height:85%;
+  width: 100%;
+  height: 100%;
   overflow:hidden;
   position:absolute;
   top:0;
@@ -125,40 +118,45 @@ body {
 }
 
 h1 {
-  color: black;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 2%;
+  color: whit;
+  background-color: url ("paint1.jpg");
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 30px;
+}
+
+h1:hover {
+  background-color: rgba(53, 73, 108, 0.482);
 }
 
 .flex-container {
+  margin: 30%;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-wrap: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  min-width: 30%;
-  padding: 5px;
-  background-color: rgb(255, 255, 255);
 }
 
 .flex-container > div {
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  margin: 1px;
-  justify-content: center;
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 30px;
 }
 
-.art-img {
-  width: 90%;
-  margin: auto;
-} 
-
-.art-img img {
-  display: block;
-   width: 100%;
-   height: 100%s;
-   height: auto; 
-   margin: auto;
+.flex-container div img {
+  width: 100%;
+  height: auto;
 }
+
+.flex-container div video {
+  width: 100%;
+  height: auto;
+}
+
 
 .titel-img {
   padding-top: 3px;
@@ -166,7 +164,7 @@ h1 {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   color: black;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .text-img {
@@ -177,19 +175,6 @@ h1 {
   padding-top: 5px;
   color: black;
 }
-
-.art-video {
-  width: 90%;
-  width: 90%;
-  margin: auto;
-}
-
-.art-video video {
-  display: block;
-  width: 100%;
-  height: 100%; 
-}
-
 
 /****************** media query ***********************/
 
@@ -219,10 +204,18 @@ h1 {
   @media only screen and (max-width: 640px) {
     .video-container {
     width: 100%;
-    height: 90%;
+    height: 100%;
     z-index: -100;
     align-content: left;
   } 
+}
+
+/* Style mobile version*/
+@media only screen and (max-width: 640px){
+  .sidebar-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 
   /* Style mobile version*/
@@ -247,15 +240,5 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 100%;
-    padding: 4px;
-    margin: 0;
-  }
-}
 
 
