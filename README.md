@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Making a responsive news site with flexbox using HTML and CSS for different outlets.
 
 ## The problem
 
