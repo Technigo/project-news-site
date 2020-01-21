@@ -40,10 +40,15 @@ header {
   padding: 0 16px;
 }
 
+header img {
+  width: 120px;
+  align-items: center;
+}
+
 .hamburger {
   display: flex;
   width: 30px;
-  height: 30px;
+  height: 25px;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 24px;
@@ -51,14 +56,10 @@ header {
 
 .hamburger div {
   width: 30px;
-  height: 5px;
+  height: 4px;
   background: white;
 }
 
-header img {
-  width: 160px;
-  align-items: center;
-}
 
 /****** NAV BAR ******/
 
@@ -82,7 +83,6 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 0px 0px;
-  
 }
 
 .footer-nav a {
@@ -149,14 +149,11 @@ footer {
 }
 
 .newscard i {
-  display: ;
   size: 200%;
-  
 }
 
 .newscard a:hover {
-/*   background: #60a9d03e; */
-  box-shadow: 6px 6px 0px 0 #1e82c1;
+  box-shadow: 6px 6px 0px 0px #1e82c1;
 }
 
 .newscard a div {
@@ -183,13 +180,17 @@ footer {
 @media (min-width: 668px) {
   header {
     justify-content: space-between;
-    
+  }
+
+  header img {
+    width: 160px;
   }
 
   nav {
     display: inline-block;
     font-size: 90%;
   }
+
   nav a {
     color: white;
     text-decoration: none;
@@ -205,6 +206,7 @@ footer {
   .hamburger {
     display: none;
   }
+
   .bignews-container div {
     text-align: left;
   }
@@ -214,11 +216,9 @@ footer {
     flex-grow: 1;
     margin: 16px;
   }
-
 }
 
 @media (min-width: 900px) {
-
   nav a {
     color: white;
     text-decoration: none;
@@ -262,4 +262,3 @@ footer {
     font-weight: bold;
   }
 }
-
