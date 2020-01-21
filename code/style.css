@@ -68,13 +68,21 @@ nav a:hover {
 
 .big-news {
   padding:0;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* position: relative; */
   text-align: left;
-  justify-content: center;
-  
-  
+  margin-top: 40px;
+ 
+}
+
+.big-news a {
+  font-size: 13px;
+  color: #999999;
+  margin: 0 0 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200px;
+  text-decoration: none ;
 }
 
 h2 {
@@ -93,9 +101,9 @@ text-align: left;
 
 .big-news img {
   width: 100%;
-  margin-top: 10px;
+  margin: 0px;
+  height: 100%;
 }
-
 
 
 .big-news p {
@@ -106,6 +114,32 @@ text-align: left;
   text-align: left;
   margin: 10px 0px;
 }
+
+.column-news
+{
+  display: none;
+  max-width: 20%;
+  height:100%;
+  
+}
+
+.column-news a {
+  font-size: 13px;
+  color: #999999;
+  margin: 0 0 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200px;
+  text-decoration: none ;
+}
+
+
+
+.column-news h2 {
+  margin: 0 0 0 5px;
+  font-size: 24px;
+}
+
+
 
 .small-news img {
   width: 100%;
@@ -132,6 +166,14 @@ color: #333333;
 
 .small-news div {
   margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.small-news {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -299,15 +341,18 @@ form input {
   .hamburger {
     display: none;
   }
+
+
   
  .small-news {
   display: flex;
   flex-wrap: nowrap;
   margin: 0% 5%;
+  flex-direction: row;
 }
 
  .small-news div {
-  /* display: flex; */
+  display: flex; 
   flex-direction: column;
   margin-left: 10px;
 } 
@@ -328,13 +373,10 @@ figure {
 }
 
 
-}
+
 
 @media (min-width: 1024px) {
-/* .big-news {
-  
-  
-} */
+
 
 header {
   height: 200px;
@@ -353,7 +395,7 @@ nav {
 }
 
 
-nav a{
+nav a {
   width: 130px;
   height: 40px;
   background-color: rgba(179, 143, 126, 0.692);
@@ -374,6 +416,44 @@ nav a{
   
   }
 
+  .big-news {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .big-news p {
+    align-self: flex-start;
+  }
+
+  .big-news img {
+    width: 97%; 
+  }
+
+  
+  .top-news {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+  }
+
+
+  .column-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+
+  .column-news img {
+    width: 97%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
   .two {
     display: flex;
     margin-top: 10px; 
@@ -381,19 +461,16 @@ nav a{
     width: 100%;
   }
   .user-picture img {
-    width: 47%;
-    
+    width: 47%;  
   }
 .user-picture {
   width: 100%;
-  
 }
 
 form {
   display: flex;
   justify-content: center;
 }
- 
 
 
 }
