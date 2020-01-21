@@ -37,6 +37,7 @@ h2 a{
 h2 img{
   height: 30px;
   width: 30px;
+  margin: 0;
 }
 
 /*---- HEADER BACKGROUND PIC-----*/
@@ -44,7 +45,8 @@ h2 img{
 figure img{
   max-height: 70vh;
   object-fit: cover;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 /*------ NAVBAR ------*/
@@ -141,7 +143,7 @@ nav li a:hover{color: rgba(0, 136, 169, 1);}
 	 justify-content: center;
 	 max-width: 1000px;
    max-height: 500px;
-   margin-bottom: 2rem;
+   margin-bottom: 3rem;
 }
  article img {
    object-fit: cover;
@@ -173,7 +175,7 @@ nav li a:hover{color: rgba(0, 136, 169, 1);}
 	 -webkit-backface-visibility: hidden;
 }
  .tiles .tile .details {
-	 font-size: 16px;
+   font-size: 16px;
 	 padding: 20px;
 	 color: #fff;
 	 position: absolute;
@@ -193,12 +195,12 @@ nav li a:hover{color: rgba(0, 136, 169, 1);}
  .tiles .tile .details .title {
 	 line-height: 1;
 	 font-weight: 600;
-	 font-size: 18px;
+	 font-size: 24px;
 }
  .tiles .tile .details .info {
 	 line-height: 1.2;
 	 margin-top: 5px;
-	 font-size: 12px;
+	 font-size: 16px;
 }
  .tiles .tile:focus:before, .tiles .tile:hover:before, .tiles .tile:focus span, .tiles .tile:hover span {
 	 opacity: 1;
@@ -232,7 +234,7 @@ main section{
 /* ----- SMALL-NEWS-GRIDS ----- */
 img{
   width: 100%;
-  /* display: block; */
+  margin: 1rem 0;
 }
 
 p{
@@ -244,11 +246,11 @@ p{
   margin-bottom: 3rem;
 }
 
-/* FOOTER */
+/* ---- FOOTER ---- */
 footer{
   margin: 0;
   padding: 40px 10px;
-  margin-top: 30px;
+  margin-top: 6rem;
   background-color: rgba(0, 136, 169, 1);
   width: 100%;
   display: flex;
@@ -264,8 +266,6 @@ footer p, a, label{
 .footer{
   max-width: 1000px;
   text-align: center;
-  /* display: flex;
-  justify-content: space-between; */
   width: 100%;
 }
 
