@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Build a responsive newssite using flexbox layout and media queries.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started to sketch out the layout of my page and figured out what sort of newssite i wanted it to be. I read up on flexbox, boxmodel and media queries. Watched youtube clips and the Noops challenge also really helped clear things out when i got stuck. I spent quite long time to get the images to be the same size on the smaller "news cards" and i'm not sure if the solution i found really is the best practice but it worked. If I had more time I would have wanted to add animation, more complex hovering, a newsletter form and do the footer more stylish.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
