@@ -8,3 +8,4 @@ I started to sketch out the layout of my page and figured out what sort of newss
 
 ## View it live
 
+https://project-newssite-artmag.netlify.com
