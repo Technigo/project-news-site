@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+I have created a news site called Green Menu. On this site therewill be news about vegan food. And todays menu will be published every day.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First I made a sketch of how it would look. I used flexbox to make it responsive. If I had more time I would make hover on the links. Maybe change the header, put in a proper logo and make the links work. 
+
+Next time I will plan the responsive effects earlier, already when I make the sketch.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+This eill be deployed on Netlify.
