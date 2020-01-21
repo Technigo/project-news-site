@@ -29,11 +29,21 @@ a {
   text-decoration: none;
 }
 
-/* .navbar-all {
+.navbar-all {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* padding: 0 3em  */
+}
+
+a.navbar {
+  padding: 0 1em;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-around;
 } */
 
 
@@ -75,7 +85,10 @@ h4 {
 }
 
 .glacier-img {
-  width: 100%;
+  width:90%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
@@ -171,11 +184,11 @@ h4 {
 /*********** BORDER STYLE *******/
 
 
-hr.style-four {
+/* hr.style-four {
   height: 12px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /********** FOOTER ***********/
 
@@ -199,6 +212,7 @@ img.black-logo-bottom {
 }
 
 section.footer p {
+  color: #2a2828;
   font-size: 8px;
   text-align: center;
   padding-bottom: 6em;
@@ -221,6 +235,21 @@ section.footer-links ul {
   font-weight: 900;
 }
 
+ul {
+  list-style-type: none;
+  color: #2a2828;
+  line-height: 2.5em;
+}
+
+.footer-links-small a {
+  color: #2a2828;
+}
+
+section.footer-links-small {
+  font-size: 8px;
+  line-height: 1.8em;
+}
+
 img.technigo-logo {
   display: block;
   margin-left: auto;
@@ -228,8 +257,13 @@ img.technigo-logo {
   width: 30px;
   height: 30px;
   padding: 1em;
-  margin-bottom: 1.5em;
-  
+  margin-bottom: 1.5em; 
+}
+
+section.footer-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /****** MEDIA QUERIES ******/
@@ -241,13 +275,63 @@ img.technigo-logo {
 }
 
 
-
 @media (min-width: 667px) {
+  .navbar-all {
+    justify-content: space-around;
+  }
+
   .menu-toggle {
     display: none;
   }
+
   .portrett-sec {
     display: flex;
     justify-content: center;
+  }
+
+  .most-read-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .most-read-all img {
+    max-width: 300px;
+  }
+
+  .articles-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .articles-all h3 h4 {
+    max-width: 300px;
+  }
+
+  .articles-all img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .articles-all {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 800px;
+    justify-content: space-around;
+  }
+
+  .articles-all img {
+    max-width: 150px;
+  }
+  
+  .articles-all h3 {
+    max-width: 150px;
+    margin-bottom: 1.2em;
+  }
+
+  .articles-all h4 {
+    display: none;
   }
 }
