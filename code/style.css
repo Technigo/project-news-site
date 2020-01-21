@@ -17,12 +17,14 @@ h3 {
   font-size: 18px;
 }
 
+h3:hover {
+  opacity: 0.6;
+}
+
 a {
   color: #0e271d;
   text-decoration: none;
 }
-
-/*** Min hover-effekt fungerar inte på länkarna som är inbäddade i mina "nyhetskort". Hur komemr det sig? ***/
 
 a:hover {
   opacity: 0.6;
@@ -50,9 +52,6 @@ header {
 nav {
   display: none;
 } 
-
-/*** Jag trodde att det skulle räcka med att sätta display: none på nav, eftersom nav-logo bor i den. 
-Men det visade sig att jag behövde gömma nav-logo separat. Hur kommer det sig? ***/
 
 .nav-logo {
   display: none;
@@ -84,12 +83,12 @@ Men det visade sig att jag behövde gömma nav-logo separat. Hur kommer det sig?
   margin: 8px;
   padding: 10px;
   width: 95%;
+  text-align: center;
   box-shadow: 10px 10px 0 0 #beb4b3; 
 }
 
 .news img{
   width: 95%;
-  margin: 8px;
 }
 
   /*** footer ***/
