@@ -1,12 +1,14 @@
-# News Site
+# Arctic News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A responsive news site using Flexbox layout.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I have quite a lot of experience working with Flexbox and responsive websites in general, so this assignment was a lot repetition to me – which was great. I have reviewed every little detail that I thought felt clear to me, and tried to find new and better solutions to approach the issues that comes up with a responsive layout.
+
+I made a wireframe sketch to plan the layout of the page. I tried to make small variations in the header depending on the screen size/device. I also tried to build it flexible so that I would need to write as less media querys as possible.
+
+If I had more time I would probably make a better solution with the links in the article grid. The hover effect could target the whole card to be more visible and accessible.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+View the site [over here](vibrant-goldstine-d37706.netlify.com)
