@@ -160,6 +160,11 @@ a.portrett .portrett {
 }
 
 /******** THE GALLERY ********/
+a.gallery-section {
+  display: flex;
+  align-items: center;
+}
+
 
 .gallery-section h3 {
   color: #2a2828;
@@ -184,14 +189,9 @@ a.portrett .portrett {
   display: block;
   padding: 0 40px 10px 40px;
   width: 80%;
-  max-height: 679px;
-  /* display: flex;
-  justify-content: center; */
-  margin-left: auto;
-  margin-right: auto;
+  max-height: auto;
+  max-width: 550px;
 }
-
-
 
 .arrow {
   height: 1.5em;
@@ -208,8 +208,14 @@ i {
 
 /********** THE ARTICLES *********/
 
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .articles img {
-  padding: 0px 40px 10px 40px;
+  /* padding: 0px 40px 10px 40px; */
   width: 80%;
   display: flex;
   justify-content: center;
@@ -219,7 +225,7 @@ i {
 .articles h3 {
   color: #2a2828;
   text-align: left;
-  padding: 0px 40px 10px 40px;
+  /* padding: 0px 40px 10px 40px; */
   margin: 0;
 }
 
@@ -321,6 +327,16 @@ section.footer-all {
   .navbar {
     display: none;
   }
+
+  a.articles {
+    display: flex;
+    align-items: center;
+  }
+
+  /* a.articles h3 h4 {
+    display: flex;
+    justify-content: flex-start;
+  } */
 }
 
 
@@ -345,8 +361,20 @@ section.footer-all {
   }
 
   .most-read-all img {
-    max-width: 300px;
+    max-width: 200px;
+    padding: 0 1em 1em 1em;
   }
+
+  .most-read-all h3 {
+    max-width: 180px;
+    padding: 0 1em 1em 1em;
+  }
+
+  .most-read-all h4 {
+    padding: 0 1em 1em 1em;
+    margin: 0 0 40px 0;
+  }
+
 
   .articles-all {
     display: flex;
@@ -354,12 +382,17 @@ section.footer-all {
     justify-content: center;
   }
 
-  .articles-all h3 h4 {
-    max-width: 300px;
+  .articles-all h3 {
+    max-width: 200px;
+  }
+
+  .articles-all h4 {
+    min-width: 220px;
+    margin: 0 0 40px 0;
   }
 
   .articles-all img {
-    max-width: 300px;
+    max-width: 200px;
   }
 }
 
@@ -372,7 +405,16 @@ section.footer-all {
   }
 
   .articles-all img {
-    max-width: 150px;
+    max-width: 250px;
+    /* max-width: 190px; */
+    /* padding: 0px 0px 0px 40px; */
+    display: flex;
+    align-items: center;
+  }
+
+  a.articles {
+    display: flex;
+    justify-content: center;
   }
   
   .articles-all h3 {
