@@ -199,17 +199,9 @@ footer {
 /* Media queries */
 /* Tablet styles */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 668px) {
   
   .site-title {
-    display: inline;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  nav.main-nav {
     display: inline;
   }
 
@@ -240,9 +232,17 @@ footer {
 
 /* Desktop styles */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   header.site-header {
     height: 120px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  nav.main-nav {
+    display: inline;
   }
   
   .article-item {
