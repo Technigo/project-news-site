@@ -15,7 +15,6 @@ h2 {
 
 h3 {
   font-size: 18px;
-  margin-bottom: 5px;
 }
 
 a {
@@ -23,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+/*** Min hover-effekt fungerar inte på länkarna som är inbäddade i mina "nyhetskort". Hur komemr det sig? ***/
+
+a:hover {
+  opacity: 0.6;
+}
 
 /*** header section ***/
 
@@ -43,13 +47,16 @@ header {
   width: 110px;
 }
 
-.nav-logo {
-  display: none;
-}
-
 nav {
   display: none;
 } 
+
+/*** Jag trodde att det skulle räcka med att sätta display: none på nav, eftersom nav-logo bor i den. 
+Men det visade sig att jag behövde gömma nav-logo separat. Hur kommer det sig? ***/
+
+.nav-logo {
+  display: none;
+}
 
 
   /*** big news section ***/
@@ -68,22 +75,21 @@ nav {
 
 .news {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px;
 }
 
 .news-cards {
   background-color: #fff;
+  margin: 8px;
+  padding: 10px;
   width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding-bottom: 12px;
-  margin: 4px;
+  box-shadow: 10px 10px 0 0 #beb4b3; 
 }
 
 .news img{
   width: 95%;
+  margin: 8px;
 }
 
   /*** footer ***/
@@ -99,6 +105,7 @@ footer {
   /*** media queries ***/
 
 @media (min-width: 650px){
+
   header {
     justify-content: space-between;
   }
@@ -132,6 +139,7 @@ footer {
 
   .big-news img {
     width: 50%;
+    margin: 10px;
   }
 
   .news {
@@ -140,7 +148,8 @@ footer {
   }
 
   .news-cards {
-    width: 45%;
+    width: 40%;
+    flex-grow: 1;
   }
 }
 
@@ -153,6 +162,7 @@ footer {
   }
 
   nav {
+    width: 50%;
     justify-content: flex-end;
   }
 
@@ -177,7 +187,8 @@ footer {
   }
 
   .news-cards {
-    width: 24%;
+    width: 20%;
+    flex-grow: 1;
   }
 
   h1 {
