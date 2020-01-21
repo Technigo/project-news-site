@@ -10,5 +10,5 @@ Next time I will plan sizes before beginning coding and I would try to finish a 
 
 ## View it live
 
-Please look at my new literary magazine online: Bläck🖤
+Please look at my new online literary magazine: Bläck🖤
 https://kind-yalow-41f0cd.netlify.com
