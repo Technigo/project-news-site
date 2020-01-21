@@ -1,4 +1,4 @@
-#box{
+.box{
   max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +165,7 @@ footer{
 }
 
 @media screen and (min-width: 576px) {
-  #box{
+  .box{
     max-width: 90vw;
   }
   nav a:nth-child(odd) {
@@ -216,7 +216,7 @@ width: 90%;
 
 
 @media screen and (min-width: 992px) {
-  #box{
+  .box{
     max-width: 900px;
   }  
   .column {
@@ -225,7 +225,7 @@ width: 90%;
 }
 
 @media screen and (min-width: 1200px) {
-  #box{
+  .box{
     max-width: 1080px;
   }
 }
