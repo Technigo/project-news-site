@@ -1,12 +1,18 @@
 
-body, html{
-  background-color:white;
+body, html {
   margin: 0;
+  height: 100%;
+  overflow: none;
+  background:#ffffff;
 }
 
-body {
-  margin: 0;
-  background-color: white;
+.hero-image img {
+  display: fixed;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: top center; 
+  background-repeat: no-repeat;
 }
 
 /****************** Sidebar style ***********************/
@@ -19,12 +25,13 @@ body {
   top: 0;
   width: 100%;
   z-index: 1;
+  background-color: rgba(128, 128, 128, 0.29);
 }
 
 .sidebar-right {
   margin: 35px;
   float: right;
-  padding-right: 4%;
+  padding-right: 20px;
 }
 
 .sidebar-right a {
@@ -33,10 +40,12 @@ body {
   color: rgb(255, 255, 255);
   font-family: 'Courier New', Courier, monospace;
   font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.8mm;
 }
 
 .sidebar-right a:hover {
-  color: rgba(230, 151, 141, 0.612);
+  color: rgba(230, 151, 141, 0.715);
 }
 
 .sidebar-logo {
@@ -44,28 +53,20 @@ body {
   margin-left: 40px;
 }
 
-.image-container {
-  z-index: -100;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-  position:absolute;
-  top:0;
-  left:0;
-  object-fit: cover;
-  }
-
 /****************** Big news style **********************/
 
 .big-news-container {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 2px 16px;
-  margin: 30%;
-  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30%;
   z-index: 1;
+  background-color: rgba(150, 126, 46, 0.523);
+  color: white;
 }
+
 
 
 .date {
@@ -73,14 +74,12 @@ body {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
-  color: white;
 }
 
 .main-titel {
   padding-bottom: 15px;
   font-family: 'Playfair Display', serif;
   font-size: 25px;
-  color: white;
 }
 
 .subject-story {
@@ -88,19 +87,28 @@ body {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 1;
-  color: white;
 }
 
 .main-titel-story {
   padding-bottom: 5px;
   font-family: 'Playfair Display', serif;
   font-size: 30px; 
+}
+
+a {
   color: white;
 }
 
-.main-titel-story:hover {
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.main-titel-story a:hover {
+  background-image url (big-news2.jpg);
+  opacity: 70%;
   text-decoration: underline;
-  color: indianred;
+  color: rgba(230, 151, 141);
 }
 
 
@@ -115,122 +123,69 @@ body {
 
 /****************** Other news style ***********************/
 
-.other-news {
-  margin-top: 50%;
+main {
+  width: 100%;
+  height: auto;
 }
 
-h1 {
-  color: whit;
-  background-image: url ("paint1.jpg");
-  text-align: center;
+.top-text h1 {
+  margin-left: 15px;
+  margin-top: 2%;
+  padding: 5px;
+  color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
-  padding: 30px;
-}
-
-h1:hover {
-  background-color: rgba(53, 73, 108, 0.482);
-}
-
-.flex-container {
-  margin: 30%;
-  display: -ms-flexbox;
-  -ms-flexbox-wrap: wrap;
-  -ms-flexbox-wrap: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
-}
-
-.flex-container > div {
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  width: 30px;
-}
-
-.flex-container div img {
-  width: 100%;
-  height: auto;
-}
-
-.flex-container div video {
-  width: 100%;
-  height: auto;
-}
-
-
-.titel-img {
-  padding-top: 3px;
-  padding-bottom: 1px;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
-  margin: 0 10px;
+  font-size: 25px;
 }
 
-.text-img {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  margin: 0 12px;
-  width: 90%;
-  padding-top: 5px;
-  color: black;
+.news-container {
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
 }
+
+.news-card {
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.news-card h2 {
+  font-size:15px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 2;
+}
+
+.news-card p {
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.news-card img {
+  width: 250px;
+  height: 250px;
+}
+
 
 /****************** media query ***********************/
 
-/* Style mobile version*/
-@media only screen and (max-width: 640px){
-  .navigation {
-    display: block;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    z-index: 300;
-    font: inherit;
-    color: inherit;
-    font-size: 15px;
+@media (min-width: 667px) {
+  .news-card {
+    display: flex;
+    width: 40%;
+    flex-grow: 1;
   }
 }
 
-/* Style mobile version*/
-@media only screen and (max-width: 640px){
-  .sidebar-right {
-    float: center;
-    padding-right: 2%;
-  }
-}
 
-/* Style mobile version*/
-@media only screen and (max-width: 640px){
-  .sidebar-logo {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-}
 
-  /* Style mobile version*/
-@media only screen and (max-width: 640px){
-  .big-news-container{
-   display: block;
-   position: relative;
-   left: 0;
-   width: 100%;
-   margin: 40%;
-   margin-left: 5px;
-   padding: 2px 5px;
-   color: inherit;
-   font-size: 5px;
-  }
- }
-
- @media only screen and (max-width: 640px) {
-  .main-titel-story {
-    font-size: 30px; 
-    color: white;
-  }
-}
 
 
 
