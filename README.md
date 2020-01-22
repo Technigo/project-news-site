@@ -1,6 +1,6 @@
 # News Site
 
-I struggled with many things. Mainly making the webpage look good in mobile, tablet and desktop. 
+I struggled with many things. Mainly making the webpage look good in mobile, tablet and desktop. And getting the main article image to be a hero banner with the h1 placed nicely on top.
 
 ## The problem
 
