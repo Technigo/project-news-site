@@ -12,7 +12,7 @@ which I knew would be different in larger browser sizes. It was important to kno
 
 Switching the flex direction between 'row' and 'column' was a simple way to restyle the main look of the page depending on the browser-size. Setting 'max-widths' to certain elements also helped to keep the look of the page clean no matter how stretched or compressed it was. 
 
-If I had more time I would like to have added a sidebar to the main body of the page, hidden in mobile view. Its flex-container would have been a column, set in the broader 'row' flex-container of the whole main-news page.
+If I had more time I would like to have added a sidebar to the main body of the page, hidden in mobile view. Its flex-container would have been a column, set in the broader 'row' flex-container of the whole main-news page. I also realized that there is no 'hover' function on real mobiles so I had to make a quick fix for my grid-news items and change the opacity of text. I am not entirely happy with how this looks and would change if I had more time. 
 
 
 ## View it live
