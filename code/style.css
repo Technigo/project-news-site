@@ -193,14 +193,17 @@ color: #333333;
 
 
 
-.user-picture {
+.user-picture div{
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; 
+  /* flex-direction: column; */
+  flex-direction: row;
+  flex-wrap: wrap; 
   align-items: flex-start;
   /* padding-top: 20px; */
   width:98%; 
   justify-content: center;
+  
+  
   
   } 
 
@@ -208,10 +211,11 @@ color: #333333;
 
  .user-picture img { 
   display: flex;
-  min-width:48%; 
-  max-width: 48%;
+  width:48%; 
+  height: 48%;
   margin: 0px;
-  padding-left: 10px;
+  padding-left:10px;
+  
 } 
 
 
@@ -220,6 +224,7 @@ figure {
   flex-direction: row;
   margin-top: 5px;
   justify-content: center;
+  
 }
 
 .user-picture a {
@@ -386,6 +391,7 @@ form input {
   display: flex;
   flex-direction: row;
   
+  
 }
 
 figure {
@@ -481,12 +487,21 @@ nav a {
     padding: 0 0 0 0;
     width: 100%;
   }
-  .user-picture img {
-    width: 47%;  
+
+  .user-picture div {
+    flex-wrap: nowrap;
+    
   }
-.user-picture {
-  width: 100%;
-}
+
+  .user-picture img {
+    width: 250px;
+    height: 250px;   
+  }
+
+  .user-picture h2 {
+    text-align: center;
+  }
+
 
 form {
   display: flex;
