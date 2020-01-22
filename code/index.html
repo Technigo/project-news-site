@@ -1,22 +1,171 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <a name="top-desktop"></a>
+    <div class="main-header-container">
+      <form class="header-form" action="">
+        <input type="text" name="email-address" value="E-mail address">
+        <input type="submit" value="Subscribe">
+      </form>
+      <img class="logo" src="logo.svg" alt="site logo">
+      <nav class="mobile-header-right">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <nav class="desktop-header-right">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </nav>
+    </div>
+    <nav class="desktop-nav-bar">
+      <ul>
+        <li class="li politics"><a href="#">Politics</a></li>
+        <li class="li gaul"><a href="#">Gaul</a></li>
+        <li class="li byzantium"><a href="#">Byzantium</a></li>
+        <li class="li egypt"><a href="#">Egypt</a></li>
+        <li class="li germanica"><a href="#">Germanica</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a name="top-mobile"></a>
+
+
+  <main>
+
+    <section class="big-headline">
+      <h3>Politics > Gaul</h3>
+      <h1>Caesar crosses the Rubicon
+        as Rome braces itself for Civil
+        War
+      </h1>
+      <div class="journalist">
+        <div class="journalist-left">
+          <p>By Titus Livius</p>
+          <time>Wed 22 Jan 2020 12:00 GMT</time>
+        </div>
+        <div class="journalist-socials">
+          <a href="#" class="fa fa-envelope"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+      </div>
+    </section>
+
 
     <section class="big-news">
-      <!-- The big news content -->
+      <figure>
+        <img class="big-image" src="therubicon.jpeg" alt="rubicon river">
+        <figcaption>The river has long served
+          as a natural border between Italy and its province
+          Gaul. Photgraph: Anachronism &copy;
+        </figcaption>
+      </figure>
+
+      <p class="big-text">Julius Caesar has led a single legion,
+        Legio XIII, south over the Rubicon from Cisalpine Gaul to Italy, making his way to Rome.
+        In doing so, he has deliberately broken the law on imperium and made armed conflict
+        inevitable. Sources have described Caesar as undecided as he approached the river, and
+        attribute the crossing to a supernatural apparition. It was reported
+        that Caesar dined with Sallust, Hirtius, Oppius, Lucius Balbus and Sulpicus
+        Rufus on the night after the crossing into Italy on January 10.
+
+        Before crossing, Caesar is reported to have said: "ālea iacta
+        est" ("the die has been cast")<br>Legal commentators note that imperium is forbidden by
+        the law as a capital offence. Furthermore, obeying the commands of a
+        general who does not legally possess imperium is a capital offence. If a
+        general enters Italy in command of an army, both the general and his
+        soldiers become outlaws and are automatically condemned to death. Generals
+        are thus obliged to disband their armies before entering Italy.</p>
+
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <div class="grid-news-header">
+      <h1>Also popular this week:</h1>
+    </div>
+
+    <section class="grid-news-container">
+      <div class="effect-container">
+        <img class="grid-image" src="colloseum.jpeg" alt="The colloseum" />
+        <div class="content">
+          <div class="text">"Bread and Circuses": Emperor Gaius outlines new vision of government</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="hannibal.jpeg" alt="state head" />
+        <div class="content">
+          <div class="text">Elephants and their Generals: The Alps 200 years after Hannibal</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="library.jpeg" alt="state head" />
+        <div class="content">
+          <div class="text">Alexandria burns in Caesar's wake: locals fear library perished</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="parthenon.jpeg" alt="the parthenon" />
+        <div class="content">
+          <div class="text">"It's all Greek to me": Why I gave up on Plato</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="crete.jpeg" alt="Crete" />
+        <div class="content">
+          <div class="text">Crete: Roman Holidaymaker discovers fossilised head of Minotaur</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="cappadocia.jepg.jpeg" alt="Cappadocia" />
+        <div class="content">
+          <div class="text">Interview with Pontius Pilate: Prophets and Profits in the Pronvinces</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="forest.jpeg" alt="the parthenon" />
+        <div class="content">
+          <div class="text">Painted faces and human sacrifice: campaigning in Germania</div>
+        </div>
+      </div>
+      <div class="effect-container">
+        <img class="grid-image" src="ocean.jpeg" alt="the parthenon" />
+        <div class="content">
+          <div class="text">Return to Ithaca: meet the sailor trying to retrace Odysseus's footsteps</div>
+        </div>
+      </div>
+
     </section>
-  </body>
+  </main>
+
+  <footer>
+    <form class="footer-form" action="">
+      <input type="text" name="email-address" value="E-mail address">
+      <input type="submit" value="Subscribe">
+    </form>
+    <img class="footer-logo" src="logo.svg" alt="Technigo logo" />
+    <div class="footer-right">
+      <a class="back-to-top-mobile" href="#top-mobile">Back to Top</a>
+      <a class="back-to-top-desktop" href="#top-desktop">Back to Top</a>
+      <p class="footer-statement">Copyright &copy; 2020</p>
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
