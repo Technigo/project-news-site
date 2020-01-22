@@ -109,12 +109,14 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin: 40px;
-  
 }
 
 .img-other-news {
   width: 20vw;
   display: flex;
+  border: solid 0px rgb(199, 197, 197);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .other-news div {
@@ -123,7 +125,9 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 10px 20px; 
-  
+  border: solid 0px rgb(199, 197, 197);
+  border-radius: 30px;
+  box-shadow: 5px 5px #868686;
 }
 
 /*styling footer*/
@@ -276,6 +280,7 @@ footer {
 
   .other-news {
     justify-content: center;
+    margin: 30px;
   }
 
   .img-other-news {
