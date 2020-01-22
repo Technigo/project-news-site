@@ -1,5 +1,5 @@
 body {
-  background: #5771a3;
+  background: #85a1a5;
   color: rgb(5, 5, 5);
   font-family: monospace;
   margin: 0;
@@ -23,24 +23,26 @@ h3 {
 
 p {
   font-size: 15px;
-  padding: 5px;
+  padding: 10px;
 
 }
 
 /*** HEADER ***/
 
 .header {
-
+  width: 100%;
   background-color: rgb(148, 80, 80);
   height: 150px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+
+
 
 }
 
 .header img {
-  width: 50%;
+  width: 70%;
+  padding: 10px;
 
 }
 
@@ -49,9 +51,10 @@ nav {
 }
 
 nav a {
-  color: rgb(182, 127, 179);
+  color: rgb(226, 230, 205);
   text-decoration: none;
   padding: 20px;
+
 
 
 }
@@ -60,7 +63,7 @@ nav a {
 
 .big-news {
 
-  padding: 16px 16px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -82,7 +85,6 @@ nav a {
 /*** OTHER NEWS ***/
 
 .news-grid {
-  background: #5771a3;
   color: #000;
   text-align: center;
   padding: 24px;
@@ -152,11 +154,13 @@ nav a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 10px;
 
   }
 
   .big-news img {
     justify-content: center;
+
   }
 
   .news-card {
