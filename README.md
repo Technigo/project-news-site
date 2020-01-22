@@ -1,12 +1,10 @@
-# News Site
+#Project News Site for Technigo Boot Camp
 
-Replace this readme with your own information about your project. 
+##This is a project to learn and practice Flexbox and responsive web pages, using HTML and CSS.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+After a messy first attempt I started over, this time wiht a basic plan of what I wanted the site to look like in the various screen-sizes, and taking it from there. First using Flexbox to set the diffferent structures, then adding the content and styling it in CSS.
+After making a first version, I spent some time on creating hover-effects on some of the links (and tidying up the HTML-file).
 
-## The problem
+The deployed News Site: 
+https://hardcore-hermann-209b35.netlify.com/
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
