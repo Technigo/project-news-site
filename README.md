@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project was about building a responsive news site with flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This was my first time using flexbox, so there was a lot of trial and error.
+Next time I will include all boxes in the sketch and build the structure of the page before inserting the contents.
+
+I had some trouble using the media queries for specifying the styling of the tablet and mobile version. The issue was that the query worked fine for the mobile version but not for the tablet version. At some point I switched places for the queries, putting the tablet query first and then it suddenly worked. I'm not sure why the order matters, since they should be mutually exclusive according to my logic but it seems to matter.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+
