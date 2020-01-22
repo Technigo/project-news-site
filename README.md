@@ -8,3 +8,6 @@ I started out by watching the video material on flexbox that we had been given. 
 After having solved the tasks we were given I played around with overlays and box-shadows.
 The next thing to work on would be setting up the divs containing the images to redirect you to the topic that you've chosen to click on.
 commit
+
+
+https://gallant-davinci-9fab54.netlify.com/
