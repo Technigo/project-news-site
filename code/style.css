@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background:  rgba(179, 143, 126, 0.39);
   color: black;
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -68,9 +68,6 @@ nav a:hover {
 
 .big-news {
   padding:0;
-  /* display: flex;
-  flex-direction: column; */
-  /* position: relative; */
   text-align: left;
   margin-top: 40px;
  
@@ -126,13 +123,16 @@ text-align: left;
   margin: 10px 0px;
 }
 
-.column-news
+.column-news 
 {
   display: none;
   max-width: 20%;
-  height:100%;
-  
+  height:100%; 
 }
+
+
+
+
 
 .column-news a {
   font-size: 13px;
@@ -157,9 +157,7 @@ text-align: left;
   margin: 10px 0 0 0;
 }
 
-img:hover {
-  opacity: 0.7;
-}
+
 
 .small-news a {
   font-size: 13px;
@@ -195,11 +193,9 @@ color: #333333;
 
 .user-picture div{
   display: flex;
-  /* flex-direction: column; */
   flex-direction: row;
   flex-wrap: wrap; 
   align-items: flex-start;
-  /* padding-top: 20px; */
   width:98%; 
   justify-content: center;
   
@@ -285,10 +281,12 @@ form input {
   width: 180px;
   margin-left: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  
+  font-size: 15px;  
+}
 
-  
+input #send {
+  height: 28px;
+  width: 180px;
 }
 
 .footer-content {
@@ -296,12 +294,12 @@ form input {
   justify-content: flex-start;
   flex-direction: column;
   align-content: space-between;
+  
 }
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.555);
   text-align: center;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
 
@@ -349,16 +347,21 @@ form input {
     justify-content: flex-end;
   }
  
- 
+  .main-content {
+    width: 90%;
+    margin: auto;
+  }
  
     nav a {
     color: white;
   
   }
 
-  av a:hover {
+  nav a:hover {
     color: rgba(175, 115, 115, 0.555);
   }
+
+  
 
   .hamburger {
     display: none;
@@ -404,7 +407,6 @@ figure {
 
 @media (min-width: 1024px) {
 
-
 header {
   height: 200px;
   flex-direction: column;
@@ -443,11 +445,22 @@ nav a {
   
   }
 
+  .main-content {
+    width: 85%;
+    margin: auto;
+    background: white;
+  }
+
+  img:hover {
+    opacity: 0.7;
+  }
+
   .big-news {
-    margin: 0px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;  
+    margin-top: 10px;
   }
 
   .big-news p {
@@ -470,6 +483,10 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+  }
+
+  .column-news h2 {
+    margin-right: 10px;
   }
 
 
@@ -510,4 +527,3 @@ form {
 
 
 }
-
