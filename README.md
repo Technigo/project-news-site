@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Assignment from Technigo bootcamp. Includes creating a basic webpage which is responsive and had different designs for mobile, desktop and tablet. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with the basic layout of the page, I used flexbox to do so. I made a simple sketch to create an overview of the finished page. If I had more time to work on the page I would like to add some more animations (and some more fun pictures)
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://agitated-shirley-69f2c3.netlify.com/
