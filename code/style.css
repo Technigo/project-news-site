@@ -1,4 +1,177 @@
 html {
-  background: #0025ff;
+  background: rgb(41, 153, 161);
   color: #fff;
+  display: block;
+  text-align: center;
+  align-items: center;
 }
+
+/******** HÄR BÖRJAR HEADER *******/
+.header {
+  color: #fff;
+  height: 100px;
+  position: fixed;
+}
+
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+
+.Title {
+  width: 400px;
+  border: 5px solid black;
+  background-color: white;
+
+}
+
+/******** HÄR BÖRJAR NAV *******/
+
+
+.flex-parent {
+  border: 2px solid;
+  background: white;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+a {
+  color: black;
+}
+
+.flex-child {
+  margin: 0px 100px 0px 100px;
+  border: 2px solid white;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  display: inline-block;
+  align-items: baseline;
+}
+
+/* Page content
+.content {
+  padding: 16px; */
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  /* width: 100% */
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 102px;
+}
+
+
+/**** HÄR BÖRJAR HOLYCONTENT ******/
+
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-top: 150px;
+}
+
+h2 {
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+.blinkme {
+  animation: blinker 1s step-start infinite;
+  margin: 5px;
+}
+
+/* .HolyGrail-nav {
+  order: -1;
+} */
+
+/* main {
+  text-align: left;
+  display: inline;
+} */
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .HolyGrail-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 130px;
+    position: inherit;
+    align-content: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "grid-container";
+    grid-gap: 20px;
+    width: 40%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 10px 0 300px;
+    display: inline-block;
+
+    /* margin-top: 100px; */
+  }
+
+  .grid-container>div {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif solid black;
+    border: 2px solid black;
+    align-content: space-around;
+    justify-content: space-between;
+  }
+
+
+
+  .HolyGrail-ads {
+    width: 20%;
+    border: 0px solid red;
+    float: left;
+    position: fixed;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-family: 'Times New Roman', Times, serif;
+    size: 52px;
+    color: black;
+  }
+
+  .grid-items {
+    border: 2px solid black;
+    max-width: 100%;
+
+
+  }
