@@ -1,4 +1,642 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background: #2D3F58;
+  color: #E8F1FF;
+  font-family: 'Yantramanav', sans-serif;
+  margin: 0;
+}
+
+
+/*** header ***/
+
+header {
+  background: #E85A50;
+  width: 100%;
+  margin-top: 0;
+}
+
+header img {
+  width: 60%;
+  margin-left: 100px;
+}
+
+nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  margin-top: 20px;
+  font-size: 21px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #E8F1FF;
+}
+
+li a:hover {
+  color: #2B4E81;
+}
+
+/*** main feature ***/
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.poland {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 4px 3px 11px -2px rgba(36, 41, 59, 1);
+}
+
+.poland img {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.poland h2 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Bungee', cursive;
+  color: #E85A50;
+}
+
+.poland .text .hand {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.hand:hover {
+  opacity: 0.5;
+}
+
+.poland .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+
+.poland p {
+  margin-right: 30px;
+  font-size: 21px;
+}
+
+.poland .mobile-text {
+  display: none;
+}
+
+
+
+/*** thumbnails ***/
+
+.thumbnails {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.thumbnails div {
+  width: 30%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 4px 3px 11px -2px rgba(36, 41, 59, 1);
+}
+
+
+.thumbnails p {
+  background: #E85A50;
+  font-size: 28px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.london .overlay {
+  position: absolute;
+  /* left: 0; */
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.london:hover .overlay {
+  opacity: .7;
+  transition: opacity .5s ease-out;
+}
+
+
+.thumbnails .london {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/london.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.artist .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.artist:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .artist {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/artist.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.basketball .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.basketball:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .basketball {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/basketball.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.understated .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.understated:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .understated {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/understated.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portraits .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.portraits:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .portraits {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/portrait.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sculptures .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.sculptures:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .sculptures {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(/project-news-site/assets/sculpture.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.political .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.political:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .political {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  background-image: url(/project-news-site/assets/political.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.yarnbombing .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.yarnbombing:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .yarnbombing {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  background-image: url(/project-news-site/assets/yarn-bombers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.japan .overlay {
+  position: absolute;
+  margin-top: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 41, 59, 1);
+  opacity: 0;
+}
+
+.japan:hover .overlay {
+  opacity: 0.8;
+  transition: opacity .5s ease-out;
+}
+
+.thumbnails .japan {
+  position: relative;
+  width: 30%;
+  padding-top: 250px;
+  background-image: url(/project-news-site/assets/smiling.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.thumbnails .small {
+  margin-top: 100px;
+}
+
+
+
+/*** FOOTER ***/
+
+footer {
+  background: rgb(54, 77, 107);
+  margin: 50px 0 0 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 150px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  padding: 0 75px 30px 0;
+}
+
+.social-media img {
+  width: 40px;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+@media (max-width:1100px) {
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .poland {
+    max-height: 400px;
+
+  }
+
+  .poland h2 {
+    font-size: 32px;
+  }
+
+  .poland .text .hand {
+    width: 75px;
+  }
+
+  .poland p {
+    font-size: 16px;
+  }
+
+
+
+  .thumbnails p {
+    font-size: 24px;
+  }
+
+
+  .thumbnails .london {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .artist {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .basketball {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .understated {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .portraits {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .sculptures {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .political {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .japan {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .thumbnails .yarnbombing {
+    width: 48%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+@media (max-width:920px) {
+
+  header img {
+    margin-left: 30px;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .poland {
+    /* width: 100%; */
+    max-height: 600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .poland .text {
+    margin-top: 10px;
+    padding: 30px 30px 50px 0px;
+  }
+
+  .poland h2 {
+    font-size: 24px;
+  }
+
+  .poland .text .hand {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .poland .desktop-text {
+    display: none;
+  }
+
+  .poland .mobile-text {
+    margin-top: 20px;
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .thumbnails {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .thumbnails p {
+    font-size: 21px;
+    padding-left: 20px;
+    background-color: transparent;
+    font-weight: 00;
+    bottom: -30px;
+  }
+
+  .thumbnails .london {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .artist {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .basketball {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .understated {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .understated {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .portraits {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .sculptures {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .political {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .japan {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .thumbnails .yarnbombing {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .thumbnails .small {
+    margin-top: 50px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+  .social-media {
+    margin-right: 60px;
+  }
+
+  .social-media a img {
+    margin-right: 20px;
+  }
+}
+
+
+
+@media (max-width:600px) {
+
+  .poland {
+    height: 300px;
+  }
+
+  .poland .mobile-text {
+    display: none;
+    height: 300px;
+  }
+
+  .poland h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+
+  }
 }
