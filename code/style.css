@@ -1,5 +1,5 @@
 body {
-  background: #a5a6a8;
+  background: #5771a3;
   color: rgb(5, 5, 5);
   font-family: monospace;
   margin: 0;
@@ -31,7 +31,7 @@ p {
 
 .header {
 
-  background-color: grey;
+  background-color: rgb(148, 80, 80);
   height: 150px;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ nav {
 }
 
 nav a {
-  color: honeydew;
+  color: rgb(182, 127, 179);
   text-decoration: none;
   padding: 20px;
 
@@ -70,7 +70,7 @@ nav a {
 }
 
 .big-news img {
-  width: 60%;
+  width: 80%;
 
 }
 
@@ -82,27 +82,32 @@ nav a {
 /*** OTHER NEWS ***/
 
 .news-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5px 5px 10px 10px;
+  background: #5771a3;
+  color: #000;
+  text-align: center;
+  padding: 24px;
+
 
 }
 
 .news-card {
-  background: purple;
-  height: 300px;
   display: flex;
-  flex-direction: column;
-  align-items: space-around;
+  flex-wrap: wrap;
+  width: 50px;
+
 
 }
 
 
 .news-card img {
-  width: 200px;
-  height: 100px;
-  padding: 50px;
+  background: #5771a3;
+  border: 2px solid #415566;
+  border-radius: 16px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+
+
 
 }
 
@@ -142,11 +147,28 @@ nav a {
   nav {
     display: inline-block;
   }
+
+  .big-news div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .big-news img {
+    justify-content: center;
+  }
+
+  .news-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
 }
 
-.big-news div {
-  text-align: left;
-}
+
+
 
 .news-card {
   width: 40%;
