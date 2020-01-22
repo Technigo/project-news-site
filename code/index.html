@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">    <title>D&D</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<header>
+<section class="flex-parent header">
+<div class="flex-child"><img id=header-logo src="logo-dragon.png" alt="D&D silver dragon"></div>
+<div class="flex-child title"><h1>DUNGEONS & DRAGONS</h1></div>
+<div class="flex-child navbar"><ul id="navbar">
+  <li><a href="https://www.meetup.com/Stockholm-Roleplaying-Guild/" target="_blank">EVENTS</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons" target="_blank">ABOUT</a></li>
+  <li><a href="https://www.linkedin.com/in/petra-jud-a11249159/" target="_blank">CONTACT</a></li>
+  </ul>
+</div>
+</section>
+</header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<main>
+<section class="flex-parent main">
+<section class="flex-child big-news">
+<div class="flex-child big-card">
+  <a href="https://www.theguardian.com/games/2019/nov/29/gamers-back-under-dungeons-and-dragons-spell" target="_blank">
+  <img src="https://cdn.vox-cdn.com/thumbor/WAihNNZa2QxvDNXx0lAiLaVKlN8=/0x0:4240x2832/1200x800/filters:focal(1690x196:2368x874)/cdn.vox-cdn.com/uploads/chorus_image/image/63053313/stranger_things_dustin_mike_lucas_4240.0.jpg" alt="Dustin, Mike and Lucas from Stranger Things play RPG" width="600px" id="main-image">
+  </a></div>
+<div class="flex-child big-headline">
+  <a href="https://www.theguardian.com/games/2019/nov/29/gamers-back-under-dungeons-and-dragons-spell" target="_blank">
+  <h2>THE 80S ARE BACK</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat dapibus luctus. Vestibulum sagittis, velit at sodales ornare, ligula sapien cursus diam, non pretium dui eros at elit. Fusce tempor fermentum odio. Maecenas eu purus est. Sed ligula nulla, iaculis vel ipsum sed, fringilla dictum nulla. Maecenas felis justo, cursus nec diam eget, egestas placerat tellus. Aliquam at dui ex. Nulla congue a urna sit amet elementum. Vivamus a felis augue. Nam pretium orci nunc, faucibus commodo felis pellentesque sodales. Nam varius nibh aliquam feugiat mattis.</p>
+  </a>
+</div>
+</section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<section class="flex-child small-news">
+
+<article class="flex-child small-card">
+  <a href="https://www.cnbc.com/2019/04/19/critical-role-vox-machina-kickstarter-ends-with-11-million-in-funding.html" target="_blank">
+  <img src="http://www.conventionscene.com/wp-content/uploads/2019/02/0CR-DPCC19.png" alt="Cast of Critial Role" width="300px" height="300px" class="article-image">
+  </a>
+  <a href="https://www.cnbc.com/2019/04/19/critical-role-vox-machina-kickstarter-ends-with-11-million-in-funding.html" target="_blank">
+  <p class="flex-child small-news-text">CRITICAL ROLE BREAK KICK-STARTER RECORD</p>
+  </a>  
+</article>
+
+<article class="flex-child small-card">
+  <img src="https://media.giphy.com/media/l0ExsgrTuACbtPaqQ/source.gif" alt="Cartoon Wizard" width="300px" height="300px" class="article-image">
+  <p class="flex-child small-news-text">ELDRITCH BLAST VOTED COOLEST SPELL (BY ME)</p>
+  </a>  
+</article>
+
+<article class="flex-child small-card">
+  <a href="https://urwizards.com/" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4K67xFkfsRejoysWPh5dQZgV6ohc7f4VXqAx6I4plo97fqh-&s" alt="Dice" width="300px" height="300px" class="article-image">
+  </a>
+  <a href="https://urwizards.com/" target="_blank">
+  <p class="flex-child small-news-text">MOST BEAUTIFUL DICE IN THE UNIVERSE</p>
+  </a>  
+</article>
+
+<article class="flex-child small-card">
+  <a href="https://www.reddit.com/r/dndnext/comments/3k7qpl/100_bard_insults_for_vicious_mockery/" target="_blank">
+  <img src="https://66.media.tumblr.com/3ac150961692aaa36e8aefa196177a65/e5108cff2d1c8316-cb/s640x960/850b73f7c80a704fb0e2bb16691991d6b7464255.gif" alt="Cartoon Octopus holding a Book" class="article-image">
+  </a>
+  <a href="https://www.reddit.com/r/dndnext/comments/3k7qpl/100_bard_insults_for_vicious_mockery/" target="_blank">
+  <p class="flex-child small-news-text">100 GREAT INSULTS FOR VICIOUS MOCKERY</p>
+  </a>  
+</article>
+</section>
+</section>
+</main>
+<footer class="flex-parent footer">
+<p class="flex-child footer-text">MADE BY BOMBERT BAGUETTE</p>
+  <img src="panda.png" alt="Panda">
+</footer>
+</body>
 </html>
+
