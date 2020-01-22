@@ -1,22 +1,134 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Blazing Magazine</title>
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+
+  <header class="header">
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <img class="logo" src="images/logo.png" alt="logo blazing">
+    <nav>
+      <a href="#">All news</a>
+      <a href="#">Music</a>
+      <a href="#">Art</a>
+      <a href="#">Style</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BIG NEWS-->
+    <div class="welcome-container" role="banner">
+      <section class="container">
+        <a href="https://pitchfork.com/news/octavian-joins-the-blaze-on-new-song-somewhere-listen/" target="_blank"
+          class="shadow-box">
+          <img src="images/main_image.jpg" alt="dj image">
+          <div>
+            <h2>The Blaze</h2>
+            <p>French-British rapper Octavian and French dance music duo The Blaze have teamed up to offer
+              a new single.<br><br> French-British rapper Octavian and French dance music duo The Blaze have teamed up
+              to
+              offer a
+              new single, “Somewhere.” The three-and-a-half-minute cut sees both artists entering new territory, weaving
+              together their distinct sounds to create a complementing track that can satisfy both of their
+              audiences.<br><br>
+              “Somewhere” marks The Blaze’s first release since 2018’s debut album DANCEHALL. Meanwhile, Octavian
+              followed
+              his 2018 debut Spaceman with Endorphins, a 12-track project that featured the likes of A$AP Ferg,
+              Smokepurpp
+              and Skepta to name a few.</p>
+          </div>
+        </a>
+      </section>
+    </div>
+
+    <!--LATEST NEWS-->
+
+    <div class="news-container">
+      <section class="container">
+        <h3>Latest News</h3>
+        <article class="news">
+          <a href="https://medium.com/callumhowkins/the-complete-teenage-engineering-po33-k-o-guide-89d5e2fd6a2a"
+            target="_blank" class="shadow-box">
+            <img src="images/music_toys.jpg" alt="assorted music toys on table">
+            <div>
+              <h4>Inspiration: Teenage engineering.</h4>
+              <p class="published-date">March 30, 2018</p>
+            </div>
+          </a>
+          <a href="https://www.residentadvisor.net/guide/se/stockholm" target="_blank" class="shadow-box">
+            <img src="images/boy.jpg" alt="boy standing in front of lamp">
+            <div>
+              <h4>This week's events in Stockholm. Here are some suggestions.</h4>
+              <p class="published-date">January 19, 2020</p>
+            </div>
+          </a>
+          <a href="https://medium.com/the-partnered-pen/how-to-take-photos-that-make-people-feel-something-7e8ad13f8289"
+            target="_blank" class="shadow-box">
+            <img src="images/gallery.jpg" alt="girl taking photographs in a gallery">
+            <div>
+              <h4>How to take photos that make people feel something.</h4>
+              <p class="published-date">January 14, 2020</p>
+            </div>
+          </a>
+          <a href="https://www.fotografiska.com/sto/utstallningar/places-beyond/" target="_blank" class="shadow-box">
+            <img src="images/photographs-exhibition.jpg" alt="white and grey decor">
+            <div>
+              <h4>This week's exhibition highlight: Places Beyond - Erik Johansson.</h4>
+              <p class="published-date">Decembre 6, 2020</p>
+            </div>
+          </a>
+          <a href="https://medium.com/digital-art-weekly/18-museums-boosting-the-scene-of-digital-art-f8a4b4fa5eb9"
+            target="_blank" class="shadow-box">
+            <img src="images/digitalart.jpg" alt="girl standing in front of lights">
+            <div>
+              <h4>18 Museums Boosting the Scene of Digital Art.</h4>
+              <p class="published-date">March 1, 2019</p>
+            </div>
+          </a>
+          <a href="https://www.highsnobiety.com/p/jacquemus-fw20/" target="_blank" class="shadow-box">
+            <img src="images/fashion_show.jpg" alt="person walking white handing bag">
+            <div>
+              <h4>Jacquemus Fall/Winter 2020 Men’s. Paris, France</h4>
+              <p class="published-date">January 20, 2020</p>
+            </div>
+          </a>
+          <a href="https://www.highsnobiety.com/p/dior-jordan-brand-apparel-accessories/" target="_blank"
+            class="shadow-box">
+            <img src="images/shoes.jpg" alt="sneakers">
+            <div>
+              <h4>Dior Men’s to Release Clothing, Accessories & an AJ1 Low With Jordan Brand</h4>
+              <p class="published-date">January 20, 2020</p>
+            </div>
+          </a>
+          <a href="https://medium.com/write-your-own-adventure/its-official-going-viral-is-dead-41abaec878ce"
+            target="_blank" class="shadow-box">
+            <img src="images/socialmedia.jpg" alt="social media">
+            <div>
+              <h4>It’s Official, “Going Viral” is Dead.</h4>
+              <p class="published-date">January 16, 2020</p>
+            </div>
+          </a>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p><i>&copy; Images Copyright Free</i></p>
+  </footer>
+
+</body>
+
 </html>
