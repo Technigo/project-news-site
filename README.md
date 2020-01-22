@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is my first project in the Technigo Bootcamp. The task was to build a Newssite with flexbox. I decided to make the "news" abut cactuses and used a natural backgroung and typical "news-colors" like yellow and red for some of the text.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by making the skeleton/base of the website, and tried to keep it pretty simple since im a beginner. the problem was to make flexbox work and to make it look clean and not too messy. I didnt manage to make the text beside the pictures look good in all mediasizes, but hopefully i will learn that soon.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://elastic-mestorf-2f34f5.netlify.com/
