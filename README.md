@@ -4,31 +4,23 @@ Making a responsive news site with flexbox using HTML and CSS for different outl
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Made a plan on working my from the top to the bottom and fill out with content as I go. Kept the mantra "function over styling" and did my best with the making sure the worked like I wanted it to. 
 
-Tried to structure beforehand where I wanted to start and what to prioritize. Starting from top and working myself to the bottom with complete focus on function. Keeping it simple and don't get stuck on making it look perfect. Started off with a simple header and logo, and then began working with flexbox on the news content.
+Using flexbox for the first time and learning all the elements in getting itmes aligned and re-sized depending on the media outlet became my biggest struggle. Tried Google, asking classmates and using the inspector tool to reach the classes and sections of the parent and children in flexbox. Either the images became tiny or the paragragh overwrote another element and so on. 
+Started with the parents and putting borders over them so I could see them change when styling the children. Put children in section and wanted the headline on top, with a small paragraph in the middle and an image in the bottom of the news card.
 
-Making sure there were children working within their parent was a complete struggle. Had to Google, inspect over and over, ask for help and just try twenty different ways to make it work. The "big news" needed a display: block over the text section to look the way I expected it to - having the text next to the large image instead of under it or squeezed next to the headline.
+This worked fine until I tried to center all these element inside the children - 'cause I couldn't reach them no matter how I tried with CSS. Therefore I made an ugly solution with padding pushing the content to the center. Still unsure why I couldn't make it work but I think I made it look good under the circumstances. Hey, rollercoster ride!
 
-Then went on a rollercoster ride trying to make the row of news cards work. Had to spend a lot of time structuring the elements and tweak the design to make it fit and function. Put every card in a div where I could style them to hold the content where I wanted them to. Wanting to have the cards aligned with headline on top, small paragraph between and then the image on bottom. Worked with aligning the cards to the baseline and justifying the content with space between so nothing would stand out too much in the parent section. 
-Worked fine until I tried to center the content in each card. Nothing worked and content kept their position to the left - and I made an ugly solution with padding that pushed the children more to the right and therefor aligned to the center. Still not sure why no type of center styling worked on these divs. 
+Continued with a sidebar menu on the top of the site that looks different in every media outlet and a logo next to it. Plus followed through with an idea I had early on about a sign up for newletter at the bottom - and it turned out exactly like I imagnied! 
 
-Continued with a footer that just contains a paragraph with who made the website and a "back to top" link underneath. Later added a form that would be useful for a newletter sign up. Also went back to the top and added a sidebar menu to it. At this point everything was in place and semi-worked but needed styling and more responsive design to work on every outlet.
+So I stuck to the plan - from top to bottom, filled with content as I continuedon and added some smaller functions.
+Wanted the headlines of the news articles to be linked and put actual news articles from other sites there. The paragraph and link are italic when hover and images opaque. Input and botton with some shadow effect and the site title will glow up a bit.
 
-The styling might not be that classic but I had fun doing it and stuck with my plan to keep it simple. Played around with hovering effects on most items on the site. The site title kind of glows up, the images gets a bit opaque, headlines that are links will be underlined and paragraphs italic. So played around a bit!
-Wanted the computer version to be filled up with thicker borders and colors since white makes them feel empty and hard to fill that space. The tablet version is a neater version of computer so the borders gets thinner and the pictures in the cards takes up more space as they are two on two rows now.
-The mobile version, the smallest one, is the one I'm most satisfied with. It's clean, nice on the eyes (mhm humble...) and looks like I imagined. The menu is now listed, the bakground changes but still keeps the color theme and the images takes up a larger potion of the screen.
+Styled the phone site light and fresh - whereas the other outlets were filled out with color. The borders will slim down as the screen shrinks and the images will take up more space.
 
+I think the winning concept was to keep the styling minimal when trying to get the functions working and then adding on a specific style that can work from small to big screen. Starting the think about a type of reader and what would fit those who would visit this kind of site.
+'Til next time I will play around with grid, espacially for the computer and learning how to fill such a large canvas with content in a nice way. 
 
-Working with Flexbox as column was much more satisfying than the row direction. 
-
-
-
-
-
-So I made a plan to start from the top and work my way down - so from header to footer and let the content evolve as I went on coding. Quickly realized that some "good looking" type of styling is not prioritized at all. Function, however, was the main goal. Getting a headline and logo was pain free and made it simple for myself to be able to focus on Flexbox. Getting the "Big news" 
-
-Had a type of reader in mind when creating this type of news/entertainment site and wanted the over all look to feel a bit 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
