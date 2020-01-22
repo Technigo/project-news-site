@@ -1,5 +1,5 @@
 body {
-  background:#a5a6a8;
+  background: #a5a6a8;
   color: rgb(5, 5, 5);
   font-family: monospace;
   margin: 0;
@@ -8,18 +8,28 @@ body {
 h2 {
   font-size: 30px;
   line-height: 32px;
-  padding: 30px;
+  /* padding: 10px; */
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 
 }
 
 p {
   font-size: 15px;
-  padding: 30px;
+  padding: 5px;
 
 }
+
 /*** HEADER ***/
 
-.header { 
+.header {
 
   background-color: grey;
   height: 150px;
@@ -31,18 +41,18 @@ p {
 
 .header img {
   width: 50%;
-  
+
 }
- 
-nav{
-   display: none;
+
+nav {
+  display: none;
 }
 
 nav a {
   color: honeydew;
   text-decoration: none;
   padding: 20px;
- 
+
 
 }
 
@@ -50,28 +60,81 @@ nav a {
 
 .big-news {
 
-  padding: 100px 16px;
+  padding: 16px 16px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
 }
 
 .big-news img {
   width: 60%;
+
 }
+
+.big-news div {
+  text-align: left;
+
+}
+
+/*** OTHER NEWS ***/
+
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 5px 10px 10px;
+
+}
+
+.news-card {
+  background: purple;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+
+}
+
+
+.news-card img {
+  width: 200px;
+  height: 100px;
+  padding: 50px;
+
+}
+
+
+
 
 /*** FOOTER ***/
 
 .footer {
-  width: 10%;
+  width: 5%;
   display: flex;
-  
+  flex-direction: center;
+
+
+
+}
+
+.footer img {
+  width: 10px;
+  padding: 30px;
+}
+
+.footer p {
+  font-size: 10px;
+  padding: 10px;
 }
 
 
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 650px) {
+@media (min-width: 667px) {
   header {
     justify-content: space-between;
   }
@@ -85,16 +148,36 @@ nav a {
   text-align: left;
 }
 
-@media (min-width: 900px) {
+.news-card {
+  width: 40%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 1024px) {
   .header {
     justify-content: center;
   }
+
   .big-news {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    
+
+  }
+
+  .big-news img {
+    width: 50%;
+  }
+
+  .big-news div {
+    padding: 50px;
+  }
+
+  .news-card {
+    width: 23%;
 
   }
 }
-
