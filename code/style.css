@@ -1,11 +1,9 @@
 body {
-  
   color: black;
   font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
   background-color: white;
-  
 }
 
 /*** Header ***/
@@ -27,8 +25,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 24px;
-  
-
 }
 
 .hamburger div {
@@ -38,7 +34,6 @@ header {
   border-radius: 5px;
   margin-left: 10px;
   margin-left: 10px;
-  
 }
 
 header h1 {
@@ -50,7 +45,6 @@ header h1 {
 
 nav {
   display: none; 
-
 }
 
 nav a {
@@ -71,7 +65,6 @@ nav a:hover {
   padding:0;
   text-align: left;
   margin-top: 40px;
- 
 }
 
 a h2 {
@@ -112,8 +105,7 @@ text-align: left;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .food-phone div {
@@ -185,14 +177,12 @@ font-weight: 200px;
 font-family: 'Playfair Display', serif;
 font-size: 24px ;
 color: #333333;
-
 }
 
 .small-news div {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
-  
 }
 
 .small-news {
@@ -207,7 +197,7 @@ color: #333333;
   align-items: flex-start;
   width:98%; 
   justify-content: center;
-  } 
+} 
 
  .user-picture img { 
   display: flex;
@@ -233,11 +223,7 @@ figure {
   display: none;
 }
 
-
-
 /*** FOOTER ***/
-
-
 
 footer {
   height: 250px;
@@ -255,7 +241,6 @@ footer {
 ul {
   list-style: none;
   padding: 0 0 0 15px;
-  
 }
 
 footer a {
@@ -296,7 +281,6 @@ input #send {
   justify-content: flex-start;
   flex-direction: column;
   align-content: space-between;
-  
 }
 
 ::placeholder {
@@ -333,7 +317,6 @@ input #send {
   width: 30px;
   height: 30px;
   margin: 17px 0px 10px 0;
-
 }
 
 /*** MEDIA QUERIES ***/ 
@@ -360,9 +343,8 @@ input #send {
     margin: auto;
   }
  
-    nav a {
+  nav a {
     color: white;
-  
   }
 
   nav a:hover {
@@ -401,8 +383,6 @@ input #send {
 .user-picture div {
   display: flex;
   flex-direction: row;
-  
-  
 }
 
 figure {
@@ -411,13 +391,11 @@ figure {
 }
 
 
-
-
 @media (min-width: 1024px) {
 
-  .food-phone {
-    display: none;
-  }
+.food-phone {
+  display: none;
+}
 
 header {
   height: 200px;
@@ -442,7 +420,6 @@ nav a {
   background-color: rgba(179, 143, 126, 0.692);
   font-size: 15px;
   text-transform: uppercase;
-  
   font-weight: 200px;
   border: none;
   border-radius: 45px;
@@ -454,20 +431,19 @@ nav a {
   justify-content: center;
   align-items: center;
   color: white;
-  
   }
 
-  .main-content {
+.main-content {
     width: 85%;
     margin: auto;
     background: white;
   }
 
-  img:hover {
+img:hover {
     opacity: 0.7;
   }
 
-  .big-news {
+.big-news {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -475,17 +451,17 @@ nav a {
     margin-top: 10px;
   }
 
-  .big-news p {
+.big-news p {
     align-self: flex-start;
   }
 
-  .big-news img {
+.big-news img {
     width: 97%; 
     height: 45%;
   }
 
   
-  .top-news {
+.top-news {
     display: flex;
     flex-direction: row;
     margin-right: 0px;
@@ -493,18 +469,18 @@ nav a {
   }
 
 
-  .column-news {
+.column-news {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
   }
 
-  .column-news h2 {
+.column-news h2 {
     margin-right: 10px;
   }
 
 
-  .column-news img {
+.column-news img {
     width: 97%;
     height: 97%;
     display: flex;
@@ -512,24 +488,23 @@ nav a {
     margin-bottom: 5px;
   }
 
-  .two {
+.two {
     display: flex;
     margin-top: 10px; 
     padding: 0 0 0 0;
     width: 100%;
   }
 
-  .user-picture div {
+.user-picture div {
     flex-wrap: nowrap;
-    
   }
 
-  .user-picture img {
+.user-picture img {
     width: 250px;
     height: 250px;   
   }
 
-  .user-picture h2 {
+.user-picture h2 {
     text-align: center;
   }
 
