@@ -15,4 +15,4 @@ Planned using trello and a quick layout sketch on paper to make more logical how
 If I had more time, I would spend more time making the site and the code cleaner.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://loving-neumann-e67ba7.netlify.com/
