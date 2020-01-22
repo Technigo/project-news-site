@@ -3,7 +3,8 @@ html {
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
-  
+
+ 
 body {
   margin: 0 0;
 }
@@ -11,9 +12,7 @@ body {
 /* styling text */
 h1 {
   font-size: 60px;
-  background: linear-gradient(to right, #0f2533, #173348);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #173348
 }
 
 h2 {
@@ -68,9 +67,12 @@ header {
 
 .link-desktop-navbar {
   text-decoration: none;
-  border-bottom: solid 2px gray;
   font-size: 20px;
   color: rgb(58, 57, 57);
+    }
+
+.navbar-link {
+  width: 80px;
   align-self: center;
 }
 
@@ -82,13 +84,13 @@ header {
 
 .big-news {
   background-color: rgba(255, 255, 255, 0.39);
-  margin: 60px 60px;
+  margin: 80px 150px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .img-big-news {
-  width: 800px;
+  width: 500px;
 }
   
 .big-news-text {
@@ -104,6 +106,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 50px;
+  
 }
 
 .img-other-news {
@@ -126,8 +130,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 5vw;
-  height: 5vw;
+  margin-top: 20px;
+  height: 80px;
   width: 100vw;
   background-color: #999999;
 }
@@ -290,4 +294,15 @@ footer {
     margin: unset;
     font-size: 15px;
   }
+}
+
+@media (min-width: 1024px) { /*styling desktop*/
+
+.link-desktop-navbar:hover {
+  font-size: 25px;
+  border-top: solid 2px gray;
+  border-bottom: solid 2px gray;
+  transition: 0.5s;
+}
+
 }
