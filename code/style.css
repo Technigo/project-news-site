@@ -52,8 +52,14 @@ header {
   height: 60%;
 }
 
+.scnd-logo {
+  display: none;
+  height: 60%;
+}
+
 nav {
- display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links a {
@@ -131,12 +137,20 @@ footer {
     background: #f8f8f8;
   }
 
-  .website-name {
-    display: contents;
-  }
-
   .logo {
     display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scnd-logo {
+    display: inline;
   }
 
   .big-news {
@@ -175,7 +189,7 @@ footer {
   }
 
   .website-name {
-    display: contents;
+    display: inline;
   }
 
   .logo {
