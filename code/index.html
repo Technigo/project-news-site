@@ -4,63 +4,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 2: The News Site</title>
+  <title>Welcome to Twin Peaks</title>
   <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <!-- dont forget the meta tag for responsiveness -->
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <!-- Some kind of logo and navbar -->
-    <img class="logo" src="https://www.feistees.com/images/uploads/2017/06/twin-peaks-double-r-diner-mug.jpg"
-      alt="Double R diner logo">
     <nav>
-      <a href="#"> one </a>
-      <a href="#"> two </a>
-      <a href="#"> three </a>
-      <a href="#"> four </a>
-      <a href="#"> five </a>
-      <a href="#"> six </a>
-      <a href="#"> seven </a>
-
+      <img class="logo" src="https://www.feistees.com/images/uploads/2017/06/twin-peaks-double-r-diner-mug.jpg"
+        alt="Double R diner logo">
+      <a class="one" href="#"> one </a>
+      <a class="two" href="#"> two </a>
+      <a class="three" href="#"> three </a>
+      <a class="four" href="#"> four </a>
+      <a class="five" href="#"> five </a>
+      <a class="six" href="#"> six </a>
     </nav>
 
   </header>
 
-  <section class="big-news">
+  <section class="big-news-container">
     <!-- The big news content -->
     <img class="main-news-img"
       src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
       alt="Agent Cooper">
-    <h1>WHO KILLED LAURA PALMER?</h1>
+    <div class="big-news-text">
+      <div class="headline"> <a href="#">
+          WHO MURDERED LAURA PALMER? </a>
+      </div>
+      <h2>
+        <p>In 1989, the logger Pete Martell discovers a naked corpse wrapped in plastic on the bank of a river outside
+          the town of Twin Peaks, Washington. When Sheriff Harry S. Truman, his deputies, and Dr. Will Hayward arrive,
+          the body is identified as homecoming queen Laura Palmer. A badly injured second girl, Ronette Pulaski, is
+          discovered in a fugue state.</p>
+      </h2>
+    </div>
+
   </section>
 
   <section class="news-container">
     <!-- The other news  -->
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
-    <img
-      src="https://imgs.aftonbladet-cdn.se/v2/images/2134cdbe-93ac-46bb-8dd0-fc7e4b12c76d?fit=crop&h=732&q=50&w=1100&s=8ab85544f96eb9444a2c9a8be9d5543530ccd32f"
-      alt="Agent Cooper">
+    <article class="news-card">
+      <a href="#"><img src="img/cherrypie.jpeg" alt="Cherry pie"></a>
+      <h3>Norma's cherry pie recipe</h3>
+    </article>
+    <article class="news-card">
+      <a href="#"><img src="img/majorgarland.jpg" alt="Major Garland"></a>
+      <h3>I met Major Garland Briggs</h3>
+    </article>
+    <article class="news-card">
+      <a href="#"><img src="img/damngoodcoffee.jpg" alt="Cooper coffee"></a>
+      <h3>That's a damn good coffee!</h3>
+    </article>
+    <article class="news-card">
+      <a href="#"><img src="img/douglasfirs.jpg" alt="Douglas fir"></a>
+      <h3>Douglas Fir</h3>
+    </article>
+    <article class="news-card">
+      <a href="#"><img src="img/bluerose.jpg" alt="Blue rose"></a>
+      <h3>Blue Rose</h3>
+    </article>
+    <article class="news-card">
+      <a href="#"><img src="img/whoisbilly.jpg" alt="Audrey Horne"></a>
+      <h3>Who is Billy?</h3>
+    </article>
+
 
   </section>
 

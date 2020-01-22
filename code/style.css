@@ -1,30 +1,12 @@
 body {
-  background: white;
-  color: #fff;
-  margin: 0;
-}
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 45px;
+  flex-direction: row;
+  background-color: whitesmoke;
   color: black;
-  margin: 5px 10px 15px 10px;
-  display: inline-block
-}
-p {
-  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 /***** Header *****/
-
-header {
-  background-color: white;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
 
 .logo {
   width: 50px;
@@ -33,60 +15,153 @@ header {
 
 nav {
   border: 1px solid white;
-  width: 90%;
+  background-color: white;
+  height: 50px;
+  width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
 
 }
+
 /***** BIG NEWS *****/
-.big-news {
+.big-news-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0px 10px 15px;
 }
 .main-news-img {
-  width: 70%;
+  width: 40%;
   justify-content: center;
   margin-top: 10px;
 }
+.big-news-text {
+  flex-flow: column wrap;
+  margin: 10px 20px;
+}
+.headline {
+  font-weight: bold;
+  font-size: 42px;
+  color: black;
+  margin: 0px 20px 5px;
+  display: inline-block;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: darkred;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 5px 20px;
+}
 
 /***** NEWS GRID *****/
-.news-container{
+.news-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  align-content: space-evenly;
+  align-content: flex-start;
 }
+.news-card {
+  background-color: transparent;
+  height: 300px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.news-card a img {
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+.news-card h3 {
+  margin: 0px;
+}
+
 @media (max-width: 667px) {
   body {
     flex-direction: row;
-    background-color: lightslategray;
+    background-color: darkred;
     flex-wrap: wrap;
   }
-  img {
-    width: 90%;
+  nav {
+    flex-direction: column;
+  }
+  .big-news-container {
+    display: flex;
+    flex-flow: column;
+    margin: 0px 0px 15px;
+  }
+  .main-news-img {
+    width: 100%;
+    margin-top: 0;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .news-card {
+    background-color: transparent;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 667px) and (max-width: 1024px) {
-  body {
-    flex-direction: row;
-    background-color: lightslategray;
-    flex-wrap: wrap;
+@media (min-width: 668px) and (max-width: 1023px) {
+  
+  .one, .two, .three {
+    order: 0;
   }
-  img {
-    width: 40%;
+  .logo {
+    order: 1;
+  }
+  .four, .five, .six {
+    order: 2;
+  }
+  .main-news-img {
+    width: 48%;
+  }
+  .news-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  .news-card {
+    background-color: transparent;
+    height: 300px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 10px 10px 50px 5px;
+  }
+  .headline {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 13px;
   }
 }
-@media (min-width: 1024px) {
-  body {
-    flex-direction: row;
-    background-color: lightslategray;
-  }
-  img {
-    width: 23%;
-  }
-}
+
 
 
 
