@@ -61,6 +61,10 @@ nav a  {
   margin: 10px;
 }
 
+a.color-hover:hover, a.color-hover:active {
+  background-color: #ffc999;
+}
+
 /*** BIG NEWS ***/
 .big-news  {
   display: flex;
@@ -70,12 +74,16 @@ nav a  {
 
 .big-news img  {
   width: 100%;
+  border-radius: 2%;
+  box-shadow: 10px 10px #ffc999;
 }
 
 .big-news a {
   font-family: 'Roboto', sans-serif;
-  
+  text-decoration: none;
+  color: black;
 }
+
   
 /*** SMALL NEWS ***/
 .small-news  {
@@ -89,7 +97,8 @@ nav a  {
   border-radius: 5px;
   width: 100%;
   text-decoration: none;
-  margin-top: 16px;
+  margin: 16px;
+  box-shadow: 10px 10px #ffc999;
 }
 
 .small-news img  {
@@ -98,7 +107,9 @@ nav a  {
 
 .small-news-text {
   margin: 16px;
+  color: black;
 }
+
 
 /*** FOOTER ***/
 footer  {
