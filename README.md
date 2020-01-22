@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The first individual project during the Technigo frontend bootcamp, creating a responsive news site using flexbox layout. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+After reading the brief I started with the overall plan for the project. Using the knowledge from the course material I started coding, mapping out the different sections in html. I found the Noops Clone-video to be especially helpful and used it for my main inspiration when structuring both the html and CSS-files. Since the assignment is centered around using flexbox, that is the main model I used when styling the different elements.
+
+If I had more time I would probably try and add some hovering effects to the different images and links included. I would also like to look into the different ways of cropping and adjusting images. A third thing would be to look into using CSS-grid, we used it during the first project and I found it to be a bit more intuitive than using flexbox.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+View the site here: 
