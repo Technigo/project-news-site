@@ -4,12 +4,6 @@ body {
   margin:O; 
 }
 
-header h1{
-  font-size: 30px;
-  line-height: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
 h2{
   font-size: 30px;
   line-height: 16px;
@@ -24,22 +18,33 @@ header {
   align-items: center;
   padding: 0 16px;
   justify-content: space-between;
-
   margin: 30px 30px 30px 30px;
+}
+
+header h1{
+  font-size: 30px;
+  line-height: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .logo {
   width: 40px;
 }
 
-nav {
-display:none;
-}
-
-nav a {
+header .first-a { 
+  display:none; 
   color: #000;
   text-decoration: none;  
   margin-left: 10px;
+  font-size: 12px;
+  }
+
+header .second-a { 
+  display:none; 
+  color: #000;
+  text-decoration: none;  
+  margin-left: 10px;
+  font-size: 12px;
 }
 
 .date {
@@ -127,102 +132,136 @@ footer p {
   margin-left: 20px;
   }
   
-
-footer nav {
+.nav-footer a {
+color: #000;
+text-decoration: none;
 margin-right: 20px;
+font-size: 12px;
 }
 
 /*** MEDIA QUERIES ***/
 @media (min-width:650px) {
 
-  nav {
-    display: inline-block;
-    }
-
-  .big-news {
-    display: flex;
-    flex-direction: row;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0 50px 50px 50px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F6F6F6;
-  }
-  
-    .big-news img {
-    width: 100%;
-  }
-  
-  .big-news div {
-    text-align: left;
-    width: 50%;
+header .heading {
+  display: inline-block;
+  align-items: center;
   }
 
-  .big-news .heading {
-    padding: 20px 20px 0px 20px;
-    font-size: 20px;
-    line-height: 1.1;
-    }
+ 
+header .first-a {
+  display: inline-block;
+  order: -1;
+  }
+
+header .second-a {
+  display: inline-block;
+  }
+
+.logo {
+  display: none;
+  }
+
+.big-news {
+  display: flex;
+  flex-direction: row;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 50px 50px 50px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F6F6F6;
+  }
   
-  .big-news .text {
+.big-news img {
+  width: 100%;
+  }
+  
+.big-news div {
+  text-align: left;
+  width: 50%;
+  }
+
+.big-news .heading {
+  padding: 20px 20px 0px 20px;
+  font-size: 20px;
+  line-height: 1.1;
+  }
+  
+.big-news .text {
   padding: 0px 20px 20px 20px;
   font-size: 10px;
   }
   
-  .other-news {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 40px 0 40px;
+.other-news {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 40px 0 40px;
+  flex-grow: 1; 
   }
   
-  .other-news a {
-    width: 40%;
-    margin-bottom: 40px;    
+.other-news a {
+  width: 40%;
+  margin-bottom: 40px;   
   }
 
 }
 
 @media (min-width: 900px){
 
-  header h1{
-    display: inline-block;
-    font-size: 70px;
-    line-height: 16px; 
+
+header .heading{
+  display: flex;
+  justify-content: space-around;
+  font-size: 45px;
+  line-height: 16px; 
+  align-items: center;    
   }
-
-  .logo {
-    width: 100px;
-  }
-
-  nav {
-    display: inline-block;
-    }
-
-    .big-news {
-      display: flex;
-      flex-direction: row;
-      margin: 0px 80px 80px 80px;
-      justify-content: space-around;
-    }
-
-    
-    
-    .big-news div {
-      text-align: left;
-      width: 50%;
-    }
   
-    .big-news .heading {
-      padding: 10px 10px 0px 10px;
-      font-size: 40px;
-      line-height: 1.1;
-      }
-    
-    .big-news .text {
-    padding: 0px 20px 20px 20px;
-    font-size: 25px;
+   
+header .first-a {
+  display: inline-block;
+  order: 0;
+  }
+  
+header .second-a {
+  display: inline-block;
+  margin-right: 40px;
+  }
+
+.logo {
+  display: inline-flex;
+  width: 80px;
+  margin-left: 40px;
+  }
+
+.date {
+  margin-left: 80px;
+  }
+
+.big-news {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 80px 80px 80px;
+  justify-content: space-around;
     }
+
+    
+    
+.big-news div {
+  text-align: left;
+  width: 50%;
+  }
+  
+.big-news .heading {
+  padding: 10px 10px 0px 10px;
+  font-size: 40px;
+  line-height: 1.1;
+  }
+    
+.big-news .text {
+  padding: 0px 20px 20px 20px;
+  font-size: 25px;
+  }
 
 .other-news {
   display:flex;
