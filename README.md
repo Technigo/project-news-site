@@ -23,4 +23,7 @@ I think the winning concept was to keep the styling minimal when trying to get t
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+Deployed website:
+https://pedantic-fermat-8f9988.netlify.com/
+
