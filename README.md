@@ -1,12 +1,18 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a website and use responsive design. 
 
 ## The problem
+In the beginning I did a backlog. With everything I wanted todo and then prioritized to make sure that I had time to do all the important thing and the minimum requirements.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I struggled with the header to look good in all different website sizes not only mobile, ipad and laptop. 
+Didnt really find a solution for that. 
+Also had some problems with flex-grow. 
+
+If I had more time I would:
+1. Add some more comments add structure the code better. 
+2. Look at different solutions for responsivness regarding headings and such.
+3. Look into flex-grow more.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://happy-beaver-98f09d.netlify.com/
