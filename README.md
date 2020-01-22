@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+First project using flexbox to layout the page. The design is responsive for mobiles, tablets and desktops.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I took a moment to draw a sketch before starting any coding. Then, I worked on the HTML skeleton, then CSS. I struggled to layout the page because one div container was missing inside my sections. I have been using a lot the chrome inspector to check my css all along the week.
+
+If I have had more time, I would have added more animations like a real hamburger menu showing up from the top or side, and some underline animations on some links.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://amazing-thompson-1e4ec7.netlify.com/
