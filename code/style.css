@@ -303,17 +303,17 @@ figcaption {
   transition: all 400ms ease-out;
   text-align:center;
   }
-  .effect-container .content:hover { opacity:1; }      
+  .effect-container .content:hover { opacity:1; }    
   .effect-container .content .text {
   height:0;
   opacity:1;
   transition-delay: 0s;
   transition-duration: 0.4s;
   }
-  .effect-container .content:hover .text {
+  .effect-container .content:hover .text { 
   opacity:1;
   transform: translateY(240px);
-  }
+  } 
 
  /*** FOOTER ***/
  
@@ -391,11 +391,13 @@ figcaption {
     display: none;
   }
 
-  
+  .content {
+    opacity: 1; /*Added after realising you can't "hover" on actual mobiles*/
+  }
+
 }
 
 @media (min-width: 669px) {
-
   header {
     border-bottom: 1px solid black;
   }
@@ -408,11 +410,6 @@ figcaption {
     position: relative;
     right: 1.75cm;
   }
-
-
-  
-
-  
   .grid-news-container {
     flex-direction: row;
     flex-wrap: wrap;
