@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was a project I did at technigos bootcamp.The task was to create a classic magazine or newspaper site. The focus was to practise and learn about responsive design and flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+At first I struggled with how everything is connected. I didn´t grasp the koncept of the box model. Then I got the tip to add a background color to every element, and after that I began to understand. Even though I played Flexbox froggy and other practice games, it was hard to get the elements to do what I wanted.
+
+If I had more time I would work on the styling and tweek how the design would look on the different screen sizes. I would of worked more with the news cards and make them aligned and the same size. Also make the links work and maybe add some more effects, like hover effects.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://eager-galileo-682404.netlify.com
