@@ -23,4 +23,4 @@ More time planinng the code and features I want to use. I had already used up a 
 
 
 ## View it live
-https://stupefied-golick-2e8131.netlify.com/code/
+https://stupefied-golick-2e8131.netlify.com/
