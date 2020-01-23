@@ -1,14 +1,26 @@
 # News Site
 
-My news site is inpired by Refinery29
+Elephant News Media
 
+My news site is inspired by Refinery29
 I wanted it to be clean and easy to use.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had difficulties with flexbox and spent some good amount of time on getting everything responsiv. 
+
+Flex-box: overal issues: I used flex tool, image object-fit and media queries to solve it.
+
+Footer: It wasn't attched to the bottom and wasn't responsive, I used media queries and position, top, padding and width slove it.
+
+Planning:
+
+I sketched my website on a paper first and created a backlog. 
+
+Next time:
+
+More time planinng the code and features I want to use. I had already used up a lot of time doing things and then removed, so maybe look over what I did wrong. Focus on the main things first and then a new features.
+
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
