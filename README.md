@@ -9,4 +9,4 @@ All problems I encountered was solved with the aid of w3schools.com, google and 
 If I had more time (and knowledge) I would have liked to add a dropdown navbar to the hamburger menu in mobile size.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://practical-ptolemy-0a633a.netlify.com/
