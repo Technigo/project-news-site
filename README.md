@@ -1,6 +1,6 @@
 # News Site
 
-This was a project I did at technigos bootcamp.The task was to create a classic magazine or newspaper site. The focus was to practise and learn about responsive design and flexbox.
+This was a project I did at Technigos Bootcamp.The task was to create a classic magazine or newspaper site. The focus was to practise and learn about responsive design and flexbox.
 
 ## The problem
 
