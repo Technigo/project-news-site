@@ -9,10 +9,22 @@ body, html {
 .hero-image img {
   display: fixed;
   width: 100%;
-  height: 600px;
+  height: 670px;
   background-attachment: fixed;
   background-position: top center; 
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-image img  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image img {
+    width: 100%;
+  }
 }
 
 /****************** Sidebar style ***********************/
@@ -53,24 +65,47 @@ body, html {
   margin-left: 40px;
 }
 
+.sidebar-logo:hover {
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    float: right;
+    display: block;
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+}
+
+  @media screen and (max-width: 600px) {
+  .sidebar-right a {
+    display: none;
+  }
+}
+
+
+
 /****************** Big news style **********************/
 
 .big-news-container {
   position: absolute;
   top: 0;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin-top: 30%;
   z-index: 1;
-  background-color: rgba(150, 126, 46, 0.523);
+  background-color: rgba(150, 126, 46, 0.42);
   color: white;
 }
 
-
-
 .date {
   padding-bottom: 5px;
+  padding-left: 20px;
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
@@ -78,12 +113,14 @@ body, html {
 
 .main-titel {
   padding-bottom: 15px;
+  padding-left: 20px;
   font-family: 'Playfair Display', serif;
   font-size: 25px;
 }
 
 .subject-story {
   font-size: 12px;
+  padding-left: 20px;
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 1;
@@ -91,28 +128,13 @@ body, html {
 
 .main-titel-story {
   padding-bottom: 5px;
+  padding-left: 20px;
   font-family: 'Playfair Display', serif;
   font-size: 30px; 
 }
 
-a {
-  color: white;
-}
-
-a:link {
-  color: white;
-  text-decoration: none;
-}
-
-.main-titel-story a:hover {
-  background-image url (big-news2.jpg);
-  opacity: 70%;
-  text-decoration: underline;
-  color: rgba(230, 151, 141);
-}
-
-
 .by {
+  padding-left: 20px;
   font-size: 12px;
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
@@ -120,70 +142,130 @@ a:link {
   color: white;
 }
 
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+} 
+
+.main-titel-story a:hover {
+  opacity: 70%;
+  text-decoration: underline;
+  color: rgba(230, 151, 141);
+}
+
+
+@media screen and (max-width: 992px) {
+  .big-news-container {
+    width: 100%;
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .big-news-container  {
+    width: 100%;
+    margin-top: 300px;
+  }
+}
 
 /****************** Other news style ***********************/
 
 main {
   width: 100%;
-  height: auto;
+  height: 80%;
 }
 
 .top-text h1 {
-  margin-left: 15px;
+  margin-left: 14px;
   margin-top: 2%;
-  padding: 5px;
+  padding: 6px;
   color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.news-container {
-  display: flex;
-  align-content: center;
-  align-items: flex-start;
+* {
+  box-sizing: border-box;
 }
 
-.news-card {
-  margin-top: 5px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 10px;
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
 }
 
-.news-card h2 {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column img {
+  width: 100%;
+  height: 40%;
+}
+
+.column h2 {
   font-size:15px;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
   letter-spacing: 2;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.news-card p {
-  font-size: 15px;
+.column p {
+  height: 75%;
+  margin-top: 2px;
+  font-size: 20px;
   font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 
-.news-card img {
-  width: 250px;
-  height: 250px;
+/****************** footer style ***********************/
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 80px; 
+  background-color: rgba(150, 126, 46, 0.42);
+}
+
+footer h4 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
 }
 
 
-/****************** media query ***********************/
-
-@media (min-width: 667px) {
-  .news-card {
-    display: flex;
-    width: 40%;
-    flex-grow: 1;
+@media screen and (max-width: 600px) {
+  .footer  {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
   }
 }
-
+/****************** media query ***********************/
 
 
 
