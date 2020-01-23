@@ -1,4 +1,193 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  width: fit-content;
+  height: auto;
 }
+
+
+header {
+  background-color: rgb(165, 167, 168);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+ margin: 20px;
+  border: 0px;  
+  padding: 5px;
+  width: 198px;
+}
+
+.nav {
+ height: 100px;
+  width: 100px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color:  white;
+  font-size: 15px;
+}
+
+.read-more {
+  color: black;
+  font-size: 20px;
+}
+
+h1 {
+  margin-left: 100px;
+  font-size: 60px;
+  color: white;
+}
+
+h3 {
+  color: rgb(94, 92, 92);
+  font-size: 35px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 50px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 40px;
+}
+
+.big-news {
+  background-color: #d3d3da ;
+  display: flex;
+
+}
+
+
+.series-of-articles {
+  background-color:  #f4f4fc;
+  display: flex;
+
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 5px;
+  width: 80%;
+}
+
+.big-news-cat {
+  background-color: darkgray;
+  width: 50%;
+ 
+}
+
+ .other-news {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+ }
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid; color: black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+  width: 70%;
+
+}
+
+footer {
+  background-color:rgb(165, 167, 168);
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+}
+
+footer img {
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+.publisher {
+  padding: 20px;
+}
+
+h5 {
+  margin: 0px;
+}
+
+.social-media {
+  padding: 10px;
+}
+
+
+@media (min-width:668px) and (max-width:1024px)
+{
+.other-news {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 50%;
+}
+.card {
+  width: 40%;
+}
+h4 {
+ 
+  padding-top: 20px;
+  }
+}
+
+@media (min-width:1025px)
+{
+  h1 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  .other-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 20%;
+  }
+
+ a {
+   font-size: 30px;
+ }
+.nav {
+  width: 100%;
+  }
+h5 {
+  font-size: 20px;
+  }
+}
+  
