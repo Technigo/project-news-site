@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>Shut up and stream</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="tv.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/tv.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Monoton|Montserrat|Poiret+One|Raleway&display=swap">
   </head>
 
@@ -13,32 +13,34 @@
     <header>
       <div class="header-container">
         <div class="header-home">
-         <a href="#home"><img src="tvwhite.png" alt="Retro TV"></a>  
+         <a href="#home"><img src="./assets/tvwhite.png" alt="Retro TV"></a>  
         </div>
-        <div class="header-textcontainer">
+        <div class="header-text-container">
           <h1> Shut up and stream</h1>
           <div class="header-text">Your guide with all you need to know for a successfull "Netflix and Chill"</div>
         </div>
       </div>
       <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="navbar-home" href="#home"><img src="tvwhite.png" alt="Retro TV"></a>
-        <a href="#signup">Sign up</a>
-        <a href="#login">Log in</a>
+        <a class="navbar-navbar" href="#about">About</a>
+        <a class="navbar-navbar" href="#contact">Contact</a>
+        <a class="navbar-home" href="#home"><img src="./assets/tvwhite.png" alt="Retro TV"></a>
+        <a class="navbar-navbar" href="#login">Log in</a> 
+        <a class="navbar-navbar" href="#signup">Sign up</a>
       </nav>
     </header>
 
     <main>
       <section class="big-news">
         <picture class="big-image">
-         <img src="oscar.svg" alt="Academy Awards Statue"> 
+         <img src="./assets/oscar.svg" alt="Academy Awards Statue"> 
          <a class="image-source" href="https://sv.vecteezy.com/"> Vektorer av Vecteezy</a>
         </picture>
         <div class="big-news-text">
-          <h2>
+          <a href="#big-news-title">
+            <h2>
             2020 Oscars - and the nominations are in
-          </h2>
+            </h2>
+          </a>
           <p class="small-screen">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -49,24 +51,22 @@
             Amet risus nullam eget felis eget. Sit amet porttitor eget dolor morbi non arcu risus. Molestie at elementum eu facilisis 
             sed odio. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Justo laoreet sit amet cursus sit amet dictum sit. 
             Eget mi proin sed libero. Proin sed libero enim sed faucibus turpis in eu mi. Condimentum id venenatis a condimentum vitae sapien. 
-            Justo laoreet sit amet cursus sit amet dictum sit amet. Id consectetur purus ut faucibus pulvinar elementum. Fermentum posuere 
-            urna nec tincidunt praesent semper feugiat nibh sed. Augue eget arcu dictum varius duis. Massa sed elementum tempus egestas 
-            sed sed risus. Dui ut ornare lectus sit amet est placerat in egestas.
+            Justo laoreet sit amet cursus sit amet dictum sit amet.
           </p>
-          <a href="#big-news"> Click to read more...</a>
+          <a class="read-more" href="#big-news"> Click to read more...</a>
         </div>
       </section>
 
       <section class="other-news">
         <article class="article">
-          <img src="witcher3.jpg" alt="Witcher Tv series">
+          <img src="./assets/witcher3.jpg" alt="Witcher Tv series">
           <a href="#news1">
             <h3>A worthy contender after Game of Thrones or just another b-rated fantasy drama?</h3>
           </a>
         </article>
         
         <article class="article">
-          <img src="monterey.jpg" alt="Grey bridge">
+          <img src="./assets/monterey.jpg" alt="Grey bridge">
           <a href="#news2">
             <h3>Returning to Monterey <br> 
             What the new season of Big Little Lies has in store for us!</h3>
@@ -74,42 +74,42 @@
         </article>
 
         <article class="article">
-          <img src="mickey.jpg" alt="Disney+">
+          <img src="./assets/mickey.jpg" alt="Disney+">
           <a href="#news3">
             <h3>In the wake of Disney+ ; Are we in need of yet another streaming service?</h3>
           </a>
         </article>
 
         <article class="article">
-          <img src="netflix.jpg" alt="Netflix on the TV">
+          <img src="./assets/netflix.jpg" alt="Netflix on the TV">
           <a href="#news4">
             <h3>Keeping up with the streams 🔍 Our monthly guide to new releases!</h3>
           </a>
         </article>
       
         <article class="article">
-          <img src="dexter.jpg" alt="Old TV">
+          <img src="./assets/dexter.jpg" alt="Old TV">
           <a href="#news5">
             <h3>TV Series we loved - going down memory lane with the best 90's kid shows</h3>
           </a>
         </article>
         
         <article class="article">
-          <img src="superhero.jpg" alt="Sunglasses with Stranger things logo">
+          <img src="./assets/superhero.jpg" alt="Sunglasses with Stranger things logo">
           <a href="#news6">
             <h3>And the feud is on - which Superhero TV series will you follow?</h3>
           </a>
         </article>
 
         <article class="article">
-          <img src="veggies.jpg" alt="Old camera">
+          <img src="./assets/veggies.jpg" alt="Old camera">
           <a href="#news7">
             <h3>Back to the classroom - the new season of Sex education just opened on Netflix</h3>
           </a>
         </article>
 
         <article class="article">
-          <img src="minions.jpg" alt="Puppy with Mistletoe">
+          <img src="./assets/minions.jpg" alt="Puppy with Mistletoe">
           <a href="#news8">
             <h3> What's the gossip? A new Minions TV series in the making?!</h3>
           </a>
@@ -119,22 +119,22 @@
   </main>
 
   <footer>
-    <div class="footer-container">
-      <ul class="footer-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#signup">Sign up</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Log in</a></li>
-      </ul>
+    <div class="footer-links">
+      <a class="about" href="#about">About</a>
+      <a class="login" href="#login">Log in</a>
+      <a class="contact" href="#contact">Contact</a>
+      <a class="signup" href="#signup">Sign up</a>
+      
     </div>
     <div class="footer-subscribe">
       <h4>
       Toss a coin to your critic and...
       </h4>
       <button>
-        Subscribe to our newsletter
+        <a href="#button">Subscribe to our newsletter</a>
       </button>
-      <img src="logo.svg" alt="Technigo logo">
+      <p>Site made by: Elsa Reuterswärd. through Technigo Frontend Boot camp <span><img src="./assets/logo.svg" alt="Technigo logo"></span></p>
+      <img class="logo" src="./assets/logo.svg" alt="Technigo logo">
     </div>
     
   </footer>
