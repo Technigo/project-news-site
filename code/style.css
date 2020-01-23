@@ -195,7 +195,6 @@ main {
   float: left;
   width: 25%;
   padding: 20px;
-  padding-bottom: 100px;
 }
 
 .row:after {
@@ -218,7 +217,8 @@ main {
 
 .column img {
   width: 100%;
-  height: 40%;
+  height: 30vw;
+  object-fit: cover;
 }
 
 .column h2 {
@@ -238,12 +238,22 @@ main {
   text-align: center;
 }
 
+#link-column {
+  color: black;
+}
+
+#link-column:hover {
+  opacity: 70%;
+  text-decoration: underline;
+  color: rgba(230, 151, 141);
+}
+
 
 /****************** footer style ***********************/
 
 
 #footer {
-  background: #ffab62;
+  background-color: rgba(150, 126, 46, 0.42);
   padding: 1em;
   width: 100%;
   top: 200%;
@@ -262,11 +272,11 @@ footer p:hover {
   color: #ffab62;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
   #footer {
     padding: 1em;
     width: 100%;
-    top: 295%;
+    top: 250%;
     position: absolute;
   }
 }
@@ -275,7 +285,7 @@ footer p:hover {
   #footer {
     padding: 1em;
     width: 100%;
-    top: 525%;
+    top: 300%;
     position: absolute;
   }
 }
