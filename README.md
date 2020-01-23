@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is project 2 of the Technigo Bootcamp, and the first individual one.
+The assignment was to create news- or magazine site, creating layout with Flexbox. It was also our introduction to responsive design.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I did not plan this project properly, being eager to dive into coding, it also became clear during the project that I need to work in a more structured way. Lesson learned, next week I will take time to make a quite detailed mockup and backlog, and create a structure for my project.
+All problems I encountered was solved with the aid of w3schools.com, google and some trial and error.
+If I had more time (and knowledge) I would have liked to add a dropdown navbar to the hamburger menu in mobile size.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
