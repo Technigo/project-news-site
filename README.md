@@ -12,4 +12,6 @@ What I innitially planned was to make the smaller images have a margin on the si
 
 STILL! Overall Im happy with the project, it could have been better but it was my first own project and It was a great challenge. Looking forward to learn and understand more.
 
+ps. all the images are my own. (I like baking).
+
 https://friendly-brown-5cd0e9.netlify.com/
