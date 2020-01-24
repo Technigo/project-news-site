@@ -12,4 +12,4 @@ I used flexbox as a layout model for the page. It was kind of tricky... I strugg
 If i had more time I would work more on the design, for examepl pictures or font. 
 
 ## View it live
-Link: 
+Link: https://cranky-lamarr-2cb40e.netlify.com/
