@@ -1,0 +1,174 @@
+body {
+  margin: 0px;
+  font-family: Helvetica;
+  background: rgb(119, 192, 185);
+}
+
+h5 {
+  margin-bottom: 0px;
+}
+
+header {
+  background-color: rgb(53, 189, 175);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+ width: 50%;
+ display: flex;
+ justify-content: space-between;
+}
+.navbar-logo {
+  height: 80px;
+  width: 80px;
+  display: none;
+}
+
+.two, .three, .four, .five {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.logo {
+   height: 80px;
+   width: 80px;
+}
+
+/**** Here comes the content!***/
+.main-news {
+  border: 2px solid #23282d;
+  border-radius: 16px;
+  background: whitesmoke;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-news img {
+  width:300px;
+  min-height:300px;
+  margin-left:15px;
+ 
+}
+p {
+  display:none;
+}
+
+.small-news {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  border: 2px solid #23282d;
+  background:whitesmoke;
+  width: 90%;
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom:30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.small-news img {
+  width:150px;
+  height:150px;
+  margin-left:15px;
+}
+
+footer {
+  background: rgb(53, 189, 175);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
+
+@media (min-width: 667px) {
+  .navbar-logo {
+      display: inline;
+  }
+  
+  .logo {
+      width:0px;
+      height:0px;
+  }
+  h1 {
+      display:none;
+  }
+  
+  .navbar {
+      width:90%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+  
+  }
+  header {
+      display:flex;
+      justify-content:space-around;
+  }
+ p {
+  display: inline;
+  }
+  div {
+      width: 38%;
+  }
+  .small-news img {
+      max-width:200px;
+      max-height:200px;
+      margin-left:15px;
+  }
+  
+  @media (min-width: 900px) {
+      .navbar-logo {
+          display:none;
+      }
+      .logo {
+          display: inline;
+          height:80px;
+          width:80px;
+      }
+      h1 {
+          display: inline;
+      }
+      .navbar {
+          width: 50%;
+      }
+  .main-news {
+      width: 96%;
+  }
+      div {
+          width:20%;
+          height:300px;
+          padding-left: 30px;
+           margin-left: 10px;
+           margin-right: 0px;
+           margin-bottom:20px;
+           display:flex;
+           flex-wrap:wrap;
+
+      }
+  }
+
