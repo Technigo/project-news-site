@@ -12,4 +12,4 @@ For next time? Do pictures properly. Ad more links to social media. With some fo
 Probably needed som adapting to larger screen sizes. And not PANIC.
 
 ## View it live
-(Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.)
+https://amazing-haibt-28da05.netlify.com/
