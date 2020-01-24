@@ -1,12 +1,15 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a project made made when doing the Technigo bootcamp.
+During this project we should learn;
+- Structure webpages using boxmodel
+- Layout webpages using flexbox
+- Create responsive webpages for mobile, desktop and tablet
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used flexbox as a layout model for the page. It was kind of tricky... I struggled a lot to get the containers in the right order...
+If i had more time I would work more on the design, for examepl pictures or font. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link: 
