@@ -2,10 +2,11 @@ Technigo Bootcamp assignment
 Learn about flexbox
 
 # News Site
-Responsive site using flex-box and media queries.
+A responsive site using flex-box and media queries.
 
 ## The problem
-Also created a self-cropping fixed ratio container for images using padding-top: and object-fit: cover.
+I also created a fixed ratio container that’s cropping the images using "padding-top" for height, since it can be expressed as a % of the container width. Then positioning the images on top of the padding with "position: absolute" and lastly cropping the images with "object-fit: cover."
+
 
 ## View it live
 https://stoic-hugle-0a9beb.netlify.com/

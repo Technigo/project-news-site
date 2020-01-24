@@ -34,7 +34,7 @@ a:hover {
   color: rgb(0, 255, 0);
 }
 
-/* underlines child (>) headlines only on hover */
+/* underlines child headlines on hover */
 a:hover > h1, a:hover > h2 {
   text-decoration: underline;
 }
@@ -97,8 +97,6 @@ header a:hover > img {
 
 
 
-
-
 /* NEWS */
 
 .big-news, .news-card {
@@ -135,9 +133,9 @@ header a:hover > img {
   transform: translateY(-2px) translateX(-2px);
 }
 
-/* Hover changes shadow of images */ 
+/* Hover changes shadow of images to compensate for position change and appear fixed */ 
 .big-news figure:hover, .news-card article:hover > figure { /* article hover effects the child, figure */
-  box-shadow: 8px 8px 0px -2px rgba(0,0,0,0.5);
+  box-shadow: 8px 8px 0px -2px rgba(0,0,0,0.5); 
 }
 
 .big-news figure:active, .news-card article:active {
@@ -213,7 +211,7 @@ footer {
     flex-direction: row;
   }
 
-  /* makes height of text and figure the same */
+  /* NOT NEEDED makes height of text and figure the same */
   /* .big-news {
     align-items: stretch; 
   } */
