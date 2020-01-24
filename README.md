@@ -2,4 +2,4 @@ This was my first project in Technigo Bootcamp, the assignment was to create a c
 
 This project has been very good from a learning perspective, it has been a lot of trial and error but that is how I learn the best. 
 
-
+Link to project: https://gallant-feynman-3288b1.netlify.com
