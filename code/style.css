@@ -73,27 +73,31 @@ nav a {
 .big-news {
   width: 100%;
   max-width: 1100px;
-  margin: 30px 5px;
+  margin: 30px 20px;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .big-news img {
-  width: 100%;
+  width: 90%;
   box-shadow: 10px 10px 5px grey;
 }
 
 /*** SMALLER NEWS  ***/
 
-.news-card {
+.smaller-news {
   width: 100%;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
+
 }
+
 
 .news-card img {
   width: 90%;
@@ -126,7 +130,7 @@ nav a {
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 667px) {
+@media (min-width: 668px) {
   .header {
     justify-content: space-between;
     margin: 20px;
@@ -143,7 +147,6 @@ nav a {
 
 
   .big-news {
-    flex-wrap: nowrap;
     flex-direction: row;
     text-align: left;
     padding: 50px;
@@ -159,10 +162,26 @@ nav a {
     margin-left: 30px;
   }
 
-  .news-card {}
+
+  .smaller-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 20px;
+  }
+
+  .news-card {
+    width: 50%;
+  }
 
   .news-card img {
-    width: 45%;
+    width: 80%;
+
+  }
+
+  .news-card p {
+    font-size: 10px;
+    margin-left: 30px;
   }
 
   .footer {
@@ -170,7 +189,7 @@ nav a {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .header {
     height: 150px;
     justify-content: space-around;
@@ -182,7 +201,7 @@ nav a {
     width: 50%;
   }
 
-  .nav {}
+
 
 
 
