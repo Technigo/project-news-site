@@ -58,7 +58,7 @@ nav {
   display: none;
 }
 
-nav {
+nav a {
   color: rgb(49, 52, 88);
   text-decoration: none;
   padding: 20px;
@@ -143,6 +143,8 @@ nav {
 
 
   .big-news {
+    flex-wrap: nowrap;
+    flex-direction: row;
     text-align: left;
     padding: 50px;
     flex-direction: row;
@@ -155,6 +157,16 @@ nav {
   .big-news h2 {
     font-size: 20px;
     margin-left: 30px;
+  }
+
+  .news-card {}
+
+  .news-card img {
+    width: 45%;
+  }
+
+  .footer {
+    width: 90%
   }
 }
 
