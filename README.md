@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a news site that was responsive when using different screen sizes. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with planning a rough outline and the content. Tried to follow a code along provided by Technigo. I googled a lot and looked at the tips from my team on slack. I got tangled when using the code along since I didn't understand the basics so I started again. If I had more time I would add more media querys to make the transitioning of the page nicer and also tweak the site. It is far from perfect. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://github.com/idaabra/project-news-site
