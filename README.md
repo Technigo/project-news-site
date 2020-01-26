@@ -8,4 +8,4 @@ I started with planning a rough outline and the content. Tried to follow a code 
 
 ## View it live
 
-https://github.com/idaabra/project-news-site
+https://confident-murdock-deeab7.netlify.com
