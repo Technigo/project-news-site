@@ -15,5 +15,6 @@ Switching the flex direction between 'row' and 'column' was a simple way to rest
 If I had more time I would like to have added a sidebar to the main body of the page, hidden in mobile view. Its flex-container would have been a column, set in the broader 'row' flex-container of the whole main-news page. I also realized that there is no 'hover' function on real mobiles so I had to make a quick fix for my grid-news items and change the opacity of text. I am not entirely happy with how this looks and would change if I had more time. 
 
 
+
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://goofy-dijkstra-2fa48a.netlify.com/
