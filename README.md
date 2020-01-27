@@ -7,4 +7,5 @@ This is a my first assignment. The main goal was to practice Flexbox.
 Time was short, had more time been given I would have made it prettier. For now I am happy to have the practice in Flexbox and Grids.
 
 ## View it live
-Live link coming soon.
+https://confident-borg-75c3d0.netlify.com//1project-news-site-master/code/
+
