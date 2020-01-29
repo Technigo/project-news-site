@@ -4,7 +4,6 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
- 
 body {
   margin: 0 0;
 }
@@ -30,12 +29,13 @@ p {
   color: #173348;
   line-height: 1.8;
 }
+
 .header-image {
   display: flex;
+  object-fit: cover;
   margin: 0 0;
   width:100%;
   height: 350px;
-  
 }
 
 /* styling header */
@@ -46,7 +46,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .site-name {
@@ -71,7 +70,7 @@ header {
   text-decoration: none;
   font-size: 20px;
   color: rgb(58, 57, 57);
-    }
+}
 
 .navbar-link {
   width: 80px;
@@ -305,11 +304,11 @@ footer {
 
 @media (min-width: 1024px) { /*styling desktop*/
 
-.link-desktop-navbar:hover {
-  font-size: 25px;
-  border-top: solid 2px gray;
-  border-bottom: solid 2px gray;
-  transition: 0.5s;
-}
+  .link-desktop-navbar:hover {
+    font-size: 25px;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    transition: 0.5s;
+  }
 
 }
