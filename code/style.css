@@ -9,17 +9,14 @@ body {
 /*** HEADER ***/
 
 header {
-background: #fbf2e8;
-height: 80px;
-display: flex;
-align-items: center;
-padding: 0 16px;
-
-
+ background: #fbf2e8;
+ height: 80px;
+ display: flex;
+ align-items: center;
+ padding: 0 16px;
 }
 header img {
   width: 184px;
-  
 }
 
 .hamburger {
@@ -72,7 +69,6 @@ nav a {
 }
 .big-news div button:hover {
   background: #063541;
-  
 }
 
 /*** SMALL NEWS SECTION ***/
@@ -149,7 +145,8 @@ header {
   justify-content: space-between;
 }
 nav {
-    display: inline-block;  }
+  display: inline-block;
+}
 
 .hamburger{
     display: none;
@@ -181,8 +178,8 @@ nav {
     display: inline-block;  }
   
 .hamburger{
-      display: none;
-    }
+  display: none;
+  }
 .big-news{
   flex-direction: row;
   align-items: center;
