@@ -15,4 +15,4 @@ Planned using trello and a quick layout sketch on paper to make more logical how
 If I had more time, I would spend more time making the site and the code cleaner.
 
 ## View it live
-https://loving-neumann-e67ba7.netlify.com/
+https://rautellin-news-site.netlify.com/
