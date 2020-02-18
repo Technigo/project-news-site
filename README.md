@@ -9,4 +9,4 @@ If i had more time I would have come up with some cool hover effects for the new
 
 ## View it live
 Take a look!
-https://eloquent-bhaskara-34fcf4.netlify.com/
+https://thecompass.netlify.com/
