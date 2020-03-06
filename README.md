@@ -8,5 +8,5 @@ I also created a fixed ratio container that’s cropping the images using "paddi
 
 
 ## View it live
-https://stoic-hugle-0a9beb.netlify.com/
+https://tree-times.netlify.com
 
