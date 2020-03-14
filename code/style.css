@@ -3,6 +3,8 @@ body {
   background-color: snow;
   font-family: 'Oswald', sans-serif;
   color: #7A6174;
+  margin: auto;
+  padding: 10px;
 }
 
 /* TEXT STYLING */
@@ -19,13 +21,34 @@ h2:hover, h3:hover, h4:hover, h5:hover {
   text-decoration: underline;
 }
 
-h3, h4 {
+h3 {
+  margin-top: 2px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 2px;
+}
+
+h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
   margin-top: 2px;
 }
 
 a {
   text-decoration: none;
   color: #7A6174;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+p.more-news {
+  font-size: 40px;
+  margin: 5px;
 }
 
 /*** HEADER ***/
@@ -78,10 +101,11 @@ nav a {
 
 /* NEWS SECTIONS */
 
-.news {
+.news, .news-grid {
   height: 100%;
   width: 100%;
   background: CORNSILK;
+  margin-bottom: 20px;
 }
 
 /* MAIN NEWS STYLING */
@@ -96,23 +120,16 @@ nav a {
   flex-direction: column;
 }
 
-/* GRID NEWS IMAGE */
+/* GRID NEWS */
 
-.grid-news-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 50%;
-  flex-grow: 1;
+.grid-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
-.grid-text-wrapper {
-  flex-direction: column;
-}
-
-.grid-image {
-  width: 50%;
-  height: 50%;
+img.grid-image {
+  width: 100%;
+  height: 100%;
 }
 
 /*** MEDIA QUERIES ***/
@@ -125,16 +142,40 @@ nav a {
 
   .main-news-card {
   flex-direction: row;
+  flex-grow: 1;
+  }
+
+  .text-wrapper {
+    margin: 20px;
   }
 
   .main-image {
     width: 50%;
     height: 50%;
   }
-  
-  .text-wrapper {
-    margin: 20px;
+
+  .news-grid {
+    display: flex;
+    flex-direction: column;
   }
+
+  .grid-news-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-wrapper {
+    width: 40%;
+    height: 40%;
+  }
+
+  img.grid-image {
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -150,5 +191,15 @@ nav a {
   h1 {
     display: block;
     font-size: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .grid-wrapper {
+    width: 20%;
+    height: 20%;
+    margin-right: 10px;
   }
 }
