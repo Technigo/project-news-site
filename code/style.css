@@ -1,41 +1,32 @@
 body {
-  background: #739f25;
+  background: yellow;
   background-color: snow;
-  font-family: 'Playfair Display', serif;
-  color: #739f25;
-  font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
+  color: #7A6174;
 }
 
-a {
-  color: #739f25;
+/* TEXT STYLING */
+h1 {
+  display: none;
 }
 
-a:link {
-  text-decoration: none;
+h2 {
+  margin: 2px;
+  font-weight: bold;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
+h2:hover, h3:hover, h4:hover, h5:hover {
   text-decoration: underline;
 }
 
-h4 {
-  font-size: 30px;
-  padding: 0 16px;
-  margin: 0;
+h3, h4 {
+  margin-top: 2px;
 }
 
-p {
-  font-size: 30px;
+a {
+  text-decoration: none;
+  color: #7A6174;
 }
-
-.avocado {
-  font-size: 60px;
-}
-
 
 /*** HEADER ***/
 
@@ -68,11 +59,7 @@ header img {
 .hamburger div {
   width: 30px;
   height: 5px;
-  background: black;
-}
-
-.avocado {
-  display: none;
+  background: #7A6174;
 }
 
 nav {
@@ -86,137 +73,71 @@ nav a {
   font-size: 25px;
   justify-content: space-between;
   padding: 10px;
-  background: #739f25;
-}
-/*** LATEST NEWS BLOCK ***/
-
-.latest-news {
-  display: block;
-  background: repeating-linear-gradient(-60deg, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1) 1px, rgb(255, 255, 255) 0.125rem, rgb(255, 255, 255) 0.3125rem) 0px 0px fixed;
-  padding: 5px;
+  background: #7A6174;
 }
 
-.latest-news-content {
+/* NEWS SECTIONS */
+
+.news {
+  height: 100%;
+  width: 100%;
+  background: CORNSILK;
+}
+
+/* MAIN NEWS STYLING */
+
+.main-image {
+  width: 100%;
+  height: 100%
+}
+
+.main-news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* GRID NEWS IMAGE */
+
+.grid-news-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 10px;
-}
-
-/*** MAIN NEWS CONTAINER ***/
-
-.main-news-container {
-  background: white;
-}
-
-.main-news-cards {
-  display: flex;
   flex-wrap: wrap;
+  width: 50%;
+  flex-grow: 1;
 }
 
-.main-news-cards img {
-  width: 100%;
+.grid-text-wrapper {
+  flex-direction: column;
 }
 
-.main-news-cards a {
-  background: snow;
-  background-color: #eeeeee;
-  width: 100%;
+.grid-image {
+  width: 50%;
+  height: 50%;
 }
-
-.main-news-container h4 {
-  font-size: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-/*** GRID NEWS CONTAINER ***/
-
-.grid-news-container {
-  background: repeating-linear-gradient(-60deg, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1) 1px, rgb(255, 255, 255) 0.125rem, rgb(255, 255, 255) 0.3125rem) 0px 0px fixed;
-  text-align: center;
-  padding: 24px;
-}
-
-.news-cards {
-  display: flex;
-  flex-flow: wrap-reverse;
-  
-}
-
-.news-cards img {
-  width: 100%;
-}
-
-.news-cards a {
-  background-color: #739f25;
-  color: #f7f89b;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-/*** OTHER NEWS CONTAINER ***/
-
-.other-news-container {
-  background: #f7f89b;
-  text-align: center;
-  padding: 24px;
-}
-
-.other-news-cards {
-  display: flex;
-  flex-flow: wrap-reverse;
-}
-
-.other-news-cards img {
-  width: 100%;
-}
-
-.other-news-cards a {
-  background: snow;
-  color: #f7f89b;
-  background-color: #739f25;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-/*** FOOTER ***/
-
-footer {
-  height: 50px;
-  padding: 10px;
-  font-size: 20px;
-  background-image: url(/images/footer-avocado.jpeg);
-  display: flex;
-  justify-content: space-between;
-}
-
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 650px) {
+@media (min-width: 668px) {
 
   header {
     justify-content: space-between;
   }
-  .main-news-cards a {
-  align-items: center;
+
+  .main-news-card {
+  flex-direction: row;
   }
 
-  .main-news-cards img {
-    max-width: 700px;
+  .main-image {
+    width: 50%;
+    height: 50%;
   }
-
-  .news-cards a {
-    width: 25%;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    margin: 5px;
+  
+  .text-wrapper {
+    margin: 20px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
 
   nav {
     display: inline-block;
@@ -226,24 +147,8 @@ footer {
     display: none;
   }
 
-  .avocado {
-    display: inline-block;
+  h1 {
+    display: block;
+    font-size: 20px;
   }
-
-  .main-news-cards a {
-    display: flex;
-    flex-flow: row;
-  }
-
-.news-cards a {
-  width: 15%;
-  flex-grow: 1;
-  margin: 16px;
-}
-
-.other-news-cards a {
-  width: 15%;
-  flex-grow: 1;
-  margin: 16px;
-}
 }
