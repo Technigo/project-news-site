@@ -20,4 +20,4 @@ This is my first project at Techinigo Bootcamp. The requirement was to create a 
 
 
 # View it live
-https://sad-jennings-ab2cb9.netlify.com/
+https://nifty-turing-285d99.netlify.com/
