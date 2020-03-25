@@ -1,6 +1,6 @@
 # News Site
 
-Assignment from Technigo bootcamp. Includes creating a basic webpage which is responsive and had different designs for mobile, desktop and tablet. 
+Second assignment from Technigo bootcamp. Includes creating a basic webpage which is responsive and had different designs for mobile, desktop and tablet. 
 
 ## The problem
 
