@@ -11,4 +11,4 @@ I made a wireframe sketch to plan the layout of the page. I tried to make small 
 If I had more time I would make the menu toggle working and probably make a better solution with the links in the article grid. The hover effect could target the whole card to be more visible and accessible.
 
 ## View it live
-View the site [over here](https://vibrant-goldstine-d37706.netlify.com/).
+View the site [over here](https://project-arctic-news-site.netlify.com/).
