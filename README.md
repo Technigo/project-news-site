@@ -4,14 +4,14 @@ This is my first project at Technigo Bootcamp. The learning objective and end go
 # Important
 The API can load very slow, and at times only showing 2-3 items in the news grid.
 
-Tech used 🧠
+# Tech used 🧠
 - HTML
 - CSS
 - Box model and flex box
 - Responsive design with Media Queries
 - API 
 
-Requirements 🧪
+# Requirements 🧪
 - Use flex box to layout the page.
 - Create a responsive design with the following views; Desktop, Tablet and mobile.
 - Style your page.
