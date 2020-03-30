@@ -1,23 +1,22 @@
-# News Site
+# Project News Site
+This is my first project at Technigo Bootcamp. The learning objective and end goal was to practise box model, responsive design with media queries and flex box. Later I decided to fetch an open API to get real news on the project from NY times.
 
-This is my first project at Techinigo Bootcamp. The requirement was to create a responsive news site using flex box. 
+# Information 
+The API can load very slow, and sometimes only a few items are visable.
 
 # Tech used 🧠
-
-- Structure webpages using boxmodel
-- Layout webpages using flexbox
-- Create responsive webpages for mobile, desktop and tablet
+- HTML
+- CSS
+- Box model and flex box
+- Responsive design with Media Queries
+- API 
 
 # Requirements 🧪
-
-- Use flexbox to layout the page.
-- Create a responsive design with the following views; Desktop 4 columns, tablet 2 columns, mobile 1 column.
+- Use flex box to layout the page.
+- Create a responsive design with the following views; Desktop, Tablet and mobile.
 - Style your page.
-- Code follows Technigo’s code guidelines.
 - Site should have a header, a main news article, a grid of news articles.
-- Contribute by helping others with this project on Stack Overflow.
-- If selected; demo your solution for your team.
-
 
 # View it live
-https://sad-jennings-ab2cb9.netlify.com/
+https://nifty-turing-285d99.netlify.com/
+
