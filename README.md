@@ -8,6 +8,17 @@ After reading the brief I started with the overall plan for the project. Using t
 
 If I had more time I would probably try and add some hovering effects to the different images and links included. I would also like to look into the different ways of cropping and adjusting images. A third thing would be to look into using CSS-grid, we used it during the first project and I found it to be a bit more intuitive than using flexbox.
 
+## Learning objectives
+
+* Structure webpages using boxmodel
+* Layout webpages using flexbox
+* Create responsive webpages for mobile, desktop and tablet
+
+## Tech
+
+* HTML5
+* CSS3
+
 ## View it live
 
 View the site here: https://ripebananas.netlify.com/
