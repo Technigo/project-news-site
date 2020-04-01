@@ -6,7 +6,7 @@ The first individual project during the Technigo frontend bootcamp, creating a r
 
 So this was my first project that i did all by myself. Now I understand responsive design, flexbox and the box model.
 
-## The problem
+## Learning objectives
 
 - Structure webpages using boxmodel
 - Layout webpages using flexbox
