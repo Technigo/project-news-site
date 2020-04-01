@@ -1,12 +1,8 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this project I have created a magazine webpage. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I have created a webpage for a travel newspaper. The design is mainly made with flexbox and the site is responsive. I have included some hover effects to the page. I have one header, one navbar, and a sign up form. The site has three two breakpoints, so you get different looks in desktop, tablet and mobile. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://condescending-leavitt-44bbfa.netlify.com/
