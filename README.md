@@ -20,4 +20,4 @@ I would make a footer and add different images for the small news cards.
 
 ## View it live
 Uplifting News website:
-https://vibrant-bardeen-6fca39.netlify.com/
+https://upliftingnews.netlify.com/
