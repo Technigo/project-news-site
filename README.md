@@ -1,6 +1,7 @@
 # News Site
 
-A first assignment in the Bootcamp. In this project we were to make a classic new site that looked good on all screensizes using flexbox. 
+A first assignment in the Bootcamp. In this project we were to make a classic new site that were responsive and using flexbox for this. 
+
 
 ## The problem
 I looked at a lot of other sites and then made a sketch. I used flexbox and media queries to solve the problem. 
