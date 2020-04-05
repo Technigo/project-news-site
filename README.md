@@ -2,7 +2,7 @@
 
 A responsive news site using Flexbox layout.
 
-## The problem
+## Approach
 
 I have quite a lot of experience working with Flexbox and responsive websites in general, so this assignment was a lot repetition to me – which was great. I have reviewed every little detail that I thought felt clear to me, and tried to find new and better solutions to approach the issues that comes up with a responsive layout.
 
@@ -10,5 +10,5 @@ I made a wireframe sketch to plan the layout of the page. I tried to make small 
 
 If I had more time I would make the menu toggle working and probably make a better solution with the links in the article grid. The hover effect could target the whole card to be more visible and accessible.
 
-## View it live
-View the site [over here](https://project-arctic-news-site.netlify.com/).
+## Deployed
+https://project-arctic-news-site.netlify.com/
