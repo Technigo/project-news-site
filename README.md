@@ -1,6 +1,13 @@
 # News Site
 
-Making a responsive news site with flexbox using HTML and CSS for different outlets.
+Making a responsive news site with flexbox using HTML and CSS for different outlets 📱🌸🐶📖
+
+## Code
+I've used:
+  * **CSS**
+  * **HTML**
+  * **Responsive Design**
+  * **Flexbox**
 
 ## The problem
 
