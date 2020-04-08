@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The aim of the project was to create a responsive webpage for mobile, tablet or desktop. For the project I made a classic magazine or newspaper site containing a header, logo, navbar, big news section and a grid of cards with other news.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+For the project I structured the webpage using boxmodel and used flexbox for the layout. The page is built mobile first, which then changes depending on screen size using media quaries. For the design I played around with different hover effects and box shadows to make the page more interactive for the user. If I had more time, I would focus more on how to size different-sized pictures to become equally big.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://modest-hopper-27c950.netlify.com/
