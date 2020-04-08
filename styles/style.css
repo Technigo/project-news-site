@@ -85,7 +85,6 @@ h2 {
 
 h2:hover {
   font-weight: normal;
-  text-decoration: underline overline;
 }
 
 .big-news p {
@@ -421,6 +420,10 @@ button:hover {
   .big-news {
     margin: 2% 15%;
     padding: 0%;
+  }
+  
+  h2:hover {
+  text-decoration: underline overline;
   }
   
   .other-news {
