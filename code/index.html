@@ -17,8 +17,9 @@
 
 <body>
 
+  <!-- Logo and navbar -->
+
   <header>
-    <!-- Some kind of logo and navbar -->
     <h1 class="website-name">ripe bananas</h1>
     <img class="logo" src="banana-logo.svg" alt="Banana logo">
     <nav class="navbar-links">
@@ -32,9 +33,9 @@
     </nav>
   </header>
 
-  <!-- The big news content -->
+  <!-- Big news content -->
 
-  <section class="big-news">
+  <section aria-label="main banana news container" class="big-news">
     <img class="image-big-news" src="banana-pink.jpg" alt="Banana">
     <section class="big-news-text">
       <a href="https://www.independent.co.uk/news/world/americas/colombia-banana-crops-panama-disease-spread-emergency-fungus-tr4-latest-a9055661.html"
@@ -45,10 +46,11 @@
     </section>
   </section>
 
-  <!-- The other news  -->
+  <!-- Other news  -->
 
-  <section class="other-news">
-    <section class="small-news-card">
+  <section class="other-news-wrapper">
+    <section aria-label="other banana news container" class="small-news-cards">
+
       <a href="https://www.independent.co.uk/life-style/christmas/food-drink/japan-dt-farm-edible-peel-bananas-ice-age-method-a8130826.html"
         target="_blank">
         <img class="image-small-news" src="banana-monkey.jpg" alt="Monkey holding banana">
@@ -56,34 +58,41 @@
         <p class="small-news-paragraph">Gone are the days of going through the tiring chore of actually peeling a
           banana &#62;</p>
       </a>
+
       <a href="https://news.artnet.com/market/maurizio-cattelan-banana-art-basel-miami-beach-1722516" target="_blank">
         <img class="image-small-news" src="banana-tape.jpg" alt="Banana taped to wall">
         <h3>Interested in a $120,000 banana?</h3>
         <p class="small-news-paragraph">"The banana is supposed to be a banana." &#62;</p>
       </a>
+
       <a href="https://www.independent.co.uk/life-style/banana-extinct-fungus-panama-spread-disease-a7953416.html"
         target="_blank">
         <img class="image-small-news" src="banana-plant.jpg" alt="Banana crop">
         <h3>Bananas could face extinction</h3>
         <p class="small-news-paragraph">One of the world's most-loved fruits is once again under threat &#62;</p>
       </a>
+
       <a href="https://www.independent.co.uk/life-style/bananas-prevent-heart-attacks-strokes-eat-regularly-study-potassium-rich-foods-a7986256.html"
         target="_blank">
         <img class="image-small-news" src="banana-plate.jpg" alt="Banana on plate">
         <h3>Eating bananas regularly could prevent heart attacks and strokes</h3>
         <p class="small-news-paragraph">Getting enough potassium could make a huge difference to your health &#62;</p>
       </a>
-      <a href="#">
+
+      <a href="https://www.independent.co.uk/news/business/news/british-families-throw-millions-bananas-away-every-day-government-study-wrap-sainsburys-supermarkets-a7736181.html"
+        target="_blank">
         <img class="image-small-news" src="banana-ripe.jpg" alt="Ripe banana">
         <h3>Shoppers throw 1.4 million bananas away every day</h3>
         <p class="small-news-paragraph">Supermarkets ramp up efforts to combat food waste &#62;</p>
       </a>
+
       <a href="https://www.bananalink.org.uk/news/banana-prices-should-rise-if-shoppers-want-sustainable-fruit-warn-campaigners/"
         target="_blank">
         <img class="image-small-news" src="banana-pile.jpg" alt="Banana piles">
         <h3>Banana prices should rise if shoppers want sustainable fruit</h3>
         <p class="small-news-paragraph">Retailers and consumers need to share the burden of producers &#62;</p>
       </a>
+
       <a href="https://www.malaymail.com/news/malaysia/2019/11/03/why-its-better-to-wrap-food-with-banana-leaf-and-its-critical-decline-in-ma/1806326"
         target="_blank">
         <img class="image-small-news" src="banana-leaf.jpg" alt="Banana leaf">
@@ -91,6 +100,7 @@
         <p class="small-news-paragraph">Malay cultural scientist advocating for a return of banana leaves as food
           wrappings &#62;</p>
       </a>
+
       <a href="https://www.nationalgeographic.com/environment/urban-expeditions/food/food-journeys-graphic/"
         target="_blank">
         <img class="image-small-news" src="travel.jpg" alt="Scrabble travel the world">
@@ -98,8 +108,11 @@
         <p class="small-news-paragraph">Travelling from tropical plantations to grocery aisles, getting a banana to
           market is a complex process &#62;</p>
       </a>
+
     </section>
   </section>
+
+  <!-- Footer  -->
 
   <footer id="bottom">
     <p class="footer-paragraph">Logo by Freepik from
