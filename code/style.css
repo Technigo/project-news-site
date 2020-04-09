@@ -29,6 +29,10 @@ a {
   font-size: 0.8rem;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /*** HEADER ***/
 
 header {
@@ -111,7 +115,7 @@ header {
 footer {
   background: #000;
   color: #fff;
-  height: 45px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,12 +123,12 @@ footer {
 }
 
 .footer-paragraph {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .footer-link {
   color: #fff;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 /*** MEDIA QUERIES ***/
