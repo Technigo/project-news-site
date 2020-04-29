@@ -8,4 +8,4 @@ For the project I structured the webpage using boxmodel and used flexbox for the
 
 ## View it live
 
-https://modest-hopper-27c950.netlify.com/
+https://er-project-news-site.netlify.app/
