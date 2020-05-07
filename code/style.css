@@ -1,7 +1,7 @@
 html {
   background: rgb(4, 48, 33); /* backup background color */
   color: #fff;
-  background-image: url("https://images.unsplash.com/photo-1511207538754-e8555f2bc187");
+  background-image: url("assets/photo-1511207538754-e8555f2bc187.jpeg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -48,9 +48,6 @@ a:hover > h1, a:hover > h2 {
 
 
 /* HEADER */
-
-header {
-}
 
 header ul {
   display: flex;
@@ -155,8 +152,6 @@ header a:hover > img {
   height: 100%;
   width: 100%;
   object-fit: cover;  /* Crops the image to fit the ratio */
-
-  
 }
 
 
@@ -211,11 +206,6 @@ footer {
     flex-direction: row;
   }
 
-  /* NOT NEEDED makes height of text and figure the same */
-  /* .big-news {
-    align-items: stretch; 
-  } */
-
   /* stops the text from changing row when min-width is hit */
   .big-news {
     flex-wrap: nowrap; 
@@ -229,9 +219,6 @@ footer {
   .big-news article {
     width: 35%;
     min-width: 260px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; not supported in Edge */
   }
 
   .news-card article {
