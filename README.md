@@ -1,4 +1,4 @@
-# News Site|&ensp;[View Live &#10555;](https://tree-times.netlify.com)
+# News Site&ensp;|&ensp;[View Live &#10555;](https://tree-times.netlify.com)
 A responsive site using flexbox, media queries and semantic HTML.
 
 Preserved the images aspect ratios when resizing using padding-top for height, as it can be expressed as a percentage of the container width. (More about this trick [here](https://css-tricks.com/aspect-ratio-boxes/))
