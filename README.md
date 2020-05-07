@@ -1,12 +1,17 @@
-Technigo Bootcamp assignment 
-Learn about flexbox
+# News Site;|&ensp;[View Live &#10555;](https://tree-times.netlify.com)
+A responsive site using flexbox, media queries and semantic HTML.
 
-# News Site
-A responsive site using flex-box and media queries.
+Preserved the images aspect ratios when resizing using padding-top for height, as it can be expressed as a percentage of the container width. (More about this trick [here](https://css-tricks.com/aspect-ratio-boxes/))
 
-I also created a fixed ratio container that’s cropping the images using "padding-top" for height, since it can be expressed as a % of the container width. Then positioning the images on top of the padding with "position: absolute" and lastly cropping the images with "object-fit: cover."
+## Core Tech
+* Responsive Layout
+* HTML5
+* Flexbox
+* Aspect Ratio Boxes
 
+## Screenshot
+![Screenshot](screenshot.png)
 
 ## View it live
-https://stoic-hugle-0a9beb.netlify.com/
+https://tree-times.netlify.com
 
