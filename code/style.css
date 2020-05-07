@@ -222,6 +222,7 @@ input {
   margin: 5px;
   height: 20px;
   border-radius: 8px;
+  border: none;
 }
 
 input:hover {
@@ -431,5 +432,9 @@ footer {
 
   .snow {
     width: 80%;
+  }
+
+  input {
+    border: 2px solid rgba(128, 128, 128, 0.726);
   }
 }
