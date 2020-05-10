@@ -10,7 +10,7 @@ Preserved the images aspect ratios when resizing using padding-top for height, a
 * Aspect Ratio Boxes
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.jpg)
 
 ## View it live
 https://tree-times.netlify.com
