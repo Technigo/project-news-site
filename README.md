@@ -6,5 +6,5 @@ After a messy first attempt I started over, this time wiht a basic plan of what 
 After making a first version, I spent some time on creating hover-effects on some of the links (and tidying up the HTML-file).
 
 The deployed News Site: 
-https://hardcore-hermann-209b35.netlify.com/
+https://lion-project-technigo.netlify.app/
 
