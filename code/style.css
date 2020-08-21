@@ -14,15 +14,11 @@ h1 {
 
 .navbar {
   padding: 15px;
-  background-color:   #F8ECEC;
-  box-shadow: 0px 1px 5px #F8ECEC(190, 190, 190, 0.46);
- -webkit-box-shadow: 0px 1px 5px #F8ECEC(190, 190, 190, 0.46);
- -moz-box-shadow: 0px 1px 5px #F8ECEC(190, 190, 190, 0.46);
- overflow: hidden;
+  background-color:#F8ECEC;
 }
 
-
 /* change to flex-box */
+
 .navbar a {
   display: inline-block;
  color: black; 
@@ -73,6 +69,8 @@ h1 {
 
 }
 
+
+
 #quote {
   display: flex;
   justify-content: center;
@@ -106,9 +104,6 @@ h1 {
   height: 400px;
   width: 100% ;
   margin: 40px;
-  
-
-
 }
 
 
@@ -117,31 +112,55 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
- 
-
 }
 
 
 .small-news {
   flex: 1 1 150px;
   flex: 0 1 150px;
+  width: 100px;
+  height: 100px;
   margin: 40px;
   padding: 100px;
- 
   background-color: #F8ECEC;
-  border-color:  #F8ECEC;
-  border-style: groove;
-  border-radius: 8px;
-  box-shadow: 3px 5px  white;
-
+  border-color: #F7E6E6;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
+.small-news::after {
+  content: "";
+  border-radius: 5px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.small-news:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.small-news:hover::after {
+    opacity: 1;
+}
+
 
 .revolution-container {
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
   
-
 }
 
 .revolution {
@@ -150,6 +169,7 @@ section {
   margin: 20px;
   margin-left: 100px;
 
+  
 }
 
 
