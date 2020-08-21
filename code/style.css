@@ -1,4 +1,93 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #fff591;
+  color: #fa26a0;
+}
+
+header {
+  background: #05dfd7;
+  
+  
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  list-style-type: none;
+  font-size: 35px;
+  
+}
+section {
+  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+div {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+h1 {
+  font-size: 60px;
+}
+/* Mobile*/
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+li {
+  margin: 20px;
+}
+
+.li-3, .li-4 {
+  display: none;
+
+}
+
+
+.big-news {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 20px;
+  justify-content: left;
+  margin: auto;
+}
+
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+ 
+}
+/* Tablet*/
+@media only screen and (min-width: 668px) {
+
+}
+ /* Desktop */ 
+@media only screen and (min-width: 1024px) {
+
 }
