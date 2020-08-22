@@ -112,6 +112,9 @@ p {
   color: rgb(29, 29, 29);
   text-align: justify;
 }
+.linkread {
+  display: none;
+}
 
 hr {
   border: 0;
@@ -220,9 +223,39 @@ h2 {
     margin-left: 0;
   }
 
+  .linkread {
+    display: initial;
+  }
+
+  .read-more {
+    display: none;
+  }
+
   .other-news {
     display: block;
     align-items: center;
+  }
+  .news-text p {
+    font-family:"didot";
+    font-size: 14px;
+    color: rgb(29, 29, 29);
+    text-align: justify;
+  }
+
+  h1 {
+    font-family: "didot";
+    font-size: 24px;
+    color: #4e4e4e;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-family: "didot";
+    font-size: 20px;
+    color: #4e4e4e;
+    text-align: center;
   }
 
   article {
@@ -231,6 +264,6 @@ h2 {
     background-size: cover;
     background-position: center;
   }
-
+  
 }
 
