@@ -11,6 +11,17 @@ h1 {
 
 }
 
+h2 {
+  font-size: 80px;
+  font-style: bold;
+}
+
+h3 {
+  font-size: 50px;
+  font-style: italic;
+
+
+}
 
 .navbar {
   padding: 15px;
@@ -45,19 +56,11 @@ h1 {
 }
 
 
-.placeholder  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
-
-}
-
-
 .quote-container {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .quote {
@@ -84,11 +87,23 @@ h1 {
 
 }
 
+.placeholder  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
 .large-news-container {
   display: flex;
   justify-content: flex-end;
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
+ 
 
 
 }
@@ -96,14 +111,11 @@ h1 {
 
 .large-news {
   background-color: #F8ECEC;
-  border-style: groove;
   border-radius: 8px;
-  box-shadow: 3px 5px  white;
   padding: 30px;
   font-size: large;
-  height: 400px;
-  width: 100% ;
-  margin: 40px;
+  
+  
 }
 
 
@@ -114,6 +126,15 @@ section {
   justify-content: space-between;
 }
 
+
+section .img {
+  display: flex;
+  align-items: center;
+
+
+}
+
+ 
 
 .small-news {
   flex: 1 1 150px;
@@ -159,6 +180,7 @@ section {
 .revolution-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
   box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
   
 }
@@ -168,6 +190,7 @@ section {
   padding: 20px;
   margin: 20px;
   margin-left: 100px;
+ 
 
   
 }
