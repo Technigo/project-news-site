@@ -1,5 +1,8 @@
 # News Site
 
+This is a project I made when doing the Technigo bootcamp. 
+The project was to learn about layout pages with FLEXBOX and responsive designs. 
+
 Replace this readme with your own information about your project. 
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
