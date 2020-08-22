@@ -86,7 +86,7 @@ article p {
 /* Highlight news*/
 h1 {
   font-family: "didot";
-  font-size: 43px;
+  font-size: 50px;
   color: #4e4e4e;
   text-align: center;
   font-weight: bold;
@@ -107,8 +107,8 @@ h1 {
 }
 
 p {
-  font-family: "didot'";
-  font-size: 15px;
+  font-family:"didot";
+  font-size: 14px;
   color: rgb(29, 29, 29);
   text-align: justify;
 }
@@ -166,15 +166,30 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .big-news img {
+    align-self: center;
+  }
+  
+  h1 {
+    font-family: "didot";
+    font-size: 25px;
+    color: #4e4e4e;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
   article {
     flex-basis: 42%;
     margin: 18px;
     border: #fff solid 10px;
     background-size: cover;
     background-position: center;
-  }
-
+  }  
 }
+
+
 
 @media screen and (max-width: 667px) {
   .linkleft {
@@ -217,5 +232,5 @@ h2 {
     background-position: center;
   }
 
-  }
+}
 
