@@ -1,20 +1,31 @@
 body {
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Serif JP', serif;
-font-family: 'Quicksand', sans-serif;
 margin: 0;
 }
 
 h1 {
-    Font-family: Montserrat;
-    font-weight: 400;
+    Font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: black;
     margin: 0px 5px;
     font-size: 30px;
 }
 
+h2 {
+    font-size: 23px;
+    font-weight: 400;
+    border-bottom: solid 1px black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 23px;
+    font-family: 'Noto Serif JP', serif;
+}
+
 p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
@@ -72,16 +83,16 @@ header {
     border-radius: 5px;    
 }
 
-nav {
+header nav {
     display: none;
 }
 
-nav {
+header nav {
     text-align: center;
     margin: auto;
 }
 
-nav a {
+header nav a {
     color: black;
     text-decoration: none;
     border-right: solid 1px black;
@@ -89,9 +100,10 @@ nav a {
     padding-left: 16px;   
 }
   
-nav a:last-child {
+header nav a:last-child {
     border-right: none;
 }
+
 
 /* BIG NEWS SECTION */
 .big-news {
@@ -111,20 +123,50 @@ nav a:last-child {
     margin: 10px;
 }
 
-.big-news-text h1 {
+.big-news-text h2 {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 23px;
-    border-bottom: solid 1px black;
 }
 
 .big-news-text h3 {
-    font-size: 23px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Noto Serif JP', serif;
 }
+
+.big-news-text p {
+    margin-bottom: 10px;
+}
+
+.big-news-text nav {
+    margin: 5px 0px 20px 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black; 
+}
+
+.big-news-text nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+    border-right: solid gray 1px;
+    padding-right: 10px;
+    padding-left: 10px;     
+}
+
+.big-news-text nav a:first-child {
+    padding-left: 0px;
+}
+
+.big-news-text nav a:last-child {
+    border: none;
+}
+.big-news-text nav a:hover {
+    color: black;
+}
+
 
 
 
