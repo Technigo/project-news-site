@@ -1,3 +1,5 @@
+/**** DESKTOP ****/
+
 
 header {
   display: flex;
@@ -9,7 +11,8 @@ header {
 body {
   margin: 0;
 }
-/* Navigation bar */
+
+/**** Navigation bar ****/
 
 .logo {
   order: -1;
@@ -38,6 +41,55 @@ body {
   background-color:#f7e7bd;
 
 }
+
+/**** HIGHLIGHT ARTICLE (big news) ****/
+
+h1 {
+  font-family: "didot";
+  font-size: 40px;
+  color: #4e4e4e;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.big-news {
+  display: inline-flex;
+  padding: 30px;
+  background-color:#f6f4e6;
+  margin: 25px;
+}
+
+.big-news img {
+  max-width: 45%;
+}
+
+.big-news .news-text {
+  margin-left: 20px;
+}
+
+p {
+  font-family:"didot";
+  font-size: 14px;
+  color: rgb(29, 29, 29);
+  text-align: justify;
+}
+.linkread {
+  display: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(58, 57, 57, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/**** Other news (articles)****/
 
 h3 {
   font-family: "didot";
@@ -87,54 +139,6 @@ article p {
   -o-transition: opacity 0.5s linear;
 }
 
-/* Highlight news*/
-h1 {
-  font-family: "didot";
-  font-size: 40px;
-  color: #4e4e4e;
-  text-align: center;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.big-news {
-  display: inline-flex;
-  padding: 30px;
-  background-color:#f6f4e6;
-  margin: 25px;
-}
-
-.big-news img {
-  max-width: 45%;
-}
-
-.big-news .news-text {
-  margin-left: 20px;
-}
-
-p {
-  font-family:"didot";
-  font-size: 14px;
-  color: rgb(29, 29, 29);
-  text-align: justify;
-}
-.linkread {
-  display: none;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(58, 57, 57, 0.75),
-    rgba(0, 0, 0, 0)
-  );
-}
-
-/* more articles*/
-
 h2 {
   font-family: "didot";
   font-size: 25px;
@@ -150,6 +154,8 @@ h2 {
   padding:5px;
 }
 
+/*** FOOTER ****/
+
 .footer {
   text-align: center;
   padding: 0px;
@@ -164,6 +170,8 @@ h2 {
   color: rgb(29, 29, 29);
   text-align: center;
 }
+
+/**** TABLET ****/
 
 @media screen and (max-width: 992px) and (min-width: 668px) {
   .logo {
@@ -211,7 +219,7 @@ h2 {
   }  
 }
 
-
+/**** MOBILE ****/
 
 @media screen and (max-width: 667px) {
   .linkleft {
