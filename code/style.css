@@ -8,7 +8,9 @@ margin: 0;
 h1 {
     Font-family: Montserrat;
     font-weight: 400;
-    color: black
+    color: black;
+    margin: 0px 5px;
+    font-size: 30px;
 }
 
 /* HEADER */
@@ -16,27 +18,51 @@ header {
     background: rgb(245, 240, 179);
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
 }
 
-i {
-    margin: 10px;
-    padding: 10px 5px 10px 5px;
+.logo-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(245, 240, 179);
+    margin: 9px 10px 9px 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.circle-container {
+    justify-content: flex-end;
+    margin-right: 9px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 35px;
+    height: 35px;
+    background-color: rgb(245, 240, 179);
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 20px;
 }
 
 .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     margin: 24px;
 }
   
 .hamburger div {
-    width: 30px;
-    height: 3px;
+    width: 15px;
+    height: 1px;
     background: black;
     border-radius: 5px;    
 }
