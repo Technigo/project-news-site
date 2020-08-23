@@ -4,6 +4,10 @@ font-family: 'Noto Serif JP', serif;
 margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     Font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -15,23 +19,40 @@ h1 {
 h2 {
     font-size: 23px;
     font-weight: 400;
-    border-bottom: solid 1px black;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 23px;
     font-family: 'Noto Serif JP', serif;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    padding-bottom: 8px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+mark {
+    background: pink;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+mark:hover {
+    background: rgb(253, 126, 190);
+    color: white;
 }
 
 /* HEADER */
 header {
-    background: rgb(245, 240, 179);
+    background: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,12 +60,11 @@ header {
     height: 100px;
 }
 
-.logo-header {
+.logo-header-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(245, 240, 179);
     margin: 9px 10px 9px 10px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -52,7 +72,6 @@ header {
 
 .circle-container {
     justify-content: flex-end;
-    margin-right: 10px;
 }
 
 .circle {
@@ -61,7 +80,7 @@ header {
     align-items: center;    
     width: 35px;
     height: 35px;
-    background-color: rgb(245, 240, 179);
+    background-color: white;
     border-radius: 50%;
     border: 1px solid black;
     margin: 20px;
@@ -104,48 +123,45 @@ header nav a:last-child {
     border-right: none;
 }
 
+/* MAIN SECTION */
+.main-section {
+    margin: 0px 10px 10px 10px;
+}
 
-/* BIG NEWS SECTION */
-.big-news {
+
+/* BIG NEWS CONTAINER */
+.big-news-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-.big-news img {
-    width: 100%;
-    /* margin: 10px; */
-}
-
-.big-news-text {
-    margin: 10px;
-}
-
-.big-news-text h2 {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.big-news-text h3 {
-    margin-top: 10px;
+    padding: 10px 10px 0px 10px;
     margin-bottom: 10px;
+    background: gainsboro;
 }
 
-.big-news-text p {
-    margin-bottom: 10px;
+.big-news-container h3 {
+    border-bottom: solid 1px white;
 }
 
-.big-news-text nav {
-    margin: 5px 0px 20px 0px;
+.big-news-container h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.big-news-container h3 a:hover {
+    text-decoration: underline;
+}
+
+.big-news-container nav {
+    margin: 5px 0px 0px 0px;
     padding-left: 0px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px black; 
+    padding-bottom: 15px;
+    align-self: flex-start;
 }
 
-.big-news-text nav a {
+.big-news-container nav a {
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     font-weight: 600;
@@ -156,16 +172,78 @@ header nav a:last-child {
     padding-left: 10px;     
 }
 
-.big-news-text nav a:first-child {
+.big-news-container nav a:first-child {
     padding-left: 0px;
 }
 
-.big-news-text nav a:last-child {
+.big-news-container nav a:last-child {
     border: none;
 }
-.big-news-text nav a:hover {
+
+
+/* OTHER NEWS CONTAINER*/
+
+.other-news-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;    
+    border-top: solid black 1px;
+}
+
+.other-news-card {
+    margin-bottom: 20px;
+    border-radius: 2px;
+    padding: 10px 10px 0px 0px;
+    /* background: red; */
+}
+
+.other-news-card h3 {
+    border-bottom: solid 1px rgb(253, 126, 190);;
+}
+
+.other-news-card img {
+    box-shadow: 7px 7px gainsboro;
+}
+
+.other-news-card h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.other-news-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.other-news-card nav {
+    margin-top: 10px;
+}
+
+.other-news-card nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+    border-right: solid gray 1px;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+.other-news-card nav a:first-child {
+    padding-left: 0px;
+}
+
+.other-news-card nav a:last-child {
+    border: none;
+}
+
+.other-news-card nav a:hover {
     color: black;
 }
+
 
 
 
