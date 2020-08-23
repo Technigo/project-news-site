@@ -20,23 +20,55 @@ h3 {
   font-size: 50px;
   font-style: italic;
 
-
 }
 
+
+
+/* On a desktop  the navbar will be on the left side */
+@media screen and (min-width: 1024px){
+  .navbar-container {
+    display: flex;
+    justify-content: left;
+    background-color: #F8ECEC;
+  }
+}
+
+/* On a tablet the navbar will move from leftside to center */
+@media screen and (max-width: 1023px){
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: #F8ECEC;
+  }
+}
+
+
+/* MUST CHANGE TO SOMETHING NEW */
+/*On a mobile device the navbar will move from leftside to center */
+@media screen and (max-width: 667px){
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: #F8ECEC;
+    width: 500px;
+  
+  }
+}
+
+
 .navbar {
+  display: flex;
   padding: 15px;
   background-color:#F8ECEC;
 }
 
-/* change to flex-box */
-
 .navbar a {
-  display: inline-block;
- color: black; 
+  justify-content: left;
+  color: black; 
   padding: 15px;
- text-decoration: none;
- font-size: 15px;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  font-size: 15x;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -44,7 +76,20 @@ h3 {
   color:white;
 }
 
-.header {  
+
+/*when on a mobile the header will still be in the center  */
+ 
+@media screen and (max-width: 664px){
+  .header {
+  width: 500px;
+  }
+} 
+
+
+/*when on a tablet the header will still be in the center  */
+
+@media screen and (max-width: 1024px){
+  .header {
   justify-content: center;
   text-align: center;
   height: 60vh;
@@ -52,9 +97,26 @@ h3 {
   font-size: xx-large;
   padding-top: 250px;
 
+  }
+} 
 
-}
+.header {
+  justify-content: left;
+  text-align: center;
+  height: 60vh;
+  background-color:#F7E6E6;
+  font-size: xx-large;
+  padding-top: 250px;
+  }
 
+
+/*when on a mobile the content will be centered  */
+@media screen and (max-width: 664px){
+  .quote-container {
+  width: 500px;
+  justify-content: center;
+  }
+} 
 
 .quote-container {
   display: flex;
@@ -63,8 +125,8 @@ h3 {
   padding-bottom: 50px;
 }
 
+
 .quote {
-  justify-content: space-around;
   padding: 40px;
   height: 200px;
   width: 1200px;
@@ -72,14 +134,10 @@ h3 {
 
 }
 
-
-
 #quote {
   display: flex;
   justify-content: center;
 }
-
-
 
 .new-quote {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -87,6 +145,7 @@ h3 {
 
 }
 
+/*class that contains the large news */
 .placeholder  {
   display: flex;
   flex-wrap: wrap;
@@ -94,17 +153,20 @@ h3 {
 
 }
 
-@media screen and (max-width: 600px) {
+/* When on a tablet the screen will show the content in a column */
+@media screen and (max-width: 1024px) {
+  .large-news-container {
+    flex-direction: column;;
+  }
+}
+/* When on a mobile the screen will show the content in a column */
+@media screen and (max-width: 667px) {
   .large-news-container {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .large-news-container {
-    flex-direction: column;;
-  }
-}
+
 
 .large-news-container {
   display: flex;
@@ -114,9 +176,6 @@ h3 {
   padding-left: 25px;
   padding-right: 25px;
   box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
- 
-
-
 }
 
 
@@ -126,9 +185,11 @@ h3 {
   padding: 30px;
   font-size: large;
   
-  
 }
 
+.large-news:hover  {
+  background-color:lightpink;
+}
 
 section {
   display: flex;
@@ -137,7 +198,32 @@ section {
 }
 
 
+/* When on a tablet the content will be shown in  two rows in the center */
+@media screen and (max-width: 1024px) {
+  .small-news-container {
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+}
 
+/* When on a mobiel the content will be shown in one row in the center */
+@media screen and (max-width: 667px) {
+  .small-news-container {
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+}
+
+
+
+.small-news-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+ 
+}
  
 
 .small-news {
@@ -149,7 +235,6 @@ section {
   padding: 50px;
   background-color: #F8ECEC;
   border-color: #F7E6E6;
-  border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -174,6 +259,7 @@ section {
 .small-news:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
+  background-color: lightpink;
 }
 
 .small-news:hover::after {
@@ -181,7 +267,19 @@ section {
 }
 
 
-.revolution-container {
+/* RESPONSIVENESS */
+@media screen and (max-width: 667px) {
+  .images-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;   
+    
+  }
+}
+
+
+
+.images-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -189,16 +287,26 @@ section {
   
 }
 
-.revolution {
+.images {
+  flex: 1 1 150px;
   justify-content: space-between;
   padding: 20px;
   margin: 20px;
-  margin-left: 100px;
+  margin-left: 80px;
  
 
   
 }
 
+/*FOOTER, ADD BUTTON, */
+
+/* RESPONSIVENESS this makes the footerbackground to have it's color all the way to the sides */
+@media screen and (max-width: 667px) {
+  .footer-container {
+    width: 500px;
+    
+  }
+}
 
 .footer {
   display: flex;
@@ -210,13 +318,3 @@ section {
   height: 300px;
   line-height: 90px;
 }
-
-
-.footertext {
-  color:black;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-
-

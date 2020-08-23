@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
@@ -10,13 +10,18 @@
   <body>
 
 <!--navbar-->
+<div class="navbar-container">
   <div class="navbar">
+    <div class="logonavbar">
+    <img src="./img/logopink.jpg" alt="">  
+   </div>
       <a href="https://twitter.com/?lang=sv">Twitter</a>
       <a href="https://www.facebook.com/">Facebook</a>
       <a href="https://www.instagram.com/">Instagram</a> 
-      <a href="https://www.pinterest.com/">Pinterest</a>      
+      <a href="https://www.pinterest.com/">Pinterest</a>   
+      
   </div>
-  
+</div>  
 <!--header-->
 <div class="header-container">
     <div class="header">
@@ -40,22 +45,25 @@
   <div  class ="large-news-container">
     <img class="largeimg" src="./img/largenews.jpg" alt="">
       <div class="large-news">
-           <h2>This weeks HOW: </h2>
-          <h3>Afford to Divorce</h3>
+           
+          <h2>Afford to Divorce</h2>
            <p>"In Sweden 1/3 of the women who wants a divorce can't afford it"</p>
            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem 
              ipsumvvlorem ipsumlorem ipsumlorem ipsumvvlorem ipsumvlorem ipsumlorem ipsumlorem ipsumv
              lorem ipsumlorem ipsumvlorem ipsumvlorem ipsumlorem ipsumvvvlorem ipsumvlorem ipsum
             vvvlorem ipsumlorem ipsumvlorem ipsumvlorem ipsumvvlorem ipsumvvlorem ipsumvlorem ipsum
-            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumvlorem ipsumvlorem ipsum</p>
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumvlorem ipsumvlorem ipsum....
+            <a href="https://www.svd.se/kvinnor-har-inte-rad-att-skilja-sig-i-stockholm">Read more</a></p>
+            
            
       </div>
   </div>
 
 </section>
-<!--small news-->
+<!--small news, columns with hover effect-->
 
 <section>
+  <div class="small-news-container">
   <div class="small-news">
       <h4>Interview</h4>
       <p>This weeks interview is with famous author and equality advocate Katarina Wennstam </p>
@@ -93,14 +101,15 @@
    <h4>Book Review</h4>
    <p>This weeks book review</p>
 </div> 
+</div>
 </section>
 
 
 
 <!-- imgs-->
 
-<div class ="revolution-container">
-  <div class="revolution">
+<div class ="images-container">
+  <div class="images">
       <img src="./img/now.jpg" alt="woman with sign">
       <img src="./img/pillow.jpg" alt="the future is female pillow">
       <img src="./img/kid.jpg" alt="fight like a girl sign">
@@ -110,10 +119,10 @@
 </div>
 
 <!--footer-->
-
+<!--LOOK OVER LOGO PLACEMENT-->
 <div class="footer-container">
   <div class="footer">
-    <p class="footertext"> Donate to your local women's shelter</p>
+   <img class="logo" src="logo.svg">
   </div>
 </div>   
 
