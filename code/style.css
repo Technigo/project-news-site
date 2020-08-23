@@ -13,6 +13,11 @@ h1 {
     font-size: 30px;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
 /* HEADER */
 header {
     background: rgb(245, 240, 179);
@@ -29,14 +34,14 @@ header {
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(245, 240, 179);
-    margin: 9px 10px 9px 15px;
+    margin: 9px 10px 9px 10px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
 .circle-container {
     justify-content: flex-end;
-    margin-right: 9px;
+    margin-right: 10px;
 }
 
 .circle {
@@ -87,3 +92,41 @@ nav a {
 nav a:last-child {
     border-right: none;
 }
+
+/* BIG NEWS SECTION */
+.big-news {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-news img {
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.big-news-text {
+    margin: 10px;
+}
+
+.big-news-text h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 23px;
+    border-bottom: solid 1px black;
+}
+
+.big-news-text h3 {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+
+
+
