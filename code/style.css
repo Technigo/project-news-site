@@ -1,4 +1,131 @@
-html {
-  background: #0025ff;
-  color: #fff;
-}
+html{
+    background: white;
+    color: black;
+    font-family: sans-serif;
+  }
+  /* .grid-container{
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 5px;
+    row-gap: 5px; */
+
+  /* header{
+    grid-column: span;
+    display: flex;
+    background: white;
+    border: solid black 2px;
+  } */
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header img {
+      align-self: center;
+      width: 40%;
+  }
+  h1 {
+    display: none;
+  }
+  h2 {
+    display: inline;
+    text-align: center;
+  }
+  h3{
+      margin-bottom: 2px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* .nav-links:hover{
+      color: grey;
+  } */
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  p {
+    padding: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    align-content: space-around;
+    padding: 10px;
+    color: black;
+  }
+  
+  .hamburger {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .line {
+    width: 30px;
+    height: 5px;
+    background: black;
+  }
+
+  .big-news{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 20px;
+  }
+  .big-news img{
+      width: 100%;
+  }
+
+  .card-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .article-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      margin: 10px;
+      box-shadow: 5px 10px 18px #888888;
+  }
+  .article-card img{
+      width: 75%;
+  }
+
+  @media (min-width: 668px){
+      .card-container{
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      .article-card{
+          max-width: 300px;
+         }
+
+      .nav-links{
+        display: flex;
+        }
+      .hamburger{
+          display: none;
+         }
+  }
+  @media (min-width: 1025px){
+      .article-card{
+          max-width: 200px;
+      }
+      h1{
+          display: block;
+          font-size: 65px;
+          text-align: center;
+      }
+  }
