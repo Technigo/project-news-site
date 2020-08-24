@@ -1,4 +1,303 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER STYLING */
+
+/* Header for mobile */
+h1 { /*added this line because a margin of 24px is auto added for some reason on mobile version */
+  margin: 0;
+  font-family: 'Righteous', cursive;
+}
+
+.mobile-header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin: 10px 20px;
+}
+
+/* Logo Animation: shaking effect */
+.logo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake { /* new to this: creates the different positions of the logo for the shaking effect */
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Header for tablet */
+.tablet-header {
+  display: none;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+}
+
+.tablet-header a {
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tablet-header a:hover {
+  color:#FF2183;
+}
+
+/* Header for desktop */
+.desktop-header {
+  display: none;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 70px;
+}
+
+.desktop-logo {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-header a {
+  padding: 0 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-header a:hover {
+  color:#FF2183;
+}
+
+/* BIG NEWS SECTION STYLING */
+.big-news-container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-news-container img {
+  width: 100%;
+}
+
+.read-more {
+  font-weight: bold;
+  font-style: italic;
+  background-color: #FF2183;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 4px 5px black;
+}
+
+.read-more:hover {
+  background-color: white;
+  color: black;
+}
+
+hr {
+  height: 5px;
+  border: none;
+  background-color: black;
+  width: 90%;
+}
+
+.latest-news {
+  margin-left: 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  color: #FF2183;
+  text-shadow: 2px 2px black;
+}
+
+h5 {
+  margin: 0 10px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: #FF2183;
+  color: white;
+  padding: 10px;
+  box-shadow: 4px 5px black;
+  width: 50px;
+}
+
+/* NEWS CARDS SECTION STYLING*/
+.card {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0;
+}
+
+.card:hover {
+  border: 5px solid #FF2183;
+}
+
+.card img {
+  align-self: center; /*align-self default value is stretch, so img stretches when resizing browser. Set align-self to center to avoid */
+  width: 100%;
+}
+
+h3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 7px;
+}
+
+.news-cards-container {
+  margin: auto;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER STYLING */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #FF2183;
+}
+
+.footer-start {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-social {
+  margin-bottom: 4px;
+  font-family: 'Righteous', cursive;
+  color: #FF2183;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .tablet-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .mobile-header {
+      display: none;
+  }
+
+  .big-news-container {
+      display: flex;
+      flex-direction: row;
+      background-color: #E5E5E5;
+  }
+
+  .big-news-text {
+      padding: 20px;
+  }
+
+  .big-news-container img {
+      width: 50%;
+      align-self: center; /*align-self default value is stretch, so img stretches when resizing browser. Set align-self to center to avoid */
+      padding-left: 20px;
+  }
+
+  h2 { /* for some reason an auto margin of 32px is added, this is to override that */
+      margin: 0;
+  }
+
+  .news-cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;        
+  }
+
+  .card {
+      width: 40%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .desktop-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .mobile-header {
+      display: none;
+  }
+
+  .tablet-header {
+      display: none;
+  }
+
+  .big-news-container {
+      display: flex;
+      flex-direction: row;
+      background-color: #E5E5E5;
+      max-width: 1700px;
+  }
+
+  .big-news-text {
+      padding: 20px;
+  }
+
+  .big-news-container img {
+      width: 50%;
+      align-self: center;
+      padding: 20px 0 20px 20px;
+  }
+
+  .bigger-news-container {
+      display: flex;
+      justify-content: center;
+  }
+
+  .news-cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;        
+  }
+
+  .card {
+      width: 22%;
+  }
 }

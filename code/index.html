@@ -1,22 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>K-POP STAR NEWS</title>
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header> <!-- Header section-->
+      <nav class="mobile-header">
+        <img class="logo" src="./Images/k-star-logo.png" alt="Star Logo" />
+        <h1>K-POP STAR NEWS</h1>
+      </nav>
+
+      <nav class="tablet-header">
+        <a href="#">NEWS</a>
+        <a href="#">SHOWS</a>
+        <img class="logo" src="./Images/k-star-logo.png" alt="Star Logo" />
+        <a href="#">WATCH</a>
+        <a href="#">CELEBS</a>
+      </nav>
+
+      <nav class="desktop-header">
+        <div class="desktop-logo">
+          <img class="logo" src="./Images/k-star-logo.png" alt="Star Logo" />
+          <h1>K-POP STAR NEWS</h1>
+        </div>
+        <div>
+          <a href="#">NEWS</a>
+          <a href="#">SHOWS</a>
+          <a href="#">WATCH</a>
+          <a href="#">CELEBS</a>
+        </div>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <main class="bigger-news-container"> <!-- Big News section-->
+      <section class="big-news-container">
+        <img src="./Images/blackpink-main.jpg" alt="Blackpink" />
+
+        <div class="big-news-text">
+          <article>
+            <h2>
+              BLACKPINK’s “How You Like That” Remains On Top; K-Pop Music Chart
+              2020
+            </h2>
+            <p>
+              BLACKPINK’s “How You Like That” is our No. 1 song for the sixth
+              straight week! The song is now tied with Red Velvet’s “Psycho” as
+              the songs to top our chart for the longest period of time this
+              year. Congratulations again to BLACKPINK!
+            </p>
+            <p>
+              Debuting at No. 2 is (G)I-DLE’s special summer song “DUMDi DUMDi.”
+              Written by leader Soyeon and producer Pop Time, “DUMDi DUMDi” is a
+              dance track with a tropical base and Moombahton rhythm.
+            </p>
+            <p>
+              Rounding out the top three is Hwasa’s “Maria,” moving down one
+              spot to No. 3.
+            </p>
+            <p>
+              One more song newly entered the top 10. Moving up 31 spots to No.
+              4 is Jessi’s “NUNU NANA,” the title track from her mini album
+              “NUNA.” One of Jessi’s biggest hits yet, “NUNU NANA” is a hip hop
+              dance song with powerful trap and pop elements.
+            </p>
+          </article>
+          <a href="#" class="read-more">Read more...</a>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <h3 class="latest-news">Latest News...</h3>
+    <section class="news-cards-container"> <!-- News cards section-->
+      <div class="card">
+        <img src="./Images/jisoo.jpg" altd="Jisoo" />
+        <h3>
+          BLACKPINK’s Jisoo Confirmed For Leading Role In New Drama By “SKY
+          Castle” Director And Writer
+        </h3>
+        <h5>TV</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/bts.jpg" altd="BTS" />
+        <h3>
+          BTS, NCT 127, Stray Kids, SuperM, And BLACKPINK Rank High On
+          Billboard’s World Albums Chart
+        </h3>
+        <h5>CHARTS</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/gidle.jpg" altd="Gidle" />
+        <h3>
+          (G)I-DLE And Stray Kids Announced As Part Of The 1st Lineup For Korean
+          Cultural Showcase Event
+        </h3>
+        <h5>EVENT</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/gdragon.jpg" altd="GDragon" />
+        <h3>
+          BIGBANG’s Taeyang And CL Celebrate G-Dragon’s Birthday By Sharing
+          Memories on their Social Media
+        </h3>
+        <h5>TV</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/fantasticbaby.jpg" altd="BIGBANG" />
+        <h3>
+          “Fantastic Baby” Becomes BIGBANG’s 2nd MV To Surpass 450 Million Views
+        </h3>
+        <h5>CHARTS</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/korea.jpg" altd="South-Korea" />
+        <h3>
+          Korea Tourism Organization Shares Survey Results About Influence Of
+          K-Pop On Tourism
+        </h3>
+        <h5>EVENT</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/girlsgeneration.jpg" altd="Girls-Generation" />
+        <h3>
+          Girls’ Generation’s Seohyun And Go Kyung Pyo Weave A Tangled Web Of
+          Lies In New Drama
+        </h3>
+        <h5>TV</h5>
+      </div>
+
+      <div class="card">
+        <img src="./Images/taeyang.jpg" altd="Taeyang" />
+        <h3>
+          BIGBANG’s Taeyang To Release 1st Solo Documentary Series, Super
+          Anticipated
+        </h3>
+        <h5>TV</h5>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <footer> <!-- Footer -->
+      <p class="footer-start">
+        Student project by <b>Vanessa Sue Smith</b> as part of Technigo's coding
+        bootcamp (woohoo!!~~)
+      </p>
+      <p class="footer-social">Let's get social!</p>
+      <a href="https://www.instagram.com/vanevalentine/" target="_blank"
+        >Instagram</a
+      >
+      |
+      <a href="https://twitter.com/vanevalentine" target="_blank">Twitter</a> |
+      <a href="https://www.linkedin.com/in/vanessa-sue-smith/" target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a href="https://github.com/VanessaSue27" target="_blank">GitHub</a>
+    </footer>
   </body>
 </html>
