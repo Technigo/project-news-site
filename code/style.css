@@ -2,25 +2,50 @@
 
 html {
   background: #F1F1EF;
-  
+  font-family: 'Montserrat', sans-serif;
+  color: black;
 }
+
+
+
+
 
 img {
   width: 100%;
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
 
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
+  align-items: center;
   align-content: center;
   list-style-type: none;
-  font-size: 35px;
+  font-size: 50px;
+  
   
 }
 
+.li-2 {
+ font-family: 'Monoton';
+ font-size: 50px;
+   
+  
+}
 
 
 section { /* Sections in the article grid*/
@@ -38,6 +63,7 @@ div { /* Text overlay for the images*/
   background-color: rgba(241, 241, 239, 0.6);
   color: black;
   padding: 10px;
+  max-height: 80%;
   
  
 }
@@ -60,8 +86,22 @@ li {
 }
 
 
+  
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  padding: 5px;
+  
+}
+
+
+
 .big-news {
   margin: auto;
+  
   width: 100%;
 
 }
@@ -104,6 +144,7 @@ li {
 @media (min-width: 668px) {
 
   
+  
   div {
    
     position: absolute;
@@ -113,10 +154,18 @@ li {
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
     padding: 10px;
+    overflow: hidden;
 
     }
-
     
+
+    h1 { 
+      font-size: 50px;
+    }
+
+    .li-2 {
+      order: -1;
+    }
    
  
 
@@ -131,7 +180,7 @@ li {
     color: black;
     padding: 20px;
   
-  }
+  } 
   
 
   .news  {
@@ -144,7 +193,9 @@ li {
  /* Desktop */ 
 @media (min-width: 1024px) {
   
-  
+  ul {
+    font-size: 50px;
+  }
 
   div {
    
@@ -154,22 +205,43 @@ li {
     left:20px;
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
-    
+    overflow: hidden;
   
   }
 
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+
+    font-size:25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .li-1 {
+    order: -1;
+  }
   
+  .big-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 800px;
+    overflow: hidden;
+  }
+  .big-news-text p h1 {
   
-  .big-news-text {
-  
-    position: absolute;
+    
     bottom: 0px;
     right: 0px;
     left:50%;
     top: 0px;
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
-    padding: 20px;
+    
     
   
   }
