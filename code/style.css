@@ -49,6 +49,7 @@ header img {
   width: 90px;
   object-fit: contain;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 nav {
@@ -78,6 +79,7 @@ nav a:hover {
 
 .welcome-container img {
   width: 100%;
+  height: auto;
   margin-right: 150px;
 }
 
@@ -88,14 +90,16 @@ nav a:hover {
 /** card Section ***/
 .wrapper {
   text-align: center;
-  padding: 50px 50px 200px 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
   display: inline-table;
-  width: 200px;
+  width: 300px;
   margin: 34px;
   height: 400px;
+  padding: 10px;
   background-color: #eee;
   box-shadow: 0 5px 5px #999;
   transition: box-shadow 0.3s ease;
@@ -129,6 +133,16 @@ img {
 .welcome-container div {
   text-align: left;
 }
+.card {
+  display: inline-table;
+  width: 238px;
+  margin: 34px;
+  height: 400px;
+  padding: 10px;
+  background-color: #eee;
+  box-shadow: 0 5px 5px #999;
+  transition: box-shadow 0.3s ease;
+}
 
 @media (min-width: 900px) {
   .welcome-container {
@@ -136,5 +150,15 @@ img {
     align-items: center;
   }
   .welcome-container img {
-    width: 50%;
+    width: 35%;
   }
+
+  .card {
+    display: inline-table;
+    width: 325px;
+    margin: 34px;
+    height: 400px;
+    padding: 10px;
+    background-color: #eee;
+    box-shadow: 0 5px 5px #999;
+    transition: box-shadow 0.3s ease;
