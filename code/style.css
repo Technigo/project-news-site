@@ -1,4 +1,92 @@
-html {
-  background: #0025ff;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
+body {
+  background: #a7b3df;
+  color: #000;
+  margin:0;
+  font-family: "Red Rose";
+}
+
+header {
+  display:flex;
+  justify-content: center;
+}
+
+header img {
+  width:200px;
+  padding:30px;
+}
+
+.big-news {
+  display: flex;
+  align-items: center;
+  box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2);
+  background-color:#fff;
+}
+
+.big-news img {
+  width:50%;
+}
+
+.big-news div {
+  padding:40px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.big-news p {
+  max-width:500px;
+}
+
+.big-news button {
+  padding:20px;
+  margin:20px;
+  border:0;
+  background:#a7b3df;
+  transform: skewX(-20deg);
+
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin:10px 0 0 0;
+  
+}
+
+h2 {
+  font-size:18px;
+  margin:0;
+  color:#a7b3df;
+  display:inline;
+  border-bottom: 3px #a7b3df solid;
+}
+
+.carousel-news {
+  display:flex;
+  justify-content: space-between;
+  margin-top:40px;
+}
+
+.carousel-item {
+  height:200px;
+  width:20%;
+}
+
+.carousel-item p {
+  position: absolute;
+}
+
+.carousel-item img {
+  max-width:100%;
+  max-height:100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
