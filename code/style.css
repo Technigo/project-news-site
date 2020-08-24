@@ -1,49 +1,140 @@
 body {
-  margin: 0;
-  padding: 0;
-  background:white;
+  background: white;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 100;
+  margin: 5px;
+}
+/*** Header ***/
+
+header {
+  background: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom-style: solid;
+  border-color: rgb(79, 141, 160);
+  
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: black;
+}
+
+header img {
+  width: 90px;
+  object-fit: contain;
+  margin-left: 15px;
+}
 
 nav {
-    width: 100%;
-    background: white;
-    overflow: auto;
-    margin-top: 0px;
-    border-bottom: 3px solid rgb(131, 185, 230);
-}
-
-ul {
-    padding: 0;
-    margin: 0 0 0 150px;
-    list-style: none;
-}
-
-li{
-  float: right;
-}
-
-.logo img {
-  position: absolute;
-  height: 58px;
-  width: 100px;
-  margin-top: 0;
-  margin-left: 10px;
-
+  display: none;
 }
 
 nav a {
-  width:100px;
-  display: block;
-  padding: 20px 15px;
+  color:black;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  text-align: center;
+  margin-left: 30px;
 }
 
 nav a:hover {
-  background: rgb(131, 185, 230);
-  transition: 0.5s;
-  text-transform: uppercase;
+  color: rgb(79, 141, 160);
 }
+
+/*** Welcome Container ***/
+
+.welcome-container {
+  padding: 100px 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.welcome-container img {
+  width: 100%;
+  margin-right: 150px;
+}
+
+.width-container div {
+  text-align: center;
+}
+
+/** card Section ***/
+.wrapper {
+  text-align: center;
+  padding: 50px 50px 200px 50px;
+}
+
+.card {
+  display: inline-table;
+  width: 200px;
+  margin: 34px;
+  height: 400px;
+  background-color: #eee;
+  box-shadow: 0 5px 5px #999;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 10px #999;
+}
+
+img {
+  width: 175px;
+  height: 200px;
+  margin: 10px;
+}
+/*** Media Query ***/
+
+@media (min-width: 650px) {
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    display: inline-block;
+
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.welcome-container div {
+  text-align: left;
+}
+
+@media (min-width: 900px) {
+  .welcome-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .welcome-container img {
+    width: 50%;
+  }
