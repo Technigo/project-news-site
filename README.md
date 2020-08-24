@@ -1,4 +1,5 @@
 # News Site
+Build a responsive webpage in form if a newssite. 
 
 Replace this readme with your own information about your project. 
 
