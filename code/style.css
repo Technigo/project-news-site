@@ -1,13 +1,15 @@
+/* Mobile first*/
+
 html {
-  background: #fff591;
-  color: #fa26a0;
+  background: #F1F1EF;
+  
 }
 
-header {
-  background: #05dfd7;
-  
-  
+img {
+  width: 100%;
+  height: auto;
 }
+
 
 ul {
   display: flex;
@@ -18,76 +20,158 @@ ul {
   font-size: 35px;
   
 }
+
+
+
 section {
-  
+  position: relative;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 div {
-  display: flex;
-  flex-direction: column;
+ 
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left:20px;
+  background-color: rgba(241, 241, 239, 0.6);
+  color: black;
+  padding: 10px;
+  
  
 }
 
 h1 {
-  font-size: 60px;
-}
-/* Mobile*/
-h2 {
-  font-size: 50px;
-}
-
-p {
   font-size: 30px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+h2 {
+  font-size: 30px;
 }
 
+p {
+  font-size: 20px;
+}
 
 
 li {
   margin: 20px;
 }
 
-.li-3, .li-4 {
-  display: none;
+
+.big-news {
+  margin: auto;
+  width: 100%;
 
 }
 
+.big-news-text {
 
-.big-news {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 80%;
-  margin: 20px;
-  justify-content: left;
-  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left:20px;
+  background-color: rgba(241, 241, 239, 0.6);
+  color: black;
+  padding: 20px;
+
 }
 
 .article-grid {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
-.news {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 80%;
-  margin: 20px;
-  padding: 20px;
+.news  {
+ 
+  margin: auto;
+  margin-top: 20px;
+  
  
 }
-/* Tablet*/
-@media only screen and (min-width: 668px) {
+/*Hide links in navbar for mobile*/
+@media (max-width: 667px) {
+
+.li-3, .li-4 {
+  display: none;
 
 }
- /* Desktop */ 
-@media only screen and (min-width: 1024px) {
 
+}
+/* Tablet*/
+@media (min-width: 668px) {
+
+  
+  div {
+   
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    background-color: rgba(241, 241, 239, 0.6);
+    color: black;
+    padding: 10px;
+
+    }
+   
+ 
+
+ .big-news-text {
+  
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left:50%;
+    top: 0px;
+    background-color: rgba(241, 241, 239, 0.6);
+    color: black;
+    padding: 20px;
+  
+  }
+  
+
+  .news  {
+    margin: auto;
+    width: 40%;
+  }
+
+}
+
+ /* Desktop */ 
+@media (min-width: 1024px) {
+  
+  
+
+  div {
+   
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left:20px;
+    background-color: rgba(241, 241, 239, 0.6);
+    color: black;
+    
+   
+  }
+  
+  .big-news-text {
+  
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left:50%;
+    top: 0px;
+    background-color: rgba(241, 241, 239, 0.6);
+    color: black;
+    padding: 20px;
+  
+  }
+  
+  .news  {
+   
+    margin: 20px;
+    width: 20%;
+  }
 }
