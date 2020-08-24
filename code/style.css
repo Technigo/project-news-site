@@ -34,7 +34,11 @@ header {
   align-items: center;
   padding: 0 16px;
   font-size: 18px;
-  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 #site-name {
@@ -89,6 +93,11 @@ nav a {
   animation-direction: alternate;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  overflow: hidden;
+  z-index: 1;
  }
 
  .banner-container p {
@@ -130,7 +139,7 @@ hr {
 .big-news-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px 0 20px;  
+  margin: 180px 20px 0 20px;  
 }
 
 .big-news-container h2 {
@@ -205,18 +214,14 @@ footer p {
 @media (min-width: 688px) {
   
   header {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
-/*
-  #site-name {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }*/
 
   nav {
     display: inline-block;
     margin-left: auto;
+    padding-right: 30px;
   }
   
   .hamburger {
@@ -228,7 +233,7 @@ footer p {
     flex-direction: row;
     padding: 25px 0 25px 0;
     border-bottom: 2px solid black;
-    /*justify-content: center;*/
+    margin: 160px 20px 0 20px;
   }
 
   img.top {
@@ -262,7 +267,9 @@ footer p {
 @media (min-width: 992px) {
   
   header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
   }
 
   p.site-name {
@@ -275,6 +282,7 @@ footer p {
   nav {
     display: inline-block;
     margin-left: auto;
+    padding-right: 30px;
   }
 
   .hamburger {
@@ -290,6 +298,7 @@ footer p {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    margin: 150px 20px 0 20px;
   }
 
   .big-news-container div {
@@ -301,7 +310,6 @@ footer p {
     width: 58%;
     max-height: 600px
   }
-
 
   .small-news-container {
     display: flex;
