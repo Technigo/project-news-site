@@ -23,13 +23,13 @@ ul {
 
 
 
-section {
+section { /* Sections in the article grid*/
   position: relative;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
-div {
+div { /* Text overlay for the images*/
  
   position: absolute;
   bottom: 20px;
@@ -82,7 +82,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 100%;
+  justify-content: space-evenly;
 }
 .news  {
  
@@ -100,7 +100,7 @@ li {
 }
 
 }
-/* Tablet*/
+/* Tablet, fix flexbox order for navbar, and get the text in the boxes right*/
 @media (min-width: 668px) {
 
   
@@ -115,6 +115,8 @@ li {
     padding: 10px;
 
     }
+
+    
    
  
 
@@ -153,8 +155,10 @@ li {
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
     
-   
+  
   }
+
+  
   
   .big-news-text {
   
@@ -166,6 +170,7 @@ li {
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
     padding: 20px;
+    
   
   }
   
