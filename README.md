@@ -1,12 +1,18 @@
 # News Site
+📰 The goal of this project is to create a classic magazine or newspaper site.
+It should contain a main news area and a grid of cards with other news.
+Since one of the main missions is to practice responsive pages, the navigation bar should change when going from mobile to tablet to desktop displays.
 
-Replace this readme with your own information about your project. 
+## How I built it
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+👩‍💻🔨 I decided to use Flexbox for most of the layout. The page is divided into 3 main sections: Navigation bar, Main news section and News cards section. Each of them is a different Flexbox container so I can play with the positioning of the child elements.
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+## What I learned
+- 🎉😎 This is my first time building a responsive page, learned about media queries.
+- The logo has a small shaking animation, when implementing it I learned a bit about keyframes.
+- Deep dive into semantic HTML, CSS hover effects and Flexbox.
+- Learned a lot about default styling that some browsers apply and how we might need to override them to get the results we want.
+- The more I build projects, the better I become at planning efficient CSS selectors (yay!~~ 💖💪)
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+🎬 Coming soon! A link to my page live on Netlify!
