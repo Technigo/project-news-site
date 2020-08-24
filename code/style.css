@@ -1,4 +1,140 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f9f0e8;
+  color: #000;
+  font-family: ;
+  margin: 0 0;
 }
+
+
+/*styling of header*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 16px;
+}
+
+header img {
+
+}
+
+.hamburger {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger div {
+  width: 24px;
+  height: 2px;
+  background: #000; 
+} 
+
+h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*styling of big news section*/
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.small-image {
+  width: 400px;
+}
+
+.big-image {
+  display: none;
+}
+
+.news-text {
+  
+}
+
+/**** styling of card container*/
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/**** media ****/
+
+
+@media (min-width: 650px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    padding: 0 5px;
+  }
+
+  nav {
+    display: inline-block;
+    /* make this a flexbox*/
+  }
+  nav a {
+    margin: 0 5px;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .small-image {
+    display: none;
+  }
+
+  .big-news {
+    margin: 40px;
+  }
+
+  .big-image {
+    display: flex;
+    width: 650px;
+    height: max-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: column;
+
+  }
+
+  .big-news{
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 40 px;
+  }
+
+  .big-image {
+    width: 1000px;
+  }
+
+  .news-text {
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+}
+
