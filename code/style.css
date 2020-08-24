@@ -2,9 +2,7 @@
 
 
 header {
-  display: flex;
   background-color: #ffffff;
-  justify-content: space-evenly;
   padding: 10px;
 }
 
@@ -26,17 +24,23 @@ body {
   margin-bottom: -5px;
 }
 
-.navbar a {
+
+nav {
+  display: flex;
+}
+
+
+nav a {
   color: #575555;
   padding: 23px 30px;
   text-decoration: none;
-  align-self: flex-end;
   font-size: 16px;
   font-family: sans-serif;
   letter-spacing: 3px;
+  align-self: flex-end;
 }
 
-.navbar a:hover {
+ nav a:hover {
   color: #b89556;
   background-color:#f7e7bd;
 
@@ -89,7 +93,7 @@ hr {
   );
 }
 
-/**** Other news (articles)****/
+/**** OTHER NEWS (articles)****/
 
 h3 {
   font-family: "didot";
@@ -176,6 +180,7 @@ h2 {
 @media screen and (max-width: 992px) and (min-width: 668px) {
   .logo {
     order: 1;
+    flex-grow:0;
   }
 
   .linkleft {
@@ -186,7 +191,7 @@ h2 {
     order: 2;
   }
 
-  .navbar {
+  nav {
     display: flex;
     justify-content: center;
   }
