@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -22,8 +23,9 @@ header {
 
 /*** NAVBAR STYLE ***/
 .navbar {
-    display: flex;
+    height: 60px;
     background-color: transparent;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -33,22 +35,19 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
-    justify-self: flex-end;
-    flex: 1;
+    flex: 1 1 auto;
     text-align: right;
 }
 
-a.navbar-item:hover {
-    color: lightgrey;
-}
-
 .logo {
-    flex-grow: 2;
+    flex: 2 1 33%;
     padding-left: .5em;
     font-family: 'Reenie Beanie', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: left;
 }
+
+/*** NAVBAR LINK STYLE ***/
 a.logo {
     color: #F8FF6E;
 }
@@ -57,12 +56,22 @@ a.logo:hover {
     opacity: .8;
 }
 
+a.navbar-item:hover {
+    color: lightgrey;
+}
+
 @media (max-width: 600px) {
 
 }
 
 @media (max-width: 900px) {
+    .item-1 {
+        order: -1;
+    }
 
+    .logo {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1200px) {
