@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <!-- dont forget the meta tag for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -27,6 +28,7 @@
 
        <img class="logoimage" src="./peanut.png" alt="peanutLogo">
         <p class="title">Newssite</p>
+        <p class="titleMobile">NS</p>
 
       <ul>
         <li><a class="active" href="#home">Home</a></li>
@@ -39,15 +41,15 @@
 
 
       <!-- i'm leaving the bignews sections out of the flexbox because i don't want it to stack next to the other items-->
-      <section class="bignews wrap">
+      <section class="bignews">
 
         <!-- The big news content -->
             <div class="bigNewsBox1"> 
               <img class="bigNewsImg1" src="crack.jpg" alt="crackedGround"/>
               <span class="bigNewsSmallText">TestTextTest Test TEst Test Test</span>
               <div class="bigNewsText">
-                <h4>Breaking news</h4>
-                <p>text bla bla blalalla</p>
+                <h4 class="bigNewsHeaderText">Breaking news</h4>
+                <p class="bigNewsMainText">text bla bla blalalla</p>
               </div>
             </div>
 

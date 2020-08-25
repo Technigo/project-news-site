@@ -1,3 +1,6 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;*/
+
 .mainContent{
   margin: 0;
 }
@@ -16,12 +19,14 @@ body{
 }
 
 .bignews {
-  background: #3b5249;
+  /*background: #3b5249;*/
+  background-color: transparent;
   height: 30vh;
   display:flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-between;
+  font-family: Roboto, sans-serif;
   
 }
 .bigNewsBox1{
@@ -29,6 +34,8 @@ body{
   max-height: 100%;
   min-width: 300px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .bigNewsSmallText{
@@ -36,7 +43,8 @@ body{
     right: 20px;
     left: 10%;
     top: 10%;
-    color:white;
+font-weight: bold;
+    color:#333;
 }
 
 
@@ -71,7 +79,8 @@ body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  font-family: Roboto, sans-serif;
+  
 }
 
 /*
@@ -118,10 +127,11 @@ li{
 
 .cardTextContainer {
   padding: 2px 16px;
+  font-size: 1em;
 }
 
 .newsItemCardSubject {
-  background-color: #519872;
+  background-color: #355a42;
   height: 10%;
   padding: 10px;
   color: white;
@@ -137,6 +147,9 @@ li{
 
 footer {
   background: #a4b494;
+  font-family: Roboto, sans-serif;
+  display:flex;
+  justify-content: center;
 }
 
 
@@ -148,15 +161,27 @@ footer {
   .title{
     display: none;
   }
+
+  .titleMobile{ 
+    display: block;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+
+  ul > li > a
+  {
+    padding: 14px 10px;
+  }
   
 }
 
 
-/*For tablets */
-@media screen and (min-width: 640px){
+/*For tablets 640*/
+@media screen and (min-width: 415px){
   .flex-container {
       display: flex;
   }    
+
+  .titleMobile{ display: none;}
 
   .main-nav{ 
     display: block;
@@ -189,7 +214,17 @@ footer {
   align-self: center;
   min-height: 100%;
   margin-left: 1em;
-  color: white;
+  color: #333;
+ }
+
+ .bigNewsHeaderText{
+   font-size: 2em;
+   margin:0;
+ }
+
+ .bigNewsMainText{
+   font-size: 2em;
+   margin:0;
  }
 
 .newsItemCard{
@@ -217,7 +252,11 @@ footer {
   
   .bigNewsText{
     display: inline-block;
+    flex-grow: 4;
+    margin-top: 25px;
    }
+
+   .titleMobile{ display: none;}
 }
 
 
@@ -228,17 +267,22 @@ header{
   color: white;
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  float: right;
-  border: 1px solid #fff;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-family: Roboto, sans-serif;
 }
 
 .logo{
@@ -249,16 +293,23 @@ ul {
   max-width: 50px;
   max-height: 50px;
   display: inline-block;
-  border: 1px solid white;
   margin-right: 30px;
 }
 
 .title {
   /*Flexgrow 2 för att titeln ska ta mer plats i flexboxen och justeras till vänster*/
   flex-grow: 2;
-    border: 1px solid white;
     font-size: 3em;
     margin: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: -4px;
+}
+
+.titleMobile{
+    flex-grow: 2;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: -4px;
 }
 
 li {
