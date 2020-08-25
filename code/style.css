@@ -1,4 +1,83 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #FFFFFF;
+  color:#121212;
 }
+
+/** HEADER **/
+
+header {
+  background: #FFFFFF;
+  color: #121212;
+  font-family: Helvetica;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+
+/* header > .hamburger {
+  justify-content: flex-start;
+
+} */
+
+.hamburger {
+  display: flex;
+  flex-direction: column; /*to spread them, since they are stacked*/
+  justify-content: space-between;
+  height: 12px;
+  width: 18px;
+  margin: 0px, 0px, 0px, -80px;
+} 
+
+.hamburger div {
+  width: 18px;
+  height: 2px;
+  background-color: #121212;
+}
+
+header img {
+  width: 130px;
+  height: 30.42px;
+}
+
+
+/** NAVIGATION BAR**/
+nav {
+  display: none;
+}
+
+nav a {
+  color: #121212;
+  text-decoration: none;
+}
+
+/** BIG NEWS BOX**/
+.big-news {
+  /* border: 3px, solid crimson; */
+}
+
+.big-news img {
+  width: 300px;
+  height: 150px;
+  border: 3px solid red;
+  display: inline-flex;
+  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+
+.smaller-news img {
+  width: 120px;
+  height: 80px;
+  border: 3px solid red;
+}
+
+}
+body {
+  background: #FFFFFF;
+  color: #121212;
+  font-family: Helvetica;
+  display: inline;
+  margin: 0;
+}
+
+/** SMALL NEWS BOX**/
