@@ -16,6 +16,7 @@ h3 {
   font-size: 13px;
   line-height: 1.4;
   opacity: 0.5;
+  margin-bottom: 0;
 }
 
 p {
@@ -87,7 +88,7 @@ nav a {
   display: flex;
   height: 50px;
   background-color:#2ee98b;
-  animation-duration: 1.5s;
+  animation-duration: 0.4s;
   animation-name: subscribe;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -102,6 +103,7 @@ nav a {
 
  .banner-container p {
    margin: 0px;
+   font-family: Avantgarde, serif;
  }
 
  @keyframes subscribe {
@@ -151,10 +153,6 @@ hr {
   line-height: 1.4;
 }
 
-.big-news-container:hover {
-  opacity: 0.7;
-}
-
 img.top {
   width: 100%;
 }
@@ -166,7 +164,7 @@ img.top {
 }
 
 .cards {
-  display: flex;
+  
   flex-wrap: wrap;
   text-align: center;
   padding: 20px; 
@@ -177,6 +175,7 @@ img.top {
     /*align-items: stretch;*/
 }
 
+
 .cards:hover{
   opacity: 0.7;
 }
@@ -186,9 +185,17 @@ p {
 }
 
 .cards img {
-  width: 100%; 
-  align-self: center;
+  
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+
 }
+
+/*
+.cards-text {
+  align-items: flex-start;
+}*/
 
 footer {
   background: beige;
@@ -321,6 +328,7 @@ footer p {
   .cards {
     width: 20%;
     text-align: left; 
+    
   }
 } 
 
