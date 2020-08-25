@@ -1,8 +1,27 @@
-html {
-  background: #666;
-  color: #d4d4d4;
+body {
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(129,184,234,1) 75%, rgba(254,255,214,1) 100%);
+  color: #000;
   font-family: Helvetica, sans-serif;
   margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+  /* top: auto;
+  color: #fff; */
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 100;
+  margin-top: -16px;
+  margin-bottom: 16px;
 }
 
 /* Header */
@@ -12,8 +31,6 @@ header {
   background: #fff;
   display: flex;
   align-items: center;
-  margin: 0;
-  border: 0;
 }
 
 .hamburger {
@@ -28,15 +45,120 @@ header {
 }
 
 .hamburger div {
-  height: 4px;
+  height: 5px;
   width: 30px;
   background: #000;
-  border-radius: 3px;
+  border-radius: 5px;
+}
+
+.logo {
+  height: 65px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+
+/* Monthly Cloud */
+.monthly-cloud .container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 3px solid green;
+}
+
+.monthly-cloud img {
+  width: 180px;
+}
+
+.monthly-cloud div {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* Cloud Cards */
+.cloud-card-container {
+  background: #e0e7d4;
+  color: #000;
+  text-align: center;
+  padding: 24px;
+}
+
+.cloud-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cloud-cards a {
+  background: #fafafa;
+  border: 2px solid #24292d;
+  border-radius: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 5px 5px 0 0 #d8eee6;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.cloud-cards a div {
+  border: 2px solid #d8eee6;
+  border-radius: 10px;
+}
+
+.cloud-cards a img {
+  width: 80%;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  margin-bottom: -16px;
+}
+
+.circles span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ec4342;
+}
+
+.circles span:last-child {
+  background: #5583c3;
 }
 
 /* Media Queries */
 @media (min-width: 668px) {
+  header {
+      justify-content: space-between;
+  }
 
+  nav {
+      display: inline-block;
+  }
+
+  .hamburger {
+      display: none;
+  }
+
+  .welcome-container div {
+      text-align: left;
+  }
 }
 
 /* tablet */
@@ -46,5 +168,18 @@ header {
 
 /* desktop */
 @media (min-width: 1025px) {
+    .welcome-container .container {
+      flex-direction: row;
+      align-items: center;
+  }
 
+  .welcome-container img{
+      width: 50%;
+  }
+
+  .challenges a {
+    width: 25%;
+    flex-grow: 1;
+    margin: 16px;
+  }
 }
