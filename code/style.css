@@ -64,7 +64,8 @@ nav {
 }
 
 .big-news-container img {
-  width: 100%;
+  object-fit: cover;
+  height: 350px;
 }
 
 .read-more {
@@ -100,6 +101,27 @@ hr {
   text-shadow: 2px 2px black;
 }
 
+/* NEWS CARDS SECTION STYLING*/
+.news-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+}
+
+.card {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  flex-basis: auto;
+  margin: 20px 0;
+  position: relative;
+  border: 5px solid transparent;
+}
+
 h5 {
   margin: 0 10px;
   font-weight: bold;
@@ -110,15 +132,7 @@ h5 {
   padding: 10px;
   box-shadow: 4px 5px black;
   width: 50px;
-}
-
-/* NEWS CARDS SECTION STYLING*/
-.card {
-  background-color: #E5E5E5;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 20px 0;
+  position: absolute;
 }
 
 .card:hover {
@@ -134,14 +148,6 @@ h3 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 7px;
-}
-
-.news-cards-container {
-  margin: auto;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* FOOTER STYLING */
@@ -217,6 +223,14 @@ footer a:hover {
       width: 50%;
       align-self: center; /*align-self default value is stretch, so img stretches when resizing browser. Set align-self to center to avoid */
       padding-left: 20px;
+      object-fit: cover;
+      height: 500px;
+  }
+
+  article {
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
   }
 
   h2 { /* for some reason an auto margin of 32px is added, this is to override that */
@@ -254,7 +268,7 @@ footer a:hover {
       display: flex;
       flex-direction: row;
       background-color: #E5E5E5;
-      max-width: 1700px;
+      max-width: 1500px;
   }
 
   .big-news-text {
@@ -265,6 +279,8 @@ footer a:hover {
       width: 50%;
       align-self: center;
       padding: 20px 0 20px 20px;
+      object-fit: cover;
+      height: 500px;
   }
 
   .bigger-news-container {
