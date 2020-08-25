@@ -17,4 +17,4 @@ I'm a huge fan of Korean Pop culture and listen to a lot of k-pop, so I made thi
 - The more I build projects, the better I become at planning efficient CSS selectors (yay!~~ 💖💪)
 
 ## View it live
-🎬 Coming soon! A link to my page live on Netlify!
+🎬 Check it out, all live and pretty at Netlify: https://compassionate-bhabha-2e6161.netlify.app/ 💥
