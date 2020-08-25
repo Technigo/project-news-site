@@ -18,13 +18,18 @@ a {
 }
 /*** HEADER STYLE ***/
 header {
-    background-color: #4247D3
+    background-color: #4247D3;
+    height: 100vh;
 }
 
 /*** NAVBAR STYLE ***/
 .navbar {
     height: 60px;
     background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }  
 
 .navbar-menu {
@@ -39,6 +44,7 @@ header {
     text-transform: uppercase;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
     letter-spacing: 2px;
     flex: 1 1 10vw;
     justify-content: flex-end;
@@ -61,6 +67,12 @@ header {
 
 .nav-link:hover {
     color: lightgrey;
+}
+
+/*** MAIN TITLE STYLE ***/
+
+.main-title {
+    background-color: #4247D3;
 }
 
 @media screen and (max-width: 599px) {
