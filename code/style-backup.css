@@ -1,0 +1,147 @@
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+ */
+
+html {
+}
+
+body {
+  margin: 0;
+}
+
+                              /* =========== HEADER/NAVBAR CODE =========== */
+
+header {
+  box-shadow: 0px 4px 0px #000000;
+  height: 88px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  margin: 0 0 24px 0;
+}
+
+.logo {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+
+nav {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+                              /* =========== TYPOGRAPHY =========== */
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  box-shadow: 0px 4px 0px #000000;
+  padding-bottom: 16px;
+}
+
+.redlink {
+  font-family: 'PT Sans', sans-serif; ;
+  font-weight: 800;
+  color: #EB5757;
+  text-decoration: none;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+
+                              /* =========== PAGE CONTENT =========== */
+
+/* Found a generator on https://grid.layoutit.com/ */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "small1 small1 small1 small2 small2 small2 small3 small3 small3 small4 small4 small4" "small1 small1 small1 small2 small2 small2 small3 small3 small3 small4 small4 small4" "small5 small5 small5 small6 small6 small6 small7 small7 small7 small8 small8 small8" "small5 small5 small5 small6 small6 small6 small7 small7 small7 small8 small8 small8";
+}
+
+.small1 { grid-area: small1; }
+
+.small2 { grid-area: small2; }
+
+.small3 { grid-area: small3; }
+
+.small4 { grid-area: small4; }
+
+.small5 { grid-area: small5; }
+
+.small6 { grid-area: small6; }
+
+.small7 { grid-area: small7; }
+
+.small8 { grid-area: small8; }
+
+.pagecontainer {
+  max-width: 1180px;
+  /* border: 1px solid red; */
+  /* This little "margin: auto" guy centers everything */
+  margin: auto; 
+}
+
+.card {
+  border: 1px solid purple;
+  padding: 0 0 24px 0;
+  
+}
+
+.mainstory {
+  display: flex;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 0px #000000;
+}
+
+main img {
+  object-fit: cover;
+}
+
+.mainstory img {
+  width: 50%;
+  margin-right: 24px;
+}
+
+
+.mainstory--rightcol {
+  width: 50%;
+}
+
+
+
+/* selector which targets everything starting with "small", i.e. all the small cards. And the 'img' parameter indicates that the image should be 100% of the card. */
+[class^='card small'] img {
+  width: 100%;
+  height: 160px;
+}

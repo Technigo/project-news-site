@@ -4,19 +4,83 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./clamp/clamp.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+
+      <div class="logo">
+        <img src="./assets/rfn-logo-square.svg" class="logo--square">
+        <img src="./assets/rfn-logo-text.svg" class="logo--text">
+      </div>
+      <!-- I unfortunately couldn't figure out how to change the header tablet order [navitem navitem LOGO navitem navitem] while the links were in the <nav>, so I had to remove them... Tips are appreciated -->
+      <!-- <nav> -->
+        <a class="redlink nav1" href="#">Latest</a>
+        <a class="redlink nav2" href="#">Editorials</a>
+        <a class="redlink nav3" href="#">Sports</a>
+        <a class="redlink nav4" href="#">Culture</a>
+      <!-- </nav> -->
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <main class="pagecontainer">
+      <section class="big-news">
+        <article class="card topstory">
+          <img src="assets/dogtor.jpg" alt="dog wearing a stethoscope">
+          <div class="topstory--rightcol">
+            <h1>Wow! When This Hospital Was Short on Doctors, This Adorable Dog With a Stethoscope Stepped In</h1>
+            <p id="topstory">Man’s best friend? More like man’s best physician! As the pandemic rages on, hospitals everywhere are feeling the pressure, but one lucky ward is getting a plucky puppy to pitch in! Dr. Woof, as he’s known locally, has been making the rounds and offering his highly unqualified but adorable aid to as many patients as paw-sible.</p>
+            <a href="#" class="redlink">Read more</a>
+          </div>
+        </article>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+        <section class="grid-container">
+
+
+          <a href="#"><article class="card small1">
+            <img src="./assets/crows.jpg">
+            <h2>My Chosen Family is the Murder of Crows that I Trained to Attack My Enemies</h2>
+          </article></a>
+
+          <a href="#"><article class="card small2">
+             <img src="./assets/haircut.jpg">
+            <h2>Trendy Summer Haircuts Worth Endangering Your Stylist</h2>
+          </article></a>
+
+          <a href="#"><article class="card small3">
+             <img src="./assets/hahayeah.jpg">
+            <h2>How to Respond ‘Haha, Yeah!’ Instead of Just Asking People to Repeat Themselves</h2>
+          </article></a>
+
+          <a href="#"><article class="card small4">
+             <img src="./assets/kitten.jpg">
+            <h2>5 Precious Kittens Who Unfortunately are Fiscally Conservative</h2>
+          </article></a>
+
+          <a href="#"><article class="card small5">
+             <img src="./assets/tubeman.jpg">
+            <h2>QUIZ: Does He Support Your Career or is He One of Those Inflatable Waving Tubes Outside the Used Car Dealership?</h2>
+          </article></a>
+
+          <a href="#"><article class="card small6">
+             <img src="./assets/snack.jpg">
+            <h2>Quick Snacks To Eat In The Three Minutes It Takes To Microwave Your Meal</h2>
+          </article></a>
+
+          <a href="#"><article class="card small7">
+             <img src="./assets/clouds.jpg">
+            <h2>5 Inopportune Times My Father Tried to Teach Me About Clouds</h2>
+          </article></a>
+
+          
+        </section>
+        
+    </main>
+    <footer>
+      <p class="credits">All content shamelessly stolen from reductress.com</p>
+    </footer>
+    <script>$clamp(topstory, {clamp: 5});</script>
   </body>
 </html>

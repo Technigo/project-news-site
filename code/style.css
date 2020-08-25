@@ -1,4 +1,256 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+ */
+
+
+body {
+  margin: 0;
+}
+
+                              /* =========== HEADER/NAVBAR CODE =========== */
+
+header {
+  box-shadow: 0px 4px 0px #000000;
+  height: 88px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  margin: 0 0 48px 0;
+}
+
+.logo {
+  width: 310px;
+  display: flex;
+  flex-grow:10;
+  /* border: 1px solid blue; */
+}
+
+.logo--square {
+  margin-right: 16px;
+}
+
+
+header a {
+  margin-left: 24px;
+}
+
+
+/* Code that changes the order and appearance of the header below */
+
+/* smartphone */
+@media only screen and (max-width: 600px) {
+  header a {
+    display:none;
+  }
+  header {
+    justify-content: center;
+  }
+  header .logo {
+    /* This flex-grow makes the logo centered. No idea why ¯\_(ツ)_/¯ */
+    flex-grow: 0;
+  }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) and (max-width: 899px)  {
+
+  .logo--text {
+    display: none;
+  }
+
+  .logo {
+    order: 3;
+    flex-grow: 0;
+    width: auto;;
+  }
+
+  .nav1 {  order: 1;  }
+
+  .nav2 {  order: 2;  }
+
+  .nav3 {  order: 4;  }
+
+  .nav4 {  order: 5;  }
+
+  header {
+    justify-content: space-around;
+  }
+
+}
+
+                              /* =========== TYPOGRAPHY =========== */
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.15s;
+  box-shadow: 0px 4px 0px #000000;
+}
+
+a:hover {
+  color:#EB5757;
+  box-shadow: 0px 8px 0px #EB5757;
+}
+
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 8px;
+  
+  /* padding-bottom: 16px; */
+}
+
+.redlink {
+  font-family: 'PT Sans', sans-serif; ;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+
+
+.credits {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.20);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+
+                              /* =========== PAGE CONTENT =========== */
+
+.grid-container {
+  display: grid;
+  grid-gap: 48px 20px;
+  margin-bottom: 120px;
+}
+
+
+
+/* smartphone */
+@media only screen and (max-width: 600px) {
+  .grid-container { grid-template-columns: repeat(1, 1fr); }
+  
+
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 600px)  {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+  .grid-container { grid-template-columns: repeat(4, 1fr); }
+}
+
+.pagecontainer {
+  max-width: 1180px;
+  /* This little "margin: auto" guy centers everything */
+  margin: auto; 
+}
+
+.card {
+  /* border: 1px solid purple; */
+  padding: 0 0 40px 0;
+}
+
+.grid-container .card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 24px 0;
+}
+
+.topstory {
+  display: flex;
+  margin-bottom: 64px;
+  box-shadow: 0px 4px 0px #000000;
+}
+
+main img {
+  object-fit: cover;
+}
+
+.topstory img {
+  width: 50%;
+  margin-right: 24px;
+}
+
+.topstory--rightcol {
+  width: 50%;
+}
+
+/* selector which targets everything starting with "small", i.e. all the small cards. And the 'img' parameter indicates that the image should be 100% of the card. */
+[class^='card small'] img {
+  width: 100%;
+  height: 160px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* The following had to be at the very bottom of this css file, otherwise it didn't work? */
+
+
+/* tablet + smartphone */
+@media only screen and (max-width: 1023px)  {
+
+  .topstory--rightcol p {
+    height: 0px;
+  }
+
+  .topstory img, .topstory--rightcol {
+    width: 100%;
+  }
+
+  .topstory {
+    flex-direction: column;
+  }
+
+  .pagecontainer {
+    padding: 0 24px 0 24px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .pagecontainer {
+    padding: 0 24px 0 24px;
+  }
 }
