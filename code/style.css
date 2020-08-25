@@ -1,4 +1,107 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+header {
+  background: whitesmoke;
+  height: 200px;
+  
+}
+
+/* Main news */
+
+.big-news {
+ 
+  display: flex;
+  background: orangered;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-news div {
+  
+ 
+  margin: 1px;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.big-news img {
+  width: 100%;
+  float: left;
+}
+
+div:hover {
+  background-color: yellow;
+}
+
+/* Other news grid */
+
+.other-news {
+ 
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-news div {
+ 
+  margin: 1px;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.other-news img {
+  width: 100%;
+}
+
+/* media tablet*/
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  header {
+    background-color: orange;
+  }
+
+.other-news {
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.other-news div {
+  width: 40%;
+  height: 50%;
+  margin: 1px;
+  
+  
+}
+
+}
+
+/* media desktop*/
+
+@media (min-width: 1025px) {
+
+  header {
+    background-color: purple;
+  }
+
+  .other-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .other-news div {
+    width: 20%;
+    height: 40%;
+    margin: 1px;
+  
+  }
 }
