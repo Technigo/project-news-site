@@ -1,8 +1,7 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I have made a Console Gaming News Site.
+It is a responsive design that works differently in terms of layout for Phones, Tablets & Computers.
 
 ## The problem
 
