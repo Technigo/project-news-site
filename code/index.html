@@ -5,18 +5,189 @@
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
+
+<main class="mainContent">
+<!--Old header
+   <header>
+    <img class="headerLogo" src="./dinosaur.png" alt="dinoLogo">
+        <ul class="flex-header">
+          <li>Local</li>
+          <li>Sports</li>
+          <li>Weather</li>
+          <li>Other</li>
+        </ul>       
+    </header> -->
+
+    <!-- new header-->
     <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+       <img class="logoimage" src="./peanut.png" alt="peanutLogo">
+        <p class="title">Newssite</p>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li> 
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+  
+  </header>
+
+
+      <!-- i'm leaving the bignews sections out of the flexbox because i don't want it to stack next to the other items-->
+      <section class="bignews wrap">
+
+        <!-- The big news content -->
+            <div class="bigNewsBox1"> 
+              <img class="bigNewsImg1" src="crack.jpg" alt="crackedGround"/>
+              <span class="bigNewsSmallText">TestTextTest Test TEst Test Test</span>
+              <div class="bigNewsText">
+                <h4>Breaking news</h4>
+                <p>text bla bla blalalla</p>
+              </div>
+            </div>
+
+       
+      </section>
+      <!-- Adding a wrap class to this container to limit the size on desktops-->
+    <section class="flex-container wrap">
+
+
+          <!-- The news cards  -->
+         
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              SPORTS
+            </div>
+
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+           <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              SCIENCE
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              FASHION
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              CULTURE
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              CRIME
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              DEEP DIVE
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              CRIME
+            </div>
+            
+            <img class="newsImg" src="./forest.jpg" alt="forest">
+              <div class="cardTextContainer">
+                <h4>Newsheading</h4> 
+                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+              </div>
+          </div>
+
+      </section>
+
+
+
+    <footer>
+      <!--Footer section -->
+      <p> 
+        Contact
+      </p>
+    </footer>
+
+  </main>
+
   </body>
 </html>
+
+
+
+<!-- Old code for the cards, replace by the newscards
+ <div class="newsItem newsItem-1">
+              <img class="newsImg newsImg-1" src="./forest.jpg" alt="Example image">
+          </div>
+
+          <div class="newsItem newsItem-2">
+            <img class="newsImg newsImg-2" src="./forest.jpg" alt="Example image">
+          </div>
+
+          <div class="newsItem newsItem-3">
+          <img class="newsImg newsImg-3" src="./forest.jpg" alt="Example image">
+          </div>
+
+          <div class="newsItem newsItem-4">
+          <img class="newsImg newsImg-4" src="./forest.jpg" alt="Example image">
+          </div>
+
+         <div class="newsItem newsItem-5">
+          <img class="newsImg newsImg-5" src="./forest.jpg" alt="Example image">
+         </div>
+
+          <div class="newsItem newsItem-6">
+          <img class="newsImg newsImg-6" src="./forest.jpg" alt="Example image">
+          </div>
+
+         <div class="newsItem newsItem-7">
+          <img class="newsImg newsImg-7" src="./forest.jpg" alt="Example image">
+          </div>
+        
+        -->
