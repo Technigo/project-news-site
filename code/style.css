@@ -1,5 +1,4 @@
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Rubik Mono One', sans-serif;*/
+
 
 .mainContent{
   margin: 0;
@@ -19,8 +18,8 @@ body{
 }
 
 .bignews {
-  /*background: #3b5249;*/
-  background-color: transparent;
+ 
+  background-color: #a4b494;
   height: 30vh;
   display:flex;
   flex-direction: row;
@@ -36,15 +35,6 @@ body{
   position: relative;
   display: flex;
   justify-content: center;
-}
-
-.bigNewsSmallText{
-    position: absolute;
-    right: 20px;
-    left: 10%;
-    top: 10%;
-font-weight: bold;
-    color:#333;
 }
 
 
@@ -83,14 +73,6 @@ font-weight: bold;
   
 }
 
-/*
-header {
-  background: #382933;
-  color: white;
-  min-height: 10vh;
-
-  display: flex;
-}*/
 
 .flex-header{
   display: flex;
@@ -100,18 +82,14 @@ header {
   align-items: stretch;
   align-content: stretch;
 }
-/*
-li{
-  flex-grow: 1;
-  align-self: center;
-}
-*/
+
 
 /*Making the newsitems look like cards*/
 .newsItemCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   max-width: 300px;
+  
 
   margin: 15px;
 }
@@ -147,17 +125,16 @@ li{
 
 footer {
   background: #a4b494;
+  color: #7f8f6e;
   font-family: Roboto, sans-serif;
   display:flex;
   justify-content: center;
 }
 
-
-
-
-/*Phone*/
+/* Media Queries for Phone*/
 @media screen and (max-width: 414px)
 {
+  .bigNewsBox1, .bignews{ display: none;}
   .title{
     display: none;
   }
@@ -175,7 +152,7 @@ footer {
 }
 
 
-/*For tablets 640*/
+/*For tablets */
 @media screen and (min-width: 415px){
   .flex-container {
       display: flex;
@@ -213,28 +190,30 @@ footer {
   display: inline-block;
   align-self: center;
   min-height: 100%;
-  margin-left: 1em;
+  margin-left: 0.8em;
   color: #333;
  }
 
  .bigNewsHeaderText{
-   font-size: 2em;
+   font-size: 1em;
    margin:0;
  }
 
  .bigNewsMainText{
-   font-size: 2em;
+   font-size: 1em;
    margin:0;
  }
 
 .newsItemCard{
-  
+  min-height: 400px;
   flex-basis: 40%;
 }
 
 .bigNewsSmallText{
   display: none;
 }
+
+.secretCard{display: none;}
   
 }
 
@@ -247,16 +226,30 @@ footer {
   .newsItemCard{
     margin: 15px;
     max-width: 300px;
-    flex-basis: 20%;
+    flex-basis: 18%;
+   
+  }
+
+  .bigNewsMainText{
+    font-size: 1.5em;
+    margin:0;
+  }
+
+  .bigNewsHeaderText{
+    font-size: 2em;
+    margin:0;
   }
   
   .bigNewsText{
     display: inline-block;
     flex-grow: 4;
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
    }
 
    .titleMobile{ display: none;}
+.secretCard{display: none;}
 }
 
 

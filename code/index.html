@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Pangea Daily</title>
+    <link rel="icon" type="image/png" href="./dino.png"/>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <!-- dont forget the meta tag for responsiveness -->
@@ -27,8 +28,8 @@
     <header>
 
        <img class="logoimage" src="./peanut.png" alt="peanutLogo">
-        <p class="title">Newssite</p>
-        <p class="titleMobile">NS</p>
+        <p class="title">PANGEA DAILY</p>
+        <p class="titleMobile">PD</p>
 
       <ul>
         <li><a class="active" href="#home">Home</a></li>
@@ -46,10 +47,12 @@
         <!-- The big news content -->
             <div class="bigNewsBox1"> 
               <img class="bigNewsImg1" src="crack.jpg" alt="crackedGround"/>
-              <span class="bigNewsSmallText">TestTextTest Test TEst Test Test</span>
+             
               <div class="bigNewsText">
-                <h4 class="bigNewsHeaderText">Breaking news</h4>
-                <p class="bigNewsMainText">text bla bla blalalla</p>
+                <h4 class="bigNewsHeaderText">Top News</h4>
+                <p class="bigNewsMainText">Dino's house split in two due to tectonic plate movement - Tax authorities demand taxes for two properties
+                  "The economic impact will be devastating"
+                </p>
               </div>
             </div>
 
@@ -59,29 +62,41 @@
     <section class="flex-container wrap">
 
 
-          <!-- The news cards  -->
+          <!--  Header news converted into regular card in mobile view-->
+          <div class="newsItemCard secretCard">
+            <div class="newsItemCardSubject">
+              TOP NEWS
+            </div>
+            <img class="newsImg" src="./crack.jpg" alt="forest">
+            <div class="cardTextContainer">
+              <h4>TECTONIC PLATE MOVEMENT</h4> 
+              <p>Dino's house split in two due to tectonic plate movement - Tax authorities demand taxes for two properties
+                "The economic impact will be devastating"</p> 
+            </div>
+          </div>
+
          
           <div class="newsItemCard">
             <div class="newsItemCardSubject">
-              SPORTS
+              ECONOMICS
             </div>
-
-            <img class="newsImg" src="./forest.jpg" alt="forest">
-              <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
-              </div>
+            <img class="newsImg" src="./time.jpg" alt="forest">
+            <div class="cardTextContainer">
+              <h4>UNION DEMANDS</h4> 
+              <p>The Velociraports Workers Union (VWU) demand regulations in hunting hours - "Even killers need a good nights' sleep"</p> 
+            </div>
           </div>
 
+          <!-- The rest of the newsCards-->
            <div class="newsItemCard">
             <div class="newsItemCardSubject">
-              SCIENCE
+              CLIMATE
             </div>
             
-            <img class="newsImg" src="./forest.jpg" alt="forest">
+            <img class="newsImg" src="./comet.jpg" alt="forest">
               <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+                <h4>METEOR LOOKOUT</h4> 
+                <p>Meteor showers has become more frequent in the past year - interactive map</p> 
               </div>
           </div>
 
@@ -90,22 +105,33 @@
               FASHION
             </div>
             
-            <img class="newsImg" src="./forest.jpg" alt="forest">
+            <img class="newsImg" src="./feather.jpg" alt="forest">
               <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+                <h4>FALL FEATHERS</h4> 
+                <p>The must-haves for this season</p> 
               </div>
           </div>
+
+          <div class="newsItemCard">
+            <div class="newsItemCardSubject">
+              SPORTS
+            </div>
+          <img class="newsImg" src="./sports.jpg" alt="forest">
+          <div class="cardTextContainer">
+            <h4>WORLD RECORD</h4> 
+            <p>Velociraptor Vic sets new world record in High Jumping</p> 
+          </div>
+         </div>
 
           <div class="newsItemCard">
             <div class="newsItemCardSubject">
               CULTURE
             </div>
             
-            <img class="newsImg" src="./forest.jpg" alt="forest">
+            <img class="newsImg" src="./poet.jpg" alt="forest">
               <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+                <h4>FROM PREDATOR TO POET</h4> 
+                <p>For our Deep Dive of the week, we meet Manuel who put down his claws and picked up his pencils</p> 
               </div>
           </div>
 
@@ -114,45 +140,31 @@
               CRIME
             </div>
             
-            <img class="newsImg" src="./forest.jpg" alt="forest">
+            <img class="newsImg" src="./crime.jpg" alt="forest">
               <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+                <h4>CRIME WATCH</h4> 
+                <p>Unknown T-Rex have been seen wreaking havoc around the southern coast - facing heavy charges</p> 
               </div>
           </div>
 
           <div class="newsItemCard">
             <div class="newsItemCardSubject">
-              DEEP DIVE
+              FOOD
             </div>
             
-            <img class="newsImg" src="./forest.jpg" alt="forest">
+            <img class="newsImg" src="./veggies.jpg" alt="forest">
               <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
-              </div>
-          </div>
-
-          <div class="newsItemCard">
-            <div class="newsItemCardSubject">
-              CRIME
-            </div>
-            
-            <img class="newsImg" src="./forest.jpg" alt="forest">
-              <div class="cardTextContainer">
-                <h4>Newsheading</h4> 
-                <p>Newsdetails bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla blabla bla blabla bla blabla bla blbla bla blabla bla bla</p> 
+                <h4>VEGGIE TREND</h4> 
+                <p>Brachiosaurus Brenda shares her favorite veggie recipes</p> 
               </div>
           </div>
 
       </section>
 
-
-
     <footer>
       <!--Footer section -->
       <p> 
-        Contact
+        &#169 Pangea Press Daily. All rights reserved.
       </p>
     </footer>
 
