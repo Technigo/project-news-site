@@ -44,6 +44,33 @@ nav a  {
   width: 350px;
 }
 
+/* CONTAINERS*/
+.plants {
+  background:  #d0d8c1;
+  padding: 25px;
+}
+
+h4{
+  text-align: center;
+  
+}
+
+.plant-containers {
+  justify-content: center;
+  
+}
+
+.card {
+  background: rgb(180, 192, 181);
+  border: 2px solid #52554b;
+  
+  
+  
+}
+.plant-containers img{
+  height: 50%;
+  width: 40% ;
+}
 /*** MEDIA QUERIES
 
 @media (min-width: 650px) {
@@ -54,5 +81,10 @@ nav a  {
   .big-news div {
     text-align: Left;
   }
+}
+
+.card {
+  display: flex;
+
 }
 ***/

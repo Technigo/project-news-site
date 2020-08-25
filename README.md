@@ -10,7 +10,9 @@ Start by briefly describing the assignment in a sentence or two. Keep it short a
 
 //So the first thing... How do I want it to look? What do make it about? I know I want somber, light colors. I know I want hover effects over the boxes. I took insperation from the noops code along and a website selling retreats.
 
-So I started to sketch. I wrote down i a simple google docs - what is required of the assignment? //
+So I started to sketch. I wrote down i a simple google docs - what is required of the assignment? 
+
+I struggle af with the display and content on the site. Nothing is working and it feels inpossible to get this done. I have a very clear image in my head of what I want to do, but it is very hard to get there...//
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
