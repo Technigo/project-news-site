@@ -1,4 +1,50 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #666;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header */
+header {
+  height: 80px;
+  padding: 0 16px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border: 0;
+}
+
+.hamburger {
+  height: 25px;
+  width: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  height: 4px;
+  width: 30px;
+  background: #000;
+  border-radius: 3px;
+}
+
+/* Media Queries */
+@media (min-width: 668px) {
+
+}
+
+/* tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+
 }
