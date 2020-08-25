@@ -1,28 +1,38 @@
 html {
-  background: #f9f0e8;
+  background: #fafafa;
   color: #000;
   font-family: ;
   margin: 0 0;
+  padding; 0 0;
 }
 
-
-/*styling of header*/
+a {
+  text-decoration: none;
+  color: black;
+}
+/****styling of header*/
 
 header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 16px;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
 }
 
-header img {
-
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  border-radius: 20 %;
 }
 
 .hamburger {
   display: flex;
   height: 24px;
   width: 24px;
+  margin: 0 10px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -50,48 +60,116 @@ nav a {
 /*styling of big news section*/
 
 .big-news {
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 10px;
 
 }
 
-.small-image {
-  width: 400px;
+.big-news-image {
+  margin: 20px;
+  width: 70%;
+
 }
 
-.big-image {
-  display: none;
+big-news-image a:hover {
+
 }
 
 .news-text {
+  width: 300px;
+  margin-bottom: 50px;
   
 }
 
+.news-text a:hover {
+  font-weight: bold;
+}
 /**** styling of card container*/
 
+h3 {
+  margin: 20px 0 -10px;
+}
+
 .card-container {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap; wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ /* align-items: stretch; behövs ej på mobil? */
+}
+
+.cards a {
+  background: #fff;
+  width: 90%;
+  margin: 20px 0;
+  box-shadow: 5px 5px 0 0 darkgrey;
+ 
+}
+
+.card-image {
+  margin: 20px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.card-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+}
+
+.cards a:hover {
+  background-color: #fafafa;
+}
+
+h4 {
+  margin: 0px;
+}
+
+/**** styling of footer ****/
+
+footer {
+  background-color: white;
+  margin: 50px 0 0;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 /**** media ****/
 
-
-@media (min-width: 650px) {
-  header {
-    flex-direction: column;
+/*** ipad ***/
+@media (min-width: 600px) {
+  header {  
     justify-content: space-between;
-    width: 700px;
-    padding: 0 5px;
   }
 
   nav {
     display: inline-block;
-    /* make this a flexbox*/
+    margin: 0 20px;
+    /* make this a flexbox- behövs verklinge inline-block*/
   }
   nav a {
     margin: 0 5px;
@@ -113,11 +191,25 @@ nav a {
     width: 650px;
     height: max-content;
   }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .cards a {
+    width: 40%;
+    margin: 0 10px 20px;
+  }
 }
+
+/*** desktop ***/
 
 @media (min-width: 1024px) {
   header {
-    flex-direction: column;
+    
 
   }
 
@@ -127,8 +219,8 @@ nav a {
     margin: 40px 40 px;
   }
 
-  .big-image {
-    width: 1000px;
+  .big-news-image {
+    width: 70%;
   }
 
   .news-text {
@@ -136,5 +228,22 @@ nav a {
     align-items: center;
     margin: 0 50px;
   }
+
+  .cards {
+    align-items: stretch;
+  }
+
+  .cards a {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 30px 30px;
+    
+  } 
 }
 
