@@ -1,15 +1,26 @@
+
+/* For screens smaller than 667px */
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #c9c1bf;
+  /* color: #fff; */
 }
 
 /*Header*/
+
+Body {
+  
+}
 
 header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
 }
 
 nav {
@@ -19,33 +30,122 @@ nav {
   justify-content: space-evenly;
 }
 
+/* main */
 
-
-
-
-h1 {
+h1, h2 {
   font-family: Helvetica;
+  text-align: center;
 }
 
 p { 
   font-family: Times New Roman, Times, serif;
 }
 
-header img {
-  width: 50px;
-  height: 50px;
+.wrapper {
+  /* padding: 100px; */
+  width: 100%;
+  height: auto;
 }
+
+.big-news, .other-news {
+  padding: 50px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+
+
 
 /*Big News*/
 
-/*News Grid*/
+.big-news-box1{
+  width: 90%;
+  height: 400 px;
+ 
+  border: 2px solid white;
+  padding: 30px;
+  margin: 20px;
+}
 
-@media (max-width: 700px){
-  .order-1 {
-    order: 1;
-  }
+
+
+.big-news-box2{
   
-  .order-2  {
-  order: 2;
+  width: 90%;
+  height: 400 px;
+  border: 2px solid white;
+  padding: 30px;
+  margin: 20px;
+}
+
+.big-news-box1 img {
+  height: 300px;
+   width: 100%;
+ }
+
+ /*News Grid*/
+
+ .news-box{
+  width: 90%;
+  height: 200 px;
+  border: 2px solid white;
+  padding: 30px;
+  margin: 20px;
+ }
+
+ .news-box img {
+  height: 200px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+
+
+/* media query for tablets  */
+@media screen and (min-width: 667px) {
+
+  .big-news, .other-news {
+    flex-direction: row;
   }
+ 
+  .other-news{
+  flex-wrap: wrap; 
+  justify-content: center;
+  }
+
+  .big-news-box1 {
+    /* width: 45%;
+    height: 100 px; */
+    flex: 1;
+  }
+
+  .big-news-box2 {
+    /* width: 45%;
+    height: 100 px; */
+    flex: 2;
+  }
+
+  .news-box {
+    width: 300px;
+    height: 100 px;
+    
+    
+  }
+}
+
+/* media query for desktops  */
+@media screen and (min-width: 1025px){
+
+  /* .other-news{
+    justify-content: center; */
+
+  }
+  .news-box {
+    width: 300px;
+    height: 100 px;
+    
+  }
+
 }
