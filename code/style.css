@@ -4,6 +4,44 @@ body {
   padding: 1rem; 
 }
 
+
+
+/*** HEADING ***/
+
+header {
+  background: url(abstract-1501710_1280.jpg);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: black;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px 2px grey;
+  background-size: 100%;
+}
+
+img .sun {
+  width: 1px;
+  height: 1px;
+}
+
+
+h1 {
+  padding-right: 30px;
+  animation: text 5s 1;
+}
+
+@keyframes text {
+  from{
+    opacity: 0;
+  
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*** HAMBURGER MENY OVERLAY ***/
 
 /* The Overlay (background) */
@@ -66,64 +104,15 @@ body {
   }
 }
 
-/*** HEADING and NAV***/
-
-header {
-  background: url(abstract-1501710_1280.jpg);
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  color: black;
-  margin-bottom: 20px;
-  box-shadow: 5px 5px 5px 2px grey;
-}
-
-img .sun {
-  width: 1px;
-  height: 1px;
-}
-
-
-h1 {
-  padding-right: 30px;
-  animation: text 5s 1;
-}
-
-@keyframes text {
-  from{
-    opacity: 0;
-  
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-
-nav {
-    display: none;
-    
-}
-
-  nav a:hover, nav a:active {
-    text-decoration: underline;
-  }
-
-  nav a:hover, nav a:focus {
-    color: grey;
-  }
-  
-
 
 /*** Section CARDS ***/
+
 .cards {
   
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  
 }
 
 .card {
@@ -138,9 +127,7 @@ nav {
   position: relative;
   overflow: hidden;
   text-align: center;
- 
 }
-
 
 
 .card .fadedbox {
@@ -219,8 +206,9 @@ button {
   font-size: 12px;
 }
 
+/*** THE LAST IMAGE ***/
 img {
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%); /*** to paint it in grayscale***/
   filter: grayscale(100%);
 }
 
@@ -228,6 +216,19 @@ img {
 
 
 /*** FOOTER ***/
+
+footer {
+  height: 200px;
+  background:url(abstract-1501710_1280.jpg);
+  margin-top:20px;
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  padding-top:100px;
+
+}
+
+
 
 
 
@@ -275,18 +276,25 @@ img {
     grid-template-columns: repeat(2, 1fr);
    }
 
-   .cardone {
-     grid-column: span 4;
+   .card .nine {
+     grid-column: 2;
    }
 
-   .card .two, .card .three {
-    grid-column: span 2;
-   }
+   nav a:hover, nav a:active {
+    text-decoration: underline;
+  }
+
+  nav a:hover, nav a:focus {
+    color: grey;
+  }
 
 }
 
 @media (min-width: 1024px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  
+  .cards { 
+    grid-template-columns: repeat(3, 1fr);
+   }
 
   header {
     justify-content: space-between;
@@ -324,8 +332,12 @@ nav a {
   box-shadow: 5px 5px 5px grey;
 }
 
-.hamburger {
-    display: none;
+nav a:hover, nav a:active {
+  text-decoration: underline;
+}
+
+nav a:hover, nav a:focus {
+  color: grey;
 }
 
 }
