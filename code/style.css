@@ -1,4 +1,379 @@
-html {
-  background: #0025ff;
-  color: #fff;
+*{
+  margin: 0;
+  padding:0;
 }
+
+body     {
+  padding-top: 80px;
+}
+
+header {
+  text-align: center;
+  position: fixed; /*changed from absolute since that covered first section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: black;
+}
+
+/*checkbox next to burger menu CHANGED FROM #toggler*/
+.toggler { 
+  display: none;
+}
+
+.logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-left: 16px; 
+}
+
+nav ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;    
+  left: -100%;
+  transition: all .5s;
+  list-style: none;
+}
+
+nav li {
+  margin: 20px;
+  text-align: right;
+}
+
+nav a {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 16px;
+  border: 3px;
+  border-radius: 2px;
+
+}
+
+nav a:hover {
+  color: grey;
+  background-color: white;
+  transition: ease-in .1s;
+}
+
+.toggler:checked ~ nav ul {
+  left: 0;
+}
+
+.burger {
+  position: absolute;
+  font-size: 35px;
+  color: lightgrey;
+  top: 0;
+  right: 0;
+  margin-right: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+
+/* tablet media Query */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .burger {
+      font-size: 40px;
+  }
+}
+
+
+/* desktop media query */ 
+
+@media (min-width: 1024px) {
+  .burger {
+      display: none;
+  }
+
+  header {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(700px, 3fr);
+  }
+
+
+  nav {
+      display: flex;
+      grid-column: 3/4;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+
+  nav ul {
+      all: unset; /*to unset previous nav ul code */
+      list-style: none; 
+      display: flex;
+  }
+
+  nav li {
+     padding: 10px;
+  }
+
+  nav a {
+      font-size: 24px;
+  }
+}
+
+
+.big-news {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  width: 90%;
+  align-self: center;
+  padding: 10px;
+}
+
+.text {
+  width: 90%; 
+  align-self: center;
+  padding: 10px;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+
+/* MEDIA QUERT TO ALIGN PICTURES IN COLUMN WHEN SCREEN IS LARGER THAN 667px BUT
+SMALLER THAN 1024px */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .big-news {
+      flex-direction: row;
+  }
+  .image {
+      width: 40%;
+      flex-grow: 2
+  }
+
+  .text {
+      width: 40%
+  }
+  
+}
+
+/* MEDIA QUERT TO ALIGN PICTURES IN COLUMN WHEN SCREEN SMALLER THAN 1024px */
+
+@media (min-width: 1024px) {
+  .big-news {
+      flex-direction: row;
+  }
+
+  .image {
+      width: 30%;
+      flex-grow: 2
+  }
+
+  .text {
+      width: 30%
+  }
+  
+  .image img {
+      height: 40vh;
+}
+  }
+
+
+/* STYLING OF SECTOND SECTION CONTAINING 8 IMAGES */
+
+.smallNews-parent {
+  /*background: rgb(0, 30, 210);*/
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.figure {
+  justify-content: center;
+  margin: 5px;
+  display: flex;
+  padding: 0;
+  width: 60%;
+  align-self: center; 
+  position: relative;
+  box-shadow: 0 0 50px -50px red;
+  
+}
+
+/*styling for img in first and second section*/
+
+.smallNews-image {
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  /*margin: 20px;*/
+  align-self: center;
+  
+}
+
+
+h3 {
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+  opacity: 0;
+  transition: all ease 2s;
+  font-size: 30px;
+}
+
+.figure:hover h3 {
+  opacity: 1;
+}
+
+.figure .span1:before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 1px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.figure .span1:after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 1px;
+  height: 90%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.figure .span2:before {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 1px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.figure .span2:after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 1px;
+  height: 90%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+/*ANIMATION ON HOVER */
+
+.figure:hover .span1:before {
+  animation: border-top 0.3s linear;
+  transform-origin: left;
+  background-color: white;
+}
+
+@keyframes border-top{
+  0%{
+      transform: scaleX(0);
+  }
+}
+
+.figure:hover .span1:after {
+  animation: border-right 0.6s linear;
+  transform-origin: top;
+  background-color: white;
+}
+
+@keyframes border-right{
+  0%, 50%{
+      transform: scaleY(0);
+  }
+}
+
+.figure:hover .span2:before {
+  animation: border-bottom 0.9s linear;
+  transform-origin: right; 
+  background-color: white;
+}
+
+@keyframes border-bottom{
+  0%, 75%{
+      transform: scaleX(0);
+  }
+}
+
+.figure:hover .span2:after {
+  animation: border-left 1.2s linear;
+  transform-origin: bottom;
+  background-color: white;
+}
+
+@keyframes border-left{
+  0%, 80%{
+      transform: scaleY(0);
+  }
+}
+
+
+
+/*target everything that is bigger than 667px but less than 1024px*/
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .smallNews-parent {
+      flex-direction: row;   
+      flex-wrap: wrap; 
+  }
+
+  .figure {
+      flex-basis: 40%;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+}
+
+/* when using a laptop or bigger screen I want images to be four 
+in each column in two rows*/
+@media (min-width: 1025px) {
+  .smallNews-parent {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .figure {
+      flex-basis: 20%;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+}
+
+
+
+
