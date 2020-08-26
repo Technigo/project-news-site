@@ -26,7 +26,6 @@ nav a  {
 /* INLEDNING*/
 
 .big-news {
-  padding: 100px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +35,13 @@ nav a  {
 }
 
 .big-news img {
-  width: 350px;
+  width: 100%;
   max-width: 100%;
 }
 
 .big-news div {
-  width: 350px;
+  text-align: center;
+  padding: 25px;
 }
 
 /* CONTAINERS*/
@@ -52,6 +52,7 @@ nav a  {
 
 h4{
   text-align: center;
+  margin: 50px;
   
 }
 
@@ -62,29 +63,24 @@ h4{
 
 .card {
   background: rgb(180, 192, 181);
-  border: 2px solid #52554b;
-  
-  
-  
+  text-align: center;
+  margin: 25px;
+  margin-bottom: 40px;
+  padding: 25px;  
+  border-radius: 15px;
+  box-shadow: 12px 12px 20px 0 #61725a;
 }
 .plant-containers img{
   height: 50%;
-  width: 40% ;
+  width: 40%;
 }
-/*** MEDIA QUERIES
+
+
+/* MEDIA QUERIES*/
 
 @media (min-width: 650px) {
 
-  nav a {
-    display: inline-block;
-  }
   .big-news div {
-    text-align: Left;
+    /*text-align: Left;*/
   }
 }
-
-.card {
-  display: flex;
-
-}
-***/
