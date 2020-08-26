@@ -1,7 +1,15 @@
 /* 
+Font reference for myself
 font-family: 'Playfair Display', serif;
 font-family: 'PT Sans', sans-serif;
  */
+
+/* 
+Breakpoints:
+<600      SMARTPHONE
+600-1024  TABLET
+>1024     DESKTOP
+*/
 
 
 body {
@@ -27,7 +35,6 @@ header {
   width: 310px;
   display: flex;
   flex-grow:10;
-  /* border: 1px solid blue; */
 }
 
 .logo--square {
@@ -58,7 +65,7 @@ header a {
 }
 
 /* tablet */
-@media only screen and (min-width: 600px) and (max-width: 899px)  {
+@media only screen and (min-width: 600px) and (max-width: 1023px)  {
 
   .logo--text {
     display: none;
@@ -69,6 +76,8 @@ header a {
     flex-grow: 0;
     width: auto;;
   }
+
+  
 
   .nav1 {  order: 1;  }
 
@@ -97,7 +106,6 @@ a:hover {
   color:#EB5757;
   box-shadow: 0px 8px 0px #EB5757;
 }
-
 
 h1, h2 {
   font-family: 'Playfair Display', serif;
@@ -136,14 +144,16 @@ p {
   margin-bottom: 16px;
 }
 
-
-
 .credits {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.20);
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
 }
+
+
+
+
 
                               /* =========== PAGE CONTENT =========== */
 
@@ -153,13 +163,10 @@ p {
   margin-bottom: 120px;
 }
 
-
-
 /* smartphone */
 @media only screen and (max-width: 600px) {
   .grid-container { grid-template-columns: repeat(1, 1fr); }
   
-
   h1 {
     font-size: 24px;
     line-height: 36px;
@@ -185,7 +192,6 @@ p {
 }
 
 .card {
-  /* border: 1px solid purple; */
   padding: 0 0 40px 0;
 }
 
@@ -203,7 +209,16 @@ p {
 
 main img {
   object-fit: cover;
+  box-sizing: border-box; /* TEST  */
 }
+
+/* ====== Activate this code 👇 for the polaroid effect. Omitted it because it was ugly. ====== */
+/* main img:hover {
+  filter: sepia(30%);
+  border: 12px solid #EBEBEB;
+  border-bottom: 20px solid #EBEBEB;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.20);
+} */
 
 .topstory img {
   width: 50%;
@@ -214,7 +229,12 @@ main img {
   width: 50%;
 }
 
-/* selector which targets everything starting with "small", i.e. all the small cards. And the 'img' parameter indicates that the image should be 100% of the card. */
+.topstory--linkbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* selector which targets everything starting with "card small", i.e. all the small cards. And the 'img' parameter indicates that the image should be 100% of the card. */
 [class^='card small'] img {
   width: 100%;
   height: 160px;
@@ -225,8 +245,7 @@ footer {
   justify-content: center;
 }
 
-/* The following had to be at the very bottom of this css file, otherwise it didn't work? */
-
+/* The following had to be at the very bottom of this css file, otherwise it didn't work */
 
 /* tablet + smartphone */
 @media only screen and (max-width: 1023px)  {
@@ -245,6 +264,9 @@ footer {
 
   .pagecontainer {
     padding: 0 24px 0 24px;
+  }
+  header a {
+    margin-left: 0;
   }
 
 }
