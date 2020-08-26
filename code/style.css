@@ -19,6 +19,11 @@ html, body {
   padding: 1% 2%;
   size: 10px;
 }
+.navbar-brand img {
+  padding-top: 0;
+ 
+  margin-left: 120px;
+}
 .navbar-default .navbar-nav li a {
   color: #312f2d;
 }
@@ -26,6 +31,7 @@ html, body {
   color: black;
 }
 .header {
+  width: 100%;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
@@ -54,20 +60,39 @@ html, body {
   line-height: 2;
   padding-top: 40px;
   padding-bottom: 40px;
-  border: 2px solid #312f2d;
-  background-color: #ccbeb4;;
+  border: 2px solid #ccbeb4;
+  background-color: #ddd3cc;
 }
 
+.row {
+  margin-top: 100px;
+}
+.row p {
+  text-align: left;
+  font-family: 'Arapey', serif;
+  font-weight: lighter;
+  font-size: 19px;
+  
+}
 h3 {
   text-align: left;
   font-style: italic;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 1.2;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
+.row h3 {
+  padding-bottom: 50px;
+  padding-top: -20px;
+}
+.row .btn {
+  margin-top: 30px;
+}
 .container {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 100%;
 }
@@ -77,17 +102,17 @@ h3 {
 }
 
 .news-container {
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 105px;
 }
 .news-container img {
   place-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 105px;
-  padding-bottom: 105px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: #ccbeb4 2px solid;
-  background-color: #ccbeb4;
+  background-color: #ddd3cc;
 }
 hr {
   display: block;
@@ -105,6 +130,7 @@ hr {
   border: 1.5px solid #312f2d;
   background-color: #e6dfd8;
   border-radius: 1px;
+  padding-bottom: 10px;
 }
 .btn:hover {
   background-color: white;
@@ -113,9 +139,38 @@ hr {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-
+  padding-top: 20px;
+  vertical-align: middle;
 }
-@media (max-width: 650px) {
+.card-container .container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.icon {
+  text-decoration: none;
+  color: #312f2d;
+}
+.last-container img {
+  display: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+}
+.last-container p {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+@media (min-width: 760px) and (max-width: 1024px){
   .landing-img {
     width: 100%;
     height: 100%;
@@ -139,7 +194,7 @@ hr {
   background-color: #e6dfd8;
 }
 .landing-img {
-  padding-top: 50px;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -161,6 +216,13 @@ h3 {
 .btn {
   font-size: 12px;
   border-radius: 0.5px;
+}
+.last-container {
+  display: none;
+}
+.navbar-brand {
+  display: none;
+
 }
 
 }
