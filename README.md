@@ -11,4 +11,4 @@ I would also have liked to use separate folders for the html, css and images but
 
 I would also have liked to put more effort into the navbar in mobile mode, e.g. making a hamburger menu.
 ## View it live
-To visit my newssite, go to: https://gifted-goldwasser-c70e6a.netlify.app/
+To visit my newssite, go to: https://pangea-daily.netlify.app/
