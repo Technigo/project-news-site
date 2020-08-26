@@ -1,4 +1,268 @@
-html {
-  background: #0025ff;
-  color: #fff;
+*, *::before, *::after {box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+body{
+  background-color: black;
+  color: #EAE8E8;
+  margin: 0px;
 }
+
+/***** HEADER STYLES ****/ 
+
+header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
+
+.hamburger{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 13em;
+}
+
+.hamburger div{
+  width: 30px;
+  height: 5px;
+  background: #A0844E;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.5em;
+  display:none;
+}
+
+nav a{
+  text-decoration: none;
+  color: #EAE8E8;
+  margin-left: 16px;
+}
+
+.logo{
+  width: 200px;
+  height: 200px;
+}
+
+/***** BIG NEWS STYLES ****/ 
+
+.big-news{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-news-news{
+  box-sizing: border-box;
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.big-news-image{
+  box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
+  background-color: #FCF6EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.image-big{
+  width: 100%;
+  align-items: center
+}
+
+/***** maybe not keep ****/ 
+.image-big-text{
+  font-family: 'Kristi', cursive;
+  color: rgb(41, 40, 40);
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 10px 0px 0px 0px;
+}
+
+.big-news-text{
+  color: #EAE8E8;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.8em;
+}
+
+h2{
+  color: #EAE8E8;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.8em;
+  line-height: 45px;
+  font-weight: 150;
+  margin: 0px 0px 20px 0px;
+}
+
+h3{
+  color: #EAE8E8;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 40px 0px 0px 0px;
+}
+
+p{
+  display: block;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+/***** SMALL NEWS SECTION ****/ 
+
+.other-news{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.other-news1, .other-news2, .other-news4{
+  box-sizing: border-box;
+  width: 60%;
+  padding: 10px;
+  margin: 40px 0px 0px 0px;
+  background-color: #A0844E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-news1, .image-news2, .image-news4{
+  width: 100%;
+  align-items: center;
+
+}
+
+
+.other-news3{
+  box-sizing: border-box;
+  width: 60%;
+  padding: 10px;
+  margin: 40px 0px 0px 0px;
+  background-color: #FCF6EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-news3{
+  width: 100%;
+  align-items: center;
+}
+
+.image-small-text{
+  font-family: 'Kristi', cursive;
+  color: rgb(41, 40, 40);
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+}
+
+
+/***** FOOTER ****/ 
+
+footer {
+  color: #FCF6EB;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.8em;
+  line-height: 0.5em;
+  text-align: center;
+  opacity: 0.4;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 70px 0px 5px 0px;
+  
+}
+
+
+/***** MEDIA QUERIES ****/ 
+
+/***** EVERYTHING BEFORE THIS IS MOBILE! ****/ 
+
+/***** IPAD ****/ 
+@media (min-width: 768px) {
+  header{
+    justify-content: space-evenly;
+  }
+
+  nav{
+    display: inline-block;
+  }
+  
+  .hamburger{
+    display: none;
+  }
+
+  .other-news1{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    margin: 35px;
+    background-color: #A0844E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .other-news2{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    margin: 35px;
+    background-color: #A0844E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+/***** DESKTOP ****/ 
+@media (min-width: 1024px) {
+  .big-news{
+    flex-direction: row;
+    align-items: left;
+  }
+  .big-news-image{
+    width:80%;
+  }
+
+}
+
