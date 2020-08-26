@@ -21,7 +21,7 @@ a:visited {
 }
 
 a:hover {
-  color: red;
+  color: gray;
 }
 
 ul {
@@ -32,6 +32,11 @@ ul {
   align-content: center;
   list-style-type: none;
   font-size: 30px; 
+}
+
+header {
+  border-bottom: solid 2px;
+  border-color: lightgrey;
 }
 
 .li-2 {
@@ -55,10 +60,6 @@ div { /* Text overlay for the images*/
   max-height: 80%;
 }
 
-div:hover {
-  border-radius: 25px;
-}
-
 h1  {
   font-size: 30px;
 }
@@ -78,11 +79,11 @@ footer {
   align-items: center;
   font-size: 15px;
   padding: 5px; 
+
 }
 
 .big-news {
-  margin: auto;
-  width: 100%;
+  width: auto;
 }
 
 .big-news-text {
@@ -108,7 +109,7 @@ footer {
 }
 
 /*Hide links in navbar for mobile*/
-@media (max-width: 667px) {
+@media (max-width: 767px) {
 
  .li-3, .li-4 {
   display: none;
@@ -116,7 +117,7 @@ footer {
 }
 
 /* Tablet*/
-@media (min-width: 668px) {
+@media (min-width: 768px) {
 
   div {
     position: absolute;
@@ -189,6 +190,10 @@ footer {
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
     overflow: hidden;
+  }
+
+  div:hover {
+    border-radius: 25px;
   }
 
   h1 {
