@@ -1,31 +1,39 @@
-html {
-  background: #fafafa;
-  color: #000;
-  font-family: ;
-  margin: 0 0;
-  padding; 0 0;
+body{
+ background-color: #f0f0f0;
+ color: #354649;
+ margin: 0 auto;
+ padding: 0;
+ width: 100%;
+ font-family: serif;
+
+}
+
+main-container {
+  width: 100%;
+  margin: auto;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #354649;
 }
-/****styling of header*/
+
+/****styling of header****/
 
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-color: #fff;
+  justify-content: space-evenly;
+  background-color: #A3C6C4;
   width: 100%;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
+.icon {
   margin-left: 20px;
-  border-radius: 20 %;
+  font-size: 48px;
+  color: #354649;;
 }
 
 .hamburger {
@@ -40,7 +48,8 @@ header {
 .hamburger div {
   width: 24px;
   height: 2px;
-  background: #000; 
+  margin-right: 30px;
+  background: #354649; 
 } 
 
 h1 {
@@ -53,56 +62,81 @@ nav {
 }
 
 nav a {
-  color: #000;
   text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  font-weight: bold;
 }
 
 /*styling of big news section*/
 
 .big-news {
-  background: #fff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin: 10px;
-
+  width: auto;
 }
 
 .big-news-image {
   margin: 20px;
-  width: 70%;
-
+  width: 90%;
 }
 
-big-news-image a:hover {
+.big-news:hover {
+  background-color: #fafafa;
+}
 
+h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.big-news p {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .news-text {
-  width: 300px;
-  margin-bottom: 50px;
-  
+  text-align: center;
+  margin: 0 20px 30px 20px;
 }
 
 .news-text a:hover {
   font-weight: bold;
 }
+
+.read-link {
+  background-color: #A3C6C4;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
 /**** styling of card container*/
 
 h3 {
+  font-size: 20px;
   margin: 20px 0 -10px;
 }
 
 .card-container {
   display:flex;
   flex-direction: column;
+  text-align: center; /* for the h3 & p*/
+  align-items: stretch;
+  /*
   align-content: center;
   justify-content: center;
   text-align: center;
   align-items: stretch;
-
+  margin: 0 auto;*/
+  */
 }
 
 .cards {
@@ -111,21 +145,20 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- /* align-items: stretch; behövs ej på mobil? */
+  
 }
 
 .cards a {
   background: #fff;
-  width: 90%;
-  margin: 20px 0;
-  box-shadow: 5px 5px 0 0 darkgrey;
+  width:90%;
+  box-shadow: 5px 5px 0 0 #E0E7E9;
+  margin: 10px 5px;
  
 }
 
 .card-image {
   margin: 20px;
   width: 90%;
-  border-radius: 10px;
 }
 
 .card-text {
@@ -137,6 +170,7 @@ h3 {
 
 .cards a:hover {
   background-color: #fafafa;
+  border: solid 1px #E0E7E9; 
 }
 
 h4 {
@@ -146,22 +180,30 @@ h4 {
 /**** styling of footer ****/
 
 footer {
-  background-color: white;
+  background-color: #A3C6C4;
   margin: 50px 0 0;
   width: 100%;
-}
-
-.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+h5 {
+  font-size: 16px;
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  font-size: 30px;
 }
 
 /**** media ****/
 
 /*** ipad ***/
-@media (min-width: 600px) {
+@media (min-width: 667px) {
   header {  
     justify-content: space-between;
   }
@@ -169,21 +211,18 @@ footer {
   nav {
     display: inline-block;
     margin: 0 20px;
-    /* make this a flexbox- behövs verklinge inline-block*/
   }
+
   nav a {
     margin: 0 5px;
   }
+
   .hamburger {
     display: none;
   }
 
-  .small-image {
-    display: none;
-  }
-
   .big-news {
-    margin: 40px;
+    margin: 20px;
   }
 
   .big-image {
@@ -192,16 +231,32 @@ footer {
     height: max-content;
   }
 
+  .read-link {
+    font-size: 20px;
+    margin: 50px;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: center;
     align-items: stretch;
   }
 
   .cards a {
-    width: 40%;
-    margin: 0 10px 20px;
+    flex-basis: auto;
+    width: 45%;
+    margin: 0 5px 20px;
   }
 }
 
@@ -215,12 +270,12 @@ footer {
 
   .big-news{
     flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
     margin: 40px 40 px;
   }
 
   .big-news-image {
-    width: 70%;
+    width: 800px;
   }
 
   .news-text {
@@ -238,11 +293,12 @@ footer {
     flex-grow: 1;
   }
 
+  .card-image {
+   
+  }
+
   .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 30px 0 30px 30px;
+   height: 200px;
     
   } 
 }
