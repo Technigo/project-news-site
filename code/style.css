@@ -12,18 +12,17 @@ h2 {
 }
 
 h3 {
-  font-family: Helvetica Neue;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 13px;
   line-height: 1.4;
   opacity: 0.5;
   margin-bottom: 0;
 }
 
-p, .smaller-screen, .larger-screen {
-  font-family: Helvetica Neue;
-  font-size: 15px;
+p {
   line-height: 1.4;
-  opacity: 0.8; 
+  font-family: 'Helvetica Neue', sans-serif;
+  opacity: 0.8;
 }
 
 /*** HEADER ***/
@@ -42,11 +41,11 @@ header {
   z-index: 1;
 }
 
-#site-name {
+.site-name {
   color: black;
   opacity: 0.8;
   font-size: 34px;
-  font-family: ITC Avantgarde, serif;
+  font-family: 'ITC Avantgarde', serif;
   font-weight: bolder;
 }
 
@@ -102,7 +101,7 @@ nav a {
  }
 
  .banner-container p {
-   margin: 0px;
+   margin: 0;
    font-family: Avantgarde, serif;
  }
 
@@ -155,6 +154,7 @@ hr {
 
 img.top {
   width: 100%;
+  object-fit: cover;
 }
 
 /*** SMALL NEWS ***/
@@ -172,12 +172,6 @@ img.top {
   box-shadow: 0 2px 5px 0 #d3d3d3;
   transition: 0.3s;
   border: solid 1p;
-    /*align-items: stretch;*/
-}
-
-
-.cards:hover{
-  opacity: 0.7;
 }
 
 p {
@@ -185,23 +179,17 @@ p {
 }
 
 .cards img {
-  
   height: auto;
   width: 100%;
   overflow: hidden;
 }
-
-/*
-.cards-text {
-  align-items: flex-start;
-}*/
 
 footer {
   background: beige;
   height: 50px;
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding: 10px 30px;
   font-size: 18px;
   font-weight: lighter;
   justify-content: space-between;
@@ -227,14 +215,24 @@ footer p {
 
   nav {
     display: inline-block;
+    padding-right: 20px;
+    order: 0; 
+  }
+
+  .site-name {
+    order: 1;
     margin-left: auto;
-    padding-right: 30px;
+    margin-right: 20px;
+  }
+
+  header img {
+    order: 2;
+    padding-right: 20px;
   }
   
   .hamburger {
     display: none;
   }
-
 
   .big-news-container {
     display: inline-flex;
@@ -248,8 +246,6 @@ footer p {
     width: 58%;
     margin-left: 20px;
     align-self: center;
-    
-
   }
 
   .top-text {
@@ -258,8 +254,6 @@ footer p {
     align-self: center;
     max-width: 300px;
   }
-
-
 
   .small-news-container {
     display: flex;
@@ -285,17 +279,20 @@ footer p {
     overflow: hidden;
   }
 
-  p.site-name {
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-
   nav {
     display: inline-block;
     margin-left: auto;
     padding-right: 30px;
+    order: 2;
+  }
+
+  header img{
+    order: 0;
+  }
+
+  .site-name {
+    order: 1;
+    margin-left: 10px;
   }
 
   .hamburger {
@@ -326,20 +323,19 @@ footer p {
     max-height: 600px
   }
 
-  .paragraph-2 {
-    display: auto;
-  }
-
   .small-news-container {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-evenly;
   }
 
+  .cards:hover{
+    opacity: 0.7;
+  }
+  
   .cards {
     width: 20%;
     text-align: left; 
-    
   }
 } 
 
