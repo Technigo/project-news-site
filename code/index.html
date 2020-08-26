@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Art Matters! | Online Magazine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
@@ -10,21 +11,74 @@
 
     <header>
       <!-- Some kind of logo and navbar -->
-      <img class="logo" src="./logo.svg"  alt="Logo" />
+      <img class="logo" src="./art-logo.png"  alt="Art Logo" />
+      <h1>Art Matters!</h1>
       <nav>
-        <a class="order-1" href="#">One</a>
-        <a class="order-2" href="#">Two</a>
-        <a href="#">Three</a>
-        <a href="#">Four</a>
+        <a href="#"><strong>home</strong></a>
+        <a href="#"><strong>what's on</strong></a>
+        <a href="#"><strong>interviews</strong></a>
+        <a href="#"><strong>contact us</strong></a>
       </nav>
+  
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
+    
+    <section class="main-news"><!-- The big news content -->
+      <h2>latest news</h2>
+        <h3>New Rolling Stones exhibition hits London</h3>
+        <img class="main-news-img" src="./rollingstones-img.jpg" alt="The Rolling Stones icon" />
+        <p>Vivamus ultricies semper ligula, a molestie turpis iaculis eu. Cras consequat purus et diam consequat, lacinia placerat elit euismod. Integer accumsan viverra tellus non pulvinar. Phasellus aliquet luctus finibus. Nulla eu elit massa. Sed gravida dictum ex nec rutrum. Aliquam erat volutpat. Sed accumsan ante lacinia mauris rutrum pellentesque. Nulla ligula arcu, malesuada ultrices purus ut, mollis pellentesque tortor.</p>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <h2 class="other-news-heading">other news</h2>
+    <section class="other-news"><!-- The other news  -->  
+      <div class="flex-child">
+        <h4>Stockholm's Fotografiska hosts New York based artist</h4>
+        <img class="other-news-img" src="./newyork-img.jpg" alt="New York sign" />
+      </div>
+      
+      <div class="flex-child">
+        <h4>Yayoi Kusama inspires new generation of artists</h4>
+        <img class="other-news-img" src="./dots-img.jpg" alt="Dots painting" />
+      </div>
+
+      <div class="flex-child">
+        <h4>Keith Haring street art discovered</h4>
+        <img class="other-news-img" src="./haring-img.jpg" alt="Keith Haring street art" />
+      </div>
+
+      <div class="flex-child">
+        <h4>Check out The Yard Dog Gallery: Austin, Texas</h4>
+        <img class="other-news-img" src="./usalights-img.jpg" alt="USA map" />
+      </div>
+
+      <div class="flex-child">
+        <h4>Olafur Eliasson: In real life - exhibition extended</h4>
+        <img class="other-news-img" src="./eliasson-img.jpg" alt="Olafur Eliasson exhibition" />
+      </div>
+
+      <div class="flex-child">
+        <h4>other news</h4>
+        <img class="other-news-img" src="abstract1-img.jpg" alt="Abstract painting" />
+      </div>
+
+      <div class="flex-child">
+        <h4>other news</h4>
+        <img class="other-news-img" src="./abstract2-img.jpg" alt="Abstract dark painting" />
+      </div>
+
+      <div class="flex-child">
+        <h4>Photographer Jean-Michel Blanc explains his latest work</h4>
+        <img class="other-news-img" src="staircase-img.jpg" alt="Spiral staircase" />
+      </div>
+      
     </section>
+
+    <footer>
+      <form>
+        <label for="email">Sign up to our weekley newsletter:</label>
+        <input type="text" name="email" placeholder="Your email address">
+        <input type="submit" value="submit" class="submit-btn">
+      </form>
+    </footer>
   </body>
 </html>

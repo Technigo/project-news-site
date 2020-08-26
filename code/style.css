@@ -1,28 +1,147 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 /* Header */
 header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav{
-  width: 50%;
-  border: 1px solid blue;
+  background-color: #f1efe9;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
 
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  border-radius: 10%;
+  margin: 0 2px;
 }
 
+header h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  /*line-height: 38px;*/
+  margin: 20px 0;
+}
+
+nav {
+  width: 90%;
+  /*border: 1px solid blue;*/
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  
+}
+
+nav a :hover {
+  color: #44bfed;
+  /*text-decoration: underline;*/
+}
+
+/* Main News */
+
+.main-news {
+  border: 2px solid #44bfed;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #44bfed;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin: 5px auto;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+.main-news-img {
+  width: 450px;
+}
+
+.other-news {
+  border: 2px solid #44bfed;
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.other-news-img {
+  width: 350px;
+}
+
+.flex-child {
+  border: 2px solid #000;
+  width: 380px;
+  height: 350px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.flex-child img {
+  width: 350px;
+}
+
+footer{
+  background-color: black;
+  margin-top: 50px;
+  color: #f1efe9;
+  font-family: 'Roboto Mono', monospace;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  padding-bottom: 50px;
+}
+
+.submit-btn {
+  height: 30px;
+  width: 70px;
+  background-color: #44bfed;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border:none;
+  border-radius: 15px;
+
+}
+
+.submit-btn:hover {
+  color: #000000;
+  background-color: #04a6e0; 
+}
 
 @media (max-width: 700px) {
   .order-1 {
@@ -35,16 +154,8 @@ nav{
 
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif, ;
-}
-
-p {
-  font-family: 'Times New Roman';
-}
 
 
 
-/* Big News */
 
 /*News Grid*/
