@@ -15,7 +15,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  color: white;
   margin-bottom: 20px;
   box-shadow: 5px 5px 5px 2px grey;
   background-size: 100%;
@@ -23,9 +22,10 @@ header {
 
 
 h1 {
-  padding-right: 30px;
+  padding: 3px 5px 3px 5px;
   animation: text 5s 1;
-  background: grey;
+  background-color: rgba(0,0,0, 0.7);
+  color: white;
 }
 
 @keyframes text {
@@ -310,7 +310,7 @@ footer h5 {
 @media (min-width: 1024px) {
   
   .cards { 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
    }
 
   header {
