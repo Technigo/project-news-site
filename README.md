@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I have created a small site for Hearthstone players (card game) where they can find easy decks to play with.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I went through most of the documentation and help for week 2.
+I used the provided sketch as a basis for my site
+I started with the HTML to get a good basis with header, main section, sub section and footer
+I worked on the flexbox which was a bit of a challenge because I have not worked that much with CSS (height, width)
+Styling is very basic but added some background color, images, free logo, hover effect and linking to another site that focus on popular hearthstone decks (hsreplay.net)
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+You can view the site at monkeybusiness101.com
