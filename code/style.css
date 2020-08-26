@@ -339,6 +339,7 @@ flex-direction: column;
     width: 200px;
     height: 200px;
     margin: 20px;
+    margin-left: 25px;
   }  
 }
    
@@ -395,6 +396,9 @@ flex-direction: column;
 /* FOOTER */
 /* ADD BUTTON, */
 
+
+
+
 .footer {
   display: flex;
   justify-content: center;
@@ -408,7 +412,17 @@ flex-direction: column;
 
   /***  Media Quaries   ***/
 
+@media screen and (min-width: 667px) and (max-width:1024px) {
+    .footer{
+      width: 1350px;
+    }
+  }
 
-/* RESPONSIVENESS this makes the footerbackground to have it's color all the way to the sides */
+  @media screen and (min-width: 1024px) {
+    .footer{
+      width: 1450px;
+    }
+  }
+
 
 
