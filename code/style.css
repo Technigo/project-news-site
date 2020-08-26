@@ -15,21 +15,17 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  color: black;
+  color: white;
   margin-bottom: 20px;
   box-shadow: 5px 5px 5px 2px grey;
   background-size: 100%;
-}
-
-img .sun {
-  width: 1px;
-  height: 1px;
 }
 
 
 h1 {
   padding-right: 30px;
   animation: text 5s 1;
+  background: grey;
 }
 
 @keyframes text {
@@ -221,18 +217,24 @@ img {
 /*** FOOTER ***/
 
 footer {
-  height: 200px;
+  height: 55px;
   background:url(abstract-1501710_1280.jpg);
   margin-top:20px;
   background-size: 100%;
   color: white;
   text-align: center;
-  padding-top:100px;
-
 }
 
+footer h2 {
+  font-size: 20px;
+  padding-top:10px;
+  margin:0px;
+}
 
-
+footer h5 {
+  font-size: 10px;
+  margin:0px;
+}
 
 
 
@@ -290,7 +292,19 @@ footer {
   nav a:hover, nav a:focus {
     color: grey;
   }
-
+  footer {
+    height: 100px;
+  }
+  
+  footer h2 {
+    font-size: 25px;
+    padding-top:30px;
+    margin:0px;
+  }
+  footer h5 {
+    font-size: 15px;
+  }
+  
 }
 
 @media (min-width: 1024px) {
@@ -342,5 +356,17 @@ nav a:hover, nav a:active {
 nav a:hover, nav a:focus {
   color: grey;
 }
+footer {
+  height: 150px;
+}
 
+footer h2 {
+  font-size: 30px;
+  padding-top:40px;
+  margin:0px;
+}
+
+footer h5 {
+  font-size: 20px;
+}
 }

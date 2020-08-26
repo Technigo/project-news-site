@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 2: The News Site</title>
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <!-- dont forget the meta tag for responsiveness -->
 </head>
 
@@ -13,10 +13,6 @@
 
 
   <header>
-
-
-
-
 
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -35,18 +31,14 @@
     </div>
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
     <script>
       function openNav() {
         document.getElementById("myNav").style.width = "100%";
       }
-
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
       }
     </script>
-
-
 
     <h1>NEWS TIME</h1>
 
@@ -54,8 +46,7 @@
     </div>
   </header>
 
-
-
+  <!--THE NAV MENU UNDER THE HEADER FROM 668px and up-->
   <nav class="menu">
     <a href="#">News</a>
     <a href="#">World</a>
@@ -69,7 +60,6 @@
   <section class="cards">
 
     <!--card 1-->
-
     <a href="#">
       <div class="card one">
         <h4>NEWS</h4>
