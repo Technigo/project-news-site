@@ -1,6 +1,6 @@
 @font-face {
   font-family: compactaItalic;
-  src: url("CompactaItalicRegular.ttf");
+  src: url("Fonts/CompactaItalicRegular.ttf");
 }
 
 body {
@@ -10,14 +10,49 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /*** HEADER ***/
 
 header {
-  background: #000;
+  background: #FFF;
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 30px 40px;
+}
+
+header img {
+  width: 180px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 16px;
 }
 
 .hamburger {
@@ -31,20 +66,90 @@ header {
 
 .hamburger div {
   width: 30px;
-  height: 3px;
-  background: #fff;
+  height: 5px;
+  background: #000;
   border-radius: 5px;
 }
 
-header img {
-  width: 180px;
+/*** BIG NEWS CONTAINER ***/
+
+.big-news .container {
+  padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-nav {
-  display: none;
+.big-news img {
+  width: 100%;
 }
 
-nav a {
-  color: #fff;
+.big-news div {
+  text-align: center;
+}
+
+/*** ARTICLE NEWS CONTAINER ***/
+
+.article-news-container {
+  text-align: center;
+  padding: 24px;
+}
+
+.article-news {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-news a {
+  background: #fafafa;
+  border: 2px solid #24292d;
+  border-radius: 5px;
+  width: 100%;
   text-decoration: none;
+  color: #000;
+  box-shadow: 12px 12px 0 0 #999;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.article-news a img {
+  width: 80%;
+  margin: 16px;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .big-news div {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .big-news .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .big-news img {
+    width: 50%;
+  }
+
+  .article-news a {
+    width: 18%;
+    flex-grow: 1;
+    margin: 16px;
+  }
 }
