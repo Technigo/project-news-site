@@ -348,18 +348,6 @@ flex-direction: column;
 
 
 
-
-
-  /***  Media Quaries   ***/
-/* When on a tablet the content will be shown in  two rows in the center */
-
-
-
-
-
-
-
-
  /*  BOTTOM IMAGES  */
 
 
@@ -373,8 +361,9 @@ flex-direction: column;
 }
 
 .images {
- 
   margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
  
 }
 
@@ -383,19 +372,25 @@ flex-direction: column;
 
 @media screen and (min-width: 667px) and (max-width:1024px) {
   .images-container {
+    width: 1200px;
     flex-direction: row;
     justify-content: center;
-    
-    
+    margin-left: 50px;
+    padding-right: 30px; 
   }
 }
 
+@media screen and (min-width:1024px) {
+  .images-container{
+  width:1400px;
+  justify-content: center;
+  padding: 20px;
+ 
+  }
+}  
 
 
-flex: 1 1 150px;
-justify-content: space-between;
-padding: 20px;
-margin: 20px;
+
 
 /* FOOTER */
 /* ADD BUTTON, */
@@ -405,7 +400,7 @@ margin: 20px;
   justify-content: center;
   text-align: center;
   background-color: #F8ECEC;
-  width: 100%;
+  width: 664px;
   margin-top: 50px;
   height: 300px;
   line-height: 90px;
@@ -415,9 +410,5 @@ margin: 20px;
 
 
 /* RESPONSIVENESS this makes the footerbackground to have it's color all the way to the sides */
-@media screen and (max-width: 667px) {
-  .footer-container {
-    width: 500px;
-    
-  }
-}
+
+
