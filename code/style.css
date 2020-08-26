@@ -1,24 +1,187 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background-color: silver;
+  margin: 0;
 }
 
-header img {
-  width: 80px;
+h1 {
+  margin: 0;
 }
 
-header {
-  background-color: white;
-  padding: 10px;
+h2 {
+  font-size: 54px;
+  margin: 0;
+  margin-top: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+/*** SECTION 1 - logo & navbar ***/
+
+nav {
+  display: none;
+}
+
+.section-1 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.logo {
+  width: 50px;
+  background: #000;
+  margin: 0;
+  display: block;
+}
+
+/*** SECTION 2 - the big news content ***/
+
+.section-2 img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.big-news {
+  padding: 0 20px 20px;
+}
+
+.read-more {
+  text-align: right;
+}
+
+/*** SECTION 3 – the other news ***/
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-nav {
-  /* border: 2px solid blue; */
+.card-container {
   display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  padding: 10px;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  margin-bottom: 40px;
 }
+
+.card {
+  position: relative;
+}
+
+.img-card {
+  position: relative;
+  background: #000;
+  /* box-shadow: 8px 8px 0 0 grey; */
+}
+
+/* .img-card:hover {
+  box-shadow: none;
+} */
+
+.text-on-pic {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  /* centers the textblock */
+  left: 50%;
+  /* centers the textblock */
+  transform: translate(-50%, -50%);
+  /* centers the textblock */
+  text-align: center;
+  z-index: 10;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card-text {
+  margin: 8px 0 0 8px;
+}
+
+.card-text-highlight {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*** SECTION 4 – back to top ***/
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 60px;
+}
+
+.logo-bottom {
+  width: 50px;
+  background: #000;
+  margin: 0;
+}
+
+.site-name-bottom {
+  display: none;
+}
+
+/****************** MEDIA QUERIES ******************/
+
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  /* SECTION 3 - the other news */
+
+  .section-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .card-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  /* SECTION 4 – back to top */
+
+  .logo-bottom {
+    display: none;
+  }
+
+  .site-name-bottom {
+    display: block;
+  }
+}
+
+/* DESKTOP */
+/*
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+    background: white;
+  }
+
+  img {
+    width: 40%;
+  }
+} */
