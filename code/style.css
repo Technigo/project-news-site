@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background: white;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,20 +54,39 @@ header img {
   margin-right: 15px;
 }
 
-nav {
-  display: none;
+/*** Nav-Bar ***/
+
+.nav {
+  transform: translateX(-5%) translateY(0); /*** Grid Used ***/
 }
 
-nav a {
-  color:black;
+li {
+  display: inline-block;
+}
+
+li a {
   text-decoration: none;
-  margin-left: 30px;
+  display: inline-block;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 0 50px;
 }
 
-nav a:hover {
-  color: rgb(79, 141, 160);
+.navlink::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(79, 141, 160);
+  transition: width .3s;
 }
 
+.navlink:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
 /*** Welcome Container ***/
 
 .welcome-container {
@@ -76,6 +97,7 @@ nav a:hover {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 
 .welcome-container img {
   width: 100%;
@@ -88,6 +110,7 @@ nav a:hover {
 }
 
 /** card Section ***/
+
 .wrapper {
   text-align: center;
   display: flex;
@@ -117,12 +140,13 @@ img {
 /*** Media Query ***/
 
 @media (min-width: 650px) {
+
   header {
     justify-content: space-between;
   }
-  nav {
-    display: inline-block;
 
+  nav {
+    display: flex;
   }
 
   .hamburger {
@@ -155,10 +179,24 @@ img {
 
   .card {
     display: inline-table;
-    width: 325px;
+    width: 250px;
     margin: 34px;
     height: 400px;
     padding: 10px;
     background-color: #eee;
     box-shadow: 0 5px 5px #999;
     transition: box-shadow 0.3s ease;
+
+  }
+    /* Footer */
+
+footer {
+  background: rgb(79, 141, 160);
+  position: bottom;
+  text-align: center;
+  color: whitesmoke;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #000;
+}
