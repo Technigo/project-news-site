@@ -4,8 +4,8 @@
 }
 
 body     {
-  /*padding-top: 80px;*/
-  position: relative;
+  padding-top: 80px;
+  /*position: relative;*/
 }
 
 header {
@@ -13,27 +13,27 @@ header {
   position: absolute; /* had fixed last together with padding top in margin. changed from absolute since that covered first section */
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 100;
+  right:0;
+  /*width: 100%;*/
+  /*z-index: 100;*/
   background: black;
 }
 
-/*checkbox next to burger menu CHANGED FROM #toggler*/
 .toggler { 
   display: none;
 }
 
 .logo {
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin-left: 16px; 
 }
 
 nav ul {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background: black;    
   left: -100%;
   transition: all .5s;
@@ -71,18 +71,18 @@ nav a:hover {
   font-size: 35px;
   color: lightgrey;
   top: 0;
-  right: 0;
-  margin-right: 16px;
+  right: 16px;
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
 }
 
 
 /* tablet media Query */
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .burger {
       font-size: 40px;
   }
@@ -114,6 +114,7 @@ nav a:hover {
       all: unset; /*to unset previous nav ul code */
       list-style: none; 
       display: flex;
+      position: absolute;
   }
 
   nav li {
@@ -125,12 +126,31 @@ nav a:hover {
   }
 }
 
+ /*dont forget to remove this style*/
+
+ h1 {
+  margin: 50px 25px 50px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 50px 25px 50px;
+  font-weight: 300;
+}
+
+main h2 {
+  border-top: 2px solid lightgrey;
+  padding-top: 20px
+}
+
 
 .big-news {
   width: 100%;
-  height: 50vh;
+  margin-bottom: 60px;
+  /*height: 50vh;*/
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -155,9 +175,9 @@ nav a:hover {
 /* MEDIA QUERT TO ALIGN PICTURES IN COLUMN WHEN SCREEN IS LARGER THAN 667px BUT
 SMALLER THAN 1024px */
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .big-news {
-      flex-direction: row;
+      /*flex-direction: row;*/
   }
   .image {
       width: 40%;
@@ -178,19 +198,20 @@ SMALLER THAN 1024px */
   }
 
   .image {
-      width: 30%;
-      flex-grow: 2
+      width: 40%;
+      flex-grow: 2;
+      margin-left: 40px; 
   }
 
   .text {
-      width: 30%
+      width: 50%
   }
   
   .image img {
-      height: 40vh;
+      /*height: 40vh;*/
+      max-width: 80%;
 }
   }
-
 
 /* STYLING OF SECTOND SECTION CONTAINING 8 IMAGES */
 
@@ -212,7 +233,6 @@ SMALLER THAN 1024px */
   align-self: center; 
   position: relative;
   box-shadow: 0 0 50px -50px red;
-  
 }
 
 /*styling for img in first and second section*/
@@ -343,7 +363,7 @@ h3 {
 
 /*target everything that is bigger than 667px but less than 1024px*/
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .smallNews-parent {
       flex-direction: row;   
       flex-wrap: wrap; 
@@ -354,7 +374,7 @@ h3 {
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
@@ -380,8 +400,33 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  position: absolute;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  font-size: 20px;
 }
 
+footer ul {
+  display: flex;
+  
+}
 
+footer li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+footer i {
+  color: black;
+  font-size: 24px;
+  border-radius: 100%;
+}
+
+footer i:hover {
+  color: grey;
+  background-color: white;
+  padding: 5px;
+}
 
