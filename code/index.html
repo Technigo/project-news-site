@@ -1,211 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Malmöposten</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    
-    <!-- Logo and navbar -->
-    <header>
-      <img class="logo" src="Malmöposten_logo.png" meta=logo>
-      <!-- <h1>MALMÖPOSTEN</h1> -->
 
-        <a href="#"><div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-          
-        </div>
-      </a> 
-        
-        <nav>
-          <a href=#>NYHETER</a>
-          <a href=#>NÖJE</a>
-          <a href=#>SPORT</a>
-         <a href=#>VÄDER</a>
-        </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Malmöposten</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <!-- The big news content -->
-    <section class="big-news">
-      <img class="img-big-news" src="./bilder/regn.jpg" meta=regn>
-      <div class="big-news-text"><h3>VÄDER</h3>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, possimus.</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+<body>
+
+  
+  <!-- Logo and navbar -->
+  <header>
+    <img class="logo" src="Malmöposten_logo.png" meta=logo>
+    <a href="#">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </a>
+
+    <nav>
+      <a href=#>NYHETER</a>
+      <a href=#>NÖJE</a>
+      <a href=#>SPORT</a>
+      <a href=#>VÄDER</a>
+    </nav>
+  </header>
+
+ 
+  <!-- The big news content -->
+  <article class="big-news">
+    <img class="img-big-news" src="./bilder/regn.jpg" meta=regn>
+    <div class="big-news-text">
+      <h3>VÄDER</h3>
+      <h1>Så länge stannar sommarvärmen</h1>
+      <p>Metreologen varnar: "Hösten är snart i Malmö på riktigt"</p>
+    </div>
+  
+  </article>
+
+
+  <!-- The news grid -->
+  <main>
+    <div class="fler-nyheter">
+      <h5>FLER NYHETER</h5>
+    </div>
+
+    <section class="card-container">
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Malmö FF vidare i Champions League</h2>
+          <p>Anders Christiansen hjälte i kvaldramat</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Pernilla Månsson Colt lämnar trädgårdstider</h2>
+          <p>Kollegan Malin Persson: "Det känns supertrist"</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Nu förbereds vaccination mot Corona</h2>
+          <p>Så många doser får SUS</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Marta återvänder till FC Rosengård</h2>
+          <p>Stjärnan skriver på femårskontrakt</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Här går svanen till attack</h2>
+          <p>Kanalsvanen är tillbaka</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Färre inbrott under corona</h2>
+          <p>Positiva besked från polischefen</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>Kungen på besök i Skåne</h2>
+          <p>Besöker scoutläger för andra året i rad</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
+          <h4>28:e augusti 2020, 10.31</h4>
+          <h2>De tävlar i årets Melodifestival</h2>
+          <p>Amanda Jensen gör oväntad comeback</p>
+        </a>
       </div>
     </section>
 
 
-    <h5>FLER NYHETER</h5>
-
-    <!-- The news grid -->
-    <!-- <section class="news-grid-container">
-      
-      
-
-
-        <section class="news-grid">
-          <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-          <h4>28:e augusti 2020, 10.31</h4>
-          <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-               <p>eventuellt ha kort text här också</p>
-        </a>
-
-        
-        </section>
-
-        <section class="news-grid">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-          <h4>28:e augusti 2020, 10.31</h4>
-          <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-               <p>eventuellt ha kort text här också</p>
-       </a>
-        </section>
-        
-        <section class="news-grid">
-          <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-          <h4>28:e augusti 2020, 10.31</h4>
-          <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-               <p>eventuellt ha kort text här också</p>
-        </a>
-        </section>
-
-          
-      </section> -->
+  </main>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!-- Nytt grid! -->
-
- <main>
-
-  <section class="card-container">
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="#">
-          <img class="img-news-grid" src="./bilder/regn.jpg" meta=regn>
-              <h4>28:e augusti 2020, 10.31</h4>
-              <h2>Lorem, ipsum dolor sit amet consectetur</h2>
-              <p>eventuellt ha kort text här också</p> 
-        </a>
-      </div>
-  </section>
-
- </main>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
   <footer>
+    <h6>Sanna Dolck Wall</h1>
+  </footer>
+</body>
 
-    </footer>
-  </body>
 </html>

@@ -16,7 +16,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  /* margin-top: -8px; */
+  margin-top: -8px;
 }
 
 h3 {
@@ -30,19 +30,19 @@ h4 {
 
 h5 {
   font-size: 35px;
-  /* margin-top: 70px; */
 }
 
 p {
-  /* margin-top: -14px; */
-}
+  margin-top: -14px;
+  }
 
-/* HEADER STYLING */
+
+
+  /* HEADER STYLING */
 
 .logo {
   width: 300px;
   height: auto;
-
 }
 
 header {
@@ -67,7 +67,6 @@ header {
   width: 30px;
   height: 5px;
   background-color: black;
-
 }
 
 nav {
@@ -80,6 +79,11 @@ nav a {
   margin: 0 25px 16px 0;
 }
 
+nav a:hover {
+  background-color: rgba(84, 106, 78, 0.591);
+padding: 10px;
+}
+
 
 /* BIG NEWS STYLING */
 
@@ -90,7 +94,7 @@ nav a {
 
 .big-news {
   background-color: white;
-  padding: 2px;
+  padding: 20px 0px 20px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -102,88 +106,72 @@ nav a {
 
 /* NEWS GRID STYLING */
 
+main .fler-nyheter {
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+
 main .card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
- }
+  padding: 0 55px 55px 55px;
+}
 
 main .card {
   width: 100%;
-  height: 100%; 
-  background: #999;
-  border: 1px solid green;
-  }
+  padding: 10px;
+  border: 1px solid black;
+  /* box-shadow: 5px 5px #cac5c5;
+  margin: 10px; */
+}
 
-section .card .img-news-grid {
+main section .card .img-news-grid {
   width: 100%;
 }
 
-section .card a {
+main section .card a {
   text-decoration: none;
   color: black;
 }
 
-/* .news-grid-container {
+footer {
+  background-color: #d9dedb;
+  padding: 0px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  width: 100%;
-  background-color: pink;
-} */
-
-/* .news-grid {
-  margin: 0 20px 0 20px;
-  text-align: left;
-  margin-bottom: 20px;
-  background-color:#d9dedb;
-  width: 100%;
-  } */
-
-/* .news-grid a {
-  text-decoration: none;
-  color: black;
-} */
-
-/* .img-news-grid {
-  width: 100%;
-  height: auto;
-  display: flex;
-
-} */
-
+}
 
 /* MEDIA QUERIES */
-
-@media (min-width: 768px) {
+/* På skärmar större än 768 px ska det bli två cards per row */
+@media screen and (min-width: 768px) {
 
   .hamburger {
     display: none;
-   }
+  }
   
   nav {
-    display: inline-block;
+   display: inline-block;
   }
 
-.big-news {
-  flex-direction: row;
-}
-
-.img-big-news {
-  width: 50%;
+  .big-news {
+   flex-direction: row;
+   padding: 20px;
   }
 
-.news-grid{
-  width: 50%;
-}
+  .img-big-news {
+    width: 50%;
+  }
 
-  /* På skärmar större än 768 px ska det bli två cards per row */
-@media screen and (min-width: 768px) {
+  .news-grid{
+  width: 25%;
+  }
+
   .card {
     flex: 50%;
   }
 }
+
 
 /* På skärmar större än 1024px ska det bli fyra cards per row */
 @media screen and (min-width: 1024px) {
