@@ -1,4 +1,38 @@
 html {
-  background: #0025ff;
   color: #fff;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  width: 50px;
+}
+
+main {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+main .big-news {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .big-news .card {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  background: lightgray;
+  border: 1px solid green;
+}
+
+footer {
+  background: #666666;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
