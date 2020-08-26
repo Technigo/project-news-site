@@ -1,6 +1,7 @@
 html {
   background: #FFFFFF;
   color:#121212;
+  padding: 0px 20px;
 }
 
 /** HEADER **/
@@ -11,8 +12,8 @@ header {
   font-family: Helvetica;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* justify-content: space-around; */
+  justify-content: space-between;
+
 }
 
 /* header > .hamburger {
@@ -21,7 +22,8 @@ header {
 } */
 
 .hamburger {
-  display: flex;
+  display: none; /*odkomentiraj kasneje?*/
+  /* display: flex; */
   flex-direction: column; /*to spread them, since they are stacked*/
   justify-content: space-between;
   height: 12px;
@@ -43,12 +45,13 @@ header img {
 
 /** NAVIGATION BAR**/
 nav {
-  display: none;
+  /* display: none; */ /*odkomentiraj kasneje*/
 }
 
 nav a {
   color: #121212;
   text-decoration: none;
+  margin: 0px 0px 0px 12px;
 }
 
 /** BIG NEWS BOX**/
@@ -88,40 +91,80 @@ article {
   height: 200px;
 }
 
-/** SMALL NEWS BOX**/
+/** SMALLER NEWS SECTION **/
 
 .smaller-news {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border: 3px solid pink;
+}
 
+/** SMALLER NEWS TEXT BOX**/
+
+a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  /* margin: 5px; */
+  text-align: left;
+  color: #DB3334;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  /* margin: 5px; */
+  text-align: left;
+  color: #000000;
+}
+
+.smaller-news p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+  font-weight: bolder;
+  /* margin: 5px; */
+  text-align: left;
+  color: #000000;
 }
 
 .smaller-news img {
   width: 130px;
   height: 130px;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .smaller-news article {
   width: 130px;
   height: 130px;
   border: 3px dotted darkmagenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.smaller-news-card {
+.smaller-news-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   border: 3px solid yellow;
 }
 
-.smaller-news-card div {
+.smaller-news-cards div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
+}
+
+.single-little-card {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid cyan;
+  /* transition: 0.3s; */
 }
 
 body {
