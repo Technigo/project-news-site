@@ -1,4 +1,159 @@
+/*** GENERAL STYLING ***/
 html {
-  background: #0025ff;
-  color: #fff;
+  
 }
+
+body {
+  font-family: 'Source Sans Pro', serif;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: black;
+}
+
+hr {
+  background: white;
+}
+
+/*** HEADER ***/
+
+header {
+  background: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+header img {
+  width: 80px;
+}
+
+nav {
+  display: none;
+}
+
+nav div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+/*** BIG NEWS ***/
+.big-news {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 16px;
+}
+
+.big-news img {
+  width: 100%;
+}
+
+.big-news div {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 5px;
+}
+
+.big-news p {
+  margin: 10px;
+}
+
+/*** SMALL NEWS ***/
+
+.small-news-container {
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr; 
+  grid-gap: 20px 20px;
+
+}
+
+.small-news-container div {
+  width: 80px;
+  height: 80px;
+  background:red;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 667px) {
+  /*** HEADER ***/
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  /*** BIG NEWS ***/
+
+  .big-news {
+    align-items: center; 
+  }
+
+  .big-news div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .big-news img {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*** HEADER ***/
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  /*** BIG NEWS ***/
+
+  .big-news p {
+    padding: 20px;
+  }
+
+  
+
+}
+
+
