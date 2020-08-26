@@ -11,16 +11,36 @@ body {
 h1 {
   font-size: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: -10px;
 } 
 
 h2 {
   font-size: 30px;
+  /* margin-top: -8px; */
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 35px;
+  /* margin-top: 70px; */
+}
+
+p {
+  /* margin-top: -14px; */
 }
 
 /* HEADER STYLING */
 
 .logo {
-  width: 500px;
+  width: 300px;
   height: auto;
 
 }
@@ -82,44 +102,65 @@ nav a {
 
 /* NEWS GRID STYLING */
 
-.news-grid-container {
-  background-color:#d9dedb;
-  text-align: center;
-  padding: 5px;
-  /* display: flex;
-  flex-wrap: wrap; */
-}
+main .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+ }
 
-.news-grid {
-  padding: 20px 0 20px 0;
-  margin: 0 20px 0 20px;
-  text-align: left;
-}
-
-img {
+main .card {
   width: 100%;
-  height: auto;
+  height: 100%; 
+  background: #999;
+  border: 1px solid green;
+  }
+
+section .card .img-news-grid {
+  width: 100%;
 }
- /* För komplicerat för att få med detta just nu (textblock över bilden) */
-/* .text-block {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color:#d9dedb;
+
+section .card a {
+  text-decoration: none;
   color: black;
-  padding: 10px;
-  width: 80%;
+}
+
+/* .news-grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 100%;
+  background-color: pink;
 } */
 
+/* .news-grid {
+  margin: 0 20px 0 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color:#d9dedb;
+  width: 100%;
+  } */
+
+/* .news-grid a {
+  text-decoration: none;
+  color: black;
+} */
+
+/* .img-news-grid {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+} */
 
 
 /* MEDIA QUERIES */
 
-@media (min-width: 667px) {
-  header {
-    justify-content: space-between;
-  }
+@media (min-width: 768px) {
 
+  .hamburger {
+    display: none;
+   }
   
   nav {
     display: inline-block;
@@ -131,13 +172,22 @@ img {
 
 .img-big-news {
   width: 50%;
-  height: auto;
-}
-  
-}
+  }
 
-
-.hamburger {
- /* display: none; */
+.news-grid{
+  width: 50%;
 }
 
+  /* På skärmar större än 768 px ska det bli två cards per row */
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 50%;
+  }
+}
+
+/* På skärmar större än 1024px ska det bli fyra cards per row */
+@media screen and (min-width: 1024px) {
+  .card {
+    flex: 25%;
+  }
+}
