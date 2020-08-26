@@ -16,7 +16,6 @@ a {
     text-decoration: none;
     color: whitesmoke;
 }
-/*** HEADER STYLE ***/
 header {
     background-color: #4247D3;
     height: 100vh;
@@ -24,116 +23,194 @@ header {
 
 /*** NAVBAR STYLE ***/
 .navbar {
-    height: 60px;
     background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;    
 }  
 
+.navbar-logo {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu, .nav-link {
+    display: none;
+}
+
+/*** NAVBAR LINK STYLE ***/
+.navbar-logo a {
+    color: #F8FF6E;    
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2.5em;
+}
+
+.navbar-logo a:hover {
+    opacity: .8;
+}
+
+
+/*** MAIN TITLE STYLE ***/
 .navbar-menu {
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.navbar-menu-item {
-    display: flex;
-    text-transform: uppercase;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
-    letter-spacing: 2px;
-    flex: 1 1 10vw;
-    justify-content: flex-end;
-}
-
-.logo {
-    display: flex;
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2.5em;
-}
-
-/*** NAVBAR LINK STYLE ***/
-.logo a {
-    color: #F8FF6E;
-}
-
-.logo a:hover {
-    opacity: .8;
-}
-
-.nav-link:hover {
-    color: lightgrey;
-}
-
-/*** MAIN TITLE STYLE ***/
-
-.main-title {
+.main-header {
     background-color: #4247D3;
+    height: 50vh;
 }
 
-@media screen and (max-width: 599px) {
-   
+.main-header-container {
+    position: relative;
+    min-height: 300px;
+    line-height: 0;
+    height: auto;
+    width: auto;
+    top: 120px;
+    margin: auto 5em;
+    z-index: 0;
+    overflow-y: auto;
+}
+
+.main-header-image  {
+    background-image: url("./img/nigel-tadyanehondo-GAPXQ3Tluq8-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    content: "";
+    min-height: 300px;
+    width: 100%;
+    position: absolute;
+}
+.header-image-overlay {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    opacity: .4;
+  
+}
+
+.main-title-container {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    z-index: 5;
+    left: 5%;
+    top: 67%;
+    right: 0;
+    bottom: 0;
+}
+.main-title {
+    width: 100%;
+    height: 50px;
+    font-size: 3em;
+
+}
+.main-subtitle {
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+.content {
+    height: 100vh;
+}
+@media screen and (min-width: 768px) {
+     
     .navbar {
-        height: auto;
-    }
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         flex: 1;
+         padding: 0 1.25em;
+     }  
+    
     .navbar-menu {
-        margin: 0;
-        flex-wrap: wrap;
-    }
-
-    .navbar-menu-item {
-        flex: 0 1 auto;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
         align-items: center;
-    }
-
-    .logo {
-        order: -1;
-        flex: 0 1 100vw;
-        justify-content: center;
-        font-size: 3em;
-    }
-}
-
-@media screen and (max-width: 899px) {
-    .navbar-menu {
-        margin: 0 2em;
+        
     }
     
-    .item-1 {
-        order: -1;
-        text-align: left;
+    .navbar-menu-item {
+        display: flex;
+        text-transform: uppercase;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25em;
+        letter-spacing: 2px;
+        flex: 1;
+        justify-content: flex-end;
     }
-    
-    .logo {
+
+    .navbar-logo {
+        width: 33%;
         text-align: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 1199px) and (max-width: 1199px) {
-    .navbar-menu {
-        margin: 0 2em;
-    }
-
-    .item-1 {
-        order: -1;
         justify-content: flex-start;
     }
 
-    .logo {
-        text-align: center;
-        justify-content: center;
+    .nav-link:hover {
+        color: lightgrey;
+    }
+
+    .nav-link {
+        display: inline;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .logo {
-        flex: 2 1 33vw;
-        padding-left: .5em;
-        justify-content: left;
-    }
+
+
+@media screen and (min-width: 1025px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 1.25em;
+    }  
+   
+   .navbar-menu {
+       height: 100%;
+       display: flex;
+       flex: 1;
+       justify-content: flex-end;
+       align-items: center;
+       
+   }
+   
+   .navbar-menu-item {
+       display: flex;
+       text-transform: uppercase;
+       padding: 10px;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1.25em;
+       letter-spacing: 2px;
+       flex: 0 1 12%;
+       justify-content: flex-end;
+   }
+
+   .navbar-logo {
+       width: 33%;
+       text-align: center;
+       justify-content: flex-start;
+   }
+
+   .nav-link:hover {
+       color: lightgrey;
+   }
+
+   .nav-link {
+       display: inline;
+   }
 }
