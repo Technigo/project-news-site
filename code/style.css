@@ -1,21 +1,26 @@
 /* GENERAL STYLE APPLYING TO THE WHOLE SITE */
 
 body {
-  font-family: Verdana;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 img {
   box-shadow: 10px 10px 10px grey;
+  transition: 0.3s;
 }
 
 img:hover {
   opacity: 0.85;
 }
 
+h1 {
+  color: #444720;
+}
+
 /*** HEADER ***/
 
 header {
-  background: #174228;
+  background: #133945;
   color: #fff;
   height: 80px;
   display: flex;
@@ -68,14 +73,14 @@ nav a {
 
 .top-card a {
   text-decoration: none;
-  color: black;
+  color: #000;
   display: flex;
   flex-wrap: wrap;
 }
 
 .top-card div {
   padding-bottom: 20px;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #C2DB65;
 }
 
 /* THE SMALLER NEWS  */
@@ -94,17 +99,49 @@ nav a {
 
 .small-card div {
   padding-bottom: 20px;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #C2DB65;
+}
+
+h3 {
+  font-size: 18.72px;
+  color: #444720;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 19.92px 0;
+}
+/* FOOTER */
+
+footer {
+  background: #784834;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 0 24px;
+}
+
+.pink--brain:before {
+content: '\1F9E0';
+}
+
+.pink--brain:hover:before {
+  content: '\2764';
+}
+
+.right {
+  float: right;
 }
 
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 668px) {
-  header img {
-    margin: 0 auto;
-  }
-
- .cards {
+  .cards {
    display: flex;
    flex-wrap: wrap;
  }
@@ -149,11 +186,19 @@ nav a {
     flex-wrap: wrap;
   }
  
-   .small-card {
+  .small-card {
      width: 18%;
      flex-grow: 1;
      margin: 16px 5px;
    }
 
-}
+  h3 {
+    font-size: 18px;
+  }
 
+
+  h4 {
+    font-size: 20px;
+    margin: 12px 0;
+  }
+}
