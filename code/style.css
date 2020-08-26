@@ -1,3 +1,5 @@
+/* GENERAL STYLE APPLYING TO THE WHOLE SITE */
+
 body {
   font-family: Verdana;
 }
@@ -57,22 +59,18 @@ nav a {
 /*** THE TOP NEWS ***/
 
 .big-news {
-  display: flex;
-  flex-direction: column;
-  margin: 32px 0 16px 0;
+  margin-top: 32px;
 }
 
 .top-card {
   padding: 16px;
 }
 
-.top-card img {
-  width: 100%;
-}
-
 .top-card a {
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-card div {
@@ -82,15 +80,6 @@ nav a {
 
 /* THE SMALLER NEWS  */
 
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.cards img {
-  width: 100%;
-}
-
 .small-card {
   padding: 16px;
   margin: 5px 0;
@@ -99,6 +88,8 @@ nav a {
 .small-card a {
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .small-card div {
@@ -115,14 +106,13 @@ nav a {
 
  .cards {
    display: flex;
-   flex-direction: row;
    flex-wrap: wrap;
  }
 
   .small-card {
     width: 40%;
     flex-grow: 1;
-    margin: 16px 10px;
+    margin: 16px 0;
   }
 }
 
@@ -140,27 +130,29 @@ nav a {
   
   .top-card a {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .top-card img {
-    width: 130%;
+    width: 1000px;
   }
 
   .top-card div {
     padding: 20px;
     border-bottom: none;
+    width: 1000px;
+    flex-shrink: 0.9;
   }
   
   .cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
  
    .small-card {
      width: 18%;
      flex-grow: 1;
-     margin: 16px 10px;
+     margin: 16px 5px;
    }
 
 }
