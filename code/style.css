@@ -2,6 +2,7 @@
 
 body {
   background-color: whitesmoke;
+  margin:0;
 
 }
 
@@ -24,42 +25,25 @@ h3 {
 
 
 
-/* On a desktop  the navbar will be on the left side */
-@media screen and (min-width: 1024px){
-  .navbar-container {
-    display: flex;
-    justify-content: left;
-    background-color: #F8ECEC;
-  }
+
+/***  NAV  ***/
+
+nav {
+ width: 667px;
+ }
+
+.linkleft  {
+  display: none;
 }
-
-/* On a tablet the navbar will move from leftside to center */
-@media screen and (max-width: 1023px){
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    background-color: #F8ECEC;
-  }
+.linkright{
+ display: none;
 }
-
-
-/* MUST CHANGE TO SOMETHING NEW */
-/*On a mobile device the navbar will move from leftside to center */
-@media screen and (max-width: 667px){
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    background-color: #F8ECEC;
-    width: 500px;
-  
-  }
-}
-
 
 .navbar {
   display: flex;
   padding: 15px;
   background-color:#F8ECEC;
+  
 }
 
 .navbar a {
@@ -71,108 +55,154 @@ h3 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-
 .navbar a:hover {
   color:white;
 }
 
 
+  /***  Media Quaries   ***/
+
+ /* On a tablet the navbar will move from leftside to center, and the links will appear */
+@media screen and (min-width: 668px) and (max-width:1023px){
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F8ECEC; 
+    width: 1350px;
+  }
+.logonavbar {
+    order: 1;
+    flex-grow: 0;
+    }
+.linkleft {
+  display: inline-block;
+  order: 0;
+  }  
+.linkright {
+  display: inline-block;
+  order: 2;
+  }
+}
+
+
+/* On a desktop  the navbar will be on the left side */
+@media screen and (min-width: 1024px){
+  nav { display: flex;
+        justify-content: left;
+        background-color: #F8ECEC;
+        width: 1450px;
+    }
+
+  .linkleft {
+        display: inline-block;
+       
+      }  
+      .linkright {
+        display: inline-block;
+        
+      }
+}
+
+/*Here starts the code for the Header */
 /*when on a mobile the header will still be in the center  */
  
-@media screen and (max-width: 664px){
-  .header {
-  width: 500px;
-  }
-} 
-
-
-/*when on a tablet the header will still be in the center  */
-
-@media screen and (max-width: 1024px){
-  .header {
+header {
+  display: flex;
   justify-content: center;
   text-align: center;
   height: 60vh;
-  background-color:#F7E6E6;
-  font-size: xx-large;
-  padding-top: 250px;
-
-  }
-} 
-
-.header {
-  justify-content: left;
-  text-align: center;
-  height: 60vh;
+  width: 667px;
   background-color:#F7E6E6;
   font-size: xx-large;
   padding-top: 250px;
   }
 
 
-/*when on a mobile the content will be centered  */
-@media screen and (max-width: 664px){
-  .quote-container {
-  width: 500px;
-  justify-content: center;
+  /***  Media Quaries   ***/
+
+  /* When on a tablet the header size increases  */
+@media screen and (min-width:664px) and (max-width: 1024px){
+    header {
+      width: 1350px;
+    }
+} 
+
+@media screen and (min-width:1024px) and (max-width: 2040px){
+  header {
+    width:1450px;
+
   }
 } 
+
+
+/*Daily quote code  */
+
 
 .quote-container {
   display: flex;
   justify-content: center;
+  width:664px;
+  height: 200px;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
-
 
 .quote {
-  padding: 40px;
-  height: 200px;
-  width: 1200px;
   color: pink;
+ 
 
 }
 
-#quote {
+.todaysquote {
   display: flex;
   justify-content: center;
 }
 
 .new-quote {
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-large;
 
 }
 
+
+  /***  Media Quaries   ***/
+
+@media screen and (min-width: 664px) and (max-width:1024px){
+  .quote-container {
+  width: 1350px;
+  
+  }
+
+} 
+
+@media screen and (min-width: 1025px) {
+  .quote-container {
+  width: 1450px;
+  
+  }
+} 
+
+
+
+
+/*LARGE NEWS */
+
 /*class that contains the large news */
 .placeholder  {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width:664px;
 
 }
-
-/* When on a tablet the screen will show the content in a column */
-@media screen and (max-width: 1024px) {
-  .large-news-container {
-    flex-direction: column;;
-  }
-}
-/* When on a mobile the screen will show the content in a column */
-@media screen and (max-width: 667px) {
-  .large-news-container {
-    flex-direction: column;
-  }
-}
-
 
 
 .large-news-container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   padding-left: 25px;
   padding-right: 25px;
   box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
@@ -191,46 +221,45 @@ h3 {
   background-color:lightpink;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 
-/* When on a tablet the content will be shown in  two rows in the center */
-@media screen and (max-width: 1024px) {
-  .small-news-container {
+  /***  Media Quaries   ***/
+
+/* When on a tablet the screen will show the content in a column */
+@media screen and (min-width:664px) and (max-width: 1024px) {
+  .large-news-container {
     flex-direction: row;
     justify-content: center;
+  
+  }
+  .placeholder {
+    width: 1350px;
+    
+  }
+}
+/* When on a Laptop the screen will show the content in a row */
+@media screen and (min-width: 1024px) {
+  .large-news-container {
+    flex-direction: row;
+  }
+
+  .placeholder {
+    width: 1450px;
     
   }
 }
 
-/* When on a mobiel the content will be shown in one row in the center */
-@media screen and (max-width: 667px) {
-  .small-news-container {
-    flex-direction: row;
-    justify-content: center;
-    
-  }
+/* SMALL NEWS*/
+
+.small {
+width: 664px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
 }
-
-
-
-.small-news-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 40px;
- 
-}
- 
 
 .small-news {
-  flex: 1 1 150px;
-  flex: 0 1 150px;
-  width: 80px;
-  height: 150px;
+  height: 200px;
   margin: 40px;
   padding: 50px;
   background-color: #F8ECEC;
@@ -240,6 +269,8 @@ section {
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
 
 
 .small-news::after {
@@ -256,30 +287,84 @@ section {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+
+
+
 .small-news:hover {
-  -webkit-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
   background-color: lightpink;
 }
 
+
 .small-news:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 
-/* RESPONSIVENESS */
-@media screen and (max-width: 667px) {
-  .images-container {
+
+
+
+  
+    /***  Media Quaries   ***/
+  /* When on a tablet the content will be shown in  two rows in the center */
+@media screen and (min-width:664px) and (max-width: 1024px) {
+  .small {
+    width:1024px;
     flex-direction: row;
-    justify-content: center;
-    width: 500px;   
-    
+    justify-content: space-between;
+    margin-left: 150px;    
   }
-}
 
+  .small-news {
+    width: 280px;
+    height: 250px;
+   
+  }  
+}
+    
+
+/* When on a Laptop the content will be shown in four rows in the center */
+
+@media screen and (min-width:1024px)  {
+  .small {
+    width:1400px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+        
+  }
+
+  .small-news {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }  
+}
+   
+
+
+
+
+
+
+
+
+  /***  Media Quaries   ***/
+/* When on a tablet the content will be shown in  two rows in the center */
+
+
+
+
+
+
+
+
+ /*  BOTTOM IMAGES  */
 
 
 .images-container {
+  width: 664px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -288,25 +373,32 @@ section {
 }
 
 .images {
-  flex: 1 1 150px;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 20px;
-  margin-left: 80px;
  
-
-  
+  margin-left: 40px;
+ 
 }
 
-/*FOOTER, ADD BUTTON, */
+  /***  Media Quaries   ***/
 
-/* RESPONSIVENESS this makes the footerbackground to have it's color all the way to the sides */
-@media screen and (max-width: 667px) {
-  .footer-container {
-    width: 500px;
+
+@media screen and (min-width: 667px) and (max-width:1024px) {
+  .images-container {
+    flex-direction: row;
+    justify-content: center;
+    
     
   }
 }
+
+
+
+flex: 1 1 150px;
+justify-content: space-between;
+padding: 20px;
+margin: 20px;
+
+/* FOOTER */
+/* ADD BUTTON, */
 
 .footer {
   display: flex;
@@ -317,4 +409,15 @@ section {
   margin-top: 50px;
   height: 300px;
   line-height: 90px;
+}
+
+  /***  Media Quaries   ***/
+
+
+/* RESPONSIVENESS this makes the footerbackground to have it's color all the way to the sides */
+@media screen and (max-width: 667px) {
+  .footer-container {
+    width: 500px;
+    
+  }
 }
