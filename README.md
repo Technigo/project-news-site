@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+First real programming project ever! Fokus to create a news site with responsive layout, using flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Used html, css. Did a skets by hand and got inspiration from the added newssketch image. flexbox, grid, media quariy if more time (and knowlege) I would fokus more on a mor sophisticated design and interactivity. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+link to the deployed project.
