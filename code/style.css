@@ -4,12 +4,13 @@
 }
 
 body     {
-  padding-top: 80px;
+  /*padding-top: 80px;*/
+  position: relative;
 }
 
 header {
   text-align: center;
-  position: fixed; /*changed from absolute since that covered first section */
+  position: absolute; /* had fixed last together with padding top in margin. changed from absolute since that covered first section */
   top: 0;
   left: 0;
   width: 100%;
@@ -374,6 +375,13 @@ in each column in two rows*/
   }
 }
 
+footer {
+  background: grey;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
 
 
 
