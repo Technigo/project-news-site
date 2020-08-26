@@ -42,6 +42,9 @@ nav a:hover {
   header nav {
     display: none;
   }
+  header {
+    justify-content: center;
+  }
 }
 
 /*MAIN NEWS*/
@@ -84,16 +87,34 @@ h1:hover {
 .news {
   margin: 0;
   padding: 10px;
-  width: 300px;
+  width: 20%;
   border: white;
   border-style: dotted;
   border-radius: 8px;
   border-width: 4px;
 }
 
+@media (min-width: 1024px) {
+  .news {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .news {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .news {
+    width: 100%;
+  }
+}
+
 .news img {
-  width: 300px;
   border-radius: 8px;
+  width: 100%;
 }
 
 .news:hover {
@@ -106,7 +127,6 @@ h1:hover {
 h2 {
   font-weight: 400;
   margin: 0;
-  width: 300px;
   line-height: 25px;
   padding: 5px;
   font-size: 20px;
@@ -115,7 +135,7 @@ h2 {
 /*FOOTER*/
 
 footer {
-  padding: 30px;
+  padding: 0 0 30px 0;
 }
 
 footer nav {
