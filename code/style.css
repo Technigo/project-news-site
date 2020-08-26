@@ -26,6 +26,7 @@ header {
   display: flex;
   align-items: center;
   margin: -10px;
+  justify-content: center;
 }
 
 header img {
@@ -67,6 +68,10 @@ nav a {
   margin-top: 32px;
 }
 
+.big-news img {
+  width: 100%;
+}
+
 .top-card {
   padding: 16px;
 }
@@ -88,6 +93,10 @@ nav a {
 .small-card {
   padding: 16px;
   margin: 5px 0;
+}
+
+.small-card img {
+  width: 100%;
 }
 
 .small-card a {
@@ -171,7 +180,7 @@ content: '\1F9E0';
   }
 
   .top-card img {
-    width: 1000px;
+    width: 60%;
   }
 
   .top-card div {
