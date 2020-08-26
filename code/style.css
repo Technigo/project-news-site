@@ -1,12 +1,10 @@
-html { f
-  ont-size: 22px;
- }
+
 
 body { 
   padding: 1rem; 
 }
 
-
+/*** HAMBURGER MENY OVERLAY ***/
 
 /* The Overlay (background) */
 .overlay {
@@ -26,7 +24,7 @@ body {
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
+  top: 10%; /* 10% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -52,7 +50,7 @@ body {
   position: absolute;
   top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -68,35 +66,41 @@ body {
   }
 }
 
-/*** HEADING ***/
+/*** HEADING and NAV***/
 
 header {
+  background: url(abstract-1501710_1280.jpg);
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 16px;
   color: black;
   margin-bottom: 20px;
   box-shadow: 5px 5px 5px 2px grey;
-
 }
 
-
-.hamburger {
-  display: flex;
-  width: 30px;
-  height: 10px;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 24px; 
-}
-
-.hamburger div {
-  width: 20px;
+img .sun {
+  width: 1px;
   height: 1px;
-  background: black;
-  border-radius: 5px;
 }
+
+
+h1 {
+  padding-right: 30px;
+  animation: text 5s 1;
+}
+
+@keyframes text {
+  from{
+    opacity: 0;
+  
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 
 nav {
@@ -104,16 +108,19 @@ nav {
     
 }
 
-  a:hover, a:active {
+  nav a:hover, nav a:active {
     text-decoration: underline;
+  }
+
+  nav a:hover, nav a:focus {
+    color: grey;
   }
   
 
 
-/*** CARDS ***/
-
+/*** Section CARDS ***/
 .cards {
-  max-width: 1200px;
+  
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
@@ -127,20 +134,66 @@ nav {
   display: flex;
   flex-direction: column;
   align-items:  center;
-  opacity: 1;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.card:hover {
-  opacity: 0.3;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
  
 }
 
-.cards a:hover {
+
+
+.card .fadedbox {
   background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 25rem;
+  padding: 180px 5px;
+}
+.card:hover .fadedbox {
+  opacity: 0.8;
+}
+.card .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.card .title {
+  font-size: 5px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
 
 }
+.card:hover .title,
+.example:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+button {
+  color:white;
+  border: inset black 2px;
+  background:transparent;
+  padding: 30px;
+  border-radius: 30%;
+}
+
 
 .cards a:link {
   text-decoration: none;
@@ -157,13 +210,13 @@ nav {
 }
 
 .cards h5 {
-  margin:5px;
-  font-size: 20px;
+  margin:4px;
+  font-size: 17px;
 }
 
 .cards p {
   margin:0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 img {
@@ -171,15 +224,18 @@ img {
   filter: grayscale(100%);
 }
 
+
+
+
 /*** FOOTER ***/
 
 
 
-@media (min-width: 668px) and (max-width:1024px) {
-  .cards {
-     grid-template-columns: repeat(2, 1fr);
-    }
 
+/*** @MEDIA ***/
+
+@media (min-width: 668px) and (max-width:1024px) {
+ 
   header {
     justify-content: space-between;
     height: 100px;
@@ -215,9 +271,18 @@ img {
     box-shadow: 5px 5px 5px grey;
   }
  
-  .hamburger {
-    display: none;
-  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .cardone {
+     grid-column: span 4;
+   }
+
+   .card .two, .card .three {
+    grid-column: span 2;
+   }
+
 }
 
 @media (min-width: 1024px) {
