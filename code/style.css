@@ -6,10 +6,6 @@ html {
   color: black;
 }
 
-
-
-
-
 img {
   width: 100%;
   height: auto;
@@ -35,27 +31,20 @@ ul {
   align-items: center;
   align-content: center;
   list-style-type: none;
-  font-size: 50px;
-  
-  
+  font-size: 30px; 
 }
 
 .li-2 {
  font-family: 'Monoton';
- font-size: 50px;
-   
-  
 }
 
-
-section { /* Sections in the article grid*/
+section { /* Sections with the articles*/
   position: relative;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+
 div { /* Text overlay for the images*/
- 
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -64,15 +53,13 @@ div { /* Text overlay for the images*/
   color: black;
   padding: 10px;
   max-height: 80%;
-  
- 
 }
 
-h1 {
-  font-size: 30px;
+div:hover {
+  border-radius: 25px;
 }
 
-h2 {
+h1  {
   font-size: 30px;
 }
 
@@ -80,34 +67,25 @@ p {
   font-size: 20px;
 }
 
-
 li {
-  margin: 20px;
+  margin: 10px;
 }
-
-
-  
+ 
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  font-size: 8px;
-  padding: 5px;
-  
+  font-size: 15px;
+  padding: 5px; 
 }
-
-
 
 .big-news {
   margin: auto;
-  
   width: 100%;
-
 }
 
 .big-news-text {
-
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -115,7 +93,6 @@ footer {
   background-color: rgba(241, 241, 239, 0.6);
   color: black;
   padding: 20px;
-
 }
 
 .article-grid {
@@ -124,29 +101,24 @@ footer {
   margin: auto;
   justify-content: space-evenly;
 }
+
 .news  {
- 
   margin: auto;
   margin-top: 20px;
-  
- 
 }
+
 /*Hide links in navbar for mobile*/
 @media (max-width: 667px) {
 
-.li-3, .li-4 {
+ .li-3, .li-4 {
   display: none;
-
+ }
 }
 
-}
-/* Tablet, fix flexbox order for navbar, and get the text in the boxes right*/
+/* Tablet*/
 @media (min-width: 668px) {
 
-  
-  
   div {
-   
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -155,58 +127,68 @@ footer {
     color: black;
     padding: 10px;
     overflow: hidden;
-
-    }
+  }
     
-
-    h1 { 
-      font-size: 50px;
-    }
-
-    .li-2 {
-      order: -1;
-    }
-   
- 
-
- .big-news-text {
-  
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left:50%;
-    top: 0px;
-    background-color: rgba(241, 241, 239, 0.6);
-    color: black;
-    padding: 20px;
-  
-  } 
-  
-
-  .news  {
-    margin: auto;
-    width: 40%;
+  h1 { 
+    font-size: 30px;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 30px;
+  }
+
+  .li-2 {
+    order: -1;
+  }
+   
+  .big-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+ .big-news-text {
+   position: absolute;
+   bottom: 20px;
+   right: 0px;
+   left:50%;
+   top: 20px;
+   background-color: rgba(241, 241, 239, 0.6);
+   color: black;
+   padding: 20px;
+  } 
+  
+  .news  {
+   margin: auto;
+   width: 40%;
+  }
 }
 
  /* Desktop */ 
 @media (min-width: 1024px) {
   
   ul {
-    font-size: 50px;
+    font-size: 20px;
   }
 
   div {
-   
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     left:20px;
     background-color: rgba(241, 241, 239, 0.6);
     color: black;
     overflow: hidden;
-  
   }
 
   h1 {
@@ -214,7 +196,6 @@ footer {
   }
 
   h2 {
-
     font-size:25px;
   }
 
@@ -225,29 +206,19 @@ footer {
   .li-1 {
     order: -1;
   }
+
+  .li-2 {
+    font-size: 30px;
+  }
   
   .big-news {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 800px;
+    grid-template-rows: 400px;
     overflow: hidden;
   }
-  .big-news-text p h1 {
-  
-    
-    bottom: 0px;
-    right: 0px;
-    left:50%;
-    top: 0px;
-    background-color: rgba(241, 241, 239, 0.6);
-    color: black;
-    
-    
-  
-  }
-  
+
   .news  {
-   
     margin: 20px;
     width: 20%;
   }
