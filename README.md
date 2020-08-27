@@ -19,4 +19,4 @@ With help of course materials and research I now understand responsive design an
 
 ## View it live 🔴
 
-Coming soon. 
+https://skincutmagazine.netlify.app/ 
