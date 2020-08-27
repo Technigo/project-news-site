@@ -1,4 +1,225 @@
+/* Design for the whole page */
+* { box-sizing: border-box; }
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f5f3f0;
+  color: #172A3A;
+  margin: 20px 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: justify;
+}
+
+/* I started with device view first*/
+
+/* Styling of the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 160px;
+  margin: 30px;
+}
+
+/* Styling the top navigation bar */
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topnav img {
+  width: 50px;
+}
+
+/* Remove the default link values on topnav links. */
+.topnav a {
+  color: #172A3A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover & fix the small boxes that are links as*/
+.topnav a:hover {
+  background-color: #e6e2dc;
+  color: #172A3A;
+  text-decoration: none;
+}
+
+/* Style the big news content */
+.big-news {
+  border: 1px solid #172A3A;
+  margin: 10px;
+  padding: 5px;
+}
+
+h2, h4, p {
+  margin: 10px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 14px;
+}
+
+.img1 {
+  width: 250px;
+  margin: 5px;
+}
+
+.big-news a { /*To fix the links*/
+  color: #172A3A;
+  text-decoration: none;
+}
+
+.box {  /*Applied both for the first box and the two last boxes */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Style the small news content - with GRID */
+.grid-container { /* Parent to grid-child - the smaller news */
+ margin: 10px;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-gap: 10px;
+}
+
+.grid-child { /* Child */
+  border: 1px solid #172A3A;
+  padding: 5px;
+}
+
+.one, .two, .three, .four, .eight {
+  grid-column: span 1;
+}
+
+.five, .six {
+  grid-column: span 2;
+}
+
+.seven {
+  grid-column: span 3;
+}
+
+/* Styling for the last box with some animation */
+.eight {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f5f3f0;
+  }
+  100% {
+    background-color: #968d80;
+  }
+}
+
+.eight p {
+  font-size: 20px;
+}
+.big-news, .grid-child { /* Adding shadows to the boxes*/
+  box-shadow: 2px 2px 2px 2px #d6d0c7;
+}
+
+.grid-child a { /*To fix the links*/
+  color: #172A3A;
+  text-decoration: none;
+}
+
+/* To make it change color while hovering the boxes */
+div.grid-child:hover,  section.big-news:hover  {
+  background-color: #e6e2dc;
+}
+
+h3 { /* Heading in the small boxes*/
+  margin: 5px;
+}
+
+.img-small, .img-smaller { 
+  margin: 5px;
+  width: 305px;
+}
+
+.img-smallest {
+  margin: 5px;
+  width: 200px;
+}
+
+/* Styling of the footer */
+footer {
+  padding: 40px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ /******* Media queries settings *******/
+ @media screen and (max-width: 1024px) { /*Tablet devices */
+  header, .topnav,  {
+    flex-direction: column;
+  }
+
+  .topnav a { /* Needed some smaller padding on smaller screen */
+    padding: 6px 4px;
+  }
+
+  .big-news, .spc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spc {
+    align-items: center;
+  }
+
+  .spc img {
+    width: 100%;
+  }
+
+  .one, .two, .three, .four {
+    grid-column: span 2;
+  }
+  
+  .five, .six, .seven, .eight {
+    grid-column: span 4;
+  }
+
+  .img-small  {
+    width: 97%;
+  }
+
+  .img-smaller,  { /*To make it fit better in tablet format*/
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 667px) { /*Mobile devices */
+  header, .topnav {
+    flex-direction: column;
+  }
+
+  .topnav a { /* Needed some smaller padding on smaller screen */
+    padding: 6px 4px;
+  }
+
+  .big-news, .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 210px;
+  }
+
+  .img1, .img-smaller { /* To make the pictures fit nicer */
+    width: 95%;
+  } 
+
+  .grid-child {
+    grid-column: span 4;
+  }
 }
