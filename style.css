@@ -1,4 +1,5 @@
 *, *::before, *::after {box-sizing: border-box}
+
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
 
@@ -103,6 +104,15 @@ nav a{
   text-align: center;
 }
 
+.description2{
+  font-family: 'Kristi', cursive;
+  color: rgb(41, 40, 40);
+  opacity: .8;
+  font-size: 0.9em;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+}
+
 .big-news-text{
   color: #EAE8E8;
   font-family: 'Cutive Mono', monospace;
@@ -146,7 +156,6 @@ p{
   align-items: center;
 }
 
-
 .other-news1{
   box-sizing: border-box;
   width: 70%;
@@ -164,7 +173,6 @@ p{
   align-items: center;
   transition: .5s ease;
 }
-
 
 .other-news2{
   box-sizing: border-box;
@@ -230,7 +238,7 @@ footer {
 
 /***** EVERYTHING BEFORE THIS IS MOBILE! ****/ 
 
-/***** IPAD ****/ 
+/***** TABLET ****/ 
 @media (min-width: 768px) {
   header{
     height: 100px;
@@ -288,12 +296,41 @@ footer {
 
 /***** DESKTOP ****/ 
 @media (min-width: 1024px) {
+  header{
+    justify-content: space-between;
+  }
+
+  nav{
+    justify-content: space-between;
+    margin: 0px 25px 0px 0px;
+  }
+
   .big-news{
     flex-direction: row;
     align-items: left;
   }
   .big-news-image{
-    width:80%;
+    width:100%;
+  }
+
+  .other-news1{
+    width: 24%;
+    margin: 40px 5px 0px 0px;
+  }
+
+  .other-news2{
+    width: 24%;
+    margin: 40px 5px 0px 0px;
+  }
+
+  .description{
+    font-size: 0.7em;
+    opacity: .9;
+
+  }
+
+  .pic-effect-title{
+    font-size: 1.4em;
   }
 
 }
