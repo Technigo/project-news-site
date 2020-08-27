@@ -1,4 +1,235 @@
 html {
-  background: #0025ff;
+  box-sizing: border-box;
+}
+
+/*** Header ***/
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+header nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+  }
+  header nav {
+    display: flex;
+    margin-left: auto;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+  nav a {
+    font-family: "Lexend Giga", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 50;
+  }
+
+  nav a:hover {
+    color: #f7941f;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/***BIG NEWS***/
+
+.textbox {
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(114, 104, 104);
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 25px;
+  max-width: 1125px;
+  margin: auto;
+}
+.bignews {
+  flex: 0 0 45%;
+  background: white;
+}
+
+.object-fit {
+  overflow: hidden;
+  position: relative;
+}
+.object-fit img {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/***HOW to make this image resopnsive?***/
+/* @media (min-width: 768px) {
+  .object-fit img {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+/* .responsive {
+  width: 100%;
+  height: auto;
+} */
+
+/***BUTTON STYLING***/
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
   color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #f7941f;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.button:active {
+  background-color: #f7941f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@supports (object-fit: cover) {
+  .object-fit img {
+    position: static;
+    height: 100%;
+    width: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+
+/***FLEXBOX GALLERY***/
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 330px;
+  height: 265px;
+  margin: 10px;
+  text-decoration: none;
+}
+.gallery-item img {
+  position: absolute;
+  flex-grow: 1;
+}
+.text-wrapper {
+  position: relative;
+  width: 330px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #f7941f;
+  font-family: "Lexend Giga", sans-serif;
+}
+.text-wrapper:hover {
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.6);
+  /* opacity: 1; */
+}
+.explanation {
+  opacity: 0;
+  font-size: 15px;
+  color: white;
+}
+.title {
+  font-size: 40px;
+}
+.title:hover + .explanation {
+  opacity: 1;
+}
+
+/*** As there is no hove effect on touch screens, the text should be always present ***/
+
+@media only screen and (max-width: 1024px) {
+  .text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .explanation {
+    opacity: 0;
+    margin-bottom: 1em;
+  }
+}
+.footer {
+  text-align: center;
+  display: inline-block !important;
+  background-color: whitesmoke;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  line-height: 50px;
+}
+
+.footertext {
+  color: #f7941f;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
