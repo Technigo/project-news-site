@@ -1,252 +1,85 @@
 body {
-font-family: 'Montserrat', sans-serif;
-font-family: 'Noto Serif JP', serif;
-margin: 0;
+    margin: 0;
 }
 
-img {
+.header-parent {
     width: 100%;
-}
-
-h1 {
-    Font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: black;
-    margin: 0px 5px;
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 23px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 23px;
-    font-family: 'Noto Serif JP', serif;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    padding-bottom: 8px;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-top: 8px;
-    margin-bottom: 5px;
-}
-
-mark {
-    background: pink;
-    border-radius: 2px;
-    padding: 5px;
-}
-
-mark:hover {
-    background: rgb(253, 126, 190);
-    color: white;
-}
-
-/* HEADER */
-header {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     height: 100px;
-}
-
-.logo-header-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    margin: 9px 10px 9px 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.circle-container {
-    justify-content: flex-end;
-}
-
-.circle {
-    display: flex;
     justify-content: center;
-    align-items: center;    
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
-    margin: 20px;
+    padding: 10px 0px;
+    background: white;
 }
 
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15px;
-    height: 15px;
-    margin: 24px;
-}
-  
-.hamburger div {
-    width: 15px;
-    height: 1px;
-    background: black;
-    border-radius: 5px;    
+.header-parent div {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
 }
 
-header nav {
-    display: none;
-}
-
-header nav {
-    text-align: center;
+.header-child {
+    box-sizing: border-box;
     margin: auto;
 }
 
-header nav a {
-    color: black;
-    text-decoration: none;
-    border-right: solid 1px black;
-    padding-right: 15px;
-    padding-left: 16px;   
-}
-  
-header nav a:last-child {
-    border-right: none;
-}
-
-/* MAIN SECTION */
-.main-section {
-    margin: 0px 10px 10px 10px;
-}
-
-
-/* BIG NEWS CONTAINER */
-.big-news-container {
+.main-article-parent {
+    width: 100%;
+    height: 500px;
+    background:white;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px 0px 10px;
-    margin-bottom: 10px;
-    background: gainsboro;
+    padding: 10px 0px;
 }
 
-.big-news-container h3 {
-    border-bottom: solid 1px white;
+.main-article-parent div {
+    width: 100%;
+    height: 490px;
+    padding: 10px;
+    background: pink;
 }
 
-.big-news-container h3 a {
-    color: black;
-    text-decoration: none;
+.main-article-child {  
+    box-sizing: border-box;  
+    margin: auto;  
 }
 
-.big-news-container h3 a:hover {
-    text-decoration: underline;
-}
-
-.big-news-container nav {
-    margin: 5px 0px 0px 0px;
-    padding-left: 0px;
-    padding-bottom: 15px;
-    align-self: flex-start;
-}
-
-.big-news-container nav a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-    color: gray;
-    border-right: solid gray 1px;
-    padding-right: 10px;
-    padding-left: 10px;     
-}
-
-.big-news-container nav a:first-child {
-    padding-left: 0px;
-}
-
-.big-news-container nav a:last-child {
-    border: none;
-}
-
-
-/* OTHER NEWS CONTAINER*/
-
-.other-news-container {
+.other-article-parent {
+    width: 100%;
+    height: 100%;
+    background: rgb(190, 28, 28);
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;    
-    border-top: solid black 1px;
+    padding: 10px 0px;
 }
 
-.other-news-card {
-    margin-bottom: 20px;
-    border-radius: 2px;
-    padding: 10px 10px 0px 0px;
-    /* background: red; */
+.other-article-parent div {
+    width: 100%;
+    height: 450px;
+    /* border: solid blue 1px; */
+    padding: 10px;
+    background: white;
 }
 
-.other-news-card h3 {
-    border-bottom: solid 1px rgb(253, 126, 190);;
+.other-article-child {  
+    box-sizing: border-box;  
+    margin: auto;  
 }
 
-.other-news-card img {
-    box-shadow: 7px 7px gainsboro;
+@media (min-width:768px) {
+
+    .other-article-parent div {
+        width: 50%;      
+    }
 }
 
-.other-news-card h3 a {
-    color: black;
-    text-decoration: none;
+@media (min-width:1020px) {
+    
+    .other-article-parent div {
+        width: 25%;        
+    }
 }
-
-.other-news-card h3 a:hover {
-    text-decoration: underline;
-}
-
-.other-news-card nav {
-    margin-top: 10px;
-}
-
-.other-news-card nav a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-    color: gray;
-    border-right: solid gray 1px;
-    padding-right: 10px;
-    padding-left: 10px; 
-}
-
-.other-news-card nav a:first-child {
-    padding-left: 0px;
-}
-
-.other-news-card nav a:last-child {
-    border: none;
-}
-
-.other-news-card nav a:hover {
-    color: black;
-}
-
-
-
-
-
-
-
