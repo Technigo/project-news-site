@@ -3,7 +3,7 @@ body{
   color: black;
   margin:0px;
   font-family: 'Baloo Tamma 2', cursive;
-  background-color: rgb(240, 235, 227);
+  background-color:white;
 }
 html { font-size: 16px; 
 }
@@ -112,16 +112,36 @@ a:hover {
 	
 	
 }
+/* shake images*/
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  .card:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+  }
 
 
 /* Footer */
 
 footer{
-  margin: 20px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background-color:white;
+	padding-top: 30px;
+  	margin: 20px;
+  	display:flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color:white;
 
 }
 
