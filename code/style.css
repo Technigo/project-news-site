@@ -57,8 +57,9 @@ h4{
 }
 
 .plant-containers {
-  justify-content: center;
-  
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
 }
 
 .card {
@@ -69,18 +70,32 @@ h4{
   padding: 25px;  
   border-radius: 15px;
   box-shadow: 12px 12px 20px 0 #61725a;
+  width: 100%;
 }
-.plant-containers img{
-  height: 50%;
+.plant-containers img {
   width: 40%;
+}
+
+.plant-containers img:hover {
+  opacity: 0.4;
+  
 }
 
 
 /* MEDIA QUERIES*/
 
 @media (min-width: 650px) {
-
-  .big-news div {
-    /*text-align: Left;*/
+  .card {
+    width: 30%; 
+    flex-grow: 1;
   }
+}
+
+@media (min-width: 900px) {
+  .card {
+    font-size: 0;
+    width: 25%; 
+    flex-grow: 1;
+  }
+
 }
