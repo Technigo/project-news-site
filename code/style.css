@@ -10,45 +10,61 @@ body {
 
 h1 {
   font-size: 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   margin-top: -10px;
 } 
 
 h2 {
   font-size: 30px;
+  font-family: 'Libre Franklin', sans-serif;
   margin-top: -8px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 13px;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: 100;
+  margin-bottom: 25px;
 }
 
 h4 {
   font-size: 12px;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 h5 {
-  font-size: 35px;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h6 {
+  font-size: 15px;
 }
 
 p {
   margin-top: -14px;
-  }
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 17px;
+  font-family: 'Libre Franklin', sans-serif;
+}
 
-
+a {
+  text-decoration: none;
+  color: black;
+}
 
   /* HEADER STYLING */
 
 .logo {
   width: 300px;
   height: auto;
+  padding: 0 20px 0 0;
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #d9dedb;
   padding: 20px 0 20px 0px;
   
@@ -60,7 +76,6 @@ header {
   height: 30px;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 25px 0 0;
 }
 
 .hamburger div {
@@ -81,7 +96,7 @@ nav a {
 
 nav a:hover {
   background-color: rgba(84, 106, 78, 0.591);
-padding: 10px;
+  padding: 10px;
 }
 
 
@@ -89,7 +104,7 @@ padding: 10px;
 
 .img-big-news {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .big-news {
@@ -104,6 +119,10 @@ padding: 10px;
   text-align: flex-start;
 }
 
+.big-news .big-news-text .artikel {
+  display: none;
+}
+
 /* NEWS GRID STYLING */
 
 main .fler-nyheter {
@@ -114,27 +133,28 @@ main .fler-nyheter {
 
 main .card-container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 55px 55px 55px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
-main .card {
-  width: 100%;
+main .card-container .card {
   padding: 10px;
   border: 1px solid black;
-  /* box-shadow: 5px 5px #cac5c5;
-  margin: 10px; */
+  width: 300px;
+  height: 450px;
+  background-color: #f2f2f2;
+  margin: 20px 0;
+  box-shadow: 5px 5px #e8e6e6;
+  
 }
 
 main section .card .img-news-grid {
   width: 100%;
 }
 
-main section .card a {
-  text-decoration: none;
-  color: black;
-}
-
+/* Footer */
 footer {
   background-color: #d9dedb;
   padding: 0px;
@@ -144,14 +164,17 @@ footer {
 
 /* MEDIA QUERIES */
 /* På skärmar större än 768 px ska det bli två cards per row */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 678px) {
 
+  header {
+    justify-content: space-between
+  }
   .hamburger {
     display: none;
   }
   
   nav {
-   display: inline-block;
+   display: block;
   }
 
   .big-news {
@@ -162,20 +185,22 @@ footer {
   .img-big-news {
     width: 50%;
   }
-
-  .news-grid{
-  width: 25%;
+  
+  main .card-container {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .card {
-    flex: 50%;
-  }
-}
+/* MEDIA QUERIES */
+/* På skärmar större än 1025 px ska det bli två cards per row */
+@media screen and (min-width: 1025px) {
 
-
-/* På skärmar större än 1024px ska det bli fyra cards per row */
-@media screen and (min-width: 1024px) {
-  .card {
-    flex: 25%;
+  .big-news .big-news-text .artikel {
+    display: block;
   }
-}
+
+  .heading {
+    font-weight: bold;
+  } 
+} 
