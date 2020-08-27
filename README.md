@@ -5,7 +5,8 @@ It is a responsive design that works differently in terms of layout for Phones, 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had problems getting the icon in centre of the links but I was helped out with my teammates. I am having reccuring problem with establishing connection with github.
+Alignment of links on the Tablet view has been a problem :(
 
 ## View it live
 https://gamezonee.netlify.app/
