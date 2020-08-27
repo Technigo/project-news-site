@@ -1,7 +1,8 @@
 # News Site
 
 This is a project made during the Technigo Bootcamp. 
-Focus was learn about layouts using flexbox and the task was to create a news site. 
+Focus was learn about layouts using flexbox and responsive design. 
+The task was to create a news site/magazine. 
 
 
 ## The problem
