@@ -1,21 +1,8 @@
 html{
-    background: white;
-    color: black;
+    background: #ffffff;
+    color: #000000;
     font-family: sans-serif;
   }
-  /* .grid-container{
-    display: grid; 
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 5px;
-    row-gap: 5px; */
-
-  /* header{
-    grid-column: span;
-    display: flex;
-    background: white;
-    border: solid black 2px;
-  } */
-
   header {
     display: flex;
     flex-direction: column;
@@ -37,27 +24,25 @@ html{
   h3{
       margin-bottom: 2px;
   }
-
   .nav-links {
     display: none;
   }
-
   .nav-links li {
     list-style: none;
   }
-  
   p {
     padding: 5px;
   }
-  
   a {
     text-decoration: none;
     font-weight: bold;
     align-content: space-around;
     padding: 10px;
-    color: black;
+    color: #000000;
   }
-  
+  a:hover{
+    color: #888888;
+  }
   .hamburger {
     display: flex;
     width: 30px;
@@ -66,13 +51,11 @@ html{
     justify-content: space-between;
     padding: 10px;
   }
-
   .line {
     width: 30px;
     height: 5px;
-    background: black;
+    background: #000000;
   }
-
   .big-news{
       display: flex;
       flex-direction: column;
@@ -82,7 +65,6 @@ html{
   .big-news img{
       width: 100%;
   }
-
   .card-container{
       display: flex;
       align-items: center;
@@ -100,9 +82,12 @@ html{
   .article-card img{
       width: 100%;
   }
-
   @media (min-width: 668px){
-    
+    .big-news-text{
+      box-sizing: border-box;
+      padding: 25px;
+      text-align: left;
+    }
     .card-container{
         justify-content: center;
         flex-direction: row;
@@ -112,29 +97,31 @@ html{
     .article-card{
         max-width: 300px;
          }
-      article{
+    article{
         font-size: 20px;
         display: flex;
         margin: 50px 0;
       }
-      .big-news{
+    .big-news{
         height: 60vh;
           display: flex;
           flex-direction: row;
         }
-      .big-news img{
+    .big-news img{
         width: 60%;
       }
-      .nav-links{
+    .nav-links{
         display: flex;
+        font-size: 20px;
         }
-      .hamburger{
+    .hamburger{
           display: none;
          }
   }
   @media (min-width: 1024px){
     header{
       flex-direction: row;
+      justify-content: center;
     }
     header img{
       display: none;
@@ -151,8 +138,7 @@ html{
     }
     .container{
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       margin: 50px 0;
     }
     .logo{
@@ -180,8 +166,5 @@ html{
           display: block;
           font-size: 65px;
           text-align: center;
-      }
-    header img{
-        max-width: 350px;
       }
   }
