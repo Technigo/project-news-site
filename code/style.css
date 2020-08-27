@@ -5,8 +5,9 @@ body{
   font-family: 'Baloo Tamma 2', cursive;
   background-color:white;
 }
-html { font-size: 16px; 
+html { font-size: 13px; 
 }
+
 
 /** Header **/
 header{
@@ -26,34 +27,44 @@ header h1{
 header a{
 	text-decoration: none;
 	color: black;
-	font-size: 20px;
+	font-size: 16px;
 }
 nav{
 	display: none;
 }
 a:hover {
-	background-color:whitesmoke;
+	background-color:white;
   }
+.icon .nav_icon {
+	height: 60px;
+	width: 60px;
+  }
+.navbar_tablet{
+	display:none; 
+ }
 /*** Big news section **/
   
-  .big-news{
-	padding:80px 16px;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	justify-content: center;
+  .news{
+	padding: 1rem;
+  	width:480px;
+  	height:90%;
 
   }
- .big-news div{
-	 text-align: center;
+ .big-news{
+	max-width: 1200px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20 px;
  }
 
-  .big_news img { 
+  .news img { 
 	width:100%; 
+	height:100%; 
+} 
 	   
-  } 
+
 /*** News cards section **/
 .card {
   padding: 1rem;
@@ -64,52 +75,80 @@ a:hover {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 3rem;
 	justify-content: center;
+	
 }
 .news_cards img { 
 	width:100%; 
 	height:100%; 
+	
 } 
 
-
 /*** Media Queries **/
-@media (min-width: 600px) {
+@media (max-width: 899px) and (min-width: 600px) {
 	.news_cards { 
 		grid-template-columns: repeat(2, 1fr); 
 	}
-	nav{
+	.navbar_tablet{
 		color:black;
 		text-decoration:none;
 		width:100%;
 		display:flex;
-		align-items: flex-end;
-		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		
 	}
 	header h1{
 		display:none;
 	}
-	
+	.big-news{
+		padding: 20px;
+		max-width: 1200px;
+		margin: 0 auto;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+	 }
+	 .icon{
+		display:none;
+	  }
 }
-
 @media (min-width: 900px) {
 	.news_cards { 
-		grid-template-columns: repeat(3, 1fr); 
+		grid-template-columns: repeat(4, 1fr); 
 	}
 	nav{
 		color:black;
 		text-decoration:none;
 		width:50%;
 		display:flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 	header h1{
 		font-size: 40px;
 		margin:0px 30px 0px 10px;
 		padding:0px;
+		color:black;
 		
 	}
+	.big-news{
+		max-width: 1200px;
+		margin: 0 auto;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 60px;
+	 }
+	 .navbar_tablet{
+		display:none; 
+	 }
+	 .news{
+		padding: 1rem;
+		  width:650px;
+		  height:90%;
 	
+	  }
 	
 }
 /* shake images*/
@@ -136,7 +175,7 @@ a:hover {
 /* Footer */
 
 footer{
-	padding-top: 30px;
+	padding-top: 60px;
   	margin: 20px;
   	display:flex;
   	justify-content: center;
@@ -146,6 +185,7 @@ footer{
 }
 
 footer img{
+	padding: 10px;
 	height: 45px;
 	width: 45px;
 }

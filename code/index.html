@@ -4,34 +4,42 @@
     <meta charset="utf-8" />
     <title>Project 2: The ultimate guide to Corona</title>
     <link rel="stylesheet" href="./style.css" />
-    <!--font from google fonts-->
+    <!-- Google font-->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
-    <!-- dont forget the meta tag for responsiveness -->
+    <!-- Meta tag for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
-       <!-- Some kind of logo and navbar -->
+       <!-- Logo and navbar -->
       <img class= "icon" src ="./icon-corona-black.png" alt="Corona virus">
       <h1> hashtagCORONA</h1>
       <nav>
-        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO</a>
+        
         <a href="https://www.worldometers.info/coronavirus/?">Corona cases</a>
-        <a href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/bekraftade-fall-i-sverige/">FHM</a>
         <a href="https://www.youtube.com/watch?v=bqx19f0ceUo">Corona TikTok Dance</a>
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO</a>
+        <a href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/bekraftade-fall-i-sverige/">FHM</a>
       </nav>  
-    </header>
-
+    
+  <!-- Tablet navbar -->
+    <div class="navbar_tablet">
+      <a href="https://www.worldometers.info/coronavirus/?">Corona cases</a>
+      <a href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/bekraftade-fall-i-sverige/">FHM</a>
+      <img class= "nav_icon" src ="./icon-corona-black.png" alt="Corona virus">
+      <a href="https://www.youtube.com/watch?v=bqx19f0ceUo">Corona TikTok Dance</a>
+      <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO</a>
+  </div>
+</header>
+  <!-- The big news content -->
     <section class="big-news">
-      <!-- The big news content -->
-        <img src="./corona_bignews.jpg" alt="Corona virus">
+        <div class="news"><img src="./corona_7.jpg" alt="Corona virus"></div>
         <div class="news"><p>According to the CDC, there is no specific antiviral treatment recommended for infection with novel coronavirus. Anyone infected with the virus should receive supportive care to help relieve symptoms.The CDC recommends the following prevention measures:
-          Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer.
-          Avoid touching your eyes, nose, and mouth with unwashed hands
-          Avoid close contact with people who are sick.
-          Stay home when you are sick.
-          Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</p></div>
+          Wash your hands often with soap and water for at least 20 seconds. 
+          </p></div>
     </section>
+
+    <!-- News card grid-->
     <div class="news_cards">
       <div class="card"><img src="./corona_1.jpg" alt="Stay at home">How to handle Corona from home</div>
       <div class="card"><img src="./corona_2.jpg" alt="Corona game">What does the most of us do at home</div>
@@ -39,10 +47,11 @@
       <div class="card"><img src="./corona_4.jpg" alt="Social distancing"> Keep your distance</div>
       <div class="card"><img src="./corona_5.jpg" alt="Mask and hand alcohol">Can we prevent Corona?</div>
       <div class="card"><img src="./corona_6.jpg" alt="Mask">Can masks prevent the spreding of Corona ?</div>
-      <div class="card"><img src="./corona_7.jpg" alt="Coronavirus">Where did the Corona virus come from?</div>
+      <div class="card"><img src="./corona_bignews.jpg" alt="Coronavirus">Where did the Corona virus come from?</div>
       <div class="card"><img src="./corona_8.jpg" alt="Pills">Can vitamins prevent Corona? </div>
     </div>
-    
+
+     <!-- Footer-->
     <footer>
         <div class="instagram">
         <a href="https://www.instagram.com/marjaana_star/?hl=en" target="_blank"><img src="./instagram-icon.png" alt="Click to visit us on Instagram"></a>
