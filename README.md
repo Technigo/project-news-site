@@ -11,4 +11,6 @@ For my project I used HTML, CSS and didn't include frameworks like Bootstrap. If
 
 ## View it live
 
+https://angry-edison-7c5190.netlify.app/
+
 <!-- Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about. -->
