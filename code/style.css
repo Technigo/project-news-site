@@ -133,9 +133,6 @@ html{
          }
   }
   @media (min-width: 1024px){
-    body{
-      width: 1000px;
-    }
     header{
       flex-direction: row;
     }
@@ -174,14 +171,17 @@ html{
       flex-direction: row;
     }
     .big-news img{
-      width: 40%;
+      max-width: 700px;
     }
-      h1{
+    p{
+      max-width: 750px;
+    }
+    h1{
           display: block;
           font-size: 65px;
           text-align: center;
       }
-      header img{
+    header img{
         max-width: 350px;
       }
   }
