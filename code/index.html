@@ -2,21 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
+      <img class="header-img" src="logo.svg">
       <!-- Some kind of logo and navbar -->
+      <nav>
+        <a href="#">ABOUT</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">TWITTER</a>
+        <a href="#">INSTAGRAM</a>
+      </nav>
     </header>
-
+<article>
+  <!-- area for the news content -->
     <section class="big-news">
       <!-- The big news content -->
+      <div class="bignews-img">
+        <img src="bignews_image.jpg" width="300" height="200">
+      </div>
+      <div class="bignews-text">
+        <h2>"I cannot play tennis forever"</h2>
+        <p>Since his debut, Roger Federer has been building his legacy. A legacy involving hard work, grit, and determination. 
+          Now he has become an idol and brand. Fans adore him and now according to Forbes, he is the highest-paid athlete. 
+          So much success has come because of the crucial decisions he took across his life and career. Federer has been with the 
+          Swiss bank Credit Suisse. In the view of their long-standing partnership, Federer collaborated with Credit Suisse to give 
+          his words of wisdom around success and what decisions he took during his career that has made him what he is now.</p>
+      </div>
     </section>
 
-    <section class="">
+    <section class="small-news">
       <!-- The other news  -->
+      <div class="smallnews-article">
+        <img src="smallnews_rafa.jpg" width="250" height="150">
+        <a href="#">RAFA MISSES US OPEN</a>
+      </div>
+      <div class="smallnews-article">
+        <img src="smallnews_djoker.jpg" width="250" height="150">
+        <a href="#">“I HAD A GREAT TEST” SAYS DJOKOVIC AFTER ATP RETURN</a>
+      </div>
+      <div class="smallnews-article">
+        <img src="smallnews_osaka.jpg" width="250" height="150">
+        <a href="#">Naomi Osaka Expresses Support for WNBA</a>
+      </div>
+      <div class="smallnews-article">
+        <img src="smallnews_serena.jpg" width="250" height="150">
+        <a href="#">Serena Williams reaches Western and Southern Open third round</a>
+      </div>
     </section>
+</article>
   </body>
 </html>
