@@ -2,137 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" sizes="16x16" href="favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Espresso Crema</title>
 </head>
 <body>
 
-<section class="navbar">
-    <nav class="topnav">
-         <a href="#home"><img class="navbar-logo" src="logo.png" alt="logo" style="width:25px;"> Espresso Crema </a>
-     <div class="topnav-right"></div>
-         <a href="#news">News</a>
-         <a href="#blog">Blog</a>
-         <a href="#gallery">Gallery</a>
-         <a href="#contact">Contact</a>
-     </div>
-    </nav>
+<!-- HEADER-->    
+<header href="#home">
+<div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<a href="#home"><img src="logo.png" alt="logo"></a>
+<nav>
+    <a href="#blog">Blog</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav> 
+</header>
+
+<!-- MAIN ARTICLE-->
+<section class="main-article">
+ <a href="https://www.nbcnews.com/health/health-news/coffee-good-you-more-science-shows-n888356" target="_blank">
+    <section class="container">
+        <img src="girl-coffee.jpg" alt="girl-drinks-coffee">
+        <div>
+            <h2>Coffee is good for you, more science shows</h2>
+            <p>People who drank coffee, no matter how much or what kind they drank, were less likely to die over a 10-year period than non-coffee drinkers, according to a new report.</p>
+        </div>
+    </section>
+ </a>
 </section>
 
-    <header>
-        <div>
-        <a href="https://www.nbcnews.com/health/health-news/coffee-good-you-more-science-shows-n888356" target="_blank">
-            <img class="header-pic" src="girl-coffee.jpg" alt="Girl drinks coffee">
-        </div>
-        <div> 
-            <p class="main-article"> Coffee is good for you, more science shows </p>
-            <h1>People who drank coffee, no matter how much or what kind they drank, were less likely to die over a 10-year period than non-coffee drinkers, according to a new report.</h1>
-        </a> 
-        </div>  
-    </header>    
+<button> 
+    <a href="#top" class="myBtn" title="Go to top">UP</a>
+</button>
 
-    <section class="instax-container">
-        <!--Intstax 1-->
-        <div class="instax">
-            <a href="https://feketekv.hu/" target="_blank">
-            <img class="instax-pic" src="budapestcafé.jpg" alt="Fekete brew&food bar" height="170px">
-            <div class="container">
-            <p> <strong>Fekete</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>     
-            </div>
-        </div>
+<section class="cards-container">
+  <section class="container">
+    <h3> Scroll down and read more!</h3>
+    <p> Are you interested in getting to know the best cafés around the world? </p>
+    <!--CARDS-->
+     <section class="cards">
+      <!--Intstax STOCKHOLM 1-->
+      <a href="https://www.dropcoffee.com/" target="_blank">
+          <p class="title"> Stockholm</p>
+          <img src="stockholmcafé.jpg" alt="Drop Café in Stockholm">
+          <p class="description">Praesent aliquam eu magna vel interdum. Nulla sagittis lacinia euismod. In hac habitasse platea dictumst.</p>
+      </a>  
+      <!--Intstax PORTO 1-->
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g189180-d12448069-Reviews-Mercador_Cafe-Porto_Porto_District_Northern_Portugal.html" target="_blank">
+         <p class="title"> Porto</p>
+         <img src="portocafé.png" alt="Mercador Café in Porto">
+         <p class="description">Nulla a ullamcorper erat, ut porttitor magna. Phasellus suscipit orci id ornare rutrum.</p>
+      </a>
+      <!--Intstax BUDAPEST 1-->
+      <a href="https://feketekv.hu/" target="_blank">
+         <p class="title"> Budapest</p>
+         <img src="budapestcafé.jpg" alt="Fekete Café in Budapest">
+         <p class="description">Duis porttitor tempus lobortis. Aenean lacinia laoreet nisl, a imperdiet est consectetur quis.</p>
+      </a>
+      <!--Intstax BERLIN 1-->
+      <a href="https://bonanzacoffee.de/wordpress/" target="_blank">
+         <p class="title"> Berlin</p>
+         <img src="berlincafé.jpg" alt="Bonanza Café in Berlin">
+         <p class="description">Aenean facilisis purus sit amet tellus porta, iaculis consequat purus tincidunt. Nam ultricies libero vel sem venenatis auctor.</p>
+      </a>
+      <!--Intstax PORTO 2-->
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g189180-d12448069-Reviews-Mercador_Cafe-Porto_Porto_District_Northern_Portugal.html" target="_blank">
+         <p class="title"> Porto</p>
+         <img src="portocafé.png" alt="Mercador Café in Porto">
+         <p class="description">Nulla a ullamcorper erat, ut porttitor magna. Phasellus suscipit orci id ornare rutrum.</p>
+      </a>
+      <!--Intstax BUDAPEST 2-->
+      <a href="https://feketekv.hu/" target="_blank">
+         <p class="title"> Budapest</p>
+         <img src="budapestcafé.jpg" alt="Fekete Café in Budapest">
+         <p class="description">Duis porttitor tempus lobortis. Aenean lacinia laoreet nisl, a imperdiet est consectetur quis.</p>
+      </a>
+      <!--Intstax BERLIN 2-->
+      <a href="https://bonanzacoffee.de/wordpress/" target="_blank">
+         <p class="title"> Berlin</p>
+         <img src="berlincafé.jpg" alt="Bonanza Café in Berlin">
+         <p class="description">Aenean facilisis purus sit amet tellus porta, iaculis consequat purus tincidunt. Nam ultricies libero vel sem venenatis auctor.</p>
+      </a>
+      <!--Intstax STOCKHOLM 2-->
+      <a href="https://www.dropcoffee.com/" target="_blank">
+         <p class="title"> Stockholm</p>
+         <img src="stockholmcafé.jpg" alt="Drop Café in Stockholm">
+         <p class="description">Praesent aliquam eu magna vel interdum. Nulla sagittis lacinia euismod. In hac habitasse platea dictumst.</p>
+      </a>
+     </section>
+ </section>
+</section>
 
-        <!--Intstax 2-->
-        <div class="instax">
-            <a href="https://bonanzacoffee.de/wordpress/" target="_blank">
-            <img class="instax-pic" src="berlincafé.jpg" alt="Bonanza" height="170px">
-            <div class="container">
-            <p> <strong>Bonanza</strong> Sed sed lacus blandit, aliquam purus non, volutpat ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-            </a>    
-            </div>
-        </div>
-
-        <!--Intstax 3--> 
-        <div class="instax">
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g189180-d12448069-Reviews-Mercador_Cafe-Porto_Porto_District_Northern_Portugal.html" target="_blank">
-            <img class="instax-pic" src="portocafé.png" alt="Mercador Café" height="170px">
-            <div class="container">
-            <p> <strong>Mercador</strong> Sed hendrerit tortor tristique congue vehicula. Nam sed metus placerat, fringilla lectus ac, sodales purus. </p>
-            </a>
-            </div>
-        </div>
-
-        <!--Intstax 4-->
-        <div class="instax">
-            <a href="https://www.dropcoffee.com/" target="_blank"></a>
-            <img class="instax-pic" src="stockholmcafé.jpg" alt="Fekete brew&food bar" height="170px">
-            <div class="container">
-            <p> <strong>Drop</strong> Nulla a ullamcorper erat, ut porttitor magna. Phasellus suscipit orci id ornare rutrum.</p>
-            </a>
-            </div> 
-        </div>
-    </section>
-
-    <section class="tried-places-row">
-        <!--Intstax 5-->
-        <div class="instax">
-            <a href="https://bonanzacoffee.de/wordpress/" target="_blank">
-            <img class="instax-pic" src="berlincafé.jpg" alt="Bonanza" height="170px">
-            <div class="container">
-            <p> <strong>Bonanza</strong> Nulla a ullamcorper erat, ut porttitor magna. Phasellus suscipit orci id ornare rutrum.</p>
-            </a>    
-            </div>
-        </div>
-
-        <!--Intstax 6--> 
-        <div class="instax">
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g189180-d12448069-Reviews-Mercador_Cafe-Porto_Porto_District_Northern_Portugal.html" target="_blank">
-            <img class="instax-pic" src="portocafé.png" alt="Mercador Café" height="170px">
-            <div class="container">
-            <p> <strong>Mercador</strong> Sed hendrerit tortor tristique congue vehicula. Nam sed metus placerat, fringilla lectus ac, sodales purus.</p>
-            </a>
-            </div>
-        </div>
-
-        <!--Intstax 7-->
-        <div class="instax">
-            <a href="https://www.dropcoffee.com/" target="_blank"></a>
-            <img class="instax-pic" src="stockholmcafé.jpg" alt="Fekete brew&food bar" height="170px">
-            <div class="container">
-            <p> <strong>Drop</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-            </div> 
-        </div>
-
-         <!--Intstax 8-->
-         <div class="instax">
-            <a href="https://feketekv.hu/" target="_blank">
-            <img class="instax-pic" src="budapestcafé.jpg" alt="Fekete brew&food bar" height="170px">
-            <div class="container">
-            <p> <strong>Fekete</strong> Sed sed lacus blandit, aliquam purus non, volutpat ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </a>     
-            </div>
-        </div>
-    </section>
-
-     <!--Social menu row with animation-->
-     <section class="icon-row">
-        <div class="social-menu">
-         <ul>
-             <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-             <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
-         </ul>
-        </div>
-    </section>
-
-    <footer>
-            <a href="#"><img class="footer-logo" src="logo.png" alt="logo" width="25px"> © Espresso Crema 2020 </a>
-    </footer>
+<!--FOOTER-->
+<footer>
+    <a href="#"><img class="footer-logo" src="logo.png" alt="logo" width="25px"> © Espresso Crema 2020 </a>
+</footer>
 
 </body>
 </html>
