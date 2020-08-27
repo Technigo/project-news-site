@@ -181,13 +181,10 @@ footer a {
   }
 
   .other-news-container {
-    flex-direction: row;
-    /*background-color: rgb(255, 47, 47);*/
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start; /* What do I need to do to get them to be center but still get the new row left aligned */
   }
 
   .other-news-card {
-    width: 15%;
+    width: 15%; /* At screen size width 1680 I get fice cards in a row, how do I handle that? */
   }
 }
