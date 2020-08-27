@@ -26,7 +26,6 @@ body {
 /* introduction section */
 
 .introduction {
-
   background: darkolivegreen;
   border: solid black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -103,23 +102,18 @@ footer h2 {
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
-  header {
-    
+  .other-news {
+   flex-direction: row;
+    flex-wrap: wrap;
+  
   }
 
-.other-news {
-  flex-direction: row;
-  flex-wrap: wrap;
+  .other-news div {
+   width: 40%;
+   height: 50%;
+   margin: 1px;
   
-}
-
-.other-news div {
-  width: 40%;
-  height: 50%;
-  margin: 1px;
-  
-  
-}
+  }
 
 }
 
@@ -127,12 +121,8 @@ footer h2 {
 
 @media (min-width: 1025px) {
 
-  header {
-   
-  }
-
   .other-news {
-    flex-direction: row;
+  flex-direction: row;
     flex-wrap: wrap;
     
   }
