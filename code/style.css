@@ -23,7 +23,7 @@ font-size: 20px;
 }
 
 .logo {
-    width: 120px; 
+    width: 150px; 
 }
 
 header {
@@ -83,21 +83,11 @@ nav a  {
 .big-news-content div {
   display: flex;
 }
-/* 
-.red {
-background: red;
-}
-
-.pink {
-background: pink;
-} */
 
 button {
   display: block;
   text-size-adjust: none; 
 }
-
-
 
 /*** THE NEWS CARDS CONTENT ***/
 
@@ -121,9 +111,11 @@ a {
   color: black;
 }
 
-img {
+.news-card-content img {
 width: 100px;
 height: 100px;
+display: flex;
+justify-content: center;
 }
 
 .news-card {  
@@ -150,12 +142,14 @@ footer {
 /*** MEDIA QUERIES  ***/
 
 
-/* Allt under detta är Padda */
+/*** Tablett ***/
 @media (min-width: 667px) {
 
   body {
     background: snow;
     }
+
+
 
   header {
     justify-content: space-between;
@@ -177,9 +171,13 @@ nav {
    grid-template-columns: repeat(2, 1fr);
 }
 
+/* .news-card-content a {
+  color: blue;
+}
+ */
 }
 
-/* Allt under detta är Desktop */
+/*** Desktop ***/
 @media (min-width: 1024px) {
 
 .news-card-content {
