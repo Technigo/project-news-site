@@ -213,36 +213,40 @@
 
 /*** Media for desktop ***/
   @media (min-width: 1025px) {
-  header {
-    background: white;
-    color: #89507f;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100px;
-   }
-     /***
-
-***/
-
-  header img {
-  height: 100px;
-  }
-
-  h1 {
-    color: #89507f;
-    margin: 10px;
-  }
-
-header a {
-    display: block;
-  }
-   
-  img {
-    border-radius: 10%;
-    }
   
+  /*** Header ***/
+    header {
+      background: white;
+      color: #89507f;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 120px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    header img {
+      height: 100px;
+    }
+
+    h1 {
+      color: #89507f;
+      margin: 10px;
+    }
+
+    header a {
+      color: #89507f;
+      text-decoration-line: none;
+    }
+
+  /*** All images ***/
+    img {
+     border-radius: 10%;
+    } 
+
+  /*** Section of news/cards ***/
     .big-news {
       display: flex;
       flex-direction: row;
@@ -251,51 +255,56 @@ header a {
       align-content: center;
       margin-bottom: 10px;
       border-bottom-style: solid;
-  }
+      border-color: white;
+    }
   
-  .big-news img {
-    width: 425.333px;
-    margin: 20px;
-  }
-  
-  .big-news-text {
-    padding: 15px;
-    margin: 20px;
-  }
-  
-  .other-news-cards {
+    .big-news img {
+      height: 300px;
+      margin: 20px;
+    }
     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  
-  }
-  
-  .card {
-    margin: auto;
-    padding: 15px;
-    background: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 20%;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
-  }
-  
-  .card img {
-      max-width: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 10px;
+    .big-news-text {
+      padding: 15px;
+      margin: 20px;
+      color: white;
+      font-family: monospace;
+    }
+    
+    .other-news-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    
+    }
+    
+    .card {
+      margin: auto;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 20%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      color: #89507f;
+      font-family: monospace;
+      border-radius: 10px;
+    }
+    
+    .card img {
+      max-width: 90%;
+      padding-top: 15px;
       padding-bottom: 10px;
-      object-fit: cover;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+    }
+
+    .container {
+      margin: 5px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 
     /*** Footer ***/
     footer {
@@ -303,6 +312,4 @@ header a {
       color: white;
       font-family: monospace;
     }
-  
-
-}
+  }
