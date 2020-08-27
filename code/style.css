@@ -1,4 +1,116 @@
+*, *::before, *::after { box-sizing: border-box; }
+
 html {
-  background: #0025ff;
-  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+} /* Best practise in default - bescause of the box scale inside the border instead of outside = more predictable*/
+
+body {
+  background: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
+/**** header with logo & navigation-style ****/
+.logo {
+  background-color: rgb(206, 192, 247);
+  display:flex; /* flexbox - parent */
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+
+.logo img{
+  padding: 0;
+  width: 200px;
+}
+
+.logo h1{
+  width: 100%;
+  height: 200px;
+  padding: 120px 90px 150px 90px;
+  font-size: 65px;
+}
+
+
+nav { /* flexbox - parent/child */
+  display: flex;
+  background-color: #1400ff5e;
+}
+
+nav a {
+    color: rgb(19, 19, 36);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 35px 15px 35px;
+}
+
+
+/**** Head news ****/
+
+section{
+  display: flex; /* flexbox parent */
+  flex-direction: row;
+}
+
+.head-news{ /* flexbox child? */
+  border: solid 5px rgb(206, 192, 247);
+  color: black;
+  margin: 15px;
+}
+
+.head-news img{
+  width: 100%;
+}
+
+.head-news h2{
+width: 100%;
+font-size: 54px;
+}
+
+.head-news p {
+width: 82%;
+font-size: 18px;
+line-height: 24px;
+}
+
+/**** News boxes ****/
+.news-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: solid;
+}
+
+.news-box img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+/**** Footer ****/
+
+footer {
+  background-color: rgb(206, 192, 247);
+  left: 0px;
+  right: 0px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
