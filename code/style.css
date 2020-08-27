@@ -1,5 +1,5 @@
 body {
-  background: #c6c5b9;
+  background: #e0e1dd;
   color: #393d3f;
   font-family: 'Athiti', Arial, Helvetica, sans-serif;
   margin: 0;
@@ -72,6 +72,7 @@ nav a {
 .big-news img {
   width: 100%;
   border-radius: 5%;
+  box-shadow: 10px 10px 0px 0px #c6c5b9;
 }
 
 .big-news div {
@@ -92,25 +93,33 @@ nav a {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cards a {
-  /* border: 2px solid #546a7b; */
   border-radius: 5%;
-  width: 100%;
+  width: 340px;
   background: #393d3f;
   text-decoration: none;
   color: #c6c5b9;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 20px 0px 20px;
-  margin: 16px 32px;
+  margin: 10px;
+  box-shadow: 10px 10px 0px 0px #c6c5b9;
 }
 
 .cards a img {
   width: 100%;
   border-radius: 5%;
+}
+
+.cards a figure {
+  margin: 30px 30px 10px 30px;
+}
+
+.cards a figcaption {
+  margin: -5px;
 }
 
 .description {
@@ -149,10 +158,10 @@ footer {
       margin: 24px;
   }
 
-  .cards a {
+  /* .cards a {
     width: 35%;
     flex-grow: 1;
-  }
+  } */
 }
 
 @media (min-width: 900px) {
@@ -165,8 +174,8 @@ footer {
     width: 50%;
   };
 
-  .cards a {
-    width: 30%;
+  /* .cards a {
+    width: 10%;
     flex-grow: 1;
-  }
+  } */
 }
