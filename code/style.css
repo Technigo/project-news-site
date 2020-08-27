@@ -3,42 +3,44 @@
   src: url("Fonts/CompactaItalicRegular.ttf");
 }
 
+@font-face {
+  font-family: backstreet;
+  src: url("Fonts/Backstreet.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #fff8dc;
   color: #000000;
-  font-family: compactaItalic, sans-serif;
+  font-family: backstreet sans-serif;
   margin: 0;
 }
 
 h2 {
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 44px;
 }
 
 h3 {
   font-size: 26px;
 }
 
-h4 {
-  font-size: 32px;
-  font-weight: 100;
-}
-
-.container {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 /*** HEADER ***/
 
 header {
   background: #9c5ace;
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 40px;
+  padding: 30px 20px;
 }
 
 header img {
@@ -71,97 +73,45 @@ nav a {
   border-radius: 5px;
 }
 
-/*** BIG NEWS CONTAINER ***/
+/*** BIG NEWS ***/
 
-.big-news .container {
-  padding: 16px 16px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+.big-news  {
+width: 100%;
+margin: 0 auto;
+padding: 16px;
 }
 
 .big-news img {
-  width: 100%;
+width: 100%;
+align-self: center;
 }
 
 .big-news div {
-  text-align: center;
+width: 100%;
+text-align: center;
 }
 
-/*** ARTICLE NEWS CONTAINER ***/
-
-.article-news-container {
-  text-align: center;
-  padding: 24px;
-}
+/*** ARTICLE NEWS ***/
 
 .article-news {
-  display: flex;
-  flex-wrap: wrap;
+width: 100%;
+text-align: center;
+padding: 24px;
 }
 
 .article-news a {
-  background: #9c5ace;
-  border: 2px solid #24292d;
-  border-radius: 5px;
-  width: 100%;
-  text-decoration: none;
-  color: #000;
-  box-shadow: 12px 12px 0 0 #999;
-  padding: 16px;
-  margin-bottom: 16px;
+background: #9c5ace;
+border: 2px solid #24292d;
+border-radius: 5px;
+width: 100%;
+text-decoration: none;
+color: #000;
+box-shadow: 12px 12px 0 0 #999;
+padding: 16px;
+margin-bottom: 16px;
 }
 
 .article-news a img {
-  width: 80%;
-  margin: 16px;
-}
-
-/*** MEDIA QUERIES ***/
-
-@media (min-width: 768px) {
-  header {
-    justify-content: space-between;
-  }
-
-  nav {
-    display: inline-block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .big-news div {
-    text-align: left;
-  }
-
-  .article-news a {
-    width: 45%;
-    flex-grow: 1;
-    margin: 16px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .big-news .container {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .big-news img {
-    width: 50%;
-  }
-
-  .article-news {
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .article-news a {
-    width: 18%;
-    flex-grow: 1;
-    margin: 16px;
-  }
+width: 80%;
+margin: 16px;
 }
