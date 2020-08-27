@@ -4,4 +4,4 @@ First I took a couple of days just to think about what I was going to create. I 
 
 I realised when I was done with everything that it did not look perfect in mobile device (I looked in the inspector tool and chose different mobile phones). I guess this was because during my working process I scaled my site to a minimum, believing this was a mobile view. but I guess I should have used the inspector tool for that. 
 
-Here i sthe link to my site: 
+Here is the link to my site: 
