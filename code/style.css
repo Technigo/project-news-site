@@ -1,4 +1,222 @@
-html {
-  background: #0025ff;
+body {
+  background: #fff;
+  color: #4d4d4d;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+  color: #000;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Header */
+header {
+  height: 80px;
+  padding: 0 16px;
+  margin: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  height: 25px;
+  width: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  height: 5px;
+  width: 30px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.logo-ico {
+  height: 65px;
+}
+
+.logo-full {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+a:hover {
+  background-color: #ffffcc;
+  color: #000;
+}
+
+/* Monthly Cloud */
+.monthly-cloud .container {
+  margin-top: 0;
+  padding: 100px 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.monthly-cloud img {
+  width: 80%;
+}
+
+.monthly-cloud div h2 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p.content {
+  text-align: left;
+}
+
+/* Cloud Cards */
+.cloud-card-container {
+  text-align: center;
+  padding: 24px;
+  background-color: #fcfce5;
+}
+
+.cloud-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cloud-cards div {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #4d4d4d;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+
+.cloud-cards div:hover {
+  background-color: #ebe0e6;
+}
+
+div.high {
+  border: 2px solid #d8eee6;
+  box-shadow: 5px 5px 0 0 #d8eee6;
+}
+div.med {
+  border: 2px solid #dbe6f0;
+  box-shadow: 5px 5px 0 0 #dbe6f0;
+}
+div.low {
+  border: 2px solid #dbdbf0;
+  box-shadow: 5px 5px 0 0 #dbdbf0;
+}
+
+.cloud-cards div img {
+  align-items: center;
+  width: 200px;
+}
+
+/* Footer */
+footer {
+  height: 120px;
+  background: #4d4d4d;
   color: #fff;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  header {
+      justify-content: space-between;
+  }
+
+  .logo-ico {
+    display: none;
+  }
+
+  .logo-full {
+    display: inline-block;
+  }
+
+  .cloud-card-container {
+      text-align: left;
+  }
+  .cloud-card-container .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cloud-card-container img{
+    width: 180px;
+  }
+
+  .cloud-cards div {
+  width: 250px;
+  flex-grow: 1;
+  margin: 16px;
+  }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+      display: none;
+  }
+
+  .cloud-card-container .container {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .cloud-card-container img{
+      width: 180px;
+  }
+
+  .cloud-cards div {
+    width: 200px;
+    flex-grow: 1;
+    margin: 16px;
+  }
 }
