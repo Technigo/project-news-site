@@ -96,7 +96,7 @@ nav a {
 }
 
 .small-card img {
-  width: 100%;
+  width: 100%; /* taking away this makes the image gigantic in Chrome. But no visible effect in Firefox */
 }
 
 .small-card a {
@@ -186,8 +186,10 @@ content: '\1F9E0';
   .top-card div {
     padding: 20px;
     border-bottom: none;
-    width: 1000px;
+    width: 1000px; 
     flex-shrink: 0.9;
+    /* Taking away the two lines above makes the div wider and the image next to it small in Firefox, 
+    whereas no visible effect in Chrome */
   }
   
   .cards {
