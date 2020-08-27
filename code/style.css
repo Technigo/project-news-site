@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Lato:wght@700&family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: #fff;
   color: #000;
   margin: 0;
 }
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 18px 0 5px 20px;
+}
+
+p {
+  font-family: 'David Libre', serif;
+  font-size: 14px
+}
                                     /*  HEADER BELOW */
 header {
   height: 80px;
@@ -73,9 +93,157 @@ header nav a:last-child {
   margin-right: 20px;
 }
 
+blockquote {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  font-family: 'David Libre', serif;
+}
+
+                                      /* BIG NEWS SECTION GOES HERE BELOW  */
+
+.big-news-container {
+  margin: 40px 20px;
+  color: #fff;
+}
+
+.big-news-container a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  text-decoration: none;
+  /* border: 2px solid #000; */
+}
+
+.big-news-container img {
+  width: 100%;
+  border: 1px solid #47353A;
+}
+
+.big-news-text {
+  margin: 0 20px;
+  color: #000;
+}
+
+p .introtext {
+  font-family: 'Lato', sans-serif;
+}
+
+.big-news-container p:last-child {
+  margin-bottom: 0;
+  max-width: 40ch;
+}
+
+.card_heading {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-bottom: 1px solid #290C01;
+}
+
+.card_heading h3 {
+  margin-bottom: 5px;
+}
+                                        /* NEWSCARDS SECTION STARTS HERE */
+.newscard_container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 1px solid #000; */
+  /* behövs justify-content center här? */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.newscard_container a {
+  text-decoration: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.newscard_container img {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+}
+
+.newscard_bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px 5px 20px;
+  color: #290C01;
+}
+
+.newscard_bottom h3 {
+  margin: 18px 0 10px 0;
+  text-transform: capitalize;
+}
+
+.newscard_bottom p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+
+/* .category_T {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  color: #BF9484;
+  background: #75594E;
+} */
+
+
+/* Media query for relative and absolute position of big-news-container for mobile screen only below (max-width). I added a max-width media query because I didn't know how to override the relative/absolute positioning on bigger screens doing mobile-first.*/
+
+@media (max-width: 767px) {
+  .big-news-container a {
+    position: relative;
+    width: 100%;
+  }
+/* Why isn't this element 100% width for sceens under 767px as I have specified here? */
+  .big-news-container img {
+    width: 100%;
+  }
+
+  .big-news-container .big-news-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .big-news-text {
+    color: #fff;
+  }
+
+  .newscard_container {
+    align-items: center;
+  }
+}
+
+                                      /* media queries for screens larger than mobile below */
 @media (min-width: 620px) {
   header h1 {
     font-size: 48px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 }
 
@@ -90,10 +258,44 @@ header nav a:last-child {
   
  .hamburger {
     display: none;
+  }
+
+  .big-news-container img {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .big-news-text p {
+    font-size: 18px;
+  }
+
+  .newscard_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* syfte: att ta bort align items center vilket tar bort den vertikala centreringen som angetts ovan */
+    align-items: none;
+  }
+
+  .newscard_container a {
+    width: 40%;
+    /* ändra till width 80% på samma selector ovan! och ta bort width! */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .newscard_container a:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.4);
+    transform: translate(0px, 3px);
+    transition: transform 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 @media (min-width: 1024px) {
-  
+  p:last-child {
+    max-width: 85ch;
+    }
 }
 
 }
