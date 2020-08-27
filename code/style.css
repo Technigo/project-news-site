@@ -100,30 +100,18 @@ header a {
     flex-direction: row;
   }
 
-  header img {
-    height: 90%;
+  .logo {
+    order: 1;
+    height: 100px;
+  }
+
+  .linkleft {
     order: 0;
   }
-
-  header a #home {
-    order: -2;
-  }
-
-  header a #news {
-    order: -1;
-  }
-
-  header a #contact {
-    display: block;
-    order: 1;
-  }
-
-  header a #about {
-    display: block;
+  .linkright {
     order: 2;
   }
-
-
+  
   h1 {
     display: none;
   }
@@ -195,25 +183,23 @@ header a {
     background: white;
     color: #89507f;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-  }
+    height: 100px;
+   }
 
   header img {
-    height: 90%;
-    order: 0;
+  height: 100px;
   }
-
 
   h1 {
-   
+    color: #89507f;
+    margin: 10px;
   }
 
-  header a {
-
+header a {
+    display: block;
   }
    
   img {
