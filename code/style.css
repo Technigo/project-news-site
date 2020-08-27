@@ -79,6 +79,13 @@ nav a{
   margin-left: 16px;
 }
 
+nav a:hover{
+  color: #515151;
+  text-decoration: none;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
 /*** MAIN ARTICLE SECTION ***/
 
 .main-article .container {
@@ -112,7 +119,7 @@ nav a{
   background: #dddddd;
   outline: none; 
   color: #515151;  
-  padding: 15px; 
+  padding: 15px 15px 10px 15px; 
   border-radius: 10px; 
   font-size: 18px; 
 }
@@ -132,10 +139,19 @@ nav a{
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
+  position: relative;
+  animation-duration: 4s;  
+  animation-fill-mode: forwards;
+  animation-name: falling;
+}
+
+@keyframes falling {
+  from {top: -40px;}
+  to {top: 0px;}
 }
 
 .cards a {
-  border: 2px solid #dddddd;
+  border: 0.5px solid #dddddd;
   border-radius: 5px;
   width: 100%;
   text-decoration: none;
@@ -143,7 +159,6 @@ nav a{
   padding: 16px;
   margin-bottom: 32px;
 }
-
 
 .cards a img {
   width: 90%;
@@ -163,6 +178,70 @@ nav a{
   display: flex;
   justify-content: center;
 }
+
+/* SOCIAL MEDIA ROW */ 
+.icon-row{
+  background-color: #f7f7f7;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 45px;
+ }
+ 
+ .social-menu ul{
+ position: absolute;
+ left: 50%;
+ padding: 20px;
+ margin-top: 45px;
+ transform: translate(-50%,-50%);
+ display: flex;
+ }
+ 
+ .social-menu ul li {
+   list-style: none;
+   margin: 0px 15px;
+ }
+ 
+ .social-menu ul li:nth-child(1) a:hover{
+   background-color: #3b5998;
+ }
+ 
+ .social-menu ul li:nth-child(2) a:hover{
+   background-color: #55acee;
+ }
+ 
+ .social-menu ul li:nth-child(3) a:hover{
+   background-image: linear-gradient(#cc4588, #fed269);
+ }
+ 
+ .social-menu ul li:nth-child(4) a:hover{
+   background-color: #ff0000;
+ }
+ 
+ .social-menu ul li .fa {
+ font-size: 30px;
+ line-height: 60px;
+ color: #000000;
+ }
+ 
+ .social-menu ul li .fa:hover{
+   color: #ffffff;
+ }
+ 
+ .social-menu ul li a {
+   display: block;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   text-align: center;
+   transition: .6s;
+   box-shadow: 0 5px 4px rgba(0,0,0,.5);
+ }
+ 
+ .social-menu ul li a:hover {
+   transform: translate(0,-10px);
+ }
+ 
 
 /*** FOOTER ***/
 
@@ -197,7 +276,6 @@ footer a {
   .main-article div {
    text-align: left;
   }
-
 }
 
 @media (min-width: 700px){
@@ -215,7 +293,7 @@ footer a {
   flex-grow:1;
   margin: 16px;
 }
-} 
+}
 
 @media (min-width:1024px){
   header{
