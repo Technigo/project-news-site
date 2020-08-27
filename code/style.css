@@ -115,13 +115,12 @@ p.content {
 
 .cloud-cards div {
   background: #fff;
-  border: 2px solid #d5d5d5;
   border-radius: 10px;
   width: 100%;
   text-decoration: none;
   color: #4d4d4d;
   padding: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .cloud-cards div:hover {
@@ -129,23 +128,21 @@ p.content {
 }
 
 div.high {
+  border: 2px solid #d8eee6;
   box-shadow: 5px 5px 0 0 #d8eee6;
 }
 div.med {
+  border: 2px solid #dbe6f0;
   box-shadow: 5px 5px 0 0 #dbe6f0;
 }
 div.low {
+  border: 2px solid #dbdbf0;
   box-shadow: 5px 5px 0 0 #dbdbf0;
 }
 
 .cloud-cards div img {
   align-items: center;
   width: 200px;
-}
-
-.cloud-cards div {
-  border: 2px solid #d8eee6;
-  border-radius: 16px;
 }
 
 /* Footer */
