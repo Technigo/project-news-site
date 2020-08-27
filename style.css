@@ -233,6 +233,18 @@ footer {
   
 }
 
+.test{
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: #A0844E;;
+  }
+}
 
 /***** MEDIA QUERIES ****/ 
 
@@ -324,8 +336,8 @@ footer {
   }
 
   .description{
-    font-size: 0.7em;
-    opacity: .9;
+    font-size: 0.9em;
+    opacity: 0.8;
 
   }
 
