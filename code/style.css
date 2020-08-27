@@ -45,6 +45,7 @@ nav a  {
 }
 
 /* CONTAINERS*/
+
 .plants {
   background:  #d0d8c1;
   padding: 25px;
@@ -72,13 +73,14 @@ h4{
   box-shadow: 12px 12px 20px 0 #61725a;
   width: 100%;
 }
-.plant-containers img {
-  width: 40%;
+
+.card h4 {
+
+  margin:0px;
 }
 
-.plant-containers img:hover {
-  opacity: 0.4;
-  
+.plant-containers img {
+  width: 40%;
 }
 
 
@@ -93,9 +95,33 @@ h4{
 
 @media (min-width: 900px) {
   .card {
-    font-size: 0;
     width: 25%; 
     flex-grow: 1;
   }
 
-}
+  .img-container:hover img {
+    opacity: 0.5;
+    
+  }
+
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: rgb(247, 247, 247);
+  
+  }
+  .img-container h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    font-size: 30px;
+  
+  }
+
+  .img-container:hover h4 {
+    visibility: visible;
+  }
+
+}     
