@@ -1,9 +1,10 @@
 html {
   background: #FFFFFF;
-  color:#121212;
+  color: #121212;
 }
 
 /** HEADER **/
+
 header {
   padding: 10px 20px 0px 20px;
   background: #FFFFFF;
@@ -22,12 +23,13 @@ header {
 
 .hamburger {
   display: flex;
-  flex-direction: column; /*to spread the lines, since they are stacked*/
+  flex-direction: column;
+  /*to spread the lines, since they are stacked*/
   justify-content: space-between;
   height: 12px;
   width: 18px;
   margin: 0px, 0px, 0px, -80px;
-} 
+}
 
 .hamburger div {
   width: 18px;
@@ -52,8 +54,8 @@ header img {
   }
 }
 
-
 /** NAVIGATION BAR**/
+
 nav {
   display: none;
 }
@@ -69,9 +71,9 @@ nav {
   .nav-image {
     display: none;
   }
-
   nav a:nth-last-of-type(3) {
-    display: none; /*had to remove <a>; there was space left if only <img> was removed*/
+    display: none;
+    /*had to remove <a>; there was space left if only <img> was removed*/
   }
 }
 
@@ -86,6 +88,7 @@ main {
 }
 
 /** BIG NEWS BOX**/
+
 .big-news {
   display: flex;
   justify-content: space-around;
@@ -108,7 +111,7 @@ main {
 .big-news-article {
   /* border: 3px blue solid; */
   width: 100%;
-  height: 200px;    
+  height: 200px;
   padding: 5px;
   font-family: Helvetica;
 }
@@ -126,7 +129,7 @@ main {
   /* border: 3px solid orange; */
   width: 100%;
   /* border-bottom: 2px #E5E5E5 solid; */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
@@ -138,7 +141,7 @@ main {
 }
 
 .big-news-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .big-news-article a {
@@ -202,8 +205,9 @@ h2 {
 }
 
 .small-news img {
-  width: 50%;
-  height: 130px;
+  width: 40%;
+  height: 90%;
+  align-self: center;
 }
 
 .small-news article {
@@ -216,16 +220,16 @@ h2 {
 
 .small-news-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   /* border-top: 1px #E5E5E5 solid; */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 5px;
   margin-bottom: 10px;
 }
-  
+
 @media (min-width: 768px) {
   .small-news-card {
     width: 48%
@@ -233,10 +237,11 @@ h2 {
 }
 
 /* On mouse-over, add a deeper shadow */
+
 .small-news-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-  
+
 footer {
   background: #000000;
   position: absolute;
@@ -269,4 +274,3 @@ body {
   /* display: inline; */
   margin: 0;
 }
-
