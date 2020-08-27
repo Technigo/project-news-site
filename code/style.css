@@ -9,6 +9,7 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: #214273;
 }
 
 /* HEADER */
@@ -17,23 +18,47 @@ h1 {
     width: 100%;
     height: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     padding: 10px 0px;
-    background: white;
-}
-
-.header-parent div {
-    width: 100%;
-    height: 90px;
-    padding: 10px;
+    border-bottom: solid 1px #214273;
+    box-sizing: border-box;
 }
 
 .header-child {
     box-sizing: border-box;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
 }
+
+.header-child h1 {
+    margin-left: 10px;
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 24px;
+    box-sizing: border-box;
+}
+    
+.hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background: #214273;
+    border-radius: 2px;
+}
+
+.header-parent nav {
+    display: none;
+}
+
 
 /* MAIN ARTICLE */
 
@@ -88,6 +113,26 @@ h1 {
 /* MEDIA QUERY 1: SCREEN SIZE 768PX OR BIGGER & 2 CARDS PER ROW*/
 
 @media (min-width:768px) {
+
+    .hamburger-menu {
+        display: none;
+    }
+    .header-parent nav {
+        display: flex;
+        justify-content:space-between;
+        align-content: center;
+    }
+
+    .header-parent nav a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        color: #214273;
+        padding: 0 15px;
+    }
+
+    .header-parent nav a:hover {
+       color: #ff8cc5;
+    }
 
     .other-article-parent div {
         width: 50%;      
