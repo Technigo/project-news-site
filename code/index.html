@@ -1,122 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The News Site Project</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/2fb5a23775.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <span class="icon">
-        <i class="fas fa-seedling"></i>
-      </span>
-      <h1>Veggie Magazine</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The News Site Project</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/2fb5a23775.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+</head>
+
+<body>
+  <header>
+    <span class="icon">
+      <i class="fas fa-seedling"></i>
+    </span>
+    <h1>VEGGIE MAGAZINE</h1>
+    <a href="#">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </a>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Articles</a>
+      <a href="#">Recipes</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="big-news">
+    <img class="big-news-image" src="images/herbs.jpg" alt="image of herbs">
+    <div class="news-text">
+      <h2>10 FRESH HERBS AND HOW TO USE THEM</h2>
+      <p>The ultimate guide for cooking with fresh herbs</p>
+      <a class="read-link" href="#">Read more</a>
+    </div>
+  </section>
+  <section class="card-container">
+    <h3>ARTICLES</h3>
+    <p>Get inspired</p>
+    <section class="cards">
       <a href="#">
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <img class="card-image" src="./images/bowl.jpg" alt="image of a acai bowl">
+        <div class="card-text">
+          <h4>HOW TO MAKE YOUR OWN ACAI BOWL</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. </p>
         </div>
       </a>
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Articles</a>
-        <a href="#">Recipes</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <main class="main-container">
-      <section class="big-news">
-          <a href="#">
-            <img class="big-news-image" src="images/herbs.jpg" alt="image of herbs">
-          </a>
-          <div class="news-text">
-            <h2>10 FRESH HERBS AND HOW TO USE THEM</h2>
-            <p>The ultimate guide for cooking with fresh herbs</p>
-            <a class="read-link" href="#">Read more</a>
-          </div>
-      </section>
-      <section class="card-container">
-        <h3>ARTICLES</h3>
-        <p> Lorem Ipsum dolor</p>
-          <section class="cards">
-              <a href="#">
-                <img class="card-image" src="./images/bowl.jpg" alt="image of herbs">
-                  <div class="card-text">
-                    <h4>HOW TO MAKE YOUR OWN ACAI BOWL</h4>
-                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  </div>
-                </a>
-            <a href="#">
-              <img class="card-image" src="./images/restaurant.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>A VEGAN GUIDE TO STOCKHOLM</h4>
-                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/bread.jpeg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/restaurant.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>A short text about this article</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/bowl.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>A short text about this article</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/restaurant.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>A short text about this article</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/bowl.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>A short text about this article</p>
-                </div>
-            </a>
-            <a href="#">
-              <img class="card-image" src="./images/restaurant.jpg" alt="image of herbs">
-                <div class="card-text">
-                <h4>Lorem ipsum</h4>
-                <p>A short text about this article</p>
-                </div>
-            </a>
-          </section>
-      </section>
-    </main>
-    <footer>
-      <section class="contact-info">
-        <h5>Contact info</h5>
-        <p>email@email.com</p>
-        <span class="social-icons">
-          <i class="fab fa-facebook-square"></i>
-        </span>
-        <span class="social-icons">
-          <i class="fab fa-instagram-square"></i>
-        </span>
-        <span class="social-icons">
-          <i class="fab fa-pinterest-square"></i>
-        </span>
-      </section>
-    </footer>
+      <a href="#">
+        <img class="card-image" src="./images/restaurant.jpg" alt="image of people eating at a restaurant">
+        <div class="card-text">
+          <h4>A VEGAN GUIDE TO STOCKHOLM</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/bread.jpeg" alt="image of someone baking bread">
+        <div class="card-text">
+          <h4>THE SCIENCE OF BREADMAKING</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/brunch.jpeg" alt="image of a set table">
+        <div class="card-text">
+          <h4>EASY BRUNCH RECIPES</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/spices.jpeg" alt="image of spoons with spices">
+        <div class="card-text">
+          <h4>SPICE UP YOUR LIFE!</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Lorem Ipsum dolor sit amet.</p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/pasta.jpeg" alt="image of a plate with pasta">
+        <div class="card-text">
+          <h4>10 VEGETARIAN PASTA RECIPES</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/dessert.jpeg" alt="image of dessert">
+        <div class="card-text">
+          <h4>EASY VEGAN DESSERTS</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Lorem Ipsum dolor sit amet.</p>
+        </div>
+      </a>
+      <a href="#">
+        <img class="card-image" src="./images/salad.jpeg" alt="image of salad">
+        <div class="card-text">
+          <h4>SALAD RECIPES</h4>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        </div>
+      </a>
     </section>
-  </body>
+  </section>
+  </main>
+  <footer>
+    <section class="contact-info">
+      <h5>Contact info</h5>
+      <p>email@email.com</p>
+      <span class="social-icons">
+        <i class="fab fa-facebook-square"></i>
+      </span>
+      <span class="social-icons">
+        <i class="fab fa-instagram-square"></i>
+      </span>
+      <span class="social-icons">
+        <i class="fab fa-pinterest-square"></i>
+      </span>
+    </section>
+  </footer>
+  </section>
+</body>
+
 </html>

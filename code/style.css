@@ -4,13 +4,7 @@ body{
  margin: 0 auto;
  padding: 0;
  width: 100%;
- font-family: serif;
-
-}
-
-main-container {
-  width: 100%;
-  margin: auto;
+ font-family: "Cardo";
 }
 
 a {
@@ -23,7 +17,7 @@ a {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #A3C6C4;
   width: 100%;
   margin: 0;
@@ -53,7 +47,7 @@ header {
 } 
 
 h1 {
-  font-size: 40px;
+  font-size: 24px;
   margin-left: 20px;
 }
 
@@ -78,8 +72,8 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  width: auto;
+  margin-top: 10px;
+  width: auto; 
 }
 
 .big-news-image {
@@ -114,7 +108,7 @@ h2 {
   background-color: #A3C6C4;
   color: #fff;
   font-size: 20px;
-  padding: 8px;
+  padding: 2px 8px;
   border-radius: 20px;
 }
 
@@ -130,13 +124,7 @@ h3 {
   flex-direction: column;
   text-align: center; /* for the h3 & p*/
   align-items: stretch;
-  /*
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  align-items: stretch;
-  margin: 0 auto;*/
-  */
+
 }
 
 .cards {
@@ -153,11 +141,10 @@ h3 {
   width:90%;
   box-shadow: 5px 5px 0 0 #E0E7E9;
   margin: 10px 5px;
- 
 }
 
 .card-image {
-  margin: 20px;
+  margin: 20px 5px;
   width: 90%;
 }
 
@@ -181,7 +168,7 @@ h4 {
 
 footer {
   background-color: #A3C6C4;
-  margin: 50px 0 0;
+  margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -190,7 +177,10 @@ footer {
 
 h5 {
   font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: -10px;
 }
+
 .contact-info {
   text-align: center;
   margin-bottom: 40px;
@@ -204,6 +194,7 @@ h5 {
 
 /*** ipad ***/
 @media (min-width: 667px) {
+
   header {  
     justify-content: space-between;
   }
@@ -220,6 +211,10 @@ h5 {
   .hamburger {
     display: none;
   }
+
+  h1 {
+    font-size: 30px;
+  } 
 
   .big-news {
     margin: 20px;
@@ -256,7 +251,7 @@ h5 {
   .cards a {
     flex-basis: auto;
     width: 45%;
-    margin: 0 5px 20px;
+    margin: 0 5px 20px 5px;
   }
 }
 
@@ -264,8 +259,16 @@ h5 {
 
 @media (min-width: 1024px) {
   header {
-    
+    justify-content:;
+    align-items: baseline;
+  }
 
+  nav {
+    
+  }
+
+  h1 {
+    font-size: 44px;
   }
 
   .big-news{
@@ -275,7 +278,7 @@ h5 {
   }
 
   .big-news-image {
-    width: 800px;
+    width: 700px;
   }
 
   .news-text {
@@ -291,10 +294,6 @@ h5 {
   .cards a {
     width: 20%;
     flex-grow: 1;
-  }
-
-  .card-image {
-   
   }
 
   .contact-info {
