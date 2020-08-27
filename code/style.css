@@ -1,4 +1,277 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background: white;
+}
+
+/* * {
+  box-sizing: border-box;
+  } */
+
+@media (min-width: 1px) and (max-width: 667px){
+  header {
+    background: white;
+    color: #89507f;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+   }
+
+  header img {
+  height: 100px;
+  }
+
+  h1 {
+    color: #89507f;
+    margin: 10px;
+  }
+
+header a {
+    display: none;
+  }
+
+  img {
+  border-radius: 10%;
+  }
+
+  .big-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+}
+
+.big-news img {
+  width: 425.333px;
+}
+
+.big-news-text {
+  padding: 15px;
+  margin: 20px;
+}
+
+.other-news-cards {
+  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+
+.card {
+  margin: auto;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+}
+
+/*** Media for tablet ***/
+@media (min-width: 668px) and (max-width: 1024px) {
+  header {
+    background: white;
+    color: #89507f;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  header img {
+    height: 90%;
+    order: 0;
+  }
+
+  header a #home {
+    order: -2;
+  }
+
+  header a #news {
+    order: -1;
+  }
+
+  header a #contact {
+    display: block;
+    order: 1;
+  }
+
+  header a #about {
+    display: block;
+    order: 2;
+  }
+
+
+  h1 {
+    display: none;
+  }
+   
+  img {
+    border-radius: 10%;
+    }
+  
+    .big-news {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 10px;
+      border-bottom-style: solid;
+  }
+  
+  .big-news img {
+    width: 425.333px;
+    margin: 20px;
+  }
+  
+  .big-news-text {
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .other-news-cards {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  
+  }
+  
+  .card {
+    margin: auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .card img {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      object-fit: cover;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  }
+
+/*** Media for desktop ***/
+@media (min-width: 1025px) {
+
+  header {
+    background: white;
+    color: #89507f;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  header img {
+    height: 90%;
+    order: 0;
+  }
+
+
+  h1 {
+   
+  }
+
+  header a {
+
+  }
+   
+  img {
+    border-radius: 10%;
+    }
+  
+    .big-news {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 10px;
+      border-bottom-style: solid;
+  }
+  
+  .big-news img {
+    width: 425.333px;
+    margin: 20px;
+  }
+  
+  .big-news-text {
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .other-news-cards {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  
+  }
+  
+  .card {
+    margin: auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .card img {
+      max-width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      object-fit: cover;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
 }
