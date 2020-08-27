@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #fff;
+  background: #fff8dc;
   color: #000000;
   font-family: compactaItalic, sans-serif;
   margin: 0;
@@ -33,7 +33,7 @@ h4 {
 /*** HEADER ***/
 
 header {
-  background: #FFF;
+  background: #9c5ace;
   height: 80px;
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@ nav a {
 }
 
 .article-news a {
-  background: #fafafa;
+  background: #9c5ace;
   border: 2px solid #24292d;
   border-radius: 5px;
   width: 100%;
@@ -135,6 +135,12 @@ nav a {
   .big-news div {
     text-align: left;
   }
+
+  .article-news a {
+    width: 45%;
+    flex-grow: 1;
+    margin: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -145,6 +151,12 @@ nav a {
 
   .big-news img {
     width: 50%;
+  }
+
+  .article-news {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .article-news a {
