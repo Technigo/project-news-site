@@ -7,17 +7,17 @@ html {
 } /* Best practise in default - bescause of the box scale inside the border instead of outside = more predictable*/
 
 body {
-  background: whitesmoke;
+  background: rgb(206, 192, 247);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /**** header with logo & navigation-style ****/
-.logo {
+.logo {  /* flexboxparent*/
   background-color: rgb(206, 192, 247);
   display:flex; /* flexbox - parent */
   flex-direction: row;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .logo img{
@@ -28,37 +28,47 @@ body {
 .logo h1{
   width: 100%;
   height: 200px;
-  padding: 120px 90px 150px 90px;
+  padding: 80px 90px 150px 90px;
   font-size: 65px;
+  color: black;
 }
 
-
-nav { /* flexbox - parent/child */
+.menu { /* flexbox-parent*/
   display: flex;
-  background-color: #1400ff5e;
+  flex-direction:row;
+  justify-content:center; 
+  background-color: rgb(206, 192, 247);
 }
 
 nav a {
-    color: rgb(19, 19, 36);
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 15px 35px 15px 35px;
+  color: rgb(19, 19, 36);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 35px 45px 35px;
+  color: rgb(106 95 88);
 }
 
+nav a:hover{
+  color: black
+}
 
 /**** Head news ****/
 
-section{
-  display: flex; /* flexbox parent */
+.head-news-container{ /* flexbox parent */
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 80px 20px 80px;
 }
 
-.head-news{ /* flexbox child? */
-  border: solid 5px rgb(206, 192, 247);
+.head-news{ /* flexbox child */
   color: black;
-  margin: 15px;
+  padding: 15px;
+  width: 50%;
 }
 
 .head-news img{
@@ -66,41 +76,96 @@ section{
 }
 
 .head-news h2{
-width: 100%;
-font-size: 54px;
+  width: 100%;
+  font-size: 54px;
 }
 
 .head-news p {
-width: 82%;
-font-size: 18px;
-line-height: 24px;
+  width: 92%;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /**** News boxes ****/
-.news-box {
+
+.news-box-container{  /* flexboxparent*/
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border: solid;
+
+}
+.news-box {  /* flexboxchild*/
+  padding: 15px;
+  width: 20%;
 }
 
 .news-box img {
   width: 100%;
 }
 
-
-
-
-
-
+.box-text {
+  font-size: 18px;
+  color: black;
+}
 
 /**** Footer ****/
-
 footer {
-  background-color: rgb(206, 192, 247);
+  background-color: rgb(106 95 88);
   left: 0px;
   right: 0px;
   height: 200px;
+}
+
+/**** Responsive IPAD ****/
+@media screen and (max-width: 1024px) {
+  
+  .logo img{
+    width: 150px;
+  }
+  .logo h1{
+    height: 200px;
+    padding: 100px 80px 150px 90px;
+    font-size: 40px;
+  }
+
+  .head-news h2{
+    font-size: 44px;
+  }
+  
+  .news-box{
+    width: 50%;
+  } 
+}
+/**** Responsive MOBILE ****/
+@media screen and (max-width: 768px) {
+  
+  .logo h1{
+    display: none;
+  }
+
+  .logo{
+   align-items: center;
+   justify-content: center;
+
+  }
+
+  .menu{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .head-news{
+    width: 100%;
+
+  }
+  .news-box{
+    width: 100%;
+  }
 }
 
 
