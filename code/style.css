@@ -103,12 +103,16 @@ h1 {
 nav {
   display:none;
 }
+ 
+/*** article ***/
+
 
 /*** Section CARDS ***/
 
 .cards {
-  
   margin: 0 auto;
+  border: solid black 2px;
+  height: 100% ;
   display: grid;
   grid-gap: 1rem;
   
@@ -127,6 +131,13 @@ nav {
   overflow: hidden;
   text-align: center;
 }
+
+.cards .article-one img {
+  width: 100%;
+  height: 100%;
+  
+}
+
 
 
 .card .fadedbox {
@@ -185,9 +196,9 @@ button {
   text-decoration: none;
 }
 
-.cards img {
+.card img {
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 
 .cards h4 {
@@ -202,7 +213,7 @@ button {
 
 .cards p {
   margin:0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /*** THE LAST IMAGE ***/
@@ -263,9 +274,14 @@ footer h5 {
     color: black;
     text-decoration: none;
     margin-left: 26px;
-    
   }
   
+  .cards .article-two p {
+   font-size:13px;
+  }
+
+  
+
   .menu {
     height: 30px;
     width: 100%;
@@ -281,13 +297,13 @@ footer h5 {
     grid-template-columns: repeat(2, 1fr);
    }
 
-   .card .nine {
-     grid-column: 2;
-   }
+
 
    nav a:hover, nav a:active {
     text-decoration: underline;
   }
+
+
 
   nav a:hover, nav a:focus {
     color: grey;
@@ -301,6 +317,7 @@ footer h5 {
     padding-top:30px;
     margin:0px;
   }
+
   footer h5 {
     font-size: 15px;
   }
@@ -309,18 +326,16 @@ footer h5 {
 
 @media (min-width: 1024px) {
   
-  .cards { 
-    grid-template-columns: repeat(4, 1fr);
-   }
 
-  header {
-    justify-content: space-between;
-    height: 150px;
+header {
+justify-content: space-between;
+height: 150px;
 }
 h1 {
   font-size: 80px;
   padding-left: 20px;
 }
+
 a {
   font-size: 20px;
 }
@@ -356,6 +371,36 @@ nav a:hover, nav a:active {
 nav a:hover, nav a:focus {
   color: grey;
 }
+
+/*** Changes the sizes and number of columns ***/
+.cards { 
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+
+ }
+
+ .article-one {
+  grid-column: span 1;
+  margin-top: 9px;
+}
+
+.article-two {
+  grid-column: span 3;
+  padding: 10px 0 10px 0;
+}
+.cards .article-two h5 {
+font-size:23px;
+}
+
+.cards .article-two p {
+  font-size:17px;
+  }
+
+  .cards .article-two h4 {
+    font-size:47px;
+    }
+
 footer {
   height: 150px;
 }
