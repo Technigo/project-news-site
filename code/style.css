@@ -1,3 +1,4 @@
+/**** over all styling ****/
 body{
  background-color: #f0f0f0;
  color: #354649;
@@ -64,7 +65,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/*styling of big news section*/
+/**** styling of big news section ****/
 
 .big-news {
   background-color: #fff;
@@ -73,7 +74,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  width: auto; 
+  /*width: auto;*/ 
 }
 
 .big-news-image {
@@ -102,6 +103,7 @@ h2 {
 
 .news-text a:hover {
   font-weight: bold;
+  box-shadow: 1px 1px 0 0 #354649;
 }
 
 .read-link {
@@ -112,7 +114,7 @@ h2 {
   border-radius: 20px;
 }
 
-/**** styling of card container*/
+/**** styling of card container ****/
 
 h3 {
   font-size: 20px;
@@ -140,7 +142,7 @@ h3 {
 
 .cards a {
   background: #fff;
-  width:90%;
+  width: 90%;
   box-shadow: 5px 5px 0 0 #E0E7E9;
   margin: 10px 5px;
 }
@@ -159,7 +161,7 @@ h3 {
 
 .cards a:hover {
   background-color: #fafafa;
-  border: solid 1px #E0E7E9; 
+  border: solid 1px #E0E7E9;
 }
 
 h4 {
@@ -214,10 +216,6 @@ h5 {
 /*** ipad ***/
 @media (min-width: 667px) {
 
-  header {  
-    justify-content: space-between;
-  }
-
   nav {
     display: inline-block;
     margin: 0 20px;
@@ -248,7 +246,6 @@ h5 {
   .read-link {
     font-size: 20px;
     margin: 50px;
-    flex-wrap: wrap;
   }
 
   h2 {
@@ -268,9 +265,17 @@ h5 {
   }
 
   .cards a {
-    flex-basis: auto;
     width: 45%;
     margin: 0 5px 20px 5px;
+  }
+
+  .card-image {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .social-icons {
+    font-size: 40px;
   }
 }
 
@@ -278,7 +283,6 @@ h5 {
 
 @media (min-width: 1024px) {
   header {
-    justify-content:;
     align-items: baseline;
   }
 
