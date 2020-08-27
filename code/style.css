@@ -1,5 +1,6 @@
+
 /* Design for the whole page */
-* { box-sizing: border-box; }
+* {box-sizing: border-box;}
 
 html {
   background: #f5f3f0;
@@ -9,7 +10,7 @@ html {
   text-align: justify;
 }
 
-/* I started with device view first*/
+/* I started with desktop view first*/
 
 /* Styling of the header */
 header {
@@ -30,20 +31,18 @@ header {
   align-items: center;
 }
 
-.topnav img {
+.topnav img { /*LinkedIn symbole*/
   width: 50px;
 }
 
-/* Remove the default link values on topnav links. */
-.topnav a {
+.topnav a { /* Remove the default link values on topnav links. */
   color: #172A3A;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change color on hover & fix the small boxes that are links as*/
-.topnav a:hover {
+.topnav a:hover { /* Change color on hover & remove the default values for links */
   background-color: #e6e2dc;
   color: #172A3A;
   text-decoration: none;
@@ -56,6 +55,17 @@ header {
   padding: 5px;
 }
 
+.img1 { /* Image in the big news section */
+  width: 250px;
+  margin: 5px;
+}
+
+.big-news a { /*To fix the links, removing default values*/
+  color: #172A3A;
+  text-decoration: none;
+}
+
+/* Design of the different fonts */
 h2, h4, p {
   margin: 10px;
   line-height: 1.5;
@@ -65,27 +75,18 @@ p {
   font-size: 14px;
 }
 
-h6 {
+h6 { /* Date for posting news in the big box */
   margin: 0px 0px 0px 10px;
   color: grey;
 }
 
-.grid-child h6 {
+.grid-child h6 { /* Date for posting news in the small boxes */
   margin: 0px 0px 0px 5px;
   color: grey;
 }
 
-.img1 {
-  width: 250px;
-  margin: 5px;
-}
-
-.big-news a { /*To fix the links*/
-  color: #172A3A;
-  text-decoration: none;
-}
-
-.box {  /*Applied both for the first box and the two last boxes */
+/* Flex box adjustments for the first box and the four last boxes*/
+.box { 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,8 +117,17 @@ h6 {
   grid-column: span 3;
 }
 
+.grid-child a { /*To fix the links*/
+  color: #172A3A;
+  text-decoration: none;
+}
+
+h3 { /* Heading in the small boxes*/
+  margin: 5px;
+}
+
 /* Styling for the last box with some animation */
-.eight {
+.eight { /* Make the box shift color */
   animation: pulse 5s infinite;
 }
 
@@ -134,7 +144,7 @@ h6 {
   font-size: 20px;
 }
 
-.eight h6 {
+.eight h6 { /* Make the text for 'date posted' to shift color */
   animation: pulse2 5s infinite;
 }
 
@@ -147,24 +157,16 @@ h6 {
   }
 }
 
-.big-news, .grid-child { /* Adding shadows to the boxes*/
-  box-shadow: 2px 2px 2px 2px #d6d0c7;
-}
-
-.grid-child a { /*To fix the links*/
-  color: #172A3A;
-  text-decoration: none;
-}
-
 /* To make it change color while hovering the boxes */
 div.grid-child:hover,  section.big-news:hover  {
   background-color: #e6e2dc;
 }
-
-h3 { /* Heading in the small boxes*/
-  margin: 5px;
+/* Adding shadows to the boxes*/
+.big-news, .grid-child { 
+  box-shadow: 2px 2px 2px 2px #d6d0c7;
 }
 
+/* Fix the size of the pictures in the small boxes */
 .img-small, .img-smaller { 
   margin: 5px;
   width: 305px;
@@ -185,14 +187,11 @@ footer {
 
  /******* Media queries settings *******/
  @media screen and (max-width: 1024px) { /*Tablet devices */
-  header, .topnav,  {
-    flex-direction: column;
-  }
-
   .topnav a { /* Needed some smaller padding on smaller screen */
     padding: 6px 4px;
   }
 
+  /* To fix the 'special' boxes to columns*/
   .big-news, .spc {
     display: flex;
     flex-direction: column;
@@ -206,6 +205,8 @@ footer {
     width: 100%;
   }
 
+  /* Change of font-size in this smaller format */
+
   h4 {
     font-size: 14px;
   }
@@ -218,7 +219,7 @@ footer {
     font-size: 16px;
   }
 
-
+/* Change of how the boxes span in tablet format */
   .one, .two, .three, .four {
     grid-column: span 2;
   }
@@ -227,7 +228,7 @@ footer {
     grid-column: span 4;
   }
 
-  .img-small  {
+  .img-small  { /* For better fit in tablet format */
     width: 97%;
   }
 
@@ -237,16 +238,16 @@ footer {
 }
 
 @media screen and (max-width: 667px) { /*Mobile devices */
-  html {
+  html { /* Smaller margins needed to focus on reading the text instead*/
     margin: 10px 10px;
   }
 
-  .logo {
+  .logo { 
     width: 120px;
     margin: 15px;
   }
   
-  header, .topnav {
+  header, .topnav { /* Column view in mobile format */
     flex-direction: column;
   }
 
@@ -258,13 +259,14 @@ footer {
     width: 35px;
   }
 
-  .big-news, .box {
+  .big-news, .box { /* To adjust to columns in smaller format */
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 210px;
   }
 
+  /* To make the font-size smaller in mobile format*/
   .topnav a {
     font-size: 12px;
   }
@@ -289,7 +291,7 @@ footer {
     width: 95%;
   } 
 
-  .grid-child {
+  .grid-child { /* Change of how the boxes span in mobile format*/
     grid-column: span 4;
   }
 }
