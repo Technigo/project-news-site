@@ -29,9 +29,9 @@ html{
   }
   h1 {
     display: none;
+    margin-bottom: 15px;
   }
   h2 {
-    display: inline;
     text-align: center;
   }
   h3{
@@ -42,10 +42,6 @@ html{
     display: none;
   }
 
-  /* .nav-links:hover{
-      color: grey;
-  } */
-  
   .nav-links li {
     list-style: none;
   }
@@ -136,7 +132,16 @@ html{
           display: none;
          }
   }
-  @media (min-width: 1025px){
+  @media (min-width: 1024px){
+    body{
+      width: 1000px;
+    }
+    header{
+      flex-direction: row;
+    }
+    header img{
+      display: none;
+    }
     main{
       display: flex;
       flex-direction: column;
@@ -147,12 +152,17 @@ html{
       align-items: center;
       margin: 50px 0;
     }
-    header img{
-      display: none;
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 0;
     }
     .logo{
       display: block;
-      align-self: flex-start;
+      align-self: center;
+      margin: 50px 0 50px 50px;
+      width: 100px;
     }
     .card-container{
       max-width: 1080px;
