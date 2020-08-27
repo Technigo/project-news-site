@@ -2,21 +2,169 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <!-- Animation -->
+    <div id="container-ball">
+      <div id="ball1" class="ball"></div>
+      <div id="ball2" class="ball"></div>
+      <div id="ball3" class="ball"></div>
+      <div id="ball4" class="ball"></div>
+    </div>
+
+    <!-- Some kind of logo and navbar -->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav class="nav">
+        <img
+          class="logo"
+          src="https://turbologo.com/articles/wp-content/uploads/2019/12/friends-logo-cover-1280x720.png"
+          alt="friends logo"
+        />
+
+        <p class="info">Friends</p>
+
+        <div class="links">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Friends"
+            >More info</a
+          >
+          <a target="_blank" href="https://watchfriendsonline.org/"
+            >Watch online</a
+          >
+          <img
+            class="logo-tablet"
+            src="https://turbologo.com/articles/wp-content/uploads/2019/12/friends-logo-cover-1280x720.png"
+            alt="friends logo"
+          />
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/List_of_Friends_and_Joey_characters#:~:text=Friends%20featured%20six%20main%20cast,his%20role%20as%20Tribbiani%20alongside"
+            >Main characters</a
+          >
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/List_of_Friends_and_Joey_characters#:~:text=Friends%20featured%20six%20main%20cast,his%20role%20as%20Tribbiani%20alongside"
+            >Where is Friends filmed
+          </a>
+        </div>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <!-- The big news content -->
+    <div class="content">
+      <section class="big-news">
+        <div class="img-container">
+          <img
+            class="zoom-img"
+            id="content-img"
+            src="https://pics.filmaffinity.com/Friends_TV_Series-875463197-large.jpg"
+            alt="All friends characters"
+          />
+        </div>
+        <div class="info">
+          <h2>‘Friends’ Cast to Reunite for Exclusive HBO Max Special</h2>
+          <p>
+            It’s happening: The “Friends” cast is reuniting for an exclusive
+            untitled unscripted special on HBO Max. Jennifer Aniston, Courteney
+            Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer
+            will return to the original “Friends” soundstage, Stage 24, on the
+            Warner Bros. Studio lot in Burbank to celebrate the long-running
+            series, which ended its run in 2004.
+          </p>
+        </div>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- CARDS  -->
+      <section class="cards-container">
+        <div class="card">
+          <div>TV Show Friends</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://img.ohmymag.co.uk/article/tv/the-friends-series-lasted-10-seasons-and-was-very-successful_49dbb3f9c8027cbc65c0903e171de0f92a9b711d.jpg"
+              alt="all person of friends"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Rachel Green</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Jennifer_Aniston_as_Rachel_Green.jpg/220px-Jennifer_Aniston_as_Rachel_Green.jpg"
+              alt="portret of Jennifer Aniston"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Monica Geller</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://vignette.wikia.nocookie.net/friends/images/2/2f/Monica_Geller-Bing_Season_10.png/revision/latest?cb=20180426182234"
+              alt="portret of Courteney Cox"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Ross Geller</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://upload.wikimedia.org/wikipedia/en/6/6f/David_Schwimmer_as_Ross_Geller.jpg"
+              alt="portret of David Schwimmer"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Joey Tribbiani</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://upload.wikimedia.org/wikipedia/en/d/da/Matt_LeBlanc_as_Joey_Tribbiani.jpg"
+              alt="portret of Matt Le Blanc"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Phoebe Buffay</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://upload.wikimedia.org/wikipedia/en/f/f6/Friendsphoebe.jpg"
+              alt="portret of Lisa Kudrow"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div>Chandler Bing</div>
+          <div class="card-img">
+            <img
+              class="zoom-img"
+              src="https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png"
+              alt="portret of Matthew Perry"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made by: Sandra Shumanteva Kaevska 2020</p>
+      <img src="logo.svg" alt="logo of Technigo" />
+    </footer>
   </body>
 </html>
