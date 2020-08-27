@@ -1,13 +1,14 @@
 # News Site
 Build a responsive webpage in form if a newssite. 
+ 
+I choose to make a less traditional news site more tailord to music and and nightlife. 
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I didn't want to much text ruining the visual, so the idea was that you'd click on the pictures and then be directed to the next page. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had some problems with the grid section, making the cards the type of containers I was looking for. 
+The grid in itself wasn't to difficult but then making the cards behave as I wanted was trickier. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
