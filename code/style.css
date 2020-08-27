@@ -4,7 +4,7 @@ body{
  margin: 0 auto;
  padding: 0;
  width: 100%;
- font-family: "Cardo";
+ font-family: "Cardo", serif;
 }
 
 a {
@@ -118,13 +118,15 @@ h3 {
   font-size: 20px;
   margin: 20px 0 -10px;
 }
+.card-container p {
+  font-size: 18px;
+}
 
 .card-container {
   display:flex;
   flex-direction: column;
   text-align: center; /* for the h3 & p*/
   align-items: stretch;
-
 }
 
 .cards {
@@ -188,6 +190,23 @@ h5 {
 
 .social-icons {
   font-size: 30px;
+}
+
+/*** animation ***/
+.headline-text {
+  margin-bottom: 20px;
+  animation-name: test;
+  animation-duration: 10s;
+  animation-iteration-count: 4;
+  animation-fill-mode: forwards;
+}
+
+@keyframes test {
+  0% {background-color:#A3C6C4}
+  25% {background-color:#b6dad8}
+  50% {background-color: #f0f0f0}
+  75% {background-color:#b6dad8}
+  100% {background-color:#A3C6C4}
 }
 
 /**** media ****/
@@ -263,12 +282,12 @@ h5 {
     align-items: baseline;
   }
 
-  nav {
-    
-  }
-
   h1 {
     font-size: 44px;
+  }
+
+  nav a {
+    font-size: 25px;
   }
 
   .big-news{
@@ -298,7 +317,18 @@ h5 {
 
   .contact-info {
    height: 200px;
-    
   } 
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .social-icons {
+    font-size: 50px;
+  }
 }
 
