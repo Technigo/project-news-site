@@ -4,7 +4,6 @@
 
 body{
   background-color: black;
-  color: #EAE8E8;
   margin: 0px;
 }
 
@@ -14,7 +13,7 @@ header{
   height: 100px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   padding: 0px 20px;
   margin-bottom: 50px;
@@ -25,7 +24,7 @@ header{
   width: 30px;
   height: 30px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: 13em;
 }
 
@@ -40,7 +39,8 @@ nav {
   justify-content: space-evenly;
   width: 50%;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 0.5em;
+  font-size: 1em;
+  font-weight: 100;
   display:none;
 }
 
@@ -57,7 +57,7 @@ nav a{
 
 /***** BIG NEWS STYLES ****/ 
 
-.big-news{
+.big-news-main{
   box-sizing: border-box;
   width: 100%;
   max-width: 1100px;
@@ -94,13 +94,13 @@ nav a{
   align-items: center
 }
 
-/***** maybe not keep ****/ 
-.image-big-text{
+.description{
   font-family: 'Kristi', cursive;
   color: rgb(41, 40, 40);
-  opacity: 0.8;
-  font-size: 0.8em;
+  opacity: .8;
+  font-size: 0.9em;
   margin: 10px 0px 0px 0px;
+  text-align: center;
 }
 
 .big-news-text{
@@ -116,6 +116,7 @@ h2{
   line-height: 45px;
   font-weight: 150;
   margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 h3{
@@ -134,7 +135,7 @@ p{
 
 /***** SMALL NEWS SECTION ****/ 
 
-.other-news{
+.other-news-main{
   box-sizing: border-box;
   width: 100%;
   max-width: 1100px;
@@ -146,7 +147,7 @@ p{
 }
 
 
-.other-news1, .other-news2, .other-news4{
+.other-news1{
   box-sizing: border-box;
   width: 70%;
   padding: 10px;
@@ -158,14 +159,14 @@ p{
   justify-content: center;
 }
 
-.image-news1, .image-news2, .image-news4{
+.image-news1{
   width: 100%;
   align-items: center;
   transition: .5s ease;
 }
 
 
-.other-news3{
+.other-news2{
   box-sizing: border-box;
   width: 70%;
   padding: 10px;
@@ -177,24 +178,13 @@ p{
   justify-content: center;
 }
 
-.image-news3{
-  width: 100%;
-  align-items: center;
-}
-
-.image-small-text{
-  font-family: 'Kristi', cursive;
-  color: rgb(41, 40, 40);
-  opacity: 0.8;
-  font-size: 0.8em;
-  margin: 10px 0px 0px 0px;
-  text-align: center;
-}
 .pic-frame {
   position: relative;
 }
 
-.hoover-title{
+/***** Pic effect ****/ 
+
+.pic-effect-title{
   transition: .5s ease;
   opacity: 0;
   top: 50%;
@@ -205,19 +195,17 @@ p{
   position: absolute;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2em;
 }
 
-.hoover:hover .hoover-title {
+.pic-effect:hover .pic-effect-title {
   opacity: 1;
 }
 
-.hoover:hover .image-news1 {
+.pic-effect:hover .image-news1 {
   opacity: 0.3;
   transition: .5s ease;
-}
-
-.hoover:hover .image-news3 {
-  opacity: 0.3;
 }
 
 
@@ -227,7 +215,6 @@ footer {
   color: #FCF6EB;
   font-family: 'Cutive Mono', monospace;
   font-size: 0.8em;
-  line-height: 0.5em;
   text-align: center;
   opacity: 0.4;
   width: 100%;
@@ -246,41 +233,57 @@ footer {
 /***** IPAD ****/ 
 @media (min-width: 768px) {
   header{
-    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 50px;
   }
 
   nav{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
   }
-  
+
   .hamburger{
     display: none;
   }
 
-  .other-news1{
+  .big-news-main {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .big-news-news{
     box-sizing: border-box;
-    width: 50%;
-    padding: 10px;
-    margin: 35px;
-    background-color: #A0844E;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: justify;
+  }
+
+  .big-news-text{
+    padding: 0px 25px 0px 25px;
+  }
+
+  .image-big{
+    align-items: center
+  }
+
+  .other-news1{
+    width: 45%;
+    margin: 40px 5px 0px 0px;
   }
 
   .other-news2{
-    box-sizing: border-box;
-    width: 50%;
-    padding: 10px;
-    margin: 35px;
-    background-color: #A0844E;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 45%;
+    margin: 40px 5px 0px 0px;
   }
 
+  
+ 
 }
 
 /***** DESKTOP ****/ 
