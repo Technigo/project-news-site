@@ -65,6 +65,16 @@ p {
   font-size: 14px;
 }
 
+h6 {
+  margin: 0px 0px 0px 10px;
+  color: grey;
+}
+
+.grid-child h6 {
+  margin: 0px 0px 0px 5px;
+  color: grey;
+}
+
 .img1 {
   width: 250px;
   margin: 5px;
@@ -123,6 +133,20 @@ p {
 .eight p {
   font-size: 20px;
 }
+
+.eight h6 {
+  animation: pulse2 5s infinite;
+}
+
+@keyframes pulse2 {
+  0% {
+    color: #172A3A;
+  }
+  100% {
+    color: #080f14;
+  }
+}
+
 .big-news, .grid-child { /* Adding shadows to the boxes*/
   box-shadow: 2px 2px 2px 2px #d6d0c7;
 }
@@ -182,6 +206,19 @@ footer {
     width: 100%;
   }
 
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .eight p {
+    font-size: 16px;
+  }
+
+
   .one, .two, .three, .four {
     grid-column: span 2;
   }
@@ -200,6 +237,15 @@ footer {
 }
 
 @media screen and (max-width: 667px) { /*Mobile devices */
+  html {
+    margin: 10px 10px;
+  }
+
+  .logo {
+    width: 120px;
+    margin: 15px;
+  }
+  
   header, .topnav {
     flex-direction: column;
   }
@@ -208,11 +254,35 @@ footer {
     padding: 6px 4px;
   }
 
+  .topnav img {
+    width: 35px;
+  }
+
   .big-news, .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 210px;
+  }
+
+  .topnav a {
+    font-size: 12px;
+  }
+
+  h2, h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .eight p {
+    font-size: 14px;
   }
 
   .img1, .img-smaller { /* To make the pictures fit nicer */
