@@ -1,0 +1,181 @@
+@font-face {
+  font-family: compactaItalic;
+  src: url('CompactaItalicRegular.ttf');
+}
+
+body {
+  background: #1c2024;
+  color: #ffffff;
+  font-family: compactaItalic, sans-serif;
+  font-weight: lighter;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+  font-family: compactaItalic;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 100;
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*** HEADER ***/
+
+header {
+  background: #24292d;
+  height: 80px;
+  display: flex;  
+  align-items: center;
+  padding: 0 16px;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+header img {
+  width: 180px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/*** WELCOME CONTAINER ***/
+
+.welcome-container .container {
+  padding: 100px 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.welcome-container img {
+  width: 100%;
+}
+
+.welcome-container div {
+  text-align: center;
+}
+
+/*** CHALLENGES CONTAINER ***/
+
+.challenges-container {
+  background: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 24px;
+}
+
+.challenges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.challenges a {
+  background: #fafafa;
+  border: 2px solid #24292d;
+  border-radius: 16px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  box-shadow: 12px 12px 0 0 #d8eee6;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.challenges a div {
+  border: 2px solid #d8eee6;
+  border-radius: 16px;
+}
+
+.challenges a img {
+  width: 80%;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  margin-bottom: -16px;
+}
+
+.circles span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ec4342;
+}
+
+.circles span:last-child {
+  background: #5583c3;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 650px) {
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .welcome-container div {
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .welcome-container .container {
+    flex-direction: row;
+    align-items: center;
+ }
+
+  .welcome-container img {
+    width: 50%;
+  }
+
+  .challenges a {
+    width: 25%;
+    flex-grow: 1;
+    margin: 16px;
+  }
+}
