@@ -1,12 +1,7 @@
-# News Site
+I have created a news site: "World of AI". The assignment was to create a responsive site using flexbox to layout the page.  
 
-Replace this readme with your own information about your project. 
+First I took a couple of days just to think about what I was going to create. I made a scetch in Miro, downloaded images and watched instruction videos from Technigo.The problems I faced when starting coding was firstly how to layout the cards. It took me some time to figure out how to get the cards in a row on a desktop screen and 2 rows on a tablet. I googled a lot, read about flexbox and finally I managed to do it. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I realised when I was done with everything that it did not look perfect in mobile device (I looked in the inspector tool and chose different mobile phones). I guess this was because during my working process I scaled my site to a minimum, believing this was a mobile view. but I guess I should have used the inspector tool for that. 
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here i sthe link to my site: 
