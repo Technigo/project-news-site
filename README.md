@@ -11,7 +11,7 @@ In todays news it's alot of focus on what is going wrong in the world. And it's 
 I did not plan this project well. I started playing with my design before reading the material. I wanted to see how much i could do with my previous skills and the result of that is that i've spent unnecessary time on changing my code to responsive in the end. 
 
 
-I used flexbox for layout and unsplash.com for free pictures. I have an animated donation button that "clicks" down when you click it. I also have hovering effects that change color and sizes. Also some box shadow on my small news.   
+I used flexbox for layout and unsplash.com for free pictures. I have an animated donation button that "clicks" down when you click it. I also have hovering effects that change color and sizes. Also some box shadow on my small news. 
 
 If i had more time (and knowledge) i would like to set a rotation on the daily quotes so that it changes from day to day. I would also add google fonts to change my header font-family.
 
