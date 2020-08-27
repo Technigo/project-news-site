@@ -31,6 +31,10 @@ h4 {
   color: #797a7e;
 }
 
+h5 {
+  font-size: 12px;
+}
+
 p {
   font-size: 15px;
 }
@@ -85,16 +89,19 @@ nav a {
 
 /** BIG NEWS**/ 
 
+.big-news {
+  padding: 50px;
+}
+
 .big-news .container {
-  padding: 50px 18px;
   display: flex; 
   flex-direction: column; 
+  flex-wrap: nowrap;
   color: #283c63;  
 }
 
 .big-news img {
   width: 100%;
-  margin: 30px;
 }
 
 .big-news div {
@@ -107,19 +114,16 @@ nav a {
   max-width: 1100px;
   margin: 0 auto; 
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.information {
+.retreat {
   background: #e0ece4;
   color: #797a7e;
   text-align: center;
   padding: 30px;
   margin: 0px;
-}
-
-.cards .container {
-  display: flex; 
-  flex-wrap: wrap;
 }
 
 .cards a {
@@ -129,11 +133,9 @@ nav a {
   padding: 10px;
   text-decoration: none;
   color: black;
-  /* box-shadow: 0 10px 10px 0 gray; */
   margin-bottom: 30px;
   flex-wrap: wrap;
   flex-grow: 1;
-
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -143,7 +145,6 @@ nav a {
 .cards a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  
   box-shadow: 0 20px 20px 0 gray;
 }
 
@@ -157,12 +158,32 @@ nav a {
   background-color: #e5e5e5;
   padding: 50px 18px;
   display: flex; 
-  flex-direction: column; 
+  flex-direction: row; 
   color: #283c63;  
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.other-news img {
-  width: 40%;
+.blocks img {
+  width: 100%;
+}
+
+.blocks {
+  width: 45%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 20px;
+  padding: 5px;
+  -webkit-transform: translate(1);
+	transform: translate(1);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.blocks:hover {
+  box-shadow: 20px 20px 20px 20px gray;
+  -webkit-transform: translate(20px);
+  transform: translate(20px);
 }
 
 /** FOOTER**/ 
@@ -189,12 +210,10 @@ footer img {
   width: 80px; 
 }
 
+
 /** MEDIA QUERIES**/
 
 @media (max-width: 540px) {
-  
-  
-
   .big-news div {
     text-align: left;
   }
@@ -205,7 +224,6 @@ footer img {
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
- 
   .cards a {
       width: 40%;
       margin: 20px;
@@ -213,7 +231,6 @@ footer img {
 }
 
 @media (max-width: 1024px) {
-
     nav {
       display: none;
     }
