@@ -16,7 +16,7 @@ header {
   top: 0px;
   right: 0px;
   left: 0px;
-  position: fixed;
+  position: absolute;
   font-family: 'Montserrat', sans-serif;
   background-color: darkgoldenrod;
 }
@@ -55,17 +55,16 @@ article .article-container {
 }
 ul { /* Inside the navbar*/
   display: flex;
-  flex-direction: flex-start;
   align-content: center;
   list-style-type: none;
   font-size: 20px; 
-  top: 0px;
-  right: 0px;
-  left: 0px;
+  
 }
 
 
 footer {
+  display: flex;
+  justify-content: space-around;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -84,8 +83,13 @@ h2 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 10px;
   padding: 5px;
+}
+
+span {
+  font-size: 15px;
+  width: 30%;
 }
 
 a {
@@ -98,7 +102,7 @@ a:visited {
 }
 
 a:hover {
-  color: gray;
+  color: darkolivegreen;
 }
 
 .nailtech-news { /*Nailtech News text in the header*/
@@ -119,24 +123,42 @@ a:hover {
   display: none;
  }
 }
-/*Tablet only*/
-@media (max-width: 1023px;) {
-   .nailtech-news {
-     order: -1;
-   }
-}
+
+ 
 /* Tablet*/
 @media (min-width: 768px) {
 
-   ul {
-     justify-content: space-around;
-  
-     
-   }
+  ul {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .li-link {
+    order: 1;
+  }
+
+  .nailtech-news {
+    order: 1;
+  }
+
+  .booking {
+    order: 3;
+  }
+
+  .education {
+    order: 3;
+  }
+
 
    h2 {
      padding: 5px;
    }
+
+  
 
   
     
@@ -161,9 +183,12 @@ a:hover {
 @media (min-width: 1024px) {
   
 
- 
-    
-  }
+ ul {
+   justify-content: space-between;
+ }
+
+
+  
   h1 {
     font-size: 40px;
   }
@@ -172,18 +197,38 @@ a:hover {
     padding: 5px;
   }
 
- .li-link {
-   order: 2;
- }
-
- .logo, .nailtech-news {
-   flex-direction: flex-start;
+ .logo {
+   order: 1;
+  
    
  }
 
- .education, .booking, .li-link {
-   flex-direction: flex-end;
+ .li-link {
+   order: 4;
+   margin-left: 800px;
  }
+
+ .nailtech-news {
+   order: 1;
+   
+   
+ }
+
+ .booking {
+   order: 4;
+   
+ }
+
+ .education {
+   order: 4;
+   margin-right: 20px;
+ }
+
+ 
+
+
+
+ 
    
 .article-container {
   display: flex;
