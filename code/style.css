@@ -4,7 +4,6 @@ html {
 }
 
 /** HEADER **/
-
 header {
   padding: 10px 20px 0px 20px;
   background: #FFFFFF;
@@ -15,7 +14,7 @@ header {
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
     justify-content: space-evenly;
   }
@@ -47,7 +46,7 @@ header img {
   height: 30.42px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header-image {
     display: none;
   }
@@ -55,7 +54,6 @@ header img {
 
 
 /** NAVIGATION BAR**/
-
 nav {
   display: none;
 }
@@ -64,6 +62,16 @@ nav {
   nav {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-image {
+    display: none;
+  }
+
+  nav a:nth-last-of-type(3) {
+    display: none; /*had to remove <a>; there was space left if only <img> was removed*/
   }
 }
 
@@ -247,7 +255,6 @@ footer {
 }
 
 footer p {
-  /* background: #000000; */
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: ;
   color: #ffffffa4;
