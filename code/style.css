@@ -1,3 +1,16 @@
+/*OUTSTANDING ISSUES
+- Navbar set to fixed to be "aligned" 
+with header bar which is positioned absolute. Problem:
+When scrolling and navbar visable it covers other section. 
+
+-Animation on images "figure". Span2 before and after the lines
+are black to start with to end up white as I want them to be.
+
+- social icons in footer. when hovering everything "jumps" around...
+
+*/
+
+
 *{
   margin: 0;
   padding:0;
@@ -5,7 +18,7 @@
 
 body     {
   padding-top: 80px;
-  /*position: relative;*/
+  
 }
 
 header {
@@ -14,8 +27,6 @@ header {
   top: 0;
   left: 0;
   right:0;
-  /*width: 100%;*/
-  /*z-index: 100;*/
   background: black;
 }
 
@@ -36,7 +47,7 @@ nav ul {
   height: 50vh;
   background: black;    
   left: -100%;
-  transition: all .5s;
+  transition: all 1s;
   list-style: none;
 }
 
@@ -80,7 +91,7 @@ nav a:hover {
 }
 
 
-/* tablet media Query */
+/*tablet media Query */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .burger {
@@ -126,7 +137,7 @@ nav a:hover {
   }
 }
 
- /*dont forget to remove this style*/
+
 
  h1 {
   margin: 50px 25px 50px;
@@ -143,13 +154,15 @@ main h2 {
   padding-top: 20px
 }
 
+.hover-desktop {
+  display: none;
+}
+
 
 .big-news {
   width: 100%;
   margin-bottom: 60px;
-  /*height: 50vh;*/
   display: flex;
-  /*flex-direction: column;*/
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -176,9 +189,6 @@ main h2 {
 SMALLER THAN 1024px */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .big-news {
-      /*flex-direction: row;*/
-  }
   .image {
       width: 40%;
       flex-grow: 2
@@ -190,13 +200,9 @@ SMALLER THAN 1024px */
   
 }
 
-/* MEDIA QUERT TO ALIGN PICTURES IN COLUMN WHEN SCREEN SMALLER THAN 1024px */
+/* MEDIA QUERT TO ALIGN PICTURES IN COLUMN WHEN SCREEN LARGER THAN 1024px */
 
 @media (min-width: 1024px) {
-  .big-news {
-      flex-direction: row;
-  }
-
   .image {
       width: 40%;
       flex-grow: 2;
@@ -204,35 +210,34 @@ SMALLER THAN 1024px */
   }
 
   .text {
-      width: 50%
-  }
-  
-  .image img {
-      /*height: 40vh;*/
-      max-width: 80%;
-}
+      width: 40%
   }
 
+  .click-mobiletablet {
+    display:none;
+  }
+
+  .hover-desktop {
+    display: block;
+  }
+  
+} 
 /* STYLING OF SECTOND SECTION CONTAINING 8 IMAGES */
 
 .smallNews-parent {
-  /*background: rgb(0, 30, 210);*/
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .figure {
-  justify-content: center;
   margin: 5px;
-  display: flex;
-  padding: 0;
   width: 60%;
   align-self: center; 
   position: relative;
-  box-shadow: 0 0 50px -50px red;
+  box-shadow: 0 0 20px lightgrey;
 }
 
 /*styling for img in first and second section*/
@@ -241,7 +246,6 @@ SMALLER THAN 1024px */
   width: 100%;
   height: 90%;
   justify-content: center;
-  /*margin: 20px;*/
   align-self: center;
   
 }
@@ -361,25 +365,20 @@ h3 {
 
 
 
-/*target everything that is bigger than 667px but less than 1024px*/
+/*Tablet media query*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .smallNews-parent {
-      flex-direction: row;   
-      flex-wrap: wrap; 
-  }
-
   .figure {
       flex-basis: 40%;
   }
 
   h3 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
-/* when using a laptop or bigger screen I want images to be four 
-in each column in two rows*/
+/*desktop media query*/
+
 @media (min-width: 1025px) {
   .smallNews-parent {
       flex-direction: row;
@@ -391,21 +390,21 @@ in each column in two rows*/
   }
 
   h3 {
-    font-size: 42px;
+    font-size: 28px;
   }
+
 }
 
 footer {
-  background: grey;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  background: #000000;
+  color: #ffffff;
   height: 30px;
-  text-align: center;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px 0;
+  flex-wrap: wrap;
+  padding: 30px;
   font-size: 20px;
+  
 }
 
 footer ul {
@@ -419,14 +418,13 @@ footer li {
 }
 
 footer i {
-  color: black;
+  color: #ffffff;
   font-size: 24px;
   border-radius: 100%;
 }
 
 footer i:hover {
   color: grey;
-  background-color: white;
   padding: 5px;
 }
 
