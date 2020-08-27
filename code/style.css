@@ -9,26 +9,31 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  margin: 5px 10px;
 }
 
 .logo {
   display: flex;
+  align-items: center;
   font-weight: 700;
 }
 
 .logo img {
-  padding: 0 10px;
+  margin: 0 10px;
   height: 50px;
 }
 
-nav a {
+.logo p {
+  margin: 10px;
+}
+
+nav a { 
+  margin: 10px;
   text-decoration: none;
-  padding: 10px;
   color: black;
 }
 
-nav a:hover {
+nav a:hover { 
   font-weight: 700;
 }
 
@@ -47,7 +52,7 @@ nav a:hover {
   }
 }
 
-/*MAIN NEWS*/
+/*** MAIN NEWS ***/
 
 .main-news {
   display: flex; 
@@ -61,12 +66,11 @@ nav a:hover {
  h1 {
   position: absolute;
   width: 100%;
-  font-family: 'Lobster', cursive;
-  width: 100%;
-  font-size: 10vw;
-  color: white;
   margin: 0;
   text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 10vw;
+  color: white;
  }
 
 h1:hover {
@@ -75,7 +79,7 @@ h1:hover {
   text-decoration-style: dotted;
 }
 
-/*OTHER NEWS*/
+/*** NEWS ***/
 
 .news-container {
   display: flex;
@@ -87,7 +91,6 @@ h1:hover {
 .news {
   margin: 0;
   padding: 10px;
-  width: 20%;
   border: white;
   border-style: dotted;
   border-radius: 8px;
@@ -96,13 +99,13 @@ h1:hover {
 
 @media (min-width: 1024px) {
   .news {
-    width: 20%;
+    width: 22%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .news {
-    width: 40%;
+    width: 46%;
   }
 }
 
@@ -125,17 +128,17 @@ h1:hover {
 }
 
 h2 {
-  font-weight: 400;
   margin: 0;
-  line-height: 25px;
   padding: 5px;
+  line-height: 25px;
   font-size: 20px;
+  font-weight: 400; 
 }
 
-/*FOOTER*/
+/*** FOOTER ***/
 
 footer {
-  padding: 0 0 30px 0;
+  margin-bottom: 30px;
 }
 
 footer nav {
