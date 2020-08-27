@@ -1,151 +1,161 @@
-
-/* For screens smaller than 667px */
-html {
-  background: #c9c1bf;
-  /* color: #fff; */
-}
-
-/*Header*/
-
-Body {
-  
-}
-
-header {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-}
-
-nav {
-  /* border: 1px solid blue; */
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* main */
-
-h1, h2 {
-  font-family: Helvetica;
-  text-align: center;
-}
-
-p { 
-  font-family: Times New Roman, Times, serif;
-}
-
-.wrapper {
-  /* padding: 100px; */
-  width: 100%;
-  height: auto;
-}
-
-.big-news, .other-news {
-  padding: 50px; 
-  display: flex; 
-  flex-direction: column;
-}
-
-
-
-
-/*Big News*/
-
-.big-news-box1{
-  width: 90%;
-  height: 400 px;
- 
-  border: 2px solid white;
-  padding: 30px;
-  margin: 20px;
-}
-
-
-
-.big-news-box2{
-  
-  width: 90%;
-  height: 400 px;
-  border: 2px solid white;
-  padding: 30px;
-  margin: 20px;
-}
-
-.big-news-box1 img {
-  height: 300px;
-   width: 100%;
- }
-
- /*News Grid*/
-
- .news-box{
-  width: 90%;
-  height: 200 px;
-  border: 2px solid white;
-  padding: 30px;
-  margin: 20px;
- }
-
- .news-box img {
-  height: 200px;
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
-
-
-
-/* media query for tablets  */
-@media screen and (min-width: 667px) {
-
-  .big-news, .other-news {
-    flex-direction: row;
-  }
- 
-  .other-news{
-  flex-wrap: wrap; 
-  justify-content: center;
-  }
-
-  .big-news-box1 {
-    /* width: 45%;
+                                                                    Body {
+                                                                        background: #d9e6f2;
+                                                                        margin: 0;
+                                                                    }
+                                                                    /* For screens smaller than 667px */
+                                                                    /*Header*/
+                                                                    
+                                                                    header {
+                                                                        background: #c6d9ec;
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                        padding: 0 15px;
+                                                                    }
+                                                                    
+                                                                    header img {
+                                                                        width: 50px;
+                                                                        height: 50px;
+                                                                    }
+                                                                    
+                                                                    .hamburger {
+                                                                        display: flex;
+                                                                        width: 30px;
+                                                                        height: 30px;
+                                                                        flex-direction: column;
+                                                                        justify-content: space-between;
+                                                                        margin-right: 50px;
+                                                                    }
+                                                                    
+                                                                    .hamburger div {
+                                                                        width: 30px;
+                                                                        height: 5px;
+                                                                        background: #fff;
+                                                                    }
+                                                                    
+                                                                    nav {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    nav a {
+                                                                        color: #fff;
+                                                                        text-decoration: none;
+                                                                        text-transform: uppercase;
+                                                                        margin-left: 20px;
+                                                                    }
+                                                                    /* main */
+                                                                    
+                                                                    h1 {
+                                                                        text-align: center;
+                                                                    }
+                                                                    
+                                                                    h1,
+                                                                    h2 {
+                                                                        font-family: Helvetica;
+                                                                        /* text-align: center; */
+                                                                    }
+                                                                    
+                                                                    p {
+                                                                        font-family: "Times New Roman", "Times", serif;
+                                                                    }
+                                                                    /*Big News*/
+                                                                    
+                                                                    .big-news {
+                                                                        padding: 20px;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                    }
+                                                                    
+                                                                    .big-news-box1,
+                                                                    .big-news-box2 {
+                                                                        /* width: 90%;
+    height: 400px; */
+                                                                        border: 2px solid white;
+                                                                        padding: 30px;
+                                                                        margin: 20px;
+                                                                    }
+                                                                    
+                                                                    .big-news-box1 img {
+                                                                        width: 100%;
+                                                                    }
+                                                                    /* .big-news-box2 {
+    /* width: 90%;
+    height: 400px; */
+                                                                    /* border: 2px solid white;
+padding: 20px;
+margin: 20px; */
+                                                                    /*News Grid*/
+                                                                    
+                                                                    .other-news {
+                                                                        width: 100%;
+                                                                        height: auto;
+                                                                        padding: 20px;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        /* width: 100%;
+    max-width: 1100px; */
+                                                                    }
+                                                                    
+                                                                    .news-box {
+                                                                        /* width: 80%;
+    height: 300px; */
+                                                                        border: 2px solid white;
+                                                                        padding: 30px;
+                                                                        margin: 20px;
+                                                                    }
+                                                                    
+                                                                    .news-box img {
+                                                                        width: 100%;
+                                                                    }
+                                                                    /* media query for tablets  */
+                                                                    
+                                                                    @media screen and (min-width: 668px) {
+                                                                        header {
+                                                                            justify-content: space-between;
+                                                                        }
+                                                                        nav {
+                                                                            display: flex;
+                                                                            justify-content: flex-end;
+                                                                        }
+                                                                        .hamburger {
+                                                                            display: none;
+                                                                        }
+                                                                        .big-news {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                        }
+                                                                        .other-news {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                            flex-wrap: wrap;
+                                                                            justify-content: space-between;
+                                                                            margin: 5px;
+                                                                            /* flex-grow: 1; */
+                                                                        }
+                                                                        /* flex-wrap: wrap;
+        width: 25%;
+        flex-grow: 1; */
+                                                                        .big-news-box1 {
+                                                                            /* width: 45%;
     height: 100 px; */
-    flex: 1;
-  }
-
-  .big-news-box2 {
-    /* width: 45%;
+                                                                            flex: 1;
+                                                                        }
+                                                                        .big-news-box2 {
+                                                                            /* width: 45%;
     height: 100 px; */
-    flex: 2;
-  }
-
-  .news-box {
-    width: 300px;
-    height: 100 px;
-    
-    
-  }
-}
-
-/* media query for desktops  */
-@media screen and (min-width: 1025px){
-
-  /* .other-news{
+                                                                            flex: 2;
+                                                                        }
+                                                                        .news-box {
+                                                                            flex: 0 12%;
+                                                                            margin: 5px;
+                                                                        }
+                                                                    }
+                                                                    /* media query for desktops  */
+                                                                    
+                                                                    @media (min-width: 1025px) {}
+                                                                    /* .other-news{
     justify-content: center; */
-
-  }
-  .news-box {
-    width: 300px;
-    height: 100 px;
-    
-  }
-
-}
+                                                                    /*   .news-box {
+                                                                    width: 300px;
+        height: 100px; */
+                                                                    /* display: flex;
+        flex:
