@@ -1,13 +1,23 @@
+/* MOBILE VIEW <-- 768PX */
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Serif JP', serif;
 }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER */
 
 .header-parent {
     width: 100%;
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 10px 0px;
@@ -24,6 +34,8 @@ body {
     box-sizing: border-box;
     margin: auto;
 }
+
+/* MAIN ARTICLE */
 
 .main-article-parent {
     width: 100%;
@@ -48,6 +60,8 @@ body {
     margin: auto;  
 }
 
+/* OTHER ARTICLES */
+
 .other-article-parent {
     width: 100%;
     height: 100%;
@@ -71,12 +85,16 @@ body {
     margin: auto;  
 }
 
+/* MEDIA QUERY 1: SCREEN SIZE 768PX OR BIGGER & 2 CARDS PER ROW*/
+
 @media (min-width:768px) {
 
     .other-article-parent div {
         width: 50%;      
     }
 }
+
+/* MEDIA QUERY 1: SCREEN SIZE 1020PX OR BIGGER & 4 CARDS PER ROW */
 
 @media (min-width:1020px) {
     
