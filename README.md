@@ -12,4 +12,5 @@ Hade issues with time management and found myself getting stuck in the chair for
 
 Had a hard time with flexbox and positioning.
 
+https://yoganews.netlify.app/
 
