@@ -11,4 +11,4 @@ If i had more time, I would have most definately spent some time creating paragr
 
 ## View it live
 
-A live Demo of the website can be found here https://katsiez.github.io/project-news-site/index.html
+A live Demo of the website can be found here https://katsiez.github.io/project-news-site/index.html and on Netlify: https://hoummagazine.netlify.app/
