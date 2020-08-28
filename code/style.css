@@ -66,13 +66,12 @@ h1 {
   background:  #d0d8c1;
   padding: 25px;
 }
-
-h4{
+.plants > h4 {
   text-align: center;
   margin: 70px;
   font-size: 20px;
-
-  
+  border: 1px solid #a3a37d;
+  padding: 15px;
 }
 
 .plant-containers {
@@ -109,13 +108,56 @@ footer {
   color: #727768;
   width: 100%;
   height:100px;
-  margin-top: 50px;
+  margin-top: 30px;
   position: relative;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color:#727768;
+}
+
+.newsletter {
+  color: #727768;
+  text-align: center;
+  background:#d0d8c1;
+  box-sizing: border-box;
+  padding: 15px;
+  
+}
+
+.newsletter button {
+  display:inline-block;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color: #727768;
+  text-align:center;
+  transition: all 0.2s;
+  padding: 15px;
+  margin-top: 15px; 
 
 }
+
+.card button {
+  display:inline-block;
+  box-sizing: border-box;
+  
+  font-weight:300;
+  color: #727768;
+  text-align:center;
+  transition: all 0.2s;
+  padding: 5px;
+  margin-top: 5px; 
+  background: rgb(180, 192, 181);
+  border: none;
+
+}
+
+
 
 /* MEDIA QUERIES*/
 
