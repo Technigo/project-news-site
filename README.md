@@ -43,6 +43,5 @@ Check it out and learn some cool facts about Iceland!
 
 ### Author and contact   
 My name: Johanna Blom,   
-My <a href="https://www.linkedin.com/in/johanna-blom-2419a181/">Linkedin</a>,  
-My linkedin: (jblom15@gmail.com),  
+My <a href="https://www.linkedin.com/in/johanna-blom-2419a181/">Linkedin</a>,   
 My <a href="https://twitter.com/idsintehittapa">Twitter</a>  
