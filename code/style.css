@@ -104,10 +104,6 @@ nav a {
   width: 100%;
 }
 
-.big-news div {
-  text-align: center;
-}
-
 /** CONTAINERS**/
 
 .container {
@@ -181,9 +177,9 @@ nav a {
 }
 
 .blocks:hover {
-  box-shadow: 20px 20px 20px 20px gray;
   -webkit-transform: translate(20px);
   transform: translate(20px);
+  box-shadow: 0 20px 20px 0 gray;
 }
 
 /** FOOTER**/ 
@@ -209,7 +205,6 @@ footer img {
   height: 80px; 
   width: 80px; 
 }
-
 
 /** MEDIA QUERIES**/
 
