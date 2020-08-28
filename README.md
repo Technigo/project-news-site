@@ -2,6 +2,9 @@
 
 This week’s project was to create a classic magazine or newspaper site. The focus was to use what we've learned about responsive design and flexbox. I used flexbox in this version (but also tried css grid). The task was to code a layout with one-column for mobile, two for tablet and 4 for desktop where also the header would change depending on these widths. I added two animations: a shaky banner-text and a banner changing color. I also used hover effect on the cards and box-shadowing.
 
+## Testing
+The site acts the way it should on latest versions of Firefox, Chrome and Safari. It also runs the way it should on all devices in devtools except Galaxy Fold. Here the header overflows and the footer is cramped.
+
 ## The problem and workflow
 1. I browsed the instructions and then made a rough plan for the workflow (which I then strayed from almost directly...). 
 2. I googled around looking for inspo on design and layout alongside doing the code-along and reading up on flexbox.
