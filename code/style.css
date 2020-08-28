@@ -14,7 +14,7 @@ html {
 
   header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     }
     
@@ -70,6 +70,13 @@ html {
       flex-direction: column;
     }
 
+    .big-news-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
     /*** NEWS GRID ***/
 
 
@@ -79,14 +86,14 @@ html {
       align-items: center;
       flex-direction: column;
       
-      }
+    }
       
-    .news {
+    .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8 {
       display:flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: #004466;
+      background-color: #00334d;
       margin: 10px;
     }
   
@@ -101,79 +108,78 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+  }
     
-    nav {
-      width: 50%;
-      margin: 20px;
-      display: flex;
-      justify-content: space-between;
-    }
+  nav {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .order-1{
-      order: 1;
-    }
+  .order-1{
+    order: 1;
+  }
     
-    .order-2 {
-      order: 2;
-    }
+  .order-2 {
+    order: 2;
+  }
   
-    .order-3 {
-      order: 3;
-    }
+  .order-3 {
+    order: 3;
+  }
   
-    .order-4 {
-      order: 4;
-    }
+  .order-4 {
+    order: 4;
+  }
     
-    a:link {
-      text-decoration: none;
-      color: white;
-      }
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
     
-    a:visited {
-      text-decoration: none;
-      color: white;
-    }
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
     
-    a:hover {
-      color: white;
-      text-decoration: underline;
-    }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
     
-    .logo {
+  .logo {
     width: 100px;
     height: 100ox;
     margin: 20px;
-    }  
+  }  
   
   .big-news {
-    padding: 20px;
+    padding-bottom: 20px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    }
+  }
+
+  .big-news-text {
+    display: block;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
   .other-news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
       
-    }
-      
-  .news {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #004466;
-    margin: 10px;
-    }
-
+  .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8 {
+  grid-column: span 2;  
+  background-color: #00334d;
+  text-align: center;
+  }
 
 }
 
@@ -212,9 +218,36 @@ html {
     }
     
     .logo {
-    width: 100px;
-    height: 100ox;
-    margin: 20px;
+      width: 100px;
+      height: 100ox;
+      margin: 20px;
+    }
+
+    .big-news {
+      padding-bottom: 20px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+  
+    .big-news-text {
+      display: block;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .other-news {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+        
+    .news1, .news2, .news3, .news4, .news5, .news6, .news7, .news8 {
+    grid-column: span 1;  
+    background-color: #00334d;
+    text-align: center;
     }
 
 }
