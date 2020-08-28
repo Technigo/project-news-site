@@ -11,5 +11,5 @@ Had issues making the website responsive and making the cards align properly.
 Hade issues with time management and found myself getting stuck in the chair for hours. 
 
 Had a hard time with flexbox and positioning.
-## View the website live at Netlify
+
 
