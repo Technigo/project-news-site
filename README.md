@@ -13,4 +13,4 @@ First I made a sketch of the site for mobile, tablet and desktop that I wanted t
 If I had more time I would have done a clickable hamburger menu for mobile that when clicked shows the menu. I would have also made a photo gallery section using grid and anchor the menu links Beauty, Fashion, Lifestyle and About us to this gallery section, made a navbar that sticks at the top when scrolling and make some of the images look like polariod pictures using box-shadows and probably some kind of animation. D
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://angry-wing-d08638.netlify.app/
