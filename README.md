@@ -1,12 +1,14 @@
-# News Site
+# Tennigo news site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Assignment was to create a news site with a main article section and a section with smaller articles. The site was to be responsive with different layouts for mobile, tablet, desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Flexbox was used extensively to create the different sections and articles. Different media queries to make the website responsive. I had some issues with image resizing and spent a lot of time trying to fix that. In the end I decided on an approach where images shrink proportinally to still fit in the flexbox (which also shrinks).
+
+Added some animations to the smaller articles by using keyframes. Simple hover effects using borders.
+
+If I had more time I would make it prettier. At this stage I wanted to focus on the coding elements rather than design.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
