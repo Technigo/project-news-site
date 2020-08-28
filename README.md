@@ -1,4 +1,4 @@
-# The Responsive SKREPPA Magaznine Travel Site
+# The Responsive SKREPPA Magazine Travel Site
 
 ### This project was made as part of Technigo’s front-end developer boot camp Fall 2020. 
 
