@@ -1,7 +1,4 @@
 /*** GENERAL STYLING ***/
-html {
-  
-}
 
 body {
   font-family: 'Lato', serif;
@@ -47,7 +44,6 @@ nav div {
   width: 30%;
   display: flex;
   justify-content: space-between;
-
 }
 
 nav a {
@@ -111,11 +107,11 @@ nav a:hover {
 }
 
 .small-news-container div:hover {
-  background: #f9f1f1; /*#FAEBD7*/
+  background: #f9f1f1;
 }
 
 .small-news-container div:hover img {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .small-news-container img {
   width: 100%;
@@ -124,6 +120,7 @@ nav a:hover {
 
 .small-news-container a {
   color: pink;
+  text-decoration: none;
 }
 
 .small-news-container a:hover {
@@ -213,7 +210,6 @@ footer {
   .small-news-container {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
   }
-
 }
 
 
