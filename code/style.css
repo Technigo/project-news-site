@@ -3,12 +3,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 /* Header */
 
 h1 {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 nav {
@@ -26,8 +25,8 @@ nav {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-left:30px;
-  margin-right:30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .rightlinks {
@@ -35,8 +34,8 @@ nav {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-left:30px;
-  margin-right:30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .rightlinks:hover {
   color: blue;
@@ -46,7 +45,7 @@ nav {
   color: blue;
 }
 
-.logo{
+.logo {
   height: 50px;
   margin: 10px 20px;
 }
@@ -59,16 +58,14 @@ nav a {
   padding: 23px 30px;
   text-decoration: none;
   font-size: 14px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 3px;
   align-self: flex;
 }
 
-
 nav a:hover {
   color: grey;
-  background-color:lightgrey;
-
+  background-color: lightgrey;
 }
 
 /* BIG NEWS BANNER */
@@ -121,20 +118,15 @@ hr {
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    blue,
-    grey,
-    blue
-  );
+  background-image: linear-gradient(to right, blue, grey, blue);
 }
 
 footer {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px;
-  background-color:#f6f4e6;
+  background-color: #f6f4e6;
   width: 100%;
   height: 125px;
 }
@@ -151,7 +143,7 @@ footer {
 }
 
 .cards {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -162,23 +154,18 @@ footer {
   text-align: center;
 }
 
-
-
 .cards img {
-  align-self: center; 
+  align-self: center;
   width: 100%;
   height: 450px;
   margin: 20px;
-  }
 }
 
 h3 {
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 70px;
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -189,7 +176,7 @@ h3 {
     display: none;
   }
 
-  .rightlinks{
+  .rightlinks {
     display: none;
   }
 }
@@ -210,7 +197,6 @@ h3 {
     display: block;
   }
 
-
   .right {
     order: 2;
     display: block;
@@ -222,36 +208,34 @@ h3 {
   }
 
   .leftlinks {
-    display:inline-flex;
+    display: inline-flex;
     letter-spacing: 1px;
     padding-right: 2px;
     text-decoration: none;
   }
   .rightlinks {
-    display:inline-flex;
+    display: inline-flex;
     letter-spacing: 1px;
     padding-left: 2px;
     text-decoration: none;
   }
 
- 
-
   .big-news-container {
-      display: flex;
-      flex-direction: row;
-      background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
   }
 
   .big-news-text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .big-news-container img {
-      width: 50%;
-      align-self: center; 
-      padding-left: 20px;
-      object-fit: auto;
-      height: 500px;
+    width: 50%;
+    align-self: center;
+    padding-left: 20px;
+    object-fit: auto;
+    height: 500px;
   }
 
   article {
@@ -260,19 +244,19 @@ h3 {
     margin-bottom: 20px;
   }
 
-  h2 { 
-      margin: 0;
+  h2 {
+    margin: 0;
   }
 
-  .newscards{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;        
+  .newscards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .cards {
-      width: 40%;
+    width: 40%;
   }
 }
 
@@ -284,66 +268,67 @@ footer {
 
 /* Desktop */
 @media (min-width: 1025px) {
-  .leftlinks, .rightlinks {
+  .leftlinks,
+  .rightlinks {
     display: block;
     padding-right: 40px;
     text-decoration: none;
   }
 
-  .right, .left {
+  .right,
+  .left {
     display: flex;
     margin-left: auto;
-    
   }
 
   .right {
     margin-left: 0;
   }
-  
+
   .big-news-container {
-      display: flex;
-      flex-direction: row;
-      background-color: #E5E5E5;
-      max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e5e5e5;
+    max-width: 1500px;
   }
 
   .big-news-text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .big-news-container img {
-      width: 50%;
-      align-self: center;
-      padding: 20px 0 20px 20px;
-      object-fit: auto;
-      height: 500px;
+    width: 50%;
+    align-self: center;
+    padding: 20px 0 20px 20px;
+    object-fit: auto;
+    height: 500px;
   }
 
   .bigger-news-container {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
   .newscards {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;   
-      transition: box-shadow 0.3s ease;     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: box-shadow 0.3s ease;
   }
 
   .cards {
-      width: 22%;
+    width: 22%;
   }
 
   .cards:hover {
     box-shadow: 5px 10px 10px #999;
   }
 
-      /* Footer */
-footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-      }
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
 }
