@@ -36,7 +36,11 @@ html, body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.icon {
+  text-decoration: none;
+  color: #312f2d;
+}
+/* ABOUT PAGE/MAIN CONTAINER */
 .landing-img {
   padding-bottom: 0;
   padding-top: 150px;
@@ -91,6 +95,7 @@ h3 {
 .row .btn {
   margin-top: 30px;
 }
+/* INTRO TO HOUM MAGAZINE SECTION */
 .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -109,21 +114,10 @@ h3 {
   place-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 0
+  padding-top: 10px;
   padding-bottom: 10px;
   border: #ccbeb4 2px solid;
   background-color: #ddd3cc;
-}
-hr {
-  display: block;
-  border-color: #312f2d;
-  width: 50%;
-  unicode-bidi: isolate;
-  margin-left: auto;
-  margin-right: auto;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  overflow: hidden;
 }
 .btn {
   text-transform: uppercase;
@@ -135,18 +129,14 @@ hr {
 .btn:hover {
   background-color: white;
 }
-
-.h1-news {
-  justify-content: left;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  padding-left: 250px;
+.h1-news h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
   font-style: italic;
   font-weight: 400;
-  font-size: 20px;
+  text-align: center;
 }
-
-
 .container .card {
   display: inline-table;
   flex-direction: row;
@@ -156,12 +146,11 @@ hr {
   max-width: 25%;  */
   text-align: left;
   padding: 25px 12px;
-  vertical-align: middle; 
+  /* vertical-align: middle;  */
   width: 100%;
   height: 100%;
   /* border: 5px solid; */
 }
-
 .card-container .container {
   position: relative;
   display: flex;
@@ -171,11 +160,17 @@ hr {
   justify-content: space-evenly;
 }
 .card img{
-  border: 1px solid #312f2d;
+  border: 1px solid #e6dfd8;
   box-shadow: 5px 5px 5px #ccbeb4;
   -webkit-box-shadow: 5px 5px 5px #ccbeb4;
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.card img:hover {
+  color: #312f2d;
+  background-color: white;
+  letter-spacing: 12px;
+  border: 1px solid white;
 }
 .card h6 {
   text-align: left;
@@ -183,33 +178,75 @@ hr {
 .card p, h4 {
   text-align: left;
 }
-
-
-
-.icon {
-  text-decoration: none;
+.btn-primary {
   color: #312f2d;
+  border: none;
 }
-.last-container img {
-  display: row;
+.btn-primary:hover {
+  color: #312f2d;
+  background-color: white;
+  letter-spacing: 12px;
+  border: 1px solid white;
+}
+/* OUTRO TO HOUM MAGAZINE SECTION */
+.last-container {
+  display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 700px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
 }
 .last-container p {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+ text-align: left;
+ font-size: 20px;
+ font-weight: 400;
 }
 
+.last-row {
+  display: row;
+  flex-wrap: wrap;
 
+}
+
+.hr-last {
+  width: 10%;
+  border-color: #312f2d;
+}
+.h3-last h3{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* FOOTER */
+hr {
+  display: block;
+  border-color: whitesmoke;
+  width: 50%;
+  unicode-bidi: isolate;
+  overflow: hidden;
+}
 .footer {
+  background-color: #e5ded7;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
   justify-content: space-evenly;
-  background-color: whitesmoke;
-  
+  position: relative;
 }
-@media (min-width: 760px) and (max-width: 1024px){
+h5 {
+  font-size: 12px;
+  font-family: 'Arapey', serif;
+  font-weight: lighter;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) and (max-width: 768px){
   .landing-img {
     width: 100%;
     height: 100%;
@@ -222,50 +259,69 @@ hr {
   color: #312f2d;
   place-items: center;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 20px;
   font-style: bolder;
-  letter-spacing: 10px;
-  font-weight: 600;
+  letter-spacing: 5px;
+  font-weight: 500;
   line-height: 1;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 2px solid #312f2d;
+  border: 1px solid #312f2d;
   background-color: #e6dfd8;
 }
 .landing-img {
-  padding-top: 100px;
+  padding-top: 20px;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.news-container {
+  padding: 0;
+}
 .news-container img {
-  place-content: right;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+width: 100%;
+border: none;
+}
+.news-container .btn {
+font-size: 12px;
+display: block;
+margin-bottom: 5px;
 }
 h3 {
-  text-align: left;
+  text-align: center;
   font-style: italic;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+}
+.news-container p {
+  font-size: 14px;
 }
 .btn {
   font-size: 12px;
   border-radius: 0.5px;
 }
-.last-container {
+/* .last-container {
   display: none;
-}
+} */
 .navbar-brand {
   display: none;
 }
-.h1-news {
+.h1-news h1{
   text-align: left;
   padding: 5px 5px 5px 100px;
   font-size: 10px;
 }
-
+h6 {
+  font-size: 12px;
+}
+.footer {
+  background-color: #e5ded7;
+  display: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 }
