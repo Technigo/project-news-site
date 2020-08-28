@@ -1,12 +1,9 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I made a news-website about cafés/coffee using a header which conatins navbar, then a main-article section, other articles in cards, a social media row and a footer.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The problem was that I started with the desktop view and when I wanted to rewrite the responsive for mobile/tablet view it didn't worked. So I started again after 3days-trying from zero and compare the two codes. The probelm was only one (...) character in the meta tag - instead of "-" I had an "=". So I decided that buying a bigger monitor and new eyeglasses becuase I have very bad eyes. Also I had some problem with the fixed navbar vs. animation but I asked on stackoverflow and one of my teammeat helped me with that. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://coffee-news.netlify.app/
