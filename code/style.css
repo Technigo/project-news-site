@@ -11,6 +11,7 @@ figure {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  width:100%;
 }
 
 .header {
@@ -34,6 +35,13 @@ figure {
   .header__title{
     width:100%;
     text-align: center;
+  }
+}
+
+
+@media screen and (max-width:410px){
+  .header__title{
+    white-space: normal;
   }
 }
 
@@ -62,6 +70,7 @@ text-decoration: black;
     flex:auto;
   }
 }
+
 
 .header__social {
   flex:1;
@@ -314,8 +323,12 @@ text-decoration: black;
 
 .second__layer__content{
   display: flex;
-}
+  }
 
+.second__layer__left{
+  display:flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 600px){
   .second__layer__content{
     flex-direction:column;
@@ -380,6 +393,12 @@ text-decoration: black;
 @media screen and (max-width:900px){
   .video__label{
     text-align: center;
+  }
+}
+
+@media screen and (max-width:410px){
+  .video iframe{
+    width:100%;
   }
 }
   
