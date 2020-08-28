@@ -356,7 +356,7 @@ footer img {
   }
 }
 
-
+/* ------------------------------------ Menu/Hamburger */
 @media (max-width:720px) {
   header nav a {
     display: none;
@@ -399,7 +399,13 @@ footer img {
   }
 
   .article-v {
-    width:40%
+    width:100%;
+    margin: 10px 0;
+  }
+
+  .article-v h3 {
+    max-width:80%;
+    margin:auto;
   }
 
   .article-h {
@@ -425,19 +431,5 @@ footer img {
     font-size:16px;
     margin:10px 20px 15px 20px;
     text-align: center;
-  }
-
-  .articles-vertical {
-    flex-direction: column;
-  }
-
-  .article-v {
-    width:101%;
-    margin: 10px 0;
-  }
-
-  .article-v h3 {
-    max-width:80%;
-    margin:auto;
   }
 }
