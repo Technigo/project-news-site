@@ -40,7 +40,7 @@ header {
 .sitename div {
   font-family: 'Indie Flower';
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 20px;
 }
 
@@ -79,15 +79,12 @@ nav a {
   text-align: center                                                                                                                                                                                                                                                                                                                                     ;
 }
 
-.big-news p {
-  text-align: left                                                                                                                                                                                                                                                                                                                                     ;
-}
-
 /* NEWS */
 
 .news {
   text-align: center;
-  padding: 24px;
+  padding: 18px;
+  margin: 18px;
 }
 
 .cards {
@@ -112,6 +109,11 @@ nav a {
 .cards a img {
   width: 100%;
   border-radius: 5%;
+  filter: grayscale(100%);
+}
+
+.cards a img:hover {
+  filter: grayscale(0%);
 }
 
 .cards a figure {
@@ -135,7 +137,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   header {
     justify-content: space-between;
   }
@@ -155,27 +157,49 @@ footer {
 
   .big-news div {
       text-align: left;
-      margin: 24px;
   }
 
-  /* .cards a {
+  .news p {
+    text-align: left;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards a {
     width: 35%;
     flex-grow: 1;
+  }
+
+  /* .cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
   } */
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .big-news {
     flex-direction: row;
     align-items: center;
   }
 
+  .big-news div {
+    margin-left: 30px;
+  }  
+
   .big-news img {
     width: 50%;
   };
 
-  /* .cards a {
-    width: 10%;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards a {
+    width: 20%;
     flex-grow: 1;
-  } */
+  }
 }
