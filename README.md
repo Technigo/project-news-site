@@ -1,4 +1,4 @@
-# News Site
+# Climate News
 
 This site was the first individual assignment during the Technigo Bootcamp fall 2020. We were asked to make a news-site with a focus on responsiveness, layout with columns and rows, and navbar. 
 
