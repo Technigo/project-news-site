@@ -1,4 +1,4 @@
-# Project News S
+# Project News Site
 
 This project is done as a part of Technigo bootcamp. The focus for this project was to create a magazine website with a responsive design and a flexbox layout.
 
