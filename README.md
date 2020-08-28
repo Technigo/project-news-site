@@ -12,3 +12,4 @@ If I had more time I would make it prettier. At this stage I wanted to focus on 
 
 ## View it live
 
+https://tennigo-newssite-project1.netlify.app/
