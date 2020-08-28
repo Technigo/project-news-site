@@ -118,7 +118,11 @@ html{
       max-height: 40vw;
       text-align: left;
       padding: 2px;
-      overflow: scroll;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+    .big-news-text::-webkit-scrollbar{
+      display: none;
     }
     .big-news h2{
       margin: 0;
