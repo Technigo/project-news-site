@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is the first individual project in the technigo bootcamp and the focus was
+to learn more about how to make responsive web pages.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I've used flexbox and grid to structure the page together 
+with media queries to make it responsive for mobile, tablet and desktop.
+If I had more time I would have played around more 
+with hover effects, styling and tried some CSS animations.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://festive-perlman-0adaa3.netlify.app/
