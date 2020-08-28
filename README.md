@@ -1,6 +1,6 @@
 # News Site
 
-This week’s project was to create a classic magazine or newspaper site. The focus was to use what we've learned about responsive design and flexbox. 
+This week’s project was to create a classic magazine or newspaper site. The focus was to use what we've learned about responsive design and flexbox. I used flexbox in this version (but also tried css grid). The task was to code a layout with one-column for mobile, two for tablet and 4 for desktop where also the header would change depending on these widths. I added two animations: a shaky banner-text and a banner changing color. I also used hover effect on the cards and box-shadowing.
 
 ## The problem and workflow
 1. I browsed the instructions and then made a rough plan for the workflow (which I then strayed from almost directly...). 
@@ -11,8 +11,6 @@ This week’s project was to create a classic magazine or newspaper site. The fo
 
 Tools:
 I used dev tools A LOT! I also had help from the other Hippos as well as from looking at Stack Overflow. I googled and googled and often found answers on the W3-pages.
-
-When I got stuck I probably should have taken a break earlier than I usually did - taking a break and coming back seemed to help me reset my brain.
 
 Struggles:
 I struggled with positioning items and wrapping my head around nested elements. Scaling images was also difficult. Another big issue was when I changed something in say the mobile version without understanding how it would effect the tablet and desktop. I spend MANY hours going back and forth between versions to try to figure out why my beautiful alignment all of a sudden was a disaster :)
