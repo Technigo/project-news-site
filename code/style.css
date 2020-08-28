@@ -377,15 +377,14 @@ text-decoration: black;
   padding-left: 30px;
 }
 
-@media screen and (max-width: 600px){
-  .video {
-    padding-left: 5px;
+@media screen and (max-width: 900px){
+  .video{
+    padding:0px;
   }
 }
 
 @media screen and (max-width: 900px){
   .video iframe{
-    width: 620px;
     margin:auto;
   }
 }
