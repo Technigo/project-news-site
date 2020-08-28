@@ -1,4 +1,346 @@
+/*** Main styling ***/
 html {
-  background: #0025ff;
-  color: #fff;
+  color: black;
+  font-family: Alata
+}
+
+body{
+  margin: 20px; 
+}
+
+a{ 
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+}
+
+h3{
+  margin: 5px;
+  padding: 5px;
+}
+
+p{
+  margin: 5px;
+}
+
+.banner{
+  width: 300px;
+}
+
+/*** Header and navigation styling ***/
+
+header{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(0,0,0, 0.5)
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/*** Big news section ***/
+.flex-parent{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-child{
+  margin: 10px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid black;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.two{
+  padding: -50px;
+}
+
+.flex-child:hover {
+    opacity: 1.0;
+}
+
+.photo-1{
+  width: 400px;
+}
+
+video{
+  align-content: center;
+  height: 100%;
+}
+
+/**** Small news "grid" section***/
+
+.cards {
+  margin: -5px;
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column;
+  border: 1px solid black;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 1rem;
+  height: 30rem;
+  opacity: 0.5;
+}
+
+.link{
+  font-size: 15px; 
+}
+
+.card:hover{
+  opacity: 1.0;
+}
+
+.logo{
+  max-width: 500px;
+  max-height: auto;
+}
+
+.pauline{
+  max-width: 500px;
+  max-height: auto;
+}
+
+.course{
+  max-width: 500px;
+  max-height: auto;
+}
+
+.winner{
+  max-width: 500px;
+  max-height: auto;
+}
+
+/*** Footer styling ***/
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.linkedin{
+  width: 30px;
+}
+
+/*** Media queries for tablet screens***/
+
+@media (min-width: 768px){
+  .cards { 
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .card{
+    height: 25rem;
+  }
+
+  .banner{
+    max-width: 300px;
+  }
+
+  .header { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: space-evenly;
+  }
+
+  .flex-parent {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .one{ 
+    width: 60%;
+  }
+  
+  .two{ 
+    width: 40%;
+  }
+  
+  video{
+    height: 300px;
+   }
+
+  .cards {
+    display: grid;
+    padding: 20px; 
+    grid-gap: 20px;
+  }
+
+  .card{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    width: 200px;
+  }
+
+  .pauline{
+    max-width: 200px;
+  }
+
+  .course{
+    max-width: 200px;
+  }
+
+  .winner{
+    max-width: 200px;
+  }
+
+/*** Media queries for computer screens***/
+
+@media (min-width: 1024px) {
+    
+  .cards { 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0px;
+    grid-gap: 0px;
+  }
+
+  .card { 
+    height: 25rem;
+  }
+
+  header {  
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .photo-1{
+      max-width: 50%;
+    }
+
+    .logo{
+      width: 500px;
+    }
+
+  .flex-parent{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+    
+    .one{
+      width: 60%;
+    }
+    .two{
+      width: 40%;
+    }
+
+   .logo{
+     max-width: 100px;
+   } 
+    
+  .pauline{
+    max-width: 300px;
+  }  
+  .course{
+    max-width: 200px;
+  }
+
+  .winner{
+    max-width: 200px;
+  }
+
+  video{
+    height: 100%;
+  }
+
+    /*** Styling for polaroid effect that only appears in computer width ***/  
+  }
+  figure {
+    display: inline-block;
+    padding: 15px 15px 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+  }
+
+  figcaption {
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+  }
+
+  figure img {
+    display: block;
+    width: 250px;
+  }
+
+  figure:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  }
 }
