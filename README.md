@@ -15,7 +15,7 @@ I found out during the process that working in Developer Tools and adding code t
 
 If I had more time I would look into browser-compatability and -moz/-wekit-prefixes. 
 
-For my next project I will plan the website in Figma to begin with, instead of/as well as a notepad, for an overall view of the project. I would also name my classes a bit differently to make it easier to differentiate sections from each other. 
+For my next project I will plan the website in Figma to begin with, instead of/as well as a notepad, for an overall view of the project. I would also name my classes a bit differently to make it easier to differentiate sections from each other. Finally I would work more thoroughly with commits and structuring my repository.
 
 
 ## View it live
