@@ -4,6 +4,7 @@ body{
  color: #354649;
  margin: 0 auto;
  padding: 0;
+ padding-top: 50px;
  width: 100%;
  font-family: "Cardo", serif;
 }
@@ -23,6 +24,8 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
 }
 
 .icon {
@@ -74,7 +77,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  /*width: auto;*/ 
 }
 
 .big-news-image {
@@ -132,7 +134,7 @@ h3 {
 
 .cards {
   display: flex;
-  flex-wrap; wrap;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -214,6 +216,10 @@ h5 {
 
 /*** ipad ***/
 @media (min-width: 667px) {
+  
+  body {
+    padding-top: 80px;
+  }
 
   nav {
     display: inline-block;
@@ -281,9 +287,15 @@ h5 {
 /*** desktop ***/
 
 @media (min-width: 1024px) {
+
+  body {
+    padding-top: 120px;
+  }
+
   header {
     align-items: baseline;
   }
+
 
   h1 {
     font-size: 44px;
