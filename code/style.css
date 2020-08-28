@@ -4,12 +4,26 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Serif JP', serif;
+    text-align: justify;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #214273;
+}
+
+h2 {
+    font-family: 'Noto Serif JP', serif;
+    color: #214273;
+    margin: auto;
+    line-height: 1.5;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #214273;  
+    line-height: 1.5;  
 }
 
 /* HEADER */
@@ -21,12 +35,11 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
-    border-bottom: solid 1px #214273;
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
-.header-child {
+.logo-title{
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -34,7 +47,7 @@ h1 {
     padding-left: 10px;
 }
 
-.header-child h1 {
+.logo-title h1 {
     margin-left: 10px;
 }
 
@@ -64,32 +77,115 @@ h1 {
 
 .main-article-parent {
     width: 100%;
-    height: 500px;
     background:white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
+    padding-bottom: 10px;
 }
 
-.main-article-parent div {
+/* .main-article-parent div {
     width: 100%;
-    height: 490px;
+    height: 500px;
     padding: 10px;
-    background: pink;
-}
+    background: rgb(255, 226, 231);
+} */
 
 .main-article-child {  
+    width: 100%;
+    padding: 50px 10px;
+    background: rgb(255, 215, 222); 
     box-sizing: border-box;  
-    margin: auto;  
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.main-article-child img {
+    width: 100%;
+}
+
+.main-article-header {
+    border-bottom: solid 1px #214273;
+    padding: 0px 0px 10px 0px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-article-child div h2 a {
+    color: #214273;
+    text-decoration: none;
+}
+
+.main-article-child div h2 a:hover {
+    color: #fa5aaa;
+}
+
+.text-area {
+    background: white;
+    margin-top: 10px;
+    padding: 15px 5px;
+}
+
+ .text-area p {
+    margin: auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.text-area nav {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.text-area nav a {
+    background: #ff8cc5;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 10px;
+    font-weight: 600;
+    color:  #214273;
+    margin: 0 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.text-area nav a:hover {
+    background: #214273;
+    color: #ff8cc5;
+}   
+
+/* DIVIDER */
+
+.opn-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.opn-divider h1 {
+    font-size: 23px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #214273;
+    box-sizing: border-box;
+}
+
+.opn-divider img {
+    width: 40px;
+}
+
+
+
+
 
 /* OTHER ARTICLES */
 
 .other-article-parent {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -97,15 +193,17 @@ h1 {
     padding: 10px 0px;
 }
 
-.other-article-parent div {
+/* .other-article-parent div {
     width: 100%;
     height: 450px;
-    /* border: solid blue 1px; */
     padding: 10px;
-    background: white;
-}
+    background: rgb(255, 255, 189);
+} */
 
 .other-article-child {  
+    width: 100%;
+    padding: 10px;
+    /* background: rgb(255, 255, 189); */
     box-sizing: border-box;  
     margin: auto;  
 }
@@ -132,18 +230,36 @@ h1 {
 
     .header-parent nav a:hover {
        color: #ff8cc5;
+    }  
+
+    .main-article-child {
+        flex-direction: row;
     }
 
-    .other-article-parent div {
+    .main-article-child img {
+        width: 50%;
+    }
+
+    .text-area {
+        padding: 10px;
+        width: 500px;
+        background: white;
+        box-sizing: border-box;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .other-article-child {
         width: 50%;      
     }
+
+   
 }
 
 /* MEDIA QUERY 1: SCREEN SIZE 1020PX OR BIGGER & 4 CARDS PER ROW */
 
 @media (min-width:1020px) {
     
-    .other-article-parent div {
+    .other-article-child {
         width: 25%;        
     }
 }
