@@ -11,4 +11,3 @@ I had some issues with flexbox and got trough the problems by using a guide from
 
 #View it live
 
-Here is the link: 
