@@ -75,7 +75,7 @@ nav a:hover {
   width: 100%;
 }
 
-.big-news div {
+.big-news .big-text-div {
   display: flex;
   flex-direction: column;
   background: white;
@@ -83,7 +83,7 @@ nav a:hover {
   max-width: 1100px;
 }
 
-.big-news p {
+.big-news p, h2 {
   margin: 10px;
 }
 
@@ -120,6 +120,14 @@ nav a:hover {
 .small-news-container img {
   width: 100%;
   border-radius: 5px;
+}
+
+.small-news-container a {
+  color: pink;
+}
+
+.small-news-container a:hover {
+  color: red;
 }
 
 /*** FOOTER ***/
@@ -161,7 +169,7 @@ footer {
     align-items: center; 
   }
 
-  .big-news div {
+  .big-news .big-text-div {
     flex-direction: row;
     align-items: center;
   }
@@ -196,7 +204,7 @@ footer {
 
   /*** BIG NEWS ***/
 
-  .big-news p {
+  .big-news p, h2 {
     padding: 20px;
   }
 
