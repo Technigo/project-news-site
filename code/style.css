@@ -104,7 +104,9 @@ main {
 
 @media (min-width: 768px) {
   .big-news img {
-    width: 50%;
+    width: 45%;
+    height: 90%;
+    align-self: center;
   }
 }
 
@@ -118,7 +120,8 @@ main {
 
 @media (min-width: 768px) {
   .big-news-article {
-    width: 50%;
+    width: 45%;
+    align-self: center;
   }
 }
 
@@ -136,7 +139,14 @@ main {
 @media (min-width: 768px) {
   .big-news-card {
     flex-wrap: nowrap;
-    width: 99%;
+    width: 99%;    
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .big-news-card {
+    width: 98%;
   }
 }
 
@@ -173,7 +183,7 @@ h1 {
   margin: 10px 0px 0px 0px;
 }
 
-/** SMALL NEWS TEXT BOX**/
+/** SMALLER NEWS TEXT BOX**/
 
 a {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -231,6 +241,7 @@ h2 {
 @media (min-width: 768px) {
   .small-news-card {
     width: 48%
+
   }
 }
 
