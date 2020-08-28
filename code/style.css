@@ -69,7 +69,7 @@ header {
 .main-column {
   flex: 1;
   order: 1;
-  padding: 5px;
+  padding: 10px;
 }
 
 .side-column {
@@ -106,6 +106,10 @@ order: 2;
 .cards:nth-child(2){background-color: lightblue;}
 .cards:nth-child(3){background-color: rgb(175, 221, 161);}
 .cards:nth-child(4){background-color: rgb(188, 170, 238);}
+.cards:nth-child(5){background-color: rgb(192, 153, 55);}
+.cards:nth-child(6){background-color: lightblue;}
+.cards:nth-child(7){background-color: rgb(175, 221, 161);}
+.cards:nth-child(8){background-color: rgb(188, 170, 238);}
 
 
 footer {
@@ -117,24 +121,7 @@ footer {
 
 /* MEDIA QUERI */
 
-/* from Tablett size this is shown */
-
-/* 
-@media (max-width: 768px){
-  
-  .column-layout {
-      display: flex;
-  }
-
-  .colum-cards {
-   display: flex; 
-  justify-content: space-between;
-  }
-
-  nav {
-      display: none;
-  }
-} */
+/*** TABLET SIZE THIS IS SHOWN***/
 
 @media (min-width: 678px){
   
@@ -144,7 +131,9 @@ footer {
 
   .colum-cards {
       display: flex; 
-      justify-content: space-between;
+      /* justify-content: space-between; */
+      justify-content: flex-start;
+      flex-wrap: wrap;
   }
 
   .hamburger div {
@@ -153,12 +142,13 @@ footer {
 
   .nav a {
       display: inline-block;
+      /* display: flex; */
   }
 }
 
 /*** MEDIA QUERIES  ***/
 
-/*** Tablett ***/
+/*** Tablet ***/
 /* @media (min-width: 667px) {
 
   header {
