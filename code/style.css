@@ -114,6 +114,7 @@ a:hover, a:active {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex: 1 0 21%;
 }
 
 .article {
@@ -203,11 +204,11 @@ a:hover, a:active {
   }
 
   .article-pictures {
-    width: 34vh;
+    width: 30vh;
   }
 
   .article {
-    width: 34vh;
+    width: 30vh;
   }
 }
 
@@ -238,6 +239,16 @@ a:hover, a:active {
   }
 
   .article-pictures {
+    width: 25vh;
+  }
+
+  .article {
+    width: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .article-pictures {
     width: 35vh;
   }
 
@@ -245,3 +256,4 @@ a:hover, a:active {
     width: 35vh;
   }
 }
+
