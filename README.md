@@ -12,3 +12,5 @@ Styling is very basic but added some background color, images, free logo, hover 
 
 ## View it live
 You can view the site at monkeybusiness101.com
+or
+inspiring-lewin-ce6cee.netlify.app
