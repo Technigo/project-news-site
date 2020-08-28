@@ -105,6 +105,7 @@ blockquote {
 .big-news-container {
   margin: 40px 20px;
   color: #fff;
+  /* border: 0.5px solid #47353A; */
 }
 
 .big-news-container a {
@@ -113,17 +114,18 @@ blockquote {
   align-items: flex-end;
   width: 100%;
   text-decoration: none;
-  /* border: 2px solid #000; */
+  background-color: #D9BEB4;
 }
 
 .big-news-container img {
   width: 100%;
-  border: 1px solid #47353A;
+  /* border-right: 0.5px solid #47353A; */
 }
 
 .big-news-text {
   margin: 0 20px;
-  color: #000;
+  /* color: #290C01; */
+  color: #fff;
 }
 
 p .introtext {
@@ -131,7 +133,7 @@ p .introtext {
 }
 
 .big-news-container p:last-child {
-  margin-bottom: 0;
+  margin: 10px 0;
   max-width: 40ch;
 }
 
@@ -152,8 +154,6 @@ p .introtext {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* border: 1px solid #000; */
-  /* behövs justify-content center här? */
   justify-content: center;
   /* align-items: center; */
 }
@@ -163,8 +163,8 @@ p .introtext {
   width: 80%;
   display: flex;
   flex-direction: column;
+  /* should this justify-content space between be here? */
   justify-content: space-between;
-  /* align-items: center; */
   margin-bottom: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -172,12 +172,15 @@ p .introtext {
 .newscard_container img {
   width: 100%;
   padding: 20px 20px 0 20px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .newscard_bottom {
   display: flex;
   flex-direction: column;
-  margin: 0px 20px 5px 20px;
+  padding: 0px 20px 0px 20px;
+  width: 100%;
   color: #290C01;
 }
 
@@ -187,21 +190,31 @@ p .introtext {
 }
 
 .newscard_bottom p {
-  margin: 0;
+  margin: 0 0 20px 0;
   line-height: 1.2;
+  /* margin-bottom: 20px; */
 }
 
 
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9BEB4;
+  /* overflow: hidden; */
+  margin-top: 20px;
+  padding: 8px 20px 20px 20px;
+	}
 
-/* .category_T {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 10px;
-  color: #BF9484;
-  background: #75594E;
-} */
+footer img {
+  width: 50px;
+  height: 50px;
+	}
 
+footer p {
+  font-size: 16px;
+	}
 
 /* Media query for relative and absolute position of big-news-container for mobile screen only below (max-width). I added a max-width media query because I didn't know how to override the relative/absolute positioning on bigger screens doing mobile-first.*/
 
@@ -210,9 +223,10 @@ p .introtext {
     position: relative;
     width: 100%;
   }
-/* Why isn't this element 100% width for sceens under 767px as I have specified here? */
+
   .big-news-container img {
     width: 100%;
+    border-right: none;
   }
 
   .big-news-container .big-news-text {
@@ -223,6 +237,10 @@ p .introtext {
 
   .big-news-text {
     color: #fff;
+  }
+
+  .big-news-container p:last-child {
+    margin-bottom: 20px;
   }
 
   .newscard_container {
@@ -281,6 +299,7 @@ p .introtext {
 
   .newscard_container a {
     width: 40%;
+    justify-content: flex-start;
     /* ändra till width 80% på samma selector ovan! och ta bort width! */
     margin-left: 20px;
     margin-right: 20px;
@@ -293,7 +312,14 @@ p .introtext {
 }
 
 @media (min-width: 1024px) {
-  p:last-child {
+  .newscard_container a {
+    width: 23%;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: flex-start;
+  }
+
+  .big-news-container p:last-child {
     max-width: 85ch;
     }
 }
