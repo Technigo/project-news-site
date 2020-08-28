@@ -6,8 +6,6 @@ I chose a subject that I felt comfortable with so that I could focus more on the
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
 I used flexbox for the layout, learned a lot about positioning, getting things centered and getting things where I wanted them to be. I planned the whole thing in a Jamboard and collected the links and images I needed there.
 I have a planning board in Trello so i can break down the project in smaller pieces.
 

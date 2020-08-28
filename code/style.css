@@ -1,229 +1,226 @@
 /* Mobile first*/
+
 html {
- background: #F1F1EF;
- color: black;
- font-family: 'Montserrat', sans-serif;
+    background: #F1F1EF;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body { 
-  position: relative;
+body {
+    position: relative;
 }
 
 header {
-  width: 100%;
-  height: 75px;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  position: absolute;
-  font-family: 'Montserrat', sans-serif;
-  background-color: darkgoldenrod;
+    width: 100%;
+    height: 75px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #B0958A;
 }
 
 header img {
-  width: 50px;
-  height: auto;
+    /* The Technigo logo*/
+    width: 50px;
+    height: auto;
 }
 
 main {
-  position: static;
+    position: static;
 }
 
-.news, .big-news {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+.news,
+.big-news {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
 }
 
 article .article-container {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
+    /* The parent of the articles*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.article-container .big-news, .big-newsimage {
-  width: 100%;
-  height: auto;
-  
+.article-container .big-news .big-newsimage {
+    /* The big newarticle and image*/
+    width: 100%;
+    height: auto;
 }
 
 .article-container .news-image {
-  width: 100%;
-  height: auto;
-  
-}
-ul { /* Inside the navbar*/
-  display: flex;
-  align-content: center;
-  list-style-type: none;
-  font-size: 20px; 
+    /* Images in the grid of articles*/
+    width: 100%;
+    height: auto;
 }
 
+ul {
+    /* Inside the navbar*/
+    display: flex;
+    align-content: center;
+    list-style-type: none;
+    font-size: 20px;
+}
 
 footer {
-  display: flex;
-  justify-content: space-around;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  font-size: 15px;
-  padding: 10px;
-  background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-around;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #B0958A;
 }
 
 h1 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h2 {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 p {
-  font-size: 10px;
-  padding: 5px;
+    font-size: 10px;
+    padding: 5px;
 }
 
 span {
-  font-size: 15px;
-  width: 30%;
+    /* In footer*/
+    font-size: 15px;
+    width: 30%;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 a:visited {
-  color: black;
+    color: black;
 }
 
 a:hover {
-  color: darkolivegreen;
+    color: #6C757A;
 }
 
-.nailtech-news { /*Nailtech News text in the header*/
- font-family: 'Monoton';
+.nailtech-news {
+    /*Nailtech News text in the header*/
+    font-family: 'Monoton';
 }
 
-
-
-/*Hide links in navbar for mobile*/
 @media (max-width: 767px) {
-
- .nailtech-news {
-  position: relative;
-  left: 70px;
+    .nailtech-news {
+        position: relative;
+        left: 70px;
+    }
+    /* Not displaying these links for mobile*/
+    .booking,
+    .education,
+    .li-link {
+        display: none;
+    }
 }
 
- .booking, .education, .li-link {
-  display: none;
- }
 
-}
-
- 
 /* Tablet*/
+
 @media (min-width: 768px) {
-
-  ul {
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .logo {
-    order: 2;
-  }
-
-  .li-link {
-    order: 1;
-  }
-
-  .nailtech-news {
-    order: 1;
-  }
-
-  .booking {
-    order: 3;
-  }
-
-  .education {
-    order: 3;
-  }
-
-   h2 {
-     padding: 5px;
-   }
-    
- .article-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- }
-
- .big-news {
-  width: 100%;
-  height: auto;
-  margin: 40px;
-}
-  
-.news {
-  width: 45%;
-  margin: 5px;
-}
+    ul {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* Order for the content of the navbar*/
+    .logo {
+        order: 2;
+    }
+    .li-link {
+        order: 1;
+    }
+    .nailtech-news {
+        order: 1;
+    }
+    .booking {
+        order: 3;
+    }
+    .education {
+        order: 3;
+    }
+    h2 {
+        padding: 5px;
+    }
+    /* For the big news and 2 columns of articles*/
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .big-news {
+        width: 100%;
+        margin: 40px;
+    }
+    .news {
+        width: 45%;
+        height: auto;
+        margin: 5px;
+    }
 }
 
- /* Desktop */ 
+
+/* Desktop */
+
 @media (min-width: 1024px) {
-  
- ul {
-   justify-content: space-between;
- }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
-    padding: 5px;
-  }
-
- .logo {
-   order: 1;
- }
-
- .li-link {
-   order: 4;
-   margin-left: 800px;
- }
-
- .nailtech-news {
-   order: 1;
- }
-
- .booking {
-   order: 4;
- }
-
- .education {
-   order: 4;
-   margin-right: 20px;
- }
-
-.article-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.big-news {
- width: 100%;
- height: auto;
- margin: 50px;
-}
- 
-.news {
- width: 20%;
- margin-bottom: 25px;
- }
+    ul {
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        padding: 5px;
+    }
+    /* Different order for the content of the navbar*/
+    .logo {
+        order: 1;
+    }
+    .li-link {
+        order: 4;
+        margin-left: 150px;
+    }
+    .nailtech-news {
+        order: 1;
+    }
+    .booking {
+        order: 4;
+    }
+    .education {
+        order: 4;
+        margin-right: 20px;
+    }
+    /* For the article grid, with 1 big news and 4 columns of articles*/
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .big-news {
+        width: 100%;
+        height: auto;
+        margin: 50px;
+    }
+    .news {
+        width: 20%;
+        margin-bottom: 25px;
+    }
+    /* Playing with hover effects*/
+    .logo:hover {
+        transform: scale(2, 2);
+    }
+    .nailtech-news:hover {
+        transform: skew(15deg);
+    }
 }
