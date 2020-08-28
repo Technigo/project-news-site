@@ -26,7 +26,6 @@ header {
   display: flex;
   align-items: center;
   margin: -10px;
-  justify-content: center;
 }
 
 header img {
@@ -163,6 +162,10 @@ content: '\1F9E0';
 }
 
 @media (min-width: 1025px) {
+  header {
+    justify-content: center;
+  }
+  
   nav {
     display: flex;
     justify-content: space-around;
