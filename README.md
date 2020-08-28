@@ -11,4 +11,4 @@ If i had more time, I would have most definately spent some time creating paragr
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+A live Demo of the website can be found here https://katsiez.github.io/project-news-site/index.html
