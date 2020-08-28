@@ -57,6 +57,12 @@ text-decoration: black;
   }
 }
 
+@media screen and (max-width: 900px){
+  .header__title{
+    flex:auto;
+  }
+}
+
 .header__social {
   flex:1;
 }
