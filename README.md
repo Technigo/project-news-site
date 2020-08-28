@@ -2,17 +2,15 @@
 
 This is a responsive newssite project concerning the most important information about food.
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+It's created with the mobile-first approach which displays news-cards in one column. When tablet-mode is activated it will show the cards in two columns. When it hits desktop it will show four columns of news-cards.
 
 ## The problem
 
-I started out making a scetch
+I started out making a scetch on paper and tried to make it as similar as possible.
 
 I had a problem getting vertical space between my cards since my height isn't specified. I posted a question on Stack Overflow and the solution was to add margin-bottom to .article-card which created the space I wanted.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had had more time I would have made the hamburger-menu actually display something. At the moment it doesn't display a menu and is not clickable.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://foodermagazine.netlify.app/
