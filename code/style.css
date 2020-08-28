@@ -21,6 +21,7 @@ header h1{
 	padding:0px;
 	color:black;
 }
+
 header a{
 	text-decoration: none;
 	color: black;
@@ -39,6 +40,9 @@ a:hover {
 .navbar_tablet{
 	display:none; 
  }
+ header h2{
+	display:none;
+}
 /*** Big news section **/
  .big-news{
 	max-width: 1200px;
@@ -55,8 +59,8 @@ a:hover {
 
   }
   .news img { 
-	width:100%; 
-	height:100%; 
+	width:400px;
+  height:90%
 } 
 /*** News cards section **/
 .card {
@@ -81,6 +85,7 @@ a:hover {
 @media (max-width: 899px) and (min-width: 600px) {
 	.news_cards { 
 		grid-template-columns: repeat(2, 1fr); 
+		padding-right: 10px;
 	}
 	.navbar_tablet{
 		color:black;
@@ -93,8 +98,14 @@ a:hover {
 	header h1{
 		display:none;
 	}
+	header h2{
+		display:none;
+	}
 	.big-news{
-		padding: 20px;
+		padding-top: 20px;
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-bottom: 20px;
 		max-width: 1000px;
 		margin: 0 auto;
 		display:flex;
@@ -140,8 +151,14 @@ a:hover {
 		width:650px;
 		height:90%;	
 	  }	
-	  html { font-size: 20px; 
+	  html { font-size: 18px; 
 	  }
+	  header h2{
+		font-size: 20px;
+		margin:0px 30px 0px 10px;
+		padding:0px;
+		color:black;
+	}
 }
 /* shake images*/
 @keyframes shake {
@@ -167,7 +184,7 @@ a:hover {
 	position: relative;
 	width: 220px;
 	padding:10px;
-  }
+  } 
    
   .card img {
 	border: 10px solid #fff;
