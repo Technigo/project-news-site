@@ -1,12 +1,6 @@
-# News Site
+First individual project during the Technigo bootcamp.
+This project was to learn about layout pages with FLEXBOX.
 
-Replace this readme with your own information about your project. 
+#Building a News site
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+This week's project is to create a classic magazine/newspaper site. The site should contain a header with a navbar. Further the site contains a big news section that greets the visitor and while you scroll down on the site you come to the news grid. The site is structured with flexbox and responsive design so the site changes depending on the screen on the device you use for the best user experience!
