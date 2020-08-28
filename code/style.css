@@ -28,6 +28,9 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 13px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
   }
   header nav {
     display: flex;
@@ -56,7 +59,7 @@ header nav {
 
 body {
   font-family: arial, sans-serif;
-  margin: 0;
+  margin: 0 auto
   background-color: white;
 }
 
@@ -73,9 +76,11 @@ body {
   font-size: 30px;
   text-align: center;
   color: rgb(114, 104, 104);
+  margin-bottom:30px;
 }
 .row {
   display: flex;
+  flex-direction:column;
   justify-content: space-around;
   padding: 25px 25px;
   max-width: 1125px;
@@ -164,19 +169,23 @@ body {
 }
 
 .gallery-item {
-  width: 330px;
-  height: 265px;
+  width: 250px;
+  height: 200px;
+  /* width:100%;
+  height:auto; */
   margin: 10px;
   text-decoration: none;
 }
 .gallery-item img {
   position: absolute;
+  width: 250px;
+  height: 200px;
   flex-grow: 1;
 }
 .text-wrapper {
   position: relative;
-  width: 330px;
-  height: 265px;
+  width: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,15 +212,21 @@ body {
 
 /*** As there is no hove effect on touch screens, the text should be always present ***/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
+  .row{
+    flex-direction:row;
+  }
   .text-wrapper {
     opacity: 1;
     justify-content: flex-end;
     text-shadow: 1px 1px 1px #000;
   }
   .explanation {
-    opacity: 0;
+    opacity: 1;
     margin-bottom: 1em;
+  }
+  .title {
+    font-size: 30px;
   }
 }
 .footer {
