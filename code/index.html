@@ -2,15 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Matters! | Online Magazine</title>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
 
     <header>
-      <!-- Some kind of logo and navbar -->
       <img class="logo" src="./art-logo.png"  alt="Art Logo" />
       <h1>Art Matters!</h1>
       <nav>
@@ -19,66 +20,92 @@
         <a href="#"><strong>interviews</strong></a>
         <a href="#"><strong>contact us</strong></a>
       </nav>
-  
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>          
+      </div>
     </header>
+    <div class="container">
+      <section class="main-news">
+        <h2>latest news</h2>
+        <h3>New Rolling Stones exhibition to open at Tate Modern, London</h3>
+        <Article class="main-flex-box">
+            <img class="main-news-img" src="./rollingstones-img.jpg" alt="The Rolling Stones icon" />
+            <p>Vivamus ultricies semper ligula, a molestie turpis iaculis eu. Cras consequat purus et diam consequat, lacinia placerat elit euismod. Integer accumsan viverra tellus non pulvinar. Phasellus aliquet luctus finibus. Eiusmod duis irure consequat enim est eiusmod. Irure ad magna eiusmod ipsum laboris. Consequat ut ullamco reprehenderit reprehenderit eu occaecat labore excepteur laborum.<br><br><a href="#">Read more...</a></p>
+        </Article>
+      </section>
+    </div>
+    <div class="container">  
+      <h2 class="other-news-heading">other news</h2>
+    </div>
+      <section class="other-news">
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./newyork-img.jpg" alt="New York sign" />
+            <h4>Stockholm's Fotografiska to host New York based artist</h4>
+          </a>
+        </div>
+        
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./dots-img.jpg" alt="Dots painting" />
+            <h4>Yayoi Kusama inspires new generation of artists</h4>
+          </a>
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./haring-img.jpg" alt="Keith Haring street art" />
+            <h4>Keith Haring street art discovered</h4>
+          </a>
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./usalights-img.jpg" alt="USA map" />
+            <h4>Check out The Yard Dog Gallery: Austin, Texas</h4>
+          </a>  
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./eliasson-img.jpg" alt="Olafur Eliasson exhibition" />
+            <h4>Olafur Eliasson: In real life - exhibition extended</h4>
+          </a>
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="abstract1-img.jpg" alt="Abstract painting" />
+            <h4>See MoMA's "hot-list" for 2021</h4>
+          </a>
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="./abstract2-img.jpg" alt="Abstract dark painting" />
+            <h4>How to predict the next hot artists</h4>
+          </a>
+        </div>
+
+        <div class="flex-child">
+          <a href="#">
+            <img class="other-news-img" src="staircase-img.jpg" alt="Spiral staircase" />
+            <h4>Photographer Jean-Michel Blanc explains his latest work</h4>
+          </a>
+        </div>
+      
+      </section>
     
-    <section class="main-news"><!-- The big news content -->
-      <h2>latest news</h2>
-        <h3>New Rolling Stones exhibition hits London</h3>
-        <img class="main-news-img" src="./rollingstones-img.jpg" alt="The Rolling Stones icon" />
-        <p>Vivamus ultricies semper ligula, a molestie turpis iaculis eu. Cras consequat purus et diam consequat, lacinia placerat elit euismod. Integer accumsan viverra tellus non pulvinar. Phasellus aliquet luctus finibus. Nulla eu elit massa. Sed gravida dictum ex nec rutrum. Aliquam erat volutpat. Sed accumsan ante lacinia mauris rutrum pellentesque. Nulla ligula arcu, malesuada ultrices purus ut, mollis pellentesque tortor.</p>
-    </section>
-
-    <h2 class="other-news-heading">other news</h2>
-    <section class="other-news"><!-- The other news  -->  
-      <div class="flex-child">
-        <h4>Stockholm's Fotografiska hosts New York based artist</h4>
-        <img class="other-news-img" src="./newyork-img.jpg" alt="New York sign" />
-      </div>
-      
-      <div class="flex-child">
-        <h4>Yayoi Kusama inspires new generation of artists</h4>
-        <img class="other-news-img" src="./dots-img.jpg" alt="Dots painting" />
-      </div>
-
-      <div class="flex-child">
-        <h4>Keith Haring street art discovered</h4>
-        <img class="other-news-img" src="./haring-img.jpg" alt="Keith Haring street art" />
-      </div>
-
-      <div class="flex-child">
-        <h4>Check out The Yard Dog Gallery: Austin, Texas</h4>
-        <img class="other-news-img" src="./usalights-img.jpg" alt="USA map" />
-      </div>
-
-      <div class="flex-child">
-        <h4>Olafur Eliasson: In real life - exhibition extended</h4>
-        <img class="other-news-img" src="./eliasson-img.jpg" alt="Olafur Eliasson exhibition" />
-      </div>
-
-      <div class="flex-child">
-        <h4>other news</h4>
-        <img class="other-news-img" src="abstract1-img.jpg" alt="Abstract painting" />
-      </div>
-
-      <div class="flex-child">
-        <h4>other news</h4>
-        <img class="other-news-img" src="./abstract2-img.jpg" alt="Abstract dark painting" />
-      </div>
-
-      <div class="flex-child">
-        <h4>Photographer Jean-Michel Blanc explains his latest work</h4>
-        <img class="other-news-img" src="staircase-img.jpg" alt="Spiral staircase" />
-      </div>
-      
-    </section>
-
     <footer>
       <form>
-        <label for="email">Sign up to our weekley newsletter:</label>
+        <label for="email">Sign up to our newsletter:</label>
         <input type="text" name="email" placeholder="Your email address">
         <input type="submit" value="submit" class="submit-btn">
       </form>
+      <p>Site by &copyJamie Cook | Favicon: <a href="https://thenounproject.com/search/?q=art%20fav%20icon&i=92327">painting</a> by Arthur Shlain from <a href="https://thenounproject.com/">Noun Project</p>
+      <p></a></p>
     </footer>
   </body>
 </html>
