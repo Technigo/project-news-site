@@ -104,15 +104,6 @@ nav a{
   text-align: center;
 }
 
-.description2{
-  font-family: 'Kristi', cursive;
-  color: rgb(41, 40, 40);
-  opacity: .8;
-  font-size: 0.9em;
-  margin: 10px 0px 0px 0px;
-  text-align: center;
-}
-
 .big-news-text{
   color: #EAE8E8;
   font-family: 'Cutive Mono', monospace;
@@ -233,7 +224,7 @@ footer {
   
 }
 
-.test{
+.animation-footer{
   animation: pulse 10s infinite;
 }
 
@@ -271,7 +262,7 @@ footer {
     display: none;
   }
 
-  .big-news-main {
+  .big-news-main{
     flex-direction: row-reverse;
     width: 100%;
   }
@@ -301,8 +292,6 @@ footer {
     width: 45%;
     margin: 40px 5px 0px 0px;
   }
-
-  
  
 }
 
@@ -321,6 +310,7 @@ footer {
     flex-direction: row;
     align-items: left;
   }
+  
   .big-news-image{
     width:100%;
   }
