@@ -5,12 +5,41 @@ header {
   background: wheat;
   height: 220px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
   
 }
 
 header img {
   float: none;
   
+}
+
+header a {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.hamburger div {
+  width: 100px;
+  height: 15px;
+  background: black;
 }
 
 /* body */
@@ -41,7 +70,7 @@ body {
   justify-content: center;
 }
 
-.big-news div {
+.big-news article {
   margin: 5px;
   align-content: space-between;
   justify-content: center;
@@ -69,7 +98,7 @@ div:hover {
   justify-content: center;
 }
 
-.other-news div {
+.other-news article {
   margin: 10px;
   align-content: space-between;
   justify-content: center;
@@ -108,11 +137,19 @@ footer h2 {
   
   }
 
-  .other-news div {
+  .other-news article {
    width: 40%;
    height: 50%;
    
   
+  }
+
+  nav {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
   }
 
 }
@@ -127,10 +164,19 @@ footer h2 {
     
   }
   
-  .other-news div {
+  .other-news article {
     width: 20%;
     height: 40%;
     
   
   }
+
+  nav {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
 }
