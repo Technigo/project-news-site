@@ -1,216 +1,304 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-html, body {
-    height: 100%;
-    box-sizing: border-box;
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #656AE7;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-header {
-    background-color: #4247D3;
-    height: 100vh;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-/*** NAVBAR STYLE ***/
+/* Header style */
+
 .navbar {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;    
-}  
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;  
+  background-color: #4247D3;
+  box-shadow: 0 2px 3px black;
+  z-index: 10;
+}
 
 .navbar-logo {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-menu, .nav-link {
-    display: none;
+.navbar-menu,
+.nav-link {
+  display: none;
 }
 
-/*** NAVBAR LINK STYLE ***/
 .navbar-logo a {
-    color: #F8FF6E;    
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2.5em;
+  color: #f8ff6e;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 2.5rem;
 }
 
 .navbar-logo a:hover {
-    opacity: .8;
+  opacity: .8;
 }
 
-
-/*** MAIN TITLE STYLE ***/
 .navbar-menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.main-header {
-    background-color: #4247D3;
-    height: 50vh;
+/* Main style */
+
+main {
+  padding-bottom: 2rem;
 }
 
-.main-header-container {
-    position: relative;
-    min-height: 300px;
-    line-height: 0;
-    height: auto;
-    width: auto;
-    top: 120px;
-    margin: auto 5em;
-    z-index: 0;
-    overflow-y: auto;
+/* Intro content */
+
+.intro-content-container {
+  position: relative;
+  min-height: 325px;
+  margin: 0 .5rem 10rem .5rem;
+  top: 80px;
+  border-radius: .3rem;
+  z-index: 0;
+  overflow-y: auto;
 }
 
-.main-header-image  {
-    background-image: url("./img/nigel-tadyanehondo-GAPXQ3Tluq8-unsplash.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0,0,0,0.7);
-    content: "";
-    min-height: 300px;
-    width: 100%;
-    position: absolute;
-}
-.header-image-overlay {
-    height: 300px;
-    width: 100%;
-    margin: auto;
-    background-color: black;
-    opacity: .4;
-  
+.intro-title-container {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  right: 0; 
+  color: white;
+  z-index: 5;
 }
 
-.main-title-container {
-    background-color: transparent;
-    color: white;
-    position: absolute;
-    z-index: 5;
-    left: 5%;
-    top: 67%;
-    right: 0;
-    bottom: 0;
-}
-.main-title {
-    width: 100%;
-    height: 50px;
-    font-size: 3em;
-
-}
-.main-subtitle {
-    color: white;
-    width: 100%;
-    height: 50px;
+.intro-title {
+  font-size: 2.5em;
 }
 
-.content {
-    height: 100vh;
+.intro-image {
+  background-image: url("./img/philipp-lublasser-O_Xf5uToN-Q-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  min-height: 325px;
+  width: 100%;
+  position: absolute;
 }
+
+.intro-image-overlay {
+  height: 325px;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  opacity: .4;
+}
+
+/* Main content style */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  margin: .5rem;
+  border-radius: .3rem;
+  font-size: small;
+  background-color: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 3px black;
+}
+
+.card-image-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.card-image {
+  height: 8rem;
+  width: 9rem;
+  padding: .5rem;
+}
+
+.card-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-title {
+  width: 100%;
+}
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  padding: .25em;
+}
+
+/* Footer style */
+
+footer {
+  position: relative;
+  margin-top: 8rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .25em;
+  background-color: #C3CC22;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-text {
+  color: white;
+  width: 100%;
+  padding: .4em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .2em;
+  text-align: center;
+}
+.social-media-items {
+  display: flex;
+  padding: .25em; 
+}
+
+.social-media-link {
+  padding: .25em;
+}
+
+
+
 @media screen and (min-width: 768px) {
-     
-    .navbar {
-         display: flex;
-         align-items: center;
-         justify-content: flex-start;
-         flex: 1;
-         padding: 0 1.25em;
-     }  
-    
-    .navbar-menu {
-        height: 100%;
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-        
-    }
-    
-    .navbar-menu-item {
-        display: flex;
-        text-transform: uppercase;
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.25em;
-        letter-spacing: 2px;
-        flex: 1;
-        justify-content: flex-end;
-    }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 0 1.25rem;
+  }
 
-    .navbar-logo {
-        width: 33%;
-        text-align: center;
-        justify-content: flex-start;
-    }
+  .navbar-menu {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-    .nav-link:hover {
-        color: lightgrey;
-    }
+  .navbar-menu-item {
+    display: flex;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    flex: 1;
+    justify-content: flex-end;
+  }
 
-    .nav-link {
-        display: inline;
-    }
+  .navbar-logo {
+    width: 33%;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .nav-link:hover {
+    color: lightgrey;
+  }
+
+  .nav-link {
+    display: inline;
+  }
+
+  .intro-content-container {
+    margin: auto 3rem;
+  }
+
 }
-
-
 
 @media screen and (min-width: 1025px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0 1.25em;
-    }  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.25rem;
+  }
+
+  .navbar-menu {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar-menu-item {
+    display: flex;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    flex: 0 1 12%;
+    justify-content: flex-end;
+  }
+
+  .navbar-logo {
+    width: 33%;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .nav-link:hover {
+    color: lightgrey;
+  }
+
+  .nav-link {
+    display: block;
+  }
+
+  .intro-content-container {
+    margin: auto 5rem;
+  }
+
+
+  .card {
    
-   .navbar-menu {
-       height: 100%;
-       display: flex;
-       flex: 1;
-       justify-content: flex-end;
-       align-items: center;
-       
-   }
-   
-   .navbar-menu-item {
-       display: flex;
-       text-transform: uppercase;
-       padding: 10px;
-       font-family: 'Open Sans', sans-serif;
-       font-size: 1.25em;
-       letter-spacing: 2px;
-       flex: 0 1 12%;
-       justify-content: flex-end;
-   }
+    width: 30vw;
+  }
 
-   .navbar-logo {
-       width: 33%;
-       text-align: center;
-       justify-content: flex-start;
-   }
+  .card-image {
+    width: 20vw;
+  }
 
-   .nav-link:hover {
-       color: lightgrey;
-   }
-
-   .nav-link {
-       display: inline;
-   }
 }
