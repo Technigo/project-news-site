@@ -12,7 +12,7 @@ The site was structured in to 6 parts: header, newsletter subscription, big news
 
 After deploying the news site I tested it on several browsers, such as google chrome, safari and firefox. I also tested the newssite on different devices with different devtools in google chrome and safari. 
 
-If I had more time, I would of cleaned my css code more. I would also have worked more with the stucture of the website and less with the graphic design (colors, pictures and fonts). Additonally, I would have started with a mobile first approach instead of the computer first, which I ended up changing. 
+If I had more time, I would have cleaned my css code more. I would also have worked more with the stucture of the website and less with the graphic design (colors, pictures and fonts). Additonally, I would have started with a mobile first approach instead of the computer first, which I ended up changing. 
 
 ## View it live
 
