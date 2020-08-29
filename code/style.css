@@ -63,7 +63,7 @@ nav a:hover {
     width: 100%;
  }
 
- h1 {
+ .main-news h1 {
   position: absolute;
   width: 100%;
   margin: 0;
@@ -73,10 +73,11 @@ nav a:hover {
   color: white;
  }
 
-h1:hover {
+.main-news h1:hover {
   color: black;  
   text-decoration-line: underline;
   text-decoration-style: dotted;
+  cursor: pointer;
 }
 
 /*** NEWS ***/
@@ -125,6 +126,7 @@ h1:hover {
   border-style: dotted;
   border-radius: 8px;
   border-width: 4px;
+  cursor: pointer;
 }
 
 h2 {
