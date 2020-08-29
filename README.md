@@ -1,12 +1,21 @@
 # News Site
+Assignment: Create a responsive news site using flexbox. 
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
+I had difficulties to make my image in section one to be larger than my text when changing device from mobile. 
+I solved my problem by shrinking my flex-child in the media query together with flex-grow. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+
+If I had more time I would have: 
+- made my hamburger menu clickable so you could see nav ul in the mobile and tablet devices. 
+- give the content more time, now my focus was to get every element in the right place. 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://positivesite.netlify.app/
+
+
+
+
+
