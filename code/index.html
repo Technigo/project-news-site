@@ -3,17 +3,18 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 2: The News Site</title>
   <link rel="stylesheet" href="./style.css" />
-  <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
-    <img class="logo" src="./logo.svg">
-    <div class="header-heading">Swecation Magazine</div>
+    <div class="logo-container">
+      <img class="logo" src="./logo.svg">
+    </div>
+    <div class="header-heading"><h1 class="heading">Swecation Magazine</h1></div>
   </header>
   <nav>
     <a href="#">North</a>
@@ -23,39 +24,42 @@
   </nav>
 
   <!-- ARTICLE -->
-      <article class="news-container">
-        <div class="news">
-          <img src="salt.JPG" class="news-img" alt="Sea waves and cliffs">
-          <p class="tag">West edition</p>
-          <h2>Island hopping</h2>
-          <p>It’s easy to get out to the thousands of islands in the Bohuslän archipelago with the help of local ferry and boat companies. You’ll find tips here on how to find your own favourite spot on the west coast – from the Kosterhavet sea in the north, to Gothenburg’s archipelago in the south.
-            <br>A number of different boat companies operate along the coast of Bohuslän. We’ve gathered them all here with the information you need to be able to plan your trip. </p>
-            <a href="#" a class="button">Read more</a>
-          </div>
-          <div class="news">
-            <img src="crayfishsquared.JPG" class="news-img" alt="Crayfish on a table">
-            <p class="tag">West edition</p>
-            <h2>Seafood safari</h2>
-            <p>Outside the summer season you find the genuine Bohuslän - salty, barren, windswept and calm. Head out on a shellfish tour, to catch the finest prawns, mussels, oysters, langoustines and lobster. Add a little salt to your life.
-              <br>Join a local fisher for a shellfish tour in the beautiful archipelago. You get to help prepare the langoustine and lobster pots or harvest the oysters and mussels.</p>
-              <a href="#" class="button">Read more</a>
-            </div>
+  <article class="news-container">
+    <div class="news">
+      <img src="salt.JPG" class="news-img" alt="Sea waves and cliffs">
+      <p class="tag">West edition</p>
+      <h2>Island hopping</h2>
+      <p>It’s easy to get out to the thousands of islands in the Bohuslän archipelago with the help of local ferry and boat companies. You’ll find tips here on how to find your own favourite spot on the west coast – from the Kosterhavet sea in the north, to Gothenburg’s archipelago in the south.
+        <br>A number of different boat companies operate along the coast of Bohuslän. We’ve gathered them all here with the information you need to be able to plan your trip. 
+      </p>
+      <a href="#" a class="button">Read more</a>
+    </div>
+    <div class="news">
+      <img src="crayfishsquared.JPG" class="news-img" alt="Crayfish on a table">
+      <p class="tag">West edition</p>
+      <h2>Seafood safari</h2>
+      <p>Outside the summer season you find the genuine Bohuslän - salty, barren, windswept and calm. Head out on a shellfish tour, to catch the finest prawns, mussels, oysters, langoustines and lobster. Add a little salt to your life.
+        <br>
+        <br>Join a local fisher for a shellfish tour in the beautiful archipelago. You get to help prepare the langoustine and lobster pots or harvest the oysters and mussels.
+      </p>
+      <a href="#" class="button">Read more</a>
+    </div>
 
       </article>
 
     <!-- OTHER NEWS -->
     <article class="card-container">
+      <div class="card">
+        <img src="cliffssquared.JPG" class="card-img" alt="Cliffs">
+        <a href="#" class="card-link">Experience the archipelago by boat</a>
+      </div>
         <div class="card">
-          <img src="cliffssquared.JPG" class="card-img" alt="Cliffs">
-          <a href="#" class="card-link">Experience the archipelago by boat</a>
+            <img src="fishstore.JPG" class="card-img" alt="A fish store">
+            <a href="#" class="card-link">The best seafood stores in the west</a>
         </div>
         <div class="card">
-          <img src="fishstore.JPG" class="card-img" alt="A fish store">
-          <a href="#" class="card-link">The best seafood stores in west</a>
-        </div>
-        <div class="card">
-          <img src="table.JPG" class="card-img" alt="A table with seafood boxes">
-          <a href="#"class="card-link">Restaurants you don't want to miss</a>
+            <img src="table.JPG" class="card-img" alt="A table with seafood boxes">
+            <a href="#" class="card-link">Restaurants you don't want to miss</a>
         </div>
         <div class="card">
           <img src="wavessquared.JPG" class="card-img" alt="Sea waves">
@@ -64,7 +68,7 @@
       </article>
 
   <!-- FOOTER -->
-<footer></footer>
+  <footer></footer>
 
 </body>
 

@@ -16,21 +16,36 @@ box-sizing: border-box;
 header {
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
-  padding: 40px;
+  flex-direction: row;
+  margin: 0px;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-self: flex start;
+  width: 20%;
+  padding-left: 20px;
 }
 
 .logo {
-  width: 120px;
-  padding: 40px 0px 0px 20px;
+  width: 80px;
+  display: flex;
 }
 
 .header-heading {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 60%;
+}
+
+h1.heading {
   text-transform: uppercase;
   color: #1B27F5;
   font-weight: bold; 
-  padding: 40px 0px 0px 60px; 
-  font-size: 80px;
+  font-size: 60px;
+  text-align: center;
 }
 
 nav {
@@ -75,19 +90,18 @@ p {
 /**** ARTICLE ****/
 .news-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   padding-top: 100px;
   margin-left: 10%;
   margin-right: 10%;
+  width: 80%;
   }
 
-.news {
-  flex-wrap: wrap;
-  flex-direction: row;
+.news-img {
   width: 100%;
-  padding: 5px;
-  margin: 2px;
   }
 
 .tag {
@@ -99,14 +113,22 @@ p {
   margin: 30px 0px 15px 0px;
   } 
 
-.news-img {
-  width: 100%;
-}
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 5px;
+  margin: 2px;
+  align-items: left;
+  }
 
-.button {
-  font-size: 18px;
-  border: 1px solid #1B27F5; 
+a.button {
+  font-size: 16px;
+  background-color: #1B27F5; 
   padding: 8px;
+  color: white;
+  width: 100px;
+  text-decoration: none; 
 }
 
 /**** OTHER NEWS ****/
@@ -115,8 +137,11 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  border-top: blue solid 2px;
+  border-bottom: blue solid 2px;
   margin: 5%;
   height: 100%;
+  padding:40px 0px 40px 0px;
 }
 
 .card {
@@ -150,6 +175,83 @@ a.card-link:hover {
 footer {
   background-color: white;
   padding: 60px;
+  margin: 0px;
+}
+
+/**** FOR TABLET ****/
+
+@media (max-width: 1024px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  .card {
+    padding: 20px;
+  }
+  
+
 }
 
 /**** FOR MOBILE ****/
+
+@media (max-width: 768px) {
+
+  /**** HEADER ****/
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+ .logo {
+    justify-content: center;
+  }
+
+  h1.heading {
+    font-size: 48px;
+  }
+
+  nav {
+    align-items: center;
+  }
+
+  a {
+    font-size: 24px;
+  }
+
+  /**** ARTICLE ****/
+  
+  .news-container {
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .news {
+    width: 80%;
+  }
+
+  .button {
+    margin-bottom: 20px;
+  }
+
+  /**** OTHER NEWS ****/
+
+  .card-container {
+    flex-direction: row;
+    margin: 20px; 
+  }
+
+  .card {
+    width: 50%;
+    padding: 10px;
+  }
+}
