@@ -75,17 +75,17 @@ header p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  justify-content: center;
 }
 
 .news-container img {
-   width: 400px;
+   width: 330px;
    height: 400px;
    object-fit: cover;
 }
 
 .flex-child {
-  width: 400px;
+  width: 330px;
   height: max-content;
   margin: 30px;
   margin-bottom: 40px;
@@ -162,10 +162,11 @@ button {
   .news-container {
     flex-direction: row;
     flex-wrap: wrap;
-    Width: 120%;
+    flex: 50%;
     margin: 0;
     align-items: center;
   }
+
 
   .flex-child:hover {
     background-color: rgb(153, 149, 152);
