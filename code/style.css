@@ -20,7 +20,27 @@ header {
   align-items: center;
   justify-content: space-evenly;
   background: lightgreen;
+ }
+
+
+ .title {
+display: flex;
+align-items: inherit;
+justify-content: space-evenly;
+margin: 5px;
 }
+
+.title h1 {
+  order: 2;
+  margin-right: 10px;
+  margin-left: 35px;
+}
+
+.title img {
+  width: 50px;
+  margin: 10px;
+  order: 1;
+} 
 
 .nav a {
   color: rgb(17, 15, 15);
@@ -30,6 +50,11 @@ header {
   text-decoration-line: none;
   color: black;
   }
+
+  .nav a:hover {
+    color: orange;
+  }
+
 
 .hamburger {
   display: flex;
@@ -66,19 +91,43 @@ header {
   color: black;
 }
 
+.main-column a:hover {
+color: orange;
+}
+
 .main-column {
   flex: 1;
   order: 1;
   padding: 10px;
 }
 
-.side-column {
-margin: 5px;
+.bird-column {
+margin: 5px auto;
 border-radius: 5px;
 padding: 5px;
 box-shadow: 6px 6px 0 0 orange;
 flex: 1;
 order: 2;
+}
+
+.bird-column:hover {
+  animation: shake 0.6s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /* CARDS INFO ARTICELS */
@@ -102,6 +151,11 @@ order: 2;
       color: black;
   }
 
+
+.cards a:hover {
+  color: orange;
+  }
+
 .cards:nth-child(1){background-color: rgb(192, 153, 55);}
 .cards:nth-child(2){background-color: lightblue;}
 .cards:nth-child(3){background-color: rgb(175, 221, 161);}
@@ -119,12 +173,40 @@ footer {
   align-items: center;
 }
 
-/*** MEDIA QUERI ***/
+/* MEDIA QUERIES */
 
-/*** IN TABLET SIZE THIS IS SHOWN***/
 
-@media (min-width: 678px){
+/*** IN MOBILE SIZE ***/
 
+@media (max-width: 767px){
+  
+  .nav a {
+    display: none;
+  }
+}
+
+/*** IN TABLET SIZE THIS IS SHOWN ***/
+
+@media (min-width: 768px){
+
+  .hamburger div {
+    display: none;
+  }
+
+.nav a {
+  display: inline-block; 
+  }
+
+  .title h1 {
+    display: none;
+  }
+  
+  .title img {
+    display: flex;
+    align-items: center;
+  }
+
+  
   .column-layout {
       display: flex;
   }
@@ -136,21 +218,17 @@ footer {
   } 
 
     .cards {
-      flex-basis: 45%;     
-  } 
-
-  .hamburger div {
-      display: none;
-  }
-
-  .nav a {
-      display: inline-block;
-  }
+      flex-basis: 45%; 
+  }  
 }
 
 /*** SHOWIN ON DESKTOP  ***/
 
  @media (min-width: 1024px) {
+
+  .title h1 {
+      display: inline;
+  }
 
     .colum-cards {
       display: flex; 
