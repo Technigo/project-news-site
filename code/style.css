@@ -53,6 +53,7 @@ a {
   color: black;
 }
 
+
   /* HEADER STYLING */
 
 .logo {
@@ -67,7 +68,6 @@ header {
   justify-content: center;
   background-color: #d9dedb;
   padding: 20px 0 20px 0px;
-  
 }
 
 .hamburger {
@@ -123,13 +123,13 @@ nav a:hover {
   display: none;
 }
 
+
 /* NEWS GRID STYLING */
 
 main .fler-nyheter {
   border-top: 1px solid black;
   text-align: center;
 }
-
 
 main .card-container {
   display: flex;
@@ -147,7 +147,6 @@ main .card-container .card {
   background-color: #f2f2f2;
   margin: 20px 0;
   box-shadow: 5px 5px #e8e6e6;
-  
 }
 
 main section .card .img-news-grid {
@@ -163,37 +162,38 @@ footer {
 }
 
 /* MEDIA QUERIES */
-/* På skärmar större än 768 px ska det bli två cards per row */
+/* På skärmar större än 678 px ska det bli två cards per row */
 @media screen and (min-width: 678px) {
 
-  header {
-    justify-content: space-between
-  }
-  .hamburger {
-    display: none;
-  }
+header {
+  justify-content: space-between;
+}
   
-  nav {
-   display: block;
-  }
-
-  .big-news {
-   flex-direction: row;
-   padding: 20px;
-  }
-
-  .img-big-news {
-    width: 50%;
-  }
+.hamburger {
+  display: none;
+}
   
-  main .card-container {
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+nav {
+  display: block;
+}
+
+.big-news {
+  flex-direction: row;
+  padding: 20px;
+}
+
+.img-big-news {
+  width: 50%;
+}
+  
+main .card-container {
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /* MEDIA QUERIES */
-/* På skärmar större än 1025 px ska det bli två cards per row */
+/* På skärmar större än 1025 px ska det bli fyra cards per row */
 @media screen and (min-width: 1025px) {
 
   .big-news .big-news-text .artikel {
@@ -202,5 +202,5 @@ footer {
 
   .heading {
     font-weight: bold;
-  } 
-} 
+  }
+}
