@@ -53,6 +53,10 @@ header img {
   width: 60px;
 }
 
+.logo {
+  display: none;
+}
+
 nav {
   display: none;
 }
@@ -208,12 +212,8 @@ footer img {
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr 300px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 100px 1fr 1fr;
     grid-template-rows: 1fr;
-  }
-
-  nav {
-    display: contents;
   }
 
   .hamburger {
@@ -221,10 +221,22 @@ footer img {
   }
 
   .sitename {
+    display: none;
+  }
+
+  .logo {
     grid-column: 3;
     grid-row: 1;
     display: flex;
     align-items: center;
+  }
+
+  .logo img {
+    margin: auto;
+  }
+
+  nav {
+    display: contents;
   }
 
   .link1 {
