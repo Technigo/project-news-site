@@ -5,89 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Project 2: The News Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <title>All About Coffee</title>
   </head>
 
   <body>
 
-    <nav class="navbar"> <!-- Logo and navbar -->
+    <header class="navbar"> <!-- Logo and navbar -->
       <a href="index.html" class="logo"><img class="logo" src="logo.png" alt="logo"/></a>
+      <h3> All About Coffee </h3>
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Archive</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Subscribe</a></li>
       </ul>
-    </nav> 
+    </header> 
 
     <main class="wrapper">
-      
-      <header class="header"> 
-        <h1> All About Coffee </h1>
-      </header>
-
       <section class="big-news"> <!-- The big news content -->
         <h1> We're all about coffee. </h1>
         <article>
-          <p>The no.1 online magazine for coffee-lovers. 
+          <p>The no.1 online magazine for coffee-lovers. News, events, recipes, guides and latest trends.
             <br>Sign up for our newsletter.
           </p>
           <a class="button" href="#"> Subscribe &#9749;</a>
         </article>
       </section>
+      
+      <section class="news">  <!-- The other news  -->
+        <article class="news-article">
+          <img src="img/tyler-nix-yGb2igKldYg-unsplash.jpg" alt="Barista pouring coffe "> 
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | EVENTS </h2>
+            <h3> Barista Challenge 2020 </h3>    
+            <p>
+              The date is set for barista challenge 2020! <i>Do you have what it takes?</i>            
+            </p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>     
+        </article>
 
-      <section class="news" id="news"> <!-- The other news  -->
-        <ul>
-          <li>
-            <figure>
-              <img src="img/jakub-dziubak-XtUd5SiX464-unsplash.jpg" alt="Barista pouring coffe ">
-              <figcaption><h3>Barista Challenge 2020</h3></figcaption>
-            </figure>
+
+          <article class="news-article">
+            <img src="img/katja-vogt-CipURjPCXOo-unsplash.jpg" alt="Barista pouring a cappucino">
+            <div>
+              <h2 class="category-heading"> 2020 - 08 - 29 | TRENDS </h2>
+              <h3>Trending coffe cups</h3>
+              <p>Explore our guide of trending coffe cups and where to buy them.</p>
+            </div>
+            <a class="button" href="#">Read more &#9749;</a>
+          </article>
+
+        <article class="news-article">
+          <img src="img/nathan-dumlao-pMW4jzELQCw-unsplash.jpg" alt="Coffee cups with different types of coffee">
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | RECIPES </h2>
+            <h3>Be your own barista!</h3>
+            <p> Explore our coffee recipes and make your favorite brewed drinks at home. </p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>
+        </article>
+
+        <article class="news-article">
+          <img src="img/nafinia-putra-Kwdp-0pok-I-unsplash.jpg" alt="Barista in coffee shop">
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | GUIDE </h2>
+            <h3>Guide: Best coffee shops</h3>
+            <p> Our complete guide to the no.1 coffee shops in the world. </p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>
+        </article>
+
+        <article class="news-article">
+          <img src="img/katja-vogt-CipURjPCXOo-unsplash.jpg" alt="Coffee mug">
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | GUIDE </h2>
+            <h3>??????</h3>
+            <p>?????</p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>
+        </article>
+
+        <article class="news-article">
+          <img src="img/natanja-grun-X2s8GhnQmds-unsplash.jpg" alt="Barista pouring coffe ">
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | LIFESTYLE </h2>
+            <h3>Top 10 health benefits</h3>
+            <p>Complete list of health benefits from drinking coffee.</p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>
+        </article>
+
+        <article class="news-article">
+          <img src="img/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg" alt="Barista pouring coffe ">
+          <div>
+            <h2 class="category-heading"> 2020 - 08 - 29 | GUIDE </h2>
+            <h3>Coffee Brewing Methods</h3>    
+            <p>
+              French press, espresso machines or pour over/drip brewing? Find your favourite.     
+            </p>
+          </div>
+          <a class="button" href="#">Read more &#9749;</a>
+        </article>
+
+        <article class="news-article">
+          <img src="img/tyler-nix-yGb2igKldYg-unsplash.jpg" alt="Barista pouring coffe "> 
+          <div>
+            <h3>Barista Challenge 2020</h3>    
             <p>
               The date is set for barista challenge 2020! Do you have what it takes?            
             </p>
-            <a class="button" href="#">Read &#9749;</a>
-          </li>
-          <li>
-            <figure>
-              <img src="img/jakub-dziubak-XtUd5SiX464-unsplash.jpg" alt="Barista pouring coffe ">
-              <figcaption><h3>Greatest recipes</h3></figcaption>
-            </figure>
-            <p>
-              The no.1 online magazine for coffee-lovers. 
-              Sign up for our newsletter.
-            </p>
-            <a class="button" href="#">Read &#9749;</a>
-          </li>
-          <li>
-            <figure>
-              <img src="img/jakub-dziubak-XtUd5SiX464-unsplash.jpg" alt="Barista pouring coffe ">
-              <figcaption><h3>Test: Best coffee cups</h3></figcaption>
-            </figure>
-            <p>
-              The no.1 online magazine for coffee-lovers. 
-              Sign up for our newsletter.
-            </p>
-            <a class="button" href="#">Read &#9749;</a>
-          </li>
-        </ul>
+            <a class="button" href="#">Read more &#9749;</a>     
+          </div>
+        </article>
       </section>
-  
+
   </main>
 
-  
-
 <footer>
-  <p> Follow us on social media!</p>
-
   <p>
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-linkedin"></a>
     <a href="#" class="fa fa-instagram"></a>
     <a href="#" class="fa fa-pinterest"></a>
   </p>
+
+  <p class="footer-text"> Project 2: News site by Emma Urman @ Technigo Bootcamp 2020. </p>
+  <p class="footer-text"> All images from Unsplash + Pixabay </p>
+
 </footer>
 </body>
 </html>
