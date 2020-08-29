@@ -82,6 +82,23 @@ text-decoration: black;
   }
 }
 
+.header__actions__item{
+  animation-name: itemmove;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+@keyframes itemmove{
+    0%   {background-color: grey;}
+    25%  {background-color: purple;}
+    50%  {background-color: blue;}
+    100% {background-color: red;}
+
+    0%   {color:black;}
+    25%  {color: white;}
+    50%  {color:white;}
+    100% {color: white;}
+}
+
 .header__nav{
   text-align: center;
   background-color: black;
