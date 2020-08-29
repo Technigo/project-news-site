@@ -28,7 +28,8 @@ Black Level (Advanced Goals)
 ## View it live
 
 The fictional magazine site I created was called "Art Matters!" and can be viewed using the link below.
-I have tested the site on iPhone, iPad and desktop as well as using the developer tool in Google Chrome. 
+I have tested the site on iPhone, iPad and desktop as well as using the developer tool in Google Chrome.
+Chrome and Safari (mobile/tablet) are the only browsers I used for testing. 
 All platforms are working as required.
 
 https://art-matters.netlify.app/
