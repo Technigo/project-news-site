@@ -90,8 +90,8 @@ order: 2;
   
   .cards {
   padding:20px;
-  margin-bottom: 20px;
-  flex-basis: 20%;
+  margin: 20px auto;
+  flex-basis: 90%;
   box-sizing: border-box;
   border-radius: 3px;
   box-shadow: 6px 6px 0 0 orange;
@@ -119,22 +119,25 @@ footer {
   align-items: center;
 }
 
-/* MEDIA QUERI */
+/*** MEDIA QUERI ***/
 
-/*** TABLET SIZE THIS IS SHOWN***/
+/*** IN TABLET SIZE THIS IS SHOWN***/
 
 @media (min-width: 678px){
-  
+
   .column-layout {
       display: flex;
   }
 
   .colum-cards {
-      display: flex; 
-      /* justify-content: space-between; */
-      justify-content: flex-start;
-      flex-wrap: wrap;
-  }
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+  } 
+
+    .cards {
+      flex-basis: 45%;     
+  } 
 
   .hamburger div {
       display: none;
@@ -142,36 +145,21 @@ footer {
 
   .nav a {
       display: inline-block;
-      /* display: flex; */
   }
 }
 
-/*** MEDIA QUERIES  ***/
+/*** SHOWIN ON DESKTOP  ***/
 
-/*** Tablet ***/
-/* @media (min-width: 667px) {
+ @media (min-width: 1024px) {
 
-  header {
-    justify-content: space-between;
+    .colum-cards {
+      display: flex; 
+      justify-content: flex-start;
+      flex-wrap: wrap; 
   }
 
-nav {
-    display: inline-block;
-    }
-
-.hamburger {
-    display: none;
-    }
-
-.big-news-content {
-  display: inline-block;
+  .cards {
+    flex-basis: 22.5%;
+    } 
   }
-
-.news-card-content {
-   grid-template-columns: repeat(2, 1fr);
-} 
-
-}
- 
-
-
+  
