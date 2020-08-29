@@ -7,15 +7,6 @@ body {
 
 /* HEADER */
 
-/* header {
-  background: #393d3f;
-  color: #c6c5b9;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-} */
-
 header {
   background: #393d3f;
   color: #c6c5b9;
@@ -24,15 +15,6 @@ header {
   grid-template-columns: 70px 1fr;
   grid-template-rows: 1fr;
 }
-
-/* .hamburger {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 24px;
-} */
 
 .hamburger {
   grid-column: 1;
@@ -51,11 +33,6 @@ header {
   background: #c6c5b9;
   border-radius: 5px;
 }
-
-/* .sitename {
-  display: flex;
-  align-items: center;
-} */
 
 .sitename {
   grid-column: 2;
@@ -80,21 +57,11 @@ nav {
   display: none;
 }
 
-/* nav a {
-  color: #c6c5b9;
-  text-decoration: none;
-  margin-left: 16px;
-  font-weight: bold;
-  font-size: 16px;
-} */
-
 .link1, .link2, .link3, .link4 {
   color: #c6c5b9;
   text-decoration: none;
-  /* margin-left: 16px; */
   font-weight: bold;
   font-size: 16px;
-  /* display: none; */
 }
 
 /* BIG NEWS */
@@ -108,6 +75,7 @@ nav {
 
 .big-news img {
   width: 100%;
+  height: 100%;
   border-radius: 5%;
   box-shadow: 10px 10px 0px 0px #c6c5b9;
 }
@@ -179,7 +147,6 @@ footer {
 
 footer img {
   width: 50px;
-  /* height: 35px; */
 }
 
 .footer-right {
@@ -189,19 +156,11 @@ footer img {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* header {
-    justify-content: space-between;
-  } */
-
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr 240px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 300px 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
-  /* nav {
-    display: inline-block ;
-  } */
 
   nav {
     display: contents;
@@ -217,10 +176,6 @@ footer img {
     display: flex;
     align-items: center;
   }
-
-  /* .link1, .link2, .link3, .link4 {
-    display: contents;
-  } */
 
   .link1 {
     grid-column: 1;
@@ -245,11 +200,6 @@ footer img {
     grid-row: 1;
     place-self: center;
   }
-
-  /* .sitename {
-    display: flex;
-    align-items: center;
-  } */
 
   .big-news div {
       text-align: left;
@@ -300,30 +250,6 @@ footer img {
   nav a {
     margin-right: 20px;
   }
-
-  /* .link1 {
-    grid-column: 2;
-    grid-row: 1;
-    place-self: center;
-  }
-
-  .link2 {
-    grid-column: 3;
-    grid-row: 1;
-    place-self: center;
-  }
-
-  .link3 {
-    grid-column: 4;
-    grid-row: 1;
-    place-self: center;
-  }
-
-  .link4 {
-    grid-column: 5;
-    grid-row: 1;
-    place-self: center;
-  } */
 
   .big-news {
     flex-direction: row;
