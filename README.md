@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project objective is to design responsive newspaper/magazine using flexbox and media querry.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Key problem 1: align images/text inside the flexbox container for different screen width
+Solutions: Flex 1, flex 2, max-width 40%, max-width 100%, object-fit:cover, object-position:top
+
+Key problem 2: Size of video iframe
+Solution: using max-width instead of absolute number.
+
+Planning: just post-it and pencil. Will learn to use figma for next projects.
+Improvement: mobile-first design, better colors
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://stockholmtimes.netlify.app/
