@@ -1,10 +1,11 @@
 # News Site
 
-First real programming project ever! Fokus to create a news site with responsive layout, using flexbox.
+First real programming project ever! Fokus to create a colorfull magazine like news site with responsive layout using html and css, and layout method flexbox.
 
 ## The problem
 
-Used html, css. Did a skets by hand and got inspiration from the added newssketch image. flexbox, grid, media quariy if more time (and knowlege) I would fokus more on a mor sophisticated design and interactivity. 
+Hade trouble getting my content to position itself nicely based on different break points.
 
 ## View it live
+
 link to the deployed project.
