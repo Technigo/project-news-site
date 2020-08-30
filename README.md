@@ -24,4 +24,4 @@ I want to spend a little more time on the project and add video and some more an
 4. Improving hover effect on the images. I want the text to appear when i hover over the images, not over a differenr part of the text.
 
 ## View it live
-www.greatnewsdelivery.netlify.app
+https://greatnewsdelivery.netlify.app/
