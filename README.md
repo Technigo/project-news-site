@@ -16,5 +16,5 @@ for I would have presented the cards one by one when using an iPhone 5 for examp
 – Fixed that the navbar is in a row when it suites the size of the device – and switch to column with 2 links in each column, when it doesn't fit with row due to device.
 – Switching place of the logo into the footer in tablet and mobile.
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+## Link to my project
+https://gracious-allen-2207b3.netlify.app/
