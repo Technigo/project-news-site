@@ -1,13 +1,22 @@
-# News Site
+# News Site - [View Live!](https://ylvas-news-site.netlify.app/)
 
-Todo - Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assigment was to create a responsive webpage with the theme "News Site". The layout should change from mobile, tablet and desktop view.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+### Techniques
+I was using techniques as flexbox, media queries and semantic HTML.
+
+### Planning
+I started with mobile first and then scaled it up for tablet and later on desktop.
+
+I thought it was pretty tough with design of my site and choose a theme, color, images and icons.
+
+### Had more time, what would be next
+* Footer - To be at the bottom for all screen sizes and when I have less news cards. I'm struggling a bit to understand position relative and absolute.
+* Other news card - Odd numbers of cards, tablet and desktop view, how to handle a new row that has one card less then the above but still get the cards to start left on the new row. I still want everything in ceneter.
+* Screen sizes - Understand when you can set the max-width, I have a really wide screen at home and I saw that when I was scaling up my site didin't behaved as wanted. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+[https://ylvas-news-site.netlify.app/](https://ylvas-news-site.netlify.app/)
