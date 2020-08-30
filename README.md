@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The first project of the Technigo boot camp was about creating a responsive page layout using flexbox. So I did an inspirational news site where there are new inspirations and creators every day. This time(for the date 28/8) I used myself as a creator and uploaded my own illustrations. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I tested using desktop-first approach and added media queries to style tablets and mobile versions. I used flexbox to layout the articles and make the site responsive. I had a bigger news article then under that a smaller grid of articles. On the smaller grid, I added a hover effect that makes the picture pop. A hamburger pops up and replaces the navbar when going in to tablet mode and under.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
