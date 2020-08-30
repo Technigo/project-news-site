@@ -111,11 +111,12 @@ img {
 }
 
 .flex-parent:hover {
-  box-shadow: 5px 10px 10px rgba(0,0,0,.5); /* Hover effect for our cards */
+  box-shadow: 5px 10px 10px rgba(0,0,0,.5); 
 }
 
 .flex-child {
-  width: 100%; 
+  width: 100%;
+  
 }
 
 /**** THE OTHER NEWS ****/
@@ -144,7 +145,7 @@ img {
 
 /**** MEDIA QUERIES ****/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   header {
     justify-content: space-between;
@@ -170,6 +171,7 @@ img {
   p {
     font-size: 32px;
   }
+
   img {
     width: 100%; 
   }
@@ -184,35 +186,45 @@ img {
 
   .five, .six, {
     grid-column: span 2;
-  }
+  } 
   
   .seven, .eight {
     grid-column: span 2;
   }
-  
-@media (min-width: 1024) {
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    background: #e40909;
+  }
 
   .flex-parent {
     flex-direction: row; 
-    
+    margin: 15px;
+    padding: 15px; 
    }
 
    .flex-child {
-     display: flex;
      width: 100%;
+                
    }
 
-   .one, .two {
-    width: 100%
-  }
+   .txt {
+     padding-left: 15px;
+   }
    
-  
+   h1 {
+     font-size: 50px;
 
+
+   }
    .one, .two, .three, .four {
-    grid-column: span 1;
+    grid-column: span 2;
   }
 
-   .five, six, seven, eight {
-    grid-column: span 1;
+   .five, .six, .seven, .eight {
+    grid-column: span 8;
    }
 } 
