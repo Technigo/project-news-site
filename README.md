@@ -17,4 +17,4 @@ If I had more time i would build more content (text-boxes) and fokus on the look
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://adoring-edison-d27856.netlify.app/ 
