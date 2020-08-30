@@ -8,12 +8,13 @@ This is a project made when doing the Technigo bootcamp. The project was about t
 
 ## The problem
 
-I began with a quick scetch of the page. My plan was to code mobile first. 
-I wanted to try to not define the width of the box-items.. 
+I began with a quick scetch of the page. My main problem was keeping focus during coding. New things to check out and try to implement tended to take over. 
 
-Used boxmodel, flexbox, CSS, media queries, javascript for toggle button. Describe how you approached to problem, and what tools and techniques you used to solve it. 
+Used boxmodel, flexbox, media queries, parallax image and boxshadow transitioning on hover.  
 
-How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had had more time, I would have tried to truncate the paragraph in the main news card. I also tried to take away the card's textbox on laptop view and have it shown over an overlay on hover without rearring the HTML. My guess is Javascript is needed for that, though.
+
+In the best of worlds the cards also would have had an asymmetrical layout using flexbox.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://making-zine.netlify.app/
