@@ -1,35 +1,38 @@
 /*** Main styling ***/
+
+* {box-sizing: border-box;}
+
 html {
   color: black;
   font-family: Alata
 }
 
-body{
+body {
   margin: 20px; 
 }
 
-a{ 
+a { 
   color: black;
   font-size: 20px;
   margin: 5px;
 }
 
-h3{
+h3 {
   margin: 5px;
   padding: 5px;
 }
 
-p{
+p {
   margin: 5px;
 }
 
-.banner{
+.banner {
   width: 300px;
 }
 
 /*** Header and navigation styling ***/
 
-header{
+header {
   margin: 20px;
   display: flex;
   align-items: center;
@@ -37,7 +40,7 @@ header{
   border-bottom: 1px solid rgb(0,0,0, 0.5)
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -59,16 +62,21 @@ a:active {
   text-decoration: underline;
 }
 
-/*** Big news section ***/
-.flex-parent{
+/*** Big news section - first section ***/
+
+.flex-parent {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.flex-child{
+.flex-child {
+  box-sizing: border-box;
+  width: 100%;
   margin: 10px;
-  height: 400px;
+  height: 450px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -79,7 +87,7 @@ a:active {
   text-align: center;
 }
 
-.two{
+.two {
   padding: -50px;
 }
 
@@ -87,69 +95,69 @@ a:active {
     opacity: 1.0;
 }
 
-.photo-1{
-  width: 400px;
+.photo-1 {
+  width: 100%;
 }
 
-video{
-  align-content: center;
-  height: 100%;
+video {
+  width: 100%;
+  height: 350px;
 }
 
 /**** Small news "grid" section***/
 
 .cards {
-  margin: -5px;
   display: grid;
+  grid-template-columns: repeat(1, 4fr);
   grid-gap: 20px;
-  align-items: center;
-  text-align: center;
+  width: 100%;
 }
 
 .card {
   display: flex; 
   flex-direction: column;
+  width: 100%;
   border: 1px solid black;
   color: black;
   align-items: center;
   justify-content: center;
-  justify-items: center;
-  padding: 1rem;
+  text-align: center;
   height: 30rem;
   opacity: 0.5;
+  grid-column: span 1;
 }
 
-.link{
+.link {
   font-size: 15px; 
 }
 
-.card:hover{
+.card:hover {
   opacity: 1.0;
 }
 
-.logo{
-  max-width: 500px;
+.logo {
+  width: 100%;
   max-height: auto;
 }
 
-.pauline{
-  max-width: 500px;
+.pauline {
+  width: 100%;
   max-height: auto;
 }
 
-.course{
-  max-width: 500px;
+.course {
+  width: 100%;
   max-height: auto;
 }
 
-.winner{
-  max-width: 500px;
+.winner {
+  width: 100%;
   max-height: auto;
 }
 
 /*** Footer styling ***/
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,21 +167,27 @@ footer{
   width: 100%;
 }
 
-.linkedin{
+.linkedin {
   width: 30px;
 }
 
-/*** Media queries for tablet screens***/
+/*** Media queries for tablet screens - min width 668px ***/
 
-@media (min-width: 768px){
+@media (min-width: 668px){
+  body{
+    margin: 50px;
+  }
+  
   .cards { 
-    grid-template-columns: repeat(2, 2fr);
-  }
-  .card{
-    height: 25rem;
+  grid-template-columns: repeat(2, 2fr);
   }
 
-  .banner{
+  .card {
+    height: 25rem;
+    grid-column: span 2;
+  }
+
+  .banner {
     max-width: 300px;
   }
 
@@ -194,125 +208,131 @@ footer{
   .flex-parent {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
-  .one{ 
+   .one { 
     width: 60%;
   }
   
-  .two{ 
+  .two { 
     width: 40%;
   }
   
-  video{
-    height: 300px;
-   }
+  video {
+    height: 250px;
+  }
 
   .cards {
-    display: grid;
-    padding: 20px; 
+    display: grid; 
     grid-gap: 20px;
   }
 
-  .card{
+  .card {
     display: flex;
-    justify-items: center;
     justify-content: center;
     align-content: center;
-    align-items: center;
   }
 
-  .logo{
+  .logo {
     width: 200px;
   }
 
-  .pauline{
-    max-width: 200px;
+  .pauline {
+    width: 200px;
   }
 
-  .course{
-    max-width: 200px;
+  .course {
+    width: 200px;
   }
 
-  .winner{
-    max-width: 200px;
+  .winner {
+    width: 200px;
   }
 
-/*** Media queries for computer screens***/
+/*** Media queries for computer screens - min width 1025 ***/
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     
   .cards { 
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
     align-items: center;
-    margin: 0px;
-    grid-gap: 0px;
   }
 
   .card { 
-    height: 25rem;
+    height: 35rem;
+    grid-column: span 1;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   header {  
     display: flex;
     margin: 20px;
+    height: 200px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-    nav {
+   nav {
       display: flex;
       flex-direction: row;
-    }
+  }
     
-    .photo-1{
-      max-width: 50%;
-    }
+  .photo-1 {
+      max-width: 700px;
+  }
 
-    .logo{
-      width: 500px;
-    }
-
-  .flex-parent{
+  .flex-parent {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    }
+  }
+
+  .flex-child {
+      height: 650px;
+      justify-content: center;
+  }
     
-    .one{
+  .one {
       width: 60%;
-    }
-    .two{
+  }
+
+  .two {
       width: 40%;
-    }
+  }
 
-   .logo{
-     max-width: 100px;
-   } 
+  .logo {
+     width: 90%;
+  } 
     
-  .pauline{
-    max-width: 300px;
+  .pauline {
+    width: 90%;
   }  
-  .course{
-    max-width: 200px;
+  
+  .course {
+    width: 90%;
   }
 
-  .winner{
-    max-width: 200px;
+  .winner {
+    width: 90%;
   }
 
-  video{
-    height: 100%;
+  video {
+    height: 80%;
   }
 
     /*** Styling for polaroid effect that only appears in computer width ***/  
   }
+  
   figure {
     display: inline-block;
-    padding: 15px 15px 30px;
-    text-align: center;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
