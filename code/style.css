@@ -101,7 +101,7 @@ img {
   flex-direction: column;
   background: #fff;
   color: #000;
-  margin:20px;
+  margin: 20px;
   padding: 15px;
   border: 2px solid;
   border-radius: 20px;
@@ -196,10 +196,6 @@ img {
 
 @media screen and (min-width: 1024px) {
 
-  body {
-    background: #e40909;
-  }
-
   .flex-parent {
     flex-direction: row; 
     margin: 15px;
@@ -228,3 +224,20 @@ img {
     grid-column: span 8;
    }
 } 
+
+/* FOOTER STYLE */
+
+footer {
+  color: #fff;
+  height: 50px;
+  border-top: 2px solid black;
+  margin: 15px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  
+
+}
