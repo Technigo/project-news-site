@@ -12,4 +12,4 @@ I started the assignment by doing some brainstorming on what topic I wanted on m
 I had a pretty clear vision of what I wanted the page to look like, so I took some time doing research on how to use CSS grids for my cards in the news-section. I've used flexbox for the navigation and CSS-grids for the news-section.  
 
 ## View it live
-Link to my project on Netlify: 
+Link to my project on Netlify: https://youthful-curie-1f018f.netlify.app/
