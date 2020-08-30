@@ -10,7 +10,7 @@ Media queries where used to create a responsive design on the site. On desktop s
 Hover effects added for news card to shake and links to change background color.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the deployed project https://vibrant-pare-d19413.netlify.app/
 
 ## Known errors and suggested improvements
  News cards are not flipping as I did not get that feature to work flawlessly. Will added later on in a next version :)
