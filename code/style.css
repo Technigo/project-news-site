@@ -68,6 +68,7 @@ a:hover {
   width:300px;
   height:90%; 
 }
+
 .news_cards {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -85,7 +86,7 @@ a:hover {
 @media (max-width: 899px) and (min-width: 600px) {
 	.news_cards { 
 		grid-template-columns: repeat(2, 1fr); 
-		padding-right: 10px;
+		padding-right: 30 0px;
 	}
 	.navbar_tablet{
 		color:black;
@@ -102,16 +103,18 @@ a:hover {
 		display:none;
 	}
 	.big-news{
-		padding-top: 20px;
-		padding-right: 5px;
-		padding-left: 5px;
-		padding-bottom: 20px;
+		padding: 20px 5px 20 px 5px;
 		max-width: 1000px;
 		margin: 0 auto;
 		display:flex;
 		flex-direction: row;
 		justify-content: center;
 	 }
+	 .news{
+		padding: 1rem;
+		width:650px;
+		height:90%;	
+	  }	
 	 .icon{
 		display:none;
 	  }
@@ -153,12 +156,7 @@ a:hover {
 	  }	
 	  html { font-size: 18px; 
 	  }
-	  header h2{
-		font-size: 20px;
-		margin:0px 30px 0px 10px;
-		padding:0px;
-		color:black;
-	}
+	  
 }
 /* shake images*/
 @keyframes shake {
