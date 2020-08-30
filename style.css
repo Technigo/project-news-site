@@ -113,10 +113,12 @@ main {
 .main-news {
   display: flex;
   flex-wrap: wrap;
+  margin: .5rem;
 }
 
 .main-news-item {
   display: flex;
+  width: 100%;
   margin: .5rem;
   border-radius: .3rem;
   font-size: small;
@@ -128,22 +130,23 @@ main {
 
 .main-news-image {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
 .card-image {
-  height: 8rem;
-  width: 9rem;
+  height: 10rem;
+  width: 11rem;
   padding: .5rem;
 }
 
 .main-news-textbox {
   display: flex;
   flex-wrap: wrap;
+  flex: 0 1 67%;
   padding: .5rem;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .main-news-title {
@@ -154,6 +157,11 @@ main {
   padding: .25em;
 }
 
+.main-news-item:hover {
+  box-shadow: 0 0 15px black;
+  transition: ease-in-out .4s;
+  -webkit-transition: ease-in-out .4s;
+}
 /* Footer style */
 
 footer {
@@ -182,6 +190,7 @@ footer {
   letter-spacing: .2em;
   text-align: center;
 }
+
 .social-media-items {
   display: flex;
   padding: .25em; 
@@ -191,6 +200,9 @@ footer {
   padding: .25em;
 }
 
+.social-media-link:hover {
+  background-color: #878e11
+}
 
 
 @media screen and (min-width: 768px) {
@@ -234,7 +246,6 @@ footer {
     display: inline;
   }
 
-
   .intro-news {
     min-height: 350px;
     top: 130px;
@@ -253,14 +264,19 @@ footer {
   .intro-news-image-overlay {
     min-height: 350px;
   }
+
   .main-news {
+    display: flex;
     margin-top: 15rem;
-    background-color: #BBCBD5;
+    margin: 15rem 0 0 0;    
     padding: 5rem 1rem;
+    background-color: #BBCBD5; 
+    justify-content: center;
+    align-items: center;
   }
 
   .main-news-item {
-    flex: 0 1 45vw;
+    width: 40vw;
     margin: .6rem;
   }
 
@@ -280,7 +296,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 1.25rem;
   }
 
   .navbar-menu {
@@ -320,14 +335,24 @@ footer {
     margin: auto 5rem;
   }
 
-
   .main-news-item {
-   
-    width: 30vw;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 20rem;
+    width: 16rem;
+    padding: 1rem;
+  }
+
+  .main-news-textbox {
+    font-size: smaller;
+    text-align: center;
   }
 
   .card-image {
-    width: 20vw;
+    min-height: 14rem;
+    min-width: 15rem;
+    padding: .4em;
   }
 
 }
