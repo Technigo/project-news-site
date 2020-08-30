@@ -1,6 +1,6 @@
 # News Site
 
-The addignment was building a responsive news site using flexbox. I chose the subject of the environment and wanted to build a simple, clean site with nice pictures and hiver effects. 
+The assignment was building a responsive news site using flexbox. I chose the subject of the environment and wanted to build a simple, clean site with nice pictures and hiver effects. 
 
 ## The problem
 
