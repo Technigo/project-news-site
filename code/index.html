@@ -5,35 +5,31 @@
     <title>Football News</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    
   </head>
   <body>
+    <!--Header with logo and navbar-->
     <header>
       <div class="logo-name">
-        <img class="logo" src="/images/football.jpg" alt="logo">
+        <img class="logo" src="/code/images/football.jpg" alt="logo">
         <h1 class="website-name">Football News</h1>
         </div>
         <nav>
           <ul>
-          <li class="nav-logo"><a href="https://www.fotbollskanalen.se/" target="_blank"><img src="/images/fk_logo.png"></a></li>
-          <li class="nav-logo"><a href="https://www.goal.com/en" target="_blank"><img src="/images/goal-logo.jpg"></a></li>
-          <li class="nav-logo"><a href="https://www.youtube.com/channel/UCbWUEnTRHb3bRdrnovq8iuA" target="_blank"><img src="/images/daily.jpg"></a></li>
-          <li class="nav-logo"><a href="https://www.bbc.com/sport/football" target="_blank"><img src="/images/bbc-sport-logo.png"></a></li>
-          
+          <li class="nav-logo"><a href="https://www.fotbollskanalen.se/" target="_blank"><img src="/code/images/fk_logo.png" alt="Fotbollskanalen logo"></a></li>
+          <li class="nav-logo"><a href="https://www.goal.com/en" target="_blank"><img src="/code/images/goal-logo.jpg" alt="Goal logo"></a></li>
+          <li class="nav-logo"><a href="https://www.youtube.com/channel/UCbWUEnTRHb3bRdrnovq8iuA" target="_blank"><img src="/code/images/daily.jpg" alt="Football Daily logo"></a></li>
+          <li class="nav-logo"><a href="https://www.bbc.com/sport/football" target="_blank"><img src="/code/images/bbc-sport-logo.png" alt="BBC logo"></a></li>
           </ul>
       </nav>
     </header>
-    
-    
-    <section class="big-news">
-      <div class="news-card-image"><img src="/images/messi.jpg">
-      
-      </div>
+    <!--Big news section-->
+    <section class="big-news-container">
+      <div class="news-card-image"><img src="/code/images/messi.jpg" alt="Lionel Messi"></div>
       <div class="news-card-text">
-        <h1>The end of Messi in Barcelona?</h1>
+        <h2>The end of Messi in Barcelona?</h2>
       <p>Following FC Barcelonas huge 8-2 loss in the Champions League against Bayern Münich rumours are sparking about Lionel Messi wanting to leave the club. 
         The 33-year old forward came to Barcelona only as a 13-year old and is by many considered to be the best football player the world has ever seen. 
         He has won the <em>Champions League</em> four times, <em>La Liga</em> 10 times and <em>Copa del Rey</em> with Argentina as much as six times. 
@@ -51,29 +47,28 @@
         </ul>
       </div>
     </section>
-
-    
-
-    <section class="other-news">
-      <div class="news-child one"><img src="/images/koeman.jpg"><p>New Barcelona coach Ronald Koeman</p></div>
-      <div class="news-child one"><img src="/images/cristiano.jpg"><p>Messi's biggest rival Cristiano Ronaldo</p></div>
-      <div class="news-child one"><img src="/images/messi-family.jpg"><p>Is the Messi family looking for a new home?</p></div>
-      <div class="news-child one"><img src="/images/messi-city.jpg"><p>Could we be seeing Messi in Man City?</p></div>
+    <!--Other news section-->
+    <section class="other-news-container">
+      <div class="news-child"><img src="/code/images/koeman.jpg" alt="Ronald Koeman"><p>New Barcelona coach Ronald Koeman</p></div>
+      <div class="news-child"><img src="/code/images/cristiano.jpg" alt="Cristiano Ronaldo"><p>Messi's biggest rival Cristiano Ronaldo</p></div>
+      <div class="news-child"><img src="/code/images/family.jpg" alt="The Messi family"><p>Is the Messi family looking for a new home?</p></div>
+      <div class="news-child"><img src="/code/images/messi-city.jpg" alt="Messi in Man City?"><p>Could we be seeing Messi in Man City?</p></div>
+      <div class="news-child"><img src="/code/images/pepaguero.jpg" alt="Reason to move?"><p>This could be a reason to move to City</p></div>
+      <div class="news-child"><img src="/code/images/messiaguero.jpg" alt="Good friends"><p>Messi and Agüero are close friends</p></div>
+      <div class="news-child"><img src="/code/images/messi-dad.jpg" alt="Messi's father"><p>Messi's father and agent Jorge Messi</p></div>
+      <div class="news-child"><img src="/code/images/messiballon.jpg" alt="Ballon dór"><p>The one and only six time winner of Ballon dór</p></div>
     </section>
-
-    <section class="other-news">
-      <div class="news-child one"><img src="/images/pepaguero.jpg"><p>This could be a reason to move to City</p></div>
-      <div class="news-child one"><img src="/images/messiaguero.jpg"><p>Messi and Agüero are close friends</p></div>
-      <div class="news-child one"><img src="/images/messi-dad.jpg"><p>Messi's father and agent Jorge Messi</p></div>
-      <div class="news-child one"><img src="/images/messiballon.jpg"><p>The one and only six time winner of Ballon dór</p></div>
-    </section>
-  
-    
-    
-
-    
-   
-    
-    <footer><strong>&copy; Joel Harde 2020</strong><a href="https://www.linkedin.com/in/joelharde/" target="_blank">LinkedIn</a></footer>
+    <!--Footer-->
+    <footer>
+      <span>&copy; Joel Harde 2020</span>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/joelharde/" target="_blank">
+        <img src="https://img.icons8.com/android/24/000000/linkedin.png" alt="linkedIn"/>
+        </a>
+        <a href="https://github.com/"> 
+          <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="Github"/>
+        </a>
+       </div>
+      </footer>
   </body>
 </html>
