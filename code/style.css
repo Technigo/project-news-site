@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .big-news-card img {
-  width: 100%; /* From where do I get the height? */
+  width: 100%;
   border-radius: 30px;
 }
 
@@ -98,12 +98,12 @@ nav a:hover {
 }
 
 .other-news-card img {
-  width: 100%; /* From where do I get the height? */
+  width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
 
-/*** FOOTER ***/
+/*** FOOTER ***/ /* If I have less other-news-card the footer will not be at the bottom - TODO fixed footer at the bottom of the page (all sizes)  */
 footer {
   background-color: #056676;
   color: #e8ded2;
@@ -116,7 +116,6 @@ footer a {
 }
 
 /*** MEDIA QUERIES ***/
-
 @media (min-width: 768px) {
   .site-logo-name {
     display: none;
@@ -181,10 +180,10 @@ footer a {
   }
 
   .other-news-container {
-    justify-content: flex-start; /* What do I need to do to get them to be center but still get the new row left aligned */
+    justify-content: flex-start; /* What do I need to do to get them to be center but still get the new row left aligned (not spread out)? */
   }
 
   .other-news-card {
-    width: 15%; /* At screen size width 1680 I get fice cards in a row, how do I handle that? */
+    width: 15%; /* At screen size width 1680 I get five cards in a row, how do I handle that? */
   }
 }
