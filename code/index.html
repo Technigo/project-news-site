@@ -2,31 +2,161 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: News that are not news</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>Project 2: Chipotle magazine</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+    </style>  
   </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-      <img class = "logo" src = "logo.svg"></img>
-      <nav>
-        <a href= "a">One</a> 
-        <a href= "a">Two</a> 
-        <a href= "a">Three</a> 
-        <a href= "a">Four</a> 
-        
-        <!-- the link will be clickable but it wont go anywhere right now -->
 
+  <body>
+    <header>  <!-- LOGO AND NAV BAR -->  
+    
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <img src = "img/chipotle.png" alt= "Chipotle's logo">
+      
+      <nav>
+        <a href="">Articles</a>
+        <a href="">Recipes</a>
+        <a href="">Workshops</a>
+        <a href="">Trips</a>
       </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+     
+      <!-- THE BIG NEWS CONTENT -->
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="flex-parent">
+  
+      <div class="flex-child one">
+        <img src="img/foodtour.jpg" alt="Tacos image">
+      </div>
+        
+      <div class= "flex-child two">
+        <h1> Epic streetfood tour in Mexico city!</h1>
+        <p> An unconventional gastronomic experience 
+        that you will never forget!</p>
+      </div>
+
     </section>
+        <!-- THE OTHER NEWS CONTENT -->
+
+   <section class="grid-container">
+
+      <div class= "grid-item one">
+        <h5>ARTICLE</h5>  
+      <a href="#">
+          <img src="img/chocolate.png" alt= "Chocolate image"> 
+        </a>
+        
+        <h3>Explore the world of chocolate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. </p>
+      </div> 
+      
+      <div class= "grid-item two">
+        <h5>WORKSHOP</h5>  
+        <a href="#">
+          <img src="./img/tortillas.png" alt= "Tortillas image"> 
+        </a>
+        
+        <h3>Learn to make home made tortillas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+      
+      <div class= "grid-item three">
+        <h5>RECIPE</h5>  
+        <a href="#">
+          <img src="img/tamales.png" alt= "Tamales image"> 
+        </a>
+        
+        <h3>An easy way to make tamales</h3>
+        <p>There is no such way Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+
+
+      <div class= "grid-item four">
+        <h5>RECIPE</h5>  
+        <a href="#">
+          <img src="img/elotes.jpg" alt= "Food and sauces image"> 
+        </a>
+        
+        <h3>How to eat elote like a pro</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+
+      <div class= "grid-item five">
+       <h5>TIPS</h5>  
+        <a href="#">
+          <img src="img/foodmarket.jpg" alt= "Foodmarket image"> 
+        </a>
+        
+        <h3>Best foodmarkets you have to visit</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+
+      <div class= "grid-item six">
+       <h5>RECIPE</h5>  
+        <a href="#">
+          <img src="img/recetamole.png" alt= "Mole dish image"> 
+        </a>
+        
+        <h3>How to make mole from scratch</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+      
+      <div class= "grid-item seven">
+        <h5>RECIPE</h5>  
+        <a href="#">
+          <img src="img/veganrecipes.jpg" alt= "Vegan food image"> 
+        </a>
+      
+        <h3>10 dishes on a budget</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+        Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>  
+      
+      <div class= "grid-item eight">
+        <h5>Best tacos in Mexico city</h5>  
+        <a href="#">
+          <img src="img/streetfoodtour.jpg" alt= "Taco image"> 
+        </a>
+        
+        <h3>A list of the best places</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore eos in deserunt architecto, accusantium quia eaque iste delectus id reiciendis inventore amet possimus! 
+          Culpa deleniti nulla dolorem, voluptas minima sapiente. 
+        </p>
+      </div>
+     
+    </section>
+     
+    
+    <footer></footer>
   </body>
+
 </html>

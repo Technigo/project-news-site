@@ -1,40 +1,218 @@
-html {
-  background: #0025ff;
+body {
+  background: #ffffff;
   color: #fff;
+  margin: 10px;
 }
 
-/**** Header ****/
+/**** HEADER ****/
 
 header {
   background-color: white;
-  display: flex
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 120px;
+  border-bottom: 1px solid black;
+}
 
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;  
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+}
+
+header img {
+  width: 300px; 
 }
 
 nav {
-  border: 1px solid blue;
+  display: none;  
+}
+
+nav a {
+  color: #000000;  
+  text-decoration: none;
+  margin-left: 16px;  
+}
+
+nav:hover {
+  text-shadow: 0px 1px 3px 6px lightgray; /* Hover effect for our cards */
 }
 
 h1 {
-  font-family: Helvetica;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: black;
+  margin-top:0;
+  padding-top:20px;
+  display: flex;
+  align-items: flex-start;
+} 
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: black;
+  margin-top:0;
+  padding-top:20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 
-.logo {
-  width: 50px;
-  height: 50px;
+h5 {
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: black;
+  margin:0;
+  padding:10px 0px;
+  display: flex;
+  align-items: flex-start;
 }
 
 p {
-  font-family: "Times New Roman";
-
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  font-size: 28px;
+  margin-top: -10px
 }
 
-/**** Big News ****/
+img {
+  width: 100%; 
+  border-radius: 20px;
+}
+
+/**** BIG NEWS ****/
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  margin:20px;
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.flex-parent:hover {
+  box-shadow: 5px 10px 10px rgba(0,0,0,.5); /* Hover effect for our cards */
+}
+
+.flex-child {
+  width: 100%; 
+}
+
+/**** THE OTHER NEWS ****/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-gap: 15px;
+  margin:20px; 
+  border: 2px; 
+ }
+
+.grid-item {
+  grid-column: span 4;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  box-shadow: 5px 10px 10px rgba(0,0,0,.5); /* Hover effect for our cards */
+}
 
 
+/**** MEDIA QUERIES ****/
 
+@media (min-width: 768px) {
 
-/**** News Grid ****/
+  header {
+    justify-content: space-between;
+  }
 
+  nav {
+    display: inline-block;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: none;
+  } 
+
+  h1 {
+    font-size: 42px
+  }
+  
+  p {
+    font-size: 32px;
+  }
+  img {
+    width: 100%; 
+  }
+  
+  .one, .two {
+    grid-column: span 2;
+  }
+
+  .three, .four {
+    grid-column: span 2;
+  }
+
+  .five, .six, {
+    grid-column: span 2;
+  }
+  
+  .seven, .eight {
+    grid-column: span 2;
+  }
+  
+@media (min-width: 1024) {
+
+  .flex-parent {
+    flex-direction: row; 
+    
+   }
+
+   .flex-child {
+     display: flex;
+     width: 100%;
+   }
+
+   .one, .two {
+    width: 100%
+  }
+   
+  
+
+   .one, .two, .three, .four {
+    grid-column: span 1;
+  }
+
+   .five, six, seven, eight {
+    grid-column: span 1;
+   }
+} 
