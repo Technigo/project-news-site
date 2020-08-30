@@ -1,10 +1,9 @@
-        /* html {
+        html {
             position: relative;
             min-height: 100%;
-        } */
+        }
         
         body {
-            /* background: #B0E0E6; */
             background: #dae6f0;
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -123,8 +122,7 @@
         }
         
         .staycation {
-            /* border: 2px solid blue; */
-            height: 200px;
+            height: auto;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             /*1fr 1fr 1fr 1fr 1fr 1fr; */
@@ -135,7 +133,7 @@
         }
         
         .staycation .grid2 {
-            padding-left: 50px;
+            padding: 50px;
             text-align: center;
         }
         
@@ -147,14 +145,14 @@
         
         footer {
             background: #c7d9e8;
-            height: 50px;
+            height: 80px;
             text-align: center;
-            padding: 10px 0;
+            padding-top: 30px;
             color: #1761a0;
             width: 100%;
             justify-content: center;
             margin-top: 100px;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 0;
         }
