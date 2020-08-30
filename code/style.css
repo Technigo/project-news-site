@@ -100,6 +100,17 @@ nav li  {
   height: 75px;
   padding-top: 10px;
 }
+.nav-logo:hover{
+  background-color: SlateGray;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.20;
+    -moz-opacity: 20%;
+    -webkit-opacity: 20%;
+    z-index: 2;
+    border-radius: 50%;
+}
 
 .big-news-container  {
   display: flex;
