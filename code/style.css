@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-/*** Header ***/
+/***Header for MOBILE***/
 
 header {
   display: flex;
@@ -15,13 +15,72 @@ header nav {
   display: none;
 }
 
-@media (min-width: 768px) {
+/*** Header for TABLET ***/
+
+@media (min-width: 668px) and (max-width: 1024) {
   header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 13px;
     justify-content: flex-start;
+    align-items: center;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav a {
+    font-family: "Lexend Giga", sans-serif;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: 50;
+  }
+
+  nav a:hover {
+    color: #f7941f;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    position: center;
+    flex-grow: 0;
+  }
+
+  .left {
+    order: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .right {
+    order: 2;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+  }
+
+  .leftside {
+    display: inline-flex;
+  }
+
+  .rightside {
+    display: inline-flex;
   }
 }
+/*** Header for DESKTOP ***/
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   header {
     background-color: #f7f7f7;
     display: flex;
@@ -50,16 +109,15 @@ header nav {
   nav a:hover {
     color: #f7941f;
   }
-
   .logo {
-    width: 70px;
     height: 70px;
+    width: 70px;
   }
 }
 
 body {
   font-family: arial, sans-serif;
-  margin: 0 auto
+  margin: 0 auto;
   background-color: white;
 }
 
@@ -69,20 +127,20 @@ body {
   box-sizing: inherit;
 }
 
-/***BIG NEWS***/
+/***Big news MOBILE***/
 
 .textbox {
   font-family: "Lexend Giga", sans-serif;
   font-size: 30px;
   text-align: center;
   color: rgb(114, 104, 104);
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 .row {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
-  padding: 25px 25px;
+  padding: 0px 30px;
   max-width: 1125px;
   margin: auto;
 }
@@ -105,21 +163,16 @@ body {
   min-height: 100%;
   transform: translate(-50%, -50%);
 }
-
-/***HOW to make this image resopnsive?***/
-/* @media (min-width: 768px) {
+@supports (object-fit: cover) {
   .object-fit img {
+    position: static;
+    height: 100%;
     width: 100%;
-    height: auto;
+    transform: none;
+    object-fit: cover;
   }
-} */
-
-/* .responsive {
-  width: 100%;
-  height: auto;
-} */
-
-/***BUTTON STYLING***/
+}
+/***Button styling inside Big News***/
 
 .button {
   display: inline-block;
@@ -145,47 +198,78 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+/***Big News section TABLET***/
 
-@supports (object-fit: cover) {
-  .object-fit img {
-    position: static;
-    height: 100%;
-    width: 100%;
-    transform: none;
-    object-fit: cover;
+@media only screen and (min-width: 668px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .title {
+    font-size: 30px;
   }
 }
 
-/***FLEXBOX GALLERY***/
-.container {
-  max-width: 1125px;
-  margin: 0 auto;
+/***Big news section DESKTOP***/
+
+@media only screen and (min-width: 1024px) {
+  .row {
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+  }
 }
 
+/***Flexbox gallery MOBILE***/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+.message {
+  display: block;
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(114, 104, 104);
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(160, 147, 147);
+}
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .gallery-item {
-  width: 250px;
-  height: 200px;
-  /* width:100%;
-  height:auto; */
-  margin: 10px;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  background-color: white;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
 }
 .gallery-item img {
-  position: absolute;
-  width: 250px;
-  height: 200px;
-  flex-grow: 1;
+  position: relative;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 0px 30px;
 }
 .text-wrapper {
-  position: relative;
-  width: 250px;
-  height: 200px;
+  position: absolute;
+  width: 60%;
+  left: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,42 +277,106 @@ body {
   color: #f7941f;
   font-family: "Lexend Giga", sans-serif;
 }
-.text-wrapper:hover {
-  transition: all 0.8s ease;
-  background: rgba(0, 0, 0, 0.6);
-  /* opacity: 1; */
-}
-.explanation {
-  opacity: 0;
-  font-size: 15px;
-  color: white;
-}
 .title {
-  font-size: 40px;
-}
-.title:hover + .explanation {
-  opacity: 1;
+  font-size: 45px;
 }
 
-/*** As there is no hove effect on touch screens, the text should be always present ***/
+.explanation {
+  display: none;
+}
 
-@media only screen and (min-width: 768px) {
-  .row{
-    flex-direction:row;
+/***Flexbox gallery TABLET***/
+@media only screen and (min-width: 668px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+  }
+  .gallery-item {
+    position: relative;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    width: 47%;
+  }
+  .gallery-item img {
+    width: 100%;
+    margin-bottom: 5px;
   }
   .text-wrapper {
-    opacity: 1;
-    justify-content: flex-end;
-    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #f7941f;
+    font-family: "Lexend Giga", sans-serif;
+  }
+
+  .title {
+    font-size: 25px;
   }
   .explanation {
-    opacity: 1;
-    margin-bottom: 1em;
-  }
-  .title {
-    font-size: 30px;
+    display: none;
   }
 }
+/***Flexbox gallery DESKTOP***/
+
+/*** As there is no hover effect on touch screens, I added hover effect for DESKTOP***/
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .gallery-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    width: 23%;
+  }
+
+  .gallery-item img {
+    width: 100%;
+  }
+
+  .text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
+  .explanation {
+    display: flex;
+    opacity: 0;
+    font-size: 15px;
+    color: white;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .title:hover + .explanation {
+    opacity: 1;
+  }
+}
+
+/***Footer MOBILE***/
+
 .footer {
   text-align: center;
   display: inline-block !important;
@@ -247,4 +395,30 @@ body {
   color: #f7941f;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.social {
+  display: none;
+}
+
+a.footer {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Lexend Giga", sans-serif;
+  margin: 5px;
+}
+/*** Remove footer menu for DESKTOP ***/
+
+@media only screen and (min-width: 1024px) {
+  .footer-links {
+    display: none;
+  }
 }
