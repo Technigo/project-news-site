@@ -46,18 +46,47 @@ html{
   a:hover{
     color: #888888;
   }
-  .hamburger {
+  
+  .hamburger{
+    position: relative;
     display: flex;
-    width: 30px;
-    height: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition: all .5s ease-in-out;
   }
-  .line {
-    width: 30px;
-    height: 5px;
-    background: #000000;
+  .line{
+    width: 50px;
+    height: 6px;
+    background: #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .line::before, .line::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background: #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .line::before{
+    transform: translateY(-16px);
+  }
+  .line::after{
+    transform: translateY(16px);
+  }
+  .hamburger.open .line{
+    transform: translateX(-50px);
+    background: transparent;
+  }
+  .hamburger.open .line::before{
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .hamburger.open .line::after{
+    transform: rotate(-45deg) translate(35px, 35px);
   }
   .big-news{
     display: flex;
