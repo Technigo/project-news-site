@@ -36,7 +36,7 @@ a {
 
 /*** SECTION 1 - logo & navbar ***/
 
-nav {
+.nav-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -146,7 +146,35 @@ nav {
   letter-spacing: 1px;
 }
 
-/*** SECTION 4 – back to top ***/
+/*** SECTION 4 – footer ***/
+
+.nav-bar-footer {
+  font-size: 16px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #000;
+  font-weight: 500;
+}
+
+.social-container {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.social-media {
+  width: 40px;
+  height: 40px;
+  margin: 5px 11px;
+}
+
+.nav-bottom-container {
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
 
 .back-to-top {
   display: flex;
@@ -157,6 +185,7 @@ nav {
 .logo-bottom {
   width: 50px;
   margin: 0;
+  padding: 10px 0 20px;
 }
 
 .site-name-bottom {
@@ -217,6 +246,7 @@ nav {
 
   .big-news {
     width: 35%;
+    min-width: 300px;
   }
 
   /* SECTION 3 - the other news */
@@ -239,27 +269,33 @@ nav {
   .section-4 {
     padding: 40px 20px 20px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 150px;
   }
 
   .logo-bottom {
     display: none;
   }
 
-  .social-media {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-  }
-
   .site-name-bottom {
-    display: block;
+    display: flex;
+    text-align: center;
     font-family: "Lexend Deca", sans-serif;
     color: #000;
   }
+
   .site-name-bottom:visited {
     color: #000;
+  }
+
+  .social-container {
+    padding-top: 0;
+  }
+
+  .back-to-top {
+    padding: 12px 0 10px;
+    align-self: flex-end;
   }
 }
 
@@ -272,7 +308,7 @@ nav {
 
   /* SECTION 1 - logo & navbar */
 
-  nav {
+  .nav-top {
     justify-content: flex-start;
   }
 
@@ -337,6 +373,7 @@ nav {
   .news {
     transition: 0.2s;
   }
+
   .news:hover {
     color: #00f;
     transition: 0.2s;
@@ -367,25 +404,13 @@ nav {
     transition: 0.1s;
   }
 
-  .card:hover .img-card {
-    /* opacity: 0.8; */
-    filter: grayscale(100%);
-    mix-blend-mode: darken;
-    transition: 0.2s;
-  }
-
   .card:hover {
     transform: translate(8px, 8px);
     transition: 0.2s;
     background: #00f;
   }
 
-  .text-on-pic {
-    transition: 0.1s;
-  }
-
   .card:hover .text-on-pic {
-    /* color: #00f; */
     font-size: 34px;
     transition: 0.2s;
   }
@@ -394,30 +419,60 @@ nav {
     /* to prevent shadow to appear when hover over image heading */
     box-shadow: none;
     transition: 0.2s;
+    filter: grayscale(100%);
+    mix-blend-mode: darken;
+  }
+
+  .text-on-pic {
+    transition: 0.1s;
   }
 
   /* SECTION 4 – footer */
 
   .section-4 {
-    padding: 40px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 15px;
   }
 
-  .back-to-top {
-    padding-bottom: 10px;
-  }
-
-  .logo-bottom {
-    display: none;
+  .social-container {
+    padding: 20px 0;
   }
 
   .social-media {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
+    margin-right: 5px;
     color: #00f;
+    cursor: pointer;
   }
 
   .social-media:hover path {
     fill: #00f;
+    transition: 0.2s;
+  }
+
+  .nav-bar-footer {
+    font-size: 16px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .nav-bar-footer:hover {
+    color: #00f;
+    transition: 0.2s;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .logo-bottom {
+    display: none;
   }
 }
