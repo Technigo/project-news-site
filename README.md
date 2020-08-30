@@ -7,4 +7,4 @@ The first project of the Technigo boot camp was about creating a responsive page
 I tested using desktop-first approach and added media queries to style tablets and mobile versions. I used flexbox to layout the articles and make the site responsive. I had a bigger news article then under that a smaller grid of articles. On the smaller grid, I added a hover effect that makes the picture pop. A hamburger pops up and replaces the navbar when going in to tablet mode and under.
 
 ## View it live
-
+https://todaysinspiration.netlify.app/code/
