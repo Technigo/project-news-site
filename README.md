@@ -14,7 +14,7 @@ Used boxmodel, flexbox, media queries, parallax image and boxshadow transitionin
 
 If I had had more time, I would have tried to truncate the paragraph in the main news card. I also tried to take away the card's textbox on laptop view and have it shown over an overlay on hover without rearring the HTML. My guess is Javascript is needed for that, though.
 
-In the best of worlds the cards also would have had an asymmetrical layout using flexbox.
+In the best of worlds the cards also would have had an asymmetrical layout using CSS grid.
 
 ## View it live
 https://making-zine.netlify.app/
