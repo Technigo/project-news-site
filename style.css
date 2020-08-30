@@ -57,23 +57,18 @@ a {
   opacity: .8;
 }
 
-.navbar-menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 /* Main style */
 
 main {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 /* Intro content */
 
-.intro-content-container {
+.intro-news {
   position: relative;
-  min-height: 325px;
+  height: 325px;
   margin: 0 .5rem 10rem .5rem;
   top: 80px;
   border-radius: .3rem;
@@ -81,32 +76,32 @@ main {
   overflow-y: auto;
 }
 
-.intro-title-container {
+.intro-news-title {
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 45%;
   right: 0; 
   color: white;
   z-index: 5;
 }
 
-.intro-title {
+.intro-news-main-title {
   font-size: 2.5em;
 }
 
-.intro-image {
+.intro-news-image {
   background-image: url("./img/philipp-lublasser-O_Xf5uToN-Q-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
-  min-height: 325px;
+  height: 325px;
   width: 100%;
   position: absolute;
 }
 
-.intro-image-overlay {
+.intro-news-image-overlay {
   height: 325px;
   width: 100%;
   margin: auto;
@@ -115,12 +110,12 @@ main {
 }
 
 /* Main content style */
-.article-container {
+.main-news {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card {
+.main-news-item {
   display: flex;
   margin: .5rem;
   border-radius: .3rem;
@@ -128,10 +123,10 @@ main {
   background-color: #f9f9f9;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 3px black;
+  box-shadow: 0 2px 3px grey;
 }
 
-.card-image-container {
+.main-news-image {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -143,7 +138,7 @@ main {
   padding: .5rem;
 }
 
-.card-text-container {
+.main-news-textbox {
   display: flex;
   flex-wrap: wrap;
   padding: .5rem;
@@ -151,10 +146,10 @@ main {
   align-content: center;
 }
 
-.card-title {
+.main-news-title {
   width: 100%;
 }
-.card-text {
+.main-news-text {
   font-family: 'Open Sans', sans-serif;
   padding: .25em;
 }
@@ -173,7 +168,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: .25em;
+  padding: .25rem;
   background-color: #C3CC22;
   align-items: center;
   justify-content: space-evenly;
@@ -203,8 +198,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex: 1;
-    padding: 0 1.25rem;
   }
 
   .navbar-menu {
@@ -228,22 +221,58 @@ footer {
 
   .navbar-logo {
     width: 33%;
+    padding: 0 .8rem;
     text-align: center;
     justify-content: flex-start;
   }
 
   .nav-link:hover {
-    color: lightgrey;
+    text-shadow: 0 0 2px whitesmoke, 0 0 4px whitesmoke; 
   }
 
   .nav-link {
     display: inline;
   }
 
-  .intro-content-container {
+
+  .intro-news {
+    min-height: 350px;
+    top: 130px;
     margin: auto 3rem;
   }
 
+  .intro-news-title {
+    left: 68%;
+    top: 68%;
+  }
+
+  .intro-news-image {
+    min-height: 350px;
+  }
+
+  .intro-news-image-overlay {
+    min-height: 350px;
+  }
+  .main-news {
+    margin-top: 15rem;
+    background-color: #BBCBD5;
+    padding: 5rem 1rem;
+  }
+
+  .main-news-item {
+    flex: 0 1 45vw;
+    margin: .6rem;
+  }
+
+  .card-image {
+    min-width: 12rem;
+    min-height: 11rem;
+  }
+
+  .footer-info {
+    padding: 1.75rem;
+    font-size: large;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -287,12 +316,12 @@ footer {
     display: block;
   }
 
-  .intro-content-container {
+  .intro-news {
     margin: auto 5rem;
   }
 
 
-  .card {
+  .main-news-item {
    
     width: 30vw;
   }
