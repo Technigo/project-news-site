@@ -1,10 +1,13 @@
 body {
-  background-color: silver;
+  /* background-image: url("images/bg-image/image_4.jpg"); */
+  background-size: cover;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -13,10 +16,14 @@ h2 {
   margin-top: 16px;
   line-height: 1;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 
 h3 {
   font-size: 30px;
+  line-height: 1;
+  letter-spacing: 3px;
 }
 
 p {
@@ -25,10 +32,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
-  color: #000;
 }
 
 /*** SECTION 1 - logo & navbar ***/
@@ -47,13 +50,14 @@ nav {
 
 .logo {
   width: 50px;
-  background: #000;
   margin: 0;
   display: block;
 }
 
 .site-name-top {
+  font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
+  color: #000;
 }
 
 /*** SECTION 2 - the big news content ***/
@@ -72,6 +76,14 @@ nav {
 
 .big-news {
   padding: 0 20px 20px;
+}
+
+.news {
+  color: #000;
+}
+
+.news:visited {
+  color: #000;
 }
 
 .read-more {
@@ -97,12 +109,15 @@ nav {
 
 .card {
   position: relative;
+  display: block;
+  height: 200px;
 }
 
 .img-card {
   position: relative;
-  background: #000;
-  /* box-shadow: 8px 8px 0 0 grey; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .text-on-pic {
@@ -127,6 +142,8 @@ nav {
 .card-text-highlight {
   text-transform: uppercase;
   font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 /*** SECTION 4 – back to top ***/
@@ -139,7 +156,6 @@ nav {
 
 .logo-bottom {
   width: 50px;
-  background: #000;
   margin: 0;
 }
 
@@ -166,6 +182,12 @@ nav {
     flex-direction: row;
     font-size: 20px;
     text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .nav-bar:visited {
+    color: #000;
   }
 
   .logo-container {
@@ -214,12 +236,30 @@ nav {
 
   /* SECTION 4 – footer */
 
+  .section-4 {
+    padding: 40px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .logo-bottom {
     display: none;
   }
 
+  .social-media {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
   .site-name-bottom {
     display: block;
+    font-family: "Lexend Deca", sans-serif;
+    color: #000;
+  }
+  .site-name-bottom:visited {
+    color: #000;
   }
 }
 
@@ -239,6 +279,22 @@ nav {
   .site-name-top {
     margin-right: auto;
     margin-left: 16px;
+    position: relative;
+    animation: mymove 2s ease-in-out;
+  }
+
+  @keyframes mymove {
+    0% {
+      margin-left: 150px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      margin-left: 250px;
+    }
+    100% {
+      margin-left: 16px;
+    }
   }
 
   .nav-bar {
@@ -247,6 +303,16 @@ nav {
     font-size: 20px;
     margin-left: 40px;
     text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .nav-bar:visited {
+    color: #000;
+  }
+
+  .nav-bar:hover {
+    color: #00f;
+    transform: rotate(5deg);
   }
 
   /* SECTION 2 - the big news content */
@@ -259,19 +325,41 @@ nav {
   }
 
   .img-container {
-    width: 65%;
-    margin: 0 0 10% 0;
+    width: 60%;
+    margin: 0 0 5% 0;
   }
 
   .big-news {
-    width: 35%;
+    width: 40%;
     margin-top: 15px;
+  }
+
+  .news {
+    transition: 0.2s;
+  }
+  .news:hover {
+    color: #00f;
+    transition: 0.2s;
   }
 
   /* SECTION 3 - the other news */
 
+  .card-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 20px;
+    height: 250px;
+  }
+
+  .section-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   .img-card {
-    box-shadow: 8px 8px 0 0 grey;
+    box-shadow: 8px 8px 10px 3px rgba(0, 0, 0, 0.3);
     transition: 0.1s;
   }
 
@@ -279,8 +367,26 @@ nav {
     transition: 0.1s;
   }
 
+  .card:hover .img-card {
+    /* opacity: 0.8; */
+    filter: grayscale(100%);
+    mix-blend-mode: darken;
+    transition: 0.2s;
+  }
+
   .card:hover {
     transform: translate(8px, 8px);
+    transition: 0.2s;
+    background: #00f;
+  }
+
+  .text-on-pic {
+    transition: 0.1s;
+  }
+
+  .card:hover .text-on-pic {
+    /* color: #00f; */
+    font-size: 34px;
     transition: 0.2s;
   }
 
@@ -290,22 +396,28 @@ nav {
     transition: 0.2s;
   }
 
-  .section-3 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .card-container {
-    display: flex;
-    box-sizing: border-box;
-    width: 25%;
-    padding: 0 20px;
-  }
-
   /* SECTION 4 – footer */
+
+  .section-4 {
+    padding: 40px 20px 20px;
+  }
+
+  .back-to-top {
+    padding-bottom: 10px;
+  }
 
   .logo-bottom {
     display: none;
+  }
+
+  .social-media {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    color: #00f;
+  }
+
+  .social-media:hover path {
+    fill: #00f;
   }
 }
