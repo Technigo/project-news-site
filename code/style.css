@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: 'Catamaran', sans-serif;
 }
 
 /*** HEADER ***/
@@ -9,7 +8,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .logo {
@@ -19,16 +23,12 @@ header {
 }
 
 .logo img {
-  margin: 0 10px;
+  margin-left: 10px;
   height: 50px;
 }
 
-.logo p {
-  margin: 10px;
-}
-
 nav a { 
-  margin: 10px;
+  margin: 10px 20px 10px 0;
   text-decoration: none;
   color: black;
 }
@@ -37,9 +37,18 @@ nav a:hover {
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .logo p {
+    margin: 10px 0 10px 10px;
+  }
+}
+
 @media (max-width: 1023px) {
   .logo img {
     display: none;
+  }
+  .logo p {
+    margin: 10px 0 10px 20px;
   }
 }
 
@@ -127,6 +136,7 @@ nav a:hover {
   border-radius: 8px;
   border-width: 4px;
   cursor: pointer;
+  opacity: 0.75;
 }
 
 h2 {
@@ -135,12 +145,14 @@ h2 {
   line-height: 25px;
   font-size: 20px;
   font-weight: 400; 
+  font-family: 'Lora', serif;
 }
 
 /*** FOOTER ***/
 
 footer {
   margin-bottom: 30px;
+  font-family: 'Catamaran', sans-serif;
 }
 
 footer nav {
