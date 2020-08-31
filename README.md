@@ -60,4 +60,5 @@ better. Maybe also do the cards smaller in tablet and desktop...
 But I really don't know how...
 
 ## View it live
-At GitHub (user: bloeli, repository: project-new-site) and published at/with Netlify.
+At GitHub (user: bloeli, repository: project-new-site) and published at/with Netlify:
+https://hackhealthnews.netlify.app/
