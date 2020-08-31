@@ -3,6 +3,9 @@
 // So this project is to make a news site or a classic magazine site. My first thought was to make something that I feel kinda passionate about - plants. 
 But then it got me thinking if that's a news site? Maybe I can make it into one then! //
 
+Here it is :D 
+https://app.netlify.com/sites/adoring-swanson-35bb01/overview
+
 
 ## The problem
 
