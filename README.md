@@ -4,7 +4,7 @@ Hade trouble getting my content to position itself nicely based on different bre
 
 ## The problem
 
-First real programming project ever! Fokus to create a colorfull magazine like news site with responsive layout using html and css, and layout method flexbox. How its shown in different browsers. Tested mostly in chrome and with dev-inspector responsivness tool.
+First real programming project ever! Fokus to create a colorfull magazine like news site with responsive layout using html and css, and layout method flexbox. How its shown in different browsers. Tested mostly in chrome and with dev-inspector responsivnes tool.
 
 ## View it live
 https://5f4a6cffcff5d0f50c7c64a6--upbeat-lewin-eb2f1c.netlify.app/
