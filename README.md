@@ -12,4 +12,4 @@ If I had had more time I would have tried to only use flexbox.
 
 ## View it live
 
-https://eloquent-tereshkova-59ce77.netlify.app/?fbclid=IwAR1Td3uQQ9ltOlVMOheoNDhlYQf3G6K-okUtSQQfwoMslpnWNgWNqCPLAvU
+https://loving-edison-ed5b25.netlify.app
