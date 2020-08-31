@@ -7,6 +7,8 @@ The assigment was to create a responsive webpage with the theme "News Site". The
 ### Techniques
 I was using techniques as flexbox, media queries and semantic HTML.
 
+Have added hover effect for the nav menu when the screen is wider than 1024.
+
 ### Planning
 I started with mobile first and then scaled it up for tablet and later on desktop.
 
