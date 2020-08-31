@@ -11,3 +11,6 @@ I had some issues with flexbox and got trough the problems by using a guide from
 
 #View it live
 
+https://hopeful-pasteur-e5654a.netlify.app
+
+
