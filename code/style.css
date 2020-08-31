@@ -11,7 +11,6 @@
         /*------------ header---------------- */
         
         header {
-            /* width: 100%; */
             background: #c7d9e8;
             display: flex;
             justify-content: space-between;
@@ -58,8 +57,6 @@
             width: 100%;
             height: auto;
             display: flex;
-            /* margin: 50px 100px; */
-            /* justify-content: space-between; */
         }
         
         .info img {
@@ -74,7 +71,6 @@
             margin-right: auto;
             text-align: center;
             width: 30%;
-            /* font-size: 0.5em; */
         }
         
         .btn {
@@ -84,7 +80,6 @@
             margin-left: auto;
             border-radius: 15px;
             color: #1761a0;
-            /* align-self: center; */
         }
         
         .destinations {
@@ -92,7 +87,6 @@
             height: auto;
             margin-top: 40px;
             display: flex;
-            /* margin: 20px; */
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -125,7 +119,6 @@
             height: auto;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            /*1fr 1fr 1fr 1fr 1fr 1fr; */
             margin-top: 100px;
             margin-bottom: 100px;
             background: #ecf2f7;
@@ -172,15 +165,11 @@
             }
             .staycation {
                 grid-template-columns: repeat(3, 1fr);
-                /* grid-template-rows: 2; */
             }
         }
         /* media query for mobile phones */
         
         @media screen and (max-width:668px) {
-            /* .destination-box {
-        width: 35%;
-    } */
             .info {
                 flex-direction: column;
             }
@@ -189,7 +178,6 @@
             }
             .info .text {
                 width: 100%;
-                /* margin-left: 40px; */
             }
             nav {
                 display: none;
@@ -202,6 +190,5 @@
             }
             .staycation {
                 grid-template-columns: 1fr;
-                /* grid-template-rows: 2; */
             }
         }
