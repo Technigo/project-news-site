@@ -11,4 +11,5 @@ I tried to plan the project and thought it would take less time than it did. How
 If I had had time I would have aimed for black belt with some animations and CSS-grid.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the link to page on Netify:
+https://flamboyant-nightingale-0076ae.netlify.app
