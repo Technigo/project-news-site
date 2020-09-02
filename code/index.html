@@ -1,22 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <!--Google Font Abril Fatface-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e056cb308d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Örebronx</title>
   </head>
+
   <body>
+    <!-- Header -->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <section class="header-container">
+        <h1>Hitchhiker's guide to Örebronx</h1>
+        <img
+          src="./img/lovetravel.svg"
+          alt="love_travel"
+          width="70px"
+          height="70px"
+        />
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Good to know</a>
+          <a href="#">Eat & Drink</a>
+          <a href="#">Sports & Adventures</a>
+          <a href="#">Arts & Culture</a>
+          <a href="#">Family activities</a>
+          <a href="#">Shopping</a>
+        </nav>
+      </section>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <!-- H2 container -->
+    <section class="h2-container">
+      <h2>Lates City News:</h2>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <!-- Cards container -->
+    <section class="cards-container">
+      <!-- Big news content -->
+      <section class="big-cards-container">
+        <section class="card big">
+          <img
+            src="./img/liveatheart.jpg"
+            alt="orebro by night"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="https://liveatheart.se/"
+              ><h3>Live at heart - Sweden's largest streaming festival</h3>
+              <p>
+                Live at Heart will be broadcast digitally this year. You can
+                watch the broadcasts via Youtube & Facebook & Also NA.
+                Everything is completely free!
+              </p>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- Smaller news content -->
+      <section class="small-cards-container">
+        <section class="card small">
+          <img
+            src="./img/sweden-79314_1920.jpg"
+            alt="orebro castle"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Örebro Castle – a historical guided tour. Or if you dare, take
+              the ghost tour</a
+            >
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/rubberduck.jpg"
+            alt="rubber duck"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Duckhunting in Örebro - an OpenArt walk through the works of art
+              that remained</a
+            >
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/orebro.jpg"
+            alt="orebro by night"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Örebro by night - the 10 best restaurants, bars and clubs</a
+            >
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/bro-4724245_960_720.jpg"
+            alt="orebro svartan"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Magnetic fishing attracts more and more people - six tonnes of
+              scrap have been pulled up from Svartån</a
+            >
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/buildings-4724232_960_720.jpg"
+            alt="orebro olaigatan"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#">Join a city walk through Örebro by bike or on foot</a>
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/svartan-2643146_960_720.jpg"
+            alt="orebro svartan"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Canoeing, adventure golf, frisbee golf, stand-up paddle,
+              bumperballs, beach volleyball - welcome to Hästhagen</a
+            >
+          </div>
+        </section>
+
+        <section class="card small">
+          <img
+            src="./img/resting-hut-4070905_960_720.jpg"
+            alt="orebro resting hut"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#"
+              >Rynningeviken - fantastic nature reserve with everything for an
+              active outdoor life</a
+            >
+          </div>
+        </section>
+      </section>
+
+      <!--Medium news content -->
+
+      <section class="medium-cards-container">
+        <section class="card medium">
+          <img
+            src="./img/winter-4071041_960_720.jpg"
+            alt="orebro winter"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#">Therefore you should travel to örebro this winter</a>
+          </div>
+        </section>
+        <section class="card medium">
+          <img
+            src="./img/winter-3108979_1920.jpg"
+            alt="orebro winter"
+            style="width: 100%"
+          />
+          <div class="text-container">
+            <a href="#">How to survive in Örebro during winter?</a>
+          </div>
+        </section>
+      </section>
     </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Follow Hitchhikers on social media:</p>
+      <ul class="icons">
+        <!-- Icons for Facebook, Twitter and Instagram from font Awesome -->
+        <li><a href="#" class="icon fab fa-facebook-f fa-3x"></a></li>
+        <li><a href="#" class="icon fab fa-twitter fa-3x"></a></li>
+        <li><a href="#" class="icon fab fa-instagram fa-3x"></a></li>
+      </ul>
+
+      <ul class="copyright">
+        <li>Design: <a href="#">Petra</a></li>
+        <li>Images: <a href="https://pixabay.com/">Pixabay</a></li>
+        <li>
+          Icon: <a href="https://www.onlinewebfonts.com/icon/">Icon Fonts</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
