@@ -54,28 +54,7 @@ h4 {
 }
 
 
-  /***  Media Quaries   ***/
-
-
-
-/* On a desktop  the navbar will be on the left side with links showing */
-@media screen and (min-width: 1024px){
-  nav { display: flex;
-        justify-content: left;
-        background-color: #F8ECEC;
- 
-    }
-
-  .linkleft {
-        display: inline-block;
-      }  
-  .linkright {
-        display: inline-block;
-      }
-}
-
 /* HEADER */
-
  
 header {
   display: flex;
@@ -87,16 +66,6 @@ header {
   padding-top: 250px;
   }
 
-
-  /***  Media Quaries   ***/
-
-
-/*  on a laptop the header size increases again  */
-@media screen and (min-width:1024px) and (max-width: 2040px){
-  header {
-
-  }
-} 
 
 
 /* DAILY QUOTE CODE */
@@ -126,18 +95,6 @@ header {
 }
 
 
-  /***  Media Quaries   ***/
-
-
-/* on a laptop the width increases  */
-@media screen and (min-width: 1025px) {
-  .quote-container {
-
-  }
-} 
-
-
-
 
 /*LARGE NEWS */
 
@@ -161,15 +118,6 @@ header {
   background-color:lightpink;
 }
 
-  /***  Media Quaries   ***/
-
-
-/* on a Laptop the screen will show the content in a row */
-@media screen and (min-width: 1024px) {
-  .large-news-container {
-    flex-direction: row;
-  }
-}
 
 /* SMALL NEWS*/
 
@@ -228,32 +176,6 @@ margin-top: 50px;
 }
 
 
-    /***  Media Quaries   ***/
-
-/*on a tablet the content will be shown in  two rows in the center */
-
-    
-
-/*on a Laptop the content will be shown in four rows in the center */
-
-@media screen and (min-width:1024px)  {
-  .small {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 8px;
-    margin-top: 10px;    
-  }
-
-  .small-news {
-    width: 50px;
-    height: 50px;
-  }  
-
-  .small .small-img {
-    width: 20px;
-  }
-}
-   
  /*  BOTTOM IMAGES  */
 
 
@@ -267,18 +189,6 @@ margin-top: 50px;
   
 }
 
-
-  /***  Media Quaries   ***/
-
-
-/* on a Laptop the width increases, pictures shows in a row */
-@media screen and (min-width:1024px) {
-  .images-container{
-  justify-content: center;
-  padding: 10px;
- 
-  }
-}  
 
 /* BUTTON, */
 
@@ -311,19 +221,6 @@ button:active {
   transform: translateY(4px);
 }
 
-
-  /***  Media Quaries   ***/
-
-/*on a tablet width increases*/
-
-
-/*on a laptop width increases*/
-@media screen and (min-width: 1024px) {
-  .button{
-
-  }
-}
-
 /* FOOTER */
 
 .footer {
@@ -336,18 +233,6 @@ button:active {
   height: 300px;
   line-height: 90px;
 }
-
-  /***  Media Quaries   ***/
-
-
-
-/*on a laptop width increases*/  
-  @media screen and (min-width: 1024px) {
-    .footer{
-
-    }
-  }
-
 
 
 /** Media Queries Tablet **/  
@@ -375,19 +260,8 @@ button:active {
     }
   }
 
-  /*  on a tablet the header size increases  */
-  @media screen and (min-width:664px) and (max-width: 1024px){
-    header {
 
-    }
-} 
 
-/* on a tablet the width increases  */
-@media screen and (min-width: 664px) and (max-width:1024px){
-  .quote-container {
-
-  }
-} 
 
 /* on a tablet the screen will show the content in a column */
 @media screen and (min-width:664px) and (max-width: 1024px) {
@@ -421,3 +295,62 @@ button:active {
 
 
 /** Media Queries Desktop **/  
+
+
+/* On a desktop  the navbar will be on the left side with links showing */
+@media screen and (min-width: 1024px){
+  nav { display: flex;
+        justify-content: left;
+        background-color: #F8ECEC;
+    }
+
+  .linkleft {
+        display: inline-block;
+      }  
+  .linkright {
+        display: inline-block;
+      }
+}
+
+
+/* screen will show the content in a row */
+@media screen and (min-width: 1024px) {
+  .large-news-container {
+    flex-direction: row;
+  }
+}
+
+
+/*on a Laptop the content will be shown in four rows in the center */
+
+@media screen and (min-width:1024px)  {
+  .small {
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+
+  .small-news {
+    width: 20%;  
+    margin: 10px;  
+  }  
+
+  .small .small-img {
+    width: 120px;
+  }
+
+  h2 {
+    font-size:80px;
+
+  }
+}
+   
+/* pictures shows in a row */
+@media screen and (min-width:1024px) {
+  .images-container{
+ align-content: center;
+  
+  }
+}  
+
+
