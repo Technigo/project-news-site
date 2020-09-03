@@ -37,7 +37,6 @@ h4 {
   display: flex;
   padding: 15px;
   background-color:#F8ECEC;
-  
 }
 
 .navbar a {
@@ -64,7 +63,7 @@ header {
   background-color:#F7E6E6;
   font-size: xx-large;
   padding-top: 250px;
-  }
+}
 
 
 
@@ -94,8 +93,6 @@ header {
   font-size: xx-large;
 }
 
-
-
 /*LARGE NEWS */
 
 
@@ -118,12 +115,10 @@ header {
   background-color:lightpink;
 }
 
-
 /* SMALL NEWS*/
 
 .small-news p {
 font-size: 25px;
-
 }
 
 .small {
@@ -131,7 +126,6 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 margin-top: 50px;
-
 }
 
 .small-news {
@@ -185,8 +179,7 @@ margin-top: 50px;
   flex-direction: column;
   margin-left: 15px;
   margin-top: 40px;
-  box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
-  
+  box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15); 
 }
 
 
@@ -195,16 +188,16 @@ margin-top: 50px;
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  align-content: center;
 }
 
 button   {
+  margin-top: 50px;
   background-color: #F8ECEC;
   border-radius: 15px;
   border-style: hidden;
   color:black;
   padding: 10px 10px;
-  text-align: center;
   text-decoration: none;
   font-size: 35px;
   font-family: 'Times New Roman', Times, serif
@@ -241,34 +234,29 @@ button:active {
 /* On a tablet the navbar will move from leftside to center, and the links will appear */
  @media screen and (min-width: 668px) and (max-width:1024px){
   nav {
-      display: flex;
-      justify-content: center;
-      background-color: #F8ECEC; 
-    
-    }
+    display: flex;
+    justify-content: center;
+    background-color: #F8ECEC; 
+  }
   .logonavbar {
-      order: 1;
-      flex-grow: 0;
-      }
+    order: 1;
+    flex-grow: 0;
+  }
   .linkleft {
     display: inline-block;
     order: 0;
-    }  
+  }  
   .linkright {
     display: inline-block;
     order: 2;
-    }
   }
+}
 
-
-
-
-/* on a tablet the screen will show the content in a column */
+/*  content in a column */
 @media screen and (min-width:664px) and (max-width: 1024px) {
   .large-news-container {
     flex-direction: row;
     justify-content: center;
-  
   }
 }
 
@@ -279,7 +267,8 @@ button:active {
 
   .small-news {
     width: 40%;
-    margin:15px
+    margin:15px;
+    margin-left: 30px; 
   }  
 }
 
@@ -299,17 +288,17 @@ button:active {
 
 /* On a desktop  the navbar will be on the left side with links showing */
 @media screen and (min-width: 1024px){
-  nav { display: flex;
-        justify-content: left;
-        background-color: #F8ECEC;
-    }
-
+  nav { 
+    display: flex;
+    justify-content: left;
+    background-color: #F8ECEC;
+  }
   .linkleft {
-        display: inline-block;
-      }  
+    display: inline-block;
+  }  
   .linkright {
-        display: inline-block;
-      }
+    display: inline-block;
+  }
 }
 
 
@@ -321,15 +310,13 @@ button:active {
 }
 
 
-/*on a Laptop the content will be shown in four rows in the center */
+/* four rows in the center */
 
 @media screen and (min-width:1024px)  {
   .small {
     flex-direction: row;
     justify-content: space-between;
-  
   }
-
   .small-news {
     width: 20%;  
     margin: 10px;  
@@ -341,7 +328,6 @@ button:active {
 
   h2 {
     font-size:80px;
-
   }
 }
    
@@ -349,7 +335,6 @@ button:active {
 @media screen and (min-width:1024px) {
   .images-container{
  align-content: center;
-  
   }
 }  
 
