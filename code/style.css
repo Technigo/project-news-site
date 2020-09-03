@@ -90,7 +90,7 @@ header {
 .new-quote {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 /*LARGE NEWS */
@@ -250,30 +250,21 @@ button:active {
     display: inline-block;
     order: 2;
   }
-}
-
 /*  content in a column */
-@media screen and (min-width:664px) and (max-width: 1024px) {
   .large-news-container {
     flex-direction: row;
     justify-content: center;
   }
-}
-
-@media screen and (min-width:664px) and (max-width: 1024px) {
   .small {
     flex-direction: row; 
   }
-
   .small-news {
     width: 40%;
     margin:15px;
     margin-left: 30px; 
   }  
-}
 
-/* on a tablet the width increases, pictures shows in a row */
-@media screen and (min-width: 667px) and (max-width:1024px) {
+/* pictures shows in a row */
   .images-container {
     flex-direction: row; 
     margin-left: 80px;
@@ -299,20 +290,14 @@ button:active {
   .linkright {
     display: inline-block;
   }
-}
 
-
-/* screen will show the content in a row */
-@media screen and (min-width: 1024px) {
+/* show the content in a row */
   .large-news-container {
     flex-direction: row;
   }
-}
-
 
 /* four rows in the center */
 
-@media screen and (min-width:1024px)  {
   .small {
     flex-direction: row;
     justify-content: space-between;
@@ -328,13 +313,10 @@ button:active {
 
   h2 {
     font-size:80px;
-  }
-}
-   
+  } 
 /* pictures shows in a row */
-@media screen and (min-width:1024px) {
   .images-container{
- align-content: center;
+  align-content: center;
   }
 }  
 
