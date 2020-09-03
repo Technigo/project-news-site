@@ -1,5 +1,3 @@
-
-
 body {
   background-color: whitesmoke;
   margin:0;
@@ -11,7 +9,7 @@ h1 {
 }
 
 h2 {
-  font-size: 80px;
+  font-size: 30px;
   font-style: bold;
 }
 
@@ -27,10 +25,6 @@ h4 {
 
 
 /***  NAV  ***/
-
-nav {
- width: 667px;
- }
 
 .linkleft  {
   display: none;
@@ -62,35 +56,14 @@ nav {
 
   /***  Media Quaries   ***/
 
- /* On a tablet the navbar will move from leftside to center, and the links will appear */
-@media screen and (min-width: 668px) and (max-width:1024px){
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #F8ECEC; 
-    width: 1350px;
-  }
-.logonavbar {
-    order: 1;
-    flex-grow: 0;
-    }
-.linkleft {
-  display: inline-block;
-  order: 0;
-  }  
-.linkright {
-  display: inline-block;
-  order: 2;
-  }
-}
 
 
 /* On a desktop  the navbar will be on the left side with links showing */
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
   nav { display: flex;
         justify-content: left;
         background-color: #F8ECEC;
-        width: 1450px;
+ 
     }
 
   .linkleft {
@@ -109,7 +82,6 @@ header {
   justify-content: center;
   text-align: center;
   height: 60vh;
-  width: 667px;
   background-color:#F7E6E6;
   font-size: xx-large;
   padding-top: 250px;
@@ -118,16 +90,11 @@ header {
 
   /***  Media Quaries   ***/
 
-  /*  on a tablet the header size increases  */
-@media screen and (min-width:664px) and (max-width: 1024px){
-    header {
-      width: 1350px;
-    }
-} 
+
 /*  on a laptop the header size increases again  */
 @media screen and (min-width:1024px) and (max-width: 2040px){
   header {
-    width:1450px;
+
   }
 } 
 
@@ -138,10 +105,9 @@ header {
 .quote-container {
   display: flex;
   justify-content: center;
-  width:664px;
-  height: 200px;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
 
 .quote {
@@ -162,17 +128,11 @@ header {
 
   /***  Media Quaries   ***/
 
-/* on a tablet the width increases  */
-@media screen and (min-width: 664px) and (max-width:1024px){
-  .quote-container {
-  width: 1350px;
-  }
-} 
 
 /* on a laptop the width increases  */
 @media screen and (min-width: 1025px) {
   .quote-container {
-  width: 1450px;
+
   }
 } 
 
@@ -181,22 +141,11 @@ header {
 
 /*LARGE NEWS */
 
-/*class that contains the large news */
-.placeholder  {
-  display: flex;
-  flex-wrap: wrap;
-  width:664px;
-
-}
-
 
 .large-news-container {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 150px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 10px;
   box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
 }
 
@@ -205,39 +154,20 @@ header {
   background-color: #F8ECEC;
   border-radius: 8px;
   padding: 30px;
-  font-size: large;
-  
+  font-size: large; 
 }
 
 .large-news:hover  {
   background-color:lightpink;
 }
 
-
-
   /***  Media Quaries   ***/
 
-/* on a tablet the screen will show the content in a column */
-@media screen and (min-width:664px) and (max-width: 1024px) {
-  .large-news-container {
-    flex-direction: row;
-    justify-content: center;
-  
-  }
-  .placeholder {
-    width: 1350px;
-    
-  }
-}
+
 /* on a Laptop the screen will show the content in a row */
 @media screen and (min-width: 1024px) {
   .large-news-container {
     flex-direction: row;
-  }
-
-  .placeholder {
-    width: 1450px;
-    
   }
 }
 
@@ -249,7 +179,6 @@ font-size: 25px;
 }
 
 .small {
-width: 664px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
@@ -258,9 +187,8 @@ margin-top: 50px;
 }
 
 .small-news {
-  height: 400px;
-  margin: 40px;
-  padding: 50px;
+  height: 300px;
+  margin-bottom: 15px;
   text-align: center;
   background-color: #F8ECEC;
   border-color: #F7E6E6;
@@ -277,8 +205,6 @@ margin-top: 50px;
   z-index: -1;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -298,49 +224,33 @@ margin-top: 50px;
 /* images inside small news  */
 .small .small-img {
   justify-content: center;
-  width: 300px;
+  width: 100px;
 }
 
 
     /***  Media Quaries   ***/
 
 /*on a tablet the content will be shown in  two rows in the center */
-@media screen and (min-width:664px) and (max-width: 1024px) {
-  .small {
-    width:1024px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 150px;    
-  }
 
-  .small-news {
-    width: 280px;
-    height: 450px;
-   
-  }  
-}
     
 
 /*on a Laptop the content will be shown in four rows in the center */
 
 @media screen and (min-width:1024px)  {
   .small {
-    width:1400px;
     flex-direction: row;
     justify-content: space-between;
     margin: 8px;
-    margin-top: 30px;    
+    margin-top: 10px;    
   }
 
   .small-news {
-    width: 200px;
-    height: 350px;
-    margin: 20px;
-    margin-left: 25px;
+    width: 50px;
+    height: 50px;
   }  
 
   .small .small-img {
-    width: 200px;
+    width: 20px;
   }
 }
    
@@ -348,39 +258,24 @@ margin-top: 50px;
 
 
 .images-container {
-  width: 664px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 15px;
   margin-top: 40px;
   box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.15);
   
 }
 
-.images {
-  margin-left: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
- 
-}
 
   /***  Media Quaries   ***/
 
-/* on a tablet the width increases, pictures shows in a row */
-@media screen and (min-width: 667px) and (max-width:1024px) {
-  .images-container {
-    width: 1200px;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 50px;
-    padding-right: 30px; 
-  }
-}
+
 /* on a Laptop the width increases, pictures shows in a row */
 @media screen and (min-width:1024px) {
   .images-container{
-  width:1400px;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
  
   }
 }  
@@ -388,7 +283,6 @@ margin-top: 50px;
 /* BUTTON, */
 
 .button {
-  width: 660px;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -399,7 +293,7 @@ button   {
   border-radius: 15px;
   border-style: hidden;
   color:black;
-  padding: 20px 40px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   font-size: 35px;
@@ -421,27 +315,23 @@ button:active {
   /***  Media Quaries   ***/
 
 /*on a tablet width increases*/
-@media screen and (min-width: 667px) and (max-width:1024px) {
-  .button{
-    width: 1350px; 
-  } 
-}
+
 
 /*on a laptop width increases*/
 @media screen and (min-width: 1024px) {
   .button{
-    width: 1450px;
+
   }
 }
 
 /* FOOTER */
 
 .footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #F8ECEC;
-  width: 664px;
   margin-top: 50px;
   height: 300px;
   line-height: 90px;
@@ -449,23 +339,85 @@ button:active {
 
   /***  Media Quaries   ***/
 
-/*on a tablet width increases*/
-@media screen and (min-width: 667px) and (max-width:1024px) {
-    .footer{
-      width: 1350px;
-    }
-  }
+
 
 /*on a laptop width increases*/  
   @media screen and (min-width: 1024px) {
     .footer{
-      width: 1450px;
+
     }
   }
 
 
 
+/** Media Queries Tablet **/  
+
+
+/* On a tablet the navbar will move from leftside to center, and the links will appear */
+ @media screen and (min-width: 668px) and (max-width:1024px){
+  nav {
+      display: flex;
+      justify-content: center;
+      background-color: #F8ECEC; 
+    
+    }
+  .logonavbar {
+      order: 1;
+      flex-grow: 0;
+      }
+  .linkleft {
+    display: inline-block;
+    order: 0;
+    }  
+  .linkright {
+    display: inline-block;
+    order: 2;
+    }
+  }
+
+  /*  on a tablet the header size increases  */
+  @media screen and (min-width:664px) and (max-width: 1024px){
+    header {
+
+    }
+} 
+
+/* on a tablet the width increases  */
+@media screen and (min-width: 664px) and (max-width:1024px){
+  .quote-container {
+
+  }
+} 
+
+/* on a tablet the screen will show the content in a column */
+@media screen and (min-width:664px) and (max-width: 1024px) {
+  .large-news-container {
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+}
+
+@media screen and (min-width:664px) and (max-width: 1024px) {
+  .small {
+    flex-direction: row; 
+  }
+
+  .small-news {
+    width: 40%;
+    margin:15px
+  }  
+}
+
+/* on a tablet the width increases, pictures shows in a row */
+@media screen and (min-width: 667px) and (max-width:1024px) {
+  .images-container {
+    flex-direction: row; 
+    margin-left: 80px;
+    box-shadow: none;
+  }
+}
 
 
 
-
+/** Media Queries Desktop **/  
