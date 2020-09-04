@@ -22,8 +22,6 @@ h4 {
   font-size:30px;
 }
 
-
-
 /***  NAV  ***/
 
 .linkleft  {
@@ -272,8 +270,6 @@ button:active {
   }
 }
 
-
-
 /** Media Queries Desktop **/  
 
 
@@ -297,14 +293,13 @@ button:active {
   }
 
 /* four rows in the center */
-
   .small {
     flex-direction: row;
     justify-content: space-between;
   }
   .small-news {
     width: 20%;  
-    margin: 10px;  
+    margin: 5px;  
   }  
 
   .small .small-img {
