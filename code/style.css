@@ -9,6 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   margin: 0;
@@ -27,6 +28,11 @@ header {
   height: 50px;
 }
 
+.logo h1 {
+  margin: 10px 0 10px 10px;
+  font-size: 16px;
+}
+
 nav a { 
   margin: 10px 20px 10px 0;
   text-decoration: none;
@@ -37,18 +43,9 @@ nav a:hover {
   font-weight: 700;
 }
 
-@media (min-width: 1024px) {
-  .logo p {
-    margin: 10px 0 10px 10px;
-  }
-}
-
 @media (max-width: 1023px) {
   .logo img {
     display: none;
-  }
-  .logo p {
-    margin: 10px 0 10px 20px;
   }
 }
 
@@ -70,9 +67,10 @@ nav a:hover {
 
 .main-news img {
     width: 100%;
+    filter: brightness(90%);
  }
 
- .main-news h1 {
+ .main-news h2 {
   position: absolute;
   width: 100%;
   margin: 0;
@@ -82,7 +80,7 @@ nav a:hover {
   color: white;
  }
 
-.main-news h1:hover {
+.main-news h2:hover {
   color: black;  
   text-decoration-line: underline;
   text-decoration-style: dotted;
@@ -101,34 +99,11 @@ nav a:hover {
 .news {
   margin-bottom: 10px;
   padding: 10px;
+  width: 22%;
   border: white;
   border-style: dotted;
   border-radius: 8px;
   border-width: 4px;
-}
-
-@media (min-width: 1024px) {
-  .news {
-    width: 22%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .news {
-    width: 46%;
-  }
-  .news h2 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 767px) {
-  .news {
-    width: 80%;
-  }  
-  .news h2 {
-    font-size: 16px;
-  }
 }
 
 .news img {
@@ -142,16 +117,33 @@ nav a:hover {
   border-radius: 8px;
   border-width: 4px;
   cursor: pointer;
-  opacity: 0.75;
 }
 
-h2 {
+h3 {
   margin: 0;
   padding: 5px;
   line-height: 25px;
   font-size: 20px;
   font-weight: 400; 
   font-family: 'Lora', serif;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .news {
+    width: 46%;
+  }
+  .news h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news {
+    width: 80%;
+  }  
+  .news h3 {
+    font-size: 16px;
+  }
 }
 
 /*** FOOTER ***/
@@ -167,7 +159,7 @@ footer nav {
 }
 
 @media (min-width: 768px) {
-  footer {
+  footer nav {
     display: none;
   }
 }
