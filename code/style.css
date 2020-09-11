@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
 }
 
 img {
@@ -25,7 +26,6 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  margin: -10px;
 }
 
 header img {
@@ -170,7 +170,14 @@ content: '\1F9E0';
     display: flex;
     justify-content: space-around;
     width: 300px;
-    padding: 0 80px;
+  }
+
+  .nav-right {
+    margin-left: 80px;
+  }
+
+  .nav-left {
+    margin-right: 80px;
   }
 
   .hamburger {
@@ -184,15 +191,12 @@ content: '\1F9E0';
 
   .top-card img {
     width: 60%;
+    max-width: 950px;
   }
 
   .top-card div {
     padding: 20px;
     border-bottom: none;
-    width: 1000px; 
-    flex-shrink: 0.9;
-    /* Taking away the two lines above makes the div wider and the image next to it small in Firefox, 
-    whereas no visible effect in Chrome */
   }
   
   .cards {
