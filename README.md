@@ -15,14 +15,18 @@ Doing this next time, I shall make a better layout plan before starting to code.
 ## Learning objectives
 
 •	Structure webpages using boxmodel
+
 •	Layout webpages using flexbox
+
 •	Create responsive webpages for desktop, tablet and mobile
+
 •	Structure cards using grid
 
 ## Tech
 
 •	CSS
+
 •	HTML5
 
 ## View it live
-Link to the site: //to be added//
+Link to the site: https://mystifying-aryabhata-e79b77.netlify.app/
