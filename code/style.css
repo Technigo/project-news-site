@@ -94,10 +94,10 @@ h6 { /* Date for posting news in the big box */
 
 /* Style the small news content - with GRID */
 .grid-container { /* Parent to grid-child - the smaller news */
- margin: 10px;
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- grid-gap: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .grid-child { /* Child */
@@ -239,7 +239,7 @@ footer {
 
 @media screen and (max-width: 667px) { /*Mobile devices */
   html { /* Smaller margins needed to focus on reading the text instead*/
-    margin: 10px 10px;
+    margin: 10px;
   }
 
   .logo { 
