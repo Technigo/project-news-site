@@ -97,14 +97,14 @@ a:hover {
   text-align: center;
 }
 
-p.content {
+.content {
   text-align: left;
 }
 
 /* Cloud Cards */
 .cloud-card-container {
   text-align: center;
-  padding: 24px;
+  padding-top: 24px;
   background-color: #fcfce5;
 }
 
@@ -147,20 +147,37 @@ div.low {
 
 /* Footer */
 footer {
-  height: 120px;
   background: #4d4d4d;
   color: #fff;
-  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
 }
 
-footer p {
+.footer {
+  width: 100%;
+  bottom: 0;
+  font-family: Verdana, sans-serif;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 footer a {
+  text-decoration: none;
   color: #fff;
 }
+
+footer span {
+  font-size: 20px;
+}
+
+footer img {
+  height: 19px;
+  width: auto;
+  padding: 0;
+}
+
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -184,10 +201,6 @@ footer a {
     align-items: center;
   }
 
-  .cloud-card-container img{
-    width: 180px;
-  }
-
   .cloud-cards div {
   width: 250px;
   flex-grow: 1;
@@ -208,10 +221,6 @@ footer a {
   .cloud-card-container .container {
       flex-direction: row;
       align-items: center;
-  }
-
-  .cloud-card-container img{
-      width: 180px;
   }
 
   .cloud-cards div {
