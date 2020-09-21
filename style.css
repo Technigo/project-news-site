@@ -1,72 +1,84 @@
+body {
+	color: white;
+	margin: 0;
+	font-family: 'Baloo Tamma 2', cursive;
+	background-image: url('./assets/texture_08_by_oleo_kun_d1a4a8l.jpg');
+}
 
-body{
-  color:white;
-  margin:0px;
-  font-family: 'Baloo Tamma 2', cursive;
-  background-image: url('./assets/texture_08_by_oleo_kun_d1a4a8l.jpg');
+html {
+	font-size: 13px;
 }
-html { font-size: 13px; 
-}
+
 /** Header **/
-header{
+header {
 	padding: 30px;
 	background-color: whitesmoke;
 	height: 70px;
 	display: flex;
 	align-items: center;
 }
-header h1{
+
+header h1 {
 	font-size: 40px;
-	margin:0px 30px 0px 10px;
-	padding:0px;
-	color:black;
+	margin: 0 30px 0 10px;
+	padding: 0;
+	color: black;
 }
 
-header a{
+header a {
 	text-decoration: none;
 	color: black;
 	font-size: 16px;
 }
-nav{
+
+nav {
 	display: none;
 }
+
 a:hover {
-	background-color:white;
-  }
+	background-color: white;
+}
+
 .icon .nav_icon {
 	height: 60px;
 	width: 60px;
-  }
-.navbar_tablet{
-	display:none; 
- }
- header h2{
-	display:none;
 }
+
+.navbar_tablet {
+	display: none;
+}
+
+header h2 {
+	display: none;
+}
+
 /*** Big news section **/
- .big-news{
+.big-news {
 	max-width: 1200px;
 	margin: 0 auto;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 30px;
- }
- .news{
-	padding:3rem;
-  	width:480px;
-  	height:90%;
+}
 
-  }
-  .news img { 
-	width:400px;
-  height:90%
-} 
+.news {
+	padding: 3rem;
+	width: 480px;
+	height: 90%;
+
+}
+
+.news img {
+	width: 400px;
+	height: 90%
+}
+
 /*** News cards section **/
 .card {
-  padding: 3rem;
-  width:300px;
-  height:90%; 
+	padding: 3rem;
+	width: 300px;
+	height: 90%;
 }
 
 .news_cards {
@@ -74,145 +86,197 @@ a:hover {
 	margin: 0 auto;
 	display: grid;
 	grid-gap: 3rem;
-	justify-content: center;	
+	justify-content: center;
 }
-.news_cards img { 
-	width:100%; 
-	height:100%; 
-	
-} 
+
+.news_cards img {
+	width: 100%;
+	height: 100%;
+
+}
 
 /*** Media Queries **/
 @media (max-width: 899px) and (min-width: 600px) {
-	.news_cards { 
-		grid-template-columns: repeat(2, 1fr); 
+	.news_cards {
+		grid-template-columns: repeat(2, 1fr);
 		padding-right: 30 0px;
 	}
-	.navbar_tablet{
-		color:black;
-		text-decoration:none;
-		width:100%;
-		display:flex;
+
+	.navbar_tablet {
+		color: black;
+		text-decoration: none;
+		width: 100%;
+		display: flex;
 		align-items: center;
-		justify-content: space-around;	
-	}
-	header h1{
-		display:none;
-	}
-	header h2{
-		display:none;
-	}
-	.big-news{
-		padding: 20px 5px 20 px 5px;
-		max-width: 1000px;
-		margin: 0 auto;
-		display:flex;
-		flex-direction: row;
-		justify-content: center;
-	 }
-	 .news{
-		padding: 1rem;
-		width:650px;
-		height:90%;	
-	  }	
-	 .icon{
-		display:none;
-	  }
-	  html { font-size: 16px; 
-	  }
-}
-@media (min-width: 900px) {
-	.news_cards { 
-		grid-template-columns: repeat(4, 1fr); 
-	}
-	nav{
-		color:black;
-		text-decoration:none;
-		width:50%;
-		display:flex;
 		justify-content: space-around;
 	}
-	header h1{
-		font-size: 40px;
-		margin:0px 30px 0px 10px;
-		padding:0px;
-		color:black;	
+
+	header h1 {
+		display: none;
 	}
-	.big-news{
+
+	header h2 {
+		display: none;
+	}
+
+	.big-news {
+		padding: 20px 5px;
 		max-width: 1000px;
 		margin: 0 auto;
-		display:flex;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.news {
+		padding: 1rem;
+		width: 650px;
+		height: 90%;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 900px) {
+	.news_cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	nav {
+		color: black;
+		text-decoration: none;
+		width: 50%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header h1 {
+		font-size: 40px;
+		margin: 0px 30px 0px 10px;
+		padding: 0px;
+		color: black;
+	}
+
+	.big-news {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		padding: 60px;
-	 }
-	 .navbar_tablet{
-		display:none; 
-	 }
-	 .news{
+	}
+
+	.navbar_tablet {
+		display: none;
+	}
+
+	.news {
 		padding: 1rem;
-		width:650px;
-		height:90%;	
-	  }	
-	  html { font-size: 18px; 
-	  }
-	  
+		width: 650px;
+		height: 90%;
+	}
+
+	html {
+		font-size: 18px;
+	}
+
 }
+
 /* shake images*/
 @keyframes shake {
-	0% { transform: translate(1px, 1px) rotate(0deg); }
-	10% { transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { transform: translate(-3px, 0px) rotate(1deg); }
-	30% { transform: translate(3px, 2px) rotate(0deg); }
-	40% { transform: translate(1px, -1px) rotate(1deg); }
-	50% { transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { transform: translate(-3px, 1px) rotate(0deg); }
-	70% { transform: translate(3px, 1px) rotate(-1deg); }
-	80% { transform: translate(-1px, -1px) rotate(1deg); }
-	90% { transform: translate(1px, 2px) rotate(0deg); }
-	100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-  
-  .card:hover {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+.card:hover {
 	animation: shake 0.5s;
 	animation-iteration-count: infinite;
-  }
+}
+
 /** polariod photos **/
 .card {
 	position: relative;
 	width: 220px;
-	padding:10px;
-  } 
-   
-  .card img {
+	padding: 10px;
+}
+
+.card img {
 	border: 10px solid #fff;
 	border-bottom: 45px solid #fff;
 	-webkit-box-shadow: 3px 3px 3px #777;
-	   -moz-box-shadow: 3px 3px 3px #777;
-			box-shadow: 3px 3px 3px #777;
-  }
-   
-  .card p {
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+}
+
+.card p {
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	bottom: 0px;
+	bottom: 0;
 	color: white;
-  }
-  
+}
+
 
 
 /* Footer */
-footer{
+footer {
 	padding-top: 100px;
-  	margin: 20px;
-  	display:flex;
-  	justify-content: center;
-  	align-items: center;
-  
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 
 }
-footer img{
+
+footer img {
 	padding: 20px;
 	height: 45px;
 	width: 45px;
