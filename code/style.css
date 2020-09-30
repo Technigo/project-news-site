@@ -73,6 +73,7 @@ h2 {
 
 p {
   text-align: left;
+  line-height: 140%;
   width: 90%;
   padding-bottom: 30px;
 }
@@ -160,9 +161,17 @@ a.card-link:hover {
 /**** FOOTER ****/
 
 footer {
+  display: flex;
   background-color: white;
-  padding: 40px;
-  margin: 0px;
+  color: #1B27F5; 
+  padding: 5px;
+}
+
+.footer-text {
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 14px;
 }
 
 /**** FOR TABLET ****/
@@ -184,14 +193,14 @@ footer {
   }
 
   .card {
-    padding: 20px;
+    padding: 30px 20px;
+    text-align: center;
   }
 
-  /**** OTHER NEWS ****/
-
-  footer {
-    display: none;
+  .card-link {
+    font-size: 20px;
   }
+
 }
 
 /**** FOR MOBILE ****/
@@ -204,6 +213,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
+  }
+
+  .logo-container {
+    padding: 0px;
   }
 
  .logo {
@@ -244,18 +257,51 @@ footer {
   /**** OTHER NEWS ****/
 
   .card-container {
-    flex-direction: row;
-    margin: 20px; 
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
   }
 
   .card {
-    width: 50%;
-    padding: 10px;
+    width: 95%;
+    padding-bottom: 20px;
   }
 
-    /**** FOOTER ****/
+  /**** GALAXY FOLD, Iphone X etc. ****/
+  @media (max-width: 375px) {
 
-  footer {
-    display: none;
+    header {
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .logo-container {
+      padding: 0px;
+    }
+
+    .logo {
+      width: 40px;
+    }
+
+    h1.heading {
+      font-size: 32px;
+    }
+
+    nav {
+      padding-bottom: 10px;
+    }
+
+    a {
+      font-size: 18px;
+      width: 20%;
+      padding: 20px;
+    }
+
+    .footer-text {
+      font-size: 10px;
+    }
+
   }
 }
