@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 
-
 h1 {
   margin: 50px 25px 50px;
   font-weight: 400;
   text-transform: uppercase;
-
 }
 
 h2 {
@@ -34,7 +32,6 @@ p {
 }
 
 /****HEADER***/
-
 header {
   background: #000000;
   height: 150px;
@@ -104,27 +101,18 @@ main h2 {
   justify-content: center;
 }
 
-.image {
+.image, .text {
   width: 90%;
   align-self: center;
   padding: 10px;
 }
 
-.text {
-  width: 90%; 
-  align-self: center;
-  padding: 10px;
-}
-
 .image img {
-    width: 100%;
-    box-shadow: 0 0 20px lightgrey;
-
+  width: 100%;
+  box-shadow: 0 0 20px lightgrey;
 }
-
 
 /* smallNews SECTION STYLING */
-
 .smallNews-parent {
   display: flex;
   width: 100%;
@@ -143,13 +131,11 @@ main h2 {
   box-shadow: 0 0 20px lightgrey;
 }
 
-
 .smallNews-image {
   width: 100%;
   justify-content: center;
   align-self: center;
 }
-
 
 .figure:hover h3 {
   opacity: 1;
@@ -202,7 +188,6 @@ main h2 {
 }
 
 /*BORDER ANIMATION ON HOVER */
-
 .figure:hover .span1:before {
   animation: border-top 0.3s linear;
   transform-origin: left;
@@ -251,7 +236,6 @@ main h2 {
   }
 }
 
-
 footer {
   background: #000000;
   color: #ffffff;
@@ -260,12 +244,10 @@ footer {
   flex-wrap: wrap;
   padding: 30px;
   font-size: 20px;
-  
 }
 
 footer ul {
   display: flex;
-  
 }
 
 footer li {
@@ -284,7 +266,6 @@ footer i:hover {
 }
 
 /***** MEDIA QUERIES TABLET ******/
-
 @media (min-width: 768px) {
   h3 {
     font-size: 32px;
@@ -315,36 +296,34 @@ footer i:hover {
   }
 }
 
-
 /* MEDIA QUERIES DESKTOP */
-
 @media (min-width: 1024px) {
   .image {
-      width: 40%;
-      flex-grow: 2;
-      margin-left: 40px; 
+  width: 40%;
+  flex-grow: 2;
+  margin-left: 40px; 
   }
 
   .text {
-      width: 40%;
-      margin-right: 40px;
+  width: 40%;
+  margin-right: 40px;
   }
 
   .click-mobiletablet {
-    display:none;
+  display:none;
   }
 
   .hover-desktop {
-    display: block;
+  display: block;
   }
 
   .smallNews-parent {
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   }
 
   .figure {
-    flex-basis: 20%;
+  flex-basis: 20%;
   }
 
   h3 {
@@ -354,5 +333,4 @@ footer i:hover {
   p {
     font-size: 20px;
   }
-  
 } 
