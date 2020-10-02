@@ -12,18 +12,10 @@ The major breakthrough I got was when I asked about the margins in StackOverflow
 
 I found out during the process that working in Developer Tools and adding code through the inspector made my editing and problem searching much more efficient. I was also very pleased to see that my eagerness to succeed with certain things paid of, if I did enough research and gave it a few more tries.
 
-<<<<<<< HEAD
 If I had more time I would look into browser-compatability and -moz/-wekit-prefixes.
-=======
-For my next project I will plan the website in Figma to begin with, instead of/as well as a notepad, for an overall view of the project. I would also name my classes a bit differently to make it easier to differentiate sections from each other. Finally I would work more thoroughly with commits and structuring my repository.
->>>>>>> c099ef15dbd8477b827e9f8237ea2d864e5b859c
 
-For my next project I will plan the website in Figma to begin with, instead of/as well as a notepad, for an overall view of the project. I would also name my classes a bit differently to make it easier to differentiate sections from each other.
+For my next project I will plan the website in Figma to begin with, instead of/as well as a notepad, for an overall view of the project. I would also name my classes a bit differently to make it easier to differentiate sections from each other. Finally I would work more thoroughly with commits and structuring my repository.
 
 ## View it live
 
-<<<<<<< HEAD
 http://in-season-florals.netlify.app
-=======
-Take a look right here: https://kind-mestorf-564812.netlify.app/
->>>>>>> c099ef15dbd8477b827e9f8237ea2d864e5b859c
