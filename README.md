@@ -17,4 +17,4 @@ for I would have presented the cards one by one when using an iPhone 5 for examp
 – Switching place of the logo into the footer in tablet and mobile.
 
 ## Link to my project
-https://gracious-allen-2207b3.netlify.app/
+https://swecationmagazine.netlify.app/
