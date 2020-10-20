@@ -14,9 +14,8 @@ body {
 
 /**** HEADER ****/
 header {
-  background-color: white;
+  background: white;
   display: flex;
-  flex-direction: row;
   margin: 0px;
   width: 100%;
 }
@@ -40,8 +39,8 @@ h1.heading {
   text-transform: uppercase;
   color: #1B27F5;
   font-weight: bold; 
-  font-size: 60px;
   text-align: center;
+  font-size: 60px;
 }
 
 nav {
@@ -66,8 +65,8 @@ a:hover {
 }
 
 h2 {
-  font-size: 36px;
   text-transform: uppercase;
+  font-size: 36px;
   margin: 0px;
 }
 
@@ -116,10 +115,10 @@ a.button {
   background-color: #1B27F5; 
   color: white;
   text-decoration: none; 
+  text-align: center;
   padding: 10px;
   width: 110px;
   font-size: 16px;
-  text-align: center;
 }
 
 /**** OTHER NEWS ****/
@@ -130,7 +129,7 @@ a.button {
   border-bottom: blue solid 2px;
   margin: 5%;
   height: 100%;
-  padding:40px 0px 40px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 .card {
@@ -219,7 +218,7 @@ footer {
     padding: 0px;
   }
 
- .logo {
+  .logo {
     justify-content: center;
   }
 
