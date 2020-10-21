@@ -11,9 +11,6 @@ In order to arrange and align elements on the page like navbar,big news section 
 
 For responsive design I chose mobile first approach and then added media queries to specify layouts for tablet and desktop.
 
-I'll try to use Sketch for planning my project next time and bootstrap for arranging elements on the page.
-
-I want to spend a little more time on the project and add a video and some more animation effects.
 
 ## Challenges to solve
 
