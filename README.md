@@ -5,11 +5,11 @@ The main focus of the project is to create a classic magazine or newspaper respo
 
 ## The process
 
-I visualized my website in 3 resolutions(mobile,tablet,desktop) in Jamboard.
+* I visualized my website in 3 resolutions(mobile,tablet,desktop) in Jamboard.
 
-In order to arrange and align elements on the page like navbar,big news section and news gallery I used flexbox.
+* In order to arrange and align elements on the page like navbar,big news section and news gallery I used flexbox.
 
-For responsive design I chose mobile first approach and then added media queries to specify layouts for tablet and desktop.
+* For responsive design I chose mobile first approach and then added media queries to specify layouts for tablet and desktop.
 
 
 ## Challenges to solve
