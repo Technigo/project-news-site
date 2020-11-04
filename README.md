@@ -1,9 +1,9 @@
 # News Site
 
-This project is a news website that delivers good news daily.
-The main focus of the project is to build a responsive website using flex-box.
+This project is a news website that delivers good news daily. One of my very first projects:)
+The main focus of the project is to create a classic magazine or newspaper responsive site using flexbox.
 
-## The problem
+## The process
 
 I visualized my website in 3 resolutions(mobile,tablet,desktop) in Jamboard.
 
