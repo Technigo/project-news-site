@@ -1,4 +1,4 @@
-# News Site
+## Project 1: News Site
 
 This project is a news website that delivers good news daily. One of my very first projects:)
 The main focus of the project is to create a classic magazine or newspaper responsive site using flexbox.
