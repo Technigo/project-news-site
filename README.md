@@ -1,6 +1,8 @@
 # News Site
 
-A responsive SPA in the form of a magazine including header, main news and other news. 
+A responsive single page application in the form of a magazine including header, main news and other news. 
+
+Built during Technigo Boot Camp fall 2020, project 2 out of 21.
 
 ## The problem
 
