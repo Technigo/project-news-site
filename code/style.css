@@ -1,4 +1,199 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* Nav bar*/
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+nav{
+  display: flex; 
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: solid;
+}
+nav a{
+  padding: 10px; 
+  text-decoration: none;
+  
+}
+
+.logo{
+  height: 40px;
+  justify-content: center;
+}
+
+/* Big news */
+.big-news{
+display: flex;
+flex-direction: column-reverse;
+align-items: flex-end;
+justify-content: center;
+border:solid;
+height: 400px;
+margin: 10px auto;
+background: pink; 
+
+}
+.head-line
+{
+  border:solid black;
+  width: 250px;
+  height: 200px;
+  background-color: green;
+  margin: auto 50px;
+  padding: 20px; 
+}
+
+/*small news*/
+
+.small-news
+{
+  border: 2px solid blue;
+  height: 700px; 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 40px;
+}
+
+.box-one{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-two{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-three{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.box-four{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
+
+.box-five{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-six{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-seven{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box-eight{
+  border: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
+
+.mini-headline-one
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-two
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-three
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-four
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-five
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-five
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-six
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-seven
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+.mini-headline-eight
+{
+  height: 100px;
+  width: 230px;
+  border: solid black;
+  margin-bottom: 20px;
+}
+
+
+
+footer{
+  display: flex; 
+  padding: 10px 15px;
+  border:solid black;
+  margin: 10px auto;
 }
