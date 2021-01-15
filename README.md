@@ -1,6 +1,6 @@
 # News Site
 
-Assignment: Creat e a fake news website using flexbox and responsive design
+Assignment: Create a fake news website using flexbox and responsive design.
 
 
 ## The problem
