@@ -1,4 +1,74 @@
 html {
-  background: #fff;
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: #d9212d;
+  font-family: 'Montserrat', sans-serif;
+  text-align-last: left;
+  margin-bottom: 2px;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.subscribe {
+  list-style-type: left;
+  float: left;
+  font-size: x-small;
+}
+
+li {
+  display: inline-block;
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px 12px;
+  background-color: #f7f7f7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
+  font-size: x-small;
+}
+
+li a:hover {
+  background-color:white;
+}
+
+.flex-parent {
+
+  border: 70px;
+  border: #fff;
+  height: 400px;
+  display: flex;
+  
+}
+
+.flex-child {
+margin: 10px;
+font-family:'Montserrat', sans-serif;
+font-size: small;
+color: black;
+
+
+}
+
+h2 {
+  font-size: xx-small;
+}
+
+p {
+  font-size: xx-small;
+  text-align: justify;
+  
+}
+.p-bold {
+
+  font-weight: bold;
+}
+
+.line {
+
+  border-bottom: 1px solid;
+ 
 }
