@@ -2,21 +2,120 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/4bfe1de3df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Indie+Flower&display=swap" rel="stylesheet">    <title>XOXO Magazine</title>
     <!-- dont forget the meta tag for responsiveness -->
   </head>
-  <body>
-    <header>
-      <h1>I like Candy</h1>
-    </header>
+  <body>  
+      <!-- Sign up banner -->
+    <div class="banner">
+      <marquee behavior="alternate" direction="left"><a href="">Sign up for more beaty & fashion news</a></marquee>
+    </div> 
 
-    <section class="big-news">
+        <!-- Navbar -->
+    <header class="menu">
+      <section class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="#start">Beauty</a></li>
+          <li><a href="">Health</a></li>
+          <a id="img-hover" href=""><img class="logo" src="Images/NEWS.png" alt="Xoxo Magazine logo"></a>
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">Get in touch</a></li>
+        </ul>
+      </nav>
+    </header>  
+
+   
       <!-- The big news content -->
-    </section>
+    <article class="big-news">   
+      <div class="img-container">
+        <div class="polaroid image1" polaroid-caption="#Chanel">
+          <img src="Images/Chanel-3.jpeg" width="500px" alt="Chanel parfym img" onmouseover="this.src='Images/Chanel-4.jpeg'" onmouseout="this.src='Images/Chanel-3.jpeg'">
+        </div>
+      </div>
 
-    <section class="">
+      <div class="big-news-text">
+        <h1>The new <span style="color:#FF13A7;">CHANEL</span> fragrance is here!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </article>
+
+
       <!-- The other news  -->
-    </section>
+    <h1 id="news-header">All the latest <span style="color:#FF13A7;">news</span></h1>
+    <article class="grid-container">
+
+      <div class="item">
+        <img class="image" src="Images/img1.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img class="image" src="Images/img2.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img class="image" src="Images/img3.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img class="image" src="Images/img4.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img class="image" src="Images/img5.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img class="image" src="Images/img6.jpeg" alt="Image">
+          <div class="img-description">
+            <p class="text">Testar</p>
+          </div>
+      </div>
+    </article>
+
+
+      <!--Direction icon-->
+    <div class="direction-icon text-center">
+      <a id="star" href="">
+        <i class="fas fa-angle-double-up fa-2x"></i>
+      </a>   
+    </div>   
+
+
+      <!--Footer-->
+    <footer class="footer">
+      <div class="icons">
+        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+        <input type="text" placeholder="Search..">
+      </div>
+    </footer>
+
   </body>
 </html>
