@@ -2,42 +2,130 @@ html {
   background:white;
   color: black;
 }
+
 a:link, a:visited {
   text-decoration: none;
   color: black;
  }
 
-header{
+.header{
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+body{
+  max-width: 100%;
+  margin: 8px;
+  padding: 8px;
+}
+
+ul{
   display: flex;
-  align-items: center;
-  border-color: black;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: 'Abril Fatface', cursive;
 }
 
 h1{
   font-family: 'Abril Fatface', cursive;
-  font-size: 60px;
+  font-size: 50px;
+  padding-top: 0px;
+  margin: 0px;
+  line-height: 1.2;
 }
 
 h2{
   font-family: 'Abril Fatface', cursive;
   font-size: 40px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 h3{
   font-family: 'Abril Fatface', cursive;
   font-size: 20px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 2px;
 }
 
 .mainarticle{
-  font-size: 20px;
+  text-align: justify;
+  background-color: rgb(111,44,69);
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+.img-artist{
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.author{
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 p{
   font-family: 'Amiri', serif;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
 }
 
 .previous-artists{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.loyle{
+  background-color:#7D7B73;
+  height: 250px;
+  text-align: justify;
+}
+.barney{
+  background-color:#A64C4B;
+  height: 250px;
+  text-align: justify;
+}
+.cleo{
+  background-color:#98FFC8;
+  height: 250px;
+  text-align: justify;
+}
+.celeste{
+  background-color: #DF2639;
+  height: 250px;
+  text-align: justify;
+}
+.foxwarren{
+  background-color: #55543E;
+  height: 250px;
+  text-align: justify;
+}
+
+.joy{
+  background-color:#5B4857;
+  height: 250px;
+  text-align: justify;
+}
+
+.arlo{
+  background-color: #9A87E1;
+  height: 250px;
+  text-align: justify;
 }
