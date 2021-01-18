@@ -1,8 +1,13 @@
 html {
   background: #fff;
   color: #000;
+  font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+  color: #fff;
+  font-size: 30px;
+}
 
 
 /*** HEADER ***/
@@ -18,12 +23,6 @@ header {
 .logo {
   width: 30px;
   height: 30px;
-}
-
-header p {
-  color: #fff;
-  font-family: 'Crimson Text', serif;
-  font-size: 25px;
 }
 
 nav, .social-media {
@@ -87,6 +86,15 @@ nav a {
   height: 300px;
   width: 100%;
   margin: 0;
+  padding-top: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
 }
 
 
@@ -104,6 +112,7 @@ nav a {
 
   nav, .social-media {
     display: inline-block;
+    text-decoration: none;  
   }
 
   .hamburger {
