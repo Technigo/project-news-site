@@ -1,4 +1,35 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background-color: whitesmoke;
+  color: #121212;
+  Font-family: Helvetica;
+  Margin: 0;
+}
+
+/*** Styling the header ***/
+
+header {
+  Background-color: white;
+  color: darkslategrey;
+  Display: flex;
+  Align-items: center;
+  Padding: 14px;
+  Border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin: 10 px auto;
+}
+
+.hamburger a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: darkslategray;
+  border-radius: 20px;
 }
