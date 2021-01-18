@@ -7,7 +7,7 @@ a:link, a:visited {
   text-decoration: none;
   color: black;
  }
-
+ 
 .header{
 margin-top: 20px;
 margin-bottom: 0px;
@@ -62,6 +62,7 @@ h3{
   background-color: rgb(111,44,69);
   padding-top: 0px;
   padding-bottom: 20px;
+  margin-bottom: 15px;
   margin-top: 0px;
 }
 
@@ -85,6 +86,7 @@ p{
   padding-left: 10px;
   padding-right: 10px;
   text-align: justify;
+  font-weight: bold;
 }
 
 .previous-artists{
@@ -96,36 +98,59 @@ p{
   background-color:#7D7B73;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .barney{
   background-color:#A64C4B;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .cleo{
   background-color:#98FFC8;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .celeste{
   background-color: #DF2639;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .foxwarren{
   background-color: #55543E;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;  
 }
 
 .joy{
   background-color:#5B4857;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 
 .arlo{
   background-color: #9A87E1;
   height: 250px;
   text-align: justify;
+  margin-bottom: 15px;
+  padding: 15px;
 }
+
+@media (min-width: 668px) and (max-width: 1024px){
+  h1{ 
+    font-size: 50px;
+    text-align: center;
+  } 
+
+}
+  
