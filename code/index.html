@@ -2,21 +2,98 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav>
+        <div class="menu-wrapper">
+          <button class="menu-button"></button>
+          <div class="menu-content">
+            <a href="contact.html" target="blank">contact</a>
+            <a href="contact.html" target="blank">about</a>
+            <a href="contact.html" target="blank">sign up</a>
+            <a href="contact.html" target="blank">login</a>
+          </div>
+        </div>
+        <div id="about">
+            <a href="contact.html" target="blank">contact</a>
+            <a href="contact.html" target="blank">about</a>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search..">
+            <button class="search-button"><img src="../pictures/magnify.png"></button>
+          </div>
+          <div id="signup">
+            <a href="contact.html" target="blank">sign up</a>
+            <a href="contact.html" target="blank">login</a>
+          </div>
+          <div id="mobile-search" class="searchbar">
+            <input type="text" placeholder="Search..">
+            <button class="search-button"><img src="../pictures/magnify.png"></button>
+          </div>
+        </nav>
+     <div class="header-container">
+      <div class="meteor"></div>
+        <h1>SPACE NEWS</h1>
+      </div>
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+      <container class="image-container">
+        <img src="../pictures/SLSmegarocket.jpg">
+      </container>
+      <container class="text-container">
+        <h2>TOP NEWS</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! Magni minus repudiandae eligendi sequi minima!
+          <br>
+          <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque nobis quas rerum. Eligendi quo vero, iusto fugiat, tempore, possimus sunt tempora cumque maxime minus a porro esse! Aspernatur, voluptates.
+        </p>
+        <a href="" target="blank">&gt; Keep reading &lt;</a>
+      </container>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="small-news">
+      <div class="block">
+         <container class="image-container">
+            <img src="../pictures/SLSmegarocket.jpg">
+        </container>
+        <container class="text-container">
+          <h3>NASA test-fires SLS engines</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw
+            <a href="" target="blank">&gt;</a>
+          </p>
+        </container>
+      </div>
+      <div class="block">
+        <container class="image-container">
+          <img src="../pictures/WilliamThornton.jpg">
+        </container>
+        <container class="text-container">
+          <h3>Astronaut William Thornton dead</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw</p>
+        </container>
+      </div>
+      <div class="block">
+        <container class="image-container">
+          <img src="../ISS.jpg">
+        </container>
+        <container class="text-container">
+          <h3>Small news</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! Magni minus repudiandae eligendi sequi minima!</p>
+        </container>
+      </div>
+      <div class="block">
+        <container class="image-container">
+          <img src="../ISS.jpg">
+        </container>
+         <container class="text-container">
+          <h3>Small news</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! Magni minus repudiandae eligendi sequi minima!</p>
+        </container>
+      </div>
     </section>
   </body>
 </html>
