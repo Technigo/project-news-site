@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   background-color: rgba(2, 24, 44, 0.897);
   color: rgb(11, 102, 155);
 }
@@ -138,16 +140,16 @@ nav input[type="text"]:focus {
   flex-direction: column;
   align-items: center;
   
-  margin: 40px 0px 80px 0px;
+  margin: 40px 20px 80px 20px;
 }
 
 .image-container {
- 
+  
   border: solid rgb(2, 160, 252);
 }
 
 .image-container img {
-
+  width: 100%;
   height: auto;
   vertical-align: top;
 }
@@ -159,21 +161,21 @@ nav input[type="text"]:focus {
 .small-news {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 20px 50px 20px;
+  width: auto;
 
   justify-content: space-evenly;
 }
 
 .block {
   display: flex;
-  margin: 0 0 80px 0;
+  margin:  0px 80px 0px;
  
 }
 
 .block .text-container {
- 
-  flex: none;
-  margin: 0 0 0 20px;
+  
+  margin: 0 0 0 00px;
 }
 
 .text-container:hover {
@@ -252,7 +254,6 @@ a {
 
 .menu-content a {
   display: block;
- 
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
   font-size: 16px;
@@ -260,8 +261,6 @@ a {
   text-align: left;
   padding: 10px 0 10px 0;
 }
-
-@media (hover: none) and (pointer: coarse) {
   .menu-wrapper:focus .menu-content {
     display: flex;
     flex-direction: column;
@@ -272,9 +271,6 @@ a {
   .menu-content a:focus {
     background-color: rgba(255, 230, 0, 0.671) 20px;
   }
-}
-
-@media (hover: hover) and (pointer: fine) {
   .menu-wrapper:hover .menu-content {
     display: flex;
     flex-direction: column;
@@ -322,20 +318,6 @@ a {
       nav .searchbar {
         display: none;
       }
-      #signup, #about {
-      
-      }
-      #mobile-search {
-        display: flex;
-        flex-grow: 2;
-        z-index: 1;
-      }
-      #mobile-search input[type=text] {
-        visibility: hidden;
-      }
-      #mobile-search:active input[type=text] {
-        visibility: visible;
-      }
       .menu-wrapper {
         position: relative;
       }
@@ -343,7 +325,7 @@ a {
         display: block;
       }
       .text-container {
-       
+        width: auto;
         margin-bottom: 80px;
       }
       .small-news {
