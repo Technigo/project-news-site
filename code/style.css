@@ -1,4 +1,91 @@
 html {
-  background: #0025ff;
-  color: #fff;
+    background:rgb(119, 80, 93);
+    color:black;
 }
+
+body {
+  margin:0px;  
+}
+
+/***HEADER SECTION***/
+
+  header {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color:white;
+    padding: 0 10px; 
+    size: 50%;
+    border-bottom: solid 5px rgb(46, 7, 7);
+    
+  }
+  .logopic {
+    border: 1px solid;
+    width:50px;
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
+  .qtimes {
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  
+nav {
+  display:none;
+font-size: 20px;
+padding-left: 50px
+}
+
+nav a {
+  color: black;
+  text-decoration:none;
+}
+
+/***BIG NEWS SECTION***/
+
+.big-news {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-news img {
+  width:100%;
+  margin: 0px;
+  padding-top:0px;
+}
+
+.big-news article {
+text-align: center ;
+}
+
+/*** THE OTHER 7 NEWS (a grid of 4 and 3) (a grid of 2/2/2/1) (a grid of 1/1/1/1/1/1/1 ***/
+
+
+
+/*** MEDIA QERIES ***/
+
+@media (min-width:668px) {
+  header {
+    display:flex;
+    justify-content:flex-start;
+  }
+  
+  nav {
+    display: inline-block
+  }
+
+  .big-news img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .big-news article {
+text-align: left;
+padding-left: 10px;
+  }
+
+  @media (min-width:1024px){
+  }
+  }
