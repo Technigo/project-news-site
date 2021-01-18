@@ -3,38 +3,40 @@ html {
   color: #000;
 }
 
-body {
-  margin: 0;
+li a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* NAVIGATION BAR */
+/* Top navigation */
 
-.nav-container {
+header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  flex-basis: 70%;
-  padding: 0 18px;
-}
-
-header img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.nav-links {
+  list-style: none;
 }
 
-li {
-  display: inline;
-  padding: 0 18px;
+.nav-links li {
+  display: inline-block;
+  padding: 0px 18px;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+.nav-links li a {
+  color: #000
 }
+
+.nav-links li a:hover {
+  color: pink  
+}
+
