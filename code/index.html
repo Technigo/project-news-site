@@ -7,13 +7,35 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
     <header>
-      <img class="logo" src="#">
-      <nav></nav> <!-- Navbar -->
+        <img class="logo" src="#" alt="Alva logo"> <!-- add img src -->
+        <p>ALVA</p>
+        <nav> <!-- make sure that the nav bar isn't showing in phone mode, e.g. put a display: none; in CSS (not under media query section) -->
+            <a href="#">ABOUT</a>
+            <a href="#">ARCHIVE</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="social-media">
+          <a href="#">
+            <img src="#" alt="Facebook"> <!-- add img src -->
+          </a>
+          <a href="#">
+            <img src="#" alt="Instagram"> <!-- add img src -->
+          </a>
+          <a href="#">
+            <img src="#" alt="Youtube"> <!-- add img src -->
+          </a>
+        </div>
     </header>
 
     <section class="big-news">
-      <img class="big-news-image" src="#"> 
+      <img class="big-news-image" src="#" alt=""> <!-- set alt to the image -->
       <div class="big-news-text"></div>
     </section>
 
@@ -27,5 +49,10 @@
       <div class="other-news-image"></div>
       <div class="other-news-image"></div>
     </section>
+
+    <footer>
+      <div class="footer"></div>
+    </footer>
+
   </body>
 </html>
