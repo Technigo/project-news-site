@@ -122,6 +122,21 @@ nav {
   width: 100%;
   box-shadow: 2px 2px lightgray;
 }
+
+/*** Styling the footer ***/
+
+footer {
+  background-color:lightgrey;
+  color:darkslategray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin: 10px auto;
+}
+
 /*** Media queries ***/
 
 /* For tablets */
