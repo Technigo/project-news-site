@@ -1,4 +1,141 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background:linear-gradient(#cbf7f7, #2d73d4, #020f3f, black);
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 900px;
+}
+
+/*** HEADER ***/
+
+header {
+  background: none;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  max-width: 1100px;
+}
+
+header h1 {
+color: black;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 5px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #000000;
+  border-radius: 5px;
+}
+
+header img {
+  height: 90px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #0e0e0e;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/*** Big News Container***/
+
+.big-news-container {
+padding: 30px 16px;
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.big-news-container img {
+  width: 100%;
+  padding: 10px;
+}
+
+.big-news-container div {
+  text-align: center;
+}
+
+/***Four News Container***/
+
+.four-news-container div{
+  display: flex;
+  width: 100%;
+  padding:10px;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.four-news-container img{
+  width: 100%;
+  padding: 26px;
+}
+
+/*** Media Queries ***/
+
+@media (min-width: 650px) 
+{ 
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .big-news-container{
+    padding: 0;
+  }
+  .four-news-container {
+    border: solid green;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .four-news-container img {
+  width: 325px;
+  }
+
+@media (min-width: 900px) {
+  .big-news-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .big-news-container img {
+    width: 50%;
+  }
+
+  .four-news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .four-news-container img {
+  width: 200px;
+  }
 }
