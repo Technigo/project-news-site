@@ -2,3 +2,35 @@ html {
   background: #ffffff;
   color:grey;
 }
+.header {
+  background-image: url("https://images.unsplash.com/photo-1497105943914-b90d55145023?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1270&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .logo {
+    width: 20%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #835F80;
+  }
+  
