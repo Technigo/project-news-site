@@ -7,13 +7,54 @@ html {
 
 /*** HEADER ***/
 
-/*
+header {
+  background: #000;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
 .logo {
-  
+  width: 30px;
+  height: 30px;
+}
+
+header p {
+  color: #fff;
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+}
+
+nav, .social-media {
+  display: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.hamburger {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  border-radius: 25%;
 }
 
 
-
+/*** BIG NEWS ***/
 
 .big-news {
 
@@ -27,6 +68,9 @@ html {
 
 }
 
+
+/*** OTHER NEWS ***/
+
 .other-news {
 
 }
@@ -35,15 +79,12 @@ html {
 
 }
 
-*/
-
-
 
 /*** FOOTER ***/
 
 .footer {
   background: #000;
-  height: 400px;
+  height: 300px;
   width: 100%;
   margin: 0;
 }
@@ -52,11 +93,22 @@ html {
 /*** MEDIA QUERIES ***/
 
 /* Tablet - only include the elements that I want to behave differently on this specific device */
-@media (min-width: 667px) and (max-width: 1024px) { 
+@media (min-width: 667px) { 
+  header {
+    justify-content: space-between;
+  } 
+  
+  /* header p {
 
-  /*body {
-    background-color: green;
-  }*/
+  } */
+
+  nav, .social-media {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none; 
+  }
 }
 
 /* Desktop - only include the elements that I want to behave differently on this specific device */
