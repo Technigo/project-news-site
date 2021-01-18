@@ -1,4 +1,92 @@
-html {
-  background: #0025ff;
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body {
+  background: #191a20;
   color: #fff;
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  margin: 0;
+  }
+
+  .container{
+    border:3px solid white;
+      
+  }
+/*** Header ***/
+
+header{
+  display: flex;
+  background-color: #2a2c36;
+  height: 70px;
+  border: 3px solid yellow;
+  flex-direction: row-reverse;
+  align-items: center;
+  
+  
+}
+
+header img{
+  display: flex;
+  width: 80px;
+  height: 60px;
+  
+}
+
+nav{
+  display: flex;
+ 
+}
+
+nav a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.main-menu{
+display:inline-flex;
+justify-content: space-around;
+}
+
+.hamburger-menu{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+   
+  
+}
+
+.hamburger-menu div{
+  width: 30px;
+  height: 5px;
+  background: #fff;
+}
+
+/*** Big news ***/
+
+.big-news-container{
+  border: 3px solid green;
+  
+}
+
+/*** Sub news ***/
+
+.sub-news-container{
+  border: 3px solid red;
+
+}
+
+article{
+  background-color: #fff;
+  margin: 16px;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
 }
