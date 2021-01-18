@@ -102,7 +102,6 @@ nav a:active {
 
 .searchbar {
   display: flex;
-  
 }
 
 .search-button {
@@ -133,16 +132,25 @@ nav input[type="text"]:focus {
 
 .image-container {
   border: solid rgb(2, 160, 252);
+  position: relative;
+  flex: 1 1 auto;
+  height: 500px;
+  overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  min-height: 100%;
+  max-height: 100%;
+  overflow:hidden;
   vertical-align: top;
+  object-fit: cover;
+  position: absolute;
 }
 
 .text-container {
   padding-left: 20px;
+  flex: 0.66;
 }
 
 .text-container:hover {
@@ -158,7 +166,7 @@ nav input[type="text"]:focus {
 
 .small-news {
   grid-area: main2;
-  margin-top: 80px;
+  margin:80px 0 80px 0;
 }
 
 .small-news-grid {
@@ -211,6 +219,36 @@ nav input[type="text"]:focus {
   font-size: 11px;
 }
 
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(5, 4, 0, 0.438);
+  border-top:solid rgba(252, 255, 86, 0.336) 1px;
+}
+
+footer .image-container {
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+  flex: none;
+}
+
+footer .image-container img {
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+footer p {
+  color:rgba(247, 250, 78, 0.336);
+  font-size: 10px;
+}
+
 a {
   text-decoration: none;
   color: rgb(2, 160, 252);
@@ -259,7 +297,8 @@ p {
 
 @media screen and (max-width: 800px){
   .big-news {
-    flex-direction:column;
+    flex-direction: column;
+    align-items: space-evenly;
   }
 
   nav a, nav input[type="text"] {
