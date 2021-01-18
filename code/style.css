@@ -1,4 +1,19 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* header-flexcontainer & content*/
+.main-container {
+  height: 100px;
+  display: flex;
 }
+.head-container {
+  height: 150px;
+  margin: 2px;
+  border: 1px solid;
+  border-radius: 2px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+
+}
+.tagline {
+  text-transform: uppercase;
+}
+
