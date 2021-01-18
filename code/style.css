@@ -127,5 +127,43 @@ a h3:hover {
     
   }*/
   
+  @media (width:768px ) {
   
+    /*
+   #img-big {
+     width: 60%;
+   }*/
+ 
+   .big-news-item1 {
+ width: 60%;
+ margin: 2%;
+ 
+   }
+ 
+   .big-news-item2 {
+     width: 30%;
+     margin: 2%;
+   }
+ /*
+   #head-news-h1 {
+     width: 50%;
+   }
+ 
+   #head-news-p {
+     width: 50%;
+   }
+   */
+   
+   .other-news {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+    
+   }
+   .other-news-item {
+     width: 50%;
+   
+   }
+ }
+ 
   
