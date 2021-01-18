@@ -48,3 +48,36 @@ nav a {
 nav {
   display: none 
 }
+
+/*** Media queries ***/
+
+/* For tablets */
+@media (min-width: 667px) and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/*For desktop*/
+
+@media (min-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
