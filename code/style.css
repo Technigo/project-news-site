@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Roboto&family=Orbitron:wght@500&display=swap');
-
 body {
   margin: 0;
   padding: 0;
   background-color: rgba(2, 24, 44, 0.897);
-  color:rgb(11, 102, 155);
+  color: rgb(11, 102, 155);
 }
 
 .header-container {
@@ -16,7 +15,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position-y: -15vh;
- 
 }
 
 header h1 {
@@ -24,10 +22,10 @@ header h1 {
   bottom: 0;
   right: 0;
   font-family: 'Orbitron', sans-serif;
-  color:#f1df77b4;
+  color: #f1df77b4;
   text-shadow: 5px 5px #9b681b;
   font-size: 60px;
-  margin:0 10px 0 0;
+  margin: 0 10px 0 0;
 }
 
 h2, h3 {
@@ -35,7 +33,7 @@ h2, h3 {
 }
 
 h2 {
-  color:rgb(2, 160, 252);
+  color: rgb(2, 160, 252);
 }
 
 p {
@@ -45,7 +43,7 @@ p {
 
 nav {
   display: flex;
-  width: 100%;
+
   justify-content: space-between;
   border-bottom: solid #f1df77 1px;
   background-color: rgba(0, 0, 0, 0.425);
@@ -56,7 +54,7 @@ nav {
 nav a {
   display: block;
   border: none;
-  width: 50%;
+
   text-align: center;
   padding: 5px 0px 5px 0px;
   font-family: 'Orbitron', sans-serif;
@@ -75,14 +73,14 @@ nav a:active {
 }
 
 #signup, #about {
-  width: 40%;
-  display:flex;
+
+  display: flex;
   justify-content: space-evenly;
 }
 
 .searchbar {
   display: flex;
-  width: 20%;
+
 }
 
 .search-button {
@@ -99,14 +97,14 @@ nav a:active {
 nav input[type=text] {
   opacity: 0.5;
   border: none;
-  width: 70%;
+ 
   flex-grow: 2;
   background-color: black;
   border: solid grey 0.5px;
-  height: 85%;
+ 
   font-size: 11px;
   font-family: 'Orbitron', sans-serif;
-  color:#f1df77;
+  color: #f1df77;
 }
 
 nav input[type="text"]:focus {
@@ -118,64 +116,68 @@ nav input[type="text"]:focus {
   background-color: rgb(244, 248, 12);
   border-radius: 50%;
   box-shadow: 0px 0px 3px 3px rgba(235, 65, 59, 0.74);
-  width:2px;
-  height:5px;
+  width: 2px;
+  height: 5px;
   position: absolute;
-  top:1000px;
+  top: 1000px;
   left: 50%;
   animation: meteor_path 10s linear infinite;
 }
 
 @keyframes meteor_path {
-  from { transform: rotate(-140deg) translateX(1000px); }
-  to { transform: rotate(-40deg) translateX(1000px); }
+  from {
+    transform: rotate(-140deg) translateX(1000px);
+  }
+  to {
+    transform: rotate(-40deg) translateX(1000px);
+  }
 }
 
 .big-news {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  
   margin: 40px 0px 80px 0px;
 }
 
 .image-container {
-  width: 90%;
+ 
   border: solid rgb(2, 160, 252);
 }
 
 .image-container img {
-  width: 100%;
+
   height: auto;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 .text-container {
-  width: 90%;
+  
 }
 
 .small-news {
   display: flex;
   flex-wrap: wrap;
   margin: 50px 0px 50px 0px;
-  width: 100%;
+
   justify-content: space-evenly;
 }
 
 .block {
   display: flex;
   margin: 0 0 80px 0;
-  width: 45%;
+ 
 }
 
 .block .text-container {
-  width: 50%;
+ 
   flex: none;
   margin: 0 0 0 20px;
 }
 
 .text-container:hover {
-  color:rgb(2, 160, 252);
+  color: rgb(2, 160, 252);
 }
 
 .block .image-container {
@@ -185,29 +187,30 @@ nav input[type="text"]:focus {
   overflow: hidden;
   border-radius: 50%;
   border: none;
-  margin:0;
+  margin: 0;
   transition: all 0.3s ease-in-out 0s;
   transform-style: preserve-3d;
 }
 
 .block .image-container:hover {
-transform: rotateY(360deg); transition: all 0.3s ease-in-out 0s;
+  transform: rotateY(360deg);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .block .image-container img {
-  display:block;
+  display: block;
   height: 100%;
   min-width: 100%;
   object-fit: cover;
 }
 
 .block .image-container:hover {
-  box-shadow:1px 1px 5px 5px rgb(2, 160, 252);
+  box-shadow: 1px 1px 5px 5px rgb(2, 160, 252);
 }
 
 a {
   text-decoration: none;
-  color:rgb(2, 160, 252);
+  color: rgb(2, 160, 252);
   text-align: right;
   float: right;
   font-family: 'Orbitron', sans-serif;
@@ -243,13 +246,13 @@ a {
   z-index: 1;
   min-width: 130px;
   border: solid black;
-  background-color:rgba(5, 4, 0, 0.418);
+  background-color: rgba(5, 4, 0, 0.418);
   box-shadow: 1px 1px 5px 2px rgba(240, 230, 146, 0.253);
 }
 
 .menu-content a {
   display: block;
-  width: 100%;
+ 
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
   font-size: 16px;
@@ -259,173 +262,134 @@ a {
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .menu-wrapper:focus .menu-content{
+  .menu-wrapper:focus .menu-content {
     display: flex;
     flex-direction: column;
   }
-  
   .menu-wrapper:focus .menu-button {
     background-color: rgba(255, 230, 0, 0.671) 20px;
   }
-  
   .menu-content a:focus {
-    background-color:rgba(255, 230, 0, 0.671) 20px;
+    background-color: rgba(255, 230, 0, 0.671) 20px;
   }
 }
 
 @media (hover: hover) and (pointer: fine) {
-
-  .menu-wrapper:hover .menu-content{
+  .menu-wrapper:hover .menu-content {
     display: flex;
     flex-direction: column;
   }
-
-.menu-wrapper:hover .menu-button {
-  background-color: rgba(255, 230, 0, 0.671) 20px;
-}
-
-.menu-content a:hover {
-  background-color:rgba(255, 230, 0, 0.671) 20px;
-}}
-
-@media screen and (min-width: 2500px) 
-{
-  .block {
-    width: 20%;
+  .menu-wrapper:hover .menu-button {
+    background-color: rgba(255, 230, 0, 0.671) 20px;
   }
-}
-
-@media screen and (min-width: 1500px) and (max-width: 2500px) 
-{
-  .block {
-    width: 20%;
+  .menu-content a:hover {
+    background-color: rgba(255, 230, 0, 0.671) 20px;
   }
-}
-
-@media screen and (max-device-width: 1024px), (max-width:1024px) 
-{
-
-  header h1 {
-    font-size: 45px;
-  }
-
-  .header-container {
-    height: 300px;
-    background-image: url("../pictures/ISS1280px.jpg");
-  }
-
-  @media screen and (max-device-width: 900px), (max-width: 900px)
-  {
-    .header-container {
-      height: 250px;
-      background-image:url("../pictures/ISS640px.jpg");
-      background-position-y: -20vh;
-    }
-
-    header h1 {
-      font-size: 35px;
-    }
-
-    nav {
-      border-bottom: none;
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    nav a {
-      display: none;
-    }
-
-    nav .searchbar {
-      display: none;
-    }
-
-    #signup, #about {
-      width: 30%;
-    }
-
-    #mobile-search {
-      display: flex;
-      flex-grow: 2;
-      z-index: 1;
-    }
-
-    #mobile-search input[type=text] {
-      visibility: hidden;
-    }
-
-    #mobile-search:active input[type=text] {
-      visibility: visible;
-    }
-
-    .menu-wrapper {
-      position: relative;
-    }
-
-    .menu-button {
-      display: block;
-    }
-
-    .text-container {
-      width: 90%;
-      margin-bottom: 80px;
-    }
-
-    .small-news {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-    }
-
+  @media screen and (min-width: 2500px) {
     .block {
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 80px;
-    }
-
-    .block .text-container {
-      width: 50%;
-    }
-
-  @media screen and (min-device-width: 320px) and (max-device-width: 539px),  (max-width: 539px)
-  {
-    #signup, #about {
-      width: 20%;
-    }
-
-    .menu-wrapper {
-      position: relative;
-    }
-
-    .menu-button {
-      display: block;
-    }
-
-    .text-container {
-      width: 90%;
-    }
-
-    .block {
-      flex-direction: column;
-      align-items: center;
-      width: 90%;
-    }
-
-    .block .text-container {
-      width: 90%;
-    }
-
-    .round-button {
-      display: none;
-    }
-
-    header h1 {
-      font-size: 35px;
-    }
-
-    .header-container {
-      height: 250px;
-      background-image:url("../pictures/ISS640px.jpg");
+      
     }
   }
-}
+  @media screen and (min-width: 1500px) and (max-width: 2500px) {
+    .block {
+    
+    }
+  }
+  @media screen and (max-device-width: 1024px), (max-width:1024px) {
+    header h1 {
+      font-size: 45px;
+    }
+    .header-container {
+      height: 300px;
+      background-image: url("../pictures/ISS1280px.jpg");
+    }
+    @media screen and (max-device-width: 900px), (max-width: 900px) {
+      .header-container {
+        height: 250px;
+        background-image: url("../pictures/ISS640px.jpg");
+        background-position-y: -20vh;
+      }
+      header h1 {
+        font-size: 35px;
+      }
+      nav {
+        border-bottom: none;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      nav a {
+        display: none;
+      }
+      nav .searchbar {
+        display: none;
+      }
+      #signup, #about {
+      
+      }
+      #mobile-search {
+        display: flex;
+        flex-grow: 2;
+        z-index: 1;
+      }
+      #mobile-search input[type=text] {
+        visibility: hidden;
+      }
+      #mobile-search:active input[type=text] {
+        visibility: visible;
+      }
+      .menu-wrapper {
+        position: relative;
+      }
+      .menu-button {
+        display: block;
+      }
+      .text-container {
+       
+        margin-bottom: 80px;
+      }
+      .small-news {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      .block {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 80px;
+      }
+      .block .text-container {
+        
+      }
+      @media screen and (min-device-width: 320px) and (max-device-width: 539px), (max-width: 539px) {
+        #signup, #about {
+          
+        }
+        .menu-wrapper {
+          position: relative;
+        }
+        .menu-button {
+          display: block;
+        }
+        .text-container {
+       
+        }
+        .block {
+          flex-direction: column;
+          align-items: center;
+        }
+        .block .text-container {
+    
+        }
+        .round-button {
+          display: none;
+        }
+        header h1 {
+          font-size: 35px;
+        }
+        .header-container {
+          height: 250px;
+          background-image: url("../pictures/ISS640px.jpg");
+        }
+      }
+    }
+  }
 }
