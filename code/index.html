@@ -2,23 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&family=Rock+Salt&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header id="myHeader">
+      <div class="logo-container">
+      <img id="logo" src="images/Dagens_Nyheter_Logo.png"/>
+      <p id="tagline">GODA NYHETER</p>
+    </div>
+      <nav>
+        <a class="menu" href="#">NEWS</a>
+        <a class="menu" href="#">ECONOMY</a>
+        <a class="menu" href="#">CULTURE</a>
+        <a class="menu" href="#">SPORTS</a>
+        <a class="menu" href="#">CLIMATE</a>
+      </nav>
     </header>
 
+    <div class="main-box">
     <section class="big-news">
-      <!-- The big news content -->
+      <img class="big-news-img" src="images/bignewsimg.jpg"/>
+      <div class="big-news-text">
+      <small>Top Story</small>
+      <h2>No new Covid-19 cases in over 6 months</h2>
+      <p><strong>Crowds celebrating on the streets world wide. Epidemiologist Anders Tegnell: "We are confident that we are now out of the woods."</strong></p>
+      <p>Read more</p>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news-group">
+      <div class="news-item">
+        <img class="news-img" src="images/news1.jpg"/>
+        <small>News</small>
+        <h2 class="news-item-title">100% of students from bootcamp Technigo landed jobs after graduation</h2>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="images/news2.jpg"/>
+        <small>News</small>
+        <h2 class="news-item-title">Newly developed pill turned out to cure hangovers</h2>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="images/placeholder.jpg"/>
+        <h2 class="news-item-title">NEWS 3</h2>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="images/placeholder.jpg"/>
+        <h2 class="news-item-title">NEWS 4</h2>
+      </div>
     </section>
 
-    <button>Click me!</button>
+    <section class="interview">
+      <h1 class="interview-headline">INTERVJU.</h1>
+      <img class="interview-img" src="images/interview-img.jpg"/>
+      <h2 class="interview-quote">Jireel: ”Jag har känt att jag måste vara där när min pappa inte är det”</h2>
+    </section>
+  </div>
+
+    <footer>
+      <small>Copywrite 2020 Siri Hemsley</small>
+    </footer>
+
   </body>
 </html>
