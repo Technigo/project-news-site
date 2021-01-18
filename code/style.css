@@ -1,4 +1,91 @@
 html {
-  background: #0025ff;
+  background:#ffe2e2
   color: #fff;
+  max-width: 100%;
+}
+
+nav {
+background-color: #bad7df;
+display: flex;
+margin: 0px;
+padding-bottom: 0%;
+width: 100%;
+}
+
+nav h1 {
+justify-content: flex-start;
+padding: 2% 8% 2% 1%;
+margin: 0px;
+}
+
+nav p {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-family:'Permanent Marker', cursive;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+nav p {
+  padding: 2% 5%;
+  margin: 0px;
+}
+
+img:hover {
+  border-color: #99ddcc;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.big-news {
+  padding: 2% 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.big-news img {
+  width: 50%;
+  height: 40%;
+  border-radius: 3%;
+  margin-right: 30px;
+}
+
+.big-news-text {
+  justify-content: space-evenly;
+}
+
+.big-news h2 {
+ font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.big-news p {
+
+}
+
+hr {
+border-width: 8px 0px 0px 0px;
+border-color: #bad7df;
+border-radius: 50%;
+}
+.news-scroll {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news-scroll img {
+  height: 100px;
+  width: 100px;
+  border-radius: 30%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#bad7df;
+  color: white;
+  text-align: center;
 }
