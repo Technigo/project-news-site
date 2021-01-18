@@ -6,14 +6,16 @@ body {
 /************ HEADER ************/
 
 header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.438);
   display: flex;
-  border: 2px solid #a7adb3;
+  border-width: 6px;
+  border-style: double;
+  border-color: #3a3c3f;
+  border-radius: 5px;
   justify-content: space-between;
   align-items: center;
-  
+  padding: 0 10px;
 }
-
 header img {
   width: 80px;
 }
@@ -27,14 +29,20 @@ h1 {
   width: 30px;
   height: 25px;
   justify-content: space-between;
-  margin: 0 10px 0 0;
 }
-
 .hamburger div {
   width: 30px;
   height: 5px;
   border-radius: 5px;
   background-color: black;
+}
+nav {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 0 0 20px;
 }
 
 /************ BIG NEWS ************/
@@ -43,14 +51,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
-
 .big-news img {
   width: 350px;
   border-radius: 10px 10px 0 0;
 }
-
 figure {
   background-color: white;
   width: 350px;
@@ -58,32 +63,35 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 5px;
-  box-shadow: 5px 5px 5px #000;
+  box-shadow: 5px 5px 5px #3a3c3f;
 }
-
 figcaption {
-  background-color: #a7adb3;
+  background-color: #a7adb381;
   border-radius: 0 0 10px 10px;
   width: 350px;
   padding: 5px 0;
 }
-
 .big-news-text {
   background-color: white;
   width: 350px;
-  border: 1px solid black;
+  border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 10px 5px;
   margin: 0 0 20px 0;
 }
 h2 {
-  margin: 10px 0;
+  margin: 10px;
   font-style: italic;
 }
-
+article {
+  margin: 10px;
+}
+article p:nth-child(2) {
+  display: none;
+}
 /************ SMALL NEWS ************/
 
 .small-news {
@@ -97,9 +105,41 @@ h2 {
 }
 .small-news div {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 5px;
   margin: 0 0 20px 0;
-  box-shadow: 5px 5px 5px #000;
+  box-shadow: 5px 5px 5px #3a3c3f;
+}
+
+h3 {
+  margin: 10px;
+}
+
+/************ SMALL NEWS ************/
+
+@media (min-width: 667px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  .big-news {
+    flex-direction: row;
+    justify-content: center;
+  }
+  article p:nth-child(1) {
+    display: none;
+  }
+  article p:nth-child(2) {
+    display: block;
+  }
+  .small-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .small-news div {
+    margin: 10px;
+  }
 }
