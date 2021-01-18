@@ -1,4 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: #0025ff;
-  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background: beige;
+  color:black
+}
+
+.flex-parent {
+  background:darkslategrey;
+  color: gold;
+  margin: 5px;
+  padding: 10px;
+  border: black solid 4px;
+  align-items: center;
+  justify-content: space-between; 
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-child {
+  margin: 5px;
+  padding: 10px;
+  width: 25%;
+}
+
+.flex-logo {
+  width: 15%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.flex-child1 {
+  margin: 5px;
+  padding: 10px;
+  width: 50%;
+  align-self:auto;
+}
+
+nav a:link, a:visited{
+  background-color: darkslategray;
+  color: gold;
+  padding: 8px 12px;
+  border: black solid 2px;
+  text-align: center;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: midnightblue;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+nav {
+  font-size: 16px;
+  float: inline-end;
+}
+
+.big-news {
+  background: darkslategray;
+  margin: 5px;
+  padding: 20px;
+  border: black solid 4px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.big-news-img {
+  margin: 5px;
+  width: 30%;
+}
+
+.big-news-text {
+ margin: 5px;
+ width: 70%;
+ text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+
+p {
+  font-size: 14px;
+}
+
+.grid-container {
+  background: darkslategray;
+  margin: 5px;
+  padding: 20px;
+  border: black solid 4px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7 {
+  margin: 5px;
+  padding: 5px;
+  border: black solid 2px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 666px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+ }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+ }
+}
+
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+  }
+
+.grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
 }
