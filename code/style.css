@@ -3,22 +3,13 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
   background-color: rgba(2, 24, 44, 0.897);
   color: rgb(11, 102, 155);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "main2 main2 main2 main2"
-    "footer footer footer footer";
-  }
+html, body {
+  min-height: 100vh;
+}
 
 .meteor {
   border-color: rgba(231, 116, 71, 0.589);
@@ -43,10 +34,9 @@ body {
   }
 }
 
-.header-container {
+.header-wrapper {
   display:block;
   position: relative;
-  grid-area: header;
   background-image: url("../pictures/ISS.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -82,8 +72,6 @@ nav a {
   display: block;
   border: none;
   text-align: center;
-  padding: 5px 0px 5px 0px;
-  font-family: 'Orbitron', sans-serif;
   font-size: 11px;
   color: #f1df77;
   text-decoration: none;
@@ -108,7 +96,7 @@ nav a:active {
   float: right;
   height: 20px;
   width: 30px;
-  background: rgba(255, 208, 0, 0.336);
+  background: rgba(255, 208, 0, 0.39);
   border-bottom:  solid #f1df7700 1px;
 }
 
@@ -118,7 +106,6 @@ nav a:active {
 
 nav input[type=text] {
   opacity: 0.5;
-  border: none;
   background-color: black;
   border: solid grey 0.5px;
   font-size: 11px;
@@ -128,6 +115,12 @@ nav input[type=text] {
 
 nav input[type="text"]:focus {
   outline: none;
+}
+
+.big-news {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .big-img-container {
@@ -142,44 +135,28 @@ nav input[type="text"]:focus {
   width: 100%;
   min-height: 100%;
   max-height: 100%;
-  overflow:hidden;
-  vertical-align: top;
   object-fit: cover;
   position: absolute;
 }
 
 .big-text-container {
-  padding-left: 20px;
   flex: 0.66;
   background-color: rgba(0, 162, 255, 0.11);
   padding: 10px;
 }
 
-.big-text-container:hover {
-  color: rgb(2, 160, 252);
-}
-
-.big-news {
-  grid-area: main;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-}
-
 .small-news {
-  grid-area: main2;
   display: grid;
   grid-gap: 80px 20px;
-  grid-template: repeat(3, 1fr) / repeat(4, 130px 4fr);
-  margin: 20px;
+  grid-template: repeat(3, 1fr) / repeat(4, 130px 1fr);
+  margin: 80px 20px 80px 20px;
 }
 
 .small-text-container {
-  padding-left: 0;
   font-size: 11px;
 }
 
-.grid-container {
+.grid-wrapper {
   display:flex;
   justify-self: start;
 }
@@ -190,26 +167,38 @@ nav input[type="text"]:focus {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: none;
-  margin: 0;
+  box-shadow: 2px 2px 2px 5px rgba(1, 3, 22, 0.705);
   transition: all 0.3s ease-in-out 0s;
   transform-style: preserve-3d;
 }
 
+.small-img-container img {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
 .small-img-container:hover {
   transform: rotateY(360deg);
   transition: all 0.3s ease-in-out 0s;
 }
 
-.small-img-container img {
-  display: block;
-  height: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  object-fit: cover;
+.top-button {
+  right: 50%;
+  right: 0;
+  bottom: 60px;
+  position: fixed;
+  font-family: 'Orbitron', sans-serif;
+  color: #f1df77;
+  padding: 5px 5px 0 5px;
+  border-radius: 5px;
+  border: solid rgba(252, 255, 86, 0.336) 1px;
+  background-color: rgba(0, 0, 0, 0.459);
+ line-height: 0.7em;
 }
 
-.footer-container {
+.footer-wrapper {
+  grid-area: footer;
   display: flex;
   width: 100%;
   height: 60px;
@@ -220,34 +209,35 @@ nav input[type="text"]:focus {
 }
 
  .footer-img-container {
-  border-radius: 0;
+  position: relative;
   height: 50px;
-  width: 50px;
-  border: none;
-  flex: none;
+  width: 85px;
   margin: 5px;
   overflow:hidden;
 }
 
 .footer-img-container img {
+  position:absolute;
   height: 100%;
-  min-width: 100%;
+  width: auto;
   object-fit: cover;
 }
 
 .footer-text-container {
-  color:rgba(247, 250, 78, 0.336);
+  color:rgba(247, 250, 78, 0.438);
   font-size: 10px;
   margin: 10px;
 }
 
-
 a {
   text-decoration: none;
   color: rgb(2, 160, 252);
-  text-align: right;
   float: right;
   font-family: 'Orbitron', sans-serif;
+}
+
+a:hover {
+  background-color: rgb(0, 46, 73);
 }
 
 h3 {
@@ -262,17 +252,20 @@ h2 {
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+}
+
+h3:hover, p:hover {
+  color: rgb(2, 160, 252);
 }
 
 @media screen and (min-width: 2000px) {
   .small-news {
-    grid-template: repeat(2, 1fr) / repeat(6, 130px 4fr);
+    grid-template: repeat(6, 1fr) / repeat(6, 130px 1fr);
   }
 }
 
 @media screen and (max-device-width: 1024px),
-(max-width:1024px) {
+(max-width:1200px) {
   header h1 {
     font-size: 45px;
   }
@@ -284,7 +277,7 @@ p {
   }
 
   .small-news {
-    grid-template: repeat(3, 1fr) / repeat(2, 130px 4fr);
+    grid-template: repeat(3, 1fr) / repeat(2, 130px 1fr);
   }
 }
 
@@ -300,9 +293,9 @@ p {
 
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 540px),
-(max-width: 540px) {
+(max-width: 600px) {
   .small-news {
-    grid-template: repeat(6, 1fr) / repeat(1, 130px 4fr);
+    grid-template: repeat(6, 1fr) / repeat(1, 130px 1fr);
   }
 
   .searchbar {
