@@ -8,10 +8,23 @@ body {
 
 header {
   background-color: black;
-  height: 60px;
+  height: 65px;
   width: 100%;
   font-family: "Texturina", serif;
   position: fixed;
+  
+}
+
+h1 {
+  color: white;
+  font-family: "Texturina", serif;
+  font-size: 50px;
+  font-variant: small-caps;
+  margin-top: -32px;
+  margin-left: 650px;
+  position: absolute;
+  
+  
 }
 
 ul {
@@ -36,30 +49,24 @@ li a:hover {
   opacity: 0.5;
 }
 
-.dropdown {
-  display: inline-block;
-}
-
-ul li .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color:black;
-  box-shadow: 1px 2px grey;
   min-width: 50px;
   min-height: 100px;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .dropdown-content a {
-  font-size: 18px;
-  color: white;
   padding: 5px;
-  cursor: pointer;
 }
 
 ul li:hover > ul,
 ul li ul:hover {
-  opacity: 0.9;
   display: block;
   float: left;
 }
+
+
