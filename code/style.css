@@ -34,3 +34,12 @@ html {
     color: #835F80;
   }
   
+  @media (max-width: 500px) {
+    .nav {
+      font-size: 9px;
+      justify-content: center;
+    }
+    .flex-container {
+      justify-content: center;
+    }
+  }
