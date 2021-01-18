@@ -44,10 +44,13 @@ body {
 }
 
 .header-container {
+  display:block;
+  position: relative;
   grid-area: header;
   background-image: url("../pictures/ISS.jpg");
   background-attachment: fixed;
   background-size: cover;
+  height: 400px;
   box-shadow: 0 1px 4px 2px #f1df77;
   background-position-y: -15vh;
 }
@@ -65,6 +68,9 @@ header h1 {
 
 nav {
   display: flex;
+  width: 100%;
+  height:20px;
+  align-items: center;
   justify-content: space-between;
   border-bottom: solid #f1df77 1px;
   background-color: rgba(0, 0, 0, 0.425);
@@ -81,6 +87,8 @@ nav a {
   font-size: 11px;
   color: #f1df77;
   text-decoration: none;
+  width:100%;
+  padding: 3px 10px 3px 10px;
 }
 
 nav a:hover {
@@ -94,13 +102,15 @@ nav a:active {
 
 .searchbar {
   display: flex;
+  
 }
 
 .search-button {
   float: right;
-  height: 40px;
-  width: 50px;
+  height: 20px;
+  width: 30px;
   background: rgba(255, 208, 0, 0.336);
+  border-bottom:  solid #f1df7700 1px;
 }
 
 .search-button img {
@@ -110,7 +120,6 @@ nav a:active {
 nav input[type=text] {
   opacity: 0.5;
   border: none;
-  flex-grow: 2;
   background-color: black;
   border: solid grey 0.5px;
   font-size: 11px;
@@ -149,11 +158,12 @@ nav input[type="text"]:focus {
 
 .small-news {
   grid-area: main2;
+  margin-top: 80px;
 }
 
 .small-news-grid {
   display: grid;
-  grid-gap: 40px 5px;
+  grid-gap: 80px 2px;
   grid-template: repeat(3, 1fr) / repeat(8, 1fr);
 }
 
@@ -161,13 +171,17 @@ nav input[type="text"]:focus {
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
-  border-radius: 3px;
+}
+
+.block .text-container {
+  padding-right: 20px;
+  padding-left: 0;
+  font-size: 11px;
 }
 
 .block .image-container {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -193,6 +207,10 @@ nav input[type="text"]:focus {
   box-shadow: 1px 1px 5px 5px rgb(2, 160, 252);
 }
 
+.block p {
+  font-size: 11px;
+}
+
 a {
   text-decoration: none;
   color: rgb(2, 160, 252);
@@ -201,12 +219,13 @@ a {
   font-family: 'Orbitron', sans-serif;
 }
 
-h2,
 h3 {
   font-family: 'Kufam', cursive;
+  font-size: 14px;
 }
 
 h2 {
+  font-family: 'Kufam', cursive;
   color: rgb(2, 160, 252);
 }
 
@@ -215,12 +234,10 @@ p {
   font-size: 14px;
 }
 
-@media screen and (min-width: 2500px) {
-  .block {}
-}
-
-@media screen and (min-width: 1500px) and (max-width: 2500px) {
-  .block {}
+@media screen and (min-width: 2000px) {
+  .small-news-grid {
+    grid-template: repeat(2, 1fr) / repeat(12, 1fr);
+  }
 }
 
 @media screen and (max-device-width: 1024px),
@@ -232,65 +249,38 @@ p {
   .header-container {
     height: 300px;
     background-image: url("../pictures/ISS1280px.jpg");
-  }
-}
-
-@media screen and (max-device-width: 900px),
-(max-width: 900px) {
-  .header-container {
-    height: 250px;
-    background-image: url("../pictures/ISS640px.jpg");
     background-position-y: -20vh;
   }
 
-  header h1 {
-    font-size: 35px;
+  .small-news-grid {
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px){
+  .big-news {
+    flex-direction:column;
   }
 
-  nav {
-    border-bottom: none;
-    background-color: rgba(0, 0, 0, 0);
+  nav a, nav input[type="text"] {
+    font-size: 9px;
+  }
+
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 540px),
+(max-width: 540px) {
+  .small-news-grid {
+    grid-template: repeat(12, 1fr) / repeat(2, 1fr);
+  }
+
+  .searchbar {
+    width: 100px;
   }
 
   nav a {
-    display: none;
+    padding-right: 5px;
   }
-
-  nav .searchbar {
-    display: none;
-  }
-
-  .text-container {
-    width: auto;
-    margin-bottom: 80px;
-  }
-
-  .small-news {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .block {
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 80px;
-  }
-
-  .block .text-container {}
-}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 539px),
-(max-width: 539px) {
-  .text-container {}
-
-  .block {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .block .text-container {}
-
+  
   header h1 {
     font-size: 35px;
   }
