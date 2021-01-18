@@ -24,10 +24,15 @@ h1 {
   font-family: "Texturina", serif;
   font-size: 50px;
   font-variant: small-caps;
-  margin-top: -32px;
+  margin-top: -87px;
   margin-left: 650px;
   position: absolute;
-  
+}
+
+header img {
+  width: 60px;
+  margin-left: 77px;
+  margin-top: -10px;
   
 }
 
@@ -49,7 +54,7 @@ li a {
   letter-spacing: 1.5px;
   color: white;
   text-decoration: none;
-  padding: 14px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -100,7 +105,7 @@ ul li ul:hover {
   opacity: 0.7;
 }
 
-/*** CONTENT ***/
+/*** HEADER TWO ***/
 
 .header-two {
   width: 100%;
@@ -114,6 +119,8 @@ ul li ul:hover {
   text-align: center;
 }
 
+/*** BIG NEWS ***/
+
 .big-news {
   display: inline-flex;
   justify-content: center;
@@ -123,9 +130,7 @@ ul li ul:hover {
 }
 
 .box {
-  display: inline-block;
   width: 520px;
-  flex-direction: column;
   color: black;
 }
 
@@ -148,22 +153,21 @@ ul li ul:hover {
 /*** OTHER NEWS***/
 
 .other-news {
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
   margin-top: 40px;
   width: 100%;
 }
 
 .small-box {
-  display: inline-block;
-  justify-content: space-around;
-  width: 300px;
+  width: 350px;
   color: black;
   margin-bottom: 100px;
 }
 
 .small-box img {
-  max-width: 300px;
+  max-width: 350px;
   max-height: 400px;
   box-shadow: 2px 3px #888;
 }
