@@ -1,3 +1,9 @@
 .main-header {
   background-color: var(--secondaryColorNormal);
 }
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--spacing) * 4);
+}
