@@ -9,6 +9,44 @@ body {
 }
 
 .header-container {
+  grid-area: header;
+  background-image: url("../pictures/ISS.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0 1px 4px 2px #f1df77;
+  background-position-y: -15vh;
+}
+
+.big-news {
+  grid-area: main;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px 80px 20px;
+}
+
+.small-news {
+  grid-area: main2;
+}
+
+.small-news-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  }
+
+.grid {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main2 main2 main2 main2"
+    "footer footer footer footer";
+}
+
+.header-container {
   position: relative;
   height: 400px;
   width: 100%;
@@ -45,7 +83,6 @@ p {
 
 nav {
   display: flex;
-
   justify-content: space-between;
   border-bottom: solid #f1df77 1px;
   background-color: rgba(0, 0, 0, 0.425);
@@ -56,7 +93,6 @@ nav {
 nav a {
   display: block;
   border: none;
-
   text-align: center;
   padding: 5px 0px 5px 0px;
   font-family: 'Orbitron', sans-serif;
@@ -74,15 +110,8 @@ nav a:active {
   background-color: rgb(255, 252, 64);
 }
 
-#signup, #about {
-
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .searchbar {
   display: flex;
-
 }
 
 .search-button {
@@ -99,11 +128,9 @@ nav a:active {
 nav input[type=text] {
   opacity: 0.5;
   border: none;
- 
   flex-grow: 2;
   background-color: black;
   border: solid grey 0.5px;
- 
   font-size: 11px;
   font-family: 'Orbitron', sans-serif;
   color: #f1df77;
@@ -139,12 +166,10 @@ nav input[type="text"]:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   margin: 40px 20px 80px 20px;
 }
 
 .image-container {
-  
   border: solid rgb(2, 160, 252);
 }
 
@@ -154,27 +179,18 @@ nav input[type="text"]:focus {
   vertical-align: top;
 }
 
-.text-container {
-  
-}
+.text-container {}
 
-.small-news {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 50px 20px 50px 20px;
-  width: auto;
-
-  justify-content: space-evenly;
-}
 
 .block {
-  display: flex;
-  margin:  0px 80px 0px;
- 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
 }
 
 .block .text-container {
-  
   margin: 0 0 0 00px;
 }
 
@@ -261,117 +277,114 @@ a {
   text-align: left;
   padding: 10px 0 10px 0;
 }
-  .menu-wrapper:focus .menu-content {
-    display: flex;
+
+.menu-wrapper:focus .menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-wrapper:focus .menu-button {
+  background-color: rgba(255, 230, 0, 0.671) 20px;
+}
+
+.menu-content a:focus {
+  background-color: rgba(255, 230, 0, 0.671) 20px;
+}
+
+.menu-wrapper:hover .menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-wrapper:hover .menu-button {
+  background-color: rgba(255, 230, 0, 0.671) 20px;
+}
+
+.menu-content a:hover {
+  background-color: rgba(255, 230, 0, 0.671) 20px;
+}
+
+@media screen and (min-width: 2500px) {
+  .block {}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2500px) {
+  .block {}
+}
+
+@media screen and (max-device-width: 1024px), (max-width:1024px) {
+  header h1 {
+    font-size: 45px;
+  }
+  .header-container {
+    height: 300px;
+    background-image: url("../pictures/ISS1280px.jpg");
+  }
+}
+
+@media screen and (max-device-width: 900px), (max-width: 900px) {
+  .header-container {
+    height: 250px;
+    background-image: url("../pictures/ISS640px.jpg");
+    background-position-y: -20vh;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  nav {
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  nav a {
+    display: none;
+  }
+  nav .searchbar {
+    display: none;
+  }
+  .menu-wrapper {
+    position: relative;
+  }
+  .menu-button {
+    display: block;
+  }
+  .text-container {
+    width: auto;
+    margin-bottom: 80px;
+  }
+  .small-news {
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
   }
-  .menu-wrapper:focus .menu-button {
-    background-color: rgba(255, 230, 0, 0.671) 20px;
+  .block {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
   }
-  .menu-content a:focus {
-    background-color: rgba(255, 230, 0, 0.671) 20px;
+  .block .text-container {}
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 539px), (max-width: 539px) {
+  .menu-wrapper {
+    position: relative;
   }
-  .menu-wrapper:hover .menu-content {
-    display: flex;
+  .menu-button {
+    display: block;
+  }
+  .text-container {}
+  .block {
     flex-direction: column;
+    align-items: center;
   }
-  .menu-wrapper:hover .menu-button {
-    background-color: rgba(255, 230, 0, 0.671) 20px;
+  .block .text-container {}
+  .round-button {
+    display: none;
   }
-  .menu-content a:hover {
-    background-color: rgba(255, 230, 0, 0.671) 20px;
+  header h1 {
+    font-size: 35px;
   }
-  @media screen and (min-width: 2500px) {
-    .block {
-      
-    }
-  }
-  @media screen and (min-width: 1500px) and (max-width: 2500px) {
-    .block {
-    
-    }
-  }
-  @media screen and (max-device-width: 1024px), (max-width:1024px) {
-    header h1 {
-      font-size: 45px;
-    }
-    .header-container {
-      height: 300px;
-      background-image: url("../pictures/ISS1280px.jpg");
-    }
-    @media screen and (max-device-width: 900px), (max-width: 900px) {
-      .header-container {
-        height: 250px;
-        background-image: url("../pictures/ISS640px.jpg");
-        background-position-y: -20vh;
-      }
-      header h1 {
-        font-size: 35px;
-      }
-      nav {
-        border-bottom: none;
-        background-color: rgba(0, 0, 0, 0);
-      }
-      nav a {
-        display: none;
-      }
-      nav .searchbar {
-        display: none;
-      }
-      .menu-wrapper {
-        position: relative;
-      }
-      .menu-button {
-        display: block;
-      }
-      .text-container {
-        width: auto;
-        margin-bottom: 80px;
-      }
-      .small-news {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-      }
-      .block {
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 80px;
-      }
-      .block .text-container {
-        
-      }
-      @media screen and (min-device-width: 320px) and (max-device-width: 539px), (max-width: 539px) {
-        #signup, #about {
-          
-        }
-        .menu-wrapper {
-          position: relative;
-        }
-        .menu-button {
-          display: block;
-        }
-        .text-container {
-       
-        }
-        .block {
-          flex-direction: column;
-          align-items: center;
-        }
-        .block .text-container {
-    
-        }
-        .round-button {
-          display: none;
-        }
-        header h1 {
-          font-size: 35px;
-        }
-        .header-container {
-          height: 250px;
-          background-image: url("../pictures/ISS640px.jpg");
-        }
-      }
-    }
+  .header-container {
+    height: 250px;
+    background-image: url("../pictures/ISS640px.jpg");
   }
 }
