@@ -91,6 +91,37 @@ nav {
   text-align: center;
 }
 
+/*** Styling the other news ***/ 
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.news {
+  display: flex;
+  flex-basis: 90%;
+  justify-content: center;
+  margin: 20px 20px auto;
+}
+
+.news img {
+  width: 90%;
+  padding: 15px;
+}
+
+.news a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  box-shadow: 2px 2px lightgray;
+}
 /*** Media queries ***/
 
 /* For tablets */
