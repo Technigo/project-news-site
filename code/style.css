@@ -6,15 +6,16 @@ html {
 li a {
   text-decoration: none;
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif
 }
 
-/* Top navigation */
+/* TOP NAVIGATION */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 35px;
 }
 
 .logo {
@@ -37,6 +38,44 @@ header {
 }
 
 .nav-links li a:hover {
-  color: pink  
+  color: pink
 }
 
+/* BIG NEWS */
+
+.big-news-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 100px;
+}
+
+.big-news-img {}
+
+img {
+  width: 600px;
+  height: 500px;
+}
+
+.big-news-text {
+  width: 400px;
+  padding: 0px 50px;
+}
+
+.big-news-text h1 {
+  margin-top: 0px;
+  font-size: 48px;
+}
+
+.big-news-text p {
+  font-size: 18px;
+  line-height: 25px;
+}
+button {
+  background-color: #fff;
+  border: solid black;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
