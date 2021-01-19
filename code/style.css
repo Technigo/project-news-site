@@ -32,6 +32,17 @@ header {
   margin: 10 px auto;
 }
 
+.articles {
+  background-color: white;
+  color: darkslategrey;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin: 10px auto;
+} /*Change to .articles-header?*/
+
 .hamburger a {
   display: flex;
   width: 30px;
@@ -135,6 +146,66 @@ footer {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   margin: 10px auto;
+}
+
+/***Styling the article pages ***/
+.article-container {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing:border-box;
+  box-shadow: 2px 2px lightgray;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.article-container img {
+  padding: 10px;
+  width: 100%;
+}
+
+/*Style contact, about and nav page*/
+
+.contact-container {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid light grey;
+  box-shadow: 2px 2px lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing:border-box;
+  width: 40%;
+  max-width: 1100px;
+  margin: 20px auto; 
+}
+
+.about-container {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid  light grey;
+  box-shadow: 2px 2px lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing:border-box;
+  width: 40%;
+  max-width: 1100px;
+  margin: 20px auto; 
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.nav-links a {
+  color: darkslategrey;
+  text-decoration: none;
 }
 
 /*** Media queries ***/
