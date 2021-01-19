@@ -4,28 +4,49 @@
     <script src="https://use.fontawesome.com/bb61c0507d.js"></script>
     <meta charset="utf-8" />
     <title>Dev News</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <meta name="description" content="A dev new website" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="./app.js"></script>
   </head>
   <body>
     <header class="main-header">
       <div class="main-wrapper">
-        <div class="header-container">
-          <!-- LOGO -->
-          <a href="/" class="logo">
-            <img src="./assets/logo.svg" alt="" />
-          </a>
+        <div class="desktop-menu-cnt">
+          <div class="header-container">
+            <!-- LOGO -->
+            <a href="/" class="logo">
+              <img src="./assets/logo.svg" alt="" />
+            </a>
 
-          <!-- NAVBAR -->
-          <a href="" class="menu"><i class="fa fa-bars"></i></a>
+            <!-- MOBILE NAVBAR -->
+            <a
+              href="javascript:void(0);"
+              onclick="menuToggle()"
+              class="hamburger-menu"
+              ><i class="fa fa-bars"></i
+            ></a>
+          </div>
+
+          <nav id="main-menu-cnt">
+            <ul class="main-menu">
+              <li class="main-menu-items"><a href="/">Home</a></li>
+              <li class="main-menu-items"><a href="">JS</a></li>
+              <li class="main-menu-items"><a href="">Contact us</a></li>
+              <li class="main-menu-items"><a href="">About us</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <section class="big-news">The big news content</section>
 
     <section class="">
       <!-- The other news  -->

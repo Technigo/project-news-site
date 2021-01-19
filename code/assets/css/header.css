@@ -1,9 +1,47 @@
 .main-header {
   background-color: var(--secondaryColorNormal);
 }
+
 .header-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: calc(var(--spacing) * 4);
+}
+
+.hamburger-menu {
+  color: var(--primaryColorDarker);
+}
+
+#main-menu-cnt {
+  display: none;
+}
+
+.main-menu-items {
+  padding: calc(var(--spacing) * 3);
+}
+
+.main-menu-items a {
+  color: var(--primaryColorDarker);
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 769px) {
+  #main-menu-cnt {
+    align-self: center;
+    display: block;
+  }
+
+  .desktop-menu-cnt {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .main-menu {
+    display: flex;
+  }
 }
