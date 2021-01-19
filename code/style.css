@@ -5,7 +5,10 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
   width: 100%;
   max-width: 1100px;
@@ -73,7 +76,10 @@ input#hamburger {
 input:checked ~ .dropdown ul {
     max-height: 200px;
     transition: all 0.5s;
-  }
+}
+.dropdown ul li a:focus {
+  background-color: rgb(146, 146, 146);
+}
 
 
 
@@ -160,6 +166,19 @@ input:checked ~ .dropdown ul {
   position: relative;
 }***/
 
+/*** FOOTER ***/
+footer {
+  display: block;
+  background: rgb(112, 92, 92);
+  margin-top: 20px;
+  width: 100%;
+
+}
+footer ul {
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
 /*** MEDIA QUERIES ***/
  @media (min-width: 650px) {
   .header-phone {
@@ -204,5 +223,9 @@ input:checked ~ .dropdown ul {
    }
    .news {
      flex-wrap: nowrap;
+   }
+   footer {
+     position: fixed;
+     bottom: 0px;
    }
  }
