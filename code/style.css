@@ -37,7 +37,7 @@ html {
   }
 
   .nav-item {
-    margin: o 10px;
+    margin: 10px;
     padding: 10px;
   }
   
@@ -63,13 +63,16 @@ html {
   
   .main {
     background-color: #C5E3D5;
-    padding-top: 40px;
+    padding: 10px 0 10px 0;
     font-family: verdana, sans-serif;
     
     }
 
     #big-news-h1 {
       font-family: 'Yusei Magic', sans-serif;
+    }
+    #big-news-p {
+      padding-left: 40px;
     }
 
     .other-news h3 {
@@ -205,22 +208,17 @@ a #fourth:hover{
    width: 60%;
  }*/
 .big-news {
-  justify-content:flex-start;
-  width: 98%;
+  justify-content: flex-start;
+ /* width: 98%;
   margin-left: 9px;
   padding-left: 4px;
-  padding-top: 4px;
-  
-  
+  padding-top: 4px;*/
+  margin: 1%;
+  padding: 1%;
 }
 
 .big-news-item1 {
 width: 58%;
-
-
-
-
-
  }
 
  .big-news-item2 {
@@ -252,15 +250,16 @@ width: 58%;
    flex-direction: row;
    justify-content: center;
    background-color: #C5E3D5;
-   padding-bottom: 30px;
-   padding-top: 20px;
+   padding: 10px 0 40px 0;
+   
+ 
  }
  
  .other-news-item {
-  width: 23%;
+  width: 21%;
   justify-content: center;
-  margin: 8px;
-  padding: 4px;
+  margin: 1%;
+  padding: 1%;
   
   
  }
@@ -332,6 +331,7 @@ width: 58%;
 .footer{
   background-color: #E7D6D6;
     text-align: center;
+    font-family: verdana, sans-serif;
     padding: 10px;
   }
   
