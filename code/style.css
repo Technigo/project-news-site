@@ -14,20 +14,18 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo {
   font-family: 'Jacques Francois Shadow', cursive;
   font-size: 40px;
   align-self: center;
-}
-
-
-#tagline {
-  font-family: 'Rock Salt', cursive;
-  font-size: 0.8em;
-  margin: 0;
 }
 
 nav {
@@ -68,7 +66,8 @@ nav {
 }
 
 .big-news-text {
-  padding: 3%;
+  padding: 15px;
+  align-self: center;
 }
 
 .big-news-text h2 {
@@ -89,7 +88,6 @@ nav {
   width: 100%;
   background-color: #7765E3;
   text-align: center;
-  margin-bottom: 2%;
   box-shadow: 12px 12px black;
   margin-bottom: 25px;
 }
@@ -101,7 +99,7 @@ nav {
 .news-item-title {
   font-size: 16px;
   margin: 0;
-  padding: 3%;
+  padding: 15px;
 }
 
 .interview {
@@ -130,14 +128,14 @@ nav {
 }
 
 footer {
-  margin: 10%;
+  margin: 10px;
   text-align: center;
 }
 
 @media (min-width:667px) and (max-width: 1024px) {
 
   .menu {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .menu:hover {
@@ -152,6 +150,10 @@ footer {
     width: 50%;
   }
 
+  .big-news-text {
+    padding: 25px;
+  }
+
   .big-news-text h2 {
     font-size: 30px;
   }
@@ -164,11 +166,7 @@ footer {
   .news-item {
     width: 48%;
   }
-}
 
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 @media (min-width: 1025px) {
@@ -176,6 +174,7 @@ a {
   header {
     flex-direction: row;
     justify-content: space-between;
+    padding: 25px;
   }
 
   .logo {
@@ -203,6 +202,10 @@ a {
 
   .big-news-img {
     width: 50%;
+  }
+
+  .big-news-text {
+    padding: 25px;
   }
 
   .big-news-text h2 {
