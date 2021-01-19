@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Roboto&family=Orbitron:wght@500&display=swap');
 
+/* body is set to relative so footer can be properly aligned by using this parent. 
+A min-height and padding same height as footer is set to be sure that footer stays on bottom of page even when there is no main content added */
 body {
   margin: 0;
   padding: 0;
   background-color: rgba(2, 24, 44, 0.897);
   color: rgb(11, 102, 155);
-  position:relative;
-  padding-bottom: 4em;
-  
-}
-
-html, body {
   position: relative;
+  padding-bottom: 4em;
   min-height: 100vh;
 }
 
-
+/* Meteor styling */
 .meteor {
   border-color: rgba(231, 116, 71, 0.589);
   background-color: rgb(244, 248, 12);
@@ -29,6 +26,7 @@ html, body {
   animation: meteor_path 10s linear infinite;
 }
 
+/* Animation for the meteor going over the sky in the header */
 @keyframes meteor_path {
   from {
     transform: rotate(-140deg) translateX(1000px);
@@ -39,6 +37,7 @@ html, body {
   }
 }
 
+/* wraps all contents in the header and sets header background picture */
 .header-wrapper {
   display: block;
   position: relative;
@@ -50,6 +49,7 @@ html, body {
   background-position-y: -15vh;
 }
 
+/* styling of page name text in the header */
 header h1 {
   position: absolute;
   bottom: 0;
@@ -61,6 +61,7 @@ header h1 {
   margin: 0 10px 0 0;
 }
 
+/* navigation bar sticky on top of the page, flex is used to place menu content and search bar on the navbar */
 nav {
   display: flex;
   width: 100%;
@@ -73,11 +74,13 @@ nav {
   z-index: 1;
 }
 
+/* necessary for doing drop-down menu that appears on click in mobile version */
 #checkbox, #searchbox {
   display: none;
   position: fixed;
 }
 
+/* button styling for drop-down menu on mobile device */
 .menu-button {
   position: fixed;
   width: 2em;;
@@ -92,6 +95,7 @@ nav {
   font-size: 16px;
 }
 
+/* navbar menu content styling, container used for placing menu links with flexbox */
 .menu-content {
   display: flex;
   justify-content: space-evenly;
@@ -100,6 +104,7 @@ nav {
   width: 100%;
 }
 
+/* link styling in navbar menu */
 .menu-content a {
   width: 100%;
   text-decoration: none;
@@ -108,58 +113,78 @@ nav {
   color: rgba(239, 240, 173, 0.966);
   text-align: center;
   padding: 5px 0 5px 0;
+  border-radius: 0;
 }
 
+/* links in navbar change background-color and text color on mouse over */
 nav a:hover {
   background-color: #f1df77;
   color: black;
 }
 
+/* links in navbar change background-color when mouse is clicked down */
 nav a:active {
   background-color: rgb(255, 252, 64);
 }
 
+/* container for searchbutton and searchbar in the navbar top menu */
 .search-content {
   display: flex;
   justify-content: space-evenly;
 }
 
-.searchbar {
-  border-bottom: solid #f1df77 1px;
-}
-
+/*styling of searchbutton and container for search-button image */
 .search-button {
   width: 2em;
   height: 1.5em;
   margin-top: 1px;
-  background: rgba(255, 208, 0, 0.39);
+  background: rgba(255, 208, 0, 0.493);
   border-bottom:  solid #f1df7700 1px;
   float: right;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
+/* button inserted in search-button container, gets sized according to it's parent */
 .search-button img {
   height: 100%;
+  object-fit: cover;
 }
 
+/* container for input search */
+.searchbar {
+  border-bottom: solid #f1df77 1px;
+}
+
+/* styling of input search */
 nav input[type=text] {
   opacity: 0.5;
   font-size: 12px;
   font-family: 'Orbitron', sans-serif;
-  color: #f1df77;
+  color: black;
   height: 1.5em;
-  background-color: rgba(255, 208, 0, 0.39);
+  background-color: rgba(243, 224, 140, 0.534);
 }
 
+/* sets text color on placeholder text */
+::placeholder
+{
+  color:black;
+}
+
+/* makes sure there are no outline when you click on the search input to write */
 nav input[type="text"]:focus {
   outline: none;
 }
 
+/* section to place main news content */
 .big-news {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
 }
 
+/* image container to style and size images in main news content */
 .big-img-container {
   border: solid rgb(2, 160, 252);
   position: relative;
@@ -168,6 +193,7 @@ nav input[type="text"]:focus {
   overflow: hidden;
 }
 
+/* image to fit to big-img-contaier, sure to cover resize and align after container */
 .big-img-container img {
   width: 100%;
   min-height: 100%;
@@ -176,12 +202,14 @@ nav input[type="text"]:focus {
   position: absolute;
 }
 
+/* style and size text in main news content */
 .big-text-container {
   flex: 0.66;
-  background-color: rgba(0, 162, 255, 0.11);
+  background-color: rgba(0, 0, 0, 0.267);
   padding: 10px;
 }
 
+/* grid for the lesser news content, sure to place pictures and text on a even spaced surface with fixed rows and columns */
 .small-news {
   display: grid;
   grid-gap: 80px 20px;
@@ -189,15 +217,25 @@ nav input[type="text"]:focus {
   margin: 80px 20px 80px 20px;
 }
 
-.small-text-container {
-  font-size: 11px;
-}
-
+/* wrapper for all pictures and text in lesser news area to decide placing in their grid box */
 .grid-wrapper {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+/* takes all the pictures in the grid-wrappers and applies other flex properties than the text ones */
+.grid-wrapper:nth-child(odd){
+  align-items: flex-end;
+}
+
+.small-news p {
+  font-size: 11px;
+  margin: 0.5em 0.5em 0.5em 1em;
+}
+
+/* image container for lesser news images, set with transition and transgform for spin */
 .small-img-container {
   width: 7em;
   height: 7em;
@@ -212,15 +250,18 @@ nav input[type="text"]:focus {
 .small-img-container img {
   position: absolute;
   height: 100%;
+  min-width: 100%;
   max-width: 100%;
   object-fit: cover;
 }
 
+/*spins image on mouse over */
 .small-img-container:hover {
   transform: rotateY(360deg);
   transition: all 0.3s ease-in-out 0s;
 }
 
+/*styling of a fixed button to take you to the top of the page */
 .top-button {
   right: 50%;
   right: 0;
@@ -239,13 +280,13 @@ nav input[type="text"]:focus {
   background-color: rgba(236, 184, 15, 0.781);
 }
 
+/*makes sure the footer is always on bottom and takes up the full width of the screen*/
 footer {
   width: 100%;
   position: absolute;
-  bottom: 0;
-
 }
 
+/* wrapper for iems in footer, styles and places */
 .footer-wrapper {
   display: flex;
   width: 100%;
@@ -271,9 +312,9 @@ footer {
   object-fit: cover;
 }
 
-.footer-text-container {
+footer p {
   color:rgba(247, 250, 78, 0.438);
-  font-size: 10px;
+  font-size: 11px;
   margin: 10px;
 }
 
@@ -282,15 +323,12 @@ a {
   color: rgb(2, 160, 252);
   float: right;
   font-family: 'Orbitron', sans-serif;
+  border-radius: 5px;
 }
 
 a:hover {
-  background-color: rgb(0, 46, 73);
-}
-
-h3 {
-  font-family: 'Kufam', cursive;
-  font-size: 14px;
+  background-color: rgb(2, 160, 252);
+  color: black;
 }
 
 h2 {
@@ -298,6 +336,11 @@ h2 {
   color: rgb(2, 160, 252);
 }
 
+h3 {
+  font-family: 'Kufam', cursive;
+  font-size: 14px;
+  margin: 0.5em;
+}
 p {
   font-family: 'Roboto', sans-serif;
 }
@@ -306,7 +349,9 @@ h3:hover, p:hover {
   color: rgb(2, 160, 252);
 }
 
+/*on a very wide screen */
 @media screen and (min-width: 2000px) {
+  /*makes the grid have more content per row */
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(6, 130px 1fr);
   }
@@ -322,6 +367,7 @@ h3:hover, p:hover {
     height: 30em;
   }
 
+  /*less objects per row, because of lesser width */
   .small-news {
     grid-template: repeat(3, 1fr) / repeat(2, 8em 1fr);
   }
@@ -334,12 +380,15 @@ h3:hover, p:hover {
   }
 
 }
+
+/*mobe devices  */
 @media screen and (min-device-width: 320px) and (max-device-width: 669px),
 (max-width: 669px) {
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
   }
 
+  /* places the search button fixed in the top right corner of the screen and resizes it a bit */
   .search-button{
     position: fixed;
     right: 0;
@@ -349,6 +398,7 @@ h3:hover, p:hover {
     width: 2.5em;
   }
 
+  /*hides the searchbar and puts it of screen*/
   .searchbar {
     position: fixed;
     right: -22.5em;
@@ -357,6 +407,8 @@ h3:hover, p:hover {
     border: none;
   }
 
+  /* when the searchbutton is clicked the searchbar will be visible and placed on the screen again,
+  with transition to make it slide in form the right */
   #searchbox:checked ~ .searchbar   {
     visibility: visible;
     width: auto;
@@ -369,23 +421,28 @@ h3:hover, p:hover {
     height: 2.3em;
     background-color: black;
     border-color: rgba(219, 198, 9, 0.822);
+    color:yellow;
   }
 
+  /*hides the top navbar background*/
   nav {
     background-color: rgba(0, 0, 0, 0);
     border: none;
   }
 
+  /* makes menu-button visible in top left corner */
   .menu-button {
     position: fixed;
     display: block;
     left: 0;
     top: 0;
+    border-radius: 1px;
     }
 
+  /*styles menu to be columnar below the menu-button, hidden and without height*/
   .menu-content {
     visibility: hidden;
-    height: 0px;
+    height: 0em;
     max-width: 100vh;
     flex-direction: column;
     align-items: center;
@@ -403,6 +460,8 @@ h3:hover, p:hover {
     flex: 1.5;
   }
  
+  /* gives height and visibility to menu content when menu button is clicked,
+  with transition so it slides down from top */
   #checkbox:checked ~ .menu-content {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.671);
