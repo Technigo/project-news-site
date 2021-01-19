@@ -22,10 +22,24 @@ a {
   color: inherit;
 }
 
+@keyframes animation {
+  0%   {background-color: white; color:black;}
+  25%  {background-color: #FF70A6; color:white;}
+  50%  {background-color: #7765E3; color:white;}
+  100% {background-color: #FCF300; color:black;}
+}
+
 .logo {
   font-family: 'Jacques Francois Shadow', cursive;
   font-size: 40px;
   align-self: center;
+  padding: 7px;
+}
+
+.logo:hover {
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 nav {
@@ -39,12 +53,15 @@ nav {
   color:black;
   font-size: 12px;
   font-weight: 800;
-  padding: 2px;
+  padding: 3px;
 }
 
 .menu:hover {
-  background-color: #FCF300;
   box-shadow: 4px 4px black;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  }
 }
 
 .main-box {
