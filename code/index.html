@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Texturina&family=Xanh+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- dont forget the meta tag for responsiveness -->
   </head>
@@ -53,7 +55,7 @@
         
       </ul>
 
-      <img src="./logo.png"><h1>daily news</h1>
+      <img src="./logo.png"><h1>the daily post</h1>
 
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
@@ -64,19 +66,35 @@
     <div class="header-two"><h2>most recent news</h2><hr color="black" width="70%"></div>
 
 
-    <section class="big-news">
+    <section id="big-news">
       <!-- The big news content -->
 
         <div class="box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
         <div class="box">
-          <h3>Trump tweets again: "FAKE NEWS!"</h3>
+          <h3>Trump tweets again: "FAKE NEWSS!"</h3>
+          <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+            lorem ipsum lorem ipsum lorem ipsum </p>
+        </div>
+
+    </section>
+
+    <!-- The big news content second picture -->
+
+    <section id="big-news-two">
+      
+        <div class="box"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdGJhbGx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+        <div class="box">
+          <h3>Stockmarket plummets!</h3>
           <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
             lorem ipsum lorem ipsum lorem ipsum </p>
         </div>
         
     </section>
 
-    <hr color="black" width="70%">
+    <a id="prev"></a>
+    <a id="next"></a>
+
+  
 
 
     <section class="other-news">
@@ -85,11 +103,21 @@
       <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
       <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
       <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
-
-
     </section>
 
-    <footer class="footer"><p>dailynews.com © The Daily News</p></footer>
+    <section class="other-news">
+      <!-- The other news  -->
+      <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
+      <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
+      <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
+      <div class="small-box"><img src="https://deadline.com/wp-content/uploads/2019/10/shutterstock_editorial_10434333bm.jpg"></div>
+    </section>
 
+    <footer class="footer">
+      <img src="./logo.png">
+      <p>dailynews.com © The Daily News</p></footer>
+
+
+      <script  src="main.js"></script>
   </body>
 </html>

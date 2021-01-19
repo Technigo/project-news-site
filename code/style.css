@@ -21,10 +21,9 @@ header {
 
 h1 {
   color: white;
-  font-family: "Texturina", serif;
+  font-family: "Bellota", serif;
   font-size: 50px;
-  font-variant: small-caps;
-  margin-top: -87px;
+  margin-top: -70px;
   margin-left: 650px;
   position: absolute;
 }
@@ -33,7 +32,14 @@ header img {
   width: 60px;
   margin-left: 77px;
   margin-top: -10px;
-  
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes logo {
+  from {margin-left: 30px;}
+  to {margin-left: 77px;}
 }
 
 /*** NAVBAR ***/
@@ -121,8 +127,16 @@ ul li ul:hover {
 
 /*** BIG NEWS ***/
 
-.big-news {
-  display: inline-flex;
+#big-news {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 40px 20px 10git0px 20px;
+  width: 100%;
+}
+
+#big-news-two {
+  display: none;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 50px;
@@ -150,13 +164,45 @@ ul li ul:hover {
   font-size: 18px;
 }
 
+#prev, #next {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  margin-top: -20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 150px;
+  border-bottom: 6px solid black;
+  border-right: 6px solid black;
+  transform: rotate(130deg);
+}
+
+#next {
+  right: 150px;
+  border-bottom: 6px solid black;
+  border-right: 6px solid black;
+  transform: rotate(-45deg);
+}
+
+#prev:hover, #next:hover {
+  opacity: 0.6;
+}
+
+#home {
+  color: red;
+}
+
 /*** OTHER NEWS***/
 
 .other-news {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin-top: 40px;
   width: 100%;
 }
 
@@ -176,11 +222,21 @@ ul li ul:hover {
 /*** FOOTER ***/
 
 .footer {
-  height: 50px;
+  height: 120px;
   bottom: 0;
   width: 100%;
   background-color: black;
-  color: white;
-  text-align: center;
+  display: inline-block;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+.footer img {
+  width: 100px;
+  float: left;
+  margin: 13px 5px 0px 20px;
 
 }
