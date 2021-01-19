@@ -30,7 +30,12 @@ section {
 }
 
 
-
+/*Styling for mobile phone*/
+@media (max-width: 667px) {
+  nav {
+    display: none;
+  }
+}
 
 /*Styling for tablet*/
 @media (min-width:668px) and (max-width: 1024px) {
