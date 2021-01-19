@@ -1,3 +1,6 @@
+This is a project made during my second week at the Technigo bootcamp.
+The learning objective was to create a responsive landingpage for mobile, desktop and tablet using box model and flexbox to structure and layout the page.
+
 # News Site
 
 Replace this readme with your own information about your project. 
