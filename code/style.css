@@ -263,7 +263,11 @@ footer {
   }
   
   .news a {
-    height: 410px;
+    height: 380px;
+  }
+
+  .news a img {
+    padding-bottom: 0;
   }
 
   .news a div {
@@ -308,6 +312,19 @@ footer {
     flex-basis: 20%;
     text-align: left;
     /** add padding/margin?**/
+  }
+
+  .news a {
+    height: 380px;
+  }
+
+  .news a img {
+    padding-bottom: 0;
+  }
+
+  .news a div {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .news article {
