@@ -30,6 +30,28 @@ footer {
 .mosiac-item.span-2 {
   height: 600px;
 }
+.article-column {
+  background: rgb(212, 143, 212);
+  border: 1px solid black;
+}
+.article-column > * {
+  background: #f1f1f1;
+  border: 1px solid black;
+  margin: 1em;
+}
+.article-list {
+  background: rgb(184, 99, 99);
+  border: 1px solid black;
+}
+.article-list > * {
+  background: #f1f1f1;
+  border: 1px solid black;
+  margin: 1em;
+}
+.footer-links {
+  background: rgb(105, 160, 233);
+  border: 1px solid black;
+}
 /* End of DEBUG STYLES */
 
 /* Default sizing Desktop breakpoint */
@@ -78,15 +100,28 @@ header {
   gap: 10px 10px;
   grid-area: news-mosiac;
 }
-
-footer {
-  grid-area: footer;
-}
-
 /* Sets the bigger news mosiac item to cover 2 spaces in the grid */
 .span-2 {
   grid-column-end: span 2;
   grid-row-end: span 2;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 10px;
+  grid-area: footer;
+}
+
+/* Flex boxes */
+.article-column {
+  display: flex;
+  flex-direction: column;
+}
+.article-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* GRID AREAS */
@@ -169,6 +204,10 @@ footer {
   .span-2 {
     grid-column-end: 1 span;
     grid-row-end: 1 span;
+  }
+
+  footer {
+    grid-template-columns: auto;
   }
 
   .btn-side-nav {
