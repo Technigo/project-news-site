@@ -2,3 +2,19 @@ html {
   background: #0025ff;
   color: #fff;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 1000px;
+  border: 5px solid black;
+  float: left;
+}
+
+.logo {
+  width: 100px;
+  border: 2px solid red;
+  padding: 1px;
+}
