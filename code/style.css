@@ -52,7 +52,6 @@ nav {
 .main-box {
   width: 90%;
   margin: auto;
-  border: 5px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,8 +63,8 @@ nav {
   justify-content: center;
   text-align: center;
   background-color: #FF70A6;
-  border: 3px solid black;
-  margin-bottom: 1.5%;
+  margin-bottom: 25px;
+  box-shadow: 12px 12px black;
 }
 
 .big-news-text {
@@ -84,7 +83,6 @@ nav {
 .news-group {
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
 }
 
 .news-item {
@@ -92,7 +90,8 @@ nav {
   background-color: #7765E3;
   text-align: center;
   margin-bottom: 2%;
-  border: 3px solid black;
+  box-shadow: 12px 12px black;
+  margin-bottom: 25px;
 }
 
 .news-img {
@@ -107,7 +106,7 @@ nav {
 
 .interview {
   position: relative;
-  border: 3px solid black;
+  box-shadow: 12px 12px #FF70A6;
 }
 
 .interview-headline {
@@ -136,9 +135,6 @@ footer {
 }
 
 @media (min-width:667px) and (max-width: 1024px) {
-  body {
-    background-color: thistle;
-  }
 
   .menu {
     font-size: 24px;
@@ -168,6 +164,11 @@ footer {
   .news-item {
     width: 48%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 1025px) {
