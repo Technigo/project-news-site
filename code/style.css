@@ -3,24 +3,32 @@ html {
   color: #fff;
 }
 
+h2 {
+  font-size: 70px;
+}
+
 h5 {
   color: #fff;
   text-decoration: none;
 }
 
+article p {
+  font-size: 25px;
+}
 /*** HEADER ***/
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 } 
 
 header {
-  background: #24292d;
+  background: #0DB2AC;
   height: 80px;
   display: flex;
   align-items: center;
   padding: 0 16px
+
 }
 
 .hamburger {
@@ -53,7 +61,7 @@ nav a {
   padding: 30px 16px;
   display: flex;  
   flex-direction: row;
-  background: cornflowerblue;
+  background: #F5DD7E;
 }
 
 .main-big-news {
@@ -81,18 +89,24 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: coral;
+  background: #FC694D;
 }
 
 .news {
   border: solid 2px black;
-  width: 300px;
+  width: 350px;
   margin: 16px 0 16px 0;
   background: burlywood;
+  margin-top: 30px;
 }
 
 .news a {
   color: #fff;
   text-decoration: none;
   text-align: center;
+}
+
+.news img {
+  width: 250px;
+  margin: 30px 45px 0 45px;;
 }
