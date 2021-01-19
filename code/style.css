@@ -2,3 +2,57 @@ html {
   background: #0025ff;
   color: #fff;
 }
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #000f63;
+  overflow: hidden;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+header img {
+  width: 30px;
+  height: 40px;
+}
+
+.main-news {
+ border: 2px solid white;
+ display: flex;
+}
+ 
+.main-news img {
+  width: 500px;
+}
+
+.main-news p {
+  width: 500px;
+}
+
+.other-news {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.news-card {
+  border: 2px solid white;
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.news-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #000f63;
+}
