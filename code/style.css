@@ -179,15 +179,16 @@ img {
   margin-right: auto;
 }
 
-.one {
+.one, .two{ /*här */
   background: red;
   position: relative;
   width: 50%;
 }
 
+
 .text {
-  color: white;
-  font-size: 20px;
+  color:white;
+  font-size: 12px; 
   position:relative;
   top: 30%;
   left: 50%;
@@ -197,12 +198,22 @@ img {
   text-align: center;
 }
 
+
+
+
+
+
+
 .one:hover .overlay {
   opacity: 1;
 }
 
-.test /*Change name to news1 or something */ {
-  display: block;
+.two:hover .overlay {
+  opacity: 1;
+} /*under */
+
+.test, .test2 /*Change name to news1 or something */ {
+  display: block; /*Här också¨*/
   width: 100%;
   height: auto;
 }
@@ -220,6 +231,8 @@ img {
   transition: .5s ease;
   background-color: #008CBA;
 }
+
+
 
 
 
@@ -427,6 +440,15 @@ button.dropbtn img {
     width: 50%;
   }
 
+  /* .two p {
+    font-size: 12px;
+    font-weight: medium;
+  }
+
+  .one p {
+    font-size: 12px;
+    font-size: medium;
+  } */
 
 
 
