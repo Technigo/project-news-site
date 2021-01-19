@@ -35,7 +35,7 @@ html, body {
 }
 
 .header-wrapper {
-  display:block;
+  display: block;
   position: relative;
   background-image: url("../pictures/ISS.jpg");
   background-attachment: fixed;
@@ -61,7 +61,7 @@ nav {
   width: 100%;
   height: 25px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-bottom: solid #f1df77 1px;
   background-color: rgba(0, 0, 0, 0.425);
   position: fixed;
@@ -69,7 +69,8 @@ nav {
 }
 
 #checkbox, #searchbox {
-  visibility: hidden;
+  display: none;
+  position: fixed;
 }
 
 .menu-button {
@@ -87,13 +88,12 @@ nav {
 }
 
 .menu-content {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
   z-index: 1;
   min-width: 130px;
+  width: 100%;
 }
 
 .menu-content a {
@@ -115,17 +115,22 @@ nav a:active {
   background-color: rgb(255, 252, 64);
 }
 
-.searchbar {
+.search-content {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.searchbar {
+  border-bottom: solid #f1df77 1px;
 }
 
 .search-button {
-  float: right;
-  height: 20px;
-  width: 30px;
-  margin: 3px;
+  width: 32px;
+  height: 25px;
+  margin-top: 1px;
   background: rgba(255, 208, 0, 0.39);
   border-bottom:  solid #f1df7700 1px;
+  float:right;
 }
 
 .search-button img {
@@ -134,11 +139,11 @@ nav a:active {
 
 nav input[type=text] {
   opacity: 0.5;
-  background-color: black;
-  border: solid grey 0.5px;
   font-size: 11px;
   font-family: 'Orbitron', sans-serif;
   color: #f1df77;
+  height: 20px;
+  background-color: rgba(255, 208, 0, 0.39);
 }
 
 nav input[type="text"]:focus {
@@ -331,6 +336,7 @@ h3:hover, p:hover {
     position: fixed;
     right: 0;
     top: 0;
+    margin: 2px;
     height: 30px;
     width: 35px;
   }
@@ -338,13 +344,18 @@ h3:hover, p:hover {
   .searchbar {
     position: fixed;
     right: 36px;
-    height: 34px;
     visibility: hidden;
     top: 2px;
+    border: none;
   }
 
   #searchbox:checked ~ .searchbar {
     visibility: visible;
+  }
+
+  nav input[type=text] {
+    font-size: 12px;
+    height: 25px;
   }
 
   nav {
@@ -353,6 +364,7 @@ h3:hover, p:hover {
   }
 
   .menu-button {
+    position: fixed;
     display: block;
     left: 0;
     top: 0;
