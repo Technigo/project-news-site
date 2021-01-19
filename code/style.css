@@ -52,6 +52,7 @@ p{
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-align: right;
 }
 
 h1{
@@ -64,6 +65,8 @@ h1{
 
 h2{
   font-family: 'Abril Fatface', cursive;
+  color: #FED298;
+  text-align: center;
   font-size: 40px;
   margin-bottom: 0px;
   margin-top: 15px;
@@ -73,6 +76,7 @@ h2{
 
 h3{
   font-family: 'Abril Fatface', cursive;
+  text-align: right;
   font-size: 35px;
   padding-left: 10px;
   padding-top: 0px;
@@ -93,10 +97,8 @@ h3{
 }
 
 .img-artist{
-  margin: 0px;
-  padding: 0px;
   max-width: 100%;
-  border: 0px;
+  object-fit: cover;
 }
 
 .loyle{
@@ -162,7 +164,7 @@ h3{
   }
   h3{
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 30px;
   }
   .author{
     font-size: 20px;
@@ -171,15 +173,81 @@ h3{
     font-size: 25px;
     padding: 15px;
   }
-
   article{
     flex: 300px;
- 
     margin: 10px;
   }
-
   ul{
-    font-size: 34px;
+    font-size: 30px;
   }
 }
-  
+
+@media (min-width: 1024px){
+  body{
+    margin-top: 55px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .header{
+  margin-bottom: 20px;
+  }
+  ul{
+    font-size: 30px;
+  }
+  article{
+    flex: 250px;
+    margin: 8px;
+  }
+  h1{
+    font-size: 90px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  h2{
+    font-size: 75px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .author{
+    font-size: 20px;
+  }
+  .p-mainarticle{
+    font-size: 25px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .p-mainarticle{
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .loyle{
+    text-align: right;
+    height: 300px;
+  }
+  .barney{
+    text-align: right;
+    height: 300px;
+  }
+  .celeste{
+    text-align: right;
+    height: 300px;
+  }
+  .cleo{
+    text-align: right;
+    height: 300px;
+  }
+  .foxwarren{
+    text-align: right;
+    height: 300px;
+  }
+  .joy{
+    text-align: right;
+    height: 300px;
+  }
+  .arlo{
+    text-align: right;
+    height: 300px;
+  }
+}
