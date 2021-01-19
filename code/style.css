@@ -102,7 +102,7 @@ nav {
   font-family: 'Orbitron', sans-serif;
   font-size: 12px;
   color: rgba(239, 240, 173, 0.966);
-  text-align: left;
+  text-align: center;
   padding: 5px 0 5px 0;
 }
 
@@ -125,12 +125,12 @@ nav a:active {
 }
 
 .search-button {
-  width: 32px;
+  width: 30px;
   height: 25px;
   margin-top: 1px;
   background: rgba(255, 208, 0, 0.39);
   border-bottom:  solid #f1df7700 1px;
-  float:right;
+  float: right;
 }
 
 .search-button img {
@@ -190,8 +190,8 @@ nav input[type="text"]:focus {
 }
 
 .grid-wrapper {
-  display:flex;
-  justify-self: start;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .small-img-container {
@@ -228,7 +228,11 @@ nav input[type="text"]:focus {
   border-radius: 5px;
   border: solid rgba(252, 255, 86, 0.336) 1px;
   background-color: rgba(0, 0, 0, 0.459);
- line-height: 0.7em;
+  line-height: 0.7em;
+}
+
+.top-button:hover {
+  background-color: rgba(236, 184, 15, 0.781);
 }
 
 .footer-wrapper {
@@ -349,13 +353,15 @@ h3:hover, p:hover {
     border: none;
   }
 
-  #searchbox:checked ~ .searchbar {
+  #searchbox:checked ~ .searchbar   {
     visibility: visible;
   }
 
   nav input[type=text] {
     font-size: 12px;
     height: 25px;
+    background-color: black;
+    border-color: rgba(219, 198, 9, 0.822);
   }
 
   nav {
@@ -390,7 +396,6 @@ h3:hover, p:hover {
     flex: 1.5;
   }
  
-
   #checkbox:checked ~ .menu-content {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.671);
