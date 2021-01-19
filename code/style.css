@@ -1,38 +1,89 @@
  
- body{
+  body  {
 
   background-color: #eeeeee;
-}
+  }
 
-.wolf {
+  .wolf {
 
-   display: block;
-   float: left;
-   width: 80px;
-   height: 80px;
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
 
   }
 
-h1 {
+/* RESPONSE LAYOUT*/
+
+  @media (min-width: 668px) {
+
+  .wolf {
+
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+   
+    }
+
+  }
+
+
+  h1 {
   color: #d9212d;
   font-family: 'Montserrat', sans-serif;
   text-align-last:center;
   margin-bottom: 2px;
   font-size: 70px;
-    position: relative;
+  position: relative;
    
   }
 
-.subscribe {
-  list-style-type: right;
-  font-size: x-small;
-}
+  /* RESPONSE LAYOUT*/
 
-li {
-  display: inline-block;
+  @media (min-width: 668px) {
+
+  h1 {
+
+  color: #d9212d;
+  font-family: 'Montserrat', sans-serif;
+  text-align-last:left;
+  margin-bottom: 2px;
+  font-size: 50px;
+  position: relative;
+  
+    }
+
+  }
+ 
+
+  .subscribe {
+
+  font-size: x-small;
+  float: left;
+
+  }
+
+
+ /* RESPONSE LAYOUT hhhhhere*/
+
+  @media (min-width: 668px) {
+
+  .subscribe {
+
+  font-size: x-small;
+  float: right;
+
+    }
+
+  }
+
+   li {
+
+  display: block;
   float: right;
   
-}
+  }
 
 li a {
   display: block;
@@ -51,8 +102,10 @@ li a:hover {
 
   border: 70px;
   border: #fff;
-  height: 400px;
+  height: 500px;
   display: flex;
+  float: left;
+  border: 2px solid;
   
 }
 
@@ -86,12 +139,6 @@ p {
 }
 
 
-h3 {
-    font-size: x-small;
-    margin: 60px 0px 10px 30px ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-  }
 
 .flex-container {
 
@@ -100,6 +147,8 @@ h3 {
    display: flex;
    height: 260px;
    width: 1040px;
+   border: 2px solid;
+   margin-top: 80px;
   
     
 }
@@ -110,6 +159,7 @@ h3 {
   justify-content: left;
   text-align: left;
   display: flex;
+
   
 }
 
@@ -129,6 +179,7 @@ h3 {
  display: flex;
  height: 120px;
  width: 1035px;
+
  
 }
 
@@ -180,9 +231,11 @@ h3 {
   justify-content: left;
   text-align: left;
   display: flex;
-  height: 200px;
-  width: 1000px;
-  margin-bottom: 70px;
+  height: 260px;
+  width: 1040px;
+  border: 2px solid;
+  
+ 
 }
 
 .flex-book img{
@@ -202,6 +255,9 @@ h3 {
   display: flex;
   height: 85px;
   width: 1030px;
+  
+
+
   
 
 }
