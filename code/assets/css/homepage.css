@@ -1,0 +1,36 @@
+.main-part {
+  background-color: var(--mainBackgroundColor);
+  padding: var(--medium) 0;
+}
+
+.big-news {
+  background-color: var(--white);
+  padding: calc(var(--spacing) * 2);
+}
+
+.big-news h1 {
+  font-size: var(--large);
+}
+
+.news-title {
+  color: var(--primaryColorDarker);
+}
+
+.news-subtitle {
+  line-height: calc(var(--spacing) * 5);
+}
+
+@media only screen and (min-width: 769px) {
+  .big-news {
+    display: flex;
+  }
+
+  .big-news-img {
+    flex: 4;
+  }
+
+  .big-news-content {
+    flex: 6;
+    padding-left: calc(var(--spacing) * 2);
+  }
+}

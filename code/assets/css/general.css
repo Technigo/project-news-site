@@ -6,6 +6,7 @@ body {
 .main-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 var(--medium);
 }
 
 a {
@@ -17,4 +18,13 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.res-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.block {
+  display: block;
 }
