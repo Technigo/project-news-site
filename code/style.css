@@ -124,6 +124,14 @@ nav a:active {
   text-align: center;
 }
 
+.big-news a:hover {
+  box-shadow: 0 1px 1px rgba(5, 5, 5, 0.5), 
+              0 2px 2px rgba(5, 5, 5, 0.5), 
+              0 4px 4px rgba(5, 5, 5, 0.5), 
+              0 8px 8px rgba(5, 5, 5, 0.5);
+  border-radius: 3px;
+}
+
 /*** Styling the other news ***/ 
 
 .news-container {
@@ -166,14 +174,13 @@ nav a:active {
   padding: 15px;
 }
 
-/** .news a:hover {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-              0 2px 2px rgba(0,0,0,0.12), 
-              0 4px 4px rgba(0,0,0,0.12), 
-              0 8px 8px rgba(0,0,0,0.12),
-              0 16px 16px rgba(0,0,0,0.12);
-  transition: 0,5s; }STYLE THIS **/
-
+.news a:hover {
+  box-shadow: 0 1px 1px rgba(5, 5, 5, 0.5), 
+              0 2px 2px rgba(5, 5, 5, 0.5), 
+              0 4px 4px rgba(5, 5, 5, 0.5), 
+              0 8px 8px rgba(5, 5, 5, 0.5);
+  border-radius: 3px;
+}
 
 /*** Styling the footer ***/
 
