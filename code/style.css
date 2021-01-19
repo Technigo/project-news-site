@@ -56,14 +56,22 @@ nav a {
   background: cornflowerblue;
 }
 
+.main-big-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .main-big-news img {
   width: 40%; 
+  
 }
 
 .article {
   text-align: center;
   background: rosybrown;
-  width: 60%; 
+  width: 40%; 
+  padding: 20px;  
 }
 
 /*** SMALL NEWS ***/
