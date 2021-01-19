@@ -1,37 +1,75 @@
-html {
-  background: #0025ff; 
-  color: #fff;
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+  background-image:url(assets/background.png);
+  background-size:cover;
+  background-position: center;
+  color: #000;
+}
+
+h1{
+  color:black;
 }
 
 .desktop-box {
+background-color: lightgoldenrodyellow;
 border: 4px black double;
 border-radius: 5%;
 display: flex;
-justify-content: center;
-margin:70px;
+margin: 70px;
+padding:100px;
 flex-direction: column;
+}
+
 
 /* * * * KOM IHÅG ATT PUSH/Commit TO GIT * * * */ 
 
 
-}
+
 
 /* HEADER */
 
 header{
-
-  background: rgb(29, 25, 25);
-  height: 80px;
+  background: #13141b;
+  height: 100px;
   padding: 0px;
   display: flex;
   margin: -8px;
-
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Staatliches', cursive;
 }
 
-header img {
+header h2 {
+  color:white;
+  font-size: 80px;
+  margin: 0px;
+  font-family: 'Staatliches', cursive;
+  display: flex;
+}
 
-  width: 40px;
-  height: 40px;
+header nav {
+  display: flex;
+  font-size: 24px;  
+  margin-right: 24px;
+  background-color: #13141b;
+}
+
+header nav a:any-link {
+  padding:10px;
+  margin-right: 60px;
+  color:rgb(9, 85, 32);
+  
+}
+
+.img-container-logo {
+overflow:hidden;
+width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* BIG NEWS */
@@ -45,8 +83,9 @@ h2 {
 /*SMALL NEWS*/
 .small-news {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  text-align: center; 
+
   
 }
 
@@ -54,7 +93,8 @@ h2 {
   border: 2px solid black;
   display: flex;
   background: whitesmoke;  
-  justify-content: space-between;  
+  flex-flow: column wrap;
+
 }
 
 .small-news a:hover{
