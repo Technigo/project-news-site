@@ -15,6 +15,21 @@ footer {
   background: rgb(170, 229, 170);
   border: 1px solid black;
 }
+.large,
+.medium,
+.small-1,
+.small-2 {
+  background: rgb(248, 215, 153);
+  border: 1px solid black;
+}
+.mosiac-item {
+  background: pink;
+  border: 1px solid black;
+  height: 300px;
+}
+.mosiac-item.span-2 {
+  height: 600px;
+}
 /* End of DEBUG STYLES */
 
 /* Default sizing Desktop breakpoint */
@@ -23,9 +38,9 @@ footer {
 /* GRID DISPLAYS */
 body {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 0px 0px;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 300px 400px auto auto 200px;
+  gap: 5px 5px;
   grid-template-areas:
     "header header"
     "hero hero"
@@ -39,17 +54,28 @@ header {
   grid-template-columns: 25% 1fr 25%;
   grid-template-rows: repeat(2, 1fr);
   gap: 5px 5px;
-  grid-area: header;
   grid-template-areas:
     "promo-1 title promo-2"
     "nav-links nav-links nav-links";
+  grid-area: header;
 }
 
-.hero {
+#hero {
+  display: grid;
+  grid-template-columns: 60% repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px 5px;
+  grid-template-areas:
+    "large small-1 small-2"
+    "large medium medium";
   grid-area: hero;
 }
 
-.news-mosiac {
+#news-mosiac {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  gap: 10px 10px;
   grid-area: news-mosiac;
 }
 
@@ -57,12 +83,18 @@ footer {
   grid-area: footer;
 }
 
+/* Sets the bigger news mosiac item to cover 2 spaces in the grid */
+.span-2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
 /* GRID AREAS */
 
-.news-list {
+#news-list {
   grid-area: news-list;
 }
-.news-column {
+#news-column {
   grid-area: news-column;
 }
 .nav-links {
@@ -77,19 +109,35 @@ footer {
 .promo-2 {
   grid-area: promo-2;
 }
+.large {
+  grid-area: large;
+}
+.medium {
+  grid-area: medium;
+}
+.small-1 {
+  grid-area: small-1;
+}
+.small-2 {
+  grid-area: small-2;
+}
+
 .btn-side-nav {
   display: none;
 }
 
 /* Sizing for Tablets */
 @media (min-width: 668px) and (max-width: 1024px) {
+  #news-mosiac {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 /* Sizing for Mobile */
 @media (max-width: 667px) {
   body {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 300px 400px auto auto auto 200px;
     grid-template-areas:
       "header"
       "hero"
@@ -103,6 +151,24 @@ footer {
     grid-template-columns: 25% 1fr;
     grid-template-rows: auto;
     grid-template-areas: "side-nav title";
+  }
+
+  #hero {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60% repeat(2, 1fr);
+    grid-template-areas:
+      "large large"
+      "medium medium"
+      "small-1 small-2";
+  }
+
+  #news-mosiac {
+    grid-template-columns: auto;
+  }
+  /* Changing to cover 1 grid space since mobile only has 1 column. */
+  .span-2 {
+    grid-column-end: 1 span;
+    grid-row-end: 1 span;
   }
 
   .btn-side-nav {
