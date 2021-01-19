@@ -16,6 +16,7 @@ body {
 header {
   background: rgb(143, 16, 16);
   padding: 0 10px;
+  height: 60px;
 }
 header a {
   color: #fff;
@@ -24,28 +25,14 @@ header a {
 /*** HEADER PHONE ***/
 .header-phone {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-phone img {
   width: 40px;
   height: 40px;
   margin-right: 20px;
 
-}
-/*** DROPDOWN MENU ***/
-.dropdown-menu {
-  display: none;
-  background: rgb(156, 156, 156);
-  justify-content: flex-end;
-}
-.dropdown {
-  display: flex;
-  flex-direction: column;
-}
-.dropdown a {
-  text-decoration: none;
-  color: #fff;
-  margin: 2px 2px;
 }
 /*** HAMBURGER ***/
 label div {
@@ -54,11 +41,38 @@ label div {
   width: 25px;
   margin: 5px 3px;
 }
+/*** DROPDOWN MENU ***/
+
+.dropdown {
+  position: absolute;
+  background-color: rgb(156, 156, 156);
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+.dropdown ul {
+  margin: 0;
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.dropdown ul li {
+  padding: 0 15px;
+}
+.dropdown ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+}
+
 input#hamburger {
   display: none;
 }
-input:checked ~ .dropdown-menu {
-    display: flex;
+input:checked ~ .dropdown ul {
+    max-height: 200px;
+    transition: all 0.5s;
   }
 
 
