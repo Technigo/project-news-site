@@ -1,76 +1,111 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f6f9fa;  
-  font-family: 'IBM Plex Serif', serif;  
-  font-size: 14px;
-  color: #171717;
+html {
+  scroll-behavior: smooth;
 }
 
-/*** Banner ***/
+body {
+  margin: 0;
+  background-color: #f6f9fa;  
+  font-family: 'IBM Plex Serif', serif;  
+  color: #1d2125;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+ }
+
 .banner {
-  background-color: #171717;
-  padding: 8px 0;
+  background-color: #24292d;
+  padding: 5px;
 }
 
 .banner a {
   color:#f6f9fa;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: bold;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.banner a:hover{
+.banner a:hover {
   color: #FF13A7;
 }
+/*** HEADER ***/
 
-/*** Navbar ***/
-.menu {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #17171768;
+header {
   background-color: #f6f9fa;
+  border-bottom: 1px solid #24292d73;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
   position: sticky;
   z-index: 100;
   top: 0;
 }
 
-.menu .menu-icon {
-  margin: 13px 10px;
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
 }
 
-.menu .menu-icon div {
-  width: 35px;
-  height: 3px;
-  margin: 8px;
-  background-color: #171717;
+.hamburger div {
+  width: 40px;
+  height: 5px;
+  background-color: #24292d;
+  border-radius: 5px;
 }
 
-.menu img {
-  width: 120px;
-  margin-top: -10px;
-  padding-right: 20px;
+header img {
+  width: 160px;
 }
 
-.menu ul li {
+header img:hover {
+  width: 180px;
+}
+
+nav {
   display: none;
 }
 
-/*** Big News ***/
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #1d2125;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 20px;
+ }
+
+nav a:hover {
+  border-bottom: 2px solid #FF13A7;
+  color: #171717;
+}
+
+/*** BIG NEWS ***/
+
 .big-news {
-  height: 780px;
-  border-bottom: 1px solid #17171768;
-  background-color: #f3f1ee;
+  padding: 20px 40px;
+  border-bottom: 1px solid #24292d73;
+  display: flex;
+  flex-direction: column;
 }
 
 .big-news .img-container {
   position: relative;
-  height: 500px;
+  height: 400px;
+  margin: 20px;
 }
 
 .big-news .img-container .polaroid {
-  color: #171717;
   position: absolute;
   border: 1px solid #a9a9a9;
   background-color: #ffffff;
@@ -90,41 +125,17 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
-.big-news .img-container .image1 {
-  left: 50px;
-  top: 50px;
-  opacity: 0.9;
+.img-container .polaroid img{
+  width: 100%;
 }
 
-.big-news .big-news-text h1 {
-  color: #171717;
-  font-size: 35px;
-  font-family: 'Indie Flower', cursive;
-  text-decoration: none;
-  text-align: center;
-  margin: 0;
- }
-
-.big-news a:hover {
-  text-decoration: underline;
-  
-}
-
-.big-news .big-news-text p {
-  padding: 0 40px;
+.big-news-text p {
   text-align: justify;
-  font-size: 16px;
-  color: rgba(23, 23, 23, 0.7);
+  color: #1d212593;
 }
 
-/*** Other news ***/
-#news-header {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Indie Flower', cursive;
-}
-
-.grid-container {
+/*** OTHER NEWS ***/
+.regular-news {
   margin: 0 20px;
 }
 
@@ -153,6 +164,14 @@ body {
   text-align: center;
 }
 
+.grid-container .item .img-description a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
 .item:hover .image {
   opacity: 0.3;
 }
@@ -161,131 +180,95 @@ body {
   opacity: 1;
 }
 
-/*** Direction icon ***/
+/*** DIRECTION ICON ***/
+
+.direction-icon {
+  display: flex;
+  justify-content: center;
+}
 .direction-icon .fas{
-  color: #f9f9f9; 
+  color: #f6f9fa; 
   background-color: #FF13A7;
   margin-bottom: -10px;
-  margin-left: 50%;
 }
 
-/*** Footer ***/
-.footer {
-  background-color: #171717;
+/*** FOOTER ***/
+
+footer {
+  background-color: #24292d;
   height: 100px;
 }
 
-.footer .icons {
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer .icons .fab, .fas {
+.icons .fab, 
+.fas {
   color: #FF13A7;
-  padding: 10px;
+  padding: 5px;
   margin-top: 30px;
 }
 
-.footer .icons .fab:hover, .fas:hover {
+.icons .fab:hover, 
+.fas:hover {
   color: #f6f9fa;
 }
 
-.footer .icons input[type=text] {
-  border-radius: 180px;
-  border-color: #171717;
-  width: 160px;
-  padding: 10px;
-  margin: 30px 0 5px;
-  font-size: 16px;
+ .icons input[type=text] {
+  border-radius: 10px;
+  border: transparent;
+  width: 130px;
+  padding: 7px;
+  margin: 30px 0 0 15px;
+  font-size: 14px;
   font-family: 'IBM Plex Serif', serif;  
 }
 
-@media (min-width: 667px) {
-  .menu {
-    justify-content: center;
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 700px) {
+  header {
+    justify-content: space-between;
   }
 
-  .menu .menu-icon {
+  nav {
+    display: inline-block; 
+  }
+  
+  .hamburger {
     display: none;
   }
   
-  .menu ul li {
-    display: inline;
-    padding: 0 20px;
-  }
-
-  .menu a {
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
-    color: #171717;
-  }
-
-  .menu a:hover {
-    border-bottom: 2px solid #FF13A7;
-    color: #171717;
-  }
-
-  .menu img {
-    margin-top: 0;
-    padding-right: 0;
-    vertical-align: middle;
-  }
-  
-  .menu #img-hover:hover {
-    border-bottom: none;
-  }
-
   .big-news {
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 50px;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
   .big-news .img-container {
-    width: 40%;
+    width: 100%;
+    height: 500px;
+
   }
 
   .big-news .big-news-text {
-    width: 50%;
-  }
-
-  .big-news .img-container .image1 {
-    left: 20px;
-    top: 50px;
-    transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
+    width: 100%;
   }
 
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-  }
-  
+  } 
 }
 
-
 @media (min-width: 1024px) {
-  .menu ul li {
-    padding: 0 40px;
-  }
-
-  .menu a {
-    font-size: 14px;
-  }
-
   .grid-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
   }
-
 }
 
 
