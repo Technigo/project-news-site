@@ -97,7 +97,7 @@ nav {
   Box-sizing: border-box;
   box-shadow: 2px 2px lightgrey;
   width: 100%;
-  max-width: 1100px;
+  /*max-width: 1100px;*/
 }
 
 .big-news img {
@@ -118,7 +118,7 @@ nav {
   text-align: center;
   background-color: whitesmoke;
   width: 100%;
-  max-width: 1100px;
+  /*max-width: 1100px;*/
 }
 
 .news {
@@ -239,18 +239,30 @@ footer {
   .news-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: flex-start;
     flex-wrap: wrap;
+    /*Add margin?*/
+    height: 1900px;
   }
 
   .news {
     flex-direction: column;
-    align-items: center;
+    /*align-items: center; remove this? */
     flex-basis: 40%;
     justify-content: flex-start;
     margin-right: 20px;
     text-align: left;
+    padding: 15px;
     /**Add padding ?**/
+  }
+  
+  .news a {
+    height: 410px;
+  }
+
+  .news a div {
+    padding: 0 15px 15px 15px;
   }
 
   .news article {
