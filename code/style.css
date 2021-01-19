@@ -9,7 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-#myHeader {
+header {
   width: 90%;
   margin: auto;
   display: flex;
@@ -17,17 +17,12 @@ body {
   padding: 5%;
 }
 
-.logo-container {
-  border: 3px solid black;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.logo {
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 40px;
+  align-self: center;
 }
 
-#logo {
-  width: 130px;
-  object-fit: contain;
-}
 
 #tagline {
   font-family: 'Rock Salt', cursive;
@@ -177,15 +172,16 @@ footer {
 
 @media (min-width: 1025px) {
 
-  #myHeader {
+  header {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .logo-container {
-    flex-direction: row;
-    justify-content: flex-start;
+  .logo {
+    margin: 0;
+    font-size: 25px;
   }
+
   #tagline {
     align-self: flex-end;
   }
