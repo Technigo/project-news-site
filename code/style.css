@@ -1,12 +1,10 @@
 .latest {
   border: 2px solid blue;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
-  flex-wrap: wrap;
+  text-align: center;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 /*-----------Navbar------------ */
@@ -346,12 +344,12 @@ a {
   
   
   .other-news {
-    height: 1000px; /* Vet ej varför jag har denna */
+    height: 1200px; /* Vet ej varför jag har denna */
   }
   
   .other-news .flex-child  {
     width: 570px;
-    height: 220px;
+    height: 270px;
     grid-column:span 2; /* the one making difference */
 
   }
@@ -378,7 +376,17 @@ a {
     display: none;
   } 
 
+  .text {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
 }
+
+
+
+
+
 
 /* Mobile */ 
 @media screen and (max-width: 667px) {
@@ -487,6 +495,11 @@ a {
   .text1 /*Not visible on Mobile Device */ {
     display: none;
   } 
+
+  .text {
+    font-size: 75px;
+    font-weight: bold;
+  }
 
   
 
