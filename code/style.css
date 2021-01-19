@@ -75,6 +75,13 @@ nav {
 }
 
 /*** Styling the big news section ***/ 
+
+.breaking-news {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .big-news {
   margin: 20px;
 }
@@ -132,6 +139,7 @@ nav {
   text-decoration: none;
   width: 100%;
   box-shadow: 2px 2px lightgray;
+  /*padding-right:15px;*/
 }
 
 /*** Styling the footer ***/
@@ -245,6 +253,10 @@ footer {
     /**Add padding ?**/
   }
 
+  .news article {
+    text-align: left;
+  }
+
 }
 
 /*For desktop*/
@@ -279,5 +291,18 @@ footer {
     flex-basis: 20%;
     text-align: left;
     /** add padding/margin?**/
+  }
+
+  .news article {
+    text-align: left;
+  }
+
+  .article-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .article-container img {
+    width: 70%;
   }
 }
