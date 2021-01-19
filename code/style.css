@@ -1,4 +1,108 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/*** HEADER ***/
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto:wght@100;400&family=Rochester&display=swap");
+
+/*** GENERAL STYLING ***/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+/*** HEADER ***/
+nav {
+  padding: 5px 30px;
+  background: #1d3545;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.logo {
+  width: 100%;
+  color: white;
+  font-size: 2.2em;
+  font-family: Rochester, sans-serif;
+  cursor: default;
+  user-select: none; /* this element cannot be selected*/
+  text-align: center; /*new*/
+}
+
+nav ul li.items {
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.1em;
+}
+
+nav ul li:hover a {
+  color: cyan;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+}
+
+nav ul li.items:hover {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #33ffff, inset 0 0 10px #66ffff;
+}
+
+nav ul li.items:hover:after {
+  opacity: 0;
+}
+
+/*** MEDIA QUERIES ***/
+@media all and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul li.logo {
+    text-align: start;
+    flex: 1; /*to keep its lenght independently of the size of the page*/
+    width: 30%;
+    color: white;
+    font-size: 2.8em;
+    font-family: Rochester;
+    cursor: default;
+    user-select: none; /* it can be selectec*/
+  }
+
+  nav ul li.items:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: cyan;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+  }
+
+  nav ul li.items:hover {
+    box-shadow: none;
+  }
 }
