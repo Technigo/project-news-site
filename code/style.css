@@ -1,6 +1,9 @@
 body {
   background-image: url("background.jpg");
   font-family: 'Libre Baskerville', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /************ HEADER ************/
@@ -8,9 +11,7 @@ body {
 header {
   background-color: rgba(255, 255, 255, 0.438);
   display: flex;
-  border-width: 6px;
-  border-style: double;
-  border-color: #3a3c3f;
+  border: 6px double #3a3c3f;
   border-radius: 5px;
   justify-content: space-between;
   align-items: center;
@@ -48,43 +49,33 @@ a {
 /************ BIG NEWS ************/
 
 .big-news {
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 6px double #3a3c3f;
 }
 .big-news img {
-  width: 350px;
-  border-radius: 10px 10px 0 0;
-}
-figure {
-  background-color: white;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
   border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 5px;
+  margin: 10px;
   box-shadow: 5px 5px 5px #3a3c3f;
-}
-figcaption {
-  background-color: #a7adb381;
-  border-radius: 0 0 10px 10px;
-  width: 350px;
-  padding: 5px 0;
 }
 .big-news-text {
   background-color: white;
-  width: 350px;
+  width: 100%;
+  max-width: 800px;
   border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 10px 5px;
-  margin: 0 0 20px 0;
+  margin: 10px;
 }
 h2 {
   margin: 10px;
-  font-style: italic;
 }
 article {
   margin: 10px;
@@ -95,12 +86,15 @@ article p:nth-child(2) {
 /************ SMALL NEWS ************/
 
 .small-news {
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .small-news img {
-  width: 350px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 10px;
 }
 .small-news div {
@@ -108,7 +102,7 @@ article p:nth-child(2) {
   border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 5px;
-  margin: 0 0 20px 0;
+  margin: 10px;
   box-shadow: 5px 5px 5px #3a3c3f;
 }
 
@@ -129,6 +123,10 @@ h3 {
     flex-direction: row;
     justify-content: center;
   }
+  .big-news img, 
+  .big-news-text {
+    width: 50%;
+  }
   article p:nth-child(1) {
     display: none;
   }
@@ -139,7 +137,9 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .small-news div {
-    margin: 10px;
+}
+@media (min-width: 1024px) {
+  .small-news {
+    width: 80%;
   }
 }
