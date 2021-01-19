@@ -1,19 +1,30 @@
-html {
-  background-color: #F0EFF0;
+ 
+ body{
+
+  background-color: #eeeeee;
 }
+
+.wolf {
+
+   display: block;
+   float: left;
+   width: 80px;
+   height: 80px;
+
+  }
 
 h1 {
   color: #d9212d;
   font-family: 'Montserrat', sans-serif;
   text-align-last:center;
   margin-bottom: 2px;
-  padding: 20px;
   font-size: 70px;
-}
+    position: relative;
+   
+  }
 
 .subscribe {
-  list-style-type: left;
-  float: left;
+  list-style-type: right;
   font-size: x-small;
 }
 
@@ -89,7 +100,7 @@ h3 {
    display: flex;
    height: 260px;
    width: 1040px;
-   border: 2px solid;
+  
     
 }
 
@@ -116,27 +127,25 @@ h3 {
  text-align: left;
  align-items:flex-start;
  display: flex;
- height: 220px;
- width: 500;
-
+ height: 120px;
+ width: 1035px;
+ 
 }
 
 
 .flex-boxoneone { 
  
-  
  width: 90%;
-
-
- border: 3px ridge #f7f7f7 ; 
+ border: 3px solid #f7f7f7 ; 
  text-align: end;
  justify-content:left;
  text-align: left;
  align-items:flex-start;
  margin-right: 10px;
+ margin-left: 9px;
   
 
-  }
+}
   
  
 
@@ -183,3 +192,57 @@ h3 {
   width: 250px;
 
 }
+
+.flex-bosstwo {
+
+
+  justify-content:left;
+  text-align: left;
+  align-items:flex-start;
+  display: flex;
+  height: 85px;
+  width: 1030px;
+  
+
+}
+
+.flex-bossone {  
+
+width: 90%;
+border: 3px solid #f7f7f7 ; 
+text-align: end;
+justify-content:left;
+text-align: left;
+align-items:flex-start;
+margin-right: 10px;
+margin-left: 9px;
+
+}
+
+.flex-bossone.despite{
+
+  width: 250px;
+  height: 80px;
+  
+}
+
+
+.flex-bossone.the{
+
+  width: 240px;
+  height: 80px;
+}
+
+.flex-bossone.books { 
+
+  width: 245px;
+  height: 80px;
+}
+
+.flex-bossone.learn {
+
+  width: 240px;
+  height: 80px;
+}
+
+
