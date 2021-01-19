@@ -19,25 +19,51 @@ header {
 }
 header a {
   color: #fff;
-  text-decoration: none;
+  
 }
-/*** HEADER Desktop view***/
+/*** HEADER PHONE ***/
 .header-phone {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 .header-phone img {
   width: 40px;
   height: 40px;
-}
-.hamburger div {
-  background: rgb(163, 162, 162);
-  height: 2px;
-  width: 20px;
-  margin: 3px;
+  margin-right: 20px;
 
 }
+/*** DROPDOWN MENU ***/
+.dropdown-menu {
+  display: none;
+  background: rgb(156, 156, 156);
+  justify-content: flex-end;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown a {
+  text-decoration: none;
+  color: #fff;
+  margin: 2px 2px;
+}
+/*** HAMBURGER ***/
+label div {
+  background: rgb(163, 162, 162);
+  height: 4px;
+  width: 25px;
+  margin: 5px 3px;
+}
+input#hamburger {
+  display: none;
+}
+input:checked ~ .dropdown-menu {
+    display: flex;
+  }
+
+
+
+/*** HEADER Desktop view***/
 .header-desktop {
   display: none;
   align-items: center;
