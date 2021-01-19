@@ -224,7 +224,7 @@ a {
 /* DROPDOWN  */
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #FFE401;
   color: black;
   padding: 16px;
   font-size: 76px;
@@ -410,6 +410,9 @@ a {
 /* Mobile */ 
 @media screen and (max-width: 667px) {
   
+  body {
+    background-color: white;
+  }
 
   .ul1, .ul2 {
     display: none;
@@ -439,6 +442,7 @@ a {
 
   .big-news {
     height: 530px;
+    width: 1200px;
   }
 
   .inside-big {
@@ -449,18 +453,15 @@ a {
 
 
 
-  .other-news .flex-child  {
-    width: 570px;
-    height: 220px; /* the one making difference */
-  }
+  
 
   .other-news {
     /* DU KAN LÄGGA EN DISPLAY:GRID; HÄR, SPELAR INGEN ROLL IFALL DU GÖR DET MEN BARA FÖR ATT LRÄAREN SKA SE ATT DU HAR */
     grid-template-columns: none;
     grid-gap: none;
     flex-wrap: nowrap;
-    width: 1180px;
-    height: 4000px;
+    width: 1200px;
+    height: 3670px;
     display: block;
     justify-content: space-evenly;
 
@@ -476,13 +477,16 @@ a {
 
 
 
-
-
+ 
 
   .other-news .flex-child {
-    width: 100%;
+    width: 1200px;
     height: 500px;
     grid-gap: 10px;
+  }
+
+  .flex-child .one {
+    width: 1200px;
   }
 
   .big-news {
@@ -490,10 +494,11 @@ a {
     display: table-row;
     justify-content:center;
     text-align: center;
+    width: 1200px;
   }
 
   .inside-big {
-    width: 1180px;
+    width: 1200px;
     height: 600px;
   }
 
@@ -502,14 +507,19 @@ a {
     height: 600px;
   }
 
+  .inside-big .pic {
+    width: 1200px;
+  }
+
   .text2 /* Only visible on mobile Device */ {
-    width: 100%;
+    width: 1200px;
     align-items: center;
     justify-content: center;
     height: 100px;
     font-size: 36px;
     font-weight: bold;
     }
+
   
   .text1 /*Not visible on Mobile Device */ {
     display: none;
@@ -520,6 +530,20 @@ a {
     font-weight: bold;
   }
 
+  .latest {
+    font-size: 28px;
+    width: 1200px;
+    height: 100px;
+  }
+
+  .overlay {
+    width: 1200px;
+  }
   
+  .footer {
+    font-size: 28px;
+    height: 70px;
+    align-items: center;
+  }
 
 }
