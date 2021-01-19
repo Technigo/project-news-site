@@ -52,7 +52,7 @@ header {
 
 .big-news-img {}
 
-img {
+.big-news-img img {
   width: 600px;
   height: 500px;
 }
@@ -78,4 +78,32 @@ button {
   text-align: center;
   margin-top: 30px;
   cursor: pointer;
+}
+/* RECENT NEWS */
+
+.recent-news-container {
+ display: flex;
+ justify-content: center;
+ margin-top: 100px;
+}
+.recent-news-heading {
+  margin: 17px;
+}
+
+.recent-news-heading h1 {
+  font-size: 48px;
+}
+
+.news-card-container {
+  display: flex;
+}
+
+.news-card{
+margin: 17px;
+}
+
+.news-card img {
+  width: 250px;
+  height: 300px;
+
 }
