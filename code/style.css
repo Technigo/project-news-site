@@ -2,7 +2,7 @@ body {
   background-color: whitesmoke;
   color: #121212;
   Font-family: Helvetica;
-  Margin: 0;
+  Margin: 10px 0 0 0;
 }
 
 h1 {
@@ -312,6 +312,11 @@ footer {
 
   .news article {
     text-align: left;
+  } /** REMOVE?**/
+
+  .article-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
 }
@@ -370,9 +375,13 @@ footer {
   .article-container {
     flex-direction: row;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .article-container img {
     width: 70%;
+    padding-right: 20px;
+    border-radius: 2%;
   }
 }
