@@ -15,27 +15,61 @@ body {
 /*** HEADER ***/
 header {
   background: rgb(143, 16, 16);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 10px;
 }
-
-header img {
-  width: 50px;
-  height: 50px;
-}
-
-nav a {
+header a {
   color: #fff;
   text-decoration: none;
 }
-nav a:hover {
+/*** HEADER Desktop view***/
+.header-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-phone img {
+  width: 40px;
+  height: 40px;
+}
+.hamburger div {
+  background: rgb(163, 162, 162);
+  height: 2px;
+  width: 20px;
+  margin: 3px;
+
+}
+.header-desktop {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-desktop img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-desktop a:hover {
   background: gray;
   font-size: large;
 }
-
-nav a:active {
+/*** HEADER Tablet view ***/
+.header-tablet {
+  display: none;
+}
+.nav-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-tablet a {
+  margin: 0 15px;
+}
+.header-tablet img {
+  width: 50px;
+  height: 50px;
+}
+.nav-tablet a:focus {
   background:rgba(243, 240, 241, 0.979);
 }
 
@@ -76,7 +110,7 @@ nav a:active {
   justify-content: center;
   flex-wrap: wrap;
 }
-/***
+/*** background img instead of img
 .ordinary-news div {
   height: 50%;
   background-image: url("./logo.svg");
@@ -88,7 +122,13 @@ nav a:active {
 
 /*** MEDIA QUERIES ***/
  @media (min-width: 650px) {
-   .big-news div {
+  .header-phone {
+    display: none;
+  }
+  .header-tablet {
+    display: inline;
+  } 
+  .big-news div {
      text-align: left;
    }
    .news {
@@ -104,7 +144,16 @@ nav a:active {
 
 
  @media (min-width: 900px) {
-   .big-news .container {
+  .header-phone {
+    display: none;
+  }
+  .header-desktop {
+    display: flex;
+  } 
+  .header-tablet {
+    display: none;
+  } 
+  .big-news .container {
      flex-direction: row;
      align-items: top;
      justify-content: center;
