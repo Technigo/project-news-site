@@ -1,9 +1,15 @@
-.latest {
-  border: 2px solid blue;
+body {
+  background-color: #212529;
+}
+
+.latest { /* gör den kanske gul elelr glittrig eller något */
+  border: 4px solid white;
+  border-bottom: 4px solid #212529;
   text-align: center;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 
 }
 
@@ -14,7 +20,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #FFE401;
 }
 
 li {
@@ -23,21 +29,23 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #c9bb40;
+  border-radius: 25px;
 }
 
 /* ----------------Navbar end-----------------*/
 
 
 .flex-container {
-  border-bottom: 4px solid blue;
+  border: 4px solid #FFE401;
+  background-color: #FFE401;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -48,7 +56,7 @@ li a:hover {
 
 .flex-child {
   margin: 5px;
-  border: 2px solid;
+  /*border: 2px solid; */
   border-radius: 5px;
   padding: 5px;
   display: flex;
@@ -64,19 +72,21 @@ img {
 
 
 .big-news {
-  border: 4px solid red;
+  border: 4px solid white;
+  border-bottom: 4px solid #212529;
   height: 330px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   width: 1200px;
   margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
+  background-color: white; 
 }
 
 .inside-big {
   margin: 5px;
-  border: 2px solid;
+  /* border: 2px solid; */
   border-radius: 5px;
   padding: 5px;
   width: 600px;
@@ -108,7 +118,7 @@ img {
 
 /*------ OTHER NEWS SECTION ------*/
 .other-news {
-  border: 2px solid blue;
+  border: 4px solid white;
   height: 500px;
   display: grid; /* test */
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -117,6 +127,7 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 
 .other-news .flex-child  {
@@ -131,7 +142,7 @@ img {
 }
 
 .one { 
-  background: red;
+  background: #212529;
   position: relative;
   width: 50%;
 }
@@ -150,7 +161,7 @@ img {
 }
 
 .one:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 
@@ -172,17 +183,22 @@ img {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #212529;
+}
+
+.big-news a {
+  text-decoration: underline;
+  color: black;
 }
 
 a {
-  text-decoration: none;
-  color: blue;
+  text-decoration: underline;
+  color: white;
 }
 
 /*------ FOOTER-----*/ 
 .footer {
-  border: 2px solid blue;
+  border: 4px solid rgb(184, 179, 179);
   height: 35px;
   display: grid; /* test */
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -309,9 +325,6 @@ a {
   .white {
     width: 50%;
   }
-
-
-
 
 
 
