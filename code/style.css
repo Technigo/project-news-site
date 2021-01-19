@@ -226,7 +226,6 @@ footer {
   background-color: white;
   padding: 10px;
   border: 2px solid light grey;
-  /**box-shadow: 2px 2px lightgray;**/
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -271,6 +270,16 @@ footer {
 .nav-links a {
   color: darkslategrey;
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links a:active {
+  color: blue;
+  font-weight: bold;
 }
 
 /*** Media queries ***/
