@@ -4,9 +4,13 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 30px;  /*Lägg in styling som sätter space mellan bokstäverna */
 }
 
 
@@ -18,11 +22,13 @@ header {
   display: flex;
   align-items: center;
   padding: 0 16px;
+  margin-bottom: 30px;
 }
 
 .logo {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 
 nav, .social-media {
@@ -59,12 +65,21 @@ nav a {
 
 }
 
+.big-news-container {
+
+}
+
 .big-news-image {
 
 }
 
-.big-news-text {
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
 
+.big-news-text {
+  margin-left: 16px;
 }
 
 
@@ -81,7 +96,7 @@ nav a {
 
 /*** FOOTER ***/
 
-.footer {
+footer {
   background: #000;
   height: 300px;
   width: 100%;
@@ -110,9 +125,17 @@ nav a {
 
   } */
 
-  nav, .social-media {
+  nav {
     display: inline-block;
-    text-decoration: none;  
+    text-decoration: none;
+    margin-left: auto;  
+  }
+
+  .social-media {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 16px;
+    margin-left: 20px;  
   }
 
   .hamburger {
@@ -122,6 +145,11 @@ nav a {
 
 /* Desktop - only include the elements that I want to behave differently on this specific device */
 @media (min-width: 1025px) { 
+
+  .big-news-image {
+    width: 900px;
+  }
+  
 
 }
 
