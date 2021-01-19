@@ -11,6 +11,7 @@ html, body {
   min-height: 100vh;
 }
 
+
 .meteor {
   border-color: rgba(231, 116, 71, 0.589);
   background-color: rgb(244, 248, 12);
@@ -40,7 +41,7 @@ html, body {
   background-image: url("../pictures/ISS.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height: 400px;
+  height: 40em;
   box-shadow: 0 1px 4px 2px #f1df77;
   background-position-y: -15vh;
 }
@@ -75,7 +76,7 @@ nav {
 
 .menu-button {
   position: fixed;
-  width: 30px;
+  width: 2em;;
   height: 3px;
   margin: 5px;
   display: none;
@@ -92,7 +93,6 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   z-index: 1;
-  min-width: 130px;
   width: 100%;
 }
 
@@ -125,8 +125,8 @@ nav a:active {
 }
 
 .search-button {
-  width: 30px;
-  height: 25px;
+  width: 2em;
+  height: 1.5em;
   margin-top: 1px;
   background: rgba(255, 208, 0, 0.39);
   border-bottom:  solid #f1df7700 1px;
@@ -139,10 +139,10 @@ nav a:active {
 
 nav input[type=text] {
   opacity: 0.5;
-  font-size: 11px;
+  font-size: 12px;
   font-family: 'Orbitron', sans-serif;
   color: #f1df77;
-  height: 20px;
+  height: 1.5em;
   background-color: rgba(255, 208, 0, 0.39);
 }
 
@@ -160,7 +160,7 @@ nav input[type="text"]:focus {
   border: solid rgb(2, 160, 252);
   position: relative;
   flex: 1 1 auto;
-  height: 500px;
+  height: 30em;
   overflow: hidden;
 }
 
@@ -195,8 +195,8 @@ nav input[type="text"]:focus {
 }
 
 .small-img-container {
-  width: 120px;
-  height: 120px;
+  width: 7em;
+  height: 7em;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -239,7 +239,7 @@ nav input[type="text"]:focus {
   grid-area: footer;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 4em;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(5, 4, 0, 0.438);
@@ -248,8 +248,8 @@ nav input[type="text"]:focus {
 
  .footer-img-container {
   position: relative;
-  height: 50px;
-  width: 85px;
+  height: 3.5em;
+  width: 6em;
   margin: 5px;
   overflow:hidden;
 }
@@ -308,14 +308,14 @@ h3:hover, p:hover {
     font-size: 45px;
   }
 
-  .header-container {
-    height: 300px;
+  .header-wrapper {
+    height: 30em;
     background-image: url("../pictures/ISS1280px.jpg");
     background-position-y: -20vh;
   }
 
   .small-news {
-    grid-template: repeat(3, 1fr) / repeat(2, 130px 1fr);
+    grid-template: repeat(3, 1fr) / repeat(2, 8em 1fr);
   }
 }
 
@@ -325,15 +325,11 @@ h3:hover, p:hover {
     align-items: space-evenly;
   }
 
-  nav a, nav input[type="text"] {
-    font-size: 9px;
-  }
-
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 540px),
-(max-width: 600px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 669px),
+(max-width: 669px) {
   .small-news {
-    grid-template: repeat(6, 1fr) / repeat(1, 130px 1fr);
+    grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
   }
 
   .search-button{
@@ -341,13 +337,13 @@ h3:hover, p:hover {
     right: 0;
     top: 0;
     margin: 2px;
-    height: 30px;
-    width: 35px;
+    height: 2em;
+    width: 2.5em;
   }
 
   .searchbar {
     position: fixed;
-    right: 36px;
+    right: 2.5em;
     visibility: hidden;
     top: 2px;
     border: none;
@@ -359,7 +355,7 @@ h3:hover, p:hover {
 
   nav input[type=text] {
     font-size: 12px;
-    height: 25px;
+    height: 2.3em;
     background-color: black;
     border-color: rgba(219, 198, 9, 0.822);
   }
@@ -399,15 +395,15 @@ h3:hover, p:hover {
   #checkbox:checked ~ .menu-content {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.671);
-    height: 400px;
+    height: 40em;
   }
   
   header h1 {
     font-size: 35px;
   }
 
-  .header-container {
-    height: 250px;
+  .header-wrapper {
+    height: 25em;
     background-image: url("../pictures/ISS640px.jpg");
   }
 }
