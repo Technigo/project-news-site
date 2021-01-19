@@ -10,7 +10,9 @@ body {
   padding: 0 .25rem;
 }
 
-li, header {
+li, 
+header {
+  transition: .4s ease-out;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
@@ -21,7 +23,6 @@ html {
 }
 
 h1 {
-  /* padding: .5rem; */
   font-style: italic;
   font-size: 1.1rem;
   line-height: 1.4;
@@ -30,43 +31,46 @@ h1 {
 p {
   font-size: .8rem;
   line-height: 1.5;
-  /* padding: .5rem; */
   margin-top: .5rem;
-  /* hyphens: auto; */
 }
 
 main section .text {
-  /* background-color: burlywood; */
+  transition: .4s ease-out;
   border-left: 1px solid #EBEBEB;
-  /* background-color: brown; */
   padding: .5rem;
   padding-left: .75rem;
+  
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+nav li:hover,
+main section .text:hover {
+  color: #888;
+  cursor: pointer;
+}
+
 main section .image {
   background-color: #EBEBEB;
-  /* background-size: cover; */
-  background-size: 50% 50%;
-  /* width: 0; */
   overflow: hidden;
 }
 
 main section .image img {
-  background-size: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
 header {
+  transition: .1s ease-in-out;
   padding: 0 1rem;
-  /* margin-top: 0.5rem; */
   height: 2.5rem; 
   display: flex;
   justify-content: space-between;
   background-image: url('resources/logo.svg');
-  background-position: 50% 50%;
-  background-size: 50%;
+  background-position: 50% 60%;
+  background-size: 16rem;
   background-repeat: no-repeat;
 }
 
@@ -158,7 +162,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding: .25rem 0 .15rem 0;
+  padding: .25rem 3rem .15rem 3rem;
 }
 
 nav ul li {
@@ -188,6 +192,8 @@ header {
 }
 
 .top-news {
+  transition: .1s ease-in-out;
+
   display: flex;
   flex-direction: column;
   height: 100vw;
@@ -197,16 +203,12 @@ header {
 
 .top-news div {
   flex-grow: 2;
-  /* background-color: #EBEBEB; */
   
 }
 
 .top-news .image {
-  /* background-color: darkgrey; */
   flex-grow: 4;
 }
-
-
 
 .top-news .optional {
   display: none;
@@ -222,7 +224,7 @@ header {
   width: 100%;
   height: 100%;
   margin: .5rem 0;
-  /* background-color: #EBEBEB; */
+  background-color: #EBEBEB;
 
 }
 
@@ -234,7 +236,6 @@ header {
 }
 
 .small-news .image {
-  /* background-color: #EBEBEB; */
   height: 16rem;
 }
 
@@ -259,7 +260,6 @@ footer {
     height: 3rem;
     background-size: 16rem;
     background-position: 50% 80%;
-    /* background-color: blue; */
   }
 
   .left > .hamburger {
@@ -295,7 +295,6 @@ footer {
   }
   
   .small-news div {
-    /* background-color: #EBEBEB; */
     height: 16rem;
   }
   
@@ -303,12 +302,8 @@ footer {
     width: 0;
   }
 
-  
-  
   .small-news div {
-    
     flex: 1;
-    /* min-width: 15%; */
     min-width: 13rem;
     max-width: 20rem;
   }
