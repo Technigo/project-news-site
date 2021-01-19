@@ -11,28 +11,60 @@ header {
 }
 
 .logo-and-title {
-display: flex;
-justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  
+  .navlink {
+    display:block;
+    text-align: center;
+  }
 
+section.big-news {
+ width: 600px;
+ padding: 20px;
+ display: flex;
+ box-sizing: border-box;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center; 
 }
 
-.logo {
-  width: 60px;
-}
-
-
-.navlink {
-  display:block;
-  text-align: center;
-}
+ /*Set background-color to see section-Remove this later*/
 section {
-  background-color: red;
+  background-color: ;
+}
+
+section.small-news {
+  width: 600px;
+ padding: 20px;
+ display: flex;
+ box-sizing: border-box;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+article {
+  width: 500px;
+  padding: 25px;
+  background-color: white;
 }
 
 figure.big-news {
 background-color: white;
 width: 500px;
-padding: 20px;
+padding: 25px;
+}
+
+figcaption {
+  font-family: 'Kalam', cursive;
 }
 
 img.big-news {
