@@ -5,13 +5,43 @@ body {
 .latest { /* gör den kanske gul elelr glittrig eller något */
   border: 4px solid white;
   border-bottom: 4px solid #212529;
-  text-align: center;
+  /*text-align: center; */
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+}
+
+.latest h1 {
+  position: relative;
+  animation-name: latest;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ 
+  display: inline; /* Ta bort denna och se skillnaden */
+  /* width: 400px; /*200px*/
+  /* height: 100px; /*40px*/
+  background-color: #FFE401;
+  justify-content:last baseline;
+  align-items: flex-end;
+  border-radius: 25px;
 
 }
+
+
+/* Animation */
+@keyframes latest {
+  0%   { left:0px; top:0px;}
+  20%  { left:200px; top:0px;}
+  40%  { left:500px; top:0px;}
+  60%  { left:800px; top:0px;}
+  100%  { left:1000px; top:0px;}
+
+
+}
+
+
 
 /*-----------Navbar------------ */
 
