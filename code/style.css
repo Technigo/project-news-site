@@ -1,4 +1,90 @@
 html {
-  background: #0025ff;
+  background: #c3c8e6;
   color: #fff;
+}
+
+h5 {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*** HEADER ***/
+
+.logo {
+  width: 40px;
+  height: 40px;
+} 
+
+header {
+  background: #24292d;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #fff;
+}
+
+nav {
+  display: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/*** BIG NEWS ***/
+
+.big-news {
+  padding: 30px 16px;
+  display: flex;  
+  flex-direction: row;
+  background: cornflowerblue;
+}
+
+.main-big-news img {
+  width: 40%; 
+}
+
+.article {
+  text-align: center;
+  background: rosybrown;
+  width: 60%; 
+}
+
+/*** SMALL NEWS ***/
+
+.small-news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: coral;
+}
+
+.news {
+  border: solid 2px black;
+  width: 300px;
+  margin: 16px 0 16px 0;
+  background: burlywood;
+}
+
+.news a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
 }
