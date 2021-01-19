@@ -63,6 +63,14 @@ nav {
   background-color: #FF70A6;
   margin-bottom: 25px;
   box-shadow: 12px 12px black;
+  transition: 0.5s ease;
+}
+
+.big-news:hover {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+  transition: 0.5s ease;
 }
 
 .big-news-text {
@@ -90,6 +98,14 @@ nav {
   text-align: center;
   box-shadow: 12px 12px black;
   margin-bottom: 25px;
+  transition: 0.5s ease;
+}
+
+.news-item:hover {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  transition: 0.5s ease;
 }
 
 .news-img {
@@ -105,6 +121,14 @@ nav {
 .interview {
   position: relative;
   box-shadow: 12px 12px #FF70A6;
+  transition: 0.5s ease;
+}
+
+.interview:hover {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  transition: 0.5s ease;
 }
 
 .interview-headline {
