@@ -1,5 +1,5 @@
 html {
-  background: rgba(7, 7, 7, 0.932);
+  background: rgba(63, 83, 110, 0.932);
   color: rgb(255, 255, 255);
 }
 
@@ -11,19 +11,30 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
 /*** HEADER ***/
-header {
-  background: rgb(143, 16, 16);
+.header-general {
+  background-image: url(./header_picture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 10px;
-  height: 60px;
+  height: 70px;
 }
-header a {
-  color: #fff;
-  
+.nav-link {
+  color: rgb(8, 63, 114);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(70, 93, 119);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo {
+  width: 80px;
+  height: 70px;
+
 }
 /*** HEADER PHONE ***/
 .header-phone {
@@ -31,54 +42,43 @@ header a {
   align-items: center;
   justify-content: space-between;
 }
-.header-phone img {
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
 
-}
-/*** HAMBURGER ***/
-label div {
-  background: rgb(163, 162, 162);
+/*** HEADER PHONE: HAMBURGER ***/
+.hamburger-line {
+  background: rgb(48, 79, 121);
   height: 4px;
   width: 25px;
   margin: 5px 3px;
 }
-/*** DROPDOWN MENU ***/
+/*** HEADER PHONE: DROPDOWN MENU ***/
 
 .dropdown {
   position: absolute;
-  background-color: rgb(156, 156, 156);
-  top: 60px;
-  left: 0;
-  width: 100%;
+  background-color: rgba(60, 107, 136, 0.849);
+  top: 70px;
+  right: 0;
+  margin-left: 150px;
 }
-.dropdown ul {
+.dropdown-list {
   margin: 0;
   list-style-type: none;
   max-height: 0px;
   overflow: hidden;
   transition: all 0.5s;
+  text-align: right;
 }
-.dropdown ul li {
-  padding: 0 15px;
-}
-.dropdown ul li a {
+.dropdown .nav-link {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
   padding: 12px;
+  color: rgb(230, 236, 238);
 }
 
 input#hamburger {
   display: none;
 }
-input:checked ~ .dropdown ul {
+input:checked ~ .dropdown .dropdown-list {
     max-height: 200px;
     transition: all 0.5s;
-}
-.dropdown ul li a:focus {
-  background-color: rgb(146, 146, 146);
 }
 
 
@@ -88,16 +88,11 @@ input:checked ~ .dropdown ul {
   display: none;
   align-items: center;
   justify-content: space-between;
+  color:rgb(143, 194, 241)
 }
 
-.header-desktop img {
-  width: 60px;
-  height: 60px;
-}
-
-.nav-desktop a:hover {
-  background: gray;
-  font-size: large;
+.nav-link:hover {
+  background: rgb(207, 226, 245);
 }
 /*** HEADER Tablet view ***/
 .header-tablet {
@@ -108,15 +103,12 @@ input:checked ~ .dropdown ul {
   align-items: center;
   justify-content: space-between;
 }
-.nav-tablet a {
+.nav-tablet .nav-link {
   margin: 0 15px;
 }
-.header-tablet img {
-  width: 50px;
-  height: 50px;
-}
-.nav-tablet a:focus {
-  background:rgba(243, 240, 241, 0.979);
+
+.nav-tablet .nav-link:focus {
+  background:rgba(163, 206, 247, 0.979);
 }
 
 /*** BIG NEWS ***/
@@ -126,16 +118,32 @@ input:checked ~ .dropdown ul {
   flex-direction: column;
   justify-content: center;
   padding: 30px 16px;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
 }
 
-.big-news img {
+.bignews-image {
   width: 100%;
 }
 
-.big-news div {
+.big-news .container {
   text-align: center;
+}
+
+.bignews-para2 {
+  display: none;
+}
+.bignews-para1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(218, 232, 248);
+  font-size: 1.1em;
+}
+.read-more{
+  text-decoration: none;
+  color: rgb(3, 36, 58);
+}
+.read-more:hover, .read-more:focus {
+  background:#fff;
 }
 
 /*** ODINARY NEWS ***/
@@ -145,31 +153,31 @@ input:checked ~ .dropdown ul {
 }
 .each-news {
   display: flex;
-
+  padding: 10px;
 }
-.each-news img {
+.ordinarynews-headline {
+  padding: 0;
+  margin-top: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+.ordinarynews-image {
   width: 40%;
+  height: auto;
   margin-right: 10px;
+  align-self: flex-start;
+
 }
 .news {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-/*** background img instead of img
-.ordinary-news div {
-  height: 50%;
-  background-image: url("./logo.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}***/
 
 /*** FOOTER ***/
 footer {
   display: block;
-  background: rgb(112, 92, 92);
+  background: rgb(55, 72, 94);
   margin-top: 20px;
   width: 100%;
 
@@ -181,24 +189,42 @@ footer ul {
 
 /*** MEDIA QUERIES ***/
  @media (min-width: 650px) {
+  .nav-link{
+    background:rgba(143, 194, 241, 0.651);
+  }
+  
   .header-phone {
     display: none;
   }
   .header-tablet {
     display: inline;
   } 
-  .big-news div {
+  .big-news .container {
      text-align: left;
-   }
-   .news {
+  }
+  .news {
     flex-wrap: wrap;
     flex-direction: row; 
-   }
-   .news a {
+  }
+  .each-news {
      width: 40%;
-     margin-right: 15px;
+     margin: 0 15px;
      align-items: top;
-   }
+     flex-direction: column;
+  }
+  
+  .ordinarynews-image {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(145, 174, 201, 0.911);
+    margin-bottom: 10px;
+  }
+  .ordinarynews-image:hover {
+    box-shadow: 0 4px 10px rgba(40, 141, 235, 0.747);
+    /* transform: scale(1.2); */
+  }
+  .each-news:hover {
+    transform: scale(1.1);
+  }
  }
 
 
@@ -217,15 +243,14 @@ footer ul {
      align-items: top;
      justify-content: center;
    }
-   .big-news img {
+  .bignews-image {
      width: 50%;
      margin-right: 30px;
-   }
-   .news {
-     flex-wrap: nowrap;
-   }
-   footer {
-     position: fixed;
-     bottom: 0px;
-   }
+  }
+  .bignews-para1, .bignews-para2 {
+    display: block;
+  }
+  .news {
+    flex-wrap: nowrap;
+  }
  }
