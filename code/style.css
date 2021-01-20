@@ -40,7 +40,6 @@ html {
     padding: 10px;
   }
   
-
 /*big news (main) layout*/
 .main {
   background-color: #C5E3D5;
@@ -152,13 +151,23 @@ html {
     width: 100%;
   }
 
-  
 /*footer layout*/
   .footer {
     background-color: #E7D6D6;
     text-align: center;
     font-family: verdana, sans-serif;
     padding: 10px;
+  }
+
+  .iheart {
+    color: black;
+    font-size: 20px;
+    -webkit-animation: colorswap 5s infinite alternate;
+  }
+
+  @-webkit-keyframes colorswap {
+    from {color: black;}
+    to {color: red;}
   }
 
 
@@ -298,6 +307,7 @@ html {
     box-shadow: 5px 5px lightgrey;
   }
 }
+
 
 /*adjustment for screens min-width 800px*/
 @media (min-width:800px) {
