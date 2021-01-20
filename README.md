@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a Technigo Bootcamp week 2 project. The assignment was to create a classic magazine or newspaper site and practise structuring webpages using box model, using flexbox as layout and creating responsive webpages for mobile, desktop and tablet.
 
 ## The problem
 
