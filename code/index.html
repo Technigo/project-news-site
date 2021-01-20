@@ -6,60 +6,26 @@
     <link rel="stylesheet" href="./style.css" />
     <meta name = "viewport" content="width = device- width, 
     initial-scale = 1.0">
-
     
   </head>
   
-
-
   <body>
-    
     <header>
 
-      	
-
-        
-
         <img src="logo.svg" alt="TECHNIGO LOGON">
-        <h2>New Year!</h2>
-
+        <h2>Happy New Year!</h2>
+      
         <nav>
-            <a href="#">MODERN</a>
-            <a href="#">ORTHODOX</a>
-            <a href="#">ASIA</a>
-            <a href="#">AMERICA</a>
-            <a href="#">AUSTRALIA</a>
-
-
-
-
-
-
+            <a href="#home">HOME</a>
+            <a href="#modern">MODERN</a>
+            <a href="#old">OLD</a>
+            <a href="#asia">ASIA</a>
+            <a href="#america">AMERICA</a>
+            <a href="#australia">AUSTRALIA</a>
 
         </nav>
     </header>
 
-    <!---
-
-        <section class= "big-news">
-      <div class = "big-news-child">
-        <div class = "image-container">
-          <img class = "big" src = "./images/firework1.jpg" />
-         
-        </div>  
-      
-      </div>
-
-      <div class = "big-news-child">
-
-        <p class = "main-news">New Year celebrations around the world 
-          differs not only by a tradition but also by a time of the
-          celebration</p>
-      
-      
-      </div>   
-        
-      --->
 
 
     <section class= "big-news-container">
@@ -72,9 +38,14 @@
 
 
         <div class = "big-news-child">
-          	<p class = "main-news">New Year celebrations around the world 
-          		differs not only by traditions and customs but also by a day of the holidays. Nowadays for the sake of convinience there is a standartization of time around the world, so we do celebrate the new year on the 1st of January. Fortunately local traditions are alive and they are related to the religious and cultural heritage. That is why in some places new year is coming in winter, in some places in spring and in some it never comes.  
-          	</p>
+          	<p class = "main-news"><a name = "home">New Year celebrations around the world 
+              differs not only by traditions and customs but also by a day of the holidays. 
+              Nowadays for the sake of convinience there is a standartization of time around 
+              the world, so we do celebrate the new year on the 1st of January. 
+              Fortunately local traditions are alive and they are related to the 
+              religious and cultural heritage. That is why in some places new year is 
+              coming in winter, in some places in spring and in some it never comes.  
+          	</p></a>
       
       
       	</div>   
@@ -89,14 +60,95 @@
 
 
     <section class = "flex-parent other news">
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
-      <div class = "flex-child western"></div>
+      <div class = "flex-child western" onclick= "window.open(href='https://bestlifeonline.com/global-new-years-eve-traditions/')">
+        <img src = "./images/western.jpg" 
+        alt="Western New Year" />
+    
+          <p class = "other-news"><a name ="modern">January 1
+            <br>Gregorian calender</a> 
+          </p>
+      </div>
+
+      <div class = "flex-child russian" 
+      onclick= "window.open(href='https://russiapedia.rt.com/of-russian-origin/old-new-year/')">
+        <img src = "./images/russian.jpg" 
+        alt="Julian calender" />
+          
+          <p class = "other-news"><a name = "old">January 14
+            <br>Julian calender</a>  
+          </p>
+         
+      </div>
+
+      <div class = "flex-child chinese" 
+      onclick= "window.open(href='https://en.wikipedia.org/wiki/Chinese_New_Year')">
+        
+        <img src = "./images/chinese.jpg" 
+        alt="Lunar New Year" />
+    
+          <p class = "other-news"><a name = "asia">Februari 12
+            <br>Lunar calender</a>  
+          </p>
+      </div>
+
+      <div class = "flex-child vietnamese" 
+      onclick= "window.open(href='https://en.wikipedia.org/wiki/T%E1%BA%BFt')">
+        <img src = "./images/vietnamese.jpg" 
+        alt="Lunar New Year" />
+    
+          <p class = "other-news">Februari 12
+            <br>Lunar calender  
+          </p>
+      </div>
+
+
+      <div class = "flex-child iran"
+      onclick= "window.open(href='https://en.wikipedia.org/wiki/Nowruz')">
+        <img src = "./images/iran.jpg" 
+        alt="Solar New Year" />
+    
+          <p class = "other-news"> March 21
+            <br>Solar calender  
+          </p>
+      </div>
+
+
+      <div class = "flex-child thai"
+      onclick= "window.open(href='https://en.wikipedia.org/wiki/Songkran_(Thailand)')">
+        <img src = "./images/thai.jpg" 
+        alt="Thai New Year" />
+    
+          <p class = "other-news"> April 12
+            <br>Buddhist calender  
+          </p>
+      </div>
+
+
+      <div class = "flex-child amindians"
+      onclick= "window.open(href='http://blog.nativepartnership.org/new-year-a-time-of-new-beginnings/')">
+        <img src = "./images/american.jpg" 
+        alt="Lunar New Year" />
+    
+          <p class = "other-news"> <a name = "america"> December 21
+            <br>Lunar calender  </a>
+          </p>
+      </div>
+
+      <div class = "flex-child aborigenees"
+      onclick= "window.open(href='https://www.sbs.com.au/nitv/nitv-news/article/2018/01/03/why-there-no-new-year-seasonal-calendars-indigenous-australia')">
+        <img src = "./images/aborigenees.jpg" 
+        alt="No New Year" />
+    
+          <p class = "other-news"> <a name = "australia">No New Year
+            <br>Circular calender  </a>
+          </p>
+      </div>
+
+
+
+
+
+
       
 
 
@@ -107,8 +159,6 @@
 
     
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    
   </body>
 </html>

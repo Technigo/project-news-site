@@ -16,7 +16,7 @@ body {
 
 header {
     background: navy;
-
+    
     height: 80px;
     display: flex;
     align-items: center;
@@ -42,11 +42,25 @@ nav {
 
 nav a {
     color: #fff;
+    font-size: 10px;
     text-decoration: none;
     margin-left: 16px;
+    
 
 }
 
+/* NAV bar
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(3, 28, 80);
+  margin:5px;
+  display: flex;
+
+
+  }
+*****/
 /**************  MAIN NEWS     ****************/
 
 .big-news-container {
@@ -59,6 +73,10 @@ nav a {
 
 .big-news-container img {
     width: 100%;
+    border: 2px solid black;
+
+    box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
+
 }
 
 .big-news-container section {
@@ -67,6 +85,9 @@ nav a {
 }
 
 .main-news {
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
 
 }
 
@@ -88,6 +109,62 @@ nav a {
   margin: 5px;
 }
 
+
+/****** OTHER NEWS     *****************/
+.flex-parent {
+  /*border: 2px solid blue;*/
+  height: 100%;
+  display : flex;
+  justify-content: center space-between 2px space-around 2px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+
+.flex-child {
+  border: 1px solid rgb(21, 10, 51);
+  box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
+  background:rgb(211, 189, 245);
+  display: flex;
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  
+  }
+
+
+
+
+.flex-child img {
+  padding: 2px;
+  box-shadow: 1px 2px 1px 1px rgba(63, 20, 59, 0.4);
+
+  width: 50%;
+  
+}
+
+.flex-child img:hover{
+  border: 3px solid rgb(251, 5, 190);
+  
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 2px 5px 2px 2px rgba(80, 5, 72, 0.4);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.other-news {
+  padding: 10px;
+  font-size: 20px;
+  
+  
+}
+
 /******************  MEDIA QUARIES  *********************/
 
 
@@ -102,10 +179,11 @@ nav a {
     
     .big-news-container {
       padding: 100px, 10px;
+
       display: flex;
       flex-direction: row;
 
-}
+    }
     .big-news-container div {
         text-align: left;
 
@@ -117,38 +195,45 @@ nav a {
       border: 2px solid black;  
       margin: 5px;
       padding: 5px;
+      max-width: 250px;
+
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       flex-grow: 1;
-      max-width: 250px;
+      
     }
 
 
-  }
-
-
-
-
-
-.flex-parent {
-  border: 2px solid blue;
-  height: 500px;
-  display : flex;
-  justify-content: center space-between 2px space-around 2px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 5px;
-}
-
-
-.flex-child {
-  border: 2px solid black;
   
-  margin: 5px;
-  width: 200px;
-  height: 100px;
-  flex-grow: 1;
 
+    /*
+
+  .flex-parent {
+    border: 2px solid blue;
+    height: 100%;
+    display : flex;
+    justify-content: center space-between 2px space-around 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  */
+  
+  .flex-child {
+    border: 2px solid black;
+    display: flex;
+    margin: 5px;
+    width: 40%;
+    height: 100%;
+    flex-grow: 1;
+    
+  
+  
+  }
+  
+  .flex-child img {
+    width: 50%;
+  }
 
 }
