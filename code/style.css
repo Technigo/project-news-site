@@ -4,11 +4,8 @@ html {
 }
 
 h1 {
-  font-size: 50px;
   font-family: 'balsamiq Sans', cursive;
   background: lightblue;
-  margin-right: 1000px;
-
 }
 
 h2 {
@@ -33,6 +30,7 @@ article p {
 .header {
   background: #0DB2AC;
   height: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,88 +39,122 @@ article p {
 
 
 
-nav {
-  display: flex;
-}
+
 
 nav a {
   color: #fff;
+  font-family: 'balsamiq Sans', cursive;
   text-decoration: none;
   margin-left: 16px;
 } 
 
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
 
-.menu {
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #fff;
+}
+
+/*.menu {
   display: flex;
   flex-direction: row;
   background: #FC694D;
   color: #fff;
   text-decoration: none;
   margin-left: 16px;
-}
+} */ 
 
 /*** BIG NEWS ***/
 
 .big-news {
+  width: 100%;
   padding: 30px 16px;
   display: flex;  
-  flex-direction: row;
+  flex-direction: column;
   background: #F5DD7E;
 }
 
 .main-big-news {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .main-big-news img {
-  width: 40%; 
+  width: 80%; 
+  margin-bottom: 20px;
   
 }
 
 .article {
   text-align: center;
   background: rosybrown;
-  width: 40%; 
-  padding: 20px;  
+  width: 65%; 
+  padding: 47px;
+  
 }
 
 /*** SMALL NEWS ***/
 
 .small-news {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   background: #FC694D;
 }
 
 .news {
   border: solid 2px black;
-  width: 350px;
+  width: 45%;
   margin: 16px 0 16px 0;
   background: burlywood;
   margin-top: 30px;
+  align-items: center;
 }
 
 .news a {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  
 }
 
 .news img {
   width: 250px;
-  margin: 30px 45px 0 45px;;
+  height: 250px;
+  margin: 35px;
 }
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 768px) {
+@media (min-width: 667px) {
   .header {
-    text-align: center;
+      justify-content: space-between;
+      text-align: center;
   }
 
-  
+  nav a {
+    display:inline-block;
+  }
+
+  .hamburger {
+      display: none;  
+  }
+} 
+
+@media (min-width: 1024px) {
+  nav a {
+    display: none;
+  }
 }
