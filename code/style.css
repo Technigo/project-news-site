@@ -3,11 +3,19 @@
 html {
   background-image: url("/images/material-birchwood.svg");
   color: rgb(43, 36, 23);
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
 }
 
 .header {
   box-sizing: border-box;
   display: grid;
+  justify-content: center;
   grid-template-columns: 150px 300px 150px;
   grid-template-rows: 65px 67px;
   grid-template-areas: 
@@ -108,39 +116,48 @@ img.small-news {
 /*Styling for tablet and small desktop*/
 @media (min-width:768px) and (max-width: 1200px) {
 
-  header {
+  .header {
     box-sizing: border-box;
     display: grid;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin: 0;
     border: 2px solid blue;
-    grid-template-columns: 40px 40px auto 40px 40px;
-    grid-template-rows: 150px;
+    grid-template-columns: 100px 100px 200px 100px 100px;
+    grid-template-rows: 100px;
     grid-gap: 10px;
     grid-template-areas: 
     "navlink1 navlink2 logo navlink3 navlink4";
   }
 
-  .navlink1 {
+  .navlink1, .navlink2, .navlink3, .navlink4 {
     display: block;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 24px;
+  }
+
+  .navlink1 {
     grid-area: navlink1;
   }
 
   .navlink2 {
-    display: block;
     grid-area: navlink2;
   }
 
   .navlink3 {
-    display: block;
     grid-area: navlink3;
   }
 
   .navlink4 {
-    display: block;
     grid-area: navlink4;
   }
 
   .logo {
     grid-area: logo;
+    justify-self: center;
   }
 
   .title-type {
