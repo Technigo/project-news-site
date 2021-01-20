@@ -5,25 +5,43 @@ html {
   color: rgb(43, 36, 23);
 }
 
-header {
-  display:block;
-  /*Maybe replace to width: 100%*/
-}
-
 .logo-and-title {
   display: flex;
-  justify-content: flex-start;
-  
+  flex-direction: row;}
+ 
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1.title-name {
+    width: 300px;
+    margin: 15px 0px 0px 10px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 52px;
+  }
+
+  h1.title-type {
+    width: 200px;
+    margin: -10px 0px 15px 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 46px;
+    color: rgb(8, 106, 233)
   }
   
   .logo {
-    width: 60px;
+    min-width: 150px;
+    padding: 15px;
+    margin: 10px;
+    background-color: none; /*Remove later*/
   }
   
-  
+  nav {
+    display: none;
+  }
+
   .navlink {
-    display:block;
-    text-align: center;
+    display:none;
   }
 
 section.big-news {
@@ -56,6 +74,7 @@ article {
   padding: 25px;
   background-color: white;
   box-shadow: 5px 7px 10px;
+  font-size: 20px;
 }
 
 figure.big-news {
@@ -74,6 +93,7 @@ figure.small-news {
 
 figcaption {
   font-family: 'Kalam', cursive;
+  font-size: 32px;
 }
 
 img.big-news {
@@ -82,13 +102,6 @@ img.big-news {
 
 img.small-news {
   width: 500px;
-}
-
-/*Styling for mobile phone*/
-@media (max-width: 667px) {
-  nav {
-    display: none;
-  }
 }
 
 /*Styling for tablet*/
@@ -100,3 +113,6 @@ img.small-news {
 @media (min-width: 1025px) {
 
 }
+
+/* Style a specific child of a class .navigation-item:last-child, navigation-item:nth-child(4)
+Putting width 100% on navbar and center text possible to center navbar*/
