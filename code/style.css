@@ -36,12 +36,8 @@ html {
     background-color: none; /*Remove later*/
   }
   
-  nav {
+  .navbar {
     display: none;
-  }
-
-  .navlink {
-    display:none;
   }
 
 section.big-news {
@@ -69,7 +65,7 @@ section.small-news {
  justify-content: center;
 }
 
-article {
+.article {
   width: 500px;
   padding: 25px;
   background-color: white;
@@ -91,7 +87,7 @@ figure.small-news {
   box-shadow: 5px 7px 10px;
 }
 
-figcaption {
+.figcaption {
   font-family: 'Kalam', cursive;
   font-size: 32px;
 }
@@ -107,6 +103,17 @@ img.small-news {
 /*Styling for tablet and small desktop*/
 @media (min-width:768px) and (max-width: 1200px) {
 
+  .navbar {
+    display: block;
+  }
+
+  .title {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
 }
 
 /*Styling for big desktop*/
