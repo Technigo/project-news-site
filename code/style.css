@@ -4,20 +4,22 @@ html {
   background-image: url("/images/material-birchwood.svg");
   color: rgb(43, 36, 23);
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
 
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
 .header {
   box-sizing: border-box;
   display: grid;
-  justify-content: center;
-  grid-template-columns: 150px 300px 150px;
+  justify-content: start;
+  grid-template-columns: 150px 300px ;
   grid-template-rows: 65px 67px;
   grid-template-areas: 
   "logo title1 title1"
