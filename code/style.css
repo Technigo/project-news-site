@@ -11,7 +11,8 @@ footer {
 .title,
 .promo-1,
 .promo-2,
-.nav-links {
+.nav-links,
+.btn-side-nav {
   background: rgb(170, 229, 170);
   border: 1px solid black;
 }
@@ -54,68 +55,67 @@ footer {
 }
 /* End of DEBUG STYLES */
 
-/* Default sizing Desktop breakpoint */
+/* Small Devices (Mobile) DEFAULT*/
 
 /* Main Grid Layout */
 /* GRID DISPLAYS */
 body {
   display: grid;
-  grid-template-columns: 60% 1fr;
-  grid-template-rows: 300px 400px auto auto 200px;
-  gap: 5px 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 400px auto auto auto 200px;
   grid-template-areas:
-    "header header"
-    "hero hero"
-    "news-mosiac news-column"
-    "news-list news-list"
-    "footer footer";
+    "header"
+    "hero"
+    "news-mosiac"
+    "news-column"
+    "news-list"
+    "footer";
+  gap: 5px 5px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  width: 1160px;
+  width: 740px;
 }
 
 header {
   display: grid;
-  grid-template-columns: 25% 1fr 25%;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 5px 5px;
-  grid-template-areas:
-    "promo-1 title promo-2"
-    "nav-links nav-links nav-links";
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "side-nav title";
   grid-area: header;
+  gap: 5px 5px;
 }
 
 #hero {
   display: grid;
-  grid-template-columns: 60% repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 5px 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60% repeat(2, 1fr);
   grid-template-areas:
-    "large small-1 small-2"
-    "large medium medium";
+    "large large"
+    "medium medium"
+    "small-1 small-2";
   grid-area: hero;
+  gap: 5px 5px;
 }
 
 #news-mosiac {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-auto-rows: auto;
-  gap: 10px 10px;
+  grid-template-columns: auto;
   grid-area: news-mosiac;
+  gap: 10px 10px;
 }
-/* Sets the bigger news mosiac item to cover 2 spaces in the grid */
+
 .span-2 {
-  grid-column-end: span 2;
-  grid-row-end: span 2;
+  grid-column-end: 1 span;
+  grid-row-end: 1 span;
 }
 
 footer {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px 10px;
+  grid-template-columns: auto;
   grid-area: footer;
+  gap: 10px 10px;
 }
 
 /* Flex boxes */
@@ -129,7 +129,7 @@ footer {
   align-items: center;
 }
 
-/* GRID AREAS */
+/* GRID AREAS (with no further styling) */
 
 #news-list {
   grid-area: news-list;
@@ -163,70 +163,72 @@ footer {
 }
 
 .btn-side-nav {
+  grid-area: side-nav;
+}
+
+/* Hide nav links and promo imgs */
+nav,
+header > figure {
   display: none;
 }
 
-/* Sizing for Tablets */
-@media (min-width: 992px) and (max-width: 1200px) {
+/* Medium Devices (tablets) */
+@media (min-width: 768px) {
   body {
-    width: 960px;
-  }
-
-  #news-mosiac {
-    grid-template-columns: repeat(2, auto);
-  }
-}
-
-/* Sizing for Mobile */
-@media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 400px auto auto auto 200px;
-    grid-template-areas:
-      "header"
-      "hero"
-      "news-mosiac"
-      "news-column"
-      "news-list"
-      "footer";
-    width: 740px;
+    width: 743px;
   }
 
   header {
-    grid-template-columns: 25% 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "side-nav title";
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "promo-1 title promo-2"
+      "nav-links nav-links nav-links";
   }
 
   #hero {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 60% repeat(2, 1fr);
+    grid-template-columns: 60% repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      "large large"
-      "medium medium"
-      "small-1 small-2";
+      "large small-1 small-2"
+      "large medium medium";
   }
 
   #news-mosiac {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
   }
-  /* Changing to cover 1 grid space since mobile only has 1 column. */
+  /* Sets the bigger news mosiac item to cover 2 spaces in the grid */
   .span-2 {
-    grid-column-end: 1 span;
-    grid-row-end: 1 span;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
   }
 
   footer {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, auto);
   }
 
+  /* Hide side-nav btn & show links and promos */
   .btn-side-nav {
-    grid-area: side-nav;
-    display: inline-block;
+    display: none;
   }
-
   nav,
   header > figure {
-    display: none;
+    display: inline-block;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 300px 400px auto auto 200px;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "news-mosiac news-column"
+      "news-list news-list"
+      "footer footer";
+    width: 1160px;
   }
 }
