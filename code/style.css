@@ -6,7 +6,6 @@ html {
 }
 
 .header {
-  width: 100%;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 150px 300px 150px;
@@ -17,7 +16,7 @@ html {
 }
 
 .logo {
-  width: 50px;
+  width: 100px;
   grid-area: logo;
   padding: 15px;
   margin: 10px;
@@ -34,7 +33,7 @@ html {
 
   h1.title-type {
     width: 200px;
-    margin: -10px 0px 15px 10px;
+    margin: 0px 0px 15px 10px;
     grid-area: title2;
     font-family: 'Kaushan Script', cursive;
     font-size: 46px;
@@ -42,7 +41,7 @@ html {
   }
 
   
-  .navbar {
+  .navlink1, .navlink2, .navlink3, .navlink4 {
     display: none;
   }
 
@@ -110,26 +109,45 @@ img.small-news {
 @media (min-width:768px) and (max-width: 1200px) {
 
   header {
+    box-sizing: border-box;
     display: grid;
     border: 2px solid blue;
     grid-template-columns: 40px 40px auto 40px 40px;
+    grid-template-rows: 150px;
     grid-gap: 10px;
+    grid-template-areas: 
+    "navlink1 navlink2 logo navlink3 navlink4";
   }
 
-
-  .navbar {
+  .navlink1 {
     display: block;
-    background-color: red;
+    grid-area: navlink1;
   }
 
-  .logo-and-title {
-    background-color: pink;
-    width: 100px;
-    grid-column-start: 3;
-    grid-column-end: 4;
+  .navlink2 {
+    display: block;
+    grid-area: navlink2;
   }
 
-  .title {
+  .navlink3 {
+    display: block;
+    grid-area: navlink3;
+  }
+
+  .navlink4 {
+    display: block;
+    grid-area: navlink4;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .title-type {
+    display: none;
+  }
+
+  .title-name {
     display: none;
   }
 
