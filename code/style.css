@@ -1,9 +1,21 @@
 html {
 background:antiquewhite;
 color: #000;
-/*border: 10px solid purple; */
+border: 10px solid purple; 
+/*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
+@font-face {
+	font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 800;
+	src: url(/font/Oswald/static/Oswald-SemiBold.ttf) format("ttf");
+	src: url(https://fonts.googleapis.com/css2?family=Oswald&display=swap) format("ttf");
+/*	src: local("Oswald")
+	src: url(Oswald-SemiBold.ttf);
+*/
+}
+/*HEADER*/
 .coreNavigation-top {
 	display: flex;
 	justify-content: space-between;
@@ -37,25 +49,93 @@ margin: 1px 1px;
 cursor: pointer;
 }
 
+/*BIG-NEWS-CONTAINER*/
 .big-news-container {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap; 
 }
 
 .news-card {
 	width: 100%;
-	height: 450px;
+	min-height: 90%;
 	background: #999;
-	margin-bottom: 10px; 
+	margin-top: 20px; 
+	margin-bottom: 10px;
 	border: solid greenyellow; 
+	margin: none; 
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column; 
 	justify-content: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-img {
-	width: 150px;
-	height: 150px;
+.photo-bar {
+/*	margin-top: 10px; */
+	padding: 30px 60px; 
+	width: 200px;
+	height: 200px;
 }
+
+.photo-bar:hover {
+background: #fff;
+padding: 1rem;
+box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+transition: 0.2s; 
+}
+.text {
+	font-family: 'Oswald';
+	padding: 25px 50px 25px 50px;
+	background-color: chartreuse;
+	font-size: 14px; 
+	overflow-wrap: break-word;
+}
+
+/*other nes GOES here*/
+
+
+/*MOBILE*/
+@media (max-width: 767px) {
+	.big-news-container {
+		flex-direction: column;
+		background: red;
+	}
+}
+
+.big-news-container .news-card {
+	width: 22.5%;
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.big-news-container {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: green;
+	}
+}
+
+.big-news-container .news-card {
+	width: 45%;
+}
+
+/*SMALL DESKTOP*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.big-news-container {
+		background: grey;
+	}
+}
+
+
+/*BIG DESKTOP*/
+@media (min-width: 1200px) {
+	.big-news-container {
+	background:coral;
+}
+}
+
+
 
 
