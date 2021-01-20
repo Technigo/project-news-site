@@ -10,7 +10,7 @@ body {
     /*display: flex; /*början på flexbox*/
 }
 
-h2{
+h1{
     font-size: 30px;
     line-height: 22px; /*** Kolla upp ***/
 }
@@ -23,6 +23,13 @@ h4 {
     font-size: 18px;
 }
 
+.container { /*general container for max width and marign så det expanderas ut för både big news och small news till sidan*/
+    width: 100%;
+    max-width: 1100px; /*so it dosent expand on really wide screens*/
+    margin: 0 auto;
+  
+}
+
 /*** HEADER ***/
 
 header{
@@ -31,6 +38,7 @@ header{
     display: flex;
     align-items: center; /* items in middle of header (not middle of middle)*/
     padding: 0 15px; /* on the left and right sides*/
+    
 }
 
 .menu-mobile { /*phone screen menu container square*/
@@ -64,14 +72,11 @@ nav a {
 }
 
 /*** BIG NEWS SECTION ***/
-.big-news-container{
+.big-news-container .container {
     padding: 70px 30px;
     display: flex;
     flex-direction: column; /*** Under varandra på rad ***/
-    /*xwidth: 100%;*/
-    max-width: 1100px; /*so it dosent expand on really wide screens*/
-    margin: 0 auto;
-
+    width: 100%;
 }
 
 .big-news-container img {
@@ -86,11 +91,12 @@ nav a {
 
 /*** SMALL NEWS SECTION ***/
 
-.small-news-container {
+.small-news-container .container {
     background-color: #fcfcfc;
     text-align: center; /*** align text to center***/
     padding: 30px;
     color: #2c2c2c;
+    width: 100%;
 }
 
 .small-news{
@@ -101,25 +107,26 @@ nav a {
 
 .small-news a {
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 2%; /*kanterna runt mjuka*/ 
     width: 100%; /*take upp all space - the cards*/
     text-decoration: none;
-    color: #6d6d6d;
+    color: #423c3c;
     box-shadow: 5px 5px 0 0 #ebe3e3;
-    margin-bottom: 32px;
+    margin-bottom: 42px;
+    text-align: center;
 }
 
 .small-news img {
    width: 100%;
-   border-radius: 5%;
+   margin-top: 30px;
+   border: 2px solid black;
 
 }
 
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 650px){
-
     header{
         justify-content: space-between;/*space between content navbar*/
     }
@@ -134,7 +141,7 @@ nav a {
 }
 
 @media (min-width: 900px){
-    .big-news-container {
+    .big-news-container .container {
         flex-direction: row;
         align-items: center;
     }
@@ -144,7 +151,12 @@ nav a {
     }
 
     .small-news img {
-        width: 50%;
+        width: 80%;
+    }
+
+    .small-news a { /*add the width to make the content on a row.*/
+        width: 20%;
+        flex-grow: 1;
     }
 
 }
