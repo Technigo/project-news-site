@@ -15,7 +15,7 @@ body {
 /* Meteor styling */
 .meteor {
   border-color: rgba(231, 116, 71, 0);
-  background-color:rgba(235, 100, 59, 0.74); 
+  background-color: rgba(235, 100, 59, 0.74);
   border-radius: 50%;
   box-shadow: 0px 0px 3px 3px rgba(235, 65, 59, 0.74);
   width: 5px;
@@ -31,19 +31,21 @@ body {
   0% {
     transform: rotate(-140deg) translateX(800px);
   }
+
   50% {
-    transform: rotate(-40deg) translateX(800px) scale(3);;
+    transform: rotate(-40deg) translateX(800px) scale(3);
+    ;
   }
-  80%
-  {
+
+  80% {
     transform: rotate(-40deg) translateX(800px) scale(9);
   }
-  90%
-  {
+
+  90% {
     transform: rotate(-40deg) translateX(800px) scale(0.1);
   }
-  100%
-  {
+
+  100% {
     transform: rotate(-40deg) translateX(1000px) scale(0.1);
   }
 }
@@ -61,7 +63,21 @@ body {
 }
 
 /* styling of page name text in the header */
-.header h1 {
+.logo {
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  bottom:0;
+  font-family: 'Orbitron', sans-serif;
+  color: #f1df77b4;
+  text-shadow: 5px 5px #9b681b;
+  font-size: 60px;
+  margin: 0 10px 0 0;
+}
+
+/*abbrieviated logo for mobile device */
+.small-logo {
+  display: none;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -86,7 +102,8 @@ body {
 }
 
 /* necessary for doing drop-down menu that appears on click in mobile version */
-#checkbox, #searchbox {
+#checkbox,
+#searchbox {
   display: none;
   position: fixed;
 }
@@ -94,7 +111,8 @@ body {
 /* button styling for drop-down menu on mobile device */
 .menu-button {
   position: fixed;
-  width: 2em;;
+  width: 2em;
+  ;
   height: 3px;
   margin: 5px;
   display: none;
@@ -150,7 +168,7 @@ body {
   height: 1.5em;
   margin-top: 1px;
   background: rgba(255, 208, 0, 0.493);
-  border-bottom:  solid #f1df7700 1px;
+  border-bottom: solid #f1df7700 1px;
   float: right;
   overflow: hidden;
   border-radius: 5px;
@@ -178,9 +196,8 @@ body {
 }
 
 /* sets text color on placeholder text */
-::placeholder
-{
-  color:black;
+::placeholder {
+  color: black;
 }
 
 /* makes sure there are no outline when you click on the search input to write */
@@ -238,7 +255,7 @@ body {
 }
 
 /* takes all the pictures in the grid-wrappers and applies other flex properties than the text ones */
-.grid-wrapper:nth-child(odd){
+.grid-wrapper:nth-child(odd) {
   align-items: flex-end;
 }
 
@@ -306,26 +323,26 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(5, 4, 0, 0.438);
-  border-top:solid rgba(252, 255, 86, 0.336) 1px;
+  border-top: solid rgba(252, 255, 86, 0.336) 1px;
 }
 
- .footer-img-container {
+.footer-img-container {
   position: relative;
   height: 3.5em;
   width: 6em;
   margin: 5px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .footer-img-container img {
-  position:absolute;
+  position: absolute;
   height: 100%;
   width: auto;
   object-fit: cover;
 }
 
 .footer p {
-  color:rgba(247, 250, 78, 0.438);
+  color: rgba(247, 250, 78, 0.438);
   font-size: 11px;
   margin: 10px;
 }
@@ -353,17 +370,19 @@ h3 {
   font-size: 14px;
   margin: 0.5em;
 }
+
 p {
   font-family: 'Roboto', sans-serif;
 }
 
-h3:hover, p:hover {
+h3:hover,
+p:hover {
   color: rgb(2, 160, 252);
 }
 
 /*section for the sign-up page*/
 .signup {
-  position:relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,18 +399,18 @@ h3:hover, p:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 5px 3px rgb(2, 160, 252);
-  background:rgba(0, 0, 0, 0.267);
+  background: rgba(0, 0, 0, 0.267);
   font-family: 'Orbitron', sans-serif;
-  color:rgb(2, 160, 252);
+  color: rgb(2, 160, 252);
 }
 
 /* styling of the submit button for the sign-up form */
-.signup input[type="submit"]{
+.signup input[type="submit"] {
   border-radius: 20px;
-  background:rgba(0, 0, 0, 0.671);
-  border:solid rgb(2, 160, 252) 1px;
+  background: rgba(0, 0, 0, 0.671);
+  border: solid rgb(2, 160, 252) 1px;
   font-family: 'Orbitron', sans-serif;
-  color:rgb(2, 160, 252);
+  color: rgb(2, 160, 252);
 }
 
 .signup input[type="submit"]:hover {
@@ -401,6 +420,7 @@ h3:hover, p:hover {
 
 /*on a very wide screen */
 @media screen and (min-width: 2000px) {
+
   /*makes the grid have more content per row */
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(6, 130px 1fr);
@@ -409,9 +429,12 @@ h3:hover, p:hover {
 
 @media screen and (max-device-width: 1024px),
 (max-width:1200px) {
-  .header h1 {
-    font-size: 45px;
-  }
+   /* styling of page name text in the header */
+   .logo {
+    text-align: center;
+    align-items: center;
+    margin-right:0;
+    }
 
   .header {
     height: 30em;
@@ -427,19 +450,21 @@ h3:hover, p:hover {
     0% {
       transform: rotate(-140deg) translateX(500px);
     }
+
     50% {
-      transform: rotate(-35deg) translateX(500px) scale(2);;
+      transform: rotate(-35deg) translateX(500px) scale(2);
+      ;
     }
-    80%
-    {
+
+    80% {
       transform: rotate(-35deg) translateX(500px) scale(6);
     }
-    90%
-    {
+
+    90% {
       transform: rotate(-35deg) translateX(500px) scale(0.1);
     }
-    100%
-    {
+
+    100% {
       transform: rotate(-35deg) translateX(500px) scale(0.1);
     }
   }
@@ -450,7 +475,7 @@ h3:hover, p:hover {
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .big-news {
     flex-direction: column;
     align-items: space-evenly;
@@ -471,26 +496,34 @@ h3:hover, p:hover {
     0% {
       transform: rotate(-140deg) translateX(400px);
     }
+
     50% {
-      transform: rotate(-25deg) translateX(400px) scale(2.5);;
+      transform: rotate(-25deg) translateX(400px) scale(2.5);
+      ;
     }
-    80%
-    {
+
+    80% {
       transform: rotate(-25deg) translateX(400px) scale(7);
     }
-    100%
-    {
+
+    100% {
       transform: rotate(-25deg) translateX(400px) scale(0.1);
     }
   }
 
-  .header{
+  .header {
     height: 25em;
     background-image: url("../pictures/ISS1280px.jpg");
   }
 
-  .header h1 {
-    font-size: 35px;
+  /* removes the bigger logo */
+  .logo {
+    display:none;
+  }
+
+  /*abbrieviated logo for mobile device */
+  .small-logo {
+    display: inline-block;
   }
 
   /*hides the top navbar background*/
@@ -506,7 +539,7 @@ h3:hover, p:hover {
     left: 0;
     top: 0;
     border-radius: 1px;
-    }
+  }
 
   /*styles menu to be columnar below the menu-button, hidden and without height*/
   .menu-content {
@@ -528,10 +561,10 @@ h3:hover, p:hover {
     text-align: center;
     flex: 1.5;
   }
-  
+
   /* gives height and visibility to menu content when menu button is clicked,
   with transition so it slides down from top */
-  #checkbox:checked ~ .menu-content {
+  #checkbox:checked~.menu-content {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.671);
     height: 40em;
@@ -539,7 +572,7 @@ h3:hover, p:hover {
   }
 
   /* places the search button fixed in the top right corner of the screen and resizes it a bit */
-  .search-button{
+  .search-button {
     position: fixed;
     right: 0;
     top: 0;
@@ -556,17 +589,18 @@ h3:hover, p:hover {
     top: 2px;
     border: none;
   }
+
   .nav input[type=text] {
     font-size: 12px;
     height: 2.3em;
     background-color: black;
     border-color: rgba(219, 198, 9, 0.822);
-    color:yellow;
+    color: yellow;
   }
 
   /* when the searchbutton is clicked the searchbar will be visible and placed on the screen again,
   with transition to make it slide in form the right */
-  #searchbox:checked ~ .searchbar   {
+  #searchbox:checked~.searchbar {
     visibility: visible;
     width: auto;
     right: 2.5em;
@@ -578,8 +612,7 @@ h3:hover, p:hover {
   }
 
   /* form stretches over full screen on mobile device*/
-  .signup-form
-  {
+  .signup-form {
     width: 100%;
     height: 100%;
     box-shadow: none;
