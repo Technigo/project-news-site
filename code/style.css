@@ -39,16 +39,12 @@ html {
 
 .img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  object-fit: cover;
 }
 
 .big-news-text h1 {
-  margin-top: 20px;
-  font-size: 36px;
-}
-
-.big-news-text p {
-  font-size: 14px;
-  line-height: 21px;
+  margin: 20px 0px;
+  font-size: 28px;
 }
 
 .button {
@@ -56,7 +52,6 @@ html {
   border: 1px solid black;
   padding: 10px 20px;
   text-align: center;
-  margin-top: 30px;
   cursor: pointer;
 }
 
@@ -74,27 +69,79 @@ html {
   padding: 0px 40px;
 }
 
-.recent-news-heading {
-  margin: 17px 0px;
-}
-
 .recent-news-heading h1 {
-  font-size: 36px;
+  font-size: 28px;
+  margin: 0px;
 }
 
 .news-card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .news-card {
+  display: flex;
+  flex-direction: column;
   margin: 17px 0px;
 }
 
 .news-card img {
   width: 100%;
   height: 300px;
+}
+
+.news-card h2 {
+  font-size: 18px;
+}
+
+.news-card p {
+  margin-top: auto;
+  color: lightgray;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  margin: 0px;
+}
+
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit p {
+  color:lightgray;
+  font-size: 10px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.credit a {
+  color:lightgray;
+  font-size: 10px;
+  ont-family: Arial, Helvetica, sans-serif;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author p {
+  color: lightgray;
+  font-size: 10px;
+  margin: 10px;
+  ont-family: Arial, Helvetica, sans-serif;
 }
 
 /* IF SCREEN SIZE IS MORE THAN 768PX WIDE - TABLET */
@@ -110,7 +157,9 @@ html {
     margin: 0px 18px;
     color: black;
     cursor: pointer;
+    font-size: 18px;
   }
+
   .nav-item:hover {
     margin: 0px 18px;
     color: dodgerblue;
@@ -137,19 +186,15 @@ html {
     padding: 0px 50px;
   }
   .big-news-text h1 {
-    margin: 0px;
-    font-size: 48px;
-  }
-  .big-news-text p {
-    font-size: 18px;
-    line-height: 25px;
+    margin: 0px 0px 25px 0px;
+    font-size: 38px;
   }
   .button {
     margin: 0px;
   }
   /* RECENT NEWS DESKTOP */
   .recent-news-container {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .recent-news-heading {
     margin: 17px 10px;
@@ -171,10 +216,19 @@ html {
   .navigation-container {
     justify-content: flex-end;
   }
+  .recent-news-heading h1 {
+    font-size: 36px;
+  }
   .news-card-container {
     flex-wrap: nowrap;
   }
+  .big-news-text h1 {
+    font-size: 48px;
+  }
   .news-card {
     margin: 17px 10px;
+  }
+  .news-card h1 {
+    font-size: 18px;
   }
 }
