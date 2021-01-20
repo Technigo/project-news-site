@@ -32,9 +32,13 @@ html {
   padding: 0px 40px;
 }
 
-.big-news-img img {
+.big-news-img .img {
   width: 100%;
   height: 400px;
+}
+
+.img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .big-news-text h1 {
@@ -49,11 +53,16 @@ html {
 
 .button {
   background-color: #fff;
-  border: solid black;
+  border: 1px solid black;
   padding: 10px 20px;
   text-align: center;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.button:hover {
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
 }
 
 /* RECENT NEWS MOBILE */
@@ -91,12 +100,21 @@ html {
 /* IF SCREEN SIZE IS MORE THAN 768PX WIDE - TABLET */
 
 @media screen and (min-width: 768px) {
-  /* TOP NAVIGATION TABLET AND DESKTOP */
+  /* TOP NAVIGATION TABLET */
   .navigation-container {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
   .nav-item {
     margin: 0px 18px;
+    color: black;
+    cursor: pointer;
+  }
+  .nav-item:hover {
+    margin: 0px 18px;
+    color: dodgerblue;
+    cursor: pointer;
   }
   /* BIG NEWS TABLET */
   .big-news-container {
@@ -126,15 +144,15 @@ html {
     font-size: 18px;
     line-height: 25px;
   }
-  .button{
+  .button {
     margin: 0px;
   }
-   /* RECENT NEWS DESKTOP */
-   .recent-news-container {
+  /* RECENT NEWS DESKTOP */
+  .recent-news-container {
     margin-top: 100px;
   }
   .recent-news-heading {
-    margin: 17px 0px;
+    margin: 17px 10px;
   }
   .news-card-container {
     flex-direction: row;
@@ -148,8 +166,11 @@ html {
 }
 
 /* IF SCREEN SIZE IS MORE THAN 1024PX WIDE - DESKTOP */
-@media screen and (min-width: 1024px) {
 
+@media screen and (min-width: 1024px) {
+  .navigation-container {
+    justify-content: flex-end;
+  }
   .news-card-container {
     flex-wrap: nowrap;
   }
