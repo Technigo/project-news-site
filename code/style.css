@@ -1,273 +1,105 @@
  
-  body  {
+  
+ html  {
 
   background-color: #eeeeee;
   }
 
+  h1 {
+   color: blue;
+
+  }
+  
+  a:hover {
+
+    background-color: orange;
+
+    }
+
+
   .header {
 
-  display: block;
-  float: left;
-  width: 1000px;
-  height: 200px;
-  border: 2px solid;
-
-  }
-
-.wolf {
-
-  width: 30%;
   display: flex;
-}
-
- h1 {
-  color: #d9212d;
-  font-family: 'Montserrat', sans-serif;
-  text-align-last:center;
-  font-size: 70px;
+  justify-content: space-between;
   
   }
 
 
+ .logo {
 
-
-  .navbar {
-
-  float: right;
-  border: 2px solid;
-  height: 200px;
-  width: 200px;
-  background-color: #f1f1f1;
-  list-style-type: none;
-  padding: 10px;
-  }
-  
-  li a {
-    display: block;
-    width: 200px;
-    background-color: #d9212d;
-    color: #000;
-    padding: 2px;
-    text-decoration: none;
-  }  
-
-
-
-  /* Change the link color on hover */
-  li a:hover {
-  background-color: #b4b4b4;
-  color: whitesmoke;
-}
-
-.flex-parent {
-
-  border: 70px;
-  border: #fff;
-  height: 500px;
-  display: flex;
-  float: left;
-  border: 2px solid;
-  
-}
-
-
-.flex-child-two {
-margin: 10px;
-font-family:'Montserrat', sans-serif;
-font-size: small;
-color: black;
-
+  width: 50px;
 
 }
 
-h2 {
-  font-size: xx-small;
-}
+  .navigation-container {
 
-p {
-  font-size: xx-small;
-  text-align: justify;
-  
-}
-.p-bold {
-
-  font-weight: bold;
-}
-
-.line {
-
-  border-bottom: 1px solid;
- 
-}
-
-
-
-.flex-container {
-
-   justify-content: left;
-   text-align: left;
    display: flex;
-   height: 260px;
-   width: 1040px;
-   border: 2px solid;
-   margin-top: 20px;
+
+  }
   
+  .navigation-item {
+
+    margin-right: 10px;
+  }
+
+  .navigation-item: last-child {
+
+ margin-right: 0
+
+}
+
+
+.news-card {
+
+ width: 100%;
+ height: 100px;
+ margin-bottom: 10px;
+
+}
+
+.big-news {
+
+display: flex;
+
+}
+
+
+.small-news {
+
+  display: flex;
+ 
+}
+
+
+.marine {
+
+  width: 800px;
+  height: 450px;
+}
+
+
+.news-cardtwo {
+
+  width: 100%;
+  height: 100px;
+  margin-top: 400px;
+ 
+}
+
+.Text {
+
+  display: flex;
+  align-items: center;
+
+}
+
+
+.news-cardthree {
+
+  width: 100%;
+  height: 100px;
     
-}
-
-
-.flex-childone.one {
-
-  justify-content: left;
-  text-align: left;
-  display: flex;
-
-  
-}
-
-.flex-childone img{
-
-  padding: 5px;
-  height: 250px;
-  width: 250px;
-  
-}
-
-.flex-box {
-
- justify-content:left;
- text-align: left;
- align-items:flex-start;
- display: flex;
- height: 120px;
- width: 1035px;
-
- 
-}
-
-
-.flex-boxoneone { 
- 
- width: 90%;
- border: 3px solid #f7f7f7 ; 
- text-align: end;
- justify-content:left;
- text-align: left;
- align-items:flex-start;
- margin-right: 10px;
- margin-left: 9px;
-  
-
-}
-  
- 
-
-.flex-boxoneone.artmarket{
-
-  width: 250px;
-  height: 100px;
-  
-}
-
-
-.flex-boxoneone.modemist {
-
-  width: 240px;
-  height: 100px;
-}
-
-.flex-boxoneone.resistance {
-
-  width: 245px;
-  height: 100px;
-}
-
-.flex-boxoneone.almost {
-
-  width: 245px;
-  height: 100px;
-}
-
-.flex-boss {
-
-  justify-content: left;
-  text-align: left;
-  display: flex;
-  height: 260px;
-  width: 1040px;
-  border: 2px solid;
-  
- 
-}
-
-.flex-book img{
-
-  padding: 5px;
-  height: 250px;
-  width: 250px;
 
 }
 
-.flex-bosstwo {
 
-
-  justify-content:left;
-  text-align: left;
-  align-items:flex-start;
-  display: flex;
-  height: 85px;
-  width: 1030px;
-  
-
-
-  
-
-}
-
-.flex-bossone {  
-
-width: 90%;
-border: 3px solid #f7f7f7 ; 
-text-align: end;
-justify-content:left;
-text-align: left;
-align-items:flex-start;
-margin-right: 10px;
-margin-left: 9px;
-
-}
-
-.flex-bossone.despite{
-
-  width: 250px;
-  height: 80px;
-  
-}
-
-
-.flex-bossone.the{
-
-  width: 240px;
-  height: 80px;
-}
-
-.flex-bossone.books { 
-
-  width: 245px;
-  height: 80px;
-}
-
-.flex-bossone.learn {
-
-  width: 240px;
-  height: 80px;
-}
-
-
-.headerthree {
- 
-  text-align: left;
-  font-size: x-small;
-  border: 2px solid;
-  height: 50px;
-}
