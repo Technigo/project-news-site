@@ -2,7 +2,30 @@ body {
     background-color: #212529;
   }
   
+
+  /* FIGURE */ /* HITTA SEN EN PLATS TILL DEN NEDAN */
+  .figure {
+      width: 1200px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+  }
   
+  .figure figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+  } 
+  
+  .figure figcaption {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    text-align:left;
+    font-size: 40px;
+    ; 
+  } 
+  /* ----- fIGURE ENDS HERE ---*/
   
 /*--- Flex container starts here ---*/
 
@@ -435,7 +458,14 @@ body {
         width: 50%;
       } Kan ta bort, finns redan ovan */
   
+      .figure {
+      display: none;
+  } 
+
+
+
   }
+
 
   /* Small Desktop */
   @media (min-width: 992px) and (max-width: 1024px)  {
@@ -448,11 +478,17 @@ body {
     
       }
     
-      .dropdown { 
+    .dropdown { 
         display: none;
       } 
+
+    .figure {
+        display: none;
+    } 
+  
     
     }
+
 
 
   /* Tablet */
@@ -468,6 +504,7 @@ body {
       a.home1, .politics1, .sport, .culture {
           font-size: 50px;
           width: 155px;
+          height: 60px;
       }
 
       .home2, .politics {
@@ -507,9 +544,34 @@ body {
         height: 200px;
     }
 
+    .figure {
+        display: none;
+    } 
+  
+    
+
   }
 
   @media (max-width: 768px) {
+    .figure {
+        width: 1200px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .figure img {
+        width: 1200px;
+        height: 470px;
+    }
+
+    figcaption {
+        width: 1200px;
+        height: 100px;
+    }
+    
+    
+    
     body {
         background-color: white;
       }
@@ -522,6 +584,8 @@ body {
         width: 200px;
         height: 200px;
       }
+
+      
       
     
 
@@ -529,16 +593,22 @@ body {
       
     
       .big-news {
-        height: 1530px;
+        height: 600px;
         width: 1200px;
       }
+
+
+      /* .big-news img {
+        display: none;
+      } */
     
-      .inside-big .pic {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
+      /* .inside-big .pic {
+        display: none;
+      } */
     
+      .inside-big {
+        display: none;
+      } 
    
     
 
@@ -552,6 +622,10 @@ body {
     .text1 {
         display: none;
       } 
+
+    .text2{
+        display: none;
+    }
     
       .flex-container {
           justify-content: center;
