@@ -24,12 +24,13 @@ h4 {
     width: 100%;
     max-width: 1100px; /*so it dosent expand on really wide screens*/
     margin: 0 auto;
+    padding: 0;
   
 }
 
-/*** HEADER ***/
+/***** HEADER ******/ /*Klar*/
 
-.header {
+.header { /*Klar*/
     background: rgb(27, 27, 27);
     color:rgb(238, 237, 234);
     display: flex;
@@ -40,7 +41,7 @@ h4 {
   
 }
 
-.mobile-hamburger {
+.mobile-hamburger { /*Klar*/
     display: flex;
     width: 20px;
     height: 20px;
@@ -50,27 +51,26 @@ h4 {
 }
 
 /*** hamburger menu lines ***/
-.mobile-hamburger div {
+.mobile-hamburger div { /*Klar*/
     width: 25px;
     height: 2px;
     background: rgb(238, 237, 234);
 }
 
-.logo {
+.logo { /*Klar*/
     width: 80px;
 }
 
-.header h3 {
+.header h3 { /*Klar*/
     margin: 0 auto;
     font-family: 'Pacifico', cursive;
 }
 
-/*** mobile-first so not to be displayed in mobile ***/
-.navigation {
+.navigation { /*Klar*/
     display: none;
 }
 
-.navigation a {
+.navigation a { /*Klar*/
     text-decoration: none;
     color: white;
     margin: 0px 10px;
@@ -79,7 +79,7 @@ h4 {
 
 /*** BIG NEWS SECTION ***/
 .big-news-container .container {
-    padding: 70px 30px;
+    padding: 70px 0px;
     display: flex;
     flex-direction: column; /*** Under varandra på rad ***/
     width: 100%;
@@ -100,7 +100,7 @@ h4 {
 .small-news-container .container {
     background-color: #fcfcfc;
     text-align: center; /*** align text to center***/
-    padding: 30px;
+    padding: 10px 0px;
     color: #2c2c2c;
     width: 100%;
 }
@@ -121,6 +121,7 @@ h4 {
     box-shadow: 5px 5px 0 0 #ebe3e3;
     margin-bottom: 42px;
     text-align: center;
+    padding: 0px 10px;
 }
 
 .small-news img {
@@ -134,15 +135,15 @@ h4 {
 
 @media (min-width: 767px){
     .header{
-        justify-content: space-between;/*space between content navbar*/
+        justify-content: space-between;
     }
 
     .navigation {
-        display: inline-block; /*navbar shown with inline-block (kolla upp)*/
+        display: inline-block;
     }
 
     .mobile-hamburger{
-        display:none; /*mobile menu not shown*/
+        display:none; 
     }
 }
 
