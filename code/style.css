@@ -63,23 +63,23 @@ header img {
   width: 200px;
 }
 
-nav a {
+.navigation-container a {
   color: darkslategrey;
   text-decoration: none;
   font-weight: 100;
   margin-left: 14px; 
 }
 
-nav {
+.navigation-container {
   display: none 
 }
 
-nav a:hover {
+.navigation-container a:hover {
   color: black;
   font-weight: bold;
 }
 
-nav a:active {
+.navigation-container a:active {
   color: blue;
   font-weight: bold;
 }
@@ -193,7 +193,7 @@ footer {
   padding: 8px;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
-  margin-top: 20%;
+  margin-top: 20px;
 }
 
 /***Styling the article pages ***/
@@ -289,8 +289,8 @@ footer {
     justify-content: space-between;
   }
 
-  nav {
-    display: inline-block;
+  .navigation-container {
+    display: flex;
   }
 
   .hamburger {
@@ -353,8 +353,8 @@ footer {
     justify-content: space-between;
   }
 
-  nav {
-    display: inline-block;
+  .navigation-container {
+    display: flex;
   }
 
   .hamburger {
