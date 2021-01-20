@@ -5,18 +5,29 @@ html {
   color: rgb(43, 36, 23);
 }
 
-.logo-and-title {
-  display: flex;
-  flex-direction: row;}
- 
-  .title {
-    display: flex;
-    flex-direction: column;
-  }
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 150px 300px 150px;
+  grid-template-rows: 65px 67px;
+  grid-template-areas: 
+  "logo title1 title1"
+  "logo title2 title2";
+}
+
+.logo {
+  width: 50px;
+  grid-area: "logo";
+  padding: 15px;
+  margin: 10px;
+  background-color: none; /*Remove later*/
+}
 
   h1.title-name {
     width: 300px;
     margin: 15px 0px 0px 10px;
+    grid-area: "title1";
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 52px;
   }
@@ -24,17 +35,12 @@ html {
   h1.title-type {
     width: 200px;
     margin: -10px 0px 15px 10px;
+    grid-area: "title2";
     font-family: 'Kaushan Script', cursive;
     font-size: 46px;
     color: rgb(8, 106, 233)
   }
-  
-  .logo {
-    min-width: 150px;
-    padding: 15px;
-    margin: 10px;
-    background-color: none; /*Remove later*/
-  }
+
   
   .navbar {
     display: none;
@@ -103,6 +109,14 @@ img.small-news {
 /*Styling for tablet and small desktop*/
 @media (min-width:768px) and (max-width: 1200px) {
 
+  header {
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 40px 40px auto 40px 40px;
+    grid-gap: 10px;
+  }
+
+
   .navbar {
     display: block;
     background-color: red;
@@ -119,12 +133,7 @@ img.small-news {
     display: none;
   }
 
-  header {
-    display: grid;
-    border: 2px solid blue;
-    grid-template-columns: 40px 40px auto 40px 40px;
-    grid-gap: 10px;
-  }
+  
 }
 
 /*Styling for big desktop*/
