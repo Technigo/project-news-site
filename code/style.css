@@ -305,22 +305,16 @@ footer {
   .news-container {
     display: flex;
     flex-direction: row;
-    /*justify-content: center;*/
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    /*Add margin?*/
-    /*max-height:2000px;*/
   }
 
   .news {
     flex-direction: column;
-    /*align-items: center; remove this? */
     flex-basis: 38%;
-    justify-content: flex-start;
     margin-right: 20px;
     text-align: left;
     padding: 15px;
-    /**Add padding ?**/
   }
 
   .news a {
@@ -367,9 +361,10 @@ footer {
   }
 
   .news-container {
-    display: flex; /** necessary?**/
+    /* display: flex;  */
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   /** When the screen gets bigger we don't want the image to be too big. By adding
@@ -386,11 +381,12 @@ footer {
   }
 
   .news a {
-    height: 380px;
+    height: 350px;
   }
 
   .news a img {
     padding-bottom: 0;
+    width: 88%;
   }
 
   .news a div {
