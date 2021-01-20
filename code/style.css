@@ -3,60 +3,32 @@ body {
   background: white;
   color: #fff;
   margin: 0;
-  
+  font-size: 12px;
 }
  
-/*** HEADER AND NAVIGATION **/
+/* HEADER AND NAVIGATION */
 
-header {
+.header {
+  display: flex;
+  justify-content: space-between;
   background-color: black;
   height: 65px;
   width: 100%;
   font-family: "Texturina", serif;
-  position: fixed;
-  margin-bottom: 40px;
   top: 0;
-  
 }
 
-h1 {
-  color: white;
-  font-family: "Bellota", serif;
-  font-size: 50px;
-  margin-top: -70px;
-  margin-left: 650px;
-  position: absolute;
+/* NAVBAR */
+
+.navigation-container {
+  display: flex;
 }
 
-header img {
-  width: 60px;
-  margin-left: 77px;
-  margin-top: -10px;
-  animation-name: logo;
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
-
-@keyframes logo {
-  from {margin-left: 30px;}
-  to {margin-left: 77px;}
-}
-
-/*** NAVBAR ***/
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  float: left;
-}
-
-li a {
+.navigation-container .links {
   font-family: "Texturina", serif;
   font-variant: small-caps;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.5rem;
   letter-spacing: 1.5px;
   color: white;
   text-decoration: none;
@@ -64,61 +36,138 @@ li a {
   cursor: pointer;
 }
 
-li a:hover {
-  color: rgb(71, 128, 104);
+.navigation-container .links:hover {
+  color:rgb(71, 128, 104);
 }
 
-.dropdown-content {
+.navigation-container .fa {
+  display: none;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navigation-container .fa:hover {
+  color:rgb(71, 128, 104);
+}
+
+.topic-bar {
+  display: none;
+  color: white;
+  background-color: black;
+}
+
+
+@media (max-width: 768px) {
+  .navigation-container .fa {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    opacity: 1;
+  }
+
+  .navigation-container .fa:hover .topic-bar {
+    display: flex;
+  }
+}
+
+
+.topic-dropdown {
   display: none;
   position: absolute;
   background-color:black;
+  border-radius: 5px;
   min-width: 50px;
   min-height: 100px;
   padding: 10px;
-  margin-top: 10px;
 }
 
-.dropdown-content a {
-  padding: 5px;
+.topic:hover .topic-dropdown {
+  display:block;
+  color: rgb(71, 128, 104);
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-  display: block;
-  float: left;
+@media (max-width: 767px) {
+  .topic {
+    display: none;
+  }
+} 
+
+
+/* SITE NAME AND LOGO */
+
+.site-name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 180px;
+}
+
+.site-name .logo {
+  width: 60px;
+  height: 60px;
+}
+
+.h1 {
+  color: white;
+  font-family: "Bellota", serif;
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .site-name {
+    margin-right: 0;
+  }
+  .site-name .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .h1 {
+    font-size: 3rem;
+  }
 }
 
 /*** SOCIAL MEDIA BUTTONS ***/
 
-.fa {
-  float: right;
+.social-media {
+  display: flex;
+  align-items: center;
+  
+}
+.social-media .fa {
   padding: 14px;
   background: white;
   color: black;
   width: 20px;
+  height: 20px;
   text-align: center;
   text-decoration: none;
-  margin: 6px;
-  margin-top: -5px;
+  margin-right: 10px;
   border-radius: 50%;
-}
-
-.fa-facebook {
-  margin-right: 20px;
 }
 
 .fa:hover {
   opacity: 0.7;
 }
 
+@media (max-width: 767px) {
+  .social-media .fa {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 /*** HEADER TWO ***/
 
 .header-two {
   width: 100%;
-  margin-top: 80px;
+  
 }
 
-.header-two h2 {
+.h2 {
   font-family: "Texturina", serif;
   color: black;
   font-size: 26px;
@@ -131,15 +180,14 @@ ul li ul:hover {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 40px 20px 10git0px 20px;
+  margin: 40px 20px 100px 20px;
   width: 100%;
 }
 
 #big-news-two {
   display: none;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 40px 20px 100px 20px;
   width: 100%;
 }
 
@@ -197,7 +245,7 @@ ul li ul:hover {
   color: red;
 }
 
-/*** OTHER NEWS***/
+/* OTHER NEWS */
 
 .other-news {
   display: flex;
@@ -207,9 +255,9 @@ ul li ul:hover {
 }
 
 .small-box {
-  width: 350px;
+  max-width: 350px;
   color: black;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .small-box img {

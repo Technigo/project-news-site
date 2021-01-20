@@ -8,62 +8,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Texturina&family=Xanh+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- dont forget the meta tag for responsiveness -->
+    
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    
+    <!-- header and navigation bar -->
 
-      <ul>
-            
-        <li><a href="#">home</a></li>
+    <header class="header">
+      <nav class="navigation-container">
+    <!-- mobile navigation bar-->
+    
+        <div class="icon fa fa-bars">
+          <div class="topic-bar"><a href="#" class="links">home</a></div>
+          <div class="topic-bar"><a href="#" class="links">world</a></div>
+          <div class="topic-bar"><a href="#" class="links">politics</a></div>
+          <div class="topic-bar"><a href="#" class="links">sports</a></div>
+        </div>
+    <!-- tablet and computer navigation bar -->
+
+        <div class="topic"><a href="#" class="links">home</a></div>
+        <div class="topic"><a href="#" class="links">world</a>
+            <div class="topic-dropdown">
+                <div class="topic"><a href="#" class="links">america</a></div>
+                <div class="topic"><a href="#" class="links">africa</a></div>
+                <div class="topic"><a href="#" class="links">europe</a></div>
+                <div class="topic"><a href="#" class="links">asia</a></div>
+            </div>
+        </div>
+
+        <div class="topic"><a href="#" class="links">politics</a>
+            <div class="topic-dropdown">
+                <div class="topic"><a href="#" class="links">election</a></div>
+            </div>
+        </div>
+
+        <div class="topic"><a href="#" class="links">business</a>
+            <div class="topic-dropdown">
+                <div class="topic"><a href="#" class="links">stockmarket</a></div>
+            </div>
+        </div>
+
+        <div class="topic"><a href="#" class="links">sports</a>
+            <div class="topic-dropdown">
+                <div class="topic"><a href="#" class="links">football</a></div><br>
+                <div class="topic"><a href="#" class="links">basketball</a></div><br>
+                <div class="topic"><a href="#" class="links">baseball</a></div><br>
+            </div>
+        </div>
+
+        <div class="topic"><a href="#" class="links">tech</a>
+            <div class="topic-dropdown">
+                <div class="topic"><a href="#" class="links">consumer tech</a></div>
+            </div>
+        </div>
         
-        <li><a href="#">world</a>
-            <ul class="dropdown-content">
-                <li><a>america</a></li><br>
-                <li><a>africa</a></li><br>
-                <li><a>europe</a></li><br>
-                <li><a>asia</a></li><br>
-            </ul>
-        </li>
+      </nav>
+      
+      <!-- tablet and computer navigation bar 
+      <div class="site-name">
+        <img src="./logo.png" class="logo">
+        <h1 class="h1">the daily post</h1>
+      </div> -->
 
-        <li><a href="#">politics</a>
-            <ul class="dropdown-content">
-                <li><a>president election</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">business</a>
-            <ul class="dropdown-content">
-                <li><a>stockmarket</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">sports</a>
-            <ul class="dropdown-content">
-                <li><a>football</a></li><br>
-                <li><a>basketball</a></li><br>
-                <li><a>baseball</a></li><br>
-            </ul>
-        </li>
-
-        <li><a href="#">tech</a>
-            <ul class="dropdown-content">
-                <li><a>consumer tech</a></li>
-            </ul>
-        </li>
-        
-      </ul>
-
-      <img src="./logo.png"><h1>the daily post</h1>
-
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
+      <div class="social-media">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
 
     </header>
 
-    <div class="header-two"><h2>most recent news</h2><hr color="black" width="70%"></div>
+    <div class="header-two"><h2 class="h2">most recent news</h2><hr color="black" width="70%"></div>
 
 
     <section id="big-news">

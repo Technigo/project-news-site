@@ -1,3 +1,6 @@
+
+
+/** image slide */
 const firstNews = document.getElementById("big-news");
 const secondNews = document.getElementById("big-news-two");
 const nextButton = document.getElementById("next");
