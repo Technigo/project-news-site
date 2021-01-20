@@ -11,7 +11,6 @@ body {
 }
 
 h1 {
-  /* font-family: 'Xanh Mono', monospace; */
   font-family: 'Cabin', sans-serif;
   font-size: 50px;
   color: #e8eae6;
@@ -53,15 +52,14 @@ header {
 header img {
   height: 100px;
   border-radius: 5px;
+  padding-left: 20px;
 }
 
 .hamburger {
   display: flex;
-  width: 70px;
   height: 40px;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 24px;
 }
 
 .hamburger div {
@@ -77,6 +75,10 @@ nav a {
   margin-right: 10px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+}
+
+nav a:last-child {
+  padding-right: 30px;
 }
 
 /* BIG NEWS */
