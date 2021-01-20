@@ -32,11 +32,11 @@ body {
     transform: rotate(-140deg) translateX(800px);
   }
   50% {
-    transform: rotate(-40deg) translateX(800px) scale(5);;
+    transform: rotate(-40deg) translateX(800px) scale(3);;
   }
   80%
   {
-    transform: rotate(-40deg) translateX(800px) scale(10);
+    transform: rotate(-40deg) translateX(800px) scale(9);
   }
   90%
   {
@@ -361,6 +361,44 @@ h3:hover, p:hover {
   color: rgb(2, 160, 252);
 }
 
+/*section for the sign-up page*/
+.signup {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* styling of the sign-up form */
+.signup-form {
+  display: flex;
+  position: absolute;
+  height: 90%;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px 3px rgb(2, 160, 252);
+  background:rgba(0, 0, 0, 0.267);
+  font-family: 'Orbitron', sans-serif;
+  color:rgb(2, 160, 252);
+}
+
+/* styling of the submit button for the sign-up form */
+.signup input[type="submit"]{
+  border-radius: 20px;
+  background:rgba(0, 0, 0, 0.671);
+  border:solid rgb(2, 160, 252) 1px;
+  font-family: 'Orbitron', sans-serif;
+  color:rgb(2, 160, 252);
+}
+
+.signup input[type="submit"]:hover {
+  background-color: rgb(2, 160, 252);
+  color: black;
+}
+
 /*on a very wide screen */
 @media screen and (min-width: 2000px) {
   /*makes the grid have more content per row */
@@ -381,28 +419,28 @@ h3:hover, p:hover {
 
   /* adapting the meteor animation to smaller screen */
   .meteor {
-    top: 900px;
-    left: 0%;
+    top: 500px;
+    left: 30%;
   }
 
   @keyframes meteor_path {
     0% {
-      transform: rotate(-140deg) translateX(900px);
+      transform: rotate(-140deg) translateX(500px);
     }
     50% {
-      transform: rotate(-40deg) translateX(900px) scale(5);;
+      transform: rotate(-35deg) translateX(500px) scale(2);;
     }
     80%
     {
-      transform: rotate(-40deg) translateX(900px) scale(10);
+      transform: rotate(-35deg) translateX(500px) scale(6);
     }
     90%
     {
-      transform: rotate(-40deg) translateX(900px) scale(0.1);
+      transform: rotate(-35deg) translateX(500px) scale(0.1);
     }
     100%
     {
-      transform: rotate(-40deg) translateX(900px) scale(0.1);
+      transform: rotate(-35deg) translateX(500px) scale(0.1);
     }
   }
 
@@ -424,66 +462,35 @@ h3:hover, p:hover {
 @media screen and (min-device-width: 320px) and (max-device-width: 669px),
 (max-width: 669px) {
   .meteor {
-    top: 500px;
+    top: 400px;
     left: -10%;
     animation: meteor_path 10s linear infinite;
   }
 
   @keyframes meteor_path {
     0% {
-      transform: rotate(-140deg) translateX(500px);
+      transform: rotate(-140deg) translateX(400px);
     }
     50% {
-      transform: rotate(-25deg) translateX(500px) scale(2.5);;
+      transform: rotate(-25deg) translateX(400px) scale(2.5);;
     }
     80%
     {
-      transform: rotate(-25deg) translateX(500px) scale(7);
+      transform: rotate(-25deg) translateX(400px) scale(7);
     }
     100%
     {
-      transform: rotate(-25deg) translateX(500px) scale(0.1);
+      transform: rotate(-25deg) translateX(400px) scale(0.1);
     }
   }
 
-  .small-news {
-    grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
+  .header{
+    height: 25em;
+    background-image: url("../pictures/ISS1280px.jpg");
   }
 
-  /* places the search button fixed in the top right corner of the screen and resizes it a bit */
-  .search-button{
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 2px;
-    height: 2em;
-    width: 2.5em;
-  }
-
-  /*hides the searchbar and puts it of screen*/
-  .searchbar {
-    position: fixed;
-    right: -22.5em;
-    visibility: hidden;
-    top: 2px;
-    border: none;
-  }
-
-  /* when the searchbutton is clicked the searchbar will be visible and placed on the screen again,
-  with transition to make it slide in form the right */
-  #searchbox:checked ~ .searchbar   {
-    visibility: visible;
-    width: auto;
-    right: 2.5em;
-    transition: 0.5s;
-  }
-
-  .nav input[type=text] {
-    font-size: 12px;
-    height: 2.3em;
-    background-color: black;
-    border-color: rgba(219, 198, 9, 0.822);
-    color:yellow;
+  .header h1 {
+    font-size: 35px;
   }
 
   /*hides the top navbar background*/
@@ -513,7 +520,7 @@ h3:hover, p:hover {
     margin: 5px;
     top: 30px;
   }
-  
+
   .menu-content a {
     display: flex;
     flex-direction: column;
@@ -521,7 +528,7 @@ h3:hover, p:hover {
     text-align: center;
     flex: 1.5;
   }
- 
+  
   /* gives height and visibility to menu content when menu button is clicked,
   with transition so it slides down from top */
   #checkbox:checked ~ .menu-content {
@@ -530,13 +537,51 @@ h3:hover, p:hover {
     height: 40em;
     transition: 0.5s;
   }
-  
-  .header h1 {
-    font-size: 35px;
+
+  /* places the search button fixed in the top right corner of the screen and resizes it a bit */
+  .search-button{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 2px;
+    height: 2em;
+    width: 2.5em;
   }
 
-  .header{
-    height: 25em;
-    background-image: url("../pictures/ISS1280px.jpg");
+  /*hides the searchbar and puts it of screen*/
+  .searchbar {
+    position: fixed;
+    right: -22.5em;
+    visibility: hidden;
+    top: 2px;
+    border: none;
+  }
+  .nav input[type=text] {
+    font-size: 12px;
+    height: 2.3em;
+    background-color: black;
+    border-color: rgba(219, 198, 9, 0.822);
+    color:yellow;
+  }
+
+  /* when the searchbutton is clicked the searchbar will be visible and placed on the screen again,
+  with transition to make it slide in form the right */
+  #searchbox:checked ~ .searchbar   {
+    visibility: visible;
+    width: auto;
+    right: 2.5em;
+    transition: 0.5s;
+  }
+
+  .small-news {
+    grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
+  }
+
+  /* form stretches over full screen on mobile device*/
+  .signup-form
+  {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
   }
 }
