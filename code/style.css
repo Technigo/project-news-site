@@ -38,7 +38,7 @@ section.big-news {
 
  /*Set background-color to see section-Remove this later*/
 section {
-  background-color: ;
+  background-color:none;
 }
 
 section.small-news {
@@ -55,12 +55,21 @@ article {
   width: 500px;
   padding: 25px;
   background-color: white;
+  box-shadow: 5px 7px 10px;
 }
 
 figure.big-news {
 background-color: white;
 width: 500px;
 padding: 25px;
+box-shadow: 5px 7px 10px;
+}
+
+figure.small-news {
+  background-color: white;
+  width: 500px;
+  padding: 25px; 
+  box-shadow: 5px 7px 10px;
 }
 
 figcaption {
