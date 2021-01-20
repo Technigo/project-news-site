@@ -41,7 +41,7 @@ header {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   margin: 10px auto;
-} /*Change to .articles-header?*/
+} 
 
 .hamburger a {
   display: flex;
@@ -49,7 +49,8 @@ header {
   height: 30px;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 20px; /*Instead of adding margin to logo, since this menu will not 
+  be shown in laptop and desktop mode*/
 }
 
 .hamburger div {
@@ -67,7 +68,7 @@ nav a {
   color: darkslategrey;
   text-decoration: none;
   font-weight: 100;
-  margin: 14px;
+  margin-left: 14px; 
 }
 
 nav {
@@ -104,14 +105,14 @@ nav a:active {
   display: flex;
   align-items: center;
   flex-direction: column;
-  Box-sizing: border-box;
+  Box-sizing: border-box; /**Wrong place?**/
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
   border-radius: 3px;
-  width: 100%;
+  width: 100%; /** So that the picture grows when you change screen size**/
   /*max-width: 1100px;*/
 }
 
@@ -134,13 +135,15 @@ nav a:active {
 
 /*** Styling the other news ***/ 
 
-.news-container {
+.news-container { 
   display: flex;
+  flex-wrap: wrap; /**ADDED THIS**/
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: whitesmoke;
-  width: 100%;
+  box-sizing: border-box;
+  width: 100%;/*change place?*/
   /*max-width: 1100px;*/
 }
 
@@ -148,7 +151,7 @@ nav a:active {
   display: flex;
   flex-basis: 90%;
   justify-content: center;
-  margin: 20px 20px auto;
+  margin: 20px 20px auto; /**change place of this? Add margin bottom to news a?**/
 }
 
 .news img {
@@ -161,7 +164,6 @@ nav a:active {
   color: black;
   text-decoration: none;
   width: 100%;
-  /*box-shadow: 2px 2px lightgray;*/
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -245,7 +247,6 @@ footer {
   background-color: white;
   padding: 10px;
   border: 2px solid  light grey;
-  /** box-shadow: 2px 2px lightgray; **/
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -368,10 +369,15 @@ footer {
   }
 
   .news-container {
-    display: flex;
+    display: flex; /** necessary?**/
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /** When the screen gets bigger we don't want the image to be too big. By adding
+  .bigs-news a img {
+    width: 50%
+  } we give it a max size ***/
 
   .news {
     flex-direction: column;
