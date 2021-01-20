@@ -2,19 +2,6 @@
 html {
   background: #f1f1f1;
 }
-header,
-section,
-footer {
-  background: rgb(189, 189, 189);
-  border: 1px solid black;
-}
-.large,
-.medium,
-.small-1,
-.small-2 {
-  background: rgb(248, 215, 153);
-  border: 1px solid black;
-}
 .mosiac-item {
   background: pink;
   border: 1px solid black;
@@ -54,7 +41,7 @@ footer {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 400px auto auto auto 200px;
+  grid-template-rows: 300px 850px auto auto auto 200px;
   grid-template-areas:
     "header"
     "hero"
@@ -82,13 +69,13 @@ header {
 #hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 60% repeat(2, 1fr);
+  grid-template-rows: 60% repeat(2, auto);
   grid-template-areas:
     "large large"
     "medium medium"
     "small-1 small-2";
   grid-area: hero;
-  gap: 5px 5px;
+  gap: 10px 10px;
 }
 
 #news-mosiac {
@@ -129,8 +116,12 @@ header > figure {
 /* ------- ELEMENT STYLING ------- */
 
 /* FONTS & GENREAL STYLES */
+span,
+p {
+  font-family: Georgia, Times, serif;
+}
 a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Helvetica, sans-serif;
   font-weight: 300;
   text-decoration: none;
   color: black;
@@ -142,6 +133,12 @@ h1 {
   font-weight: normal;
   text-align: center;
   margin: 0;
+}
+h3 {
+  font-family: "Oswald", Helvetica, sans-serif;
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
 }
 ul {
   list-style: none;
@@ -186,13 +183,54 @@ ul {
   margin-top: 10%;
 }
 
-.overlay a:nth-child(3) {
+.overlay a:nth-child(4) {
   padding-bottom: 1em;
   margin: 0 20% 0 20%;
   border-bottom: 2px solid;
 }
-.overlay a:nth-child(4) {
+.overlay a:nth-child(5) {
   padding-top: 1em;
+}
+
+/* HERO Articles */
+article {
+  background-color: #2c3e50;
+  position: relative;
+}
+.article-image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: block;
+  opacity: 0.4;
+}
+
+.large .article-image {
+  background-image: url("https://source.unsplash.com/bhJfx7t4QUA");
+}
+.medium .article-image {
+  background-image: url("https://source.unsplash.com/Y8uXM45og68");
+}
+.small-1 .article-image {
+  background-image: url("https://source.unsplash.com/-88AJUagxSg");
+}
+.small-2 .article-image {
+  background-image: url("https://source.unsplash.com/G89O5hik31w");
+}
+
+.article-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1em;
+  text-align: right;
+  text-shadow: 1px 1px 0 black;
+}
+.article-info h3 {
+  margin-top: 0;
+}
+.category {
+  color: orange;
 }
 
 /* Declaration of GRID AREAS (with no further styling) */
