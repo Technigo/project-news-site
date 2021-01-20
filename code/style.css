@@ -3,6 +3,14 @@ html {
   color: #fff;
 }
 
+h1 {
+  font-size: 50px;
+  font-family: 'balsamiq Sans', cursive;
+  background: lightblue;
+  margin-right: 1000px;
+
+}
+
 h2 {
   font-size: 70px;
 }
@@ -22,34 +30,32 @@ article p {
   height: 60px;
 } 
 
-header {
+.header {
   background: #0DB2AC;
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 16px
-
-}
-
-.hamburger {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  flex-direction: column;
   justify-content: space-between;
-  margin-right: 24px;
+  padding: 0 16px  
 }
 
-.hamburger div {
-  width: 30px;
-  height: 5px;
-  background: #fff;
-}
+
 
 nav {
-  display: none;
+  display: flex;
 }
+
 nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+} 
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  background: #FC694D;
   color: #fff;
   text-decoration: none;
   margin-left: 16px;
@@ -109,4 +115,14 @@ nav a {
 .news img {
   width: 250px;
   margin: 30px 45px 0 45px;;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  
 }
