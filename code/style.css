@@ -10,13 +10,23 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 30px;  /*Lägg in styling som sätter space mellan bokstäverna */
+  font-size: 30px;  /* Add styling that'll put space between the letters */
 }
+
+h4 {
+  font-size: 15px;
+}
+
+/* .container {   Think about if I need this
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+} */
 
 
 /*** HEADER ***/
 
-header {
+header {    /* make header into a class, according to Max */
   background: #000;
   height: 100px;
   display: flex;
@@ -59,23 +69,24 @@ nav a {
 }
 
 
+/*** RESPONSIVE IMAGE ***/
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+
 /*** BIG NEWS ***/
 
 .big-news {
 
 }
 
-.big-news-container {
-
-}
-
-.big-news-image {
-
-}
-
-.responsive-image {
-  width: 100%;
-  height: auto;
+.big-news .container {
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .big-news-text {
@@ -89,8 +100,14 @@ nav a {
 
 }
 
-.other-news-image {
+.other-news .container {
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+}
 
+.other-news-text {
+  /* margin-left: 16px; */
 }
 
 
@@ -98,19 +115,51 @@ nav a {
 
 footer {
   background: #000;
-  height: 300px;
+  height: 150px;
   width: 100%;
   margin: 0;
   padding-top: 30px;
-  color: #fff;
-  text-decoration: none;
+  margin-top: 16px;
 }
 
-.contact-info {
+footer a {
+  color: #fff;
+  /* text-decoration: none; */
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  padding: 30px 16px;
+
+}
+
+.container-contact-info {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
+  height: 25%;
+  flex-grow: 1;
 }
+
+/* .container-channels {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.container-social-media {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  flex-grow: 1;
+}
+
+/* .container-email {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  flex-grow: 1;
+} */
 
 
 /*** MEDIA QUERIES ***/
@@ -141,6 +190,39 @@ footer {
   .hamburger {
     display: none; 
   }
+
+
+  /*** FOOTER ***/
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    /* padding: 30px 16px; */
+    border: 1px solid white;
+  }
+  
+  .container-contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 25%;
+    border: 1px solid white;
+  }
+  
+  .container-channels {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    border: 1px solid white;
+  }
+
+  .container-social-media {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    flex-grow: 1;
+    border: 1px solid white;
+  }
+
 }
 
 /* Desktop - only include the elements that I want to behave differently on this specific device */
