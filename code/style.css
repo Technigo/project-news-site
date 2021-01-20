@@ -4,18 +4,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 /************ HEADER ************/
 
 header {
-  background-color: rgba(255, 255, 255, 0.438);
+  width: 95%;
+  background-color: #ffffff9b;
   display: flex;
-  border: 6px double #3a3c3f;
-  border-radius: 5px;
+  border-bottom: 1px solid #3a3c3f;
+  box-shadow: 0 5px 5px #3a3c3f;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 50px;
+  margin-bottom: 20px;
 }
 header img {
   width: 80px;
@@ -35,7 +38,7 @@ h1 {
   width: 30px;
   height: 5px;
   border-radius: 5px;
-  background-color: black;
+  background-color: #000;
 }
 nav {
   display: none;
@@ -66,7 +69,7 @@ a {
   box-shadow: 5px 5px 5px #3a3c3f;
 }
 .big-news-text {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   max-width: 800px;
   border: 1px solid #3a3c3f;
@@ -98,19 +101,35 @@ article p:nth-child(2) {
   border-radius: 10px;
 }
 .small-news div {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #3a3c3f;
   border-radius: 10px;
   padding: 5px;
   margin: 10px;
   box-shadow: 5px 5px 5px #3a3c3f;
 }
-
 h3 {
   margin: 10px;
 }
+.small-news div:hover {
+  box-shadow: 5px 5px 20px #3a3c3f;
+}
+/************ FOOTER ************/
 
-/************ SMALL NEWS ************/
+footer {
+  width: 100%;
+  background-color: #ffffff36;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #3a3c3f;
+  box-shadow: 0 -5px 5px #3a3c3f;
+  margin-top: 20px;
+}
+footer a {
+  margin: 20px;
+}
+
+/************ MEDIA QUERIES ************/
 
 @media (min-width: 667px) {
   .hamburger {
