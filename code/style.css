@@ -69,6 +69,11 @@ body {
     "news-mosiac news-column"
     "news-list news-list"
     "footer footer";
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1160px;
 }
 
 header {
@@ -162,14 +167,18 @@ footer {
 }
 
 /* Sizing for Tablets */
-@media (min-width: 668px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  body {
+    width: 960px;
+  }
+
   #news-mosiac {
     grid-template-columns: repeat(2, auto);
   }
 }
 
 /* Sizing for Mobile */
-@media (max-width: 667px) {
+@media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 300px 400px auto auto auto 200px;
@@ -180,6 +189,7 @@ footer {
       "news-column"
       "news-list"
       "footer";
+    width: 740px;
   }
 
   header {
