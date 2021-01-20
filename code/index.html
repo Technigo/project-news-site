@@ -9,31 +9,30 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-wrapper">
-      <nav>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox"><a class="menu-button"></a>
+  <header class="header">
+    <nav class="nav">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox"><a class="menu-button"></a>
+      </label>
+      <div class="menu-content">
+        <a href="contacts.html" target="blank">contact</a>
+        <a href="about.html" target="blank">about</a>
+        <a href="signup.html" target="blank">sign up</a>
+        <a href="login.html" target="blank">login</a>
+      </div>
+      <div class="search-content">
+        <input type="checkbox" id="searchbox">
+        <label for="searchbox">
+          <img class="search-button" src="../pictures/magnify.png">
         </label>
-        <div class="menu-content">
-          <a href="contacts.html" target="blank">contact</a>
-          <a href="about.html" target="blank">about</a>
-          <a href="signup.html" target="blank">sign up</a>
-          <a href="login.html" target="blank">login</a>
+        <div class="searchbar">
+          <input type="text" placeholder="Search..">
         </div>
-        <div class="search-content">
-          <input type="checkbox" id="searchbox">
-          <label for="searchbox">
-            <img class="search-button" src="../pictures/magnify.png">
-          </label>
-          <div class="searchbar">
-            <input type="text" placeholder="Search..">
-          </div>
-        </div>
-      </nav>
-      <div class="meteor"></div>
-      <h1>SPACE NEWS</h1>
+    </nav>
+    <div class="meteor"></div>
+    <h1>SPACE NEWS</h1>
   </header>
+
   <section class="big-news">
     <container class="big-img-container">
       <img src="../pictures/astronaut.jpg">
@@ -81,7 +80,8 @@
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><br><a href="c" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><br><a href="c" target="blank">More
+          -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
@@ -147,7 +147,8 @@
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><br><a href="i" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><br><a href="i" target="blank">More
+          -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
@@ -183,14 +184,15 @@
       <a class="top-button" href="#top">^<br>^</a>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-wrapper">
       <p>&copy; Pauline Andersson 2021</p>
       <container class="footer-img-container">
         <img src="../pictures/logo.svg">
-        </contaier>
+      </contaier>
     </div>
   </footer>
+
 </body>
 
 </html>

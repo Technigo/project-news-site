@@ -14,43 +14,54 @@ body {
 
 /* Meteor styling */
 .meteor {
-  border-color: rgba(231, 116, 71, 0.589);
-  background-color: rgb(244, 248, 12);
+  border-color: rgba(231, 116, 71, 0);
+  background-color:rgba(235, 100, 59, 0.74); 
   border-radius: 50%;
   box-shadow: 0px 0px 3px 3px rgba(235, 65, 59, 0.74);
-  width: 2px;
+  width: 5px;
   height: 5px;
   position: absolute;
-  top: 1000px;
-  left: 50%;
-  animation: meteor_path 10s linear infinite;
+  top: 800px;
+  left: 40%;
+  animation: meteor_path 15s linear infinite;
 }
 
 /* Animation for the meteor going over the sky in the header */
 @keyframes meteor_path {
-  from {
-    transform: rotate(-140deg) translateX(1000px);
+  0% {
+    transform: rotate(-140deg) translateX(800px);
   }
-
-  to {
-    transform: rotate(-40deg) translateX(1000px);
+  50% {
+    transform: rotate(-40deg) translateX(800px) scale(5);;
+  }
+  80%
+  {
+    transform: rotate(-40deg) translateX(800px) scale(10);
+  }
+  90%
+  {
+    transform: rotate(-40deg) translateX(800px) scale(0.1);
+  }
+  100%
+  {
+    transform: rotate(-40deg) translateX(1000px) scale(0.1);
   }
 }
 
 /* wraps all contents in the header and sets header background picture */
-.header-wrapper {
+.header {
   display: block;
   position: relative;
   background-image: url("../pictures/ISS.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height: 40em;
+  height: 35em;
   box-shadow: 0 1px 4px 2px #f1df77;
   background-position-y: -15vh;
 }
 
 /* styling of page name text in the header */
-header h1 {
+.header h1 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -62,7 +73,7 @@ header h1 {
 }
 
 /* navigation bar sticky on top of the page, flex is used to place menu content and search bar on the navbar */
-nav {
+.nav {
   display: flex;
   width: 100%;
   height: 25px;
@@ -117,13 +128,13 @@ nav {
 }
 
 /* links in navbar change background-color and text color on mouse over */
-nav a:hover {
+.nav a:hover {
   background-color: #f1df77;
   color: black;
 }
 
 /* links in navbar change background-color when mouse is clicked down */
-nav a:active {
+.nav a:active {
   background-color: rgb(255, 252, 64);
 }
 
@@ -157,7 +168,7 @@ nav a:active {
 }
 
 /* styling of input search */
-nav input[type=text] {
+.nav input[type=text] {
   opacity: 0.5;
   font-size: 12px;
   font-family: 'Orbitron', sans-serif;
@@ -173,7 +184,7 @@ nav input[type=text] {
 }
 
 /* makes sure there are no outline when you click on the search input to write */
-nav input[type="text"]:focus {
+.nav input[type="text"]:focus {
   outline: none;
 }
 
@@ -206,6 +217,7 @@ nav input[type="text"]:focus {
 .big-text-container {
   flex: 0.66;
   background-color: rgba(0, 0, 0, 0.267);
+  border: solid rgb(2, 160, 252) 0.5px;
   padding: 10px;
 }
 
@@ -263,9 +275,8 @@ nav input[type="text"]:focus {
 
 /*styling of a fixed button to take you to the top of the page */
 .top-button {
-  right: 50%;
   right: 0;
-  bottom: 60px;
+  bottom: 4em;
   position: fixed;
   font-family: 'Orbitron', sans-serif;
   color: #f1df77;
@@ -281,9 +292,10 @@ nav input[type="text"]:focus {
 }
 
 /*makes sure the footer is always on bottom and takes up the full width of the screen*/
-footer {
+.footer {
   width: 100%;
   position: absolute;
+  bottom: 0;
 }
 
 /* wrapper for iems in footer, styles and places */
@@ -312,7 +324,7 @@ footer {
   object-fit: cover;
 }
 
-footer p {
+.footer p {
   color:rgba(247, 250, 78, 0.438);
   font-size: 11px;
   margin: 10px;
@@ -359,12 +371,39 @@ h3:hover, p:hover {
 
 @media screen and (max-device-width: 1024px),
 (max-width:1200px) {
-  header h1 {
+  .header h1 {
     font-size: 45px;
   }
 
-  .header-wrapper {
+  .header {
     height: 30em;
+  }
+
+  /* adapting the meteor animation to smaller screen */
+  .meteor {
+    top: 900px;
+    left: 0%;
+  }
+
+  @keyframes meteor_path {
+    0% {
+      transform: rotate(-140deg) translateX(900px);
+    }
+    50% {
+      transform: rotate(-40deg) translateX(900px) scale(5);;
+    }
+    80%
+    {
+      transform: rotate(-40deg) translateX(900px) scale(10);
+    }
+    90%
+    {
+      transform: rotate(-40deg) translateX(900px) scale(0.1);
+    }
+    100%
+    {
+      transform: rotate(-40deg) translateX(900px) scale(0.1);
+    }
   }
 
   /*less objects per row, because of lesser width */
@@ -384,6 +423,29 @@ h3:hover, p:hover {
 /*mobe devices  */
 @media screen and (min-device-width: 320px) and (max-device-width: 669px),
 (max-width: 669px) {
+  .meteor {
+    top: 500px;
+    left: -10%;
+    animation: meteor_path 10s linear infinite;
+  }
+
+  @keyframes meteor_path {
+    0% {
+      transform: rotate(-140deg) translateX(500px);
+    }
+    50% {
+      transform: rotate(-25deg) translateX(500px) scale(2.5);;
+    }
+    80%
+    {
+      transform: rotate(-25deg) translateX(500px) scale(7);
+    }
+    100%
+    {
+      transform: rotate(-25deg) translateX(500px) scale(0.1);
+    }
+  }
+
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
   }
@@ -416,7 +478,7 @@ h3:hover, p:hover {
     transition: 0.5s;
   }
 
-  nav input[type=text] {
+  .nav input[type=text] {
     font-size: 12px;
     height: 2.3em;
     background-color: black;
@@ -425,7 +487,7 @@ h3:hover, p:hover {
   }
 
   /*hides the top navbar background*/
-  nav {
+  .nav {
     background-color: rgba(0, 0, 0, 0);
     border: none;
   }
@@ -469,11 +531,11 @@ h3:hover, p:hover {
     transition: 0.5s;
   }
   
-  header h1 {
+  .header h1 {
     font-size: 35px;
   }
 
-  .header-wrapper {
+  .header{
     height: 25em;
     background-image: url("../pictures/ISS1280px.jpg");
   }
