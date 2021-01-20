@@ -195,7 +195,28 @@ img.small-news {
   .article {
     width: 400px;
   }
+
+  section.small-news {
+    display: grid;
+    grid-template-columns:330px 330px;
+    grid-template-rows: 450px;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  figure.small-news {
+    width: 300px;
+    padding: 14px;
+    margin: 0;
+  }
   
+  img.small-news {
+    width: 300px;
+    margin: 0;
+  }
 }
 
 /*Styling for big desktop*/
