@@ -17,16 +17,17 @@ Have a look at:
 - 
 
 
-todo
-put top logo in proper flex div
-add top menu
-"small news" align to grid
+## To do
+<!-- put top logo in proper flex div -->
+<!-- add top menu -->
+<!-- "small news" align to grid -->
 reorganize css - text
 reorganize css - functional classes
 "podcasts" add content
 "full length news" add content
-add top menu
-add section
+"full length news" side scroll
+add css grid section
 footer
 overflow ellipsis
-
+smaller text in "optional" div
+image credits inside image as nyt
