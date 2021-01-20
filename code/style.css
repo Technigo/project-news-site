@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  font-family: 'Xanh Mono', monospace;
+  /* font-family: 'Xanh Mono', monospace; */
+  font-family: 'Cabin', sans-serif;
   font-size: 50px;
   color: #e8eae6;
 }
@@ -35,14 +36,18 @@ a {
 /* HEADER */
 
 nav {
-  background-color: #7C8BAD;
+  background-color: black;
   height: 140px;
   display: flex;
   align-items: center;
-  padding: 0 16px;
   justify-content: space-between;
+  width: 100%;
+}
+
+header {
   position: sticky;
   top: 0px;
+  box-shadow: -1px 10px 25px -6px rgba(133,124,124,0.72);
 }
 
 header img {
@@ -146,8 +151,8 @@ nav a {
   .small-news {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-grow: 1;    /* width: 600px; */
+    justify-content: space-around;
+    flex-grow: 1;
   }
 
   .small-news-container {
@@ -172,7 +177,8 @@ nav a {
   .small-news {
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 600px; */
+    justify-content: space-around;
+    flex-grow: 1;  
   }
 
   .small-news-container {
