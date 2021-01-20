@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/riesling-webfont.css" type="text/css" charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
+    <!-- Fullscreen SideNavbar (default: hidden) -->
+    <div id="sideNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Travel</a>
+        <a href="#">Style</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Search</a>
+        <a href="#">Archive</a>
+      </div>
+    </div>
+    <!-- Header (title, promos & nav links) -->
     <header>
       <h1 class="title">RivlingNews</h1>
-      <!-- Promotional Content (viewed on both sides of logo) -->
-      <!-- Shown by default; hidden in mobile -->
-      <figure class="promo-1">promo1</figure>
-      <figure class="promo-2">promo2</figure>
-      <nav class="nav-links">links</nav>
       <!-- Shown in mobile -->
       <div class="btn-side-nav">
-        <button>hamburger</button>
+        <span onclick="openNav()">&#9776;</span>
       </div>
+
+      <!-- Hidden in mobile -->
+      <figure class="promo-img promo-1">
+        <img src="https://source.unsplash.com/random/200x200" alt="" />
+      </figure>
+      <figure class="promo-img promo-2">
+        <img src="https://source.unsplash.com/random/200x200?1" alt="" />
+      </figure>
+      <nav class="nav-links">
+        <a href="#">Archive</a>
+        <ul id="central-links">
+          <li>
+            <a href="#">Travel</a>
+          </li>
+          <li>
+            <a href="#">Style</a>
+          </li>
+          <li>
+            <a href="#">Entertainment</a>
+          </li>
+        </ul>
+        <a href="#">Search</a>
+      </nav>
     </header>
 
     <section id="hero">
@@ -46,61 +82,49 @@
       <article class="article-column">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum
-          facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-          orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin
-          sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod
-          magna ac lorem rutrum elementum. Donec viverra auctor lobortis.
-          Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna
-          semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio
-          nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat
-          volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet
-          purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit.
-          Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi
-          malesuada nulla nec purus convallis consequat. Vivamus id mollis quam.
-          Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.
-          Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor
-          arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque
-          lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci
-          bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam
-          scelerisque tortor dictum gravida. In hac habitasse platea dictumst.
-          Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu
-          consequat purus metus eu velit. Proin metus odio, aliquam eget
-          molestie nec, gravida ut sapien. Phasellus quis est sed turpis
-          sollicitudin venenatis sed eu odio. Praesent eget neque eu eros
-          interdum malesuada non vel leo. Sed fringilla porta ligula egestas
-          tincidunt. Nullam risus magna, ornare vitae varius eget, scelerisque a
-          libero. Morbi eu porttitor ipsum. Nullam lorem nisi, posuere quis
-          volutpat eget, luctus nec massa. Pellentesque aliquam lacinia tellus
-          sit amet bibendum. Ut posuere justo in enim pretium scelerisque. Etiam
-          ornare vehicula euismod. Vestibulum at risus augue. Sed non semper
-          dolor. Sed fringilla consequat velit a porta. Pellentesque sed lectus
-          pharetra ipsum ultricies commodo non sit amet velit. Suspendisse
-          volutpat lobortis ipsum, in scelerisque nisi iaculis a. Duis pulvinar
-          lacinia commodo. Integer in lorem id nibh luctus aliquam. Sed
-          elementum, est ac sagittis porttitor, neque metus ultricies ante, in
-          accumsan. Curabitur vulputate, ligula lacinia scelerisque tempor,
-          lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et
-          magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In
-          condimentum facilisis porta. Sed nec diam eu diam mattis viverra.
-          Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris,
-          quis sollicitudin sapien justo in libero. Vestibulum mollis mauris
-          enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra
-          auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi
-          a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas
-          consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi.
-          Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue
-          sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a,
-          lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue
-          sed ut dui. Morbi malesuada nulla nec purus convallis consequat.
-          Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id
-          nisl volutpat bibendum. Quisque commodo hendrerit lorem.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna
+          ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam
+          mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis
+          sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac
+          lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla
+          placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac
+          egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat
+          volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus
+          quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna
+          tincidunt congue sed ut dui. Morbi malesuada nulla nec purus convallis consequat. Vivamus
+          id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.
+          Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor arcu. Vivamus rutrum
+          nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales
+          feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec
+          semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam
+          pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu
+          velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est
+          sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum
+          malesuada non vel leo. Sed fringilla porta ligula egestas tincidunt. Nullam risus magna,
+          ornare vitae varius eget, scelerisque a libero. Morbi eu porttitor ipsum. Nullam lorem
+          nisi, posuere quis volutpat eget, luctus nec massa. Pellentesque aliquam lacinia tellus
+          sit amet bibendum. Ut posuere justo in enim pretium scelerisque. Etiam ornare vehicula
+          euismod. Vestibulum at risus augue. Sed non semper dolor. Sed fringilla consequat velit a
+          porta. Pellentesque sed lectus pharetra ipsum ultricies commodo non sit amet velit.
+          Suspendisse volutpat lobortis ipsum, in scelerisque nisi iaculis a. Duis pulvinar lacinia
+          commodo. Integer in lorem id nibh luctus aliquam. Sed elementum, est ac sagittis
+          porttitor, neque metus ultricies ante, in accumsan. Curabitur vulputate, ligula lacinia
+          scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed
+          molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
+          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et
+          magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed
+          urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu
+          diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris,
+          quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod
+          magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a
+          nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc
+          ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam
+          erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque
+          lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna
+          tincidunt congue sed ut dui. Morbi malesuada nulla nec purus convallis consequat. Vivamus
+          id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum.
+          Quisque commodo hendrerit lorem.
         </p>
         <button>Read more</button>
       </article>
@@ -111,51 +135,46 @@
       <article class="article-list">
         <h2>Lorem Ipsum</h2>
         <p>
-          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci
-          tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
-          sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
+          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies
+          ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
         </p>
       </article>
       <article class="article-list">
         <h2>Lorem Ipsum</h2>
         <p>
-          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci
-          tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
-          sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
+          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies
+          ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
         </p>
       </article>
       <article class="article-list">
         <h2>Lorem Ipsum</h2>
         <p>
-          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci
-          tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
-          sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
+          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies
+          ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
         </p>
       </article>
       <article class="article-list">
         <h2>Lorem Ipsum</h2>
         <p>
-          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci
-          tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
-          sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
+          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies
+          ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
         </p>
       </article>
       <article class="article-list">
         <h2>Lorem Ipsum</h2>
         <p>
-          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci
-          tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
-          sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
+          Amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies
+          ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis…
         </p>
       </article>
     </section>
@@ -166,4 +185,13 @@
       <div class="footer-links">RIGHT SIDE LINKS</div>
     </footer>
   </body>
+  <script>
+    function openNav() {
+      document.getElementById("sideNav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("sideNav").style.display = "none";
+    }
+  </script>
 </html>
