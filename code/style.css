@@ -105,6 +105,14 @@ img.small-news {
 
   .navbar {
     display: block;
+    background-color: red;
+  }
+
+  .logo-and-title {
+    background-color: pink;
+    width: 100px;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 
   .title {
@@ -112,7 +120,10 @@ img.small-news {
   }
 
   header {
-    display: flex;
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 40px 40px auto 40px 40px;
+    grid-gap: 10px;
   }
 }
 
