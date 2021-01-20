@@ -21,13 +21,14 @@ Have a look at:
 <!-- put top logo in proper flex div -->
 <!-- add top menu -->
 <!-- "small news" align to grid -->
-reorganize css - text
-reorganize css - functional classes
-"podcasts" add content
-"full length news" add content
+<!-- "podcasts" add content
+"full length news" add content -->
+<!-- smaller text in "optional" div -->
+spacing and image size in mobile
 "full length news" side scroll
 add css grid section
 footer
 overflow ellipsis
-smaller text in "optional" div
+reorganize css - text
+reorganize css - functional classes
 image credits inside image as nyt
