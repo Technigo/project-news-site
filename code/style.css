@@ -1,335 +1,317 @@
 body {
-    background-color: #212529;
-  }
+  background-color: #212529;
+}
   
+/*------Flex container starts here------*/
 
-  /* FIGURE */ /* HITTA SEN EN PLATS TILL DEN NEDAN */
-  .figure {
-      width: 1200px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-  }
+.flex-container {
+  border: 4px solid #FFE401;
+  background-color: #FFE401;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
   
-  .figure figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    margin: auto;
-  } 
-  
-  .figure figcaption {
-    background-color: white;
-    color: black;
-    padding: 2px;
-    text-align:left;
-    font-size: 40px;
-    ; 
-  } 
-  /* ----- fIGURE ENDS HERE ---*/
-  
-/*--- Flex container starts here ---*/
+.flex-child {
+  margin: 5px;
 
-  .flex-container {
-    border: 4px solid #FFE401;
-    background-color: #FFE401;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+}
   
-  .flex-child {
-    margin: 5px;
-    /*border: 2px solid; */
-    border-radius: 5px;
-    padding: 5px;
-    display: flex;
-  }
-  
-  
-  img {
-    width: 100px;
-    height: 100px;
-    align-items: flex-end;
-  }
+img {
+  width: 100px;
+  height: 100px;
+  align-items: flex-end;
+}
 
-  .white {
-    width: 50%;
-  }
+.white {
+  width: 50%;
+}
   
+/*---Flex container => Navbar starts here---*/
   
-  /*--- Flex conainer -> Navbar starts here--- */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFE401;
+}
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FFE401;
-  }
+li {
+  float: left;
+}
   
-  li {
-    float: left;
-  }
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+li a:hover {
+  background-color: #c9bb40;
+  border-radius: 25px;
+}
   
-  li a:hover {
-    background-color: #c9bb40;
-    border-radius: 25px;
-  }
+/*---Flex container => Navbar ends here---*/
   
-    /*---Navbar ends here ---*/
+a.home1, .politics1, .home2, .politics, .sport, .culture {
+  width: 112px;
+  height: 50px;
+  font-size: 28px;
+  padding:28px 16px 0 16px ;
+  font-weight: bold;
+}
   
-    a.home1, .politics1, .home2, .politics, .sport, .culture {
-        width: 112px;
-        height: 50px;
-        font-size: 28px;
-        padding:28px 16px 0 16px ;
-        font-weight: bold;
-      }
-  
-  /* --- Flex Container section ends here --*/
+/*------Flex Container ends here------*/
 
 
 
 
 
 
-/*--- Big News section starts here ---*/
+/*------Big News starts here------*/
 
-  .big-news {
-    border: 4px solid white;
-    border-bottom: 4px solid #212529;
-    height: 330px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white; 
-  }
+.big-news {
+  border: 4px solid white;
+  border-bottom: 4px solid #212529;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white; 
+}
 
-  .big-news a{
-    text-decoration: underline;
-    color: black;
-  }
+.big-news a{
+  text-decoration: underline;
+  color: black;
+}
   
-  .inside-big {
-    margin: 5px;
-    /* border: 2px solid; */
-    border-radius: 5px;
-    padding: 5px;
-    width: 600px;
-    height: 300px;
-    display: flex;
-  }
+.inside-big {  
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 600px;
+  height: 300px;
+  display: flex;
+}
   
-  .inside-big img {
-    width: 510px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: 10px 5px 5px  #212529;
-  }
+.inside-big img {
+  width: 510px;
+  height: 300px;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px  #212529;
+}
   
-  .pic {
-    width: 45%;
-  }
+.pic {
+  width: 45%;
+}
   
-  .text1 {
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-  }
+.text1 {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
   
-  .text2 {
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-  }
+.text2 {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
 
-/*--- Big News section ends here ---*/
+/*---Big News => Figure class starts here---*/
+
+.figure {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.figure figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+} 
+
+.figure figcaption {
+  background-color: white;
+  color: black;
+  padding: 2px;
+  text-align:left;
+  font-size: 40px;
+} 
+
+/*---Figure class ends here---*/
+
+
+/*------Big News section ends here------*/
   
 
-/*--- Latest News section starts here ---*/
+/*------Latest News starts here------*/
 
 .latest { /* gör den kanske gul elelr glittrig eller något */
-    border: 4px solid white;
-    border-bottom: 4px solid #212529;
-    /*text-align: center; */
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-  }
+  border: 4px solid white;
+  border-bottom: 4px solid #212529;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
   
-  .latest h1 {
-    position: relative;
-    animation-name: latest;
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-   
-    display: inline; /* Ta bort denna och se skillnaden */
-    /* width: 400px; /*200px*/
-    /* height: 100px; /*40px*/
-    background-color: #FFE401;
-    justify-content:last baseline;
-    align-items: flex-end;
-    border-radius: 25px;
+.latest h1 {
+  position: relative;
+  animation-name: latest;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: inline; /* Important */
+  background-color: #FFE401;
+  justify-content:last baseline;
+  align-items: flex-end;
+  border-radius: 25px;
+}
   
-  }
-  
-  
-  /* Animation */
-  @keyframes latest {
-    0%   { left:0px; top:0px;}
-    20%  { left:200px; top:0px;}
-    40%  { left:500px; top:0px;}
-    60%  { left:800px; top:0px;}
-    100%  { left:1000px; top:0px;}
-  
-  
-  }
+/*---Animation starts here---*/
+@keyframes latest {
+  0%   { left:0px; top:0px;}
+  20%  { left:200px; top:0px;}
+  40%  { left:500px; top:0px;}
+  60%  { left:800px; top:0px;}
+  100%  { left:1000px; top:0px;}
+}
+/*---Animation ends here---*/
 
-/*--- Latest News section ends here ---*/
+/*------Latest News ends here------*/
+
   
 /*------ OTHER NEWS SECTION starts ------*/
-  .other-news {
-    border: 4px solid white;
-    height: 400px;
-    display: grid; /* test */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-  }
+.other-news {
+  border: 4px solid white;
+  height: 400px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
   
-  .other-news .flex-child  {
-    width: 270px;
-    height: 170px;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 5px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.other-news .flex-child  {
+  width: 270px;
+  height: 170px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
   
   /* ALLTING NEDANFÖR är nytt, 
   ska ta bort denna text/kommentar när 
   jag ska rensa innan inlämning*/
 
-  .one a {
-    background: #ffffff;
-    display: inline-block;
-    margin: 5px 5px 5px ; /* 55px 75px 30px */
-    padding: 15px 15px 25px; /* 15px 15px 30px  */
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    -webkit-transition: all .20s linear;
-    -moz-transition: all .20s linear;
-    transition: all .20s linear;
-    z-index: 0;
-    position: relative;
-  }
-  .one a:after {
-    color: #333;
-    font-size: 25px;
-    content: attr(title);
-    position: relative;
-    top: 15px;
-  }
-  .one img {
-    display: block;
-    width: 250px;
-  }
-  .one a:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-    z-index: 10;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-  }
+.one a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 5px 5px 5px ; /* 55px 75px 30px */
+  padding: 15px 15px 25px; /* 15px 15px 30px  */
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+.one a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+
+.one img {
+  display: block;
+  width: 250px;
+}
+.one a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
 
 
-  /* Overlay */
+/*---Overlay starts here---*/
 
-  .one {
-    position: relative;
-    width: 50%; /* 1 */
-  }
+.one {
+  position: relative;
+  width: 50%; 
+}
   
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  } /* 5 */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+} 
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #212529;
-  }  /* 4 */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #212529;
+}  
   
-  .one:hover .overlay {
-    opacity: 0.85;  /* 3 */
-  }
+.one:hover .overlay {
+  opacity: 0.85;  
+}
   
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center; /* 2 */
-  }
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; 
+}
 
+/*---Overlay ends here---*/
 
+/*------Other News section ends------*/
 
+/* HÄR ÄR JAG VID RENSNINGEN KL 16:53 21 JANUARI */
 
-
-
-
-   /* ALLTING OVANFÖR --- */ 
-/*--- Other News section ends ---*/
-
-
-  
-  
-  /* a {
-    text-decoration: underline;
-    color: white;
-  } */ /*Denna verkar inte ha någon funktion längre */
-  
 /*--- FOOTER starts here ---*/ 
   .footer {
     border: 4px solid rgb(184, 179, 179);
