@@ -7,19 +7,25 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 1100px;
-  margin: 25px auto;
-}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:white;
+  width: 100%;
+  background: grey;
+}
+
+.logo {
+  flex-basis: 150px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .title {
+  flex-basis: 600px;
+  max-width: 600px;
+  max-height: 200px;
   background: grey;
 }
 
