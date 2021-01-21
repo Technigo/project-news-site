@@ -211,12 +211,12 @@ body {
 }
 
 /* sets text color on placeholder text */
-.nav input[type=text]::placeholder {
+.nav input[type="text"]::placeholder {
   color: black;
 }
 
 /* makes sure there are no outline when you click on the search input to write */
-.nav input[type=text]:focus {
+.nav input[type="text"]:focus {
   outline: none;
 }
 
@@ -417,10 +417,11 @@ p:hover {
   background: rgba(0, 0, 0, 0.267);
   font-family: 'Orbitron', sans-serif;
   color: rgb(2, 160, 252);
+  padding: 40px;
 }
 
 /* styling of the submit button for the sign-up form */
-.signup input[type="submit"] {
+.form input[type="submit"] {
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.671);
   border: solid rgb(2, 160, 252) 1px;
@@ -428,7 +429,7 @@ p:hover {
   color: rgb(2, 160, 252);
 }
 
-.signup input[type="submit"]:hover {
+.form input[type="submit"]:hover {
   background-color: rgb(2, 160, 252);
   color: black;
 }
@@ -540,7 +541,7 @@ p:hover {
 
   .simple-header {
     height: 50px;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .logo {
@@ -643,5 +644,9 @@ p:hover {
     width: 100%;
     height: 100%;
     box-shadow: none;
+  }
+
+  .form h3 {
+    text-align: center;
   }
 }

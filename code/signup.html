@@ -19,15 +19,6 @@
             <a href="about.html" target="blank">about</a>
             <a href="login.html" target="blank">login</a>
         </div>
-        <div class="search-content">
-            <input type="checkbox" id="searchbox">
-            <label for="searchbox">
-                <img class="search-button" src="../pictures/magnify.png">
-            </label>
-            <div class="searchbar">
-                <input type="text" placeholder="Search..">
-            </div>
-        </div>
     </nav>
     <div class="logo"><img src="../pictures/logo_space.svg"></div>
     <div class="logo-simple"><img src="../pictures/logo_space_simple.svg"></div>
@@ -38,15 +29,17 @@
         <h2>SIGN UP!</h2>
         <h3> With a login you will be able to comstumize content and notifications.</h3><br><br><br>
         <label for="first_name">First name:</label><br>
-        <input type="text" id="first_name" name="first_name"><br>
+        <input type="text" id="first_name" name="first_name" placeholder="Lance" required><br>
         <label for="last_name">Last name:</label><br>
-        <input type="text" id="last_name" name="last_name"><br>
+        <input type="text" id="last_name" name="last_name" placeholder="Armstrong" required><br>
         <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="username">Choose a username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Choose a password:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <input type="email" id="email" name="email" placeholder="example@example.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+        required><br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Choose a password" minlength="8"
+        maxlength="12" required><br>
         <input type="submit" value="Submit">
     </form>
 </section>
