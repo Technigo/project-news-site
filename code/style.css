@@ -4,12 +4,14 @@ html {
 }
 
 body {
-  margin:0px;  
+  margin:0px;
+  border-bottom: solid 5px rgb(46, 7, 7);
+  
 }
 
 /***HEADER SECTION***/
 
-  header {
+  .header1 {
     display:flex;
     justify-content:center;
     align-items: center;
@@ -17,8 +19,8 @@ body {
     padding: 0 10px; 
     size: 50%;
     border-bottom: solid 5px rgb(46, 7, 7);
-    
   }
+
   .logopic {
     border: 1px solid;
     width:50px;
@@ -30,7 +32,21 @@ body {
     margin-left: 2px;
     margin-right: 5px;
   }
+
+  .hamburger {
+    display: flex;
+width: 50px;
+height: 30px;
+flex-direction: column;
+justify-content: space-between;
+  }  
   
+  .hamburger div {
+    width: 30px;
+    height: 5px;
+    background: black;
+  }
+
 nav {
   display:none;
 font-size: 20px;
@@ -47,45 +63,112 @@ nav a {
 .big-news {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
-.big-news img {
-  width:100%;
-  margin: 0px;
-  padding-top:0px;
+.bread {
+overflow: hidden;
+width:95%; 
+height:400px;
 }
 
-.big-news article {
-text-align: center ;
+.bread img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*** THE OTHER 7 NEWS (a grid of 4 and 3) (a grid of 2/2/2/1) (a grid of 1/1/1/1/1/1/1 ***/
+.other-news {
+display: flex;
+align-items: center;
+flex-direction: column;
 
+}
 
+.faceyoga {
+  overflow:hidden;
+  width:95%;
+  height: 400px;
+}
+
+.faceyoga img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.chairs {
+  overflow: hidden;
+  width: 95%;
+  height: 400px;
+}
+
+.chairs img {
+  height: 100%;
+  width: 100%;
+object-fit: cover;
+}
+
+.internet {
+  overflow: hidden;
+  width:95%;
+  height: 400px;
+}
+
+.internet img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
 
 /*** MEDIA QERIES ***/
+  
 
 @media (min-width:668px) {
-  header {
+
+  .header1 {
     display:flex;
     justify-content:flex-start;
   }
+    .hamburger {
+      display: none;
+    }
   
   nav {
     display: inline-block
   }
 
-  .big-news img {
-    max-width: 80%;
-    max-height: 80%;
+  .bread {
+    max-width: 667px;
   }
 
-  .big-news article {
-text-align: left;
-padding-left: 10px;
+  .faceyoga, .chairs, .internet {
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom:100px;
+    max-width:300px;
+    max-height:300px;
   }
 
-  @media (min-width:1024px){
+  .other-news {
+    justify-content:center;
+    flex-direction: row;
   }
+
+  @media (min-width:900px) {
+ .bread {
+    max-width: 750px;
   }
+
+  .faceyoga, .chairs, .internet {
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom:100px;
+    max-width:450px;
+    max-height:450px;
+
+}
+
+  
