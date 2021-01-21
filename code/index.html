@@ -11,32 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Indie+Flower&display=swap" rel="stylesheet">    
     <title>XOXO Magazine</title>
   </head>
-  <body>  
-    
-    <div class="banner">
-      <marquee behavior="alternate" direction="left"><a href="#">Sign up for more beaty & fashion news</a></marquee>
-    </div> 
-
+  <body> 
+     
     <header>
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <img class="logo" src="Images/NEWS.png" alt="Xoxo Magazine logo"/>
-      <nav name="top">
-          <a href="#">Beauty</a>
-          <a href="#">Health</a>
-          <a href="#">Newsletter</a>
-          <a href="#">Get in touch</a>
-      </nav>
+      <div class="banner">
+        <marquee behavior="alternate" direction="left"><a href="#">Sign up for more beaty & fashion news</a></marquee>
+      </div> 
+  
+      <section class="navigation-bar">
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+  
+        <div class="mobile-desktop">
+          <img class="logo" src="Images/NEWS.svg" alt="Xoxo Magazine logo" />
+          <nav name="top" class="nav-links">
+            <a href="#">Beauty</a>
+            <a href="#">Health</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        
+        <div class="tablet">
+          <nav name="top" class="nav-links">
+            <a href="#">Beauty</a>
+            <a href="#">Health</a>
+            <img class="logo" src="Images/NEWS.svg" alt="Xoxo Magazine logo" />
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>   
+      </section>
     </header>  
   
     <section class="big-news">   
-      <div class="img-container">
-        <div class="polaroid" polaroid-caption="#Chanel">
-          <img src="Images/Chanel-3.jpeg" alt="Chanel parfym image" onmouseover="this.src='Images/Chanel-4.jpeg'" onmouseout="this.src='Images/Chanel-3.jpeg'"/>
-        </div>
+  
+      <div class="polaroid">
+        <img class="big-img" src="Images/Chanel-3.jpeg" alt="Chanel parfym image" onmouseover="this.src='Images/Chanel-4.jpeg'" onmouseout="this.src='Images/Chanel-3.jpeg'"/>
+        <div class="caption">#Chanel</div>
       </div>
 
       <div class="big-news-text">
@@ -45,74 +60,76 @@
       </div>
     </section> 
 
-    <section class="regular-news">
+    <section class="news">
       <h1>All the latest <span style="color:#FF13A7;">news</span></h1>
+
       <div class="grid-container">
-        <article class="item">
-          <img class="image" src="Images/img1.jpeg" alt="Image with brushes"/>
+        <article class="news-card">
+          <img class="news-image" src="Images/img1.jpeg" alt="Image with brushes" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>Best makeup brushes and how you keep them cleen</h3>
           <h5>16 April, 2021</h5>
         </article> 
-        <article class="item">
-          <img class="image" src="Images/img2.jpeg" alt="Image with magazins"/>
+
+        <article class="news-card">
+          <img class="news-image" src="Images/img2.jpeg" alt="Image with magazins" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>What every magazin is talking about right now</h3>
           <h5>13 April, 2021</h5>
         </article>  
-        <article class="item">
-          <img class="image" src="Images/img3.jpeg" alt="Image with bobbi brown makeup"/>
+
+        <article class="news-card">
+          <img class="news-image" src="Images/img3.jpeg" alt="Image with bobbi brown makeup" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>Bobbi Brown is the winner for the best bronzer in 2020</h3>
           <h5>20 Mars, 2021</h5>
         </article> 
-        <article class="item">
-          <img class="image" src="Images/img4.jpeg" alt="Image with yoga"/>
+
+        <article class="news-card">
+          <img class="news-image" src="Images/img4.jpeg" alt="Image with yoga" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>Yoga is the most popular goal for 2021 and here is why</h3>
           <h5>30 January, 2021</h5>
         </article> 
-        <article class="item">
-          <img class="image" src="Images/img5.jpeg" alt="Image with orange nails"/>
+        <article class="news-card">
+          <img class="news-image" src="Images/img5.jpeg" alt="Image with orange nails" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>Nail colors for summer 2021 and post corona</h3>
           <h5>29 January, 2021</h5>
         </article> 
-        <article class="item">
-          <img class="image" src="Images/img6.jpeg" alt="Image with shoping bags"/>
+
+        <article class="news-card">
+          <img class="news-image" src="Images/img6.jpeg" alt="Image with shoping bags" />
           <div class="img-description">
-            <a href="#"><p class="text">Read more</p></a>
+            <a href="#">Read more</a>
           </div>
           <h3>Shoping on Drottninggatan or online? Here is what everyone prefers</h3>
           <h5>16 April, 2021</h5>
         </article>
+
       </div>
     </section>
 
+    <section class="direction-icon">
+      <a href="#top"><i class="fas fa-angle-double-up fa-2x"></i></a>   
+    </section>   
 
-    <div class="direction-icon">
-      <a href="#top">
-        <i class="fas fa-angle-double-up fa-2x"></i>
-      </a>   
-    </div>   
-
-    <footer>
+    <footer class="footer">
       <div class="icons">
         <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
         <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
-        <input type="text" placeholder="Search...">
       </div>
     </footer>
 
