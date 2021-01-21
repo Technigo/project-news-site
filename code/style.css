@@ -1,188 +1,180 @@
-
+/*GOOGLE FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-body {
-  background-image:url(assets/background.png);
-  background-size:cover;
-  background-position: center;
-  color: #000;  
+/**** HEADER ****/
+.header-landing-page {
+    background: #13141b;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    padding: 0 16px;
+    margin: -8px;
+    font-family: 'Staatliches', cursive;
+    justify-content: space-between;
+    
 }
 
-h1{
-  color:black;
-}
-
-.desktop-box {
-background-color: lightgoldenrodyellow;
-border: 4px black solid;
-border-radius:10px;
-display: flex;
-margin: 70px 100px;
-width: 80%;
-padding: 100px;
-flex-direction:column;
-align-items: center; 
-justify-content: center;
+.header-logo {
+    width: 180px;
 
 }
 
+.site-title {
+    color:white;
+    font-size: 58px;
+    display: flex;
+    
 
-/* * * * KOM IHÅG ATT PUSH/Commit TO GIT * * * */ 
-
-/* Det kan vara värt att lägga in en class="Header"
-i headern. Ifall jag i framtiden vill bygga en till
-header i sidan så behöver jag kunna specifiera vilken jag 
-vill och style by class. Gäller alla såna.   */
-
-
-/* HEADER */
-
-header{
-  background: #13141b;
-  height: 100px;
-  padding: 0px;
-  display: flex;
-  margin: -8px;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-family: 'Staatliches', cursive;
 }
 
-header h2 {
-  color:white;
-  font-size: 80px;
-  margin: 0px;
-  font-family: 'Staatliches', cursive;
-  display: flex;
+.header-logo-container {
+    overflow:hidden;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .navigation-container {
-  display: flex;
-  font-size: 24px;  
-  /* margin-right: 24px; */
-  background-color: #13141b;
-  color:rgb(9, 85, 32);
+    display: none;
+    font-size: 24px;    
+    background-color: #13141b;
+    color:rgb(9, 85, 32);  
+    
 }
 
 .navigation-item {
-
-  margin-right: 10px;
+    margin-right: 20px;    
 }
 
 .navigation-item:last-child {
-
-  margin-right: 0;
+    margin-right: 0px;
 }
 
+.nav-link:any-link {
+    color:rgb(9, 85, 32); 
 
-/* header nav a:any-link {
-  padding:10px;
-  margin-right: 60px;
-  color:rgb(9, 85, 32);
-  
-} */
-
-.img-container-logo {
-overflow:hidden;
-width: 100px;
-height: 100px;
-display: flex;
-align-items: center;
-justify-content: center;
 }
+/**** BIG NEWS ****/
 
-/* BIG NEWS */
-/* Skriver man båda, så gäller regeln för båda */
 .big-news {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;  
-  border: 2px solid black;
-  align-items: center;
-  padding:10px;
-  background: whitesmoke;
-  flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-
-/*Kan jag ta bort big-news-img diven? */
-
-/*SMALL NEWS*/
-.small-news {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column;
-  margin: 10px;
-  
+.big-news:hover {
+    box-shadow: 18px 0 18px grey;
 }
 
-.small-news a {
-  border: 2px solid black;
-  display:flex;
-  background: whitesmoke;  
-  margin:10px;
-  text-align: center;
-
-}
-
-.small-news a:hover{
-
-  border: 4px solid black;
-  margin: 8px;
-
-}
-.small-news img{
-width:500px;
-height:500px;
-}
-
-/* NEW Grid */
-
-/* Responsive kör nog max när jag inte gör mobile first*/ 
-
-@media (min-width:1025px) {
-  .desktop-box {
-
-    flex-direction: row;    
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.big-news {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+    border: 2px solid black;
     align-items: center;
-  }
-  
-  .big-news {
-  flex-direction: row;
-  flex-shrink: 1;       
-  }
-  .big-news-text{
+    padding:10px 0;
+    background: whitesmoke;
+    flex-direction: column;
+    margin: 70px 20px 20px 20px;
+    width:90%;
+  }  
+
+.big-news-text{
 
     width:200px;
   }
 
-  .small-news {
-    flex-direction: row;
-    width: 60%;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items: center;    
-    }
+/**** SMALL NEWS ****/
 
-  .small-news img {
-  width: 80%;
-  height: 80%;  
+.small-news {
+    display: flex; 
+    flex-flow:column wrap;    
   }
-
-  .small-news a {
-  flex-direction: row;
-  width: 20%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  }
-
   
+  .small-news a {
+    border: 2px solid black;
+    display:flex;
+    background: whitesmoke;  
+    margin: 10px 20px;
+    text-align: center;  
+    width: 90%;    
+  }
+
+  .small-news a:hover {
+
+    box-shadow: 18px 0 18px grey;
+  
+  }
+
+    .small-news img {
+    width:500px;
+    height:500px;
 }
 
+  /***RESPONSIVE***/
 
+  @media (min-width: 768px) {
 
+    .navigation-container {
+        display: flex; 
+                      
+    } 
+
+    .header-landing-page {
+        justify-content: space-between;
+    }
+        
+    .site-title {
+        display: none;
+    }
+    .big-news {
+        flex-direction: row;
+        width: 85%;        
+    }
+    .small-news {
+        flex-direction: row;
+        
+    }
+    .small-news a {
+        width: 40%;
+        justify-content: space-evenly;
+        
+    }
+    .small-news a img {
+        width:80%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .navigation-container {
+        display: flex;
+        
+    } 
+    .site-title {
+        display: flex;
+    } 
+    .big-news {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .small-news {
+        flex-direction: row;  
+             
+    }
+    .small-news a {
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .small-news a img {
+        width:60%;
+       
+    }
+
+  }
