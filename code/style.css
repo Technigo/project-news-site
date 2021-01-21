@@ -144,7 +144,7 @@ html {
     align-items: center;
   }
 
-  .navigation-container:nth-child(1) {
+  .navigation-container-logo {
     order:2;
   }
 
@@ -218,11 +218,11 @@ html {
 /* IF SCREEN SIZE IS MORE THAN 1024PX WIDE - DESKTOP */
 
 @media screen and (min-width: 1024px) {
-  .navigation-container:nth-child(1){
+  .navigation-container-logo{
     margin-right: auto;
   }
 
-  .navigation-container:nth-child(1) {
+  .navigation-container-logo {
     order:1;
   }
 
