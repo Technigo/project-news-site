@@ -1,3 +1,4 @@
+/* fonts imported from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Roboto&family=Orbitron:wght@500&display=swap');
 
 /* body is set to relative so footer can be properly aligned by using this parent. 
@@ -76,7 +77,7 @@ body {
   background: rgba(0, 0, 0, 0.575);
 }
 
-/* styling of page name text in the header */
+/* container for main logo*/
 .logo {
   width: 280px;
   height: 144px;
@@ -330,7 +331,7 @@ body {
   bottom: 0;
 }
 
-/* wrapper for iems in footer, styles and places */
+/* wrapper for items in footer, styles and places */
 .footer-wrapper {
   display: flex;
   width: 100%;
@@ -395,7 +396,7 @@ p:hover {
   color: rgb(2, 160, 252);
 }
 
-/*section for the sign-up page*/
+/*section for the sign-up and login page*/
 .form-section {
   position: relative;
   display: flex;
@@ -404,7 +405,7 @@ p:hover {
   height: 100vh;
 }
 
-/* styling of the sign-up form */
+/* styling of the sign-up and login form */
 .form {
   display: flex;
   position: absolute;
@@ -420,7 +421,7 @@ p:hover {
   padding: 40px;
 }
 
-/* styling of the submit button for the sign-up form */
+/* styling of the submit button for the sign-up and login form */
 .form input[type="submit"] {
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.671);
@@ -443,6 +444,7 @@ p:hover {
   }
 }
 
+/* for tablet sized screens */
 @media screen and (max-device-width: 1024px),
 (max-width:1200px) {
 
@@ -455,7 +457,6 @@ p:hover {
     justify-content: center;
   }
 
-  /* styling of logo in the header. '*/
   .logo {
     width: 190px;
     height: 100px;
@@ -496,15 +497,7 @@ p:hover {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .big-news {
-    flex-direction: column;
-    align-items: space-evenly;
-  }
-
-}
-
-/*mobe devices  */
+/*for mobile devices  */
 @media screen and (min-device-width: 320px) and (max-device-width: 669px),
 (max-width: 669px) {
   .meteor {
@@ -633,6 +626,11 @@ p:hover {
     width: auto;
     right: 2.5em;
     transition: 0.5s;
+  }
+
+  .big-news {
+    flex-direction: column;
+    align-items: space-evenly;
   }
 
   .small-news {
