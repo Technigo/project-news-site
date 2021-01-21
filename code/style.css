@@ -10,18 +10,17 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 30px;  /* Add styling that'll put space between the letters */
+  font-size: 30px; 
+  letter-spacing: 4px;
 }
+
+/* h2 {
+
+} */
 
 h4 {
   font-size: 15px;
 }
-
-/* .container {   Think about if I need this
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-} */
 
 
 /*** HEADER ***/
@@ -51,7 +50,7 @@ nav a {
   margin-left: 16px;
 }
 
-.hamburger {
+.hamburger {          /*Lägg in en drop down menu*/
   width: 20px;
   height: 20px;
   display: flex;
@@ -74,13 +73,24 @@ nav a {
 .responsive-image {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 
 /*** BIG NEWS ***/
 
-.big-news {
+main {
+  width: 90%;
+  margin: auto;
+}
 
+.big-news {
+  padding: 0px;
+  border: 1px solid rgb(228, 225, 225);
+  background: #fff; 
+  border-radius: 4px;
+  box-shadow: 10px 10px #c2c1c1;
+  margin: 20px 0px;
 }
 
 .big-news .container {
@@ -93,17 +103,27 @@ nav a {
   margin-left: 16px;
 }
 
+.big-news-text p {
+  font-weight: bold;
+}
+
 
 /*** OTHER NEWS ***/
 
 .other-news {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .other-news .container {
   padding: 30px 16px;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgb(228, 225, 225);
+  margin: 20px 0px;
+  background: #fff; 
+  border-radius: 4px;
+  box-shadow: 10px 10px #BEEEEA;
 }
 
 .other-news-text {
@@ -113,53 +133,47 @@ nav a {
 
 /*** FOOTER ***/
 
-footer {
+footer {                   
   background: #000;
   height: 150px;
   width: 100%;
   margin: 0;
-  padding-top: 30px;
-  margin-top: 16px;
+  padding-top: 20px;
+  margin-top: 40px;
 }
 
 footer a {
   color: #fff;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
-.container-footer {
+.container-footer {            /*Add som kind of hover effect to the links*/
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   color: #fff;
   padding: 30px 16px;
-
 }
 
 .container-contact-info {
   display: flex;
   flex-direction: column;
   height: 25%;
-  flex-grow: 1;
 }
 
-/* .container-channels {
-  display: flex;
-  justify-content: space-around;
-} */
+.container-contact-info a {
+  margin: 3px;
+}
 
 .container-social-media {
   display: flex;
   flex-direction: column;
   height: 25%;
-  flex-grow: 1;
 }
 
-/* .container-email {
-  display: flex;
-  flex-direction: column;
-  height: 25%;
-  flex-grow: 1;
-} */
+.container-social-media img {
+  margin-right: 3px;
+}
 
 
 /*** MEDIA QUERIES ***/
@@ -169,10 +183,6 @@ footer a {
   header {
     justify-content: space-between;
   } 
-  
-  /* header p {
-
-  } */
 
   nav {
     display: inline-block;
@@ -191,47 +201,48 @@ footer a {
     display: none; 
   }
 
+  .big-news {
+    padding: 30px 16px;
+  }
 
-  /*** FOOTER ***/
-  .container-footer {
-    display: flex;
+  .big-news .container {
+    flex-direction: column;
+  }
+
+  .other-news {
+    padding: 30px 16px;
     flex-direction: row;
-    /* padding: 30px 16px; */
-    border: 1px solid white;
-  }
-  
-  .container-contact-info {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    height: 25%;
-    border: 1px solid white;
-  }
-  
-  .container-channels {
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
-    border: 1px solid white;
+    flex-wrap: wrap;
   }
 
-  .container-social-media {
-    display: flex;
-    flex-direction: column;
-    height: 25%;
+  .other-news .container {
+    align-items: center;
     flex-grow: 1;
-    border: 1px solid white;
+    flex-shrink: 1;
+    flex-basis: 40%;  
+    border: 1px solid #000;
+    margin: 10px;
   }
+
+
 
 }
 
 /* Desktop - only include the elements that I want to behave differently on this specific device */
 @media (min-width: 1025px) { 
 
-  .big-news-image {
-    width: 900px;
+  main {
+    width: 80%;
+    margin: auto;
   }
-  
+
+  .other-news .container {
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;  
+    border: 1px solid #000;
+  }
 
 }
 
