@@ -201,7 +201,7 @@ body {
 }
 
 /* styling of input search */
-.nav input[type=text] {
+.nav input[type="text"] {
   opacity: 0.5;
   font-size: 12px;
   font-family: 'Orbitron', sans-serif;
@@ -211,12 +211,12 @@ body {
 }
 
 /* sets text color on placeholder text */
-::placeholder {
+.nav input[type=text]::placeholder {
   color: black;
 }
 
 /* makes sure there are no outline when you click on the search input to write */
-.nav input[type="text"]:focus {
+.nav input[type=text]:focus {
   outline: none;
 }
 
