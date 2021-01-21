@@ -259,4 +259,36 @@ a {
   nav ul li.items:hover {
     box-shadow: none;
   }
+
+  .cards-container {
+    height: 2300px;
+  }
+
+  .main-article {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    height: 316px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .main-article-image {
+    width: 410px;
+  }
+
+  .main-article-text {
+    padding: 10px;
+  }
+
+  hr.line {
+    border: 1px solid white;
+    width: 45em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1rem;
+  }
 }
