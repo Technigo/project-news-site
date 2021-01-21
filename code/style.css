@@ -1,5 +1,5 @@
 html {
-  background: #0025ff;
+  background: #b5f8fe;
   color: #fff;
 }
 
@@ -11,36 +11,40 @@ body {
 .header {
   width: 100%;
   padding: 5px;
-  background: grey;
+  background: #fbd87f;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 2000px;
+  max-width: 1600px;
   height: auto;
-  border: 5px solid green;
+  
 }
 
 .logo {
+  flex-grow: 1;
   max-width: 14%;
   height: auto;
-  border: 3px solid salmon;
-}
+  }
 
 .title {
+  flex-grow: 1;
   max-width: 30%;
   height: auto; 
-  border: 3px solid red;
 }
 
 .navigation {
-
-  background: white;
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .navigation-element {
-  margin-right: 20px;
+  font-size: 25px;
+  margin-right: 16px;
+  margin-bottom: 20px;
   text-decoration: none;
   
 }
