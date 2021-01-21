@@ -29,7 +29,6 @@ p {
   Padding: 14px;
   Border-bottom: 2px solid black;
   border-top: 2px solid black;
-  margin: 10 px auto;
 }
 
 .articles-header, 
@@ -41,9 +40,10 @@ p {
   color: darkslategrey;
   display: flex;
   align-items: center;
-  padding: 14px;
+  padding: 10px;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
+  margin-bottom: 20px;
 } 
 
 .hamburger a {
@@ -63,19 +63,19 @@ p {
   border-radius: 20px;
 }
 
-/* .header img {
-  width: 200px;
-} */
-
 .logo-1 {
   width: 200px;
 }
 
-.articles-header img, 
+/* .articles-header img, 
 .contact-header img, 
 .hamburgermenu-header img, 
 .about-header img, 
 .subscribe-header img {
+  width: 200px;
+} */
+
+.logo-3 {
   width: 200px;
 }
 
@@ -120,14 +120,14 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  Box-sizing: border-box; /**Wrong place?**/
+  Box-sizing: border-box; 
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
   border-radius: 3px;
-  width: 100%; /** So that the picture grows when you change screen size**/
+  width: 100%; 
   max-width: 1400px;
   margin: 0 auto; 
 }
@@ -154,7 +154,6 @@ p {
 .news-container { 
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   background-color: whitesmoke;
   width: 100%;
@@ -165,7 +164,6 @@ p {
 .news {
   display: flex;
   flex-basis: 90%;
-  justify-content: center;
   margin: 20px; 
 }
 
@@ -253,7 +251,7 @@ footer {
   align-items: center;
   box-sizing:border-box;
   width: 40%;
-  max-width: 1400px; /** remove this? **/
+  max-width: 1400px; 
   margin: 20px auto; 
 }
 
@@ -272,7 +270,7 @@ footer {
   align-items: center;
   box-sizing:border-box;
   width: 40%;
-  max-width: 1400px; /**Remove this?**/
+  max-width: 1400px; 
   margin: 20px auto; 
 }
 
@@ -389,15 +387,10 @@ footer {
     padding: 0 15px 15px 15px;
   }
 
-  .news article {
-    text-align: left;
-  } /** REMOVE?**/
-
   .article-container {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-
 }
 
 /*For desktop*/
@@ -453,10 +446,6 @@ footer {
   .news a div {
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .news article {
-    text-align: left;
   }
 
   .article-container {
