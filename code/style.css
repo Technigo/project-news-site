@@ -32,7 +32,6 @@ body {
   letter-spacing: 1.5px;
   color: white;
   text-decoration: none;
-  padding: 10px;
   cursor: pointer;
 }
 
@@ -40,62 +39,69 @@ body {
   color:rgb(71, 128, 104);
 }
 
+/* Navigation bar and dropdown for mobile phones */
+
 .navigation-container .fa {
-  display: none;
+  display: flex;
+  flex-direction: column;
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   cursor: pointer;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .navigation-container .fa:hover {
   color:rgb(71, 128, 104);
 }
 
-.topic-bar {
+.mobile-dropdown-content {
   display: none;
-  color: white;
   background-color: black;
+  padding: 5px 8px 10px 8px;
 }
 
+.navigation-container .fa:hover .mobile-dropdown-content {
+  display: flex;
+  color:rgb(71, 128, 104);
+}
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .navigation-container .fa {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    opacity: 1;
-  }
-
-  .navigation-container .fa:hover .topic-bar {
-    display: flex;
+    display: none;
   }
 }
 
+/* Navigation for tablets and computers */
+
+.topic {
+  display: none;
+  padding: 15px;
+}
 
 .topic-dropdown {
   display: none;
   position: absolute;
   background-color:black;
   border-radius: 5px;
-  min-width: 50px;
+  min-width: 100px;
   min-height: 100px;
-  padding: 10px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
 
 .topic:hover .topic-dropdown {
-  display:block;
+  display: flex;
+  flex-direction: column;
   color: rgb(71, 128, 104);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .topic {
-    display: none;
+    display: flex;
   }
 } 
 
-
-/* SITE NAME AND LOGO */
+/* Site name and logo */
 
 .site-name {
   display: flex;
