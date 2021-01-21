@@ -10,8 +10,10 @@ body {
 
 .header {
   width: 100%;
-  padding: 5px;
-  background: #fbd87f;
+  background: #ffdd87;
+  border-top: 40px solid #f75590;
+  border-bottom: 40px solid #f75590;
+  
 }
 
 .container {
@@ -19,6 +21,7 @@ body {
   justify-content: space-between;
   max-width: 1600px;
   height: auto;
+  margin: 20px;
   
 }
 
@@ -43,8 +46,7 @@ body {
 
 .navigation-element {
   font-size: 25px;
-  margin-right: 16px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  
+  color:  #c72560;
+  margin-right: 5px;
+  text-decoration: none;  
 }
