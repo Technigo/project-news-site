@@ -1,15 +1,16 @@
-html {
-  background: #c3c8e6;
+body {
+  background: #F5DD7E;
+  font-family: 'balsamiq Sans', cursive;
   color: #fff;
 }
 
 h1 {
-  font-family: 'balsamiq Sans', cursive;
-  background: lightblue;
+  margin-left: 20px;
 }
 
 h2 {
   font-size: 70px;
+  margin: 20px;
 }
 
 h5 {
@@ -19,33 +20,39 @@ h5 {
 
 article p {
   font-size: 25px;
+  margin: 0;
+  padding: 15px; 
 }
+
 /*** HEADER ***/
 
 .logo {
   width: 60px;
   height: 60px;
+  margin-left: 20px;
 } 
 
 .header {
   background: #0DB2AC;
   height: 80px;
   width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 16px  
 }
 
 
 
-
+nav {
+  display: none;
+  
+}
 
 nav a {
   color: #fff;
-  font-family: 'balsamiq Sans', cursive;
   text-decoration: none;
-  margin-left: 16px;
+  margin-left: 20px;
 } 
 
 .hamburger {
@@ -55,52 +62,46 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 20px;
+  
 }
 
 .hamburger div {
   width: 30px;
   height: 5px;
   background: #fff;
+  border-radius: 5px;
 }
 
-/*.menu {
-  display: flex;
-  flex-direction: row;
-  background: #FC694D;
-  color: #fff;
-  text-decoration: none;
-  margin-left: 16px;
-} */ 
 
 /*** BIG NEWS ***/
 
 .big-news {
-  width: 100%;
+  width:100%;
   padding: 30px 16px;
   display: flex;  
   flex-direction: column;
-  background: #F5DD7E;
+  
 }
 
 .main-big-news {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
 .main-big-news img {
-  width: 80%; 
-  margin-bottom: 20px;
+  width: 500px;
+  height: 500px; 
+  margin: 20px;
   
 }
 
 .article {
   text-align: center;
   background: rosybrown;
-  width: 65%; 
-  padding: 47px;
-  
+  width: 500px;
+  height: 500px;
+  margin: 20px;
 }
 
 /*** SMALL NEWS ***/
@@ -108,7 +109,7 @@ nav a {
 .small-news {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   background: #FC694D;
@@ -116,45 +117,61 @@ nav a {
 
 .news {
   border: solid 2px black;
-  width: 45%;
-  margin: 16px 0 16px 0;
+  width: 350px;
+  height: 450px;
+  margin: 20px;
   background: burlywood;
   margin-top: 30px;
-  align-items: center;
+  align-content:center;
+  
+  
 }
 
 .news a {
   color: #fff;
   text-decoration: none;
   text-align: center;
-  
+
 }
 
 .news img {
   width: 250px;
   height: 250px;
-  margin: 35px;
+  margin: 49px;
 }
 
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES TABLET ***/
 
 @media (min-width: 667px) {
   .header {
-      justify-content: space-between;
-      text-align: center;
+    justify-content: space-between;
   }
-
-  nav a {
+  
+  nav {
     display:inline-block;
   }
 
   .hamburger {
       display: none;  
   }
+  .news {
+    width: 45%;
+  }
 } 
 
+/*** MEDIA QUERIES DESKTOP ***/
+
 @media (min-width: 1024px) {
-  nav a {
-    display: none;
+  .big-news {
+    justify-content: space-between;
   }
+
+  
+
+  .news {
+    flex-wrap: wrap;
+    align-items: center;
+    width: 25%;
+  }
+
 }
