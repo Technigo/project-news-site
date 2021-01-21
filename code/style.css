@@ -2,23 +2,12 @@
 html {
   background: #f1f1f1;
 }
-.mosiac-item {
-  background: pink;
-  border: 1px solid black;
+/* .mosiac-item {
   height: 300px;
-}
-.mosiac-item.span-2 {
+} */
+/* .mosiac-item.span-2 {
   height: 600px;
-}
-.article-column {
-  background: rgb(212, 143, 212);
-  border: 1px solid black;
-}
-.article-column > * {
-  background: #f1f1f1;
-  border: 1px solid black;
-  margin: 1em;
-}
+} */
 .article-list {
   background: rgb(184, 99, 99);
   border: 1px solid black;
@@ -36,7 +25,7 @@ html {
 
 /* DEFAULT size - Mobile/Small Devices*/
 
-/* ------- LAYOUT (GRID&FLEX) ------- */
+/* ======= LAYOUT (GRID&FLEX) ======= */
 
 body {
   display: grid;
@@ -45,7 +34,7 @@ body {
   grid-template-areas:
     "header"
     "hero"
-    "news-mosiac"
+    "news-boxes"
     "news-column"
     "news-list"
     "footer";
@@ -78,16 +67,11 @@ header {
   gap: 10px 10px;
 }
 
-#news-mosiac {
-  display: grid;
-  grid-template-columns: auto;
-  grid-area: news-mosiac;
-  gap: 10px 10px;
-}
-
-.span-2 {
-  grid-column-end: 1 span;
-  grid-row-end: 1 span;
+#news-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: news-boxes;
 }
 
 footer {
@@ -97,28 +81,19 @@ footer {
   gap: 10px 10px;
 }
 
-.article-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.article-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 nav,
 header > figure {
   display: none;
 }
 
-/* ------- ELEMENT STYLING ------- */
+/* ======= ELEMENT STYLING ======= */
 
-/* FONTS & GENREAL STYLES */
+/* TYPOGRAPHY & GLOBAL STYLES */
 span,
 p {
   font-family: Georgia, Times, serif;
+  font-size: 14px;
+  margin: 1em;
 }
 a {
   font-family: "Oswald", Helvetica, sans-serif;
@@ -140,8 +115,31 @@ h3 {
   font-size: 2em;
   font-weight: 300;
 }
+h3,
+span,
+h2 {
+  text-transform: uppercase;
+}
+
 ul {
   list-style: none;
+}
+.box-info h3,
+.article-column h3 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+.box-info p,
+.box-info h3 {
+  text-align: center;
+}
+
+#news-boxes,
+#news-column {
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: 4px double orange;
 }
 
 /* HEADER */
@@ -193,29 +191,18 @@ ul {
 }
 
 /* HERO Articles */
-article {
+#hero article {
   background-color: #2c3e50;
   position: relative;
+}
+#hero .article-image {
+  opacity: 0.4;
 }
 .article-image {
   background-size: cover;
   background-position: center;
   height: 100%;
   display: block;
-  opacity: 0.4;
-}
-
-.large .article-image {
-  background-image: url("https://source.unsplash.com/bhJfx7t4QUA");
-}
-.medium .article-image {
-  background-image: url("https://source.unsplash.com/Y8uXM45og68");
-}
-.small-1 .article-image {
-  background-image: url("https://source.unsplash.com/-88AJUagxSg");
-}
-.small-2 .article-image {
-  background-image: url("https://source.unsplash.com/G89O5hik31w");
 }
 
 .article-info {
@@ -233,34 +220,40 @@ article {
   color: orange;
 }
 
-/* Declaration of GRID AREAS (with no further styling) */
+/* box ARTICLES */
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-#news-list {
-  grid-area: news-list;
-}
-#news-column {
-  grid-area: news-column;
-}
-.promo-1 {
-  grid-area: promo-1;
-}
-.promo-2 {
-  grid-area: promo-2;
-}
-.large {
-  grid-area: large;
-}
-.medium {
-  grid-area: medium;
-}
-.small-1 {
-  grid-area: small-1;
-}
-.small-2 {
-  grid-area: small-2;
+  margin-bottom: 2em;
+  border-bottom: 4px double gray;
 }
 
-/* ------- MEDIUM DEVICES ------- */
+.center-box-image {
+  height: 200px;
+  width: 60%;
+}
+.box-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+/* column ARTICLE */
+.article-column {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: justify;
+  align-items: center;
+}
+.author {
+  color: grey;
+  text-transform: none;
+}
+
+/* ======= MEDIUM DEVICES ======= */
 @media (min-width: 768px) {
   body {
     width: 743px;
@@ -282,14 +275,15 @@ article {
       "large medium medium";
   }
 
-  #news-mosiac {
-    grid-template-columns: repeat(3, auto);
-    grid-auto-rows: auto;
+  #news-boxes {
+    flex-flow: row wrap;
   }
-  /* Sets the bigger news mosiac item to cover 2 spaces in the grid */
-  .span-2 {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
+  .box-item {
+    height: 50%;
+    width: 50%;
+  }
+  .box-item:last-of-type {
+    width: 100%;
   }
 
   footer {
@@ -328,17 +322,57 @@ article {
   }
 }
 
-/* ------- LARGE DEVICES ------- */
+/* ======== LARGE DEVICES ======== */
 @media (min-width: 1200px) {
   body {
-    grid-template-columns: 60% 1fr;
-    grid-template-rows: auto 400px auto auto 200px;
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto 400px auto 1fr 200px;
     grid-template-areas:
       "header header"
       "hero hero"
-      "news-mosiac news-column"
-      "news-list news-list"
+      "news-boxes news-column"
+      "news-list news-column"
       "footer footer";
     width: 1160px;
   }
+
+  /* NEWS BOXES */
+  /* change so that they line up in row of 3 */
+  #news-boxes {
+    flex-flow: row nowrap;
+  }
+  .box-item {
+    height: 100%;
+    width: 100%;
+  }
+  .box-item:last-of-type {
+    width: 100%;
+  }
+}
+
+/* Declaration of GRID AREAS (with no further styling) */
+
+#news-list {
+  grid-area: news-list;
+}
+#news-column {
+  grid-area: news-column;
+}
+.promo-1 {
+  grid-area: promo-1;
+}
+.promo-2 {
+  grid-area: promo-2;
+}
+.large {
+  grid-area: large;
+}
+.medium {
+  grid-area: medium;
+}
+.small-1 {
+  grid-area: small-1;
+}
+.small-2 {
+  grid-area: small-2;
 }
