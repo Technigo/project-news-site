@@ -199,6 +199,7 @@ img {
 }
 
 .footer {
+  height: 80px;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -206,16 +207,26 @@ img {
   right: 0;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   background-color: #1d3545;
   color: white;
 }
 
+.footer img {
+  max-width: 26px;
+}
 .footer-text {
   color: white;
 }
+
 a {
   color: inherit;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 /*** MEDIA QUERIES ***/
@@ -290,5 +301,23 @@ a {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 1rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  hr.line {
+    border: 1px solid white;
+    width: 62em;
+  }
+
+  .cards-container {
+    height: 1300px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1rem;
+    max-width: 1000px;
   }
 }
