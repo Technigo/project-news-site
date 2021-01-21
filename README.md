@@ -10,4 +10,4 @@ The result is a template website with mock content for "Nature Live News".
 
 ## View it live
 
-View the site here: 
+View the site here at Nature Live News [Nature News ](https://naturenews.netlify.app/)
