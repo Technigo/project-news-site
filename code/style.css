@@ -1,6 +1,32 @@
-html {
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+body {
   background: yellow;
-  color: #fff;
+  color: pink;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 /****Header*****/
+.header-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Top-title {
+  margin-left: 15px;
+}
+.logo {
+  display: none;
+  width: 80px;
+}
+
+.nav-container {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: pink;
+  padding: 10px;
+}
