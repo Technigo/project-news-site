@@ -1,22 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Live | News</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+    integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+    crossorigin="anonymous" />
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+
+  <header class="header">
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <img class="logo" src="./nature-logo.png">
+
+    <nav class="nav">
+      <ul class="navbar">
+        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="#">NEWS</a>
+        <a class="nav-link" href="#">CONTACT</a>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION - BIG NEWS -->
+  <section class="big-news">
+    <h1 class="animate__animated animate__fadeInRight">LATEST NEWS</h1>
+    <!-- BIG NEWS - CARDS -->
+    <div class="big-container">
+      <div class="big-news-card image-card">
+        <img src="https://media.giphy.com/media/lwoYSJLAsABBm/giphy.gif" alt="Image">
+      </div>
+      <div class="big-news-card headline-card">
+        <h2 class="headline-h2">Cloud Cover Expected Today!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corrupti quas rem perspiciatis vero dolor, sed
+          voluptates suscipit. <span class="view-more">
+            Read More
+          </span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION - MEDIUM NEWS -->
+  <section class="medium-news">
+    <h2>HIGHLIGHTS</h2>
+
+    <!-- MEDIUM NEWS - CARDS -->
+    <div class="med-container">
+      <div class="medium-news-card">
+        <img src="https://source.unsplash.com/featured/?{water}" alt="Image">
+        <button class="card-btn"> Water</button>
+      </div>
+      <div class="medium-news-card">
+        <img src="https://source.unsplash.com/featured/?{river}" alt="Image">
+        <button class="card-btn"> Rivers</button>
+      </div>
+      <div class="medium-news-card">
+        <img src="https://source.unsplash.com/featured/?{oceans}" alt="Image">
+        <button class="card-btn"> Oceans</button>
+      </div>
+      <div class="medium-news-card">
+        <img src="https://source.unsplash.com/featured/?{snow}" alt="Image">
+        <button class="card-btn"> Snow</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!--  SECTION - SMALL NEWS -->
+  <section class="small-news">
+    <h2>INSPIRATION</h2>
+    <!-- SMALL NEWS - CARDS -->
+    <div class="small-container">
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/5PGOG2uWtJikU/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/25kLnBQQ1sG4M/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/RoFXqXWN639Qs/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/zkk7mL3caMdVu/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/LcGFscTzOn9xm/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/AIGF7ljcNKZI4/giphy.gif" alt="gif">
+      </div>
+      <div class="small-news-card">
+        <img class="card-gif" src="https://media.giphy.com/media/kn2GtngXJ3hZu/giphy.gif" alt="gif">
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <img class="logo" src="./logo.svg">
+    <p class="footer-text">Project built @ Technigo Bootcamp 2021 by <a href="https://github.com/petercreations"><i
+          class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    </p>
+  </footer>
+
+
+</body>
+
 </html>

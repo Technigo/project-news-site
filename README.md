@@ -1,14 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+The objective with this project was to build a news website with a responsive design using flexbox and CSS grid. 
 
-Test paragraph 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The result is a template website with mock content for "Nature Live News".  
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+ The aim was to have a a section with 4 column card view on desktop, 2 on a tablet and a 1 column stacked view on mobile. Random gifs and images from unsplash were used to populate the content of the site. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+View the site here: 
