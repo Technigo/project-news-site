@@ -60,33 +60,41 @@ body {
   height: 35em;
   box-shadow: 0 1px 4px 2px #f1df77;
   background-position-y: -15vh;
+  margin-bottom: 40px;
+}
+
+/* a simpler header for sites that are not index-site */
+.simple-header {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background:rgba(0, 0, 0, 0.575);
 }
 
 /* styling of page name text in the header */
 .logo {
-  width: 100%;
-  position: absolute;
-  text-align: right;
-  bottom:0;
-  font-family: 'Orbitron', sans-serif;
-  color: #f1df77b4;
-  text-shadow: 5px 5px #9b681b;
-  font-size: 60px;
-  margin: 0 10px 0 0;
-}
-
-/*abbrieviated logo for mobile device */
-.small-logo {
-  display: none;
+  width: 280px;
+  height: 144px;
   position: absolute;
   bottom: 0;
-  right: 0;
-  font-family: 'Orbitron', sans-serif;
-  color: #f1df77b4;
-  text-shadow: 5px 5px #9b681b;
-  font-size: 60px;
-  margin: 0 10px 0 0;
+  right:0;
 }
+
+.logo img, .logo-simple img  {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/*hides the simpler logo used only for mobile device*/
+.logo-simple
+{
+  display:none;
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+
 
 /* navigation bar sticky on top of the page, flex is used to place menu content and search bar on the navbar */
 .nav {
@@ -112,7 +120,6 @@ body {
 .menu-button {
   position: fixed;
   width: 2em;
-  ;
   height: 3px;
   margin: 5px;
   display: none;
@@ -389,13 +396,6 @@ p:hover {
   height: 100vh;
 }
 
-.simple-header {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  background:rgba(0, 0, 0, 0.575);
-}
-
 /* styling of the sign-up form */
 .signup-form {
   display: flex;
@@ -438,9 +438,9 @@ p:hover {
 (max-width:1200px) {
    /* styling of page name text in the header */
    .logo {
-    text-align: center;
-    align-items: center;
-    margin-right:0;
+    width: 190px;
+    height: 100px;
+    right: 40%;
     }
 
   .header {
@@ -523,14 +523,14 @@ p:hover {
     background-image: url("../pictures/ISS1280px.jpg");
   }
 
-  /* removes the bigger logo */
   .logo {
     display:none;
   }
 
-  /*abbrieviated logo for mobile device */
-  .small-logo {
-    display: inline-block;
+  .logo-simple {
+    display: block;
+    width: 90px;
+    height: 48px;
   }
 
   /*hides the top navbar background*/
