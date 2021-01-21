@@ -1,4 +1,258 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  color: rgb(8, 6, 6);  
+}
+
+* {
+  box-sizing: border-box;
+  /*border: 2px solid black;*/
+  }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.header {
+   width: 100%;
+}
+
+.header-tablet {
+  display: none;
+}
+.logo {
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 20px;
+  width: 100%;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style-type: none;
+}
+
+.link:hover {
+  background:blue;
+}
+
+.link {
+  padding: 20px;  
+}
+
+.site-name {
+  padding-right: 150px; 
+}
+
+h1 {
+  font-size: 54px;
+ }
+
+p {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.big-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(202, 192, 194); 
+  width: 100%;  
+  height: 400px;
+  margin-top: 15px;
+}
+
+.big-news-container {
+  width: 50%;
+}
+
+.big-news-container a {
+  text-decoration: none;
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+.tesla-car {
+  width: 600px;
+}
+
+.big-news-text {
+  text-align: left;
+ }
+
+.big-news-text h1 {
+  color: white;
+  text-decoration: none;
+}
+
+.big-news-text p {
+  text-decoration: none;
+  color:rgb(8, 6, 6);
+}
+
+/* Styling for "Other news" */
+
+.other-news {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  padding: 20px 10px; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  background-color: #f1f1f1;
+  padding: 20px 20px 60px 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  width: 100%; 
+  padding-bottom: 15px;
+  
+  
+}
+
+ 
+/*display on mobile*/
+
+@media screen and (max-width: 667px) {
+   .menu {
+     padding-bottom: 50px;
+   }
+  
+  .menu .link a {
+    display: none;
+   }  
+  
+   .site-name {
+    padding-left: 25px; 
+    padding-right: 0px;
+  }
+
+  .big-news { 
+    display: flex;  
+    flex-direction: column;
+    height: 370px;
+    padding-bottom: 60px;
+
+  }
+
+   .big-news-container {
+    width: 100%;
+} 
+
+.tesla-car {
+  width: 100%;
+}
+.big-news-text {
+  padding: 0px 20px;
+}
+.big-news-text h1{
+   font-size: 25px;
+ }
+
+  .hide-on-mobile  {
+      display: none;
+ }  
+
+  .hide-on-desktop  {
+  display: inline-block;
+  font-size: 15px;
+ }  
+
+.news  {
+  width: 100%;
+  padding: 10px;
+} 
+}
+
+
+/*Display tablet*/
+
+@media screen and (min-width: 668px) (max-width: 1024px){
+   
+ /* .header  {
+     display: none;
+   }    
+
+  .header-tablet {
+    display: inline-block;
+    width: 100%;
+  }    
+
+.header-tablet {
+  display: flex;
+  flex-direction: row;
+   justify-content: space-between;
+   background: #222;
+   padding: 20px;
+   width: 100%;
+}
+  .item-link a {
+    color: white;
+    text-decoration: none;
+    }
+  
+   img .logo-tablet {
+      width: 10px;
+      height: 10px;
+    }
+*/
+    .big-news { 
+      display: flex;  
+      height: 400px;
+      width: 100%;
+        }
+  
+     .big-news-container {
+      width: 50%;
+      
+  } 
+  
+  .tesla-car {
+    display: none;
+  
+  }
+  .big-news-text {
+    padding: 0px 20px;
+  }
+  .big-news-text h1{
+     font-size: 25px;
+   }
+    .news {
+      width: 50%;
+    }
 }

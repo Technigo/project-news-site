@@ -1,22 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 2: Economics around the world</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
+  
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
-
+    <header class="header">   
+        <nav class="menu">
+           <a href="https://www.technigo.io/">
+             <img class="logo" 
+             src="https://raw.githubusercontent.com/Sofie212/project-news-site/7903e204a6ae7e9175f42ef56a018590cd9cd686/code/logo.svg"
+             alt="Technigo-company-logo"/>  
+           </a>
+           <div class="site-name"><b><span style=color:blue>FINANCE NEWS TODAY</span></b></div>    
+           <ul class="menu-links"> 
+             <li class="link"><a href="#">ABOUT</a></li>
+             <li class="link"><a href="#">CONTACT</a></li>
+             <li class="link"><a href="#">READ MORE</a></li>
+             <li class="link"><a href="#">PRESS</a></li>
+           </ul>        
+       </nav>
+    </header>   
+  <!-- <header class="header-tablet">   
+        <div class="item-link"><a href="#">ABOUT</a></div>
+        <div class="item-link"><a href="#">CONTACT</a><div>
+        <div class="item-logo">
+            <a href="https://www.technigo.io/">
+            <img class="logo-tablet" src="https://raw.githubusercontent.com/Sofie212/project-news-site/7903e204a6ae7e9175f42ef56a018590cd9cd686/code/logo.svg" 
+            alt="Technigo logo"/>
+            </a> 
+         </div>
+         <div class="item-link"><a href="#">READ MORE</a></div>
+         <div class="item-link"><a href="#">PRESS</a></div>        
+    </header> -->
+    
     <section class="big-news">
-      <!-- The big news content -->
-    </section>
+        <div class="big-news-container">
+        <a class="big-news-image" href="https://www.reuters.com/article/us-china-autos-tesla/tesla-says-starts-delivering-shanghai-made-model-y-in-china-idUSKBN29N07V">              
+          <img class="tesla-car" src="https://images.unsplash.com/photo-1576221162298-3d9f04e9f661?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+           alt="image-tesla-car"/></a>
+        </div>
+        <div class="big-news-container">   
+          <div class="big-news-text"> 
+             <a href="https://www.reuters.com/article/us-china-autos-tesla/tesla-says-starts-delivering-shanghai-made-model-y-in-china-idUSKBN29N07V">
+              <h1>Tesla says starts delivering Shanghai-made Model Y in China</h1>     
+             <p class="hide-on-mobile">&#127757 Tesla Inc said on Monday it has started delivering its Shanghai-made Model Y sports utility vehicles to customers in China.</p>
+             <p class="hide-on-desktop" style="color:royalblue"><b>Read more here</b></p>
+             </a>
+            </div>  
+        </div> 
+     </section>     
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+     <section class="other-news">
+      <div class="news">
+        <div class="card">
+          <a href="https://finance.yahoo.com/news/brexit-finance-talks-technical-broader-000001763.html">
+            <img 
+            src="https://images.unsplash.com/photo-1594810205183-18a8b0ce6c13?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" 
+            alt="image eu-flags"
+            />            
+           <h2>Brexit finance talks get technical with broader progress elusive</h2>
+          </a>        
+         </div>
+      </div>
+      <div class="news"> 
+        <div class="card">
+          <a href="https://www.bloomberg.com/news/storythreads/2020-12-24/china-has-a-huge-wealth-gap-problem-and-it-s-getting-worse?srnd=premium-europe">
+           <img 
+           src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+           alt="image city silhouette"
+           />          
+           <h2>China Has a Huge Wealth-Gap Problem — and It's Getting Worse</h2>
+         </a>         
+        </div>
+      </div>
+      <div class="news">
+        <div class="card"> 
+          <a href="https://www.bloomberg.com/news/articles/2021-01-17/the-rich-are-minting-money-in-the-pandemic-like-never-before?srnd=premium-europe">
+          <img 
+           src="https://images.unsplash.com/photo-1562596127-3885a12dcdb6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+           alt="math studies"
+          />
+          <h2>The Rich Are Minting Money in the Pandemic Like Never Before</h2>
+          </a>
+       </div>
+      </div> 
+      <div class="news">
+        <div class="card"> 
+           <a href="https://finance.yahoo.com/news/gold-extends-decline-dollar-strength-021157580.html">         
+              <img 
+              src="https://images.unsplash.com/photo-1610375461246-83df859d849d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+              alt="image gold bars"
+              />
+          <h2>Gold Rises From December Low Amid ‘Broad Risk-Off Sentiment’</h2>
+          </a>
+        </div>
+      </div> 
+      <div class="news">
+        <div class="card"> 
+          <a href="https://digital.di.se/artikel/frenetisk-jakt-pa-forlorad-bitcoinformogenhet">
+           <img 
+           src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+           alt="image bills and coins"
+           />
+           <h2>China Officially Backs A CryptoCurrency And Establishes It As Their Official Coin</h2>
+          </a> 
+        </div>
+      </div>  
+      <div class="news">
+        <div class="card">
+          <a href="https://finance.yahoo.com/news/italian-bond-yields-creep-key-082142600.html">
+            <img 
+           src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+           alt="image phone screen stock market"
+           />            
+           <h2>Italian bond yields creep up before key votes in parliament</h2>
+          </a>        
+        </div>
+      </div>
+     <div class="news">
+      <div class="card"> 
+         <a href="https://www.reuters.com/article/us-samsung-elec-heir-sentence/samsungs-lee-receives-two-and-a-half-year-jail-term-from-seoul-court-idUSKBN29N0B4">
+          <img 
+          src="https://images.unsplash.com/photo-1546450334-5a84ac3a1f0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" 
+          alt="picture prison fence"
+          />
+           <h2>Samsung's Lee receives two-and-a-half year jail term from Seoul court</h2>
+          </a> 
+      </div>
+    </div> 
+  
+    </section>  
+  </section>
+
   </body>
 </html>
