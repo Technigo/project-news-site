@@ -1,0 +1,9 @@
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-5deg);
+  }
+}
