@@ -45,11 +45,16 @@ header {
 }
 
 nav a {
+  color: #000;
   display: none;
   margin-left: 16px;
   text-decoration: none;
-  color: #000;
   margin-left: 15px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -99,6 +104,11 @@ a:active {
   width: 100%;
 }
 
+.big-news a {
+  font-weight: bold;
+  font-size: 17px;
+}
+
 /*** SMALLER NEWS ***/
 .smaller-news {
   display: flex;
@@ -146,7 +156,8 @@ h2 {
 
 h3 {
   font-family: 'Vollkorn', serif;
-  margin-top: 8px;
+  margin-top: 15px 0 0;
+  font-size: 20px;
 }
 
 h4 {
@@ -230,8 +241,7 @@ h4 {
     width: 31%;
   }
 
-  h2,
-  h3 {
+  h2 {
     margin: 0;
   }
 }
