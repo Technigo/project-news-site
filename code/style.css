@@ -188,6 +188,36 @@ img {
   position: relative;
 }
 
+.card:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #1d3545;
+  color: white;
+}
+
+.footer-text {
+  color: white;
+}
+a {
+  color: inherit;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media all and (min-width: 768px) {
@@ -200,13 +230,13 @@ img {
 
   nav ul li.logo {
     text-align: start;
-    flex: 1; /*to keep its lenght independently of the size of the page*/
+    flex: 1; /*to keep its length independently of the size of the page*/
     width: 30%;
     color: white;
     font-size: 2.8em;
     font-family: Rochester;
     cursor: default;
-    user-select: none; /* it can be selectec*/
+    user-select: none; /* it can't be selectec*/
   }
 
   nav ul li.items:after {
