@@ -72,7 +72,9 @@ body {
   padding: 12px;
   color: rgb(230, 236, 238);
 }
-
+.dropdown .nav-link:hover,  .dropdown .nav-link:focus {
+  background: rgba(61, 141, 187, 0.842);
+}
 input#hamburger {
   display: none;
 }
@@ -80,9 +82,9 @@ input:checked ~ .dropdown .dropdown-list {
     max-height: 200px;
     transition: all 0.5s;
 }
-
-
-
+.label {
+  cursor: pointer;
+}
 /*** HEADER Desktop view***/
 .header-desktop {
   display: none;
@@ -92,7 +94,7 @@ input:checked ~ .dropdown .dropdown-list {
 }
 
 .nav-link:hover {
-  background: rgb(207, 226, 245);
+  background: rgb(176, 211, 247);
 }
 /*** HEADER Tablet view ***/
 .header-tablet {
@@ -123,6 +125,7 @@ input:checked ~ .dropdown .dropdown-list {
 
 .bignews-image {
   width: 100%;
+  align-self: flex-start;
 }
 
 .big-news .container {
@@ -200,6 +203,10 @@ input:checked ~ .dropdown .dropdown-list {
   color: rgb(215, 235, 248);
   padding-bottom: 5px;
 }
+.footer-link:hover, .footer-link:focus {
+  background: rgba(59, 81, 128, 0.774);
+}
+
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -225,6 +232,7 @@ input:checked ~ .dropdown .dropdown-list {
 }
 .subscribe-button:active {
   box-shadow: 0 3px rgba(197, 211, 252, 0.404);
+  transform: translateY(2px);
 }
 /*** FOOTER: Social media icons ***/
 .fa {
@@ -244,6 +252,17 @@ input:checked ~ .dropdown .dropdown-list {
   background:rgb(105, 144, 180);
 }
 
+/*** FOOTER: copyright section  ***/
+.footer-copyright {
+  text-align: center;
+  font-size: 12px;
+  background: rgb(9, 38, 68);
+  height: 40px;
+}
+.copyright-text {
+  margin: 0px;
+  padding-top: 10px;
+}
 
 /*** MEDIA QUERIES ***/
  @media (min-width: 650px) {
@@ -260,6 +279,12 @@ input:checked ~ .dropdown .dropdown-list {
   .big-news .container {
      text-align: left;
   }
+  .bignews-image {
+    box-shadow: 0 4px 9px rgba(154, 215, 250, 0.91);
+  }
+  .bignews-image:hover, .bignews-image:focus  {
+    box-shadow: 0 4px 9px rgba(214, 238, 252, 0.91);
+  }
   .news {
     flex-wrap: wrap;
     flex-direction: row; 
@@ -270,14 +295,13 @@ input:checked ~ .dropdown .dropdown-list {
      align-items: top;
      flex-direction: column;
   }
-  
   .ordinarynews-image {
     width: 100%;
     box-shadow: 0 4px 6px rgba(145, 174, 201, 0.911);
     margin-bottom: 10px;
   }
   .ordinarynews-image:hover {
-    box-shadow: 0 4px 10px rgba(40, 141, 235, 0.747);
+    box-shadow: 0 4px 10px rgba(217, 224, 230, 0.747);
   }
   .each-news:hover {
     transform: scale(1.1);
