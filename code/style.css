@@ -5,14 +5,13 @@
 .body {
   background:linear-gradient(#cbf7f7, #2d73d4, #020f3f, #020f3f,black, black, black);
   color:rgb(226, 230, 231);
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   letter-spacing: 0.07rem;
-  margin: 0;
   min-height: 3000px;
 }
 
-/*** HEADER ***/
+/* HEADER */
 
 
 header {
@@ -74,13 +73,15 @@ nav a:hover{
   color: #49547b;
 }
 
-/*** Big News Container***/
+/* Big News Container */
 
 .big-news-container {
 display: flex;
 flex-direction: column;
 max-width: 1100px;
-margin: 10px 0 10px 10px;
+margin: 0 auto;
+margin-bottom: 30px;
+border-top: cornsilk 3px solid;
 }
 
 .h2 {
@@ -91,6 +92,7 @@ margin: 10px 0 10px 10px;
 .big-news-container img {
   width: 100%;
   align-self: center;
+  padding-top: 15px;
 }
   
 
@@ -98,7 +100,8 @@ margin: 10px 0 10px 10px;
   width: 100%;
   max-width: 500px;
   text-align: left;
-  padding: 10px;
+  padding: 10px 20px;
+  padding-top: 15px;
 }
 .blubb-on-mobile {
   text-align: left;
@@ -108,7 +111,7 @@ margin: 10px 0 10px 10px;
   text-align: left;
 }
 
-/***Four News Container***/
+/* Four News Container */
 
 .four-news-container {
   display: flex;
@@ -116,13 +119,13 @@ margin: 10px 0 10px 10px;
   width: 100%;
   max-width: 1100px;
   justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  margin-right: 10px;
+  margin: 0 auto;
 }
 .four-news-container img{
   width: 100%;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .four-image {
   margin-top: 5px;
@@ -130,14 +133,45 @@ margin: 10px 0 10px 10px;
 }
 
 .four-news-container img:hover{
-  box-shadow: 5px 5px 3px 2px rgb(15, 71, 155);
+  box-shadow: 7px 10px 30px 4px rgb(12, 60, 133);
 }
+
 
 /* grid */
 
-/*** Media Queries ***/
+/* .grid {
+  display: grid;
+  grid-template-columns:repeat (1fr 2fr 1fr);
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-gap: 1em;
+}
 
-/* Tablet*/
+.grid > div {
+  padding: 1em;
+} */
+
+/* .wrapper {
+  margin: 10px;
+  padding-top: 25px;
+} */
+
+/* .wrapper div {
+  width: 100%;
+  text-align: left;
+} */
+
+.grid-articles, div {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Media Queries */
+
+/* Tablet */
 @media (min-width: 735px) 
 { 
   header {
@@ -186,11 +220,15 @@ margin: 10px 0 10px 10px;
   }
 
   .four-news-container img {
-  width: 23rem;
+  width: 20rem;
+  background: white;
+  padding: 16px;
+  border: 1px solid white;
   }
 
-  /*Small desktop*/
+  /* Small desktop */
 @media (min-width: 900px) {
+  
   .big-news-container {
     flex-direction: row;
     align-items: center;
@@ -201,9 +239,6 @@ margin: 10px 0 10px 10px;
     text-align: left;
   }
 
-  .news-text{
-    width: 50%;
-  }
   .blubb-on-mobile{
     display: none;
   }
@@ -213,15 +248,12 @@ margin: 10px 0 10px 10px;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin: 10px;
   }
-
   .four-news-container img {
-  width: 16rem;
+    width: 15rem;
   }
-}
 
-/***LOGO ANIMATION EFFECT***/
+/* LOGO ANIMATION EFFECT */
 
 @keyframes pulse {
   0% {
