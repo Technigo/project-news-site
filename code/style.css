@@ -7,42 +7,59 @@ body {
   margin: 0;
 }
 
-/***HEADER***/
-
-.header {
-  display: flex;
-  justify-content: space-between;
+.container {
   width: 100%;
-  padding: 20px;
-  background: #ffdd87;
-  border-top: 40px solid #f75590;
-  border-bottom: 40px solid #f75590;
-  
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/***HEADER***/
+
+header {
+  height: 150px;
+  padding: 16px;
+  background: #ffdd87;
+  border-top: 30px solid #f75590;
+  border-bottom: 30px solid #f75590;
+}
+
+ /*
+.hamburger{
+  display: none;
+}
+*/
+
 .logo {
-  flex-grow: 1;
-  max-width: 12%;
-  height: auto;
-  }
+  width: 12%;
+  height: 12%;
+}
 
 .title {
-  flex-grow: 2;
-  max-width: 30%;
-  height: auto; 
+
+  width: 30%;
+  height: 30%; 
 }
 
 .navigation {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
+  
   background: white;
-  }
+}
 
 .navigation-element {
   font-size: 25px;
   color:  #c72560;
-  margin-right: 20px;
+  margin-right: 0px;
   text-decoration: none;  
 }
 
+/***MEDIA QUERIES***/
+
+/***MOBILE***/
+
+@media (min-width: 576px) {
+  
+}
+
+/***TABLET***/
+
+/***DESKTOP***/
