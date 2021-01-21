@@ -1,3 +1,5 @@
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,26 +12,33 @@
 }
 
 .nav-container {
-  display: flex;
+  display: none;
 }
 
 .nav-item {
   margin-right: 15px;
   padding: 10px 5px 10px;
+  text-decoration: none;
+  color: black;
 }
 .nav-item:nth-child(4) {
   margin-right: 0px;
 }
 
 h1, h2 {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
+
+
+
 
 /*** MAIN NEWS ***/
 
 .big-news {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
@@ -40,12 +49,16 @@ h1, h2 {
 }
 
 .big-news h1 {
-  margin-bottom: 0px;
-  margin-top: 2px;
+  margin: 8px 10px 0px;
+  font-weight: 600;
 }
 
 .big-news p {
-  margin-top: 5px;
+  margin: 5px 10px 12px;
+}
+
+.btn {
+  display: none;
 }
 
 /*** NEWS CARDS***/
@@ -53,14 +66,18 @@ h1, h2 {
 .news-card-section {
   display: flex;
   flex-direction: column;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .news-card {
   margin-bottom: 30px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  opacity:1;
+}
 
+.news-card:hover {
+  opacity: 0.5;
 }
 
 .news-card img {
@@ -68,15 +85,24 @@ h1, h2 {
 }
 
 .news-card h2 {
-  text-align: center;
   margin-top: 5px;
   padding: 0px 15px;
+  font-weight: 500;
 }
 
 
 /*** TABLET ***/
 
-@media (min-width: 768px) {
+@media (min-width: 877px) {
+  .nav-container {
+    display: flex;
+  }
+
+  a:hover {
+    background-color: white; 
+    color: black; 
+    border: 0.5px solid #020202;
+  }
   
   .big-news {
       flex-direction: row;
@@ -94,8 +120,15 @@ h1, h2 {
     color: #ffffff;
   }
 
+  .btn {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 12px 28px;
+  }
+
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .news-card-section {
@@ -114,13 +147,13 @@ h1, h2 {
 @media (min-width: 992px) {
   
   h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .news-card-section {
     flex-flow: wrap row;
     justify-content: flex-start;
-    margin-right: 20px;
+    margin-right: 20px; 
   }
 
   .news-card {
@@ -128,6 +161,5 @@ h1, h2 {
     margin: 10px 20px;
 
   }
-
 
 }
