@@ -1,6 +1,6 @@
 .main-part {
   background-color: var(--mainBackgroundColor);
-  padding: var(--medium) 0;
+  padding: calc(var(--spacing) * 4) 0;
 }
 
 /* START BIG NEWS STYLE */
@@ -41,6 +41,9 @@
 }
 /* DESKTOP */
 @media only screen and (min-width: 992px) {
+  .main-part {
+    padding: calc(var(--spacing) * 8) 0;
+  }
   /* BIG NEWS */
   .big-news {
     transition: box-shadow 0.15s ease-in-out;
