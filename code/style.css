@@ -3,18 +3,27 @@ html {
   color: #fff;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1100px;
+  margin: 25px auto;
 }
 
 .header {
-  width: 1000px;
-  border: 5px solid black;
-  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:white;
 }
 
-.logo {
-  width: 100px;
-  border: 2px solid red;
-  padding: 1px;
+.title {
+  background: grey;
+}
+
+.navigation {
+  display:flex;
+  background: grey;
 }
