@@ -61,30 +61,26 @@
 
 .big-news {
     display: flex;
-    flex-flow: column wrap;
-}
-
-.big-news:hover {
-    box-shadow: 18px 0 18px grey;
-}
-
-.big-news {
-    display: flex;
     justify-content: space-around;
     text-align: center;  
     border: 2px solid black;
     align-items: center;
     padding:10px 0;
     background: whitesmoke;
-    flex-direction: column;
+    flex-flow: column wrap;
     margin: 70px 20px 20px 20px;
     width:90%;
   }  
 
+  .big-news:hover {
+    box-shadow: 18px 0 18px grey;
+}
+
 .big-news-text{
 
     width:200px;
-  }
+}
+
 
 /**** SMALL NEWS ****/
 
