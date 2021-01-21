@@ -568,6 +568,12 @@ body {
     .latest h1 {
       font-size: 62px;
     }
+
+    @keyframes latest {
+      0%   { left:0px; top:0px;}
+      50%  { left:400px; top:0px;}
+      100%  { left:750px; top:0px;}
+    }
     
     .figure {
         width: 1200px;
