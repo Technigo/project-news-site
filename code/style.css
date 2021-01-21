@@ -27,7 +27,7 @@ body {
 
 .header {
   margin: 0;
-  width: 760px;
+  width: 100%;
   display: grid;
   justify-content: flex-start;
   grid-template-columns: 150px 300px ;
@@ -132,11 +132,9 @@ img.small-news {
   .header {
     display: grid;
     justify-content: center;
-    position: sticky;
     height: 100px;
     width: 100%;
     margin: 0;
-    border: 2px solid blue;
     grid-template-columns: 100px 100px auto 100px 100px;
     grid-template-rows: 100px;
     grid-gap: 20px;
@@ -242,7 +240,7 @@ img.small-news {
     height: 100px;
     width: 100%;
     margin: 0;
-    border: 2px solid blue;
+    
   }
 
   .logo {
