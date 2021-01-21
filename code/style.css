@@ -17,8 +17,9 @@ body {
 
 .header {
   box-sizing: border-box;
+  margin: 0;
   display: grid;
-  justify-content: start;
+  justify-content: center;
   grid-template-columns: 150px 300px ;
   grid-template-rows: 65px 67px;
   grid-template-areas: 
@@ -59,6 +60,7 @@ body {
 section.big-news {
  width: 600px;
  padding: 20px;
+ margin: 0;
  display: flex;
  box-sizing: border-box;
  flex-direction: column;
@@ -74,6 +76,7 @@ section {
 section.small-news {
   width: 600px;
  padding: 20px;
+ margin: 0;
  display: flex;
  box-sizing: border-box;
  flex-direction: column;
@@ -175,6 +178,7 @@ img.small-news {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     width: 100%;
   }
 
