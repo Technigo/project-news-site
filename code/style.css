@@ -9,27 +9,38 @@ body {
 
 
 .header {
+  width: 100%;
+  padding: 5px;
+  background: grey;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: grey;
+  max-width: 2000px;
+  height: auto;
+  border: 5px solid green;
 }
 
 .logo {
-  flex-basis: 150px;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 14%;
+  height: auto;
+  border: 3px solid salmon;
 }
 
 .title {
-  flex-basis: 600px;
-  max-width: 600px;
-  max-height: 200px;
-  background: grey;
+  max-width: 30%;
+  height: auto; 
+  border: 3px solid red;
 }
 
 .navigation {
-  display:flex;
-  background: grey;
+
+  background: white;
+}
+
+.navigation-element {
+  margin-right: 20px;
+  text-decoration: none;
+  
 }
