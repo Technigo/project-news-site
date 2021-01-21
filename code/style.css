@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    xbox-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 h1{
@@ -34,10 +34,12 @@ h4 {
     background: rgb(27, 27, 27);
     color:rgb(238, 237, 234);
     display: flex;
-    margin:0;
-    height: 70px;
-    align-items: center; /* i mitten av höjden items in container*/
-    padding: 0 15px; /*space på varje kort sida av header*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 20px; /*space på varje kort sida av header*/
+    width: 100%;
   
 }
 
@@ -58,15 +60,13 @@ h4 {
 }
 
 .logo { /*Klar*/
-    width: 80px;
+    width: 90px;
     padding-right: 20px; /* ändrade lite här*/
 }
 
 .header h3 { /*Klar*/
     margin: 0 auto;
-    
     font-family: 'Pacifico', cursive;
-    
 }
 
 .navigation { /*Klar*/
@@ -82,9 +82,11 @@ h4 {
 
 /*** BIG NEWS SECTION ***/
 .big-news-container .container {
-    padding: 70px 0px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column; /*** Under varandra på rad ***/
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -94,7 +96,7 @@ h4 {
 }
 
 .big-news-container div{
-    text-align: center; /*** text under centrera***/
+    text-align: center; 
 
 }
 
@@ -102,23 +104,25 @@ h4 {
 
 .small-news-container .container {
     background-color: #fcfcfc;
-    text-align: center; /*** align text to center***/
+    text-align: center;
     padding: 10px 0px;
     color: #2c2c2c;
     width: 100%;
 }
 
-.small-news{
+
+
+/*.small-news{
     display: flex;
-    flex-wrap: wrap; /*KOLLA UPP*/
+    flex-wrap: wrap;
     padding: 20;
-}
+} */
 
 .small-news a {
     background-color: #fcfcfc;
-    xborder: 1px solid black;
-    border-radius: 2%; /*kanterna runt mjuka*/ 
-    width: 100%; /*take upp all space - the cards*/
+    border: 1px solid black;
+    border-radius: 2%; 
+    width: 100%; 
     text-decoration: none;
     color: #423c3c;
     box-shadow: 5px 5px 0 0 #ebe3e3;
@@ -130,8 +134,8 @@ h4 {
 .small-news img {
    width: 100%;
    margin-top: 30px;
-   
 }
+
 
 /*** MEDIA QUERIES ***/
 
@@ -147,9 +151,6 @@ h4 {
     .mobile-hamburger{
         display:none; 
     }
-
-
-
 }
 
 
@@ -163,22 +164,22 @@ h4 {
         text-decoration: underline;
     }
 
-    .big-news-container .container {
+    /*.big-news-container .container {
         flex-direction: row;
         align-items: center;
     }
 
     .big-news-container img {
-        width: 90%; /*smaller image*/
+        width: 100%; 
     }
 
     .small-news img {
-        width: 80%;
+        width: 90%;
     }
 
     .small-news a { 
         margin-left: 20px;
-        width: 40%; /*40 % of container?*/
+        width: 40%; 
         flex-grow: 1;
-    }
+    } */
 }
