@@ -3,6 +3,7 @@
 body {
   background: yellow;
   color: pink;
+  margin: 0;
   font-family: "Balsamiq Sans", cursive;
 }
 
@@ -10,7 +11,7 @@ body {
 .header-container {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .Top-title {
@@ -29,4 +30,22 @@ body {
   text-decoration: none;
   color: pink;
   padding: 10px;
+}
+
+/*Big news section*/
+.big-news-container {
+  margin: 50px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+}
+
+.img-container-one {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
