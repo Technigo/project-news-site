@@ -9,23 +9,37 @@
   padding: calc(var(--spacing) * 4) 0;
 }
 
+.logo img {
+  width: 90%;
+}
+
 .hamburger-menu {
   color: var(--primaryColorDarker);
+  font-size: 2em;
 }
 
 #main-menu-cnt {
   display: none;
 }
 
-.main-menu-items {
-  padding: calc(var(--spacing) * 3);
+.main-menu-items:hover {
+  background-color: var(--primaryColorDarker);
 }
 
 .main-menu-items a {
   color: var(--primaryColorDarker);
+  display: inline-block;
   font-weight: 600;
+  padding: calc(var(--spacing) * 3);
 }
 
+.main-menu-items:hover a {
+  color: var(--secondaryColorDarker);
+}
+
+.main-menu {
+  padding-bottom: calc(var(--spacing) * 4);
+}
 @media only screen and (min-width: 769px) {
   #main-menu-cnt {
     align-self: center;
