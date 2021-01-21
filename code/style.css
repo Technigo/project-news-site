@@ -7,48 +7,42 @@ body {
   margin: 0;
 }
 
+/***HEADER***/
 
 .header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+  padding: 20px;
   background: #ffdd87;
   border-top: 40px solid #f75590;
   border-bottom: 40px solid #f75590;
   
 }
 
-/* Container for all header content */
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  
-}
-
 .logo {
   flex-grow: 1;
-  max-width: 14%;
+  max-width: 12%;
   height: auto;
   }
 
 .title {
-  flex-grow: 1;
+  flex-grow: 2;
   max-width: 30%;
   height: auto; 
 }
 
 .navigation {
-  flex-grow: 2;
+  flex-grow: 1;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
+  justify-content: flex-end;
+  background: white;
+  }
 
 .navigation-element {
   font-size: 25px;
   color:  #c72560;
-  margin-right: 5px;
+  margin-right: 20px;
   text-decoration: none;  
 }
 
