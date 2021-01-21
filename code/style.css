@@ -1,4 +1,133 @@
-html {
-  background: #0025ff;
-  color: #fff;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 10px 10px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 15px;
+  padding: 10px 5px 10px;
+}
+.nav-item:nth-child(4) {
+  margin-right: 0px;
+}
+
+h1, h2 {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+/*** MAIN NEWS ***/
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.big-news img {
+  width: 100%;
+  margin: 0;
+}
+
+.big-news h1 {
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.big-news p {
+  margin-top: 5px;
+}
+
+/*** NEWS CARDS***/
+
+.news-card-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.news-card {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+
+}
+
+.news-card img {
+  width: 100%;
+}
+
+.news-card h2 {
+  text-align: center;
+  margin-top: 5px;
+  padding: 0px 15px;
+}
+
+
+/*** TABLET ***/
+
+@media (min-width: 768px) {
+  
+  .big-news {
+      flex-direction: row;
+      align-items: center;
+      background-color: #99AC1D;
+  }
+
+  .big-news img {
+    width: 50%;
+  }
+
+  .big-news-text {
+    margin: auto 20px auto 20px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .news-card-section {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin: 20px 100px 0px;
+    }
+
+  .news-card {
+    width: 45%;
+    position: relative;
+}
+
+/*** DESKTOP ***/
+
+@media (min-width: 992px) {
+  
+  h1 {
+    font-size: 70px;
+  }
+
+  .news-card-section {
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    margin-right: 20px;
+  }
+
+  .news-card {
+    width: 20%;
+    margin: 10px 20px;
+
+  }
+
+
 }
