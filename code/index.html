@@ -1,22 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <title>CATastrophic News</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ewert&family=Anton&family=Montserrat:wght@200&family=Poppins:wght@200;500;900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+
+  <!-- HEADER WITH NAV -->
+
+  <header class="header">
+    <a href="#">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </a>
+    <a href="#"><img src="logo.svg"></a>
+    <div><span styles><a href="#">&#128270;</a></span></div>
+  </header>
+
+  <section class="menu">
+
+    <nav>
+      <a href="#">NEWS</a>
+      <a href="#">ECONOMICS</a>
+      <a href="#">POLITICS</a>
+    </nav>
+
+  </section>
+
+  <section class="news">
+
+    <!-- HEADLINE NEWS-->
+
+    <h1 class="column-title">The kitty cat curse</h1>
+
+    <hr>
+
+    <div class="headline">
+      <div class="biggest">
+        <div class="news-1">
+          <h2><a href="#">Experts warn: Don't look straight at it!</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas metus tortor, sollicitudin vitae ornare molestie, porta et nunc.
+            Phasellus tempor ligula ut ultrices tristique.
+            Donec lacinia fringilla elit id tincidunt.
+            Suspendisse a fermentum ipsum.
+            Nullam erat purus, rutrum ac nulla quis, mollis scelerisque mi.</p>
+        </div>
+        <img src="images\4.1.jpg" alt="Angry looking black cat">
+      </div>
+    </div>
+
+    <hr class="hr-bottom">
+
+    <!-- BIG NEWS -->
+
+    <h1 class="column-title">Doomsday</h1>
+
+    <hr>
+
+    <div class="big-news">
+      <div class="news-2">
+        <h2><a href="#">Leaked footage of the doomsday planning</a></h2>
+        <img src="images\6.1.jpg" alt="Cat in an online meeting with other cats">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Maecenas metus tortor, sollicitudin vitae ornare molestie, porta et nunc.
+          Tristique senectus et netus et malesuada fames ac.
+          Bibendum arcu vitae elementum curabitur vitae nunc. </p>
+      </div>
+
+      <div class="news-2">
+        <h2><a href="#">Is this what we've been waiting for?</a></h2>
+        <img src="images\2.1.jpg" alt="Cat tucked in under a blanket">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Maecenas metus tortor, sollicitudin vitae ornare molestie, porta et nunc.
+          Vitae suscipit tellus mauris a diam maecenas sed enim ut.</p>
+      </div>
+    </div>
+
+    <hr class="hr-bottom">
+
+    <!-- SMALL NEWS-->
+
+    <h1 class="column-title"> Small talk news</h1>
+
+    <hr>
+
+    <div class="small-news">
+      <div class="news-3">
+        <h2><a href="#">You really shouldn't...</a></h2>
+        <img src="images\5.1.jpg" alt="Cat looking surprised">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="news-3">
+        <h2><a href="#">Are they watching us?</a></h2>
+        <img src="images\3.1.jpg" alt="Three cats on a building looking down at you">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="news-3">
+        <h2><a href="#">Hidden message found in yard</a></h2>
+        <img src="images\7.1.jpg" alt="Black cat barely visible in high grass">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>Copyright &copy Darcy Winterhill, 2021</p>
+  </footer>
+</body>
+
 </html>
