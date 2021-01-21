@@ -9,6 +9,7 @@ border: 10px solid purple;
 
 /*HEADER*/
 .coreNavigation-top {
+	background-image: url(/img/logo-unsplash.png);
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
 	display: flex;
@@ -24,29 +25,32 @@ border: 10px solid purple;
 }
 
 .button1, .button2 {
-border: solid black;
-padding: 10px; /*seems to do nothing*/
-color: burlywood;
-padding: 2px 2px;
+border: solid black; /*change later border: none; &&&&& one color background color: ; */
+margin: 2px 2px;
+padding: 5px 5px;
+color: #000;
+font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+font-size: 12px;
 text-align: center;
 text-decoration: none;
-/*display: inline-block; */
-flex-direction: column;
-font-size: 10px;
-margin: 1px 1px;
+display: inline-block; 
 cursor: pointer;
 }
 
 /*BIG-NEWS-CONTAINER*/
+
+
 .big-news-container {
+	border:solid sienna; 
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+/*	font-size: 60px;  Does nothing*/ 
 	display: flex;
+	flex-direction: row; 
 	justify-content: space-between;
 	flex-wrap: wrap; 
-	
 }
 
-.news-card {
+.w3-container {
 	width: 100%;
 	min-height: 90%;
 	background: #999;
@@ -56,14 +60,12 @@ cursor: pointer;
 	margin: none; 
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column; 
 	justify-content: center;
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 .photo-bar {
-/*	margin-top: 10px; */
-	padding: 30px 60px; 
+	padding: 30px 250px; 
 	width: 200px;
 	height: 200px;
 }
@@ -72,14 +74,15 @@ cursor: pointer;
 background: #fff;
 padding: 1rem;
 box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-transition: 0.2s; 
+transition: 1s; 
 }
 
 .text {
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+	font-size: 16px;
+	line-height: 1.6;
 	padding: 25px 50px 25px 50px;
-	background-color: chartreuse;
-	font-size: 14px; 
+/*	background-color: chartreuse;*/
 	overflow-wrap: break-word;
 }
 
@@ -98,7 +101,7 @@ transition: 0.2s;
 	}
 }
 
-.big-news-container .news-card {
+.big-news-container .w3-container {
 	width: 22.5%;
 }
 
@@ -112,7 +115,7 @@ transition: 0.2s;
 	}
 }
 
-.big-news-container .news-card {
+.big-news-container .w3-container {
 	width: 45%;
 }
 
@@ -123,6 +126,10 @@ transition: 0.2s;
 	}
 }
 
+/*ÄNDRA*/
+.big-news-container .w3-container {
+	width: 100%;
+}
 
 /*BIG DESKTOP*/
 @media (min-width: 1200px) {
@@ -131,6 +138,7 @@ transition: 0.2s;
 }
 }
 
-
-
-
+/*ÄNDRA*/
+.big-news-container .w3-container {
+	width: 100%;
+}
