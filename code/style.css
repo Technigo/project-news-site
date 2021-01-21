@@ -32,7 +32,11 @@ p {
   margin: 10 px auto;
 }
 
-.articles-header, .contact-header, .hamburgermenu-header, .about-header {
+.articles-header, 
+.contact-header, 
+.hamburgermenu-header, 
+.about-header, 
+.subscribe-header {
   background-color: white;
   color: darkslategrey;
   display: flex;
@@ -220,7 +224,7 @@ footer {
   width: 100%;
 }
 
-/*Style contact, about and nav page*/
+/*Style contact, about us, subscribe page and nav page*/
 
 .contact-container {
   background-color: white;
@@ -260,6 +264,25 @@ footer {
   margin: 20px auto; 
 }
 
+.subscribe-container {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid  light grey;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing:border-box;
+  width: 40%;
+  max-width: 1400px; 
+  margin: 20px auto; 
+}
+
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -290,7 +313,7 @@ footer {
   }
 
   .navigation-container {
-    display: flex;
+    display: flex; 
   }
 
   .hamburger {
