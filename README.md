@@ -24,6 +24,7 @@ Have a look at:
 <!-- "podcasts" add content
 "full length news" add content -->
 <!-- smaller text in "optional" div -->
+expanding hamburger menu
 spacing and image size in mobile
 "full length news" side scroll
 add css grid section
@@ -32,3 +33,4 @@ overflow ellipsis
 reorganize css - text
 reorganize css - functional classes
 image credits inside image as nyt
+other animation?
