@@ -162,10 +162,10 @@ html {
   .iheart {
     color: darkgrey;
     font-size: 20px;
-    -webkit-animation: colorswap 5s infinite alternate;
+    animation: colorswap 5s infinite alternate;
   }
 
-  @-webkit-keyframes colorswap {
+  @keyframes colorswap {
     from {color: darkgrey;}
     to {color: red;}
   }
