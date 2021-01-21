@@ -132,13 +132,14 @@ img.small-news {
   .header {
     display: grid;
     justify-content: center;
+    position: sticky;
     height: 100px;
     width: 100%;
     margin: 0;
     border: 2px solid blue;
     grid-template-columns: 100px 100px auto 100px 100px;
     grid-template-rows: 100px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-areas: 
     "navlink1 navlink2 logo navlink3 navlink4";
     justify-content: center;
@@ -197,7 +198,7 @@ img.small-news {
   }
 
   .figcaption {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   img.big-news {
@@ -205,13 +206,14 @@ img.small-news {
   }
 
   .article {
-    width: 300px;
+    width: 400px;
+    margin: 0;
   }
 
   section.small-news {
     display: grid;
-    grid-template-columns:300px 300px;
-    grid-template-rows: 450px;
+    grid-template-columns:350px 350px;
+    grid-template-rows: 500px;
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
@@ -220,13 +222,13 @@ img.small-news {
   }
 
   figure.small-news {
-    width: 300px;
-    padding: 14px;
+    width: 350px;
+    padding: 17px;
     margin: 0;
   }
   
   img.small-news {
-    width: 272px;
+    width: 316px;
     margin: 0;
   }
 }
@@ -234,7 +236,77 @@ img.small-news {
 /*Styling for big desktop*/
 @media (min-width: 1200px) {
 
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    border: 2px solid blue;
+  }
+
+  .logo {
+    width: 100px;
+    padding: 15px;
+    margin: 10px 0 0 40px;
 }
 
+.navlink1, .navlink2, .navlink3, .navlink4 {
+  display: block;
+}
+
+  section.big-news {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  figure.big-news {
+    width: 500px;
+    padding: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  .figcaption {
+    font-size: 28px;
+  }
+
+  img.big-news {
+    width: 460px;
+  }
+
+  .article {
+    width: 600px;
+    margin: 0;
+  }
+
+  section.small-news {
+    display: grid;
+    grid-template-columns:280px 280px 280px 280px;
+    grid-template-rows: 400px;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  figure.small-news {
+    width: 280px;
+    padding: 14px;
+    margin: 0;
+  }
+  
+  img.small-news {
+    width: 252px;
+    margin: 0;
+  }
+
+  .figcaption {
+    font-size: 22px;
+  }
+}
 /* Style a specific child of a class .navigation-item:last-child, navigation-item:nth-child(4)
 Putting width 100% on navbar and center text possible to center navbar*/
