@@ -77,4 +77,5 @@ If I were to continue on this project / start over I would:
 ***
 
 ## View it live
+http://rivlingnews.netlify.app
 
