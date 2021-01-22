@@ -88,7 +88,9 @@
     background: whitesmoke;  
     margin: 10px 20px;
     text-align: center;  
-    width: 90%;    
+    width: 90%;  
+    overflow: hidden; 
+    
 }
 
 .small-news a:hover {
@@ -99,8 +101,7 @@
 
     .small-news img {
     width:500px;
-    height:500px;
-    overflow: hidden;
+    
 }
 
   /***RESPONSIVE***/
@@ -120,19 +121,22 @@
     }
     .big-news {
         flex-direction: row;
-        width: 85%;        
+        width: 85%;   
+        align-items:stretch;     
     }
     .small-news {
         flex-direction: row;
         
     }
     .small-news a {
-        width: 40%;
-        justify-content: space-evenly;
+        width: 40%;        
+        flex-direction: column;
+        display: flex;
+        
         
     }
     .small-news a img {
-        width:80%;
+        width:100%;
     }
   }
 
