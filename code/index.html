@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!--  <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
     <title>Neo News site</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 <!-- should be 1. logo 2. site name 3. navbar -->
   <body>
-    <header class="coreNavigation-top">    
+    <header class="coreNavigation-container">    
       <nav class="navigation-container">
         <div class="nav-item">Latest</div>
         <div class="nav-item">Today</div>
@@ -25,9 +24,9 @@
         </div>
     </header>
 
-    <section class="big-news-container">
+    <section class="big-news container">
 
-      <div class="w3-container">
+      <div class="news-card">
       <img class="photo-bar" src="/img/fusion-medical-animation-rnr8D3FNUNY-unsplash.png" alt="image of Corona virus" class="w3-image">
       <p class="text"> 
         <h3>Coronavirus vaccine: What are human challenge trials?</h3>
@@ -36,45 +35,89 @@
       </p>
       </div>
 
-      <div class="w3-container">
+      <div class="news-card">
       <img class="photo-bar" src="/img/rom-matibag-uffK6VXLKdc-unsplash.png" alt="Image of a banner saying Trump got dump 2020" class="w3-image">
       <p class="text">  
       <h3>She Did It</h3>
-        Kamala Harris, becomes the first woman, the first Asian American, and the first Black American to be elected vice president.
+        <b>Kamala Harris</b>, becomes the first woman, the first Asian American, and the first Black American to be elected vice president.
           <i>I can’t help but daydream about Harris someday stepping one level up to the presidency</i> says 
           Jemele Hill a contributing writer at <a href="https://www.theatlantic.com/world/">The Atlantic</a>.
         </p>
       </div>
       
-      <div class="w3-container">
+      <div class="news-card">
       <img class="photo-bar" src="/img/antidepressiv.png" alt="Image of antidepressiv" class="w3-image">
       <p class="text">
-        <h3>lkgdskgjh</h3>
-        dkjdngkfdjgndfg,fdngdfkgngdkjsn
+        <h3>Antidepressants - the temporary cure that became permanent</h3>
+        Ineffective, says the child psychiatrist. A blessing, says the pharmacologist. Even among experts, the rift is deep in the view of antidepressant drugs.
       </p>
       </div>
 
-
-      <div class="w3-container">
+      <div class="news-card">
       <img class="photo-bar" src="/img/josue-michel-i9cTdRQIuUg-unsplash.png" alt="Image of person" class="w3-image">
         <p class="text">
-          <h3>ddfgfdgfdg</h3>
-          dfgdgfkgnfkldgnldkjghfdlghdflg
+          <h3>What it is like to carry on a tradition with a friend that can't remember it</h3>
+          Part of a series on Friendship, today we continue by telling stories of human life through conversations with our frinds.
         </p>
     </div>
 </section>
 
-    <section class="more-news-container">
-      <div class="news-card">Another vital area of understanding is how flexbox makes no assumption about the writing mode of the document. In the past, CSS was heavily weighted towards horizontal and left-to-right writing modes. Modern layout methods encompass the range of writing modes and so we no longer assume that a line of text will start at the top left of a document and run towards the right hand side, with new lines appearing one under the other.
+    <section class="more-news container">
+      <div class="news-card">
+        <img class="photo-bar" src="/img/jerry-wang-wjwmug0yvHM-unsplash.png" alt="Image of a kid" class="w3-image">
+        <p class="text">
+        <h2>"Evidence speaks against anxious middle-class parent"</h2>
+        Children are irrational, researchers have long believed. Recent studies show that they use both statistics and probability to draw conclusions - and they are more creative problem solvers than adults, according to Stanford professor Alison Gopnik.
+  </div>
+      </p>
+    </div>
+        <div class="news-card">
+          <img class="photo-bar" src="/img/wrongtog-S92jBfyENpI-unsplash.png" alt="Image of a line in neon" class="w3-image">
+        <p class="text">
+          <h2>Saudi Arabia launches 170km city built in a straight line</h2>
+New eco-friendly project launched by the crown prince panned on social media as 'nonsense' and 'dreamed up from a sci-fi movie'
+        </p>
+      </div>
+      
 
-        You can read more about the relationship between flexbox and the Writing Modes specification in a later article; however, the following description should help explain why we do not talk about left and right and top and bottom when we describe the direction that our flex items flow in.
-        
-        If the flex-direction is row and I am working in English, then the start edge of the main axis will be on the left, the end edge on the right.</div>
-      <div class="news-card">something here</div>
-      <div class="news-card">something here</div>
-      <div class="news-card">gdgdfgggfgd </div>
+      <div class="news-card">
+        <img class="photo-bar" src="/img/edward-howell-zuel-45OtJo-unsplash.png" alt="Image of buildings and people" class="w3-image">
+        <p class="text">
+          <h2>The escape from Stockholm is increasing</h2>
+          More people move from Stockholm than to the region. Net emigration is increasing for the third year in a row, according to statistics from Statistics Sweden.
+        </p>
+      </div>
+      <div class="news-card">
+        <img class="photo-bar" src="/img/ella-deane-YTRtCfniV8I-unsplash.png" alt="Image of a hand holding a book" class="w3-image">
+        <p class="text">
+          <h2>Rugged, Physical Work and reflection</h2>
+          In Amos Velsinger's work the participating artists share a common desire for reading as dancing. The new piece premiered at the underground theatre The Place to be last friday.  
+        </p> 
+      </div>
       <!-- The other news   **** MORE NEWS here **** -->
+      </div>
     </section>
 
+      <section class="other-news container">
+ sdfsfsfdsfsdffs
+    </section>
+    <footer class="footer-container">
+    <div class="footer-child-left">
+    <div class="text">
+    <nav class="navigation-container">
+    <div class="nav-item">Latest</div>
+    <div class="nav-item">Today</div>
+    <div class="nav-item">This week</div>
+    <div class="nav-item">Month</div>
+    </nav>  
+</div>
+</div>
+
+<div class="footer-child-right">
+<p class="text"> Chief-editor and responsible publisher: <a href="https://github.com/Frivridna/project-news-site">Frivridnadagar</a> <br>© Neo News 2021</p>   
+<div class="mobile-desktop-menu"> HAMBUGER</div> <!-- TAKE AWAY???-->
+</div>
+
+</footer>
   </body>
 </html>

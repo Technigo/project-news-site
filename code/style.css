@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
+/* THIS MAKES all newscards to small boxes height seems to not be targeted
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+*/
+
 html {
 background:antiquewhite;
 color: #000;
 border: 10px solid purple; 
 }
 
+.container {
+	width: 320px;
+	margin: 25px auto;
+}
+
+h1:hover {
+	color: #ff073a; 
+}
+
 /*HEADER*/
-.coreNavigation-top {
+.coreNavigation-container {
 	background-image: url(/img/logo-unsplash.png);
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
@@ -24,6 +41,10 @@ border: 10px solid purple;
 	margin-left: 10px;
 }
 
+.button {
+	margin-right: 10px;
+}
+/* todo: ADD HOVER ON BUTTON 1 and BUttoN 2*/
 .button1, .button2 {
 border: solid black; /*change later border: none; &&&&& one color background color: ; */
 margin: 2px 2px;
@@ -39,41 +60,37 @@ cursor: pointer;
 
 /*BIG-NEWS-CONTAINER*/
 
-
-.big-news-container {
-	border:solid sienna; 
+.big-news {
+	width: 100%;
+	min-height: 90%; /*QUESTION here - do I keep this?*/
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 /*	font-size: 60px;  Does nothing*/ 
-	display: flex;
-	flex-direction: row; 
-	justify-content: space-between;
-	flex-wrap: wrap; 
 }
 
-.w3-container {
-	width: 100%;
-	min-height: 90%;
+.news-card {
+	width: 100%; 
+/*	min-height: 90%; */
 	background: #999;
 	margin-top: 20px; 
 	margin-bottom: 10px;
 	border: solid greenyellow; 
-	margin: none; 
+/*	margin: none; 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: center; */
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 .photo-bar {
-	padding: 30px 250px; 
-	width: 200px;
-	height: 200px;
+	width: 100%;
+/*	padding: 30px 250px; */
 }
+
 
 .photo-bar:hover {
 background: #fff;
 padding: 1rem;
-box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); /*CHANGE COLOR*/
 transition: 1s; 
 }
 
@@ -86,28 +103,83 @@ transition: 1s;
 	overflow-wrap: break-word;
 }
 
-.more-news-container {
+.more-news {
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-/*other nes GOES here*/
+.footer-container { /*THIS DOES NOT WORK*/
+	border: 3px solid black;
+	display: flex;
+	justify-content: space-between;
+} /*for MOBILE VIEW it could be something like width:30%; */
 
+/* MOBILE is always an INLINE ELEMENT*/
+.mobile-menu {
+	display: block;
+}
 
-/*MOBILE*/
+.desktop-menu {
+	display: none;
+}
+
+/*other news GOES here*/
+
+/*RESPONSIVENESS: MOBILE*/
+
 @media (max-width: 767px) {
-	.big-news-container {
-		flex-direction: column;
-		background: red;
+	.container {
+		width: 767px;
 	}
 }
 
-.big-news-container .w3-container {
-	width: 22.5%;
+.big-news {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: red;
+}
+
+.news-card {
+	width: 100%; 
+}
+
+.more-news {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	flex-wrap: wrap;
+	background: red;
+}
+
+  .more-news .news-card {
+    width: 100%;
+  }
+
+  .other-news {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+	flex-wrap: wrap;
+	background: red;
+  }
+
+  .other-news .news-card {
+    width: 100%;
+  }
+
+  .news-text {
+    font-size: 18px;
+  }
 }
 
 /*TABLET*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) {
+	.container {
+		width: 992px;
+	}
 	.big-news-container {
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -115,30 +187,51 @@ transition: 1s;
 	}
 }
 
-.big-news-container .w3-container {
+.news-card {
 	width: 45%;
 }
 
 /*SMALL DESKTOP*/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1199px) {
+	.container {
+		width: 1199px;
+	}
 	.big-news-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: nowrap;
 		background: grey;
 	}
 }
 
-/*ÄNDRA*/
-.big-news-container .w3-container {
-	width: 100%;
+.news-card {
+	width: 22.5%;
 }
-
 /*BIG DESKTOP*/
 @media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
 	.big-news-container {
-	background:coral;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		background:coral;
 }
+}
+.news-card {
+	width: 22.5%;
 }
 
-/*ÄNDRA*/
-.big-news-container .w3-container {
-	width: 100%;
+/*NOT SURE ABOUT THIS* ----> put them on top before mobile? BUt ut doesn not make sense! /
+@media (min-width: 1200px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+
+.desktop-menu {
+	display: block; 
 }
