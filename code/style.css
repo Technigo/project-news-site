@@ -178,7 +178,7 @@ input:checked ~ .dropdown .dropdown-list {
   border: 1px solid rgba(0, 0, 0, 0);
   text-decoration: none;
 }
-.each-highlight:hover {
+.each-highlight:hover, .each-highlight:focus {
   border: 1px solid rgb(255, 255, 255);
 }
 .highlight1 {
