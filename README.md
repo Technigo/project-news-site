@@ -12,4 +12,5 @@ I started by making a sketch of the site with a design of the grids on the diffe
 If I had more time I would, in the mobile size, make the text for the "big news" in a smaller "box" that can be folded out when pressed a button (so it doesn't take up so much space of the screen). I would also make a smaller header that sticks when you scroll down.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://hopeful-swanson-ec4034.netlify.app
