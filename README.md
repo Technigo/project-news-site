@@ -21,4 +21,4 @@ If I had more time I would add extra CSS styling and make the media queries over
 
 ## View it live
 
-View it live at Netlify - 
+View it live at Netlify - https://jolly-swirles-0cdbae.netlify.app
