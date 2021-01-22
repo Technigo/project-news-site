@@ -24,8 +24,6 @@ a {
   color: inherit;
 }
 
-/* NOT FINISHED VIDEO BEHIND LOGO SOLUTION!! */
-
 .logo-container {
   position: relative;
   align-items: center;
@@ -37,7 +35,10 @@ a {
 }
 
 .logo-video {
-  /* display: none; */
+  display: none;
+}
+
+.logo-container:hover .logo-video {
   display: inline-block;
   width: 170px;
   height: 170px;
@@ -46,17 +47,17 @@ a {
   position: absolute;
 }
 
-.logo-container:hover + .logo-video {
-}
-
 .logo {
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    z-index: 2;
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 30px;
+  z-index: 2;
+  padding: 5px;
 }
 
-/* ENDS - NOT FINISHED VIDEO BEHIND LOGO SOLUTION!! */
+.logo:hover {
+  color: white;
+  text-shadow: 2px 1px 1px black;
+}
 
 @keyframes nav-animation {
   0%   {background-color: white; color:black;}
