@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid pink;
 }
 
 body{
@@ -12,12 +13,10 @@ body{
     background-color:#fcfcfc;
 }
 
-.container {
-    /* For phone*/
-    width: 320px;
-    margin: 25px auto;
-    
+p {
+    font-size: 12px;
 }
+
 
 
 /***** HEADER ******/
@@ -88,80 +87,77 @@ body{
 
 
 /************** BIG NEWS SECTION ******************/
-.big-news-container .container {
-    background-color:#fcfcfc;
-    color: #2c2c2c;;
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+ .big-news {
+     background-color: rgb(168, 166, 166);
+     width: 100%;
+ }
 
-.big-news-container img {
-    width: 100%; 
-}
+ .bn-card {
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     margin: 40px 50px;
+     text-align: center;
+     padding: 10px 10px;
+     background-color: grey;
+     border-bottom: 2px solid rgb(95, 94, 94);
 
-.big-news-container div{
-    text-align: center;
-    line-height: 25px;
-    padding: 10px; 
-    margin: 10px;
-}
+ }
 
-.big-news-container .container h1 {
-    font-size: 24px;
-    line-height: 30px;
-}
+ .img-container {
+     overflow: hidden;
+ }
 
+ .img-container img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .bn-text {
+     text-align: center;
+     padding-top: 10px;
+ }
 
 /************* SMALL NEWS SECTION ***************/
-.small-news-container .container {
-    background-color: #fcfcfc;
-    /*background-color: mediumpurple; */
-    color: #424141;
-    padding: 20px 50px;
-    width: 100%;
-    /*border: 2px solid black; */
-}
-
-.small-news-container .container div{
-    text-align: center;
-    line-height: 20px;
-    padding: 10px;
-    margin: 10px;
-    /*border: 2px solid black; */
-}
-
-.small-news-container .container h2 {
-    line-height: 50px;
-}
-
-.small-news {
+.small-news{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /*border: 2px solid black;*/
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.small-news a {
-    background-color: #fcfcfc;
-    border-radius: 2%; 
-    text-decoration: none;
-    color: #423c3c;
-    box-shadow: 5px 5px 0 0 #ebe3e3;
-    margin-bottom: 20px;
+.sn-card{
+    margin: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px 40px;
+    
 }
 
-.small-news img {
-   width: 100%;
-   margin-top: 30px;
-   margin-bottom: 10px;
-  }
+.sn-img-container {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.sn-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sn-card p{
+    padding: 10px;
+}
+
+
+
+
 
 
 
@@ -170,11 +166,7 @@ body{
 @media (min-width: 768px) {
     /* Tablet view */
 
-    .container {
-        width: 768px;
-    }
 /***** HEADER ******/
-
     .header{
         justify-content: space-between;
     }
@@ -192,29 +184,43 @@ body{
     }
 
     /************** BIG NEWS SECTION ******************/
-
-   .big-news-container .container {
+    .bn-card{
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
+        justify-content: space-around;
     }
 
-    .big-news-container .container div {
+    .img-container {
         width: 50%;
     }
+
+    /************* SMALL NEWS SECTION ***************/
+
+    .small-news {
+        padding: 10px 30px;
+    }
+
+    .small-news{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   .sn-card{
+       max-width: 45%;
+       flex-direction: column; /* text och bild bredvid*/
+   }
+    .sn-card p {
+        width: 100%;
+    }
+    .sn-img-container {
+        width: 100%;
+    }
+
 }
 
 
 @media (min-width: 992px) {
     /* Desktop view */
     
-    .container {
-        width: 992px;
-    }
-
     /***** HEADER ******/
-
     .header{
         justify-content: space-between;
     }
@@ -228,8 +234,7 @@ body{
         font-size: 30px;
         padding-left: 150px;
     }
-    
-  
+      
     .navigation {
         display: inline-block;
     }
@@ -249,17 +254,12 @@ body{
 
     /************** BIG NEWS SECTION ******************/
 
-    .big-news-container .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
+    
+    /************* SMALL NEWS SECTION ***************/
+    
+    .sn-card {
+        flex: 1; /*fyra på rad*/
     }
 
-    .big-news-container div {
-        padding: 0px 20px;
-        margin: 0;
-        
-    }
+      
 }
