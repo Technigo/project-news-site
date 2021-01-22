@@ -9,18 +9,18 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px 0 0 0 auto;
 }
 
 /***HEADER***/
 
 header {
   background: #ffdd87;
-  height: 150px;
+  width: 100%;
   display: flex;
-  align-items: center;  
-  border-top: 30px solid #f75590;
-  border-bottom: 30px solid #f75590;
+  justify-content: space-between;
+  border-top: 25px solid #f75590;
+  border-bottom: 25px solid #f75590;
   
 }
 
@@ -31,30 +31,41 @@ header {
 */
 
 .logo {
-  width: 12%;
-  height: 12%;
+  border: 3px solid red;
+  width: 12%;   
 }
 
 .title {
-
-  width: 30%;
-  height: 30%; 
+  border: 3px solid red;
+  width: 25%;
 }
 
 .navigation {
-  background: greenyellow;
+  border: 3px solid red;
+  width: 300px;
 }
 
 .navigation-element {
-  font-size: 25px;
+  font-size: 20px;
   color:  #c72560;
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;  
 }
+
+/***BIG-NEWS SECTION***/
+
+/***OTHER NEWS SECTION***/
+
+/***FOOTER***/
 
 /***MEDIA QUERIES***/
 
 /***MOBILE***/
+@media (max-width: 600px) {
+  .container {
+    width: 600px;
+  }
+}
 
 
 /***TABLET***/
