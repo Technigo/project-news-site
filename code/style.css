@@ -17,12 +17,6 @@
 .header-logo {
     width: 180px;
 }
-.site-title {
-    color:white;
-    font-size: 58px;
-    display: flex;
-}
-
 .header-logo-container {
     overflow:hidden;
     width: 100px;
@@ -32,12 +26,21 @@
     justify-content: center;   
 }
 
+.foot-step-right-side {
+    margin:5px;
+    display: none;
+}
+
+.site-title {
+    color:white;
+    font-size: 58px;
+    display: flex;
+}
 .navigation-container {
     display: none;
     font-size: 24px;    
     background-color: #13141b;
-    color:rgb(9, 85, 32);  
-    
+    color:rgb(9, 85, 32);     
 }
 
 .navigation-item {
@@ -79,6 +82,7 @@
     padding:20px 20px 30px 20px;
     border:1px solid black;
     box-shadow: 5px 10px 10px grey;
+    border-radius: 1px;;
 }
 
 .big-news-img:hover {
@@ -192,4 +196,9 @@
        
     }
 
-  }
+    .foot-step-right-side {
+        margin:5px;
+        display: block;        
+    }
+
+}
