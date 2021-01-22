@@ -1,8 +1,9 @@
-html {
+body {
   background: #fff;
   color: #000;
+  margin: 0;
 }
-
+ 
 /* TOP NAVIGATION MOBILE */
 .header {
   display: flex;
@@ -161,12 +162,11 @@ html {
     color: black;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
   }
 
   .nav-item:hover {
-    margin: 0px 18px;
     color: dodgerblue;
-    cursor: pointer;
   }
 
   /* BIG NEWS TABLET */
