@@ -28,10 +28,7 @@ header {
   border-radius: 50%;
   text-align: center;
   line-height: 60px;
-  font-style: italic;
   background-color: #FFF;
-  animation-name: example;
-  animation-duration: 4s;
 }
 
 .logo:hover {
@@ -44,6 +41,7 @@ header {
 .P {
   margin: 0;
   font-size: 40px;
+  font-style: italic;
 }
 
 .title {
@@ -91,8 +89,6 @@ a:active {
   border-radius: 5px;
 }
 
-
-
 /*** BIG NEWS ***/
 .big-news {
   background-color: #fff;
@@ -102,7 +98,7 @@ a:active {
   width: 100%;
   max-width: 1100px;
   margin: 30px auto;
-  padding: 15px 10px 20px;
+  padding: 25px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -131,7 +127,6 @@ a:active {
 
 .smaller-news div {
   background-color: #fff;
-  /* border: solid 1px black; */
   width: 100%;
   margin: 0 0 25px;
   padding: 20px;
@@ -142,13 +137,23 @@ a:active {
   width: 100%;
 }
 
+.arrow-up {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.arrow-up a {
+  font-size: x-large;
+}
+
 footer {
   background-color: #f7f4e9;
   height: 50px;
   width: 95%;
   margin: 45px auto 0;
   padding-top: 1px;
-  align-content: center;
   border-top: solid 0.5px black;
   border-top-width: 80%;
   font-size: 12px;
@@ -167,16 +172,11 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+h4 {
   font-family: 'Vollkorn', serif;
   margin-top: 15px 0 0;
   font-size: 20px;
-}
-
-h4 {
-  margin: 0;
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
 }
 
 .credit {
@@ -190,7 +190,7 @@ h4 {
 /*** MEDIA QUERIES ***/
 @media (min-width: 667px) {
   header {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 30px; 
   }
 
@@ -229,7 +229,7 @@ h4 {
   }
 
   h4 {
-    margin: 5px 0 12px;
+    margin: 7px 0 20px;
   }
 }
 
@@ -244,6 +244,7 @@ h4 {
 
   .title {
     display: inline-block;
+    margin-left: 120px;
   }
 
   .big-news {
