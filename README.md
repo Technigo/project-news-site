@@ -1,10 +1,6 @@
 # News Site
 
 This project is a responsive newspaper landing site, adapted to mobile, tablet and desktop.
-<<<<<<< HEAD
-
-=======
->>>>>>> 99cd91562289a76775f8667876a1eb94e7791fef
 
 ## The problem
 
