@@ -2,10 +2,21 @@
 #hero article {
   background-color: #2c3e50;
   position: relative;
+  overflow: hidden;
 }
 
 #hero .article-image {
   opacity: 0.4;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-box {
+  font-size: revert;
+}
+
+.hover-box:hover > .article-image {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
 }
 
 .article-info {
