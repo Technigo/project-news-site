@@ -4,27 +4,48 @@ html {
   font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .header {
   background: rgb(23, 46, 23);
-  padding: 10px;
+  padding: 5px 0px;
   margin: 0px 0px 0px 0px;
-  justify-content: space-between;
   display: flex;
-  border: 40px;
-  border-color: pink;
+  justify-content: space-between;
 }
 
-.introduction {
-  width: 100px;
+.title {
+  font-size: 30px;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.logo {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-items {
+  margin-right: 10px;
+}
+
+
+
+.news-card {
+  width: 10%;
   height: 100px;
-
-
-}
-
-.navigation {
-  color: aliceblue;
-  display: inline;
-  
-
-
+  background: lightblue;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
