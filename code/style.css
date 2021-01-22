@@ -164,6 +164,9 @@ a:hover {
 
 /*                                         END                                           */
 
+
+/*ARE NOT ABLE TO DO MEDIA Q, SOMETHING WENT WRONG AND I CANNOT FIGURE OUT WHY*/
+
 .texttwo {
     display: flex;
     justify-content: space-evenly;
@@ -197,14 +200,42 @@ a:hover {
     min-height: 100%;
 }
 
-.imagetwotwo {
-    width: 200px;
-    height: 300px;
-    border: black solid;
+
+/*MOBILE view for small news articles*/
+
+@media (max-width: 767px) {
+    .containertwo {
+        width: 100%;
+        height: 400px;
+        margin: 5px;
+        flex-direction: column;
+    }
 }
 
-.imagetwotwo img {
-    width: 100%;
-    height: auto;
-    min-height: 100%;
+
+/*TABLET view for small news articles*/
+
+@media (min-width: 768px) and (max-width:991px) {
+    .containertwo {
+        display: flex;
+        width: 40%;
+        margin: 35px;
+    }
+    .imagetwo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .news-cardfour {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*DESKTOP view for small articles*/
+
+@media screen and (min-width: 992px) {
+    .containertwo {
+        flex-wrap: nowrap;
+    }
 }
