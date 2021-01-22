@@ -45,36 +45,36 @@ body {
   
 }
 
-  h1.title-name {
-    width: 300px;
-    margin: 15px 0px 0px 10px;
-    grid-area: title1;
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 52px;
-  }
+h1.title-name {
+  width: 300px;
+  margin: 15px 0px 0px 10px;
+  grid-area: title1;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 52px;
+}
 
-  h1.title-type {
-    width: 200px;
-    margin: 0px 0px 15px 10px;
-    grid-area: title2;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 46px;
-    color: rgb(8, 106, 233);
-  }
+h1.title-type {
+  width: 200px;
+  margin: 0px 0px 15px 10px;
+  grid-area: title2;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 46px;
+  color: rgb(8, 106, 233);
+}
 
   
-  .navlink1, .navlink2, .navlink3, .navlink4 {
-    display: none;
-  }
+.navlink1, .navlink2, .navlink3, .navlink4 {
+  display: none;
+}
 
 section.big-news {
- width: 500px;
- padding: 20px;
- margin: 0;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center; 
+  width: 500px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
 
 
@@ -92,17 +92,17 @@ section.small-news {
 .article {
   width: 400px;
   padding: 25px;
-  margin-top: 15px;;
+  margin-top: 15px;
   background-color: white;
   box-shadow: 5px 7px 10px;
   font-size: 20px;
 }
 
 figure.big-news {
-background-color: white;
-width: 400px;
-padding: 25px;
-box-shadow: 5px 7px 10px;
+  background-color: white;
+  width: 400px;
+  padding: 25px;
+  box-shadow: 5px 7px 10px;
 }
 
 @keyframes bounce {
@@ -151,182 +151,182 @@ img.small-news {
 @media (min-width:768px) and (max-width: 1200px) {
 
 
-  .header {
-    display: grid;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
-    margin: 0;
-    grid-template-columns: 100px 100px auto 100px 100px;
-    grid-template-rows: 100px;
-    grid-gap: 20px;
-    grid-template-areas: 
-    "navlink1 navlink2 logo navlink3 navlink4";
-    justify-content: center;
-  }
+.header {
+  display: grid;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  grid-template-columns: 100px 100px auto 100px 100px;
+  grid-template-rows: 100px;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "navlink1 navlink2 logo navlink3 navlink4";
+  justify-content: center;
+}
 
-  .navlink1, .navlink2, .navlink3, .navlink4 {
-    display: block;
-    justify-self: center;
-    align-self: center;
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 24px;
-  }
+.navlink1, .navlink2, .navlink3, .navlink4 {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 24px;
+}
 
-  .navlink1 {
-    grid-area: navlink1;
-  }
+.navlink1 {
+  grid-area: navlink1;
+}
 
-  .navlink2 {
-    grid-area: navlink2;
-  }
+.navlink2 {
+  grid-area: navlink2;
+}
 
-  .navlink3 {
-    grid-area: navlink3;
-  }
+.navlink3 {
+  grid-area: navlink3;
+}
 
-  .navlink4 {
-    grid-area: navlink4;
-  }
+.navlink4 {
+  grid-area: navlink4;
+}
 
-  .logo {
-    margin: 15px 0 0 0;
-    grid-area: logo;
-    justify-self: center;
-  }
+.logo {
+  margin: 15px 0 0 0;
+  grid-area: logo;
+  justify-self: center;
+}
 
-  .title-type {
-    display: none;
-  }
+.title-type {
+  display: none;
+}
 
-  .title-name {
-    display: none;
-  }
+.title-name {
+  display: none;
+}
 
-  section.big-news {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-  }
+section.big-news {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
 
-  figure.big-news {
-    width: 300px;
-    padding: 14px;
-    margin: 0 5px 0 0;
-  }
+figure.big-news {
+  width: 300px;
+  padding: 14px;
+  margin: 0 5px 0 0;
+}
 
-  .figcaption {
-    font-size: 28px;
-  }
+.figcaption {
+  font-size: 28px;
+}
 
-  img.big-news {
-    width: 272px;
-  }
+img.big-news {
+  width: 272px;
+}
 
-  .article {
-    width: 400px;
-    margin: 0;
-  }
+.article {
+  width: 400px;
+  margin: 0;
+}
 
-  section.small-news {
-    display: grid;
-    grid-template-columns:350px 350px;
-    grid-template-rows: 500px;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
+section.small-news {
+  display: grid;
+  grid-template-columns:350px 350px;
+  grid-template-rows: 500px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
 
-  figure.small-news {
-    width: 350px;
-    padding: 17px;
-    margin: 0;
-  }
+figure.small-news {
+  width: 350px;
+  padding: 17px;
+  margin: 0;
+}
   
-  img.small-news {
-    width: 316px;
-    margin: 0;
-  }
+img.small-news {
+  width: 316px;
+  margin: 0;
+}
 }
 
 /*Styling for big desktop*/
 @media (min-width: 1200px) {
 
-  .header {
-    display: flex;
-    justify-content: flex-start;
-    height: 100px;
-    width: 100%;
-    margin: 0;
+.header {
+  display: flex;
+  justify-content: flex-start;
+  height: 100px;
+  width: 100%;
+  margin: 0;
     
-  }
+}
 
-  .logo {
-    width: 100px;
-    padding: 15px;
-    margin: 10px 0 0 40px;
+.logo {
+  width: 100px;
+  padding: 15px;
+  margin: 10px 0 0 40px;
 }
 
 .navlink1, .navlink2, .navlink3, .navlink4 {
   display: block;
 }
 
-  section.big-news {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-  }
+section.big-news {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
 
-  figure.big-news {
-    width: 500px;
-    padding: 20px;
-    margin: 0 10px 0 0;
-  }
+figure.big-news {
+  width: 500px;
+  padding: 20px;
+  margin: 0 10px 0 0;
+}
 
-  .figcaption {
-    font-size: 28px;
-  }
+.figcaption {
+  font-size: 28px;
+}
 
-  img.big-news {
-    width: 460px;
-  }
+img.big-news {
+  width: 460px;
+}
 
-  .article {
-    width: 600px;
-    margin: 0;
-  }
+.article {
+  width: 600px;
+  margin: 0;
+}
 
-  section.small-news {
-    display: grid;
-    grid-template-columns:280px 280px 280px 280px;
-    grid-template-rows: 400px;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
+section.small-news {
+  display: grid;
+  grid-template-columns:280px 280px 280px 280px;
+  grid-template-rows: 400px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
 
-  figure.small-news {
-    width: 280px;
-    padding: 14px;
-    margin: 0;
-  }
+figure.small-news {
+  width: 280px;
+  padding: 14px;
+  margin: 0;
+}
   
-  img.small-news {
-    width: 252px;
-    margin: 0;
-  }
+img.small-news {
+  width: 252px;
+  margin: 0;
+}
 
-  .figcaption {
-    font-size: 22px;
-  }
+.figcaption {
+  font-size: 22px;
+}
 }
 /* Style a specific child of a class .navigation-item:last-child, navigation-item:nth-child(4)
 Putting width 100% on navbar and center text possible to center navbar*/
