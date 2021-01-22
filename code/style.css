@@ -83,7 +83,7 @@ a:hover {
 
 /*STARTS HERE                                      !!!!!*/
 
-.Text {
+.text {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -155,13 +155,19 @@ a:hover {
 
 /*DESKTOP view for small articles*/
 
+@media screen and (min-width: 992px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+}
+
 
 /*                                         END                                           */
 
-.Texttwo {
+.texttwo {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex wrap: wrap;
     width: 100%;
 }
 
