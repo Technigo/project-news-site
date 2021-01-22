@@ -24,25 +24,23 @@ header {
   
 }
 
- /*
-.hamburger{
-  display: none;
+ .header-child {
+  width: 50%;
 }
-*/
 
 .logo {
   border: 3px solid red;
-  width: 12%;   
+  width: 13%;   
 }
 
 .title {
   border: 3px solid red;
-  width: 25%;
+  width: 30%;
 }
 
-.navigation {
+.desktop-menu {
   border: 3px solid red;
-  width: 300px;
+  align-self: right;
 }
 
 .navigation-element {
@@ -61,10 +59,29 @@ header {
 /***MEDIA QUERIES***/
 
 /***MOBILE***/
-@media (max-width: 600px) {
+@media only screen and (max-width: 420px) {
+
   .container {
-    width: 600px;
+    
   }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  .navigation-element {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+
 }
 
 
