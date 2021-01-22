@@ -28,7 +28,7 @@ a {
 
 nav {
   background-color: black;
-  height: 140px;
+  height: 115px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -232,6 +232,37 @@ nav a:last-child {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-grow: 1;  
+  }
+
+  .small-news-container {
+    width: 450px;
+  }
+
+  .small-news-container img {
+    height: 40%;
+  }
+}
+
+@media (min-device-width: 1958px) {
+  
+  .hamburger {
+    display: none;
+  }
+
+  .big-news {
+    flex-direction: row;
+  }
+
+  .big-news-container {
+    margin-right: 30px;
+  }
+
+  .small-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    /* margin: 0 30px 0 30px; */
   }
 
   .small-news-container {
