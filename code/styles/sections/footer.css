@@ -1,0 +1,23 @@
+/* FOOTER */
+/* Styling for the footer and the links divided into 2 columns */
+
+footer {
+  border-top: 2px solid orange;
+}
+
+.footer-links {
+  margin-top: 0.5em;
+  padding-top: 1em;
+  border-top: 3px double orange;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+footer span {
+  margin: 5px 0;
+}
+
+footer a {
+  font-size: 1em;
+}

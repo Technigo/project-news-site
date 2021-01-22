@@ -1,0 +1,85 @@
+/* DEFAULT size - Mobile/Small Devices*/
+
+/* ======= LAYOUT (GRID&FLEX) ======= */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 20% auto auto auto 200px;
+  grid-template-areas:
+    "header"
+    "hero"
+    "news-boxes"
+    "news-column"
+    "news-list"
+    "footer";
+  gap: 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 740px;
+}
+
+header {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: header;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60% repeat(2, auto);
+  grid-template-areas:
+    "large large"
+    "medium medium"
+    "small-1 small-2";
+  grid-area: hero;
+  gap: 10px 10px;
+}
+
+#news-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: news-boxes;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-area: footer;
+  gap: 10px 10px;
+}
+
+/* Hide header links and promo imgs in mobile(default sizing) */
+.nav-links,
+.promo-img {
+  display: none;
+}
+
+/* Declaration of GRID AREAS (with no further styling) */
+
+#news-column {
+  grid-area: news-column;
+}
+.promo-1 {
+  grid-area: promo-1;
+}
+.promo-2 {
+  grid-area: promo-2;
+}
+.large {
+  grid-area: large;
+}
+.medium {
+  grid-area: medium;
+}
+.small-1 {
+  grid-area: small-1;
+}
+.small-2 {
+  grid-area: small-2;
+}

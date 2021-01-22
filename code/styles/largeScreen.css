@@ -1,0 +1,26 @@
+/* ======== LARGE DEVICES ======== */
+/* Device specific styling and layout */
+body {
+  grid-template-columns: auto 250px;
+  grid-template-rows: auto 400px auto auto 200px;
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "news-boxes news-column"
+    "news-list news-column"
+    "footer footer";
+  width: 1160px;
+}
+
+/* NEWS BOXES */
+/* change so that they line up in row of 3 */
+#news-boxes {
+  flex-flow: row nowrap;
+}
+.box-item {
+  height: 100%;
+  width: 100%;
+}
+.box-item:last-of-type {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+/* FULLSCREEN SIDEBAR */
+.overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-flow: column nowrap;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.overlay a.closebtn {
+  align-self: flex-end;
+  margin-right: 5%;
+  font-size: 6em;
+}
+
+.overlay a:nth-child(4) {
+  padding-bottom: 1em;
+  border-bottom: 2px solid;
+}
+.overlay a:nth-child(5) {
+  padding-top: 1em;
+}
+
+.overlay a {
+  padding: 8px;
+  font-size: 4em;
+  color: #818181;
+}

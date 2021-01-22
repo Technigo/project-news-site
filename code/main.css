@@ -1,0 +1,15 @@
+/* Sets up default Grid&Flexbox layout for webpage */
+@import "./styles/gridFlexbox.css";
+
+/* Device specific styling and layout */
+@import "./styles/mediumScreen.css" screen and (min-width: 768px);
+@import "./styles/largeScreen.css" screen and (min-width: 1200px);
+
+/* Typography styling default values across all screen sizes */
+@import "./styles/typography.css";
+
+/* Import Element specifc styles */
+@import "./styles/fullscreenSidebar.css";
+@import "./styles/sections/hero.css";
+@import "./styles/sections/articles.css";
+@import "./styles/sections/footer.css";

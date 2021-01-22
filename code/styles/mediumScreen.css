@@ -1,0 +1,74 @@
+/* ======= MEDIUM DEVICES ======= */
+/* Device specific styling and layout */
+
+body {
+  grid-template-rows: 200px 15% auto auto auto 200px;
+  min-width: 743px;
+}
+
+header {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-rows: auto 60px;
+  grid-template-areas:
+    "promo-1 title promo-2"
+    "nav-links nav-links nav-links";
+  gap: 5px 5px;
+  justify-content: center;
+}
+
+#hero {
+  grid-template-columns: 60% repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "large small-1 small-2"
+    "large medium medium";
+}
+
+#news-boxes {
+  flex-flow: row wrap;
+}
+
+.box-item {
+  height: 50%;
+  width: 50%;
+}
+
+.box-item:last-of-type {
+  width: 100%;
+}
+
+footer {
+  grid-template-columns: repeat(2, auto);
+}
+
+/* Hide side-nav btn & show links and promos */
+.btn-side-nav {
+  display: none;
+}
+
+/* --- ELEMENT STYLING --- */
+
+/* HEADER */
+.promo-img {
+  display: flex;
+  align-items: center;
+}
+.promo-img img {
+  max-width: 100%;
+  height: auto;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: nav-links;
+}
+#central-links {
+  display: flex;
+  padding: 0;
+}
+#central-links li {
+  margin-right: 20px;
+}

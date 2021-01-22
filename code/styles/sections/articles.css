@@ -1,0 +1,74 @@
+/* Class used for displaying a random image. Used throughout the webpage */
+.article-image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: block;
+}
+
+/* Styling to separate hero and article sections */
+#news-boxes,
+#news-column {
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: 4px double orange;
+}
+
+/* --- BOX ARTICLES --- */
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  border-bottom: 4px double gray;
+}
+
+.center-box-image {
+  height: 200px;
+  width: 60%;
+}
+
+.box-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+/* --- COLUMN ARTICLE --- */
+/* Styling for the side column article */
+.article-column {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: justify;
+  align-items: center;
+}
+
+.author {
+  color: grey;
+  text-transform: none;
+}
+
+/* --- LIST ARTICLES --- */
+/* Styling for the articles dispalyed as a list */
+#news-list {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 4px double orange;
+  grid-area: news-list;
+}
+
+.article-list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 1em 0;
+  padding: 1em;
+  border: 3px double gray;
+}
+
+.list-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-between;
+}
