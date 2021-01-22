@@ -1,7 +1,10 @@
 # News Site
 
 This project is a responsive newspaper landing site, adapted to mobile, tablet and desktop.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99cd91562289a76775f8667876a1eb94e7791fef
 
 ## The problem
 
@@ -15,6 +18,7 @@ As an animation I made a text shadow that continuously changes color for the hea
 If I had more time I would work more on the header.
 Maybe create a search field (at least for looks) and put more time on the news section links under the header.
 Now I had to put most of time on figuring out flexbox.
+<<<<<<< HEAD
 
 
 ## View it live
