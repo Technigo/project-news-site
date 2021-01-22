@@ -10,14 +10,13 @@ body {
 /************ HEADER ************/
 
 header {
-  width: 95%;
+  width: 100%;
   background-color: #ffffff9b;
   display: flex;
   border-bottom: 1px solid #3a3c3f;
   box-shadow: 0 5px 5px #3a3c3f;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 50px;
   margin-bottom: 20px;
 }
 header img {
@@ -81,7 +80,8 @@ h2 {
 h3 {
   margin: 10px;
 }
-article p:nth-child(2) {
+article p:nth-child(2),
+article p:nth-child(3) {
   display: none;
 }
 .border {
@@ -143,7 +143,8 @@ footer a {
     article p:nth-child(1) {
     display: none;
   }
-  article p:nth-child(2) {
+  article p:nth-child(2),
+  article p:nth-child(3) {
     display: block;
   }
   .small-news {
@@ -157,11 +158,17 @@ footer a {
     grid-template-rows: none;
     grid-template-columns: repeat(2, 1fr);
   }
+  article p:nth-child(3) {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
   .small-news {
     max-width: 1260px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
+  }
+  article p:nth-child(3) {
+    display: block;
   }
 }
