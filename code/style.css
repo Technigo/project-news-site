@@ -88,6 +88,7 @@ section.small-news {
  justify-content: center;
 }
 
+
 .article {
   width: 400px;
   padding: 25px;
@@ -104,12 +105,33 @@ padding: 25px;
 box-shadow: 5px 7px 10px;
 }
 
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
 figure.small-news {
   background-color: white;
   width: 400px;
   padding: 25px; 
   margin-bottom: 40px;
   box-shadow: 5px 7px 10px;
+}
+
+figure.small-news:hover {
+  animation: bounce 1s;
 }
 
 .figcaption {
