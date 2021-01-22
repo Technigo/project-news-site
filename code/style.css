@@ -9,10 +9,21 @@ html {
 }
 
 body {
-    background: #191a20;
+    background: linear-gradient(25deg, #fb3222,#b40000,#890000,	#540000, #5e1712, #240000);
     color: #fff;
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     margin: 0;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
 }
 
 .container {
@@ -65,7 +76,7 @@ nav {
 
 .logo::before{
     content: "Winter NEWS";
-    color: #ff3801;
+    color: #fb3222;
     width:0;
     position: absolute;
     overflow: hidden;
@@ -107,6 +118,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-content: center;
     padding-top: 32px;
     
 }
@@ -116,13 +128,13 @@ nav {
     height: 350px;
     margin: 0px 16px 0 16px 0;
     padding:0;
-    box-shadow: 5px 4px 4px #4d4f54;
     background-color: #fff;
     color: black;
     box-sizing: border-box;
     margin-bottom: 32px;
     position: relative;
     z-index: 1;
+    box-shadow: 6px 5px 5px #4d4f54;
        
 }
 
@@ -132,7 +144,7 @@ nav {
     width: 100%;
     height: 230px;
     flex-grow: 1;
-   
+       
 }
 
 .news-text{
@@ -156,6 +168,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .sub-news-card{
@@ -163,7 +176,7 @@ nav {
     height: 350px;
     margin: 0px 16px 0 16px 0;
     padding:0;
-    box-shadow: 5px 4px 4px #4d4f54;
+    box-shadow: 6px 5px 5px #4d4f54;
     background-color: #fff;
     color: black;
     box-sizing: border-box;
@@ -224,7 +237,7 @@ header img {
 
 .navigation-element:hover {
     text-decoration: underline;
-    color: #ff3801;
+    color: #fb3222;
 }
 
 .big-news-container {
