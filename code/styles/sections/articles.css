@@ -64,11 +64,17 @@
   align-items: center;
   margin: 1em 0;
   padding: 1em;
-  border: 3px double gray;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .list-info {
   display: flex;
   flex-flow: column nowrap;
   align-content: space-between;
+}
+
+/* class that contains the articles and makes them clickable links */
+.article-link-box {
+  display: contents;
+  font-size: revert;
 }
