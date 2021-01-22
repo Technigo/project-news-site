@@ -25,7 +25,7 @@ h3 {
 
 /*** HEADER ***/
 
-header {    /* make header into a class, according to Max */
+.header {   
   background: #000;
   height: 100px;
   display: flex;
@@ -40,17 +40,21 @@ header {    /* make header into a class, according to Max */
   margin-right: 10px;
 }
 
-nav, .social-media {
+.navigation, .social-media {
   display: none;
 }
 
-nav a {
+.navigation a {
   color: #fff;
   text-decoration: none;
   margin-left: 16px;
 }
 
-.hamburger {          /*Add a drop down menu*/
+.navigation a:hover, .navigation a:focus {
+  color: rgb(189, 189, 189)
+}
+
+.hamburger {          /*Add a drop down menu and script*/
   width: 20px;
   height: 20px;
   display: flex;
@@ -68,12 +72,12 @@ nav a {
 }
 
 
+
 /*** RESPONSIVE IMAGE ***/
 
 .responsive-image {
   width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
 
@@ -88,8 +92,7 @@ main {
   padding: 0px;
   border: 1px solid rgb(228, 225, 225);
   background: #fff; 
-  border-radius: 4px;
-  box-shadow: 10px 10px #c2c1c1;
+  box-shadow: 5px 5px #e7e6e6;
   margin: 20px 0px;
 }
 
@@ -122,13 +125,8 @@ main {
   border: 1px solid rgb(228, 225, 225);
   margin: 20px 0px;
   background: #fff; 
-  border-radius: 4px;
-  box-shadow: 10px 10px #BEEEEA;
+  box-shadow: 5px 5px #e7e6e6;
 }
-
-/* .other-news-text {         /*Do I need this class?
-
-} */
 
 
 /*** FOOTER ***/
@@ -147,7 +145,7 @@ footer a {
   text-decoration: none;
 }
 
-.container-footer {            /*Add som kind of hover effect to the links*/
+.container-footer {            
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -165,6 +163,10 @@ footer a {
   margin: 3px;
 }
 
+.container-contact-info a:hover, .container-contact-info a:focus {
+  color: rgb(189, 189, 189)
+}
+
 .container-social-media {
   display: flex;
   flex-direction: column;
@@ -175,17 +177,21 @@ footer a {
   margin-right: 3px;
 }
 
+.container-social-media a:hover, .container-social-media a:focus {
+  color: rgb(189, 189, 189)
+}
+
 
 /*** MEDIA QUERIES ***/
 
 /* Tablet - only include the elements that I want to behave 
 differently on this specific device */
 @media (min-width: 667px) { 
-  header {
+  .header {
     justify-content: space-between;
   } 
 
-  nav {
+  .navigation {
     display: inline-block;
     text-decoration: none;
     margin-left: auto;  
