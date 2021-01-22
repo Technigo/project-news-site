@@ -150,23 +150,57 @@ input:checked ~ .dropdown .dropdown-list {
 }
 /*** HIGHLIGHTS ***/
 
+.big-headline {
+  color: rgb(5, 21, 41);
+  background: rgba(255, 255, 255, 0.678);
+  margin-left: 10px;
+  display: inline-block;
+  padding: 5px;
+
+}
+
 .grid-container {
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 12px;
   grid-auto-rows: minmax(150px, auto);
   padding: 0px 10px;
 }
 .each-highlight {
-  background-image: url(./northern_lights.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  /* margin: 0 10px; */
+  color: rgb(9, 35, 75);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-decoration: none;
 }
-
+.each-highlight:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+.highlight1 {
+  background-image: url(./reindeer.jpg);
+}
+.highlight2 {
+  background-image: url(./fox.jpg);
+}
+.highlight3 {
+  background-image: url(./plastics.jpg);
+}
+.highlight4 {
+  background-image: url(./oil.jpg);
+}
+.highlight-headline, .highlight-credits {
+  background:rgba(255, 255, 255, 0.423);
+  margin: 0;
+  padding: 3px;
+}
+.highlight-credits {
+  font-size: 12px;
+}
 /*** ODINARY NEWS ***/
 .ordinary-news a {
   text-decoration: none;
