@@ -95,7 +95,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 95%;
   max-width: 1100px;
   margin: 30px auto;
   padding: 25px 20px;
@@ -120,7 +120,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 95%;
   max-width: 1100px;
   margin: auto;
 }
@@ -141,7 +141,7 @@ a:active {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .arrow-up a {
@@ -150,13 +150,30 @@ a:active {
 
 footer {
   background-color: #f7f4e9;
-  height: 50px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 95%;
-  margin: 45px auto 0;
-  padding-top: 1px;
+  margin: 25px auto 0;
+  padding: 10px;
   border-top: solid 0.5px black;
-  border-top-width: 80%;
-  font-size: 12px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.icons {
+  width:25%;
+  display: flex;
+  justify-content: space-around;
+  font-size: medium;
 }
 
 h1 {
@@ -169,13 +186,18 @@ h2 {
   margin: 14px 0 0;
   font-family: 'PT Serif', serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-h3,
-h4 {
+h3 {
   font-family: 'Vollkorn', serif;
   margin-top: 15px 0 0;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'Vollkorn', serif;
+  margin: 10px 0 0;
   font-size: 20px;
 }
 
@@ -225,11 +247,26 @@ h4 {
   }
 
   h2 {
+    font-size: 30px;
     margin: 14px 0 0;
   }
 
   h4 {
     margin: 7px 0 20px;
+  }
+
+  footer {
+    width: 90%;
+    margin: 30px auto 0;
+  }
+  
+  .info {
+    width: 95%;
+    font-size: 15px;
+  }
+  
+  .icons {
+    font-size: large;
   }
 }
 
@@ -257,5 +294,19 @@ h4 {
 
   h2 {
     margin: 0;
+  }
+
+  footer {
+    width: 85%;
+    margin: 30px auto 0;
+  }
+  
+  .info {
+    width: 70%;
+    font-size: 17px;
+  }
+  
+  .icons {
+    font-size: x-large;
   }
 }
