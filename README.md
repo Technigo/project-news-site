@@ -15,8 +15,8 @@ I searched for some tutorials to create the effects of the navbar and made some 
 
 I inspected the page in Iphone 7/8 plus, Ipad and deskviews with the developer tools and looked fine.
 
-If I had more time I would have added an animation in the logo and searched deeper for the overfloating text of the main article. Out of that I am happy with the result and had fun doing it.
+If I had more time I would have added an animation in the logo and searched deeper for the issue about overfloating text of the main article. I would have experimented more with CSS and made a more complex grid. Out of that I am happy with the result and had fun doing it.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://happy-leakey-6e1112.netlify.app/
