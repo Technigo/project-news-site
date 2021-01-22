@@ -11,4 +11,5 @@ I have also experimented a bit with shadow box, which I find really interesting.
 If I had more time to put on this project, I would work on the navigation bar, and either make it a hamburger menu or add some other effect to it. I would also experiment a bit with ordering items in a flex container.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+My news site project has been published with Netlify and can be viewed here:
+https://stupefied-bohr-e13e91.netlify.app/
