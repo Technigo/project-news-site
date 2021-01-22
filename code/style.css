@@ -9,18 +9,19 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
   margin: 0 auto;
 }
 
 /***HEADER***/
 
 header {
-  height: 150px;
-  padding: 16px;
   background: #ffdd87;
+  height: 150px;
+  display: flex;
+  align-items: center;  
   border-top: 30px solid #f75590;
   border-bottom: 30px solid #f75590;
+  
 }
 
  /*
@@ -41,14 +42,13 @@ header {
 }
 
 .navigation {
-  
-  background: white;
+  background: greenyellow;
 }
 
 .navigation-element {
   font-size: 25px;
   color:  #c72560;
-  margin-right: 0px;
+  margin-right: 20px;
   text-decoration: none;  
 }
 
@@ -56,9 +56,6 @@ header {
 
 /***MOBILE***/
 
-@media (min-width: 576px) {
-  
-}
 
 /***TABLET***/
 
