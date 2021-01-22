@@ -1,3 +1,4 @@
+/*general*/
 html {
   background:white;
   color: black;
@@ -6,25 +7,15 @@ html {
 a:link, a:visited {
   text-decoration: none;
   color: black;
- }
+}
  
-.header{
-margin-top: 20px;
-margin-bottom: 0px;
+ /*header*/
+header{
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-body{
-  max-width: 100%;
-  margin: 8px;
-  padding: 8px;
-}
-
-section{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-ul{
+nav{
   font-size: 22px;
   display: flex;
   list-style-type: none;
@@ -37,6 +28,43 @@ ul{
   font-family: 'Abril Fatface', cursive;
 }
 
+/*body elements*/
+body{
+  max-width: 100%;
+  margin: 8px;
+  padding: 8px;
+}
+
+.artistcards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainarticle{
+  text-align: justify;
+  background-color: rgb(111,44,69);
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  border: 0px;
+}
+
+.img-artist{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*fonts*/
+.author{
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
 p{
   font-family: 'Amiri', serif;
   font-size: 20px;
@@ -45,14 +73,6 @@ p{
   padding-right: 10px;
   text-align: justify;
   font-weight: bold;
-}
-.author{
-  font-size: 15px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: right;
 }
 
 h1{
@@ -86,21 +106,7 @@ h3{
   margin-top: 10px;
 }
 
-.mainarticle{
-  text-align: justify;
-  background-color: rgb(111,44,69);
-  padding-top: 0px;
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  border: 0px;
-}
-
-.img-artist{
-  max-width: 100%;
-  object-fit: cover;
-}
-
+/*artist cards*/
 .loyle{
   background-color:#7D7B73;
   height: 250px;
@@ -134,7 +140,7 @@ h3{
   height: 250px;
   text-align: justify;
   margin-bottom: 15px;
-  padding: 15px;  
+  padding: 15px;
 }
 .joy{
   background-color:#5B4857;
@@ -151,84 +157,107 @@ h3{
   padding: 15px;
 }
 
-@media (min-width: 668px) and (max-width: 1024px){
-  h1{ 
-    font-size: 50px;
-    text-align: center;
-  } 
-  h2{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  h3{
-    margin-top: 0px;
-    font-size: 30px;
-  }
-  .author{
-    font-size: 20px;
-  }
-  .p-mainarticle{ 
-    font-size: 25px;
-    padding: 15px;
-  }
-  article{
-    flex: 300px;
-    margin: 10px;
-  }
-  ul{
-    font-size: 30px;
-  }
+@media (min-width: 767px) and (max-width: 991px){
+/*header*/
+nav{
+  font-size: 30px;
+}
+/*body elements*/
+
+.artistcards{
+  flex: 300px;
+  margin: 10px;
 }
 
-@media (min-width: 1024px){
+/*artist cards*/
+  
+/*fonts*/
+.author{
+  font-size: 20px;
+}
+
+.p-mainarticle{ 
+  font-size: 25px;
+  padding: 15px;
+}
+
+h1{ 
+  font-size: 50px;
+  text-align: center;
+} 
+
+h2{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3{
+margin-top: 0px;
+font-size: 30px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+/*header*/
+  .header{
+    margin-bottom: 20px;
+  }
+
+  nav{
+      font-size: 30px;
+  }
+
+/*body elements*/
   body{
     margin-top: 55px;
     margin-left: 60px;
     margin-right: 60px;
   }
-  .header{
-  margin-bottom: 20px;
-  }
-  ul{
-    font-size: 30px;
-  }
-  article{
+
+  .artistcards{
     flex: 250px;
     margin: 8px;
   }
+
+/*fonts*/
+  p{
+    font-size: 20px;
+  }
+
+  .author{
+    font-size: 20px;
+  }
+
+  .p-mainarticle{
+    font-size: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
   h1{
     font-size: 90px;
     padding-top: 50px;
     text-align: center;
   }
+
   h2{
     font-size: 75px;
   }
+
   h3{
     font-size: 30px;
   }
-  .author{
-    font-size: 20px;
-  }
-  .p-mainarticle{
-    font-size: 25px;
-  }
-  p{
-    font-size: 20px;
-  }
-  .p-mainarticle{
-    margin-right: 30px;
-    margin-left: 30px;
-  }
+
+/*artist cards*/
   .loyle{
     text-align: right;
     height: 300px;
   }
   .barney{
     text-align: right;
-    height: 300px;
+    height: 300px; 
   }
   .celeste{
     text-align: right;
