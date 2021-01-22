@@ -14,12 +14,12 @@ h1 {
   letter-spacing: 4px;
 }
 
-/* h2 {
+/* h2 {     /* Add style?
 
 } */
 
-h4 {
-  font-size: 15px;
+h3 {
+  font-size: 16px;
 }
 
 
@@ -50,7 +50,7 @@ nav a {
   margin-left: 16px;
 }
 
-.hamburger {          /*Lägg in en drop down menu*/
+.hamburger {          /*Add a drop down menu*/
   width: 20px;
   height: 20px;
   display: flex;
@@ -115,7 +115,7 @@ main {
   flex-direction: column;
 }
 
-.other-news .container {
+.other-news .container {      /*Can I make the images in the other news section smaller? */
   padding: 30px 16px;
   display: flex;
   flex-direction: column;
@@ -126,9 +126,9 @@ main {
   box-shadow: 10px 10px #BEEEEA;
 }
 
-.other-news-text {
-  /* margin-left: 16px; */
-}
+/* .other-news-text {         /*Do I need this class?
+
+} */
 
 
 /*** FOOTER ***/
@@ -178,7 +178,8 @@ footer a {
 
 /*** MEDIA QUERIES ***/
 
-/* Tablet - only include the elements that I want to behave differently on this specific device */
+/* Tablet - only include the elements that I want to behave 
+differently on this specific device */
 @media (min-width: 667px) { 
   header {
     justify-content: space-between;
@@ -201,6 +202,11 @@ footer a {
     display: none; 
   }
 
+  main {
+    width: 70%;
+    margin: auto;
+  }
+
   .big-news {
     padding: 30px 16px;
   }
@@ -219,29 +225,25 @@ footer a {
     align-items: center;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 40%;  
-    border: 1px solid #000;
+    flex-basis: 30%;  
     margin: 10px;
   }
 
-
-
 }
 
-/* Desktop - only include the elements that I want to behave differently on this specific device */
+/* Desktop - only include the elements that I want to behave 
+differently on this specific device, remember that code for 
+tablet lies in the background */
 @media (min-width: 1025px) { 
 
   main {
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
 
   .other-news .container {
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 20%;  
-    border: 1px solid #000;
+    flex: 1 1 15%;
   }
 
 }
