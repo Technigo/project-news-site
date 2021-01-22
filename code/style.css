@@ -2,6 +2,18 @@ html {
   background-color: #F0EEE9;
 }
 
+/* media queries */
+@media only screen and (max-width: 768px) {
+  .other-news-section {
+    flex-wrap: wrap;
+      }
+}
+
+
+
+
+
+
 /* header & it's content*/
 
 .header-container {
@@ -11,7 +23,7 @@ html {
   }
 .header-logo {
   min-width: 50%;
-  max-height: 200px;
+  max-height: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +46,45 @@ html {
   font-size: 14px;
     }
 
-  /* Hover effect*/
+  /* Hover effect on navigation text*/
   .nav-link:hover {
     color: #CF5C78;
   }
+
+  /* Big news section & it's content*/
+.big-news-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ .polaroid-big {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+  .polaroid {
+    display:flex
+    flex-wrap: wrap;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 2px;
+  }
+  .text-container {
+    padding: 5px;
+  }
+
+
+  /* Other news section & it's content*/
+  .other-news-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px; 
+    
+  } 
+
+  
