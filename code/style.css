@@ -85,3 +85,18 @@ body {
 .title-three {
   margin: 5px;
 }
+
+/* Media queries tablet */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Media queries desktop */
+@media (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-color: tomato;
+  }
+}
