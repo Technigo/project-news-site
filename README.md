@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The name of my project this week is "Tasty Magazine" for people who likes food and wine. The magazine have responsive design for mobile, tablet and computer, with a header (title, logo, navbar), one big news and eight small news and a footer.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had some problems but solved most of them with google and my team. I didnt plan as well as i thought, because i put in to much style in css and had to start from the beginning to understand. I had a lot of time, i just need to plan my time better next time and stick to the layout that i planed.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://musing-wing-3f3c46.netlify.app
