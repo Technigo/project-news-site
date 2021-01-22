@@ -14,7 +14,11 @@
     <!-- HEADER -->
 
     <header>
-        <h1 class="logo">GOOD<br> NEWS<br> ONLY</h1>
+        <div class="logo-container"> 
+        <img class="logo" src="Images/logo.png"/>
+        <video class="logo-video" autoplay muted loop>
+          <source src="Images/logo-film.mp4" type="video/mp4">
+        </video>
       </div>
       <nav>
         <a class="menu" href="#">NEWS</a>
@@ -32,9 +36,9 @@
         <img class="big-news-img" src="images/bignewsimg.jpg" alt="Crowd celebrating in the streets"/>
         <div class="big-news-text">
           <a href="#">
-            <small>Top Story</small>
+            <small class="big-news-category">TOP STORY</small>
           <h2>No new Covid-19 cases in over 6 months</h2>
-          <p>
+          <p class="big-news-paragraph">
             <strong
               >Crowds celebrating on the streets world wide. Epidemiologist
               Anders Tegnell: "We are confident that we are now out of the
@@ -48,30 +52,39 @@
         <div class="news-item">
           <a href="#">
           <img class="news-img" src="images/news1.jpg" alt="Students seated at table" />
-          <small>TECH</small>
+          <div class="news-item-text">
+          <small class="news-category">TECH</small>
           <h2 class="news-item-title">
             100% of students from Technigo landed jobs after graduation
-          </h2></a>
+          </h2>
+        </div>
+        </a>
         </div>
         <div class="news-item">
           <a href="#">
           <img class="news-img" src="images/news2.jpg" alt="Man laying in bed with hangover" />
+          <div class="news-item-text">
           <small>NEWS</small>
           <h2 class="news-item-title">
             Newly developed pill turned out to cure hangovers
           </h2>
+        </div>
         </a>
         </div>
         <div class="news-item">
           <a href="#">
           <img class="news-img" src="images/placeholder.jpg" />
+          <div class="news-item-text">
           <h2 class="news-item-title">NEWS 3</h2>
+        </div>
         </a>
         </div>
         <div class="news-item">
           <a href="#">
           <img class="news-img" src="images/placeholder.jpg" />
+          <div class="news-item-text">
           <h2 class="news-item-title">NEWS 4</h2>
+        </div>
         </a>
         </div>
       </section>

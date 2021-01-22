@@ -24,24 +24,45 @@ a {
   color: inherit;
 }
 
-@keyframes animation {
+/* NOT FINISHED VIDEO BEHIND LOGO SOLUTION!! */
+
+.logo-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.logo-video {
+  /* display: none; */
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+}
+
+.logo-container:hover + .logo-video {
+}
+
+.logo {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+}
+
+/* ENDS - NOT FINISHED VIDEO BEHIND LOGO SOLUTION!! */
+
+@keyframes nav-animation {
   0%   {background-color: white; color:black;}
   25%  {background-color: #FF70A6; color:white;}
   50%  {background-color: #7765E3; color:white;}
   100% {background-color: #FCF300; color:black;}
-}
-
-.logo {
-  font-family: 'Jacques Francois Shadow', cursive;
-  font-size: 40px;
-  align-self: center;
-  padding: 7px;
-}
-
-.logo:hover {
-  animation-name: animation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 
 nav {
@@ -60,8 +81,8 @@ nav {
 
 .menu:hover {
   box-shadow: 4px 4px black;
-  animation-name: animation;
-  animation-duration: 5s;
+  animation-name: nav-animation;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   }
 
@@ -101,13 +122,18 @@ nav {
   align-self: center;
 }
 
+.big-news-category {
+  font-size: 14px;
+}
+
 .big-news-text h2 {
   font-size: 22px;
+  margin-top: 10px;
 }
 
 .big-news-img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
   /* NEWS GROUP */
@@ -138,10 +164,14 @@ nav {
   width: 100%;
 }
 
+.news-item-text {
+  margin: 10px 10px 17px 10px;
+}
+
 .news-item-title {
   font-size: 16px;
   margin: 0;
-  padding: 15px;
+  padding-top: 5px;
 }
 
   /* INTERVIEW SECTION */
@@ -224,6 +254,10 @@ footer {
     width: 48%;
   }
 
+  .news-item-text {
+    margin: 15px;
+  }
+
 }
 
   /* RESPONSIVE DESKTOP */
@@ -264,11 +298,15 @@ footer {
   }
 
   .big-news-text {
-    padding: 25px;
+    padding: 30px;
   }
 
   .big-news-text h2 {
     font-size: 50px;
+  }
+
+  .big-news-paragraph {
+    font-size: 22px;
   }
 
   .news-group {
