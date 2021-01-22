@@ -9,7 +9,7 @@ body {
   background-color: rgba(2, 24, 44, 0.897);
   color: rgb(11, 102, 155);
   position: relative;
-  padding-bottom: 4em;
+  padding-bottom: 40px;
   min-height: 100vh;
 }
 
@@ -59,7 +59,7 @@ body {
   background-image: url("./pictures/ISS.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height: 35em;
+  height: 400px;
   width: 100%;
   box-shadow: 0 1px 4px 2px #f1df77;
   background-position-y: -15vh;
@@ -123,7 +123,7 @@ body {
 /* button styling for drop-down menu on mobile device */
 .menu-button {
   position: fixed;
-  width: 2em;
+  width: 25px;
   height: 3px;
   margin: 5px;
   display: none;
@@ -180,8 +180,8 @@ body {
 
 /*styling of searchbutton and container for search-button image */
 .search-button {
-  width: 2em;
-  height: 1.5em;
+  width: 30px;
+  height: 24px;
   margin-top: 1px;
   background: rgba(255, 208, 0, 0.493);
   border-bottom: solid #f1df7700 1px;
@@ -204,10 +204,10 @@ body {
 /* styling of input search */
 .nav input[type="text"] {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Orbitron', sans-serif;
   color: black;
-  height: 1.5em;
+  height: 21px;
   background-color: rgba(243, 224, 140, 0.534);
 }
 
@@ -233,7 +233,7 @@ body {
   border: solid rgb(2, 160, 252);
   position: relative;
   flex: 1 1 auto;
-  height: 30em;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -251,15 +251,21 @@ body {
   flex: 0.66;
   background-color: rgba(0, 0, 0, 0.267);
   border: solid rgb(2, 160, 252) 0.5px;
-  padding: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.big-text-container a {
+  font-size: 16px;
 }
 
 /* grid for the lesser news content, sure to place pictures and text on a even spaced surface with fixed rows and columns */
 .small-news {
   display: grid;
   grid-gap: 80px 20px;
-  grid-template: repeat(3, 1fr) / repeat(4, 130px 1fr);
+  grid-template: repeat(3, 1fr) / repeat(3, 130px 1fr);
   margin: 80px 20px 80px 20px;
+  font-size: 16px;
 }
 
 /* wrapper for all pictures and text in lesser news area to decide placing in their grid box */
@@ -276,14 +282,13 @@ body {
 }
 
 .small-news p {
-  font-size: 11px;
-  margin: 0.5em 0.5em 0.5em 1em;
+  margin-top: 0px;
 }
 
 /* image container for lesser news images, set with transition and transgform for spin */
 .small-img-container {
-  width: 7em;
-  height: 7em;
+  width: 110px;
+  height: 110px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -309,7 +314,7 @@ body {
 /*styling of a fixed button to take you to the top of the page */
 .top-button {
   right: 0;
-  bottom: 4em;
+  bottom: 40px;
   position: fixed;
   font-family: 'Orbitron', sans-serif;
   color: #f1df77;
@@ -335,7 +340,7 @@ body {
 .footer-wrapper {
   display: flex;
   width: 100%;
-  height: 4em;
+  height: 40px;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(5, 4, 0, 0.438);
@@ -344,8 +349,8 @@ body {
 
 .footer-img-container {
   position: relative;
-  height: 3.5em;
-  width: 6em;
+  height: 35px;
+  width: 60px;
   margin: 5px;
   overflow: hidden;
 }
@@ -359,7 +364,7 @@ body {
 
 .footer p {
   color: rgba(247, 250, 78, 0.438);
-  font-size: 11px;
+  font-size: 12px;
   margin: 10px;
 }
 
@@ -369,6 +374,7 @@ a {
   float: right;
   font-family: 'Orbitron', sans-serif;
   border-radius: 5px;
+  font-size: 12px;
 }
 
 a:hover {
@@ -379,12 +385,14 @@ a:hover {
 h2 {
   font-family: 'Kufam', cursive;
   color: rgb(2, 160, 252);
+  font-size: 22px;
 }
 
 h3 {
   font-family: 'Kufam', cursive;
-  font-size: 14px;
-  margin: 0.5em;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 p {
@@ -443,15 +451,20 @@ p:hover {
   margin: 10px;
 }
 
-.form h2, h3, a {
+.form h2, .form h3, .form a {
   text-align: center;
   float:none;
 }
 
-/*on a very wide screen */
+/*on a exeptionally wide screen */
 @media screen and (min-width: 2000px) {
-
-  /*makes the grid have more content per row */
+    /*makes the grid have more content per row */
+    .small-news {
+      grid-template: repeat(6, 1fr) / repeat(4, 130px 1fr);
+    }
+}
+/*on a wide screen */
+@media screen and (min-width: 3000px) {
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(6, 130px 1fr);
   }
@@ -462,7 +475,7 @@ p:hover {
 (max-width:1200px) {
 
   .header {
-    height: 30em;
+    height: 300px;
     justify-content: center;
   }
 
@@ -504,15 +517,31 @@ p:hover {
     }
   }
 
+  /* top news with he picture over the text instead of besides it */
+  .big-news {
+    flex-direction: column;
+    align-items: space-evenly;
+    font-size: 18px;
+  }
+
   /*less objects per row, because of lesser width */
   .small-news {
     grid-template: repeat(3, 1fr) / repeat(2, 8em 1fr);
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 }
 
 /*for mobile devices  */
 @media screen and (min-device-width: 320px) and (max-device-width: 669px),
-(max-width: 669px) {
+(max-width: 800px) {
   .meteor {
     top: 400px;
     left: -10%;
@@ -539,7 +568,7 @@ p:hover {
   }
 
   .header {
-    height: 25em;
+    height: 250px;
     background-image: url("./pictures/ISS1280px.jpg");
     justify-content: flex-end;
     align-items: flex-end;
@@ -578,8 +607,9 @@ p:hover {
   /*styles menu to be columnar below the menu-button, hidden and without height*/
   .menu-content {
     visibility: hidden;
-    height: 0em;
-    max-width: 100vh;
+    height: 0px;
+    max-width: 100vw;
+    max-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -601,7 +631,7 @@ p:hover {
   #checkbox:checked~.menu-content {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.671);
-    height: 40em;
+    height: 500px;
     transition: 0.5s;
   }
 
@@ -611,14 +641,14 @@ p:hover {
     right: 0;
     top: 0;
     margin: 2px;
-    height: 2em;
-    width: 2.5em;
+    height: 30px;
+    width: 35px;
   }
 
   /*hides the searchbar and puts it of screen*/
   .searchbar {
     position: fixed;
-    right: -22.5em;
+    right: -30px;
     visibility: hidden;
     top: 2px;
     border: none;
@@ -626,7 +656,7 @@ p:hover {
 
   .nav input[type=text] {
     font-size: 12px;
-    height: 2.3em;
+    height: 25px;
     background-color: black;
     border-color: rgba(219, 198, 9, 0.822);
     color: yellow;
@@ -637,17 +667,21 @@ p:hover {
   #searchbox:checked~.searchbar {
     visibility: visible;
     width: auto;
-    right: 2.5em;
+    right: 35px;
     transition: 0.5s;
   }
 
-  .big-news {
-    flex-direction: column;
-    align-items: space-evenly;
+  .big-text-container, h3 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 
   .small-news {
     grid-template: repeat(6, 1fr) / repeat(1, 8em 1fr);
+    font-size: 14px;
   }
 
   /* form stretches over full screen on mobile device*/
