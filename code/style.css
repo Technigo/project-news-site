@@ -1,23 +1,19 @@
-html {
-  /* background-color: #111;
-  color: #fff; */
-}
-
 body {
+  background-color: #f2f3f6;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  /* line-height: 1.4; */
   margin: 0;
-  /* box-sizing: border-box; */
 }
 
 /** HEADER **/
 
-
 .header {
+  background-color: #262A2E;
   height: 50px;
-  background-color: rgb(44, 44, 44);
   display: flex;
   align-items: center;
-  padding: 10px;
-  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .hamburger {
@@ -26,31 +22,7 @@ body {
   width: 30px;
   height: 30px;
   justify-content: space-around;
-  margin-right: 24px;
-}
-
-.top-heading {
-  color: #fff;
-}
-
-.logo {
-  width: 50px;
-  /* display: none; */
-  margin-right: 30px;
-}
-
-.navigation-container {
-  display: flex;
-}
-
-.navigation-item {
   margin-right: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.navigation-item:nth-child(3) {
-  margin-right: 0;
 }
 
 .hamburger div {
@@ -60,50 +32,50 @@ body {
   border-radius: 2px;
 }
 
+.top-heading {
+  color: #fff;
+  font-size: 20px;
+}
+
+.logo {
+  width: 40px;
+  order: 1;
+  margin-left: auto;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.navigation-item {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
 
 /** BIG NEWS **/
 
-
-.big-news {
-  display: flex;
-  box-sizing: border-box;
-}
-
 .news-card-big {
   width: 100%;
-  height: 300px;
-  background: #999;
-  margin: 0 5px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #0678B4;
 }
 
-@media (max-width: 767px) {
-  .news-card-big {
-    background-color: lightblue;
-  }
+.news-card-pic-big {
+  width: 100%;
+  height: 80%;
 }
 
-@media (min-width: 768px) {
-  .big-news {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .news-card-big {
-    background-color: lightgreen);
-    width: 100%;
-  }
+.big-news-text {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 15px;
 }
-  @media (min-width: 992px) {
-    .news-card-big {
-    background-color: lightsalmon;
-    width: 100%;
-  }
-}
-
 
 /** OTHER-NEWS **/
-
 
 .other-news {
   display: flex;
@@ -112,33 +84,124 @@ body {
 }
 
 .news-card {
-  width: 100%; /*should take max width*/
-  height: 300px;
+  width: 100%;
+  height: 320px;
   background: #999;
-  margin: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+
 }
 
+.news-card-pic {
+  width: 100%;
+  height: 80%;
+  /* object-fit: contain; */
+}
+
+.news-card-text {
+  height: 20%;
+}
+
+/** RESPONSIVENESS **/
+  /** MOBILE **/
+
 @media (max-width: 767px) {
+  .navigation-container {
+    display: none;
+  }
+
+  .news-card-type {
+    display: none;
+  }
+
   .news-card {
-    background-color: red;
+    background-color: lightgray;
   }
 }
 
+  /** TABLET */
+
 @media (min-width: 768px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    order: -1;
+    margin-left:inherit;
+    margin-right: 10px;
+  }
+
+  .navigation-container {
+    margin-left: auto;
+  }
+
+  .news-card-big {
+    flex-direction: row;
+  }
+
+  .news-card-pic-big {
+    width: 50%;
+    height: 100%;
+  }
+
+  .big-news-text {
+    text-align:center;
+    font-size: 20px;
+    padding: 100px 0px;
+  }
+
   .other-news {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  .news-card-type {
+    width: 45%;
+    height: 320px;
+    background: green;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
   }
 
   .news-card {
     background-color: green;
     width: 45%;
   }
+
+  .big-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
 }
+  /** LAPTOP **/
+
   @media (min-width: 992px) {
+    .news-card-type {
+      width: 22.5%;
+      background-color: yellow;
+    }
+
     .news-card {
     background-color: yellow;
     width: 22.5%;
+    }
+
+    .news-card-pic-big {
+    width: 50%;
+    height: 100%;
+    }
+
+    .big-news-text {
+      text-align:center;
+      font-size: 30px;
+      padding: 100px 0px;
+    }
+
   }
-}
