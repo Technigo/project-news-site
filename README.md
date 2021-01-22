@@ -6,7 +6,7 @@ The result is a template website with mock content for "Nature Live News".
 
 ## The problem
 
- The aim was to have a a section with 4 column card view on desktop, 2 on a tablet and a 1 column stacked view on mobile. Random gifs and images from unsplash were used to populate the content of the site. 
+ The aim was to have a a section with a 4 column card view on desktop, 2 on a tablet and a 1 column stacked view on mobile. Random gifs and images from unsplash were used to populate the content of the site. 
 
 ## View it live
 

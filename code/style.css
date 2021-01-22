@@ -195,7 +195,6 @@ img {
 
 .card-gif {
   width: 100%;
-  /* max-width: 320px; */
   max-height: 200px;
 }
 
@@ -262,7 +261,7 @@ img {
   }
 }
 
-/**** Small Desktop - 4 Columns ****/
+/**** Desktop - 4 Columns ****/
 @media all and (min-width: 920px) {
   .medium-news-card {
     background: #000;
@@ -274,9 +273,4 @@ img {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-}
-
-/*** Large Desktop ***/
-@media (min-width: 1200px) {
-  /* add max-width for div */
 }
