@@ -3,14 +3,14 @@ body {
   color: #000;
   margin: 0;
 }
-
+/* MOBILE FIRST */
 /* TOP NAVIGATION MOBILE */
 
 .header {
   display: flex;
   margin: 40px;
 }
-
+/*fixed navbar, seen when scrolling*/
 .nav {
   position: fixed;
   top: 0;
@@ -21,12 +21,13 @@ body {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   margin: 10px 40px;
 }
 
+/*does not show navigation item except logo i mobile view*/
 .navigation-container {
   display: none;
 }
@@ -129,20 +130,20 @@ body {
   margin: 0px;
 }
 
-.author-container {
+.credit-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.author-container p {
+.credit-container p {
   color: lightgray;
   font-size: 10px;
   margin: 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.author-container a {
+.credit-container a {
   color: lightgray;
   font-size: 10px;
   margin: 5px;
@@ -163,7 +164,7 @@ body {
   }
   .navigation-container a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
   .navigation-container-logo {
     order: 2;
