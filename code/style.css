@@ -403,22 +403,22 @@ p:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 /* styling of the sign-up and login form */
 .form {
   display: flex;
   position: absolute;
-  height: 90%;
   width: 60%;
+  height: fit-content;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 5px 3px rgb(2, 160, 252);
   background: rgba(0, 0, 0, 0.267);
   font-family: 'Orbitron', sans-serif;
   color: rgb(2, 160, 252);
-  padding: 40px;
+  padding: 20px;
 }
 
 /* styling of the submit button for the sign-up and login form */
@@ -433,6 +433,19 @@ p:hover {
 .form input[type="submit"]:hover {
   background-color: rgb(2, 160, 252);
   color: black;
+}
+
+/* added specifically to be able to read form content in landscape mode*/
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px;
+}
+
+.form h2, h3, a {
+  text-align: center;
+  float:none;
 }
 
 /*on a very wide screen */
@@ -639,12 +652,25 @@ p:hover {
 
   /* form stretches over full screen on mobile device*/
   .form {
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   box-shadow: none;
+   line-height: 1;
+  }
+}
+
+/* small mobile device landscape mode*/
+@media screen and (orientation:landscape) and (max-width: 1024px)
+
+{
+  .form {
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100%;
-    box-shadow: none;
   }
 
-  .form h3 {
-    text-align: center;
+  .form-row {
+    width: 30%;
   }
 }
