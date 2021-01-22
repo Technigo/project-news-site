@@ -1,232 +1,299 @@
-                    html {
-                        background: #F8F9FA;
-                    }
-                    
-                    body {
-                        padding: 25px
-                    }
-                    /****************************** HEADER ******************************/
-                    
-                    .logo {
-                        width: 62px;
-                    }
-                    
-                    .header {
-                        padding: 20px 0px 25px 0px;
-                        display: flex;
-                        justify-content: space-around;
-                    }
-                    
-                    @font-face {
-                        font-family: logofont;
-                        src: url(./Germanika-Personal-Use.ttf);
-                    }
-                    
-                    .newspaper-name {
-                        font-family: logofont;
-                        font-size: 55px;
-                        letter-spacing: 3px;
-                        margin: 0;
-                        font-weight: normal;
-                        position: relative;
-                        margin-left: -20px;
-                    }
-                    
-                    .navigation-menu {
-                        font-family: andale mono;
-                        display: flex;
-                        align-items: center;
-                    }
-                    
-                    .navigation-item {
-                        margin-right: 10px
-                    }
-                    
-                    .navigation-item:last-child {
-                        margin-right: 0;
-                    }
-                    /************************** SMALL NEWS SECTION **************************/
-                    
-                    .news-card {
-                        width: 95%;
-                        height: 500px;
-                        background: rgb(121, 173, 173);
-                        margin-bottom: 10px;
-                        margin-left: 20px;
-                    }
-                    /***** COUTURE CARD ****/
-                    
-                    .couture img {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-couture {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /***** GREENWASHING CARD ****/
-                    
-                    .greenwashing img {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-greenwashing {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /***** SILK SCARVES CARD ****/
-                    
-                    .silk-scarves img {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-scarves {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /***** ME TOO CARD ****/
-                    
-                    .me-too img {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-me-too {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /***** EMBROIDERY CARD ****/
-                    
-                    .embroidery img {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-embroidery {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /***** MUSIC CARD ****/
-                    
-                    .music iframe {
-                        width: 85%;
-                        height: 340px;
-                        margin-left: 38px;
-                        border-radius: 4px;
-                        border: 1px solid #fff;
-                        background: #fff;
-                        border-bottom: 130px solid #fff;
-                        border-left: 15px solid #fff;
-                        border-right: 15px solid #fff;
-                        border-top: 20px solid #fff;
-                        border-radius: 0px;
-                        box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                    }
-                    
-                    .heading-music {
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 15px;
-                        color: rgba(7, 7, 7, 0.829);
-                        padding: 5px 40px 0px 40px;
-                        position: relative;
-                        margin-top: -130px;
-                        margin-left: 20px;
-                    }
-                    /****************************** FOOTER ******************************/
-                    
-                    .footer {
-                        font-family: andale mono;
-                        margin-top: 40px;
-                    }
-                    
-                    .copyright {
-                        display: flex;
-                        justify-content: space-between;
-                        font-size: 14px;
-                        align-items: flex-end;
-                    }
-                    
-                    .social-media {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        font-size: 16px;
-                    }
+                                html {
+                                    background: #F8F9FA;
+                                }
+                                
+                                body {
+                                    padding: 25px;
+                                }
+                                /****************************** HEADER ******************************/
+                                
+                                .logo {
+                                    width: 62px;
+                                }
+                                
+                                .header {
+                                    padding: 20px 0px 25px 0px;
+                                    display: flex;
+                                    justify-content: space-around;
+                                }
+                                
+                                @font-face {
+                                    font-family: logofont;
+                                    src: url(./Germanika-Personal-Use.ttf);
+                                }
+                                
+                                .newspaper-name {
+                                    font-family: logofont;
+                                    font-size: 55px;
+                                    letter-spacing: 3px;
+                                    margin: 0;
+                                    font-weight: normal;
+                                    position: relative;
+                                    margin-left: -10px;
+                                }
+                                
+                                .navigation-menu {
+                                    font-family: andale mono;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .navigation-item {
+                                    margin-right: 10px
+                                }
+                                
+                                .navigation-item:last-child {
+                                    margin-right: 0;
+                                }
+                                /*************************** BIG NEWS SECTION ***************************/
+                                
+                                .main-news-card {
+                                    width: 95%;
+                                    height: 1200px;
+                                    background: rgb(218, 219, 214);
+                                    margin-left: 20px;
+                                    padding-top: 40px;
+                                    padding-bottom: 30px;
+                                }
+                                
+                                .couture img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 830px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-couture {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -830px;
+                                    margin-left: 20px;
+                                }
+                                
+                                .text-couture {
+                                    margin-top: 20px;
+                                }
+                                /************************** SMALL NEWS SECTION **************************/
+                                
+                                .news-card {
+                                    width: 95%;
+                                    height: 500px;
+                                    background: rgb(218, 219, 214);
+                                    margin-left: 20px;
+                                    padding-bottom: 30px;
+                                }
+                                /***** GREENWASHING CARD ****/
+                                
+                                .greenwashing img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-greenwashing {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /***** BILLIE CARD ****/
+                                
+                                .billie-holiday img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-billie {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /***** SILK SCARVES CARD ****/
+                                
+                                .silk-scarves img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-scarves {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /***** ME TOO CARD ****/
+                                
+                                .me-too img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-me-too {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /***** EMBROIDERY CARD ****/
+                                
+                                .embroidery img {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border-radius: 4px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    border-radius: 0px;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-embroidery {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /***** MUSIC CARD ****/
+                                
+                                .music iframe {
+                                    width: 85%;
+                                    height: 340px;
+                                    margin-left: 34.5px;
+                                    border: 1px solid #fff;
+                                    background: #fff;
+                                    border-bottom: 130px solid #fff;
+                                    border-left: 15px solid #fff;
+                                    border-right: 15px solid #fff;
+                                    border-top: 20px solid #fff;
+                                    box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
+                                }
+                                
+                                .heading-music {
+                                    font-family: 'Courier New', Courier, monospace;
+                                    font-size: 15px;
+                                    color: rgba(7, 7, 7, 0.829);
+                                    padding: 5px 40px 0px 40px;
+                                    position: relative;
+                                    margin-top: -130px;
+                                    margin-left: 20px;
+                                }
+                                /****************************** FOOTER ******************************/
+                                
+                                .footer {
+                                    font-family: andale mono;
+                                    margin-top: 40px;
+                                }
+                                
+                                .copyright {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    font-size: 14px;
+                                    align-items: flex-end;
+                                }
+                                
+                                .social-media {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    font-size: 16px;
+                                }
+                                /****************************** MEDIA QUARIES ******************************/
+                                /***** BREAKPOINT INTO TABLET ****/
+                                /* * {
+                                    box-sizing: border-box;
+                                } */
+                                
+                                .big-news {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                }
+                                
+                                .smaller-news {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                
+                                @media (min-width: 768px) {
+                                    .news-card {
+                                        width: 47.5%;
+                                    }
+                                    .smaller-news {
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                    }
+                                }
+                                /***** BREAKPOINT INTO DESKTOP ****/
+                                
+                                @media (min-width: 992px) {
+                                    .news-card {
+                                        width: 23.75%
+                                    }
+                                    .smaller-news {
+                                        flex: grow;
+                                    }
+                                    /* .smaller-news {
+                                        display: grid;
+                                        grid-template-columns: repeat(3, 1fr);
+                                    } */
+                                }
