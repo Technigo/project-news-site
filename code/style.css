@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid pink;
+   /* border: 1px solid pink; */
 }
 
 body{
@@ -135,29 +135,27 @@ p {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    justify-content:flex-start;
-    text-align: center;
+    justify-content:flex-start; /*content upp i början*/
+    text-align:center;
+    
 }
 
 .sn-img-container {
     overflow: hidden;
     padding-bottom: 20px;
-}
+    box-shadow: 10px 10px 5px grey;
+   }
 
 .sn-img-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 }
 
 .sn-card p{
     padding: 10px;
 }
-
-
-
-
-
 
 
 
