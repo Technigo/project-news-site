@@ -1,12 +1,22 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This project is a responsive newspaper landing site, adapted to mobile, tablet and desktop.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started this project by looking for inspiration on different news sites and deciding on what I liked best with them.
+Since the project is mobile first I began sketching on the layout of the mobile site and it's different boxes and deciding which content should be visible and which should be hidden until another breaking point. I then continued with tablet and desktop - doing the same thing.
+
+I started coding by structuring it in HTML and setting up the different news sections in sections and divs to be able to style it with flexbox.
+I then tested my way to find the best fonts (from Google Fonts), sizes, margins paddings, colors etc.
+As an animation I made a text shadow that continuously changes color for the headline title.
+
+If I had more time I would work more on the header.
+Maybe create a search field (at least for looks) and put more time on the news section links under the header.
+Now I had to put most of time on figuring out flexbox.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+TBA
