@@ -29,6 +29,21 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+footer {
+  text-align: center;
+  background-color: #DDDDDD;
+  height: 70px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding: 20px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*** MAIN NEWS ***/
 
 .big-news {
@@ -55,6 +70,13 @@ h1, h2 {
 
 .btn {
   display: none;
+}
+
+.dots {
+  border: dotted #A4A4A4 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 30px auto;
 }
 
 /*** NEWS CARDS***/
@@ -97,7 +119,7 @@ h1, h2 {
   a:hover {
     background-color: white; 
     color: black; 
-    border: 0.5px solid #020202;
+    border: 0.5px solid #A4A4A4;
   }
   
   .big-news {
@@ -141,6 +163,7 @@ h1, h2 {
   .news-card {
     width: 45%;
     position: relative;
+  }
 }
 
 /*** DESKTOP ***/
