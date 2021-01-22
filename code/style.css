@@ -180,6 +180,7 @@ nav {
   position: relative;
   box-shadow: 12px 12px #FF70A6;
   transition: 0.5s ease;
+  border: 0.1px solid lightgrey;
 }
 
 .interview:hover {
@@ -193,16 +194,17 @@ nav {
 .interview-headline {
   position: absolute;
   color: #FF70A6;
-  font-size: 2.5em;
+  font-size: 16px;
   z-index: 1;
   left: 0.5em;
 }
 
 .interview-quote {
-  color: white;
+  color: black;
   position: absolute;
+  font-size: 12px;
   bottom: 1em;
-  left: 0.5em;
+  left: 1em;
 
 }
 
@@ -256,6 +258,14 @@ footer {
 
   .news-item-text {
     margin: 15px;
+  }
+
+  .interview-headline {
+    font-size: 40px;
+  }
+
+  .interview-quote {
+    font-size: 20px;
   }
 
 }
@@ -316,6 +326,14 @@ footer {
 
   .news-item {
     width: 23%;
+  }
+
+  .interview-headline {
+    font-size: 40px;
+  }
+
+  .interview-quote {
+    font-size: 30px;
   }
 
 }
