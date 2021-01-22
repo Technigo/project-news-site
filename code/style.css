@@ -1,5 +1,6 @@
 /*GOOGLE FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /**** HEADER ****/
 .header-landing-page {
@@ -58,7 +59,7 @@
     text-align: center;  
     border: 2px solid black;
     align-items: center;
-    padding:10px 0;
+    padding:30px 0;
     background: whitesmoke;
     flex-flow: column wrap;
     margin: 70px 20px 20px 20px;
@@ -74,22 +75,45 @@
     width:200px;
 }
 
+.big-news-img {
+    padding:20px 20px 30px 20px;
+    border:1px solid black;
+    box-shadow: 5px 10px 10px grey;
+}
+
+.big-news-img:hover {
+    padding:20px 20px 30px 20px;
+    border:1px solid black;
+    box-shadow: 5px 10px 10px black;
+}
+.text-on-photo {
+    font-size: 50px;
+    margin-block-start: 10px;
+    margin-block-end: 1px;
+    font-family:'Indie Flower', cursive;
+    
+}
+
+
+
 
 /**** SMALL NEWS ****/
 
 .small-news {
     display: flex; 
-    flex-flow:column wrap;    
+    flex-flow:column wrap;
+        
 }
   
 .small-news a {
     border: 2px solid black;
     display:flex;
+    flex-direction: column;
     background: whitesmoke;  
-    margin: 10px 20px;
+    margin: 10px 20px;    
     text-align: center;  
     width: 90%;  
-    overflow: hidden; 
+     
     
 }
 
@@ -100,9 +124,10 @@
 }
 
     .small-news img {
-    width:500px;
-    
+    padding-top: 10px;
+    width:500px;    
 }
+
 
   /***RESPONSIVE***/
 
