@@ -18,4 +18,4 @@ My aim for the next project is to start it by creating a design using Figma. And
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://blissful-hodgkin-00c003.netlify.app
