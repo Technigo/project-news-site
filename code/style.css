@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans Condensed", sans-serif;
   background: rgb(224, 190, 224);
+  margin; 0;
 }
 
  /*Navbar*/
@@ -51,7 +52,7 @@ font-weight: bold;
    margin: 0px 60px;
 }
 
-.hr-text{
+hr{
   border: 1px solid black;
   margin-top:20px;
   margin-left: 12px;
@@ -85,7 +86,6 @@ justify-content: center;
 .articleimage{
   max-width: 100%;
   max-height: 150px;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -95,14 +95,8 @@ justify-content: center;
   }
 }
 
-
 @media only screen and (max-width: 375px) {
   .smallstory {
     max-width: 100%;
   }
-}
-
-@media only screen and (max width:375px) {
-  .hamburger
-
 }
