@@ -62,23 +62,20 @@ header {
 @media only screen and (max-width: 420px) {
 
   .container {
-    
-  }
-
-  .desktop-menu {
-    display: none;
+    width: 420px;
   }
 
   .tablet {
-    display: flex;
+    display: block;
+    justify-content: space-around;
   }
 
   .navigation-element {
     display: none;
   }
 
-  .mobile-menu {
-    display: flex;
+  .mobile-desktop {
+    display: none;
   }
 
 
