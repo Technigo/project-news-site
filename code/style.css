@@ -146,7 +146,7 @@ nav {
 
 .news-item {
   width: 100%;
-  background-color: #7765E3;
+  background-color: #8a7be7;
   text-align: center;
   box-shadow: 12px 12px black;
   margin-bottom: 25px;
@@ -163,7 +163,6 @@ nav {
 
 .news-img {
   width: 100%;
-  
 }
 
 .news-item-text {
@@ -212,7 +211,7 @@ nav {
 }
 
 .interview-img {
-  max-width: 100%;
+  width: 100%;
 }
 
   /* FOOTER */
@@ -233,7 +232,12 @@ nav {
 }
 
 .footer-links {
-  margin-right: 15px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.footer-links:hover {
+  color: white;
 }
 
 .copywrite {
@@ -291,6 +295,15 @@ nav {
 
   .interview-quote {
     font-size: 20px;
+  }
+
+  .link-container {
+    margin: 20px 20px 30px 20px;
+  }
+
+  .footer-links {
+    margin-right: 15px;
+    font-size: 18px;
   }
 
 }
@@ -367,6 +380,15 @@ nav {
 
   .interview-quote {
     font-size: 30px;
+  }
+
+  .link-container {
+    margin: 20px 20px 30px 20px;
+  }
+
+  .footer-links {
+    margin-right: 15px;
+    font-size: 22px;
   }
 
 }
