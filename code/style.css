@@ -1,4 +1,29 @@
 html {
-  background: #0025ff;
-  color: #fff;
+    /* background: #0025ff;
+  color: #fff; */
+}
+
+.logo {
+    width: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-item {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.news-card {
+    width: 100%;
+    height: 100%;
+    background: green;
+    margin: 5px;
 }
