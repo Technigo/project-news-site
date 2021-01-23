@@ -180,6 +180,7 @@ img.small-news {
 
 .navbar:link {
 color: black;
+transition: transform 1s;
 }
 
 .navbar:visited {
@@ -188,8 +189,7 @@ color: black;
 }
 
 .navbar:hover {
-  animation: bounce 0.5s;
-  transition: transform 1s;
+  transform: rotate(20deg);
 }
 
 .navbar:active {
@@ -280,23 +280,72 @@ img.small-news {
 @media (min-width: 1200px) {
 
 .header {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns:110px 300px 200px 1fr 1fr 1fr 70px 75px 100px 170px;
+  grid-template-rows: 100px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
   height: 100px;
   width: 100%;
   margin: 0;
-    
+  grid-template-areas: 
+  "logo title1 title2 . . . navlink1 navlink2 navlink3 navlink4"; 
 }
+
 
 .logo {
   width: 100px;
   padding: 15px;
   margin: 10px 0 0 40px;
+  grid-area: logo;
 }
 
 .navbar {
   display: block;
+  justify-self: flex-start;
+  align-self: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 24px;
+  background: white;
+  padding: 5px;
+  box-shadow: 3px 4px 7px rgb(34, 34, 34);
+  text-decoration: none;
 }
+
+.navbar:link {
+  color: black;
+  transition: transform 1s;
+  }
+  
+  .navbar:visited {
+    color: black;
+    transform: rotate(20deg);
+  }
+  
+  .navbar:hover {
+    transform: rotate(20deg);
+  }
+  
+  .navbar:active {
+    transform: rotate(20deg)
+  }
+
+  .navlink1 {
+    grid-area: navlink1;
+  }
+  
+  .navlink2 {
+    grid-area: navlink2;
+  }
+  
+  .navlink3 {
+    grid-area: navlink3;
+  }
+  
+  .navlink4 {
+    grid-area: navlink4;
+  }
 
 section.big-news {
   display: flex;
@@ -350,6 +399,6 @@ img.small-news {
 .figcaption {
   font-size: 22px;
 }
+
 }
-/* Style a specific child of a class .navigation-item:last-child, navigation-item:nth-child(4)
-Putting width 100% on navbar and center text possible to center navbar*/
+
