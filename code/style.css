@@ -58,7 +58,9 @@ html {
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;  
     font-family: 'Concert One', cursive;
     font-size: 22px;
   } 
@@ -72,10 +74,22 @@ html {
 }
 @media (min-width: 667px) and (max-width: 1024px) {
   .polaroid {
-    width: 48%;
+    width: 49%;
   }
 }
-  
+
+@media (min-width: 1025px) {
+  .other-news-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    } 
+}
+@media (min-width: 1025px) {
+  .polaroid {
+    width: 24%;
+  }
+}
+
 /* Polaroid effect, box-shadow */
 
   .polaroid-big {
