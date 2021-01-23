@@ -2,20 +2,11 @@
 
 Create a news site about pot plants using flexbox and make it responsive.
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-I first made a sketch on paper to figure out my layout.
-and tryed doing it by myself, but it dident go as well asi hoped so 
-I startded over and folowed the code along video. tryed to be more structured, start with the html. but i did a to big projcet so i started over again and made it even smaler, stoped focus on it looked and focus only on understanding how flexbox works and to do the website responsive.
-if i hade more time: roll out menue from the hamburger.
-put in internal sitelinkes
-
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+first I made a sketch on a piece of paper to figure out what my layout would look like. I watched videos that were on canvas. I started on my project but realized that I had too high ambitions! Nothing worked the way I wanted and I also discovered that I had not started with mobile first. And I got caught up in design details, so I started over. I decided to make my project much less complicated and just focus on understanding flexbox and making the page responsive. Then I wrote the HTML structure first to avoid getting stuck in the design. Then I followed a lot of what jennie did in the codealong video, it was very helpful! It has also been helpful to have an extra meeting with those on the team and ask them questions and help each other with problems.
+If I had more time, I would have liked to try to add some animation to my project. I'm not sure if the page is responsive now, but I hope so, but I would have liked to be completely sure. I still have not understood how to make the pictures and boxes stop growing.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
