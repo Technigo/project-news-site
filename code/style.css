@@ -1,7 +1,4 @@
-html {
-  background: #b5f8fe;
-  color: #fff;
-}
+
 
 body {
   margin: 0;
@@ -18,37 +15,63 @@ header {
   background: #ffdd87;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-flow: wrap;
+  height: 8rem;
   border-top: 25px solid #f75590;
   border-bottom: 25px solid #f75590;
-  
 }
 
- .header-child {
-  width: 50%;
+.left {
+  background: pink;
+  width: 40%;
+  display: flex;
+  align-items: center;
 }
 
-.logo {
-  border: 3px solid red;
-  width: 13%;   
+.left div {
+  margin-right: 1rem;
 }
 
-.title {
-  border: 3px solid red;
-  width: 30%;
+.middle {
+  background: green;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
-.desktop-menu {
-  border: 3px solid red;
-  align-self: right;
+.right {
+  background: teal;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.navigation-element {
-  font-size: 20px;
-  color:  #c72560;
-  margin-right: 10px;
-  text-decoration: none;  
+.right div {
+  margin-right: 2rem;
 }
+
+.lower-menu {
+  background: lightyellow;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -1rem;
+  margin-top: -2rem;  
+ }
+
+li {
+  margin: 0rem 6rem -2rem -1rem; 
+}
+
+ 
 
 /***BIG-NEWS SECTION***/
 
@@ -61,22 +84,7 @@ header {
 /***MOBILE***/
 @media only screen and (max-width: 420px) {
 
-  .container {
-    width: 420px;
-  }
-
-  .tablet {
-    display: block;
-    justify-content: space-around;
-  }
-
-  .navigation-element {
-    display: none;
-  }
-
-  .mobile-desktop {
-    display: none;
-  }
+  
 
 
 }
@@ -85,3 +93,4 @@ header {
 /***TABLET***/
 
 /***DESKTOP***/
+
