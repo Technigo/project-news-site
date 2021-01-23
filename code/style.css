@@ -52,7 +52,7 @@ body{
   margin-right: 10px;
 }
 
-.img-artist{
+.img-mainartist{
   max-width: 100%;
   object-fit: cover;
 }
@@ -120,6 +120,17 @@ h3{
   margin-top: 10px;
 }
 
+h4{
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+  font-size: 33px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
 /*artist cards*/
 .img-artistcards{
   width: 100%;
@@ -171,7 +182,7 @@ nav{
   flex-wrap: wrap;
 }
 
-.img-artist{
+.img-mainartist{
   width: 50%;
 }
 
@@ -238,7 +249,7 @@ font-size: 30px;
     min-height: 450px;
   }
 
-  .img-artist{
+  .img-mainartist{
     width: 50%;
   }
   
@@ -259,7 +270,11 @@ font-size: 30px;
 
   .author{
     font-size: 20px;
-    margin-right: 30px;
+    margin-right: 0px;
+  }
+
+  .text-artist{
+    font-size: 28px;
   }
 
   .p-mainarticle{
@@ -283,6 +298,10 @@ font-size: 30px;
     font-size: 30px;
   }
 
+  h4{
+    font-size: 50px;
+  }
+
 /*artist cards*/
 
 @media (min-width: 1200px){
@@ -298,7 +317,7 @@ font-size: 30px;
   width: 25%;
 }
 
-.img-artist{
+.img-mainartist{
   width: 50%;
 }
 
@@ -344,4 +363,5 @@ h3{
 }
 
 /*artist cards*/
+
 }
