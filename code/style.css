@@ -9,7 +9,7 @@ a:link, a:visited {
   color: black;
 }
  
- /*header*/
+/*header*/
 header{
   margin-top: 20px;
 }
@@ -58,6 +58,14 @@ body{
 }
 
 /*fonts*/
+.author-mainarticle{
+  font-size: 20px;
+  margin-top: 0px;
+  padding-top: 5px;
+  margin-right: 0px;
+  text-align: right;
+}
+
 .author{
   font-size: 15px;
   padding-top: 0px;
@@ -145,11 +153,12 @@ h3{
   height: 100%;
 }
 
-@media (min-width: 668px) and (max-width: 991px){
+@media (min-width: 668px){
 /*header*/
 nav{
   font-size: 30px;
 }
+
 /*body elements*/
 
 .artistcards{
@@ -165,6 +174,7 @@ nav{
 .img-artist{
   width: 50%;
 }
+
 .big-news{
   width: 50%;
 }
@@ -199,10 +209,11 @@ font-size: 30px;
 }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px){
 /*header*/
   .header{
     margin-bottom: 20px;
+    margin-top: 0px;
   }
 
   nav{
@@ -211,14 +222,28 @@ font-size: 30px;
 
 /*body elements*/
   body{
-    margin-top: 55px;
+    margin-top: 0px;
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  .mainarticle{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .artistcards{
     flex: 250px;
     margin: 8px;
+    min-height: 450px;
+  }
+
+  .img-artist{
+    width: 50%;
+  }
+  
+  .big-news{
+    width: 50%;
   }
 
 /*fonts*/
@@ -226,8 +251,15 @@ font-size: 30px;
     font-size: 20px;
   }
 
+  .author-mainarticle{
+    font-size: 20px;
+    margin-right: 30px;
+    text-align: right;
+  }
+
   .author{
     font-size: 20px;
+    margin-right: 30px;
   }
 
   .p-mainarticle{
@@ -238,12 +270,13 @@ font-size: 30px;
 
   h1{
     font-size: 90px;
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
   }
 
   h2{
     font-size: 75px;
+    margin-right: 30px;
   }
 
   h3{
@@ -251,32 +284,64 @@ font-size: 30px;
   }
 
 /*artist cards*/
-  .loyle{
-    text-align: right;
-    height: 300px;
-  }
-  .barney{
-    text-align: right;
-    height: 300px; 
-  }
-  .celeste{
-    text-align: right;
-    height: 300px;
-  }
-  .cleo{
-    text-align: right;
-    height: 300px;
-  }
-  .foxwarren{
-    text-align: right;
-    height: 300px;
-  }
-  .joy{
-    text-align: right;
-    height: 300px;
-  }
-  .arlo{
-    text-align: right;
-    height: 300px;
-  }
+
+@media (min-width: 1200px){
+/*header*/
+
+
+/*body elements*/
+
+.artistcards{
+  flex: 250px;
+  margin: 8px;
+  min-height: 450px;
+  width: 25%;
+}
+
+.img-artist{
+  width: 50%;
+}
+
+.big-news{
+  width: 50%;
+}
+
+/*fonts*/
+p{
+  font-size: 20px;
+}
+
+.author-mainarticle{
+  font-size: 20px;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.author{
+  font-size: 20px;
+  margin-right: 0px;
+}
+
+.p-mainarticle{
+  font-size: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+h1{
+  font-size: 90px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2{
+  font-size: 75px;
+  margin-right: 30px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+/*artist cards*/
 }
