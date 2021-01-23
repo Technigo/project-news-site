@@ -3,6 +3,9 @@ html {
   color: #fff; */
 }
 
+
+/*HEADER*/
+
 .logo {
     width: 70px;
 }
@@ -21,6 +24,9 @@ html {
     margin-right: 15px;
 }
 
+
+/*SECTION NEWS*/
+
 .news-card {
     width: 100%;
     height: 100%;
@@ -29,8 +35,68 @@ html {
     margin-bottom: 20px;
 }
 
-@media (max-with:767px) {
+.big-news-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .big-news-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .news-card {
+        width: 45%;
+    }
+}
+
+
+/*FIXED BREAK POINT - BUT DOSENT'T WORK FOR MORE THAN MOBIL*/
+
+@media (max-width:767px) {
     .news-card {
         background: green;
+        width: 100%;
+        height: 200%;
+    }
+}
+
+@media (min-width:768) and (max-width:991px) {
+    .news-card {
+        background: yellow;
+        width: 100%;
+        height: 200%;
+    }
+}
+
+@media (min-width:992) and (max-width:1199px) {
+    .news-card {
+        background: silver;
+        width: 100%;
+        height: 200%;
+    }
+}
+
+@media (min-width:1200) {
+    .news-card {
+        background: red;
+        width: 100%;
+        height: 200%;
+    }
+}
+
+
+/*OVERLAP BREAKPONT / MOBIL FIRST APPROACH
+
+.news-card {
+    background: green;
+    width: 100%;
+    height: 200%;
+}
+
+@media (min-width: 768px) {
+    .news-card {
+        background: yellow;
     }
 }
