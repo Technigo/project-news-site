@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header><!-- Some kind of logo and navbar -->
-      <nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 2: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <nav>
+      <div class=smiley>
         <img class="logo" src="Smiley.png" alt=smiley>
         <h1>The upBeat</h1>
+      </div>
+      <div class="hamburger">
         <a href="/html/">Start</a>
         <a href="/css/">Today</a>
         <a href="/js/">Random</a>
         <a href="/python/">Contact</a>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <section class=newssite>
-      <section class="big-news"> <!-- The big news content --> 
-        <article>
-            <h2>The world hasn't ended!</h2>
-            <p>At least we have that going for us. 
-              <br>Here we offer a respite from the news of darkness and despair and offer upBeat and calming news</p>
-        </article>    
-      </section>
 
-      <section class="small-news"><!-- The other news  -->
-        <article class=smallstory1> 
-          <h4>The world already has ended!</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis molestiae enim iusto ea quia mollitia labore est corrupti itaque odio nobis? Tenetur deserunt blanditiis quis voluptatibus!</p>
-        </article>   
 
-        <article class=smallstory2> 
-          <h4>The world already has ended!</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis molestiae enim iusto ea quia mollitia labore est corrupti itaque odio nobis? Tenetur deserunt blanditiis quis voluptatibus!</p>
-        </article> 
+  <section class="big-news">
+    <article class=header>
+      <h2>The world hasn't ended!</h2>
+      <p>At least we have that going for us. Here we offer a respite from the news of darkness and despair and give you
+        upBeat news!</p>
+    </article>
+  </section>
 
-        <article class=smallstory3> 
-          <h4>The world already has ended!</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis molestiae enim iusto ea quia mollitia labore est corrupti itaque odio nobis? Tenetur deserunt blanditiis quis voluptatibus!</p>
-        </article> 
+  <hr class="hr-text" data-content="TOP NEWS">
 
-        <article class=smallstory4> 
-          <h4>The world already has ended!</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis molestiae enim iusto ea quia mollitia labore est corrupti itaque odio nobis? Tenetur deserunt blanditiis quis voluptatibus!</p>
-        </article> 
-      </section>
-    </section>
-  </body>
-</html>
+  <section class="small-news">
+    <article class=smallstory>
+      <img class=articleimage src="least tern.jpeg" alt=least tern>
+      <div class=articletext>
+        <h4>Endangered bird, endangered no more!</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis
+        </p>
+      </div>
+    </article>
+
+    <article class=smallstory>
+      <img class=articleimage src="pug.jpeg" alt=pug>
+      <div class=articletext>
+        <h4>A group of pugs = Grumble</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis
+        </p>
+      </div>
+    </article>
+
+
+    <article class=smallstory>
+      <img class=articleimage src="penpals.jpeg" alt=least tern>
+      <div class=articletext>
+        <h4>Penpals for 70 years!</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis
+        </p>
+      </div>
+    </article>
+
+
+    <article class=smallstory>
+      <img class=articleimage src="fish.jpeg" alt=least tern>
+      <div class=articletext>
+        <h4>Did you know that fish can talk?</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias dignissimos, repellendus perferendis
+        </p>
+      </div>
+    </article>
+  </section>
+
+
+  <footer>
+
+
+  </footer>

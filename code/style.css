@@ -1,27 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background: rgb(194, 158, 194);
+  font-family: "Open Sans Condensed", sans-serif;
+  background: rgb(224, 190, 224);
 }
 
  /*Navbar*/
 nav{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin:10px 5px;
+  margin: 10px;
 }
 
-.logo{
+.smiley {
+  display: flex;
+}
+
+.logo {
   width:50px;
   height:50px;
 }
 
 h1{
-  margin: 10px 50px;
-  
+  margin: 5px 10px;
 }
 
 a{
   margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+font-weight: bold;
 }
 
 /*Big News*/
@@ -32,12 +45,64 @@ a{
    background-image: url("peace.jpg");
    background-repeat: no-repeat;
    background-position: center center;
-   background-size: 100%;
-   border: 20px solid black;
-
+   background-size: cover;
+   border: 3px solid black;
+   padding: 250px 40px;
+   margin: 0px 60px;
 }
 
+.hr-text{
+  border: 1px solid black;
+  margin-top:20px;
+  margin-left: 12px;
+  margin-right:12px;
+}
 /*Small New*/
 .small-news {
 display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.smallstory{
+  border: 1px solid black;
+  max-width: 24%;
+  margin: 20px 5px;
+  background: rgb(218, 214, 214);
+  box-shadow: 2px 2px rgb(167, 165, 165) ;
+  text-align: center;
+}
+
+.smallstory:hover {
+  background-color: rgb(224, 190, 224);
+}
+
+.articletext{
+  padding: 15px;
+  text-align: center;
+}
+
+.articleimage{
+  max-width: 100%;
+  max-height: 150px;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .smallstory {
+    max-width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .smallstory {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max width:375px) {
+  .hamburger
+
 }
