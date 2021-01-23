@@ -2,17 +2,6 @@ html {
   background-color: #F0EEE9;
 }
 
-/* media queries */
-@media only screen and (max-width: 768px) {
-  .other-news-section {
-    flex-wrap: wrap;
-      }
-}
-
-
-
-
-
 
 /* header & it's content*/
 
@@ -43,7 +32,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 14px;
+  font-family: 'Concert One', cursive;
+  font-size: 16px;
     }
 
   /* Hover effect on navigation text*/
@@ -52,31 +42,63 @@ html {
   }
 
   /* Big news section & it's content*/
+
 .big-news-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Concert One', cursive;
+  font-size: 38px;
 }
 
    /* Other news section & it's content*/
+
   .other-news-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 10px; 
-    
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    font-family: 'Concert One', cursive;
+    font-size: 22px;
   } 
 
+/* media querie tablet - two column */
+@media (min-width: 667px) and (max-width: 1024px)  {
+  .other-news-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    } 
+}
+@media (min-width: 667px) and (max-width: 1024px) {
   .polaroid {
-    display:flex
-    width: 250px;
+    width: 48%;
+  }
+}
+  
+/* Polaroid effect, box-shadow */
+
+  .polaroid-big {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 2px;
+  }
+  .polaroid {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     margin: 2px;
   }
   .text-container {
     padding: 5px;
+    font-size: 12px;
   }
+  .text-container:hover {
+    color: #CF5C78;
+  }
+
+
+  /* footer styles */
+
   .footer {
     display: flex;
     justify-content: center;
