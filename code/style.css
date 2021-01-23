@@ -11,8 +11,9 @@
 
 html {
 background:antiquewhite;
-color: #000;
+/*color: #000;
 border: 10px solid purple; 
+margin: 0px;*/ 
 }
 
 .container {
@@ -25,7 +26,7 @@ h1:hover {
 }
 
 /*HEADER*/
-.coreNavigation-container {
+.coreNavigation {
 	background-image: url(/img/logo-unsplash.png);
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
@@ -61,8 +62,7 @@ cursor: pointer;
 /*BIG-NEWS-CONTAINER*/
 
 .big-news {
-	width: 100%;
-	min-height: 90%; /*QUESTION here - do I keep this?*/
+	/*min-height: 90%; /*QUESTION here - do I keep this?*/
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 /*	font-size: 60px;  Does nothing*/ 
 }
@@ -70,6 +70,7 @@ cursor: pointer;
 .news-card {
 	width: 100%; 
 /*	min-height: 90%; */
+
 	background: #999;
 	margin-top: 20px; 
 	margin-bottom: 10px;
@@ -107,7 +108,7 @@ transition: 1s;
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-.footer-container { /*THIS DOES NOT WORK*/
+.footer { /*THIS DOES NOT WORK*/
 	border: 3px solid black;
 	display: flex;
 	justify-content: space-between;
@@ -126,58 +127,59 @@ transition: 1s;
 
 /*RESPONSIVENESS: MOBILE*/
 
+/*
 @media (max-width: 767px) {
 	.container {
-		width: 767px;
+		width: 400px;
 	}
 }
-
-.big-news {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	background: red;
-}
-
-.big-news .news-card {
-	width: 100%; 
-}
-
-.more-news {
-	display: flex;
-	flex-direction: column;
-    justify-content: space-between;
-	flex-wrap: wrap;
-	background: red;
-}
-
-  .more-news .news-card {
-    width: 100%;
-  }
-
-  .other-news {
-	display: flex;
-	flex-direction: column;
-    justify-content: space-between;
-	flex-wrap: wrap;
-	background: red;
-  }
-
-  .other-news .news-card {
-    width: 100%;
-  }
-
-  .text {
-	font-size: 18px;
-  }
-}
+*/
 
 /*TABLET*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
 	.container {
 		width: 768px;
 	}
+	.big-news {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: red;
+	}
+	
+	.big-news .news-card {
+		width: 45%;
+		border: 3px solid blanchedalmond;
+	}
+	
+	.more-news {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: red;
+	}
+	
+	.more-news .news-card {
+		width: 45%;
+	}
+	
+	.other-news {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: red;
+	}
+	
+	.other-news .news-card {
+		width: 45%;
+	}
+	
+	.text {
+		font-size: 18px;
+	}
+}
+
+/*
 	.big-news {
 		display: flex;
 		flex-direction: row;
@@ -187,15 +189,17 @@ transition: 1s;
 	}
 }
 
-.news-card {
+.big-news .news-card {
 	width: 45%;
 }
+*/
 
 /*SMALL DESKTOP*/
 @media (min-width: 992px) {
 	.container {
 		width: 992px;
 	}
+
 	.big-news {
 		display: flex;
 		flex-direction: row;
@@ -203,12 +207,22 @@ transition: 1s;
 		flex-wrap: nowrap;
 		background: grey;
 	}
+
+	.big-news .news-card {
+		width: 22.5%;
+	}
+
+	.more-news .news-card {
+		width: 22.5%;
+	}
+
+	.other-news .news-card {
+		width: 22.5%
+	}
 }
 
-.news-card {
-	width: 22.5%;
-}
-/*BIG DESKTOP*/
+/*BIG DESKTOP*/ 
+/*
 @media (min-width: 1200px) {
 	.container {
 		width: 1200px;
@@ -225,7 +239,7 @@ transition: 1s;
 	width: 22.5%;
 }
 
-/*NOT SURE ABOUT THIS* ----> put them on top before mobile? BUt ut doesn not make sense! /
+NOT SURE ABOUT THIS* ----> put them on top before mobile? BUt ut doesn not make sense!
 @media (min-width: 1200px) {
 	.mobile-menu {
 		display: none;
@@ -235,3 +249,4 @@ transition: 1s;
 .desktop-menu {
 	display: block; 
 }
+*/
