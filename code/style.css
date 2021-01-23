@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Oxygen', sans-serif;
+  background-color: #9ba4b4;
 }
 
 h1 {
@@ -10,13 +11,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Oxygen', sans-serif;
   font-size: 20px;
   font-weight: 100;
 }
 
 h3 {
-  font-family: 'Oxygen', sans-serif;
   font-size: 15px;
   font-weight: 100;
   margin: 5px 0;
@@ -29,7 +28,7 @@ p {
 }
 
 /* HEADER STYLING */
-header {
+.header {
   background: #14274e;
   color: #f1f6f9;
   display: flex;
@@ -106,34 +105,41 @@ nav a:hover {
   width: 100%;
 }
 
+.small-news img:hover {
+  box-shadow: 0px 5px 0px 5px #394867;
+}
+
 .small-news-text {
   padding: 0 20px;
 }
 
 /*** FOOTER STYLING ***/
-footer {
+.footer {
   background: #14274e;
   height: 200px;
   text-align: center;
-  color:#f1f6f9;
+  color: #f1f6f9;
   display: flex;
   flex-direction: column;
 }
-footer h3 {
+
+.footer h3 {
   padding: 20px;
   margin: 0;
 }
-footer p {
+
+.footer p {
   margin-bottom: 10px;
   font-size: 12px;
 }
+
 .footer-logo {
   margin: 15px 15px 15px;
 }
 
 /**** MEDIA QUERIES ***/
 @media (min-width: 650px) {
-   nav {
+  nav {
     display: inline-block;
     margin-left: auto;
   }
@@ -168,11 +174,16 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
   .news-card {
     width: 25%;
   }
 
-  footer {
+  .footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
