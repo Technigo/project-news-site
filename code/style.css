@@ -36,7 +36,7 @@ html {
   align-items: center;
   width: 100%;
   margin-top: 10px;
-  border-bottom: 3px solid #CF5C78;   
+  border-bottom: 2px groove #CF5C78;   
   
   }
 .nav-link {
@@ -54,21 +54,21 @@ html {
   /* Big news section & it's content*/
 .big-news-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
- .polaroid-big {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
+   /* Other news section & it's content*/
+  .other-news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px; 
+    
+  } 
 
   .polaroid {
     display:flex
-    flex-wrap: wrap;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -77,14 +77,10 @@ html {
   .text-container {
     padding: 5px;
   }
-
-
-  /* Other news section & it's content*/
-  .other-news-section {
+  .footer {
     display: flex;
-    justify-content: space-around;
-    margin: 10px; 
-    
-  } 
-
-  
+    justify-content: center;
+    margin: 50px;
+    border-top: 2px groove #F5DF4D;
+    padding: 10px;
+  }
