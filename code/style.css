@@ -58,6 +58,10 @@ header h1 {
   margin-left: 20px;
 }
 
+.hamburger :hover {
+  background: #68749c;
+}
+
 nav {
   display: none;
 }
@@ -69,8 +73,8 @@ nav a {
   margin-right: 5px;
 }
 
-nav a:hover{
-  color: #49547b;
+nav a:hover {
+  color: #525d83;
 }
 
 /* Big News Container */
@@ -132,7 +136,7 @@ border-top: cornsilk 3px solid;
   margin-bottom: 10px;
 }
 
-.four-news-container img:hover{
+.four-news-container img:hover {
   box-shadow: 7px 10px 30px 4px rgb(9, 39, 83);
 }
 
@@ -163,7 +167,7 @@ border-top: cornsilk 3px solid;
   margin-bottom: 15px;
 }
 
-.grid-img:hover{
+.grid-img:hover {
   box-shadow: 7px 10px 30px 4px rgb(40, 82, 145);
 }
 
@@ -185,16 +189,16 @@ border-top: cornsilk 3px solid;
     display: none;
   }
 
-  .big-news-container{
+  .big-news-container {
     padding: 0;
     flex-direction: row;
   }
 
-  .big-news-container div{
+  .big-news-container div {
     width: 50%;
   }
 
-  .big-news-container img{
+  .big-news-container img {
     width: 50%;
   }
   
@@ -202,7 +206,7 @@ border-top: cornsilk 3px solid;
     display: contents;
   }
 
-  .blubb-on-mobile{
+  .blubb-on-mobile {
     display: none;
   }
 
@@ -251,7 +255,7 @@ border-top: cornsilk 3px solid;
     text-align: left;
   }
 
-  .blubb-on-mobile{
+  .blubb-on-mobile {
     display: none;
   }
 
