@@ -63,94 +63,57 @@ nav a {
 h6 {
   color: rgb(210, 26, 26);
 }
-.big-news {
+.big-news-section {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
+  margin: 20px auto;
 }
 
-.bread {
+.big-news {
 width:95%; 
-height:370px;
 margin-top: 5px;
-margin-bottom: 100px;
-
 }
 
-.bread img {
-  height: 100%;
+.big-news img {
   width: 100%;
-  object-fit: cover;
-  
+  box-shadow: 5px 10px rgb(46, 7, 7);
 }
 
-/*** THE OTHER 7 NEWS (a grid of 4 and 3) (a grid of 2/2/2/1) (a grid of 1/1/1/1/1/1/1 ***/
-.other-news {
+.big-news-text {
+}
+
+/*** OTHER NEWS SECTION ***/
+.other-news-section {
 display: flex;
 align-items: center;
 flex-direction: column;
-
 }
 
-.home {
+.other-news {
   width:95%;
-  height:370px;
-  margin-bottom: 100px;
+  margin: 10px auto;
 }
 
-.home img {
-  height: 100%;
+.other-news img {
   width: 100%;
-  object-fit: cover;
+  box-shadow: 5px 10px rgb(46, 7, 7);
 }
 
-
-.chairs {
-  width: 95%;
-  height: 370px;
-  margin-bottom: 100px;
-
+.news-text { 
 }
-
-.chairs img {
-  height: 100%;
-  width: 100%;
-object-fit: cover;
-}
-
-.internet {
-  width:95%;
-  height: 370px;
-  margin-bottom: 100px;
-}
-
-.internet img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.officecovid {
-  width:95%;
-  height: 370px;
-  margin-bottom: 100px;
-}
-
-.officecovid img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
   
-
 /*** MEDIA QERIES ***/
 
 @media (min-width: 668px) {
+  
+  /***HEADER SECTION***/
+
   .header1 {
     display:flex;
     justify-content:flex-start;
   }
+
     .hamburger {
       display: none;
     }
@@ -159,22 +122,22 @@ object-fit: cover;
     display: inline-block;
   }
 
-  .bread {
-    max-width: 667px;
-  }
+  /***BIG NEWS SECTION***/
 
-  .home, .chairs, .internet, .officecovid {
-    justify-content: space-around;
+  /*** OTHER NEWS SECTION ***/
+
+  .other-news-section {
+    justify-content: space-between;
+
     padding: 10px;
     margin-bottom:100px;
     max-width:300px;
     max-height:300px;
-  }
 
-  .other-news {
     justify-content:center;
     flex-direction: row;
   }
+
 }
 
 
