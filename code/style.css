@@ -51,6 +51,17 @@ html {
     }
 }
 
+@media (min-width: 992px) {
+    .big-news-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .news-card {
+        width: 22.5%;
+    }
+}
+
 
 /*FIXED BREAK POINT - BUT DOSENT'T WORK FOR MORE THAN MOBIL*/
 
