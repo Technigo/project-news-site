@@ -38,9 +38,37 @@ body {
 
 .h1 {
   color: black;
-  font-family: "Texturina", serif;
-  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  font-variant: small-caps;
+  font-size: 50px;
   margin-top: 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 7px;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: pink;
+}
+
+.fa-search {
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-search:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 767px) {
@@ -52,22 +80,22 @@ body {
   }
 }
 
+
 /* NAVBAR */
 
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   background-color: black;
 }
 
 .navigation-links {
   display: flex;
-  justify-content: left;
 }
 
 .navigation-container .links {
-  font-family: "Texturina", serif;
+  font-family: "PLayfair Display", serif;
   font-variant: small-caps;
   font-weight: 600;
   font-size: 18px;
@@ -79,32 +107,32 @@ body {
 }
 
 .navigation-container .links:hover {
-  color: pink;
+  color: #DABED5;
 }
 
 /* Navigation bar and dropdown for mobile phones */
 
-.navigation-container .fa-bar {
+.navigation-container .fa-bars {
   display: flex;
   flex-direction: column;
   color: white;
   font-size: 40px;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px 0px 0px 10px;
 }
 
-.navigation-container .fa-bar:hover {
+.navigation-container .fa-bars:hover {
   opacity: 0.7;
 }
 
 .mobile-dropdown-content {
   display: none;
-  background-color:black;
+  background: black;
   padding: 10px;
   margin-left: -10px;
 }
 
-.navigation-container .fa-bar:hover .mobile-dropdown-content {
+.navigation-container .fa-bars:hover .mobile-dropdown-content {
   display: flex;
   flex-direction: column;
   color:black;
@@ -130,15 +158,14 @@ body {
 .topic:hover .topic-dropdown {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   color: #AB529C;
 }
 
 
 @media (min-width: 1024px) {
-  /*.navigation-container .fa-bar {
+  .navigation-container .fa-bars {
     display: none;
-  }*/
+  }
   .topic {
     display: flex;
   }
@@ -148,7 +175,6 @@ body {
 
 .social-media-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -159,8 +185,12 @@ body {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  margin-right: 10px;
   border-radius: 50%;
+  margin: 5px;
+}
+
+.social-media-top .fa:last-child {
+  margin-right: 10px;
 }
 
 .fa:hover {
@@ -174,23 +204,22 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  
 }
 
 .line {
-  width: 25%;
+  width: 20%;
   color: #511146;
   border-bottom: 2px solid black;
 }
 
 @media (min-width: 768px) {
   .line {
-    width: 40%;
+    width: 35%;
   }
 }
 
 .h2 {
-  font-family: serif;
+  font-family: "Playfair Display", serif;
   font-variant: small-caps;
   color: black;
   font-size: 30px;
@@ -226,10 +255,10 @@ body {
 
 .news-image {
   width: 100%;
-  
 }
 
 .news-box .text {
+  font-family: "Playfair Display", serif;
   font-size: 26px;
   text-align: center;
   background-color: #f7f7fa;
@@ -237,9 +266,28 @@ body {
   margin: 0;
 }
 
+.info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f7f7fa;
+  margin-right: 10px;
+}
+
+.info .fa {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.info-text {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+
 .news-box .text:hover {
   text-decoration: underline;
 }
+
 
 /* Other News */
 
@@ -259,16 +307,34 @@ body {
   box-shadow: 1px 2px rgb(192, 189, 189);
 }
 
+.small-news-box:hover .info {
+  display: flex;
+}
+
 .small-news-box .text {
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   text-align: center;
   background-color: #f7f7fa;
-  padding: 8px 2px 8px 8px;
-  margin: 0px 0px 0px -5px;
+  margin: 0;
 }
 
-.small-news-box:hover .text {
-  text-decoration: underline;
+.small-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f7f7fa;
+  margin-right: 10px;
+}
+
+.small-info .fa {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.small-info-text {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -309,6 +375,7 @@ body {
 }
 
 .footer-text {
+  font-family: "Playfair Display", serif;
   font-size: 20px;
   color: white;
 }
