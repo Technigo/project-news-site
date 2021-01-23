@@ -1,4 +1,156 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
 }
+.header {
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  border-bottom: 2px dotted #000000;
+}
+.hamburger {
+  display: flex;
+  padding: 5px 0;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger-line {
+  width: 30px;
+  height: 5px;
+  background: black; 
+  border-radius: 2px;
+} 
+.link {
+  display:none; 
+}
+.logo {
+  width: 50px;
+  padding: 5px; 
+} 
+/*** HERO SECTION ***/
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  animation: fadeIn 5s; 
+  font-size: 60px;
+  font-weight: bold;
+  background-image: url("./");
+  background-position: center;
+}
+.hero-text {
+  text-align: center;
+  color: rgb(36, 31, 31);
+  align-content: center;
+}
+.main-news {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-size: 20px;
+  padding: 20px;
+}
+.figure {
+  margin: 5px;
+}
+.image-container {
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:20px ;
+} 
+.image { 
+  background-color: white;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  padding: 15px 15px 65px 15px; /*depending on pics*/
+  box-shadow: 5px 10px 10px rgb(169, 169, 169);
+  overflow: hidden; 
+  height: 300px;
+}  
+.image1, .image2, .image3, .image4, .image5,.image6, .image7, .image8 {
+  width: 100%;
+}
+figcaption {
+  font-family: 'Indie Flower', Helvetica, sans-serif;
+  text-align: center; 
+  font-size: 20px;
+} 
+footer > p {
+  text-indent: 20px; 
+} 
+
+/*** MEDIA QUERIES ***/
+
+/*** TABLET ***/
+@media (min-width:768px) { 
+  .hamburger {
+    display: none;
+  }
+  .nav{
+    padding-top: 10px;
+  }
+@keyframes fadeIn { 
+  from { opacity: 2%; 
+}
+} 
+  .link {
+    display: inline;
+    text-decoration: none; 
+    font-weight: bold;
+    color:black;
+    transition-duration: 0.4s;
+    padding-right: 15px;
+  } 
+  .link:hover {
+    color: #0625ff; 
+    background:#fff;
+  } 
+  .image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .image {
+    margin: 20px;
+  }
+}
+/*** LAPTOP ***/
+@media (min-width:1024px)  {
+  .image-container {
+    justify-content: space-between;
+  }
+} 
+/*** WIDESCREEN ***/
+@media (min-width:1200px) {
+  .header{
+    justify-content: center;
+  }
+  .hero-text {
+    font-size: 80px;
+  }
+  p{
+   margin: auto;
+  }
+  .image-container {
+    justify-content: center;
+    padding:auto ;
+  }
+} 
+
+
+
+
+
+
+
+

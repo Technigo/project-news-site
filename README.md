@@ -1,12 +1,18 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project 2 in Technigo 2021 - create a News site
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Being the first solo project in the education several issues occurred but also solved. 
+
+Flexbox layout - understanding how a parent and child work in relation to each other. By using the development tool frequent I discovered that creating a new class sometimes was necessary to be able to align the content the way I wanted.
+
+Images - not behaving as expected and resizing issues. 
+With the help from lecture and searching Stackoverflow and other related sites 
+
+@media queries - how to not repeat code. 
+Once understanding that the site should be created with a mobile first approach it was easier to also create fewer lines of code and avoid repeating.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+link to project: 
