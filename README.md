@@ -10,4 +10,4 @@ I started by reading and watch all course material. Then I followed the Code Alo
 If I had more time I would make the links go somewhere, add a drop menu to the hamburger, make the hamburger change color once you scroll further down on the page. I would also add a footer.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://ylvall-news-site.netlify.app
