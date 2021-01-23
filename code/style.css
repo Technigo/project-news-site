@@ -3,11 +3,12 @@
 body {
   margin: 0;
 }
-
+/*
 .container {
   width: 100%;
   margin: 20px 0 0 0 auto;
 }
+*/
 
 /***HEADER***/
 
@@ -16,7 +17,6 @@ header {
   width: 100%;
   display: flex;
   flex-flow: wrap;
-  height: 8rem;
   border-top: 25px solid #f75590;
   border-bottom: 25px solid #f75590;
 }
@@ -25,12 +25,14 @@ header {
   background: pink;
   width: 40%;
   display: flex;
-  align-items: center;
+  align-content: center;
 }
 
-.left div {
-  margin-right: 1rem;
+.left .logo {
+  display: block;
+  height: 10px;
 }
+
 
 .middle {
   background: green;
@@ -54,7 +56,6 @@ header {
 .lower-menu {
   background: lightyellow;
   width: 100%; 
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -62,14 +63,14 @@ header {
 ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  margin-bottom: -1rem;
-  margin-top: -2rem;  
+  flex-direction: row;  
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  padding: 0 1rem; 
  }
 
-li {
-  margin: 0rem 6rem -2rem -1rem; 
-}
+
+  
 
  
 
