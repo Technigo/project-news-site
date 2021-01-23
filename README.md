@@ -10,4 +10,5 @@ Since the site should be responsive, I started with coding for mobile view and t
 If I had more time I would have added a drop down menu in the mobile view. I would also have made the "Big news" section a bit larger.
 
 ## View it live
+https://eloquent-spence-ee2344.netlify.app
 
