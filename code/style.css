@@ -15,9 +15,9 @@ header{
 }
 
 nav{
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 40px;
@@ -38,6 +38,7 @@ body{
 }
 
 .artists{
+  padding-top: 70px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -77,17 +78,23 @@ p{
   font-weight: bold;
 }
 
+.text-artist{
+  font-family: 'Amiri', serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
 h1{
   font-family: 'Abril Fatface', cursive;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1.2;
 }
 
 h2{
   font-family: 'Abril Fatface', cursive;
   color: #FED298;
-  text-align: rightr;
-  font-size: 45px;
+  text-align: right;
+  font-size: 40px;
   margin-bottom: 0px;
   margin-top: 15px;
   padding-left: 10px;
@@ -99,7 +106,6 @@ h3{
   text-align: right;
   font-size: 33px;
   padding-left: 10px;
-  padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 0px;
   margin-bottom: 2px;
@@ -107,6 +113,9 @@ h3{
 }
 
 /*artist cards*/
+.img-artistcards{
+  width: 100%;
+}
 .loyle{
   background-color:#7D7B73;
   height: 100%;
@@ -175,7 +184,6 @@ h2{
 h3{
 margin-top: 0px;
 font-size: 30px;
-}
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
