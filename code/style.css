@@ -9,9 +9,15 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  height: 65px;
+  width: 100%;
+  height: 50px;
   font-family: "Texturina", serif;
-  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 70px;
+  }
 }
 
 /* Site name and logo */
@@ -19,12 +25,12 @@ body {
 .site-name {
   display: flex;
   align-items: center;
+  margin-left: 5px;
 }
 
 .site-name .logo {
-  width: 60px;
+  width: 35px;
   margin-right: 10px;
-  margin-left: 10px;
   animation-name: logo;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -40,55 +46,77 @@ body {
   color: black;
   font-family: "Playfair Display", serif;
   font-variant: small-caps;
-  font-size: 50px;
-  margin-top: 15px;
+  font-size: 30px;
 }
+
+/* Search Container */
 
 .search-container {
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .search-box {
-  padding: 7px;
-  font-size: 15px;
+  width: 150px;
+  padding: 3px;
+  font-size: 14px;
   font-family: "Playfair Display", serif;
   border: 1px solid black;
   cursor: pointer;
-  outline: pink;
+  outline: none;
+}
+
+.fa {
+  cursor: pointer;
 }
 
 .fa-search {
-  padding: 10px;
+  padding: 5px;
   background: black;
   color: white;
-  font-size: 17px;
   border: none;
-  cursor: pointer;
 }
 
 .fa-search:hover {
   opacity: 0.7;
 }
 
-@media (max-width: 767px) {
-  .site-name {
-    margin-right: 0;
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 50px;
   }
   .site-name .logo {
-    width: 50px;
+    width: 60px;
+  }
+  .search-box {
+    width: 250px;
+    padding: 8px;
+    font-size: 18px;
+  }
+  
+  .fa-search {
+    padding: 13px;
+    font-size: 30px;
   }
 }
 
 
-/* NAVBAR */
+/* Navigation Bar */
 
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
   background-color: black;
 }
+
+@media (min-width: 768px) {
+  .navigation-container {
+    height: 50px;
+} }
 
 .navigation-links {
   display: flex;
@@ -117,8 +145,7 @@ body {
   flex-direction: column;
   color: white;
   font-size: 40px;
-  cursor: pointer;
-  margin: 5px 0px 0px 10px;
+  margin-left: 10px;
 }
 
 .navigation-container .fa-bars:hover {
@@ -127,7 +154,7 @@ body {
 
 .mobile-dropdown-content {
   display: none;
-  background: black;
+  background-color: black;
   padding: 10px;
   margin-left: -10px;
 }
@@ -135,14 +162,13 @@ body {
 .navigation-container .fa-bars:hover .mobile-dropdown-content {
   display: flex;
   flex-direction: column;
-  color:black;
 }
 
 /* Navigation for tablets and computers */
 
 .topic {
   display: none;
-  padding-left: 15px;
+  margin: 0px 0px 5px 15px;
 }
 
 .topic-dropdown {
@@ -158,7 +184,6 @@ body {
 .topic:hover .topic-dropdown {
   display: flex;
   flex-direction: column;
-  color: #AB529C;
 }
 
 
@@ -179,14 +204,13 @@ body {
 }
 
 .social-media-top .fa {
-  padding: 10px;
-  background: white;
-  color: black;
-  font-size: 18px;
+  background: black;
+  color: white;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  margin: 5px;
+  margin: 6px;
 }
 
 .social-media-top .fa:last-child {
@@ -197,18 +221,25 @@ body {
   opacity: 0.7;
 }
 
-/*** HEADER TWO ***/
+@media (min-width: 768px) {
+  .social-media-top .fa {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+
+/*** Header Two ***/
 
 .header-two {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-top: 20px;
 }
 
 .line {
   width: 20%;
-  color: #511146;
   border-bottom: 2px solid black;
 }
 
@@ -228,14 +259,20 @@ body {
 
 /*** Big News ***/
 
-.big-news {
+.big-food-content {
   display: flex;
   justify-content: center;
+  width: 100%;
   flex-flow: row wrap;
-  margin: 40px 5px 100px 5px;
+  margin-top: 20px;
 }
 
-.news-box {
+@media (min-width: 768px) {
+.big-food-content {
+  margin: 40px 5px 100px 5px;
+}}
+
+.food-box {
   margin: 7px;
   color: black;
   background-color:#f7f7fa;
@@ -244,20 +281,20 @@ body {
 } 
 
 @media (min-width: 768px) {
-  .news-box {
+  .food-box {
     width: 47%;
 } }
 
 @media (min-width: 1024px) {
-  .news-box {
+  .food-box {
     width: 47%;
   } }
 
-.news-image {
+.food-image {
   width: 100%;
 }
 
-.news-box .text {
+.food-box .text {
   font-family: "Playfair Display", serif;
   font-size: 26px;
   text-align: center;
@@ -266,7 +303,7 @@ body {
   margin: 0;
 }
 
-.info {
+.food-info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -274,9 +311,9 @@ body {
   margin-right: 10px;
 }
 
-.info .fa {
+.food-info .fa  {
   font-size: 24px;
-  margin-left: 10px;
+  padding: 10px;
 }
 
 .info-text {
@@ -284,21 +321,21 @@ body {
   font-size: 18px;
 }
 
-.news-box .text:hover {
+.food-box .text:hover {
   text-decoration: underline;
 }
 
 
-/* Other News */
+/* Smaller food boxes */
 
-.other-news {
+.small-food-content {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
   margin: 40px 5px 40px 5px;
 }
 
-.small-news-box {
+.small-food-box {
   color: black;
   margin-bottom: 50px;
   background-color: #f7f7fa;
@@ -307,11 +344,7 @@ body {
   box-shadow: 1px 2px rgb(192, 189, 189);
 }
 
-.small-news-box:hover .info {
-  display: flex;
-}
-
-.small-news-box .text {
+.small-food-box .text {
   font-family: "Playfair Display", serif;
   font-size: 18px;
   text-align: center;
@@ -338,14 +371,14 @@ body {
 }
 
 @media (min-width: 768px) {
-.small-news-box {
+.small-food-box {
   max-width: 45%;
   color: black;
   margin-bottom: 50px;
 } }
 
 @media (min-width: 1200px) {
-  .small-news-box {
+  .small-food-box {
     max-width: 22.5%;
     color: black;
     margin-bottom: 50px;
@@ -358,6 +391,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 100px;
   background-color: black;
   margin-top: 90px;
