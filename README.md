@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project, of a news website, was made as a Week 2 project for Technigo bootcamp. The aim of this project was to learn how to create responsive webpage for mobile, desktop and tablet, how to structure webpages using box model and layout page using Flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The chanllange for me was to combine responsive design and layout, for everything to look alligned and centered. I achieved the allignment I wanted by using Flexbox. If I had more time I would have improved the design of the page.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://confident-bose-7eb9a7.netlify.app
