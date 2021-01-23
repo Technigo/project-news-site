@@ -1,5 +1,5 @@
 html {
-  background: #36806a;
+  background: black;
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -7,14 +7,33 @@ html {
 body {
   margin: 0px;
   padding: 0px;
+  width: 100%;
 }
 
 .header {
-  background: rgb(23, 46, 23);
+  background: rgb(8, 16, 8);
+  width: 100%;
   padding: 5px 0px;
   margin: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
 }
 
 .title {
@@ -26,6 +45,7 @@ body {
 .logo {
   width: 50px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navigation-bar {
@@ -37,15 +57,56 @@ body {
   margin-right: 10px;
 }
 
+.big-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.big-picture {
+  width: 35%;
+  margin: 20px;
+  border: 5px aquamarine dotted;
+}
 
-.news-card {
-  width: 10%;
-  height: 100px;
-  background: lightblue;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.small-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+
+.news-card1 {
+  width: 35%;
+  height: 300px;
+  background: rgb(23, 97, 74);
+  border: 5px rgb(16, 102, 102) double;
+  margin: 20px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.news-card2 {
+  width: 15%;
+  height: 300px;
+  background: whitesmoke;
+  color: #36806a;
+  border: 1px double black;
+  border-radius: 10px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-image {
+  width: 80%;
+  height: 200px;
+  margin-top: 20px;
+
+}
+
+@media (min-width: 768px) {
+
 }
