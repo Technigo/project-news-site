@@ -9,78 +9,69 @@ body {
   color: rgb(42, 12, 92);
 }
 
-
-
-
 /***************   HEADER    ************/
 
 header {
-    background: navy;
-    
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
-    padding: 0 16px;
-    margin: 10px;
-
-}
+    justify-content: center;
+    margin: 15px; 
+    
+   }
 
 h2 {
-  padding:5px;
+  padding-left: 20px;
+  padding-top: 10px;
   font-family: Helvetica; 
   font-size: 15px;
-  color: green;
+  color: rgb(36, 233, 10);
+  width: 30%;
 }
 
 header img {
-    width: 60px;
+    width: 50px;
+    padding-left: 10px;
 }
 
 nav {
-  
+  padding: 20px;
+   
 }
 
 nav a {
     color: #fff;
     font-size: 10px;
     text-decoration: none;
-    margin-left: 16px;
-    
-
-}
-
-/* NAV bar
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgb(3, 28, 80);
-  margin:5px;
-  display: flex;
-
-
+    margin-left: 10px;
   }
-*****/
+
+/* NAV bar*/
+.sticky {
+  
+  position: fixed;
+  width: 92%;
+  background: navy;
+  display: flex;
+  justify-content: right;
+  border: 2px solid rgb(74, 250, 5);
+  box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
+  }
+
+  
 /**************  MAIN NEWS     ****************/
 
 .big-news-container {
     padding: 100px, 10px;
-    margin: 5px;
+    margin: 8px;
     display: flex;
     flex-direction: column;
-
-}
+  }
 
 .big-news-container img {
     width: 100%;
     border: 2px solid black;
-
     box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
-
-}
-
-.big-news-container section {
-    text-align: center;
 
 }
 
@@ -88,25 +79,17 @@ nav a {
   padding: 10px;
   font-size: 18px;
   text-align: justify;
-
-}
+  }
 
 .big-news-child {
   border: 2px solid black;
+  box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
   margin: 5px;
   padding: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
-}
-
-
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  margin: 5px;
 }
 
 
@@ -161,75 +144,102 @@ a {
 .other-news {
   padding: 10px;
   font-size: 20px;
-  
-  
 }
+
+/****************  FOOTER*****************/
+
+.footer {
+  display: flex;
+  background:rgb(2, 123, 128);
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid rgb(1, 30, 44);
+  box-shadow: 2px 5px 2px 2px rgba(2, 58, 80, 0.4);
+  
+
+}
+
+h5 {
+  color:  rgb(27, 16, 75);
+}
+
+
+
+
 
 /******************  MEDIA QUARIES  *********************/
 
 
-@media(min-width: 667px) and (max-width: 1024px) {
-  header {
-        justify-content: space-between;
+@media(min-width: 768px) {
+   
+  nav a {
+    font-size: 12px;
     }
-    nav {
-        display: inline-block;
-    }
-
-    
-    .big-news-container {
-      padding: 100px, 10px;
-
-      display: flex;
-      flex-direction: row;
-
-    }
-    .big-news-container div {
-        text-align: left;
-
-    }
-
-
-
-    .big-news-child {
-      border: 2px solid black;  
-      margin: 5px;
-      padding: 5px;
-      max-width: 250px;
-
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      flex-grow: 1;
       
+  .big-news-container {
+      flex-direction: row;
     }
 
+  .big-news-container img {
+      width: 60%;
+    }
 
-  
+  .big-news-child {
+      max-width: 350px;
+    }
 
-    /*
-
-  .flex-parent {
-    border: 2px solid blue;
-    height: 100%;
-    display : flex;
-    justify-content: center space-between 2px space-around 2px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5px;
-  }
-  */
-  
   .flex-child {
-    border: 2px solid black;
-    display: flex;
-    margin: 5px;
     width: 40%;
     height: 100%;
-    flex-grow: 1;
+  }
+  
+  .flex-child img {
+    width: 50%;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  
+  .sticky {
+    width: 97%;
+  }
+
+  h2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+    width: 40%;
+  }
+  
+  header img {
+      width: 80px;
+      padding-left: 10px;
+  }
     
+  nav a {
+    font-size: 18px;
+    margin-left: 50px;
+  }
+
+  .big-news-container img {
+    width: 70%;
+    }
   
+  .big-news-child {
+    width: 100%;
+    max-width: 600px;
+    }
   
+  .main-news {
+    font-size: 22px;
+   }
+
+  .flex-child {
+    width: 22%;
+    max-height: 130px;
   }
   
   .flex-child img {
