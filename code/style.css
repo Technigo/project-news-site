@@ -63,7 +63,7 @@ h1.title-type {
 }
 
   
-.navlink1, .navlink2, .navlink3, .navlink4 {
+.navbar {
   display: none;
 }
 
@@ -165,12 +165,35 @@ img.small-news {
   justify-content: center;
 }
 
-.navlink1, .navlink2, .navlink3, .navlink4 {
+.navbar {
   display: block;
   justify-self: center;
   align-self: center;
   font-family: 'Love Ya Like A Sister', cursive;
   font-size: 24px;
+  background: white;
+  padding: 5px;
+  box-shadow: 3px 4px 7px rgb(34, 34, 34);
+  text-decoration: none;
+  
+}
+
+.navbar:link {
+color: black;
+}
+
+.navbar:visited {
+  color: black;
+  transform: rotate(20deg);
+}
+
+.navbar:hover {
+  animation: bounce 0.5s;
+  transition: transform 1s;
+}
+
+.navbar:active {
+  transform: rotate(20deg)
 }
 
 .navlink1 {
@@ -271,7 +294,7 @@ img.small-news {
   margin: 10px 0 0 40px;
 }
 
-.navlink1, .navlink2, .navlink3, .navlink4 {
+.navbar {
   display: block;
 }
 
