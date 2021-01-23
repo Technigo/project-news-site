@@ -1,10 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+My first Site in the bootcamp and the first site to code on my own overall. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assigment was to create a news page with a main news section, followed by smaller news cards.
+The site has to be responive and work well with mobile, tablet and desktop. 
 
 ## The problem
+
+1. 
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
