@@ -132,6 +132,14 @@ nav {
   margin-top: 10px;
 }
 
+.more-text {
+  display: none;
+}
+
+.read-more:hover {
+  color: white;
+}
+
 .big-news-img {
   width: 100%;
   object-fit: cover;
@@ -345,6 +353,10 @@ nav {
     width: 50%;
   }
 
+  .big-news-category {
+    font-size: 18px;
+  }
+
   .big-news-text {
     padding: 30px;
   }
@@ -355,6 +367,10 @@ nav {
 
   .big-news-paragraph {
     font-size: 22px;
+  }
+
+  .more-text {
+    display: inline-block;
   }
 
   .news-group {
