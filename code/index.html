@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
@@ -9,24 +10,23 @@
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
-    <nav> 
+      <nav> 
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <img class="logo" src="Penguin_logo.svg" alt="">
 
-      <img class="logo" src="Penguin_logo.svg" alt="">
-
-      <div class="right-nav">
-        <a href="About">About</a>  
-        <a href="Contact">Contact</a>  
-        <button a href="Get involved">Sign up</a> </button>
+        <div class="right-nav">
+          <a href="About">About</a>  
+          <a href="Contact">Contact</a>  
+          <button a href="Get involved">Sign up</a> </button>
         </div>
         
 
-      </nav>
+       </nav>
     </header>
 
 
@@ -37,48 +37,43 @@
         <div class="slogan">
           <h1>SAVE YOUR PLANET TODAY!</h1>
           <p>Yes. It is still possible</p>
-      </div>
-      <div class="buttons">
-       <button>Read more</button>
-      </div>
-      <!-- <button>Sign up</button> -->
-    </div>
-
+        </div>
+        <div class="buttons">
+        <button>Read more</button>
+        </div>
+        </div>
     </section>
 
-<!-- OTHER NEWS --->
-<section class="other-news">
-    <div class="other-news-boxes">
-        <div class="large-box">
+<!-- SLOGAN --->
+    <section class="other-news">
+      <div class="large-box">
         <div class="small-box">
-          <img src="/code/images/bird.png" alt="">
+        <img src="/code/images/bird.png" alt="">
         </div>
-    </div>
-    <div class="zigzag"><img src="/code/zigzag.svg" alt=""></div>
+      </div>
       <div class="other-news-text">
-      <h2>We're all a part of this amazing planet, but we're changing it like never before. Discover the story of the one place we all call home.</h2>
-    </div>
-  </div>
-</section>
+        <h2>We're all a part of this amazing planet, but we're changing it like never before. Discover the story of the one place we all call home.</h2>
+      </div>
+    </section>
 
 <!-- SMALL NEWS  -->
 
-<div class="small-news-heading">
-<h2>Our latest news</h2>
-</div>
-<section class="small-news">
-    
+    <div class="small-news-heading">
+      <h2>Our latest news</h2>
+    </div>
+
+    <section class="small-news">
       <div class="box-one">
           <div class=photo>
             <img src="/code/images/antartica.png" alt="">
             </div>
           <div class="minihead-line">
-            <a href="https://www.nationalgeographic.com/magazine/2018/11/antarctica-climate-change-western-peninsula-ice-melt-krill-penguin-leopard-seal/">
-              <div class="text">
+              <a href="https://www.nationalgeographic.com/magazine/2018/11/antarctica-climate-change-western-peninsula-ice-melt-krill-penguin-leopard-seal/">
+                <div class="text">
                 <h3>The big meltdown</h3>
                 <p>Scientist are alarmed by the rapid changes</p>
-              </div>
-            </a>
+                </div>
+              </a>
           </div>
       </div>
       
@@ -97,112 +92,138 @@
     </div>
 
     <div class="box-one">
-
       <div class=photo>
         <img src="/code/images/veggo.png" alt="">
-        </div>
+      </div>
       <div class="minihead-line">
           <div class="text">
             <a href="https://www.wwf.se/vegoguiden/om-vegoguiden/">
-            <h3>Veggo guide is here</h3>
-            <p>Take a more sustainable choice</p>
+              <h3>Veggo guide is here</h3>
+              <p>Take a more sustainable choice</p>
             </a>
           </div>
-      </div>
-  </div>
+         </div>
+    </div>
 
     
-  <div class="box-one">
-    <div class=photo>
-      <img src="/code/images/tigerpng.png" alt="">
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/tigerpng.png" alt="">
       </div>
-    <div class="minihead-line">
+      <div class="minihead-line">
         <div class="text">
           <a href="https://www.worldwildlife.org/species/tiger">
             <h3>Adopt a tiger</h3>
             <p>Overall wild tiger numbers are starting to tick upward</p>
           </a>
         </div>
-    </div>
-</div>
-
-
-<div class="box-one">
-  <div class=photo>
-    <img src="/code/images/seal.png" alt="">
-    </div>
-  <div class="minihead-line">
-      <div class="text">
-        <h3>11 seals you may se in antartica?</h3>
-        <p>There are 18 species in the family of True Seals</p>
       </div>
-  </div>
-</div>
-
-
-<div class="box-one">
-  <div class=photo>
-    <img src="/code/images/hippo.png" alt="">
     </div>
-  <div class="minihead-line">
-      <a href="https://www.livescience.com/27339-hippos.html">
-      <div class="text">
-        <h3>Facts about Hippos</h3>
-        <p>Hippopotamuses are large, round, water-loving animals</p>
-      </div>
-    </a>
-  </div>
-</div>
 
-<div class="box-one">
-  <div class=photo>
-    <img src="/code/images/banana.png" alt="">
-    </div>
-  <div class="minihead-line">
-    <a href="https://www.rainforest-alliance.org/statements/the-rainforest-alliance-invites-banana-sector-to-join-ambitious-new-program">
-      <div class="text">
-        <h3>The rainforest & banana sector</h3>
-        <p>Save the planet</p>
+
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/seal.png" alt="">
+        </div>
+      <div class="minihead-line">
+        <div class="text">
+          <h3>11 seals you may se in antartica?</h3>
+          <p>There are 18 species in the family of True Seals</p>
+        </div>
       </div>
-    </a>
-  </div>
-</div>
+      </div>
+
+
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/hippo.png" alt="">
+        </div>
+      <div class="minihead-line">
+          <a href="https://www.livescience.com/27339-hippos.html">
+          <div class="text">
+            <h3>Facts about Hippos</h3>
+            <p>Hippopotamuses are large, round, water-loving animals</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/banana.png" alt="">
+      </div>
+      <div class="minihead-line">
+        <a href="https://www.rainforest-alliance.org/statements/the-rainforest-alliance-invites-banana-sector-to-join-ambitious-new-program">
+          <div class="text">
+          <h3>The rainforest & banana sector</h3>
+          <p>Save the planet</p>
+          </div>
+        </a>
+      </div>
+    </div>
 
           
-<div class="box-one">
-  <div class=photo>
-    <img src="/code/images/whale.png" alt="">
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/whale.png" alt="">
     </div>
-  <div class="minihead-line">
-    <a href="https://www.bbcearth.com/blog/?article=the-anatomy-of-a-whale">
-      <div class="text">
-        <h3>The anatomy of a whale</h3>
-        <p>The largest creature ever to have lived</p>
+      <div class="minihead-line">
+        <a href="https://www.bbcearth.com/blog/?article=the-anatomy-of-a-whale">
+          <div class="text">
+            <h3>The anatomy of a whale</h3>
+            <p>The largest creature ever to have lived</p>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-</div>
-
-<div class="box-one">
-  <div class=photo>
-    <img src="/code/images/ape.png" alt="">
     </div>
-  <div class="minihead-line">
-      <div class="text">
-        <a href="https://saveanimalsfacingextinction.org/animals/great-apes/
-        ">
-        <h3>Save the great ape from instinction</h3>
-        <p>It is not too late to do something</p>
+
+    <div class="box-one">
+      <div class=photo>
+        <img src="/code/images/ape.png" alt="">
       </div>
-    </a>
+      <div class="minihead-line">
+          <div class="text">
+            <a href="https://saveanimalsfacingextinction.org/animals/great-apes/">
+              <h3>Save the great ape from instinction</h3>
+              <p>It is not too late to do something</p>
+          </div>
+         </a>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="our-work">
+  <h2>Our work</h2>
   </div>
-</div>
 
-</section>
+<!--OUR WORK -->
+  <section class="about-one">
+    <div class="learn-more-one">
+      <h3>Learn more about how you can contribute to our working in Antartica. So far we have rescued over 100 penguines</h3>
+    </div>
+    <div class="projects">
+        <img class="penguine-pic" src="/code/images/pinguin.png" alt="">
+        <div class="over">
+          <div class="about-text"><p>The Penguine project </p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="video">
-  <video src=""></video>
-</section>
+
+  <section class="about-two">
+    <div class="projects">
+      <img class="penguine-pic" src="/code/images/antartica.png" alt="">
+      <div class="over">
+        <div class="about-text"><p>The Penguine project </p></div>
+      </div>
+    </div>
+    <div class="learn-more-two">
+      <h3>"Check our our <b>other initiatives</b> also that helps <b>rescue animals in antartica.</b> The work has just started. Be apart of <b>our community</b>"</h3>
+    </div>
+  </section>
+
 
   <footer>
     <div class=info-one>
@@ -220,9 +241,6 @@
       <p>Terms of conditions</p>
       <p>Tell me more</p>
     </div>
-    
   </footer>
-  </body>
-
-
+</body>
 </html>
