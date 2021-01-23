@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This is a website project in a framework of Technigo Front-end developer bootcamp.
+I have chosen New Year celebrations around the world as a theme
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
+The website is constructed in HTML and CSS. I have used Flexbox css for layout.
+Layout was a problem and final touches such as sticky navigation bar was a bit of a problem.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The website is alive on Netlify server
+https://agitated-shirley-c569fb.netlify.app/
