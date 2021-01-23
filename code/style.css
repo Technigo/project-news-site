@@ -68,7 +68,7 @@ h1.title-type {
 }
 
 section.big-news {
-  width: 500px;
+  width: 100%;
   padding: 20px;
   margin: 0;
   display: flex;
@@ -79,7 +79,7 @@ section.big-news {
 
 
 section.small-news {
- width: 500px;
+ width: 100px;
  padding: 20px;
  margin: 0;
  display: flex;
@@ -166,7 +166,6 @@ img.small-news {
   grid-gap: 20px;
   grid-template-areas: 
   "navlink1 navlink2 logo navlink3 navlink4";
-  justify-content: center;
 }
 
 .navbar {
