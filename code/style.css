@@ -1,5 +1,5 @@
 html {
-    background:rgb(119, 80, 93);
+    background: rgb(134, 128, 128)
     color:black;
 }
 
@@ -35,10 +35,10 @@ body {
 
   .hamburger {
     display: flex;
-width: 50px;
-height: 30px;
-flex-direction: column;
-justify-content: space-between;
+    width: 50px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
   }  
   
   .hamburger div {
@@ -48,7 +48,7 @@ justify-content: space-between;
   }
 
 nav {
-  display:none;
+display:none;
 font-size: 20px;
 padding-left: 50px
 }
@@ -60,6 +60,9 @@ nav a {
 
 /***BIG NEWS SECTION***/
 
+h6 {
+  color: rgb(210, 26, 26);
+}
 .big-news {
   display: flex;
   align-items: center;
@@ -67,15 +70,18 @@ nav a {
 }
 
 .bread {
-overflow: hidden;
 width:95%; 
-height:400px;
+height:370px;
+margin-top: 5px;
+margin-bottom: 100px;
+
 }
 
 .bread img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  
 }
 
 /*** THE OTHER 7 NEWS (a grid of 4 and 3) (a grid of 2/2/2/1) (a grid of 1/1/1/1/1/1/1 ***/
@@ -86,22 +92,24 @@ flex-direction: column;
 
 }
 
-.faceyoga {
-  overflow:hidden;
+.home {
   width:95%;
-  height: 400px;
+  height:370px;
+  margin-bottom: 100px;
 }
 
-.faceyoga img {
+.home img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+
 .chairs {
-  overflow: hidden;
   width: 95%;
-  height: 400px;
+  height: 370px;
+  margin-bottom: 100px;
+
 }
 
 .chairs img {
@@ -111,23 +119,34 @@ object-fit: cover;
 }
 
 .internet {
-  overflow: hidden;
   width:95%;
-  height: 400px;
+  height: 370px;
+  margin-bottom: 100px;
 }
 
 .internet img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
-/*** MEDIA QERIES ***/
+.officecovid {
+  width:95%;
+  height: 370px;
+  margin-bottom: 100px;
+}
+
+.officecovid img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
   
 
-@media (min-width:668px) {
+/*** MEDIA QERIES ***/
 
+@media (min-width: 668px) {
   .header1 {
     display:flex;
     justify-content:flex-start;
@@ -137,14 +156,14 @@ object-fit: cover;
     }
   
   nav {
-    display: inline-block
+    display: inline-block;
   }
 
   .bread {
     max-width: 667px;
   }
 
-  .faceyoga, .chairs, .internet {
+  .home, .chairs, .internet, .officecovid {
     justify-content: space-around;
     padding: 10px;
     margin-bottom:100px;
@@ -156,19 +175,22 @@ object-fit: cover;
     justify-content:center;
     flex-direction: row;
   }
+}
+
 
   @media (min-width:900px) {
  .bread {
-    max-width: 750px;
+    max-width: 500px;
+  
   }
 
-  .faceyoga, .chairs, .internet {
+  .home, .chairs, .internet, .officecovid {
     justify-content: space-around;
     padding: 10px;
     margin-bottom:100px;
     max-width:450px;
     max-height:450px;
-
 }
+  }
 
   
