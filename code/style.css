@@ -67,21 +67,19 @@ h6 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 20px auto;
+  margin:15px 10px 30px 10px;
+  border-bottom: solid rgb(46, 7, 7);
 }
 
-.big-news {
-width:95%; 
-margin-top: 5px;
-}
-
-.big-news img {
+.big-news-section img {
   width: 100%;
   box-shadow: 5px 10px rgb(46, 7, 7);
 }
 
-.big-news-text {
+.big-news-section div {
+  padding-bottom: 20px;;
 }
+
 
 /*** OTHER NEWS SECTION ***/
 .other-news-section {
@@ -92,7 +90,8 @@ flex-direction: column;
 
 .other-news {
   width:95%;
-  margin: 10px auto;
+  margin: 0px 5px 30px 5px;
+  border-bottom: solid rgb(46, 7, 7);
 }
 
 .other-news img {
@@ -100,9 +99,8 @@ flex-direction: column;
   box-shadow: 5px 10px rgb(46, 7, 7);
 }
 
-.news-text { 
-}
-  
+
+
 /*** MEDIA QERIES ***/
 
 @media (min-width: 668px) {
@@ -110,50 +108,86 @@ flex-direction: column;
   /***HEADER SECTION***/
 
   .header1 {
-    display:flex;
     justify-content:flex-start;
   }
 
     .hamburger {
       display: none;
-    }
+   }
   
   nav {
     display: inline-block;
   }
 
   /***BIG NEWS SECTION***/
+  .big-news-section img {
+    margin: 20px 40px 5px 40px;
+    max-width: 80%;
+  }
+
+  .big-news-section div {
+    text-align: center;
+    padding: 0px 10px 15px 10px;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
 
   /*** OTHER NEWS SECTION ***/
 
   .other-news-section {
-    justify-content: space-between;
+  flex-wrap: wrap;  
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-    padding: 10px;
-    margin-bottom:100px;
-    max-width:300px;
-    max-height:300px;
+.other-news {
+  width:40%;
+  margin: 0px 10px;
+  border-bottom:none;
+}
 
-    justify-content:center;
-    flex-direction: row;
-  }
+.news-text {
+  text-align: center;
+  padding-bottom: 20px;
+} 
 
 }
 
+  @media (min-width: 950px) {
 
-  @media (min-width:900px) {
- .bread {
-    max-width: 500px;
+   /***BIG NEWS SECTION***/
+.big-news-section {
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 15px 30px 15px;
+  padding-bottom: 40px;
+}
+
+.big-news-section img {
+  width: 40%;
+}
+
+.big-news-section div{
+  padding:0px 30px 0px 0px;
+  border-bottom:none;
   
-  }
-
-  .home, .chairs, .internet, .officecovid {
-    justify-content: space-around;
-    padding: 10px;
-    margin-bottom:100px;
-    max-width:450px;
-    max-height:450px;
 }
-  }
+
+    /*** OTHER NEWS SECTION ***/
+
+    .other-news-section {
+      flex-wrap: wrap;  
+      flex-direction: row;
+    }
+
+    
+    .other-news {
+      border-bottom:none;
+      width:20%;
+
+    }
+
+}
+
 
   
