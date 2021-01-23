@@ -27,12 +27,12 @@ https://lucid-knuth-f8734c.netlify.app/
 - <!-- - "full length news" add content --> -->
 - <!-- smaller text in "optional" div -->
 - <!-- - spacing and image size in mobile -->
-- add css grid section
+<!-- - add css grid section -->
 - expanding hamburger menu
 - "full length news" side scroll
 - footer
 - overflow ellipsis
-- reorganize css - text
-- reorganize css - functional classes
+<!-- - reorganize css - text
+- reorganize css - functional classes -->
 - image credits inside image as nyt
 <!-- - other animation? -->
