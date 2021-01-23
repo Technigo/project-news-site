@@ -6,7 +6,6 @@ html {
 body {
   margin:0px;
   border-bottom: solid 5px rgb(46, 7, 7);
-  
 }
 
 /***HEADER SECTION***/
@@ -21,7 +20,7 @@ body {
     border-bottom: solid 5px rgb(46, 7, 7);
   }
 
-  .logopic {
+  .logo-pic {
     border: 1px solid;
     width:50px;
     margin-left: 10px;
@@ -63,6 +62,7 @@ nav a {
 h6 {
   color: rgb(210, 26, 26);
 }
+
 .big-news-section {
   display: flex;
   align-items: center;
@@ -80,8 +80,8 @@ h6 {
   padding-bottom: 20px;;
 }
 
-
 /*** OTHER NEWS SECTION ***/
+
 .other-news-section {
 display: flex;
 align-items: center;
@@ -99,8 +99,6 @@ flex-direction: column;
   box-shadow: 5px 10px rgb(46, 7, 7);
 }
 
-
-
 /*** MEDIA QERIES ***/
 
 @media (min-width: 668px) {
@@ -113,13 +111,14 @@ flex-direction: column;
 
     .hamburger {
       display: none;
-   }
+  }
   
   nav {
     display: inline-block;
   }
 
   /***BIG NEWS SECTION***/
+
   .big-news-section img {
     margin: 20px 40px 5px 40px;
     max-width: 80%;
@@ -138,55 +137,51 @@ flex-direction: column;
   flex-wrap: wrap;  
   flex-direction: row;
   justify-content: space-around;
-}
+  }
 
 .other-news {
   width:40%;
   margin: 0px 10px;
   border-bottom:none;
-}
+  }
 
 .news-text {
   text-align: center;
   padding-bottom: 20px;
-} 
-
+  } 
 }
 
   @media (min-width: 950px) {
 
    /***BIG NEWS SECTION***/
+
 .big-news-section {
   flex-direction: row;
   align-items: center;
   margin: 20px 15px 30px 15px;
   padding-bottom: 40px;
-}
+  }
 
 .big-news-section img {
   width: 40%;
-}
+  }
 
 .big-news-section div{
   padding:0px 30px 0px 0px;
   border-bottom:none;
   
-}
-
+  }
     /*** OTHER NEWS SECTION ***/
 
     .other-news-section {
       flex-wrap: wrap;  
       flex-direction: row;
-    }
+  }
 
-    
     .other-news {
       border-bottom:none;
       width:20%;
-
     }
-
 }
 
 
