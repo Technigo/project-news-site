@@ -9,4 +9,4 @@ I approached the problem with the attitude that I would learn as much as possibl
 If I had more time I would have worked on a hamburger-bar and footer. I got stuck on layout and would have liked to have tried moe different things outside flexbox. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://ecstatic-albattani-b60dc4.netlify.app/code
