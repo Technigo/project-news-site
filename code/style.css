@@ -1,25 +1,20 @@
 body {
-  /* background-color: #f2f3f6; */
-  background-color: khaki;
+  background-color: #f5f5f5;
   font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  /* line-height: 1.4; */
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /** HEADER **/
 
 .header {
-  background-color: rgba(0, 0, 0, 0.911);
-  height: 50px;
+  background-color: rgba(95, 158, 160, 0.842);
+  height: 100px;
   display: flex;
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;
+  border: 10px solid white;
+  box-shadow: 1px 3px 5px rgba(117, 157, 158, 0.2);
 }
 
 .hamburger {
@@ -59,23 +54,67 @@ body {
   text-decoration: none;
 }
 
+.navigation-item:hover {
+  color: yellow;
+}
 
 .container {
   width: 330px;
   margin: 30px auto;
-
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-type {
+  padding: 1px;
+  border: 3px solid #fff;
+  }
+
+.news-type:hover {
+  color:  rgba(95, 158, 160);
+  }
+
+ .news-type .type {
+   margin-left: 10px;
+ }
+ 
 
 .polaroid {
   padding: 10px;
   background-color: white;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px rgba(117, 157, 158, 0.2);
+}
+
+.polaroid:hover {
+  color:  rgba(95, 158, 160);
+  box-shadow: 3px 5px 7px rgba(117, 157, 158, 0.2);
 }
 
 .title {
-  font-size: 17px;
-  text-transform: capitalize;
+  font-size: 15px;
 }
+
+.paragraph {
+  font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: solid 2px #fff;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
 /** BIG NEWS **/
 
 .big-news .news-card {
@@ -88,26 +127,15 @@ body {
   width: 100%;
 }
 
-.big-news-text {
-  color: #000;
-  font-size: 14px;
-}
-
 /** OTHER-NEWS **/
 
 .other-news .news-card {
   width: 100%;
   margin-bottom: 20px;
-
 }
 
-.news-card-pic {
+.other-news .news-card-pic {
   width: 100%;
-  /* object-fit: contain; */
-}
-
-.news-card-text {
-  font-size: 15px;
 }
 
 /** RESPONSIVENESS **/
@@ -127,7 +155,7 @@ body {
   .logo {
     order: -1;
     margin-left: initial;
-    margin-right: 30px;
+    margin-right: 15px;
   }
 
   .navigation-container {
