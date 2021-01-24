@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* border: 1px solid pink; */
+    border: 1px solid pink;
 }
 
 body{
@@ -102,7 +102,6 @@ p {
      padding: 10px 10px;
      background-color: grey;
      border-bottom: 2px solid rgb(95, 94, 94);
-
  }
 
  .img-container {
@@ -136,8 +135,7 @@ p {
     flex-direction: column;
     justify-items: center;
     justify-content:flex-start; /*content upp i början*/
-    text-align:center;
-    
+    text-align:center;  
 }
 
 .sn-img-container {
@@ -150,8 +148,7 @@ p {
 .sn-img-container img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
 
 .sn-card p{
@@ -254,10 +251,28 @@ p {
 
     
     /************* SMALL NEWS SECTION ***************/
+
+    .small-news {
+        padding: 10px 30px;
+    }
+
+    .small-news{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   .sn-card{
+       max-width: 45%;
+       flex-direction: column; /* text och bild bredvid*/
+   }
+    .sn-card p {
+        width: 100%;
+    }
+    .sn-img-container {
+        width: 100%;
+    }
     
     .sn-card {
         flex: 1; /*fyra på rad*/
     }
-
-      
+       
 }
