@@ -2,21 +2,141 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="icon" href="logo.svg" type="svg">
+    <link rel="stylesheet" href="./style.css" /> 
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <!-- INDENTION ON SIDES FOR BIG DESKTOP -->
+    <div class="side-padding-bigscreen">
+      <header>
+        <!-- LOGO AND HAMBURGER/NAVBAR -->
+        <div class="header-logo">
+          <img src="logo.svg" alt="Technigo logo">
+        </div>
+        
+        <nav>
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">ARCHIVE</a>
+          <a href="#">CAREER</a>
+          <a href="#">CONTACT</a>
+        </nav>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+        <!-- HAMBURGER MENU SECTION MOBILE -->
+        <div class="hamburger-menu-container">
+          <input type="checkbox" class="hamburger-menu-checkbox">
+          <div class="hamburger-menu-illustration"><div></div></div>
+          <div class="hamburger-menu-nav">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ARCHIVE</a></li>
+              <li><a href="#">CAREER</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      </header>
+
+      <!-- BIG NEWS SECTION -->
+      <section class="big-news-container">
+        <img src="images/squirrel.jpg" alt="Big news picture">
+        <div class="big-news-textbox">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@isaac_slo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Isaac Sloman</a> on <a class="credit-text-links" href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h3>PLACEHOLDER FOR HEADING ABOUT A CUTE SQUIRREL</h3>
+          <p class="big-news-long-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="big-news-short-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span><a class="read-more-links" href="#"> read more..</a></span></p>
+        </div>
+      </section>
+      
+      <!-- SMALL NEWS SECTION -->
+      <section class="small-news-section-container">
+        <div class="small-news-container">
+          <img src="images/CACTUS.jpg" alt="Cactus">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@maria_aci?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">María Álvares de Carvalho</a> on <a class="credit-text-links" href="https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Don't have green fingers?</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/northern-lights.jpg" alt="Northern lights Stockholm">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@micaelwidell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Micael Widell</a> on <a class="credit-text-links" href="https://unsplash.com/s/photos/northern-lights?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Northern lights over Stockholm</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/white-cat.jpg" alt="White Cat">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@kanashi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kanashi</a> on <a class="credit-text-links" href="https://unsplash.com/t/animals?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Placeholder white cat</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/snail.jpg" alt="Snail">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@yuli_superson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Juli Kosolapova</a> on <a class="credit-text-links" href="https://unsplash.com/t/animals?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Snails have feelings</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/crocodile.jpg" alt="Crocodile">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@samscrim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Samuel Scrimshaw</a> on <a class="credit-text-links" href="https://unsplash.com/t/animals?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Placeholder Crocodile eye</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/waterfall.jpg" alt="Waterfall">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@robertlukeman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Robert Lukeman</a> on <a class="credit-text-links" href="https://unsplash.com/s/photos/waterfall?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Seljalandsfoss Waterfall, Iceland</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/deutschland.jpg" alt="Watzmanngletscher">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@danielsessler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel Seßler</a> on <a class="credit-text-links" href="https://unsplash.com/t/wallpapers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Watzmanngletscher, Deutschland</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+
+        <div class="small-news-container">
+          <img src="images/orange-cat.jpg" alt="Orange cat">
+          <span class="credit-text">Photo by <a class="credit-text-links" href="https://unsplash.com/@mannydream?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Manny Moreno</a> on <a class="credit-text-links" href="https://unsplash.com/s/photos/reykjavik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <h4>Orange cat, Iceland</h4>
+          <a class="read-more-links" href="#"> Click here to read more..</a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <ul class="first-footer-section">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <ul class="second-footer-section">
+          <li><a href="#">Integrety policy</a></li>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Invoicing info</a></li>
+        </ul>
+        <ul class="third-footer-section">
+          <li><img src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png"/><a href="#">Facebook</a></li>
+          <li><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/><a href="#">Instagram</a></li>
+          <li><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png"/><a href="#">YouTube</a></li>
+          <li><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

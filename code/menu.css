@@ -1,0 +1,118 @@
+.hamburger-menu-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* CHECKBOX TO MAKE NAV MENU VISIBLE */
+.hamburger-menu-checkbox {
+    position: absolute;
+    top: -15px;
+    right: -3px;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
+.hamburger-menu-illustration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.hamburger-menu-illustration::before,
+.hamburger-menu-illustration::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+}
+
+.hamburger-menu-illustration::before {
+   top: -10px;
+}
+
+.hamburger-menu-illustration::after {
+    top: 10px;
+}
+
+/* ROTATION WHEN CHECKBOX IS CHECKED */
+.hamburger-menu-checkbox:checked + .hamburger-menu-illustration {
+    transform: rotate(90deg);
+}
+
+.hamburger-menu-checkbox:checked ~ .hamburger-menu-nav {
+    visibility: visible;
+}
+
+.hamburger-menu-nav {
+    position: fixed;
+    top: 89.9px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: rgba(14, 13, 13, 0.8);
+    z-index: 2;
+}
+
+.hamburger-menu-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hamburger-menu-nav li {
+    padding: 30px;
+    list-style-type: none;
+}
+
+.hamburger-menu-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.hamburger-menu-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.hamburger-menu-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*** MEDIA QUERIES TABLET ***/
+@media (min-width: 768px) {
+    .hamburger-menu-container {
+        display: none;
+    }
+
+}
+
