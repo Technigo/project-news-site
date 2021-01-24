@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid pink;
 }
 
 body{
@@ -88,7 +87,7 @@ p {
 
 /************** BIG NEWS SECTION ******************/
  .big-news {
-     background-color: rgb(168, 166, 166);
+     background-color: rgb(248, 248, 248);
      width: 100%;
  }
 
@@ -97,15 +96,17 @@ p {
      flex-direction: column;
      justify-items: center;
      align-items: center;
-     margin: 40px 50px;
+     margin: 20px 20px;
      text-align: center;
      padding: 10px 10px;
-     background-color: grey;
-     border-bottom: 2px solid rgb(95, 94, 94);
+     background-color: rgb(253, 253, 253);
+     color: rgb(53, 52, 52);
  }
 
  .img-container {
      overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19)
  }
 
  .img-container img {
@@ -117,6 +118,11 @@ p {
  .bn-text {
      text-align: center;
      padding-top: 10px;
+ }
+
+ .bn-text h1 {
+     font-size: 16px;
+     padding-bottom: 10px;
  }
 
 /************* SMALL NEWS SECTION ***************/
@@ -151,8 +157,14 @@ p {
     object-fit: cover; 
 }
 
+.sn-card h3 {
+    font-size: 18px;
+    padding: 5px;
+}
+
 .sn-card p{
     padding: 10px;
+    font-size: 12px;
 }
 
 
@@ -188,6 +200,11 @@ p {
         width: 50%;
     }
 
+    .bn-text {
+        width: 50%;
+        padding-left: 10px;
+    }
+
     /************* SMALL NEWS SECTION ***************/
 
     .small-news {
@@ -200,8 +217,12 @@ p {
     }
    .sn-card{
        max-width: 45%;
-       flex-direction: column; /* text och bild bredvid*/
+       flex-direction: column; 
    }
+
+    .sn-card h3 {
+        font-size: 20px;
+    }
     .sn-card p {
         width: 100%;
     }
@@ -249,30 +270,34 @@ p {
 
     /************** BIG NEWS SECTION ******************/
 
+    .bn-text {
+        width: 45%;
+    }
+
+    .bn-text h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
     
     /************* SMALL NEWS SECTION ***************/
-
-    .small-news {
-        padding: 10px 30px;
-    }
 
     .small-news{
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 20px;
     }
+
    .sn-card{
-       max-width: 45%;
-       flex-direction: column; /* text och bild bredvid*/
-   }
+       max-width: 20%;
+       flex-direction: column;
+    }
     .sn-card p {
         width: 100%;
     }
+
     .sn-img-container {
         width: 100%;
     }
-    
-    .sn-card {
-        flex: 1; /*fyra på rad*/
-    }
-       
+   
 }
