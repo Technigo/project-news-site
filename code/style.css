@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
-/* THIS MAKES all newscards to small boxes height seems to not be targeted*/
-
 
 html {
-background:antiquewhite;
-/*color: #000;
-border: 10px solid purple; 
-margin: 0px;*/ 
+background: #FFF; 
 }
 
 .container {
-	width: 320px;
+	width: 300px;
 	margin: 25px auto;
 }
 
@@ -22,23 +17,27 @@ h1:hover {
 
 /*HEADER*/
 .coreNavigation {
-	background-image: url("/img/logo-unsplash.png");
+	background-image: url("../img/logo-unsplash.png");
+	border: 3px solid black; 
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
 	display: flex;
 	justify-content: space-between;
 }
 
-.navigation-container {
+.desktop-menu-top, .nav-item {
+	display: flex;
 	flex-direction: row;
 }
 
 .nav-item {
 	margin-left: 10px;
+	margin-top: 5px;
 }
 
 .button {
 	margin-right: 10px;
+	margin-top: 5px;
 }
 /* todo: ADD HOVER ON BUTTON 1 and BUttoN 2*/
 .button1, .button2 {
@@ -57,29 +56,21 @@ cursor: pointer;
 /*BIG-NEWS-CONTAINER*/
 
 .big-news {
-	/*min-height: 90%; /*QUESTION here - do I keep this?*/
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-/*	font-size: 60px;  Does nothing*/ 
 }
 
 .news-card {
 	width: 100%; 
-/*	min-height: 90%; */
-
-	background: #999;
 	margin-top: 20px; 
 	margin-bottom: 10px;
-	border: solid greenyellow; 
-/*	margin: none; 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center; */
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 .photo-bar {
 	width: 100%;
-/*	padding: 30px 250px; */
+	/*NEW FROM HERE CSS images same size ---> DELETE?? -------------------------------*/
+	object-fit: cover;
+	object-position: 10% 10%;
 }
 
 
@@ -92,66 +83,80 @@ transition: 1s;
 
 .text {
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-	font-size: 16px;
+	color: #212529;
+
 	line-height: 1.6;
 	padding: 25px 50px 25px 50px;
-/*	background-color: chartreuse;*/
-	overflow-wrap: break-word;
+	overflow-wrap: break-word; /*CHECK IF tHIS RALLY WORKS*/
 }
 
 .more-news {
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-.footer { /*THIS DOES NOT WORK*/
-	border: 3px solid black;
+footer { /*THIS DOES NOT WORK*/
+	border: 3px solid #212529;
 	display: flex;
 	justify-content: space-between;
 } /*for MOBILE VIEW it could be something like width:30%; */
 
+.desktop-menu-bottom {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+	font-weight: 700; 
+}
+
+.desktop-menu-bottom .text {
+	overflow-wrap: break-word;
+}
+
+
 /* MOBILE is always an INLINE ELEMENT*/
 .mobile-menu {
-	display: block;
+	display: none;
+/*	position: absolute;
+	left: 200px;
+	top: 4200px;
+	font-family:  'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+	font-size: 45px; */
 }
 
 .desktop-menu {
-	display: none;
+	display: flex;
 }
 
-/*other news GOES here*/
+/*CHANGE THIS IN RELATION TO HAVING A MOBILE MENU? What is targeted under mobile menu?*/
+@media (min-width: 1200px) {
+	.mobile-menu {
+		display: none;
+	}
 
-/*RESPONSIVENESS: MOBILE*/
-
-/*
-@media (max-width: 767px) {
-	.container {
-		width: 400px;
+	.desktop-menu {
+		display: flex;
 	}
 }
-*/
 
 /*TABLET*/
 @media (min-width: 768px) {
 	.container {
 		width: 768px;
 	}
+
 	.big-news {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		background: red;
 	}
 	
 	.big-news .news-card {
-		width: 45%;
-		border: 3px solid blanchedalmond;
+		width: 100%;
 	}
 	
 	.more-news {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		background: red;
 	}
 	
 	.more-news .news-card {
@@ -162,7 +167,6 @@ transition: 1s;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		background: red;
 	}
 	
 	.other-news .news-card {
@@ -173,21 +177,6 @@ transition: 1s;
 		font-size: 18px;
 	}
 }
-
-/*
-	.big-news {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		background: green;
-	}
-}
-
-.big-news .news-card {
-	width: 45%;
-}
-*/
 
 /*SMALL DESKTOP*/
 @media (min-width: 992px) {
@@ -200,11 +189,10 @@ transition: 1s;
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: nowrap;
-		background: grey;
 	}
 
 	.big-news .news-card {
-		width: 22.5%;
+		width: 100%;
 	}
 
 	.more-news .news-card {
@@ -217,31 +205,4 @@ transition: 1s;
 }
 
 /*BIG DESKTOP*/ 
-/*
-@media (min-width: 1200px) {
-	.container {
-		width: 1200px;
-	}
-	.big-news {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-		background:coral;
-}
-}
-.news-card {
-	width: 22.5%;
-}
 
-NOT SURE ABOUT THIS* ----> put them on top before mobile? BUt ut doesn not make sense!
-@media (min-width: 1200px) {
-	.mobile-menu {
-		display: none;
-	}
-}
-
-.desktop-menu {
-	display: block; 
-}
-*/
