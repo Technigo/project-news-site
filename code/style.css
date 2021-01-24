@@ -9,6 +9,10 @@ a:link, a:visited {
   color: black;
 }
  
+a:hover{
+  background: rgb(111,44,69);
+  color: #FED298;
+}
 /*header*/
 header{
   margin-top: 20px;
@@ -144,7 +148,7 @@ h4{
   height: 100%;
 }
 .cleo{
-  background-color:#98FFC8;
+  background-color:#FF4100;
   height: 100%;
 }
 .celeste{
@@ -225,6 +229,7 @@ font-size: 30px;
   .header{
     margin-bottom: 20px;
     margin-top: 0px;
+    border-bottom: 3px black;
   }
 
   nav{
