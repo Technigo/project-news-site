@@ -18,7 +18,7 @@ h1:hover {
 /*HEADER*/
 .coreNavigation {
 	background-image: url("../img/logo-unsplash.png");
-	border: 3px solid black; 
+	border: 3px solid black; /*'''''''''''''''''''''''''''TAKE AWAY*/
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
 	display: flex;
@@ -41,10 +41,10 @@ h1:hover {
 }
 /* todo: ADD HOVER ON BUTTON 1 and BUttoN 2*/
 .button1, .button2 {
-border: solid black; /*change later border: none; &&&&& one color background color: ; */
+border: solid #212529; /*change later border: none; &&&&& one color background color: ; */
 margin: 2px 2px;
 padding: 5px 5px;
-color: #000;
+color: #212529;
 font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 font-size: 12px;
 text-align: center;
@@ -84,9 +84,8 @@ transition: 1s;
 .text {
 	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
 	color: #212529;
-
 	line-height: 1.6;
-	padding: 25px 50px 25px 50px;
+	padding: 25px 50px 25px 50px; /*CHECK IF THIS REALLY WORKS*/
 	overflow-wrap: break-word; /*CHECK IF tHIS RALLY WORKS*/
 }
 
@@ -95,6 +94,7 @@ transition: 1s;
 }
 
 footer { /*THIS DOES NOT WORK*/
+	height: 100px;
 	border: 3px solid #212529;
 	display: flex;
 	justify-content: space-between;
@@ -108,22 +108,25 @@ footer { /*THIS DOES NOT WORK*/
 }
 
 .desktop-menu-bottom .text {
-	overflow-wrap: break-word;
+	overflow-wrap: break-word; /*CHECK IF THIS RALLY WORKS*/
 }
 
 
 /* MOBILE is always an INLINE ELEMENT*/
-.mobile-menu {
-	display: none;
-/*	position: absolute;
-	left: 200px;
-	top: 4200px;
-	font-family:  'Oswald', 'Helvetica', 'Arial', 'sans-serif';
-	font-size: 45px; */
+.mobile-menu-top {
+	display: block;
 }
 
-.desktop-menu {
-	display: flex;
+.mobile-menu-bottom {
+	display: block;
+}
+
+.desktop-menu-top {
+	display: none;
+}
+
+.desktop-menu-bottom {
+	display:none;
 }
 
 /*CHANGE THIS IN RELATION TO HAVING A MOBILE MENU? What is targeted under mobile menu?*/
