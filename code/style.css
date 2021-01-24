@@ -1,24 +1,40 @@
 html {
   color: rgb(8, 6, 6);  
-}
-
+    }
+  
 * {
   box-sizing: border-box;
-  /*border: 2px solid black;*/
   }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
-}
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+} 
 
-.header {
-   width: 100%;
-}
+/**** Styling desktop ****/ 
 
+/**** Styling header ****/ 
 .header-tablet {
   display: none;
 }
+
+.header {
+  
+   position: sticky;
+   top: 0;
+   border-bottom: 10px solid rgb(66, 65, 65);
+   background: rgb(121, 119, 119);
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+}
+
 .logo {
   width: 100px;
 }
@@ -28,14 +44,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #222;
   padding: 20px;
   width: 100%;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
 }
 
 .menu-links {
@@ -53,12 +63,18 @@ body {
   padding: 20px;  
 }
 
+.link a {
+  color: white;
+  text-decoration: none;
+}
+
 .site-name {
-  padding-right: 150px; 
+  margin-right: 350px; 
+  color:blue;
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 50px;
  }
 
 p {
@@ -69,22 +85,20 @@ h2 {
   font-size: 25px;
 }
 
+/**** Styling big-news section ****/ 
+
 .big-news {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: rgb(202, 192, 194); 
-  width: 100%;  
-  height: 400px;
-  margin-top: 15px;
+  align-items: center;
+  background: #f1f1f1;
+  margin: 35px;
+  padding: 15px 50px;
 }
 
 .big-news-container {
   width: 50%;
-}
-
-.big-news-container a {
-  text-decoration: none;
 }
 
 .hide-on-desktop {
@@ -92,39 +106,30 @@ h2 {
 }
 
 .tesla-car {
-  width: 600px;
+  width: 540px;
 }
 
 .big-news-text {
   text-align: left;
+  padding-bottom: 25px; 
+  padding-left: 30px;
  }
 
-.big-news-text h1 {
-  color: white;
-  text-decoration: none;
-}
-
-.big-news-text p {
-  text-decoration: none;
-  color:rgb(8, 6, 6);
-}
-
-/* Styling for "Other news" */
+/**** Styling news-cards ****/ 
 
 .other-news {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   width: 100%;
 }
 
 .news {
   display: flex;
-  align-items: center;
-  width: 25%;
-  padding: 20px 10px; 
+  width: 24%;
+  padding: 20px 15px; 
 }
 
 .card {
@@ -133,126 +138,183 @@ h2 {
   padding: 20px 20px 60px 20px;
 }
 
-.card a {
+.card:hover {
+ background-color: white;
+}
+
+a {
   text-decoration: none;
   color: black;
 }
 
 .card img {
   width: 100%; 
-  padding-bottom: 15px;
-  
-  
+  padding-bottom: 15px;  
 }
 
- 
-/*display on mobile*/
+/***Styling fotter-animation***/
+
+.animation {
+  overflow: hidden; 
+}
+
+h3 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  color:  #f5900c;
+  text-align: center; 
+  padding: 20px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/***Styling back-to-top button***/
+
+#btn {  
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 15.5%;
+  left: 77.25%;
+  max-width: 100px;
+  width: 100%;
+  font-size: 15px;
+  border-color: black;
+  background-color: #f09116;
+  padding: .5px;
+  border-radius: 4px;
+}
+
+#btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/***Styling mobile***/
 
 @media screen and (max-width: 667px) {
-   .menu {
-     padding-bottom: 50px;
+  .menu {
+     padding-bottom: 20px;
    }
   
-  .menu .link a {
+  .link   {
     display: none;
    }  
-  
-   .site-name {
+
+  .link:hover {
+    display: none;   
+   }
+
+  .site-name {
     padding-left: 25px; 
-    padding-right: 0px;
+    padding-right: 20px;
   }
 
   .big-news { 
-    display: flex;  
     flex-direction: column;
-    height: 370px;
-    padding-bottom: 60px;
-
+    margin: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
-   .big-news-container {
+  .big-news-container {
     width: 100%;
-} 
+  } 
 
-.tesla-car {
-  width: 100%;
-}
-.big-news-text {
-  padding: 0px 20px;
-}
-.big-news-text h1{
-   font-size: 25px;
- }
+  .tesla-car {
+    width: 250px;  
+  }
+ 
+  .big-news-text h1 {
+   font-size: 30px;
+  }
 
   .hide-on-mobile  {
-      display: none;
- }  
+    display: none;
+  }   
 
   .hide-on-desktop  {
-  display: inline-block;
-  font-size: 15px;
- }  
+    display: inline-block;
+    font-size: 20px;
+  }  
 
-.news  {
-  width: 100%;
-  padding: 10px;
-} 
+  .news  {
+    width: 100%;
+    margin: 10px;
+  }
 }
 
+/***Styling tablet***/
 
-/*Display tablet*/
-
-@media screen and (min-width: 668px) (max-width: 1024px){
-   
- /* .header  {
+@media screen and (min-width: 668px) and (max-width: 1200px){
+  .header {
      display: none;
-   }    
-
-  .header-tablet {
-    display: inline-block;
-    width: 100%;
   }    
 
-.header-tablet {
-  display: flex;
-  flex-direction: row;
-   justify-content: space-between;
-   background: #222;
-   padding: 20px;
-   width: 100%;
-}
-  .item-link a {
+  .header-tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid rgb(66, 65, 65);
+    background: rgb(121, 119, 119);
+    padding: 50px;
+  }
+
+  .item-link {
     color: white;
     text-decoration: none;
-    }
-  
-   img .logo-tablet {
-      width: 10px;
-      height: 10px;
-    }
-*/
-    .big-news { 
-      display: flex;  
-      height: 400px;
-      width: 100%;
-        }
-  
-     .big-news-container {
-      width: 50%;
-      
-  } 
-  
-  .tesla-car {
-    display: none;
-  
+    padding: 20px;  
   }
+        
+  .item-link:hover {
+    background:blue;
+  }
+
+  .logo-tablet  {
+    width: 80px;
+  }
+    
+  .big-news { 
+    padding: 30px;
+  }
+
+  .big-news-container {
+   width: 50%;
+  } 
+
+  .tesla-car {
+    width: 100%;
+  }
+
   .big-news-text {
     padding: 0px 20px;
   }
   .big-news-text h1{
      font-size: 25px;
-   }
-    .news {
-      width: 50%;
-    }
+  }
+
+  .big-news-text p{
+     font-size: 20px;
+  }
+
+  .other-news {
+     margin: 10px;
+  }
+
+  .news {
+    width: 50%;
+    padding: 15px;
+  }
 }
+
+

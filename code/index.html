@@ -3,61 +3,59 @@
   <head>
     <meta charset="utf-8"
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project 2: Economics around the world</title>
+    <title>Project 2: News-site Economics Today</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   
   <body>
-    <header class="header">   
-        <nav class="menu">
-           <a href="https://www.technigo.io/">
-             <img class="logo" 
-             src="https://raw.githubusercontent.com/Sofie212/project-news-site/7903e204a6ae7e9175f42ef56a018590cd9cd686/code/logo.svg"
-             alt="Technigo-company-logo"/>  
-           </a>
-           <div class="site-name"><b><span style=color:blue>FINANCE NEWS TODAY</span></b></div>    
-           <ul class="menu-links"> 
-             <li class="link"><a href="#">ABOUT</a></li>
-             <li class="link"><a href="#">CONTACT</a></li>
-             <li class="link"><a href="#">READ MORE</a></li>
-             <li class="link"><a href="#">PRESS</a></li>
-           </ul>        
-       </nav>
-    </header>   
-  <!-- <header class="header-tablet">   
-        <div class="item-link"><a href="#">ABOUT</a></div>
-        <div class="item-link"><a href="#">CONTACT</a><div>
-        <div class="item-logo">
-            <a href="https://www.technigo.io/">
-            <img class="logo-tablet" src="https://raw.githubusercontent.com/Sofie212/project-news-site/7903e204a6ae7e9175f42ef56a018590cd9cd686/code/logo.svg" 
-            alt="Technigo logo"/>
-            </a> 
-         </div>
-         <div class="item-link"><a href="#">READ MORE</a></div>
-         <div class="item-link"><a href="#">PRESS</a></div>        
-    </header> -->
-    
-    <section class="big-news">
-        <div class="big-news-container">
-        <a class="big-news-image" href="https://www.reuters.com/article/us-china-autos-tesla/tesla-says-starts-delivering-shanghai-made-model-y-in-china-idUSKBN29N07V">              
-          <img class="tesla-car" src="https://images.unsplash.com/photo-1576221162298-3d9f04e9f661?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-           alt="image-tesla-car"/></a>
-        </div>
-        <div class="big-news-container">   
-          <div class="big-news-text"> 
-             <a href="https://www.reuters.com/article/us-china-autos-tesla/tesla-says-starts-delivering-shanghai-made-model-y-in-china-idUSKBN29N07V">
-              <h1>Tesla says starts delivering Shanghai-made Model Y in China</h1>     
-             <p class="hide-on-mobile">&#127757 Tesla Inc said on Monday it has started delivering its Shanghai-made Model Y sports utility vehicles to customers in China.</p>
-             <p class="hide-on-desktop" style="color:royalblue"><b>Read more here</b></p>
+    <!--***Header desktop***-->
+    <header class="header sticky-top">   
+       <nav class="menu">
+          <a href="https://www.technigo.io/">
+            <img class="logo" 
+            src="./logo.svg"
+            alt="Technigo-company-logo"/>  
+         </a>
+         <div class="site-name"><b>ECONOMICS TODAY</b></div>    
+         <ul class="menu-links"> 
+           <li class="link"><a href="#">ABOUT</a></li>
+           <li class="link"><a href="#">CONTACT</a></li>
+           <li class="link"><a href="#">READ MORE</a></li>
+           <li class="link"><a href="#">PRESS</a></li>
+         </ul>   
+      </nav>
+   </header>
+   <!--***Header tablet***-->
+   <header class="header-tablet sticky-top">   
+        <a class="item-link" href="#">ABOUT</a>
+        <a class="item-link" href="#">CONTACT</a>
+        <a class="item-logo" href="https://www.technigo.io/"><img class="logo-tablet" src="./logo.svg" alt="Technigo logo"/></a> 
+        <a class="item-link" href="#">READ MORE</a>
+        <a class="item-link" href="#">PRESS</a>        
+    </header>
+     <!--***Big news section***-->
+    <section class="big-news" name="top">
+       <div class="big-news-container">
+          <a class="big-news-image" href="#">              
+           <img class="tesla-car" src="https://images.unsplash.com/photo-1576221162298-3d9f04e9f661?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+           alt="image-tesla-car"/>
+         </a>
+       </div>
+       <div class="big-news-container">   
+         <div class="big-news-text"> 
+             <a href="#">
+              <h1>Tesla starts delivering Shanghai-made Model Y in China</h1>     
+              <p class="hide-on-mobile">&#127757 Tesla Inc said on Monday it has started delivering its Shanghai-made Model Y sports utility vehicles to customers in China.</p>
+              <p class="hide-on-desktop" style="color:royalblue"><b>Read more here</b></p>
              </a>
-            </div>  
+          </div>  
         </div> 
-     </section>     
-
-     <section class="other-news">
+    </section>      
+    <!--***News-card section***-->
+    <section class="other-news">
       <div class="news">
         <div class="card">
-          <a href="https://finance.yahoo.com/news/brexit-finance-talks-technical-broader-000001763.html">
+          <a href="#">
             <img 
             src="https://images.unsplash.com/photo-1594810205183-18a8b0ce6c13?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" 
             alt="image eu-flags"
@@ -68,51 +66,51 @@
       </div>
       <div class="news"> 
         <div class="card">
-          <a href="https://www.bloomberg.com/news/storythreads/2020-12-24/china-has-a-huge-wealth-gap-problem-and-it-s-getting-worse?srnd=premium-europe">
+          <a href="#">
            <img 
            src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
            alt="image city silhouette"
            />          
-           <h2>China Has a Huge Wealth-Gap Problem — and It's Getting Worse</h2>
+           <h2>China has a huge wealth-gap problem — and it's getting worse</h2>
          </a>         
         </div>
       </div>
       <div class="news">
         <div class="card"> 
-          <a href="https://www.bloomberg.com/news/articles/2021-01-17/the-rich-are-minting-money-in-the-pandemic-like-never-before?srnd=premium-europe">
-          <img 
+          <a href="#">
+           <img 
            src="https://images.unsplash.com/photo-1562596127-3885a12dcdb6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
            alt="math studies"
-          />
-          <h2>The Rich Are Minting Money in the Pandemic Like Never Before</h2>
+           />
+           <h2>The rich are minting money in the pandemic like never before</h2>
           </a>
        </div>
       </div> 
       <div class="news">
         <div class="card"> 
-           <a href="https://finance.yahoo.com/news/gold-extends-decline-dollar-strength-021157580.html">         
-              <img 
-              src="https://images.unsplash.com/photo-1610375461246-83df859d849d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-              alt="image gold bars"
-              />
-          <h2>Gold Rises From December Low Amid ‘Broad Risk-Off Sentiment’</h2>
+         <a href="#">         
+             <img 
+             src="https://images.unsplash.com/photo-1610375461246-83df859d849d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+             alt="image gold bars"
+             />
+           <h2>Gold rises from december low amid ‘Broad Risk-Off Sentiment’</h2>
           </a>
         </div>
       </div> 
       <div class="news">
         <div class="card"> 
-          <a href="https://digital.di.se/artikel/frenetisk-jakt-pa-forlorad-bitcoinformogenhet">
+          <a href="#">
            <img 
            src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
            alt="image bills and coins"
            />
-           <h2>China Officially Backs A CryptoCurrency And Establishes It As Their Official Coin</h2>
+           <h2>China officially backs a crypto currency and establishes it as their official coin</h2>
           </a> 
         </div>
       </div>  
       <div class="news">
         <div class="card">
-          <a href="https://finance.yahoo.com/news/italian-bond-yields-creep-key-082142600.html">
+          <a href="#">
             <img 
            src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
            alt="image phone screen stock market"
@@ -121,20 +119,28 @@
           </a>        
         </div>
       </div>
-     <div class="news">
-      <div class="card"> 
-         <a href="https://www.reuters.com/article/us-samsung-elec-heir-sentence/samsungs-lee-receives-two-and-a-half-year-jail-term-from-seoul-court-idUSKBN29N0B4">
-          <img 
-          src="https://images.unsplash.com/photo-1546450334-5a84ac3a1f0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" 
-          alt="picture prison fence"
-          />
-           <h2>Samsung's Lee receives two-and-a-half year jail term from Seoul court</h2>
+      <div class="news">
+       <div class="card"> 
+          <a href="#">
+            <img 
+             src="https://images.unsplash.com/photo-1546450334-5a84ac3a1f0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" 
+             alt="picture prison fence"
+           />
+            <h2>Samsung's Lee receives two-and-a-half year jail term from Seoul court</h2>
           </a> 
-      </div>
-    </div> 
-  
-    </section>  
-  </section>
+        </div>
+      </div> 
+    </section>
+
+    <!--***Animation bottom news-letter***-->
+    <container class="animation">
+      <a class="news-letter" href="#"><h3>Don't forget to sign up for our news-letter!</h3></a>
+    </container> 
+    
+   <!--***Footer back to top button***-->
+    <footer>
+      <button id="btn"><a href="#top">Back to Top</a></button>
+    </footer>
 
   </body>
 </html>
