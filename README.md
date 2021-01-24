@@ -15,4 +15,4 @@ I really used the help from my team (ALOT). They looked at my code and gave me i
 Next time i will be more organized. Taking it step by step. Making a plan of what i need to do and narrow it down. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://zen-euler-28ff5e.netlify.app/
