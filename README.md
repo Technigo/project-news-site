@@ -15,4 +15,4 @@ With the help from lecture and searching Stackoverflow and other related sites u
 Once understanding that the site should be created with a mobile first approach it was easier to also create fewer lines of code and avoid repeating.  
 
 ## View it live
-link to project: 
+link to project: https://suspicious-almeida-365e70.netlify.app/
