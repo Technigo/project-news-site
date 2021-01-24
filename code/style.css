@@ -2,22 +2,18 @@ html,
 body {
   background-color: white;
   margin: 0;
+  width: 100%;
+  font-family: "Playfair Display", serif;
+  
 }
  
-/* HEADER AND NAVIGATION */
+/* Header */
 
 .header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50px;
-  font-family: "Texturina", serif;
-}
-
-@media (min-width: 768px) {
-  .header {
-    height: 70px;
-  }
 }
 
 /* Site name and logo */
@@ -25,7 +21,7 @@ body {
 .site-name {
   display: flex;
   align-items: center;
-  margin-left: 5px;
+  padding-left: 5px;
 }
 
 .site-name .logo {
@@ -44,7 +40,6 @@ body {
 
 .h1 {
   color: black;
-  font-family: "Playfair Display", serif;
   font-variant: small-caps;
   font-size: 30px;
 }
@@ -82,26 +77,6 @@ body {
   opacity: 0.7;
 }
 
-@media (min-width: 768px) {
-  .h1 {
-    font-size: 50px;
-  }
-  .site-name .logo {
-    width: 60px;
-  }
-  .search-box {
-    width: 250px;
-    padding: 8px;
-    font-size: 18px;
-  }
-  
-  .fa-search {
-    padding: 13px;
-    font-size: 30px;
-  }
-}
-
-
 /* Navigation Bar */
 
 .navigation-container {
@@ -113,17 +88,11 @@ body {
   background-color: black;
 }
 
-@media (min-width: 768px) {
-  .navigation-container {
-    height: 50px;
-} }
-
 .navigation-links {
   display: flex;
 }
 
-.navigation-container .links {
-  font-family: "PLayfair Display", serif;
+.links {
   font-variant: small-caps;
   font-weight: 600;
   font-size: 18px;
@@ -134,7 +103,7 @@ body {
   cursor: pointer;
 }
 
-.navigation-container .links:hover {
+.links:hover {
   color: #DABED5;
 }
 
@@ -144,19 +113,18 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   margin-left: 10px;
-}
-
-.navigation-container .fa-bars:hover {
-  opacity: 0.7;
 }
 
 .mobile-dropdown-content {
   display: none;
+  position: absolute;
+  font-family: "Playfair Display";
   background-color: black;
   padding: 10px;
   margin-left: -10px;
+  margin-top: 30px;
 }
 
 .navigation-container .fa-bars:hover .mobile-dropdown-content {
@@ -175,8 +143,7 @@ body {
   display: none;
   position: absolute;
   background-color:black;
-  opacity: 0.9;
-  margin-top: 40px;
+  margin-top: 32px;
   line-height: 20px;
   padding: 4px;
 }
@@ -186,55 +153,36 @@ body {
   flex-direction: column;
 }
 
+/*** Social Media Buttons ***/
 
-@media (min-width: 1024px) {
-  .navigation-container .fa-bars {
-    display: none;
-  }
-  .topic {
-    display: flex;
-  }
-} 
-
-/*** SOCIAL MEDIA BUTTONS ***/
-
-.social-media-top {
+.social-media {
   display: flex;
   align-items: center;
 }
 
-.social-media-top .fa {
-  background: black;
+.social-media .fa {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  margin: 6px;
+  margin: 5px;
 }
 
-.social-media-top .fa:last-child {
+.social-media .fa:last-child {
   margin-right: 10px;
 }
 
-.fa:hover {
-  opacity: 0.7;
+.social-media .fa:hover {
+  color: #DABED5;
 }
 
-@media (min-width: 768px) {
-  .social-media-top .fa {
-    padding: 10px;
-    font-size: 24px;
-  }
-}
-
-/*** Header Two ***/
+/*** Header Two (above food boxes) ***/
 
 .header-two {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   margin-top: 20px;
 }
 
@@ -243,34 +191,21 @@ body {
   border-bottom: 2px solid black;
 }
 
-@media (min-width: 768px) {
-  .line {
-    width: 35%;
-  }
-}
-
 .h2 {
-  font-family: "Playfair Display", serif;
   font-variant: small-caps;
   color: black;
   font-size: 30px;
   margin: 0px 20px 0px 20px;
 }
 
-/*** Big News ***/
+/*** Big Food Content ***/
 
 .big-food-content {
   display: flex;
   justify-content: center;
-  width: 100%;
   flex-flow: row wrap;
   margin-top: 20px;
 }
-
-@media (min-width: 768px) {
-.big-food-content {
-  margin: 40px 5px 100px 5px;
-}}
 
 .food-box {
   margin: 7px;
@@ -280,51 +215,36 @@ body {
   box-shadow: 1px 3px rgb(192, 189, 189);
 } 
 
-@media (min-width: 768px) {
-  .food-box {
-    width: 47%;
-} }
-
-@media (min-width: 1024px) {
-  .food-box {
-    width: 47%;
-  } }
+.food-box:hover {
+  opacity: 0.9;
+}
 
 .food-image {
   width: 100%;
 }
 
 .food-box .text {
-  font-family: "Playfair Display", serif;
   font-size: 26px;
   text-align: center;
   background-color: #f7f7fa;
-  padding: 8px 2px 8px 8px;
   margin: 0;
 }
 
-.food-info {
+.food-clock {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #f7f7fa;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-.food-info .fa  {
-  font-size: 24px;
-  padding: 10px;
+.food-clock .fa  {
+  font-size: 28px;
+  margin-left: 10px;
 }
 
-.info-text {
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
+.food-clock-text {
+  font-size: 20px;
 }
-
-.food-box .text:hover {
-  text-decoration: underline;
-}
-
 
 /* Smaller food boxes */
 
@@ -332,66 +252,52 @@ body {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin: 40px 5px 40px 5px;
+  margin-top: 20px;
 }
 
 .small-food-box {
   color: black;
-  margin-bottom: 50px;
   background-color: #f7f7fa;
   padding: 5px;
+  margin: 7px;
   cursor: pointer;
   box-shadow: 1px 2px rgb(192, 189, 189);
 }
 
+.small-food-box:hover {
+  opacity: 0.9;
+}
+
 .small-food-box .text {
-  font-family: "Playfair Display", serif;
   font-size: 18px;
   text-align: center;
   background-color: #f7f7fa;
   margin: 0;
 }
 
-.small-info {
+.small-clock {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #f7f7fa;
   margin-right: 10px;
+  margin-top: -20px;
 }
 
-.small-info .fa {
+.small-clock .fa {
   font-size: 24px;
   margin-left: 10px;
 }
 
-.small-info-text {
-  font-family: "Playfair Display", serif;
+.small-clock-text {
   font-size: 16px;
 }
 
-@media (min-width: 768px) {
-.small-food-box {
-  max-width: 45%;
-  color: black;
-  margin-bottom: 50px;
-} }
-
-@media (min-width: 1200px) {
-  .small-food-box {
-    max-width: 22.5%;
-    color: black;
-    margin-bottom: 50px;
-  } }
-
-
-/*** FOOTER ***/
+/*** Footer ***/
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 100px;
   background-color: black;
   margin-top: 90px;
@@ -409,41 +315,123 @@ body {
 }
 
 .footer-text {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
+  margin-left: -30px;
+  margin-top: 60px;
 }
 
-/*** SOCIAL MEDIA BUTTONS ***/
+/* Subscribe container */
 
-.social-media {
+.footer-right {
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  margin-right: 15px;
 }
 
-.social-media .fa {
-  padding: 14px;
-  background: white;
-  color: black;
-  font-size: 22px;
-  text-align: center;
-  text-decoration: none;
-  margin-right: 10px;
-  border-radius: 50%;
+.subscribe-text {
+  font-size: 16px;
+  color: white;
+  margin-top: -10px;
 }
 
-.fa:hover {
+.subscribe-container {
+  display: flex;
+}
+
+.subscribe-box {
+  width: 150px;
+  padding: 3px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  outline: none;
+}
+
+.subscribe-button {
+  padding: 4px;
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
   opacity: 0.7;
 }
 
+/* Media queries */
 
-
-@media (max-width: 767px) {
-  .footer-text {
-    font-size: 16px;
-    color: white;
+@media (min-width: 768px) {
+  .header {
+    height: 75px;
   }
-  .social-media .fa {
+
+  .h1 {
+    font-size: 50px;
+  }
+
+  .site-name .logo {
+    width: 60px;
+  }
+
+  .search-box {
+    width: 250px;
+    padding: 8px;
     font-size: 18px;
   }
+  
+  .fa-search {
+    padding: 13px;
+  }
+
+  .navigation-container .fa-bars {
+    display: none;
+  }
+
+  .topic {
+    display: flex;
+  }
+
+  .social-media .fa {
+    padding: 2px;
+    font-size: 30px;
+  }
+
+  .line {
+    width: 35%;
+  }
+
+  .food-box {
+    width: 47%;
+  } 
+ 
+  .small-food-box {
+    width: 45%;
+  } 
+
+  .footer-text {
+    font-size: 22px;
+  }
+
+  .subscribe-box {
+    width: 250px;
+    padding: 4px;
+  }
+  
+  .subscribe-button {
+    font-size: 14px;
+  }
 }
+      
+  @media (min-width: 1200px) {
+    .small-food-box {
+      max-width: 22.5%;
+      color: black;
+      margin-bottom: 50px;
+    } 
+}
+
+
