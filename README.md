@@ -14,5 +14,5 @@ If I had more time I would have tried to use CSS-grid instead of flexbox to solv
 
 ## View it live
 
-To view the site I've created, check it out here:  
+To view the site I've created, check it out here: https://wonderful-wozniak-f94705.netlify.app/ 
 
