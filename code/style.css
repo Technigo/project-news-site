@@ -1,4 +1,199 @@
 html {
-  background: #0025ff;
+  background: #f4f4f4;
+  color: #000000;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  margin-left: 16px;
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*** HEADER ***/
+
+header {
+  background: #052962;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: -10px 0;
+}
+
+header img {
+  width: 70px;
+  height: 50px;
+  margin-left: 145px;
+}
+
+
+
+nav a {
   color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  
+
+}
+
+nav {
+  display: none;
+}
+
+/*** BIG NEWS ***/
+
+.big-news {
+  display: flex;
+}
+
+.big-news img  {
+width: 100%;
+margin-top: 10px;
+justify-content: center;
+box-shadow:  0 1px 2px 0 rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.13);
+} 
+
+.big-news div {
+  text-align: center;
+}
+
+.big-news div h1 {
+line-height: normal;
+margin: auto;
+margin-top: 10px;
+}
+
+
+/*** ARTICLES ***/
+
+.art {
+  display: flex;
+  flex-direction: column;
+}
+
+.art div {
+  display: flex;
+  text-align: center;  
+  flex-direction: column;
+  background-color: #fff;
+  color: #000000;
+  padding: 15px;
+  border: 5px solid #fff;
+  margin: 18px;
+  width: 300px;
+  box-shadow:  0 1px 2px 0 rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.13);
+  transition: box-shadow .3s;
+  }
+
+.art a :hover {
+  box-shadow:20px 20px 30px -10px rgba(0,0,0,.13);
+}
+
+  
+
+.articles img {
+  width: 300px;
+  height: 200px;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+footer {
+  background: #052962;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+
+/*** MEDIA ***/ 
+
+@media (min-width:768px) and (max-width:1024px) {
+
+
+ .art {
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ nav {
+   display: block;
+   margin-left:auto ;
+   }
+
+   nav a {
+     margin-right: 20px;
+   }
+
+   header img {
+     width: 100px;
+     margin-left: 100px;
+   }
+
+   .articles h2 {
+     margin-left:50px;
+   }
+}
+
+@media (min-width:1025px) {
+
+ header img {
+   width: 100px;
+   height: 50px;
+   margin-left: 130px;
+ }
+ 
+  nav {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav a {
+    margin-right: 30px;
+  }
+
+
+
+.art {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-news img {
+  width: 800px;
+  float: left;
+}
+
+.big-news h1 {
+  display: flex;
+  padding: 150px 40px 0px 40px;
+}
+
+.articles h2 {
+  margin-left: 90px;
+  margin-top: 55px;
+}
+
 }
