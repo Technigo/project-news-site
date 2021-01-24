@@ -13,4 +13,4 @@ Code got a bit cluttered at some point as I kept on changing names on classes co
 If I had more time I would have done a second menu to take over in tablet and mobile view, and hide the nav-items created for desktop.
 I tried this out very last minute, and did not manage so I decided to take it away to have a cleaner webpage at the end. 
 ## View it live
-Link to page on Netlify: 
+Link to page on Netlify: https://confident-noyce-6e46a9.netlify.app/
