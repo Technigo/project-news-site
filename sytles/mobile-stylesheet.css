@@ -1,0 +1,157 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+}
+
+/* HEADER */
+header{
+    background: url(/img/logo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+p{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+p a{
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.title{
+    margin-top: 6px;
+    font-size: 7px;
+    color:white ;
+    margin-left: 15px;
+    padding: 0px 15px;
+    text-shadow: 5px 1px 5px green;
+    background-color: rgb(91,168,74);
+    border-radius: 5px;
+    border-style:solid;
+    border-color: black;
+}
+
+.title h1{
+    margin: 4px 0px;
+}
+
+.tittle2{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;    
+}
+
+hr{
+    border-style:solid;
+    border-bottom-width:  12px;
+    border-color: rgb(91,168,74);
+}
+/* END HEADER */
+
+/* NAVBAR MOBILE*/
+
+.nav-bar-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+} 
+.nav-bar-tablet{
+    display: none;
+}
+.nav-bar-destokp{
+    display: none;
+}
+.slide-img span{
+    font-size: 15px;
+    text-align: center;
+}
+
+span a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* BUTTON */
+#wrapper-botton{
+    width: 200px;
+    padding: 7px;
+    text-align: center;
+}
+
+.button{
+    font: 18px sans-serif;
+    padding: 2px 5px;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.button:hover{
+    border-color: rgb(91,168,74);
+}
+.button:active {
+    box-shadow: 0 80px 10px rgba(0,0,0,0.25) inset;
+}
+/* END BUTTON */
+/* END NAVBAR MOBILE */
+
+/* OTHER NEWS */
+.news{
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    background-color:#f3168445;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 80px 10px rgba(0,0,0,0.25);
+
+}
+.news article{
+    width: 60%;
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.img-news{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.img-news img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+/* END OTHER NEWS */
+
+footer{
+    background-color: rgb(91,168,74);
+    height: 150px;
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+    font-size: 20px;
+}

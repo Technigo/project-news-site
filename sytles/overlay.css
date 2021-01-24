@@ -1,0 +1,69 @@
+/* Overlay */
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0,0,0,0.5);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10 ;
+}
+
+.overlay:target{
+    visibility:visible;
+    opacity: 2;
+}
+
+.cancel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+.popup{
+    width: 97%;
+    height: 420px;
+    position:relative;
+    margin-top: 120px;
+    padding: 5px;
+    border: 2px solid rgb(91,168,74);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 30px;
+    right: 25px;
+    opacity: 1;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.close:hover {
+    opacity: 1;
+}
+  
+.menu-content{
+    width: 100%;
+    height: 70%;
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+}
+        
+p{
+    margin: 0 0 8px;
+}
+p:last-child{
+    margin: 0;
+}
+/* END OVERLAY */

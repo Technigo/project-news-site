@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2: The News Site</title>
+    <link rel="stylesheet" href="./sytles/mobile-stylesheet.css" />
+    <link rel="stylesheet" href="./sytles/tablet-stylesheet.css" />
+    <link rel="stylesheet" href="./sytles/destokp-stylesheet.css" />
+    <link rel="stylesheet" href="./sytles/slideshow-stylesheet.css" />
+    <link rel="stylesheet" href="./sytles/slideshow-stylesheet.css" />
+    <link rel="stylesheet" href="./sytles/overlay.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>The Ladies Gamer</h1>
+        </div>
+    </header>
+    <hr>
+
+    <!-- NAVIGATION BAR ALL DEVICE -->
+
+    <!-- Navigation Mobile -->
+    <nav class="nav-bar-mobile">
+        <div id="wrapper-botton">
+            <a class="button" href="#modal">JUMP TO</a>
+        </div>
+
+        <div id="modal" class="overlay">
+            <a class="cancel" href="#"></a>
+            <div class="popup">
+                <hr>
+                <h2>Filter by topic</h2>
+                <hr>
+                <a class="close" href="#">&times;</a>
+                <div class="menu-content">
+                    <p>Reviews</p>
+                    <p>Youtubers</p>
+                    <p>Guides</p>
+                    <p>Deals</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Tablet -->
+    <nav class="nav-bar-tablet">
+        <div class="nav-options">
+            <a href="">Reviews</a>
+            <a href="">Youtubers</a>
+        </div>
+        <div class="nav-image">
+            <img src="./img/mario-star-coin-.png">
+        </div>
+        <div class="nav-options">
+            <a href="">Guides</a>
+            <a href="">Deals</a>
+        </div>
+    </nav>
+
+
+    <!-- Navigation Destokp -->
+    <nav class="nav-bar-destokp">
+        <a href="">Reviews</a>
+        <a href="">Youtubers</a>
+        <a href="">Guides</a>
+        <a href="">Deals</a>
+    </nav>
+    <hr>
+
+    <!-- Container Sections "SlidesShow" -->
+    <div class="container">
+        <input type="radio" name="images" id="i1" checked>
+        <input type="radio" name="images" id="i2">
+        <input type="radio" name="images" id="i3">
+        <input type="radio" name="images" id="i4">
+        <input type="radio" name="images" id="i5">
+
+        <div class="slide-img" id="one">
+            <img src="https://images.nintendolife.com/1a6abafcbb637/botw.original.jpg" alt="img1">
+            <span>This Zelda: Breath Of The Wild Exploit Allows You To Duplicate Them <a
+                    href="https://www.nintendolife.com/news/2021/01/spirit_orb_hunters_rejoice_this_zelda_breath_of_the_wild_exploit_allows_you_to_duplicate_them">Read
+                    Full Story >>
+                </a>
+            </span>
+            <label for="i5" class="prev">◁</label>
+            <label for="i2" class="next">▷</label>
+        </div>
+
+        <div class="slide-img" id="two">
+            <img src="https://images.nintendolife.com/f73ee7617a2d3/mutant-mudds-collection-switch.original.jpg"
+                alt="img2">
+            <span> Atooi Knocks 80% Off Select Switch Games, But The Sale Ends Soon <a
+                    href="https://www.nintendolife.com/news/2021/01/atooi_knocks_80_percent_off_select_switch_games_but_the_sale_ends_soon">
+                    Read Full Story >></a>
+            </span>
+            <label for="i1" class="prev">◁</label>
+            <label for="i3" class="next">▷</label>
+        </div>
+
+        <div class="slide-img" id="three">
+            <img src="https://gamespot1.cbsistatic.com/uploads/screen_kubrick/123/1239113/3785717-re_village_sept_screens_09.jpg"
+                alt="img3">
+            <span> Resident Evil Village Release Date Is May 7, PS4/Xbox One Versions Confirmed<a
+                    href="https://www.gamespot.com/articles/resident-evil-village-release-date-is-may-7-ps4-xbox-one-versions-confirmed/1100-6486601/">
+                    Read Full Story >></a>
+            </span>
+            <label for="i2" class="prev">◁</label>
+            <label for="i4" class="next">▷</label>
+        </div>
+
+        <div class="slide-img" id="four">
+            <img src="https://images.nintendolife.com/c2a27609accc8/super-mario-3d-world-bowsers-fury.original.jpg"
+                alt="img4">
+            <span> Super Mario 3D World + Bowser's Fury In These New Japanese Commercials<a
+                    href="https://www.nintendolife.com/news/2021/01/get_another_look_at_super_mario_3d_world_plus_bowsers_fury_in_these_new_japanese_commercials">
+                    Read Full Story >></a>
+            </span>
+            <label for="i3" class="prev">◁</label>
+            <label for="i5" class="next">▷</label>
+        </div>
+
+        <div class="slide-img" id="five">
+            <img src="https://images.nintendolife.com/9114f900f50f6/best-wii-u-games.original.jpg" alt="img5">
+            <span> Feature: Best Wii U Games<a href="https://www.nintendolife.com/guides/feature-best-wii-u-games">
+                    Read Full Story >></a></span>
+
+            <label for="i4" class="prev">◁</label>
+            <label for="i1" class="next">▷</label>
+        </div>
+    </div>
+    <!-- bottoms "dots" Funtionality -->
+    <div class="nav">
+        <label class="dot" id="dot1" for="i1"></label>
+        <label class="dot" id="dot2" for="i2"></label>
+        <label class="dot" id="dot3" for="i3"></label>
+        <label class="dot" id="dot4" for="i4"></label>
+        <label class="dot" id="dot5" for="i5"></label>
+
+    </div>
+
+    <!-- The other News -->
+
+    <div class="tittle2">
+        <h2>Other News</h2>
+        <hr>
+
+    </div>
+
+    <section class="other-news">
+
+        <div class="news">
+            <section class="img-news">
+                <img
+                    src="https://i0.wp.com/www.hardcoredroid.com/wp-content/upLoads/2021/01/Android-RaisingArchangel-00.jpg">
+            </section>
+            <article>
+                <p> In Raising Archangel, you control an archangel, who side-scrolls across the screen while fighting
+                    monsters.<a href="https://www.hardcoredroid.com/raising-archangel-drops-on-google-play/"> Read Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img src="https://s2.n4g.com/news/2397566_0.jpg">
+            </section>
+            <article>
+                <p> Nintendo eShop replaced PlayStation Vita as the home for Indie thanks to a slow launch that forced
+                    Indie titles onto gamers.<a href="https://techstomper.com/hidden-gems-nintendo-eshop-sale/"> Read
+                        Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img src="https://s2.n4g.com/news/2397492_0.jpg">
+            </section>
+            <article>
+                <p> The author discusses the significance of Genshin Impact's newest character, Ganyu, and how her
+                    overpowered kit might impact the game's direction going forward..<a
+                        href="https://kakuchopurei.com/2021/01/21/ganyu-is-broken-what-this-means-for-genshin-impacts-future/">
+                        Read
+                        Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class=" news">
+            <section class="img-news">
+                <img
+                    src="https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2018/08/06/4db086b0/dead%20cells%20header.jpg">
+            </section>
+            <article>
+                <p> Free game trials have become a trend for Nintendo Switch Online. Dead Cells opens its doors next,
+                    and from January 26 to February 1,.<a
+                        href="https://www.gameinformer.com/2021/01/20/dead-cells-getting-free-trial-for-nintendo-switch-online-members">
+                        Read
+                        Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img
+                    src="https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2020/03/05/f6cb37ad/gobattleleague-season1.jpg">
+            </section>
+            <article>
+                <p> In 2019, Pokémon Go developer Niantic, Inc. filed a lawsuit against hacking group Global, for the
+                    selling of hacked and/or modified versions of the game<a
+                        href="https://www.gameinformer.com/2021/01/18/pokemon-go-developer-niantic-to-receive-5-million-settlement-from-hacker-group">
+                        Read
+                        Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img
+                    src="https://www.gameinformer.com/sites/default/files/styles/full/public/2021/01/21/bb7a66a9/disgaea_6_character_trailer.jpg">
+            </section>
+            <article>
+                <p> IDisgaea 6 is coming exclusively to Switch this summer, and NIS released a new trailer running down
+                    the absurd cast of characters players can expect to
+                    meet<a
+                        href="https://www.gameinformer.com/2021/01/21/get-to-know-the-zany-cast-of-disgaea-6-in-this-new-trailer">
+                        Read
+                        Full
+                        Story >></a></p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img
+                    src="https://www.gameinformer.com/sites/default/files/styles/full/public/2021/01/18/3d2b3242/new_horizons_makeup.png">
+            </section>
+            <article>
+                <p> Nintendo and ColourPop Cosmetics are teaming up once more for a new colorful Animal Crossing: makeup
+                    collection the new makeup line comes with lipsticks, eyeshadows, blushes, and more.
+                    <a
+                        href="https://www.gameinformer.com/2021/01/18/official-animal-crossing-new-horizons-makeup-collection-announced-with-colourpop">
+                        Read
+                        Full
+                        Story >></a>
+                </p>
+            </article>
+        </div>
+
+        <div class="news">
+            <section class="img-news">
+                <img
+                    src="https://www.gameinformer.com/sites/default/files/styles/full/public/2021/01/18/d4b6cb34/kq4gsfmav6xztbb3wfh57w.jpg">
+            </section>
+            <article>
+                <p> Netflix's The Witcher Season 2 Resumes Production Following Henry Cavill's Injury.
+                    <a
+                        href="https://www.gameinformer.com/2021/01/18/netflixs-the-witcher-season-2-resumes-production-following-henry-cavills-injury">
+                        Read
+                        Full
+                        Story >></a>
+                </p>
+                <hr>
+            </article>
+        </div>
+
+
+    </section>
+</body>
+<footer>
+    <h3>All News rights belong to each page displayed </h3>
+</footer>

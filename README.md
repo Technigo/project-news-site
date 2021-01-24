@@ -1,12 +1,22 @@
-# News Site
+# Week-2
+# Project-News-Site
 
-Replace this readme with your own information about your project. 
+This project was made to afiance knowledge from previous clases related to HTML tags and CSS tachnickes. Also was a good practice to adquere self issues solution and learn how to do some reseach on inernet
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## Thematic
+The site is focused only on gaming news.
 
-## The problem
+## Tools
+This project was made only with `HTML-tags` and `CSS` stylesheets
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+## Features
+This site was builded with `mobile-first` good-practices, starting the base design and styles thinking in mobile first, scaling till Desktop size.
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+## Composition
+The site is composed by:
+- Header.
+- A `nav-bar` with its variants of Mobile design (as a popup menu), Tablet, and Desktop.
+- An animated `Slideshow` to show the most relevant News.
+- A group composed by other new with less relevance.
+- A generic footer.
+
