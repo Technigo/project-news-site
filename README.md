@@ -8,4 +8,5 @@ First I planned the site on paper and then I coded site's basic structure and st
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://xenodochial-euler-70d061.netlify.app/
