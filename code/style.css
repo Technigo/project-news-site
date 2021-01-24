@@ -1,6 +1,7 @@
 
 
 body {
+  background: #1b9aaa;
   margin: 0;
 }
 /*
@@ -17,6 +18,7 @@ header {
   width: 100%;
   display: flex;
   flex-flow: wrap;
+  padding: 0 16px;
   border-top: 25px solid #f75590;
   border-bottom: 25px solid #f75590;
   
@@ -27,6 +29,21 @@ header {
   width: 40%;
   display: flex;
   align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #fff;
 }
 
 .left .logo img {
