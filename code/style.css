@@ -2,7 +2,6 @@
   margin: 0;  
   font-size: 16px;
   box-sizing: border-box;
-  /* border: 1px solid pink; */
 }
 
 body {
@@ -13,11 +12,6 @@ body {
 html {
   background: #ffffff;
   color: rgb(0, 0, 0);
-}
-
-img:not(:hover) {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 /* TEXT */
@@ -69,8 +63,7 @@ p.small {
   display: none;
 }
 
-/* Lottie animation */
-
+/* LOTTIE ANIMATION */
 .lottie {
   margin: 0 auto;
   margin-right: .5rem;
@@ -78,7 +71,6 @@ p.small {
 }
 
 /* HOVER EFFECT - FAKE LINKS... */
-
 nav li:hover,
 header li:hover,
 section .text:hover,
@@ -87,7 +79,6 @@ section .text:hover,
   color: #888;
   cursor: pointer;
 }
-
 
 /* HEADER */
 header {
@@ -105,7 +96,6 @@ header > .right {
   flex-wrap: wrap;
   height: 100%;
   min-width: 40px;
-  /* flex-basis: 1; */
   padding: 10px 10px 0 0;
 }
 
@@ -182,10 +172,6 @@ header .right
 
 .weather {
   display: none;
-  /* height: 1rem; */
-  /* width: 100%; */
-  /* margin-top: 1rem; */
-  /* font-size: 0.7rem; */
 }
 
 .weather-text {
@@ -230,7 +216,6 @@ nav ul li {
 }
 
 .divider {
-  /* display: none; */
   height: 1px;
   margin: 1rem -1.5rem;
   background-color: rgb(0, 0, 0);
@@ -248,7 +233,6 @@ main .divider {
 
 .image {
   overflow: hidden;
-  /* height: 100%; */
 }
 
  .image img {
@@ -288,10 +272,9 @@ main .divider {
   padding: 0 .5rem 0 0;
 }
 
-section 
-.text, .grid-inner .item  {
+section .text, 
+.grid-inner .item  {
   transition: .4s ease-out;
-  border-left: 1px solid #EBEBEB;
   padding: .5rem;
   padding-left: .75rem;
   overflow: hidden;
@@ -350,17 +333,23 @@ section
   margin-top: 3rem;
 }
 
-
-
-
-
 footer {
-  height: 10rem;
-  background-color: darkgrey;
+  margin: 0 -10rem;
+  padding: 1rem 11rem;
+  display: flex;
+  min-height: 8rem;
+  height: fit-content;
+  background-color: #222;
+  color: white;
   margin-top: 5rem;
+  justify-content: space-between;
 }
 
-                            /* SMALL MOBILE */
+footer p {
+  width: 60%;
+}
+
+/* SMALL MOBILE */
 
 @media screen and (min-width: 375px) {
 
@@ -369,7 +358,7 @@ footer {
   }
 }
 
-                             /* TABLET */
+/* TABLET */
 
 @media screen and (min-width: 667px) {
 
@@ -461,7 +450,7 @@ footer {
 
 
 
-                              /* DESKTOP */
+/* DESKTOP */
 
 @media screen and (min-width: 900px) {
  
@@ -480,6 +469,11 @@ footer {
     display: initial;
   }
 
+  section .text, 
+  .grid-inner .item  {
+    border-left: 1px solid #EBEBEB;
+  }
+  
   .weather {
     display: block;
   }
@@ -490,9 +484,6 @@ footer {
 
   .grid-outer {
     grid-template-columns: 3fr 2fr;
-    /* height: 60vw; */
-    /* gap: 1rem; */
-    /* gap: 2rem; */
   }
   
   .grid-inner {
@@ -515,7 +506,7 @@ footer {
   
   
 }
-                             /* BIG DESKTOP */
+/* BIG DESKTOP */
 
 @media screen and (min-width: 1200px) {
 
@@ -536,8 +527,6 @@ footer {
 
   .top-news .mega-header h1 {
     display: block;
-    /* width: 800px; */
-    /* display: initial; */
     text-align: center;
     font-size: 2.5rem;
     margin: 2rem 0;
