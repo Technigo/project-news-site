@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+.container {
+    width: 320px;
+    margin: 25px auto;
+}
+
 /**** HEADER ****/
 .header-landing-page {
     background: #13141b;
@@ -83,14 +88,14 @@
     border:1px solid black;
     box-shadow: 5px 10px 10px grey;
     border-radius: 1px;
-    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); 
 }
 
 .big-news-img:hover {
     padding:20px 20px 30px 20px;
     border:1px solid black;
     box-shadow: 18px 10px 18px black;
-    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .text-on-photo-big {
     font-size: 50px;
@@ -132,6 +137,10 @@
 
   @media (min-width: 768px) {
 
+    .container {
+        width: 768px;
+    }
+
     .navigation-container {
         display: flex; 
                       
@@ -165,6 +174,10 @@
   }
 
   @media (min-width: 1025px) {
+
+    .container {
+        width: 1025px;
+    }
   
     .site-title {
         display: flex;
