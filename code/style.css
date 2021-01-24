@@ -4,12 +4,6 @@ body {
   background: #1b9aaa;
   margin: 0;
 }
-/*
-.container {
-  width: 100%;
-  margin: 20px 0 0 0 auto;
-}
-*/
 
 /***HEADER***/
 
@@ -46,13 +40,13 @@ header {
   background: #fff;
 }
 
-.left .logo img {
+.left .logo-group .logo img {
   width: 100%;
   margin-left: .5rem;
   
 }
 
-.left .nameplate img {
+.left .logo-group .nameplate img {
   width: 100%;
   margin-right: 2rem;
 }
@@ -111,39 +105,32 @@ ul {
 
 /***MEDIA QUERIES***/
 
-/***MOBILE***/
-
-@media (min-width 360px) and (max-width 667px) {
-
-   .left {
-    display: none;
-  }
-
-  .middle {
-    display: flex;
-  }
-
-  .right {
-    display: none;
-  }
-
-  .lower-menu {
-    display: none;
-}
-
-}
-
-
-
 
 /***TABLET***/
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 667px) {
+
+  header {
+    display: flex;
+   
+
+  }
+  
+  .left {
+    justify-content: center;
+    width: 100%;
+    
+  }
 
   .left .hamburger {
     display: none;
-
   }
+
+  .left .logo-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .middle {
     display: none;
   }
@@ -151,6 +138,7 @@ ul {
   .right {
     display: none;
   }
+
 }
   
 
@@ -158,18 +146,6 @@ ul {
 
 @media (min-width: 1024px) {
 
-  header {
-    display: flex;
-  }
-
-    .left .hamburger {
-    display: none;
-  }
-
-  .middle {
-    display: none;
-  }
-
-}
+ 
 
   
