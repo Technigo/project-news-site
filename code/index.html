@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
@@ -8,15 +10,109 @@
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+
+      <!--the Hamburger icon (not yet interactive)-->
+      <div class ="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="/assets/splurmf news logo 2.svg" alt="logo">
+        </a>
+        
+      </div>
+      
+      <!-- top navigation menu -->
+      <nav>
+        <a href="#">Politics</a>
+        <a href="#">Vegetables</a>
+        <a href="#">Wisdom</a>
+        <a href="#">Soup</a>
+      </nav>
+      
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <!-- Container for the big news, its image, text and all -->
+    <section class="big-news-container">
+
+      <div class="big-news-image">
+        <a href="#">     <!--this code right below calls a javascript function which changes the image on hover-->
+          <img id="bigNewsImage" onmouseover="mouseOver()" onmouseout="mouseOut()" src="/assets/Elmo 3.png" alt="image">
+        </a>  
+      </div>
+
+      <div class="big-news-text">  <!-- The big new's text box, including article headline-->
+
+        <a href="#">
+            <h1>Elmo investigated for arson for second time this month</h1>
+        </a>
+        <div class="article-preview">
+          <p>
+            Elmo is yet again being investigated for arsin, Non unde natus repellat. Itaque repellendus qui id voluptatem voluptatem id sunt. Accusantium qui iste maxime odio voluptates qui officiis. Exercitationem et sit impedit libero voluptatem. Ducimus voluptate quis ea esse consequatur quis.Totam nostrum qui culpa quia dignissimos non. Voluptatum voluptas voluptatem aut omnis recusandae beatae beatae quo. Vero autem ducimus nobis modi. Iste id repellat voluptas dolor perspiciatis. Fugiat facilis dolor deleniti animi. Quia officiis ut saepe.
+          </p>
+          
+          <p>
+            Velit error unde voluptas ut. Voluptatem exercitationem dolores commodi voluptates dolores distinctio. Sapiente laudantium adipisci qui minus.
+          </p>
+          
+          <p>           
+            Cupiditate voluptatem nam eos autem consequatur. Qui sit ea quia placeat soluta ullam quo. Vitae eos autem distinctio tempora eos earum. Magni ea nihil ipsa labore.
+          </p>
+          
+          <p>
+            Corporis voluptatum et alias aut atque nobis fugiat. Blanditiis repudiandae ut voluptatem quis ex minima. Labore omnis tempora officiis voluptatibus dignissimos alias. Velit excepturi sapiente aliquid est. Aliquam temporibus aliquid quaerat omnis ab tenetur sit.
+          </p>  
+        </div>
+        
+        <div class="read-more">   <!--Read More link-->
+          <a href="#">
+            Read More...
+          </a>
+        </div>
+          
+      </div>
+      
+      
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <!-- The other news  -->
+    <section class="small-news-container">
+
+      <div class="small-news">
+        <a href="#">
+          <img src="/assets/QUARXLES TOASTER.png" alt="image">
+          <h2>Quarxle launches new toaster</h2>
+        </a>  
+      </div>
+
+      <div class="small-news">
+        <a href="#">
+          <img src="/assets/shnowos.PNG" alt="image">
+          <h2>Shnowos continue protesting - now using water blobs</h2>
+        </a>  
+      </div>
+
+      <div class="small-news">
+        <a href="#">
+          <img src="/assets/duck 2.png" alt="image">
+          <h2>Duck Combat 4 Gets Cancelled Over Marital Dispute</h2>
+        </a>  
+      </div>
+
+      <div class="small-news">
+        <a href="#">
+          <img src="/assets/martnos elmosona Moel.png" alt="image">
+          <h2>Elmo's Evil Twin Brother Releases New Hit Single "Good to be Green"</h2>
+        </a>  
+      </div>
+
     </section>
+
+    <script src="myScript.js"></script>
+  
   </body>
 </html>
