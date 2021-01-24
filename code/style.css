@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
-/* THIS MAKES all newscards to small boxes height seems to not be targeted
-* {
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
-*/
+/* THIS MAKES all newscards to small boxes height seems to not be targeted*/
+
 
 html {
 background:antiquewhite;
@@ -27,7 +22,7 @@ h1:hover {
 
 /*HEADER*/
 .coreNavigation {
-	background-image: url(/img/logo-unsplash.png);
+	background-image: url("/img/logo-unsplash.png");
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
 	display: flex;
