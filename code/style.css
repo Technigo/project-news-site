@@ -106,6 +106,7 @@ body {
 
 .news-card2 {
   width: 80%;
+  height: 320px;
   background: whitesmoke;
   color: #36806a;
   border-radius: 10px;
@@ -120,14 +121,16 @@ body {
   width: 80%;
   height: 200px;
   margin-top: 20px;
+}
 
+.small-text {
+  margin: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .left {
     display: flex;
     justify-content: center;
-
   }
 
   .small-cards {
@@ -138,6 +141,10 @@ body {
 
   .news-card2 {
     width: 40%;
+  }
+
+  .small-image {
+    border-radius: 50%;
   }
 }
 
@@ -159,7 +166,6 @@ body {
 
   .logo {
     width: 80px;
-
   }
   .middle {
     display: flex;
@@ -180,15 +186,4 @@ body {
   .news-card2 {
     width: 20%;
   }
-
-
-  /*.header {
-  background: rgb(8, 16, 8);
-  width: 100%;
-  padding: 5px 0px;
-  margin: 0px 0px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-}*/
-
 }
