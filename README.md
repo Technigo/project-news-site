@@ -12,4 +12,4 @@ I used VS-code to created the html code (dislpay desktop) and made sure to add c
 If I had more time I would have elaborated more with the animation-part at teh bottom of the page and would have added an effect chancing images when hoovering over the big news picture. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/62b56382-5cf6-4c33-b13c-a33dd98e7a16/deploy-status)](https://app.netlify.com/sites/new-site-project-two-486d32/deploys)
