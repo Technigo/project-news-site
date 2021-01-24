@@ -1,11 +1,7 @@
-html {
-  background: white;
-  color: #f7f7f7
-}
-
 body {
-  margin: 0;
+  color: white;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -83,13 +79,12 @@ h2 {
 }
 
 .news-card {
-  width: 90%;
+  padding: 30px;
   margin: 20px;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 7px 7px gray;
-  padding: 30px;
   text-align: justify;
   transition: transform .3s;
 }
@@ -102,7 +97,6 @@ h2 {
   width: 100%;
   object-fit: cover;
 }
-
 
 footer {
   background-color: #23232e;
@@ -129,15 +123,13 @@ footer {
   
   .other-news {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .news-card {
-    width: 45%;
+    width: 36%;
   }
-}
 
 @media (min-width: 1024px) {
   .hamburger {
@@ -153,7 +145,6 @@ footer {
     display: flex;
   }
   .news-card {
-    width: 22%;
+    width: 15%;
   }
 }
-
