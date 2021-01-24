@@ -49,7 +49,7 @@ header {
 }
 
 .left .logo-group {
-  display:none
+  display: none;
 
 }
 
@@ -87,23 +87,33 @@ li {
 
 /***BIG-NEWS SECTION***/
 
-.big-news {
-  padding: 0;
-  margin: 2rem auto;
-  width: 90%;
-}
-
-.big-article {
+.big-news-container .container {
+  padding: 100px 16px;
+  display: flex;
+  flex-direction: column;
+  background: #73d2de;
   width: 100%;
-  background: green;
 }
 
-.big-news .big-image img {
+.big-news-container article {
+  text-align: center;
+}
+
+.big-news-container img {
   width: 100%
 }
 
 
 /***OTHER NEWS SECTION***/
+
+
+}
+
+
+ 
+
+
+
 
 /***FOOTER***/
 
@@ -121,8 +131,7 @@ li {
     display: flex;
     justify-content: center;
     width: 100%;
-    
-  }
+      }
 
   .left .hamburger {
     display: none;
@@ -184,9 +193,7 @@ li {
     width: 30%;
   }
 
- 
-
-
+  
 }
 
   
