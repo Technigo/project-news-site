@@ -13,4 +13,4 @@ If I had more time to work on my project I would have worked on my hover effects
 Also I would have added a "hamburger-navigation" on the phone-size. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://noemismusicmagazine.netlify.app/
