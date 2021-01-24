@@ -1,6 +1,6 @@
 
 html {
-
+  border: 2px solid greenyellow;
 }
 
 body {
@@ -15,17 +15,19 @@ header {
   background: #ffdd87;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   flex-flow: wrap;
   border-top: 20px solid #f75590;
   border-bottom: 20px solid #f75590;
-  padding: 4px;
+  
   
 }
 
 .left {
-  background: pink;
   width: 40%;
   display: flex;
+  
   
 }
 
@@ -34,8 +36,7 @@ header {
   width: 30px;
   height: 30px;
   flex-direction: column;
-  justify-content: space-between;
-  align-self: flex-start;
+  justify-content: space-between;  
   background: black;
   padding: 10px 10px;  
 }
@@ -46,20 +47,13 @@ header {
   background: #fff;
 }
 
-.left .logo-group .logo img {
-  width: 100%;
-  margin-left: .5rem;
-  
-}
+.left .logo-group {
+  display:none
 
-.left .logo-group .nameplate img {
-  width: 100%;
-  margin-right: 2rem;
 }
 
 
 .middle {
-  background: green;
   width: 20%;
   display: flex;
   justify-content: center;
@@ -72,31 +66,15 @@ header {
 }
 
 .right {
-  background: teal;
-  width: 40%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.right div {
-  margin-right: 2rem;
+  display: none;
 }
 
 .lower-menu {
-  background: lightyellow;
-  width: 100%; 
-  justify-content: center;
-  align-items: center;
+  display: none;
+
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;  
-  justify-content: space-around;
-  margin-bottom: 1rem;
-  padding: 0 1rem; 
- }
+
 
 /***BIG-NEWS SECTION***/
 
@@ -125,42 +103,30 @@ ul {
 /***MEDIA QUERIES***/
 
 
-/***MOBILE***/
+/***TABLET***/
 
-@media screen (max-width: 767px) {
+@media (min-width: 668px) {
 
-/*  } <-- when deleted mobile view stops working */
-
-  header {
-    display: flex;
-    justify-content: center;
-
-   }
   
   .left {
-    align-items: left;
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     
   }
 
   .left .hamburger {
-    display: flex;
+    display: none;
     }
 
   .left .logo-group {
-    display: none;
+    display: flex;
+    
   }
 
   .middle {
-      display: flex;
-      justify-content: space-between;
-      width: 60%;
+      display: none;
     }
-
-  .middle .logo {
-    min-width: 50%;
-       
-  }
 
   .right {
     display: none;
@@ -168,45 +134,41 @@ ul {
   }
 
   .lower-menu {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
   }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }    
+
 }
 
-
-
-/***TABLET***/
-
-@media screen (min-width: 768px) and (max-width: 1023px) {
-
-  header {
-    display: flex;
-  }
-
-  .left {
-    display: block;
-  }
-
-  .left .hamburger {
-    display: none;
-  }
-
-  .left .logo-group {
-    display: flex;
-  }
-
-  .middle {
-    display: none;
-  }
-
-  .right {
-    display: flex;
-  }
-}
- 
 
 /***DESKTOP***/
 
-@media screen (min-width: 1024px) {
+@media (min-width: 992px) {
+  
+  .left {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    }
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  
+
 
 }
 
