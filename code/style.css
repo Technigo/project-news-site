@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /** HEADER **/
 
 .header {
@@ -12,7 +16,6 @@ body {
   display: flex;
   align-items: center;
   padding: 0 10px;
-  box-sizing: border-box;
   border: 10px solid white;
   box-shadow: 1px 3px 5px rgba(117, 157, 158, 0.2);
 }
@@ -35,7 +38,8 @@ body {
 
 .top-heading {
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
 }
 
 .top-heading:hover {
@@ -43,7 +47,7 @@ body {
 }
 
 .logo {
-  width: 40px;
+  width: 50px;
   order: 1;
   margin-left: auto;
 }
@@ -83,8 +87,39 @@ a {
 
  .news-type .type {
    margin-left: 10px;
+   font-size: 12px;
  }
- 
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: solid 2px #fff;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.footer-link:hover{
+  color: pink;
+}
+
+/** NEWS CARDS**/
+
+.big-news .news-card {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+.other-news .news-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 .polaroid {
   padding: 10px;
@@ -105,44 +140,7 @@ a {
   font-size: 12px;
 }
 
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  border-top: solid 2px #fff;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #000;
-  font-size: 12px;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
-.footer-link:hover{
-  color: pink;
-}
-
-/** BIG NEWS **/
-
-.big-news .news-card {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 20px;
-}
-
-.big-news .news-card-pic {
-  width: 100%;
-}
-
-/** OTHER-NEWS **/
-
-.other-news .news-card {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.other-news .news-card-pic {
+.news-card-pic {
   width: 100%;
 }
 
@@ -170,10 +168,14 @@ a {
     display: flex;
     margin-left: auto;
   }
+
+  .navigation-item:last-child {
+    margin-right: 2px;
+  }
   
   .big-news .news-card {
     width: 100%;
-    height: 700px;
+    height: 650px;
   }
 
   .other-news {
@@ -188,32 +190,31 @@ a {
 }
   /** LAPTOP **/
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
 
-    .container {
-      width: 992px;
-    }
-
-    .big-news .news-card {
-      width: 100%;
-    }
-
-    .big-news .news-card .polaroid {
-      display: flex;
-      width: 100%;
-    }
-
-    .big-news .news-card .polaroid .news-card-pic {
-      width: 50%;
-      margin-right: 20px;
-    }
-
-    .big-news .news-card {
-      height: 350px;
-    }
-
-      .other-news .news-card {
-      width: 24.3%;
-    }
-
+  .container {
+    width: 992px;
   }
+
+  .big-news .news-card {
+    width: 100%;
+  }
+
+  .big-news .news-card .polaroid {
+    display: flex;
+    width: 100%;
+  }
+
+  .big-news .news-card .polaroid .news-card-pic {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .big-news .news-card {
+    height: 350px;
+  }
+
+    .other-news .news-card {
+    width: 24.3%;
+  }
+}
