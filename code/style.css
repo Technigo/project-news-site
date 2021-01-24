@@ -18,8 +18,8 @@ header {
   flex-direction: row;
   align-items: center;
   flex-flow: wrap;
-  border-top: 20px solid #f75590;
-  border-bottom: 20px solid #f75590;
+  border-top: 10px solid #f75590;
+ /* border-bottom: 20px solid #f75590; */
   
   
 }
@@ -27,6 +27,7 @@ header {
 .left {
   width: 40%;
   display: flex;
+  padding-left: 10px;
   
   
 }
@@ -37,7 +38,7 @@ header {
   height: 30px;
   flex-direction: column;
   justify-content: space-between;  
-  background: black;
+  background: #1b9aaa;
   padding: 10px 10px;  
 }
 
@@ -63,6 +64,8 @@ header {
 
 .middle .logo img {
   width: 60%;
+  padding-top: 5px;
+  
 }
 
 .right {
@@ -70,8 +73,14 @@ header {
 }
 
 .lower-menu {
-  display: none;
+  display: flex;
+  width: 100%;
+  background: #f75590;
 
+}
+
+li {
+  display: none;
 }
 
 
@@ -148,26 +157,34 @@ header {
     width: 90%;
   }    
 
+  li {
+    display: flex;
+    color: #fff;
+  }
+
 }
 
 
 /***DESKTOP***/
 
 @media (min-width: 992px) {
+
   
   .left {
     display: flex;
-    justify-content: center;
-    width: 70%;
+    justify-content: flex-start;
+    width: 60%;
     }
 
+ 
   .right {
     display: flex;
     justify-content: space-around;
+    align-self: flex-start;
     width: 30%;
   }
 
-  
+ 
 
 
 }
