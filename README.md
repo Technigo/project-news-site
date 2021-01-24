@@ -11,6 +11,6 @@ The resources and techniques where provided by Technigo (and of course google) n
 
 
 ## View it live
-View it on Netlify - https://project-news-site-abirdseyeview.netlify.app/
+View it on Netlify - https://project-news-site-abirdseyeview.netlify.app/code
 
 just have to sort out the Page Not Found... problem
