@@ -1,6 +1,6 @@
 # News Site
 
-Project 2 in Technigo 2021 - create a News site
+Project 2 Technigo 2021 - create a News site
 
 ## The problem
 
