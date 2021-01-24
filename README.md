@@ -14,4 +14,5 @@ If I had more time I would do some more design codeing in the small news. The im
 
 
 ## View it live
-https://cocky-bhaskara-071ef4.netlify.app
+
+https://cocky-bhaskara-071ef4.netlify.app/code/
