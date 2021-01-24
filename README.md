@@ -1,12 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Technigo Bootcamp assignment: To create a classic magazine or newspaper site with focus on responsive design and flexbox. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by making a pencil sketch of the overall website design. 
+
+The images  and content originates from an earlier blog project. 
+
+Next I will work through the design, adding links and improve the code. As well as adding animations and practice using CSS-Grid.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Published on Netlify: 
+
+https://inspiring-swirles-a7e2b7.netlify.app/
