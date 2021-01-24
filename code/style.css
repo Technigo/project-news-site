@@ -1,4 +1,325 @@
 html {
-  background: #0025ff;
+  background: #3098b5;
+  color: #000;
+  font-family: 'Poppins', sans-serif;         
+}
+
+/* BODY STYLE */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 h2 h3 p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  width: 320px;
+  margin: 25px auto;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #3056b5;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 75px;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  font-size: 20px;
+}
+
+.navigation-item {
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation-item:hover {
+  font-weight: bold;
+}
+
+/* WELCOME SECTION */
+
+.welcome-container {
+  width: 320px;
+  margin: 25px auto;
+}
+
+.welcome-news .welcome-container {
+  width: 80%;
+  height: 400px;
+}
+
+.welcome-news {
+  background:#3056b5; 
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.welcome-image {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.welcome-image:hover {
+  box-shadow: 5px 10px 8px; 
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  margin: 30px 0 30px 0;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.welcome-text {
+  width: 80%;
+}
+
+/* POEM NEWS SECTION */
+
+.poem-news .container {
+  width: 100%;
+  height: 400px;
+}
+
+.poem-news {
+  background: #30b58f; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  }
+
+.poem-image {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.poem-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+.poem-card::after {
+  content: "";
+  border-radius: 40px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 10);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+/* Scale up the poem-card */
+.poem-card:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.poem-card:hover::after {
+  opacity: 1;
+}
+
+.poem-card:nth-child(1){
+  background: #b53056;
   color: #fff;
 }
+
+.poem-card:nth-child(8) {
+  margin-bottom: 30px;
+}
+
+.poem-text {
+  width: 80%;
+  font-family: 'Esteban', serif;
+}
+
+@media (min-width: 768px) {
+  
+  .container {
+    width: 80%;
+  }
+
+  /* HEADER TABLET */
+
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+  }
+  
+  .navigation-item {
+    margin-right: 20px;
+  }
+  
+  .navigation-item:last-child {
+    margin-right: 0;
+  }
+    
+  /* WELCOME SECTION TABLET */
+
+  .welcome-container {
+    width: 768px;
+  }
+
+  .welcome-card {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 700px;
+  }
+
+  .welcome-image {
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .welcome-text {
+    width: 45%;
+    padding-right: 20px;
+  }
+
+  /* POEM SECTION TABLET */
+
+  .poem-news .poem-card {
+    width: 40%;
+    height: 400px;
+  }
+
+  .poem-news {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .poem-card {
+    margin-top: 40px;
+  }
+
+  .poem-card:nth-child(7) {
+    margin-bottom: 30px;
+  }
+}
+
+  @media (min-width: 992px) {
+    
+    .container {
+      width: 90%;
+      padding: 40px;
+    }
+
+    /* HEADER SMALL DESKTOP */
+
+    .logo {
+      width: 100px;
+    }
+
+    /* WELCOME SECTION SMALL DESKTOP */
+
+    .welcome-container {
+      width: 992px;
+    }
+  
+    .welcome-card {
+      width: 90%;
+    }
+  
+    .welcome-image {
+      margin: 0 0 0 20px;
+    }
+
+    /* POEM SECTION SMALL DESKTOP */
+
+    .poem-news .poem-card {
+      width: 23%; 
+      height: 450px;
+    }
+
+    .poem-card:nth-child(7) {
+      margin-bottom: 0;
+    }
+
+    .poem-card:nth-child(8) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    /* WELCOME SECTION LARGE DESKTOP */
+
+    .welcome-container {
+      width: 1200px;
+    }
+  
+    .welcome-card { 
+      height: 500px;
+      margin: 40px 0;
+    }
+  
+    .welcome-image {
+      width: 45%;
+    }
+  
+    .welcome-text {
+      width: 45%;
+      padding-right: 20px;
+    }
+  }
+
+
+
