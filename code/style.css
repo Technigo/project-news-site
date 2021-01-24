@@ -6,139 +6,117 @@ html {
 background: #FFF; 
 }
 
-.container {
-	width: 300px;
-	margin: 25px auto;
+body {
+	margin: 0;
 }
+
+	.container {
+		width: 300px;
+		margin: 25px auto;
+	}
 
 h1:hover {
 	color: #ff073a; 
 }
 
 /*HEADER*/
-.coreNavigation {
-	background-image: url("../img/logo-unsplash.png");
-	border: 3px solid black; /*'''''''''''''''''''''''''''TAKE AWAY*/
-	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
-	font-weight: 700; 
-	display: flex;
-	justify-content: space-between;
-}
+	.coreNavigation {
+		background-image: url("../img/logo-unsplash.png");
+		font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+		font-weight: 700; 
+		display: flex;
+		justify-content: space-between;
+	}
 
-.desktop-menu-top, .nav-item {
-	display: flex;
-	flex-direction: row;
-}
+	.menu-top, .nav-item {
+		display: flex;
+		flex-direction: row;
+	}
 
-.nav-item {
-	margin-left: 10px;
-	margin-top: 5px;
-}
+	.nav-item {
+		margin-left: 10px;
+		margin-top: 5px;
+	}
 
-.button {
-	margin-right: 10px;
-	margin-top: 5px;
-}
-/* todo: ADD HOVER ON BUTTON 1 and BUttoN 2*/
-.button1, .button2 {
-border: solid #212529; /*change later border: none; &&&&& one color background color: ; */
-margin: 2px 2px;
-padding: 5px 5px;
-color: #212529;
-font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
-font-size: 12px;
-text-align: center;
-text-decoration: none;
-display: inline-block; 
-cursor: pointer;
-}
+	.nav-item:hover {
+		color:blue;
+	}
 
-/*BIG-NEWS-CONTAINER*/
+	.button {
+		margin-right: 10px;
+		margin-top: 5px;
+	}
 
-.big-news {
-	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-}
+	.button1, .button2 {
+		border: 1px solid #212529;
+		margin: 2px 2px;
+		padding: 5px 5px;
+		color: blue;
+		font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+		font-size: 12px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block; 
+		cursor: pointer;
+	}
 
-.news-card {
-	width: 100%; 
-	margin-top: 20px; 
-	margin-bottom: 10px;
-	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-}
+	.button1:hover, .button2:hover {
+		background: #ced4da;
+	}
 
-.photo-bar {
-	width: 100%;
-	/*NEW FROM HERE CSS images same size ---> DELETE?? -------------------------------*/
-	object-fit: cover;
-	object-position: 10% 10%;
-}
+	.big-news {
+		font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+	}
 
+	.news-card {
+		width: 100%; 
+		margin-top: 20px; 
+		margin-bottom: 10px;
+		font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+	}
 
-.photo-bar:hover {
-background: #fff;
-padding: 1rem;
-box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); /*CHANGE COLOR*/
-transition: 1s; 
-}
+	.photo-bar {
+		width: 100%;
+		object-fit: cover; 
+		object-position: 10% 10%;
+	}
 
-.text {
-	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-	color: #212529;
-	line-height: 1.6;
-	padding: 25px 50px 25px 50px; /*CHECK IF THIS REALLY WORKS*/
-	overflow-wrap: break-word; /*CHECK IF tHIS RALLY WORKS*/
-}
+	.photo-bar:hover {
+		background: #adb5bd;
+		padding: 1rem;
+		box-shadow: 0 0.2rem 1.2rem #FF3B62;
+		transition: 1s; 
+	}
 
-.more-news {
-	font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
-}
+	.text {
+		font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+		color: #212529;
+		line-height: 1.6;
+		margin: 5px 10px; 
+	}
 
-footer { /*THIS DOES NOT WORK*/
+	/*MORE NEWS CONTAINER*/
+	.more-news {
+		font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+	}
+
+	.other-news {
+		font-family: 'EB Garamond', 'Helvetica', 'Arial', 'sans-serif';
+	}
+
+footer { 
 	height: 100px;
 	border: 3px solid #212529;
 	display: flex;
 	justify-content: space-between;
-} /*for MOBILE VIEW it could be something like width:30%; */
-
-.desktop-menu-bottom {
-	display: flex;
-	flex-direction: column;
-	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
-	font-weight: 700; 
 }
 
-.desktop-menu-bottom .text {
-	overflow-wrap: break-word; /*CHECK IF THIS RALLY WORKS*/
-}
-
-
-/* MOBILE is always an INLINE ELEMENT*/
-.mobile-menu-top {
-	display: block;
-}
-
-.mobile-menu-bottom {
-	display: block;
-}
-
-.desktop-menu-top {
-	display: none;
-}
-
-.desktop-menu-bottom {
-	display:none;
-}
-
-/*CHANGE THIS IN RELATION TO HAVING A MOBILE MENU? What is targeted under mobile menu?*/
-@media (min-width: 1200px) {
-	.mobile-menu {
-		display: none;
-	}
-
-	.desktop-menu {
+	.menu-bottom {
 		display: flex;
+		flex-direction: column;
+		font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
+		font-weight: 700; 
 	}
-}
 
 /*TABLET*/
 @media (min-width: 768px) {
@@ -177,7 +155,7 @@ footer { /*THIS DOES NOT WORK*/
 	}
 	
 	.text {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
@@ -207,5 +185,4 @@ footer { /*THIS DOES NOT WORK*/
 	}
 }
 
-/*BIG DESKTOP*/ 
 
