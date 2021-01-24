@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was the project of week 2 at Technigo Boot camp. We were supposed to make our own news site about something, I chose to make a news site about training.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had a lot of problem because this is all new to me, but the mort challenging was to make a responsive design. It was also difficult to get used to flexbox and the box model, but with help from my team and many late nights I finished it in the end. If I had more time I would have done some things different, for exemple I would have tried "mobile first". I would also have made a footer and tryed out more effects.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
