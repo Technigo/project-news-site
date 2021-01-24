@@ -1,4 +1,11 @@
 .footer {
   height: 200px;
   background-color: var(--secondaryColorNormal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: var(--primaryColorDarker);
+  font-size: var(--small);
+  padding: calc(var(--spacing) * 4);
 }
