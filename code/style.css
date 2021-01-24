@@ -11,7 +11,7 @@ body {
 
 /* HEADER */
 
-header {
+.header {
   width: 90%;
   margin: auto;
   display: flex;
@@ -156,10 +156,9 @@ nav {
   width: 100%;
   background-color: #8a7be7;
   text-align: center;
-  /* box-shadow: 12px 12px black; */
+  box-shadow: 12px 12px black;
   margin-bottom: 25px;
   transition: 0.5s ease;
-  border: 2px solid black;
 }
 
 .news-item:hover {
@@ -219,7 +218,6 @@ nav {
   font-size: 12px;
   bottom: 1em;
   left: 1em;
-
 }
 
 .interview-img {
@@ -324,7 +322,7 @@ nav {
 
 @media (min-width: 1025px) {
 
-  header {
+  .header {
     flex-direction: row;
     justify-content: space-between;
     padding: 25px;
