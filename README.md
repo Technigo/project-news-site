@@ -13,3 +13,5 @@ I started to plan on how I would approach the project by writing down the tasks 
 If I had more time I would like to start over one more time just to practice more on flexbox and the responsive design. I would also like to fix the title for the big news section so it will “follow” the position of the picture in all different sizes. Maybe I would have added a different layout for the big desktop size as well.
 
 ## View it live
+
+https://unruffled-ptolemy-f1d903.netlify.app
