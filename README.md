@@ -1,12 +1,15 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a responsive news site using HTML and CSS. Topic of this site is how to create work-life balance.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I was curious about using css grid and understanding the difference between it and the flex-box layout. My plan therefore started with the desktop-view, trying to fix a grid. From there everything became complicated :) 
+
+My approach trying to solve the issues was to look up different forums like stackoverflow, w3school, youtube etc. If I had planned more carefully I think that my css code hadn't been as repetitive as it is now. Next time I will probably think more about rewriting the whole code, not just bits and pieces.  
+
+If I had more time I would do some more research about width/height and responsiveness because I haven't really got a grip of it yet. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://gallant-kare-a8121c.netlify.app
