@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>The Good News Co</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,39 +12,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-      <nav>
-        <h1>Good News Only</h1>
-        <p>Puppies</p>
-        <p>Kittens</p>
-        <p>Other Baby Animals</p>
-        <p>Contact</p>
+  
+ <!-- HEADER SECTION -->
+
+    <header class = "header-section"> 
+      <nav class="navbar">
+        <div class="titlelogo">
+          <img class="logo" src="logo.svg">
+          <h1 class = "main-heading"> The Good News Co </h1>
+        </div>
+        <div class="nav-menu">
+          <span style="cursor:pointer"> <p>Cute stuff</p></span><br>
+          <span style="cursor:pointer"> <p>Stories</p></span><br>
+          <span style="cursor:pointer"> <p>Health</p></span><br>
+          <span style="cursor:pointer"> <p>Contact</p></span><br>
+        </div>
       </nav>
     </header>
+    
+  <!-- BIG NEWS SECTION -->
 
     <section class="big-news">
-      <!-- The big news content -->
+      <section class="main-image">  
       <img src="Lostdog.jpg" />
+    </section>
       <section class="big-news-text">
-        <h2>STORA NYHETEN</h2>
-        <h4>You can never believe what happened next!!! Read more here.....</h4>
+        <h2 class = "big-news-heading"> DOG BACK HOME AFTER 1 YEAR </h2>
+        <h4 class = "big-news-subheading"> we love stories with happy endings!!</h4>
+        <p class="big-news-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
       </section>
     </section>
 
-    <hr />
+  <!-- HORISONTAL RULE  -->
+
+    <hr class="hr1" />
+
+  <!-- NEWS SCROLL SECTION  -->
 
     <section class="news-scroll">
-      <!-- The other news  -->
-      <p>Nyhet 1</p>
-      <img src="pomegranate.jpg" />
-      <p>Nyhet 2</p>
-      <img src="apple.jpg" />
-      <p>Nyhet 3</p>
-      <img src="pills.jpg" />
-      <p>Nyhet 4</p>
-      <img src="strawberries.jpg" />
+          <div class="news-card">
+            <img src="pomegranate.jpg" />
+        <p>Pomegranate is the BEST thing</p>       
+      </div>
+      <div class="news-card">
+        <img src="apple.jpg" />
+        <p>5 things you didn't know about apples</p>
+      </div>
+      <div class="news-card">
+        <img src="pills.jpg" />
+        <p>Curious about alternative medicine?</p>
+      </div>
+      <div class="news-card">
+        <img src="strawberries.jpg" />
+        <p>The 10 most nutritious summer foods</p>
+      </div>
     </section>
-    <footer><strong> &copy; Good News Co 2021 </strong></footer>
+    <footer class="footer"><strong> &copy; Good News Co 2021 </strong></footer>
   </body>
 </html>
