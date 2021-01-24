@@ -18,4 +18,4 @@ If I hade more time i would explore different solution with flexbox and grid to 
 The images comes from www.unsplash.com and are freely-usable images. The logo is made by Freepik from www.flaticon.com and are free to use if you credit the designer
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://flamboyant-minsky-06ee7c.netlify.app/?fbclid=IwAR2dzey3uaEGxEFBKEY51au-yAgR1PyCqZQAxY5piQC73QXe_a6vYKLH8zQ
