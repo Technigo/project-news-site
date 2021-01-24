@@ -1,5 +1,4 @@
 html {
-  color: #000;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -16,6 +15,8 @@ h1 {
 
 h2 {     
   letter-spacing: 2px;
+  font-size: 30px;
+  margin-left: 16px;
 }
 
 h3 {
@@ -83,14 +84,6 @@ h3 {
   color: rgb(189, 189, 189);
 }
 
-.social-media {
-  display: none;
-}
-
-.social-media a svg:hover {
-  fill: rgb(61, 61, 61);
-}
-
 .ham {
   margin-left: auto;
   background-color: transparent;
@@ -132,11 +125,28 @@ h3 {
   left: 0px;
 }
 
-/*** RESPONSIVE IMAGE ***/
+.social-media {
+  display: none;
+}
 
-.responsive-image {
-  width: 100%;
-  height: auto;
+.social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-media a:hover, .social-media a:focus {
+  color: rgb(189, 189, 189);
+}
+
+
+/*** MAIN ***/
+
+main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -147,12 +157,22 @@ h3 {
 }
 
 
-/*** BIG NEWS ***/
+/*** RESPONSIVE IMAGE ***/
 
-main {
-  width: 90%;
-  margin: auto;
+.responsive-image {
+  width: 100%;
+  height: auto;
 }
+
+/*** LINKS ***/
+
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*** BIG NEWS ***/
 
 .big-news {
   padding: 0px;
@@ -168,28 +188,23 @@ main {
   box-shadow: 5px 5px #e7e6e6;
 }
 
-.big-news-text {
-  margin-left: 16px;
-}
-
 .big-news-text p {
   font-weight: bold;
   letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 16px;
 }
 
-.container a {
-  text-decoration: none;
-  color: #000;
-}
 
 /*** OTHER NEWS ***/
 
-.other-news {
+.other-news {    
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
-.other-news .container {      /*Can I make the images in the other news section smaller than the big news image? */
+.other-news .container {      
   padding: 30px 16px;
   display: flex;
   flex-direction: column;
@@ -206,7 +221,7 @@ footer {
   background: #000;
   height: 150px;
   width: 100%;
-  margin: 0;
+  margin: 0px;
   padding-top: 20px;
 }
 
@@ -219,7 +234,6 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: #fff;
   padding: 30px 16px;
 }
 
@@ -243,7 +257,7 @@ footer a {
   height: 25%;
 }
 
-.container-social-media img {
+.container-social-media svg {
   margin-right: 3px;
 }
 
@@ -251,23 +265,14 @@ footer a {
   color: rgb(189, 189, 189);
 }
 
-.container-social-media svg:hover {
-  fill: rgb(61, 61, 61);
-}
-
 
 /*** MEDIA QUERIES ***/
 
-/* Tablet - only include the elements that I want to behave 
-differently on this specific device */
-@media (min-width: 667px) { 
+/* Tablet */
+@media (min-width: 768px) { 
   .header {
     justify-content: space-between;
   } 
-
-  .ham {
-    display: none;
-  }
 
   .navigation {
     display: inline-block;
@@ -275,20 +280,22 @@ differently on this specific device */
     margin-left: auto;  
   }
 
-  .social-media {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 16px;
-    margin-left: 20px;  
+  .ham {
+    display: none;
   }
 
   .hamburger {
     display: none; 
   }
 
+  .social-media {
+    display: inline-block;
+    margin-right: 16px;
+    margin-left: 20px;  
+  }
+
   main {
     width: 70%;
-    margin: auto;
   }
 
   .big-news {
@@ -303,6 +310,7 @@ differently on this specific device */
     padding: 30px 16px;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .other-news .container {
@@ -310,23 +318,24 @@ differently on this specific device */
     flex: 1 1 30%;
     margin: 10px;
   }
-
 }
 
-/* Desktop - only include the elements that I want to behave 
-differently on this specific device, remember that code for 
-tablet lies in the background */
-@media (min-width: 1025px) { 
 
+/* Small desktop */
+@media (min-width: 992px) { 
+  .other-news .container {
+    flex: 1 1 15%;
+  }
+}
+
+
+/* Big desktop */
+@media (min-width: 1200px) { 
   main {
     width: 60%;
-    margin: auto;
   }
 
   .other-news .container {
-    align-items: center;
-    flex: 1 1 20%;
+    flex: 1 1 17%;
   }
-
 }
-
