@@ -1,124 +1,284 @@
-html {
-    /* background: #0025ff;
-  color: #fff; */
+/* här startar alex cod */
+
+body {
+    margin 0;
 }
 
-
-/*HEADER*/
+header {
+    box-shadow: 0px 4px 0px #000000;
+    height: 88px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-beetween;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0 0 48px 0;
+}
 
 .logo {
-    width: 50px;
-}
-
-.header {
+    width: 200px;
     display: flex;
-    justify-content: space-between;
+    flex-grow: 10;
 }
 
-.nav-bar {
-    display: flex;
+.logo--square {
+    margin-right: 16px;
 }
 
-.nav-item {
-    align-items: baseline;
-    margin-right: 30%;
+header a {
+    margin-left: 24px;
 }
 
-.nav-item .last-child {
-    margin-right: 0px;
-}
-
-
-/*SECTION HEAD-NEWS*/
-
-.head-news {
-    display: flex;
-}
-
-
-/*SECTION BIG NEWS CONTAINER*/
-
-.news-card {
-    width: 100%;
-    height: 100%;
-    background: pink;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.big-news-container {
+.hamburger {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 40px;
+    right: 40px;
 }
 
-@media (min-width: 768px) {
-    .big-news-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+.hamburger div {
+    width: 30px;
+    height: 5px;
+    background: #000000;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.hamburger :hover {
+    background: greenyellow;
+}
+
+
+/* Code that changes the order and appearance of the header below */
+
+
+/* smartphone */
+
+@media only screen and (max-width: 767px) {
+    header a {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    header .logo {
+        flex-grow: 0;
+    }
+}
+
+
+/* tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .logo--text {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between
+    }
+    /* I am so trying to figuere out why the logo dosen't go the way I need it to so I took it away*/
+    .nav1 {
+        order: 1;
+    }
+    .nav2 {
+        order: 2;
+    }
+    .nav3 {
+        order: 4;
+    }
+    .nav4 {
+        order: 5;
+    }
+    header {
         justify-content: space-between;
     }
-    .news-card {
-        width: 45%;
-    }
-}
-
-@media (min-width: 992px) {
-    .big-news-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .news-card {
-        width: 22.5%;
-    }
 }
 
 
-/*FIXED BREAK POINT - BUT DOSENT'T WORK FOR MORE THAN MOBIL*/
+/* =========== HOVER AND STUFF =========== */
 
-@media (max-width:767px) {
-    .news-card {
-        background: green;
-        width: 100%;
-        height: 200%;
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.15s;
+    box-shadow: 0px 4px 0px #1732cc;
+}
+
+a:hover {
+    color: #f3b94e;
+    box-shadow: 0px 8px 0px #f19443;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 8px;
+    /* padding-bottom: 16px; */
+}
+
+.redlink {
+    font-family: 'PT Sans', sans-serif;
+    ;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.credits {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.20);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/* ======CONTENT =======*/
+
+.grid-container {
+    display: grid;
+    grid-gap: 48px 20px;
+    margin-bottom: 120px;
+}
+
+
+/* smartphone */
+
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 16px;
     }
 }
 
-@media (min-width:768) and (max-width:991px) {
-    .news-card {
-        background: yellow;
-        width: 100%;
-        height: 200%;
-    }
-}
 
-@media (min-width:992) and (max-width:1199px) {
-    .news-card {
-        background: silver;
-        width: 100%;
-        height: 200%;
-    }
-}
+/* tablet */
 
-@media (min-width:1200) {
-    .news-card {
-        background: red;
-        width: 100%;
-        height: 200%;
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
-/*OVERLAP BREAKPONT / MOBIL FIRST APPROACH
+/* desktop */
 
-.news-card {
-    background: green;
+@media only screen and (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.pagecontainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    padding: 0 0 40px 0;
+}
+
+.grid-container .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 24px 0;
+}
+
+.topstory {
+    display: flex;
+    margin-bottom: 64px;
+    box-shadow: 0px 4px 0px #000000;
+}
+
+main img {
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.topstory img {
+    width: 50%;
+    margin-right: 24px;
+}
+
+.topstory--rightcol {
+    width: 50%;
+}
+
+.topstory--linkbox {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+[class^='card small'] img {
     width: 100%;
-    height: 200%;
+    height: 160px;
 }
 
-@media (min-width: 768px) {
-    .news-card {
-        background: yellow;
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* I really don' know how everything fits togheter */
+
+
+/* tablet and smartphone */
+
+@media only screen and (max-width: 992px) {
+    .topstory--rightcol p {
+        height: 0px;
+    }
+    .topstory img,
+    .topstory--rightcol {
+        width: 100%;
+    }
+    .topstory {
+        flex-direction: column;
+    }
+    .pagecontainer {
+        padding: 0 20px 0 20px;
+    }
+    header a {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: px) {
+    .pagecontainer {
+        padding: 0 20px 0 20px;
     }
 }
