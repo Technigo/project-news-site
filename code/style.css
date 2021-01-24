@@ -100,25 +100,25 @@ h3 {
   position: relative;
 }
 
-.hamburger div {
+.hamburger span {
   width: 30px;
   height: 4px;
   background: #fff;
   border-radius: 25%;
 }
 
-.close-menu div:nth-child(1) {
+.close-menu span:nth-child(1) {
   transform: rotate(135deg);
   position: absolute;
   top: 10px;
   left: 0px;
 }
 
-.close-menu div:nth-child(2) {
+.close-menu span:nth-child(2) {
   display: none;
 }
 
-.close-menu div:nth-child(3) {
+.close-menu span:nth-child(3) {
   transform: rotate(-135deg);
   position: absolute;
   top: 10px;
