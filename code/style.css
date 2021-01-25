@@ -57,6 +57,13 @@ html {
   width: 30%;
 }
 
+.shadow-1 {
+  width: 80%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 0 20px 0 black;
+}
+
 .big-news-text {
   margin: 5px;
   width: 70%;
@@ -205,6 +212,12 @@ a:visited {
     grid-gap: 5px;
   }
 
+  .shadow-1 {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+  }
+
   .shadow {
     width: 100%;
     height: 300px;
@@ -285,6 +298,12 @@ a:visited {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+  }
+
+  .shadow-1 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
 
   .grid-container {
