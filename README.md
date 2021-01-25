@@ -15,4 +15,4 @@ If I had more time I would like to spend it on the "other-news" section. I am no
 
 ## View it live
 
-https://reverent-torvalds-0f69ea.netlify.app/
+https://wheeeeklynews.netlify.app/
