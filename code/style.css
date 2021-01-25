@@ -94,6 +94,7 @@ li {
   flex-direction: column;
   background: #73d2de;
   border-radius: 20px;
+  box-shadow: 12px 12px 0 0 #ffdd87;
   
 }
 
@@ -121,7 +122,7 @@ li {
   flex-direction: row;
   justify-content: center;
   border-radius: 20px;  
-  margin-top: 1rem;
+  margin-top: 2rem;
   
  }
 
@@ -154,6 +155,11 @@ li {
 footer {
   width: 100%;
   background: #f75590;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
 }
 
 
@@ -217,6 +223,10 @@ footer {
 
   /*BIG NEWS TABLET*/
 
+  .news-wrapper {
+    margin: 0 1rem;
+  }
+
   .big-news-container .container {
     flex-direction: row;
     align-items: center;
@@ -237,7 +247,8 @@ footer {
   .other-news-container .other-articles a {
     width: 40%;
     margin-right: 2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    
   }
 
 }
@@ -267,8 +278,31 @@ footer {
     margin-bottom: 2rem;
   }
 
+  .button {
+    background-color: #f75590;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: #1b9aaa;
+    color: #ffc43d;
+  }
+
   .lower-menu {
     font-size: 20px;
+  }
+
+  li:hover {
+    color: #ffc43d;
   }
 
   /*BIG-NEWS DESKTOP*/
@@ -281,7 +315,7 @@ footer {
   }
 
   .big-news-container .container img {
-    align-self: stretch;
+    align-self: center;
     }
 
   /*OTHER-NEWS DESKTOP*/
