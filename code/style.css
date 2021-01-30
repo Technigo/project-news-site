@@ -1,23 +1,15 @@
-/****html {
-  background: #7886d6;
-  color: rgb(42, 12, 92);
-}
-******/
-
 body {
   background: #7886d6;
   color: rgb(42, 12, 92);
 }
 
 /***************   HEADER    ************/
-
 header {
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15px; 
-    
    }
 
 h2 {
@@ -36,21 +28,20 @@ header img {
 
 nav {
   padding: 20px;
-   
 }
 
 nav a {
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     text-decoration: none;
     margin-left: 10px;
   }
 
 /* NAV bar*/
 .sticky {
-  
   position: fixed;
   width: 92%;
+  height: 80px;
   background: navy;
   display: flex;
   justify-content: right;
@@ -58,9 +49,7 @@ nav a {
   box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
   }
 
-  
 /**************  MAIN NEWS     ****************/
-
 .big-news-container {
     padding: 100px, 10px;
     margin: 8px;
@@ -72,7 +61,6 @@ nav a {
     width: 100%;
     border: 2px solid black;
     box-shadow: 2px 5px 2px 2px rgba(34, 33, 33, 0.4);
-
 }
 
 .main-news {
@@ -92,18 +80,14 @@ nav a {
   flex-grow: 1;
 }
 
-
 /****** OTHER NEWS     *****************/
 .flex-parent {
-  /*border: 2px solid blue;*/
   height: 100%;
-  display : flex;
-  justify-content: center space-between 2px space-around 2px;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 5px;
 }
-
 
 .flex-child {
   border: 1px solid rgb(21, 10, 51);
@@ -114,27 +98,22 @@ nav a {
   width: 100%;
   height: 100%;
   flex-grow: 1;
-  
-  }
-
-
-
+}
 
 .flex-child img {
   padding: 2px;
   box-shadow: 1px 2px 1px 1px rgba(63, 20, 59, 0.4);
-
   width: 50%;
-  
 }
 
 .flex-child img:hover{
+  width: 46%;
   border: 3px solid rgb(251, 5, 190);
-  
   padding: 10px;
   margin: 5px;
   box-shadow: 2px 5px 2px 2px rgba(80, 5, 72, 0.4);
-
+  transition: 1s;
+  cursor: pointer;
 }
 
 a {
@@ -147,7 +126,6 @@ a {
 }
 
 /****************  FOOTER*****************/
-
 .footer {
   display: flex;
   background:rgb(2, 123, 128);
@@ -157,38 +135,30 @@ a {
   padding: 15px;
   border: 2px solid rgb(1, 30, 44);
   box-shadow: 2px 5px 2px 2px rgba(2, 58, 80, 0.4);
-  
-
 }
 
 h5 {
   color:  rgb(27, 16, 75);
 }
 
-
-
-
-
 /******************  MEDIA QUARIES  *********************/
-
-
 @media(min-width: 768px) {
    
   nav a {
     font-size: 12px;
-    }
+  }
       
   .big-news-container {
       flex-direction: row;
-    }
+  }
 
   .big-news-container img {
       width: 60%;
-    }
+  }
 
   .big-news-child {
       max-width: 350px;
-    }
+  }
 
   .flex-child {
     width: 40%;
@@ -200,9 +170,7 @@ h5 {
   }
 }
 
-
 @media(min-width: 1200px) {
-  
   .sticky {
     width: 97%;
   }
@@ -225,17 +193,19 @@ h5 {
   }
 
   .big-news-container img {
-    width: 70%;
-    }
+    width: 550px;
+    height: 450px;
+    object-fit: cover;
+  }
   
   .big-news-child {
     width: 100%;
-    max-width: 600px;
-    }
+    max-width: 1200px;
+  }
   
   .main-news {
     font-size: 22px;
-   }
+  }
 
   .flex-child {
     width: 22%;
@@ -245,5 +215,4 @@ h5 {
   .flex-child img {
     width: 50%;
   }
-
 }
