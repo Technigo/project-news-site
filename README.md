@@ -9,4 +9,4 @@ first I made a sketch on a piece of paper to figure out what my layout would loo
 If I had more time, I would have liked to try to add some animation to my project. I'm not sure if the page is responsive now, but I hope so, but I would have liked to be completely sure. I still have not understood how to make the pictures and boxes stop growing.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://quizzical-fermi-345eed.netlify.app
