@@ -11,192 +11,204 @@
 <body>
   <!--Header with nav-bar, background and animation-->
   <header class="header">
-    <!--navbar with links and searchbar, collapses on mobile devices-->
-    <nav class="nav">
-      <input type="checkbox" id="checkbox">
-      <label for="checkbox"><a class="menu-button"></a>
-      </label>
-      <div class="menu-content">
-        <a href="contacts.html" target="blank">contact</a>
-        <a href="about.html" target="blank">about</a>
-        <a href="signup.html" target="blank">sign up</a>
-        <a href="login.html" target="blank">login</a>
-      </div>
+    <div class="nav-wrapper">
+      <!--navbar with links and searchbar, collapses on mobile devices-->
+      <a class="menu-button"></a>
+      <nav class="nav">
+        <a href="contacts.html" target="_blank">contact</a>
+        <a href="about.html" target="_blank">about</a>
+        <a href="signup.html" target="_blank">sign up</a>
+        <a href="login.html" target="_blank">login</a>
+      </nav>
       <div class="search-content">
-        <input type="checkbox" id="searchbox">
+        <img class="search-button" src="./pictures/magnify.png">
         <div class="searchbar">
           <input type="text" placeholder="Search..">
         </div>
-        <label for="searchbox">
-          <img class="search-button" src="./pictures/magnify.png">
-        </label>
-    </nav>
+      </div>
+    </div>
     <!-- meteor animation -->
     <div class="meteor"></div>
     <!-- logo, normal and simpler version for mobile devices-->
-    <div class="logo"><img src="./pictures/logo_space.svg"></div>
-    <div class="logo-simple"><img src="./pictures/logo_space_simple.svg"></div>
+    <div class="logo">
+      <img src="./pictures/logo_space.svg">
+    </div>
+    <div class="logo-simple">
+      <img src="./pictures/logo_space_simple.svg">
+    </div>
   </header>
 
   <!--Top news, the most important news. Take up big space and top of the content-->
   <section class="big-news">
-    <container class="big-img-container">
+    <div class="big-img-container">
       <img src="./pictures/astronaut.jpg">
-    </container>
-    <container class="big-text-container">
+    </div>
+    <div class="big-text-container">
       <h2>TOP NEWS</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut eligendi,
-        rerum placeat, quibusdam recusandae saepe reiciendis! Magni minus repudiandae eligendi sequi minima!
-        <br>
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>
-        <a href="https://www.nasa.gov/" target="blank">&gt; Keep reading &lt;</a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
+        eligendi,rerum placeat,
+        quibusdam recusandae saepe reiciendis! Magni minus repudiandae eligendi sequi minima!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <a class="links" href="https://www.nasa.gov/" target="_blank">&gt; Keep reading &lt;</a>
       </p>
-    </container>
+    </div>
   </section>
 
   <!-- Section with all the lesser news. Many more and smaller with less text than the top news-->
   <section class="small-news">
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/SLSmegarocket.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>NASA test-fires SLS engines</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjh wkhk hgwkhkw hklhglw<br>
-        <a href="a" target="blank">More -&gt;</a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjh wkhk hgwkhkw hklhglw
+        <a class="links" href="a" target="__blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/WilliamThornton.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Astronaut William Thornton dead</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw<br>
-        <a href="b" target="blank">More -&gt;</a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw
+        <a class="links" href="b" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/nicholaspatrick.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><a href="c" target="blank">More
-          -&gt;</a>
+        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis!
+        <a class="links" href="c" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/shuttle.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat <br><a href="d" target="blank">More -&gt;</a>
+        eligendi, rerum placeat
+        <a class="links" href="d" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/spiral.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam <br><a href="e" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam
+        <a class="links" href="e" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/tracycaldwell.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam <br><a href="f" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam
+        <a class="links" href="f" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/SLSmegarocket.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>NASA test-fires SLS engines</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjh wkhk hgwkhkw hklhglw<br>
-        <a href="g" target="blank">More -&gt;</a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjh wkhk hgwkhkw hklhglw
+        <a class="links" href="g" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/WilliamThornton.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Astronaut William Thornton dead</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw<br>
-        <a href="h" target="blank">More -&gt;</a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. jewhjkklhwk jhekjhwkhk hgwkhkwhklhglw
+        <a class="links" href="h" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/sun.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis! <br><a href="i" target="blank">More
-          -&gt;</a>
+        eligendi, rerum placeat, quibusdam recusandae saepe reiciendis!
+        <a class="links" href="i" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/nicholaspatrick.jpg">
-      </container>
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat <br><a href="j" target="blank">More -&gt;</a>
+        eligendi, rerum placeat
+        <a class="links" href="j" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/ISS640px.jpg">
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam <br><a href="k" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam
+        <a class="links" href="k" target="_blank">More -&gt;</a>
       </p>
     </div>
     <div class="grid-wrapper">
-      <container class="small-img-container">
+      <div class="small-img-container">
         <img src="./pictures/columbia.jpg">
+      </div>
     </div>
     <div class="grid-wrapper">
       <h3>Small news</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id adipisci eum ipsa, facere atque ea a aut
-        eligendi, rerum placeat, quibusdam <br><a href="l" target="blank">More -&gt;</a>
+        eligendi, rerum placeat, quibusdam
+        <a class="links" href="l" target="_blank">More -&gt;</a>
       </p>
-      <a class="top-button" href="#top">^<br>^</a>
+    </div>
+    <a class="top-button" href="#top">
+      <p>^</p>
+      <p>^</p>
+    </a>
   </section>
 
   <!-- footer with Technigo logo and mt copywrigth-->
   <footer class="footer">
     <div class="footer-wrapper">
       <p>&copy; Pauline Andersson 2021</p>
-      <container class="footer-img-container">
+      <div class="footer-img-container">
         <img src="./pictures/logo.svg">
-        </contaier>
+      </div>
     </div>
   </footer>
 

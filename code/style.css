@@ -99,25 +99,48 @@ body {
   align-self: flex-end;
 }
 
+.nav-wrapper {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #f1df77 1px;
+  background-color: rgba(0, 0, 0, 0.425);
+}
 
 /* navigation bar sticky on top of the page, flex is used to place menu content and search bar on the navbar */
 .nav {
   display: flex;
   width: 100%;
-  height: 25px;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: solid #f1df77 1px;
-  background-color: rgba(0, 0, 0, 0.425);
-  position: fixed;
   z-index: 1;
 }
 
-/* necessary for doing drop-down menu that appears on click in mobile version */
-#checkbox,
-#searchbox {
-  display: none;
-  position: fixed;
+/* link styling in navbar menu */
+.nav a {
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  color: rgba(239, 240, 173, 0.966);
+  text-align: center;
+  padding: 5px 0 5px 0;
+  border-radius: 0;
+}
+
+/* links in navbar change background-color and text color on mouse over */
+.nav a:hover {
+  background-color: #f1df77;
+  color: black;
+}
+
+/* links in navbar change background-color when mouse is clicked down */
+.nav a:active {
+  background-color: rgb(255, 252, 64);
 }
 
 /* button styling for drop-down menu on mobile device */
@@ -140,42 +163,13 @@ body {
   background-color: black;
 }
 
-/* navbar menu content styling, container used for placing menu links with flexbox */
-.menu-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-}
 
-/* link styling in navbar menu */
-.menu-content a {
-  width: 100%;
-  text-decoration: none;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 12px;
-  color: rgba(239, 240, 173, 0.966);
-  text-align: center;
-  padding: 5px 0 5px 0;
-  border-radius: 0;
-}
-
-/* links in navbar change background-color and text color on mouse over */
-.menu-content a:hover {
-  background-color: #f1df77;
-  color: black;
-}
-
-/* links in navbar change background-color when mouse is clicked down */
-.menu-content a:active {
-  background-color: rgb(255, 252, 64);
-}
 
 /* container for searchbutton and searchbar in the navbar top menu */
 .search-content {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row-reverse;
 }
 
 /*styling of searchbutton and container for search-button image */
@@ -202,22 +196,22 @@ body {
 }
 
 /* styling of input search */
-.nav input[type="text"] {
+.searchbar input[type="text"] {
   opacity: 0.5;
   font-size: 14px;
   font-family: 'Orbitron', sans-serif;
   color: black;
-  height: 21px;
+  height: 20px;
   background-color: rgba(243, 224, 140, 0.534);
 }
 
 /* sets text color on placeholder text */
-.nav input[type="text"]::placeholder {
+.searchbar input[type="text"]::placeholder {
   color: black;
 }
 
 /* makes sure there are no outline when you click on the search input to write */
-.nav input[type="text"]:focus {
+.searchbar input[type="text"]:focus {
   outline: none;
 }
 
@@ -311,8 +305,14 @@ body {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.links {
+  margin: 10px;
+}
+
 /*styling of a fixed button to take you to the top of the page */
 .top-button {
+  display: flex;
+  flex-direction: column;
   right: 0;
   bottom: 40px;
   position: fixed;
@@ -411,7 +411,7 @@ p:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+
 }
 
 /* styling of the sign-up and login form */
@@ -427,6 +427,11 @@ p:hover {
   font-family: 'Orbitron', sans-serif;
   color: rgb(2, 160, 252);
   padding: 20px;
+}
+
+.form input,
+.form label {
+  margin: 10px;
 }
 
 /* styling of the submit button for the sign-up and login form */
@@ -448,21 +453,24 @@ p:hover {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 10px;
 }
 
-.form h2, .form h3, .form a {
+.form h2,
+.form h3,
+.form a {
   text-align: center;
-  float:none;
+  float: none;
 }
 
 /*on a exeptionally wide screen */
 @media screen and (min-width: 2000px) {
-    /*makes the grid have more content per row */
-    .small-news {
-      grid-template: repeat(6, 1fr) / repeat(4, 130px 1fr);
-    }
+
+  /*makes the grid have more content per row */
+  .small-news {
+    grid-template: repeat(6, 1fr) / repeat(4, 130px 1fr);
+  }
 }
+
 /*on a wide screen */
 @media screen and (min-width: 3000px) {
   .small-news {
@@ -590,9 +598,24 @@ p:hover {
   }
 
   /*hides the top navbar background*/
-  .nav {
+  .nav-wrapper {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    top:0;
+  }
+
+  .nav {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    border: none;
+    height: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    position: absolute;
+    top: 30px;
+    transition: height .5s;
   }
 
   /* makes menu-button visible in top left corner */
@@ -602,37 +625,22 @@ p:hover {
     left: 0;
     top: 0;
     border-radius: 1px;
+    z-index:1;
   }
 
-  /*styles menu to be columnar below the menu-button, hidden and without height*/
-  .menu-content {
-    visibility: hidden;
-    height: 0px;
-    max-width: 100vw;
-    max-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: fixed;
-    margin: 5px;
-    top: 30px;
+  .menu-button:hover+nav {
+    visibility: visible;
+    height: 100vh;
+    background-color: black;
+    z-index: 0.99;
   }
 
-  .menu-content a {
+  .nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     flex: 1.5;
-  }
-
-  /* gives height and visibility to menu content when menu button is clicked,
-  with transition so it slides down from top */
-  #checkbox:checked~.menu-content {
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.671);
-    height: 500px;
-    transition: 0.5s;
   }
 
   /* places the search button fixed in the top right corner of the screen and resizes it a bit */
@@ -643,15 +651,24 @@ p:hover {
     margin: 2px;
     height: 30px;
     width: 35px;
+    z-index: 1;
   }
 
   /*hides the searchbar and puts it of screen*/
   .searchbar {
     position: fixed;
     right: -30px;
-    visibility: hidden;
+    width: 0;
+    opacity: 0;
     top: 2px;
     border: none;
+    transition: width .5s;
+  }
+
+  .search-button:hover+div {
+    right: 60px;
+    width: 200px;
+    opacity: 1;
   }
 
   .nav input[type=text] {
@@ -662,16 +679,8 @@ p:hover {
     color: yellow;
   }
 
-  /* when the searchbutton is clicked the searchbar will be visible and placed on the screen again,
-  with transition to make it slide in form the right */
-  #searchbox:checked~.searchbar {
-    visibility: visible;
-    width: auto;
-    right: 35px;
-    transition: 0.5s;
-  }
-
-  .big-text-container, h3 {
+  .big-text-container,
+  h3 {
     font-size: 16px;
   }
 
@@ -686,18 +695,16 @@ p:hover {
 
   /* form stretches over full screen on mobile device*/
   .form {
-   width: 100%;
-   height: 100%;
-   padding: 0;
-   box-shadow: none;
-   line-height: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-shadow: none;
+    line-height: 1;
   }
 }
 
 /* small mobile device landscape mode*/
-@media screen and (orientation:landscape) and (max-width: 1024px)
-
-{
+@media screen and (orientation:landscape) and (max-width: 1024px) {
   .form {
     flex-direction: row;
     justify-content: space-evenly;

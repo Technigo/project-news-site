@@ -8,53 +8,56 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<header class="simple-header">
-    <nav class="nav">
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox"><a class="menu-button"></a>
-        </label>
-        <div class="menu-content">
-            <a href="index.html" target="blank">home</a>
-            <a href="contacts.html" target="blank">contact</a>
-            <a href="about.html" target="blank">about</a>
-            <a href="login.html" target="blank">login</a>
+<body>
+    <header class="simple-header">
+        <div class="nav-wrapper">
+            <a class="menu-button"></a>
+            <nav class="nav">
+                <a href="index.html" target="blank">home</a>
+                <a href="contacts.html" target="blank">contact</a>
+                <a href="about.html" target="blank">about</a>
+                <a href="login.html" target="blank">login</a>
+            </nav>
         </div>
-    </nav>
-    <div class="logo"><img src="./pictures/logo_space.svg"></div>
-    <div class="logo-simple"><img src="./pictures/logo_space_simple.svg"></div>
-</header>
+        <div class="logo">
+            <img src="./pictures/logo_space.svg">
+        </div>
+        <div class="logo-simple">
+            <img src="./pictures/logo_space_simple.svg">
+        </div>
+    </header>
 
-<section class="form-section">
-    <form class="form">
-       <div class="form-row">
-            <h2>SIGN UP!</h2>
-            <h3> With a login you will be able to comstumize content and notifications.</h3>
-        </div>
-        <div class="form-row"><label for="first_name">First name:</label><br>
-            <input type="text" id="first_name" name="first_name" placeholder="Lance" required><br>
-            <label for="last_name">Last name:</label><br>
-            <input type="text" id="last_name" name="last_name" placeholder="Armstrong" required><br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required>
-        </div>
-        <div class="form-row"><label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" placeholder="Choose a username" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" placeholder="Choose a password" minlength="8"
-                maxlength="12" required><br><br><br>
-            <input type="submit" value="Sign Up">
-        </div>
-    </form>
-</section>
+    <section class="form-section">
+        <form class="form">
+            <div class="form-row">
+                <h2>SIGN UP!</h2>
+                <h3> With a login you will be able to comstumize content and notifications.</h3>
+            </div>
+            <div class="form-row"><label for="first_name">First name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Lance" required>
+                <label for="last_name">Last name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Armstrong" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-row"><label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Choose a password" minlength="8"
+                    maxlength="12" required>
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </section>
 
-<footer class="footer">
-    <div class="footer-wrapper">
-        <p>&copy; Pauline Andersson 2021</p>
-        <container class="footer-img-container">
-            <img src="./pictures/logo.svg">
-            </contaier>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <p>&copy; Pauline Andersson 2021</p>
+            <div class="footer-img-container">
+                <img src="./pictures/logo.svg">
+            </div>
+        </div>
+    </footer>
 
 </body>
 
