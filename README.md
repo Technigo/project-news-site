@@ -2,8 +2,7 @@
 
 The project was to design a responsive news page using flexbox.
 
-I've added a header with an animated logo and a search bar, a navigation bar (in mobile view there is a hamburger bar) with a dropdown menu and social media buttons. I've added some box shadows and hover effects on the images and all the links, and a footer with a subscribe for newsletter box.
-
+I did a food recipe site, added a header with an animated logo and a search bar, a navigation bar (in mobile view there is a hamburger bar) with a dropdown menu and social media buttons. I've added some box shadows and hover effects on the images and all the links, and a footer with a subscribe for newsletter box.
 
 ## The problem
 
