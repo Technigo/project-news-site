@@ -27,10 +27,7 @@ body {
 .site-name .logo {
   width: 35px;
   margin-right: 10px;
-  animation-name: logo;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation: logo 1s alternate-reverse infinite;
 }
 
 @keyframes logo {

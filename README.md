@@ -1,12 +1,15 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+The project was to design a responsive news page using flexbox.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I've added a header with an animated logo and a search bar, a navigation bar (in mobile view there is a hamburger bar) with a dropdown menu and social media buttons. I've added some box shadows and hover effects on the images and all the links, and a footer with a subscribe for newsletter box.
+
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+My biggest problem was that I didn't plan enough ahead and that I didn't start with the mobile first approach. So I had to go back and change that later, which I think took a lot more time than if I had done it from the start. And also, due to my lack of planning, I changed the design many times and often it messed with the responsiveness so I had to spend a lot of time just fixing up the code. Dev tools in the browser was a big help. Next time I will definitely plan more, skiss out the design and start with the mobile first approach.
+If I had more time I probably would make all the links go somewhere, so you could actually get the recipes :)
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://foodies-recipes.netlify.app/
