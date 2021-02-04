@@ -6,8 +6,11 @@ Start by briefly describing the assignment in a sentence or two. Keep it short a
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Everything works but when I try to push it to netlify I get this code: 
+Page Not Found
+Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
 
+I tried different solutions but nothing worked.... but feel free to download the code and check how it looks in the browser!
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
