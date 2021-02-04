@@ -87,7 +87,7 @@
 .news-card {
   background-color: var(--white);
   padding: calc(var(--spacing) * 2);
-  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .news-card:hover {
@@ -103,7 +103,6 @@
 
   .news-card {
     padding: calc(var(--spacing) * 2);
-    /* margin: calc(var(--spacing) * 2); */
     width: calc(50% - calc(var(--spacing) * 2));
   }
 

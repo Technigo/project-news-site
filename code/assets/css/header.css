@@ -9,7 +9,7 @@
   padding: calc(var(--spacing) * 4) 0;
 }
 
-.logo img {
+.logo .img {
   width: 90%;
 }
 
@@ -18,7 +18,7 @@
   font-size: 2em;
 }
 
-#main-menu-cnt {
+.main-menu-cnt {
   display: none;
 }
 
@@ -41,7 +41,7 @@
   padding-bottom: calc(var(--spacing) * 4);
 }
 @media only screen and (min-width: 769px) {
-  #main-menu-cnt {
+  .main-menu-cnt {
     align-self: center;
     display: block;
   }
