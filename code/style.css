@@ -1,7 +1,9 @@
 /*MOBILE (max-width=667px) */
 
 body {
-  min-width: 500px;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
   background: white;
   font-family: helvetica;
   margin: 0;
@@ -15,6 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .hamburger {
@@ -62,11 +65,10 @@ nav a {
 /*Big News*/
 .container {
   background: rgb(212, 83, 93);
-  padding: 40px 0px;
+  padding: 40px 20px;
   width: auto;
   border-radius: 5px;
   margin: 30px;
-  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +76,8 @@ nav a {
 
 .container img {
   border-radius: 5px;
-  width: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .container div {
@@ -107,12 +110,14 @@ h3 a {
   border-radius: 5px;
   box-shadow: 5px 5px 0 0 rgba(207, 73, 84, 0.705);
   margin: 30px 100px;
-  max-width: 400px;
+  width: auto;
+  object-fit: cover;
 }
 
 .container-two img {
   display: flex;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .text-block {
@@ -151,16 +156,13 @@ h4 {
 @media (min-width: 668px) and (max-width: 1023px) {
 
   body {
-    min-width: 720px;
+    width: 100%;
+    object-fit: cover;
   }
 
   /*Header*/
   header {
     width: auto;
-    background: rgba(247, 222, 0, 0.959);
-    height: 150px;
-    display: flex;
-    align-items: center;
   }
 
   nav {
@@ -191,7 +193,7 @@ h4 {
   }
 
   .container img {
-    width: 630px;
+    width: 100%;
     border-radius: 5px;
   }
 
@@ -232,7 +234,8 @@ h4 {
 @media (min-width: 1024px) {
 
   body {
-    min-width: 1060px;
+    width: auto;
+    object-fit: cover;
   }
 
   /*Header*/
