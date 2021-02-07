@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Fizzy TechNews</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,12 +11,14 @@
   </head>
   <body>
     <header class="header container">
-      <a href="#"><div class="hamburger">
+      <div class="hamburger">
         <div></div>
         <div></div>
         <div></div>
-      </div></a>
-      <a href="#"><h1 class="top-heading">Fizzy TechNews</h1></a>
+      </div>
+      <a href="#">
+        <h1 class="top-heading">Fizzy TechNews</h1>
+      </a>
       <img class="logo" src="./logo.svg" alt="Technigo logo">
       <nav class="navigation-container">
         <a class="navigation-item" href="#">Top News</a>
@@ -39,14 +41,15 @@
       </div>
     </section>
 
-    <a href="#"><section class="news-type container">
-      <a href="#"><p class="type">Top News</p></a>
-    </section></a>
+    <section class="news-type container">
+    <a href="#" class="type">Top News</a>
+    </section>
 
     <section class="other-news container">
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1523503211343-9bb90cc3cb56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1523503211343-9bb90cc3cb56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -56,17 +59,8 @@
       </div>
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-          <div class="news-card-text">
-            <p class="title">Lorem Ipsum</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          </div>
-        </a>
-      </div>
-      <div class="news-card">
-        <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1511680059018-e7cc6c0f22c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -76,7 +70,19 @@
       </div>
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1511680059018-e7cc6c0f22c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+            <div class="news-card-text">
+              <p class="title">Lorem Ipsum</p>
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="news-card">
+        <a class="news-link" href="#">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -87,13 +93,14 @@
     </section>
 
     <section class="news-type container">
-      <a href="#"><p class="type">Latest News</p></a>
-    </section>
+      <a href="#" class="type">Latest News</a>
+      </section>
 
     <section class="other-news container">
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1523503211343-9bb90cc3cb56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1523503211343-9bb90cc3cb56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -103,7 +110,8 @@
       </div>
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -113,7 +121,8 @@
       </div>
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1511680059018-e7cc6c0f22c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1511680059018-e7cc6c0f22c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -123,7 +132,8 @@
       </div>
       <div class="news-card">
         <a class="news-link" href="#">
-          <div class="polaroid"><img class="news-card-pic" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+          <div class="polaroid">
+            <img class="news-card-pic" src="https://images.unsplash.com/photo-1504237111663-37d6094bec09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             <div class="news-card-text">
               <p class="title">Lorem Ipsum</p>
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
