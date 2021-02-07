@@ -4,6 +4,12 @@ html {
   color: black;
 }
 
+body{
+  max-width: 100%;
+  margin: 8px;
+  padding: 8px;
+}
+
 a:link, a:visited {
   text-decoration: none;
   color: black;
@@ -29,13 +35,7 @@ nav{
 }
 
 /*body elements*/
-body{
-  max-width: 100%;
-  margin: 8px;
-  padding: 8px;
-}
-
-.mainarticle{
+.main-article{
   text-align: justify;
   background-color: rgb(111,44,69);
   margin: 10px;
@@ -47,7 +47,7 @@ body{
   flex-wrap: wrap;
 }
 
-.artistcards{
+.artist-cards{
   text-align: justify;
   padding: 10px;
   min-height: 260px;
@@ -56,13 +56,13 @@ body{
   margin-right: 10px;
 }
 
-.img-mainartist{
+.img-main-artist{
   max-width: 100%;
   object-fit: cover;
 }
 
 /*fonts*/
-.author-mainarticle{
+.author-main-article{
   font-size: 20px;
   margin-top: 0px;
   padding-top: 5px;
@@ -78,7 +78,7 @@ body{
   margin-bottom: 0px;
   text-align: right;
 }
-.p-mainarticle{
+.main-article-text{
   font-size: 20px;
 }
 
@@ -128,15 +128,12 @@ h4{
   font-family: 'Abril Fatface', cursive;
   text-align: right;
   font-size: 33px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 2px;
-  margin-top: 10px;
+  padding: 0px 10px;
+  margin: 10px 0px 2px 0px;
 }
 
 /*artist cards*/
-.img-artistcards{
+.img-artist-cards{
   width: 100%;
 }
 .loyle{
@@ -169,105 +166,172 @@ h4{
 }
 
 @media (min-width: 668px){
-/*header*/
-nav{
-  font-size: 30px;
-}
+  /*header*/
+  nav{
+    font-size: 30px;
+  }
 
-/*body elements*/
+  /*body elements*/
 
-.artistcards{
-  flex: 250px;
-  margin: 10px;
-}
+  .artist-cards{
+    flex: 250px;
+    margin: 10px;
+  }
 
-.mainarticle{
-  display: flex;
-  flex-wrap: wrap;
-}
+  .main-article{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.img-mainartist{
-  width: 50%;
-}
+  .img-main-artist{
+    width: 50%;
+  }
 
-.big-news{
-  width: 50%;
-}
-/*artist cards*/
-  
-/*fonts*/
-.author{
-  font-size: 18px;
-  margin-top: 5px;
-}
+  .big-news{
+    width: 50%;
+  }
+  /*artist cards*/
+    
+  /*fonts*/
+  .author{
+    font-size: 18px;
+    margin-top: 5px;
+  }
 
-.p-mainarticle{ 
-  font-size: 22px;
-  padding: 15px;
-  margin-bottom: 10px;
-}
+  .main-article-text{ 
+    font-size: 22px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
 
-h1{ 
-  font-size: 50px;
-  text-align: center;
-} 
+  h1{ 
+    font-size: 50px;
+    text-align: center;
+  } 
 
-h2{
-  font-size: 60px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
+  h2{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
 
-h3{
-margin-top: 0px;
-font-size: 30px;
-}
+  h3{
+    margin-top: 0px;
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px){
-/*header*/
-  .header{
-    margin-bottom: 20px;
-    margin-top: 0px;
-    border-bottom: 3px black;
-  }
-
-  nav{
-      font-size: 30px;
-  }
-
-/*body elements*/
   body{
     margin-top: 0px;
     margin-left: 60px;
     margin-right: 60px;
   }
 
-  .mainarticle{
-    display: flex;
-    flex-wrap: wrap;
-  }
+  /*header*/
+    .header{
+      margin-bottom: 20px;
+      margin-top: 0px;
+      border-bottom: 3px black;
+    }
 
-  .artistcards{
+    nav{
+        font-size: 30px;
+    }
+
+  /*body elements*/
+    .main-article{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .artist-cards{
+      flex: 250px;
+      margin: 8px;
+      min-height: 450px;
+    }
+
+    .img-main-artist{
+      width: 50%;
+    }
+    
+    .big-news{
+      width: 50%;
+    }
+
+  /*fonts*/
+    p{
+      font-size: 20px;
+    }
+
+    .author-main-article{
+      font-size: 20px;
+      margin-right: 30px;
+      text-align: right;
+    }
+
+    .author{
+      font-size: 20px;
+      margin-right: 0px;
+    }
+
+    .text-artist{
+      font-size: 28px;
+    }
+
+    .main-article-text{
+      font-size: 25px;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    h1{
+      font-size: 90px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    h2{
+      font-size: 75px;
+      margin-right: 30px;
+    }
+
+    h3{
+      font-size: 30px;
+    }
+
+    h4{
+      font-size: 50px;
+    }
+}
+
+@media (min-width: 1200px){
+  /*header*/
+
+
+  /*body elements*/
+
+  .artist-cards{
     flex: 250px;
     margin: 8px;
     min-height: 450px;
+    width: 25%;
   }
 
-  .img-mainartist{
+  .img-main-artist{
     width: 50%;
   }
-  
+
   .big-news{
     width: 50%;
   }
 
-/*fonts*/
+  /*fonts*/
   p{
     font-size: 20px;
   }
 
-  .author-mainarticle{
+  .author-main-article{
     font-size: 20px;
     margin-right: 30px;
     text-align: right;
@@ -278,11 +342,7 @@ font-size: 30px;
     margin-right: 0px;
   }
 
-  .text-artist{
-    font-size: 28px;
-  }
-
-  .p-mainarticle{
+  .main-article-text{
     font-size: 25px;
     margin-right: 30px;
     margin-left: 30px;
@@ -302,71 +362,4 @@ font-size: 30px;
   h3{
     font-size: 30px;
   }
-
-  h4{
-    font-size: 50px;
-  }
-
-/*artist cards*/
-
-@media (min-width: 1200px){
-/*header*/
-
-
-/*body elements*/
-
-.artistcards{
-  flex: 250px;
-  margin: 8px;
-  min-height: 450px;
-  width: 25%;
-}
-
-.img-mainartist{
-  width: 50%;
-}
-
-.big-news{
-  width: 50%;
-}
-
-/*fonts*/
-p{
-  font-size: 20px;
-}
-
-.author-mainarticle{
-  font-size: 20px;
-  margin-right: 30px;
-  text-align: right;
-}
-
-.author{
-  font-size: 20px;
-  margin-right: 0px;
-}
-
-.p-mainarticle{
-  font-size: 25px;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-h1{
-  font-size: 90px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-h2{
-  font-size: 75px;
-  margin-right: 30px;
-}
-
-h3{
-  font-size: 30px;
-}
-
-/*artist cards*/
-
 }
