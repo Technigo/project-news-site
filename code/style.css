@@ -58,7 +58,8 @@ body {
 .big-news-items {
   margin: 0px 15px 15px;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
 }
 
 .img-big-news {
@@ -126,6 +127,9 @@ body {
     display: flex;
     margin-right: 20px;
   }
+  .big-news-items {
+    flex-direction: row;
+  }
 
   .big-news-title {
     margin-left: 50px;
@@ -158,6 +162,10 @@ body {
 
   .big-news-title {
     margin-left: 100px;
+  }
+
+  .big-news-items {
+    flex-direction: row;
   }
 
   .small-news-container {
