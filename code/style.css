@@ -1,8 +1,8 @@
 /*MOBILE (max-width=667px) */
 
 body {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 100%;
   object-fit: cover;
   background: white;
   font-family: helvetica;
@@ -11,13 +11,13 @@ body {
 
 /*Header*/
 header {
-  width: 100%;
+  width: auto;
+  overflow: hidden;
   background: rgba(247, 222, 0, 0.959);
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 
 .hamburger {
@@ -37,16 +37,16 @@ header {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
-  margin: 30px;
+  margin: 20px 0px 20px 30px;
 }
 
 .logo {
   display: flex;
-  width: 130px;
+  width: 90px;
   justify-content: center;
-  margin: 20px;
+  margin: 0px;
 }
 
 nav {
@@ -124,9 +124,7 @@ h3 a {
   position: absolute;
   bottom: 10px;
   background-color: rgba(212, 83, 94, 0.692);
-  font-size: 25px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 
 a {
@@ -142,7 +140,6 @@ footer {
 }
 
 h4 {
-  font-size: 20px;
   color: white;
   display: flex;
   justify-content: center;
@@ -180,8 +177,16 @@ h4 {
     text-align: end;
   }
 
+  h1{
+    margin: 20px 0px 20px 20px;
+  }
+
   .hamburger {
     display: none;
+  }
+
+  .logo {
+    width: 140px;
   }
 
   /*Big News*/
@@ -262,6 +267,10 @@ h4 {
     display: none;
   }
 
+  .logo {
+    width: 140px;
+  }
+
   /*Big News*/
   .container {
     display: flex;
@@ -307,7 +316,5 @@ h4 {
     color: white;
     font-size: 20px;
     padding-left: 20px;
-    padding-right: 20px;
   }
-
 }
