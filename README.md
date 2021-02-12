@@ -19,4 +19,4 @@ Now I had to put most of time on figuring out flexbox.
 
 ## View it live
 
-https://sleepy-kilby-a53a68.netlify.app/
+https://news-site-project.netlify.app/
