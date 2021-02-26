@@ -9,9 +9,9 @@ body {
   border: 4px solid #FFE401;
   background-color: #FFE401;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 1200px;
+  align-items: flex-end; /* flex-end */
+  justify-content: center; /* flex-end */
+  /*width: 1200px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,14 +25,14 @@ body {
 }
   
 img {
-  width: 100px;
-  height: 100px;
-  align-items: flex-end;
+  width: 100px; /* 100px */
+  height: 100px; /* 100px */
+  align-items: flex-start;
 }
 
-.white {
-  width: 50%;
-}
+/*.white {
+  width: 70%; /* 50% */
+/*}  HÖÖÖÖÖGEEOEOOOE 
   
 /*---Flex container => Navbar starts here---*/
   
@@ -46,6 +46,7 @@ ul {
   
 li {
   float: left;
+  font-size: 24px;
 }
   
 li a {
@@ -63,13 +64,13 @@ li a:hover {
   
 /*---Flex container => Navbar ends here---*/
   
-a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
+/*a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   width: 112px;
-  height: 50px;
+  height: 50px; HÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖAAAAAAAAA
   font-size: 28px;
   padding:28px 16px 0 16px ;
   font-weight: bold;
-}
+} */
 
 /*---DROPDOWN starts here---*/
   
@@ -77,7 +78,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   background-color: #FFE401;
   color: black;
   padding: 16px;
-  font-size: 76px;
+  font-size: 24px;
   border: none;
   cursor: pointer;
 }
@@ -91,19 +92,19 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   display: none;
   position:absolute; 
   background-color: #c9bb40; 
-  width: 432px;
-  height: 600px;
+  /*width: 400px; /* 432 */
+  /*height: 500px; /* 600 */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
   
 .dropdown-content a {
   color: black;
-  margin: 50px;
-  padding: 12px 16px;
+  margin: 50px; 
+  padding: 12px 16px; 
   text-decoration: none;
   display: block;
-  font-size: 76px;
+  font-size: 30px; /* 60px */
   font-weight: bold;
 }
   
@@ -137,11 +138,10 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 .big-news {
   border: 4px solid white;
   border-bottom: 4px solid #212529;
-  height: 330px;
+  /* height: 330px; HÖÖÖ */
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 1200px;
+
+  /*width: 1200px; TOG BORT NYSS */
   margin-left: auto;
   margin-right: auto;
   background-color: white; 
@@ -162,15 +162,17 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 }
   
 .inside-big img {
-  width: 510px;
-  height: 300px;
+  /*width: 510px;
+  height: 300px;*/
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
   box-shadow: 10px 5px 5px  #212529;
 }
   
-.pic {
+/*.pic {
   width: 45%;
-}
+}*/
   
 .text1 {
   width: 60%;
@@ -183,8 +185,8 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 /*---Big News => Figure class starts here---*/
 
 .figure {
-  width: 1200px;
-  height: 300px;
+  /* width: 1200px; VET ITNE VAD DETTA ÄR */
+  /*height: 300px; HÖÖÖ*/
   display: flex;
   justify-content: center;
 }
@@ -200,7 +202,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   color: black;
   padding: 2px;
   text-align:left;
-  font-size: 40px;
+  /*font-size: 30px;*/
 } 
 
 /*---Big News => Figure class ends here---*/
@@ -214,7 +216,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 .latest { 
   border: 4px solid white;
   border-bottom: 4px solid #212529;
-  width: 1200px;
+  /*width: 1200px; TOG BORT NYSS */
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -230,16 +232,14 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   /*background-color: #FFE401; */
   justify-content:last baseline;
   align-items: flex-end;
-  border-radius: 25px;
+  /*border-radius: 25px; */
 }
   
 /*---Animation starts here---*/
 @keyframes latest {
   0%   { left:0px; top:0px;}
-  20%  { left:200px; top:0px;}
-  40%  { left:500px; top:0px;}
-  60%  { left:800px; top:0px;}
-  100%  { left:1000px; top:0px;}
+  50%  { left:50%; top:0px;}
+  90%  { left:90%; top:0px;}
 }
 /*---Animation ends here---*/
 
@@ -250,12 +250,12 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 /*------ OTHER NEWS SECTION starts ------*/
 .other-news {
   border: 4px solid white;
-  height: 500px;
+  /*height: 500px; */
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
   flex-wrap: wrap;
-  width: 1200px;
+  /*width: 1200px; TOG BORT NYSS*/
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -303,7 +303,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 
 .news-article img {
   display: block;
-  width: 250px;
+  /*width: 250px; /*250px */
 }
 .news-article a:hover {
   -webkit-transform: scale(1.2);
@@ -320,14 +320,14 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 
 .news-article {
   position: relative;
-  width: 50%; 
+  width: 100%; /* 50% */
 }
   
 .image {
   display: block;
   width: 100%;
-  height: 180px;
-} 
+  height: 100%; /* 180PX */
+}   
   
 .overlay {
   position: absolute;
@@ -372,7 +372,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
   flex-wrap: wrap;
-  width: 1200px;
+  /* width: 1200px; TOG BORT NYSS*/
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(184, 179, 179);
@@ -411,7 +411,7 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 
 
 /* Small Desktop */
-@media (min-width: 992px) and (max-width: 1024px)  {
+/*@media (min-width: 992px) and (max-width: 1024px)  {
   .text2 {
     display: none;
   } 
@@ -428,19 +428,30 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
     display: none;
   } 
 
-}
+} */
 
 
+
+
+
+
+
+
+
+
+/* KLAR */
+/*****************************************/
 /* Tablet */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) { /* 992 */
   .flex-container {
     justify-content: center;
   }
 
   a.home-tablet, .politics1, .sport, .culture {
-    font-size: 50px;
-    width: 155px;
-    height: 60px;
+    font-size: 28px; /*  */
+   /* width: 100%; /* 155px */
+   /* height: 100%; /* 60px */
+   font-weight: bold;
   }
 
   .home-desktop, .politics {
@@ -454,28 +465,46 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   .white {
     display: flex;
     justify-content: center;
-    width: 35%;
+    width: 35%; /* 35% */
     align-items: center;
   }
 
+  .inside-big img {
+    width: 100%; /*  510 */
+    height: 100%;  /* 300 */
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px  #212529;
+  }
+
   .white img {
-    width: 150px;
-    height: 150px;
+    width: 100%; /*150PX */
+    height: 100%;  /*150PX */
+  } 
+
+  @keyframes latest {
+    0%   { left:0px; top:0px;}
+    50%  { left:40%; top:0px;}
+    100%  { left:80%; top:0px;}
   }
 
   .other-news {
-    display: flex;
-    height: 1050px;
+    /*display: flex; */
+    height: 100%; /* 1050PX */
+    grid-template-columns: 1fr 1fr;
+    
+    
   }
+
   .news-article {
     display: flex;
-    width: 49%;
+    width: 100%; /* 49% HÖÖÖÖ TESTAR */
     justify-content: center;
+    align-items: center;
   }
 
   .news-article img {
-    width: 550px;
-    height: 200px;
+    width: 100%;
+    /*height: 200px; */
   }
 
   .figure {
@@ -483,11 +512,11 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   } 
 
   .text {
-    font-size: 30px;
+    font-size: 16PX;
   }
 
   .text1 {
-    font-size: 24px;
+    font-size: 20px; /* 24px */
   }
 
   .rights {
@@ -502,43 +531,53 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   
 }
 
-
+/***** KLAR *******/
+/************************************************/
   /* Mobile Device */
 @media (max-width: 767px) {
   .latest {
-    height:75px;
+    height:20px;
   }
 
   .latest h1 {
-    font-size: 62px;
+    font-size: 12px;
   }
 
   @keyframes latest {
     0%   { left:0px; top:0px;}
-    50%  { left:400px; top:0px;}
-    100%  { left:750px; top:0px;}
+    50%  { left:45%; top:0px;} /* 100PX */
+    100%  { left:85%; top:0px;} /* 200PX */
   }
     
   .figure {
-    width: 1200px;
-    height: 600px;
+    /* width: 1200px; TESTAR */
+    /*height: 600px; HÖÖÖ */
     display: flex;
     justify-content: center;
   }
 
   .figure img {
-    width: 1200px;
-    height: 470px;
+    /*width: 1200px; */
+    width: 100%; 
+    height: 100%;
+    
     border-radius: 25px;
   }
 
   figcaption {
-    width: 1200px;
-    height: 100px;
+    /*width: 1200px;*/
+    /*width: 100%;
+    height: 100px;   HÖÖ*/
   }
     
   body {
     background-color: white;
+  }
+
+  .big-news {
+
+    /*height: 100%; */
+
   }
     
   .unsorted-list-tablet, .unsorted-list-desktop {
@@ -551,13 +590,17 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   }
 
   .dropdown .dropbtn img {
+    width: 80%;
+    height: 80%;
+    /*
     width: 400px;
     height: 400px;
+    */
   }
   
   .big-news {
-    height: 600px;
-    width: 1200px;
+    /*height: 600px; HÖÖÖ*/
+    /*width: 1200px; TOG BORT NYSS */
   }
 
   .inside-big {
@@ -570,7 +613,9 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
 
   .flex-container {
     justify-content: center;
-    height: 450px;
+    align-items: center;
+    height: 100%; /* 200 och 350 */
+    /*height: 450px; TOG BORT NYSS*/ 
   }
 
   .unsorted-list-tablet, .unsorted-list-desktop {
@@ -585,14 +630,21 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
   }
 
   .white img {
+    width: 100%;
+    height: 100%;
+    /*
     width: 400px;
     height: 400px;
+    */
     align-items: center;
   }
 
   .other-news {
     display: flex;
-    height: 4000px;
+    height: 100%;
+    /*justify-content: center;*/
+    /*align-items: center; */
+    /*height: 4000px; HÖÖÖÖ*/
   }
 
   .articles {
@@ -601,23 +653,35 @@ a.home-tablet, .politics1, .home-desktop, .politics, .sport, .culture {
     justify-content: center;
   }
 
+  .news-article {
+    width: 100%;
+  }
+
   .news-article img {
-    width: 1000px;
-    height: 500px;
+    /*width: 1000px; */
+    /*width: 600px;
+    height: 500px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .text {
-    font-size: 48px;
+    /*font-size: 48px; HÖÖÖ*/
   }
 
   .rights {
     font-size: 54px;
     align-items: center;
-    width: 700px;
+    width: 150px;
+    /*width: 700px;*/
   }
 
-  .footer {
-    height: 90px;
+  
+
+  .rights {
+    font-size: 12px;
   }
  
 }
