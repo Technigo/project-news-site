@@ -9,6 +9,6 @@ If I had more time, I would polish my page and code and make it even more readab
 
 
 ## View it live
-https://reverent-archimedes-b2a97a.netlify.app 
+https://epic-lalande-06546f.netlify.app/
 
 
