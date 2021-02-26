@@ -1,12 +1,7 @@
-# News Site
 
-Replace this readme with your own information about your project. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I love ballet and ballet aesthetics so I decided to create a ballet news site. 
 
-## The problem
+I probably didn't plan ahead as much as I should have. I didn't run into any major problems, but I'm very much a beginner so I had to google everything over and over again. It was very time consuming. I got some input from my boyfriend and from the members of my team but I mostly worked on my own, just trying to get a grasp of everything. I installed Beautify, which was a great help.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+I'm quite pleased by the appearence of my site but I'm unsure about the quality of the code. I should have done mobile first, will be sure to do that for my upcoming projects. 
