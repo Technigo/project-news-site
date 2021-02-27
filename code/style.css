@@ -9,7 +9,7 @@
   --tertiary-font-color: #F3CCE6;
 
   --primary-font-family: 'Tangerine', cursive;
-  --secondary-font-family: 'PT Sans', sans-serif;
+  --secondary-font-family: 'Cormorant', serif;
 }
 
 
@@ -42,7 +42,7 @@ body {
 
 
 
-/* HEADER SECTION*/
+/* HEADER */
 
 header {
   display: flex;
@@ -89,10 +89,10 @@ header {
 h1 {
   font-family: var(--primary-font-family);
   color: var(--primary-font-color);
+  text-shadow: 2px, 2px #d6c6d1;
   font-size: 70px;
-  text-shadow: 2px 2px #d6c6d1;
   font-weight: 300;
-  margin: 25px 30px;
+  margin: 25px;
 }
 
 
@@ -106,20 +106,21 @@ h1 {
 
 .big-news-image {
   width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  height: auto;
+  margin: 0, 5%, 0;
 }
 
-#big-news-category {
+.big-news-category {
   font-family: var(--secondary-font-family);
   color: var(--primary-font-color);
   font-size: 25px;
   font-weight: 300;
+  margin-bottom: 0;
   margin-left: 5%;
 }
 
-#big-news-extract {
-  font-family: 'Cormorant', serif;
+.big-news-extract {
+  font-family: var(--secondary-font-family);
   color: var(--primary-font-color);
   font-size: 30px;
   font-weight: 300;
@@ -133,13 +134,10 @@ h1 {
 .other-news-container {
   display: flex;
   flex-direction: column;
-  border: 1px;
+  border: 1px solid var(--primary-background-color);
   height: 100%;
   width: auto;
-  margin-bottom: 10%;
-  margin-left: 2%;
-  margin-right: 2%;
-  text-align: center;
+  margin-bottom: 0, 10px, 15px, 10px;
   align-items: center;
   justify-content: center;
 }
@@ -156,18 +154,14 @@ h1 {
 }
 
 .other-news-image {
-  margin-top: 5%;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2%;
   width: 80%;
+  margin-top: 10%;
 }
 
-#other-news-extract {
-  font-family: 'Cormorant', serif;
+.other-news-extract {
+  font-family: var(--secondary-font-family);
   color: var(--primary-font-color);
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 300;
   padding-bottom: 8%;
 }
@@ -184,8 +178,8 @@ hr {
 /*FOOTER*/
 
 footer {
-  font-family: 'Tangerine', cursive;
-  color: var(--tertiary);
+  font-family: var(--primary-font-family);
+  color: var(--primary-font-color);
   font-size: 35px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -201,19 +195,11 @@ footer {
 
 
 
-  header {
-    display: flex;
-    justify-content: flex-end;
-    width: 95%;
-  }
-
   .hamburger {
     display: none;
   }
 
-  .hamburger div {
-    display: none;
-  }
+  
 
   .navbar {
     display: flex;
@@ -221,7 +207,7 @@ footer {
   }
 
   .nav-link {
-    font-family: 'Tangerine', cursive;
+    font-family: var(--primary-font-family);
     color: var(--tertiary);
     font-size: 25px;
     margin: 20px 14px 0px 0px;
@@ -253,7 +239,7 @@ footer {
     margin-left: 5%;
   }
 
-  #big-news-extract {
+  .big-news-extract {
     margin-bottom: 60px;
   }
 
@@ -282,7 +268,7 @@ footer {
     width: 45%;
     margin-bottom: 30px;
     margin-right: 25px;
-    text-align: center;
+    
     align-items: center;
     justify-content: center;
   }
@@ -296,29 +282,19 @@ footer {
     width: 80%;
   }
 
-  #other-news-extract {
-    font-family: 'Cormorant', serif;
-    color: var(--tertiary);
+  .other-news-extract {
     font-size: 30px;
-    font-weight: 300;
     padding-bottom: 8%;
   }
 
   hr {
     width: 80%;
-    justify-content: center;
   }
 
   footer {
-    font-family: 'Tangerine', cursive;
-    color: var(--tertiary);
-    font-size: 40px;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    justify-content: center;
-    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-
 }
 
 
@@ -333,12 +309,9 @@ footer {
     display: none;
   }
 
-
   .nav-link {
     font-size: 35px;
-
   }
-
 
   .logo {
     width: 7%;
@@ -357,19 +330,15 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 40px;
-    margin-left: 40px;
   }
 
   .other-news-box {
     width: 18%;
     margin-top: 30px;
-    padding-top: 12px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding: 10px;
   }
 
-  #other-news-extract {
+  .other-news-extract {
     font-size: 22px;
   }
 
@@ -404,126 +373,4 @@ footer {
 
 
 
-
-/*.nav-link a:link {
-  color: var(--tertiary);
-  text-decoration: none;
-}
-
-.nav-link a:visited {
-  color: #5e5a5a;
-}
-
-.nav-link a:hover {
-  color: rgb(243, 204, 230);
-  text-decoration: underline;
-}
-
-
-
-#big-news-category a:link {
-  color: var(--primary-font-color);
-  text-decoration: none;
-}
-
-#big-news-category a:visited {
-  color: var(--secondary-font-color);
-}
-
-#big-news-category a:hover {
-  color: var(--tertiary-font-color);
-  text-decoration: underline;
-}
-
-#other-news-extract a:link {
-  color: var(--tertiary);
-  text-decoration: none;
-}
-
-#other-news-extract a:visited {
-  color: #5e5a5a;
-}
-
-#other-news-extract a:hover {
-  color: rgb(243, 204, 230);
-  text-decoration: underline;
-}
-
-a:link {
-  color: var(--tertiary);
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--secondary-font-color);
-
-}
-
-a:hover {
-  color: var(--tertiary-font-color);
-  text-decoration: underline;
-}
-
-
-
-/*#big-news-category a:link {
-    color: var(--primary-font-color);
-    text-decoration: none;
-  }
-
-  #big-news-category a:visited {
-    color: var(--secondary-font-color);
-  }
-
-  #big-news-category a:hover {
-    color: var(--tertiary-font-color);
-    text-decoration: underline;
-  }*/
-
-
-/*#other-news-extract a:link {
-    color: var(--tertiary);
-    text-decoration: none;
-  }
-
-  #other-news-extract a:visited {
-    color: #5e5a5a;
-  }
-
-  #other-news-extract a:hover {
-    color: rgb(243, 204, 230);
-    text-decoration: underline;
-  }*/
-
-
-  /* #big-news-extract a:link {
-    color: var(--tertiary);
-    text-decoration: none;
-  }
-
-  #big-news-extract a:visited {
-    color: var(--secondary-font-color);
-
-  }
-
-  #big-news-extract a:hover {
-    color: var(--tertiary-font-color);
-    text-decoration: underline;
-  }
-
-
-  
-  .nav-link a:link {
-    color: var(--tertiary);
-    text-decoration: none;
-  }
-
-  .nav-link a:visited {
-    color: #5e5a5a;
-  }
-
-  .nav-link a:hover {
-    color: rgb(243, 204, 230);
-    text-decoration: underline;
-  }
 
