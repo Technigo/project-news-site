@@ -1,3 +1,5 @@
+https://kitten-times.netlify.app/
+
 # News Site
 
 The assignment is to practise flexbox and css grid by making a responsive layout for an imaginary news paper or maqazine. 
@@ -23,5 +25,5 @@ Once the grid was working ok i started filling the boxes with content. I had som
 - in the css grid section (.grid-outer) i went with a grid inside a grid to make it behave the way i wanted it to, but i'm not sure about that - is preferable to do it some other way?
 
 ## The site can be viewed here:
-https://lucid-knuth-f8734c.netlify.app/
+https://kitten-times.netlify.app/
 
