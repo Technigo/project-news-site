@@ -1,12 +1,21 @@
-# News Site
+# News site 
 
-Replace this readme with your own information about your project. 
+This week’s project is to create a classic magazine or newspaper site. The focus is ✅responsive design and ✅flexbox & ✅Grid.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## The built & challanges
+This week was a individual project focusing on creating our first landing page. Using CSS to layout the page and the following elements were included in the built
 
-## The problem
+- flexbox & Grid to layout the page.
+- A responsive design with the following views for new columns;  Desktop 4 columns, tablet 2 columns, mobile 1 column.
+- The has a header, a main news article, a grid of news articles.
+- Different hover effects was included , i.e. box shadow
+- box shadow was to make the photos look like polaroids
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+
+👉The Challanges was mainly containing CSS grid, to make the boxes reponsive to the different views. For instance in tablet view the las news box spans over two grid columns. This involved a lot of youtube watching of Grid functionality a new concept for me. However I found Grid easier to align in a structured way when using milple similas boxes/cards to the page. I also used this time to try out animations in functionality in css such as ease in and ease out ⭐️
+
+More structure in the CSS file so it is easier to find different elements in the file 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The site can be viewed here:https://gallant-darwin-3edc20.netlify.app/
