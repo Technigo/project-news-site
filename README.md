@@ -12,4 +12,4 @@ It took some time to understand flexbox, but I think I got the hang of it now. T
 
 ## View it live
 This is the link to my code on Netlify. Unfortunately it doesn't seem to work at the moment, but I will put it here if it starts to work.
-https://lucid-joliot-22fca6.netlify.app/code
+https://lucid-joliot-22fca6.netlify.app/
