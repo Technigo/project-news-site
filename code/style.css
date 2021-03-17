@@ -1,0 +1,148 @@
+main, header, section, aside, footer {
+  margin: 0;
+  padding: 20px;
+  border: none;
+  color: #2b2323;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
+
+main {
+  background: #f9f3f3;
+}
+
+.header {
+  background: #f7d9d9;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 310px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+
+@media screen and (min-width: 768px){
+  .flex-container {
+      display: flex;
+  }    
+
+  .news-card {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+  }
+
+  .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+}
+
+.hero {
+  background-color: #f7d9d9;
+  background: linear-gradient(rgba(59, 56, 56, 0.5), rgba(255,255,255,.5)), url("assets/IMG_4342.jpg");
+  background-size: cover;
+}
+
+a:hover{
+  font-weight:italic;
+  }
+
+a{
+  text-decoration:none;
+  color: dimgray;
+}
+
+.content {
+  flex: 1;
+  background: #f7d9d9;
+}
+
+.sidebar {
+  flex: 0 1 300px;
+  background: #f7d9d9;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.hero {
+  max-width: 1160px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+.nav-element {
+  margin-right: 20px;
+}
+
+.nav-element:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+.footer {
+  background: #cf7c7c;
+  padding: 20px;
+  color: rgb(71, 71, 71);
+}
+
+.content img {
+  margin-left: none;
+  margin-right: none;
+  width: 250px;     
+  height: 250px;
+  overflow: hidden;
+}
+
+.polaroid {
+position: relative;
+width: 300px;
+}
+
+.polaroid img {
+border: 10px solid #fff;
+border-bottom: 55px solid #fff;
+-webkit-box-shadow:3px 3px 3px #dddddd;
+   -moz-box-shadow:3px 3px 3px #dddddd;
+        box-shadow:3px 3px 3px #dddddd;
+}
+
+.polaroid p {
+position: absolute;
+text-align: center;
+width: 100%;
+bottom: 0;
+font: 400 18px/1 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #f9f3f3;
+}
+
+.content img:hover{
+  box-shadow: 5px 10px 5px 5px rgba(56, 54, 54, 0.2);
+}
