@@ -5,4 +5,4 @@ I probably didn't plan ahead as much as I should have. I didn't run into any maj
 
 I'm quite pleased by the appearence of my site but I'm unsure about the quality of the code. 
 
-https://ballet-news.netlify.app/
+
