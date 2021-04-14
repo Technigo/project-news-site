@@ -62,7 +62,7 @@ h2 {
 }
 .image-container {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column ;
   justify-content: space-between;
   align-items: center;
   padding-top:20px ;
@@ -109,8 +109,9 @@ figcaption {
     padding-top: 10px;
   }
 @keyframes fadeIn { 
-  from { opacity: 2%; 
-}
+  from { 
+    opacity: 2%; 
+  }
 } 
   .link {
     display: inline;
