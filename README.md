@@ -1,6 +1,6 @@
 # News Site
 
-Project 2 in Technigo 2021 - create a News site
+Project 2 Technigo 2021 - create a News site
 
 ## The problem
 
@@ -9,4 +9,4 @@ Project 2 in Technigo 2021 - create a News site
 - Create responsive webpages for mobile, desktop and tablet
 
 ## View it live
-link to project: 
+link to project: https://suspicious-almeida-365e70.netlify.app/
