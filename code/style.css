@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
-
 html {
 	background: #FFF; 
 }
 
 body {
 	margin: 0;
+	height: 100vh;
 }
 
 .container {
@@ -25,7 +25,7 @@ h1:hover {
 	font-family: 'Oswald', 'Helvetica', 'Arial', 'sans-serif';
 	font-weight: 700; 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .menu-top, .nav-item {
@@ -34,7 +34,8 @@ h1:hover {
 }
 
 .nav-item {
-	margin-left: 10px;
+	display: none; 
+	margin-left: 5px;
 	margin-top: 5px;
 }
 
@@ -42,13 +43,14 @@ h1:hover {
 	color:blue;
 }
 
-.button {
+.button-container {
+	display: none; 
 	margin-right: 10px;
 	margin-top: 5px;
 }
 
-.button1, .button2 {
-	border: 1px solid #212529;
+.button {
+	background: #ced4da;
 	margin: 2px 2px;
 	padding: 5px 5px;
 	color: blue;
@@ -56,12 +58,11 @@ h1:hover {
 	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block; 
 	cursor: pointer;
-}	
-
-.button1:hover, .button2:hover {
-	background: #ced4da;
+	border: none;
+	border-radius: 3px;
+	width: 60px;
+	height: 30px;
 }
 
 .big-news {
@@ -123,6 +124,15 @@ footer {
 	.container {
 		width: 768px;
 	}
+	
+	.coreNavigation {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.nav-item {
+		display: flex; 
+	}
 
 	.big-news {
 		display: flex;
@@ -163,6 +173,20 @@ footer {
 @media (min-width: 992px) {
 	.container {
 		width: 992px;
+	}
+
+	.coreNavigation {
+		display: flex;
+    justify-content: space-between;
+	}
+
+	.nav-item {
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+
+	.button-container {
+		display: inline-flex;
 	}
 
 	.big-news {
