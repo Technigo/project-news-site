@@ -8,4 +8,4 @@ I started with adding all the content in the order I wanted them. After that I s
 
 ## View it live
 
-You can see my news site here: https://hassenytt.netlify.app/index2.html
+You can see my news site here: https://hassenytt.netlify.app
