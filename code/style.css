@@ -1,300 +1,287 @@
-                                                            html {
-                                                                background: #F8F9FA;
-                                                            }
-                                                            
-                                                            body {
-                                                                padding: 25px;
-                                                            }
-                                                            /****************************** HEADER ******************************/
-                                                            
-                                                            .logo {
-                                                                width: 62px;
-                                                            }
-                                                            
-                                                            .header {
-                                                                padding: 20px 0px 25px 0px;
-                                                                display: flex;
-                                                                justify-content: space-around;
-                                                            }
-                                                            
-                                                            @font-face {
-                                                                font-family: logofont;
-                                                                src: url(./Germanika-Personal-Use.ttf);
-                                                            }
-                                                            
-                                                            .newspaper-name {
-                                                                font-family: logofont;
-                                                                font-size: 55px;
-                                                                letter-spacing: 3px;
-                                                                margin: 0;
-                                                                font-weight: normal;
-                                                                position: relative;
-                                                                margin-left: -10px;
-                                                            }
-                                                            
-                                                            .navigation-menu {
-                                                                font-family: andale mono;
-                                                                display: flex;
-                                                                align-items: center;
-                                                            }
-                                                            
-                                                            .navigation-item {
-                                                                margin-right: 10px
-                                                            }
-                                                            
-                                                            .navigation-item:last-child {
-                                                                margin-right: 0;
-                                                            }
-                                                            /*************************** BIG NEWS SECTION ***************************/
-                                                            
-                                                            .main-news-card {
-                                                                width: 95%;
-                                                                background: rgb(218, 219, 214);
-                                                                margin-left: 20px;
-                                                                padding-top: 40px;
-                                                                padding-bottom: 30px;
-                                                            }
-                                                            
-                                                            .couture img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 830px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-couture {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -830px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            
-                                                            .text-couture {
-                                                                margin-top: 20px;
-                                                            }
-                                                            /************************** SMALL NEWS SECTION **************************/
-                                                            
-                                                            .news-card {
-                                                                width: 95%;
-                                                                background: rgb(218, 219, 214);
-                                                                margin-left: 20px;
-                                                                padding-bottom: 30px;
-                                                            }
-                                                            /***** GREENWASHING CARD ****/
-                                                            
-                                                            .greenwashing img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-greenwashing {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /***** BILLIE CARD ****/
-                                                            
-                                                            .billie-holiday img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-billie {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /***** SILK SCARVES CARD ****/
-                                                            
-                                                            .silk-scarves img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-scarves {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /***** ME TOO CARD ****/
-                                                            
-                                                            .me-too img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-me-too {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /***** EMBROIDERY CARD ****/
-                                                            
-                                                            .embroidery img {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border-radius: 4px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                border-radius: 0px;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-embroidery {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /***** MUSIC CARD ****/
-                                                            
-                                                            .music iframe {
-                                                                width: 85%;
-                                                                margin-left: 34.5px;
-                                                                border: 1px solid #fff;
-                                                                background: #fff;
-                                                                border-bottom: 130px solid #fff;
-                                                                border-left: 15px solid #fff;
-                                                                border-right: 15px solid #fff;
-                                                                border-top: 20px solid #fff;
-                                                                box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white, 0px 21px 8px -15px #111;
-                                                            }
-                                                            
-                                                            .heading-music {
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                font-size: 15px;
-                                                                color: rgba(7, 7, 7, 0.829);
-                                                                padding: 5px 40px 0px 40px;
-                                                                position: relative;
-                                                                margin-top: -130px;
-                                                                margin-left: 20px;
-                                                            }
-                                                            /****************************** FOOTER ******************************/
-                                                            
-                                                            .footer {
-                                                                font-family: andale mono;
-                                                                margin-top: 40px;
-                                                            }
-                                                            
-                                                            .copyright {
-                                                                display: flex;
-                                                                justify-content: space-between;
-                                                                font-size: 14px;
-                                                                align-items: flex-end;
-                                                            }
-                                                            
-                                                            .social-media {
-                                                                display: flex;
-                                                                justify-content: flex-end;
-                                                                align-items: center;
-                                                                font-size: 16px;
-                                                            }
-                                                            /****************************** MEDIA QUARIES ******************************/
-                                                            /***** BREAKPOINT INTO TABLET ****/
-                                                            
-                                                            .container-big-news {
-                                                                display: flex;
-                                                                justify-content: flex-start;
-                                                            }
-                                                            
-                                                            .container-smaller-news {
-                                                                display: flex;
-                                                                flex-direction: column;
-                                                            }
-                                                            
-                                                            @media (min-width: 768px) and (max-width: 991px) {
-                                                                .container-big-news {
-                                                                    width: 105%;
-                                                                    margin-left: -2%;
-                                                                }
-                                                                .container-smaller-news {
-                                                                    width: 105%;
-                                                                    flex-direction: row;
-                                                                    flex-wrap: wrap;
-                                                                    justify-content: space-between;
-                                                                }
-                                                                .news-card {
-                                                                    width: 42%;
-                                                                }
-                                                                .couture img {
-                                                                    margin-left: 5.5%;
-                                                                }
-                                                                .heading-couture {
-                                                                    margin-right: 30%;
-                                                                    padding-left: 6%;
-                                                                    padding-right: 8%;
-                                                                }
-                                                                .text-couture {
-                                                                    margin-right: -47.5%;
-                                                                }
-                                                                /* .heading-greenwashing {
-                                                            margin-right: -150%;
-                                                            padding-right: 120%;
-                                                        } */
-                                                            }
-                                                            /***** BREAKPOINT INTO DESKTOP ****/
-                                                            
-                                                            @media (min-width: 992px) and (max-width: 1199px) {
-                                                                .news-card {
-                                                                    width: 23.75%
-                                                                }
-                                                            }
+body {
+  margin: 0;
+  background: #faf6f667;
+}
+
+/****************************** HEADER ******************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4% 0 4%;
+}
+
+/********** LOGOTYPE **********/
+
+.logo {
+  width: 62px;
+  margin-top: 4%;
+}
+
+/********** HAMBURGER MENU **********/
+
+.hamburger {
+  margin-top: 8%;
+}
+
+.hamburger-bar {
+  width: 33px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px 0;
+  border-radius: 15px;
+}
+
+/********** NAME OF PAPER **********/
+
+@font-face {
+  font-family: logofont;
+  src: url(./assets/fonts/Germanika-Personal-Use.ttf);
+}
+
+.newspaper-name {
+  font-family: logofont;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-top: 8%;
+  margin-bottom: 0;
+}
+
+/********** NAV BAR MENU **********/
+
+.navigation-menu {
+  font-family: andale mono;
+  display: none;
+}
+
+.navigation-item {
+  margin-right: 10px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+/****************************** NEWS SECTION ******************************/
+
+.news-section {
+  background: rgb(218, 219, 214);
+  height: 500%;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/********** MAIN NEWS **********/
+
+.main-news-card {
+  width: 84%;
+  border: 1px solid #fff;
+  background: #fff;
+  border-bottom: 30px solid #fff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-top: 20px solid #fff;
+  box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white,
+    0px 21px 8px -15px #111;
+  margin-bottom: 30px;
+}
+
+.main-news-card img {
+  width: 100%;
+}
+
+.main-news-heading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.main-news-heading:hover {
+  background-color: rgba(233, 232, 230, 0.637);
+}
+
+.main-news-text {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/********** SMALLER NEWS **********/
+
+.smaller-news-cards {
+  width: 84%;
+  border: 1px solid #fff;
+  background: #fff;
+  border-bottom: 15px solid #fff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-top: 20px solid #fff;
+  box-shadow: 0px 8px 3px -8px #111, 0px 6px 0px -3px white,
+    0px 21px 8px -15px #111;
+  margin-bottom: 30px;
+}
+
+.small-news-card img {
+  width: 100%;
+}
+
+.small-news-heading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.small-news-heading:hover {
+  background-color: rgb(233, 232, 230);
+}
+
+.small-news-card iframe {
+  width: 100%;
+  height: 50%;
+}
+
+/********** FOOTER **********/
+
+.footer {
+  font-family: andale mono;
+  margin-bottom: 4%;
+}
+
+.social-media {
+  font-size: 14px;
+  margin-left: 4%;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer img {
+  width: 5%;
+}
+
+.footer img:first-child {
+  margin-left: 4%;
+}
+
+.copyright {
+  font-size: 10px;
+  margin-left: 4%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+/****************************** MEDIA QUARIES ******************************/
+
+/********** TABLET **********/
+
+@media (min-width: 768px) {
+  .header {
+    align-items: flex-end;
+    margin-bottom: 5%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .newspaper-name {
+    font-size: 58px;
+    letter-spacing: 3px;
+  }
+  .navigation-menu {
+    display: flex;
+  }
+  .news-section {
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: normal;
+  }
+  .smaller-news-cards {
+    width: 38%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .footer {
+    margin-bottom: 2%;
+  }
+  .social-media {
+    margin-top: 4%;
+  }
+  .social-media img {
+    width: 3%;
+  }
+  .copyright {
+    margin-top: 4%;
+  }
+}
+
+/********** DESKTOP **********/
+
+@media (min-width: 992px) {
+  .logo {
+    width: 100px;
+  }
+  .newspaper-name {
+    font-size: 85px;
+    margin-top: 0;
+  }
+  .smaller-news-cards {
+    width: 19%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+}
+
+/********** BIGGER DESKTOP **********/
+
+@media (min-width: 1200px) {
+  .header {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .newspaper-name {
+    font-size: 96px;
+  }
+
+  .navigation-menu {
+    font-size: 22px;
+  }
+
+  .smaller-news-cards {
+    width: 16%;
+  }
+
+  .main-news-card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main-news-text {
+    margin-right: 43px;
+  }
+
+  .main-news-heading {
+    margin: 30px 43px 28px 0;
+  }
+
+  .main-news-card img {
+    width: 50%;
+  }
+
+  .news-section {
+    padding-top: 6%;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

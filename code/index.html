@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>The Fashionable Update - News & inspiration from the design world</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- copy paste meta tag if not working and perhaps add Favicon -->
-
+    <link rel="stylesheet" href="style.css">
+    <title>The Fashionable Update</title>
 </head>
 
 <body>
-    <!-- Logotype, Name of site and Menu -->
+    <!-- TOP SECTION -->
+
     <header class="header">
-        <img class="logo" src="./Silhuette-Logotype-with-circle.svg" alt="Logotype">
+
+        <!-- Logotype & Name of Paper -->
+
+        <img class="logo" src="./assets/icons/Silhuette-Logotype-with-circle.svg" alt="Logotype">
         <h1 class="newspaper-name">The Fashionable Update</h1>
-        <!-- <input id="menu" type="checkbox">
-        <label for="menu"></label> -->
+
+        <!-- Hamburger menu (visible in Mobile view only) -->
+
+        <nav class="hamburger">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+        </nav>
+
+        <!-- Name of paper & Nav bar (made visible in Tablet & Desktop view) -->
+
 
         <nav class="navigation-menu">
             <div class="navigation-item">HOME</div>
@@ -25,111 +37,108 @@
         </nav>
     </header>
 
+    <!-- NEWS SECTION -->
 
-    <!-- The Big News -->
-    <section class="container-big-news">
-        <div class="main-news-card">
-            <div class="couture">
-                <img src="./Couture.jpg" alt="Augusta Lundin Exhibition">
-                <div class="heading-couture">
-                    <h2>Final Call for <span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Augusta Lundin - The First Fashion House in Sweden:</span> Exhibition to
-                        close on Sunday</h2>
-                    <div class="text-couture">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget pellentesque sapien. In rutrum lorem ac tortor suscipit dictum. Quisque venenatis felis odio, eu porta est sodales ut. Nunc tempor magna id orci bibendum varius.
-                            Donec tincidunt accumsan erat in dignissim. In odio purus, vulputate sed massa sit amet, commodo vulputate velit. Etiam tellus elit, hendrerit id fermentum at, gravida eu nulla. In venenatis nulla at gravida imperdiet. Duisac
-                            augue tortor.
-                            <br>
-                            <br> Praesent cursus ut eros vehicula tempor. Fusce venenatis risus enim, ac accumsan magna commodo ut. Nunc ultrices, augue vitae pulvinar malesuada, tellus sem imperdiet justo, quis maximus lacus arcu ut turpis. Proin non
-                            sapien pharetra, ultricies tortor quis, pretium leo. Quisque justo neque, iaculis porta est sed, pharetra feugiat leo. Quisque turpis velit, dignissim vel hendrerit eu, vulputate efficitur eros. Morbi odio augue, commodo at
-                            leo nec, pharetra gravida dolor. Duis nec posuere mauris. In odio purus, vulputate sed massa sit amet, commodo vulputate velit.
-                            <br>
-                            <br> Donec mauris risus, consequat non est vehicula, dapibus dignissim ligula. Aliquam interdum ante vitae arcu aliquam, at imperdiet lacus pharetra. Mauris id accumsan ante. Interdum et malesuada fames ac ante ipsum primis
-                            in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sollicitudin sapien a tempor scelerisque. Donec vitae sollicitudin lectus, ut ultricies lectus. Donec pretium
-                            laoreet dapibus. In odio purus, vulputate sed massa sit amet, commodo vulputate velit.
-                            <br>
-                            <br> Etiam egestas, dui ac ultricies vestibulum, orci ex hendrerit nunc, vel dictum lectus mi ac velit. Quisque sed cursus arcu, quis ultricies sapien. Ut interdum sapien scelerisque augue semper efficitur. Donec mauris risus,
-                            consequat non est vehicula, dapibus dignissim ligula. Aliquam interdum ante vitae arcu aliquam, at imperdiet lacus pharetra. Mauris id accumsan ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    </div>
-                </div>
+    <main class="news-section">
+
+        <!-- The Main News  -->
+
+        <section class="main-news-card">
+            <img src="./assets/images/Couture.jpg" alt="Augusta Lundin Exhibition">
+            <div class="main-news-text-wrapper">
+                <h2 class="main-news-heading">
+                    Final Call for <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Augusta Lundin - The First Fashion House in Sweden:</span> Exhibition to close
+                    on Sunday
+                </h2>
+                <p class="main-news-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae fugiat mollitia ratione omnis exercitationem, eaque voluptates aliquid incidunt provident ea minima illo, molestias dignissimos illum repellendus aperiam doloribus laudantium
+                        nisi, soluta sapiente! Pariatur dolore soluta, iure deserunt nostrum libero quaerat qui similique magni dolorem adipisci, delectus molestias debitis aliquid.
+                </p>
             </div>
-    </section>
+        </section>
 
-    <!-- The Smaller News  -->
-    <section class="container-smaller-news">
+        <!-- The Smaller News  -->
 
-        <div class="news-card">
-            <div class="greenwashing">
-                <img src="./Greenwashing.jpg" alt="How to spot greenwashing">
-                <div class="heading-greenwashing">
-                    <h2><span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Environmentally friendly?</span> How to spot greenwashing and make sure your garments really
-                        are sustainable</h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <img src="./assets/images/Greenwashing.jpg" alt="How to spot greenwashing">
+                <h2 class="small-news-heading">
+                    <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Environmentally friendly?</span> How to spot greenwashing and make sure your garments really
+                    are sustainable
+                </h2>
             </div>
-        </div>
+        </section>
 
-        <div class="news-card">
-            <div class="billie-holiday">
-                <img src="./Prada-Billie-Holiday.jpg" alt="Prada to do costume for Bille Holiday movie">
-                <div class="heading-billie">
-                    <h2>Iconic fashion house <span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Prada</span> to make costumes for Billie Holiday in upcoming biopic</h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <img src="./assets/images/Prada-Billie-Holiday.jpg" alt="Prada to do costume for Bille Holiday movie">
+                <h2 class="small-news-heading">
+                    Iconic fashion house <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Prada</span> to make costumes for Billie Holiday in upcoming biopic
+                </h2>
             </div>
-        </div>
+        </section>
 
-        <div class="news-card">
-            <div class="silk-scarves">
-                <img src="./Silk-Scarves.jpg" alt="Silk Stories to launch collection">
-                <div class="heading-scarves">
-                    <h2>Independent label <span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">The Silk Stories</span> to launch their SS21 collection influenced by
-                        the Lombardian summers</h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <img src="./assets/images/Silk-Scarves.jpg" alt="Silk Stories to launch collection">
+                <h2 class="small-news-heading">
+                    Independent label <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">The Silk Stories</span> to launch their SS21 collection influenced by
+                    the Lombardian summers
+                </h2>
             </div>
-        </div>
+        </section>
 
-        <div class="news-card">
-            <div class="me-too">
-                <img src="./Me-Too.jpg" alt="#me too is changing the fashion industry">
-                <div class="heading-me-too">
-                    <h2>How <span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">#me too</span> is changing the fashion industry: Tales from inside the worlds biggest
-                        brands
-                    </h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <img src="./assets/images/Me-Too.jpg" alt="#me too is changing the fashion industry">
+                <h2 class="small-news-heading">
+                    How <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">#me too</span> is changing the fashion industry: Tales from inside the worlds biggest
+                    brands
+                </h2>
             </div>
-        </div>
+        </section>
 
-        <div class="news-card">
-            <div class="embroidery">
-                <img src="./World-Embroidery.jpg" alt="Embroidery is back!">
-                <div class="heading-embroidery">
-                    <h2><span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Embroidery is back!</span> Practise your skills getting inspired (and provoked) by the
-                        professionals
-                    </h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <img src="./assets/images/World-Embroidery.jpg" alt="Embroidery is back!">
+                <h2 class="small-news-heading">
+                    <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Embroidery is back!</span> Practise your skills getting inspired (and provoked) by the
+                    professionals
+                </h2>
             </div>
-        </div>
+        </section>
 
-        <div class="news-card">
-            <div class="music">
-                <iframe src="https://open.spotify.com/embed/track/1ByVGqBt33n0iT5wgbwVzN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <div class="heading-music">
-                    <h2>Wanna know what´s in our heads? Check out tune of the week by Stockholm post-punk quintet <span style="font-family: lucida calligraphy; font-size: 20px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Viagra Boys</span></h2>
-                </div>
+        <section class="smaller-news-cards">
+            <div class="small-news-card">
+                <iframe src="https://open.spotify.com/embed/track/1ByVGqBt33n0iT5wgbwVzN" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <h2 class="small-news-heading">
+                    Wanna know what´s in our heads? Check out tune of the week by Stockholm post-punk quintet <span style="font-family: lucida calligraphy; font-size: 15px; text-decoration: underline; font-style: italic; color: rgba(30, 29, 31, 0.842);">Viagra Boys</span>
+                </h2>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Copyright and Social Media  -->
+    <!-- FOOTER  -->
+
     <footer class="footer">
+
+        <div class="social-media">
+            <p>FOLLOW US ON SOCIAL MEDIA
+                <a href="https://www.instagram.com/">
+                    <img src="./assets/icons/instagram_f_icon-icons.com_62685.svg" alt="Instagram icon">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./assets/icons/social_facebook_fb_75.png" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com/?lang=sv">
+                    <img src="./assets/icons/TWITTER_icon-icons.com_65486.svg" alt="Twitter icon">
+                </a>
+            </p>
+        </div>
         <div class="copyright">
             <p>&copy; The Fashionable Update</p>
-            <div class="social-media">
-                <p>FOLLOW US on INSTAGRAM and FACEBOOK</p>
-                <i class="fab fa-instagram"></i>
-            </div>
         </div>
     </footer>
-
 
 </body>
 
