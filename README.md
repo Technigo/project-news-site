@@ -8,4 +8,4 @@ I have faced difficulties get the Youtube side bar works but guess it ended up w
 
 ## View it live
 Vheck out my news website here:
-https://priceless-kilby-e936ad.netlify.app/code/
+https://nazanin-news.netlify.app/code/
