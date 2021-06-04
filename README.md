@@ -1,6 +1,6 @@
 # News Site
 
-To create a responsive news sight.
+To create a responsive news website.
 
 ## The problem
 
@@ -11,4 +11,4 @@ I struggled with a lot of things and I didn't have enough time for doing all the
 But I'm happy I managed to get everything into place, make it responsive, add hover effects, and style it a little bit.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-news-website.netlify.app/
