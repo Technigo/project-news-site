@@ -296,6 +296,7 @@ footer {
 
   .main {
     width: 90%;
+    flex-direction: column;
   }
 
   .big-news {
@@ -303,8 +304,9 @@ footer {
   }
 
   .big-image {
-    height: 80%;
-    align-self: center;
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
   }
 
   p {
@@ -422,7 +424,6 @@ footer {
   }
 
   .big-image {
-    height: 60%;
     width: 100%;
     align-self: center;
     padding-right: 0;
