@@ -1,3 +1,5 @@
+Project week 2 of Technigo bootcamp
+
 # News Site
 
 This project is a responsive newspaper landing site, adapted to mobile, tablet and desktop.
