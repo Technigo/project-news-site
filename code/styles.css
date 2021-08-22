@@ -1,0 +1,85 @@
+:root {
+  --pink: #eecae3;
+  --brown: #a9826d;
+  --green: #84a589;
+  --nav-top: #2a6771;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-links {
+color: white;
+}
+
+.icon {
+  color: var(--green);
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+}
+
+.top-navicons {
+  color: var(--pink);
+}
+
+.navbar {
+  background-color: var(--nav-top);
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* Styles for Desktop version */
+.logo-tablets-and-mobiles {
+  display: none;
+  color: var(--pink);
+}
+
+.logo-desktop {
+  width: 180px;
+  height: 50px;
+  padding: none;
+  margin: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.navlinks-container {
+  display: inherit;
+}
+
+.nav-links {
+  margin-right: 50px;
+}
+
+img {
+  width: 560px;
+  height: 315px;
+}
+/* youtube default  */
+/* width="560" */
+/* height="315" */
