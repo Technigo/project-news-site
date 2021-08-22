@@ -1,4 +1,53 @@
 html {
-  background: #0025ff;
+  background: #f7f7f7;
+}
+
+body {
+  font-family: 'Barlow', serif;
+  color: rgb(0, 0, 0);
+  margin:0;
+}
+
+header {
+  background: #cacacc;
+  color: #fff;
+  width: 100%; 
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left:0;
+}
+
+.logo-img {
+  margin: 2%; 
+}
+
+.logo-headline, .navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+
+}
+
+.navigation-link {
+  width: auto;
+  margin: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Besley', serif;
+  margin: auto;
+}
+
+.news-snippets {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+footer {
+  background: #cacacc;
   color: #fff;
 }
