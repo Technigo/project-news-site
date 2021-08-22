@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+News site with the aim of learning flexbox, CSS Grid, Box Model and responsive pages.
 
 ## The problem
 
