@@ -38,7 +38,8 @@ h2,
 h3,
 h4,
 a {
-  font-family: "Kaisei Opti", serif;
+  /* font-family: "Kaisei Opti", serif; */
+  font-family: "Open Sans", sans-serif;
 }
 
 p,
@@ -51,9 +52,9 @@ body {
 }
 
 body {
-  background: linear-gradient(45deg, #23d5ab, #fff000, #97ff00, #23a6d5);
+  background: linear-gradient(-90deg, #FF595E, #FFCA3A, #8AC926, #1982C4, #6A4C93);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 15s ease infinite;
   height: 100vh;
 }
 
@@ -107,10 +108,9 @@ body {
   background: white;
 }
 
-.main__header h1 {
-  font-size: min(max(16px, 10vw), 40px);
-  text-align: center;
-  text-decoration: underline;
+.main__header img {
+  width:calc(100% - 40px);
+  margin:0px 20px;
 }
 
 .big-news__header {
@@ -128,7 +128,6 @@ body {
 
 .main__section div {
   padding: 10px;
-  /* border: 1px solid black; */
   box-shadow: 2px 2px 15px #e7e7e7;
 }
 
@@ -297,10 +296,6 @@ body {
     margin: 0px 10px;
     font-size: 20px;
   }
-
-  .main__header h1 {
-    font-size: min(max(16px, 20vw), 80px);
-  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -313,10 +308,6 @@ body {
 
   body {
     padding: 40px;
-  }
-
-  .main__header h1 {
-    font-size: min(max(16px, 15vw), 103px);
   }
 
   .main__section {
@@ -333,7 +324,7 @@ body {
 
   .main__section div p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
   }
 
   .main__section div h2 {
@@ -394,11 +385,5 @@ body {
   .main__section :nth-child(11) {
     grid-column: 3 / span 2;
     grid-row: 5 / span 1;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .main__header h1 {
-    font-size: min(max(16px, 20vw), 135px);
   }
 }
