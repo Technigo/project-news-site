@@ -1,4 +1,43 @@
 html {
-  background: #0025ff;
-  color: #fff;
+	background: #f3f3f3;
+	/* color: #fff; */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header-logo {
+	width: 100px;
+}
+
+.big-news {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+p.news-text {
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.dummy-img {
+	border: 10px solid red;
+}
+
+@media (min-width: 768px) {
+	header {
+		background-color: rgb(255, 162, 56);
+	}
+	.big-news {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 40vw;
+	}
+	.dummy-img {
+		margin-right: 10px;
+	}
 }
