@@ -4,6 +4,72 @@
 }
 body {
   background-color: #F3F0D7;
+}
+.header {
+  display: flex;
+  
+  
+}
+.logo {
+  width: 50px;
+}
+.navbar {
+  display: none;
+  float: right;
+  padding: 3em;
+}
+.site-name {
+  display: flex;
+  font-family: 'Cinzel', serif;
+}
+.big-news {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Mobile first!*/
+@media(min-width: 768px) {
+  .site-name {
+    display: none;
+  }
+  .logo {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .header{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .logo {
+    width: 60px;
+  }
+  .site-name {
+    display: flex;
+    margin-top: 1em;
+    
+
+  }
+  .navbar {
+    display: flex;
+    margin-right: 0;
+    
+  }
+ .navbar a {
+   float: right;
+   padding-right: 3em;
+ } 
+ 
+ .big-news{
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+}
+body {
+  background-color: #F3F0D7;
   padding: 1rem;
 }
 .header {
