@@ -3,7 +3,7 @@ body {
 }
 
 .logo {
-  width: 50px;
+  width: 100px;
   background-color: white;
 }
 
@@ -17,15 +17,76 @@ header {
 }
 
 .nav-bar a {
-  padding: 0 5px;
+  padding: 0 30px; /* till datorskärm */ 
+  font-size: 30px;
+}
+
+.tidningens-logga {
+background-image: url(leather-nunchuck.png);
+background-repeat: repeat;
+background-size: 100px;
+text-align: center;
+padding: 50px;
 }
 
 h1 {
-  border: 30px solid transparent;
   margin: auto;
   padding: 10px;
-  border-image: url(leather-nunchuck.png) 40 repeat;
-  text-align: center;
+  background-color: white;
+  display:inline;
+  font-size: 80px; /* till datorskärm */
+  margin: 50px;
+}
+
+p {
+  margin: 0;
+}
+.big-news {
+  margin-top: 30px;
+  padding-top: 30px;
+  background-image: url(leather-nunchuck.png);
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+
+.big-news-text {
+  border: 2px solid black;
+  background-color: white;
+  margin:0px 30px 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.big-news-text p {
+  margin: 3px;
+}
+
+.small-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin: 30px;
+}
+
+.text-pic {
+  background-image: url(leather-nunchuck.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
+  grid-column: span 1;
+  background-color: white;  
+  margin: 15px;
+  padding: 5px;
+}
+
+
+.small-news-text p {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 2px;
 }
 
 footer {
@@ -37,4 +98,14 @@ footer {
 
 footer img {
   width: 50px;
+}
+
+@media (min-width: 992px) {
+.big-news-pic {
+  width: 300px;
+}
+
+@media (min-width: 1200px) {
+.big-news-pic {
+  width: 200px;
 }
