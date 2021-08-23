@@ -1,4 +1,40 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  margin: auto;
+}
+
+.logo {
+  width: 50px;
+  background-color: white;
+}
+
+header {
+  background-color: #00607F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  color:white;
+}
+
+.nav-bar a {
+  padding: 0 5px;
+}
+
+h1 {
+  border: 30px solid transparent;
+  margin: auto;
+  padding: 10px;
+  border-image: url(leather-nunchuck.png) 40 repeat;
+  text-align: center;
+}
+
+footer {
+  background-color: #00607F;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+footer img {
+  width: 50px;
 }
