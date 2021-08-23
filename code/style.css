@@ -1,4 +1,399 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* A MODERN CSS RESET */
+/* https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* MY CSS STARTS HERE */
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Kaisei Opti", serif;
+}
+
+p,
+span {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(-90deg, #23d5ab, #fff000, #97ff00, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.full__container {
+  width: calc(100% - 20px);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px black;
+}
+
+.my__nav {
+  background: white;
+  width: 100%;
+  background: white;
+  overflow: auto;
+  display: flex;
+  text-align: center;
+  padding: 0px 5px;
+}
+
+.my__nav a {
+  width: 25%;
+  font-size: 12px;
+  color: black;
+  padding: 2px;
+  text-decoration: none;
+  border-bottom: 4px solid white;
+}
+
+.my__nav a:hover {
+  width: 25%;
+  border-bottom: 4px solid black;
+  transition: 0.2s;
+}
+
+.main__header {
+  background: white;
+}
+
+.main__header h1 {
+  font-size: min(max(16px, 10vw), 40px);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.big-news__header {
+  font-size: 18px !important;
+}
+
+.main__section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+  background: white;
+}
+
+.main__section div {
+  padding: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 15px #e7e7e7;
+}
+
+.main__section div img {
+  width: 100%;
+}
+
+.main__section div span {
+  display: block;
+  padding: 5px;
+  margin: 5px 0px;
+  text-align: center;
+  background: black;
+  color: white;
+  border: black 2px solid;
+}
+
+.main__section div span:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.main__section :nth-child(1) div {
+  border: none;
+  box-shadow: none;
+}
+
+.main__section div p,
+.main__section div h2,
+.main__section div h3 {
+  padding: 3px 0px;
+  display: block;
+}
+
+.main__section div p {
+  font-size: 12px;
+  line-height:16px;
+}
+
+.main__section div h2,
+.main__section div h3 {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.main__footer {
+  min-height: 150px;
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.main__footer div {
+  padding: 30px;
+}
+
+.main__footer div i {
+  margin: 0px 10px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .full__container {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 10px 16px black;
+  }
+
+  .main__section div p,
+  .main__section div h2,
+  .main__section div h3 {
+    padding: 3px 0px;
+  }
+
+  .my__nav {
+    padding: 0px 20px;
+  }
+
+  .my__nav a {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .big-news__header {
+    font-size: 32px !important;
+    line-height: 36px !important;
+    margin-top: 0px;
+  }
+
+  .main__section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main__section div img {
+    width: 100%;
+  }
+  .main__section :nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__section :nth-child(1) img {
+    height: 150px;
+    display: none;
+  }
+
+  .main__section :nth-child(1) div p {
+    column-count: 2;
+  }
+
+  .main__section :nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+  }
+
+  .main__section :nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
+
+  .main__section :nth-child(5) {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+  }
+
+  .main__section :nth-child(8) {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+  }
+
+  .main__section :nth-child(11) {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+  }
+
+  .main__section div p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .main__section div h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main__section div h3 {
+    font-size: 20px;
+    line-height:26px;
+  }
+
+  .main__footer {
+    min-height: 150px;
+    width: 100%;
+  }
+
+  .main__header h1 {
+    font-size: min(max(16px, 20vw), 80px);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .full__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-shadow: 20px 16px black;
+  }
+
+  body {
+    padding: 40px;
+  }
+
+  .main__header h1 {
+    font-size: min(max(16px, 15vw), 103px);
+  }
+
+  .main__section {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .main__section div p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .main__section div h2 {
+    font-size: 28px;
+    line-height:32px;
+  }
+
+  .big-news__header {
+    font-size: 42px !important;
+    line-height: 46px !important;
+    margin-top: 0px;
+  }
+
+  .main__section div {
+    padding: 20px;
+  }
+  .main__header,
+  .main__footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main__section :nth-child(1) {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: flex;
+  }
+
+  .main__section :nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .main__section :nth-child(1) div h2 {
+    display: block;
+  }
+
+  .main__section :nth-child(1) img {
+    width: 40%;
+  }
+
+  .main__section :nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  }
+
+  .main__section :nth-child(5) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+  }
+
+  .main__section :nth-child(8) {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+  }
+
+  .main__section :nth-child(11) {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 1;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .main__header h1 {
+    font-size: min(max(16px, 20vw), 135px);
+  }
 }
