@@ -13,35 +13,21 @@
   <body>
     <div class="center-screen">
       <a name="top"></a>
-      <header class="header-mobile">
-        <a href="#top">
+
+      <header class="header">
+        <a class="a-logotype" href="#top">
           <div class="logotype">
             <span class="bold">The </span><span class="thin">Newspaper</span>
           </div>
         </a>
-      </header>
-
-      <header class="header-ipad">
         <a href="#">
           <div class="icon-and-text">
-            <i class="far fa-newspaper"></i>
-            <span>News</span>
-          </div>
-        </a>
-        <a href="#">
-          <div class="icon-and-text icon">
             <i class="fas fa-dollar-sign icon"></i>
             <span>Economy</span>
           </div>
         </a>
-
-        <a href="#top">
-          <div class="logotype">
-            <span class="bold">The </span><span class="thin">Newspaper</span>
-          </div>
-        </a>
         <a href="#">
-          <div class="icon-and-text icon">
+          <div class="icon-and-text">
             <i class="fas fa-futbol icon"></i>
             <span>Sports</span>
           </div>
@@ -52,52 +38,24 @@
             <span>Entertainment</span>
           </div>
         </a>
-      </header>
-
-      <header class="header-desktop">
-        <a href="#top">
-          <div class="logotype">
-            <span class="bold">The </span><span class="thin">Newspaper</span>
+        <a href="#daily">
+          <div class="icon-and-text">
+            <i class="fas fa-camera-retro icon"></i>
+            <span>Daily polaroid</span>
           </div>
         </a>
-        <div class="menu-container">
-          <a href="#">
-            <div class="icon-and-text">
-              <i class="far fa-newspaper icon"></i>
-              <span>News</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-and-text icon">
-              <i class="fas fa-dollar-sign icon"></i>
-              <span>Economy</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-and-text icon">
-              <i class="fas fa-futbol icon"></i>
-              <span>Sports</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon-and-text">
-              <i class="fas fa-music"></i>
-              <span>Entertainment</span>
-            </div>
-          </a>
-        </div>
       </header>
 
       <section class="big-news-container">
         <div class="big-news-image">
           <img
             class="big-news-image"
-            src="big-news-image.jpeg"
+            src="./big-news-image.jpeg"
             alt="A photograph of three soldiers walking with guns"
           />
         </div>
         <div class="big-news-text-container">
-          <div class="big-news-text-1">
+          <div class="big-news-text">
             <a href="#">
               <h3>
                 Scenes from Afghanistan: U.S. troops struggle to secure the
@@ -110,7 +68,7 @@
             </a>
           </div>
 
-          <div class="big-news-text-2">
+          <div class="big-news-text">
             <a href="#">
               <h3>
                 How the Taliban turned social media into a tool for control
@@ -122,7 +80,7 @@
             </a>
           </div>
 
-          <div class="big-news-text-3">
+          <div class="big-news-text">
             <a href="#">
               <h3>
                 A celebrated Afghan school fears the Taliban will stop the music
@@ -140,7 +98,7 @@
         <div class="other-news item-1">
           <img
             class="other-news-pictures"
-            src="medications-image.jpg"
+            src="./medications-image.jpg"
             alt="A photograph of medications"
           />
           <a href="#">
@@ -169,14 +127,14 @@
           </a>
           <img
             class="other-news-pictures"
-            src="nursing.jpg"
+            src="./nursing.jpg"
             alt="A photograph of three hospital beds"
           />
         </div>
         <div class="other-news item-3">
           <img
             class="other-news-pictures"
-            src="hurricane.jpg"
+            src="./hurricane.jpg"
             alt="A photograph of a hurricane"
           />
           <a href="#">
@@ -207,14 +165,14 @@
           </a>
           <img
             class="other-news-pictures"
-            src="uber.jpg"
+            src="./uber.jpg"
             alt="A photograph of a Car"
           />
         </div>
         <div class="other-news item-5">
           <img
             class="other-news-pictures"
-            src="vietnam.jpg"
+            src="./vietnam.jpg"
             alt="A photograph of soldiers boarding a plane"
           />
           <a href="#">
@@ -233,26 +191,24 @@
         <div class="other-news item-6">
           <a href="#">
             <div class="other-news-text-container">
-              <span class="other-news-bold">
-                50 Years After Vietnam, Thousands Flee Lost War
-              </span>
+              <span class="other-news-bold"> Thousands flee a lost war </span>
               <span class="other-news-thin">
-                The U.S. admitted more than 300,000 asians after the War. There
-                is little chance the country will repeat the extensive refugee
-                resettlement effort.
+                The U.S. admitted more than 300,000 asians after the Vietnam
+                war. There is little chance the country will repeat the
+                extensive refugee resettlement effort.
               </span>
             </div>
           </a>
           <img
             class="other-news-pictures"
-            src="vietnam person.jpg"
+            src="./vietnam person.jpg"
             alt="A photograph of a person from Vietnam on a bicycle"
           />
         </div>
         <div class="other-news item-7">
           <img
             class="other-news-pictures"
-            src="school.jpg"
+            src="./school.jpg"
             alt="A photograph of a teacher and a child with masks on"
           />
 
@@ -266,6 +222,64 @@
               </span>
             </div>
           </a>
+        </div>
+      </section>
+
+      <section class="daily-polaroids">
+        <h3 class="daily-polaroid-header" id="daily">The daily polaroid</h3>
+        <div class="daily-polaroid-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="polaroid">
+                  <img
+                    class="daily-polaroid"
+                    src="./polaroid-1.jpg"
+                    alt="A photograph of a couple on the beach"
+                  />
+                  <div class="polaroid-text">Greetings from Maldives</div>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>Greetings from Maldives</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="polaroid">
+                  <img
+                    class="daily-polaroid"
+                    src="./polaroid-2.jpg"
+                    alt="A photograph of a man looking at the ocean from a view"
+                  />
+                  <div class="polaroid-text">Greetings from Italy</div>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>Greetings from Italy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="polaroid">
+                  <img
+                    class="daily-polaroid"
+                    src="./polaroid-3.jpg"
+                    alt="A photograph of a woman on a boat"
+                  />
+                  <div class="polaroid-text">Greetings from Thailand</div>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>Greetings from Thailand</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
