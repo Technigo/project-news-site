@@ -200,7 +200,6 @@ body {
 @media only screen and (min-width: 600px) {
   .full__container {
     width: calc(100% - 40px);
-    max-width: 1200px;
     margin: 0 auto;
     margin-top: 20px;
     box-shadow: 10px 16px black;
@@ -290,14 +289,6 @@ body {
     line-height:26px;
   }
 
-  .main__footer {
-    min-height: 150px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .main__footer div {
     padding: 15px;
   }
@@ -315,7 +306,6 @@ body {
 @media only screen and (min-width: 769px) {
   .full__container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     margin-top: 0px;
     box-shadow: 20px 16px black;
