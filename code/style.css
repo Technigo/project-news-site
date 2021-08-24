@@ -32,6 +32,7 @@ h3 {
 
 .logo {
   width: 100px;
+  padding: 20px;
 }
 
 .big-news {
@@ -103,7 +104,7 @@ h3 {
 
 
 
-@media  (min-width: 668px) and (max-width: 1024px){
+@media  (min-width: 668px) {
   /* html {
     background: red;
     } */
@@ -121,6 +122,7 @@ h3 {
 }
     nav {
       display: flex;
+      padding: 10px;
     }
 
     .grid-news {
@@ -154,4 +156,10 @@ h3 {
     background: orange;
 
         }
+        .grid-content {
+          flex-direction: row;
+          width: 30%;
+          margin: 1%;
+        }
+    
 }
