@@ -11,24 +11,31 @@ header {
 }
 .logo {
   width: 50px;
+  margin: 5px;
 }
-.navbar {
+nav {
   display: none;
   float: right;
   align-items: center;
 }
 .site-name {
   font-family: 'Cinzel', serif;
+  font-size: 35px;
+  margin-top: 1rem;
 }
 .big-news {
   display: flex;
   flex-direction: column;
+  padding: 5px;
+}
+hr {
+  border: double black 2px;
 }
 /*Grid collumn for the small articles*/
 .small-news {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px;
+  padding: 5px;
 }
 .article {
   grid-column: span 4;
@@ -45,17 +52,30 @@ footer {
   .site-name {
     display: none;
   }
-
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .tablet-logo {
+    width: 60px;
+  }
+  .logo {
+    display: none;
+  }
   .big-news {
     flex-direction: row;
     background-color: violet;
-    padding: 20px;
+    padding: 10px;
   }
   .big-news-image {
     width: 50%;
   }
   .big-news-text {
     width: 50%;
+  }
+  .small-news {
+    padding: 10px;
   }
   .article {
     grid-column: span 2;
@@ -64,27 +84,35 @@ footer {
 
 @media (min-width: 992px) {
   .logo {
+    display: inline;
     width: 60px;
   }
   .site-name {
     display: flex;
     width: 20%;
   }
-  .navbar {
+  nav {
     display: flex;
     width: 80%;
     justify-content: flex-end;
     background-color: teal;  
   }
- .navbar a {
+ nav a {
    padding-left: 8rem;
    margin-right: 10px;
+ }
+ .tablet-logo {
+   display: none;
  } 
  .big-news{
   flex-direction: row;
+  padding: 20px;
  }
  .article {
   grid-column: span 1;
+}
+.small-news {
+  padding: 20px;
 }
 }
 
