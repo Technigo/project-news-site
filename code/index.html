@@ -5,70 +5,77 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <title>poketnews</title>
 </head>
 
 <body>
   <header>
-    <nav class="container navbar">
-      <a href="#"><img class="logo-desktop" src="logo-pics/clear.svg" alt="logo-desktop" /></a>
-      <a href="#"><img class="logo-tablets-and-mobiles" src="logo-pics/vector/logo-original.svg" alt="logo-other" /></a>
+    <nav class="nav-container navbar">
+      <div>
+        <a href="#"><img class="logo-desktop" src="logo-pics/clear.svg" alt="logo-desktop" /></a>
+        <a href="#"><img class="logo-tablets-and-mobiles" src="logo-pics/vector/logo-original.svg"
+            alt="logo-other" /></a>
+      </div>
       <ul class="navlinks-container list">
         <li label="nav-links"><a href="#" class="nav-links" alt="home">Home</a></li>
         <li label="nav-links"><a href="#" class="nav-links" alt="tech">Tech</a></li>
         <li label="nav-links"><a href="#" class="nav-links" alt="science">Science</a></li>
         <li label="nav-links"><a href="#" class="nav-links" alt="more">More</a></li>
       </ul>
-      <a href="#" alt="search-icon">
-        <svg class="top-navicons svg">
-          <use href="#search-icon"></use>
-        </svg></a>
-      <a href="#" alt="menu-icon">
-        <svg class="top-navicons svg">
-          <use href="#menu-icon"></use>
-        </svg></a>
+      <div class="navicons-wrapper">
+        <a href="#" alt="search-icon">
+          <svg class="top-navicons">
+            <use href="#search-icon"></use>
+          </svg></a>
+        <a href="#" alt="menu-icon">
+          <svg class="top-navicons">
+            <use href="#menu-icon"></use>
+          </svg></a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="container">
-      <div>
+    <section>
+      <div class="banner-container">
         <a href="https://www.dummies.com/careers/project-management/use-agile-principles-teamwork-project/"
-          target="blank" alt="article from dummies.com"><img src="logo-pics/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-            alt="agile team" /></a>
-        <ul class="list">
+          target="blank" alt="article from dummies.com"><img class="main-banner"
+            src="logo-pics/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="agile team" /></a>
+        <ul class="list-container list">
           <li label="sharing-icons">
-            <a href="#" alt="twitter-icon"><svg class="icon svg">
+            <a href="#" alt="twitter-icon"><svg class="media-icons">
                 <use href="#twitter-icon"></use>
               </svg>
             </a>
           </li>
           <li label="sharing-icons">
-            <a href="#" alt="facebook-icon"><svg class="icon svg">
+            <a href="#" alt="facebook-icon"><svg class="media-icons">
                 <use href="#facebook-icon"></use>
               </svg></a>
           </li>
           <li label="sharing-icons">
-            <a href="#" alt="reddit-icon"><svg class="icon svg">
+            <a href="#" alt="reddit-icon"><svg class="media-icons">
                 <use href="#reddit-icon"></use>
               </svg></a>
           </li>
           <li label="sharing-icons">
-            <a href="#" alt="instagram-icon"><svg class="icon svg">
+            <a href="#" alt="instagram-icon"><svg class="media-icons">
                 <use href="#instagram-icon"></use>
               </svg></a>
           </li>
           <li label="sharing-icons">
-            <a href="#" alt="linked-icon"><svg class="icon svg">
+            <a href="#" alt="linked-icon"><svg class="media-icons">
                 <use href="#linkedin-icon"></use>
               </svg></a>
           </li>
         </ul>
-      </div>
-
-      <div>
-        <p>
+        <p class="article-text">
           Teamwork is critical to agile projects. Creating good products requires cooperation among all the members of
           the project team, including customers
           and stakeholders. Agile approaches support team-building and teamwork, and they emphasize trust in
@@ -82,64 +89,78 @@
 
     <hr />
 
-    <section class="news-container">
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+    <section>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img
-            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" /></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <a href="https://demo.getpublii.com/themes/technews/desktop/" target="blank"><img class="news-pics"
+            src="logo-pics/frankie-lg35FkimT30-unsplash.jpg" alt="desk picture" />
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <iframe src="https://www.youtube.com/embed/bpVRWrrfM1M" title="YouTube video player" frameborder="0"
+      <div class="news-container news-box">
+        <iframe class="iframes" src="https://www.youtube.com/embed/bpVRWrrfM1M" title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+        <a href="https://www.youtube.com/embed/bpVRWrrfM1M" target="blank" alt="resourse link">
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
       </div>
-      <div>
-        <a href="https://tcrn.ch/3xYYL89" target="blank" alt="getpublii page"><iframe
-            src="https://demo.getpublii.com/themes/technews/dron/"></iframe></a>
-        <p>Knowing these 6 secrets will make your dekstop look amazing!</p>
+      <div class="news-container news-box">
+        <iframe class="iframes" src="https://www.youtube.com/embed/bpVRWrrfM1M" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <a href="https://www.youtube.com/embed/bpVRWrrfM1M" target="blank" alt="resourse link">
+          <p class="article-text content-spacing">Knowing these 6 secrets will make your dekstop look amazing!</p>
+        </a>
+      </div>
+      <div class="button-container">
+        <a href="#" target="blank" alt="subscribe"><button class="subscribe">Subscribe</button></a>
       </div>
     </section>
-    <button>Subscribe</button>
   </main>
 
   <footer>
-    <nav class="container navbar">
+    <nav class="nav-container navbar">
       <a href="#" class="nav-links" alt="Contact us">Contact us</a>
       <a href="#" class="nav-links" alt="Career page">Career page</a>
       <a href="#" class="nav-links" alt="Privacy Policy">Our partners</a>
       <a href="#" class="nav-links" alt="Cookies">More</a>
+      <p class="signature">Designed and developed by Mary Snopok</p>
     </nav>
-    <p>Designed and developed by Mary Snopok</p>
   </footer>
 
   <!-- Changing colors of all svg items on the page. (Going from default black to ability to change color via CSS
       Stackoverflow link for clarifications if needed : https://stackoverflow.com/questions/34225008/how-to-reuse-an-embedded-svg-element-in-the-same-page) -->
-  <svg style="display: none" class="top-navicons svg" role="img" xmlns="http://www.w3.org/2000/svg">
+  <svg style="display: none" class="top-navicons" role="img" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <symbol id="search-icon" viewBox="0 0 512 512">
         <path fill="currentColor"
@@ -152,7 +173,8 @@
         </path>
       </symbol>
     </defs>
-    <svg style="display: none" class="icon svg" role="img" xmlns="http://www.w3.org/2000/svg">
+
+    <svg style="display: none" class="media-icons" role="img" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <symbol id="twitter-icon" viewBox="0 0 448 512">
           <path fill="currentColor"
