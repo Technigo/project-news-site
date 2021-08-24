@@ -18,13 +18,13 @@ main {
   margin: 10px 10px 10px 10px;
 }
 
+/* Custom cursor pointer created by https://www.freepik.com/ and provided by https://www.flaticon.com/ */
 a {
   text-decoration: none;
   color: var(--nav);
   font-weight: 700;
-   cursor: pointer;
+  cursor: url('logo-pics/cursor.png'),pointer;
 }
-
 
 .list{
   list-style-type: none;
@@ -147,6 +147,7 @@ a {
   background-color:var(--b-hover);
   border-color: var(--nav);
   transition-duration: 0.1s;
+  cursor: url('logo-pics/cursor.png'),pointer;
 }
 
 .signature {
