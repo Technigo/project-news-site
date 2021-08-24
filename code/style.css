@@ -157,7 +157,7 @@ a:hover {
   display: none;
 }
 
-@media only screen and (min-device-width: 668px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
   .header {
     justify-content: space-evenly;
   }
@@ -246,7 +246,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   body {
     background-color: rgb(236, 230, 226);
     display: flex;
