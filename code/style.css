@@ -1,4 +1,157 @@
+/* 
+colors 
+#F8EDE3
+#BDD2B6
+#A2B29F
+#798777 */
+
+/* *{ border: 1px solid black}  */
+
 html {
-  background: #0025ff;
+  background: #F8EDE3;
   color: #fff;
+  margin: 0px;
+}
+
+nav{
+  display: none;
+}
+
+h3 {
+  margin:10px 0 0 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0 5% 0;
+  background-color: #798777;
+  width: 100%;
+
+}
+
+.logo {
+  width: 100px;
+}
+
+.big-news {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color:#BDD2B6;
+  justify-items: space-around;
+  
+}
+
+.big-news-img {
+ width: 100%;
+ 
+}
+.big-news-text {
+  padding: 15px;
+  justify-content: center;
+  font-size: 16pt;
+ 
+}
+
+.grid-news {
+  display: flex;
+  flex-direction: column;
+  background-color:#F8EDE3;
+  
+}
+
+.grid-content {
+  display: flex;
+  justify-items: space-between;
+  /* background-color: orchid; */
+  border: 1px solid #A2B29F;
+  border-radius: 4%;
+}
+
+.grid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 0 10px 0 10px;
+  width: 70%;
+  color: black;
+}
+
+.grid-picture{
+  width: 30%;
+  justify-content: center;
+  box-sizing: border-box;
+  padding:1%;
+}
+
+.footer {
+  background-color: #A2B29F;
+  height: 5%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+  .footer-logo {
+    width: 50pt;
+    height: 50pt;
+  }
+
+
+
+
+@media  (min-width: 668px) and (max-width: 1024px){
+  /* html {
+    background: red;
+    } */
+  .big-news {
+    flex-direction: row;
+    justify-items: space-around;
+      }
+  .big-news-img{
+    box-sizing: border-box; 
+  /* border-box gör att paddingen läggs till inom boxen */
+    width: 300pt;
+    height: fit-content;
+    padding: 10px;
+    align-items: flex-end;   
+}
+    nav {
+      display: flex;
+    }
+
+    .grid-news {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+
+    .grid-content {
+      flex-direction: row;
+      width: 45%;
+      margin: 1%;
+    }
+
+    .grid-text {
+      flex-direction: column;
+      align-items: center;
+      /* padding: 0 10px 0 10px;
+      width: 30%; */
+
+    }
+  }
+  
+@media (min-width: 1025px){
+  
+  html {
+
+
+    background: orange;
+
+        }
 }
