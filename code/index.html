@@ -1,22 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Mukta+Vaani:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+<body class="main-grid">
+  <header class="header">
+    <a href="" class="logo">Mercedes <span style="color:#FF0000;">
+        F1</span>Magazine</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="">News</a></li>
+      <li><a href="">Read</a></li>
+      <li><a href="">Archive</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="hero-image"> <img src="images/f1_car.jpg" alt="Formula One Car driving"></div>
+
+  <div class="grid-container">
+    <div class="main-article">
+      <div class="main-article-image"> <img src="images/safety_car.jpg" alt="Formula 1 Safety Car"></div>
+      <div class="main-article-ingress">
+        <div class="border"></div>
+        <div class="border"></div>
+        <h2><span style="color:#FF0000;">New </span>F1 Safety Car</h2>
+        <p>It’s a familiar sight for fans of the FIA Formula 1 World Championship: when there’s been an accident on
+          track or the weather conditions are bad, a Mercedes-AMG safely leads the field of F1 cars around the track.
+          It’s been this way for 25 years. And for 20 years, Bernd Mayländer has been at the steering wheel of the
+          Official FIA F1 Safety Car. Even the color scheme of the car with its silver paint and black décor has stayed
+          the same. </p>
+          <p>But for the 2020 season, things will change: the AMG GT R (combined fuel consumption 12.4 l/100 km,
+          combined CO2 emissions 284-282 g/km)[1] with 430 kW (585 hp) will hit the race track in a new look starting
+          July 2nd, 2020. The car will prominently support the Formula 1 campaign “WeRaceAsOne” by featuring its rainbow
+          key visual on the flanks and on the bonnet of the car. The eye-catching design symbolizes the sports
+          commitment for diversity and inclusion.</p>
+      </div>
+    </div>
+
+    <wrapper class="wrapper-card">
+      <div class="card">
+        <div class="content">
+          <img src="images/card_1.jpg" alt="Formula1 car winner">
+        </div>
+        <div class="card-text">
+          <h3>The winner takes it all...
+          </h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <img src="images/lewis_hamilton.jpg" alt="Lewis Hamilton portrait">
+        </div>
+        <div class="card-text">
+          <h3>The legend Lewis Hamilton</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="content">
+          <img src="images/f1_prepared.jpg" alt="Formula 1 car from above">
+        </div>
+        <div class="card-text">
+          <h3>Be prepared - always </h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="content">
+          <img src="images/emq_mercedes.jpg" alt="Mercedes EMQ - electric car">
+        </div>
+        <div class="card-text">
+          <h3>EMQ - a new era</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <img src="images/f1_mental_health.jpg" alt="Portrait of driver">
+        </div>
+        <div class="card-text">
+          <h3>Mental issues among f1 drivers</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="content">
+          <img src="images/in_the_zone.png" alt="Formula 1 car with driver">
+        </div>
+        <div class="card-text">
+          <h3>Ready, set, go - in the zone</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="content">
+          <img src="images/amg_hybrid.png" alt="AMG hybrid">
+        </div>
+        <div class="card-text">
+          <h3>AMG Hybrid</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="content">
+          <img src="images/mercedes_team.png" alt="Mercedes F1 team">
+        </div>
+        <div class="card-text">
+          <h3>Always rely on your team</h3>
+          <div class="border"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+    </wrapper>
+
+  </div>
+
+  <div class="page-footer">
+    <p>© 2021 Formula 1 Magazine. Content is available under these licenses. Photos are from 
+      <a href="https://media.daimler.com/marsMediaSite/en/instance/ko.xhtml?oid=9265894&relId=1001&resultInfoTypeId=172#toRelation" target="_blank"><strong></strong> media</a>
+    <ul class="footer-legal">
+      <li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Terms</a></li>
+        <li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+        <li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Cookies</a></li>
+      </ul>
+
+
   </body>
 </html>
