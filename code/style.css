@@ -9,21 +9,24 @@ a {
 
 header{
   background-color: rgb(240, 240, 240);
-  /* border: 1px solid black; */
-  margin: 10px 0px;
+  margin: 20px 0px;
   padding: 20px;
-  /* border-radius: 10px; */
 }
 
 .logo{
   max-block-size: 10vw;
+  margin: 0 0 0 10px;
   object-fit: cover; 
   border-radius: 10px;
 }
 
 .site-name{
-  font-size: 5vw;
-  margin: 0 50px; 
+  font-size: 4vw;
+  margin: 0 0 0 10vw; 
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -67,15 +70,9 @@ nav{
   display:flex;
   flex-direction: column;
   background-color: rgb(240, 240, 240);
-  /* border: 1px solid black; */
   margin: 10px 0px;
   padding: 20px;
-  /* border-radius: 10px; */
 }
-
-/* .big-news-picture{
- border-radius: 10px;
-} */
 
 .big-news-text-block{
   text-align: center;
@@ -84,28 +81,26 @@ nav{
 
 .small-news{
   display: grid;
-  text-align: center;
+  justify-items: center;
 }
 
 .small-news-card{
   background-color: rgb(240, 240, 240);
-  /* border: 1px solid black; */
   margin: 10px 0px;
   padding: 20px;
-  /* border-radius: 10px; */
   display:flex;
   flex-direction: column;
-  /* width: 300px; */
+  max-width: 200px;
+  text-align: center;
+}
+
+.small-news-card:hover {
+  transform: scale(1.05);
 }
 
 .small-news-picture{
-  border-radius: 10px;
   display: block;
   margin: 0 auto;
-/*   max-width: 200px;
-  max-height: 200px;
-  width: auto;
-  height: auto; */
   object-fit: contain;
   width: 100%;
   height: 200px;
@@ -118,7 +113,7 @@ nav{
   }
 }
 
-/* Tablet and bigger becomes rows, grid 2 rows */
+/* Tablet and bigger becomes rows, grid 2 columns */
 @media (min-width:768px) {
   header{
     flex-direction: row;
@@ -132,11 +127,11 @@ nav{
   }
   .small-news{
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 0 20px;
   }
 }
 
-/* Desktop goes 4 rows*/
+/* Desktop goes 4 grid columns*/
 @media (min-width:992px) {
   .small-news{
     grid-template-columns: repeat(4, 1fr);
