@@ -6,20 +6,20 @@ body {
   /* ------------------------- BACKGROUND GRADIENT -------------------------------- */
   
   background: linear-gradient(80deg,
-  #f1d741, 
-  #f3aeae, 
+  #fcf1b3, 
+  #fadddd, 
   #F6C6EA, 
-  #f5e5b2,
-  #fab2c4,
-  #f397c8,
-  #f5b937
+  #ffe0fc,
+  #fdc4d2,
+  #fcd6ea,
+  #fad584
   );
 
   /* ---------------------------- ANIMATION -------------------------------- */
 
   background-size: 600%;
   animation-name: gradient;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -37,7 +37,7 @@ body {
 
 .millenial-header {
   font-size: 60px;
-  color: #FCEEF5;
+  color: #E05297;
   font-family: 'Rampart One', cursive;
 }
 
@@ -60,7 +60,7 @@ li {
 
 li a {
   display: block;
-  color: #FCEEF5;
+  color: #E05297;
   font-family: 'Rampart One', cursive;
   font-size: 24px;
   text-align: center;
@@ -136,10 +136,17 @@ img {
 /* ---------------------------------- FOOTER ------------------------------------------- */
 
 .millenial-footer {
-  color: #FCEEF5;
+  color: #E05297;
+  padding: 2%;
   font-family: 'Rampart One', cursive;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.socials {
+  font-family: roboto, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 
