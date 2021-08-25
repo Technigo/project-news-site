@@ -1,4 +1,92 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #FFFFFF;
+  color: #4C4C4C
+
+}
+  .logo {
+    width: 200px;
+    margin: 20px;
+    
+  } 
+  .navigation a {
+    font-size: 20px;
+    margin: 15px;
+    padding-top: 20px;
+    
+  }
+
+  .grid-container {
+    border: 2px solid #DBDCDA;
+    background-color: #DBDCDA;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 3rem;
+  }
+  
+  .small-image-one {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5%;
+  }
+  .small-image-two {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5%;
+  }
+
+  .small-image-three {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5%;
+  }
+
+  .small-image-four {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5%;
+  }
+  .small-image-five {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5%;
+  }
+
+.small-image-six {
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.small-image-seven {
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.small-image-eight {
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EBEBEB;
+
+}
+@media (max-width: 768px) {
+ 
+  
 }
