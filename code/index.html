@@ -1,22 +1,216 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>All about the silver lining! | nutii </title>
+  <meta name="description" content="Positive News for a Change">
+  <meta name="author" content="Isabel González">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./resources/css/style.css" />
+  <link rel="stylesheet" href="./resources/css/queries.css" />
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Copse&display=swap"
+    rel="stylesheet">
+  <!--Script for the Social Media Icons-->
+  <script src="https://kit.fontawesome.com/7ed1b41d25.js" crossorigin="anonymous"></script>
+  <!--For the fav icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
+  <link rel=" icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./resources/favicons/site.webmanifest">
+</head>
+
+<body>
+  <div class="global-container">
     <header>
-      <!-- Some kind of logo and navbar -->
+      <!-- Logo and navbar -->
+      <nav>
+        <div class="nav-bar">
+          <img class="logo-transparent" src="./resources/img/brand-assets/logo.png" alt="nuntii logo">
+          <ul class="main-nav">
+            <li><a href="#good-news">Good news</a></li>
+            <li><a href=#inspiration>Inspiration</a></li>
+            <li><a href="#submit">Submit</a></li>
+            <li><a href="#main-news">Today's Highlight</a></li>
+            <a class="mobile-nav-icon"><i class="fa-solid fa-bars"></i></a>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Hunting for life's silver lining</h1>
+          <p class="header-subtitle">One news at a time</p>
+          <button class="cta-button newsletter">What's good today?</button>
+        </div>
+        <!--Here goes the hero slider. It contains the most important news of the week -->
+      </div>
     </header>
+    <section class="main-news">
+      <!--An image of the founders + some copy and cta-button -->
+      <div class="main-news-container">
+        <img class="main-news-img"
+          src="https://images.unsplash.com/photo-1525434280327-e525e03f17ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+          alt="Picture of the authors" />
+        <div class="main-news-contents">
+          <h2>News of the Day</h2>
+          <h3>Subtitle</h3>
+          <p>"Cookie tootsie roll halvah apple pie cake. Candy canes marshmallow chupa chups danish cake cookie jelly-o
+            candy canes macaroon. Tart gingerbread dragée gummi bears wafer jujubes. Candy canes sweet danish sugar plum
+            cake oat cake jujubes tootsie roll. Pudding cake gummies pudding sesame snaps gummi bears ice cream. Candy
+            halvah cotton candy carrot cake liquorice marzipan sweet soufflé caramels. Biscuit cupcake topping chocolate
+            bar cheesecake chocolate sesame snaps shortbread tiramisu. Lollipop sweet caramels chocolate cake oat cake
+            sesame snaps. Apple pie cupcake cookie donut caramels cheesecake sesame snaps toffee tiramisu. Chocolate
+            cake
+            gummies candy canes shortbread icing caramels toffee jelly-o wafer. Lemon drops macaroon icing oat cake
+            biscuit. Gummies biscuit cookie carrot cake jujubes halvah ice cream icing jelly-o. Pie marzipan jelly beans
+            lollipop caramels sweet chocolate bar sweet roll gummies. Macaroon sesame snaps cake gummies gummi bears
+            sweet
+            roll.
 
-    <section class="big-news">
-      <!-- The big news content -->
+            "
+          </p>
+          <button class="cta-button donate">Donate</button>
+        </div>
+      </div>
     </section>
+    <section class="featured-news">
+      <div class="featured-news-container">
+        <h2 class="featured-title">Featured news</h2>
+        <main class="grid">
+          <!-- A grid containing several secondary news -->
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p>Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p>Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p>Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+          <article>
+            <img class="featured-image"
+              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+              alt="Sample photo">
+            <div class="featured-single">
+              <h3>Tiramisu lemon drops jelly beans</h3>
+              <p>Powder powder shortbread apple pie tootsie roll
+                brownie
+                liquorice bonbon bear claw.</p>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+            </div>
+          </article>
+        </main>
+      </div>
 
-    <section class="">
-      <!-- The other news  -->
     </section>
-  </body>
+  </div>
+  <section class="footer">
+    <div class="footer-container">
+      <img class="logo-transparent" src="./resources/img/brand-assets/logo_transparent.png" alt="nuntii logo">
+      <ul class="footer-list">
+        <!--SoMe icons-->
+        <li class="footer-list-item">
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.tiktok.com/" target="_blank"><i
+                class="fab fa-tiktok tiktok"></i></a>
+            <a class="social-icon" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram"></i></a>
+            <a class="social-icon" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook facebook"></i></a>
+          </div>
+        </li>
+        <!--Copyright disclaimer-->
+        <li class="footer-list-item">
+          <p><a class="author-email" href="mailto:webmaster@example.com">jane_doe@nuntii.com</a></p>
+        </li>
+        <li class="footer-list-item">
+          <p class="copyright">nuntii © 2021</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+
 </html>
