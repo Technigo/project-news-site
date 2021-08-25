@@ -1,5 +1,5 @@
 html {
-  background: #cbdee7;
+  background: #e4eef3;
   color: rgb(56, 54, 54);
   font-family: 'Urbanist', sans-serif;
 }
@@ -15,10 +15,12 @@ html {
 .navigation {
  color:black;
  font-size: 15px;
+ margin-right: 5px;
 }
 
 a {
 text-decoration: none;
+margin-right: 20px;
 }
 
 a:hover {
@@ -32,9 +34,9 @@ a:hover {
 
 .title-bar {
   display: flex;
-  flex-direction: column;
-  border: 2px solid white;
-
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
 }
 
 h1 {
@@ -43,9 +45,18 @@ h1 {
   font-weight: bolder;
 }
 
+.site-name {
+  font-size: 50px;
+}
+
+h1:hover {
+  color: white;
+}
+
 .big-news {
   display: flex;
   flex-direction: column;
+  border: 2px solid rgb(214, 209, 209);
 }
 
 .big-news-image {
@@ -55,23 +66,68 @@ h1 {
   width: 100%;
 }
 
+.big-news-text {
+  padding: 10px 5px;
+}
+
 .other-news {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .card {
+  width: 100%;
   background-color: white;
   padding: 5px;
-  border: 1px solid black;
   border-radius: 5px;
   margin: 20px;
+  box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align:inherit;
+} 
+
+.card-pic {
+  width: 100%;
+  background-color: white;
+  padding: 0 0 5 0px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.container-text {
+  padding: 10px;
+}
+
+
+button {
+  background-color: rgb(209, 204, 204);
+  color: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(134, 197, 134);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 img {max-width:100%;}
 
+
 @media (min-width:768px) {
+
   .header {
+    justify-content: space-between;
     background-color: rgb(212, 211, 211);
     color: white;
   }
@@ -79,7 +135,11 @@ img {max-width:100%;}
   h1 {
     color: white;
   }
-
+  
+  h1:hover {
+    color: black;
+  }
+  
   a {
     color: white;
   }
@@ -99,23 +159,23 @@ img {max-width:100%;}
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
-}
+  }
 
 .card {
   width: 100%;
-}
+  } 
 
-.flying-south {
+.other-news-link {
   color:black;
-}
   }
+
+}
 
 @media (min-width: 992px) {
 
   .other-news {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-
 }
 
+}
