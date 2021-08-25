@@ -16,6 +16,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
+  align-items: center;
 }
 
 .fa-sun {
@@ -23,71 +24,75 @@ body {
   font-size: 45px;
   position: absolute;
 	left: 20px;
-  top: 55px;;
 }
 
 h1 {
   font-size: 40px;
   position: absolute;
-	left: 80px;
+	left: 100px;
 }
 
 .nav-text1, .nav-text2 {
   display: none;
   position: absolute;
-  top: 60px;
+  margin: 0px;
+  font-size: 18px;
 }
 
 .nav-text1 {
-  right: 80px;
+  right: 140px;
 }
 
 .nav-text2 {
-  right: 20px;
+  right: 50px;
 }
 
-.fa-ellipsis-v {
+.fa-bars {
   position: absolute;
   right: 60px;
-  top: 70px;
   display: none;
   font-size: 25px;
 }
 
 .big-news {
-  width: 100%;
+  width: 98%%;
   margin: 10px 10px 0 10px;
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-
-  /*justify-content:center;*/
-  
+  position: relative;
+  align-items: center;
 }
 
-img {
+.gotland-image {
   width: auto;
   height: auto;
 }
 
-.big-news-text {
-  height: 150px;
-  width: 100%;
-  padding: 5px;
-}
-
-.big-news-text:hover {
+.big-news:hover {
   background-color:white;
-}
-
-b {
-  font-size: 35px;
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.small-text-big-news {
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+h3 {
   font-size: 25px;
   text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0px 5px 25px 5px;
 }
 
 .more-news {
@@ -95,15 +100,22 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  width: 100%;
+  width: 100%%;
 }
 
 .news-card {
   background-color: whitesmoke;
-  height: 200px;
   width: 100%;
-  padding: 5px;
+  padding-top: 5px;
   margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 80%;
 }
 
 .news-card:hover {
@@ -115,8 +127,11 @@ footer {
   background-color: whitesmoke;
   padding: 30px;
   text-align: center;
+  animation-name: disco-footer;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-
+/*
 button {
   padding: 10px 20px;
   border-radius: 25px;
@@ -125,24 +140,22 @@ button {
   background-color: rgb(146, 51, 51);
   color: whitesmoke;
   font-size: 20px;
-}
+}*/
 
 /*tablet version*/
 @media (min-width: 668px) and (max-width: 1023px) {
-  .fa-sun {
-    top: 68px;
-  }
   h1 {
     font-size: 50px;
     left: 150px;
   }
-    .fa-ellipsis-v {
+    .fa-bars {
     display: inline;
   }
 
     .big-news {
       flex-direction: row;
       justify-content: space-evenly;
+      align-items: center;
       width: 95%;
     }
 
@@ -156,11 +169,20 @@ button {
     .news-card {
       width: 48%;
     }
+
+    img {
+      width: 100%;
+    }
 }
 
 /*desktop version*/
 @media (min-width: 1024px) {
-  .fa-ellipsis-v {
+  h1 {
+    font-size: 50px;
+    left: 150px;
+  }
+
+  .fa-bars {
     display: none;
   }
 
@@ -171,6 +193,7 @@ button {
   .big-news {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   .more-news {
@@ -181,6 +204,30 @@ button {
 
   .news-card {
     width: 23%;
+  }
+
+  .news-card:hover {
+    border: 1px solid grey;
+    padding: 3px;
+    box-shadow: 10px 10px 5px grey;
+    float: left;
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  img {
+    width: 98%;
+  }
+/*
+  button {
+    display: none;
+  }*/
+
+  @keyframes disco-footer {
+    0%   {background-color:pink;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    100% {background-color: coral;}
   }
 }
 
