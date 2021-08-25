@@ -311,6 +311,25 @@ p {
     
 }
 
+/* tablet only */
+
+@media (max-width: 991px) and (min-width: 768px){
+    .header .logo {
+        font-size: 35px;
+        padding: 10px 10px;
+        text-decoration: none;
+        border-style: solid;
+        border-color: aquamarine;
+    }
+
+        .header  {
+            display: flex;
+            align-items: center;
+            }
+}
+
+
+
 /* desktop */
 
 @media (min-width: 960px) {
