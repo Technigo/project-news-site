@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2: The News Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <title>Project 2: The News Site - Ocean News</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
@@ -11,55 +12,84 @@
     <header>
       <!-- Some kind of logo and navbar -->
       <nav class="navigation">
-        <img class="logo" src="./logo.svg" alt="Technigo logo">
-        <a class="big" href="#">Big news</a>
-        <a class="small" href="#">Other news</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <img class="logo" src="https://cdn.pixabay.com/photo/2015/09/09/17/06/jellyfish-931886_960_720.jpg" alt="Jellyfish logo">
+        <h1>Ocean news</h1>
+        <ul class="top-bar">
+        <li> <a class="top-link" href="#big-news-link">Big news</a> </li> 
+        <li> <a class="top-link" href="#other-news-link">Other news</a> </li> 
+        <li> <a class="top-link" href="#">About</a> </li> 
+        <li> <a class="top-link" href="#">Contact</a> </li> 
+      </ul>
       </nav>
     </header>
 
-    <section class="big-news">
+    <section class="big-news" id="big-news-link">
       <!-- The big news content -->
       <div class="big1">
         <img class="reef" src="https://cdn.pixabay.com/photo/2014/06/27/12/36/fish-378286_960_720.jpg" alt="Fish in a coral reef">
-        <figcaption class="big2">
+        </div>
+        <div class="big2">
           <h3>Underwater life returns to the reefs</h3>
           <p>For many years the habitants of the coral reef has been decresing but now we can se a increes in spieces.</p>
-      </figcaption>
       </div>
     </section>
 
-    <section class="other-news">
+    <section class="other-news" id="other-news-link">
       <!-- The other news  -->
-        <div class="other1">
+      <article class="other1">
+        <div>
           <img class="img-news" src="https://cdn.pixabay.com/photo/2012/03/03/23/52/sea-21649_960_720.jpg " alt="jellyfish">
-          <figcaption>Jellyfish is thriving</figcaption>
-      </div>
-      <div class="other2">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2013/11/01/11/13/dolphin-203875_960_720.jpg" alt="Dolphin">
-        <figcaption>Does dolphins pose for pictures?</figcaption>
-      </div>
-      <div class="other3">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2016/02/22/18/46/underwater-1216244_960_720.jpg" alt="Fish in underwater building">
-        <figcaption>Fish returning to Atlantis</figcaption>
-      </div>
-      <div class="other4">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2012/03/04/00/02/animal-21731_960_720.jpg" alt="Sawfish">
-        <figcaption>The Sawfish - carpenter of the ocean?</figcaption>
-      </div>
-      <div class="other5">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2015/07/27/19/47/turtle-863336_960_720.jpg" alt="turtle">
-        <figcaption>Turtles are actually quite grumpy</figcaption>
-      </div>
-      <div class="other6">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2014/07/08/13/38/manatee-387194_960_720.jpg" alt="Manatee greeting a diver">
-        <figcaption>The manatee is an endangered species.</figcaption>
-      </div>
-      <div class="other7">
-        <img class="img-news" src="https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_960_720.jpg" alt="coast where mountain meets ocean">
-        <figcaption>Hidden locations in the medditeranian sea</figcaption>
-      </div>
+          <h4>Jellyfish is thriving</h4>
+          <p>jellyfishhhbhbjhb</p>
+        </div>
+      </article>
+      <article class="other2">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2013/11/01/11/13/dolphin-203875_960_720.jpg" alt="Dolphin">
+          <h4>Does dolphins pose for pictures?</h4>
+          <p>hbjhbvjhvhjb</p>
+        </div>
+      </article>
+      <article class="other3">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2014/07/08/13/38/manatee-387194_960_720.jpg" alt="Manatee greeting a diver">
+          <h4>The manatee is an endangered species</h4>
+          <p>kjnjhvgcuhb</p>
+        </div>
+      </article>
+      <article class="other4">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2012/03/04/00/02/animal-21731_960_720.jpg" alt="Sawfish">
+          <h4>The Sawfish - carpenter of the ocean?</h4>
+          <p>hbbvhgcugv</p>
+        </div>
+      </article>
+      <article class="other5">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2015/07/27/19/47/turtle-863336_960_720.jpg" alt="turtle">
+          <h4>Turtles are actually quite grumpy</h4>
+          <p>hbgcftcyb</p>
+        </div>
+      </article>
+      <article class="other6">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2016/02/22/18/46/underwater-1216244_960_720.jpg" alt="Fish in underwater building">
+          <h4>Fish returning to Atlantis</h4>
+          <p>hghgcvubonp</p>
+        </div>
+      </article>
+      <article class="other7">
+        <div>
+          <img class="img-news" src="https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_960_720.jpg" alt="coast where mountain meets ocean">
+          <h4>Hidden locations in the medditeranian sea</h4>
+          <p>bjgfguv</p>
+        </div>
+      </article>
     </section>
+
+    <footer>
+      <p class="p-footer"><a href="index.html">Havsliv</a> | Skapad av Linnéa Wilhelmsson 🐘 </p>
+  </footer>
+
   </body>
 </html>
