@@ -1,4 +1,239 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #fff;
 }
+
+body {
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 18px;
+  color: #333;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1,5rem;
+  color: #333;
+}
+
+a {
+  font-size: 1,125 rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+/* header {
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+} */
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer {
+  background-color: #001ed2;
+  width: 100%
+  height: auto;
+  padding:: 40px;
+} */
+
+.footer {
+  position: fixed;
+  padding: 24px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  color: white;
+}
+
+.navigation {
+  padding: 1rem
+  font-size: 1.125em;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+}
+
+
+
+
+.technigo-logo {
+  width: 64px;
+}
+
+.fox-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+}
+
+
+.big-news-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+
+}
+
+.big-news-img {
+  width: 50%
+}
+
+
+.big-news-text {
+  margin-right: 64px;
+  margin-left: 64px;
+}
+
+
+.big-news-link {
+  font-size: 1,5 rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.word-color-change {
+  color: #bb000c
+}
+
+.small-news-container {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+
+  /* display: flex; */
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.small-news-item {
+  /* width: 22%; */
+  width:90%;
+}
+
+.small-news-img {
+  width: 100%;
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+  .big-news-container {
+    flex-direction: row;
+    margin-top: 48px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .big-news-img {
+    width: 50%;
+    }
+
+    .small-news-container {
+      /* flex-direction: row; */
+      margin-top: 48px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    .big-news-img {
+      width: 40%;
+      height: 200px;
+      
+    }
+
+    .small-news-container {
+      /* flex-flow: row-wrap; */
+      grid-template-columns:  1fr 1fr;
+   }
+
+   /* .small-news-item {
+    width: 100%
+   } */
+  }
+ 
+
+@media (max-width: 767px) {nt
+
+  /* varför funkar inte det här? */
+    h2 {
+      font-size: 32px;
+    }
+
+    .big-news-container {
+      flex-direction: column;
+      margin-top: 32px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    
+    }
+    .big-news-img {
+      width: 100%;
+    }
+
+    .big-news-text {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .small-news-container {
+      /* flex-direction: column; */
+      grid-template-columns: 1fr;
+      margin-top: 32px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      /* flex-flow: row-wrap; */
+    }
+
+    .small-news-item {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .small-news-img: {
+      width: 100%;
+    }
+   
+
+    .footer {
+      padding: 1rem;
+    }
+
+    .technigo-logo {
+      width: 40px;
+    }
+
+  }
+
