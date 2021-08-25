@@ -15,7 +15,7 @@ body {
   background-color: black;
   width: 100%;
   display: grid;
-  margin:-5% 0 0 0%;
+  margin:0% 0 0 1%;
   
   grid-template-columns: repeat(12, 0.5fr);
   grid-column-gap: 0.5%;
@@ -492,7 +492,13 @@ font-size: 70%;
 
 
 }
-@media (min-width: 667px) and (max-width: 1023px) {
+@media (min-width: 640px) {
+  
+  .nav-container{
+    margin:-5% 0 0 0%;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
  
   body {
     
