@@ -1,4 +1,42 @@
 html {
-  background: #0025ff;
+  background: #fff;
   color: #fff;
+}
+
+.big-news {
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.header {
+  font-family: Garamond;
+  padding: 60px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+.menu {
+  float: right;
+}
+.menu ul {
+  list-style: none;
+  margin: 8px;
+  padding: 0
+}
+.menu li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Garamond;
+}
+.menu a:hover {
+  text-decoration: underline;
 }
