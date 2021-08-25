@@ -1,5 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.site-header {
+  height: 20%;
+  padding: 10% 10%;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.site-header-top a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-header-image {
+  width: 30vw;
+  height: 16vh;
+  object-fit: cover;
+  object-position: 62% 0;
+  border-radius: 43px;
+  box-shadow: 5px 10px;
+}
+
+.site-header-name {
+  padding: 1rem 0 0 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  color: rgb(43, 40, 40);
+  line-height: 0.8em;
+}
+
+.site-header-slogan {
+  padding-top: 0.75rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: rgb(43, 40, 40);
+  text-align: center;
+}
+
+.site-header-slogan span {
+  color: purple;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
