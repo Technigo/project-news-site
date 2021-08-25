@@ -1,30 +1,121 @@
 html {
   background: #cbdee7;
   color: rgb(56, 54, 54);
+  font-family: 'Urbanist', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.navigation {
+ color:black;
+ font-size: 15px;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.title-bar {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+
 }
 
 h1 {
+  color:black;
   font-size: 50px;
+  font-weight: bolder;
+}
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-news-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.other-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
   background-color: white;
-  padding: 20px;
-  color: grey;
-}
-.seagull {
-  width: 50px;
-}
-
-.dead-bird {
-  width: 200px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
 }
 
-.world-map {
-  width: 100px;
+img {max-width:100%;}
+
+@media (min-width:768px) {
+  .header {
+    background-color: rgb(212, 211, 211);
+    color: white;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .big-news-image {
+    width: 500px;
+    margin: 10px;
+  }
+
+.other-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
-.owl {
-  width: 100px;
+.card {
+  width: 100%;
 }
 
-.birds-without-borders-pic {
-  width: 100px;
+.flying-south {
+  color:black;
 }
+  }
+
+@media (min-width: 992px) {
+
+  .other-news {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+}
+

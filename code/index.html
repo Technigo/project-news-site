@@ -2,100 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+
     <!-- dont forget the meta tag for responsiveness -->
+
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
-      <h1>birdviews</h1>
-      <img class="seagull" src="https://i.guim.co.uk/img/media/6ba30e96faa15f1aa2662f0da1974b233b2fce84/109_390_1831_1099/master/1831.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=15d51b434c4fdee5abb7ab57a3574f47" alt="picture of seagull">
-      <p>we look down AND out for everyone</p>
-      <h2>Your weekly guide to life with wings!</h2>
+      <section class="header">
+        <img class="logo" src="https://i.guim.co.uk/img/media/6ba30e96faa15f1aa2662f0da1974b233b2fce84/109_390_1831_1099/master/1831.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=15d51b434c4fdee5abb7ab57a3574f47" alt="picture of seagull"/>
+        
+        
+       <!-- Nav-bar with links-->
+        <nav class="navigation"> 
+          <a href="https://www.klart.se/">Weather</a>
+          <a href="https://birdlife.se/">Birdlife</a>
+          <a href="https://twitter.com/?lang=sv">Social</a>
+          <a href="https://www.aftonbladet.se/">Hooman world</a>
+        </nav>
+      
+      </section>
+
     </header>
 
-    <!-- Nav-bar with links-->
-    <a href="https://www.klart.se/">Weather</a>
-    <a href="https://birdlife.se/">Birdlife</a>
-    <a href="https://twitter.com/?lang=sv">Social</a>
-    <a href="https://www.aftonbladet.se/">Hooman world</a>
+      <section class="title-bar">
+        <p class="site-name">
+          <h1>birdviews</h1>
+            - We look down AND out for everyone <br>
+            Your weekly guide to life with wings!
+        </p>
+      </section>
 
+   
+
+    
+<!-- The big news content -->
     <section class="big-news">
-      <!-- The big news content -->
-        <h3>New Wind Farm in Stockholm</h3>
-        <p>
-          New wind farm is planned to be set up just outside of Stockholm. 
-          We urge everyone to keep up with the construction and find new way to fly 
-          when flying through the south of the city. Our reporters haven’t yet found out 
-          the exact date for building to commence. As soon as we have the information 
-          we will post it.  
+        <img class="big-news-image" src="https://windmillskill.com/sites/windmillskill/files/styles/hosted_core_wide/public/grulla-montes-cierzo.jpg?itok=x8VbCXV5" alt="dead bird"/>
+        <p class="big-news-text">
+          Wind Farm in Stockholm <br>
+          New wind farm is planned to be set up just outside of Stockholm. We urge everyone to keep up with the construction and find new way to fly when flying through the south of the city. Our reporters haven’t yet found out the exact date for building to commence. As soon as we have the information we will post it.  
         </p>
     </section>
 
-    <section class="windfarmpicture">
-      <img class="dead-bird" src="https://windmillskill.com/sites/windmillskill/files/styles/hosted_core_wide/public/grulla-montes-cierzo.jpg?itok=x8VbCXV5" alt="dead bird"></img>
+  
       
       <!-- The other news  -->
-    </section>
-
-    <article class="migrate">
-      <h4>Winter is commning</h4>
+    <section class="other-news">
+    <div class="card">
       <p>
-        Is it time for you to fly south? Check out this link to see 
-        who else will join you and where everyone is going.
+        Winter is coming.
+      <a class="flying-south" href="https://www.birdlife.org/worldwide/programmes/migratory-birds">Flying south?</a><br>
+      <img class="world-map" src="https://www.birdlife.org/sites/default/files/styles/full_1140x550/public/flyways_infographic_thin_1.jpg?itok=dgXS3Qja" alt="World map"/>
       </p>
-      <a href="https://www.birdlife.org/worldwide/programmes/migratory-birds">Flying south?</a>
-      <img class="world-map" src="https://www.birdlife.org/sites/default/files/styles/full_1140x550/public/flyways_infographic_thin_1.jpg?itok=dgXS3Qja" alt="World map">
+    </div>
 
-    </article>
-
-    <article class="staying">
-      <h4>Staying for christmas?</h4>
+    <div class="card">
       <p>
-        For all of you staying with us this winter it's time to start prepping.
-        Bulking season is here. Summer is over and with that beach season. 
-        So start to eat as much as possible. That extra fat will be useful when 
-        the cold is here and food is limited. Don’t worry about beach 2022, 
-        that extra fat will be gone by march and you will regret that you didn’t eat 
-        even more during the fall. Remember, a fat winter bird is a happy winter bird!
-      </p>
-    </article>
+      Staying for christmas? <br>
+      <img class="winter-birds" src="https://www.blomsterlandet.se/b1dd0b38/contentassets/331c691400904043bc1c5c2a2bc2824b/23436534-blames-och-en-talgoxe-vid-en-fagelmatning.jpg" alt="Winter birds"/>
+    
+      <!-- LÄGG IN LÄNK TILL BULKINGTIPS-->  
+    </p>
+    </div>
 
-    <article class="short-news">
-      <h4>Short news</h4>
+    <div class="card">
       <p>
-        Hawk assaulted by gang of sparrows, needed to seek medical attention. <br>
-        Seagull association try to take over fish ‘n chip company. <br>
-        150 new reports of birds crashing into windows (1 553 013 this year). <br>
+        Short News <br>
+        Hawk assaulted by gang of sparrows, needed to seek medical attention. 
+        Seagull association try to take over fish ‘n chip company. 
+        150 new reports of birds crashing into windows (1 553 013 this year). 
         0 new reports of the bird flue, passing it on to hoomans seemed to work.
       </p>
-    </article>
+    </div>
 
-    <article class="long-legs">
-      <img class="owl" src="https://pbs.twimg.com/media/EWhnmsJWoAAV_RN.jpg" alt="owl">
+      <div class="card">
       <p>
+      <img class="owl" src="https://pbs.twimg.com/media/EWhnmsJWoAAV_RN.jpg" alt="owl"/><br>
         New winner in the "Long leg contest" miss Henrietta Owl-Smith. 
-        With her long legs and perfect stride she charmed the judges and won the contest. 
-        Both the flamingo and emu teams handed in their protests but the decision is final.
       </p>
-    </article>
+    </div>
 
-    <article class="local-news">
-      <h4>Local news</h4>
+    <div class="card">
       <p>
-        Our reporter covering the community council has yet to report anything. 
-        Aside from the wind farm not much seem to be up with the hoomans. 
-        The amount of them moving around has thou increased in the last weeks. 
-        So hopefully there will be more food for us city birds in trash bins. 
-        And you country birds will hopefully be more left alone on the countryside 
-        as more hoomans seem to return to the city. 
-
+        Our reporter covering the community council has yet to report anything. Aside from the wind farm not much seem to be up with the hoomans. The amount of them moving around has thou increased in the last weeks. So hopefully there will be more food for us city birds in trash bins. And you country birds will hopefully be more left alone on the countryside as more hoomans seem to return to the city. 
       </p>
-    </article>
+    </div>
 
-    <article class="movies">
-      <h4>Movies</h4>
+    <div class="card">
       <p>
         As requested we have now counted all the votes and have the result 
         from the poll “Best movies of all time” and here is the Top 5:
@@ -107,26 +106,24 @@
           <li>The Thorn Birds</li>
         </ol>
       </p>
-      
-    </article>
-
-    <article class="hoomans">
-      <h4>Per usual we are listing hoomans of the week</h4>
-      <ul>
-        <li>Magnus Ugglas</li>
-        <li>Ara Abrahamian</li>
-        <li>Florence Nightingale</li>
-        <li>Robin Williams</li>
-        <li>Pippi</li>
-      </ul>
-    </article>
-
-    <article class="birds-without-bordes">
-      <h4>Birds without borders</h4>
+    </div>
+    
+    <div class="card">
       <p>
-        A last shoutout to out friends “Birds without borders”. Please help and donate as much as you can.
+      <img class="pippi" src="https://www.svtstatic.se/image/custom/992/2357776/1411992102?format=auto&ratio=1.91" alt="Pippi!"/><br>
+      Favourite hooman this week.
       </p>
-      <a href="https://www.rspb.org.uk/"><img src="https://images-na.ssl-images-amazon.com/images/I/41jalLJbj1L.jpg" alt="the world and birds"></img></a>
-    </article>
-  </body>
+    </div>
+
+    <div class="card">
+      <p>
+        <img class="birds-without-borders" src="https://images-na.ssl-images-amazon.com/images/I/41jalLJbj1L.jpg" alt="the world and birds"/><br>
+        Birds without borders. A last shoutout to out friends “Birds without borders”. Please help and donate as much as you can.
+        <a href="https://www.rspb.org.uk/">Birds without borders</a>
+      </p>
+    </div>
+  
+  </section>
+  
+</body>
 </html>
