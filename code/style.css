@@ -1,4 +1,85 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: whitesmoke;
+  color: black;
+}
+
+.navigation {
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 10rem;
+  border-radius: ;
+  justify-content: flex-start;
+}
+
+.big, .small {
+  justify-content: flex-end;
+}
+
+.big-news {
+  display: grid;
+  grid-template-columns: repeat(8 1fr);
+  grid-gap: 1rem;
+  padding: 0.5rem;
+}
+
+.big1 {
+  grid-column: span 8;
+}
+
+.big2 {
+  grid-column: span 8;
+}
+
+.reef {
+  max-width: 90%;
+}
+
+.img-news {
+  width: 70%;
+}
+
+.other-news {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+}
+
+.other1, .other2, .other3, .other4, .other5, .other6, .other7  {
+  grid-column: span 8;
+}
+
+@media (min-width:668px) and (max-width:1024px){
+  .big1 .big2 {
+    grid-column: span 4;
+  }
+
+  .other1, .other2, .other3, .other4, .other5, .other6, .other7  {
+    grid-column: span 2;
+  }
+
+  .navigation {
+    justify-content: space-evenly;
+
+  }
+}
+
+@media (min-width:1025px) {
+    .big1 .big2 {
+      grid-column: span 4;
+    }
+
+    .other1, .other2, .other3, .other4, .other5, .other6, .other7  {
+      grid-column: span 2;
+    }
+
+    .big, .small {
+      position: absolute;
+      top: 1rem
+      left: 1rem
+    }
 }
