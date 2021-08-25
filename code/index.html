@@ -1,22 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Magazine</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./news.png">     <!--favicon-->
+    <!--fonts from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--top-bar with two div, top-bar left and top-bar right-->
+  <nav class="top-bar" id="top">
+    <section class="top-bar left">
+        <div class="logo">
+                <img src="./news.png" 
+                alt="news icon" 
+                width="30" height=30>
+        </div>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+        <div class="search">   
+            <a href="https://www.google.com">  
+                <img src="./search.png"   
+                alt="search icon" 
+                width="30" height=30>
+            </a>
+        </div>
 
-    <section class="">
-      <!-- The other news  -->
+        <div class="contact">
+            <a href="#bottom" > <h5>contact us</h5> </a>
+        </div>
+    </section>  
+
+    <section class="top-bar right">     <!--made a link wrapping around each social media icon-->
+        <a href="https://www.facebook.com" target="blank"> <!-- target ="blank" -> new tab-->                 
+            <div class="social-media-icon">
+                <img src="./facebook.png" alt="facebook icon" width="30" height=30>
+            </div>      
+        </a>
+        <a href="https://www.instagram.com" target="blank">
+            <div class="social-media-icon">
+                <img src="./instagram.png" alt="instagram icon" width="30" height=30>
+            </div>
+        </a>
+        <a href="https://www.twitter.com" target="blank"> 
+            <div class="social-media-icon">
+                <img src="./twitter.png" alt="twitter icon" width="30" height=30>
+            </div>
+        </a>
     </section>
+  </nav>
+
+  <hr/> <!--Horizontal Rule, the thematic break-->
+
+  <header class="header">
+    <div class="title">
+        <h1>News Magazine</h1>
+    </div>
+    <div class="header-2">
+        <h4>demo of a news site</h4>
+    </div>
+    <div class="date">
+        <h5>August 29, 2021</h5>
+    </div>
+  </header>  
+
+  <!--navbar with five links. Put # in order to target it later on-->
+  <nav class="navbar">
+    <div class="link">
+        <a href="#top" > <h5>Home</h5> </a>
+    </div>
+    <div class="link">
+        <a href="#business" > <h5>Business</h5> </a>
+    </div>
+    <div class="link">
+        <a href="#tech" > <h5>Tech</h5> </a>
+    </div>
+    <div class="link">
+        <a href="#health"> <h5>Health</h5> </a>
+    </div>
+    <div class="link">
+        <a href="#sports" > <h5>Sports</h5> </a>
+    </div>
+  </nav>
+
+  <!--first news row with one picture and some text-->
+  <article class="all-news">
+    <div class="big-news">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+    </div>
+    <div class="big-news" id="health"> <!--put an id so we can target it from navbar-->
+        <h3>Health</h3> 
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+  </article>
+
+  <hr/> <!--Horizontal Rule, the thematic break-->
+
+  <!--other all-news with seven news card, each of them is put in to a div called other-news-->
+  <article class="all-news">
+    <div class="other-news">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Health</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news" id="tech">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Tech</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Tech</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news" id="business">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Business</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Business</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news" id="sports">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Sports</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+    <div class="other-news">
+        <img src="./robot.jpg" alt="image of robots on the moon">
+        <h3>Sports</h3>
+        <h2> Lorem Ipsum </h2>
+        <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+    </div>
+  </article>
+
+  <footer id="bottom">  <!--put an id so we can target it från top-bar, "contact us"-->
+    <div class="contact-info"> 
+        <p>Footer - contact info... bla bla bla</p>  
+    </div>
+  </footer>
+
   </body>
 </html>
