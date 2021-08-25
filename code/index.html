@@ -2,20 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <header>
+
+    <header class="header">
       <!-- Some kind of logo and navbar -->
+      <div class="logo-container">
+        <img class="logo-sloth" src="./logo-sloth.png" alt="logo-sloth">
+        <h1 class="sloth-news-title">Sloth News</h1>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="#">First link</a>
+        <a class="nav-link" href="#">Second link</a>
+        <a class="nav-link" href="#">Third link</a>
+        <a class="nav-link" href="#">Fourth link</a>
+      </nav>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
+      <img class="big-news-img" src="./big-news-img.jpg" alt="big-news-sloth">
+      <article class="big-news-article">
+        <p class="big-news-text">big news text</p>
+      </article>
     </section>
 
-    <section class="">
+    <section class="other-news">
       <!-- The other news  -->
     </section>
   </body>

@@ -1,4 +1,103 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 15vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-sloth {
+  margin: 15px;
+}
+
+.sloth-news-title {
+  display: inline;
+  font-size: 48px;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-link {
+  padding: 30px;
+}
+
+.big-news {
+  width: 100%;
+  height: 375px;
+}
+
+.big-news-img {
+  width: 100%;
+  height: 375px; 
+  object-fit: cover;
+}
+
+.big-news-article {
+  font-size: 40px;
+}
+
+.big-news-text {
+  margin: 0;
+  display: inline;
+}
+
+@media (min-width: 768px) {
+
+    .header {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .sloth-news-title {
+      display: none;
+    }
+
+    .nav {
+      display: inline;
+    }
+
+    .big-news {
+      display: flex; 
+    }
+
+    .big-news-img {
+      width: 40%;
+    }
+
+    .big-news-article {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .header {
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .sloth-news-title {
+      display: inline;
+    }
+
+    .nav {
+      margin-left: auto;
+    }
+
+    
 }
