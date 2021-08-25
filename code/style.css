@@ -8,12 +8,24 @@
 }
 
 body {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
+  background-color: rgb(43, 40, 40);
+}
+
+main {
+  padding: 1rem 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 a:link {
   text-decoration: none;
+}
+
+hr.thick {
+  border-top: 1vh solid rgb(230, 220, 220);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .site-header {
@@ -25,12 +37,13 @@ a:link {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  margin-bottom: 1vh;
 }
 
 .site-header-top a {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .site-header-image {
@@ -43,9 +56,9 @@ a:link {
 }
 
 .site-header-name {
-  padding: 1rem 0 0 1rem;
+  /* padding: 1rem 0 0 1rem; */
   font-family: "Bebas Neue", cursive;
-  font-size: 3em;
+  font-size: 8vh;
   color: rgb(43, 40, 40);
   line-height: 0.8em;
 }
@@ -53,13 +66,14 @@ a:link {
 .site-header-slogan {
   padding-top: 0.75rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 3vh;
   color: rgb(43, 40, 40);
   text-align: center;
+  line-height: 0.8em;
 }
 
 .site-header-slogan span {
   color: purple;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 3.5vh;
 }
