@@ -129,3 +129,41 @@ a:visited {                         /*for visited links, the color will remain b
   width: 100%;
   max-height: 150px;              /*defined a max height so the images do not go outside of the container*/
 }
+
+footer {
+  padding: 20px;
+  background-color: rgb(229, 229, 229);
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p {                          /*zero margin between the paragraphs in the footer*/
+  margin: 0;
+}
+
+.copyright {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.logo-technigo {
+  width: 100%;
+  max-height: 25px;
+  margin-top: 5px;                /*put some space betwwen the logo and the paragraph*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {             /*for tablet*/
+  .other-news {
+      grid-column: span 2;                    /*change it to two columns*/
+  }
+  .top-bar {
+      justify-content: space-evenly;
+  }
+  .title, .header-2, .date, .big-news, .other-news, .footer, .copyright {
+      font-size: 90%;
+  }
+}
