@@ -4,13 +4,16 @@
   --green: #84a589;
   --nav: #2a6771;
   --b-hover : #0af3e7;
-  --back-color: whitesmoke; 
+  --background-color: whitesmoke;
+  --grey-text: rgb(136, 135, 139); 
+  --button-hover-background: hsla(250, 14%, 61%, 1);
+  --button-hover-border: rgba(32, 30, 46, 0);
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--back-color);
+  background-color: var(--background-color);
   font-family: 'Comfortaa', 'Ubuntu', 'Roboto', sans-serif;
 }
 
@@ -53,11 +56,16 @@ a {
 }
 
 .navicons-wrapper {
- margin: 0px 0px 0px 100px;
+ margin: 0px 0px 0px 140px;
 }
 
+/* Gradient developed via https://coolors.co/gradient-maker/b89c93-8e6865 */
 .navbar {
-  background-color: var(--nav); 
+  background: hsla(248, 21%, 15%, 1);
+  background: linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#211F2F", endColorstr="#918CA9", GradientType=1 );
   padding: 10px 0px 10px 0px;
 }
 
@@ -93,6 +101,10 @@ a {
   justify-content: space-around;
 }
 
+hr {
+  border: 1px solid var(--grey-text);
+}
+
 .list-container {
   list-style-type: none;
   display: flex;
@@ -108,19 +120,20 @@ a {
   margin-bottom: 10px;
 }
 
+/* News boxes styles  */
+.news-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
 .news-pics {
   width: 100%;
   position: inherit;
 }
 
-.iframes {
-  width: 100%;
-  height: 266px;
-  position: inherit;
-}
-
 /* Subscribe button styles and effects */ 
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -128,40 +141,31 @@ a {
 
 .subscribe {
   outline: 0;
-  cursor: pointer;
-  padding: 5px 16px;
-  margin-bottom: 5px;
-  font-size: 16px;
+  padding: 10px 30px;
+  margin: 15px 0px 15px 0px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  letter-spacing: 0.1em;
+  line-height: 18px;
   vertical-align: middle;
-  border: 1px solid;
-  border-radius: 8px;
-  color: var(--nav);
-  background-color: var(--pink) ;
-  border-color var(--nav);
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  border:  2px solid;
+  border-radius: 20px;
+  color: var(--grey-text);
+  background-color: var(--pink);
+  border-color: transparent;
 }
 
 .subscribe:hover {
-  background-color:var(--b-hover);
-  border-color: var(--nav);
+  background-color: var(--button-hover-background) ;
+  border-color: var(--button-hover-border);
+  color: var(--pink);
   transition-duration: 0.1s;
   cursor: url('logo-pics/cursor.png'),pointer;
 }
 
 .signature {
   font-size: 10px;
-  color: var(--back-color);
-}
-
-/* News boxes styles and animations */
-
-.news-box {
-  border: 1px solid lightgrey;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: var(--background-color);
 }
 
 /* Styles for Desktop version */
