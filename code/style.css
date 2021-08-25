@@ -1,4 +1,21 @@
 html {
-  background: #0025ff;
+  background: #bdc5ee;
   color: #fff;
 }
+header{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* .nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+} */
