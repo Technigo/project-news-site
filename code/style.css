@@ -1,4 +1,70 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #daddee;
+  color: rgb(7, 7, 7);
 }
+
+ 
+.header{
+  background: rgb(190, 188, 188);
+
+}
+
+.header img {
+  
+  max-width: 10%;
+  height: auto;
+  
+}
+
+.newsboxes p{
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+/*
+@media (min-width: 0x) and (max-width: 767px) {
+header {
+display: flex;
+justify-content: space-between;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  }
+  }
+  
+
+  
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) {
+    header {
+      justify-content: space space-around;
+    }
+  }
+  */
+  
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .footer{
+    background: rgb(126, 120, 120);
+  }
