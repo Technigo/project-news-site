@@ -89,6 +89,10 @@ li a {
   padding: 2% 10% 10% 10%;
 }
 
+.grid-item:hover, .grid-item-big:hover {
+  box-shadow:  0 0 1px 1px #E05297;
+}
+
 /* ------------------------- TEXTS -------------------------------------------------- */
 
 h1 {
@@ -121,16 +125,15 @@ a:hover {
   
 }
 
-/* -------------------- IMAGES + RIGHTS -------------------------------------------- */
+/* -------------------- IMAGES -------------------------------------------- */
 
 img {
-  filter: grayscale();
+  border-radius: 2%;
   width: 100%;
 }
 
-.image-rights {
-  font-size: 8px;
-  display: inline-block;
+img:hover {
+    transform: scaleX(-1);
 }
 
 /* ---------------------------------- FOOTER ------------------------------------------- */
@@ -146,6 +149,7 @@ img {
 .socials {
   font-family: roboto, sans-serif;
   font-size: 40px;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -205,6 +209,11 @@ img {
       margin-bottom: 50px;
       font-size: 24px;
   }
+
+  .socials {
+    display: inline-block;
+    margin-right: 30px;
+  }
   
 }
 
@@ -263,6 +272,11 @@ img {
       font-size: 26px;
       margin-bottom: 50px;
   }
+
+  .socials {
+    display: inline-block;
+    margin-right: 150px;
+  }
   
 }
 
@@ -290,7 +304,7 @@ img {
       width: 1400px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 30px;
-      margin-bottom: 100px;
+      margin-bottom: 10px;
   }
 
   .millenial-header {
@@ -318,6 +332,11 @@ img {
 
   .millenial-footer {
       font-size: 26px;
-      margin-bottom: 100px;
+      margin-bottom: 10px;
+  }
+
+  .socials {
+    display: inline-block;
+    margin-right: 150px;
   }
 }
