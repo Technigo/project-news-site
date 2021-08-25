@@ -1,4 +1,152 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background-color: #f4f7f6;
+  color: #202121;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: 5%;
+}
+
+/******************** Header ********************/
+
+header {
+  background-color: #ffffff;
+  padding: 40px 5%;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.flex-child {
+  margin-left: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #202121;
+  text-transform: uppercase;
+}
+
+.navbar {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+/******************** Paragraphs and Headlines ********************/
+
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 10px 0 10px 0;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  margin: 10px 0 15px 0;
+}
+
+.big-news-text p {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 25px;
+}
+
+/******************** Images and Grid ********************/
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.grid-news,
+.grid-big-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.big-news {
+  margin-bottom: 40px;
+}
+
+.big-news-image,
+.big-news-text,
+.grid-news article {
+  background-color: #ffffff;
+  grid-column: span 4;
+}
+
+/******************** Responsiveness and Breakpoints ********************/
+
+/* Specification for mobile */
+@media (min-width: 0px) and (max-width: 767px) {
+  .paragraph-big-2,
+  .paragraph-big-3,
+  .big-headline-2,
+  .big-headline-3 {
+    display: none;
+  }
+}
+
+/* Specification for tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-news-image,
+  .big-news-text,
+  .grid-news article {
+    grid-column: span 2;
+  }
+}
+
+/* Specification for laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .big-news-image {
+    grid-column: span 3;
+  }
+
+  .big-news-text {
+    grid-column: span 1;
+  }
+
+  .grid-news article {
+    grid-column: span 1;
+  }
+}
+
+/* Specification for bigger desktop */
+@media (min-width: 1200px) {
+  .big-news-image {
+    grid-column: span 3;
+  }
+
+  .big-news-text {
+    grid-column: span 1;
+  }
+
+  .grid-news article {
+    grid-column: span 1;
+  }
 }

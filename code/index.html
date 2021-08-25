@@ -2,21 +2,140 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>Good News</title>
+
+    <!-- Google Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <!-- Meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
+
+    <!-- Some kind of logo and navbar -->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="flex-header">
+        <div class="navbar-brand-flex">
+          <a class="navbar-brand" href="#">Good News</a>
+        </div>
+        <nav>
+          <ul class="flex-navbar">
+            <li class="flex-child">
+              <a class="navbar" href="#">Human Rights</a>
+            </li>
+            <li class="flex-child">
+              <a class="navbar" href="#">Climate Change</a>
+            </li>
+            <li class="flex-child">
+              <a class="navbar" href="#">Technology</a>
+            </li>
+            <li class="flex-child">
+              <a class="navbar" href="#">Union</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <div class="container">
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- The big news content -->
+      <section class="big-news">
+        <article class="grid-big-news">
+          <div class="big-news-image">
+            <img class="big-image" src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" alt="#"/>
+          </div>
+
+          <div class="big-news-text">
+            <h1 class="big-headline-1">This is a headline</h1>
+            <p class="paragraph-big-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget velit aliquet sagittis id.
+            </p>
+            <h1 class="big-headline-2">This is another headline</h1>
+            <p class="paragraph-big-2">
+              Nam aliquam sem et tortor consequat. Volutpat consequat mauris nunc congue. Pretium nibh ipsum consequat nisl vel.  
+            </p>
+            <h1 class="big-headline-3">This is also a headline</h1>
+            <p class="paragraph-big-3">
+              Rhoncus dolor purus non enim praesent elementum facilisis leo. Nisi est sit amet facilisis. Elementum nibh tellus molestie nunc.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- More news content  -->
+      <section class="grid-news">
+      
+        <article class="news-1">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-2">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-3">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-4">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-5">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-6">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-7">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+        <article class="news-8">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="#"/>
+          <h2>This is a headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </article>
+
+      </section>
+    </div>
   </body>
 </html>
