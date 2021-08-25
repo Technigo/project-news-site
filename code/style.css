@@ -1,4 +1,144 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #aaaaaa;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none; 
+}
+
+header{
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid black; */
+  margin: 10px 0px;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+
+.logo{
+  max-block-size: 10vw;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.site-name{
+  font-size: 5vw;
+  margin: 0 50px; 
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation{
+  flex: 1;
+  text-align: right;
+}
+
+.navigation ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.navigation ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.navigation ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background:rgb(255, 0, 0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+  width: 100%;
+}
+
+.big-news {
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid black; */
+  margin: 10px 0px;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+
+/* .big-news-picture{
+ border-radius: 10px;
+} */
+
+.big-news-text-block{
+  text-align: center;
+  margin: 20px;
+}
+
+.small-news{
+  display: grid;
+  text-align: center;
+}
+
+.small-news-card{
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid black; */
+  margin: 10px 0px;
+  padding: 20px;
+  /* border-radius: 10px; */
+  display:flex;
+  flex-direction: column;
+  /* width: 300px; */
+}
+
+.small-news-picture{
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+/*   max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto; */
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+/* Hides navigation for mobile */
+@media (max-width:767px) {
+  #navigation-id{
+    display:none;
+  }
+}
+
+/* Tablet and bigger becomes rows, grid 2 rows */
+@media (min-width:768px) {
+  header{
+    flex-direction: row;
+    text-align: right;
+  }
+  .big-news{
+    flex-direction: row;
+  }
+  .big-news-text-block{
+    text-align: left;
+  }
+  .small-news{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Desktop goes 4 rows*/
+@media (min-width:992px) {
+  .small-news{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
