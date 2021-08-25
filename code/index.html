@@ -1,22 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+  <section class="full-container">
+    <header class="header">
       <!-- Some kind of logo and navbar -->
+      <div>
+        <img class="logo" src="images/Vegan-Logo-3.png" alt="vegan-logo" />
+      </div>
+
+      <div class="navigation">
+        <nav>
+          <a class="nav-el" href="">TRENDING 🌱</a>
+          <a class="nav-el" href="">FOOD</a>
+          <a class="nav-el" href="">HEALTH</a>
+          <a class="nav-el" href="">FITNESS</a>
+          <a class="nav-el" href="">ENVIRONMENT</a>
+        </nav>
+      </div>
+      <div class="mobile-view">
+        <img class="search-button" src="images/search.png" alt="search" />
+        <button type="button" class="header-button">Support our work</button>
+      </div>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
+      <nav class="social-media">
+        <img src="https://image.flaticon.com/icons/png/512/124/124010.png" alt="facebook" class=icons />
+        <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="instagram" class=icons />
+        <img src="https://cdn.icon-icons.com/icons2/729/PNG/512/twitter_icon-icons.com_62751.png" alt="twitter"
+          class=icons />
+        <img src="https://cdn.icon-icons.com/icons2/1109/PNG/512/1486053614-pinterest_79194.png" alt="pinterest"
+          class=icons />
+      </nav>
+      <img class="salad" src="images/inflamation.jpg" alt="reduce-inflamation" />
+      <div class="big-news-text">
+        <h1>7 INFLAMATION REDUCING <br />VEGAN FOOD GROUPS</h1>
+        <p>
+          The dietary choices you make every day offer you a new chance at healing. <br>
+          Remember that a healthy body bursting with
+          energy showcases the absence of inflammation, so eat up these seven shining food groups to bring you back to
+          brilliant!
+        </p>
+        <br />
+        <button class="read-more" type="button">Show more</button>
+      </div>
     </section>
 
-    <section class="">
+    <section class="news-section">
       <!-- The other news  -->
+      <div class="news-card">
+        <button class="rubrique" type="button">food</button>
+        <img src="images/milk.jpeg" alt="milk">
+        <h2 class=text-pics>
+          Can vegan milk get any better?
+          <br>
+          Danon thinks it can!
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">environment</button>
+        <img src="images/environment.jpeg" alt="animals-right">
+        <h2 class="text-pics">
+          Vegan diet could be the “single biggest way” to reduce your environmental impact on earth
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">trending</button>
+        <img src="images/children.jpeg" alt="children">
+        <h2 class="text-pics">
+          These 6 tips will help your children to eat more vegetables
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">environment</button>
+        <img src="images/piggy_adobe.jpeg" alt="pigs">
+        <h2 class="text-pics">
+          Is a vegan world even possible?
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">fitness</button>
+        <img src="images/training.jpeg" alt="streching">
+        <h2 class="text-pics">
+          5 myths about strength-training <br /> for vegans
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">food</button>
+        <img src="images/recipes.jpeg" alt="netflix-movie">
+        <h2 class="text-pics">
+          These 10 vegan recipes will inspire your family to try more vegan meals
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">fitness</button>
+        <img src="images/louis.jpeg" alt="fitness">
+        <h2 class="text-pics">
+          Lewis Hamilton shares <br />his plant-based daily diet and how it made him more successful
+        </h2>
+      </div>
+      <div class="news-card">
+        <button class="rubrique" type="button">health</button>
+        <img
+          src="https://media1.giphy.com/media/L2lFd3Tq0NsnCRfG1f/giphy.gif?cid=ecf05e472erti3fwu7ukw0rgfykijf7i3n7wp5jcj28ott54&rid=giphy.gif&ct=g"
+          alt="vegan-vegetables">
+        <h2 class="text-pics">
+          Why a plant-based diet can be better than meds for heart disease
+        </h2>
+      </div>
     </section>
-  </body>
+    <footer>
+      <p class="footer">by Julia Nikitina 🐢</p>
+    </footer>
+  </section>
+</body>
+
 </html>
