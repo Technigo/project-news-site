@@ -487,10 +487,6 @@ font-size: 70%;
 
 }
 
-
-
-
-
 }
 
 
@@ -509,6 +505,11 @@ font-size: 70%;
     
   }
 
+.container-regular-footer{
+
+grid-gap: 1%;
+
+}
   .nawbar {
     position: fixed;
     background-color: rgb(0, 0, 0);
@@ -617,14 +618,25 @@ font-size: 70%;
 
   .stream-big-btn {
     
-    width: 75%;
-    margin: 5% 0 0 0%;
+    width: 46%;
+    margin: 15% 0 -15% 0%;
     font-size: 99%;
   }
   .regular-news-cards {
     grid-row: span 1;
     grid-column: span 6;
   }
+
+  .regular-news-cards img{
+    height: 65%;
+    
+     }
+
+.footer-div{
+width: 111%;
+margin-left: -5%;
+
+}
 
 #footer-text{
 padding-bottom: -0.2%;
