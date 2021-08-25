@@ -10,23 +10,38 @@ header {
   height: 80px;
 }
 .logo {
-  width: 50px;
+  width: 60px;
   margin: 5px;
+}
+.logo:hover {
+  transform: rotate(-30deg);
 }
 nav {
   display: none;
   float: right;
   align-items: center;
+  font-family: 'Julius Sans One', sans-serif;
+
 }
 .site-name {
-  font-family: 'Cinzel', serif;
+  font-family: 'Pacifico', cursive;
   font-size: 35px;
-  margin-top: 1rem;
+ /* margin-top: 1rem;*/
 }
 .big-news {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  margin: 5px;
+  padding: 20px;
+  background-color: white;
+}
+.big-news-image {
+  
+  box-shadow:
+}
+.big-news-text {
+  border: solid 2px;
+  padding: 20px;
 }
 hr {
   border: double black 2px;
@@ -35,7 +50,7 @@ hr {
 .small-news {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 5px;
+  margin: 5px;
 }
 .article {
   grid-column: span 4;
@@ -60,22 +75,26 @@ footer {
   .tablet-logo {
     width: 60px;
   }
+  .tablet-logo:hover {
+    transform: rotate(-30deg);
+  }
   .logo {
     display: none;
   }
   .big-news {
     flex-direction: row;
     background-color: violet;
-    padding: 10px;
+    margin: 10px;
   }
   .big-news-image {
     width: 50%;
   }
   .big-news-text {
     width: 50%;
+    background-color: azure;
   }
   .small-news {
-    padding: 10px;
+    margin: 10px;
   }
   .article {
     grid-column: span 2;
@@ -93,12 +112,11 @@ footer {
   }
   nav {
     display: flex;
-    width: 80%;
-    justify-content: flex-end;
-    background-color: teal;  
+    width: 90%;
+    justify-content: flex-end;  
   }
  nav a {
-   padding-left: 8rem;
+   padding-left: 7rem;
    margin-right: 10px;
  }
  .tablet-logo {
@@ -106,13 +124,13 @@ footer {
  } 
  .big-news{
   flex-direction: row;
-  padding: 20px;
+  margin: 20px;
  }
  .article {
   grid-column: span 1;
 }
 .small-news {
-  padding: 20px;
+  margin: 20px;
 }
 }
 

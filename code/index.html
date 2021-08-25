@@ -6,19 +6,19 @@
     <title>Project 2: The News Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
-      <img class="logo" src="./img/apple.svg" alt="pear-logo" />
+      <a class="logo" href="#small-news-section"><img src="./img/apple.svg" alt="apple-logo" /></a>
       <h1 class="site-name">Old News</h1>
       <nav>
        <a class="link" id="one" href="#home">Home</a>
        <a class="link" id="two" href="#About">About</a>
-       <img class="tablet-logo" src="./img/apple.svg" alt="pear-logo" />
+       <a class="tablet-logo" href="#small-news-section"><img src="./img/apple.svg" alt="apple-logo" /></a>
        <a class="link" id="thre" href="#Contact">Contact</a>
        <a class="link" id="four" href="#Login">Log in</a>  
        </nav> 
@@ -35,22 +35,13 @@
         Armstrong undgick döden med liten marginal när LLRV, en träningsmaskin som skulle simulera månlandaren, kraschade 6 maj 1968.
         Armstrong lämnade Nasa 1 augusti 1970. 1971-1979 undervisade Armstrong i teknik vid University of Cincinnati. Han tjänstgjorde 1986 i den kommission som undersökte Challengerolyckan.
         </p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in
-           the 1960s with the release of Letraset sheets 
-          containing Lorem Ipsum passages, and more recently with desktop publishing software
-           like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
       </div>
     </section>
     <hr>
     <!--Smaller news section-->
-    <section class="small-news">
+    <section class="small-news" id="small-news-section">
       <!--Small news content-->
-      <div class="article">
+      <article class="article">
         <img class="small-image" src="./img/computer.jpg" alt="guy at computer">
         <h3 class="article-heading">Will your computer explode in year 2000?!</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -64,8 +55,8 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
-      <div class="article">
+        </article>
+      <article class="article">
         <img class="small-image" src="./img/tjernobyl.jpg" alt="radioactive sign">
         <h3 class="article-heading">Nuclear accident, 1986 in Tjernobyl</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -79,23 +70,18 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
-      <div class="article">
+        </article>
+        <article class="article">
         <img class="small-image" src="./img/corona.jpg" alt="corona virus">
         <h3 class="article-heading">We are in a Pandemic! 2020</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
           Millennium bug, Y2K bug, Y2K glitch or Y2K error, 
           refers to potential computer errors related to the 
           formatting and storage of calendar data for dates in 
-          and after the year 2000. Many programs represented four-digit
-          years with only the final two digits, making the year 2000
-          indistinguishable from 1900. Computer systems' inability to 
-          distinguish dates correctly could potentially bring down 
-          worldwide infrastructures for industries ranging from 
-          banking to air travel.
+          
           </p>
-      </div>
-      <div class="article">
+      </article>
+      <article class="article">
         <img class="small-image" src="./img/club.jpg" alt="disco-balls">
         <h3 class="article-heading">Swedish King at centre of strip club scandal, 2011</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -109,8 +95,8 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
-      <div class="article">
+      </article>
+      <article class="article">
         <img class="small-image" src="./img/gun.jpg" alt="gun">
         <h3 class="article-heading">The swedish primeminister <i>Olof Palme</i> was shot on open street. 1986</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -124,8 +110,8 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
-      <div class="article">
+      </article>
+      <article class="article">
         <img class="small-image" src="./img/ship.jpg" alt="sinking ship">
         <h3 class="article-heading">1628, The royal ship Vasa is sinking</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -139,8 +125,8 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
-      <div class="article">
+      </article>
+      <article class="article">
         <img class="small-image" src="./img/earth.jpg" alt="the earth">
         <h3 class="article-heading">shocking, the earth is not flat</h3>
         <p>The Year 2000 problem, also known as the Y2K problem,
@@ -154,7 +140,7 @@
           worldwide infrastructures for industries ranging from 
           banking to air travel.
           </p>
-      </div>
+      </article>
     </section>
     <footer>I´m a footer, thank you for readin!</footer>
   </body>
