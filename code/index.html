@@ -2,21 +2,71 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Gotland news!</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- link for icon -->
+    <script src="https://kit.fontawesome.com/07170c8548.js" crossorigin="anonymous"></script>
+
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    
+    <!-- Some kind of logo and navbar -->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav class="navigator">
+        <i class="far fa-sun"></i>
+        <h1>Gotland News</h1>
+        <i class="fas fa-ellipsis-v"></i>
+        <p class="nav-text1">Contact</p>
+        <p class="nav-text2">About</p>
+      </nav>
     </header>
 
+     <!-- The big news content -->
     <section class="big-news">
-      <!-- The big news content -->
+          <img src="https://images.unsplash.com/photo-1617995693211-4e97100e261d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z290bGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="photo of Gotland">
+          <p class="big-news-text">
+            <b>Wheather forecast</b> 
+            <br>Will there be sun at Gotland? Gotland is the sunniest place in Sweden. 
+              Get the latest wheather forecast here!
+          </p>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <!-- The other news  -->
+    <section class="more-news">
+      <div class="news-card">
+        <h2>Explosion near central Visby</h2>
+          <p>Detonation just outside of Ringmuren, who could it be?</p>
+      <!--länk: https://www.svt.se/nyheter/lokalt/ost/explosion-utanfor-ringmuren-->
+      </div>
+      <div class="news-card">
+        <h2>Gotlanders are thirsty</h2>
+        <p>Recent study finds out that Gotlanders are second best at drinking</p>
+      <!--länk: https://sverigesradio.se/artikel/gotlanningarna-dricker-nast-mest-alkohol-i-landet-->
+      </div>
+      <div class="news-card">
+        <h2>Most tourists ever</h2>
+        <p>This summer was the most touristy ever, more tourists than locals</p>
+      <!--https://www.svt.se/nyheter/lokalt/ost/turistrekord-pa-gotland-och-fler-besokare-vantas-->
+      </div>
+      <div class="news-card">
+        <h2>Horoscope</h2>
+        <p>What will your Gotland-day be like? Find out here!</p>
+      <!--http://www.horoskop.nu-->
+      </div>
     </section>
+
+    <footer>
+      <button type="button">Back to the top</button>
+    </footer>
+
   </body>
 </html>
