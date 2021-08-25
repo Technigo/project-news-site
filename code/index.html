@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Environmental News</title>
     <link rel="stylesheet" 
           href="./style.css" />
@@ -20,14 +21,13 @@
           href="images/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Besley&display=swap"
           rel="stylesheet">
-    <!-- dont forget the meta tag for responsiveness -->
+    
   </head>
+ 
   <body>
     <header>
       <div class="logo-headline">
-        <a class="logo">
-        <img src="images/favicon.ico" alt="the logo of the page which is a leaf" class="logo-img"/>
-        </a>
+        <img src="./images/favicon.ico" alt="the logo of the page which is a leaf" class="logo-img"/>
         <h1>Environmental News</h1>
       </div>
 
@@ -39,53 +39,62 @@
     </header>
 
     <section class="big-news">
-      <div>
+      <div class="big-news-article">
         <h2>Den stora nyheten!</h2>
         <p>Det här är den stora nyheten!</p>
       </div>
     </section>
 
-    <section class="news-snippets">
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ikcmocmFsErxkliInuzWWBsabIY8e0bAWw&usqp=CAU" 
+    <section class="news-snippets-container">
+      
+      <div class="news-snippets">
+        <img src="https://images.unsplash.com/photo-1629160548610-5e1d4e359e95?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk2fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
           alt="Two elefants greeting">
         <h3>Elefant-slagsmål</h3>
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 
-      <div>
-        <img src="data:image/jpeg;base64,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" 
-        alt="Two elefants greeting">
+      <div class="news-snippets">
+        <img src="https://images.unsplash.com/photo-1629812696219-8408051603f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        alt="A fox being sneaky">
+        <h3>Why does the fox communicate?</h3>
+        <p>It may be for a male to find a female from a breeding standpoint. It may be a pack nature or a family type group where 
+          they’re trying to communicate and find out from a social aspect or to find food. But there’s a number of vocalizations they make.</p>
+      </div>
+
+      <div class="news-snippets">
+        <img src="https://images.unsplash.com/photo-1629813369486-9b845fe01886?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <h3>Elefant-slagsmål</h3>
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 
-      <div>
-        <h3>Elefant-slagsmål</h3>
-        <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
-      </div>
-
-      <div>
+      <div class="news-snippets">
+        <img src="https://images.unsplash.com/photo-1625242420602-a22dd7692b82?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <h3>Elefants-slagsmål</h3>
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
-      <div>
+
+      <div class="news-snippets">
         <h3>Elefant-slagsmål</h3>
+        <img src="https://images.unsplash.com/photo-1629464565884-123b6e6f90c1?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 
-      <div>
+      <div class="news-snippets">
         <h3>Elefant-slagsmål</h3>
+        <img src="https://images.unsplash.com/photo-1589528299280-a567124e20e1?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 
-      <div>
+      <div class="news-snippets">
         <h3>Elefant-slagsmål</h3>
+        <img src="https://images.unsplash.com/photo-1629253343203-86978021f018?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 
-      <div>
+      <div class="news-snippets">
         <h3>Elefants-slagsmål</h3>
+        <img src="https://images.unsplash.com/photo-1611575250341-e8f5c11d9108?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
         <p>Femhundra elefanter slogs i nationalparken Elefantland</p>
       </div>
 

@@ -1,5 +1,6 @@
 html {
-  background: #f7f7f7;
+  background: #dcf8cf;
+  align-items: center;
 }
 
 body {
@@ -7,7 +8,6 @@ body {
   color: rgb(0, 0, 0);
   margin:0;
   align-items: center;
-  width: 70rem;
   margin: auto;
 }
 
@@ -17,38 +17,73 @@ header {
   position: sticky;
   top: 0;
   border-bottom-style: solid;
-  height: 7rem;
-  margin-bottom: 2rem;
-  background: #f7f7f7;
+  height: 7em;
+  margin-bottom: 2em;
+  background: #dcf8cf;
+  width: 100%;
 }
 
-.logo-headline, .navigation {
+.logo-headline, .navigation{
   display: flex;
   align-items: center;
 }
 
-.navigation-link {
-  width: auto;
-  margin: 1rem;
+.navigation {
+  display: none;
+}
+
+.navigation-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1, h2, h3 {
   font-family: 'Besley', serif;
-  margin: auto;
 }
 
-.news-snippets {
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3, a {
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.big-news {
+  border-bottom-style: solid;
+  margin-bottom: 2rem;
+}
+
+.big-news-article{
+  margin-bottom: 2rem;
+}
+
+.news-snippets-container {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
   /*grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));*/
 }
 
+.news-snippets{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 2em;
+}
+
+
 .news-snippets img {
-  width: 15rem;
-  height: 10rem;
   object-fit: cover;
   border-radius: 10%;
+  width: 260px;
+  height: 200px;
 }
 
 footer {
@@ -56,8 +91,37 @@ footer {
   color: #fff;
 }
 
-@media all and (max-width: 767px) {
-  .news-snippets {
-    grid-template-columns: 1fr;
+@media(min-width: 767px) and (max-width: 991px){
+  .news-snippets-container  {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navigation {
+    display:contents;
+  }
+}
+
+@media(min-width: 992px){
+  body {
+    max-width: 1296px;
+  }
+  
+  .news-snippets-container  {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .news-snippets img {
+    object-fit: cover;
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation {
+    display:contents;
   }
 }
