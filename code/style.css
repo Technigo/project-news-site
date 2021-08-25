@@ -16,7 +16,25 @@ body {
 main {
   padding: 1rem 0;
   font-family: "Open Sans", sans-serif;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
 }
+
+main a {
+  color: rgb(230, 220, 220);
+}
+main a:hover {
+  color: rgb(250, 91, 178);
+}
+
+/* main a:visited {
+  color: purple;
+}
+
+main a:active {
+  color: blue;
+} */
 
 a:link {
   text-decoration: none;
@@ -76,4 +94,51 @@ hr.thick {
   color: purple;
   text-transform: uppercase;
   font-size: 3.5vh;
+}
+
+.section-news {
+  margin: 1vh;
+  background: linear-gradient(
+    to right,
+    rgba(238, 174, 202, 1),
+    rgba(148, 187, 233, 1)
+  );
+  max-height: 55vh;
+  min-height: 40vh;
+  width: 90%;
+  padding: 1vh;
+}
+
+.section-news:hover {
+  background: linear-gradient(to right, rgb(224, 11, 11), rgb(171, 2, 250));
+}
+
+.section-news-wrap {
+  background-color: rgb(43, 40, 40);
+  padding: 2vh;
+  position: relative;
+}
+
+.news-image {
+  max-height: 40vh;
+  min-height: 35vh;
+  object-fit: cover;
+  box-shadow: 1vh 1vh 0.5vh rgb(8, 8, 8, 0.5), -1vh -1vh 0.5vh rgb(8, 8, 8, 0.5);
+}
+
+.news-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #171e20;
+}
+
+.section-news:hover .news-image-overlay {
+  opacity: 1;
 }
