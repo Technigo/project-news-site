@@ -1,4 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 html {
-  background: #0025ff;
+  background: #F2002A;
   color: #fff;
+  font-family: 'Carter One', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.header{
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 60px 10px 20px;
+  font-family: 'Carter One', cursive;
+  color: #F2002A;
+}
+
+.logo-image{
+  height: 100%;
+}
+
+nav{
+  display: none;
+}
+
+a{
+  color: #F2002A;
+}
+
+p{
+  text-align: justify;
+  padding: 10px 0 0 0;
+}
+ 
+/* following formating is affecting the big news section */
+.big-news{
+  padding: 30px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+.big-news-visual{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.big-news-picture{
+  width: 95%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  box-shadow: 0 0 0 10px white;
+}
+
+.big-news-picture:hover{
+  -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+.big-news-text{
+  width: 95%;
+  padding: 10px;
+}
+
+/* following formating is affecting the small news sections */
+.small-news{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 10px;
+}
+
+.small-news-item{
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  font-size: 8px;
+  justify-content: center;
+}
+
+.small-news-picture-container{
+  width: 100%;
+  overflow: hidden;
+}
+.small-news-picture{
+  width: 100%;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.small-news-picture:hover{
+  -webkit-transform: scale(1.03);
+	transform: scale(1.03);
+}
+
+
+/* ------PAD VERSION ------------*/
+@media (min-width: 768px){
+  /* all the changes that are affecting the header container and child elements */
+  .header{
+    justify-content: space-around;
+    height: 80px;
+  }
+  .logo-image{
+    display: inline-block;
+    height: 100%;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    padding: 0 25px;
+  }
+  .title-text{
+    display: none;
+  }
+  
+  /* all the changes that affect the big-news container */
+  .big-news{
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .big-news-visual{
+    width: 50%;
+  }
+  .big-news-text{
+    width: 50%;
+  }
+
+  /* all the changes that affect the small-news contianer CSS GRID used */
+  .small-news{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+/* ---------DESKTOP VERSION ---------*/
+@media (min-width: 1024px){
+  .header{
+    justify-content: flex-start;
+  }
+
+  .title-text{
+    display: inline-block;
+  }
+  nav{
+    position: static;
+    width: 30%;
+    margin-left: auto;
+  }
+
+  /* all the changes that affect the small news section */
+  .small-news{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
