@@ -1,4 +1,108 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f7f7fa;
+  color: rgb(8, 8, 8);
+}
+
+@media (min-width: 668px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: violet;
+  }
+}
+
+
+.header {
+  border: 2px solid;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.big-news {
+ border: 2px solid;
+ height: 500px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.news-img {
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+ }
+
+.big-news-text {
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+ }
+
+.flex-parent {
+  border: 2px solid;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child {
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-child.red {
+  flex-direction: column;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+button {
+  height: 40px;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background: crimson;
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.grid-container {
+  border: 2px solid blue;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.grid-item1 {
+  background-color: crimson;
+  grid-column: span 4;
+}
+
+.grid-item2, .grid-item3 {
+  background-color: hotpink;
+  grid-column: span 2;
+}
+
+.grid-item4, .grid-item5, .grid-item6 {
+  background-color: lawngreen;
+  
 }
