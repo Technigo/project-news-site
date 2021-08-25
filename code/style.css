@@ -58,7 +58,7 @@ color: red;
 .big-news-img {
     max-width: 90%;
     box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.8);
-    margin-left: 5px;
+    margin: 5px 0 10px 5px;
 }
 
 .intro {
@@ -71,6 +71,7 @@ color: red;
 }
 
 .container {
+    background-color: lightgray;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
@@ -81,7 +82,7 @@ color: red;
 }
 
 .small-news {
-  background-color: lightgray;
+    background-color: #fff;
     max-width: 80%;
     box-shadow: 2px 6px 4px rgba(0,0,0,0.8);
     padding-bottom: 10px;
@@ -92,7 +93,7 @@ color: red;
 
 .small-news img {
     width: 240px;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 20px 30px 20px;
 }
 
   .small-news p {
@@ -136,59 +137,64 @@ color: red;
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    animation: none;
+  }
 
-    .intro {
-        font-size: 1.2em;
-    }
+  .intro {
+    font-size: 1.3em;
+  }
 
-    .big-news {
-        display: grid;
-        grid-template-columns: auto auto;
-            }
+  .big-news {
+    display: grid;
+    grid-template-columns: auto auto;
+    animation: none;
+  }
 
-      .container {
-          display: grid;
-          grid-template-columns: auto auto;
-      }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .small-news img {
+    width: 100%;
+  }
 }
 
 
 @media (min-width: 0) and (max-width: 767px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        animation: none;
-      }
-      .navigation {
-          display: none;
-      }
+  .header {
+    display: flex;
+    flex-direction: column;
+    animation: none;
+  }
+  .navigation {
+    display: none;
+  }
 
-      .big-news {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          align-items: center;
-          animation: none;
-      }
+  .big-news {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    animation: none;
+  }
 
-      .intro {
-          text-align: center;
-          margin-top: 10px;
-          
-      }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+  }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-      }
+  .small-news img {
+    width: 100%;
+  }
 
-      .small-news img {
-          width: 100%;
-      }
+  .small-news {
+    padding: 20px;
+  }
 }
