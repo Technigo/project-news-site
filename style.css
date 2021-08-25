@@ -15,7 +15,8 @@ body {
   background-color: black;
   width: 100%;
   display: grid;
-  margin-left: 1%;
+  margin:-1% 0 0 1%;
+  
   grid-template-columns: repeat(12, 0.5fr);
   grid-column-gap: 0.5%;
 
@@ -839,7 +840,7 @@ padding-bottom: -0.2%;
   .container-nav {
     justify-content: center;
     align-content: center;
-    margin: -1% -0 0 0%;
+    
     
   }
 
