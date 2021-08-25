@@ -44,75 +44,79 @@ a:active {
 }
 
 .navigation a:hover, .links a:hover {
-text-decoration: underline;
-color: red;
+  text-decoration: underline;
+  color: red;
 }
 
 .big-news {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    margin: 10px 5px;
-    animation: start 2s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 10px 5px;
+  animation: start 2s ease-in-out;
 }
 
 .big-news-img {
-    max-width: 90%;
-    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.8);
-    margin: 5px 0 10px 5px;
+  max-width: 90%;
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.8);
+  margin: 5px 0 10px 5px;
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 80%;
-    line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.6;
 }
 
+/* small news cards */ 
+
 .container {
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    border: 2px solid black;
-    margin: 10px;
-    padding: 20px 20px 0 20px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 20px 20px 0 20px;
 }
 
 .small-news {
-    background-color: #fff;
-    max-width: 80%;
-    box-shadow: 2px 6px 4px rgba(0,0,0,0.8);
-    padding-bottom: 10px;
-    margin: 30px 0;
-    text-align: center;
-    line-height: 1.6;
+  background-color: #fff;
+  max-width: 80%;
+  box-shadow: 2px 6px 4px rgba(0,0,0,0.8);
+  padding-bottom: 10px;
+  margin: 30px 0;
+  text-align: center;
+  line-height: 1.6;
 }
 
-.small-news img {
-    width: 240px;
-    padding: 10px 20px 30px 20px;
+.small-news > .small-image  {
+  width: 240px;
+  padding: 10px 20px 30px 20px;
 }
 
-  .small-news p {
-      padding-top: 10px;
-  }
-
-  footer {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 3px solid black;
-    padding-top: 10px;
+.small-news p {
+  padding-top: 10px;
 }
 
-  .links img {
-    filter: grayscale(30%);
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 3px solid black;
+  padding-top: 10px;
 }
 
+.links img {
+  filter: grayscale(30%);
+}
 
-  @keyframes header {
+/* animations */
+
+@keyframes header {
   0% {
       transform: translateY(-100%);
       opacity: 0;
@@ -135,6 +139,7 @@ color: red;
   }
 }
 
+ /* tablet */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
@@ -164,6 +169,7 @@ color: red;
   }
 }
 
+/* mobile */
 
 @media (min-width: 0) and (max-width: 767px) {
   .header {
