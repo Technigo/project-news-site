@@ -4,19 +4,113 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">  
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <a name="top"></a>
+
+    <header class="header">
+      <img class="logo" src="./logo.svg" alt="Technigo logo">
+      <h1>SUSTAINABILITY and DEVELOPMENT <em>NEWS</em></h1>
+      <nav class="all-nav">
+        <div class="site-nav">
+          <button class="nav-button">
+            <a class="nav-link" href="">About</a>
+          </button>
+          <button class="nav-button">
+            <a class="nav-link" href="">Read <i class="arrow down"></i></a>
+          </button>
+          <button class="nav-button">
+            <a class="nav-link" href="">Contact us</a>
+          </button>
+        </div>
+
+        <div class="media-nav">
+          <a class="facebook" href="https://en-gb.facebook.com/">
+            <img class="icon" src="./images/facebook.png" alt="Facebook icon">
+          </a>
+          <a class="twitter" href="https://twitter.com/">
+            <img class="icon" src="./images/twitter.png" alt="Twitter icon">
+          </a>
+          <a class="instagram" href="https://www.instagram.com/">
+            <img class="icon" src="./images/instagram.png" alt="instagram icon">
+          </a>
+        </div>
+      </nav>
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+      <a href="https://www.euronews.com/green/2021/06/19/putting-the-green-in-green-spaces-how-eco-friendly-are-europe-s-urban-parks">
+        <img class="big-news-image" src="https://static.euronews.com/articles/stories/05/78/15/82/329x224_cmsv2_3a0afc3d-6b36-55fe-9b1c-1b46cc2f3330-5781582.jpg" alt="">
+      </a>
+      <div class="big-news-text"> 
+        <a class="big-news-anchor" href="https://www.euronews.com/green/2021/06/19/putting-the-green-in-green-spaces-how-eco-friendly-are-europe-s-urban-parks"> 
+          <h3 class="big-news-heading">How eco-friendly are Europe's urban parks?</h3>
+        </a>  
+        <p class="big-news-p">Europe's cities are home to some stunning public parks, but are these green spaces just style over substance?</p>   
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news-cards">
+      <a class="card" href="https://news.un.org/en/story/2021/08/1098092">
+        <img class="card-image" src=https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/06-08-2021-WFP-Bangladesh.jpg/image1170x530cropped.jpg alt="">
+        <h3></h3>
+        <p class="card-heading">Race is on to limit extreme weather impact on most vulnerable: Guterres  </p>
+      </a>
+
+      <a class="card" href="https://theconversation.com/heart-health-design-cities-differently-and-it-can-help-us-live-longer-162038">
+        <img class="card-image" src=https://images.theconversation.com/files/409939/original/file-20210706-21-1r5ceps.jpg?ixlib=rb-1.1.0&rect=0%2C716%2C7348%2C3668&q=45&auto=format&w=668&h=324&fit=crop alt="">
+        <h3></h3>
+        <p class="card-heading">Heart health: design cities differently and it can help us live longer</p>
+      </a>
+
+      <a class="card" href="https://www.lifegate.com/india-climate-finance-sdgs">
+        <img class="card-image" src="https://cdn.lifegate.it/gm6PqSA-Aaxc9ImfUwJ1Fjn4RbU=/200x133/smart/https://www.lifegate.com/app/uploads/2021/03/solar-ladakh-india.jpg" alt="">
+        <h3></h3>
+        <p class="card-heading">India faces a huge financing gap to tackle climate change and the SDGs</p>
+      </a>
+
+      <a class="card" href="https://www.eco-business.com/news/how-can-corporates-help-forge-a-greener-and-fairer-future-of-work/">       
+        <img class="card-image" src="https://eco-business.imgix.net/ebmedia/fileuploads/48109873056_3000ffbfdd_k_A7UApA0.jpg?fit=crop&h=960&ixlib=django-1.2.0&w=1440" alt="">
+        <h3></h3>
+        <p class="card-heading">How can corporates help forge a greener and fairer future of work?</p>
+      </a>
+
+      <a class="card" href="https://unece.org/climate-change/news/living-fire-boreal-biome">
+        <img class="card-image" src="https://unece.org/sites/default/files/styles/thumbnail/public/2021-08/WEB_NEWS_Fire%20in%20forest_23%2008%202021.jpg?itok=pRme_H3T" alt="">
+        <h3></h3>
+        <p class="card-heading">Living with fire in the boreal biome</p>
+      </a>
+
+      <a class="card" href="https://news.un.org/en/story/2021/08/1097922">
+        <img class="card-image" src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/16-08-2021_UNICEF-373383_Nicaragua.jpg/image1170x530cropped.jpg" alt="">
+        <h3></h3>
+        <p class="card-heading">UN weather agency: millions affected by climate change and extreme weather in Latin America and Caribbean</p>
+      </a>
+
+      <a class="card" href="https://www.euronews.com/2021/07/23/committing-to-a-just-energy-transition">
+        <img class="card-image" src="https://static.euronews.com/articles/stories/05/90/13/66/773x435_cmsv2_44649af8-d873-52fd-90cf-9cc0f51f9222-5901366.jpg" alt="">
+        <h3></h3>
+        <p class="card-heading">Committing to a just energy transition</p>
+      </a>
+
+      <a class="card" href="https://www.lifegate.com/european-parliament-circular-economy">
+        <img class="card-image" src="https://cdn.lifegate.it/rfp6VaFs2Z42mIdsd0GbKmXnKOM=/1960x980/smart/https://www.lifegate.com/app/uploads/2021/03/economia-circolare-2.jpg" alt="">
+        <h3></h3>
+        <p class="card-heading">The European Parliament’s bold plan on the circular economy</p>
+      </a>
     </section>
+
+    <footer class="footer">
+      <button>
+        <a href="#top">Back To Top</a>
+      </button>
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
   </body>
 </html>
