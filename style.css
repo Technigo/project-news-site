@@ -492,12 +492,16 @@ font-size: 70%;
 
 
 }
-@media (min-width: 2048 x 1536px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
   
   .nav-container{
     margin:-5% 0 0 0%;
 }
  }
+
+
+
+
 @media (min-width: 641px) and (max-width: 1023px) {
  
   body {
