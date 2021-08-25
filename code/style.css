@@ -2,7 +2,6 @@
 body {
    font-family: Helvetica, sans-serif; 
    color: black;
-   background-color: seashell;
    margin: 0px;
 }
 
@@ -56,31 +55,87 @@ header{
    font-size: 1.5rem;
 }
 
-.animation{
-  border: 1px solid red;
+
+/* -------animation 1-subscribe----------- */
+.animation {
   display: flex;
-  height: 60px;
+  height: 80px;
   flex-wrap: wrap;
   width: 100%;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   align-items: center;
   justify-content: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  animation-name: subscribe;
-  animation-duration: 7s;
-  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.animation.one {
+   animation-name: subscribe;
 }
 
 @keyframes subscribe {
   from {
-    background-color: rgb(138, 43, 138);
-    opacity: 0}
+    background-color: rgb(171, 87, 240); 
+     color: white;
+  }
   to {
-    background-color: lime;
-    opacity: 1;
+    background-color: rgb(255, 255, 255);
+     color: black;
   }
 }
+
+/* -------animation 2-latest news----------- */
+.animation.two {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   animation-name: latest;
+}
+.animation.two h1 {
+  margin: 0px;
+}
+
+
+@keyframes latest {
+  from {
+color: red;
+font-size: 1rem;
+}
+  to {
+color:rgba(142, 68, 173, 1);
+font-size: 0.7rem;
+  }
+}
+
+
+/* ---------------animation3 */
+.animation.three {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgba(142, 68, 173, 1);
+  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+  animation: video 2s infinite;
+  color: white;
+  
+}
+@keyframes video {
+ 0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
+}
+
 
 /* big-news -------------------------*/ 
 .big-news{
@@ -101,6 +156,7 @@ header{
  height: auto;
  border: 1px solid lightgrey;
  vertical-align: middle;
+
 }
 
 .big-text{
@@ -126,6 +182,7 @@ header{
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .small-square{
@@ -148,6 +205,7 @@ header{
   height: 100%;
   width: 100%;
   object-fit: contain;
+  
 }
 
 .small-img-container{
@@ -172,9 +230,52 @@ margin: 5px 10px;
 }
 
 
+
+/* video -------------------------*/ 
+.video{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 95%;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+
+  
+}
+
+.video-card{
+  grid-column: 1 / span 2;
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.video-frame{
+grid-column: 1 /1;
+width: 100%;
+}
+
+.video-text{
+grid-column: 2/2;
+width: 100%;
+margin: 5px;
+font-size: 0.8rem;
+}
+
+.video-text p {
+font-family: cursive;
+}
+
 /* -------footer------ */
 footer{
 background-color: rgb(138, 132, 56);
+margin-top: 3rem;
 display: flex;
 justify-content: center;
 font-size: small;
@@ -204,17 +305,13 @@ font-style: italic;
   display: inline-flex;
 }
   
-.big-image img{
-  border: 1px solid blue;
-   
-}
+
 .big-text p {
   display: flex;
 }
 
 .animation{
   font-size: 0.7rem;
-
 }
 
 }
