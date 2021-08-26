@@ -9,7 +9,7 @@ Create a responsive page with a user-friendly interface on computer / tablet / p
 Solution / problem
 To make the page responsive, I used the grid and flexbox. 
 Grid to create layout and flexbox for smaller elements. 
-If I were to redo my project, I would read more about responsive design + "position: fixed".
+If I had to redo my project, I would read more about responsive design + "position: fixed".
 I use "position: fixed" on my navbar and I had problem to get it to respond to the width of the site.
 
 
