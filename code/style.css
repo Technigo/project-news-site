@@ -1,15 +1,20 @@
+/* Styling "Mobile first" */
 html {
   background: whitesmoke;
-  /* color: #fff; */
 }
 
-.header {
+header {
   background-color: whitesmoke;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   object-fit:contain;
 }
-
 nav {
+  display: flex;
+}
+/* Hiding the links in header*/
+nav > a {
   display: none;
 }
 
@@ -24,16 +29,27 @@ p, h2 {
 color: #010D00;
 font-family: 'Roboto', sans-serif;
 }
+
+a {
+  color: #010D00;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  
+}
+
+/* Making the logo round w/ border-radius */
 .logo {
   width: 100px;
   border-radius: 50%;
   margin: 10px;
+  display: flex;
 }
 
 .big-news {
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
+background-color: whitesmoke;
 }
 
 .big-news-image {
@@ -44,8 +60,8 @@ vertical-align: bottom;
 
 .big-news-text {
 justify-content: center;
-/* padding:  */
 }
+
 .grid-news {
   margin: 5%;
   display: flex;
@@ -61,6 +77,7 @@ justify-content: space-around;
 margin-bottom: 5%;
 } 
 
+/* Styling grid news w hover effects */
 .news-card-image {
 width: 80%;
 padding: 5% 10% 0% 10%;
@@ -78,7 +95,6 @@ filter: none;
 transition: 1s ease;
 }
   
-
 .news-card-text {
 margin: 0 10% 5% 10%;
 display: flex;
@@ -86,21 +102,37 @@ flex-direction: column;
 align-items: center;
 } 
 
- @media (min-width: 668px) {
+/* Adding styling for tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
   nav {
     display:flex;
-    justify-content: end;
+    align-items: center;
+    justify-self: center;
+  }
+  nav > a {
+    display: flex;
+  }
+
+  .header {
+    justify-content: space-evenly;
+    background-color: lightgray;
+  }
+
+  h1 {
+    display: none;
   }
   
   .logo {
     /* width: 80px; */
     display: center;
+  
+    
   }
 
   .big-news {
     flex-direction: row;
     justify-content:space-around;
-    
+    background-color: lightgray;
   } 
 
   .big-news-image {
@@ -120,11 +152,12 @@ align-items: center;
     
   }
   .news-card {
-    /* flex-direction: row;  */
     width: 50%;
     justify-content: space-between; 
     margin-bottom: 0;
+    background-color: thistle
   }
+
   .news-card-image {
     width: 90%;
     padding: 5%;
@@ -132,12 +165,52 @@ align-items: center;
   .news-card-text {
     width: 45%;
     margin: 0 5% 5% 5%;
+  }  
+}
+
+/* Adding styling for desktop */
+@media (min-width: 1025px){
+  .header {
+    justify-content: flex-start;
   }
 
-  
-}
-/* 
-  .big-news-text {
-    width: 300px;
+  .navigation > a {
+    display: flex;
+    align-items: center;
+    justify-items: right;
+    order: 2;
   }
-} */
+  
+  .logo {
+    order: -1;
+  }
+
+  h1 {
+    order: 0;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content:space-around;
+    
+  } 
+
+  .big-news-image {
+    width: 45%;
+    padding: 2% 2% 3% 2%;
+  }
+
+  .big-news-text {
+    width: 50%;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .grid-news {
+    margin: 2%;
+  }
+  .news-card {
+    width: 25%;
+    justify-content: space-between; 
+    margin-bottom: 0;
+  }
+} 

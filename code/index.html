@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- Added google fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
       </style>
   </head>
   
   <body>
-    <!-- <div class="big box"> -->
-      <header class="header">
-        <img class="logo" src=images/36.jpg alt="Small town logo"/>
-        <h1>Small Town News</h1>
+    <!-- Header including navigation and logo -->
+      <header>
         <nav class="navigation">
           <a href="#">Latest news</a>
           <a href="#">Local blog</a>
+          <img class="logo" src=images/36.jpg alt="Small town logo"/>
+          <h1>Small Town News</h1>
           <a href="#">Contact</a>
+          <a href="#">Login</a>
         </nav>  
-      <!-- Some kind of logo and navbar -->
     </header>
 
+    <!-- Big-news class/headline, used article to provide more semantic information to screen readers, search engines -->
     <article class="big-news">
       <img class="big-news-image" src="images/cobblestones.jpg" alt="cobblestones" />
       <h2 class="big-news-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </h2>
     </article>
-
-    <section class="grid-news">
+    <!-- Here starts the grid-news, all in one div but split into articles -->
+    <div class="grid-news">
       <article class="news-card">
         <img class="news-card-image" src=images/ice-cream.png alt="ice-cream" />
         <p class="news-card-text">
@@ -82,10 +84,11 @@
       </article>
       
       
-    </section>
+    </div>
+    <!-- Added a footer with credit given to the illustrator -->
     <footer>
       <a href="https://sv.vecteezy.com/gratis-vektor/bakgrund">Bakgrund Vektorer av Vecteezy</a>
     </footer>
-  <!-- </div> -->
+  
   </body>
 </html>
