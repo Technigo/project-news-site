@@ -4,19 +4,59 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <section class="header">
+      <div class="logo">
+      <a href="http://127.0.0.1:5500/code/index.html#about">
+        <img class="logo" src="./news_logo.png" alt="News Logo"/>
+      </a>
+      </div>
+      
+      <div>
+        <p class="title">Ye Olde News</p>
+      </div>
+        
+        <nav class="topnav">             
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </nav>  
+      </section>
 
+  <body>
     <section class="big-news">
       <!-- The big news content -->
+      <img class="columbus" src="./columbus.jpg" alt="Christopher Columbus"/>
+      <p class="big-news-title">Breaking News: Christopher Columbus discovers the Americas</p>
+      <p class="big-news-text">On the evening of 3 August 1492, Columbus departed from Palos de la Frontera with three ships. Columbus first sailed to the Canary Islands. There he restocked provisions and made repairs then departed from San Sebastián de La Gomera on 6 September, for what turned out to be a five-week voyage across the ocean. <a href="#" class="read-more">Read more...</a></p>
     </section>
 
-    <section class="">
+    <section class="small-news">
       <!-- The other news  -->
+      <img class="genghis" src="./genghis_khan.jpg" alt="Genghis Khan">
+      <p class="small-news-titles a">Genghis Khan becomes the ruler of Mongolia</p>
+      <p class="small-news-text a">Genghis Khan unites the various nomadic tribes in Mongolia, and begins a series of conquests that stretch across Asia and parts of Europe. <a href="#" class="read-more">Read more...</a></p>
+      
+      <img class="calendar" src="./medieval_calendar.png" alt="Medieval Calendar">
+      <p class="small-news-titles b">The calendar is finally here!</p>
+      <p class="small-news-text b">A monk named Dionysius Exiguus creates this new dating system as part of his efforts to understand the dating of Easter. It wanted the year 1 AD to be the date when Jesus Christ was born, although later calculations show that his birth occurred before this. Gradually use of this calendar became more widespread, and is now the most widely accepted system for counting years in the world. <a href="#" class="read-more">Read more...</a></p>
+      
+      <img class="dowland" src="./john_dowland.jpg" alt="Dowland Lacrimae">
+      <p class="small-news-titles c">English songwriter, John Dowland, publishes new music</p>
+      <p class="small-news-text c">The Lachrimae, or Seaven Teares is finally published. It contains the seven pavans of Lachrimae itself and 14 others, including the famous Semper Dowland semper Dolens. <a href="#" class="read-more">Read more...</a></p>
+      
+      <img class="couple" src="./ferdinand_isabella.jpg" alt="Ferdinand and Isabella">
+      <p class="small-news-titles d">The sweethearts are finally married!</p>
+      <p class="small-news-text d">Queen Isabella and King Ferdinand’s love story is the stuff romance novels are made of. Because they were married in secret, Isabella was denied her right to the throne of Castile. From this came the war over the succession of the Castillian throne. Isabella emerged victorious, and because of her marriage to King Ferdinand of Aragon, their kingdoms merged into a powerful and unified empire, and their reign was known for encouraging expeditions, including Christopher Columbus’s trip to what would later be known as the Americas. <a href="#" class="read-more">Read more...</a></p>
     </section>
   </body>
+  <footer>
+    <p class="creator">Created by me</p>
+  </footer>
 </html>
