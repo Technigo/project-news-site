@@ -272,7 +272,7 @@ p {
     list-style-type: none;
     color: white;
     font-size: 15px;
-    font-weight:lighter
+    font-weight: lighter
 }
 
 .page-footer a:any-link {
@@ -301,13 +301,12 @@ p {
         border-bottom: 1px solid rgb(0, 0, 0);
         margin-left: 10px;
         margin-right: 10px;
-        
     }
 }
 
 /* tablet only */
 
-@media (max-width: 991px) and (min-width: 768px){
+@media (max-width: 991px) and (min-width: 768px) {
     .header .logo {
         grid-column: 5/7;
         text-transform: uppercase;
@@ -315,64 +314,53 @@ p {
         padding: 10px 10px;
         text-decoration: none;
     }
-
     .header .menu-icon {
         grid-column: 11 / 12;
     }
-
-        .header  {
-            display: grid;
-            grid-template-columns: 12;
-            }
+    .header {
+        display: grid;
+        grid-template-columns: 12;
+    }
 }
-
-
 
 /* desktop */
 
-@media (min-width: 960px) {
+@media (min-width: 992px) {
     .grid-container {
         grid-column-start: 2;
         grid-column-end: 12;
     }
     .card {
         grid-column: span 1;
-        box-shadow: none;       
-        }      
-        
-        .main-article-ingress {
-            background-color: white;
-            border-top: 1px solid rgb(0, 0, 0);
-            border-bottom: 1px solid rgb(0, 0, 0);
-            grid-column: span 4;
-            margin-left: 10px;
-        }
-        .header {
-            grid-column-start: 2;
-            grid-column-end: 12;
-        }
-        .header li {
-            float: left;
-        }
-        .header li a {
-            padding: 20px 15px;
-        }
-        .header .menu {
-            clear: none;
-            float: right;
-            max-height: none;
-        }
-        .header .menu-icon {
-            display: none;
-        }
-        .hero-image {
-            display: inline;
-        }
-        .header .logo {
-            display: block;
-            float: left;
-            font-size: 2em;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
+        box-shadow: none;
     }
+    .main-article-ingress {
+        background-color: white;
+        border-top: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        grid-column: span 4;
+        margin-left: 10px;
+    }
+    .header {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 15px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .hero-image {
+        display: inline;
+    }
+
+}
