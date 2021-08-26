@@ -42,8 +42,8 @@ html {
 .search-button {
   width: 19px;
   padding-right: 15px;
-  background-color: #f9f7f3;
 }
+
 .header-button {
   border-radius: 4px;
   border: 1px solid #5ca46e;
@@ -71,18 +71,18 @@ a:hover {
 }
 
 .big-news-text {
-  font-size: 15px; 
+  font-size: 20px; 
   background-color:#e9d9d3;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 h1 {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 300;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 .read-more {
   display: block;
@@ -105,8 +105,9 @@ p {
 }
 
 .news-card {
-  width: 18%;
-  margin: 10px 20px;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0px;
   background-color:#f4ebe6;
   box-shadow: 0px 5px 5px 0px #baa281;
 }
@@ -146,6 +147,7 @@ p {
 .text-pics:hover {
   color:#5ca46e;
 }
+
 footer {
   background-color:#f6f3f3;
   display: flex;
@@ -158,35 +160,75 @@ footer {
  font-size: 16px;
 }
 
-@media (min-width: 1100px) {
+/* TABLET view */
+@media (min-width: 768px) {
+  .new-section {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .news-section {
+    flex-flow: wrap row;
+    justify-content: space-around;
+    margin: 20px 50px 0px;
+  }
+  .news-card {
+    width: 35%;
+    justify-content: flex-start;
+    background-color:#f4ebe6;
+    box-shadow: 0px 5px 5px 0px #baa281;
+  }
+}
+
+
+/* SMALL DESKTOP view */
+@media (min-width: 992px) {
+  
   .nav-el {
     display: inline;
   }
   .salad {
+    display: flex;
+    flex-direction: row;
     width: 50%;
   }
   .big-news {
     flex-direction: row;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 20px;
   }
+  .big-news-text{
+    padding: 10px;
+  }
+
   .header-button {
     display: none;
   }
   .icons {
     display:none;
   }
-
   .news-section {
     flex-flow: wrap row;
     justify-content: center;
-    margin: 20px 100px 0px;
+    margin-right: 20px; 
+    margin: 20px 25px 0px;
   }
-}
 
-@media (min-width: 768px) {
-  .new-section {
-    flex-flow: row wrap;
-    justify-content: space-between;
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .news-card {
+    width: 18%;
+    justify-content: center;
+    margin: 10px 20px;
   }
 }
