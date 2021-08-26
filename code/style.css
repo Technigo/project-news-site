@@ -38,7 +38,6 @@ nav {
   font-family: 'Six Caps', sans-serif;/*'Pacifico', cursive;*/
   letter-spacing: 3px;
   font-size: 50px;
- /* margin-top: 1rem;*/
 }
 .big-news {
   display: flex;
@@ -58,7 +57,7 @@ nav {
   padding: 20px;
   border-radius: 0 0 10px 10px;
 }
-.big-text {
+.big-quote-text {
   width: 250px;
   font-size: 40px;
   padding: 10px;
@@ -76,7 +75,7 @@ nav {
   background-color: aliceblue;
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgb(99, 99, 99);
-  padding: 10px;
+  padding: 20px;
   margin: 20px 5px;
 }
 .small-image {
@@ -84,9 +83,31 @@ nav {
 }
 footer {
   background-color: black;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+.footer-text {
+  padding: 20px;
+  animation-duration: 6s;
+  animation-name: slider;
+  animation-iteration-count: infinite;
+}
+@keyframes slider {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: -100%;
+    width: 100%;
+  }
+}
+.ico {
+  padding: 10px;
+  color: red;
 }
 /*Mobile first!*/
 @media(min-width: 768px) {
@@ -133,6 +154,9 @@ footer {
   .article {
     grid-column: span 2;
   }
+  .footer-text {
+    animation-duration: 15s;
+   }
 }
 
 @media (min-width: 992px) {
