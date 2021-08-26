@@ -4,48 +4,40 @@
     <meta charset="utf-8" />
     
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2: The News Site</title>
+    <title>Project 2: birdviews</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
 
-    <!-- dont forget the meta tag for responsiveness -->
 
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
-      <section class="header">
-        <img class="logo" src="https://i.guim.co.uk/img/media/6ba30e96faa15f1aa2662f0da1974b233b2fce84/109_390_1831_1099/master/1831.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=15d51b434c4fdee5abb7ab57a3574f47" alt="picture of seagull"/>
-        
-        
-       <!-- Nav-bar with links-->
-        <nav class="navigation"> 
-          <a href="https://www.klart.se/">Weather</a>
-          <a href="https://birdlife.se/">Birdlife</a>
-          <a href="https://twitter.com/?lang=sv">Social</a>
-          <a href="https://www.aftonbladet.se/">Hooman world</a>
-        </nav>
-      
-      </section>
 
+      <!-- Logo and navbar -->
+
+    <section class="header">
+      <img class="logo" src="https://i.guim.co.uk/img/media/6ba30e96faa15f1aa2662f0da1974b233b2fce84/109_390_1831_1099/master/1831.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=15d51b434c4fdee5abb7ab57a3574f47" alt="picture of seagull"/>
+        
+      <h1>birdviews</h1>
+       <div class="navigation"> 
+        <a class="link1" href="https://www.klart.se/">Weather</a>
+        <a class="link2" href="https://birdlife.se/">Birdlife</a>
+        <a class="link3" href="https://twitter.com/?lang=sv">Social</a>
+        <a class="link4" href="https://www.aftonbladet.se/">Hooman world</a>
+      </div>
+    </section>
     </header>
 
-      <section class="title-bar">
-        <p class="site-name">
-          <h1>birdviews</h1>
-            - We look down AND out for everyone <br>
-            Your weekly guide to life with wings!
-        </p>
-      </section>
-
-   
-
+    <section class="site-name">
+      <h2>birdviews</h2>
+      <p class="slogan"><i>-your weekly guide to life with wings!</i></p>
+   </section>
     
 <!-- The big news content -->
     <section class="big-news">
         <img class="big-news-image" src="https://windmillskill.com/sites/windmillskill/files/styles/hosted_core_wide/public/grulla-montes-cierzo.jpg?itok=x8VbCXV5" alt="dead bird"/>
         <p class="big-news-text">
-          Wind Farm in Stockholm <br>
+          <b>Wind Farm in Stockholm</b> <br>
           New wind farm is planned to be set up just outside of Stockholm. We urge everyone to keep up with the construction and find new way to fly when flying through the south of the city. Our reporters haven’t yet found out the exact date for building to commence. As soon as we have the information we will post it.  
         </p>
     </section>
@@ -67,14 +59,14 @@
       <p>
       <img class="winter-birds" src="https://www.blomsterlandet.se/b1dd0b38/contentassets/331c691400904043bc1c5c2a2bc2824b/23436534-blames-och-en-talgoxe-vid-en-fagelmatning.jpg" alt="Winter birds"/>
       <div class="container-text">
-      Staying for christmas?
+      Staying for christmas?<br>
       <a class="other-news-link" href="https://www.healthline.com/nutrition/bulking">How to bulk up.</a>  
     </p></div>
     </div>
 
     <div class="card">
       <p>
-        Short News <br>
+        <b>Short News</b> <br>
         Hawk assaulted by gang of sparrows, needed to seek medical attention. 
         Seagull association try to take over fish ‘n chip company. 
         150 new reports of birds crashing into windows (1 553 013 this year). 
@@ -85,19 +77,19 @@
       <div class="card-pic">
       <p>
       <img class="owl" src="https://pbs.twimg.com/media/EWhnmsJWoAAV_RN.jpg" alt="owl"/><br>
-      <div class="container-text">New winner in the "Long leg contest" miss Henrietta Owl-Smith. 
+      <div class="container-text">New winner of the "Long leg contest" <b><i>miss Henrietta Owl-Smith.</i></b> 
       </p></div>
     </div>
 
     <div class="card">
       <p>
-        Our reporter covering the community council has yet to report anything. Aside from the wind farm not much seem to be up with the hoomans. The amount of them moving around has thou increased in the last weeks. So hopefully there will be more food for us city birds in trash bins. And you country birds will hopefully be more left alone on the countryside as more hoomans seem to return to the city. 
+        <b>LOCAL NEWS</b><br>Our reporter covering the community council has yet to report anything. Aside from the wind farm not much seem to be up with the hoomans. The amount of them moving around has thou increased in the last weeks. So hopefully there will be more food for us city birds in trash bins. And you country birds will hopefully be more left alone on the countryside as more hoomans seem to return to the city. 
       </p>
     </div>
 
     <div class="card">
       <p>
-        As requested we have now counted all the votes and have the result 
+        <b>Movie poll</b><br>As requested we have now counted all the votes and have the result 
         from the poll “Best movies of all time” and here is the Top 5:
         <ol>
           <li>The Birds</li>
@@ -120,7 +112,8 @@
       <p>
         <img class="birds-without-borders" src="https://images-na.ssl-images-amazon.com/images/I/41jalLJbj1L.jpg" alt="the world and birds"/><br>
         <div class="container-text">
-        <button><a class="other-news-link" href="https://www.rspb.org.uk/">Birds without borders</a></button>
+        <form action="https://www.rspb.org.uk/">
+        <button type="submit">Birds without borders</button></form>
       </p></div>
     </div>
   
