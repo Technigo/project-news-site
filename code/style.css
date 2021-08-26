@@ -27,13 +27,13 @@ main a:hover {
   color: rgb(250, 91, 178);
 }
 
-/* main a:visited {
+main a:visited {
   color: purple;
 }
 
 main a:active {
   color: blue;
-} */
+}
 
 a:link {
   text-decoration: none;
@@ -124,6 +124,17 @@ hr.thick {
   box-shadow: 1vh 1vh 0.5vh rgb(8, 8, 8, 0.5), -1vh -1vh 0.5vh rgb(8, 8, 8, 0.5);
 }
 
+figure {
+  height: auto;
+  min-height: 22vh;
+  padding: 2vh;
+}
+
+.site-news-body {
+  height: auto;
+  min-height: 5vh;
+}
+
 footer {
   background-color: rgba(148, 187, 233, 1);
   min-height: 20vh;
@@ -165,4 +176,41 @@ footer {
   margin-top: 2vh;
   text-align: center;
   padding: 2vh;
+}
+
+/* mobile view */
+@media (min-width: 576px) {
+  .mobile-news-image {
+    height: auto;
+    min-height: 31vh;
+  }
+
+  .section-news {
+    min-height: 40vh;
+  }
+}
+
+/* tablet view */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-news {
+    width: 46%;
+  }
+
+  .news-image {
+    height: auto;
+    min-height: 31vh;
+    object-fit: cover;
+  }
+
+  figure {
+    min-height: 36vh;
+  }
+
+  .site-news-body {
+    min-height: 5vh;
+  }
 }
