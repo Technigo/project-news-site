@@ -1,88 +1,44 @@
 html {
   color: #272343;
-} 
+  background-color: #F0F5F9;
+}
 
 header {
- display: flex;
-}  
-
- /* *{ border: 1px solid purple}   */
-
+  display: flex;
+}
 
 
 /* ------HEADER SECTION STYLING ----- */
 
-
 nav {
-  background-color: #F0F5F9;
   display: grid;
-  grid-template-columns: 1fr; 
-  justify-items: start; /* justify-content makes it align */
+  grid-template-columns: 1fr;
+  justify-items: start;
+  /* justify-content makes it align */
   padding: 10px;
+  background-color: #fff;
 }
 
-
-h1{
+h1 {
   font-size: 36px;
 }
 
-
-.logo-name{
+.logo-name {
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
   padding-left: 10px;
 }
 
-
-.first, .second{ 
-  /* 4u yanyana acilacak */
+.first,
+.second {
   display: none;
-  background-color: rgb(233, 235, 125);
   padding: 10px;
+  margin: 5px;
 }
-
-
-@media  (min-width: 768px) {
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: start;
-    
-    }
-  
-    .logo-name {
-      align-self: stretch;
-      grid-column: 2;
-    }
-    
-    .links {
-      margin: 5px;   
-    }
- 
-
-    /* .links {
-    display: flex;
-    justify-content: space-between;
-    } */
-
-     .first {
-      display: flex;
-      order: 3;
-    }
-
-    .second {
-      display: flex;
-      align-self: flex-start;
-    }
-  } 
-   
-
-
 
 
 /* ------BIG NEWS SECTION STYLING ----- */
@@ -95,116 +51,59 @@ h1{
   padding: 20px;
   border: solid #F0F5F9;
   border-bottom: 5px solid #000;
-  
 }
 
 .big-news-image {
-  width: 100% ;
+  width: 100%;
 }
 
 .big-news:hover {
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  transform: scale(1.01);
+  -webkit-transform: scale(1.005);
+  -moz-transform: scale(1.005);
+  transform: scale(1.005);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
-
-@media  (min-width: 768px) {
-  .big-news {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-    justify-items: start;
-    grid-gap: 30px;
-    }
-  
-    .big-news-image {
-      width: 100% ;
-    }
-    .big-news-text {
-      margin:0 ;
-    }
-  }
-
 
 .top-projects {
   padding-left: 40px;
   color: grey;
   box-sizing: border-box;
-  margin: 0 ;
+  margin: 0;
   /* font-family: "Open Sans";  or itatik */
 }
-
 
 
 /* ------OTHER NEWS SECTION STYLING ----- */
 
 .news-cards {
-  width: 100%;
+  /* width: 100%;  If I put a margin to news-card the page does not fit in the browser*/
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   text-align: justify;
+  margin: 30px;
 }
 
-
-
-@media  (min-width: 768px) {
-  .news-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    justify-items: start;
-    }
-
-    .card { 
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      justify-items: start;
-       /* grid-gap: 30px;  puts a space between text and image*/
-      }
-  }
-
-  @media  (min-width: 1200px) {
-  
-    .news-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr; 
-      justify-items: start;
-      
-      }
-  
-      .card { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        justify-items: start;
-        margin: 10px;
-  }
-}
-
-/* Card ve news image yukari tasiyinca bozuluyor 
-bu haliyle de margin degisikligini kabul etmiyor*/
-
-
-.card { 
-background-color: #F0F5F9;
-display: flex;
-flex-direction: column;
-margin: 30px;
-padding: 20px;
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
 }
 
 .news-image {
   width: 100%;
   display: flex;
-  align-self: center; 
+  align-self: center;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.005);
+  -moz-transform: scale(1.005);
+  transform: scale(1.05);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
@@ -212,22 +111,17 @@ padding: 20px;
 
 
 
-/* if I put the card and news-image properties up above the media query seletor something changes */
-
-
 /* ------FOOTER SECTION STYLING ----- */
-
 footer {
   text-align: center;
   padding: 3px;
-  background-color: #C9D6DF;
+  background-color: #272343;
+  color: #C9D6DF;
 }
-  
 
 .footer-info {
-font-size: 18px;
+  font-size: 18px;
 }
-
 
 .fa {
   padding: 20px;
@@ -249,12 +143,84 @@ font-size: 18px;
 }
 
 .fa-linkedin {
-  background:#3B5998;
+  background: #3B5998;
   color: white;
-  }
+}
 
 .fa-github {
-    background: black;
-    color: white;
-    }
+  background: black;
+  color: white;
+}
 
+
+/* ------MEDIA QUERY STYLING ----- */
+
+@media (min-width: 768px) {
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+  }
+
+  .logo-name {
+    align-self: stretch;
+    grid-column: 2;
+  }
+
+  .first, .second {
+    display: flex;
+  }
+
+  .big-news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: start;
+    grid-gap: 30px;
+  }
+
+  .big-news-image {
+    width: 100%;
+  }
+
+  .big-news-text {
+    margin: 0;
+  }
+
+  .news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .card {
+    display: grid;
+    justify-items: start;
+    margin: 10px;
+    border: 1px solid grey;
+    /* grid-gap: 30px;  puts a space between text and image*/
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: start;
+  }
+
+  .card {
+    display: grid;
+
+
+    /* Things needed to be done;
+
+    - text properties
+    - header / nav bar
+    - footer
+    - text on images (AVARD WINNING, EDITORS` PICK etc.. show on when hover ?
+    - fine tuning
+    - disable hover effect on mobile size
+    
+    */
