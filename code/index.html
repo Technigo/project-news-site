@@ -17,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Copse&display=swap"
     rel="stylesheet">
   <!--Script for the Social Media Icons-->
-  <script src="https://kit.fontawesome.com/7ed1b41d25.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/25eebd79b0.js" crossorigin="anonymous"></script>
   <!--For the fav icons-->
   <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
@@ -33,24 +33,26 @@
         <div class="nav-bar">
           <img class="logo-transparent" src="./resources/img/brand-assets/logo.png" alt="nuntii logo">
           <ul class="main-nav">
-            <li><a href="#good-news">Good news</a></li>
-            <li><a href=#inspiration>Inspiration</a></li>
-            <li><a href="#submit">Submit</a></li>
-            <li><a href="#main-news">Today's Highlight</a></li>
-            <a class="mobile-nav-icon"><i class="fa-solid fa-bars"></i></a>
+            <li><a href="#jump-to-main">Today's News</a></li>
+            <li><a href="#jump-to-featured">Featured</a></li>
+            <li><a href="https://wisdomquotes.com/positive-quotes/" target="_blank">Inspiration</a></li>
+            <li><a href="#jump-to-footer">Contact</a></li>
+            <a class="mobile-nav-icon"><i class="fas fa-bars"></i>
+            </a>
           </ul>
         </div>
       </nav>
       <div class="hero-container">
         <div class="hero-text">
           <h1>Hunting for life's silver lining</h1>
-          <p class="header-subtitle">One news at a time</p>
-          <button class="cta-button newsletter">What's good today?</button>
+          <h2 class="header-subtitle">One news at a time</h2>
+          <button class="cta-button main" onclick="window.location.href='#jump-to-main';">What's good
+            today?</button>
         </div>
         <!--Here goes the hero slider. It contains the most important news of the week -->
       </div>
     </header>
-    <section class="main-news">
+    <section class="main-news" id="jump-to-main">
       <!--An image of the founders + some copy and cta-button -->
       <div class="main-news-container">
         <img class="main-news-img"
@@ -58,125 +60,117 @@
           alt="Picture of the authors" />
         <div class="main-news-contents">
           <h2>News of the Day</h2>
-          <h3>Subtitle</h3>
-          <p>"Cookie tootsie roll halvah apple pie cake. Candy canes marshmallow chupa chups danish cake cookie jelly-o
-            candy canes macaroon. Tart gingerbread dragée gummi bears wafer jujubes. Candy canes sweet danish sugar plum
-            cake oat cake jujubes tootsie roll. Pudding cake gummies pudding sesame snaps gummi bears ice cream. Candy
-            halvah cotton candy carrot cake liquorice marzipan sweet soufflé caramels. Biscuit cupcake topping chocolate
-            bar cheesecake chocolate sesame snaps shortbread tiramisu. Lollipop sweet caramels chocolate cake oat cake
-            sesame snaps. Apple pie cupcake cookie donut caramels cheesecake sesame snaps toffee tiramisu. Chocolate
-            cake
-            gummies candy canes shortbread icing caramels toffee jelly-o wafer. Lemon drops macaroon icing oat cake
-            biscuit. Gummies biscuit cookie carrot cake jujubes halvah ice cream icing jelly-o. Pie marzipan jelly beans
-            lollipop caramels sweet chocolate bar sweet roll gummies. Macaroon sesame snaps cake gummies gummi bears
-            sweet
-            roll.
-
-            "
+          <h3 class="main-subtitle">No More Capybara Hunting in Colombia</h3>
+          <p>... or almost. Colombian law enforcement arrested an <a
+              href="https://www.elespectador.com/judicial/cae-presunta-red-de-caza-ilegal-de-chiguiro-que-vendia-su-carne-en-malas-condiciones/">illegal
+              capybara haunting network</a> in the region of
+            Casanare. The organization was not only hunting these adorable hamster-like creatures, but they were also
+            selling their meat in awful sanitary conditions! Their arrest is part of a recent initiative for the
+            conservation of the species in the South American country.
           </p>
-          <button class="cta-button donate">Donate</button>
+          <p>
+            Capybaras (or chiguiros, as they are called in Colombia) are a protected species under Colombian law. Sport
+            hunting was banned decades ago, and commercial hunting is only allowed for three months a year. Obtaining a
+            license to hunt and sell capybara isn't easy, either! So it's good to hear that authorities are making sure
+            people are actually leaving chiguiros alone.
+
+            Long live the world's biggest rodent!
+          </p>
+          <button class="cta-button donate" onclick="window.location.href='#jump-to-featured';">More news
+            please!</button>
         </div>
       </div>
     </section>
-    <section class="featured-news">
+    <section class="featured-news" id="jump-to-featured">
       <div class="featured-news-container">
         <h2 class="featured-title">Featured news</h2>
         <main class="grid">
           <!-- A grid containing several secondary news -->
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/chino-rocha-P69rwd0vyHw-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p>Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Renewed bows</h3>
+              <p>Elderly couple finally gets to celebrate 50th anniversary postponed by the pandemic.</p>
+              <a class="read-more-link"
+                href="https://www.today.com/news/couple-renews-vows-live-today-after-pandemic-postponed-50th-anniversary-t224083">Read
+                more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/rachel-barkdoll-Ns0wpr-DO-g-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Baseball Dream</h3>
+              <p class="featured-paragraph">70 year-old NY Yankees fan serves as a bat girl (her lifetime dream).</p>
+              <a class="read-more-link"
+                href="https://www.today.com/news/yankees-fan-serve-bat-girl-60-years-after-being-turned-t223991">Read
+                more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/tanvi-sharma--4bD2p5zbdA-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>India vs. Plastic</h3>
+              <p class="featured-paragraph">The Indian government banned a long list of single-use plastics, like
+                cutlery
+                and thin bags.</p>
+              <a class="read-more-link"
+                href="https://www.goodnewsnetwork.org/india-bans-long-list-of-single-use-plastics/">Read
+                more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/blaz-erzetic-lVPeU3K44I8-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Empathy and Music</h3>
+              <p class="featured-paragraph">The brain of people who are very empathetic processes music differently!</p>
+              <a class="read-more-link"
+                href="https://www.goodnewsnetwork.org/highly-empathetic-process-music-differently-smu/">Read more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p class="featured-paragraph">Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Epic Metabolism</h3>
+              <p class="featured-paragraph">Your metabolism doesn't slown down after your 30s, as we previously thought.
+              </p>
+              <a class="read-more-link"
+                href="https://www.goodnewsnetwork.org/metabolism-does-not-slow-down-in-midlife-adulthood/">Read more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
-              alt="Sample photo">
+            <img class="featured-image" src="./resources/img/site-content/david-brooke-martin-50cGSHm1Jro-unsplash.jpg">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p>Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Superhero Brain</h3>
+              <p>Meditation for 10 minutes a day can make help you focus and make your brain quicker.</p>
+              <a class="read-more-link"
+                href="https://www.positive.news/lifestyle/health/meditating-can-make-your-brain-quicker-how-to-meditate/">Read
+                more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/andre-benz-Mn9Fa_wQH-M-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p>Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Cities against Depression</h3>
+              <p>New research suggests that human interaction in big cities can protect us from depression.</p>
+              <a class="read-more-link"
+                href="https://www.positive.news/lifestyle/wellbeing/can-big-cities-protect-us-from-depression-researchers-think-so/">Read
+                more</a>
             </div>
           </article>
           <article>
-            <img class="featured-image"
-              src="https://images.unsplash.com/photo-1595017013941-cab3d4c8d02f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            <img class="featured-image" src="./resources/img/site-content/miranda-richey-_ZbwdLTnuso-unsplash.jpg"
               alt="Sample photo">
             <div class="featured-single">
-              <h3>Tiramisu lemon drops jelly beans</h3>
-              <p>Powder powder shortbread apple pie tootsie roll
-                brownie
-                liquorice bonbon bear claw.</p>
-              <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
+              <h3>Tiger Comeback</h3>
+              <p>Tiger population in Indian national park bounces back from zero to 48 tigers.</p>
+              <a class="read-more-link"
+                href="https://www.positive.news/society/positive-news-stories-from-week-29-of-2021/">Read more</a>
             </div>
           </article>
         </main>
@@ -184,7 +178,7 @@
 
     </section>
   </div>
-  <section class="footer">
+  <section class="footer" id="jump-to-footer">
     <div class="footer-container">
       <img class="logo-transparent" src="./resources/img/brand-assets/logo_transparent.png" alt="nuntii logo">
       <ul class="footer-list">
