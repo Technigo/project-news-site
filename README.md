@@ -13,5 +13,5 @@ Most of the project was built with flexbox, but the video and footer section wit
 The project represents a nice practice about flexbox, grid, responsive design, and a motivation to search more about new subjects like animations and continuous deployment. 
 
 ## View it live
-
+See:  https://tech-news-project-technigo.netlify.app/
 
