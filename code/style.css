@@ -8,7 +8,18 @@ html {
   justify-content: center;
   display: flex;
 flex-direction: column;
+animation: fadeIn 5s;
+opacity: 1;
 }
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  }
+
 
 header{
 display: flex;
@@ -38,17 +49,27 @@ flex-direction: row;
   border: 3px solid #25838A;
   border-radius: 50%;
   padding: 5px;
-  
+  -webkit-animation:spin 4s linear ;
+    -moz-animation:spin 4s linear ;
+    animation:spin 4s linear ;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .logo-big{
   width: 50px;
   height: 50px;
   border: 3px solid #25838A;
   border-radius: 50%;
   padding: 5px;
-  
+  -webkit-animation:spin 4s linear ;
+    -moz-animation:spin 4s linear ;
+    animation:spin 4s linear ;
 }
-
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .big-news{
   width: 100%;
   /* border: 2px solid #25838A; */
@@ -141,10 +162,22 @@ hr{
   border: 2px solid #84ACB6;
   width: 70%;
   border-radius: 50px;
-  
   align-self: center;
   max-width: 500px;
+  animation: fadeIn 10s;
+  opacity: 1;
 }
+
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
 
 /*mobile*/
 @media (min-width:0px) and (max-width:767px){
@@ -254,7 +287,7 @@ nav{
     font-size: 1.2em;
   }
   .more-text{
-   
+
     position: relative;
 
   }
