@@ -105,12 +105,12 @@ header{
 
 @keyframes latest {
   from {
-color: red;
-font-size: 1rem;
+  color: red;
+  font-size: 1rem;
 }
   to {
-color:rgba(142, 68, 173, 1);
-font-size: 0.7rem;
+  color:rgba(142, 68, 173, 1);
+  font-size: 0.7rem;
   }
 }
 
@@ -152,10 +152,10 @@ font-size: 0.7rem;
 }
 
 .big-image img{
- width: 100%;
- height: auto;
- border: 1px solid lightgrey;
- vertical-align: middle;
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgrey;
+  vertical-align: middle;
 }
 
 .big-text{
@@ -170,7 +170,7 @@ font-size: 0.7rem;
 
 .big-text p{
   display: none;
-   margin: 0px
+  margin: 0px
 }
 
 
@@ -218,7 +218,7 @@ font-size: 0.7rem;
 }
 
 .small-text {
-margin: 5px 10px;
+  margin: 5px 10px;
 }
 
 .small-text h3, h2{
@@ -249,38 +249,38 @@ margin: 5px 10px;
 }
 
 .video-frame{
-grid-column: 1 /1;
-width: 100%;
+  grid-column: 1 /1;
+  width: 100%;
+  height: 100%;
 }
 
 .video-text{
-grid-column: 2/2;
-width: 100%;
-margin: 10px;
-font-size: 0.8rem;
+  grid-column: 2/2;
+  width: 100%;
+  margin: 10px;
+  font-size: 0.8rem;
 }
 
 .video-text p {
-font-style: italic;
+  font-style: italic;
 }
 
 /* -------footer------ */
 footer{
-background-color: rgb(138, 132, 56);
-margin-top: 3rem;
-padding: 1rem 0rem;
-display: grid;
-justify-content: center;
-font-size: small;
-font-style: italic;
-text-align: center;
+  background-color: rgb(138, 132, 56);
+  margin-top: 3rem;
+  padding: 1rem 0rem;
+  display: grid;
+  justify-content: center;
+  font-size: small;
+  font-style: italic;
+  text-align: center;
 }
 
 footer a{
-font-size: 1rem;
-font-style: normal;
+  font-size: 1rem;
+  font-style: normal;
 }
-
 
 
 
@@ -323,6 +323,10 @@ font-style: normal;
   font-size: 0.7rem;
 }
 
+.video{
+  height: 630px;
+}
+
 }
 
 /*--------DESKTOP - mobile first-------------*/
@@ -340,6 +344,10 @@ font-style: normal;
 .nav-bar img{
   display: none;
 }
+
+.video{
+  height: 950px;
+} 
 }
 
 
