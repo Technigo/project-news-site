@@ -4,19 +4,75 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- Some kind of logo and navbar -->
+      <img class="logo" src="./logo.PNG" alt="The View Report"/>
+      <nav class="navigation">
+        <a href="#">Search</a>
+        <a href="#">Menu</a>
+        <a href="#">Login</a>
+        <a href="#">Subscribe</a>
+        <div class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
     </header>
 
-    <section class="big-news">
+    <article class="big-news-section">
       <!-- The big news content -->
+      <img class="tortoise" src="./Tortoise.jpg" alt="Tortoise"/>
+      <p class="big-news-paragraph"><span style="font-weight:bold">Horrifying and Amazing: Giant Tortoise Filmed Attacking and Eating Baby Bird.</span></br>
+        Chase in Seychelles is first known example of hunting in the wild by creature thought to be herbivore.</p>
+      </article>
+
+    <section class="small-news-section">
+      <!-- The other news  -->
+      <article class="kabul">
+        <img class="small-img" src="./kabul.jpg" alt="Kabul"/>
+        <p class="small-news">The Terror Facing Human-Rights Activists in Kabul</p>
+      </article>
+
+      <article class="lava">
+        <img class="small-img" src="./lava.jpg" alt="Lava"/>
+        <p class="small-news">Chasing The Lava Flow in Iceland</p>
+      </article>
+      
+      <article class="beatles">
+        <img class="small-img" src="./beatles.jpg" alt="Beatles"/>
+        <p class="small-news">Paul McCartney to Reveal Unseen Beatles Lyrics in New Book</p>
+      </article>
+      
+      <article class="simpsons">
+        <img class="small-img" src="./simpsons.jpg" alt="Simpsons"/>
+        <p class="small-news">In the Kitchen With A "Simpsons" Cookbook</p>
+      </article>
+
+      <article class="bee">
+        <img class="small-img" src="./bee.jpg" alt="Bee"/>
+        <p class="small-news">The Bees Are Back in Town</p>
+      </article>
+
+      <article class="rome">
+        <img class="small-img" src="./rome.jpg" alt="Rome"/>
+        <p class="small-news">12 Hidden Gems in Rome</p>
+      </article>
+      
+      <article class="paralympics">
+        <img class="small-img" src="./paralympics.jpg" alt="Paralympics"/>
+        <p class="small-news">Paralympics Ready for Action as Games Begin in Tokyo</p>
+      </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <footer class="footer">
+      <img class="logo-footer" src="./logo.PNG" alt="The View Report"/>
+      </footer>
   </body>
 </html>
