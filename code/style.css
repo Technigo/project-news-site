@@ -31,15 +31,17 @@ header {
   }  
 }
 /* styling of header section on desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   header {
     justify-content: space-between;
   }
+
   .logo-container {
-    margin-right: 350px;
+    width: 65%;
   }
+
   #contact {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 }
 
@@ -113,9 +115,8 @@ i {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .other-news {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
   }
@@ -140,9 +141,13 @@ i {
   margin-right: auto;
 }
 
-@media (min-width: 668px) {
-  .big-news-text {
-    padding-left: 10px;
+.big-news-text {
+  margin-left: 15px;
+}
+
+@media (min-width: 1025px) {
+  .big-news-image {
+    margin: 0;
   }
 }
 
