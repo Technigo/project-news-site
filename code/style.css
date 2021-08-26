@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  border-bottom: 10px rgb(105, 31, 18) solid;
+  border-bottom: 5px rgb(105, 31, 18) solid;
   margin: 0;
   display:flex;
   flex-direction: column;
@@ -15,7 +15,15 @@ header {
 .logo {
   width: 200px;
   align-self: center;
+  animation-name: logo;
+  animation: logo 3s ease-in;
 }
+
+@keyframes logo {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
 
 .navigation {
     margin: 0;
@@ -47,7 +55,7 @@ header {
 }
 
 .big-news {
-  border-bottom: 5px rgb(105, 31, 18) solid;
+  border: 5px rgb(105, 31, 18) solid;
   display: flex;
   flex-direction: column;
   background: whitesmoke;
@@ -66,7 +74,6 @@ header {
 }
 
 .small-news {
-  border-bottom: 5px rgb(105, 31, 18) solid;
   margin: 5px;
   display: grid;
   grid-template-columns: 1fr,1fr,1fr,1fr;
@@ -141,7 +148,7 @@ header {
 
 @media (min-width: 992px){
   .big-text{
-    margin-right: 4rem;
+    margin-right: 5rem;
   }
   .small-news {
     display: flex;
