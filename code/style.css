@@ -117,6 +117,7 @@ a:visited {                         /*for visited links, the color will remain b
   border: 2px solid rgb(229, 229, 229);
   grid-column: span 1;           /*each news takes up 1 column*/
   padding: 10px;
+  transition: all 1s ease-out;    /*when hovering the news card, the transition will take 1s and the effect is ease-out*/
 }
 
 .big-news img {
@@ -128,6 +129,12 @@ a:visited {                         /*for visited links, the color will remain b
   object-fit: contain;            /*fill the container as large as possible without cropping or stretching the image*/
   width: 100%;
   max-height: 150px;              /*defined a max height so the images do not go outside of the container*/
+}
+
+.other-news:hover {    /*when hovering the news cards, the opacity, text-color and backgrpund colors will change*/
+  opacity: 0.6; 
+  color: white; 
+  background-color: rgb(71, 72, 72);
 }
 
 footer {
@@ -156,6 +163,16 @@ footer p {                          /*zero margin between the paragraphs in the 
   margin-top: 5px;                /*put some space betwwen the logo and the paragraph*/
 }
 
+/*when we click on the navbar and select one of the link, it will only target the class target-highlight*/
+#health:target .target-highlight, #tech:target .target-highlight, 
+#business:target .target-highlight, #sports:target .target-highlight {
+    background-color: rgb(229, 229, 229);
+}
+
+h3 {
+  font-weight: normal;            /*by default the h3 font-weight is in bold, changed it to normal*/
+}
+
 @media (min-width: 768px) and (max-width: 991px) {             /*for tablet*/
   .other-news {
       grid-column: span 2;                    /*change it to two columns*/
@@ -167,3 +184,23 @@ footer p {                          /*zero margin between the paragraphs in the 
       font-size: 90%;
   }
 }
+
+@media (max-width: 767px) {                                     /*for mobile*/
+  .big-news, .other-news {
+      grid-column: span 4;                     /*change it to one column*/
+  }
+  .right {
+      display: none;                          /*when using small screens as smartphones, the top-bar right will disappear*/
+  }
+
+  .title, .header-2, .date, .big-news, .other-news, footer, .copyright {
+      font-size: 70%;
+  }
+  .big-news img {
+      height: 200px;
+  }
+  .other-news img {
+      object-fit: cover;  
+  }
+}
+
