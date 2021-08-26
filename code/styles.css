@@ -29,7 +29,7 @@ a {
   cursor: url('logo-pics/cursor.png'),pointer;
 }
 
-.list{
+.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,23 +43,33 @@ a {
   display: none;
 }
   
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
 .logo-tablets-and-mobiles {
   fill: var(--pink);
   width: 140px;
   height: 60px;
+  align-items: center;
+  margin-left: 74px;
 }
 
 .top-navicons {
   color: var(--pink);
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .navicons-wrapper {
- margin: 0px 0px 0px 140px;
+ margin: 0px 0px 0px 50px;
 }
 
-/* Gradient developed via https://coolors.co/gradient-maker/b89c93-8e6865 */
+/* Gradient created via https://coolors.co/gradient-maker/b89c93-8e6865 */
 .navbar {
   background: hsla(248, 21%, 15%, 1);
   background: linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
@@ -67,13 +77,7 @@ a {
   background: -webkit-linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#211F2F", endColorstr="#918CA9", GradientType=1 );
   padding: 10px 0px 10px 0px;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  padding: 0;
 }
 
 .main-banner {
@@ -82,8 +86,8 @@ a {
 
 .media-icons {
   color: var(--nav);
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 }
 
 .article-text {
@@ -112,15 +116,16 @@ hr {
   align-self: flex-start;
 }
 
+/* News boxes styles  */
 .news-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 10px;
+  width: 100%;
 }
 
-/* News boxes styles  */
 .news-box {
   box-sizing: border-box;
   overflow: hidden;
@@ -133,7 +138,7 @@ hr {
   position: inherit;
 }
 
-/* Subscribe button styles and effects */ 
+/* 'Subscribe' button styles and effects */ 
 .button-container {
   display: flex;
   justify-content: center;
@@ -163,9 +168,61 @@ hr {
   cursor: url('logo-pics/cursor.png'),pointer;
 }
 
+.signature-container {
+margin: 10px 50px 10px 10px;
+}
+
 .signature {
   font-size: 10px;
   color: var(--background-color);
+}
+
+/* Styles for Tablet version */
+@media (min-width: 768px) {
+  
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navlinks-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .aligning-wrapper {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    display: inline-flex;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px; 
+  }
+  
+  .logo-tablets-and-mobiles { 
+    width: 160px;
+    height: 70px;
+  }
+    
+  .top-navicons {
+    color: var(--pink);
+    width: 25px;
+    height: 25px;
+  }
+    
+
+
+
+
+
+
+
+
 }
 
 /* Styles for Desktop version */
