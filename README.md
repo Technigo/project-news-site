@@ -1,6 +1,5 @@
 # project-news-site
 
-News Site
 A website that provides tips on movie / TV series - for a perfect movie night!
 
 Task:
