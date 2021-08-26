@@ -161,3 +161,65 @@ nav a:hover {
   .card:hover {
     opacity: 0.8;
   }
+
+/*** Media Queries***/
+
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  
+   nav {
+    display: inline-block;
+    
+  }
+ 
+ .hamburger {
+   display: none;
+ }
+ 
+ .big-news {
+   width: 100%;
+   flex-grow: 1;
+ }
+ 
+ .big-news img{
+ float: left;
+ margin: 15px;
+ 
+ }
+ p {
+   padding: 5px 10px;
+   margin: 15px 10px;
+   line-height: 0.7cm;
+   /*max-width: 850px;*/
+   font-size: 1.5rem;
+ }
+ 
+ .other-news{
+   flex-wrap: wrap;
+   flex-direction: row;
+ }
+ .card {
+   width: 40%;
+ }
+ 
+ 
+ }
+ 
+ @media (min-width: 992px) {
+   body {
+     text-align: left;
+     justify-items: center;
+ }
+ 
+ header img {
+   width: 6rem;
+   margin-left: 4rem;
+ }
+ .card {
+   width: 24%;
+ }
+ 
+ }
