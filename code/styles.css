@@ -66,7 +66,7 @@ a {
 }
 
 .navicons-wrapper {
- margin: 0px 0px 0px 50px;
+ margin-left: 50px;
 }
 
 /* Gradient created via https://coolors.co/gradient-maker/b89c93-8e6865 */
@@ -92,10 +92,6 @@ a {
 
 .article-text {
   font-size: 14px;
-}
-
-.content-spacing {
-  margin: 10px 5px 10px 5px;
 }
 
 .banner-container {
@@ -126,16 +122,19 @@ hr {
   width: 100%;
 }
 
-.news-box {
+.news-box-styles {
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 
+.content-spacing {
+  margin: 10px 10px 10px 10px;
+}
+
 .news-pics {
   width: 100%;
-  position: inherit;
 }
 
 /* 'Subscribe' button styles and effects */ 
@@ -179,22 +178,18 @@ margin: 10px 50px 10px 10px;
 
 /* Styles for Tablet version */
 @media (min-width: 768px) {
-  
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-  }
 
   .navlinks-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 5px 30px 30px;
   }
 
-  .aligning-wrapper {
+  .aligning {
     display: flex;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 25px;
   }
 
   .nav-links {
@@ -207,6 +202,7 @@ margin: 10px 50px 10px 10px;
   .logo-tablets-and-mobiles { 
     width: 160px;
     height: 70px;
+    margin-left: -18px;
   }
     
   .top-navicons {
@@ -214,10 +210,69 @@ margin: 10px 50px 10px 10px;
     width: 25px;
     height: 25px;
   }
-    
 
+  .navicons-wrapper {
+    margin: 0px;
+   }
 
+  .media-icons {
+    width: 22px;
+    height: 22px;
+  }
 
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+  }
+  
+  .list-container {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .sizing-wrapper {
+    flex: 1 1 50%;
+  }
+
+  .sizing-wrapper p {
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 22px;
+    margin: 0px 10px 38px 10px;
+  }
+
+  .news-parent-container > * {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .news-parent-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -10px -10px -10px -10px;
+    width: calc(100% + 20px);
+  }
+
+  .news-container {
+    flex: 1;
+    min-width: 350px;
+  }
+
+  .news-box-styles {
+    box-sizing: border-box;
+   
+  }
+  
+  .news-pics {
+    width: 100%;
+    aspect-ratio: 14 / 9;
+  }
 
 
 
