@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f7f6;
+  background-color: #ffffff;
   color: #202121;
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -12,8 +12,8 @@ body {
 /******************** Header ********************/
 
 header {
-  background-color: #ffffff;
-  padding: 40px 5%;
+  padding: 20px 5%;
+  box-shadow: 0 -50px 25px 50px #c9c9c9;
 }
 
 .flex-header {
@@ -31,7 +31,7 @@ header {
 }
 
 .flex-child {
-  margin-left: 35%;
+  margin-left: 31%;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
 
 h1 {
   font-size: 1.5rem;
-  margin: 10px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 h2 {
@@ -79,8 +79,12 @@ p {
 /******************** Images and Grid ********************/
 
 img {
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
+}
+
+.big-image {
+  height: 100%;
 }
 
 .grid-news,
@@ -97,7 +101,6 @@ img {
 .big-news-image,
 .big-news-text,
 .grid-news article {
-  background-color: #ffffff;
   grid-column: span 4;
 }
 
@@ -114,16 +117,24 @@ img {
 }
 
 /* Specification for tablet */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .big-news-image,
   .big-news-text,
   .grid-news article {
     grid-column: span 2;
   }
+  .big-headline-3,
+  .paragraph-big-3 {
+    display: none;
+  }
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
-/* Specification for laptop */
-@media (min-width: 992px) and (max-width: 1199px) {
+/* Specification for desktop */
+@media (min-width: 1232px) {
   .big-news-image {
     grid-column: span 3;
   }
@@ -139,23 +150,9 @@ img {
   .flex-child {
     margin-left: 25px;
   }
-}
 
-/* Specification for bigger desktop */
-@media (min-width: 1200px) {
-  .big-news-image {
-    grid-column: span 3;
-  }
-
-  .big-news-text {
-    grid-column: span 1;
-  }
-
-  .grid-news article {
-    grid-column: span 1;
-  }
-
-  .flex-child {
-    margin-left: 25px;
+  header {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
