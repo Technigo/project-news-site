@@ -85,20 +85,22 @@ header {
 .bottom-center {
   position: absolute;
   bottom: 8px;
-  left: 150px;
+  text-align: center;
   font-weight: bolder;
 }
 
-.small {
+.small-news-text {
   padding: 8px;
   border: 1px solid #fff;
   margin: 0 auto;
   background: #fff;
-  border-bottom: 40px solid #fff;
+  border-bottom: 1rem solid #fff;
   border-radius: 0px;
-  box-shadow: 0px 8px 3px -8px #111,
-              0px 6px 0px -3px white,
-              0px 11px 3px -8px #111,;
+  box-shadow: 2px 6px 4px rgba(0,0,0,0.8);
+  max-width: 350px;
+}
+
+.small {
   width: 350px;
   height: 350px;
   }
