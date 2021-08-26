@@ -5,12 +5,18 @@ colors
 #A2B29F
 #798777 */
 
-/* *{ border: 1px solid black}  */
+/* *{ 
+  border: 1px solid black;
+  margin: 0;
+}  */
+
+body{
+  border:0;
+}
 
 html {
   background: #F8EDE3;
   color: #fff;
-  margin: 0px;
 }
 
 nav{
@@ -27,69 +33,74 @@ h3 {
   padding: 5% 0 5% 0;
   background-color: #798777;
   width: 100%;
-
 }
 
 .logo {
   width: 100px;
   padding: 20px;
 }
+/* --------BIG NEWS FOR MOBILE ------------------*/
 
 .big-news {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color:#BDD2B6;
   justify-items: space-around;
-  
-}
+} 
+
 
 .big-news-img {
- width: 100%;
+ object-fit: contain;
  
 }
 .big-news-text {
-  padding: 15px;
+  box-sizing: border-box;
+  padding: 30px;
   justify-content: center;
-  font-size: 16pt;
- 
-}
-
-.grid-news {
-  display: flex;
-  flex-direction: column;
-  background-color:#F8EDE3;
+  font-size: 14pt;
+  object-fit: contain;
   
 }
 
+/* --------GRID FOR SMALL NEWS MOBILE----------------*/
+
+/* Container for ALL the grid-news */
+.grid-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color:#F8EDE3;
+  padding:20px;
+}
+
+/* Container for A SINGLE grid-news */
 .grid-content {
   display: flex;
   justify-items: space-between;
-  /* background-color: orchid; */
-  border: 1px solid #A2B29F;
-  border-radius: 4%;
+  
 }
-
+/* Container for TEXTS IN SINGLE grid-news */
 .grid-text {
   display: flex;
   flex-direction: column;
   align-items: space-between;
   padding: 0 10px 0 10px;
-  width: 70%;
+  object-fit: contain;
   color: black;
 }
-
+/* Container for img i single grid-news */
 .grid-picture{
-  width: 30%;
+  width: 300px;
   justify-content: center;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   padding:1%;
+  object-fit: contain;
 }
 
+/* --------FOOTER FOR MOBILE----------------*/
 .footer {
   background-color: #A2B29F;
   height: 5%;
-  position: fixed;
+ 
   width: 100%;
   bottom: 0;
   display: flex;
@@ -97,69 +108,88 @@ h3 {
 }
 
   .footer-logo {
-    width: 50pt;
-    height: 50pt;
+    width: 30pt;
+    height: 30pt;
+    padding: 30px;
   }
 
-
+/* --------@MEDIA TABLET----------------*/
 
 
 @media  (min-width: 668px) {
-  /* html {
-    background: red;
-    } */
+/* HEADER for tablet*/
+  nav {
+    display: block;
+  }
+
+  /* nav a {
+    margin: 0px 15px;
+    font-size: 16pt;
+    align-items: center;
+    color: #F8EDE3;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+ 
+  /* a:visited {
+    color: black; */
+  /* }
+   
+  a:active {
+    color: blue;
+  }
+
+  
+ a:hover {
+    text-decoration: underline;
+    background-color:  lightgray;
+  } */ 
+
+/*----------------- BIG NEWS for tablet--------------------*/
   .big-news {
     flex-direction: row;
     justify-items: space-around;
       }
   .big-news-img{
-    box-sizing: border-box; 
-  /* border-box gör att paddingen läggs till inom boxen */
-    width: 300pt;
-    height: fit-content;
-    padding: 10px;
-    align-items: flex-end;   
+    width: 40%;
 }
-    nav {
-      display: flex;
-      padding: 10px;
-    }
+/* --------GRID FOR SMALL NEWS TABLETS----------------*/
 
-    .grid-news {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+/* Container for ALL the grid-news */
+.grid-news {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
       
     }
-
+/* Container for A SINGLE grid-news */
     .grid-content {
-      flex-direction: row;
-      width: 45%;
+      flex-direction: column;
       margin: 1%;
+      align-items: center;
     }
+/* Container for TEXTS IN SINGLE grid-news */
 
     .grid-text {
       flex-direction: column;
       align-items: center;
-      /* padding: 0 10px 0 10px;
-      width: 30%; */
 
     }
-  }
+
+    .grid-picture{
+      align-items: center;
+      justify-content: center;
+      padding:20px;
+    }
+  
   
 @media (min-width: 1025px){
-  
-  html {
 
-
-    background: orange;
-
+        .grid-news {
+          grid-template-columns: repeat(4, 25%);
         }
-        .grid-content {
-          flex-direction: row;
-          width: 30%;
-          margin: 1%;
-        }
+
+       
     
 }
