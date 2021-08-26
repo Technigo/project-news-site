@@ -2,12 +2,20 @@
   margin: 0;
   padding: 0;
 }
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
 html {
   background: #F2002A;
   color: #fff;
   font-family: 'Carter One', cursive;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+}
+
+body{
+  min-width: 320px;
 }
 
 .header{
@@ -42,7 +50,7 @@ p{
  
 /* following formating is affecting the big news section */
 .big-news{
-  padding: 30px 10px 20px 10px;
+  padding: 40px 10px 40px 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -62,7 +70,8 @@ p{
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-  box-shadow: 0 0 0 10px white;
+  box-shadow: 0 0 0 8px white;
+  border-radius: 3px;
 }
 
 .big-news-picture:hover{
@@ -70,7 +79,7 @@ p{
 	transform: scale(1.02);
 }
 .big-news-text{
-  width: 95%;
+  /* width: 95%; */
   padding: 10px;
 }
 
@@ -82,10 +91,10 @@ p{
 }
 
 .small-news-item{
-  padding: 0 10px 10px 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
+  gap: 10px;
   font-size: 8px;
   justify-content: center;
 }
@@ -93,14 +102,16 @@ p{
 .small-news-picture-container{
   width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .small-news-picture{
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  box-shadow: 0 0 0 8px white;
 }
 
 .small-news-picture:hover{
@@ -109,7 +120,7 @@ p{
 }
 
 
-/* ------PAD VERSION ------------*/
+/* ------i-PAD VERSION ------------*/
 @media (min-width: 768px){
   /* all the changes that are affecting the header container and child elements */
   .header{
@@ -126,7 +137,7 @@ p{
     justify-content: space-around;
     width: 100%;
     position: relative;
-    top: -50px;
+    top: -40px;
     padding: 0 25px;
   }
   .title-text{
@@ -136,7 +147,7 @@ p{
   /* all the changes that affect the big-news container */
   .big-news{
     flex-direction: row;
-    align-items: stretch;
+    align-items:flex-start;
   }
   .big-news-visual{
     width: 50%;
