@@ -1,18 +1,19 @@
 html {
 	background: #f3f3f3;
-	/* color: #fff; */
 }
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0px;
-	/* font-family: 'Open Sans', sans-serif; */
 }
 header {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	justify-content: space-between;
-	/* align-items: flex-end; */
 	background-color: #052963;
 	color: #feffff;
+
 	padding: 0px 0px 10px 0px;
 }
 .header-top {
@@ -91,6 +92,9 @@ nav a.last-nav {
 	flex-grow: 2;
 }
 main {
+	display: flex;
+	flex-direction: column;
+
 	padding: 0px 10px 0px 10px;
 }
 .big-news-container {
@@ -99,17 +103,22 @@ main {
 	margin: 10px 0px 10px 0px;
 	border: 1px solid black;
 }
+.big-news-card-img {
+	max-height: 40vh;
+	object-fit: cover;
+}
 .news-text {
 	overflow: hidden;
 }
 .small-news-container {
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 }
 .small-news-card {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 0px 10px 0px;
+	/* margin: 10px 0px 10px 0px; */
 	border: 1px solid black;
 }
 .small-news-card-img {
@@ -122,17 +131,29 @@ footer {
 }
 
 @media (min-width: 768px) {
-	header {
-		padding: 0px 10px 10px 10px;
+	/* main { */
+	/* max-width: 768px; */
+	/* --contentWidth: 768px;
+		padding: 1rem max(2rem, 50vw - var(--contentWidth) / 2); */
+	/* margin: auto; */
+	/* } */
+	header,
+	main {
+		--contentWidth: 768px;
+		padding: 1rem max(2rem, 50vw - var(--contentWidth) / 2);
+		/* padding: 0px 10px 10px 10px; */
+		/* margin: auto; */
 	}
-	nav a.first-nav {
+	nav a.first-nav,
+	a.last-nav {
 		border-left: 1px solid #405e93;
+		border-right: 1px solid #405e93;
 		padding-left: none;
 	}
 	.big-news-container {
 		flex-direction: row;
 		justify-content: space-between;
-		height: 40vw;
+		/* height: 40vw; */
 	}
 	.small-news-container {
 		flex-direction: row;
@@ -145,6 +166,7 @@ footer {
 	}
 	.big-news-card-img {
 		margin-right: 10px;
+		max-width: 50%;
 	}
 	.header-btn-yellow,
 	.header-support,
@@ -158,6 +180,13 @@ footer {
 }
 
 @media (min-width: 992px) {
+	header,
+	main {
+		--contentWidth: 992px;
+	}
+	main {
+		max-width: 992px;
+	}
 	.small-news-card {
 		width: 22%;
 	}
