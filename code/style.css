@@ -113,11 +113,15 @@ hr.thick {
   padding: 2vh;
 }
 
-.news-image {
+.mobile-news-image {
   height: 40vh;
   min-height: auto;
   object-fit: cover;
   box-shadow: 1vh 1vh 0.5vh rgb(8, 8, 8, 0.5), -1vh -1vh 0.5vh rgb(8, 8, 8, 0.5);
+}
+
+.mobile-news-image:hover {
+  transform: rotate(20deg);
 }
 
 figure {
@@ -165,6 +169,15 @@ footer {
   font-size: 5vh;
 }
 
+.footer-social-media-icon a:hover,
+.footer-site-name-link:hover {
+  color: rgb(250, 91, 178);
+}
+
+.footer-social-media-icon a:hover {
+  transform: rotate(20deg);
+}
+
 .project-credentials {
   background-color: rgb(230, 220, 220);
   font-size: 2vh;
@@ -172,6 +185,15 @@ footer {
   margin-top: 2vh;
   text-align: center;
   padding: 2vh;
+}
+
+.project-credentials a {
+  text-decoration: none;
+  color: rgb(43, 40, 40);
+}
+
+.project-credentials a:hover {
+  color: rgb(250, 91, 178);
 }
 
 /* larger mobile view */
