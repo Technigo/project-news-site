@@ -1,70 +1,124 @@
-html {
-  background: #daddee;
-  color: rgb(7, 7, 7);
-}
 
- 
-.header{
-  background: rgb(190, 188, 188);
+      body{
+        border:5px dashed red;
+        max-width: 1700px;
+        
+        
+      }
+      
+      .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-}
+      .navigation-link {
+        padding: 5px;
+      }
 
-.header img {
-  
-  max-width: 10%;
-  height: auto;
-  
-}
+      .logo{
+        width: 50px;
+        height: 50px;
+      }
 
-.newsboxes p{
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}
+      .header-title{
+        display: none;
+      }
 
-/*
-@media (min-width: 0x) and (max-width: 767px) {
-header {
-display: flex;
-justify-content: space-between;
-}
-}
+      section.big-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+      }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  header {
-  display: flex;
-  justify-content: space-between;
-  background-color: red;
-  }
-  }
-  
+      .big-news-image{
+      display: flex;
+      height: 450px;
+      width: 450px;
+      filter: grayscale(1);
+      transition: 0.5s ease-in-out;
+      }
 
-  
-  
+      .big-news-image:hover{
+          transform: scale(1.2, 1.2);
+  filter: grayscale(0);
+  transition: 0.5s ease-in-out;
+      }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-  @media (min-width: 768px) {
-    header {
-      justify-content: space space-around;
+      section.smaller-news {
+        display:flex;
+        gap:20px;
+        justify-content: center;
+        padding: 0px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .smaller-news-bubble{
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 40px;
+    background: linear-gradient(to right, rgb(179, 170, 170), rgb(133, 120, 133));
+      }
+
+      .smaller-news-image{
+  height: 400px;
+  width: 350px;
+      }
+
+     
+      /*here is where the @media-tags start to style tablet and desktop*/
+      @media (min-width:768px) {
+        .logo{
+        width: 100px;
+        height: 75px;
+      }
+
+      .header-title{
+        display: block;
+      }
+
+      section.big-news{
+        flex-direction: inherit;
+      }
+      
+
+      .big-news-image{
+
+        height: 550px;
+      width: 550px;
+      }
+      
+      .big-news-paragarph{
+        
+      }
+     
+
+      .smaller-news-image{
+        height: 250px;
+        width: 200px;
+            }
+
     }
-  }
-  */
-  
 
-  .header{
-    display: flex;
-    justify-content: space-between;
-  }
+    
 
-  .logo {
-    width: 100px;
-  }
+      @media (min-width:992px){
+        .logo{
+        width: 200px;
+      }
+      
+      /* For smaller desktop i chose 3 in a row, for bigger desktops, its 4 in a row */
 
-  .footer{
-    background: rgb(126, 120, 120);
-  }
+      .smaller-news-image{
+        height: 200px;
+        width: 150px;
+            }
+      
+    }
+
+    
+
+
+
