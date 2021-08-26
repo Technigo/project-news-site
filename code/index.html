@@ -5,19 +5,39 @@
   <meta charset="utf-8" />
   <title>Project 2: The News Site</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- dont forget the meta tag for responsiveness -->
 </head>
 
 <body>
   <header>
-    <!-- Some kind of logo and navbar -->
-    <img src="/project-news-site/code/Mz_logo.png">
+    <!-- For logo and navbar I followed tutorial: https://www.youtube.com/watch?v=yXhfUCXy2j4-->
+    <i class="fas fa-checkbox"></i>
+    <nav class="header-nav">
+      <h1 class="logo"> <a href="/code/img/Mz_logo.png"></a>mamzine</h1>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class=" fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Link</a> </li>
+        <li><a href="#">Link</a> </li>
+        <li><a href="#">Link</a> </li>
+        <li><a href="#">Link</a> </li>
+      </ul>
+    </nav>
   </header>
+  <main>
+    <section class="gallery">
+      <img src="img/code2.jpg" alt="code" />
+    </section>
+  </main>
 
-  <section class="big-news">
-    <!-- The big news content -->
-    <p>paragraph</p>
-  </section>
+  <!-- The big news content -->
+  <p>paragraph</p>
+
 
   <section class="">
     <!-- The other news  -->

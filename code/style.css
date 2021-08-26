@@ -1,4 +1,137 @@
-html {
-  background: #0025ff;
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 1400px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+}
+.header-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+nav{
+  background: blueviolet;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+color: black;
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3;
+  text-transform: uppercase;
+}
+a .active, a:hover{
+background: blanchedalmond;
+transition: .5s;
+} 
+.checkbtn{
+  font-size: 30px;
   color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+   nav ul li a{
+     font-size: 16px ;
+   }
+  
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  @media (min-width:600px)
+   {.header-nav{
+     line-height: 1.5rem;
+   }
+    
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: brown;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a .active{
+    background-color: none;
+    color: cyan;
+  }
+  #check :checked ~ ul {
+    left: 0;
+  }
+}
+section{
+  background: url(bgl.jpg) no repeat;
+  background-size: cover;
+  height: calc(100vh -80px) ;
+}
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: white;
+  color: black;
 }
