@@ -1,4 +1,143 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: whitesmoke;
+  /* color: #fff; */
 }
+
+.header {
+  background-color: whitesmoke;
+  display: flex;
+  object-fit:contain;
+}
+
+nav {
+  display: none;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: #8C857B;
+  font-family: 'Anton', sans-serif;
+}
+
+p, h2 {
+color: #010D00;
+font-family: 'Roboto', sans-serif;
+}
+.logo {
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.big-news {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.big-news-image {
+width: 100%;
+object-fit: cover;
+vertical-align: bottom;
+}
+
+.big-news-text {
+justify-content: center;
+/* padding:  */
+}
+.grid-news {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap; 
+ }
+
+.news-card {
+background-color: #D9AE79;
+display: flex;
+flex-direction: column;  
+flex-wrap: wrap; 
+justify-content: space-around;
+margin-bottom: 5%;
+} 
+
+.news-card-image {
+width: 80%;
+padding: 5% 10% 0% 10%;
+justify-content: center;
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-webkit-transition: all 1s ease;
+}
+
+.news-card-image:hover {
+filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 1s ease;
+}
+  
+
+.news-card-text {
+margin: 0 10% 5% 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+} 
+
+ @media (min-width: 668px) {
+  nav {
+    display:flex;
+    justify-content: end;
+  }
+  
+  .logo {
+    /* width: 80px; */
+    display: center;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content:space-around;
+    
+  } 
+
+  .big-news-image {
+    width: 45%;
+    padding: 2% 2% 3% 2%;
+  }
+
+  .big-news-text {
+    width: 50%;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .grid-news {
+    flex-direction: row;
+    margin: 0;
+    
+  }
+  .news-card {
+    /* flex-direction: row;  */
+    width: 50%;
+    justify-content: space-between; 
+    margin-bottom: 0;
+  }
+  .news-card-image {
+    width: 90%;
+    padding: 5%;
+  }
+  .news-card-text {
+    width: 45%;
+    margin: 0 5% 5% 5%;
+  }
+
+  
+}
+/* 
+  .big-news-text {
+    width: 300px;
+  }
+} */
