@@ -13,7 +13,6 @@ header {
 	justify-content: space-between;
 	background-color: #052963;
 	color: #feffff;
-
 	padding: 0px 0px 10px 0px;
 }
 .header-top {
@@ -54,16 +53,18 @@ header {
 	font-weight: 900;
 	color: #ffe500;
 }
-.header-funded {
+.header-funded,
+footer p {
 	font-family: 'Open Sans', sans-serif;
 }
 .header-btn-small,
 .header-btn-signin-mobile,
 .header-btn-signin-desktop {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #052963;
 	color: #feffff;
 	border: 0px solid #405e93;
+	font-size: 1rem;
 }
 .header-btn-small {
 	display: none;
@@ -122,9 +123,16 @@ main {
 	max-height: 40vh;
 	object-fit: cover;
 }
-footer {
-	height: 60px;
+footer,
+footer a {
 	background-color: #052963;
+	color: #feffff;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 60px;
 }
 
 @media (min-width: 768px) {
