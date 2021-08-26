@@ -1,4 +1,87 @@
+/* Universal selector: it applies to all of the elements*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background-color: rgb(14, 13, 13);
+}
+
+body {
+  /*background-color:rgb(228, 168, 56);*/
+  background-color: orange;
+  min-height: 100vh;
+  margin-top: 10em;
+  min-width: 444px;
+}
+/*Header styling*/
+header {
+  background-color: whitesmoke;
+  height: 10em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul > li {
+  padding: 1rem;
+}
+
+.logo {
+  width: 70px;
+  border: 1px solid blue;
+  border-radius: 40%;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: blue;
+}
+/* Big news section */
+
+section.big-news {
+  margin: 11rem auto;
+  border: 3px solid red;
+}
+
+.cat-foto-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.big-news-text {
+  border: 2px solid;
+}
+
+section.big-news h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+section.big-news p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+/* Small section*/
+
+/*Media queries*/
+@media (min-width: 800px) {
+  section.big-news {
+    display: flex;
+    align-items: center;
+  }
 }
