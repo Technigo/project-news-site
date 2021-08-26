@@ -1,4 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
 html {
-  background: #0025ff;
-  color: #fff;
+  font-size: 16px;
+}
+
+body{
+background-image: linear-gradient(225deg, #42FDDA, #42B4FD, #AAA0FF, palevioletred);
+box-sizing: border-box;
+padding-bottom: 200px;
+}
+/*** All text***/
+
+
+
+/*** Header ***/
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  background-color: white;
+  border-bottom: 10px solid #FFF200;
+
+}
+header img {
+  width: 2.5rem;
+  /*margin: 5px;*/
+}
+
+.hamburger {
+  display: flex;
+  height: 30px;
+  width: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.hamburger div {
+  width: 40px; 
+  height: 6px;
+  background: hotpink;
+  display: flex;
+  margin-left: 10px;
+
+}
+
+nav {
+  display: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+
+}
+
+nav a:hover {
+  color: hotpink;
 }
