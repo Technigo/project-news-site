@@ -9,6 +9,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 		<!-- dont forget the meta tag for responsiveness -->
 	</head>
 	<body>
@@ -16,22 +17,26 @@
 			<!-- Some kind of logo and navbar -->
 			<!-- <img class="header-logo" src="./images/logo.svg" alt="logo" /> -->
 			<div class="header-top">
-				<div>
+				<div class="support">
 					<div class="header-support">Support the Fakeian</div>
 					<div class="header-funded">Available for everyone, funded by FakeNews Corp.</div>
-					<button class="header-btn-yellow">Contribute</button>
-					<button class="header-btn-yellow">Subscribe</button>
+					<button class="header-btn-signin-mobile"><img class="avatar" src="./images/blank-avatar.png" alt="avatar" />Sign in</button>
+					<div>
+						<button class="header-btn-yellow-mobile">Contribute</button>
+						<button class="header-btn-yellow">Subscribe</button>
+					</div>
 				</div>
-				<div>
+				<div class="header-buttons">
 					<button class="header-btn-small">Search jobs</button>
-					<button class="header-btn-small">Sign in</button>
+					<button class="header-btn-signin-desktop"><img class="avatar" src="./images/blank-avatar.png" alt="avatar" />Sign in</button>
 					<button class="header-btn-small">Search</button>
 				</div>
+
 				<div class="logo-text">
 					<h1>The</h1>
 					<h1>Fakeian</h1>
 				</div>
-				<div>
+				<div class="header-buttons">
 					<button class="header-btn-small">International edition</button>
 				</div>
 			</div>
@@ -41,7 +46,7 @@
 				<a href="http://" target="_blank">Sport</a>
 				<a href="http://" target="_blank">Culture</a>
 				<a href="http://" target="_blank">Lifestyle</a>
-				<a href="http://" target="_blank">More</a>
+				<a class="last-nav" href="http://" target="_blank">More</a>
 			</nav>
 		</header>
 		<main>
@@ -151,6 +156,8 @@
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		</footer>
 	</body>
 </html>

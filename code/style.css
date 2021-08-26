@@ -4,6 +4,7 @@ html {
 }
 body {
 	margin: 0px;
+	/* font-family: 'Open Sans', sans-serif; */
 }
 header {
 	display: flex;
@@ -12,7 +13,7 @@ header {
 	/* align-items: flex-end; */
 	background-color: #052963;
 	color: #feffff;
-	padding: 0px 40px 0px 40px;
+	padding: 0px 10px 10px 10px;
 }
 .header-top {
 	display: flex;
@@ -21,30 +22,71 @@ header {
 .logo-text h1 {
 	font-family: 'Playfair Display', serif;
 	color: #feffff;
+	font-size: 3rem;
 	margin: 0px;
 }
-.header-btn-yellow {
+.header-btn-yellow,
+.header-btn-yellow-mobile {
 	background-color: #ffe500;
 	border-radius: 15rem;
 	border: 0px;
 	text-align: center;
+	color: #052963;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+.header-btn-yellow,
+.header-support,
+.header-funded,
+.header-btn-signin-desktop {
+	display: none;
+}
+.support {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 10px;
+}
+.header-support {
+	font-size: 2rem;
+	font-weight: 900;
+	color: #ffe500;
+}
+.header-funded {
+	font-family: 'Open Sans', sans-serif;
+}
+.header-btn-small,
+.header-btn-signin-mobile,
+.header-btn-signin-desktop {
+	font-family: 'Playfair Display', serif;
+	background-color: #052963;
+	color: #feffff;
+	border: 0px solid #405e93;
+}
+.header-btn-small {
+	display: none;
+}
+.avatar {
+	height: 1rem;
 }
 nav {
 	display: flex;
 }
 nav a {
 	font-family: 'Playfair Display', serif;
+	flex-grow: 1;
 	color: #feffff;
-	padding: 0px 10px 0px 10px;
+	padding: 0px 4px 0px 4px;
 	text-decoration: none;
-	width: 20%;
-	border: 1px solid #405e93;
+	/* width: 20%; */
+	border-left: 1px solid #405e93;
+	border-top: 1px solid #405e93;
 }
-.last-nav {
-	width: 3fr;
+nav a.last-nav {
+	flex-grow: 2;
 }
 main {
-	padding: 0px 40px 0px 40px;
+	padding: 0px 10px 0px 10px;
 }
 .big-news-container {
 	display: flex;
@@ -92,10 +134,25 @@ footer {
 	.big-news-card-img {
 		margin-right: 10px;
 	}
+	.header-btn-yellow,
+	.header-support,
+	.header-funded,
+	.header-btn-signin-desktop {
+		display: initial;
+	}
+	.header-btn-signin-mobile {
+		display: none;
+	}
 }
 
 @media (min-width: 992px) {
 	.small-news-card {
 		width: 22%;
+	}
+	.header-btn-small {
+		display: initial;
+	}
+	.header-btn-signin-mobile {
+		display: none;
 	}
 }
