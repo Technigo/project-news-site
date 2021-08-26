@@ -1,14 +1,21 @@
 html {
 	background: #f3f3f3;
 }
-body {
+body,
+header,
+.support,
+main,
+.big-news-container,
+.small-news-container,
+.small-news-card,
+footer {
 	display: flex;
 	flex-direction: column;
+}
+body {
 	margin: 0px;
 }
 header {
-	display: flex;
-	flex-direction: column;
 	flex-grow: 1;
 	justify-content: space-between;
 	background-color: #052963;
@@ -42,8 +49,6 @@ header {
 	display: none;
 }
 .support {
-	display: flex;
-	flex-direction: column;
 	align-items: flex-start;
 	padding-top: 10px;
 	padding-left: 10px;
@@ -83,6 +88,7 @@ nav a {
 	text-decoration: none;
 	border-left: 1px solid #405e93;
 	border-top: 1px solid #405e93;
+	box-sizing: border-box;
 }
 nav a.first-nav {
 	border-left: none;
@@ -91,16 +97,16 @@ nav a.first-nav {
 nav a.last-nav {
 	flex-grow: 2;
 }
+nav a:hover {
+	border-top: 3px solid #f8503b;
+}
 main {
-	display: flex;
-	flex-direction: column;
 	padding: 0px 10px 0px 10px;
 }
 .big-news-container {
-	display: flex;
-	flex-direction: column;
 	margin: 10px 0px 10px 0px;
 	border: 1px solid black;
+	/* max-height: 60vh; */
 }
 .big-news-card-img {
 	max-height: 40vh;
@@ -110,13 +116,9 @@ main {
 	overflow: hidden;
 }
 .small-news-container {
-	display: flex;
-	flex-direction: column;
 	gap: 10px;
 }
 .small-news-card {
-	display: flex;
-	flex-direction: column;
 	border: 1px solid black;
 }
 .small-news-card-img {
@@ -129,8 +131,6 @@ footer a {
 	color: #feffff;
 }
 footer {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	height: 60px;
 }
@@ -148,22 +148,23 @@ footer {
 		border-right: 1px solid #405e93;
 		padding-left: none;
 	}
-	.big-news-container {
+	.big-news-container,
+	.small-news-container {
 		flex-direction: row;
 		justify-content: space-between;
 	}
 	.small-news-container {
-		flex-direction: row;
-		justify-content: space-between;
 		flex-flow: wrap;
 	}
 	.small-news-card {
 		width: 48.9%;
 		max-height: 50vh;
 	}
+	.big-news-container {
+		max-height: 40vh;
+	}
 	.big-news-card-img {
 		margin-right: 10px;
-		max-width: 50%;
 	}
 	.header-btn-yellow,
 	.header-support,
