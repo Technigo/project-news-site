@@ -49,10 +49,11 @@ body {
 }
 
 .header .logo {
+    align-items: center;
     display: block;
     float: left;
-    font-size: 22px;
-    padding: 3px 3px 3px 3px;
+    font-size: 24px;
+    padding: 10px 3px 3px 3px;
     text-decoration: none;
 }
 
@@ -300,31 +301,28 @@ p {
         border-bottom: 1px solid rgb(0, 0, 0);
         margin-left: 10px;
         margin-right: 10px;
+        
     }
-    .header .logo {
-        display: block;
-        float: left;
-        font-size: 35px;
-        padding: 10px 10px;
-        text-decoration: none;
-    }
-    
 }
 
 /* tablet only */
 
 @media (max-width: 991px) and (min-width: 768px){
     .header .logo {
+        grid-column: 5/7;
+        text-transform: uppercase;
         font-size: 35px;
         padding: 10px 10px;
         text-decoration: none;
-        border-style: solid;
-        border-color: aquamarine;
+    }
+
+    .header .menu-icon {
+        grid-column: 11 / 12;
     }
 
         .header  {
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 12;
             }
 }
 
