@@ -29,10 +29,10 @@ nav {
   color: black;
   text-decoration: none;
   letter-spacing: 2px;
+  transition: 1s;
 }
 .link:hover{
   color: red;
-  
 }
 .site-name {
   font-family: 'Six Caps', sans-serif;/*'Pacifico', cursive;*/
@@ -59,7 +59,7 @@ nav {
 }
 .big-quote-text {
   width: 250px;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px;
   margin: 10px;
   border-top: solid 3px;
@@ -94,7 +94,9 @@ footer {
   animation-duration: 6s;
   animation-name: slider;
   animation-iteration-count: infinite;
+  font-size: 25px;
 }
+/*Animation */
 @keyframes slider {
   from {
     margin-left: 100%;
@@ -105,11 +107,11 @@ footer {
     width: 100%;
   }
 }
-.ico {
-  padding: 10px;
+.icon {
+  padding: 30px;
   color: red;
 }
-/*Mobile first!*/
+/*Tablet*/
 @media(min-width: 768px) {
   .site-name {
     display: none;
@@ -142,10 +144,11 @@ footer {
     background-color: azure;
     border-radius: 0 10px 10px 0;;
   }
-  .big-text {
+   .big-quote-text {
     border-top: none;
     border-left: solid 3px;
-    display: inline-block
+    display: inline-block;
+    font-size: 20px;
     
   }
   .small-news {
@@ -158,7 +161,7 @@ footer {
     animation-duration: 15s;
    }
 }
-
+/* Desktop */
 @media (min-width: 992px) {
   .logo {
     display: inline;
@@ -186,9 +189,16 @@ footer {
  }
  .article {
   grid-column: span 1;
+ }
+.big-quote-text{
+  font-size: 40px;
+  padding: 20px;
 }
 .small-news {
   margin: 20px;
 }
+.footer-text {
+  animation-duration: 23s;
+ }
 }
 
