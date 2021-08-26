@@ -8,15 +8,14 @@ body {
 header {
   font-family: 'Rampart One', cursive;
   display: flex;
-  background-color: #ffff33;
+  background-color: #ffff4d;
   justify-content: center;
   width: 100%; 
-  height: 22vh;
+  height: 20vh;
 }
 
 .header-text {
   font-size: 7vw;
-  text-align: center;
   align-self: center;
 }
 
@@ -33,6 +32,7 @@ header {
   object-fit: cover;
   border-radius: 50%;
   display: none;
+  margin-top: 15px;
 }
 
 
@@ -40,7 +40,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 5px;
-  background-color: #ffff33;
+  background-color: #ffff4d;
   margin-bottom: 15px;
 }
 
@@ -64,7 +64,6 @@ article > h1 {
 .big-news, .all-events, .all-music {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -87,8 +86,9 @@ footer {
   align-content: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffff33;
+  background-color: #ffff4d;
   height: 15vh;
+  margin-top: 20px;
 }
 
 .social-media {
@@ -97,6 +97,7 @@ footer {
 .social-media-link {
   color: black;
   font-size: 20px;
+  padding: 5px;
 }
 
 
@@ -108,6 +109,8 @@ footer {
 
   header {
     flex-direction: column;
+    align-content: center;
+    height: 25vh;
   }
 
   .site-logo {
@@ -128,13 +131,16 @@ footer {
     align-items: center;
     margin-bottom: 10px;
     border: 1px solid black;
+    background-color: #ff944d;
   }
 
-  .big-news-foto, article {
+  .big-news-foto {
     width: 50vw;
     height: 50vw;
   }
-
+ article {
+   padding: 10px;
+ }
   article > h1 {
     text-align: center;
   }
@@ -147,30 +153,68 @@ footer {
 
 .events, .music {
   width: 48%;
-  border: 1px solid black;
   margin-right: 10px;
   margin-top: 10px;
 }
 
 .events-photo, .music-photo {
-  width: 100%;
-  height: 50vw;
+  width: 60%;
+  height: 30vw;
+  margin-top: 10px;
+}
+
+.events, .music {
+  display: inline;
+  text-align: center;
 }
   
+.e1 {
+  background-color: #ff0080;
+}
+ 
+.e2 {
+  background-color: turquoise;
+}
 
+.e3 {
+  background-color: #b3f0ff;
+}
+
+.e4 {
+  background-color: #ff0000;
+}
+
+.m1 {
+  background-color: #009933;
+}
+
+.m2 {
+  background-color: #0000ff;
+}
+
+.m3 {
+  background-color: #c61aff;
+}
+
+.m4 {
+  background-color: #99004d;
+}
  @media (min-width: 992px) {
 
   header {
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-evenly;
+  }
+
+  .head-logo {
+    align-self: left;
+    width: 20%;
   }
 
  .site-logo {
-   align-self: left;
-   width:  20%;
-   height: 20%;
-   border-radius: 0;
-   object-fit: none;
+   width: 100%;
+   height: 100%;
+   border-radius: 5%;
  }
 
  .events, .music {
