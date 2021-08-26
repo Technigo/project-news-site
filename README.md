@@ -1,9 +1,9 @@
 # project-news-site
 
-A website that provides tips on movie / TV series - for a perfect movie night!
+A website that provides tips on movies / TV series - for a perfect movie night!
 
 Task:
-Create a responsive page with a user-friendly interface on computer / tablet / phone.
+Create a responsive page with a user-friendly interface for computer / tablet / phone.
 
 Solution / problem
 To make the page responsive, I used the grid and flexbox. 
