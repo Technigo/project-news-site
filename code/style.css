@@ -27,11 +27,11 @@ html {
 }
 
 .title {
-  grid-column: span 1;
+  grid-column: span 1/ 1;
 }
 
 .meny {
-  grid-column: span 2;
+  grid-column: span 4/ 6;
 }
 
 .big-news {
@@ -46,6 +46,7 @@ html {
   height: 600px;
   width: 600px;
   margin: 5px;
+  margin-top: 30px;
 }
 
 .undertitle {
@@ -58,6 +59,7 @@ html {
 h2 {
   margin: 5px;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .big-news-text {
@@ -68,13 +70,29 @@ h2 {
  button {
   height: 30px;
   display: block;
-  padding: 10px 20px;
-  border: 1px solid
+  margin: 5px;
+  border: 1px solid;
   background-color: #f7f7fa;
   font-size: 12px;
   justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 5px; 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+
 
 .flex-parent {
   height: 500px;
@@ -92,38 +110,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
 }
 
 .flex-child1 {
-  flex-direction: column;
+  flex-direction: row;
 }
 
 img {
-  width: 200px;
-  height: 200px;
-}
-
-
-.grid-container {
-  border: 2px solid blue;
-  height: 500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
-}
-
-.grid-item1 {
-  background-color: crimson;
-  grid-column: span 4;
-}
-
-.grid-item2, .grid-item3 {
-  background-color: hotpink;
-  grid-column: span 2;
-}
-
-.grid-item4, .grid-item5, .grid-item6 {
-  background-color: lawngreen;
-  
+  width: 300px;
+  height: 300px;
 }
