@@ -59,8 +59,9 @@ a:visited {
   flex-direction: row;
 }
 
-.big-news {
+.big-news-img-container {
   display: flex;
+  gap: 30px;
   justify-content: space-evenly;
 
   padding-top: 60px;
@@ -117,4 +118,43 @@ a:visited {
 
 .small-news-img {
   width: 300px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 150px;
+  }
+  .navigation {
+    display: flex;
+    font-size: 12px;
+  }
+  .search-link {
+    background: none;
+  }
+
+  a:link {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .big-news-wrapper {
+    display: grid;
+    justify-content: center;
+  }
+  .big-news-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-news-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1280px) {
 }
