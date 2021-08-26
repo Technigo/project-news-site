@@ -107,3 +107,57 @@ nav a {
 nav a:hover {
   color: hotpink;
 }
+
+/*** Body***/
+
+/*** Big News***/
+
+.big-news {
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  max-width: 1200px;
+}
+
+.big-news img {
+  width: 600px;
+  align-items: center;
+}
+
+.big-news:hover {
+  opacity: 0.8;
+  
+}
+/*** Small news***/
+
+.other-news { 
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .card {
+  width: 600px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20 px;
+  padding-bottom: 40px;
+  background-color: white;
+  justify-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card:hover {
+    opacity: 0.8;
+  }
