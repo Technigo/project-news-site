@@ -133,6 +133,15 @@ footer {
     max-width: 1296px;
   }
 
+  .big-news-article {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .big-news img {
+    max-height: 350px;
+  }
+  
   .news-snippets-container  {
     display: grid;
     grid-gap: 1rem;
@@ -143,10 +152,6 @@ footer {
     width: 100%;
     height: auto;
     max-height: 170px;
-  }
-
-  .big-news img {
-    max-height: 350px;
   }
 
   .navigation {
