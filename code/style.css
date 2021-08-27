@@ -43,11 +43,12 @@ nav {
   background-color: #ffff4d;
   margin-bottom: 15px;
 }
-
+ 
 .nav-menu {
   padding: 5px;
   color: black;
 }
+
 
 a:hover {
   color: white;
@@ -65,15 +66,25 @@ article > h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem;
 }
 
 .events-header, .music-header  {
     align-self: flex-start;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    
+}
+
+#Music, #Events {
+  animation-name: scaling;
+  animation-duration: 4s; 
+  animation-iteration-count: infinite;
 }
 
 .big-news-foto, .events-photo, .music-photo {
-  width: 100vw;
-  height: 100vw;
+  width: 90vw;
+  height: 90vw;
 }
 
 .events, .music {
@@ -91,12 +102,16 @@ footer {
   margin-top: 20px;
 }
 
+footer > p {
+  align-self: center;
+  font-size: 15px;
+}
 .social-media {
   align-self: center;
 }
 .social-media-link {
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
 }
 
@@ -121,6 +136,10 @@ footer {
     font-size: 5vw;
   }
 
+  .dropdown {
+    display: none;
+  }
+
   nav {
     justify-content: flex-end;
   }
@@ -130,8 +149,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid black;
     background-color: #ff944d;
+    box-shadow: 12px 15px;
   }
 
   .big-news-foto {
@@ -148,6 +167,14 @@ footer {
  .all-events, .all-music {
    flex-wrap: wrap;
    flex-direction: row;
+ }
+
+ @keyframes scaling {
+  0%   {color:red;}
+  25%  {color:teal}
+  50%  {color:blue;}
+  75%  {color:green;}
+  100% {color:red;}
  }
 
 
@@ -223,12 +250,13 @@ footer {
 }
 
 .events-photo, .music-photo {
-  width: 100%;
+  width: 95%;
   height: 25vw;
+  padding: 3px;
 }
 
    
- }
+ 
 
  
 
@@ -238,5 +266,4 @@ footer {
   
 
   
-
 
