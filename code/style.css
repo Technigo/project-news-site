@@ -119,6 +119,13 @@ button:hover {
 
 img {max-width:100%;}
 
+footer {
+  border-top: 2px solid gray;
+  padding: 20px;
+  background-color: #e4eef3;
+  text-align: right;
+}
+
 
 @media (min-width:768px) {
 
@@ -185,11 +192,11 @@ img {max-width:100%;}
 
   .site-name {
     display: contents;
-    align-items: ;
   }
 
   h2 {
     font-size: 40px;
+    margin: 15px;
     margin-left: 10px;
   }
 
@@ -261,6 +268,4 @@ img {max-width:100%;}
   .other-news {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
-
 }
