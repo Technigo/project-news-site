@@ -4,6 +4,7 @@
 } 
 html {
   font-size: 16px;
+  
 }
 
 body{
@@ -167,7 +168,41 @@ nav a:hover {
   .card:hover {
     opacity: 0.8;
   }
+.footer-container{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 30px;
+  
+}
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  align-items: center;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 /*** Media Queries***/
 
 
