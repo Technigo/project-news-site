@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project, made as an assignment for the second week for Technigo bootcamp, was about building a newspaper site. The main goal was to learn how to create responsive webpage for mobile, tablet and desktop and combine knowledge about grid and Flexbox layout.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge for me was rather to make responsive design, than the layout. I achieved the result I wanted by setting media queries, but if I had more time, I would also experiment with replacing images on different screens and add one more section after small news to implement a grid layout to try another way of styling a page.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://vegan-news.netlify.app 

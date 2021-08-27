@@ -12,7 +12,6 @@ html {
   width: 70%;
 }
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,15 +20,14 @@ html {
 }
 
 .nav-el {
-  display: inline;
   padding: 10px;
   text-decoration: none;
-  color: black;
   font-size: 20px;
   color:#5ca46e;
   display: none;
   margin-right: 5px;
 }
+
 .icons {
   display: inline;
   width: 5%;
@@ -38,15 +36,14 @@ html {
   margin-bottom: 10px;
   padding: 10px;
 }
-
 .search-button {
   width: 19px;
   padding-right: 15px;
 }
 
 .header-button {
-  border-radius: 4px;
-  border: 1px solid #5ca46e;
+  border-radius: 5px;
+  border: 5px solid #5ca46e;
   padding: 5px;
   background-color: #5ca46e;
   color: white;
@@ -76,6 +73,7 @@ a:hover {
   padding: 5px;
   text-align: center;
 }
+
 h1 {
   font-size: 30px;
   font-weight: 300;
@@ -113,7 +111,7 @@ p {
 }
 .news-card:hover {
   opacity: 0.8;
-  transform: scale(1.2, 1.2);
+  transform: scale(1.2);
 }
 
 .news-card img {
@@ -162,10 +160,7 @@ footer {
 
 /* TABLET view */
 @media (min-width: 768px) {
-  .new-section {
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
+  
   h1 {
     font-size: 45px;
   }
@@ -186,25 +181,29 @@ footer {
 }
 
 
-/* SMALL DESKTOP view */
+/* DESKTOP view */
 @media (min-width: 992px) {
   
   .nav-el {
     display: inline;
   }
   .salad {
-    display: flex;
     flex-direction: row;
     width: 50%;
   }
+  .header {
+    margin: 10px 60px 0px 60px;
+  }
+
   .big-news {
     flex-direction: row;
-    margin: 20px;
+    margin: 20px 100px 20px 100px;
+
   }
   .big-news-text{
     padding: 10px;
   }
-
+  
   .header-button {
     display: none;
   }
@@ -214,8 +213,7 @@ footer {
   .news-section {
     flex-flow: wrap row;
     justify-content: center;
-    margin-right: 20px; 
-    margin: 20px 25px 0px;
+    margin: 20px 25px 25px;
   }
 
   h1 {
@@ -225,10 +223,35 @@ footer {
   p {
     font-size: 20px;
   }
-
   .news-card {
     width: 18%;
     justify-content: center;
     margin: 10px 20px;
+  }
+  .logo {
+    transition: .8s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.4);
+  }
+
+  footer {
+    margin: 10px;
+    border-radius: 20px;
+    background-color:#f4f1ef;
+    animation-name: example;
+    animation-duration: 8s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes example {
+    0%   {background-color:#dacec6;}
+    15%  {background-color: #b6a79d;}
+    35%  {background-color: #faf8f7;}
+    50%  {background-color: #514a46;}
+    75%  {background-color: #8d827a;}
+    100% {background-color:#cab9ae;}
   }
 }
