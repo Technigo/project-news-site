@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
   position: absolute;
 	left: 100px;
 }
@@ -78,7 +78,7 @@ h1 {
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 28px;
   text-transform: uppercase;
   margin: 10px;
 }
@@ -146,15 +146,11 @@ footer {
   padding-top: 25px;
 }
 
-button {
+.button {
   padding: 8px 16px;
   border-radius: 25px;
   border: none;
-  font-family: "Montserrat", sans-serif;
   background-color: coral;
-}
-
-.button-text {
   color: whitesmoke;
   font-size: 15px;
 }
@@ -170,6 +166,7 @@ a {
     font-size: 50px;
     left: 150px;
   }
+
     .fa-bars {
     display: inline;
   }
@@ -177,7 +174,6 @@ a {
   .bars {
     display: flex;
     align-items: center;
-
   }
 
     .big-news {
@@ -216,15 +212,14 @@ a {
       width: 80%;
     }
 
-    button {
+    .button {
       position: absolute;
       left: 40%;
     }
 
     .foot-text1, .foot-text2 {
       display: none;
-    }
-    
+    } 
 }
 
 /*desktop version*/
@@ -237,7 +232,6 @@ a {
   .fa-bars {
     display: none;
   }
-
 
   .nav-text1, .nav-text2 {
     display: inline;
@@ -270,17 +264,17 @@ a {
   .news-card:hover {
     border: 1px solid grey;
     padding: 3px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 7px 7px 4px grey;
     float: left;
-    -webkit-transform: rotate(12deg);
-    transform: rotate(12deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
   }
 
   img {
     width: 98%;
   }
 
-  button, .foot-text1, .foot-text2 {
+  .button, .foot-text1, .foot-text2 {
     display: none;
   }
 
