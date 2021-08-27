@@ -27,6 +27,7 @@ header {
 
 .navigation{
   display:none;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -73,6 +74,10 @@ h3 {
 }
 
 .big-news-article{
+  background: rgb(237, 255, 235);
+  border-style: solid;
+  border-radius: 2%;
+  overflow: hidden;
   margin-bottom: 2rem;
 }
 
@@ -82,48 +87,70 @@ h3 {
   margin: 1em 1em;
 }
 
-.news-snippets-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.news-snippets {
-  border-radius: 1em;;
-  /* box-shadow: 10px 10px 10px 8px #888888; */
-}
-
-.news-snippets img{
-  object-fit: cover;
-  border-radius: 5%;
-  width: 80%;
-  height: 200px;
-}
-
-.big-news img {
+/* .big-news img {
   object-fit: cover;
   border-radius: 5%;
   width: 100%;
   height:auto;
   max-height: 250px;
+} */
+
+.news-snippets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.news-snippets {
+  background: rgb(237, 255, 235);
+  max-width: 350px;
+
+  border-style: solid;
+  border-radius: 2%;
+  box-shadow: 5px 10px 10px 8px #888888;
+}
+
+.big-news-article img, .news-snippets img{
+  object-fit: cover;
+  border-radius: 3%;
+  width: 90%;
+  height: 200px;
+  margin: 5%;
+}
+
+.news-snippets h3, .big-news-article h2, p{
+  width: 90%;
+  margin: 5%;
+} 
+
+
 
 footer {
   border-top-style: solid;
 }
 
-@media(min-width: 767px) and (max-width: 991px){
+@media(min-width: 767px){
 
   .news-snippets-container  {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .news-snippets  {
+  min-height: 525px;
   }
 
   .navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .big-news img {
+    min-height: 400px;
   }
 
 }
@@ -133,8 +160,11 @@ footer {
     max-width: 1296px;
   }
 
+  li {
+    display: inline;
+  }
+
   .big-news-article {
-    display: flex;
     flex-direction: row-reverse;
   }
 
@@ -143,15 +173,11 @@ footer {
   }
   
   .news-snippets-container  {
-    display: grid;
-    grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
   }
-  
-  .news-snippets img {
-    width: 100%;
-    height: auto;
-    max-height: 170px;
+
+  .news-snippets  {
+    min-height: 656px;
   }
 
   .navigation {
