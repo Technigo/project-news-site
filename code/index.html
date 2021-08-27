@@ -4,19 +4,222 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <!-- <header> version 1
+        <nav class="header-nav"> -->
+          <!-- <h1 class="logo"><a href="#">Sampa</a></h1> -->
+          <!-- <a>
+            <img src="https://i.ibb.co/1JsJdGs/logo-size.jpg" alt="logo-sampa" class="logo">
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#">Atractions</a></li>
+            <li class="nav-item"><a href="#">Foodie</a></li>
+            <li class="nav-item"><a href="#">Coast</a></li>
+            <li class="nav-item"><a href="#">City</a></li>
+          </ul>
+        </nav>
+    </header> -->
+
+
+
+<!-- HEADER VERSION 2 -->
+
+
+     <header class="header">
+       <div class="logo">
+        <a>
+          <img src="../logo_size.jpg" alt="logo-sampa">
+        </a>
+       </div>
+        <nav class="navigation"> 
+         <a href="#">Atractions</a>
+         <a href="#">Foodie</a>
+         <a href="#">Coast</a>
+         <a href="#">City</a>
+        </nav>
+        <div class="togglebox">
+          <a onclick="showMenu()" href="#">
+            <img class="menu" src="https://i.ibb.co/Kx1LfVD/menu-2.png" alt="menu-bar"><img class="close" src="https://i.ibb.co/N3P738C/cancel.png" alt="close-bar">
+          </a>
+        </div>
+
+
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+
+
+
+    <section class="wrapper-flex-big">
+      <div class="container-big">
+        <img src="https://i.ibb.co/4ShyGZL/paulista.jpg" alt="" class="big-section-img">
+        <div class="conteiner-text">
+          <p class="title-big-news"> São Paulo - The city that never sleeps</p>
+          <p class="text-big-news">Walking will likely be a big part of anyone's visit to Sampa (São Paulo's nickname) and visitors should take a leisurely stroll along Avenida Paulista, browse the goods and food at Mercado Municipal and enjoy Ibirapuera Park's walking paths. Don't forget to save some time to marvel at the city from a bird's-eye view (at Edifício Italia) and to immerse yourself in Brazil's favorite pastime at the Museu do Futebol.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <h2 class="section-title">must do's in São Paulo</h2>
+
+    <section class="wrapper-flex">
+      <div class="container">
+        <!-- <div class="banner-image-one">
+        </div> -->
+        <img src="https://i.ibb.co/CbQQDyN/12-02-2018-Carnaval-de-Rua-SGT-Pimenta-Centro-Rio-de-Janeiro.jpg" alt="Bloco-de-Carnaval" class="photo">
+        <h2 class="title">Let's party</h2>
+        <p class="description">Bloco de Carnaval de Rua -  Street Bands That Mobilize Crowds .</p>
+        <!-- <button class="btn">Read more</button> -->
+      </div>
+
+      <div class="container">
+        <!-- <div class="banner-image"> -->
+        <!-- </div> -->
+        <img src="https://i.ibb.co/M8yWxsW/DOM.jpg" alt="DOM-restaurant" class="photo">
+        <h2 class="title">foodie</h2>
+        <p class="description">DOM Restaurant - The Best Restaurant in Town, Two Start Michelin</p>
+        <!-- <button class="btn">Read more</button> -->
+         
+      </div>
+
+      <div class="container">
+        <!-- <div class="banner-image">
+        </div> -->
+        <img src="https://i.ibb.co/d4Hd5dK/vila-madalena.jpg" alt="Vila-Madalena" class="photo">
+        <h2 class="title">brazilian's södermalm</h2>
+        <p class="description">Vila Madalena - Best Bars in Town.</p>
+        <!-- <button class="btn">Read more</button> -->
+         
+      </div>
+
+      <div class="container">
+        <!-- <div class="banner-image">
+        </div> -->
+        <img src="https://i.ibb.co/3fQ3GR7/ilha-bela.png" alt="ilha-bela" alt="beach" class="photo">
+        <h2 class="title">vitamin sea</h2>
+        <p class="description">São paulo has beautiful beaches - Check it out our favorites.</p>
+        <!-- <button class="btn">Read more</button> -->
+         
+      </div>
+
+      <div class="container">
+        <img src="https://i.ibb.co/0yFnX1s/terra-o-it-lia.webp" alt=terraco-italia class="photo" >
+        <h2 class="title">Drink with a view</h2>
+        <p class="description">5 Best roof top bars to go during sommer time.</p>
+        <!-- <button class="btn">Read more</button> -->
+         
+      </div>
+
+      <div class="container">
+        <!-- <div class="banner-image">
+        </div> -->
+        <img src="https://i.ibb.co/RSbwkR0/bairro-liberdade.jpg" alt="Bairro-Liberdade" class="photo">
+        <h2 class="title">Who likes sushi?</h2>
+        <p class="description">Bairro da Liberdade - The most traditional japonese area.</p>
+        <!-- <button class="btn">Read more</button>
+          -->
+      </div>
+
     </section>
+
+    <!-- Here starts the fact section  -->
+
+    <h2 class="section-title">Did you know?</h2>
+
+    <section class="wrapper-grid">
+      <div class="container-fact fact-color-one">
+        <!-- <h2 class="title-fact">texto texto</h2> -->
+        
+        <p class="description-fact">São Paulo is the city with the highest number of helicopters in the world. There are more than 410 across the city.</p>
+      </div>
+
+      <div class="container-fact fact-color-two">
+        <!-- <h2 class="title-fact">texto texto</h2> -->
+        <p class="description-fact">São Paulo is the second city that consumes the most pizza in the world, Paulistanos consume more than 700 pizzas per minute.</p>
+      </div>
+
+      <div class="container-fact fact-color-three">
+        <!-- <h2 class="title-fact">texto texto</h2> -->
+        <p class="description-fact"> With 12.2 million inhabitants, São Paulo is the most populous city in Brazil. The current population of Sweden is 10,171,378.</p>
+      </div>
+
+      <div class="container-fact fact-color-four">
+        <!-- <h2 class="title-fact">texto texto</h2> -->
+        <p class="description-fact">São Paulo concentrates the largest number of Japanese, Lebanese and Italians outside their respective countries of origin.</p>
+      </div>
+
+    </section>
+
+     <h2 class="section-title title-pt-color">Everyday Portuguese Expressions To Know Before You Go To Brazil</h2>
+
+    <section class="wrapper-grid-pt ">
+      <div class="container-pt">
+        <img class="pt-img" src="https://i.ibb.co/XF9YXZ3/conversation-1.png" alt="people-talking"> 
+        <div class="text-pt">
+          <p class="description-pt">
+            <strong>Legal</strong>
+         </p>
+         <p class="description-pt"> Literally: “Legal”</p>
+         <p class="description-pt">Legal (lay-gow) literally means “legal”, but it is used to declare all things cool or awesome. New shirt? Legal! New movie out? Legal! Got an A on the test? Legal!</p>
+         <p class="description-pt">Some other Brazilian synonyms for cool that are slightly less formal include: maneiro, da hora, top, sinistro.</p>
+      </div>
+      </div>
+
+      <div class="container-pt">
+        <img class="pt-img" src="https://i.ibb.co/XF9YXZ3/conversation-1.png" alt="people-talking"> 
+        <div class="text-pt">
+          <p class="description-pt">
+            <strong>Legal</strong>
+         </p>
+         <p class="description-pt"> Literally: “Legal”</p>
+         <p class="description-pt">Legal (lay-gow) literally means “legal”, but it is used to declare all things cool or awesome. New shirt? Legal! New movie out? Legal! Got an A on the test? Legal!</p>
+         <p class="description-pt">Some other Brazilian synonyms for cool that are slightly less formal include: maneiro, da hora, top, sinistro.</p>
+      </div>
+      </div>
+
+      <div class="container-pt">
+        <img class="pt-img" src="https://i.ibb.co/XF9YXZ3/conversation-1.png" alt="people-talking"> 
+        <div class="text-pt">
+          <p class="description-pt">
+            <strong>Legal</strong>
+         </p>
+         <p class="description-pt"> Literally: “Legal”</p>
+         <p class="description-pt">Legal (lay-gow) literally means “legal”, but it is used to declare all things cool or awesome. New shirt? Legal! New movie out? Legal! Got an A on the test? Legal!</p>
+         <p class="description-pt">Some other Brazilian synonyms for cool that are slightly less formal include: maneiro, da hora, top, sinistro.</p>
+      </div>
+      </div>
+
+      <div class="container-pt">
+        <img class="pt-img" src="https://i.ibb.co/XF9YXZ3/conversation-1.png" alt="people-talking"> 
+        <div class="text-pt">
+          <p class="description-pt">
+            <strong>Legal</strong>
+         </p>
+         <p class="description-pt"> Literally: “Legal”</p>
+         <p class="description-pt">Legal (lay-gow) literally means “legal”, but it is used to declare all things cool or awesome. New shirt? Legal! New movie out? Legal! Got an A on the test? Legal!</p>
+         <p class="description-pt">Some other Brazilian synonyms for cool that are slightly less formal include: maneiro, da hora, top, sinistro.</p>
+      </div>
+      </div>
+
+      <div class="container-pt">
+        <img class="pt-img" src="https://i.ibb.co/XF9YXZ3/conversation-1.png" alt="people-talking"> 
+        <div class="text-pt">
+          <p class="description-pt">
+            <strong>Legal</strong>
+         </p>
+         <p class="description-pt"> Literally: “Legal”</p>
+         <p class="description-pt">Legal (lay-gow) literally means “legal”, but it is used to declare all things cool or awesome. New shirt? Legal! New movie out? Legal! Got an A on the test? Legal!</p>
+         <p class="description-pt">Some other Brazilian synonyms for cool that are slightly less formal include: maneiro, da hora, top, sinistro.</p>
+      </div>
+      </div>
+
+    </section>
+    
+
+ 
+
+    
   </body>
 </html>
