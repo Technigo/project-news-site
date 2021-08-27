@@ -11,10 +11,6 @@ colors
 
 } 
 
-body{
-  border:0;
-
-}
 
 html {
   background: #F8EDE3;
@@ -35,8 +31,6 @@ h1 {
 h3 {
   margin:10px 0 2% 0;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
 .header{
@@ -45,7 +39,6 @@ h3 {
   padding: 5% 0 5% 0;
   background-color: #798777;
   width: 100%;
-  
 }
 
 .logo {
@@ -90,7 +83,6 @@ h3 {
 .grid-news {
   display: grid;
   grid-template-columns: 1fr;
-  background-color:#F8EDE3;
   padding:20px;
 }
 
@@ -135,7 +127,7 @@ h3 {
 }
 
   .footer-logo {
-    width: 75pt;
+    width: 100pt;
     padding: 30px;
     align-items: flex-end;
   }
@@ -149,7 +141,7 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-/* --------@MEDIA TABLET----------------*/
+/* --------@MEDIA TABLET---------------------------------*/
 
 
 @media  (min-width: 668px) {
@@ -175,8 +167,7 @@ h3 {
     color: blue;
   }
 
-
- a:hover {
+  a:hover {
     text-decoration: underline;
     background-color:  lightgray;
   } 
@@ -185,48 +176,46 @@ h3 {
   .big-news {
     flex-direction: row;
     justify-items: space-around;
-      }
+  }
   .big-news-img{
     width: 40%;
-}
+  }
 /* --------GRID FOR SMALL NEWS TABLETS----------------*/
 
 /* Container for ALL the grid-news */
 .grid-news {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
       
-    }
+  }
 /* Container for A SINGLE grid-news */
-    .grid-content {
-      flex-direction: column;
-      margin: 1%;
-      align-items: center;
-    }
+  .grid-content {
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+  }
 /* Container for TEXTS IN SINGLE grid-news */
 
-    .grid-text {
+  .grid-text {
       flex-direction: column;
-      align-items: center;
+  }
 
-    }
-
-    .grid-picture{
-      align-items: center;
-      justify-content: center;
+  .grid-picture{
       padding:20px;
-    }
-  
+  }
+  /* --------@MEDIA TABLET---------------------------------*/
   
 @media (min-width: 1025px){
 
-        .grid-news {
-          grid-template-columns: repeat(4, 25%);
-        }
+  .big-news-text{
+    max-width: 1500px;
+  }
+  
+  .grid-news {
+    grid-template-columns: repeat(4, 25%);
+  }
 
-        .big-news-text{
-          max-width: 1500px;
-        }
+        
 
        
     
