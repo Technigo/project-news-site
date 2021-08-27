@@ -21,6 +21,36 @@ header {
   height: 100px;
 }
 
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 10px 10px 3px 10px;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  margin: 10px 10px 3px 10px;
+}
+
+h4 {
+  margin: 5px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  margin: 0px 10px 15px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navigation-container {
   background-position: center;
   height: 100px;
@@ -46,8 +76,11 @@ header {
 }
 
 .navigation-list a {
-  text-decoration: none;
   color: white;
+}
+
+.navigation-list a:hover {
+  background-color: rgb(255, 92, 119);
 }
 
 .navigation-list-item {
@@ -79,11 +112,15 @@ header {
   flex-wrap: wrap;
 }
 
+.big-news-child:hover h1 {
+  text-decoration: underline;
+}
+
 .news-cards-parent {
   width: 96%;
   margin: auto;
   background-color: white;
-  padding-top: 10px;
+  padding: 10px 0px;
   display: flex;
   align-content: flex-start;
   justify-content: center;
@@ -105,32 +142,6 @@ header {
   height: auto;
 }
 
-h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  margin: 10px 10px 3px 10px;
-}
-
-h2 {
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  margin: 10px 10px 3px 10px;
-}
-
-h4 {
-  margin: 5px 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-p {
-  font-family: 'Oxygen', sans-serif;
-  font-size: 14px;
-  margin: 0px 10px 15px 10px;
-}
-
 .red {
   border-top: 4px red solid;
 }
@@ -148,14 +159,13 @@ p {
 }
 
 .pink {
-  border-top: 4px hotpink solid;
+  border-top: 4px rgb(255, 92, 119) solid;
 }
 
 footer {
   background-color: red;
   height: 50px;
   padding-top: 15px;
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   color: white;
@@ -174,12 +184,13 @@ footer {
 
   .navigation-list {
     list-style: none;
-    display: block;
+    display: flex;
     float: right;
+    justify-content: space-evenly;
   }
   
   .navigation-list-item {
-    margin: 10px 0px 10px 20px;
+    margin: 10px;
   }
   
   .big-news-parent {
@@ -199,6 +210,15 @@ footer {
 
   .news-cards-child {
     width: 310px;
+    transition: transform ease-in-out .2s;
+  }
+
+  .news-cards-child:hover {
+    transform: scale(1.04);
+  }
+
+  .news-cards-child:hover h2 {
+    text-decoration: underline;
   }
     
 }
