@@ -2,11 +2,13 @@
 html {
   background: whitesmoke;
 }
+/* * {border:1px solid greenyellow}  */
 
 /* Fixed positioned header with the z-index property specifies the overlay order of positioned elements. */
 header {
   background-color: whitesmoke;
   width: 100%;
+  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -17,6 +19,7 @@ header {
 }
 nav {
   display: flex;
+  width: 100%;
 }
 /* Hiding the links in header*/
 nav > a {
@@ -51,6 +54,7 @@ a {
 }
 
 .big-news {
+margin-top: 100px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
@@ -154,12 +158,12 @@ align-items: center;
     font-size: 30px;
   }
 
-  .grid-news {
+  /* .grid-news { */
     /* align-items: center; */
     /* flex-direction: row;
     margin: 0; */
     
-  }
+  
   .news-card {
     width: 46%;
     justify-content: space-between; 
@@ -168,9 +172,9 @@ align-items: center;
     padding: 2%;
   }
 
-  .news-card-image {
+  /* .news-card-image {
     
-  }
+  } */
   .news-card-text {
     width: 100%;
     margin: 2%;
@@ -186,8 +190,9 @@ align-items: center;
 
   }
   
-  .header {
+  header {
     justify-content: flex-start;
+    background-color: transparent;
   }
 
   .navigation > a {
@@ -195,6 +200,7 @@ align-items: center;
     align-items: center;
     justify-items: right;
     order: 2;
+    padding: 2% 5%;
   }
   
   .logo {
@@ -203,6 +209,8 @@ align-items: center;
 
   h1 {
     order: 0;
+    color: #ffff;
+    size: 50px;
   }
 
   .big-news {
@@ -234,7 +242,7 @@ align-items: center;
   }
 
   .news-card-text {
-  margin: 2% 0 0 0;
-  width: 90%
+    margin: 2% 0 0 0;
+    width: 90%
   }
 } 
