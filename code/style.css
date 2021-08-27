@@ -34,10 +34,20 @@ h2 {
 h3 {
   font-family: 'Ubuntu', sans-serif;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1.5;
   padding-top: 20px;
+}
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 p {
   font-size: 1rem;
@@ -134,7 +144,10 @@ nav a:hover {
 .big-news img {
   width: 100%;
   align-items: center;
+  border: solid 2px #A39161;
+  box-shadow: 10px 10px 8px #A39161;
 }
+
 
 .big-news:hover {
   opacity: 0.8;
@@ -184,7 +197,7 @@ nav a:hover {
   text-decoration: none;
   border-radius: 50%;
   align-items: center;
-  margin: 5px 2px;
+  margin: 10px 4px;
 }
 
 .fa-facebook {
@@ -202,6 +215,10 @@ nav a:hover {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+.fa:hover{
+  opacity: 0.8;
 }
 /*** Media Queries***/
 
