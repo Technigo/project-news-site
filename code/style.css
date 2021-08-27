@@ -82,14 +82,9 @@ header {
   grid-gap: 5px;
   text-align: center;
   color: black;
+  object-fit:scale-down;
 }
 
-.bottom-center {
-  position: absolute;
-  bottom: 8px;
-  text-align: center;
-  font-weight: bolder;
-}
 
 .small-news-text {
   padding: 8px;
@@ -103,8 +98,8 @@ header {
 }
 
 .small {
-  width: 350px;
-  height: 350px;
+  max-width: 200px;
+  height: 200px;
   }
 
 .small-image  {
@@ -168,10 +163,7 @@ justify-content: space-between;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-    .small {
-    width: 200px;
-    height: 200px;
-  }
+
   .bottom-center {
     position: absolute;
     bottom: 8px;
