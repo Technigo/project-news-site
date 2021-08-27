@@ -8,8 +8,7 @@ colors
 *{ 
    /* border: 1px solid black; */
   margin: 0;
-
-} 
+}
 
 
 html {
@@ -24,13 +23,14 @@ nav{
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 2%;
-  font-size: 3vw;
+  font-size: 3vh;
   
 }
 
 h3 {
   margin:10px 0 2% 0;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
 }
 
 .header{
@@ -42,7 +42,7 @@ h3 {
 }
 
 .logo {
-  width: 120px;
+  width: 80px;
   padding: 50px;
 }
 
@@ -68,9 +68,9 @@ h3 {
 }
 .big-news-text {
   box-sizing: border-box;
-  padding: 50px;
+  padding: 20px;
   justify-content: center;
-  font-size: 14pt;
+  font-size: 2vh;
   object-fit: contain;
   font-family:Verdana, Geneva, Tahoma, sans-serif
   
@@ -83,7 +83,7 @@ h3 {
 .grid-news {
   display: grid;
   grid-template-columns: 1fr;
-  padding:20px;
+  padding:1px;
 }
 
 /* Container for A SINGLE grid-news */
@@ -97,14 +97,15 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  padding: 40px;
+  padding: 3px 3px 10px 3px;
   object-fit: contain;
   color: black;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7vh;
 }
 /* Container for img i single grid-news */
 .grid-picture{
-  width: 300px;
+  max-width: 150px;
   justify-content: center;
   box-sizing: border-box; 
   padding:1%;
@@ -127,8 +128,8 @@ h3 {
 }
 
   .footer-logo {
-    width: 100pt;
-    padding: 30px;
+    width: 70pt;
+    padding: 15px;
     align-items: flex-end;
   }
 
@@ -137,7 +138,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 8pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -198,10 +199,17 @@ h3 {
 
   .grid-text {
       flex-direction: column;
+      padding: 5px 30px 30px 30px;
   }
 
   .grid-picture{
       padding:20px;
+      max-width: 300px;
+      justify-content: center;
+      box-sizing: border-box; 
+      
+      object-fit: contain;
+    
   }
   /* --------@MEDIA TABLET---------------------------------*/
   
