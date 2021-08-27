@@ -18,18 +18,17 @@ header {
   animation-name: logo;
   animation: logo 3s ease-in;
 }
-
+/* Animation */
 @keyframes logo {
   0% {opacity: 0%;}
   100% {opacity: 100%;}
 }
 
-
 .navigation {
     margin: 0;
     padding: 1.5rem 0;
     border-radius: var(--radius);
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: baseline;
     flex-wrap: wrap;
@@ -119,12 +118,22 @@ header {
   
 }
 
-.footer {
+.footer{
 padding: 20px;
 font-size: 12px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+}
+/* Footer Navigation */
+.navigation-bottom {
+  margin: 0;
+  padding: 1.5rem 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 /* tablet */
@@ -138,6 +147,10 @@ justify-content: space-between;
     width: 250px;
     align-self: flex-start;
     margin: 1rem;
+  }
+
+  .navigation {
+    display: flex;
   }
 
   .big-news {
@@ -156,7 +169,7 @@ justify-content: space-between;
     gap: 0 20px;
   }
 }
-
+/* Desktop */
 @media (min-width: 992px){
   .big-text{
     margin-right: 5rem;
@@ -165,12 +178,5 @@ justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-
-  .bottom-center {
-    position: absolute;
-    bottom: 8px;
-    left: 70px;
-    font-weight: bolder;
   }
 }
