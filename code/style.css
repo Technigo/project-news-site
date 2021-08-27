@@ -1,15 +1,19 @@
 
       body{
-        border:5px dashed red;
+        
         max-width: 1700px;
         
         
       }
       
-      .header{
+     
+      .header-cool{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: khaki;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .navigation-link {
@@ -83,6 +87,9 @@
         flex-direction: inherit;
       }
       
+      .big-news-paragraph{
+        padding: 20px;
+      }
 
       .big-news-image{
 
@@ -90,9 +97,11 @@
       width: 550px;
       }
       
-      .big-news-paragarph{
-        
-      }
+      .smaller-news-bubble{
+
+        height: 300px;
+        width: 250px;
+        } 
      
 
       .smaller-news-image{
@@ -108,12 +117,22 @@
         .logo{
         width: 200px;
       }
-      
-      /* For smaller desktop i chose 3 in a row, for bigger desktops, its 4 in a row */
+    
 
+      .big-news-paragraph{
+        padding: 60px;
+      }
+      
+      .smaller-news-bubble{
+
+      height: 200px;
+      width: 120px;
+     
+      } 
+      
       .smaller-news-image{
-        height: 200px;
-        width: 150px;
+        height: 140px;
+        width: 100px;
             }
       
     }
