@@ -6,8 +6,8 @@ html {
 /* ------HEADER SECTION STYLING ----- */
 
 header {
-  background: #F0F5F9;
   overflow: hidden;
+  background: #F0F5F9;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
   border-bottom: 8px solid yellow;
@@ -15,7 +15,28 @@ header {
 
 h1 {
   font-size: 48px;
-  margin: auto;
+  margin: 0;
+}
+
+.navigation {
+  background: #F0F5F9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.left-links, .right-links {
+  display: none;
+  text-decoration: none;
+  color: #272343;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.left-links:hover, .right-links:hover {
+  opacity: 0.6;
 }
 
 .logo {
@@ -24,51 +45,23 @@ h1 {
   padding: 10px;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-}
-
-.navigation li a {
-  text-decoration: none;
-  color: #272343;
-  font-weight: 600;
-  padding: 1.5rem;
-}
-
-.navigation li a:hover {
-  opacity: 0.6;
-}
-
-.arch-mag {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-}
-
-li {
-  display: none;
-}
-
-
-
 
 /* ------BIG NEWS SECTION STYLING ----- */
 
 .big-news {
-
   display: flex;
   flex-direction: column;
   margin: 30px;
   padding: 20px;
   border: solid #F0F5F9;
 }
+
+
+
+
+
+
+
 
 hr {
   width: 90%;
@@ -181,8 +174,7 @@ h4 {
 
 /* ------subscribtion button & animation ----- */
 
-button,
-button::after {
+button, button::after {
   width: 200px;
   height: 66px;
   font-size: 24px;
@@ -281,6 +273,7 @@ button:hover::after {
 
 
 /* ------FOOTER SECTION STYLING ----- */
+
 footer {
   text-align: center;
   padding: 3px;
@@ -296,42 +289,36 @@ footer a:hover {
   color: blue;
 }
 
+
+
 /* ------MEDIA QUERY STYLING ----- */
 
-@media (min-width: 768px) {
 
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+@media (min-width: 768px) and (max-width: 1200px) {
+  h1 {
+    display: none;
   }
 
   .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
-    font-size: 2rem;
+    justify-content: center;
   }
 
-  li {
-    display: inline-block;
-  }
-
-  .left-links {
-    order: 0;
-  }
-
-  .right-links {
-    order: 2;
-  }
-
-  .arch-mag {
+  .logo {
     order: 1;
   }
 
-  .arch-mag h1 {
-    display: none;
+  .left {
+    order: 0;
+    display: flex;
+  }
+
+  .right {
+    order: 2;
+    display: flex;
+  }
+
+  .left-links, .right-links {
+    display: block;
   }
 
   .big-news {
@@ -365,34 +352,31 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1200px) {
-  .navigation {
+@media (min-width: 1201px) {
+
+  .big-news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: start;
+    grid-gap: 30px;
+  }
+  .big-news-text {
+    margin: auto;
+  }
+  /* this two selector just same as with the one int he tablet mode but if i don't set it the image  doesn't use the grid layout */
+
+  .left-links, .right-links {
+    display: block;
+  }
+
+  .right,
+  .left {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
+    margin-left: auto;
   }
 
-
-  .arch-mag {
-    order: 0;
-  }
-
-  .arch-mag h1 {
-    display: inline-block;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .left-links,
-  .right-links {
-    display: inline-block;
-    display: flex;
-    justify-content: flex-end;
+  .right {
+    margin-left: 0;
   }
 
   .news-cards {
