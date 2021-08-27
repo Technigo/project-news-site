@@ -23,15 +23,21 @@ From darker to lighter:
 /*                GLOBAL COMPONENTS                */
 /* ----------------------------------------------- */
 
-p {
-  font-size: 25px;
-}
 
 html, body {
   background-color: #fff;
   font-family: 'Copse', 'Arial', sans-serif;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  font-size: 1.3vw;
+}
+
+/* ----------------------------------------------- */
+/*                    GLOBAL CONTAINER             */
+/* ----------------------------------------------- */
+
+/*Contains the sections: Header, Featured News, About Us, Footer*/
+
+.global-container {
+  padding: 3%;
 }
 
 /* ----------------------------------------------- */
@@ -43,11 +49,10 @@ html, body {
 .cta-button {
   background-color: #FC6434;
   color:#FCDDD2;
-  font-size: 25px;
+  font-size: 1.1vw;
   border-radius: 200px;
-  width: 280px;
-  height: 70px;
-  margin-top: 20px;
+  padding: 1.5%;
+  margin-top: 1%;
 }
 
 
@@ -58,103 +63,64 @@ html, body {
 h1 {
   font-family: 'Amaranth', 'Arial', cursive;
   color: #FC9270;
-  font-size: 100px;
-}
-
-h2, 
-h3 {
-  color: #FC6424;
+  font-size: 5vw;
 }
 
 h2 {
-  font-size: 50px;
-  margin-bottom: 40px;
+  color: #FC6424;
+  font-size: 2vw;
+  margin-bottom: 1%;
 }
 
 h3 {
-  font-size: 30px;
+  color: #FC6434;
+  font-size: 1.5vw;
 }
 
 .header-subtitle {
   color:#FCDDD2;
 }
 
-/* ----------------------------------------------- */
-/*                    GLOBAL CONTAINER             */
-/* ----------------------------------------------- */
 
-/*Contains the sections: Header, Featured News, About Us*/
-
-.global-container {
-  padding: 50px;
-}
 
 /* ----------------------------------------------- */
 /*                    HEADER                       */
 /* ----------------------------------------------- */
 
-header { 
-  /*Darken the background image*/
- background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-img.jpg);
+ .hero-container {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-img.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
   height: 100vh;
-  }
-
-  .hero-text {
-    position: absolute;
-    width: 1140px;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ } 
 
   .logo-transparent {
   height: 200px;
   width: auto;
   float: left;
   }
-  
-  nav {
-  padding: 0 25px;
-  background-color: #fff;
-  }
-  
+
   .nav-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: -30px;
   }
   
   .main-nav li {
   list-style-type: none;
   display: inline-block;
   padding: 15px 15px;
-  font-size: 1.8rem;
   }
   
   a {
   text-decoration: none;
+  color: #FC5424;
   } 
-  
-  /* Mobile navigation bar */
-
-  .mobile-nav-icon {
-  float: right;
-  margin-top: 30px;
-  cursor: pointer;
-  }
-  
-  .mobile-nav-icon i {
-  font-size: 200%;
-  color: #FC6434;
-  display: none;
-  } 
-  
   
   /* ----------------------------------------------- */
   /*                  MAIN NEWS                      */
@@ -162,29 +128,29 @@ header {
  	  
   .main-news-container {
     display: flex;
-    align-items:flex-start;
-    margin-top: 100px;
-    padding: 80px;
+    flex-direction: row;
+    margin-top: 3%;
+    padding: 8%;
     background-color: #f4f4f4;
     }
     
     .main-news-img {
-    /* width: 500px; */
     max-width: 100%;
     height: auto;
     }
     
     .main-news-contents {
-    margin-left: 60px;
+    margin-left: 3%;
+    text-justify: distribute;
     } 
 
     .main-subtitle {
-      margin-bottom: 20px;
+      margin-bottom: 2%;
       color: #FC774B;
     }
 
     .read-more-link {
-      font-size: 25px;
+      font-size: 80%;
     }
   
   /* ----------------------------------------------- */
@@ -192,17 +158,24 @@ header {
   /* ----------------------------------------------- */
  	  
   .featured-news-container {
-  margin: 100px 1px;
+  margin-top: 3%;
   width: 100%;
   background-color: #f4f4f4;
-  padding: 80px;
+  padding: 8%;
   }
   
   .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; */
+
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 30px;
   align-items: stretch;
+   */
   }
   
   .grid > article {
@@ -215,17 +188,17 @@ header {
   }
   
   .grid .text {
-  padding: 20px;
-  margin: 10px;
+  padding: 5%;
+  margin: 1%;
   }
   
   .featured-image {
-  width: 280px;
-  height: 210px;
+  max-width: 100%;
+  height: auto;
   }
   
   article {
-  padding: 30px 60px;
+  padding: 8% 6%;
   } 
   
   /* ----------------------------------------------- */
@@ -268,8 +241,61 @@ header {
 
 /* Mobile */
 
-@media only screen and (max-width: 425px) {
-	header {
-		background-image: url('./img/hero-image-small.jpg');
-	}
+@media only screen and (max-width: 414px) {
+  /* .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr); }*/
+  
+  .footer-list {
+   text-align: start;
+ }
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 1024px) {
+
+  h2, h3 {
+    margin-top: 3%;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .hero-container {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/ugur-arpaci-U18V0ToioFU-unsplash.jpg);
+  }
+
+  .main-news-container {
+    flex-wrap: wrap;
+  }
+
+  .main-news-contents {
+    margin-left: 0;
+    } 
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));  
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+  .footer-list-item:nth-child(2),   
+  .footer-list-item:last-child {
+    text-align: center;
+  }
+
+  .logo-transparent {
+    height: 100px;
+  }
+
+  .social-icon {
+    font-size: 20px;
+  }
 }
