@@ -84,13 +84,17 @@ nav {
 }
 
 .article {
+  display: fixed;
   line-height: 1.5;
   grid-column: span 4;
   background-color: aliceblue;
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgb(99, 99, 99);
   padding: 20px;
-  margin: 20px 5px;
+  margin: 20px 15px;
+}
+.article:hover {
+ transform: scale(1.05); 
 }
 
 .small-image {
