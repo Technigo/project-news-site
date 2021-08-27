@@ -51,8 +51,6 @@ span {
   color:#A39161;
 }
 
-
-
 /*** Header ***/
 
 header {
@@ -66,13 +64,12 @@ header {
   
 
 }
+
 header img {
   width: 3rem;
   display: none;
 }
   
-
-
 .hamburger {
   display: flex;
   height: 25px;
@@ -87,8 +84,7 @@ header img {
   width: 30px; 
   height: 5px;
   background: hotpink;
-  /*display: flex;*/
-  /*margin-left: 10px;*/
+ 
 
 }
 
@@ -119,11 +115,10 @@ nav a:hover {
 
 .big-news {
   display: flex;
-  /*width: 600px;*/
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: white;
   max-width: 1200px;
 }
@@ -142,14 +137,13 @@ nav a:hover {
 .other-news { 
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 20px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   }
   
   .card {
-  /*width: 600px;*/
   margin-left:auto;
   margin-right: auto;
   margin-top: 20px;
@@ -220,7 +214,6 @@ nav a:hover {
    width: 40%;
  }
  
- 
  }
  
  @media (min-width: 992px) {
@@ -228,13 +221,24 @@ nav a:hover {
      text-align: left;
      justify-items: center;
  }
+
   h1 {
     font-size: 4rem;
+  }
+  
+  p {
+   
+    line-height: 0.7cm;
+    font-size: 1.5rem;
+    overflow: hidden;
+    line
+    
   }
  header img {
    width: 6rem;
    margin-left: 4rem;
  }
+
  .card {
    width: 24%;
  }
