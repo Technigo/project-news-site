@@ -99,7 +99,7 @@ a:visited {                         /*for visited links, the color will remain b
 .all-news {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;   /*tried out with grid instead of using flex with 4fr*/  
-  grid-gap: 5px;                           /*gap between each columns*/
+  grid-gap: 5px;                            /*gap between each columns*/
   margin: 0 0 5px 0;                        /*put only margin at the bottom, so there's some space between news cards and the footer*/                      
 }
 
@@ -115,7 +115,7 @@ a:visited {                         /*for visited links, the color will remain b
 
 .other-news {
   border: 2px solid rgb(229, 229, 229);
-  grid-column: span 1;           /*each news takes up 1 column*/
+  grid-column: span 1;            /*each news takes up 1 column*/
   padding: 10px;
   transition: all 1s ease-out;    /*when hovering the news card, the transition will take 1s and the effect is ease-out*/
 }
