@@ -115,16 +115,8 @@ footer {
       align-items: center;
       justify-content: space-between;
       padding: 10px;
-      color: violet;
     }
 
-  /*@media (min-width: 668px) {
-    .news-img {
-      width: 300px;
-      height: 300px;
-      margin-top: 30px;
-    }*/
-  
 @media (min-width: 668px) {
     img {
     height: auto;
@@ -135,7 +127,7 @@ footer {
     display: grid;
     justify-content: space-between;
     padding: 10px;
-    grid-template-columns: 1fr 
+    grid-template-columns: 1fr;
   }
 
 @media (min-width: 668px) { 
@@ -152,5 +144,42 @@ footer {
   margin-bottom: 20px;
 }
 
+@media (min-width: 1024px) {
+  .container.grid {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+@media (min-width: 1024px) {
+    img {
+    height: auto;
+  }
+
+@media (min-width: 1024px) {
+  .second-container {
+    display: grid;
+    justify-content: space-between;
+    padding: 10px;
+    grid-template-columns: 1fr  1fr;
+    gap: 20px;
+  }
+
+@media (min-width: 1024px) { 
+    .stockholmsyndrome {
+      height: 400px;
+      width: 600px;
+      padding: 10px;
+    }
+
+@media (min-width: 1024px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 5px; 
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
 
 
