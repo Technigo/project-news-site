@@ -3,10 +3,49 @@ html {
   color: #fff; */
 } 
 
-@media (min-width: 0px) and (max-width: 767px) {
+/* @media (min-width: 0px) and (max-width: 767px) {
   header {
     display: flex; 
     justify-content: space-between;
     background-color: blue;
+  }
+} SKa antagligen tas bort*/
+
+
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
+} Det som kommenteras bort ca 1:20:00*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
