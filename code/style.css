@@ -7,6 +7,8 @@ body {
   background-color: rgb(240, 236, 236);
 }
 
+/* ---------- HEADER COMPONENTS ------------- */
+
 .header {
   background-color: rgba(209, 208, 208, 0.95);
   height: 60px;
@@ -18,11 +20,6 @@ body {
 
 .icon-and-text {
   display: none;
-}
-
-.menu-container {
-  display: flex;
-  column-gap: 14px;
 }
 
 h3 {
@@ -53,6 +50,8 @@ a:hover {
   font-size: 28px;
 }
 
+/* ---------- BIG NEWS CONTAINER ------------- */
+
 .big-news-container {
   display: flex;
   flex-direction: column;
@@ -70,6 +69,9 @@ a:hover {
 .big-news-text-container {
   padding: 0px 10px 20px 10px;
 }
+
+/* ---------- OTHER NEWS CONTAINER ------------- */
+
 .other-news-container {
   display: flex;
   flex-direction: column;
@@ -109,6 +111,8 @@ a:hover {
   font-weight: 400;
   font-size: 13px;
 }
+
+/* ---------- DAILY-POLAROIDS ------------- */
 
 .daily-polaroids {
   background-color: rgb(240, 236, 236);
@@ -155,6 +159,8 @@ a:hover {
 .flip-card-back {
   display: none;
 }
+
+/* ---------- IPAD ADAPTATIONS------------- */
 
 @media only screen and (min-width: 668px) and (max-width: 1024px) {
   .header {
@@ -243,6 +249,8 @@ a:hover {
     display: block;
   }
 }
+
+/* ---------- DESKTOP ADAPTATIONS------------- */
 
 @media only screen and (min-width: 1025px) {
   body {
