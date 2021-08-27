@@ -99,6 +99,10 @@ i {
   color: rgb(5, 55, 66);
 }
 
+.fab:hover {
+  font-size: xx-large;                    /* hover effect: social media icons get bigger */
+}
+
 
 /* FOOTER */
 .footer-text {
@@ -123,10 +127,10 @@ i {
 
 @media (min-width: 668px) and (max-width: 1024px) {
   h1 {
-    display: none;                      /* sitename hidden on tablet */
+    display: none;                     /* sitename hidden on tablet */
   }
 
-  #about {                              /* on tablet: show About and Blog on the left side of the navbar */
+  #about {                             /* on tablet: show About and Blog on the left side of the navbar */
     order: -1;
   }
 
@@ -150,6 +154,11 @@ i {
     display: block;
     color:white;
     text-decoration: none;
+  }
+
+  .nav-link:hover {                   /* the navigation-links get more visible on hovering */
+    font-weight: bold;
+    font-size: large;
   }
 
   .big-news-article {
