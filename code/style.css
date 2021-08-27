@@ -95,8 +95,9 @@ i {
   width: 60px;
   }
 
-.big-news-article {
-  margin-top: 90px;
+/* the hidden anchor is needed to keep the margin between the fixed header and the first big-news-article*/  
+.hidden-anchor {
+  height: 90px;
 }
 
 @media (min-width: 668px) {
@@ -187,5 +188,7 @@ i {
     order: -1;
   }
 }
+
+
 
 
