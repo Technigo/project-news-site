@@ -28,12 +28,15 @@ nav{
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 2%;
+  font-size: 3vw;
   
 }
 
 h3 {
-  margin:10px 0 1% 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  margin:10px 0 2% 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
 }
 
 .header{
@@ -54,6 +57,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: flex;
+  font-size: 1em;
 }
 /* --------BIG NEWS FOR MOBILE ------------------*/
 
@@ -101,7 +105,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  padding: 0 10px 0 10px;
+  padding: 40px;
   object-fit: contain;
   color: black;
   font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -131,8 +135,7 @@ h3 {
 }
 
   .footer-logo {
-    width: 30pt;
-    height: 30pt;
+    width: 75pt;
     padding: 30px;
     align-items: flex-end;
   }
@@ -142,6 +145,8 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 /* --------@MEDIA TABLET----------------*/
@@ -156,7 +161,7 @@ h3 {
 
   nav a {
     margin: 0px 15px;
-    font-size: 16pt;
+    font-size: 1.5vw;
     align-items: center;
     color: #F8EDE3;
     font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -220,7 +225,7 @@ h3 {
         }
 
         .big-news-text{
-          width: 1000px;
+          max-width: 1500px;
         }
 
        
