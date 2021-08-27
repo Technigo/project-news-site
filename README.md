@@ -1,6 +1,10 @@
 # News Site
 
-This was the first individual assignment. The assignment was to build a responsive website. 
+This was the first individual assignment. The assignment was to build a responsive website. I've learned:
+- How to structure webpages using Box Model
+- Layout webpages using Grid
+- Layout webpages using Flexbox
+- Create responsive webpages for mobile, tablet and desktop
 
 ## The problem
 
