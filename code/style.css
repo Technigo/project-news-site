@@ -20,6 +20,17 @@ header{
   width: 100%;
 }
 
+header img {
+  padding: 10px;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+header img:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
 
 .logo-headline {
   display: flex;
