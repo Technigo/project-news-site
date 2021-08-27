@@ -1,12 +1,8 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a one side site there i got to practice on flex-box and grid. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
+I had problems to align the header in the Tablet form so that the logo comes between the links. I liked to use order, but that didn´t work because the logo whas in another container. So i putted in one more logo img and shoosed display none when it wasn´t suposed to bee seend
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://wizardly-mcnulty-7ef87c.netlify.app/
