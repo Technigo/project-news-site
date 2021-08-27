@@ -39,7 +39,10 @@ flex-direction: row;
   border-radius: 10px;
   align-self: flex-end;
 }
-
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover{
+text-decoration:underline;
+color: #25838A;
+}
 .logo{
   width: 50px;
   height: 50px;
@@ -251,7 +254,7 @@ nav{
   }
   .big-news{
   grid-column-start: span 2;
-  width: 90%;
+  width: 100%;
   justify-self: stretch;
   justify-self: center;
   max-width: 900px;
