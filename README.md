@@ -1,6 +1,6 @@
 # News Site
 
-This was the first individual assignment. The assignment was to build a reposive website. 
+This was the first individual assignment. The assignment was to build a responsive website. 
 
 ## The problem
 
