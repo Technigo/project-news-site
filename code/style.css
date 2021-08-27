@@ -4,7 +4,7 @@
   width: auto;
   align-items: center;
   justify-content: space-evenly;
- }
+}
 
 .logo {
   width: 100px;
@@ -15,15 +15,13 @@ h1 {
   font-size: 50px;
   color: #B677D4;
   margin: 15px;
-  }
+}
 
 .navigation {
   display: flex;
   align-items: flex-end;
   margin: 20px;
-  }
-
-
+}
 
 .main-container {
 display: flex;
@@ -43,30 +41,23 @@ flex-direction: column;
   height: auto;
   margin: 0;
   border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px;
+  padding: 6px;
+  box-shadow: 2px 8px;
+}
+
+h2, h3 {
+  font-family: 'Permanent Marker';
+  padding: 0%;
+  margin: 2px;
 }
 
 .text-big-news {
   width: auto;
   height: auto;
-  margin: 0 5px 0 30px;
+  margin: 0 30px;
   font-family: 'Roboto';
   text-align: justify;
 }
-
-h2 {
-  font-family: 'Permanent Marker';
-  padding: 0%;
-  margin: 2px;
-}
-
-h3 {
-  font-family: 'Permanent Marker';
-  padding: 0%;
-  margin: 2px;
-}
-
 
 hr {
   display: block;
@@ -81,7 +72,7 @@ hr {
   grid-template-columns: 1fr;
   height: auto;
   width: 100%;
-  }
+}
 
 .small-news {
   height: auto;
@@ -93,29 +84,20 @@ hr {
   padding: 0 5px
 }
 
-
- 
-
 .image-other {
   width: auto;
   height: 200px;
   margin: 0;
   object-fit: contain;
-  
-
-
 }
 
 .text-other-news {
-  display: flex;
-  flex-direction: column;
   height: auto;
   width: auto;
   padding: 5px;
   font-family: 'Roboto';
   margin: 0;
-  text-align: justify;
-  
+  text-align: center;
 }
 
 a:link, a:visited {
@@ -125,7 +107,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  }
+}
 
 
 
@@ -136,8 +118,6 @@ a:link, a:visited {
 }
 
 @media (min-width: 768px) {
- 
-
   .big-news {
     flex-direction: row;
   }
@@ -158,8 +138,8 @@ a:link, a:visited {
     grid-template-columns: 1fr 1fr;
     height: auto;
     width: 100%;
-    }
   }
+}
 
 @media (min-width: 1200px) {
   .logo {
@@ -179,12 +159,8 @@ a:link, a:visited {
     grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 
-   img:hover {
+  img:hover {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    }
-
-    
-    
-
-  }
+  }  
+}
