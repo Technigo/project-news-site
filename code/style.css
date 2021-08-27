@@ -9,7 +9,7 @@ body {
   margin: 5%;
 }
 
-/******************** Header ********************/
+/* Header */
 
 header {
   padding: 20px 5%;
@@ -56,7 +56,7 @@ a {
   color: #bbbbbb;
 }
 
-/******************** Paragraphs and Headlines ********************/
+/* Paragraphs and Headlines */
 
 h1 {
   font-size: 1.5rem;
@@ -81,7 +81,7 @@ p {
   margin-bottom: 25px;
 }
 
-/******************** Footer & footer-button ********************/
+/* Footer & Footer-Button */
 
 footer {
   margin: 0;
@@ -102,15 +102,18 @@ footer {
   color: #202121;
 }
 
-/******************** Images and Grid ********************/
+/* Images and Grid */
 
-img {
+.hero-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.hero-image {
-  height: 100%;
+.news-images {
+  object-fit: cover;
+  width: 100%;
+  height: 61vw;
 }
 
 .grid-news,
@@ -137,7 +140,7 @@ p:hover {
   cursor: pointer;
 }
 
-/******************** Responsiveness and Breakpoints ********************/
+/* Responsiveness and Breakpoints */
 
 /* Specification for mobile */
 @media (min-width: 0px) and (max-width: 767px) {
@@ -160,9 +163,15 @@ p:hover {
   .hero-paragraph-3 {
     display: none;
   }
+  .hero-news {
+    margin-bottom: 80px;
+  }
   header {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .news-images {
+    height: 29vw;
   }
   article {
     transition: all 0.2s ease-in-out;
@@ -186,12 +195,18 @@ p:hover {
   .flex-child {
     margin-left: 25px;
   }
+  .hero-news {
+    margin-bottom: 80px;
+  }
   header {
     padding-top: 40px;
     padding-bottom: 40px;
   }
   footer {
     display: none;
+  }
+  .news-images {
+    height: 15vw;
   }
   .grid-news article {
     transition: all 0.2s ease-in-out;
