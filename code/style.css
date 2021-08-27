@@ -52,6 +52,10 @@ a {
   font-weight: 800;
 }
 
+.navbar:hover {
+  color: #bbbbbb;
+}
+
 /******************** Paragraphs and Headlines ********************/
 
 h1 {
@@ -71,7 +75,7 @@ p {
   margin: 10px 0 15px 0;
 }
 
-.big-news-text p {
+.hero-text p {
   font-size: 1rem;
   line-height: 2rem;
   margin-bottom: 25px;
@@ -105,80 +109,100 @@ img {
   object-fit: cover;
 }
 
-.big-image {
+.hero-image {
   height: 100%;
 }
 
 .grid-news,
-.grid-big-news {
+.hero-news-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
 
-.big-news {
+.hero-news {
   margin-bottom: 40px;
 }
 
-.big-news-image,
-.big-news-text,
+.hero-news-image,
+.hero-text,
 .grid-news article {
   grid-column: span 4;
+}
+
+img:hover,
+h1:hover,
+h2:hover,
+p:hover {
+  cursor: pointer;
 }
 
 /******************** Responsiveness and Breakpoints ********************/
 
 /* Specification for mobile */
 @media (min-width: 0px) and (max-width: 767px) {
-  .paragraph-big-2,
-  .paragraph-big-3,
-  .big-headline-2,
-  .big-headline-3 {
+  .hero-headline-2,
+  .hero-headline-3,
+  .hero-headline-2,
+  .hero-headline-3 {
     display: none;
   }
 }
 
 /* Specification for tablet */
 @media (min-width: 768px) and (max-width: 1231px) {
-  .big-news-image,
-  .big-news-text,
+  .hero-news-image,
+  .hero-text,
   .grid-news article {
     grid-column: span 2;
   }
-  .big-headline-3,
-  .paragraph-big-3 {
+  .hero-headline-3,
+  .hero-paragraph-3 {
     display: none;
   }
   header {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  article {
+    transition: all 0.2s ease-in-out;
+  }
+  article:hover {
+    transform: scale(1.03);
+  }
 }
 
 /* Specification for desktop */
 @media (min-width: 1232px) {
-  .big-news-image {
+  .hero-news-image {
     grid-column: span 3;
   }
-
-  .big-news-text {
+  .hero-text {
     grid-column: span 1;
   }
-
   .grid-news article {
     grid-column: span 1;
   }
-
   .flex-child {
     margin-left: 25px;
   }
-
   header {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   footer {
     display: none;
+  }
+  .grid-news article {
+    transition: all 0.2s ease-in-out;
+  }
+  .grid-news article:hover {
+    transform: scale(1.03);
+  }
+  .hero-news-grid {
+    transition: all 0.2s ease-in-out;
+  }
+  .hero-news-grid:hover {
+    transform: scale(1.01);
   }
 }
