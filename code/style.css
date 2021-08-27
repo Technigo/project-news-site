@@ -29,7 +29,7 @@ h1 {
   text-decoration: none;
 }
 
-a:link {
+.navigation a {
   color: black;
   text-decoration: none;
   background-color: lightgray;
@@ -46,6 +46,7 @@ a:active {
 .navigation a:hover, .links a:hover {
   text-decoration: underline;
   color: red;
+  
 }
 
 .big-news {
@@ -114,8 +115,14 @@ footer {
 }
 
 .links img {
+  padding-top: 5px;
   filter: grayscale(30%);
 }
+
+.links a {
+  color: black;
+}
+
 
 /* animations */
 
