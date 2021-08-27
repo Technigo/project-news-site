@@ -3,17 +3,6 @@ html {
   font-family: 'Cutive Mono', monospace;
 }
 
-/* 
-font-family: 'Cutive Mono', monospace;
-font-size: 1.8em;
-line-height: 45px;
-
-
-/* header {
-  display: flex;
-}
-
-
 /* ------HEADER SECTION STYLING ----- */
 
 header {
@@ -21,42 +10,48 @@ header {
   overflow: hidden;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
-  border-bottom: 5px solid rgb(161, 160, 160);
+  border-bottom: 8px solid yellow;
 }
 
-h1{
+h1 {
   font-size: 48px;
-  margin: 20px;
+  margin: auto;
 }
+
 .logo {
-  width: 80px;
+  width: 150px;
   height: auto;
   padding: 10px;
 }
+
 .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
 }
+
 .navigation li a {
   text-decoration: none;
-  color: #000;
+  color: #272343;
   font-weight: 600;
   padding: 1.5rem;
 }
+
 .navigation li a:hover {
   opacity: 0.6;
-  }
+}
 
 .arch-mag {
   display: flex;
   justify-content: flex-start;
 }
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
 }
+
 li {
   display: none;
 }
@@ -73,7 +68,6 @@ li {
   margin: 30px;
   padding: 20px;
   border: solid #F0F5F9;
-  /* border-bottom: 5px solid #000;  used hr instead */
 }
 
 hr {
@@ -83,10 +77,12 @@ hr {
   background-color: rgb(59, 55, 55);
   margin: 30px;
 }
-.big-news a{
+
+.big-news a {
   text-decoration: none;
   color: grey;
 }
+
 .big-news-image {
   width: 100%;
 }
@@ -103,16 +99,17 @@ hr {
 .top-news-text {
   color: grey;
   font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
   box-sizing: border-box;
   text-decoration: none;
   margin: 40px;
 
- 
-}
- .top-projects:hover {
-    color:black;    
-  }
 
+}
+
+.top-projects:hover {
+  color: black;
+}
 
 /* ------OTHER NEWS SECTION STYLING ----- */
 
@@ -144,11 +141,14 @@ h4 {
   flex-direction: column;
   margin: 20px;
   padding: 15px;
+  border: 1px solid grey;
 }
+
 .card a {
   text-decoration: none;
   color: grey;
 }
+
 .news-image {
   width: 100%;
   display: flex;
@@ -172,13 +172,17 @@ h4 {
   padding: 3% 5%;
   text-align: center;
 }
+
 .cta-text {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
-button, button::after {
+/* ------subscribtion button & animation ----- */
+
+button,
+button::after {
   width: 200px;
   height: 66px;
   font-size: 24px;
@@ -200,7 +204,7 @@ button::after {
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-  
+
   content: 'SUBSCRIBE';
   display: block;
   position: absolute;
@@ -223,42 +227,52 @@ button:hover::after {
     clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
@@ -271,17 +285,15 @@ footer {
   text-align: center;
   padding: 3px;
   background-color: #F0F5F9;
-}
-
-.footer-info {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 footer a {
   text-decoration: none;
 }
+
 footer a:hover {
-color:blue;
+  color: blue;
 }
 
 /* ------MEDIA QUERY STYLING ----- */
@@ -297,14 +309,30 @@ color:blue;
   .navigation {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 30px;
+    font-size: 2rem;
   }
 
   li {
     display: inline-block;
-  } 
+  }
+
+  .left-links {
+    order: 0;
+  }
+
+  .right-links {
+    order: 2;
+  }
+
+  .arch-mag {
+    order: 1;
+  }
+
+  .arch-mag h1 {
+    display: none;
+  }
 
   .big-news {
     display: grid;
@@ -333,9 +361,8 @@ color:blue;
     justify-items: start;
     margin: 10px;
     border: 1px solid grey;
-    /* grid-gap: 30px;  puts a space between text and image*/
+    /* grid-gap:  puts a space between text and image*/
   }
-  
 }
 
 @media (min-width: 1200px) {
@@ -343,12 +370,30 @@ color:blue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 30px;
   }
 
-  li {
+
+  .arch-mag {
+    order: 0;
+  }
+
+  .arch-mag h1 {
     display: inline-block;
-  } 
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-links,
+  .right-links {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+  }
 
   .news-cards {
     display: grid;
@@ -360,12 +405,3 @@ color:blue;
     display: grid;
   }
 }
-    /* Things needed to be done;
-
-    - text properties
-    - header / nav bar
-    - fine tuning
-    - disable hover effect on mobile size for cards
-    
-    */ 
-
