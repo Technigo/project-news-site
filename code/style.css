@@ -86,6 +86,8 @@ margin-bottom: 5%;
 /* Styling grid news w hover effects */
 .news-card-image {
 width: 90%;
+object-fit: cover;
+height: 80%;
 /* padding: 5% 10% 0% 10%; */
 border-radius: 5%;
 justify-content: center;
@@ -133,8 +135,6 @@ align-items: center;
   .logo {
     /* width: 80px; */
     display: center;
-  
-    
   }
 
   .big-news {
@@ -169,7 +169,7 @@ align-items: center;
   }
 
   .news-card-image {
-    width: 100%;
+    
   }
   .news-card-text {
     width: 100%;
