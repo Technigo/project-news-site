@@ -95,9 +95,9 @@ a {
 }
 
 .article-title {
-  padding-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .banner-container {
@@ -211,7 +211,6 @@ hr {
   .logo-tablets-and-mobiles { 
     width: 160px;
     height: 70px;
-    margin-left: -22px;
   }
     
   .top-navicons {
@@ -233,8 +232,16 @@ hr {
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 10px;
-    max-width: 1130px;
+    max-width: 900px;
   } 
+
+  .text-spacing {
+    margin-left: 40px;
+  }
+
+  .article-title {
+    margin-top: -30px;
+  }
 
   .list-container {
     margin-bottom: 10px;
@@ -249,6 +256,7 @@ hr {
 
   .main-banner {
     max-height: 240px;
+    max-width: 450px;
     border-radius: 4px;
   }
   
@@ -258,9 +266,8 @@ hr {
     justify-self: center;
     padding: 0;
     line-height: 22px;
-    margin-left: 10px; 
     max-height: 270px;
-    max-width: 392px;
+    max-width: 270px;
   }
 
   .news-parent-container > * {
@@ -349,6 +356,7 @@ hr {
 
 .banner-container {
   margin: 50px 30px 20px 30px ;
+  max-width: 1130px;
 } 
 
 .main-banner {
