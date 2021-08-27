@@ -1,12 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week's assignment is about creating a News site using flex and or grid. 
+Also to make the site responsive between different devices.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First I watched and read the materials that we had been given to get some inspiration.
+Then I sketched out and idea of how I wanted the site to look. I started to code and along
+the way I realised that I didnt fully understand how the flex and grid worked.
+But I turned to stackoverflow and to my teamates, and I think I got the hang of it.
+I  also started over a few times when I got stuck and didnt fully understand what the problem was.
 
+For the next assignment I think im gonna structure the html first and not get stuck on the css.
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://nostalgic-fermat-8c63eb.netlify.app/
