@@ -5,13 +5,15 @@ colors
 #A2B29F
 #798777 */
 
-/* *{ 
-  border: 1px solid black;
+*{ 
+   /* border: 1px solid black; */
   margin: 0;
-}  */
+
+} 
 
 body{
   border:0;
+
 }
 
 html {
@@ -25,6 +27,7 @@ nav{
 
 h3 {
   margin:10px 0 0 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .header{
@@ -33,11 +36,18 @@ h3 {
   padding: 5% 0 5% 0;
   background-color: #798777;
   width: 100%;
+  
 }
 
 .logo {
-  width: 100px;
-  padding: 20px;
+  width: 120px;
+  padding: 50px;
+}
+
+.logo-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
 }
 /* --------BIG NEWS FOR MOBILE ------------------*/
 
@@ -55,10 +65,11 @@ h3 {
 }
 .big-news-text {
   box-sizing: border-box;
-  padding: 30px;
+  padding: 50px;
   justify-content: center;
   font-size: 14pt;
   object-fit: contain;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
   
 }
 
@@ -86,6 +97,7 @@ h3 {
   padding: 0 10px 0 10px;
   object-fit: contain;
   color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 /* Container for img i single grid-news */
 .grid-picture{
@@ -119,33 +131,31 @@ h3 {
 @media  (min-width: 668px) {
 /* HEADER for tablet*/
   nav {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
-  /* nav a {
+  nav a {
     margin: 0px 15px;
     font-size: 16pt;
     align-items: center;
     color: #F8EDE3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
   }
 
   a:link {
     text-decoration: none;
   }
  
-  /* a:visited {
-    color: black; */
-  /* }
-   
   a:active {
     color: blue;
   }
 
-  
+
  a:hover {
     text-decoration: underline;
     background-color:  lightgray;
-  } */ 
+  } 
 
 /*----------------- BIG NEWS for tablet--------------------*/
   .big-news {
@@ -192,4 +202,5 @@ h3 {
 
        
     
+}
 }
