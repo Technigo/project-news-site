@@ -3,3 +3,10 @@ html {
   color: #fff; */
 } 
 
+@media (min-width: 0px) and (max-width: 767px) {
+  header {
+    display: flex; 
+    justify-content: space-between;
+    background-color: blue;
+  }
+}
