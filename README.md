@@ -1,12 +1,21 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is the task of making a responsive news site as a first individual project of Bootcamp.
 
 ## The problem
+Problem: 
+  creating a responsive website using Flex and/or Grid in one week
+Solution:
+created a landing page of a food magazine containg information about food including recipes, facts and tips. layout is designed with the combination of flex and grid. colors and animation is used for effects.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Tools:
+  planning and Design: Figma
+  Programing Languages: HTML and CSS
+What Next:
+ 1: improving animation effect
+ 2: adding animation in hover to add more information about the recipe
+ 3:improve layout
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here one can see it live...
+https://condescending-jones-5b0297.netlify.app
