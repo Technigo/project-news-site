@@ -1,10 +1,10 @@
 # News Site
 
----
+=======
 
 This project is made in order to learn the Box Model. The layout uses Grid or Flexbox for responsive webpages for mobile, tablet and desktop.
 
-## The problem
+## The Problem
 
 ---
 
@@ -12,7 +12,7 @@ This project is made in order to learn the Box Model. The layout uses Grid or Fl
 
 - Responsiveness is achieved through resizing and re-aligning the elements in a webpages in order to accommodate the different viewport and breakpoints used by the user.
 
-### Tools and techniques used to solve it?
+### Tools and techniques used to solve the problem
 
 - Flexbox - distributes space along a single column or row.
 - Grid - divides space into columns and rows. <i>Not all browsers support Grid yet.</i>
@@ -27,4 +27,6 @@ This project is made in order to learn the Box Model. The layout uses Grid or Fl
 
 ## View it live
 
-[THE FAKE NEWS SITE] (https://frosty-bhaskara-292b4c.netlify.app/)
+---
+
+[THE FAKE NEWS SITE](https://frosty-bhaskara-292b4c.netlify.app/)
