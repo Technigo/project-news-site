@@ -252,24 +252,13 @@ h3 {
 /*                  MEDIA QUERIES                  */
 /* ----------------------------------------------- */
 
-
-
-/* Mobile */
-
-@media only screen and (max-width: 414px /*For iPhone6/7/8 Plus*/ ) { 
-
-  .hero-container {
-    height: 70vh;
-  }
-
-  .footer-list {
-   text-align: start;
- }
-}
-
-/* Big Tablets - iPad Pro*/
+/* Big Tablets - iPad Pro */
 
 @media only screen and (max-width: 1024px) {
+
+.body {
+    font-size: 20px;
+}
 
 .main-news-container {
   flex-wrap: wrap;
@@ -281,8 +270,11 @@ h3 {
   padding: 3% 9%;
   } 
 
-}
+  .read-more-link {
+    font-size: 14px;
+  }
 
+}
 
 /* Small Tablets */
 
@@ -332,4 +324,18 @@ h3 {
     font-size: 20px;
   }
 
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 414px /*For iPhone6/7/8 Plus*/ ) { 
+
+  .hero-container {
+    height: 70vh;
+  }
+
+  .footer-list {
+   text-align: start;
+ }
 }

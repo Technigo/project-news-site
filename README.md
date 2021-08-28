@@ -1,12 +1,29 @@
-# News Site
+# nuntii
 
-Replace this readme with your own information about your project. 
+nuntii means "news" in Latin. In a world saturated by bad news, this is a static website based on the concept of finding the silver lining of life — one news at a time.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## Pre-production
 
-## The problem
+*The pre-production-sketches folder includes the earlier designs of the website, first on paper and then on Figma. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+*The initial design was desktop-first and was later adapted to focus on mobile. 
+
+## Features
+
+* Only HTML and CSS were used
+*Flexbox and grid for different sections of the page layout
+*Responsive column model for the grid of articles (4 col. for desktop, 2 for tablet and 1 for mobile)
+*Some simple hover effects on links and images
+*Shadow box on images
+* Brand image (logo, name, color theme) designed by the website's author
+* Copy written by the author
+
+## Future implementations
+
+*Accessibility, especially readibility on mobile 
+*UX: More intuitive call-to-action buttons 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+nuntii.netlify.app
