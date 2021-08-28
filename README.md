@@ -8,4 +8,4 @@ Create a classic magazine or newspaper site. The site should contain a header wi
 Is trated by watching the tutorial videos to learn about boxmodel, grid and flexbox. I practise the coding on my own and used figma to create a sketch for the website and the different view alternatives starting with mobile first. I think I went a bit over my head and confused myself in the code when I combinde flexbox and grid layouts and struggled with positioning. I had to take a step back and decided to only use the grid to create the layout of the page. I played around with some hover effects and if I had more time I would have made the images inside the grid container in the same size when displayed in tablet and desktop view. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://artsynews.netlify.app/
