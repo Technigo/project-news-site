@@ -1,6 +1,6 @@
 html {
-  background: white;
-  color: red;
+  background: #D9CAB3;
+  color: black;
 }
 
 header {
@@ -39,15 +39,17 @@ margin-bottom: 50px;
   flex-direction: column;
   color: black;
   align-items: center;
+  
 }
 
 .main-story {
   width: 90%;
   margin-bottom: 23px;
   text-align: center;
-}
-.main-story:hover {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 2% 0% 10% 0%;
 }
 
 .main-photo {
@@ -56,7 +58,7 @@ margin-bottom: 50px;
 }
 
 .main-photo:hover {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 12px 12px 2px 1px #5C3D2E;
 }
 
 .card {
@@ -69,7 +71,7 @@ margin-bottom: 50px;
 }
 
 .card:hover {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 12px 12px 2px 1px #5C3D2E;
 }
 
 .card-photo {
@@ -81,25 +83,6 @@ margin-bottom: 50px;
  margin: 0% 0% 0% 0%;
 }
 
-.small {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style:none;
-  color: black;
-  background-color: pink;
-  margin-top: 10px;
-  line-height: 150px;
-  color: black;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -108,7 +91,82 @@ margin-bottom: 50px;
 }
 
 @media (min-width: 668px) {
+  html {
+    background: #D9CAB3;
+    color: black;
+  }
   
+  header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 50px;
+  }
+  
+  .logo {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   }
+  
+   .list {
+    list-style-type: none;
+   }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .intro {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+  }
+
+  .main-story {
+    width: 50%;
+    margin-bottom: 23px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .main-photo {
+    width: 50%
+  }
+  
+  .main-photo:hover {
+    box-shadow: 12px 12px 2px 1px #5C3D2E;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    width: 47%;
+  }
+
+  .footer {
+  display: flex;
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
+  height: 150px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -120,11 +178,11 @@ margin-bottom: 50px;
   }
   
   .logo {
-    height: 100%;
+    height: 200%;
     margin: 0;
     padding: 0;
-   }
-  
+}
+
    .list {
     list-style-type: none;
    }
@@ -147,29 +205,33 @@ margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     color: black;
-    justify-content: space-between;
+    margin: 5%;
   }
   
   .main-story {
-    width: 49%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: auto;
   }
-  .main-story:hover {
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-  }
-  
-  .main-photo {
-    width: -webkit-fill-available;
-  }
-  
-  .card {
+ 
+  .card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
     color: black;
-    justify-content: space-between;
+    align-items: center;
+    width: 23%;
   }
   
   .card:hover {
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px #5C3D2E;
   }
   
   .card-photo {
@@ -181,30 +243,10 @@ margin-bottom: 50px;
    margin: 0% 0% 0% 0%;
   }
   
-  .small {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style:none;
-    color: black;
-    background-color: pink;
-    margin-top: 10px;
-    line-height: 150px;
-    color: black;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-  }
-  
   .footer {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: sandybrown;
   } 
 }
