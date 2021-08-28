@@ -1,12 +1,30 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+---
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is made in order to learn the Box Model. The layout uses Grid or Flexbox for responsive webpages for mobile, tablet and desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+---
+
+### How is page responsiveness achieved?
+
+- Responsiveness is achieved through resizing and re-aligning the elements in a webpages in order to accommodate the different viewport and breakpoints used by the user.
+
+### Tools and techniques used to solve it?
+
+- Flexbox - distributes space along a single column or row.
+- Grid - divides space into columns and rows. <i>Not all browsers support Grid yet.</i>
+
+### Problem-solving approach
+
+- I tried to use both Grid and Flexbox and experimented on how to do web layouts with them. I find Flexbox to be easier to use. Grid on the other hand has more complexity in using it. I used `<main>` semantic element to contain my cards and applied the necessary layout for the elements using Flexbox.
+
+### Future improvements:
+
+- I would try to use more Grid in layouts.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+[THE FAKE NEWS SITE] (https://frosty-bhaskara-292b4c.netlify.app/)
