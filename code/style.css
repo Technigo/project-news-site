@@ -399,6 +399,13 @@ position: relative;
     box-shadow: 0.4rem 0.4rem #333;
   }
 
+  .fox-logo:hover {
+    position: relative;
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.4s;
+  }
+
   .section-heading h2 {
     margin-left: 10%;    
   }
@@ -481,8 +488,4 @@ position: relative;
     transform: scale(1.1);
     transition-property: all;
     transition-duration: 0.4s;
-  }
-
-  .footer {
-  
   }
