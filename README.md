@@ -14,4 +14,4 @@ If I had more time I would also have added a button to the bottom of the text bl
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://pensive-noyce-ed8f3b.netlify.app/
