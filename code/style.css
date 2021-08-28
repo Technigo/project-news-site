@@ -55,9 +55,10 @@ a:visited {
 .category-bottom {
   display: flex;
   justify-content: flex-start;
-  margin: 10px;
+  /* margin: 10px; */
   padding-bottom: 5px;
   color: rgb(236, 54, 54);
+  font-size: 16px;
   text-transform: uppercase;
   text-shadow: 0.5px 0px;
 }
@@ -133,7 +134,7 @@ a.inline-link {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
-  margin: 50px;
+  margin: 20px;
 }
 
 .small-news-container {
@@ -146,7 +147,7 @@ a.inline-link {
   border-top: 3px solid peachpuff;
   /* box-shadow: 2px 2px peachpuff; */
   border-radius: 1 rem;
-  padding: 2rem;
+  padding: 1rem;
   /* background: rgb(255, 213, 231); */
 }
 
@@ -196,10 +197,6 @@ a.inline-link {
 
   .navigation {
     justify-content: flex-end;
-  }
-
-  .category {
-    display: none;
   }
 
   .preamble {
