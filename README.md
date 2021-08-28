@@ -11,4 +11,4 @@ If I hade more time I would have thoroughly gone through both grid and flexbox t
 ## View it live
 
 
-https://infallible-pike-4e8dfa.netlify.app/
+https://lisapblome-w2-newssite.netlify.app/
