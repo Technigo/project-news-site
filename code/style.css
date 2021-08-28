@@ -1,5 +1,5 @@
 html {
-  color: #272343;
+  color: #000;
   font-family: 'Cutive Mono', monospace;
 }
 
@@ -29,7 +29,7 @@ h1 {
 .left-links, .right-links {
   display: none;
   text-decoration: none;
-  color: #272343;
+  color: #000;
   font-size: 36px;
   font-weight: 600;
   padding: 20px;
@@ -56,7 +56,9 @@ h1 {
   border: solid #F0F5F9;
 }
 
-
+.big-news-text {
+  font-weight: lighter;
+}
 
 
 
@@ -90,14 +92,11 @@ hr {
 }
 
 .top-news-text {
-  color: grey;
+  color: #bababa;
   font-size: 2rem;
-  font-family: 'Bebas Neue', cursive;
   box-sizing: border-box;
   text-decoration: none;
   margin: 40px;
-
-
 }
 
 .top-projects:hover {
@@ -125,7 +124,7 @@ h4 {
   flex-direction: column;
   align-content: center;
   text-align: justify;
-  margin: 30px;
+  margin: 10px 30px 30px;
 }
 
 .card {
@@ -134,7 +133,7 @@ h4 {
   flex-direction: column;
   margin: 20px;
   padding: 15px;
-  border: 1px solid grey;
+  border: 1px solid #F0F5F9;
 }
 
 .card a {
@@ -347,7 +346,7 @@ footer a:hover {
     display: grid;
     justify-items: start;
     margin: 10px;
-    border: 1px solid grey;
+    border: 1px solid #F0F5F9;
     /* grid-gap:  puts a space between text and image*/
   }
 }
