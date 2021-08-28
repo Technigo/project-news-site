@@ -32,7 +32,7 @@ header {
 }
 
 .flex-child {
-  margin-left: 31%;
+  margin-left: 18%;
 }
 
 a {
@@ -110,26 +110,26 @@ footer {
   object-fit: cover;
 }
 
-.news-images {
+.small-news-images {
   object-fit: cover;
   width: 100%;
   height: 61vw;
 }
 
-.grid-news,
-.hero-news-grid {
+.small-news-section,
+.hero-article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
 
-.hero-news {
+.hero-section {
   margin-bottom: 40px;
 }
 
-.hero-news-image,
+.hero-image-container,
 .hero-text,
-.grid-news article {
+.small-news-section article {
   grid-column: span 4;
 }
 
@@ -154,23 +154,23 @@ p:hover {
 
 /* Specification for tablet */
 @media (min-width: 768px) and (max-width: 1231px) {
-  .hero-news-image,
+  .hero-image-container,
   .hero-text,
-  .grid-news article {
+  .small-news-section article {
     grid-column: span 2;
   }
   .hero-headline-3,
   .hero-paragraph-3 {
     display: none;
   }
-  .hero-news {
+  .hero-section {
     margin-bottom: 80px;
   }
   header {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .news-images {
+  .small-news-images {
     height: 29vw;
   }
   article {
@@ -183,19 +183,19 @@ p:hover {
 
 /* Specification for desktop */
 @media (min-width: 1232px) {
-  .hero-news-image {
+  .hero-image-container {
     grid-column: span 3;
   }
   .hero-text {
     grid-column: span 1;
   }
-  .grid-news article {
+  .small-news-section article {
     grid-column: span 1;
   }
   .flex-child {
-    margin-left: 25px;
+    margin-left: 30px;
   }
-  .hero-news {
+  .hero-section {
     margin-bottom: 80px;
   }
   header {
@@ -205,19 +205,19 @@ p:hover {
   footer {
     display: none;
   }
-  .news-images {
+  .small-news-images {
     height: 15vw;
   }
-  .grid-news article {
+  .small-news-section article {
     transition: all 0.2s ease-in-out;
   }
-  .grid-news article:hover {
+  .small-news-section article:hover {
     transform: scale(1.03);
   }
-  .hero-news-grid {
+  .hero-article {
     transition: all 0.2s ease-in-out;
   }
-  .hero-news-grid:hover {
+  .hero-article:hover {
     transform: scale(1.01);
   }
 }
