@@ -15,99 +15,6 @@ body {
   box-sizing: inherit;
 }
 
-/* Here starts the header responsive mobile first styling  */
-
-/* .header-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  line-height: 1rem;
-  overflow: hidden;
-  margin: 0.5rem;
-  background-color: white;
-} */
-
-/* .logo, 
-.nav-menu {
-  text-transform: uppercase;
-} */
-/* .nav-menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-} */
-
-/* .nav-item {
-  flex: 1 0 50%;
-  text-align: center;
-} */
-
-/* .logo a, 
-.nav-menu a {
-  display: block;
-  text-decoration: none;
-  letter-spacing: 0.2rem;
-  padding: 0.8rem;
-}
-
-.logo {
-  margin: 0 auto;
-
-}
-
-.logo a {
-  color: #eb603d;
-}
-
-.nav-menu a {
-  color: black;
-  transition: all ease-in-out 0.5s;
-}
-
-.nav-menu a:hover {
-  color: #eb603d;
-  transform: scale(1.1);
-}
-
-.nav-menu a:active {
-  transform: scale(0.9);
-} */
-
-/* Header Resposnive styling tablet */
-
-/* @media (min-width: 680px) {
-  .header-nav {
-    line-height: 1.5rem;
-  }
-  .nav-menu {
-    width: 100%;
-  }
-.nav-item {
-  flex: 1 0 10%;
-}
-} */
-
-/* Header Resposnive styling desktop */
-
-/* @media (min-width: 980px) {
-  .header-nav {
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-  .nav-menu {
-    width: auto;
-  }
-  .logo {
-    margin: 0 0 0 0.3rem;
-  }
-} */
-
-/* End header Version 1 styling */
 
 .header {
   background-color: white;
@@ -183,7 +90,6 @@ img.close.show {
 
 }
   
-
 
 /* Starts Big News Section */
 
@@ -291,7 +197,6 @@ img.close.show {
 
 .container {
   overflow: hidden;
-  /* box-shadow: 0px 2px 8px 0px gray; */
   background-color: white;
   text-align: center;
   border-radius: 1rem;
@@ -302,7 +207,6 @@ img.close.show {
 }
 
 .photo {
-  /* position: absolute; */
   height: 20rem;
   width:100%;
 }
@@ -322,16 +226,6 @@ img.close.show {
   line-height: 22px;
   font-family: Georgia,serif;;
 }
-
-/* .btn {
-  width: 100%;
-  border: none;
-  font-weight: bold;
-  color: aliceblue;
-  background-color: blue;
-  padding: 1rem;
-} */
-
 
 
 /* here starts the fact session  */
@@ -425,4 +319,3 @@ img.close.show {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
