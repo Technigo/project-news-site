@@ -178,7 +178,7 @@ h3 {
   
   .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   align-items: stretch;
   
@@ -261,10 +261,6 @@ h3 {
   .hero-container {
     height: 70vh;
   }
-/* 
-  .grid {
-    grid-template-columns: 1fr;
-     grid-template-rows: repeat(8, 1fr); } */
 
   .footer-list {
    text-align: start;
@@ -309,9 +305,9 @@ h3 {
     padding: 0;
     } 
   
-  /* .grid {
+  .grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-  }  */
+  } 
 
    .footer-list {
     text-align: start;
