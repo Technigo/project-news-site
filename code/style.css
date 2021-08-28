@@ -186,7 +186,7 @@ a.inline-link {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -212,14 +212,14 @@ a.inline-link {
   margin: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .header {
     /* background-color: rgb(255, 238, 224); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0px 20px; */
+    padding: 0px 20px;
     /* margin: 25px 40px; */
   }
 
@@ -234,7 +234,9 @@ a.inline-link {
   .navigation {
     justify-content: flex-end;
   }
+}
 
+@media screen and (min-width: 992px) {
   .preamble {
     font-size: 30px;
   }
