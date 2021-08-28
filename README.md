@@ -10,5 +10,4 @@ If I hade more time I would have thoroughly gone through both grid and flexbox t
 
 ## View it live
 
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://infallible-pike-4e8dfa.netlify.app/
