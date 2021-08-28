@@ -11,4 +11,4 @@ Since this was my first assignment I had to ask for help and google a lot. i was
 If I would have more time I think i would have done the smaller news section with grid so i could more easily decide 1-4 layout btween differnet devices. I would also like to style it more making it look better.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://elsa-bjelkedal-week2.netlify.app/
