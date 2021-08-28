@@ -26,7 +26,8 @@ h1 {
   padding-right: 30px;
 }
 
-.left-links, .right-links {
+.left-links,
+.right-links {
   display: none;
   text-decoration: none;
   color: #000;
@@ -35,7 +36,8 @@ h1 {
   padding: 20px;
 }
 
-.left-links:hover, .right-links:hover {
+.left-links:hover,
+.right-links:hover {
   opacity: 0.6;
 }
 
@@ -59,11 +61,6 @@ h1 {
 .big-news-text {
   font-weight: lighter;
 }
-
-
-
-
-
 
 hr {
   width: 90%;
@@ -173,7 +170,8 @@ h4 {
 
 /* ------subscribtion button & animation ----- */
 
-button, button::after {
+button,
+button::after {
   width: 200px;
   height: 66px;
   font-size: 24px;
@@ -316,7 +314,8 @@ footer a:hover {
     display: flex;
   }
 
-  .left-links, .right-links {
+  .left-links,
+  .right-links {
     display: block;
   }
 
@@ -359,12 +358,15 @@ footer a:hover {
     justify-items: start;
     grid-gap: 30px;
   }
+
   .big-news-text {
     margin: auto;
   }
+
   /* this two selector just same as with the one int he tablet mode but if i don't set it the image  doesn't use the grid layout */
 
-  .left-links, .right-links {
+  .left-links,
+  .right-links {
     display: block;
   }
 
