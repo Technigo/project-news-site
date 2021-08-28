@@ -20,9 +20,9 @@ nuntii means "news" in Latin. In a world saturated by bad news, this is a static
 
 ## Future implementations
 
-*Accessibility, especially readibility on mobile 
-*UX: More intuitive call-to-action buttons 
+Accessibility requirements. Also UX: More intuitive call-to-action buttons 
 
+Possibly animations
 
 ## View it live
 
