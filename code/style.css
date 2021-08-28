@@ -17,6 +17,7 @@ padding: 5px;
 
 .navbar a {
   font-size: 15px;
+  font-weight: bold;
   color: black;
   padding: 10px;
   text-decoration: none;
@@ -25,8 +26,9 @@ padding: 5px;
 }
 
 .navbar a:hover {
-  background-color: #FF9F00;
+  background-color: #1F7980;
   transition: 0.2s;
+  color: white;
 }
 
 .headline-section-grid {
@@ -47,8 +49,10 @@ padding: 5px;
 
 .title-grid {
   grid-column: span 3;
-  height: 70px;
-  width: 100%;
+  text-align: center;
+  content: "";
+  display:inline-flex;
+  padding-top: 20px;
 }
 
 .bignews-grid1 {
@@ -63,13 +67,11 @@ padding: 5px;
 }
 
 .body-section-grid {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px;
   grid-gap: 15px;
   background: white;
-  height: 400px;
 }
 
 .smallnews-grid1, .smallnews-grid2, .smallnews-grid3, .smallnews-grid4 {
@@ -95,11 +97,11 @@ padding: 5px;
 }
 
 .grid-pic img {
-  align-self: flex-end;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-name: logobounce;
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  margin: 10px;
 }
 @keyframes logobounce {
   0%   { transform: scale(1,1)      translateY(0); }
@@ -112,22 +114,23 @@ padding: 5px;
 }
 
 h1 {
-  font-size: 27px;
-  font-family: 'Rampart One', cursive;
+  font-size: 25px;
+  font-family: 'Averia Serif Libre';
+  font-weight: lighter;
+  letter-spacing: 3px;
   width: 100%;
-  color: #FF9F00;
-  padding-left: 10px;
+  padding: 18px 0px 0px 10px;
   animation-name: example;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
  @keyframes example {
-   0% {color: #FF9F00;}
-   25% {color: #ff7b00;}
-   50% {color: #ff5100;}
-   75% {color: #ff3c00;}
-   100% {color: #ff0000;}
+   0% {color: #B36A5E;}
+   25% {color: #C97C5D;}
+   50% {color: #C89F9C;}
+   75% {color: #EED7C5;}
+   100% {color: #EEE2DF;}
  }
 
 h2 {
@@ -147,11 +150,11 @@ h3 {
  }
 
  h2:hover {
-   color: #FF9F00;
+   color: #1F7980;
  }
 
  h3:hover {
-  color: #FF9F00;
+  color: #1F7980;
 }
 
  img {
@@ -159,9 +162,18 @@ h3 {
 }
 
 footer {
-  position: fixed;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+  background-color: #EED7C5;
   width: 100%;
+  grid-column: span 4;
+  line-height: 7px;
+}
+
+.signature {
+  font-family: 'Nothing You Could Do';
+
 }
 
  /* tablets*/
@@ -211,7 +223,7 @@ footer {
    }
    
    h1 {
-    font-size: 50px;
+    font-size: 65px;
   }
 
   h2 {
