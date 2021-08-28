@@ -1,4 +1,194 @@
+*, *::before, *::after { box-sizing: inherit;}
+
 html {
-  background: #0025ff;
-  color: #fff;
+    display: flex;
+    background: #d89191; 
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+
+ header { 
+    display: flex;
+    background-color: black;
+    border: 5px outset red;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.header-child {
+  margin: 5px;
+  width: 20%;
+  height: 80%;
+}
+
+.titel {
+  display: flex;
+  font-size: 100px;
+  text-align: center;
+
+}
+
+.navigation {
+    display: flex;
+    background-color: #d89191;
+    border: 5px solid green;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.technico {
+  background-color: #d89191;
+    border: 5px solid blue;
+}
+
+.zebra {
+  height:100%;
+  border: 5px solid white;
+ }
+
+ 
+
+ .small-news {
+  border:2px solid transparent;
+  display: grid;
+  width:auto;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: center;
+  justify-content: center;
+  gap: 4px;
+ }
+
+  img {
+    display: flex;
+    border: solid black;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+  }
+
+ .small-news-1 {
+   border: solid blue;
+}
+
+.small-news-2 {
+  border: solid white;
+}
+
+.small-news-3 {
+  border: solid green;
+}
+
+.small-news-4 {
+  border: solid red;
+}
+
+@media (min-width: 768px) {
+  .small-news {
+    grid-template-columns: 1fr 1fr;
+  }
+  .big-news {
+    display: flex;
+    border: 2px solid transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  .small-news {
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+     }
+    .big-news {
+      display: flex;
+      border: 2px solid transparent;
+    }
+}
+
+
+
+/* .big-news {
+  margin-top: 50px;
+  width: 600px;
+  height: 450px;
+} */
+
+/* .big-news-tekst {
+  display: flex;
+  
+} */
+
+/* @media (min-width: 768px) {
+
+} */
+
+
+
+
+/*a {
+  display: flex;
+  color: #FFFFFF;
+  justify-content: center;
+}
+.big-news {
+  display: grid;
+
+
+}
+
+
+.small-news {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+   .technigo {
+     width: 200px;
+   }
+   
+
+ }
+@media (min-width: 992px){
+  .technigo {
+    width: 300px;
+  }
+  
+
+  .big-news-picture {
+    display: flex;
+    margin: auto;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+  
+  .small-news { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+  }
+  .small-news-tekst-1 {
+    background-color: blue;
+    width: 200px;
+  }
+  .small-news-tekst-2 {
+    background-color: black;
+    width: 200px;
+  }
+  .small-news-tekst-3 {
+    background-color: green;
+    width: 200px;
+  }
+  .small-news-tekst-4 {
+    background-color: red;
+    width: 200px;
+  }
+} */
+
+
+
+
+
+
+
