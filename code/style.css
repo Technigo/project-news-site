@@ -11,11 +11,16 @@ html {
 
 .logo {
   width: 100px;
+  margin: 25px;
 }
 
 h1 {
   display: flex;
-  align-items: center;
+  align-items: center; 
+}
+
+h2 {
+  font-size: large;
 }
 nav {
   display: none;
@@ -25,10 +30,14 @@ nav {
 .big-news {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 .big-news-image {
   min-width: 250px;
+  padding: 25px
 }
 
 /* small news */
@@ -59,6 +68,7 @@ nav {
   width: 250px
 }
 
+/* tablet*/
 @media (min-width: 768px) {
   /* header */
   .logo {
@@ -78,12 +88,12 @@ nav {
   /* big news */
   .big-news {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
 
   .big-news-text {
     width: 300px;
+    flex-grow: 4;
   }
 
   /* small news */
@@ -93,6 +103,7 @@ nav {
   }
 }
 
+/* desktop*/
 @media (min-width: 1200px) {
 /* small news */
   .grid-container {
