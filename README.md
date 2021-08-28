@@ -24,4 +24,4 @@ I would also like to create a similiar page using grid.
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://goofy-ride-7c0ed5.netlify.app
