@@ -3,6 +3,11 @@ html {
   background: #fff;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -178,13 +183,18 @@ p {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(4, 0.7fr);
     column-gap: 5px;
-    align-items: stretch;
+    justify-items: center;
   }
 
   .small-img {
     width: 370px;
     height: auto;
-   }
+  }
+
+  .small-news-paragraph {
+    width: 370px;
+    height: auto;
+  }
 }
 
 /* desktop */
@@ -192,6 +202,7 @@ p {
   .burger {
     display: none;
   }
+
 
   .logo {
     width: 300px;
