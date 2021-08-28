@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+The assignment was to create a classic news site with a responsive design. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+
 
 ## The problem
+The problem i had was the content not aligning the way i intended them to. I then started from scratch and managed to solve it by placing the content in divs. I started out by just using flexbox, but then decided to try and make a copy with both flexbox and grid. The mixed layout looked better, so decided to use that code instead. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here's the deployed project: https://loving-goldberg-e49bb3.netlify.app/ 
