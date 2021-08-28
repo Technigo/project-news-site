@@ -6,7 +6,7 @@ The assignment was to create a responsive news site that contains a header, big 
 
 This is my first individual project and I am proud of what I managed to do and learn in the short amount of time.
 
-Things I struggled with was how to crop the images to the same aspect ratio without them being stretched or squished to fit and still having images be responsive. I learned how to use “object fit: cover” and that percentages (%) refers to the parent and vh is used for the percentages of viewport height and vw is used for the percentages of viewport width. I also struggled with how I should name the different classes to make them clear for both me and others who looks at my code.
+Things I struggled with was how to crop the images to the same aspect ratio without them being stretched or squished to fit and still having images be responsive. I learned how to use “object fit: cover” and that percentages (%) refers to the parent and vh stands for viewport height and vw stands for viewport width. I also struggled with how I should name the different classes to make them clear for both me and others who looks at my code.
 
 I’ve also learned how to use CSS Grid and flexbox, how to target a child while hovering a parent, basic CSS animation and a lot more.
 
