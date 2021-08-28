@@ -122,6 +122,10 @@ img.close.show {
   letter-spacing: .2em;
 }
 
+.text-big-news {
+  padding: 1rem;
+}
+
 @media screen and (min-width:600px) {
   .container-big {
     flex-direction: row;
@@ -162,7 +166,7 @@ img.close.show {
   }
 
   .text-big-news {
-    padding: 0 2rem;
+    padding: 0 3rem;
     font-size: 19px;
   }
 
@@ -327,6 +331,11 @@ img.close.show {
   height: 50px;
   margin: 30px 30px 0px 20px;
 }
+
+.description-pt {
+  padding-right: 1rem;
+}
+
 
 @media screen and (min-width:500px) {
   .wrapper-grid-pt {
