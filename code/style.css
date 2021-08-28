@@ -1,3 +1,5 @@
+/* Mobile first*/
+
 html {
   background: #e4eef3;
   color: rgb(56, 54, 54);
@@ -21,6 +23,7 @@ html {
 a {
 text-decoration: none;
 margin-right: 20px;
+color: black;
 }
 
 a:hover {
@@ -45,6 +48,8 @@ h1:hover {
   color: rgb(112, 60, 233);
 }
 
+/* big news style */
+
 .big-news {
   display: flex;
   flex-direction: column;
@@ -63,6 +68,8 @@ h1:hover {
   padding: 10px 5px;
 }
 
+/* other news style */
+
 .other-news {
   display: flex;
   flex-direction: column;
@@ -73,8 +80,7 @@ h1:hover {
   width: 100%;
   background-color: white;
   padding: 5px;
-  border-radius: 5px;
-  margin: 20px;
+  margin: 20px auto;
   box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align:inherit;
 } 
@@ -83,8 +89,7 @@ h1:hover {
   width: 100%;
   background-color: white;
   padding: 0 0 5 0px;
-  border-radius: 5px;
-  margin: 20px;
+  margin: 20px auto;
   box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
@@ -102,13 +107,12 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
   cursor: pointer;
 }
 
 button:hover {
   background-color: rgb(134, 197, 134);
-  color: white;
   font-size: 20px;
   text-decoration: none;
 }
@@ -117,7 +121,9 @@ button:hover {
   display: none;
 }
 
-img {max-width:100%;}
+img {
+  max-width:100%;
+}
 
 footer {
   border-top: 2px solid gray;
@@ -126,6 +132,7 @@ footer {
   text-align: right;
 }
 
+/* Tablet style */
 
 @media (min-width:768px) {
 
@@ -147,36 +154,27 @@ footer {
     border-radius: 50%;
   }
 
-  .link1 {
-    grid-column: 1;
+  .link1, .link2, .link3, .link4 {
     margin-right: 5px;
     text-decoration: none;
     color: black;
     font-size: 20px;
+  }
+
+  .link1 {
+    grid-column: 1;
   }
   
   .link2 {
     grid-column: 2;
-    margin-right: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
   }
   
   .link3 {
     grid-column: 4;
-    margin-right: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
   }
   
   .link4 {
     grid-column: 5;
-    margin-right: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
   }
 
   h1 {
@@ -207,8 +205,16 @@ footer {
   .slogan {
     margin-left: 10px;
   }
+  
   a {
-    color: white;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(109, 204, 207);
+    font-weight: bolder;
+    text-decoration: none;
   }
 
   .big-news {
@@ -222,26 +228,28 @@ footer {
     margin: 10px;
   }
 
-.other-news {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  .other-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
   }
 
-.card {
-  width: 100%;
-  background-color: rgb(243, 239, 239);
+  .card {
+    width: 100%;
+    background-color: rgb(243, 239, 239);
   } 
 
-.card-pic {
-  background-color: rgb(243, 239, 239);
-}
-
-.other-news-link {
-  color:black;
+  .card-pic {
+    background-color: rgb(243, 239, 239);
   }
 
-}
+  .other-news-link {
+    color:black;
+  }
+
+  }
+
+/* Desktop style */
 
 @media (min-width: 992px) {
 
