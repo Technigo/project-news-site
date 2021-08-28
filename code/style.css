@@ -38,6 +38,8 @@ p {
   font-weight: 200;
   color: #333;
   margin-bottom: 2rem;
+  margin-right: 1rem;
+  width: auto;
 }
 
 .header {
@@ -71,10 +73,6 @@ a {
   min-width: 96px;
   margin-right: 0.5rem;
   margin-top: 1rem;
-}
-
-.technigo-logo {
-    width: 40px;
 }
 
 .fox-logo {
@@ -117,9 +115,6 @@ a {
 .the-fox {
   height: 44px;
   width: auto;
-  /* background-color: #fff;
-  padding: 1rem;
-  border-radius: 50%; */
 }
 
 .navigation a {
@@ -202,19 +197,60 @@ position: relative;
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
-  padding: 1rem;
+  padding: 0.4rem 0 0.4rem 0;
   left: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   background-color: #f8f8f8;
+}
+
+.technigo-logo {
+  width: 40px;
+}
+
+.github-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.technigo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  margin-right: 1rem;
 }
 
 
 @media (max-width: 767px) {
 
   #link-id {
-  display: none;
+    display: none;
+  }
+
+  .footer p {
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 14px;
   }
 
 }
@@ -298,8 +334,14 @@ position: relative;
     width: 64px;
   }
 
-  .footer {
-    padding: 1rem 2rem 1rem 2rem;
+  .github-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer p {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
   }
 
 }
@@ -313,12 +355,7 @@ position: relative;
 
   .header {
     align-items: center; 
-    padding: 2rem 2rem 2rem 2rem;
-  }
-
-
-  .technigo-logo {
-    width: 64px;  
+    padding: 1.5rem 2rem 2rem 2rem;
   }
 
   .button-link {
@@ -414,6 +451,7 @@ position: relative;
 
   .small-news-item:hover {
     box-shadow: 0.6rem 0.6rem #333;
+    transform: scale(1.01);
   }
 
   .quote {
@@ -426,8 +464,25 @@ position: relative;
     max-width: 500px;
   }
 
-  .footer {
-    padding: 1rem 2rem 1rem 2rem;  
+  .technigo {
+    margin-left: 2rem;
   }
 
-}
+  .technigo-logo {
+    width: 56px;  
+  }
+  
+  .github {
+    margin-right: 2rem;
+  }
+
+  .footer a:hover {
+    position: relative;
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.4s;
+  }
+
+  .footer {
+  
+  }
