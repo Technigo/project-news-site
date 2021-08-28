@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assingment was to create a magazine or newspaper web page that could adapt do both mobile and table size. It was supposed to have different size news and use CSS grid or flexbox in it's design. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started the project by planning it on paper and deciding it's theme. When I started coding, I got too excited and stopped following the initial plan. That led to a great mess in both code and web page. I then decided to start again, following the plan and using the mobile first approach. I reused parts of the previous code and was able to create a cleaner code and more pleasing looking web page.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+The project is available for visualization in the following link
+
+https://thedogmagazine.netlify.app/
