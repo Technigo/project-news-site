@@ -301,6 +301,7 @@ img.close.show {
   grid-gap: 2rem;
   margin-top: 4rem;
   background-color: #fff7f2;
+  margin-bottom: 4rem;
 }
 
 .container-pt {
@@ -318,4 +319,15 @@ img.close.show {
   .wrapper-grid-pt {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fd9f07;
+  flex-direction: column;
+}
+
+.logo-footer {
+  padding: 15px;
 }
