@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This assignment was to create a responsive news site. See the file newssite-sketch.png for a sketch on how the site should look.
 
 ## The problem
 

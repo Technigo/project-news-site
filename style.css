@@ -9,46 +9,63 @@ body {
   font-family: 'Hina Mincho', serif;
   }
 
+
+  /* styling navigationbar */
 .navigation {
   display: flex;
   margin: auto;
   margin-top: -1rem;
   justify-content: space-evenly;
   align-items: center;
+  padding: 1rem;
 }
+/* .hero {
+height: 100%;
+width:  100%;
+background-size: 600%;
+background: linear-gradient(45deg, orange, #e94584, #24aadb);
+animation-name: wave;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+} */
+
+/* @keyframes wave {
+  0% {background-position: 0%;}
+  100% {background-position: 100%;}
+} */
 
 .logo {
-  max-width: 20%;
-  min-width: 111px;
-  border-radius: 100%;
+  max-width: 10%;
+  min-width: 5%;
+  border-radius: 100%%;
+  box-shadow: 0px 2px 4px -1px grey;
 }
 
 h1 {
   text-align: center;
   font-size: 2rem;
   font-family: 'Kaisei Opti', serif;
-}
+  visibility: visible;
+} 
 
 h3, h4 {
   font-family: 'Kaisei Opti', serif;
 }
 
-.top-link {
+.link {
   color: black;
-  text-transform: uppercase;
+  padding: 0.2rem;
+  visibility: hidden;
+  font-size: 0%;
 }
 
-.top-link:hover {
+.link:hover {
   color: grey;
   text-decoration: none;
 }
 
-.top-bar li {
-  list-style: none;
-  float: right;
-  padding: 0.5rem;
-}
-
+/* styling big news, top of page */
 .big-news {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -57,10 +74,15 @@ h3, h4 {
   margin: 1rem;
 }
 
+.big-news:hover {
+  box-shadow: 0px 2px 8px -1px grey;
+}
+
 .big1, .big2 {
   grid-column: span 8;
 }
 
+/* styling small/other news cards*/
 .other-news {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -73,7 +95,11 @@ h3, h4 {
   grid-column: span 8;
   display: flex;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem;
+}
+
+.other1:hover, .other2:hover, .other3:hover, .other4:hover, .other5:hover, .other6:hover, .other7:hover {
+  box-shadow: 0px 2px 4px -1px grey;
 }
 
 .img-news {
@@ -85,6 +111,7 @@ img {
   border-radius: 5%;
 }
 
+/* footer with link to index-page */
 footer {
   margin: auto;
   letter-spacing: 0.2rem;
@@ -98,19 +125,20 @@ footer {
 }
 
 footer p a {
-  text-decoration: none;
   text-transform: uppercase;
   font-family: 'Kaisei Opti', serif;
 }
 
 footer p a:hover {
-  background-color: rgba(248, 213, 170, 0.952);
+  color: grey;
+  text-decoration: none;
 }
 
 footer p a:visited {
   color: black;
 }
 
+/* styling for tablet */
 @media (min-width:668px) and (max-width:1024px){
   .big1, .big2 {
     grid-column: span 4;
@@ -120,16 +148,23 @@ footer p a:visited {
     grid-column: span 4;
   }
 
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-  }
-
   body {
     margin: 3rem;
   }
+
+  h1 {
+    visibility: hidden;
+    font-size: 0%;
+  }
+  
+  .link {
+    visibility: visible;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
 }
 
+/* styling for desktop */
 @media (min-width:1025px) {
   .big1, .big2 {
     grid-column: span 4;
@@ -146,5 +181,11 @@ footer p a:visited {
 
   body {
     margin: 3rem;
+  }
+  
+  .link {
+    visibility: visible;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 }
