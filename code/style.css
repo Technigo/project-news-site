@@ -175,7 +175,7 @@ img.close.show {
   
 }
 
-/* Starts section two - flexbox card design with pic */
+/* Starts section two - flexbox card design with pic without @media */
 
 .section-title {
   font-family: Montserrat, sans-serif;
@@ -203,7 +203,16 @@ img.close.show {
   position: relative;
   width: 350px;
   margin: 1rem 1rem 1rem 1rem;
+  transition: all ease-in-out 0.5s;
   
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+.container:active {
+  transform: scale(0.9);
 }
 
 .photo {
@@ -239,7 +248,6 @@ img.close.show {
 } 
 .container-fact {
   overflow: hidden;
-  box-shadow: 0px 2px 8px 0px gray;
   text-align: center;
   border-radius: 1rem;
   position: relative;
@@ -247,9 +255,14 @@ img.close.show {
   margin-left: 1rem;
   margin-top: 2rem;
   font-size: 50px;
+  transition: all ease-in-out 0.5s;
 
 }
 
+.container-fact:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 16px 16px;
+  transform: translateY(-4px);
+}
 .title-fact {
   font-size: 1.5rem;
 }
