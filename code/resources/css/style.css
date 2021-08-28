@@ -32,7 +32,7 @@ Contrast color
 html, body {
   background-color: #fff;
   font-family: 'Copse', 'Arial', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ----------------------------------------------- */
@@ -256,6 +256,25 @@ h3 {
 
 @media only screen and (max-width: 1024px) {
 
+body {
+  font-size: 16px;
+}
+
+h2, .header-subtitle {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+.cta-button {
+  font-size: 16px;
+  border-radius: 200px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
 .main-news-container {
   flex-wrap: wrap;
   justify-content: center;
@@ -307,9 +326,8 @@ h3 {
     justify-content: space-around;
     }
 
-  .footer-list-item:nth-child(2),   
-  .footer-list-item:last-child {
-    text-align: center;
+  .footer-list-item {
+    text-align: start;
   }
 
   .logo-transparent {
