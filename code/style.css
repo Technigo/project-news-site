@@ -14,9 +14,12 @@ html {
   margin: 25px;
 }
 
-h1 {
+.header-title {
+  font-size: 30px;
   display: flex;
   align-items: center; 
+  color:darkslateblue;
+
 }
 
 h2 {
@@ -33,11 +36,15 @@ nav {
   background-color: white;
   margin: 10px;
   box-shadow: 10px 10px 5px darkgrey;
+  min-width: 300px;
 }
 
 .big-news-image {
   min-width: 250px;
   padding: 25px
+}
+.big-news-text {
+  padding: 25px;
 }
 
 /* small news */
@@ -83,7 +90,8 @@ nav {
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
-    color: chartreuse;
+    color: crimson;
+    margin-right: 20px;
   }
   /* big news */
   .big-news {
