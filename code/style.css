@@ -53,7 +53,7 @@ h1 {
 .big-news {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 30px 100px 30px 100px;
   padding: 20px;
   border: solid #F0F5F9;
 }
@@ -63,11 +63,10 @@ h1 {
 }
 
 hr {
-  width: 90%;
   height: 5px;
   border: none;
   background-color: rgb(59, 55, 55);
-  margin: 30px;
+  margin: 30px 100px 50px 100px;
 }
 
 .big-news a {
@@ -93,7 +92,7 @@ hr {
   font-size: 2rem;
   box-sizing: border-box;
   text-decoration: none;
-  margin: 40px;
+  margin: 30px 100px 30px 100px;
 }
 
 .top-projects:hover {
@@ -121,7 +120,7 @@ h4 {
   flex-direction: column;
   align-content: center;
   text-align: justify;
-  margin: 10px 30px 30px;
+  margin: 30px 100px 30px 100px;
 }
 
 .card {
@@ -332,6 +331,7 @@ footer a:hover {
 
   .big-news-text {
     margin: auto;
+    font-size: 100%;
   }
 
   .news-cards {
