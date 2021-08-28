@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-/*Color palette based on the logo*/
-/* 
+/* Color palette based on the logo
 
 From darker to lighter: 
 
@@ -17,7 +16,13 @@ From darker to lighter:
 #FCAC8C
 #FC9270
 #FCAC94
-#FCDDD2 */
+#FCDDD2 
+
+Contrast color 
+
+#B7448E
+
+*/
 
 /* ----------------------------------------------- */
 /*                GLOBAL COMPONENTS                */
@@ -47,7 +52,7 @@ html, body {
 /* ----- BUTTONS ----- */
 
 .cta-button {
-  background-color: #FC6434;
+  background-color: #FC6C3C; 
   color:#FCDDD2;
   font-size: 1.1vw;
   border-radius: 200px;
@@ -55,6 +60,10 @@ html, body {
   margin-top: 1%;
 }
 
+.cta-button:hover {
+  box-shadow: 8px 8px #B7448E;
+  transition: .3s;
+}
 
 /* ----------------------------------------------- */
 /*                    HEADINGS                     */
@@ -99,7 +108,7 @@ h3 {
  } 
 
   .logo-transparent {
-  height: 200px;
+  height: 10vw;
   width: auto;
   float: left;
   }
@@ -121,18 +130,22 @@ h3 {
   text-decoration: none;
   color: #FC5424;
   } 
+
+  a:hover {
+  color: #B7448E;
+  }
   
   /* ----------------------------------------------- */
   /*                  MAIN NEWS                      */
   /* ----------------------------------------------- */
  	  
-  .main-news-container {
+    .main-news-container {
     display: flex;
     flex-direction: row;
     margin-top: 3%;
     padding: 8%;
     background-color: #f4f4f4;
-    }
+  }
     
     .main-news-img {
     max-width: 100%;
@@ -141,7 +154,6 @@ h3 {
     
     .main-news-contents {
     margin-left: 3%;
-    text-justify: distribute;
     } 
 
     .main-subtitle {
@@ -166,21 +178,22 @@ h3 {
   
   .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; */
-
-  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 30px;
   align-items: stretch;
-   */
+  
   }
   
   .grid > article {
     border: 1px solid #ccc;
+    background-color: #fff;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    transition: .5s ease;
+  }
+
+  .grid > article:hover {
+    box-shadow: 0 0 0 10px #B7448E;
+    transition: ease;
   }
   
   .grid > article img {
@@ -239,22 +252,45 @@ h3 {
 /*                  MEDIA QUERIES                  */
 /* ----------------------------------------------- */
 
+
+
 /* Mobile */
 
-@media only screen and (max-width: 414px) {
-  /* .grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
-    /* grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr); }*/
-  
+@media only screen and (max-width: 414px /*For iPhone6/7/8 Plus*/ ) { 
+
+  .hero-container {
+    height: 70vh;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+     grid-template-rows: repeat(8, 1fr); }
+
   .footer-list {
    text-align: start;
  }
 }
 
-/* Tablets */
+/* Big Tablets - iPad Pro*/
 
 @media only screen and (max-width: 1024px) {
+
+.main-news-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-news-contents {
+  margin-left: 0;
+  padding: 3% 9%;
+  } 
+
+}
+
+
+/* Small Tablets */
+
+@media only screen and (max-width: 768px) {
 
   h2, h3 {
     margin-top: 3%;
@@ -265,21 +301,22 @@ h3 {
   }
 
   .hero-container {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/ugur-arpaci-U18V0ToioFU-unsplash.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/zbynek-burival-1kGvoC9g2DY-unsplash.jpg);
   }
-
-  .main-news-container {
-    flex-wrap: wrap;
-  }
-
+ 
   .main-news-contents {
     margin-left: 0;
+    padding: 0;
     } 
-
+  
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));  
-  }
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+  } 
 
+   .footer-list {
+    text-align: start;
+  }
+ 
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -298,4 +335,5 @@ h3 {
   .social-icon {
     font-size: 20px;
   }
+
 }
