@@ -128,7 +128,8 @@ a.inline-link {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  margin-bottom: 30px;
 }
 
 .big-news-small-img {
@@ -160,6 +161,13 @@ a.inline-link {
 
 .small-news-img {
   padding-bottom: 20px;
+}
+
+.small-news-text {
+  justify-content: left;
+  padding: 0.5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 736px) {
