@@ -93,9 +93,16 @@ a:visited {
   margin: 20px 50px 25px;
 }*/
 
-.big-news-text {
+.big-news-text,
+.read-more {
   margin: 10px;
   /* justify-content: space-between; */
+}
+
+.quote {
+  font-size: 22px;
+  margin: 10px;
+  padding: 10px 0px;
 }
 
 .img-text {
@@ -126,7 +133,7 @@ a.inline-link {
 
 .big-news-small-img {
   width: 200px;
-  height: 180px;
+  /* height: 180px; */
 }
 
 .small-news-wrapper {
@@ -206,6 +213,10 @@ a.inline-link {
   .big-news-container {
     display: flex;
     flex-direction: row;
+  }
+
+  .read-more {
+    display: none;
   }
 
   .big-news-img {
