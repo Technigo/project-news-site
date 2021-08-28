@@ -32,7 +32,7 @@ Contrast color
 html, body {
   background-color: #fff;
   font-family: 'Copse', 'Arial', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* ----------------------------------------------- */
@@ -114,7 +114,7 @@ h3 {
   }
 
   .nav-bar {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -275,6 +275,10 @@ h3 {
   margin-top: 10px;
 }
 
+.grid {
+  grid-template-columns: repeat(2, 1fr);  
+} 
+
 .main-news-container {
   flex-wrap: wrap;
   justify-content: center;
@@ -315,11 +319,11 @@ h3 {
     margin-left: 0;
     padding: 0;
     } 
-  
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-  } 
 
+  .grid {
+    grid-template-columns: repeat(2, 1fr);  
+  } 
+  
    .footer-list {
     text-align: center;
   }
@@ -344,10 +348,19 @@ h3 {
 
 }
 
+/* Mobile - Big */
 
-/* Mobile */
+@media only screen and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);  
+  } 
+}
 
-@media only screen and (max-width: 414px /*For iPhone6/7/8 Plus*/ ) { 
+/* Mobile - Small */
+/*For iPhone6/7/8 Plus*/ 
+
+/* @media only screen and (max-width: 414px ) {  */
+  @media only screen and (max-width: 575px ) { 
 
   .hero-container {
     height: 70vh;
