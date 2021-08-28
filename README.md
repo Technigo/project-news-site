@@ -1,6 +1,6 @@
 # News Site
 
-=======
+---
 
 This project is made in order to learn the Box Model. The layout uses Grid or Flexbox for responsive webpages for mobile, tablet and desktop.
 
