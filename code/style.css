@@ -35,7 +35,6 @@ header {
   margin-top: 15px;
 }
 
-
 nav {
   display: flex;
   justify-content: center;
@@ -49,7 +48,6 @@ nav {
   color: black;
 }
 
-
 a:hover {
   color: white;
   font-size: large;
@@ -60,7 +58,6 @@ article > h1 {
   font-size: 25px;
   text-decoration: underline;
 }
-
 
 .big-news, .all-events, .all-music {
   display: flex;
@@ -136,12 +133,12 @@ footer > p {
     font-size: 5vw;
   }
 
-  .dropdown {
-    display: none;
-  }
-
   nav {
     justify-content: flex-end;
+  }
+
+  .nav-menu {
+    padding-left: 2rem;
   }
 
   .big-news {
@@ -153,11 +150,13 @@ footer > p {
     box-shadow: 12px 15px;
   }
 
+
   .big-news-foto {
     width: 50vw;
-    height: 50vw;
+    height: 50vh;
   }
- article {
+
+  article {
    padding: 10px;
  }
   article > h1 {
@@ -194,7 +193,8 @@ footer > p {
   display: inline;
   text-align: center;
 }
-  
+  /*Styling each individual element with
+  class name events */
 .e1 {
   background-color: #ff0080;
 }
@@ -210,6 +210,8 @@ footer > p {
 .e4 {
   background-color: #ff0000;
 }
+ /* Styling each individual element with
+ class name music */
 
 .m1 {
   background-color: #009933;
@@ -226,7 +228,9 @@ footer > p {
 .m4 {
   background-color: #99004d;
 }
- @media (min-width: 992px) {
+
+
+@media (min-width: 992px) {
 
   header {
     flex-direction: row;
@@ -238,22 +242,22 @@ footer > p {
     width: 20%;
   }
 
- .site-logo {
+  .site-logo {
    width: 100%;
    height: 100%;
    border-radius: 5%;
- }
+  }
 
- .events, .music {
+  .events, .music {
   width: 24%;
   margin-right: 6px;
-}
+  }
 
-.events-photo, .music-photo {
+  .events-photo, .music-photo {
   width: 95%;
   height: 25vw;
   padding: 3px;
-}
+  }
 
    
  
