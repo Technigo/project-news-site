@@ -4,8 +4,8 @@ A simple news site to practice flexbox and css grid for responsive design
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started planning layout and then started coding hte reponsiveness of the site, once I was happyt with the responsivness I added styles.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://gustavfrid-week-2-news-site.netlify.app/
