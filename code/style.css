@@ -73,7 +73,6 @@ a:visited {
 }
 
 .big-news-img {
-  max-width: auto;
   height: 100%;
   object-fit: cover;
 }
@@ -156,7 +155,6 @@ a.inline-link {
   display: flex;
   flex-flow: column;
   border-bottom: 3px solid peachpuff;
-  border-radius: 1 rem;
   padding: 1rem;
   margin-top: 20px;
   overflow: hidden;
@@ -184,10 +182,6 @@ a.blank-link:visited {
 a.blank-link2 {
   color: black;
   letter-spacing: 0;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: none;
-  text-decoration: none;
 }
 
 a.blank-link2:visited {
