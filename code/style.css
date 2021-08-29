@@ -46,15 +46,19 @@ header,
 
 .logo {
   max-block-size: 10vw;
-  margin: 0 0 0 10px;
+  margin: 0 10px 0 10px;
   object-fit: cover;
 }
 
 .site-name {
   font-family: Seagram;
   font-size: 5vw;
-  margin: 0 3vw 0 8vw;
+  margin: 0 3vw 0 3vw;
   white-space: nowrap;
+}
+
+ul {
+  padding-inline-start: 0px;
 }
 
 .navigation ul li {
@@ -68,7 +72,7 @@ header,
 .navigation ul li::after {
   content: "";
   width: 0%;
-  height: 2px;
+  height: 5px;
   background: var(--nav-underline-color);
   display: block;
   margin: auto;
