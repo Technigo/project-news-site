@@ -1,6 +1,5 @@
 html {
   background: #d8d7d5;
-
 } 
 
 /* header */
@@ -16,10 +15,17 @@ html {
 
 .header-title {
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   display: flex;
   align-items: center; 
   color:darkslateblue;
-
+}
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  background-color: rgb(252, 186, 46);
 }
 
 h2 {
@@ -73,6 +79,9 @@ nav {
 .grid-text {
   align-self: center;
   width: 250px
+}
+.grid-item:hover {
+  background-color: rgb(148, 148, 224);
 }
 
 /* tablet*/
@@ -128,3 +137,4 @@ footer {
   margin-top: 20px;
 
 }
+
