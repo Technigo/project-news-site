@@ -192,7 +192,7 @@ a.inline-link {
   object-position: 100%;
 }
 
-a.small-news-link {
+a.blank-link {
   color: black;
   letter-spacing: 0;
   text-decoration: none;
@@ -201,7 +201,27 @@ a.small-news-link {
   text-decoration: none;
 }
 
-a.small-news-link:visited {
+/* a.small-news-link:hover {
+  background-color: rgb(255, 238, 224);
+} */
+
+a.blank-link:visited {
+  background-color: rgb(255, 238, 224);
+}
+a.blank-link2 {
+  color: black;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: none;
+  text-decoration: none;
+}
+
+/* a.small-news-link:hover {
+  background-color: rgb(255, 238, 224);
+} */
+
+a.blank-link2:visited {
   background-color: peachpuff;
 }
 
@@ -214,7 +234,7 @@ a.small-news-link:visited {
 
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: peachpuff;
   height: 100px;
@@ -267,6 +287,14 @@ i {
 
   .navigation {
     justify-content: flex-end;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    width: 100px;
   }
 }
 
