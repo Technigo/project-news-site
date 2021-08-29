@@ -11,13 +11,23 @@ html {
   color: #fff;
   font-family: 'Carter One', cursive;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body{
   min-width: 320px;
 }
 
+h1{
+  font-family: 'Carter One', cursive;
+  font-size: 16px;
+}
+
+h2{
+  padding-top: 10px;
+  font-family: 'Carter One', cursive;
+  font-size: 14px;
+}
 .header{
   width: 100%;
   background-color: white;
@@ -45,7 +55,7 @@ a{
 
 p{
   text-align: justify;
-  padding: 10px 0 0 0;
+  /* padding: 10px 0 0 0; */
 }
  
 /* following formating is affecting the big news section */
@@ -80,7 +90,7 @@ p{
 }
 .big-news-text{
   /* width: 95%; */
-  padding: 10px;
+  padding: 8px;
 }
 
 /* following formating is affecting the small news sections */
@@ -88,13 +98,14 @@ p{
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 10px;
+  border-bottom: 3px solid white;
 }
 
 .small-news-item{
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   font-size: 12px;
   justify-content: center;
 }
@@ -119,7 +130,29 @@ p{
 	transform: scale(1.03);
 }
 
+.gap-line{
+  width: 100%;
+  height: 5px;
+  margin: 0 20% 0 20%;
+  background-color: white;
+}
 
+.bottom-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer-image{
+  width: 30px;
+  height: 30px;
+}
+
+.small-logo{
+  width: 100%;
+}
 /* ------i-PAD VERSION ------------*/
 @media (min-width: 768px){
   /* all the changes that are affecting the header container and child elements */
