@@ -21,15 +21,21 @@ header {
   top: 0;
 }
 
-nav ul {
+nav  {
   list-style: none;
   display: flex;
   justify-content: center;
+  font-size: 1.3rem;
 }
 
-ul > li {
+a {
   padding: 1rem;
-  color:palevioletred;
+  text-decoration: none;
+  color:orange;
+}
+
+a:hover {
+  transform:scale(1.2,1.2);
 }
 
 .logo {
@@ -84,10 +90,7 @@ section.big-news p {
 
 span { font-weight: bolder;}
 
-a {
-  text-decoration: none;
-  color:blue;
-}
+
 
 /* SMALL NEWS SECTION */
 section.small-news {
@@ -117,6 +120,19 @@ h3 {
   font-family: 'Hina Mincho', serif;
 }
 
+/*FOOTER*/
+footer {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.fab, .fas { 
+  color: blue; 
+  margin: 1.5rem;
+}
 
 /* MEDIA QUERIES */
 
@@ -129,9 +145,7 @@ h3 {
   .cat-foto-wrapper img { width:360px;}
 
   section.big-news h2 { text-align: justify;}
-
-/*--small-news-section----------------*/
-
+  
   section.small-news {
     display: flex;
     flex-wrap: wrap;
@@ -147,13 +161,11 @@ h3 {
 }
 }
 
-
-
 @media (min-width:1212px) {
 html { background-color: blue;} 
 body { width: 70%; margin:0 auto;}
 header { width: 70%;}
-nav ul { justify-content: flex-end; margin-right: 1rem;}
+nav { justify-content: flex-end; margin-right: 1rem;}
 section.big-news { width: 800px;}
 section.small-news { width: 100%;} 
 }
