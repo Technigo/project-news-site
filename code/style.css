@@ -32,8 +32,15 @@ a:hover {
   /* text-decoration: underline; */
 }
 
+a.search-link:hover {
+  background-color: rgb(255, 238, 224);
+}
+.search-link {
+  background-color: orange;
+}
+
 a:visited {
-  color: rgb(255, 0, 0);
+  /* color: rgb(255, 0, 0); */
   text-decoration: underline;
 }
 
@@ -72,6 +79,7 @@ a:visited {
 .big-news-img {
   max-width: auto;
   height: 100%;
+  object-fit: cover;
   /* margin: 20px; */
 }
 
@@ -167,7 +175,7 @@ a.inline-link {
   /* box-shadow: 5px 10px #888888; */
   /* box-shadow: 5px 10px rgb(255, 182, 231); */
   /* border-style: double; */
-  border-top: 3px solid peachpuff;
+  border-bottom: 3px solid peachpuff;
   /* box-shadow: 2px 2px peachpuff; */
   border-radius: 1 rem;
   padding: 1rem;
@@ -176,11 +184,13 @@ a.inline-link {
   overflow: hidden;
 }
 
-/* .small-news-img {
-  padding-bottom: 20px;
-  max-width: 100%;
-  height: auto;
-} */
+.small-news-img {
+  /* padding-bottom: 20px; */
+  width: 316px;
+  height: 210px;
+  object-fit: cover;
+  object-position: 100%;
+}
 
 a.small-news-link {
   color: black;
@@ -244,13 +254,6 @@ a.small-news-link:visited {
     justify-content: flex-start;
   }
 
-  a.search-link:hover {
-    background-color: rgb(255, 238, 224);
-  }
-  .search-link {
-    background-color: orange;
-  }
-
   .navigation {
     justify-content: flex-end;
   }
@@ -285,5 +288,9 @@ a.small-news-link:visited {
 
   .small-news-wrapper {
     margin-top: 50px;
+    padding: 30px;
+  }
+  .small-news-container {
+    border-bottom: 2px solid peachpuff;
   }
 }
