@@ -2,47 +2,110 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   </head>
+  
   <body>
     <header>
-      <div class="logo-container">
-        <img class="logo" height="50px" src="logo.svg" />
+      <div class="logo">
+        <img src="./logo.png" alt="" srcset="">
+        <p class="logo-text">Travelist Magazine</p> 
       </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav class="nav">
         <ul>
-          <li><a class="nav-item" href="#">First link</a></li>
-          <li><a class="nav-item" href="#">Second link</a></li>
-          <li><a class="nav-item" href="#">Third link</a></li>
-          <li><a class="nav-item" href="#">Fourth link</a></li>
+          <li><a class="nav-item" href="#">Newsletter</a></li>
+          <li><a class="nav-item" href="#">Subscribe</a></li>
+          <li><a class="nav-item" href="#">Sign in</a></li>
+          <li><a class="nav-item" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
       </nav>
-      <!-- Some kind of logo and navbar -->
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     </header>
-
+    <section class="space"></section>
+    <section class="hero"></section>
+    <!-- The big news content -->
     <section class="big-news">
-      <h1>big news</h1>
-      <img src="https://picsum.photos/200/300" alt="big-news">
-      <!-- The big news content -->
+      <img src="../Shopping.jpg" alt="big-news">
+      <div class="text">
+        <h1>The Best shopping destinations in Asia</h1>
+        <p><a>There are so many great shopping destinations in Asia. Asia is famous for its shopping and there’s something to suit every kind of shopper, from luxury items to authentic local goods. If you’re ever in the region and in the mood to splash some cash, take a look at these top shopping destinations in Asia.</a></p>
+      </div>
     </section>
-
-    <section class="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      <h2>other news</h2>
-      <img src="https://picsum.photos/200/300" alt="other-news">
-      
-      <!-- The other news  -->
+    <!-- The other news  -->
+    <section class="news-cards">
+      <div class="card">
+        <img src="../Vietnam.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Destination</a></p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="../malaysia.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Inspiration</a></p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="../Food.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Food & Shopping</a></p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <img src="../Japan.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">News & Advice</a></p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <img src="../Vietnam.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Destination</a></p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <img src="../Shopping.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Inspiration</a></p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <img src="../dimsum.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">Food & Shopping</a></p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <img src="../Japan.jpg" alt="other-news">
+        <div class="text">
+          <p><a href="#">News & Advice</a></p>
+        </div>
+        
+      </div>
     </section>
+    <footer>
+      <!-- <ul>
+        <li>
+          <a class="nav-item" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a class="nav-item" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="nav-item" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </li>
+      </ul> -->
+    
+      <p class="project">With <span>&hearts;</span> from Sweden</p>
+    </footer>
   </body>
 </html>
