@@ -1,205 +1,198 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Project 2: The News Site</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-  <!-- dont forget the meta tag for responsiveness -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <div class="container">
-    <header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project 2: The News Site</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
       <!-- a header wih a site name, a logo and a navbar -->
-    <header class="mobile-only-header">
-    <a href="#" >
-      <img class="logo" src="./logo.png" alt="Molbimien News" />
-    </a>
-    </header>
-
-    <header class="tablet-only-header">
+      <header class="mobile-only-header">
+        <a href="#" >
+          <img class="logo" src="./logo.png" alt="Molbimien News" />
+        </a>
+      </header>
+      <header class="tablet-only-header">
+        <a href="#" >
+        <img class="logo" src="./logo.png" alt="Molbimien News" />
+        </a>
+        <nav>
+          <p class="nav"><a class="hover" href="#">About</a></p>
+          <p class="nav"><a class="hover" href="#">Contact</a></p>
+          <p class="nav"><a class="hover" href="#">Subscribe</a></p>
+        </nav>
+      </header>
+      <header class="desktop-only-header">
       <a href="#" >
         <img class="logo" src="./logo.png" alt="Molbimien News" />
       </a>
+      <h1 class="page-title">This awesome news site</h1>
       <nav>
         <p class="nav"><a class="hover" href="#">About</a></p>
         <p class="nav"><a class="hover" href="#">Contact</a></p>
         <p class="nav"><a class="hover" href="#">Subscribe</a></p>
       </nav>
       </header>
-
-    <header class="desktop-only-header">
-    <a href="#" >
-      <img class="logo" src="./logo.png" alt="Molbimien News" />
-    </a>
-    <h1 class="page-title">This awesome news site</h1>
-    <nav>
-      <p class="nav"><a class="hover" href="#">About</a></p>
-      <p class="nav"><a class="hover" href="#">Contact</a></p>
-      <p class="nav"><a class="hover" href="#">Subscribe</a></p>
-    </nav>
-    </header>
-
-    <!-- The big news content -->
-    <section class="mobile-only-section">
-    <img class="mobile-big-news-image" src="https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_1280.jpg" style="background-image">
-    <div class="big-news-text">
-      <h2>An
-        <em>eye-catching</em>
-        heading
-      </h2>
-      <button class="btn news-btn">
-        <a href="#">My button</a>
-      </button>
+      <!-- The big news content -->
+      <section class="mobile-only-section">
+      <img class="mobile-big-news-image" src="https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_1280.jpg" style="background-image">
+      <div class="big-news-text">
+        <h2>An
+          <em>eye-catching</em>
+          heading
+        </h2>
+        <button class="btn news-btn">
+          <a href="#">My button</a>
+        </button>
+      </div>
+      </section>
+      <section class="desktop-only-section">
+      <div class="desktop-big-news-image" style="background-image: url(https://live.staticflickr.com/1945/44773047394_ce2c36a4a3_o.jpg);">
+      </div>
+      <div class="desktop-big-news-text">
+        <h2>An
+          <em>eye-catching</em>
+          heading
+        </h2>
+        <p>All the beautiful photos below are from by Kristina Alexanderson's Flickr album A reflection of a princess (or me). </p>
+        <button class="btn news-btn">
+          <a href="https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg">My button</a>
+        </button>
+      </div>
+      </section>
+      <!-- The other news  -->
+      <div class="news-container">
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/30558259997/in/album-72157702707162965/">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1957/30558259997_03395d299a_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Sisifos</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/45447329582/in/album-72157702707162965/">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1924/45447329582_d10d981337_w.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Äventyraren</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773047994/in/album-72157702707162965/">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1925/44773047994_dcd6cd3e81_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Jungfrun</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773048544/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1905/44773048544_a4a557d237_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Möten</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773052154/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1974/44773052154_f062fbee06_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Pieta</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773051934/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1921/44773051934_d235ba00eb_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Äventyraren</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/30558261497/in/album-72157702707162965/">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1970/30558261497_87efdf47e5_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Catching the prins</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773051844/in/album-72157702707162965/">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1961/44773051844_7262c97b02_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Jordbrukaren - söker sin jord</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/30558261227/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1962/30558261227_7262c97b02_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Verket</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773051414/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1980/44773051414_850c478dfe_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>Styvsystern i Askungen</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/30558260627/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1963/30558260627_26e7d8a316_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>The evil fairy</em></p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.flickr.com/photos/kalexanderson/44773048324/in/album-72157702707162965">
+            <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1902/44773048324_f3b82e84b9_o.jpg);">
+            </div>
+            <article>
+              <h2>A space princess</h2>
+              <p><em>"wilhelm tell" or hands up teddy</em></p>
+            </article>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <p>Made by <a class="hover" href="https://www.linkedin.com/in/molbimien/en">Maria Sjögren</a> during <a class="hover" href="https://www.technigo.io/program">Technigo Boot Camp </a> week 2, 2021</p>
+        <!-- <div class="social-links">
+          LinkedIn
+          Github -->
+      </footer>
     </div>
-    </section>
-    <section class="desktop-only-section">
-    <div class="desktop-big-news-image" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_1280.jpg);">
-    </div>
-    <div class="desktop-big-news-text">
-      <h2>An
-        <em>eye-catching</em>
-        heading
-      </h2>
-      <p>All the beautiful photos below are from by Kristina Alexanderson's Flickr album A reflection of a princess (or me). </p>
-      <button class="btn news-btn">
-        <a href="https://www.flickr.com/photos/kalexanderson/albums/72157702707162965">My button</a>
-      </button>
-    </div>
-    </section>
-    <section>
-    <!-- The other news  -->
-    <div class="news-container">
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773047394/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Sökaren</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/45447329582/in/album-72157702707162965/">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1924/45447329582_d10d981337_w.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Äventyraren</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773047994/in/album-72157702707162965/">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1925/44773047994_dcd6cd3e81_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Jungfrun</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773048544/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1905/44773048544_a4a557d237_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Möten</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773052154/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1974/44773052154_f062fbee06_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Pieta</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773051934/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1921/44773051934_d235ba00eb_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Äventyraren</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/30558261497/in/album-72157702707162965/">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1970/30558261497_87efdf47e5_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Catching the prins</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773051844/in/album-72157702707162965/">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1961/44773051844_7262c97b02_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Jordbrukaren - söker sin jord</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/30558261227/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1962/30558261227_7262c97b02_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Verket</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/44773051414/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1980/44773051414_850c478dfe_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Styvsystern i Askungen</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/30558260627/in/album-72157702707162965">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1963/30558260627_26e7d8a316_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>The evil fairy</em></p>
-          </article>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.flickr.com/photos/kalexanderson/30558259997/in/album-72157702707162965/">
-          <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1957/30558259997_03395d299a_o.jpg);">
-          </div>
-          <article>
-            <h2>A space princess</h2>
-            <p><em>Sisifos</em></p>
-          </article>
-        </a>
-      </div>
-  </div>
-  </section>
-  <footer>
-    <p>Made by <a class="hover" href="https://www.linkedin.com/in/molbimien/en">Maria Sjögren</a> during <a class="hover" href="https://www.technigo.io/program">Technigo Boot Camp </a> week 2, 2021</p>
-    <!-- <div class="social-links">
-      LinkedIn
-      Github -->
-    </div>
-  </footer>
-</div>
-</body>
+  </body>
 </html>
