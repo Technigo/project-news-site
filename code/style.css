@@ -5,6 +5,8 @@ html {
     background: #d89191; 
     color: #fff;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -12,9 +14,20 @@ html {
     display: flex;
     background-color: black;
     border: 5px outset red;
-    height: 200px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.logo {
+  display: flex;
+  border: 10px solid white;
+  background-color: white;
+  height: 100%;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
 }
 
 .header-child {
@@ -24,32 +37,29 @@ html {
 }
 
 .titel {
-  display: flex;
-  font-size: 100px;
+  font-size: 100%;
   text-align: center;
-
+  width: 100%;
+  height:100%;
+  color: black;
+  font-size: initial;
 }
 
-.navigation {
-    display: flex;
-    background-color: #d89191;
-    border: 5px solid green;
-    align-items: center;
-    justify-content: center;
+.navigation{
+  display: none;
 }
-  
 
 .technico {
   background-color: #d89191;
-    border: 5px solid blue;
+    text-align: center;
+    height:  100%;
+    width: 100%; 
 }
 
 .zebra {
-  height:100%;
-  border: 5px solid white;
- }
-
- 
+  width: 50%;
+  height:50%;
+}
 
  .small-news {
   border:2px solid transparent;
@@ -64,7 +74,7 @@ html {
   img {
     display: flex;
     border: solid black;
-    width: auto;
+    width: 100%;
     align-content: center;
     justify-content: center;
   }
@@ -93,9 +103,45 @@ html {
     display: flex;
     border: 2px solid transparent;
   }
+
+  .navigation {
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--clr-gray100);
+    margin: 0;
+    padding:1rem 0;
+    border-radius:var(--radius);
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    width: 100%;
+  } 
+  li {
+    list-style: none;
+    margin-right: 30px;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;}
 }
 
-@media (min-width: 992px) {
+/* These lines of code were the closest to get the logo in the center. :( */
+  
+/* .navigation {margin:0 auto; width: 100%; background-color: white;}
+  .navigation ul {margin: 0; padding: 0;list-style: none; text-align: center;}
+  .navigation ul li {float: none; display: inline-block;}
+  .navigation ul li:nth-child(1){float: left;}
+  .navigation ul li:nth-child(2){float: left;}
+  .navigation ul li a{color: black; font-size: 20px; text-transform: uppercase; text-decoration: none; display: block; padding: 10px 20px;}
+  .navigation ul li a:hover {color: red;}
+  #header {width: 100%; position:absolute} 
+  .logo {width: 20%; height:20%; position: relative; left:50%; top:0; content:""; margin-left: -150;} */
+
+ @media (min-width: 992px) {
   .small-news {
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
      }
@@ -103,88 +149,44 @@ html {
       display: flex;
       border: 2px solid transparent;
     }
+    .logo {
+      display: flex;
+      border: 10px solid white;
+      background-color: white;
+      height: 100%;
+      align-items: center;
+      justify-content:left;
+      flex-direction: column;
+    }
+    .navigation {
+      background-color: white;
+      box-shadow: 0px 0px 10px var(--clr-gray100);
+      margin: 0;
+      padding:1rem 0;
+      border-radius:var(--radius);
+      display: flex;
+      text-align: center;
+      justify-content: flex-end;
+      width: 100%;
+    } 
+    li {
+      list-style: none;
+      margin-right: 30px;
+    }
+    
+    ul {
+      display: flex;
+    }
+    
+    li a {
+      text-decoration: none;
+      color: black;}
 }
 
 
 
-/* .big-news {
-  margin-top: 50px;
-  width: 600px;
-  height: 450px;
-} */
-
-/* .big-news-tekst {
-  display: flex;
-  
-} */
-
-/* @media (min-width: 768px) {
-
-} */
 
 
-
-
-/*a {
-  display: flex;
-  color: #FFFFFF;
-  justify-content: center;
-}
-.big-news {
-  display: grid;
-
-
-}
-
-
-.small-news {
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (min-width: 768px) {
-   .technigo {
-     width: 200px;
-   }
-   
-
- }
-@media (min-width: 992px){
-  .technigo {
-    width: 300px;
-  }
-  
-
-  .big-news-picture {
-    display: flex;
-    margin: auto;
-    margin-left: auto;
-    margin-top: 50px;
-  }
-  
-  .small-news { 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-   
-  }
-  .small-news-tekst-1 {
-    background-color: blue;
-    width: 200px;
-  }
-  .small-news-tekst-2 {
-    background-color: black;
-    width: 200px;
-  }
-  .small-news-tekst-3 {
-    background-color: green;
-    width: 200px;
-  }
-  .small-news-tekst-4 {
-    background-color: red;
-    width: 200px;
-  }
-} */
 
 
 
