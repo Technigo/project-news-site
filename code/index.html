@@ -1,114 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <!-- a header wih a site name, a logo and a navbar -->
-        <a href="#" >
-          <img class="logo" src="./logo.svg" alt="Technigo" />
-        </a>
-        <h1 class="page-title">This awesome news site</h1>
-        <nav>
-          <p class="nav-bar">
-            <a class="hover" href="#">About</a>
-            <a class="hover"href="#">Contect</a>
-            <a class="hover"href="#">Subscribe</a>
-          </p>
-        </nav>
-      </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- a header wih a site name, a logo and a navbar -->
+<header class="mobile-only-header">
+<a href="#" >
+  <img class="logo" src="./logo.png" alt="Molbimien News" />
+</a>
+</header>
 
-        <!-- The big news content -->
-      <section>
-        <div class="row-block">
-        <div class="big-news-image" style="background-image: url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-        </div>
-        <div class="big-news-text">
-          <h2>
-            <a href="#" alt="kalexanderson">A heading</a>
-          </h2>
-          <p>Have a look at <b>A space princess</b> any many more beautiful photos by Kristina Alexanderson. </p>
-          <button class="btn news-btn">
-            <a href="#">My button</a>
-          </button>
-          </div>
-        </div>
-      </section>
-        <!-- The other news  -->
-    <section>
-      <div class="news-container">
-       <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-        <div class="card">
-         <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
-           <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
-           </div>
-            <article>
-              <h2>A space princess</h2>
-            </article>
-           </a>
-         </div>
-       </div>
-     </section>
-    </div>
- </body>
+<header class="desktop-only-header">
+<a href="#" >
+  <img class="logo" src="./logo.png" alt="Molbimien News" />
+</a>
+<h1 class="page-title">This awesome news site</h1>
+<nav>
+  <p class="nav-bar">
+    <a class="hover" href="#">About</a>
+    <a class="hover"href="#">Contect</a>
+    <a class="hover"href="#">Subscribe</a>
+  </p>
+</nav>
+</header>
+
+<!-- The big news content -->
+
+<section class="mobile-only-section">
+<img class="mobile-big-news-image" src="https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_1280.jpg" style="background-image">
+<div class="big-news-text">
+  <h2>An
+    <em>eye-catching</em>
+    heading
+  </h2>
+  <button class="btn news-btn">
+    <a href="#">My button</a>
+  </button>
+</div>
+</section>
+
+<section class="desktop-only-section">
+<div class="desktop-big-news-image" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/41/characters-1853286_1280.jpg);">
+</div>
+<div class="desktop-big-news-text">
+  <h2>An
+    <em>eye-catching</em>
+    heading
+  </h2>
+  <p>Have a look at <b>A space princess</b> any many more beautiful photos by Kristina Alexanderson. </p>
+  <button class="btn news-btn">
+    <a href="#">My button</a>
+  </button>
+</div>
+</section>
+
+<!-- The other news  -->
+<section>
+<div class="news-container">
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.flickr.com/photos/kalexanderson/44773047394/">
+      <div class="thumbnail" style="background-image:  url(https://live.staticflickr.com/1945/44773047394_c8770f0ea0_w.jpg);">
+      </div>
+      <article>
+        <h2>A space princess</h2>
+      </article>
+    </a>
+  </div>
+</div>
+</section>
+  </div>
+</body>
 </html>
-
