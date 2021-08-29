@@ -1,4 +1,155 @@
+* {
+box-sizing: border-box;
+}
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f8c3d3;
+  color: black;
+}
+
+/* Text */
+
+h1 {
+}
+
+h3 {
+
+}
+
+p {
+  font-size: 18px;
+}
+/* Header  */
+
+.header {
+display: grid;
+grid-template-columns: 1fr 3fr;
+align-items: center;
+
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.logo {
+    width: 200px;
+    align-items: left;
+  }
+
+  .site-name {
+    width: 200px;
+  }
+
+.navigation {
+  display: none;
+}
+
+.navigation a {
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 20px;
+ color: #043c8c;
+ padding: 10px;
+ text-transform: uppercase;
+text-shadow: 1px 2px white;
+display: inline-block;
+;
+}
+
+/* Big News */
+
+.big-news {
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 5px;
+margin-bottom: 20px;
+text-align: center;
+/* border: 1px solid black; */
+
+padding: 10px;
+}
+
+.big-news img {
+width: 100%;
+align-items: center;
+border: 1px solid black;
+box-shadow: 5px 5px black;
+}
+
+/* Small News  */
+
+.small-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+  width: 100%;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+.small-news img {
+  width: 100%;
+}
+
+.small-box {
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  /* background-color: #e8423f;  */
+}
+
+/* Media  */
+
+@media (min-width: 768px) {
+  .small-news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); */
+    /* grid-column: span 2; */
+  }
+  .big-news {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    grid-gap: 20px;
+    font-weight: bold;
+  }
+
+  .big-news img {
+    width: 100%;
+  }
+
+   .navigation {
+    display: inline-block;
+    align-items: right;
+  } 
+
+  .site-name {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .small-news {
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); */
+    /* grid-column: span 2; */
+  }
+  .big-news {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .navigation {
+    display: inline-block;
+    align-items: right;
+  }
+
+  .site-name {
+    display: inline-block;
+  }
+  .header {
+    grid-template-columns: 1fr 2fr 4fr;
+  }
 }
