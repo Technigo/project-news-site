@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Technigo student project for making a responsive News Site with Flexbox and Grid.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Tried to layout the page after the newssite-sketch.png, started with just dummy content then I thought it would be fun to just keep it generic.
+Went for mobile first, used Flexbox for card content and Grid for making small news portion change number of columns depending on the sites width. Added custom font, some underline animation for navigation links, boxshadow for cards. Hid some text/links for mobile version.
+
+If I had more time I would've wanted to make the header with site name, logo and navigation links better.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://jolly-borg-b9741f.netlify.app/
