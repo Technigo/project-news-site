@@ -1,6 +1,6 @@
 # News Site
 
-A simple news site to practice flexbox and css grid for responsive design
+A news site to practice flexbox and css grid for responsive design
 
 ## The problem
 
