@@ -25,17 +25,18 @@ height: 100%;
 width:  100%;
 background-size: 600%;
 background: linear-gradient(45deg, rgb(0, 255, 200), #24aabc, #245edb);
-animation-name: wave;
+/* animation-name: wave;
 animation-duration: 20s;
 animation-iteration-count: infinite;
-animation-direction: alternate; 
+animation-direction: alternate;  */ /* tried to make animation but did not figure out how to work it */
 box-shadow: 0px 2px 8px -1px grey;
 } 
 
- @keyframes wave {
+/* tried to make animation but did not figure out how to work it */
+ /* @keyframes wave {
   0% {background-position: 0%;}
   100% {background-position: 100%;}
-}
+} */
 
 .logo {
   max-width: 10%;
