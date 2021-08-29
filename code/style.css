@@ -1,4 +1,166 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background-color: beige;
+  color: black;
+}
+
+.head {
+  margin: 15px;
+  margin-top: 40;
+}
+
+.header
+
+{ 
+  
+  background-image: linear-gradient(rgba(211, 163, 163, 0.5),rgba(211, 163, 163, 0.5)), url("bakgrundsbild.jpeg");
+  border: 2px solid black;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.header-text {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;  
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.header-text p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+button {
+
+  background-color: rgb(221, 187, 214);
+  border-radius: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  
+}
+.header-img-link 
+{
+padding: 10px;
+/* border: 2px solid pink; */
+margin: 10px;
+border-radius: 65px;
+width: 100px;
+height: 100px;
+background-image: url(headerlogo.jpeg);
+background-size: contain;
+display: inline-block;
+
+}
+
+/*Här är navigationsfältet*/
+
+.navbar {
+ 
+  padding: 30px;
+  text-align: center;
+}
+
+.header-link {
+
+  margin-left: 15px;
+}
+
+/* HÄR BÖRJAR BIG NEWS*/
+
+.maincontent-grid-pt {
+  display:grid;
+  grid-template-columns: minmax (100% 1fr);
+  justify-content:center;
+  margin: 2 rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.maincontent {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20px 50px;
+  max-width: 100%;
+  
+
+
+}
+
+.maincontent_img {
+  flex: 1;
+  margin:20px 30px 0 0;
+  width: 300px;
+}
+
+.maincontent_text {
+  flex: 1;
+}
+
+.maincontent_text p {
+  line-height: 21px;
+}
+
+ /* HÄR BÖRJAR SMALNEWS*/
+ 
+.container
+{
+  padding:2rem;
+  justify-content: center;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill,minmax(18rem,4fr));
+  margin-top: 4rem;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cell {
+  
+  display: flex;
+  flex-wrap: wrap;
+  
+  flex-direction:row;
+
+}
+
+.container img
+{
+margin-top: 5px;
+vertical-align: middle;
+flex:100%;
+border-radius: 10px;
+height: 205px;
+}
+
+h4 {
+  margin-bottom: 4px;
+}
+.footer {
+  border:none;
+  grid-column: span 4;
+  justify-content: center;
+  background-color: blanchedalmond;
+  padding: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation-name: example;
+  animation-duration: 5s;
+
+  } 
+  @keyframes example {
+    from {background-color: blanchedalmond;}
+    to {background-color: solid rgb(167, 33, 55);}
+  
+}
+
+
+@media(max-width: 767px) 
+{
+  .maincontent {
+     flex-direction: column;
+  }
 }
