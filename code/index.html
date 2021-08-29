@@ -2,21 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>LV News</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: The News Site</title>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+
+    
+<!-- HEADER & NAVIGATION -->
+    
+    <header class="flex-container">
+      <img class="logo" src="./pics/lvlogo.png" alt="logo">
+      <h1>LAS VEGAS NEWS</h1>
+      <nav class="navigation">
+        <a href="#">Yesterday</a>
+        <a href="#">Today</a>
+        <a href="#">Tomorrow</a>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<!--BIG NEWS BOX-->
+
+  <div class="hidden-anchor" id="blog-articles"></div>
+<section class="big-news">
+    <img class="big-news-image" src="./pics/las.jpeg" alt="image of las vegas">
+  <div class="news-text">
+    <h2>WEEKLY NEWS</h2>
+    <p>Click for this weeks headlines</p>
+    <a class="read-link" href="#">Read more</a>
+  </div>
+</section>
+
+<!--ANIMATION BANNER-->
+
+<section class="card-container">
+  <div class="headline-text">
+    <h3>WHAT´S UP</h3>
+    <p>Contact us if you have a scoop</p>
+  </div>
+</section>
+
+<!--SMALL NEWS CARDS-->
+
+<section class="cards">
+    <a href="#">
+      <img class="card-image" src="./pics/mgm.jpeg" alt="image of mgm">
+      <div class="card-text">
+        <h4>MGM SOLD!</h4>
+        <p>Lorem Ipsum dolor sit amet, ct, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+    </a>
+
+    <a href="#">
+      <img class="card-image" src="./pics/pompsie.jpeg" alt="image of pompsie">
+      <div class="card-text">
+        <h4>FAMOUS INFLUENCER KICKED OUT</h4>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      </div>
+    </a>
+
+    <a href="#">
+      <img class="card-image" src="./pics/bellagio.jpg" alt="image from bellagio">
+      <div class="card-text">
+        <h4>NEW ART IN THE CONSPIRATORY</h4>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </a>
+
+    <a href="#">
+      <img class="card-image" src="./pics/resort.jpg" alt="image of resort">
+      <div class="card-text">
+        <h4>RESORT WORLD IS OPEN</h4>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do sed do eiusmod.
+        </p>
+      </div>
+    </a>
+</section>
+
+<!--FOOTER-->
+
+<footer>
+  <section class="contact-info">
+    <h5>Contact info</h5>
+    <p>hello@lvnews.com</p>
+    <img class="logo" src="./pics/lvlogo.png" alt="logo">
+   
+  </section>
+</footer>
+
+</body>
+
 </html>
