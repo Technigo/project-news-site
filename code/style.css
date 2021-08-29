@@ -12,7 +12,7 @@ body {
   min-width: 500px; /*To make the body not to shrink less than 500px*/
   
 }
-/*HEADER STYLING*/
+/* HEADER STYLING */
 header {
   background-color: whitesmoke;
   height: 10em;
@@ -36,6 +36,7 @@ a {
 
 a:hover {
   transform:scale(1.2,1.2);
+  text-decoration: underline;
 }
 
 .logo {
@@ -60,7 +61,7 @@ h1 {
 section.big-news {
   margin: 0 auto;
   margin-top:11rem;
-  padding: 1rem 0;
+  padding:1.1rem;
   width: 90%;
   background-color:lightcyan; 
   border-radius: 50px;
@@ -72,6 +73,9 @@ section.big-news {
   width: 100%;
   height: auto;
   border-radius: 40px;
+}
+.cat-foto-wrapper img:hover {
+  transform:scale(1.1,1.1);
 }
 
 section.big-news h2 {
@@ -120,7 +124,7 @@ h3 {
   font-family: 'Hina Mincho', serif;
 }
 
-/*FOOTER*/
+/* FOOTER */
 footer {
   background-color: white;
   height: 100px;
@@ -166,6 +170,6 @@ html { background-color: blue;}
 body { width: 70%; margin:0 auto;}
 header { width: 70%;}
 nav { justify-content: flex-end; margin-right: 1rem;}
-section.big-news { width: 800px;}
+section.big-news { width: 80%;}
 section.small-news { width: 100%;} 
 }
