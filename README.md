@@ -1,3 +1,5 @@
+# Week 2-Technigo bootcamp
+
 # News Site
 This week’s project is to create a classic magazine or newspaper site. The site should contain a header with a name of the site, a logo and a navbar. This should also change depending on if you visit the site from a mobile, tablet or desktop.
 
