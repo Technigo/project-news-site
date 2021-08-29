@@ -212,10 +212,22 @@ a.small-news-link:visited {
   padding-top: 10px;
 }
 
-.footer {
+footer {
   display: flex;
-  margin: 20px;
-  font-size: 12px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: peachpuff;
+  height: 100px;
+  /* border-top-style: solid; */
+  padding: 20px;
+}
+
+.footer-text {
+  justify-content: flex-start;
+}
+
+i {
+  filter: brightness(0);
 }
 
 @media screen and (max-width: 767px) {
