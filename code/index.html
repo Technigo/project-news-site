@@ -1,22 +1,158 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Karla:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Masonry Grid</title>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">My favourite Italian food</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="article">
+        <h1>Cupcake ipsum dolor sit amet</h1><BR>
+        <p>Dragée tootsie roll tiramisu lollipop lollipop oat cake. Chocolate cake chupa chups cake I love cupcake cookie chocolate bar I love cheesecake. Caramels soufflé powder oat cake marzipan lemon drops chocolate bar soufflé wafer. Sweet roll dessert chocolate bar jelly beans I love marzipan pastry I love. Macaroon I love sweet roll danish pudding chocolate cake tiramisu toffee apple pie. Wafer dragée I love cake cake fruitcake. Tiramisu soufflé toffee pie caramels chocolate I love.
+        </p>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="masonry">
+        <figure class="cell cell--1">
+            <a href="https://www.italymagazine.com/featured-story/pizza-margherita-history-and-recipe" target="blank">
+            <img
+                src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80"
+                alt="pizza-margherita">
+            </a>
+        </figure>
+
+        <figure class="cell cell--2">
+            <a href="https://www.jamieoliver.com/recipes/pasta-recipes/gennaro-s-spaghetti-alla-puttanesca/" target="blank">
+            <img
+                src="https://images.unsplash.com/photo-1597131628347-c769fc631754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                alt="spaghetti-alla-puttanesca">
+            </a>
+        </figure>
+
+        <figure class="cell cell--3">
+            <a href="https://www.thepetitecook.com/sicilian-lemon-granita/" target="blank">
+            <img
+                src="https://images.unsplash.com/photo-1528632735386-3bb3ead106f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
+                alt="sicilian-lemon-granita">
+            </a>
+          </figure>
+
+          <figure class="cell cell--4">
+            <a href="https://gelatomessina.com/blog/mamma-mia-nonnas-done-it-again" target="blank">
+            <img
+                src="https://images.unsplash.com/photo-1579349443343-73da56a71a20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+                alt="gnocchi">
+            </a>
+          </figure>
+
+          <figure class="cell cell--5">
+            <a href="https://www.italianfoodforever.com/2011/10/insalata-caprese/" target="blank">
+            <img
+                src="https://images.unsplash.com/photo-1529312266912-b33cfce2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="insalata-caprese">
+            </a>
+          </figure>
+
+          <figure class="cell cell--6">
+            <a href="https://www.lospicchiodaglio.it/ricetta/piadina-salame-maionese-rucola" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                alt="piadina-salame-maionese-rucola">
+            </a>
+          </figure>
+
+          <figure class="cell cell--7">
+            <a href="https://sanremo.com.au/recipes/spaghetti-arrabiata/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                alt="spaghetti-arrabiata">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--8">
+            <a href="https://ciaoflorentina.com/seafood-spaghetti-recipe-spaghetti-frutti-di-mare/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1615969851725-30de45c9cd97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                alt="seafood-spaghetti-recipe-spaghetti-frutti-di-mare">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--9">
+            <a href="https://www.jamieoliver.com/recipes/uncategorised-recipes/lemon-amp-pistachio-cannoli/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1611292984550-6dd8def2e668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"
+                alt="lemon-and-pistachio-cannoli">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--10">
+            <a href="https://www.onceuponachef.com/recipes/bruschetta-with-heirloom-tomatoes-olives-and-basil.html" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                alt="bruschetta-with-heirloom-tomatoes-olives-and-basil">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--11">
+            <a href="https://www.askchefdennis.com/the-best-tiramisu-you-will-ever-make/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1553683309-31c819b485c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="tiramisu">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--12">
+            <a href="https://www.forestwayfresh.com/our-recipes/nonna-marias-basic-pasta-sauce/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1618807543816-96d6df00de29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="nonna-marias-basic-pasta-sauce">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--13">
+            <a href="https://www.jamieoliver.com/recipes/pasta-recipes/spaghetti-vongole/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="spaghetti-vongole">
+            </a>
+          </figure>
+    
+          <figure class="cell cell--14">
+            <a href="https://nonnasway.com/homemade-pasta/" target="blank">           
+            <img
+                src="https://images.unsplash.com/photo-1560177006-c5b5c3cfa75b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80"
+                alt="Food picture 14">
+            </a>
+          </figure>
+    
+        </section>
+
     </section>
-  </body>
+    <section class="article">
+        <h1>Gingerbread jujubes powder sugar plum I love.</h1><br>
+        <p>Gummies I love gummi bears jelly-o brownie brownie I love jelly-o. Jelly-o wafer bonbon apple pie I love sesame snaps halvah. Tart marzipan chupa chups sweet roll chupa chups I love caramels liquorice. I love pudding cake danish candy canes I love I love cupcake. Chupa chups dessert I love caramels pudding. Chocolate I love wafer ice cream fruitcake. Gingerbread cake sesame snaps jujubes powder carrot cake jelly-o soufflé.
+        </p>
+    </section>
+    <footer class="footer">
+        <p>Developed by <a href="https://github.com/Ingetora" target="blank">@Ingetora</a> for Technigo Bootcamp fall 2021</p>
+    </footer>
+</body>
 </html>
