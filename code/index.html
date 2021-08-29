@@ -29,26 +29,31 @@
       </div>
       <nav class="site-header-mobile-nav">
         <input id="toggle" type="checkbox" style="visibility:hidden">
-          <label for="toggle"><i class="fas fa-bars"></i></label>
+          <label for="toggle">
+            <div class="site-header-mobile-nav-icon-box">
+              <i class="fas fa-bars"></i>
+            </div>
+          </label>
           <div class="site-header-mobile-nav-menu"> 
             <ul>
-              <li><a href="">Fake News</a></li>
-              <li><a href="">More Fake News</a></li>
-              <li><a href="">Get Help</a></li>
+              <li><a href="#fake_news">Fake News</a></li>
+              <li><a href="#more_fake_news">More Fake News</a></li>
+              <li><a href="#get_help">Get Help</a></li>
             </ul>
           </div>
       </nav>
       <nav class="site-header-nav">
         <ul>
-          <li><a href="">Fake News</a></li>
-          <li><a href="">More Fake News</a></li>
-          <li><a href="">Get Help</a></li>
+          <li><a href="#fake_news">Fake News</a></li>
+          <li><a href="#more_fake_news">More Fake News</a></li>
+          <li><a href="#get_help">Get Help</a></li>
         </ul>
       </nav>
     </header>
     
     <hr class="thick" />
     <main>
+      <a id="fake_news"></a>
       <section id="site-big-news" class="section-news">
         <!-- big news with hero image -->
         <div class="section-news-wrap big-news-wrap">
@@ -80,6 +85,7 @@
         </div>
       </section>
 
+      <a id="more_fake_news"></a>
       <section class="site-news section-news">
         <!-- The other news  -->
         <div class="section-news-wrap">
@@ -326,6 +332,7 @@
       </section>
     </main>
 
+    <a id="get_help"></a>
     <footer>
       <div class="footer-wrap">
         <a href="#" class="footer-site-name-link">The Fake News Site</a>

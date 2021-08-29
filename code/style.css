@@ -51,7 +51,7 @@ hr.thick {
   margin-bottom: 2vh;
 }
 .site-header-inner {
-  padding: 10% 10%;
+  padding: 7% 10%;
   margin-bottom: 1vh;
 }
 
@@ -104,8 +104,12 @@ hr.thick {
   transition: all 0.4s linear;
 }
 
-.site-header-mobile-nav-menu i {
-  font-size: 1%;
+.site-header-mobile-nav-icon-box {
+  padding: 2vh;
+}
+
+.site-header-mobile-nav-icon-box i {
+  font-size: 2em;
   padding-left: 1vw;
   padding-bottom: 1vh;
 }
@@ -124,11 +128,11 @@ hr.thick {
   font-family: "Bebas Neue", cursive;
   font-size: 3vh;
   text-align: center;
-  padding: 1% 0;
+  padding: 0.5rem 0;
 }
 
 input:checked ~ .site-header-mobile-nav-menu {
-  height: 220px;
+  height: 18vh;
 }
 
 input:checked ~ .site-header-mobile-nav-menu ul {
@@ -375,7 +379,7 @@ footer {
 
 .site-header-nav li {
   display: flex;
-  border: 1px solid red;
+  border: 1px solid rgb(224, 11, 11);
 }
 
 .site-header-nav li > * {
