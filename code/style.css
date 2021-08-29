@@ -375,6 +375,7 @@ position: relative;
   h2 {
     font-size: 3rem;
     line-height: 3.2rem;
+    margin-top: 0;
   }
 
   .navigation a {
@@ -410,6 +411,7 @@ position: relative;
   .big-news-container {
     justify-content: space-between;
     flex-direction: row;
+    align-items: flex-start;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 64px;
@@ -435,7 +437,7 @@ position: relative;
   }
 
   .big-news-img {
-    width: 50%
+    width: 50%;
   }
 
   .small-news-container {
