@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+First individual project for the Technigo boot camp. The assignment was to create a responsive news site using grid and flexbox. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I planned the project by drawing a sketch of what I wanted to do on a piece of paper. After that I researched how to use css grid and flexbox to decide which technique I was going to use. Since this is my first ever coding project I decided to combine the techniques as I believe in learning by doing. 
+
+If I had more time I would have focused more on the design of the project. I would also have looked into adding some animations. 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://britishswede-project-news-site.netlify.app/ 
