@@ -2,98 +2,104 @@
 
 html {
     display: flex;
-    background: #d89191; 
+    background: #7e7171; 
     color: #fff;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
+    header { 
+        display: flex;
+        background-color: black;
+        border: 5px outset red;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        width: 100%;
+    }
 
+    .logo {
+        display: flex;
+        border: 10px solid white;
+        background-color: white;
+        height: 100%;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+    }
 
- header { 
-    display: flex;
-    background-color: black;
-    border: 5px outset red;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
+    .header-child {
+        margin: 5px;
+        width: 20%;
+        height: 80%;
+    }
 
-}
+    .titel {
+        display: flex;
+        font-size: 100%;
+        text-align: center;
+        width: 100%;
+        height:100%;
+        color: black;
+        font-size: initial;
+    }
 
-.logo {
-  display: flex;
-  border: 10px solid white;
-  background-color: white;
-  height: 100%;
-  align-items: center;
-  justify-content:center;
-  flex-direction: column;
-}
+    .navigation{
+          display: none;
+    }
 
-.header-child {
-  margin: 5px;
-  width: 20%;
-  height: 80%;
-}
+      .technico {
+            background-color: #d89191;
+            text-align: center;
+            height:  100%;
+            width: 100%; 
+      }
 
-.titel {
-  font-size: 100%;
-  text-align: center;
-  width: 100%;
-  height:100%;
-  color: black;
-  font-size: initial;
-}
+      .zebra {
+          height:100%;
+          width: 100%;
+          border: 5px solid white;
+       }
 
-.navigation{
-  display: none;
-}
+      .small-news {
+        border:2px solid transparent;
+        display: grid;
+        width:auto;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-content: center;
+        gap: 4px;
+      }
 
-.technico {
-  background-color: #d89191;
-    text-align: center;
-    height:  100%;
-    width: 100%; 
-}
+      img {
+        display: flex;
+        border: solid black;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+      }
 
-.zebra {
-  width: 50%;
-  height:50%;
-}
+      .small-news-1 {
+              border: solid blue;
+      }
 
- .small-news {
-  border:2px solid transparent;
-  display: grid;
-  width:auto;
-  grid-template-columns: repeat(1, 1fr);
-  align-content: center;
-  justify-content: center;
-  gap: 4px;
- }
+      .small-news-2 {
+              border: solid white;
+      }
 
-  img {
-    display: flex;
-    border: solid black;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-  }
+      .small-news-3 {
+             border: solid green;
+      }
 
- .small-news-1 {
-   border: solid blue;
-}
-
-.small-news-2 {
-  border: solid white;
-}
-
-.small-news-3 {
-  border: solid green;
-}
-
-.small-news-4 {
+      .small-news-4 {
   border: solid red;
-}
+      }
+
+      .big-news-tekst {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
 
 @media (min-width: 768px) {
   .small-news {
@@ -112,9 +118,10 @@ html {
     border-radius:var(--radius);
     display: flex;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
   } 
+  
   li {
     list-style: none;
     margin-right: 30px;
@@ -123,23 +130,14 @@ html {
   ul {
     display: flex;
   }
-  
+
+
+ 
   li a {
     text-decoration: none;
     color: black;}
 }
-
-/* These lines of code were the closest to get the logo in the center. :( */
   
-/* .navigation {margin:0 auto; width: 100%; background-color: white;}
-  .navigation ul {margin: 0; padding: 0;list-style: none; text-align: center;}
-  .navigation ul li {float: none; display: inline-block;}
-  .navigation ul li:nth-child(1){float: left;}
-  .navigation ul li:nth-child(2){float: left;}
-  .navigation ul li a{color: black; font-size: 20px; text-transform: uppercase; text-decoration: none; display: block; padding: 10px 20px;}
-  .navigation ul li a:hover {color: red;}
-  #header {width: 100%; position:absolute} 
-  .logo {width: 20%; height:20%; position: relative; left:50%; top:0; content:""; margin-left: -150;} */
 
  @media (min-width: 992px) {
   .small-news {
@@ -181,6 +179,13 @@ html {
     li a {
       text-decoration: none;
       color: black;}
+
+    .technico {
+        background-color: #d89191;
+        text-align: center;
+        height:  100%;
+        width: 100%; 
+  }
 }
 
 
