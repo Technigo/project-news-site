@@ -1,18 +1,19 @@
 /* Mobile first*/
 body {
-  width: 100%;
+  max-width: 1920;
+  padding: 10%;
+  
 }
 
 .full-container {
   margin: 0;
-  padding-right: 10px;
+  padding: 10px 0px 10px 0px;
 }
 
 .navbar {
 width: 100%;
 overflow: auto;
 display: flex;
-padding: 5px;
 }
 
 .navbar a {
@@ -35,7 +36,6 @@ padding: 5px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 10px;
   grid-gap: 10px;
   background: white;
 }
@@ -50,7 +50,6 @@ padding: 5px;
 .title-grid {
   grid-column: span 3;
   text-align: center;
-  content: "";
   display:inline-flex;
   padding-top: 20px;
 }
@@ -69,12 +68,11 @@ padding: 5px;
 .body-section-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px;
   grid-gap: 15px;
   background: white;
 }
 
-.smallnews-grid1, .smallnews-grid2, .smallnews-grid3, .smallnews-grid4 {
+.smallnews-grid {
   grid-column: span 4;
   display: block;
   width: 100%;
@@ -85,7 +83,6 @@ padding: 5px;
 .body-section-grid img {
   object-fit: cover;
   border-radius: 5%;
-  width: 90%;
   height: 200px;
   border:2px solid #fff;
   background: url(img/tiger.png) no-repeat;
@@ -93,7 +90,14 @@ padding: 5px;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
   -khtml-box-shadow: 10px 10px 5px #ccc;
-  
+  opacity: 1;
+  transition: .5 ease;
+  backface-visibility: hidden;
+
+}
+
+.cred {
+  font-size: 15px;
 }
 
 .grid-pic img {
@@ -103,6 +107,7 @@ padding: 5px;
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
   margin: 10px;
 }
+
 @keyframes logobounce {
   0%   { transform: scale(1,1)      translateY(0); }
   10%  { transform: scale(1.1,.9)   translateY(0); }
@@ -162,9 +167,8 @@ h3 {
 }
 
 footer {
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
-  margin: 5px;
   background-color: #EED7C5;
   width: 100%;
   grid-column: span 4;
@@ -204,7 +208,7 @@ footer {
     height: 400px;
   }
   
-  .smallnews-grid1, .smallnews-grid2, .smallnews-grid3, .smallnews-grid4 {
+  .smallnews-grid {
     grid-column: span 2;
     display: grid;
     flex-direction: column;
@@ -219,7 +223,7 @@ footer {
  @media (min-width: 992px) {
 
    .full-container {
-     width: 95%;
+     width: 100%;
    }
    
    h1 {
@@ -244,7 +248,7 @@ footer {
     height: 400px;
   }
   
-  .smallnews-grid1, .smallnews-grid2, .smallnews-grid3, .smallnews-grid4 {
+  .smallnews-grid {
     grid-column: span 1;
     display: grid;
     flex-direction: column;
