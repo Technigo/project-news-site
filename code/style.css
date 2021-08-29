@@ -18,8 +18,22 @@ header {
 }
 
 .nav-bar a {
-  padding: 0 30px; /* till datorskärm */ 
   font-size: 30px;
+  padding: 0px 10px;
+  color:white;
+  text-decoration: none;
+}
+
+a:link, a:visited, a:focus {
+border: 2px solid black;
+color: #637c85;
+
+}
+
+a:hover {
+  color: #00607F;
+  background-color: white;
+  font-weight: bold;
 }
 
 .tidningens-logga {
@@ -32,11 +46,18 @@ padding: 50px;
 
 h1 {
   margin: auto;
-  padding: 10px;
   background-color: white;
   display:inline;
-  font-size: 80px; /* till datorskärm */
-  margin: 50px;
+  font-size: 3em;
+  padding: 10px;
+  margin: 0;
+}
+
+.tidningens-logga h1 {
+  background-color: #00607F;
+  color: white;
+  border: 2px solid black;
+  font-family: 'Amatic SC', cursive;
 }
 
 p {
@@ -55,39 +76,50 @@ p {
   background-color: white;
   margin:0px 30px 30px;
   padding: 10px;
-  display: flex;
-  justify-content: flex-start;
+ text-align: center;
 }
 
 .big-news-text p {
-  margin: 3px;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+.big-news-pic {
+  max-width: 100%;
+}
+
+.small-news-h1 {
+  background-color: #00607F;
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
 }
 
 .small-news {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
-  margin: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url(leather-nunchuck.png);
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    padding: 30px;
+
+    
 }
 
 .text-pic {
-  background-image: url(leather-nunchuck.png);
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
-}
-
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
-  grid-column: span 1;
-  background-color: white;  
-  margin: 15px;
-  padding: 5px;
-}
-
-
-.small-news-text p {
+  background-color: white;
+  margin: 25px 50px;
+  padding: 10px;
   border: 2px solid black;
-  margin: 5px;
-  padding: 2px;
+  grid-column: span 4;
+}
+
+.text-pic img {
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -100,13 +132,75 @@ footer {
 footer img {
   width: 50px;
 }
+/* -------------------------------------------------------*/
 
+/* MOBIL*/
+@media (min-width: 0px) and (max-width: 767px) {
+ 
+  .nav-bar a {
+    padding: 0 10px; 
+    }
+  .text-pic img {
+    width: 15%;
+    float: right; 
+  }
+}  
+
+/* PADDA*/ 
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-pic {
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .small-news {
+    grid-gap: 0px;
+    padding: 50px;
+  }
+}
+
+/* DATOR*/
 @media (min-width: 992px) {
-.big-news-pic {
-  width: 300px;
-}
+h1 {
+    font-size: 80px; 
+  }
 
-@media (min-width: 1200px) {
-.big-news-pic {
-  width: 200px;
-}
+.nav-bar a {
+  padding: 0 30px; 
+  }
+
+ .small-news {
+  background-image: none; 
+  background-color: white;
+ } 
+
+  .text-pic {
+    display: flex;
+    border: none;
+    margin: 0px;
+    justify-content: center;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*Liten bild uppe i vänstra hörnet*/
+    background-image: url(leather-nunchuck.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
+
+  .text-pic-content {
+      margin: 20px;
+      border: 2px solid black;
+      padding: 10px;
+      background-color: white;
+  } 
+} 
