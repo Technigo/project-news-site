@@ -72,27 +72,25 @@ p {
   flex-direction: column;
   justify-content:center;
   width: 1200px;
-  height: 400px;
-  padding: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 1000px;
 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem;
 }
 
 .text-container {
   display: flex;
-  align-items:center;
-}
-
-.container {
-    padding: 0 1rem;
+  flex-direction: column;
+  width: 1000px;
+  padding-top: 1rem;
 }
 
 .big-news-image {
-  height: 300px;
+  width: 1000px;
  }
 
 .big-news-title {
-  font-size: 26px;
+  font-size: 32px;
   padding-bottom: 1em;
 }
 
@@ -111,6 +109,12 @@ p {
   color:#00ace6;
 }
 
+.little-title {
+  padding-top: 2rem;
+  font-size: 12px;
+  color:rgba(126, 126, 126, 0.61);
+}
+
 
 /* OTHER NEWS SECTIONS*/ 
 
@@ -124,7 +128,7 @@ p {
 .news-card {
   width: 380px;
   height: 400px;
-  padding: 2rem 0;
+
 
 }
 
@@ -173,6 +177,7 @@ footer p {
 .project {
   font-family: 'Roboto';
   text-align: center;
+  font-size: 10px;
 }
 
 footer a:hover {
@@ -193,7 +198,7 @@ footer a:hover {
 
 /* STYLE FOR TABLET */
 
-@media (max-width: 1038px) {
+@media (max-width: 1259px) {
   .flex-container {
     flex-direction: column;
   }
@@ -206,42 +211,28 @@ footer a:hover {
     width: 100%;
     justify-content: space-around;
   }
-
-  .container {
-    padding: 0 1rem 0;
-  }
-
-  .latest-news-title {
-    padding: 2rem 0.5rem;
-    text-align: center;
-  }
-
-  .big-news-image {
+  
+  .news {
+    width: auto;
     height: auto;
-   }
-
-  .big-news-title {
-    font-size: 24px;
   }
 
   .big-news-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .big-news-text a {
     font-size: 18px;
   }
 
-  .big-news-image {
-    width: 400px;
-  }
+
 
 }
 
 
 /* STYLE FOR MOBILE */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
  
   .logo {
     margin: .25em 0;
@@ -271,12 +262,9 @@ footer a:hover {
     height: auto;
   }
 
-  .container {
-    padding: 1rem 0;
-  }
 
   .big-news-image {
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
@@ -285,7 +273,7 @@ footer a:hover {
   }
 
   .text-container {
-    flex-direction: column;
+    width: auto;
   }
 
   .other-news {
@@ -297,6 +285,7 @@ footer a:hover {
    .news-card {
      width: auto;
      height: auto;
+     padding-bottom:2rem;
    }
 
    .other-news-image {
