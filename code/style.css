@@ -1,5 +1,6 @@
 html {
   color: #000;
+  background-color: #f9f9f9;
   font-family: 'Cutive Mono', monospace;
 }
 
@@ -26,8 +27,7 @@ h1 {
   padding-right: 30px;
 }
 
-.left-links,
-.right-links {
+.left-links, .right-links {
   display: none;
   text-decoration: none;
   color: #000;
@@ -36,8 +36,7 @@ h1 {
   padding: 20px;
 }
 
-.left-links:hover,
-.right-links:hover {
+.left-links:hover, .right-links:hover {
   opacity: 0.6;
 }
 
@@ -55,11 +54,12 @@ h1 {
   flex-direction: column;
   margin: 30px;
   padding: 20px;
-  border: solid #F0F5F9;
+  background-color: #fff;
 }
 
 .big-news-text {
   font-weight: lighter;
+  font-size: 16px;
 }
 
 hr {
@@ -169,8 +169,7 @@ h4 {
 
 /* ------subscribtion button & animation ----- */
 
-button,
-button::after {
+button, button::after {
   width: 200px;
   height: 66px;
   font-size: 24px;
@@ -286,7 +285,6 @@ footer a:hover {
 }
 
 
-
 /* ------MEDIA QUERY STYLING ----- */
 
 
@@ -374,9 +372,10 @@ footer a:hover {
 
   .big-news-text {
     margin: auto;
+    font-size: larger;
   }
 
-  /* this two selector just same as with the one in the tablet mode but if i don't set it the image  doesn't use the grid layout */
+  /* these selectors same as on the tablet mode but if i don't set them, the image  doesn't apply the grid layout */
 
   .left-links, .right-links {
     display: block;
