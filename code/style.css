@@ -71,7 +71,6 @@ hr.thick {
 }
 
 .site-header-name {
-  /* padding: 1rem 0 0 1rem; */
   font-family: "Bebas Neue", cursive;
   font-size: 8vh;
   color: rgb(43, 40, 40);
@@ -162,10 +161,12 @@ input:checked ~ .site-header-mobile-nav-menu ul {
 }
 
 .mobile-news-image {
-  height: 40vh;
+  width: 95%;
+  height: 40vh !important;
   min-height: auto;
   object-fit: cover;
   box-shadow: 1vh 1vh 0.5vh rgb(8, 8, 8, 0.5), -1vh -1vh 0.5vh rgb(8, 8, 8, 0.5);
+  overflow: hidden;
 }
 
 .mobile-news-image:hover {
