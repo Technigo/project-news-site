@@ -1,22 +1,151 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
+    <link rel="stylesheet" href="background_style.css">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/59ae60c220.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+     <nav class="navbar">
+        <div class="brand-title">FakeNews</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Esports</a></li>
+            <li><a href="#">Economy</a></li>
+            <li><a href="#">Culture</a></li>
+          </ul>
+        </div>
+      </nav>
+      
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+      <figure class="stefan">
+        <img src="https://images.aftonbladet-cdn.se/v2/images/a3e6d0e2-115a-4b9e-b5f4-d16347cade9b?fit=crop&format=auto&h=1267&q=50&w=1900&s=c2147e72cb942347f9790a30174828cb35ac76f8" alt="Stefanlofven" class="headerpic">
+        <figcaption class="stefantext"><b><a href="default.asp" target="_blank">Stefan Löfven decided today to not resign from his post as the prime minister of Sweden: 'F*ck it, I ain't leaving'</a></b></figcaption>
+      </figure>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <section class="small-news">
+      <div class="smallcontainer">
+        <main class="grid">
+          <article>
+            <img src="https://picsum.photos/id/270/600/400" alt="photo1">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">Collapsing world Economy</a></b></h3>
+              <p>It's going to shit, we're fucked</p>
+              
+            </div>
+          </article>
+          <article>
+            <img src="https://picsum.photos/id/27/600/400" alt="photo2">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">The Netherlands are now lost</a></b></h3>
+              <p>The walls keeping The Netherlands safe have failed, It is now ocean.</p>
+              
+            </div>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1580128660010-fd027e1e587a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="photo3">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">Donald Trump never left The White House</a></b></h3>
+              <p>Donald Trump found hiding in the cupboard</p>
+              
+            </div>
+          </article>
+          <article>
+            <img src="https://www.illux.se/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/c/t/cthulhu-awakens.jpg" alt="photo4">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">c'thulu is real!</a></b></h3>
+              <p>Evidence show that c'thulu indeed is real, what a shock</p>
+              
+            </div>
+          </article>
+          <article>
+            <img src="https://new.static.tv.nu/19462380?forceFit=0&height=400&quality=50&width=400" alt="photo5">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">Tupac is alive?</a></b></h3>
+              <p>1996 Tupac was shot, or was he?</p>
+              
+            </div>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1552819401-700b5e342b9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="photo6">
+            <div class="text">
+              <h3><b><a href="default.asp" class="titles" target="_blank">Hold the door</a></b></h3>
+              <p>Hodor</p>
+               
+            </div>
+          </article>
+            <article>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/DBCooper.jpg/250px-DBCooper.jpg" alt="photo7">
+              <div class="text">
+                <h3><b><a href="default.asp" class="titles" target="_blank">D.B. Cooper found</a></b></h3>
+                <p>The notoruious D.B Cooper found real name:The Notorious B.I.G </p>
+                
+              </div>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1612512836264-5e58fab88bf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="photo8">
+              <div class="text">
+                <h3><b><a href="default.asp" class="titles" target="_blank">UFO have been seen!</a></b></h3>
+                <p>Right outside Area52 late last night an UFO were seen</p>
+                
+              </div>
+            </article>
+            
+            
+              
+            
+
+            
+          
+        </main>
+      </div>
+      </section>
+      <footer class="footer">
+
+        <div class="footer-right">
+  
+          <a class="social-icons" href="#"><i class="fa fa-facebook" ></i></a>
+          <a class="social-icons" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="social-icons" href="#"><i class="fa fa-linkedin"></i></a>
+          <a class="social-icons" href="#"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+        <div class="footer-left">
+  
+          <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+  
+            <a href="#">News</a>
+  
+            <a href="#">Sports</a>
+  
+            <a href="#">Esports</a>
+  
+            <a href="#">Economy</a>
+  
+            <a href="#">Culture</a>
+          </p>
+  
+          <p>FakeNews &copy; 2021</p>
+        </div>
+  
+      </footer>
   </body>
 </html>
