@@ -7,6 +7,7 @@
   --nav-underline-color: #57d6a3;
 }
 
+/* Custom font for site-name */
 @font-face {
   font-family: Seagram;
   src: url(./Seagram.ttf);
@@ -68,7 +69,7 @@ ul {
   position: relative;
 }
 
-/* Underline animation navigation links */
+/* Underline animation for navigation links */
 .navigation ul li::after {
   content: "";
   width: 0%;
