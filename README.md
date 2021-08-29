@@ -1,12 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+A news stite about pickles.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project was to build a website containing header, navigation, big-news section and small-news section using flex box and css grid. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started coding the site from desktop first approach and realised the problems that came with it. 
+To tackle the problem I started re-code from the mobile view and kept the previous code in media queries. 
+In my project I used flexbox and css grid. 
+If I had to do the project again I would always start from mobile-first approach. 
+
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
