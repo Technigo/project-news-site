@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to make a news site using flexbox or css grid. I made a magazine-site for millenials (like me) with a satire feel that is about various topics in our society. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I chose to use grid for this project, since I wanted the layout to shape the content. The first thing I did was to wireframe the project on paper. I made a grid-container with two different classes of grid-items within. One for the large news, and another for the smaller ones. If I'd had more time I would have combined grid with flexbox in the project, perhaps use flexbox for the header and navbar.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://millenial.netlify.app/
+
