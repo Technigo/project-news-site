@@ -1,22 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e51864a347.js" crossorigin="anonymous"></script>
+    <title>Technigo P01: The Daily Ziko</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-container">
+                <li class="nav-item" id="logo"><a href="#"><i class="fas fa-paw" title="Logotype of The Daily Ziko"></a></i></li>
+                <li class="nav-item" id="news"><a href="#">News</a></li>
+                <li class="nav-item" id="archive"><a href="#">Archive</a></li>
+                <li class="nav-item" id="about"><a href="#">About</a></li>
+                <li class="nav-item" id="contact"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    <main id="main-content">
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+        <section class="welcome">
+            <article>
+                <h1>Welcome to The Daily Ziko!</h1>
+                <p>
+                    Your daily resource for news, articles and memes for, of and even by puggles!
+                </p>
+                <p>
+                    The breed is the result of the mix between a beagle and pug. They usually turn out light beige, but there are black ones too! One thing is certain, you do get a lot of dog and companion in this breed. It wants you to take it out to search the woods, it wants you to play around with it in the dog park and it wants you to create its snuggly & cozy nest - preferably as close to you as possible.
+                </p>
+            </article>
+        </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+        <section class="articles">
+            <ul>
+                <li id="main-article">
+                    <figure>
+                        <img src="./img/main-article.jpg" alt="Puggle crying for treats" />
+                        <figcaption><h2>The stages of a Puggle</h2></figcaption>
+                    </figure>
+                    <p>
+                        Spoilt. Pleased. Playful. Fed up. Fed. Majestic. The stages of a puggle are as many as the numbers of hair they shed, but you'll be sure to love 'em just right.
+                    </p>
+                    <a href="#">How to distract a puggle!</a>
+                </li>
+                <li id="article-1">
+                    <figure>
+                        <img src="./img/article1.jpg" alt="Puggle looking concerned" />
+                        <figcaption><h2>Puggles feel concern</h2></figcaption>
+                    </figure>
+                    <p>
+                        Study shows that puggles care <em>a lot</em> about food, leaving them concerned about when the next meal is going to be served.
+                    </p>
+                    <a href="#">Gib treats!</a>
+                </li>
+                <li id="article-2">
+                    <figure>
+                        <img src="./img/article2.jpg" alt="Puggle on a beach" />
+                        <figcaption><h2>Puggles like the beach</h2></figcaption>
+                    </figure>
+                    <p>
+                        Beach, sand, weird water, birds most likely, a few driftwood sticks and treats. What better way to spend your time?
+                    </p>
+                    <a href="#">Beach zoomies!</a>
+                </li>
+                <li id="article-3">
+                    <figure>
+                        <img src="./img/article3.jpg" alt="Puggle our in the forest" />
+                        <figcaption><h2>Puggles love to hunt</h2></figcaption>
+                    </figure>
+                    <p>
+                        The Beagle part of the Puggle dictates the need to hunt. And when a prey is found, they sound the alarm to their treat-givers. Who's a good boy?
+                    </p>
+                    <a href="#">To the Hunt!</a>
+                </li>
+                <li id="article-4">
+                    <figure>
+                        <img src="./img/article4.jpg" alt="Cozy Puggle in their bed" />
+                        <figcaption><h2>Puggles cozy up a lot</h2></figcaption>
+                    </figure>
+                    <p>
+                        The Pug of a Puggle just wants to cozy up with you and sleep. And to get treats. And pets. Did you know about the overflow-neck of Puggles? Very pinchable.
+                    </p>
+                    <a href="#">Tuck me in!</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy vrill. Class of Technigo F/W 2021.</p>
+    </footer>
+
+</body>
 </html>

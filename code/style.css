@@ -1,4 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
 html {
-  background: #0025ff;
-  color: #fff;
+    scroll-behavior: smooth;
+    height: 100vw;
+}
+
+body {
+    background: moccasin;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+    /* remove the bullet points and padding */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    /* style for links
+    (only present in header and buttons)
+    minor transition for smoothness */
+a {
+    color: white;
+    background-color: indianred;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    transition: all 0.1s;
+}
+
+    /* give it a nice little hover effect */
+a:hover {
+    opacity: 0.8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+    /* using flexbox for the navigation */
+nav > ul {
+    display: flex;
+}
+
+    /* list items equally sized */
+nav > ul > li {
+    flex: 1;
+}
+
+    /* inline-block to respect padding */
+nav > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+    /* when <688px, wrap the list items onto new rows
+    to have them go full-sized
+    and with less padding on smaller screens */
+@media screen and (max-width: 688px) {
+    nav > ul {
+        flex-wrap: wrap;
+    }
+    nav > ul > li {
+        flex-basis: 100%
+    }
+    nav > ul > li > a {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+}
+
+    /* it's-a nice!
+    excludes the header and footer
+    which should be edge-to-edge of <body> max-width */
+main {
+    padding: 1rem;
+}
+
+    /* narrow the section down for readability
+    (respect <main> padding) and center it */
+.welcome {
+    max-width: 655px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.welcome > article > h1 {
+    text-align: center;
+}
+
+.welcome > article > p {
+    text-align: justify;
+}
+
+    /* using grid for the articles
+    repeat automatically
+    one article per row below 688px
+    two articles per row beyond 688px
+    three articles per row beyond 1024px */
+.articles > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+    /* have the main-article occupy the 1st to 3rd grid
+    on the 1st row on higher resolutions
+    above 1024px article-1 appears next to it*/
+@media screen and (min-width: 688px) {
+    #main-article {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+}
+
+.articles > ul > li {
+    background-color: rgba(205,92,92,0.4);
+    border-radius: 0.4rem;
+}
+
+    /* remove any excess
+    hide potential overflow
+    style the corners to the article
+    keep surrounding layout unaffected */
+.articles > ul > li > figure {
+    margin: 0;
+    padding: 0;
+    max-height: 272px;
+    overflow: hidden;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    position: relative;
+}
+
+.articles > ul > li > figure > img {
+    width: 100%;
+}
+
+    /* position the figcaption to the bottom
+    though, seems to not be perfect at all resolutions
+    perhaps due to img resizing (?) */
+.articles > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.articles > ul > li > figure > figcaption > h2 {
+    color: white;
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+.articles > ul > li > p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.4rem;
+}
+
+    /* make the links into buttons
+    (!) to-do: make them stick to the bottom */
+.articles > ul > li > a {
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.2rem;
+    padding: 0.4rem 1rem;
+    margin: 0.4rem;
+    transition: all 0.2s;
+}
+
+footer {
+    color: white;
+    background-color: indianred;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.8rem;
 }
