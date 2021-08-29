@@ -1,4 +1,159 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  font-family: 'Lato', sans-serif;
+  color:#9ab7d3;
+  background: #f7e1d3;
 }
+
+p, h1, h2 {
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  row-gap: 15px;
+  align-items: space-around;
+}
+
+img.rounded-corners {
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  align-items: center;
+}
+
+.introvert-header {
+  display: flex;
+  background: #bdd0c4;
+  color: #f5d2d3;
+  border-style: dotted;
+  border-width: 10px;
+  width: 100%;
+}
+
+.page-title {
+  display:inline-block;
+  font-size: 60px;
+  align-items: left;
+}
+
+nav {
+  width: 100%;
+  padding: 4px;
+  overflow: auto;
+  display: flex;
+}
+
+nav a {
+  background-color:#f5d2d3;
+  color: #bdd0c4;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #dfccf1;
+  cursor: pointer;
+}
+
+
+.big-news {
+  background: #f5d2d3;
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  width: 90%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: lavenderblush;
+}
+
+h2{
+  display: inline-block; 
+}
+
+.bignews-img{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+   height: 400px;
+   margin: 0 auto;
+}
+
+.bignews-text{
+  display: inline-block;
+  margin: 5px;
+  width: 80%; 
+  font-size: 18px;
+  
+}
+
+.small-news{
+  display: block;
+  align-content: space-between;
+  width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: lavenderblush;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.small-news a {
+  width: 100%;
+  text-align: center;
+}
+
+.introvert-footer{
+  color: #bdd0c4;
+  padding: 2%;
+  font-family: cursive;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.socialmedia a{
+  font-family: lato, sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: lavenderblush;
+  text-align: space-between;
+}
+
+@media only screen and (min-width:599px) { 
+  .grid-container{
+    width: 50%;
+  }
+
+  .small-news{
+    width: 50%; 
+    flex-direction: row;
+
+
+  }
+
+  }
+  
+
+  @media only screen and (min-width:768px) {
+    .grid-container{
+      width: 25%;
+    }
+
+      
+      .big-news {
+       display: flex;
+       width: 100%;
+      }
+
+    .bignews-text {
+      display: block;
+    
+    }
+
+  }
