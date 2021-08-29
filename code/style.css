@@ -3,6 +3,7 @@ html {
   background: whitesmoke;
 }
 
+/* Styling header. Tried first to get a sticky header but didn't get it to work */
 header {
   background-color: whitesmoke;
   width: 100%;
@@ -15,7 +16,7 @@ nav {
   display: flex;
   width: 100%;
 }
-/* Hiding the links in header*/
+/* Hiding the nav links in header for the mobile version*/
 nav > a {
   display: none;
 }
@@ -32,6 +33,7 @@ color: #010D00;
 font-family: 'Roboto', sans-serif;
 }
 
+/* Goal was to have some hover effects for the link, but didn't have the time */
 a {
   color: #010D00;
   font-family: 'Roboto', sans-serif;
@@ -46,6 +48,7 @@ a {
   display: flex;
 }
 
+/* styling parent flexbox for the big news image and text */
 .big-news {
 display: flex;
 flex-wrap: wrap;
@@ -63,6 +66,7 @@ vertical-align: bottom;
 justify-content: center;
 }
 
+/* Styling for the grid news (parent) and news card (children) */
 .grid-news {
   display: flex;
   flex-wrap: wrap; 
@@ -77,7 +81,7 @@ padding-top: 5%;
 margin-bottom: 5%;
 } 
 
-/* Styling grid news w hover effects */
+/* Styling grid news images w hover effects */
 .news-card-image {
 width: 90%;
 object-fit: cover;
@@ -121,7 +125,10 @@ footer {
   margin-right: 5%;
 }
 
+/* Adding styling for tablets*/
 @media (min-width: 668px) and (max-width: 1024px) {
+  
+  /*changing the nav bar look and make the links in nav bar visual */
   nav {
     align-items: center;
     justify-content: space-around;
@@ -138,7 +145,7 @@ footer {
   h1 {
     display: none;
   }
-
+  /* Having the big news section in row instaed of column */
   .big-news {
     flex-direction: row;
     justify-content:space-around;
@@ -189,6 +196,7 @@ footer {
     padding: 2% 5%;
   }
   
+  /* Using order to have the logo and links in nav bar behaving as in the sketch */
   .logo {
     order: -1;
   }
