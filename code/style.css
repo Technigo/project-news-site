@@ -177,6 +177,8 @@ a.inline-link {
 
 .small-news-img {
   padding-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 .small-news-text {
@@ -184,6 +186,11 @@ a.inline-link {
   padding: 0.5px;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.footer {
+  display: flex;
+  margin: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -205,11 +212,6 @@ a.inline-link {
     display: flex;
     flex-direction: column;
   } */
-}
-
-.footer {
-  display: flex;
-  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
