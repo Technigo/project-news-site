@@ -90,13 +90,14 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 10px 20px;
+  max-height: 600px;
 }
 
 .big-news-picture {
   margin: 0 auto;
   object-fit: contain;
   width: 100%;
-  height: 400px;
+  max-height: 400px;
 }
 
 .big-news-text-block {
@@ -150,6 +151,12 @@ footer {
   #navigation-id {
     display: none;
   }
+  /* Big news text goes one line, hides the rest with ellipsis*/
+  .big-news-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /* Tablet+> boxtexts becomes rows, grid 2 columns */
@@ -158,12 +165,14 @@ footer {
     flex-direction: row;
     text-align: center;
   }
-
   .big-news {
     flex-direction: row;
   }
   .big-news-text-block {
     text-align: left;
+  }
+  .read-more {
+    display: none;
   }
   .small-news {
     grid-template-columns: repeat(2, 1fr);
