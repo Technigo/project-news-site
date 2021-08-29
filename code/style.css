@@ -141,22 +141,20 @@ h4 {
   margin-bottom: 4px;
 }
 .footer {
-  border:none;
-  grid-column: span 4;
-  justify-content: center;
+  text-align: center;
   background-color: blanchedalmond;
   padding: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   animation-name: example;
-  animation-duration: 5s;
-
-  } 
-  @keyframes example {
-    from {background-color: blanchedalmond;}
-    to {background-color: solid rgb(167, 33, 55);}
-  
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes example {
+  0% { background-color: blanchedalmond; }
+  75% { background-color: red; }
+  100% { background-color: blanchedalmond; }
+}
 
 @media(max-width: 767px) 
 {
