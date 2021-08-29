@@ -1,14 +1,27 @@
 html {
-  background: #fff;
+  background: rgb(158, 121, 99);
   color: #000;
 }
 
 .header {
   font-family: Garamond;
-  padding: 60px;
+  padding: 10px;
   text-align: center;
   background: #000000;
   color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menu {
+  height: 25px;
+  width: 100%;
+  padding-right: 60px;
+  background: #000;
+  margin-bottom: 10px;
+
 }
 
 h1, h2, h3, p {
@@ -27,6 +40,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  padding-left: 1em;
 }
 
 p {
@@ -37,15 +51,10 @@ body {
   width: 100%; 
 }
 
-.big-news {
-  font-family: Garamond;
-  font-weight: bold;
-  }
-
 .big-image img {
-  width: 60%;
-  float: left;
-  margin-right: 20px;
+  width: 100%;
+  padding: 1em;
+  margin-right: 2em;
   filter: grayscale(100%)
 }
 
@@ -53,17 +62,28 @@ body {
   filter:grayscale(0%)
 }
 
-.big-news-container {
-  float: left;
-  overflow: hidden;
-  margin: 0;
+.big-news {
+  display: flex;
+  flex-wrap: wrap;
+  background:white;
+  padding: 8px; 
+  border: 1px solid #fff;
+  margin: 10px auto;
+  background: #fff;
+  border-bottom: 1rem solid #fff;
+  border-radius: 0px;
+  box-shadow: 2px 6px 4px rgb(0 0 0 / 80%);
 }
 
-.menu {
-  height: 25px;
-  width: 100%;
-  background: #000;
-  margin-bottom: 10px;
+.big-news > *:nth-child(1) {
+  flex: 1 0 40%; 
+}
+
+.big-news > *:nth-child(2) {
+  flex: 1 1 30%; 
+  background: white;
+  padding: 5em;
+  text-align: center;
 }
 
 .menu ul {
@@ -105,7 +125,15 @@ body {
   grid-column: span 1;
   display: grid; 
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;  
+  padding: 8px; 
+  border: 1px solid #fff;
+  margin: 10px auto;
+  background: #fff;
+  border-bottom: 1rem solid #fff;
+  border-radius: 0px;
+  box-shadow: 2px 6px 4px rgb(0 0 0 / 80%);
+  max-width: 420px;
 }
 
 footer {
@@ -140,6 +168,20 @@ a:link {
     flex-direction: column;
     justify-content: center;
   }
+
+  .big-image {
+    width: 100%;
+  }
+
+  .big-news > *:nth-child(1) {
+    flex: 1 1 90%; 
+  }
+
+  .big-news > *:nth-child(2) {
+    flex: 1 1 10%; 
+    background: white;
+    padding: 1em;
+  }
 }
 
 /* Mobiles */
@@ -164,4 +206,22 @@ a:link {
     flex-direction: column;
     justify-content: center;
   }
+
+  .big-news {
+    font-family: Garamond;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+  }
+  
+  
 }
+
+
+/* White boxes behind all news articles, 
+maybe find a new BG color, 
+make some animation of sorts, for logo or header, 
+more hover effects over articles,
+header logo, */
