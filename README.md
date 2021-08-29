@@ -13,4 +13,4 @@ If I had to do the project again I would always start from mobile-first approach
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://peaceful-pare-97c9ef.netlify.app/
