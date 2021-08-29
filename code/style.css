@@ -1,50 +1,58 @@
 
 html {
-  
   background-color: #FFFFFF;
   font-family: 'Dosis', sans-serif;
   }
 
   body {
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   .logo {
     width: 400px;
     margin: 20px;
-    
   } 
+  
   .navigation a {
     font-size: 25px;
     padding: 20px;
-    /* margin: 15px;
-    margin-top: 50px; */
     color: black;
 
   }
 
+  .big-news-article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .big-news-text {
-    max-width: 600px;
+    width: 100%;
+    max-width: 1200px;
     min-width: auto;
     word-wrap: wrap;
     text-align: center;
     font-size: 20px;
-    /* padding: 25px 10px 20px 25px; */
-    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   
   .big-news-image {
     width: 100%;
     min-width: auto;
+    max-width: 1000px;
     border-radius: 10px;
-    /* padding: 40px 40px 40px 20px; */
-    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
   
   .big-news {
     width: 100%;
     border: 2px solid #EBEBEB;
-    /* padding: 20px 0px 20px 50px; */
     background-color: #E5E4E1;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -55,31 +63,41 @@ html {
     width: 100%;
     border: 2px solid #EBEBEB;
     background-color: #EBEBEB;
-    /* padding: 20px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 3rem;
     overflow: hidden; 
   }
 
+  .text {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
   .small-image {
     width: 300px;
-    height: 200px;
+    height: auto;
     border: 1px solid white;
     border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 header {
   display: flex;
   justify-content: space-between;
   background-color: #EBEBEB;
-
 }
-@media screen and (min-width: 768px) {
- 
- .logo {
-  width: 300px;
- } 
+
+ @media screen and (max-width: 568px) {
+
+  .navigation a {
+    display: none;
+  } 
 }
 
 @media screen and (max-width: 992px) {
@@ -92,18 +110,4 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .big-news {
-    overflow: hidden !important;
-  }
-
-.big-news-image {
-  width: auto;
-
-}
-}
-@media screen and (max-width: 568px) {
-
-.navigation a {
-  display: none;
-}
 }
