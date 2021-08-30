@@ -3,44 +3,135 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Project 2: The News Site</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>mamzine magazine</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- dont forget the meta tag for responsiveness -->
+
 </head>
 
 <body>
-  <header>
-    <!-- For logo and navbar I followed tutorial: https://www.youtube.com/watch?v=yXhfUCXy2j4-->
-    <i class="fas fa-checkbox"></i>
-    <nav class="header-nav">
-      <h1 class="logo"> <a href="/code/img/Mz_logo.png"></a>mamzine</h1>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class=" fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="#">Link</a> </li>
-        <li><a href="#">Link</a> </li>
-        <li><a href="#">Link</a> </li>
-        <li><a href="#">Link</a> </li>
+
+  <section class="full-container">
+    <header class="header-navigation-container">
+
+      <div>
+        <img class="logo" src="/code/img/Mz_logo.png" alt="logo">
+      </div>
+      <div class="header-navigation-container"></div>
+      <h1 class="site-name">mamzine</h1>
+      <ul class="nav-menu">
+        <li class="nav-item" style="display:inline"> <a href="#">Link</a> </li>
+        <li class="nav-item" style="display:inline"> <a href="#">Link</a> </li>
+        <li class="nav-item" style="display:inline"> <a href="#">Link</a> </li>
+        <li class="nav-item" style="display:inline"> <a href="#">Link</a> </li>
+
       </ul>
-    </nav>
+      </nav>
+      </div>
+  </section>
   </header>
-  <main>
-    <section class="gallery">
-      <img src="img/code2.jpg" alt="code" />
-    </section>
-  </main>
 
-  <!-- The big news content -->
-  <p>paragraph</p>
+  <!-- The Big News Section-->
+  <section class="big-news-container">
 
+    <div class="big-news-parent">
+      <img class="big-news-image" src="/code/img/queen of code.jpg" alt="code" />
+      <div class="text">
+        <h1>Queen of Code #1.</h1>
+        <p class="big-news-text">The future is technology, and the youth have a fundamental role to shape this future.
+        </p>
+        <button class="read-more" type="button">Read More</button>
+      </div>
+    </div>
+  </section>
 
-  <section class="">
-    <!-- The other news  -->
+  <section class="news-cards-parent">
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen </h3>
+      <img class="news-img" src="/code/img/queen2.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="/code/img/queen2.jpg" alt="women">
+      <p>n Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="/code/img/queen2.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="/code/img/queen2.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="img/queen3.jpg" alt="women">
+
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced
+        and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+
+      <img class="news-img" src="img/queen3.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced
+        and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="img/queen3.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced
+        and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="img/queen3.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced
+        and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+
+    <div class="news-card-child">
+      <h3>Meet Betelhem Dessie, Ethiopia’s leading tech queen</h3>
+      <img class="news-img" src="img/queen3.jpg" alt="women">
+      <p>In Addis Ababa, Ethiopia, Artificial Intelligence and Bioinformatics research is part of the services rendered
+        by iCog Labs. In July this year, Ethiopia was one of the few countries to host Sophia, “one of the world’s most
+        advanced
+        and perhaps most famous artificial intelligence (AI) humanoid robot.”</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer">Brought to you by Mamite Andersson</p>
+  </footer>
   </section>
 </body>
 

@@ -1,18 +1,32 @@
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-body{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+body {
+  font-family: 'Sora', sans-serif;
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
   max-width: 1400px;
+  background-color:whitesmoke;
+  flex-direction: column;
+  justify-content: center;
 }
-img{
+header{
+  width:100%;
+  background:white;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.footer{
+  background-color: blueviolet;
+  height: 50px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -21,30 +35,168 @@ img{
 *::before,
 *::after {
   box-sizing: inherit;
-
+  margin: 0px;
+  padding: 0px;
 }
-.header-nav{
+.read-more:hover{
+  background-color: rgb(137, 75, 196);
+}
+.read-more{
+  display: block;
+  padding: 12px 28px;
+  margin: auto;
+  border-radius: 5px;
+  border:steelblue;
+  cursor: poiner; F
+}
+
+div {
+  display:block;
+}
+.header-navigation-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   line-height: 1rem;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
 }
-nav{
-  background: blueviolet;
-  height: 80px;
+nav {
+  background: white;
+  height: 100px;
   width: 100%;
 }
-label.logo{
-color: black;
-font-size: 35px;
-line-height: 80px;
-padding: 0 100px;
-font-weight: bold;
+.logo, 
+nav.menu {
+  width: 70px;
+  height: 70px;
+  /* what is the dirrerent text-transform? lower ore uppercase*/
+  text-transform:lowercase;
 }
-nav ul{
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  flex:1 0 10% ;
+  text-align: center;
+}
+.logo a, .nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.5rem;
+  padding: 0.8rem;
+}
+
+.logo a {
+  color: black;
+}
+.big-news-link {
+  margin: 120px 10 px 20px 10px;
+  display: block;
+}
+.big-news {
+  display: flex;
+  border: 2px solid red;
+}
+.big-news-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+  padding:5px;
+}
+.big-news-text{
+  text-align: center;
+  font-size: 20px;
+  background-color:none;
+  padding:5px;
+}
+.big-news img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+.news-cards-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-card-child img {
+width: 300px;
+object-fit: cover;
+height: 200px;
+}
+.news-card-child {
+  padding-top: 40px;
+  background-color:white;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 5px 5px 5px  whitesmoke;
+  width: 92%;
+  margin:5px 5px 15px 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   justify-content: center;
+  align-items: center;
+}
+ .small-news {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+
+ .small-news a {
+   width: 30%
+ }
+ .news-item {
+  width: 100%;
+  height: 200px;
+  background: pink;
+  border: 2px solid hotpink;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-item img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+/*
+.nav .menu a {
+  color: red;
+  transition: all case.in-out 0.5s;
+} */
+.nav-menu a:hover{
+  background-color: blueviolet;
+  transform: scale(1.1);
+}
+.nav-manu a:active{
+  transform: scale(0.9);
+}
+label.logo {
+color: black;
+font-size: 100px;
+line-height: 100px;
+padding: 0 100px;
+font-weight: lighter;
+letter-spacing:  0.5rem;
+}
+nav ul {
   float: right;
   margin-right: 20px;
 }
@@ -61,77 +213,36 @@ nav ul li a{
   text-transform: uppercase;
 }
 a .active, a:hover{
-background: blanchedalmond;
+background: blueviolet;
 transition: .5s;
 } 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+ .news-cards-parent {
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
-#check{
-display: none;
 }
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-   nav ul li a{
-     font-size: 16px ;
-   }
-  
+@media only screen and (min-width: 1025px) {
+  .big-news-parent {
+    flex-direction: row;
+} 
+.big-news-parent img {
+  width: 50%;
 }
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  @media (min-width:600px)
-   {.header-nav{
-     line-height: 1.5rem;
-   }
-    
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: brown;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover, a .active{
-    background-color: none;
-    color: cyan;
-  }
-  #check :checked ~ ul {
-    left: 0;
-  }
+.big-news-text{
+  text-align:center;
 }
-section{
-  background: url(bgl.jpg) no repeat;
-  background-size: cover;
-  height: calc(100vh -80px) ;
+.news-cards-parent {
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
-html {
-  font-size: 100%;
-  line-height: 1.5rem;
-  box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: white;
-  color: black;
+.text{
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  padding-left: 20px;
+}
 }
