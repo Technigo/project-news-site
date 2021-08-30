@@ -41,12 +41,16 @@ header {
     background-color: indianred;
 }
 
-    /* using flexbox for the navigation */
-nav > ul {
-    display: flex;
+nav > ul,
+.articles {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+}
+
+    /* using flexbox for the navigation */
+nav > ul {
+    display: flex;
 }
 
     /* list items equally sized */
