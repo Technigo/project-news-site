@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
-  max-width: 1400px;
+  max-width: 100%;
   background-color:whitesmoke;
   flex-direction: column;
   justify-content: center;
@@ -131,6 +131,7 @@ nav.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .news-card-child img {
 width: 300px;
@@ -143,7 +144,7 @@ height: 200px;
   padding: 25px;
   text-align: center;
   box-shadow: 5px 5px 5px  whitesmoke;
-  width: 92%;
+  width: 90%;
   margin:5px 5px 15px 5px;
   display: flex;
   flex-direction: column;
@@ -216,14 +217,21 @@ a .active, a:hover{
 background: blueviolet;
 transition: .5s;
 } 
-
+/*ipad*/
 @media only screen and (min-width: 668px) and (max-width: 1024px) {
  .news-cards-parent {
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-flow: row wrap;
 }
+.news-card-child{
+  width: 45%;
+  box-sizing: border-box;
 }
+.news-card-child img {
+  width: 80%;
+}
+}/*desktop*/
 @media only screen and (min-width: 1025px) {
   .big-news-parent {
     flex-direction: row;
@@ -238,6 +246,7 @@ transition: .5s;
   flex-direction: row;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  width: 100%;
 }
 .text{
   display: flex;
