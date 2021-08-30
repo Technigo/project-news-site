@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+First week assigment for Technigo BootCamp. The assigment is to make a responsive news site for mobile, tablet and desktop.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I went mobile first and then tablet and desktop. Started by making the cards and news and moved on to navigation. This is made with HTML and CSS, using both flexbox and CSS grid. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://pedantic-mahavira-da613b.netlify.app
