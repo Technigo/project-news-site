@@ -1,6 +1,6 @@
 # News Site
 
-A news stite about pickles.
+A news site about pickles.
 
 The project was to build a website containing header, navigation, big-news section and small-news section using flex box and css grid. 
 
