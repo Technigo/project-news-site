@@ -172,6 +172,22 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.text a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #111;
+  font-weight: 500;
+}
+
 .news-cards {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -191,18 +207,6 @@ nav a:hover {
 .card img {
 max-width: 100%;
 
-}
-
-.text {
-  padding: 0 20px 20px;
-  text-align: center;
-}
-
-.text a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #111;
-  font-weight: 500;
 }
 
 footer {
