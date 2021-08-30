@@ -109,7 +109,7 @@ a:visited {
   text-transform: uppercase;
 }
 a.inline-link {
-  text-decoration: none;
+  text-decoration: underline;
   text-transform: lowercase;
   letter-spacing: normal;
   padding: 0;
@@ -182,7 +182,7 @@ a.blank-link:visited {
 a.blank-link2 {
   color: black;
   letter-spacing: 0;
-  padding: 10px;
+  padding: 2px;
 }
 
 a.blank-link2:visited {
@@ -264,7 +264,7 @@ i {
   }
 
   footer {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .footer-logo {
