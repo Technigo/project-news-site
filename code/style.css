@@ -1,4 +1,153 @@
-html {
-  background: #ff0037;
-  color: #fff;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Bungee Inline', sans-serif;
+  font-size: 68px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+h2, h3 {
+  color: rgb(0, 0, 0);
+  font-family: 'Bungee Inline', sans-serif;
+}
+
+a, li {
+  color: rgb(0, 0, 0);
+  font-family: 'Bungee Inline', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+p { 
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif; 
+}
+
+body{
+  background-color: #f4e2c6;
+}
+
+header {
+  height: 100px;
+  width: cover;
+}
+
+.header-container {
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  color: papayawhip;
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-site-name-container {
+  height: 100px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 100px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-img {
+  width: 100px;
+  height: auto;
+  padding-top: 0px;
+}
+
+.header-site-name { 
+  height: 100px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  width: 400px;
+  height: 100px;
+  padding-top: 0px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+   
+  li:hover {
+    background-color:tan;
+  }
+
+.big-news-parent-grid {
+display: grid;
+grid-template-columns: 1fr 2fr;
+height: wrap; 
+width: 90%;
+margin: auto;
+grid-gap: 10px;
+margin-bottom: 20px;
+}
+
+.big-picture{
+weight: 100 px;
+}
+
+.big-news-text{
+  font-size: 25px;
+  text-align: justify;
+  margin-top: 0px;
+}
+
+.other-news-parent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: wrap; 
+  width: 90%;
+  margin: auto;
+  grid-gap: 10px;
+  margin-bottom: 100px;
+  }
+  
+  .other-news-box{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .other-news-picture {
+  width: 300px;
+  height: auto;
+  }
+  
+  .other-news-text{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0px;
+  }
+
+  .footer{
+    display: flex; 
+    align-items: center; 
+  }

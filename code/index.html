@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <!-- head should contain ref to css, embedded fonts adress and meta tag for responsiveness -->
     <meta charset="utf-8" />
-    <title>Code News</title>
+    <title>Revealed - Next Weeks News</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <!-- Header should contain some kind of logo and navbar -->
+      <div class="header-container">
+        <div class="header-logo-site-name-container">
+          <a href class="header-logo">
+            <img class="header-logo-img" src="./images/logo circle.svg" alt="header logo">
+          </a>
+        <div class="header-site-name">
+          <h2>revealed</h2>
+        </div>
+      </div>
+     <nav class="navigation">
+        <ul class="nav-links">
+        <li><a href="#"><strong>today</strong></a></li>
+        <li><a href="#"><strong>tomorrow</strong></a></li>
+        <li><a href="#"><strong>forever</strong></a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="big-news-parent-grid">
+      <!--The big news container grid -->
+      <div class="big-news-picture">
+        <a>
+          <img class="big-picture" src="./images/calm beach.jpeg" alt="Relaxing beach" class="big-picture">
+        </a>
+      </div>
+      <div class="big-news-text">
+        <h1>NEXT WEEKS NEWS</h1>
+        <p>In a very near future we will be able to predict next weeks news with the help of advanced AI technology. 
+          If you wonder how this might benefit you, you are not alone. Thats why we have compiled a small guide to next weeks news, applicable only for you.
+          What should you prepare for your job interview, which day do you need to buy a lottery ticket and when to swipe and much more...
+        </p>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="other-news-parent-grid">
+      <!--The other news container grid -->
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/sunset-sunrays.jpeg" alt="sunset-sunrays" class="other-news-picture">
+        <h2>Monday</h2>
+        <p>A lot of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/clouds.jpeg" alt="clouds" class="other-news-picture">
+        <h2>Tuesday</h2>
+        <p>A lot of other types of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/sunset-sunrays.jpeg" alt="sunset-sunrays" class="other-news-picture">
+        <h2>Wednesday</h2>
+        <p>A lot of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/clouds.jpeg" alt="clouds" class="other-news-picture">
+        <h2>Thursday</h2>
+        <p>A lot of other types of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/clouds.jpeg" alt="clouds" class="other-news-picture">
+        <h2>Friday</h2>
+        <p>A lot of other types of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/sunset-sunrays.jpeg" alt="sunset-sunrays" class="other-news-picture">
+        <h2>Saturday</h2>
+        <p>A lot of news today.
+        </p>
+      </div>
+      <div class="other-news-box">
+        <img class="other-news-picture" src="./images/clouds.jpeg" alt="clouds" class="other-news-picture">
+        <h2>Sunday</h2>
+        <p>A lot of other types of news today.
+        </p>
+      </div>
     </section>
+    
+    <div class="footer">
+      <h3>Made with love @the home office 2021</h3>
+    </div>
   </body>
 </html>
