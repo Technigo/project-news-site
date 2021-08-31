@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a single page news site, practising to structure a webpage using boxmodel, layout the webpage using grid and flexbox, and finally to make the page responsive for mobile, desktop and tablet.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started too late and I didn't know the tools well enough to plan. However after learning grid and flex I was able to make a proper scetch of the page and this helped me to understand when it was best with grid and when with flex. If I had more time I would learn more about how to style the different parts of a page, now its all in one color. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://news-site-proj-louise-becker.netlify.app/
