@@ -29,12 +29,14 @@ a {
     transition: all 0.1s;
 }
 
-    /* give it a nice little hover effect */
+    /* give it a nice little 'hover' effect
+    (!) because the nav is of the same colour as <a>
+    we mimic opacity: 0.8 with a lighter colour */
 a:hover {
-    opacity: 0.8;
+    background-color: rgb(205, 120, 120);
 }
 
-header {
+nav {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -174,6 +176,7 @@ main {
 }
 
     /* make the links into buttons
+    with a little transition animation
     (!) to-do: make them stick to the bottom */
 .articles > ul > li > a {
     text-align: center;
@@ -181,7 +184,7 @@ main {
     border-radius: 0.2rem;
     padding: 0.4rem 1rem;
     margin: 0.4rem;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 footer {
