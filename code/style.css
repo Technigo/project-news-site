@@ -129,7 +129,9 @@ main {
 
 .articles > ul > li {
     background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0.065rem 0.25rem;
     border-radius: 0.4rem;
+    padding: 1rem;
 }
 
     /* remove any excess
@@ -138,7 +140,6 @@ main {
     keep surrounding layout unaffected */
 .articles > ul > li > figure {
     margin: 0;
-    padding: 0;
     max-height: 272px;
     overflow: hidden;
     border-top-left-radius: 0.4rem;
@@ -157,7 +158,7 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .articles > ul > li > figure > figcaption > h2 {
