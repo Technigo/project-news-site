@@ -61,9 +61,6 @@ a:active {
   margin: 5px 0 10px 5px;
 }
 
-.big-news-img:hover {
-  opacity: 0.7;
-}
 
 .intro {
   display: flex;
@@ -126,11 +123,12 @@ footer {
 /* animations */
 
 @keyframes header {
+  /* makes the header start outside the viewport and invisible */
   0% {
       transform: translateY(-100%);
       opacity: 0;
   }
- 
+ /* makes the header stop where it's positioned and fully visible */
   100% {
       transform: translateY(0%);
       opacity: 1;
@@ -138,10 +136,12 @@ footer {
 }
 
 @keyframes start {
+   /* makes the big news start outside the viewport and invisible */
   0% {
       transform: translateX(-1000px);
       opacity: 0;
   }
+  /* makes the big news stop where it's positioned and fully visible */
   100% {
       transform: translateX(0);
       opacity: 1;
