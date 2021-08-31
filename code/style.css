@@ -113,7 +113,7 @@ main {
     three articles per row beyond 1024px */
 .articles > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -128,7 +128,7 @@ main {
 }
 
 .articles > ul > li {
-    background-color: rgba(205,92,92,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0.4rem;
 }
 
