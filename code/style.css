@@ -31,12 +31,14 @@ p {
 
 .logo {
     margin: 0 2em;
+    height: 100px;
 }
 
 .navigation  {
   display: flex;
   list-style: none;
   text-transform: uppercase;
+  margin-right: 30px;
 }
 
 .navigation a {
@@ -63,16 +65,13 @@ p {
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  width: auto;
-  height: auto;
 }
 
 .news {
   display: flex;
   flex-direction: column;
   justify-content:center;
-  width: 1200px;
-  height: 1000px;
+  width: 900px;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2rem;
@@ -81,12 +80,13 @@ p {
 .text-container {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 100%;
   padding-top: 1rem;
 }
 
 .big-news-image {
-  width: 1000px;
+    width: 100%;
+    height: auto;
  }
 
 .big-news-title {
@@ -128,6 +128,7 @@ p {
 .news-card {
   width: 380px;
   height: 400px;
+  padding-bottom: 2rem;
 
 
 }
@@ -201,6 +202,8 @@ footer a:hover {
 @media (max-width: 1259px) {
   .flex-container {
     flex-direction: column;
+    width: auto;
+    height: auto;
   }
   
   .logo {
@@ -210,6 +213,7 @@ footer a:hover {
   .navigation  {
     width: 100%;
     justify-content: space-around;
+    margin: 0;
   }
   
   .news {
@@ -224,10 +228,7 @@ footer a:hover {
   .big-news-text a {
     font-size: 18px;
   }
-
-
-
-}
+ }
 
 
 /* STYLE FOR MOBILE */
@@ -235,7 +236,7 @@ footer a:hover {
 @media (max-width: 1000px) {
  
   .logo {
-    margin: .25em 0;
+    height: 100px;
   }
 
   .navigation {
