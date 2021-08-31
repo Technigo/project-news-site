@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: moccasin;
+    background: #e7ffe5;
     font-family: 'Nunito', sans-serif;
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@ ul {
     minor transition for smoothness */
 a {
     color: white;
-    background-color: indianred;
+    background-color: #3f7a5d;
     text-decoration: none;
     letter-spacing: 0.08rem;
     transition: all 0.1s;
@@ -33,14 +33,14 @@ a {
     (!) because the nav is of the same colour as <a>
     we mimic opacity: 0.8 with a lighter colour */
 a:hover {
-    background-color: rgb(205, 120, 120);
+    background-color: #6ea78b;
 }
 
 nav {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: indianred;
+    background-color: #3f7a5d;
 }
 
 nav > ul,
@@ -69,10 +69,10 @@ nav > ul > li > a {
     padding-bottom: 24px;
 }
 
-    /* when <688px, wrap the list items onto new rows
+    /* when <646px, wrap the list items onto new rows
     to have them go full-sized
     and with less padding on smaller screens */
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 646px) {
     nav > ul {
         flex-wrap: wrap;
     }
@@ -95,7 +95,7 @@ main {
     /* narrow the section down for readability
     (respect <main> padding) and center it */
 .welcome {
-    max-width: 655px;
+    max-width: 640px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -109,20 +109,23 @@ main {
 }
 
     /* using grid for the articles
-    repeat automatically
-    one article per row below 688px
-    two articles per row beyond 688px
-    three articles per row beyond 1024px */
+    section to automatically be repeated.
+    300px (+ pad/marg) per article works out as:
+    - one article per row <646px
+    - two articles per (second) row >646px
+    - main article + 1 article on 1st row and
+    then three articles per row >964px
+    - main article + 2 articles on 1st row and
+    then four articles per row >1280px*/
 .articles > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
 
-    /* have the main-article occupy the 1st to 3rd grid
-    on the 1st row on higher resolutions
-    above 1024px article-1 appears next to it*/
-@media screen and (min-width: 688px) {
+    /* have the main-article stay big
+    by occupying grid 1-to-3 on the 1st row */
+@media screen and (min-width: 646px) {
     #main-article {
         grid-column: 1 / 3;
         grid-row: 1;
@@ -189,7 +192,7 @@ main {
 
 footer {
     color: white;
-    background-color: indianred;
+    background-color: #3f7a5d;
     padding: 0.8rem;
     text-align: center;
     font-size: 0.8rem;
