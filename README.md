@@ -5,7 +5,7 @@ Technigo Remote Frontend Boot Camp. Our task was to create a classic magazine or
 The sketch was made in Canva and then  the different modules were interpreted in code. 
 The site is built on html and css.
 ## Result 
-The site only works in mobile view. I somehow did not get the boxes to show in rows in tablet and desktop 
+The site is very basic and the mobile view is the best way to look at it. 
 
 ## View it live
-Plese view it live @ 
+Plese view it live @ https://gallant-banach-c8b5b3.netlify.app/
