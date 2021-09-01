@@ -12,5 +12,5 @@ If I had more time I would have used grid, but I just didn't feel that I had eno
 ## View it live
 To view the site, please see here
 
-https://app.netlify.com/sites/blissful-visvesvaraya-d44677/overview
+https://blissful-visvesvaraya-d44677.netlify.app/
 
