@@ -73,7 +73,6 @@ nav {
 nav.menu {
   width: 70px;
   height: 70px;
-  /* what is the dirrerent text-transform? lower ore uppercase*/
   text-transform:lowercase;
 }
 .nav-menu {
@@ -178,11 +177,7 @@ height: 200px;
   height: 70%;
   object-fit: cover;
 }
-/*
-.nav .menu a {
-  color: red;
-  transition: all case.in-out 0.5s;
-} */
+
 .nav-menu a:hover{
   background-color: blueviolet;
   transform: scale(1.1);
