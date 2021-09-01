@@ -17,6 +17,7 @@ header{
   top: 0;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 .footer{
   background-color: blueviolet;
@@ -247,6 +248,10 @@ transition: .5s;
   justify-content: space-evenly;
   flex-flow: row wrap;
   width: 100%;
+}
+.news-card-child{
+  width: 20%;
+  box-sizing: border-box;
 }
 .text{
   display: flex;
