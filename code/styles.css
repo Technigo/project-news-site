@@ -1,7 +1,5 @@
 :root {
   --pink: #eecae3;
-  --brown: #a9826d;
-  --green: #84a589;
   --nav: #2a6771;
   --b-hover: #0af3e7;
   --background-color: whitesmoke;
@@ -109,11 +107,6 @@ a {
   justify-content: space-around;
 }
 
-hr {
-  border: 1px solid var(--grey-text);
-  border-radius: 2px;
-}
-
 .list-container {
   list-style-type: none;
   display: flex;
@@ -130,6 +123,11 @@ hr {
   justify-content: space-around;
   margin-bottom: 10px;
   flex-basis: 20%;
+}
+
+.news-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
 
 .news-box-styles {
@@ -174,7 +172,6 @@ hr {
   background-color: var(--button-hover-background);
   border-color: var(--button-hover-border);
   color: var(--pink);
-  transition-duration: 0.1s;
   cursor: url('logo-pics/cursor.png'), pointer;
 }
 
