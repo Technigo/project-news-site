@@ -2,6 +2,7 @@ body {
   margin: auto;
 }
 
+/* Navbar*/
 .logo {
   width: 100px;
   background-color: white;
@@ -36,7 +37,7 @@ a:hover {
   font-weight: bold;
 }
 
-.tidningens-logga {
+.newspaper-logo {
 background-image: url(leather-nunchuck.png);
 background-repeat: repeat;
 background-size: 100px;
@@ -44,6 +45,7 @@ text-align: center;
 padding: 50px;
 }
 
+/* Text */
 h1 {
   margin: auto;
   background-color: white;
@@ -63,6 +65,9 @@ h1 {
 p {
   margin: 0;
 }
+
+
+/* Big News */
 .big-news {
   margin-top: 30px;
   padding-top: 30px;
@@ -89,6 +94,7 @@ p {
   max-width: 100%;
 }
 
+/* Small News */
 .small-news-h1 {
   background-color: #00607F;
   color: white;
@@ -122,6 +128,7 @@ p {
   padding-bottom: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #00607F;
   display: flex;
@@ -133,9 +140,9 @@ footer img {
   width: 50px;
   height: 50px;
 }
-/* -------------------------------------------------------*/
+/* Media queries*/
 
-/* MOBIL*/
+/* MOBILE*/
 @media (min-width: 0px) and (max-width: 767px) {
  
   .nav-bar a {
@@ -147,7 +154,7 @@ footer img {
   }
 }  
 
-/* PADDA*/ 
+/* TABLET*/ 
 @media (min-width: 768px) and (max-width: 991px) {
   .text-pic {
     display: flex;
@@ -167,7 +174,7 @@ footer img {
   }
 }
 
-/* DATOR*/
+/* DESKTOP */
 @media (min-width: 992px) {
 h1 {
     font-size: 80px; 
