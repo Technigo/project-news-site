@@ -1,12 +1,11 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Goal: building a responsive webpage by using CSS Grid or Flexbox to layout the page.
+Desktop 4 columns, tablet 2 columns, mobile 1 column.
+The site should have a header, a main news article, a grid of news articles.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had problems with using Flexbox and getting the columns to work and the main picture to fit in i nicely into different window sizes. I have been copying and pasting a lot not really understanding how to understand the flexboxes, I have watched the videos and tutorials but should go back to those instead of coding too much getting a head ache.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://hopeful-shannon-c5ee6a.netlify.app/
