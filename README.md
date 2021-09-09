@@ -8,4 +8,4 @@ The site is built on html and css.
 The site is very basic and the mobile view is the best way to look at it. 
 
 ## View it live
-Plese view it live @ https://gallant-banach-c8b5b3.netlify.app/
+Plese view it live @ https://queenofcode.netlify.app/
