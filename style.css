@@ -182,7 +182,7 @@ p {
 }
 
 .veggie-kimchi:hover {
-  background-image: url(./pickled-kimchi.jpg);
+  background-image: url(./image/pickled-kimchi.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -210,7 +210,7 @@ p {
 }
 
 .veggie-cucumber:hover {
-  background-image: url(./pickled-cucumber.jpg);
+  background-image: url(./image/pickled-cucumber.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -238,7 +238,7 @@ p {
 }
 
 .veggie-sauerkraut:hover {
-  background-image: url(./pickled-sauerkraut.jpg);
+  background-image: url(./image/pickled-sauerkraut.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -266,7 +266,7 @@ p {
 }
 
 .veggie-cauliflower:hover {
-  background-image: url(./pickled-cauliflower.jpg);
+  background-image: url(./image/pickled-cauliflower.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -294,7 +294,7 @@ p {
 }
 
 .veggie-redonion:hover {
-  background-image: url(./pickled-redonion.jpg);
+  background-image: url(./image/pickled-redonion.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -322,7 +322,7 @@ p {
 }
 
 .veggie-chilies:hover {
-  background-image: url(./pickled-chilies.jpg);
+  background-image: url(./image/pickled-chilies.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -350,7 +350,7 @@ p {
 }
 
 .veggie-carrot:hover {
-  background-image: url(pickled-carrot.jpg);
+  background-image: url(./image/pickled-carrot.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s;
@@ -389,7 +389,7 @@ p {
   text-align: left;
 }
 
-.footer-social {
+.footer-social li {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -420,6 +420,7 @@ p {
     display: inline-block;
     flex-grow: 4;
   }
+
   .big-news {
     display: inline-block;
     justify-content: center;

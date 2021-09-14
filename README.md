@@ -13,4 +13,4 @@ If I had to do the project again I would always start from mobile-first approach
 
 ## View it live
 
-https://peaceful-pare-97c9ef.netlify.app/
+https://stuckinapickle.netlify.app/
