@@ -2,6 +2,7 @@
 body {
   font-family: roboto, sans-serif;
   color: #E05297;
+  overflow-x: hidden;
   
   /* BACKGROUND GRADIENT */
   
@@ -37,6 +38,11 @@ body {
 
 .millenial-header {
   font-size: 60px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px auto;
   color: #E05297;
   font-family: 'Rampart One', cursive;
 }
@@ -44,14 +50,18 @@ body {
 
 /*  NAVIGATION BAR  */
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 ul {
   font-family: roboto, sans-serif;
-  max-width: 320px;
+  max-width: 80%;
   list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+  margin: auto;
+  padding-inline-start: 0;
 }
 
 li {
@@ -72,9 +82,8 @@ li a {
 
 .grid-container {
   color: #E05297;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  width: 280px;
+  margin: 30px auto;
+  width: 100%;
   display: grid;
   row-gap: 15px;
 }
@@ -85,7 +94,6 @@ li a {
   background-color: #FCEEF5;
   grid-column: span 1;
   border-radius: 2%;
-  margin-top: none;
   padding: 2% 10% 10% 10%;
 }
 
@@ -139,6 +147,9 @@ img:hover {
 /* FOOTER */
 
 .millenial-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #E05297;
   padding: 2%;
   font-family: 'Rampart One', cursive;
@@ -161,14 +172,9 @@ img:hover {
 
 @media only screen and (max-width: 1100px) and (min-width: 670px) {
 
-  body {
-      margin-top: 10px;
-      margin-left: 60px;
-  }
-
-  ul {
-      max-width: 1200px;
-      margin-bottom: 30px;
+  .millenial-header {
+    font-size: 100px;
+    margin: 20px auto;
   }
 
   li a {
@@ -177,23 +183,16 @@ img:hover {
   }
 
   .grid-container {
-      width: 600px;
+      width: 90%;
+      margin: 40px auto;
       grid-template-columns: 4fr 4fr;
       gap: 15px;
-      margin-bottom: 60px;
-      
   }
 
-  .millenial-header {
-      font-size: 100px;
-      margin-bottom: 0;
-  }
-  
   .grid-item, .grid-item-big {
       
       border-radius: 2%;
       font-size: 16px;
-      margin-top: none;
       padding: 5%;
   }
 
@@ -212,7 +211,6 @@ img:hover {
 
   .socials {
     display: inline-block;
-    margin-right: 30px;
   }
   
 }
@@ -221,14 +219,8 @@ img:hover {
 
 @media only screen and (max-width: 1600px) and (min-width: 1100px) {
 
-  body {
-      margin-top: 10px;
-      margin-left: 80px;
-  }
-
-  ul {
-      max-width: 1400px;
-      margin-bottom: 30px;
+  .millenial-header {
+    font-size: 80px;
   }
 
   li a {
@@ -237,17 +229,11 @@ img:hover {
   }
 
   .grid-container {
-      width: 800px;
+      width: 80%;
+      margin: 30px auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 20px;
-      margin-bottom: 80px;
   }
-
-  .millenial-header {
-      font-size: 80px;
-      margin-bottom: 10px;
-  }
-  
 
   .grid-item {
       font-size: 18px;
@@ -270,12 +256,10 @@ img:hover {
   
   .millenial-footer {
       font-size: 26px;
-      margin-bottom: 50px;
   }
 
   .socials {
     display: inline-block;
-    margin-right: 150px;
   }
   
 }
@@ -285,31 +269,20 @@ img:hover {
 
 @media only screen and (min-width: 1400px) {
 
-  body {
-      margin-top: 20px;
-      margin-left: 200px;
-  }
-
-  ul {
-      max-width: 1800px;
-      margin-bottom: 40px;
-  }
-
   li a {
       font-size: 26px;
       padding: 20px 30px;
   }
 
   .grid-container {
-      width: 1400px;
+      width: 70%;
+      margin: 60px auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 30px;
-      margin-bottom: 10px;
   }
 
   .millenial-header {
       font-size: 80px;
-      margin-bottom: 10px;
   }
   
   .grid-item-big {
@@ -337,6 +310,5 @@ img:hover {
 
   .socials {
     display: inline-block;
-    margin-right: 150px;
   }
 }
