@@ -12,5 +12,5 @@ In my project I used flexbox and css grid.
 If I had to do the project again I would always start from mobile-first approach.
 
 ## View it live
+https://stuckinapickle.netlify.app/
 
-https://peaceful-pare-97c9ef.netlify.app/
