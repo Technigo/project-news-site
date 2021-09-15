@@ -1,63 +1,68 @@
 body {
-  font-family: 'Kaisei Opti', serif; /*specific font to use for the whole webpage*/
-  margin: 10px;                      /*overall margin 10px for the whole webpage*/
+  font-family: "Kaisei Opti", serif; /*specific font to use for the whole webpage*/
+  margin: 10px; /*overall margin 10px for the whole webpage*/
 }
 
 .top-bar {
-  display: flex;                  
-  justify-content: space-between;  /* put space between two div, top-bar left and top-bar right*/
+  display: flex;
+  justify-content: space-between; /* put space between two div, top-bar left and top-bar right*/
 }
 
 .left {
-  padding: 10px; 
+  padding: 10px;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
-.logo, .search, .contact {
-  margin: 10px;                   /*put som margin so there's some space between each element*/
-  text-transform: uppercase;      /*tramsform text into uppercase*/
+.logo,
+.search,
+.contact {
+  margin: 10px; /*put som margin so there's some space between each element*/
+  text-transform: uppercase; /*tramsform text into uppercase*/
 }
 
 .social-media-icon {
   border: 1px solid rgb(174, 171, 171);
-  border-radius: 50%;             /*rounded corners*/
-  margin: 5px;                    /*space between each icon*/
-  padding: 5px;                   /*space between icon and the border*/
+  border-radius: 50%; /*rounded corners*/
+  margin: 5px; /*space between each icon*/
+  padding: 5px; /*space between icon and the border*/
   height: 35px;
   width: 35px;
   display: flex;
-  align-items: center;            /*center the content, vertically*/
-  justify-content: center;        /*center the content, horizontally*/
+  align-items: center; /*center the content, vertically*/
+  justify-content: center; /*center the content, horizontally*/
 }
 
 /*if we want to have normal links with text decoration and different color, we can specify each link. 
 For example if we want different color for the link "contact", we can write .contact a {} and so on. */
-a {                                 /*all links will have no text decoration och have the color black*/
+a {
+  /*all links will have no text decoration och have the color black*/
   text-decoration: none;
   color: black;
 }
 
-a:visited {                         /*for visited links, the color will remain black*/
+a:visited {
+  /*for visited links, the color will remain black*/
   color: black;
 }
 
 .right {
   padding: 10px;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./background.jpg");          /*put a background image for the header*/
-  background-repeat: no-repeat;                       /*do not want to repet the image, vertically and horizontally*/
-  background-size: cover;                             /*image is going to fill the container, as large as possible. image can be strethed*/
+  background-image: url("./background.jpg"); /*put a background image for the header*/
+  background-repeat: no-repeat; /*do not want to repet the image, vertically and horizontally*/
+  background-size: cover; /*image is going to fill the container, as large as possible. image can be strethed*/
 }
 
-.title, .header-2{
+.title,
+.header-2 {
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -73,15 +78,15 @@ a:visited {                         /*for visited links, the color will remain b
 }
 
 .navbar {
-  background-color: white;              /*set the backgrpund-color to white because when scrolling I don't want it to be transparent*/
-  border-top: 1px solid black;          /*instead of using <hr/>*/
-  border-bottom: 1px solid black;       /*instead of using <hr/>*/
+  background-color: white; /*set the backgrpund-color to white because when scrolling I don't want it to be transparent*/
+  border-top: 1px solid black; /*instead of using <hr/>*/
+  border-bottom: 1px solid black; /*instead of using <hr/>*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: sticky;                       /*keep the elements positioned according to the normal flow*/           
-  top: 0;                                 /*want the navbar to be postioned at the top of the page*/
-  z-index: 999;                           /*want the navbar to be in the front, not in the background*/
+  position: sticky; /*keep the elements positioned according to the normal flow*/
+  top: 0; /*want the navbar to be postioned at the top of the page*/
+  z-index: 999; /*want the navbar to be in the front, not in the background*/
 }
 
 .link {
@@ -93,47 +98,52 @@ a:visited {                         /*for visited links, the color will remain b
 }
 
 .link:hover {
-  background-color: rgb(229, 229, 229);   /*when hovering the links in the navbar, changes the background color*/
+  background-color: rgb(
+    229,
+    229,
+    229
+  ); /*when hovering the links in the navbar, changes the background color*/
 }
 
 .all-news {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;   /*tried out with grid instead of using flex with 4fr*/  
-  grid-gap: 5px;                            /*gap between each columns*/
-  margin: 0 0 5px 0;                        /*put only margin at the bottom, so there's some space between news cards and the footer*/                      
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*tried out with grid instead of using flex with 4fr*/
+  grid-gap: 5px; /*gap between each columns*/
+  margin: 0 0 5px 0; /*put only margin at the bottom, so there's some space between news cards and the footer*/
 }
 
 .big-news {
-  grid-column: span 2;         /*the first news takes up 2 columns each*/
+  grid-column: span 2; /*the first news takes up 2 columns each*/
   font-size: 25px;
   padding: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  box-shadow: 5px 5px 5px rgb(229, 229, 229);     /*the higher number, the shadow will be more blurred*/
+  box-shadow: 5px 5px 5px rgb(229, 229, 229); /*the higher number, the shadow will be more blurred*/
 }
 
 .other-news {
   border: 2px solid rgb(229, 229, 229);
-  grid-column: span 1;            /*each news takes up 1 column*/
+  grid-column: span 1; /*each news takes up 1 column*/
   padding: 10px;
-  transition: all 1s ease-out;    /*when hovering the news card, the transition will take 1s and the effect is ease-out*/
+  transition: all 1s ease-out; /*when hovering the news card, the transition will take 1s and the effect is ease-out*/
 }
 
 .big-news img {
-  object-fit: cover;              /*image is going to fill the container, as large as possible. image can be strethed*/
+  object-fit: cover; /*image is going to fill the container, as large as possible. image can be strethed*/
   width: 100%;
 }
 
 .other-news img {
-  object-fit: contain;            /*fill the container as large as possible without cropping or stretching the image*/
+  object-fit: contain; /*fill the container as large as possible without cropping or stretching the image*/
   width: 100%;
-  max-height: 150px;              /*defined a max height so the images do not go outside of the container*/
+  max-height: 150px; /*defined a max height so the images do not go outside of the container*/
 }
 
-.other-news:hover {    /*when hovering the news cards, the opacity, text-color and backgrpund colors will change*/
-  opacity: 0.6; 
-  color: white; 
+.other-news:hover {
+  /*when hovering the news cards, the opacity, text-color and backgrpund colors will change*/
+  opacity: 0.6;
+  color: white;
   background-color: rgb(71, 72, 72);
 }
 
@@ -146,7 +156,8 @@ footer {
   justify-content: space-between;
 }
 
-footer p {                          /*zero margin between the paragraphs in the footer*/
+footer p {
+  /*zero margin between the paragraphs in the footer*/
   margin: 0;
 }
 
@@ -160,47 +171,63 @@ footer p {                          /*zero margin between the paragraphs in the 
 .logo-technigo {
   width: 100%;
   max-height: 25px;
-  margin-top: 5px;                /*put some space betwwen the logo and the paragraph*/
+  margin-top: 5px; /*put some space betwwen the logo and the paragraph*/
 }
 
 /*when we click on the navbar and select one of the link, it will only target the class target-highlight*/
-#health:target .target-highlight, #tech:target .target-highlight, 
-#business:target .target-highlight, #sports:target .target-highlight {
-    background-color: rgb(229, 229, 229);
+#health:target .target-highlight,
+#tech:target .target-highlight,
+#business:target .target-highlight,
+#sports:target .target-highlight {
+  background-color: rgb(229, 229, 229);
 }
 
 h3 {
-  font-weight: normal;            /*by default the h3 font-weight is in bold, changed it to normal*/
+  font-weight: normal; /*by default the h3 font-weight is in bold, changed it to normal*/
 }
 
-@media (min-width: 768px) and (max-width: 991px) {             /*for tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*for tablet*/
   .other-news {
-      grid-column: span 2;                    /*change it to two columns*/
+    grid-column: span 2; /*change it to two columns*/
   }
   .top-bar {
-      justify-content: space-evenly;
+    justify-content: space-evenly;
   }
-  .title, .header-2, .date, .big-news, .other-news, .footer, .copyright {
-      font-size: 90%;
+  .title,
+  .header-2,
+  .date,
+  .big-news,
+  .other-news,
+  .footer,
+  .copyright {
+    font-size: 90%;
   }
 }
 
-@media (max-width: 767px) {                                     /*for mobile*/
-  .big-news, .other-news {
-      grid-column: span 4;                     /*change it to one column*/
+@media (max-width: 767px) {
+  /*for mobile*/
+  .big-news,
+  .other-news {
+    grid-column: span 4; /*change it to one column*/
   }
   .right {
-      display: none;                          /*when using small screens as smartphones, the top-bar right will disappear*/
+    display: none; /*when using small screens as smartphones, the top-bar right will disappear*/
   }
 
-  .title, .header-2, .date, .big-news, .other-news, footer, .copyright {
-      font-size: 70%;
+  .title,
+  .header-2,
+  .date,
+  .big-news,
+  .other-news,
+  footer,
+  .copyright {
+    font-size: 70%;
   }
   .big-news img {
-      height: 200px;
+    height: 200px;
   }
   .other-news img {
-      object-fit: cover;  
+    object-fit: cover;
   }
 }
-
