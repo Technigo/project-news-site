@@ -1,12 +1,9 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This news site has a basic feature of header, navigation bar, main form and a footer. It contains flex box to form a card news. There is a basic hover function included in order to make the cards look shadowed when you click it on the card. It is in a responsive design, which means that it can be looked in three different ways on iphone, ipad and desktop for optimal user experience.
 
 ## The problem
+It was challenging to understand what is the most efficient way to write the media query. I ended up writing all the codes three times for three media queries, but then I have learned that most of the time it is recommended to write the mobile version first and then add on the changes in ipad and desktop version. Now I am more confident of writing a better and cleaner code for responsive design, as this project gave me a valuable opportunity to understand the hierarchy and orders of media query.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://frosty-stonebraker-0d4b63.netlify.app
