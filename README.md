@@ -1,12 +1,9 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week’s project was to create a classic magazine or newspaper site. The site would contain a header with a name of the site, a logo and a navbar. The site woluld akt responsiv to desktop, deskto and mobil On desktop sized screens, it woluld be four cards in a row, two in a row on tablets and on mobilit wolud only be one card on each row.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It has been a challenge to work with grit and flexbox and to make the img fit in the boxes.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://boring-jackson-c47de1.netlify.app
