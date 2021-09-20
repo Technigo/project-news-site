@@ -4,9 +4,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  background-color: orange;
-}
 
 body {
   background-color: orange;
@@ -101,8 +98,6 @@ span {
 
 /* SMALL NEWS SECTION */
 section.small-news {
-  width: 90%;
-  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -110,12 +105,15 @@ div.card {
   border: 3px solid rgb(173, 115, 6);
   margin: 1.3rem;
   background-color: cornsilk;
+  width: 90%;
+  margin:30px auto;
 }
 
 h3 {
   text-align: center;
   margin: 2rem;
   font-size: 1.5rem;
+  height: 80px;
 }
 
 .card img {
@@ -145,47 +143,37 @@ footer {
 }
 
 /* MEDIA QUERIES */
-
-@media (min-width: 800px) {
-  section.big-news {
-    display: flex;
-    align-items: center;
-  }
-
-  .cat-foto-wrapper img {
-    width: 360px;
-  }
-
-  section.big-news h2 {
-    text-align: justify;
-  }
-
+@media (min-width:700px) {
   section.small-news {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    margin: 2rem auto;
+    width: 90%;
+    margin:0 auto;
   }
   div.card {
-    width: 362px;
+    width: 40%;
+    margin:5px;
   }
   .card img {
     height: 250px;
   }
 }
 
+
+@media (min-width: 800px) {
+  section.big-news {
+    display: flex;
+  }
+
+  section.big-news h2 {
+    text-align: justify;
+  }
+
+}
+
 @media (min-width: 1212px) {
-  html {
-    background-color: blue;
-  }
-  body {
-    width: 70%;
-    margin: 0 auto;
-  }
-  header {
-    width: 70%;
-  }
+  
   nav {
     justify-content: flex-end;
     margin-right: 1rem;
@@ -193,7 +181,8 @@ footer {
   section.big-news {
     width: 80%;
   }
-  section.small-news {
-    width: 100%;
+  div.card {
+    width: 20%;
   }
+  
 }
