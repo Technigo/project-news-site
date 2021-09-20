@@ -24,19 +24,20 @@ nav > a {
 h1 {
   padding: 20px;
   text-align: center;
-  color: #8C857B;
-  font-family: 'Anton', sans-serif;
+  color: #8c857b;
+  font-family: "Anton", sans-serif;
 }
 
-p, h2 {
-color: #010D00;
-font-family: 'Roboto', sans-serif;
+p,
+h2 {
+  color: #010d00;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Goal was to have some hover effects for the link, but didn't have the time */
 a {
-  color: #010D00;
-  font-family: 'Roboto', sans-serif;
+  color: #010d00;
+  font-family: "Roboto", sans-serif;
   display: flex;
 }
 
@@ -50,63 +51,63 @@ a {
 
 /* styling parent flexbox for the big news image and text */
 .big-news {
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: whitesmoke;
 }
 
 .big-news-image {
-width: 100%;
-object-fit: cover;
-vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .big-news-text {
-justify-content: center;
+  justify-content: center;
 }
 
 /* Styling for the grid news (parent) and news card (children) */
 .grid-news {
   display: flex;
-  flex-wrap: wrap; 
- }
+  flex-wrap: wrap;
+}
 
 .news-card {
-background-color: #D9AE79;
-display: flex;
-flex-wrap: wrap; 
-justify-content: space-around;
-padding-top: 5%;
-margin-bottom: 5%;
-} 
+  background-color: #d9ae79;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
 
 /* Styling grid news images w hover effects */
 .news-card-image {
-width: 90%;
-object-fit: cover;
-height: 80%;
-border-radius: 5%;
-justify-content: center;
-filter: grayscale(100%);
--webkit-filter: grayscale(100%);
--webkit-transition: all 1s ease;
+  width: 90%;
+  object-fit: cover;
+  height: 80%;
+  border-radius: 5%;
+  justify-content: center;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
 }
 
 .news-card-image:hover {
-filter: grayscale(0%);
-filter: gray;
--webkit-filter: grayscale(0%);
-filter: none;
-transition: 1s ease;
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
 }
-  
+
 .news-card-text {
-margin: 0 5% 5% 5%;
-display: flex;
-flex-direction: column;
-align-items: center;
-} 
+  margin: 0 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 footer {
   display: flex;
@@ -127,7 +128,6 @@ footer {
 
 /* Adding styling for tablets*/
 @media (min-width: 668px) and (max-width: 1024px) {
-  
   /*changing the nav bar look and make the links in nav bar visual */
   nav {
     align-items: center;
@@ -148,9 +148,9 @@ footer {
   /* Having the big news section in row instaed of column */
   .big-news {
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     background-color: lightgray;
-  } 
+  }
 
   .big-news-image {
     width: 45%;
@@ -161,10 +161,10 @@ footer {
     width: 50%;
     font-size: 30px;
   }
-      
+
   .news-card {
     width: 46%;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-bottom: 0;
     background-color: thistle;
     padding: 2%;
@@ -173,17 +173,17 @@ footer {
   .news-card-text {
     width: 100%;
     margin: 2%;
-  }  
+  }
 }
 
 /* Adding styling for desktop */
-@media (min-width: 1025px){
+@media (min-width: 1025px) {
   html {
-    background: #E8CBC0;
-    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
-    background: linear-gradient(to right, #636FA4, #E8CBC0);
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #636fa4, #e8cbc0);
+    background: linear-gradient(to right, #636fa4, #e8cbc0);
   }
-  
+
   header {
     background-color: transparent;
   }
@@ -195,7 +195,7 @@ footer {
     order: 2;
     padding: 2% 5%;
   }
-  
+
   /* Using order to have the logo and links in nav bar behaving as in the sketch */
   .logo {
     order: -1;
@@ -208,9 +208,9 @@ footer {
 
   .big-news {
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     background: none;
-  } 
+  }
 
   .big-news-image {
     width: 45%;
@@ -224,17 +224,16 @@ footer {
 
   .grid-news {
     margin: 2%;
-    
   }
   .news-card {
     width: 25%;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-bottom: 0;
     background: none;
   }
 
   .news-card-text {
     margin: 2% 0 0 0;
-    width: 90%
+    width: 90%;
   }
-} 
+}
