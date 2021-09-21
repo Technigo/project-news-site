@@ -12,6 +12,7 @@ p, h1, h2, h3, h4 {
   display: grid;
   row-gap: 15px;
   align-items: space-around;
+  padding: 20px;
 }
 
 img.rounded-corners {
@@ -38,7 +39,7 @@ nav {
   width: 100%;
   padding: 4px;
   overflow: auto;
-  display: flex;
+  display:flex;
 }
 
 nav a {
@@ -62,13 +63,16 @@ a:hover {
   background: #f5d2d3;
   display: flex;
   flex-direction:column;
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
-  width: 80%;
+  width: 90%;
   border-style: solid;
   border-width: 3px;
   border-color: lavenderblush;
+  justify-content: center;
+  text-align: center;
 }
+
 
 
 .bignews-img{
@@ -80,9 +84,9 @@ a:hover {
 }
 
 .bignews-text{
-  display: inline-block;
-  margin: 5px;
-  width: 80%; 
+  display: flex;
+  text-align:center;
+  width: 90%; 
   font-size: 18px;
 }
 
@@ -132,22 +136,27 @@ a:hover {
   }
   
   .news {
-    width: 40%; 
+    width: 100%; 
+    display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: space-between;
+    justify-content: space-evenly;
+   
+    
    }
 
-  }
+   .small-news {
+     width: 35%;
+     margin: 10px; 
+     
+   }
+}
+   @media only screen and (max-width: 400px){
+     nav {
+       flex-direction: column;
+     }
+   }
+   
+
   
 
-  @media only screen and (min-width:1024px) {
-    .grid-container{
-      width: 100%;
-    }
-
-     .news {
-       width: 20%;
-     } 
-    
-      }
