@@ -1,12 +1,14 @@
 # News Site
+The weeks task was to build a new site that contains: 
+1.a picture or video header, 
+2.a news section with "big news" a section with "small news cards" using flexbox or grid.
+3.and be responsive to differens devices.
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I'm happy with my project, and that i managed to finish at all, because this is the week my baby was born and obviously i had other things on my mind. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I approached this project with efficiency in mind. I designed every part of the site before i started to code and i did every thing step by step in a decided order. I used a cat ipsum on every text snippet, if i had more time, maby i would cange so it would look more "real" regarding the text. And i would hade different pictures. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://dreamy-allen-7be780.netlify.app
