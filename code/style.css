@@ -3,22 +3,24 @@ html {
   color: #000;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   font-family: Garamond;
-  padding: 10px;
   text-align: center;
   background: #000000;
   color: white;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   flex-direction: column;
+  margin: auto; 
 }
 
 .menu {
   height: 25px;
   width: 100%;
-  padding-right: 60px;
   background: #000;
   margin-bottom: 10px;
 
@@ -47,10 +49,6 @@ p {
   font-size: 16px;
 }
 
-body {
-  width: 100%; 
-}
-
 .big-image img {
   width: 100%;
   padding: 1em;
@@ -66,7 +64,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   background:white;
-  padding: 8px; 
   border: 1px solid #fff;
   margin: 10px auto;
   background: #fff;
@@ -89,8 +86,9 @@ body {
 .menu ul {
   list-style: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
+
 .menu li {
   padding: 0 20px;
   float: right;
@@ -144,7 +142,7 @@ footer {
 
 a:link {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 /* Tablets */
