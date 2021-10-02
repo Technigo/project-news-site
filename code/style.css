@@ -1,5 +1,5 @@
 body {
-  font-family: "Kaisei Opti", serif; /*specific font to use for the whole webpage*/
+  font-family: 'Kaisei Opti', serif; /*specific font to use for the whole webpage*/
   margin: 10px; /*overall margin 10px for the whole webpage*/
 }
 
@@ -18,7 +18,7 @@ body {
 .search,
 .contact {
   margin: 10px; /*put som margin so there's some space between each element*/
-  text-transform: uppercase; /*tramsform text into uppercase*/
+  text-transform: uppercase; /*transform text into uppercase*/
 }
 
 .social-media-icon {
@@ -56,9 +56,9 @@ a:visited {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./background.jpg"); /*put a background image for the header*/
-  background-repeat: no-repeat; /*do not want to repet the image, vertically and horizontally*/
-  background-size: cover; /*image is going to fill the container, as large as possible. image can be strethed*/
+  background-image: url('./assets/background.jpg'); /*put a background image for the header*/
+  background-repeat: no-repeat; /*do not want to repeat the image, vertically and horizontally*/
+  background-size: cover; /*image is going to fill the container, as large as possible. image can be stretched*/
 }
 
 .title,
@@ -78,14 +78,14 @@ a:visited {
 }
 
 .navbar {
-  background-color: white; /*set the backgrpund-color to white because when scrolling I don't want it to be transparent*/
+  background-color: white; /*set the background-color to white because when scrolling I don't want it to be transparent*/
   border-top: 1px solid black; /*instead of using <hr/>*/
   border-bottom: 1px solid black; /*instead of using <hr/>*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: sticky; /*keep the elements positioned according to the normal flow*/
-  top: 0; /*want the navbar to be postioned at the top of the page*/
+  top: 0; /*want the navbar to be positioned at the top of the page*/
   z-index: 999; /*want the navbar to be in the front, not in the background*/
 }
 
@@ -130,7 +130,7 @@ a:visited {
 }
 
 .big-news img {
-  object-fit: cover; /*image is going to fill the container, as large as possible. image can be strethed*/
+  object-fit: cover; /*image is going to fill the container, as large as possible. image can be stretched*/
   width: 100%;
 }
 
@@ -141,7 +141,7 @@ a:visited {
 }
 
 .other-news:hover {
-  /*when hovering the news cards, the opacity, text-color and backgrpund colors will change*/
+  /*when hovering the news cards, the opacity, text-color and background colors will change*/
   opacity: 0.6;
   color: white;
   background-color: rgb(71, 72, 72);
@@ -171,7 +171,7 @@ footer p {
 .logo-technigo {
   width: 100%;
   max-height: 25px;
-  margin-top: 5px; /*put some space betwwen the logo and the paragraph*/
+  margin-top: 5px; /*put some space between the logo and the paragraph*/
 }
 
 /*when we click on the navbar and select one of the link, it will only target the class target-highlight*/
