@@ -1,8 +1,9 @@
 
 body {
-   font-family: Helvetica, sans-serif; 
-   color: black;
-   margin: 0px;
+  font-family: Helvetica, sans-serif; 
+  color: black;
+  margin: 0px;
+  text-align: -webkit-center;
 }
 
 a { 
@@ -17,7 +18,7 @@ a:hover{
 }
 
 /* header -------------------------*/ 
-header{
+.header{
   display: flex;
   justify-content: space-between;
   background-color:rgb(185, 178, 74);
@@ -51,17 +52,17 @@ header{
 }
 
 .logo-img{
-   height: 55%;
-   border-radius: 33%;
-   padding: 5px;
-   background-color:orange;
-   margin: 0.5rem;
-   box-shadow: 0px 0px 5px 1px black;
+  height: 55%;
+  border-radius: 33%;
+  padding: 5px;
+  background-color:orange;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 5px 1px black;
 }
 
 .logo h1{
-   width: 100%;
-   font-size: 1.5rem;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 
@@ -78,7 +79,7 @@ header{
 }
 
 .animation.one {
-   animation: subscribe 5s infinite alternate-reverse;
+  animation: subscribe 5s infinite alternate-reverse;
 }
 
 @keyframes subscribe {
@@ -175,20 +176,12 @@ header{
 
 
 /* small-news -------------------------*/ 
-.small-news{
-  display: inline-flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .small-square{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin: 15px;
-  width: 285px;
+  width: 290px;
   height: 250px;
   font-size: 60%;
   overflow: hidden;
@@ -266,7 +259,7 @@ header{
 }
 
 /* -------footer------ */
-footer{
+.footer{
   background-color: rgb(138, 132, 56);
   margin-top: 3rem;
   padding: 1rem 0rem;
@@ -277,7 +270,7 @@ footer{
   text-align: center;
 }
 
-footer a{
+.footer a{
   font-size: 1rem;
   font-style: normal;
 }
@@ -285,7 +278,7 @@ footer a{
 
 
 /*--------TABLET - mobile first-------------*/
-@media screen and (min-width: 767px){
+@media screen and (min-width: 668px){
 .logo{
   display: none 
 } 
@@ -327,10 +320,18 @@ footer a{
   height: 630px;
 }
 
+.small-news{
+  display: block;
+}
+
+.first-line, .second-line{
+  display: flex;
+  justify-content: center;
+}
 }
 
 /*--------DESKTOP - mobile first-------------*/
-@media screen and (min-width: 991px){
+@media screen and (min-width: 1025px){
 .logo{
   display: flex;
 }
@@ -348,6 +349,14 @@ footer a{
 .video{
   height: 950px;
 } 
+
+.small-news{
+  display: inline-flex;
+}
+
+.first-line, .second-line{
+  display: inline-flex;
+}
 }
 
 
