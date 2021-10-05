@@ -16,7 +16,7 @@ To insure an equal and adequate user experience and smooth accesability for scre
 
 ## View it live
 
-https://infallible-meninsky-6fb645.netlify.app/
+https://marysnopok-poketnews-site.netlify.app
 
 ## Resourses:
 
