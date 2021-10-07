@@ -13,9 +13,10 @@ body {
   background-color: rgb(56, 52, 52);
 }
 
+/* main styling */
 main {
   font-family: "Open Sans", sans-serif;
-  width: 97vw;
+  width: 97%;
   margin: 0 auto;
   text-align: center;
 }
@@ -40,6 +41,8 @@ hr.thick {
   width: 90%;
   margin: 0 auto;
 }
+
+/* site header styling */
 .site-header {
   height: 20%;
   background: rgb(238, 174, 202);
@@ -48,11 +51,11 @@ hr.thick {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
-  margin-bottom: 2vh;
+  margin-bottom: 1rem;
 }
 .site-header-inner {
   padding: 7% 10%;
-  margin-bottom: 1vh;
+  margin-bottom: 1rem;
 }
 
 .site-header-top a {
@@ -62,8 +65,8 @@ hr.thick {
 }
 
 .site-header-image {
-  width: 30vw;
-  height: 16vh;
+  width: 15rem !important;
+  height: 8rem !important;
   object-fit: cover;
   object-position: 62% 0;
   border-radius: 43px;
@@ -72,7 +75,7 @@ hr.thick {
 
 .site-header-name {
   font-family: "Bebas Neue", cursive;
-  font-size: 8vh;
+  font-size: 4em;
   color: rgb(43, 40, 40);
   line-height: 0.8em;
 }
@@ -80,7 +83,7 @@ hr.thick {
 .site-header-slogan {
   padding-top: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 3vh;
+  font-size: 1.5em;
   color: rgb(43, 40, 40);
   text-align: center;
   line-height: 0.8em;
@@ -89,9 +92,10 @@ hr.thick {
 .site-header-slogan span {
   color: rgb(85, 26, 139);
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: 1.5em;
 }
 
+/* site navbar styling */
 .site-header-nav {
   display: none;
 }
@@ -104,13 +108,13 @@ hr.thick {
 }
 
 .site-header-mobile-nav-icon-box {
-  padding: 2vh;
+  padding: 1rem;
 }
 
 .site-header-mobile-nav-icon-box i {
   font-size: 2em;
-  padding-left: 1vw;
-  padding-bottom: 1vh;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .site-header-mobile-nav-menu ul {
@@ -125,30 +129,31 @@ hr.thick {
 .site-header-mobile-nav-menu a {
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
-  font-size: 3vh;
+  font-size: 1.5em;
   text-align: center;
   padding: 0.5rem 0;
 }
 
 input:checked ~ .site-header-mobile-nav-menu {
-  height: 18vh;
+  height: 9em;
 }
 
 input:checked ~ .site-header-mobile-nav-menu ul {
   display: block;
 }
 
+/* section news styling */
 .section-news {
-  margin: 3vh auto;
+  margin: 1.5rem auto;
   background: linear-gradient(
     to right,
     rgba(238, 174, 202, 1),
     rgba(148, 187, 233, 1)
   );
-  min-height: 45vh;
+  min-height: 27rem;
   height: auto;
   width: 90%;
-  padding: 1vh;
+  padding: 1rem;
 }
 
 .section-news:hover {
@@ -157,15 +162,24 @@ input:checked ~ .site-header-mobile-nav-menu ul {
 
 .section-news-wrap {
   background-color: rgb(56, 52, 52);
-  padding: 2vh;
+  padding: 2rem;
+}
+
+/* image styling */
+
+figure {
+  height: auto;
+  min-height: 11rem;
+  padding: 2rem;
 }
 
 .mobile-news-image {
   width: 95%;
-  height: 40vh !important;
+  height: 20rem !important;
   min-height: auto;
   object-fit: cover;
-  box-shadow: 1vh 1vh 0.5vh rgb(8, 8, 8, 0.5), -1vh -1vh 0.5vh rgb(8, 8, 8, 0.5);
+  box-shadow: 1rem 1rem 0.5rem rgb(8, 8, 8, 0.5),
+    -1rem -1rem 0.5rem rgb(8, 8, 8, 0.5);
   overflow: hidden;
 }
 
@@ -173,26 +187,21 @@ input:checked ~ .site-header-mobile-nav-menu ul {
   transform: rotate(20deg);
 }
 
-figure {
-  height: auto;
-  min-height: 22vh;
-  padding: 2vh;
-}
-
 .site-news-body {
   height: auto;
-  min-height: 5vh;
+  min-height: 2.5rem;
 }
 
+/* footer styling */
 footer {
   background: linear-gradient(
     to right,
     rgba(238, 174, 202, 1),
     rgba(148, 187, 233, 1)
   );
-  min-height: 20vh;
+  min-height: 10rem;
   height: auto;
-  margin-bottom: 2vh;
+  margin-bottom: 2rem;
 }
 
 .footer-wrap {
@@ -203,10 +212,10 @@ footer {
 
 .footer-site-name-link {
   font-family: "Bebas neue", cursive;
-  font-size: 5vh;
+  font-size: 2.5em;
   color: rgb(43, 40, 40);
-  padding-top: 2vh;
-  padding-bottom: 1vh;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
@@ -219,7 +228,7 @@ footer {
 .footer-social-media-icon i {
   display: flex;
   justify-content: center;
-  font-size: 5vh;
+  font-size: 2.5em;
   color: rgb(85, 26, 139);
 }
 
@@ -232,13 +241,15 @@ footer {
   transform: rotate(20deg);
 }
 
+/* credentials styling */
+
 .project-credentials {
   background-color: rgb(230, 220, 220);
-  font-size: 2vh;
+  font-size: 2em;
   font-family: "Open sans", sans-serif;
-  margin-top: 2vh;
+  margin-top: 2rem;
   text-align: center;
-  padding: 2vh;
+  padding: 2rem;
 }
 
 .project-credentials a {
@@ -258,11 +269,11 @@ footer {
 
   .mobile-news-image {
     height: auto;
-    min-height: 31vh;
+    min-height: 15rem;
   }
 
   .section-news {
-    min-height: 40vh;
+    min-height: 20rem;
   }
 }
 
@@ -282,17 +293,20 @@ footer {
   }
 
   .news-image {
-    height: auto;
-    min-height: 31vh;
-    object-fit: cover;
+    height: 13rem !important;
+    width: 17.5rem !important;
   }
 
   figure {
-    min-height: 36vh;
+    min-height: 18rem;
   }
 
   .site-news-body {
-    min-height: 5vh;
+    min-height: 3.5rem;
+  }
+
+  .section-news-wrap {
+    padding: 2rem 0 2rem 0;
   }
 }
 
@@ -311,14 +325,14 @@ footer {
   }
 
   .site-header-image {
-    min-width: 20vw;
-    height: 20vh;
+    width: 10rem !important;
+    height: 7rem !important;
     box-shadow: 13px 16px rgb(85, 26, 139);
-    object-position: 62% 54%;
+    object-fit: cover;
   }
 
   .site-big-news-figure {
-    min-height: 36vh;
+    min-height: 18rem;
   }
 
   .site-header-nav {
@@ -330,7 +344,7 @@ footer {
   }
 
   .site-news-body {
-    min-height: 5vh;
+    min-height: 2.5rem;
   }
 
   .big-news-wrap {
@@ -338,62 +352,87 @@ footer {
   }
 
   .site-news {
-    max-width: 22%;
-    width: auto;
+    width: 22%;
     max-height: 60vh;
     display: flex;
   }
 
   .desktop-news-image {
-    min-height: 22vh;
+    min-width: 7rem !important;
+    min-height: 6rem !important;
+    height: 19rem !important;
+    max-width: 21rem !important;
+    max-height: 16rem !important;
     object-fit: cover;
   }
 
   .hero-image {
-    max-height: 58vh;
-    object-fit: cover;
-    width: 100%;
+    min-height: 13rem !important;
+    min-width: 24rem !important;
+    height: 28rem !important;
+    width: 37rem !important;
+    max-height: 25rem !important;
+    max-width: 37rem !important;
   }
 
   .site-big-news-headline {
-    margin-top: 13vh;
+    margin-top: 6.5rem;
   }
 
   .site-big-news-headline-text {
-    font-size: 6vh;
+    font-size: 3em;
     text-align: justify;
-    padding-top: 2vh;
+    padding-top: 2em;
   }
 
   figure {
-    min-height: 27vh;
+    min-height: 9rem;
+  }
+
+  .site-header-nav {
+    width: 100% !important;
+  }
+
+  .site-header-nav ul {
+    display: flex;
+  }
+
+  .site-header-nav li {
+    display: flex;
+    border: 1px solid rgb(224, 11, 11);
+  }
+
+  .site-header-nav li > * {
+    flex-basis: 100%;
+  }
+
+  .site-header-nav a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(85, 26, 139);
+  }
+
+  .site-header-nav a:hover {
+    color: rgb(250, 91, 178);
   }
 }
 
-.site-header-nav {
-  width: 100% !important;
-}
+@media (min-width: 1280px) {
+  .site-header-image {
+    width: 9rem !important;
+    height: 5rem !important;
+    box-shadow: 12px 7px rgb(85 26 139);
+  }
+  .site-header-slogan {
+    padding: 0;
+  }
 
-.site-header-nav ul {
-  display: flex;
-}
+  .site-header-inner {
+    padding: 1% 25%;
+  }
 
-.site-header-nav li {
-  display: flex;
-  border: 1px solid rgb(224, 11, 11);
-}
-
-.site-header-nav li > * {
-  flex-basis: 100%;
-}
-
-.site-header-nav a {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3vh;
-  text-align: center;
-  color: rgb(85, 26, 139);
-}
-
-.site-header-nav a:hover {
-  color: rgb(250, 91, 178);
+  .site-big-news-headline-text {
+    font-size: 3em;
+  }
 }
