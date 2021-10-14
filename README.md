@@ -15,8 +15,11 @@ With that project, I learned:
 - How to orginize my code to make it more readable 
 
 Useful links I used: 
+
 Logo: https://www.freelogodesign.org/
+
 Images: https://unsplash.com/
+
 Sketch: https://figma.com/
 
 # View it live
