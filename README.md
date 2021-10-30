@@ -14,4 +14,4 @@ If I had more time I would also have added a button to the bottom of the text bl
 
 ## View it live
 
-https://pensive-noyce-ed8f3b.netlify.app/
+https://good-news-only.netlify.app/
