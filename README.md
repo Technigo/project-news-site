@@ -1,9 +1,3 @@
-# News Site
-
-First solo project at Technigo Boot Camp. Create a responsive site with box design, using flexbox or grid.
-
-## The problem
-
 Due to life I had a late start on the project. I tried to plan and think it through before coding, in order to minimize unnecessary work. I made a sketch, trying to understand how the different boxes would need to be built to work in mobile/tablet/screen. 
 
 I rewatched technigo-videos and livesessions, and did research on both grid and flexbox (youtube, stackoverflow and w3schools) before starting. Grid felt simpler, but I didn't know how to do more advanced stuff with it so I went all in with flexbox.
