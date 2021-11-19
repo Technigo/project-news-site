@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
-      </style>
-  </head>
-  
-  <body>
-    <header>
-        <img class="logo" src="./img/logo.png" alt="logo"/>
-<div class="navbar">
-  <li class="list"> <a class="link" href="#home">Home</a></li>
-  <li class="list"><a class="link" href="#news">News</a></li>
-  <li class="list"><a class="link" href="#contact">Contact</a></li>
-  <li class="list"><a class="link" href="#about">About</a></li>
-</div>
-    </header>
+	<head>
+		<meta charset="utf-8" />
+		<title>Dear Tea Society</title>
 
-    <div class="intro">
-        <img class="main-photo" src="img/kivik.jpg" alt="intro-photo">        
-    <div class="main-story">
-      “ Small <br>
-      Scandinavian <br>
-      province – <br>
-      large chunk of <br>
-      paradise ”
-    </div>
-    </div>
-  
-    <div class="card-container">
-      <div class="card">
-         <img class="card-photo" src="img/ales stones.jpg" alt="ales stenar">
-         <h3 class="card-name">Classic attractions</h3> 
-         <p class="card-description">
-          Make sure you don’t miss Skåne's classic tourist attractions and most exciting places to visit. Visit memorable landmarks, take a guided tour, snap breathtaking views and tick off the places that make up your ultimate Skåne experience.
-          </p>
-      </div>
-      <div class="card">
-          <img class="card-photo" src="img/food.jpg" alt="food">
-          <h3 class="card-name"> Food & Drinks</h3> 
-          <p class="card-description">
-            With locally grown produce from rich, fertile soils, prepared with love and care, we promise you’ll enjoy every mouthful in the eateries around the region. Organic farm shops, winery tours and gastronomic experiences beyond the ordinary – you’ll find it all here.
-           </p>
-      </div>
-      <div class="card">
-        <img class="card-photo" src="img/paddling.jpg" alt="paddling">
-        <h3 class="card-name">Outdoors & Adventure</h3> 
-        <p class="card-description">
-          Full of lush beech forests, peaceful countryside and a majestic coastline on three sides, Skåne is a natural playground. Go for hikes in our national parks, bike through yellow canola fields, go canoeing, kayaking, paragliding and much more. 
-         </p>
-     </div>
-     <div class="card">
-         <img class="card-photo" src="img/unique living.jpg" alt="unique living">
-         <h3 class="card-name">Unique living</h3> 
-         <p class="card-description">
-          From luxurious castles to simple cottages, relaxing spas to a tent under the stars, there’s a place to stay that suits your style – and your wallet. Here's the collection of the most unique accommodations Skåne has to offer, to make your stay in Skåne the most memorable yet.
-          </p>
-     </div>
-     <div class="card">
-      <img class="card-photo" src="img/farm.jpg" alt="culture">
-      <h3 class="card-name">Culture</h3> 
-      <p class="card-description">
-        With history that streches back to the Viking Age, Skåne is filled with historic buildings, museums and cultural landmarks for you to explore. Learn more about the Swedish and Danish heritage, Scandinavian design and a thriving arts scene.
-       </p>
-   </div>
-   <div class="card">
-       <img class="card-photo" src="img/family.jpg" alt="family fun">
-       <h3 class="card-name">Family fun</h3> 
-       <p class="card-description">
-        Skåne is the go-to getaway for curious kids who enjoy romping around the countryside. Full of activities for children of all ages, enjoy Skåne's zoo, water parks, merry-go-rounds, go-karts, skateboarding and much more.
-        </p>
-   </div>
-   <div class="card">
-    <img class="card-photo" src="img/fika.jpg" alt="shopping">
-    <h3 class="card-name">Design & Shopping</h3> 
-    <p class="card-description">
-      Skåne has been the hub of the Scandinavian design scene for years and the region is buzzing with crafts, scandinavian furniture, textile design, architecture and fashion. Drop in some shops and shop 'til you drop, choosing from the very best in traditional handicrafts and modern Scandinavian design.
-     </p>
-  </div>
-  <div class="card">
-    <img class="card-photo" src="img/history.jpg" alt="history">
-    <h3 class="card-name">For history lovers</h3> 
-    <p class="card-description">
-      Good news for all history buffs out there – your quest for ancient ruins, sacred wonders and world-famous landmarks need not be squandered at. Dating all the way back to when Skåne was home to dinosaurs and up to today, makes for a multitude of mysterious places for you to explore. 
-     </p>
-  </div>
-</div>
-    
-<div class="footer">
-  <img class="footer" src="./img/Haru Ahn.png" alt="name"/>
-</div>
+		<!-- Google Font Montserrat -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
-</body>
+
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+		<!-- Meta tag for responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<!-- Header and navbar -->
+		<header id="header">
+			<div class="flex-header">
+				<div class="navbar-brand-flex">
+					<a class="navbar-brand" href="./index.html">Dear tea society</a>
+				</div>
+				<nav>
+					<ul class="flex-navbar">
+						<li class="flex-child">
+							<a class="navbar" href="#">News</a>
+						</li>
+						<li class="flex-child">
+							<a class="navbar" href="#">Our Tea</a>
+						</li>
+						<li class="flex-child">
+							<a class="navbar" href="#">Shop</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+			<!-- The big news content -->
+			<section class="hero-section">
+				<article class="hero-article">
+					<div class="hero-image-container">
+						<img class="hero-image" src="./img/heroimage.png" alt="hero-image" />
+					</div>
+
+					<div class="hero-text">
+						<h1 class="hero-headline-1">DISCOVER DEAR TEA SOCIETY</h1>
+						<p>The most delicious news of the year is here! A Gathering of Friends is an exclusive tea calendar from Dear Tea Society with 24 individually packaged and neatly numbered organic teas. If you'd rather give it away as a Christmas present, it works just as well as a tasting trip among Dear Tea Society members.</p>
+						<p class="hidden-paragraph">The best news of the year! A Gathering of Friends is an exclusive tea calendar from Dear Tea Society with 24 individually packaged and neatly numbered organic teas. Christmas is finally here, and apart from SVT's Christmas calendar, there's nothing to help you prepare for Christmas fun more than a tea calendar, is there? Every day you get to get acquainted with a new member of the Dear Tea Society. During this tasting trip, black tea, green tea, rooibos and oolong are offered. Pure teas, flavored teas, pu'er and herbal teas. Within the Dear Tea Society, there's something for everyone.</p>
+						<p class="hidden-paragraph-2">This is a 100% organic calendar of tea, and each unique tea is smoothly packaged a pyramid made of plant-based and biodegradable material. On the bag you will of course also find brewing instructions and in the accompanying folder you can read more each tea and be inspired by the exciting world of tea.</p>
+					</div>
+				</article>
+			</section>
+
+			<!-- More news content -->
+			<section class="small-news-section">
+				<article class="small-articles">
+					<img class="small-news-images" src="./img/teacalender.png" alt="teacalender" />
+					<h2>ORGANIC TEA CALENDAR</h2>
+					<p>24 organic teas, selected with care from Dear Tea Society's range of exclusive teas.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80" alt="coffee-forest" />
+					<h2>HIGH QUALITY</h2>
+					<p>The tea pyramids are made of PLA which is plant-based and biodegradable material.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1605650836554-d1021fdfaedd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="christmas" />
+					<h2>PERFECT CHRISTMAS GIFT</h2>
+					<p>This Tea Collection / Tea Calendar fits just as well in January and December, therefore it is also a perfect Christmas gift for the tea lover.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1536998003793-b13c28fae74b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=930&q=80" alt="tea-time" />
+					<h2>DISCOVER DEAR TEA SOCIETY</h2>
+					<p>Also check out our range of organic portion-packed teas and pick & drink here.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1605453205809-0affc80d4189?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80" alt="cup-of-tea" />
+					<h2>HAPPY TO BE YOUR CUP OF TEA </h2>
+					<p>Welcome to the Dear Tea Society, where the eccentric, the strange, the absurd, the thirsty, the tired, the restless, the beautiful, the creative, the wacky, the cunning, the polite, the curious and the perfectionist all unite in the love of tea.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1565718253569-3156836e2ec0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lmdCUyMGNhcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="gift-card" />
+					<h2>DIGITAL GIFT CARD</h2>
+					<p>Finally! The best gift in the world for someone you really like! A gift card in our webshop! Like real money, only better!</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://cdn.shopify.com/s/files/1/0527/2213/9300/files/johan-och-nystrom-banner-blogg-kaffetradet_1024x1024.jpg?v=1612995921" alt="farmer" />
+					<h2>PHILOSOPHY</h2>
+					<p>Johan & Nyström founded in 2004 with the vision of a better coffee world. We wanted to change the coffee industry in general and small.</p>
+				</article>
+
+				<article class="small-articles">
+					<img class="small-news-images" src="https://images.unsplash.com/photo-1561296180-e8100fd714e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" alt="plant" />
+					<h2>OUR PURCHASING MODEL</h2>
+					<p>Our idea is actually quite simple. We buy really good coffee, which is produced in a sustainable way and for which we pay a fair amount. A rather banal business idea and customary purchasing philosophy for coffee one might think.</p>
+				</article>
+			</section>
+		</div>
+
+	</body>
 </html>
