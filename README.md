@@ -6,4 +6,5 @@ It was challenging to understand what is the most efficient way to write the med
 
 
 ## View it live
-https://frosty-stonebraker-0d4b63.netlify.app
+
+https://haruahn-news-site.netlify.app
