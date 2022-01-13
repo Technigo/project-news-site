@@ -3,4 +3,4 @@ This site is part of the Technigo bootcamp - sprint 1 week 2. The aim of the pro
 
 
 ## View it live
-https://app.netlify.com/sites/sofiawillebrand-week2-news-site#
+https://environmental-news-sofia-willebrand.netlify.app/
