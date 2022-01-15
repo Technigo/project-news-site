@@ -5,9 +5,8 @@ body {
 /* Mobile first development
 width 375px */
 
-header {
+/* header {
     display: flex;
-    margin: 10px;
     justify-items: center;
 }
 
@@ -32,6 +31,29 @@ nav {
     width: 385px;
 }
 
+h2 {
+    font-size: 16px;
+    width: 220px;
+    margin-left: 20px;
+}
+
+.main-news h2 {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    width: 300px;
+}
+
+.main-news-content, .other-news-content, .read-more {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
 .main-news{
     display: flex;
     flex-direction: column;
@@ -48,65 +70,95 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.main-news p {
-    border: 0;
-    margin: 0;
-    justify-content: space-evenly;
+    width: 350px;
 }
 
-.main-news-img {
-    width: 350px;
-    height: 240px;
-    background-color: white;
-    box-shadow: 0 10px 10px rgba(136, 130, 130, 0.8);
-}
 .main-news-img img {
     display: flex;
     margin: auto;
-    padding-top: 15px;
     width: 320px;
 }
 
 .other-news-img {
-    width: 320px;
-    height: 240px;
+    width: 300px;
+    height: 300px;
     background-color: white;
-    box-shadow: 0 10px 10px rgba(136, 130, 130, 0.8);
+    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.8);
 }
 .other-news-img img {
     display: flex;
     margin: auto;
     padding-top: 10px;
-    width: 300px;
-    height: 220px;
+    width: 280px;
+    height: 200px;
 }
 
+.read-more {
+    color: rgb(106, 143, 185);
+    font-weight: 400;
+    text-decoration: none;
+}
+.read-more:hover {
+    font-weight: 600;
+}
+.animation-line {
+    height: 3px;
+
+}
+
+footer {
+    margin: 30px;
+    font-size: .5em;
+}
+
+/* If there's no forwards, the bars will disappear after it has expanded!
+tranfrom-origin 0 0 otherwise the bars will start to expand from the center
+to set it at 0 0 so it starts from the left of the x axis */
+
+/* .animation-line {
+    background: rgb(123, 148, 177);
+    margin-bottom: 1em;
+}
+header, .animation-line {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+@keyframes fillBar {
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@media screen and (min-width: 1300px)  */ 
+
+
 /* Desktop View */
-/* body {
+body {
     margin: 0;
     border: 0;
 }
 
 header {
     display: block;
-    padding: 20px;
-    height: 80px;
+    margin-bottom: 0;
+    height: 60px;
 }
 h1 {
     display: inline-block;
+    font-size: 36px;
 }
-.head-img {
-    width: 1440px;
-    height: 300px;
-}
+
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav {
     display: inline-block;
+    margin-left: 10%;
 }
 ul {
     list-style-type: none;
@@ -118,7 +170,67 @@ li {
 }
 
 nav a {
+    margin: 30px;
     text-decoration: none;
     color: black;
     font-weight: 600;
-} */
+    
+}
+
+.pagewrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.main-news {
+display: flex;
+position: absolute;
+margin: 50px;
+}
+
+.header-img {
+    grid-column: 1;
+}
+.other-news.1 {
+    grid-column: 1;
+}
+.other-news.2 {
+    grid-column: 2;
+}
+.other-news.3 {
+    grid-column: 3;
+}
+.other-news.4 {
+    grid-column: 4;
+}
+.other-news.5 {
+    grid-column: 1;
+}
+.other-news.6 {
+    grid-column: 2;
+}
+.other-news.7 {
+    grid-column: 3;
+}
+.other-news.8 {
+    grid-column: 4;
+}
+
+
+.main-news-img img{
+    width: 400px;
+    height: 290px;
+} 
+
+.other-news-img img {
+    margin: auto;
+    padding-top: 10px;
+    width: 280px;
+    height: 200px;
+}
+.animation-line {
+    display: none;
+}
+
