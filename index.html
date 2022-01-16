@@ -8,75 +8,101 @@
 </head>
 
 <body>
-  <header>
-    <h1>Tech News</h1>
-    <nav>
-      <ul>
-        <li>Tech</li>
-        <li>Videos</li>
-        <li>Events</li>
-        <li>More</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="./images/apps.jpg" alt="">
-      <h2>Google and Meta fined $237M over user tracking in France</h2>
-      <p>France's data protection agency issued a 210 million euro ($237 million) fine to Google and Meta on Thursday
-        over user
-        tracking concerns.</p>
-    </section>
-    <article>
-      <img src="./images/samsung-galaxy.jpg" alt="Samsung galaxy fold phone">
-      <h3>The world in your pocket: How smartphones will get smarter in 2022</h3>
-      <p>Google, OnePlus, Asus and Motorola give us a taste of how our phones will be more useful, intelligent and
-        powerful
-        over the next 12 months.</p>
-    </article>
-    <article>
-      <img src="./images/saw.jpg" alt="Cut-off saw cutting metal with sparks">
-      <h3>Singapore-based Sesto Robotics Targets International Expansion with $5.7M Raise</h3>
-      <p>Singapore-based industrial robotics firm Sesto this week announced a $5.7 million raise, featuring TRIVE, WTI
-        GmbH and
-        SEEDS Capital.</p>
-    </article>
-    <article>
-      <img src="./images/meta.jpg" alt="Facebook and Meta 3D icons">
-      <h3>The FTC is Reportedly Probing Meta's VR Business for Antitrust Violations</h3>
-      <p>Following news that the FTC's antitrust suit against Meta cleared a critical hurdle earlier this week, the
-        agency is
-        apparently also taking a sharp interest in the company's VR business.</p>
-    </article>
-    <article>
-      <img src="./images/innovation.jpg" alt="Upside down light buld with plant in it on wood">
-      <h3>The Most Innovative Tech we Reviewed in 2021</h3>
-      <p>2021 wasn't short of tech that took to creative paths to solve real-world problems. These are the breakthrough
-        gadgets
-        that set the stage for years to come.</p>
-    </article>
-    <article>
-      <img src="./images/cyber-security.jpg" alt="Lock and two credit cards on keyboard">
-      <h3>Cybersecurity 2022: More Fraud, More Fakes, More Crypto Scams</h3>
-      <p>Cybercriminals in 2022 will move from identity theft to identity fraud, predicted the Identity Theft Resource
-        Center.</p>
-    </article>
-    <article>
-      <img src="./images/books.jpg" alt="Stack of books and a journal">
-      <h3>Lawtrades Aims to Change how your Company Utilizes Legal Resources</h3>
-      <p>Similar to other industries embracing contract work, Lawtrades is giving legal professionals a way to become
-        independent
-        and run their own virtual law practices.</p>
-    </article>
-    <aside></aside>
-  </main>
-  <footer>
-    <ul>
+  <div class="wrapper">
+    <header class="header">
+      <h1>TN</h1>
+      <nav>
+        <ul class="header__list">
+          <li>Tech</li>
+          <li>Videos</li>
+          <li>Events</li>
+          <li>More</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <img src="./images/saw.jpg" class="section__image" alt="Cut-off saw cutting metal with sparks">
+        <div class="section__text">
+          <h2 class="section__header">Singapore-based Sesto Robotics Targets International Expansion with $5.7M Raise
+          </h2>
+          <p class="section__paragraph">Singapore-based industrial robotics firm Sesto this week announced a $5.7
+            million raise, featuring TRIVE, WTI
+            GmbH and SEEDS Capital.
+          </p>
+        </div>
+      </section>
+      <div class="grid">
+        <article class="article__top-left">
+          <img src="./images/samsung-galaxy.jpg" class="article__image" alt="Samsung galaxy fold phone">
+          <div class="article__text">
+            <h3>The world in your pocket: How smartphones will get smarter in 2022</h3>
+            <p>Google, OnePlus, Asus and Motorola give us a taste of how our phones will be more useful, intelligent and
+              powerful over the next 12 months.
+            </p>
+          </div>
+        </article>
+        <article class="article__top-right">
+          <img src="./images/apps.jpg" class="article__image" alt="Phone with apps">
+          <div class="article__text">
+            <h3>Google and Meta fined $237M over user tracking in France</h3>
+            <p>France's data protection agency issued a 210 million euro ($237 million) fine to Google and Meta on
+              Thursday
+              over user tracking concerns.
+            </p>
+          </div>
+        </article>
+        <article class="article__middle-left">
+          <img src="./images/meta.jpg" class="article__image" alt="Facebook and Meta 3D icons">
+          <div class="article__text">
+            <h3>The FTC is Reportedly Probing Meta's VR Business for Antitrust Violations</h3>
+            <p>Following news that the FTC's antitrust suit against Meta cleared a critical hurdle earlier this week,
+              the
+              agency is apparently also taking a sharp interest in the company's VR business.
+            </p>
+          </div>
+        </article>
+        <article class="article__middle-right">
+          <img src="./images/innovation.jpg" class="article__image" alt="Upside down light buld with plant in it on wood">
+          <div class="article__text">
+            <h3>The Most Innovative Tech we Reviewed in 2021</h3>
+            <p>2021 wasn't short of tech that took to creative paths to solve real-world problems. These are the
+              breakthrough
+              gadgets that set the stage for years to come.
+            </p>
+          </div>
+        </article>
+        <article class="article__bottom-left">
+          <img src="./images/cyber-security.jpg" class="article__image" alt="Lock and two credit cards on keyboard">
+          <div class="article__text">
+            <h3>Cybersecurity 2022: More Fraud, More Fakes, More Crypto Scams</h3>
+            <p>Cybercriminals in 2022 will move from identity theft to identity fraud, predicted the Identity Theft
+              Resource
+              Center.
+            </p>
+          </div>
+        </article>
+        <article class="article__bottom-right">
+          <img src="./images/books.jpg" class="article__image" alt="Stack of books and a journal">
+          <div class="article__text">
+            <h3>Lawtrades Aims to Change how your Company Utilizes Legal Resources</h3>
+            <p>Similar to other industries embracing contract work, Lawtrades is giving legal professionals a way to
+              become
+              independent and run their own virtual law practices.
+            </p>
+          </div>
+        </article>
+    </main>
+    <aside class="aside"></aside>
+  </div>
+  <footer class="footer">
+    <ul class="footer__list">
       <li>About</li>
       <li>Policies</li>
       <li>Follow</li>
     </ul>
   </footer>
+  </div>
 </body>
 
 </html>
