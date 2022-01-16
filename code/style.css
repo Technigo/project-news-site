@@ -1,32 +1,51 @@
-html {
+* {
     font-family: Work Sans;
+    margin: 0;
+    border: 0;
 }
 
 /* Mobile first development */
-.pagewrapper {
-    padding: 30px;
-}
 header {
     display: flex;
+    justify-content: center;
+    margin: 10px 10px;
 }
 .header-break-img {
+    display: none;
+}
+
+.desktop-view-logo {
     display: none;
 }
 .logo {
     width: 50px;
     height: 50px;
 }
-
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 h1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 1em;
 }
 h2 {
     font-size: 5vw;
+    
 }
 
 p {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.read-more {
+    text-decoration: none;
+    color: rgb(45, 101, 206);
 }
 
 .header-img {
@@ -37,49 +56,75 @@ nav {
 }
 
 /* content boxes and images' sizes */
+
+.other-news-wrapper {
+    justify-items: center;
+    align-items: center;
+}
+
 .main-news-content, .main-news-img {
     width: 50vw;
 }
 .other-news-content, .other-news-img img {
     width: 40vw;
 }
-
 .other-news-img h3 {
     font-size: .8em;
     width: 140px;
 }
 
+/* Animation part
+
+If there's no forwards, the bars will disappear after it has expanded!
+tranfrom-origin 0 0 otherwise the bars will start to expand from the center
+to set it at 0 0 so it starts from the left of the x axis */
+
+header {
+    animation: fillBar 2s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+@keyframes fillBar {
+    to {
+        transform: scaleX(1)
+    }
+}
+
+
 
 
 /* Tablet view*/
 @media (min-width: 400px) and (max-width: 1000px) {
-    /* .pagewrapper {
-    display: grid;
-    width: 1000px;
-    grid-template-columns: repeat(2, 400px);
-    grid-gap: 20px;
-    } */
     .logo {
-        margin-top: 10px;
+        display: none;
+    }
+    .desktop-view-logo {
+        display: flex;
+        margin-left: 20px;
+        width: 200px;
+        height: 150px;
     }
     h1 {
-        margin-left: 20px;
+        display: none;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 3vw;
         width: 300px;
     }
-    
     p {
-        font-size: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .other-news-img h3 {
+        font-size: 2vw;
+        width: 300px;
     }
     header {
-        margin: 30px;
-        width: 1000px;
+        margin: 30px 30px;
+        width: 100%;
     }
     .header-break-img {
-        display: flex;
-        height: 200px;
+        display: none;
     }
     nav {
         display: flex;
@@ -89,64 +134,83 @@ nav {
     ul {
         list-style-type: none;
         display: flex;
-        margin: 0;
+        margin-left: 100px;
         padding: 0;
     }
     nav a {
-        margin: 30px;
+        margin-right: 20px;
         text-decoration: none;
         color: black;
         font-weight: 600;   
     }
+        /* main news */
     .main-news-img {
         height: 300px;
         flex-direction: column;
         align-self: center;
     }
-    .main-news-content, .main-news-img {
-        width: 400px;
-        margin : 40px;
+    .main-news-img {
+        width: 300px;
+        height: 240px;
     }
-    .other-news-content, .other-news-img img {
-        width: 280px;
+    .main-news-content {
+        margin-left: 50px;
+        width: 300px;
     }
-
-    /* main news */
     .main-news {
         display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
     }
     /* other news */
 
     .other-news-wrapper {
         display: flex;
         flex-wrap: wrap;
-        width: 900px;
+        margin-top: 40px;
+        justify-content: center;
     }
     .other-news {
         flex: 50%;
+        width: 100%;
+        align-self: center;
+    }
+    .other-news-content, .other-news-img img {
+        width: 280px;
+    }
+    .other-news-img img {
+        height: 200px;
     }
     
 }
 /* Desktop view*/
 
 @media (min-width: 1001px) {
-    /* .pagewrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 360px);
-    } */
     header {
-        margin: 30px 30px 20px 30px;
+        margin: 10px 30px 20px 30px;
         height: 50px;
         width: 1440px;
     }
     .logo {
-        margin-top: 10px;
+        display: none;
+    }
+    .desktop-view-logo {
+        display: flex;
+        margin-left: 10px;
+        width: 200px;
+        height: 150px;
     }
     h1 {
-        margin-left: 20px;
+        display: none;
     }
     h2 {
         font-size: 3vw;
+    }
+
+    .other-news-img h3 {
+        font-size: 1.5vw;
+        width: 320px;
     }
     
     p {
@@ -154,7 +218,7 @@ nav {
     }
     .header-break-img {
         display: flex;
-        width: 1400px;
+        width: 1440px;
         height: 200px;
     }
     nav {
@@ -183,21 +247,31 @@ nav {
     }
     .main-news {
         display: flex;
+        justify-content: center;
     }
     .main-news-content, .main-news-img {
         width: 500px;
-        margin: 30px;
     }
+    .main-news-content {
+        margin-left: 50px;
+    }
+       /* other news */
     .other-news-content, .other-news-img img {
         width: 300px;
     }
-     /* other news */
+    .other-news-img img {
+        height: 200px;
+    }
     .other-news-wrapper {
         display: flex;
         flex-wrap: wrap;
-        width: 1440px;
     }
     .other-news {
         margin: 20px;
     }
 }
+
+/* - polaroid effect
+- animation
+- center everything
+- check the pittfalls */
