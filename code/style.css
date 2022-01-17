@@ -1,4 +1,178 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+/* Mobile  */
+
+body{
+  margin:0%;
 }
+  
+/* <!-- Header  -->  */
+
+  header {
+  height: 100px;  
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between; 
+  padding: 16px; 
+    } 
+
+  .title {
+   display: flex;
+}
+  
+ .logo {  
+   width: 80px; 
+   border-radius: 50%; 
+ } 
+      
+ /* <!-- The news  -->  */
+
+ nav { 
+  display: none; 
+} 
+  
+ nav div { 
+  width: 30%;  
+  display: flex;  
+  justify-content:space-between;  
+} 
+
+.headertext {
+  display: block;
+}
+/* <!-- The news  -->  */
+
+.text { 
+  text-align: justify;
+} 
+  
+.flex-parent1 {
+  display: flex; 
+  height: 100px; 
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+.flex-parent2 {
+  display: flex; 
+  height: 100px; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  
+.child1 , .child2 { 
+  order: 1; 
+  flex: 1;   
+  display: inline
+ 
+} 
+
+.flex-child {
+  display: inline;
+}
+
+.image{ 
+  height: auto; 
+  width: auto; 
+  display: inline;
+
+
+  }
+
+.header-box2 { 
+  margin-top: 0; 
+  margin-bottom: 2px; 
+  text-align: center; 
+} 
+  
+.text { 
+  margin-left: 5px; 
+  margin-right: 5px; 
+  margin-top: 2px; 
+} 
+  
+.footer-text  { 
+  color: black; 
+  font-size: 18px;  
+  margin-top: 5px; 
+  margin-bottom: 8px; 
+  text-transform: uppercase; 
+  text-align: center; 
+  } 
+  
+.date { 
+  text-align: center; 
+  margin-top: 5px; 
+} 
+  
+.image{ 
+  width: 400px; 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+} 
+  
+.image1{ 
+  width: 400px; 
+ }
+   
+  /* Tablet */ 
+ 
+  @media (min-width: 668px) { 
+  
+header { 
+  justify-content: center; 
+} 
+  
+ nav { 
+  width: 80%;  
+  display: flex;  
+  justify-content: space-between; 
+
+} 
+ 
+.headertext {
+  display: none;
+}
+.title {
+  display: none;
+}
+.menu { 
+  display: none; 
+ } 
+  
+.logo { 
+  position: absolute; 
+ } 
+  
+  } 
+  
+  /* Desktop */ 
+  
+   @media (min-width: 1025px) { 
+  
+ header { 
+  justify-content: space-between; 
+ } 
+
+  nav { 
+  width: 60%;  
+  justify-content: space-evenly; 
+ } 
+  
+     
+.logo { 
+  position: static; 
+ } 
+  
+ .headertext {
+   display: block;
+ }
+
+ .child1, .child2 {
+  height: auto; 
+  width: auto; 
+  display: inline;
+ }
+  } 
+  
+   
