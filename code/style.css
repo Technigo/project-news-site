@@ -1,7 +1,6 @@
 * {
     font-family: Work Sans;
     margin: 0;
-    border:0;
 }
 
 footer {
@@ -254,7 +253,6 @@ a:hover {
     }
     /* main news */
     .main-news-img {
-        height: 300px;
         flex-direction: column;
         align-self: center;
     }
@@ -283,4 +281,21 @@ a:hover {
     .other-news-img img {
         width: 20vw;
     }
+}
+
+@media (min-width: 1441px) {
+
+    .header-break-img {
+        display: none;
+    }
+    .main-news {
+        margin-top: 50px;
+    }
+    p {
+        line-height: 40px;
+    /* }
+    .main-news-img {
+        width: 20vw;
+    } */
+
 }
