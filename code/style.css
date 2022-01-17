@@ -36,11 +36,30 @@ h3 {
 h2 {
   line-height: 2.25rem;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .header {
-  height: 3rem;
+  max-width: 62rem;
+  margin: 0 auto;
+  height: 4rem;
   display: flex;
   padding: 1em;
+  justify-content: space-between;
+}
+.header-tablet {
+  display: none;
+  max-width: 62rem;
+  margin: 0 auto;
+  height: 4rem;
+  padding: 1em;
+}
+.nav-tablet {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .branding {
   display: flex;
@@ -59,6 +78,18 @@ h2 {
   display: inline;
   font-family: "Luxurious Roman", cursive;
   font-size: 1.25rem;
+  cursor: default;
+}
+
+.nav {
+  display: none;
+}
+.nav-menu {
+  padding: 0.5em 1em;
+  margin: 0.15rem;
+}
+.nav-menu:hover {
+  color: var(--color-accent);
 }
 
 .big-news,
@@ -70,13 +101,12 @@ h2 {
 .big-news {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-}
-
-.big-news {
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   margin-bottom: 4rem;
+  margin-top: 1rem;
   padding: 0 1em;
 }
+
 .big-news-description {
   display: flex;
   flex-direction: column;
@@ -126,7 +156,7 @@ h2 {
 }
 .popular-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   padding-bottom: 2em;
   gap: 0.75rem;
 }
@@ -135,7 +165,7 @@ h2 {
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
-  transition: transform 0.25s ease-in;
+  transition: all 0.25s ease-in;
 }
 .popular-card:hover {
   transform: scale(1.01);
@@ -143,4 +173,29 @@ h2 {
 .popular-card {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: none;
+  }
+  .header-tablet {
+    display: flex;
+  }
+  .popular-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    display: block;
+  }
+  .big-news,
+  .popular {
+    max-width: 62.5rem;
+  }
+  .popular-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  }
 }
