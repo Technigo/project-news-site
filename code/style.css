@@ -1,8 +1,70 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #E7DCCB;
+  color: #222222;
 }
 
+/*BODY SET UP*/
 body {
   margin: 0 auto;
+  min-height: 100vh;
+  max-height: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
 }
+
+/* TYPOGRAPHY */
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+h1 > span {
+  display: block;
+}
+
+h2 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* NAVBAR */
+
+
+
+ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #E7DCCB;
+  font-weight: 300;å
+  list-style: none;
+}
+
+.main-header {
+  background: #81B29A;
+  padding: 1em 1.5em 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header--logo {
+  display: flex;
+}
+
+.nav-hamburger{
+  color: #222222;
+  font-size: 3em;
+}
+
+.sub-header {
+  background: #826E5B;
+}
+
+
+/* LAYOUT */
+
