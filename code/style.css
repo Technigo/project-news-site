@@ -48,8 +48,8 @@ h2 {
 }
 .branding-logo {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-right: 0.5rem;
   border-radius: 50%;
   background-color: var(--color-accent);
@@ -58,33 +58,46 @@ h2 {
 .branding-title {
   display: inline;
   font-family: "Luxurious Roman", cursive;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .big-news,
 .popular {
   max-width: 48rem;
   margin: 0.5rem auto;
-  padding: 0 1em;
-  display: flex;
-  flex-direction: column;
 }
 
 .big-news {
-  margin-bottom: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
+.big-news {
+  margin-bottom: 4rem;
+  padding: 0 1em;
+}
+.big-news-description {
+  display: flex;
+  flex-direction: column;
+}
+.description-date {
+  margin-top: 0;
+}
 .big-news-img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 .card-date,
-.description-data {
+.description-date {
   font-size: var(--fontsize-small);
   font-weight: var(--fontweight-lato-light);
 }
 
+.card-date {
+  margin-top: 0;
+}
 .description-summary {
   font-weight: var(--fontweight-lato-light);
   line-height: 1.25rem;
@@ -93,6 +106,7 @@ h2 {
 .popular {
   background-color: var(--color-white);
   color: var(--color-black);
+  padding: 0 1em;
 }
 .popular-heading {
   display: flex;
