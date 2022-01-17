@@ -1,5 +1,132 @@
+:root {
+  /* fontsize */
+  --fontsize-regular: 1rem;
+  --fontsize-small: 0.75rem;
+
+  /* fontweight */
+  --fontweight-lato-light: 300;
+  --fontweight-lato-bold: 700;
+  --fontweight-baskerville-bold: 700;
+
+  /* color */
+  --color-black: #000000ef;
+  --color-white: #f5f5f5;
+  --color-accent: #bf3019;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* h2, h3 reserved for title */
+h2,
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: var(--fontweight-baskerville-bold);
+}
+h2 {
+  line-height: 2.25rem;
+}
+
+.header {
+  height: 3rem;
+  display: flex;
+  padding: 1em;
+}
+.branding {
+  display: flex;
+  align-items: center;
+}
+.branding-logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.branding-title {
+  display: inline;
+  font-family: "Luxurious Roman", cursive;
+  font-size: 1.5rem;
+}
+
+.big-news,
+.popular {
+  max-width: 48rem;
+  margin: 0.5rem auto;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-news {
+  margin-bottom: 2rem;
+}
+
+.big-news-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card-date,
+.description-data {
+  font-size: var(--fontsize-small);
+  font-weight: var(--fontweight-lato-light);
+}
+
+.description-summary {
+  font-weight: var(--fontweight-lato-light);
+  line-height: 1.25rem;
+}
+
+.popular {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.popular-heading {
+  display: flex;
+  align-items: center;
+}
+.popular-title {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-right: 1rem;
+}
+.popular-divider {
+  flex: 1 1;
+  background-color: var(--color-accent);
+  height: 1px;
+  width: 100%;
+}
+.popular-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  padding-bottom: 2em;
+  gap: 0.75rem;
+}
+.popular-card {
+  padding: 1em;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.56);
+  transition: transform 0.25s ease-in;
+}
+.popular-card:hover {
+  transform: scale(1.01);
+}
+.popular-card {
+  display: flex;
+  flex-direction: column;
 }
