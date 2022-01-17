@@ -100,18 +100,18 @@ nav {
     padding-top: 10px;
     position: relative;
 }
-/* Animation part
+/* Animation part (Demo)
 
-If there's no forwards, the bars will disappear after it has expanded!
-tranfrom-origin 0 0 otherwise the bars will start to expand from the center
-to set it at 0 0 so it starts from the left of the x axis */
+If there's no forwards, the header will disappear after it has expanded!
+tranfrom-origin 0 0 otherwise the header will start to expand from the center.
+So I set it at 0 0 so it starts from the left of the x axis */
 
 header {
-    animation: fillBar 2s forwards;
+    animation: expandHeader 2s forwards;
     transform: scaleX(0);
     transform-origin: 0 0;
 }
-@keyframes fillBar {
+@keyframes expandHeader {
     to {
         transform: scaleX(1)
     }
@@ -284,8 +284,3 @@ a:hover {
         width: 20vw;
     }
 }
-
-/* - polaroid effect
-- animation
-- center everything
-- check the pittfalls */
