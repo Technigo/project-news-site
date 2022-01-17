@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* TYPOGRAPHY */
@@ -20,12 +20,41 @@ h1 {
   padding-left: 0.3em;
 }
 
-h1 > span {
+h1 > span,
+h2 > span {
   display: block;
 }
 
 h2 {
   font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  
+  p, 
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.5em;
+  }
+  
+  p, 
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1234px) {
+  h2 > span {
+    display: inline;
+  }
 }
 
 /* NAVBAR */
@@ -104,7 +133,7 @@ h2 {
   }
 }
 
-@media (min-width: 991px){
+@media (min-width: 992px){
   .logo {
     max-height: 15.5em;
   }
@@ -119,6 +148,104 @@ h2 {
   }
 }
 
+/* BUTTONS */
+
+button {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background: #81B29A;
+  color: #222222;
+  padding: 5px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.news-feed--button {
+  padding: 5px 14px;
+}
+
+@media (min-width: 768px) {
+  button,
+  .news-feed--button {
+    font-size: 1em;
+  }
+}
+
 /* LAYOUT */
 
-@media (min-width: 768px) and (max-width: 991px){}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-news {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  border-bottom: 1px solid #E07A5F;
+}
+
+.big-news--card {
+ background: #f4f1de;
+}
+
+.news-feed {
+  background: #E7DCCB;
+  padding: 1.5em;
+}
+
+.news-feed--card {
+  background: #F4F1DE;
+  border: 1px solid #E07A5F;
+  border-radius: 15px;
+  max-width: 18em;
+  padding: 1.5em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-feed--img {
+  min-width: 100%;
+  max-height: 12em;
+  border-radius: 15px;
+}
+
+
+@media (min-width: 768px) {
+
+  main.main-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .news-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 1.2em;
+  }
+
+  .big-news {
+    max-width: 45em;
+  }
+}
+
+@media (min-width: 992px) {
+  .big-news {
+    display: flex;
+    max-height: 80vh;
+    flex-direction: row;
+    grid-gap: 1.5em;
+  }
+
+  .big-news--img {
+    max-width: 40%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
