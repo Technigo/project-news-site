@@ -1,4 +1,37 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: white;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a:hover {
+  color: rgb(114, 114, 114);
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+img {
+  width: 140px;
+  padding: 20px;
 }
