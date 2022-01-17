@@ -2,21 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Libre+Baskerville:wght@700&family=Luxurious+Roman&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+      <div class="branding-mobile">
+        <span class="branding-logo"></span>
+        <h1 class="branding-title">THE BOOK MAGAZINE</h1>
+      </div>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
+      <img
+        class="big-news-img"
+        src="./assets/article-main-sample.jpg"
+        alt="bookstore"
+      />
+      <div class="big-news-description">
+        <p class="description-data">January 17, 11: 30 AM</p>
+        <h2 class="description-title">
+          Veganism: Would having a vegan pet help save the planet?
+        </h2>
+        <p class="description-summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          voluptatibus sed ut, saepe quasi eos quisquam tenetur perferendis
+          repellendus dignissimos, eum sit repellat ullam provident. Earum vel
+          repellat alias dignissimos!
+        </p>
+      </div>
     </section>
 
-    <section class="">
+    <section class="popular">
       <!-- The other news  -->
+      <div class="popular-heading">
+        <h4 class="popular-title">Popular articles</h4>
+        <div class="popular-divider"></div>
+      </div>
+      <article class="popular-card">
+        <img
+          src="./assets/article-sub-sample.jpg"
+          alt="sample"
+          class="card-img"
+        />
+        <div class="card-description">
+          <h3 class="card-title">
+            New homeowners surprised to find cat in cupboard
+          </h3>
+          <p class="card-date">January 17, 11: 30 AM</p>
+        </div>
+      </article>
     </section>
   </body>
 </html>
