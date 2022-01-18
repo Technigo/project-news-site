@@ -1,4 +1,123 @@
-html {
-  background: #0025ff;
-  color: #fff;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* box-sizing: border-box; */
 }
+
+
+body{
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* w and h takes up all scrren*/
+.container{
+  width: 100vw;  
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr 1fr 1fr 100px;
+
+  gap: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.container div {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+nav{
+outline: 1px solid grey;
+height: 80px;
+}
+
+.menu-button {
+  height: 30px;
+  width: 30px;
+}
+
+label.logo{
+  font-family: 'Long Cang';
+  font-size: 60px;
+  color: rgb(94, 94, 94);
+  line-height: 80px;
+  padding: 0 100px;
+}
+
+nav ul{
+  float: right
+  /* margin: 20px 0px 20px 0px; */
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active a.hover{
+  background: gray;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 70px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.big-news {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  
+}
+
+.second-news{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
+}
+
+.text-second-news{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+ 
+}
+
