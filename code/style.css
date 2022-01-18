@@ -3,6 +3,7 @@ html {
   color: #222222;
 }
 
+
 /*BODY SET UP*/
 body {
   margin: 0 auto;
@@ -11,6 +12,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
 }
+
 
 /* TYPOGRAPHY */
 h1 {
@@ -29,33 +31,38 @@ h2 {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+
+/* BUTTONS */
+
+button {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background: #81B29A;
+  color: #222222;
+  padding: 5px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.news-feed--button {
+  padding: 5px 14px;
+}
+
+button:hover,
+button:focus {
+  background: #222222;
+  color: #81B29A;
+  transition: all 500 cubic-bezier(0.19, 1, 0.22, 1);
+  transform: scale(1.2);
+}
+
 @media (min-width: 768px) {
-  body {
+  button,
+  .news-feed--button {
     font-size: 1em;
   }
-  
-  p, 
-  h2 {
-    font-size: 1.5rem;
-  }
 }
 
-@media (min-width: 1200px) {
-  body {
-    font-size: 1.5em;
-  }
-  
-  p, 
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1234px) {
-  h2 > span {
-    display: inline;
-  }
-}
 
 /* NAVBAR */
 .main-header {
@@ -71,7 +78,6 @@ h2 {
 }
 
 .logo {
-  max-height: 5.5em;
   align-self: flex-end;
 }
 
@@ -82,23 +88,24 @@ h2 {
 
 .sub-header { 
   background: #826E5B;
+  margin-bottom: 2em;
 }
-
 
 @media (max-width: 767px) {
   .sub-header--navbar {
     transform: translateX(200%);
     transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
   }
-
+  
   .sub-header ul {
     font-size: 0;
   }
-
+  
   .main-header {
     border-bottom: 2em solid #826E5B;
   }
 }
+
 
 /* NAVBAR ON TABLET AND DESKTOP*/
 
@@ -124,7 +131,7 @@ h2 {
     text-decoration: none;
     font-weight: 300;
   }
-
+  
   li > a:hover,
   li > a:focus {
     color: #E07A5F;
@@ -137,38 +144,17 @@ h2 {
   .logo {
     max-height: 15.5em;
   }
-
+  
   .sub-header > ul {
     display: flex;
     justify-content: flex-end;
   }
-
+  
   .sub-header > ul > li {
     padding-right: 3.5em;
   }
 }
 
-/* BUTTONS */
-
-button {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  background: #81B29A;
-  color: #222222;
-  padding: 5px 14px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.news-feed--button {
-  padding: 5px 14px;
-}
-
-@media (min-width: 768px) {
-  button,
-  .news-feed--button {
-    font-size: 1em;
-  }
-}
 
 /* LAYOUT MAIN SECTION */
 
@@ -179,15 +165,12 @@ button {
 }
 
 .big-news {
-  padding: 2em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 90%;
   border-bottom: 1px solid #E07A5F;
-}
-
-.big-news--card {
- background: #f4f1de;
 }
 
 .news-feed {
@@ -215,7 +198,17 @@ button {
 }
 
 
+/* MEDIA QUERIES */
+
 @media (min-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  
+  p, 
+  h2 {
+    font-size: 1.5rem;
+  }
 
   main.main-container {
     display: flex;
@@ -229,24 +222,56 @@ button {
     flex-wrap: wrap;
     grid-gap: 1.2em;
   }
-
+  
   .big-news {
     max-width: 90em;
   }
+
 }
 
 @media (min-width: 992px) {
   .big-news {
     display: flex;
+    padding: 2em;
     max-height: 80vh;
     flex-direction: row;
     grid-gap: 1.5em;
   }
-
+  
   .big-news--img {
-    max-width: 40%;
+    width: 40%;
     border-radius: 5px;
     object-fit: cover;
   }
 }
 
+@media (min-width: 1200px) {
+  body {
+    font-size: 3em;
+  }
+  
+  p, 
+  h2 {
+    font-size: 4rem;
+  }
+
+  .big-news {
+    max-width: 80%;
+    min-height: 20vw;
+  }
+
+  .big-news--card {
+    max-width: 40%;
+    align-self: flex-start;
+  }
+
+  .big-news--img {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1234px) {
+  h2 > span {
+    display: inline;
+  }
+}
