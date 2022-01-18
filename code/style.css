@@ -1,7 +1,7 @@
 body{
   padding: 0px;
   margin:0px;
-  font-family: 'The Nautigal', cursive;
+  font-family: Georgia, 'Times New Roman', Times, serif;
  }
   
 
@@ -9,6 +9,7 @@ body{
 header{
   background-color: rgb(0, 0, 0);
   color: white;
+  
 }
 
 .nav-bar{
@@ -55,7 +56,7 @@ margin: auto 0;
 padding: 0 20px;
 
 letter-spacing: 1px;
-font-family: "sans-serif";
+font-family: "The Nautigal", cursive;
 font-size: 40px;
 justify-content: space-around;
 }
@@ -81,7 +82,7 @@ nav{
   text-decoration: none;
   font-weight: bold;
   font-family: 'The Nautigal', cursive;
-  font-family: "sans-serif";
+  font-family: 'The Nautigal', cursive;
   letter-spacing: 1px
   ;
  }
@@ -90,11 +91,12 @@ nav{
    margin: 20px 0 0 0;
  }
  
- .news-highlights{
+ .highlights{
    display:flex;
+   height:80px;
  }
- .news-highlights1{
-   width: 250px;
+ .highlights1{
+   width: 400px;
   font-weight: bold;
   font-size: 20px;
   font-family: 'Lucida Sans';
@@ -102,13 +104,45 @@ nav{
   text-transform: Uppercase;
   color: rgba(250, 235, 215, 0.842);
   padding: 20px;
+  
 }
  
-.news-highlights2{
+.highlights2{
   font-weight: light;
   font-size: 20px;
   font-family: 'Lucida Sans';
   font-family: 'The Nautigal', cursive;
   padding: 20px;
   
+}
+
+.main-news{
+  display: flex;
+	flex-wrap: wrap;
+	margin: 30px 5%;
+
+}
+
+.main-news h2{
+  margin: 0;
+	padding: 5px;
+	color: black;
+
+}
+ h2{
+   margin: 30px;
+	font-weight: bolder;
+  color: black;
+}
+
+.featured{
+  flex: 2;
+}
+
+.latest{
+  flex: 1;
+}
+
+.editor{
+  flex: 1;
 }
