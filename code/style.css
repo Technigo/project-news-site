@@ -3,21 +3,26 @@
     margin: 0;
 }
 
-.vertical-line {
-    border-left: 5px solid rgb(212, 92, 92);
-    height: 20px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* social media icons */
-a img {
-    width: 3vw;
-    height: 3vw ;
-    border-radius: 50%;
-    margin: 3px;
-    box-shadow: none;
+/* Note: align-items: center; is for the header animation to expand
+from the center instead of the left side. */
+a {
+    text-decoration: none;
+    color: rgb(221, 116, 116);
 }
-.social-logos {
-    float: right;
+
+/* Hidden items */
+.desktop-view-logo {
+    display: none;
 }
+nav {
+    display: none;
+}
+
 footer {
     font-size: .6em;
     box-sizing: border-box;
@@ -31,100 +36,88 @@ footer a {
 
 /* Mobile first development */
 header {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     margin: 10px 10px;
 }
-.header-break-img {
-    display: none;
-}
 
-.desktop-view-logo {
-    display: none;
-}
 .logo {
     width: 50px;
     height: 50px;
 }
-.news-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 h1 {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-left: 10px;
-    font-size: 1em;
+    padding: 8px;
 }
-h2 {
-    font-size: 3vw;
-    padding-left: 10px ;
-    border-left: 4px solid rgb(214, 116, 116);
 
+h2 {
+    padding-left: 10px;
+    border-left: 4px solid rgb(214, 116, 116);
 }
 
 h3 {
-    width: 50vw;
-    font-size: 2vw;
     padding-left: 10px ;
     border-left: 4px solid rgb(214, 116, 116);
-    
-}
-
-hr {
-    border: 1px solid grey;
-    margin: 5%;
 }
 p {
-    font-size: 2vw;
-    text-align: justify;
-    box-sizing: border-box;
-    margin-top: 10px;
+    line-height: 1.5;
 }
+hr {
+    border: 1px solid grey;
+    margin: 1%;
+}
+
 .read-more {
     text-decoration: none;
     color: rgb(45, 96, 206);
 }
-.header-img {
-    display: none;
+
+/* social media icons */
+a img {
+    border-radius: 50%;
+    width: 4vw;
+    margin: 5px;
 }
-nav {
-    display: none;
+.social-icons {
+    display: inline-block;
+    margin: auto;
 }
+
 /* main news */
-.main-news-content, .main-news-img {
-    width: 60vw;
+.main-news * {
+    width: 90%;
+    margin: auto;
+}
+.main-news-img {
+    display: flex;
+    margin-bottom: 20px;
+}
+.main-news-content p {
+    padding: 10px;
 }
 
 /* other news */
-.other-news {
-    margin: 20px;
-}
-
-/* polaroid effect */
-.other-news-img {
-    background-color: white;
-    width: 50vw;
-    margin-bottom: 10px;
-    padding-bottom: 20px ;
-    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.8);
-}
-
-.other-news-content {
-    width: 50vw;
-}
-
-.other-news-img img {
-    width: 46vw;
+.other-news * {
     display: flex;
+    flex-direction: column;
+    width: 85%;
     margin: auto;
-    padding-top: 10px;
 }
-/* Animation part (Demo)
+article {
+    padding: 20px;
+}
+article a {
+    box-sizing: content-box;
+    width: 100%;
+}
+/* polaroid effect */
+.other-news-polaroid {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4);
+}
 
+/* Animation part (Demo)
 If there's no forwards, the header will disappear after it has expanded!
 tranfrom-origin 0 0 otherwise the header will start to expand from the center.
 So I set it at 0 0 so it starts from the left of the x axis */
@@ -134,66 +127,35 @@ header {
     transform: scaleX(0);
     transform-origin: 0 0;
 }
-
-
 a:hover {
-    font-size: 20px;
     font-weight: 600;
-    background: linear-gradient(
-        to right, 
-        rgb(255, 236, 61), 
-        rgb(206, 93, 73)
-      );
+    background: linear-gradient(90deg, rgb(230, 177, 108), rgb(211, 69, 44));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
 }
 
-.social-logos img:hover {
+.social-icons img:hover {
     opacity:0.5;
     box-shadow: 5px 3px 3px grey;
 }
-
 @keyframes expandHeader {
     to {
         transform: scaleX(1)
     }
 }
-/* Tablet view*/
-@media (min-width: 668px) and (max-width:1024px) {
 
+/* tablet view */
+@media (min-width: 668px) {
+    /* hidden items */
     .logo {
         display: none;
-    }
-    .desktop-view-logo {
-        display: flex;
-        width: 150px;
-        height: 120px;
-        align-self: center;
     }
     h1 {
         display: none;
     }
-    h2 {
-        font-size: 3vw;
-    }
-    h3 {
-        font-size: 2vw;
-        width: 30vw;
-    }
-    
-    p {
-        font-size: 1.5vw;
-        line-height: 20px;
-    }
-
-    header {
-        margin-top: 40px;
-        width: 100%;
-        flex-direction: column;
-    }
-    .header-break-img {
-        display: none;
+    /* revealed items */
+    .desktop-view-logo {
+        display: inline;
     }
     nav {
         display: flex;
@@ -203,7 +165,6 @@ a:hover {
     ul {
         list-style-type: none;
         display: flex;
-        padding: 0;
     }
     nav a {
         margin-right: 20px;
@@ -211,151 +172,34 @@ a:hover {
         color: black;
         font-weight: 600;   
     }
-        /* main news */
+/* main news */
+    .main-news-img {
+        width: 50%;
+        padding-left: 2vw;
 
-    .main-news-content, .main-news-img {
-            width: 50%;
-            margin: 20px;
-        }
+    }
+
     .main-news-img {
         flex-direction: row;
-        align-self: center; 
     }
     .main-news {
         display: flex;
         flex-direction: row;
         justify-items: center;
-        padding: 10px 20px 20px 20px;
     }
-    /* other news */
-    .other-news-wrapper {
-        display: flex;
-    }
-
-    .other-news-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .other-news-content, .other-news-img {
-        width: 32vw;
-    }
-    .other-news-img img {
-        width: 30vw;
-    }
-}
-/* Desktop view*/
-
-@media (min-width: 1025px) {
-    header {
-        margin: 10px 30px 20px 30px;
-        height: 50px;
-        width: 100%;
-    }
-    .logo {
-        display: none;
-    }
-    .desktop-view-logo {
-        display: flex;
-        margin-left: 10px;
-        width: 200px;
-        height: 150px;
-    }
-    a img {
-        width: 1.5vw;
-        height: 1.5vw ;
-        border-radius: 50%;
-        margin: 3px;
-        box-shadow: none;
-    }
-    h1 {
-        display: none;
-    }
-    h2 {
-        font-size: 2vw;
-    }
-    h3 {
-        font-size: 1.5vw;
-        width: 22vw;
-    }    
-    p {
-        font-size: 1.2vw;
-    }
-    .header-break-img {
-        display: flex;
-        width: 1440px;
-        height: 200px;
-    }
-    nav {
-        display: flex;
-        margin-top: 40px;
-        margin-left: 10%;
-    }
-    
-    ul {
-        list-style-type: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    nav a {
-        margin: 60px;
-        text-decoration: none;
-        color: black;
-        font-weight: 600;   
-    }
-    /* main news */
-    .main-news-img {
-        flex-direction: column;
-        align-self: center;
-    }
-    .main-news {
-        display: flex;
-        justify-content: center;
-    }
-    .main-news-content, .main-news-img {
-        width: 30vw;
-        margin: 30px;
-    }
-    .other-news-wrapper {
-        display: flex;
-    }
-
-    .other-news-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    /* other news */
-    .other-news-content, .other-news-img {
-        width: 22vw;
-    }
-    .other-news-img img {
-        width: 20vw;
-    } 
+/* other news */
     .other-news {
-        margin: 0;
+        columns: 2;
+    }
+    .other-news article {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 }
-
-@media (min-width: 1441px) {
-
-    .header-break-img {
-        display: none;
-    }
-    .main-news {
-        margin-top: 50px;
-    }
-    .main-news-img {
-            width: 30vw;
-    }
-    a img {
-        width: 1.5vw;
-        height: 1.5vw ;
-        border-radius: 50%;
-        margin: 3px;
-        box-shadow: none;
+/* Desktop view */
+@media (min-width: 1024px) {
+    .other-news{
+        columns: 4;
     }
 }
