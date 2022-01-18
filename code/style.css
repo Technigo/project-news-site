@@ -1,4 +1,82 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/*html {
+  background: black;
+  color: black;
+}*/
+
+.site-name {
+  color: #D96098;
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+}
+
+.header {
+  background: #F0ECE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.round-logo-yoga {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 25px;
+}
+
+/* Allt top-nav nedan ska bara synas i desktop och padda
+.top-nav {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-nav a {
+  font-family: 'Raleway', sans-serif;
+  color: #483434;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.top-nav a:hover {
+  color: #A68DAD;
+  text-decoration: underline;
+}*/
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-family: 'Raleway', sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+li a:hover {
+  color: #A68DAD;
+  text-decoration: underline;
+}
+
+.big-news {
+  display: flex;
+  justify-content: left;
+  margin: 50px;
+}
+
+.big-news img {
+  width: 50%;
+  height: 50%;
+}
+
+.big-news-title {
+  font-family: 'Raleway', sans-serif;
+  color:deeppink;
 }
