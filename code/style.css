@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -15,14 +16,15 @@ padding: 275px 0;
 }
 
 .navigation-bar {
+overflow: hidden;  
 height: 100px;
 background-color: black;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 /*
 align-items: center;
-margin: 5px 10px;*/
-
+margin: 5px 10px;
+*/
 }
 
 .matchtrixnews-logo {
@@ -31,6 +33,31 @@ height: 100px;
 }
 
 .site-name{
-font-size: 50px;
+font-size: 30px;
 grid-column: span 2;
+}
+
+.navigation-bar a {
+padding: 35px;
+text-decoration: none;
+color:white;
+
+/*font-weight: bold;
+float: none;
+width: 100%;
+*/
+}
+
+
+@media (min-width: 1025px) {
+.navigation-bar a :hover {
+  background-color: orangered;
+  color: black;
+  }
+}
+
+@media (min-width: 668px) {
+ h1 {
+   color:orangered;  
+  }
 }
