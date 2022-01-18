@@ -1,0 +1,267 @@
+:root {
+    --ff-primary: 'Public Sans', sans-serif;
+    --ff-secondary: 'Play', sans-serif;
+    --fw-reg: 400;
+    --fw-bold: 600;
+    --fw-bolder: 800;
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --fs-h1: 3rem;
+    --fs-h2: 1.5em;
+    --fs-body: 1em;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  background: -webkit-linear-gradient(#3723AC,#9239A2, #CF459A);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  margin-left: 10px;
+  font-size: var(--fs-h1);
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--clr-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 2;
+  max-width: 1600px;
+  font-family: var(--ff-secondary);
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__item {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: var(--fs-h2);
+  color: var(--clr-light);
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--clr-light)
+} 
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* article {
+  margin: 30px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.article__image {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article__text {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding: 0 5px 10px 5px;
+}
+
+.article__text h3 {
+  margin: 10px 0;
+} */
+
+.section__text {
+  margin: 0 15px;
+}
+
+.section__header {
+  margin-bottom: 20px;
+  font-size: var(--fs-h2);
+}
+
+.section__paragraph {
+  margin-bottom: 60px;
+  font-size: var(--fs-body);
+}
+
+.footer {
+  background: linear-gradient(#3723AC,#9239A2, #CF459A);
+  color: var(--clr-light);
+  padding: 35px 30px;
+  font-size: var(--fs-h2);
+  width: 100%;
+  font-family: var(--ff-secondary);
+}
+
+.footer__list {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer__list li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  
+  .navbar__list {
+    position: fixed;
+    left: -100%;
+    top: 4.95rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navbar__list.show {
+    left: 0;
+    background-color: rgba(0, 0, 0);
+  }
+
+  .navbar__item {
+    margin: 2.5rem 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-toggle.show .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.show .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.show .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (min-width: 667px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .navbar {
+    position: static;
+  }
+  .header__list {
+    text-align: left;
+    padding-left: 10px;
+  } 
+  .aside {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    display: flex;
+  }
+  .header,
+.aside { 
+  width: 600px;
+}
+
+  nav {
+    display: block;
+    position: relative;
+    top: 0px;
+  }
+
+  .header__list {
+    padding-inline-start: 15px;
+  }
+
+  .header__list li{
+    display: block;
+  }
+
+  .section__image {
+    width: 200px;
+    height: auto;
+  }
+
+  .grid__top-left,
+  .grid__middle-left,
+  .grid__bottom-left {
+    margin-left: 5px;
+  }
+
+  .article__top-left { grid-area: one; }
+  .article__top-right { grid-area: two; }
+  .article__middle-left { grid-area: three; }
+  .article__middle-right { grid-area: four; }
+  .article__bottom-left  { grid-area: five; }
+  .article__bottom-right { grid-area: six; }
+  .aside { grid-area: aside; }
+  .footer { grid-area: footer; }
+
+  .grid {
+    display: grid;
+    grid-template-areas:
+      'one one two two aside'
+      'three three four four aside'
+      'five five six six aside'
+      'footer footer footer footer footer';
+    gap: 10px;
+  }
+
+  .section {
+    position: relative;
+    margin-bottom: 30px ;
+  }
+
+  .section__paragraph,
+  .section__header {
+    padding: 0 10px;
+  }
+
+  .section__text {
+    z-index: 100;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 0;
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+  }
+
+  .section__image {
+    width: 100%;
+    height: auto;
+  }
+  .footer__list {
+    display: block;
+  }
+}
