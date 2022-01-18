@@ -2,3 +2,49 @@ html {
   background: #0025ff;
   color: #fff;
 }
+
+/*big news styles*/
+
+/*big news 'parent' (=section) style*/
+.big-news{
+  background-color: aqua;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*big news 'first child' (=picture) style*/
+.big-news-image{
+  background-color: grey;
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover
+}
+
+/*big news 'second child' (=text) style*/
+.big-news-text{
+  background-color: pink;
+  margin: 10px;
+  padding: 10px;
+  width:90%;
+}
+
+/*big news styles for tablet and desktops*/
+@media (min-width: 667px){
+  .big-news{
+    background-color: coral;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .big-news-image{
+    width: 30%;
+  }
+  .big-news-text{
+    width: 60%;
+  }
+}
