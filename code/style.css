@@ -1,4 +1,72 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #ffffff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .header-container{ */
+  /* display: flex; */
+  /* align-items: center; */
+  /* border:solid */
+}
+header{
+  background-color: white;
+  /* border: solid; */
+  display: flex;
+  /* width:60%; */
+  /* height: 2%; */
+  /* margin: auto; */
+  /* text-align: start; */
+}
+
+ul{
+  list-style: none;
+  position: relative;
+  left: 100%;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.logo{
+position: absolute;
+/* left: 90%; */
+left: 72%;
+height: 100px;
+width: 110px;
+}
+
+.site-name{
+  /* text-align: center; */
+  /* position: relative; */
+  
+  display: flex;
+  position: absolute;
+  left: 42%;
+}
+
+.big-news, .related-news{ 
+  text-align: center;
+  /* width: 600px; */
+  height: 100%;
+  width: 60%;
+  margin: auto; 
+  border: solid;
+}
+
+h2{
+  border: solid;
+  /* margin: 10px 140px; */
+  padding: 1%;
+  text-align: start;
+  margin: 1% 18%;
+}
+
+p{
+  border: solid;
+  /* margin: 10px 140px; */
+  /* padding: 10px; */
+  text-align: start;
+  margin:1% 18%;
+  padding: 1%;
 }
