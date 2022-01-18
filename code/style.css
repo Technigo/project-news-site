@@ -1,4 +1,36 @@
 html {
-  background: #0025ff;
+  background: white;
   color: #fff;
+}
+
+body {
+  margin: 0%;
+}
+
+header {
+background-image: url("https://images.unsplash.com/photo-1629573010718-5a4a1aea6c23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+padding: 275px 0;
+}
+
+.navigation-bar {
+height: 100px;
+background-color: black;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+/*
+align-items: center;
+margin: 5px 10px;*/
+
+}
+
+.matchtrixnews-logo {
+width: 100px;
+height: 100px;
+}
+
+.site-name{
+font-size: 50px;
+grid-column: span 2;
 }
