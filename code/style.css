@@ -36,7 +36,7 @@ h2 {
 
 button {
   font-family: 'Be Vietnam Pro', sans-serif;
-  background: #81B29A;
+  background: #BCA787;
   color: #222222;
   padding: 5px 14px;
   border-radius: 15px;
@@ -51,7 +51,7 @@ button {
 button:hover,
 button:focus {
   background: #222222;
-  color: #81B29A;
+  color: #BCA787;
   transition: all 500 cubic-bezier(0.19, 1, 0.22, 1);
   transform: scale(1.2);
 }
@@ -66,7 +66,7 @@ button:focus {
 
 /* NAVBAR */
 .main-header {
-  background: #81B29A;
+  background: #BCA787;
   padding: 1em 1.5em 0 1em;
   display: flex;
   align-items: center;
@@ -140,9 +140,9 @@ button:focus {
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px){  
   .logo {
-    max-height: 15.5em;
+    min-height: 7em;
   }
   
   .sub-header > ul {
@@ -152,6 +152,12 @@ button:focus {
   
   .sub-header > ul > li {
     padding-right: 3.5em;
+  }
+}
+
+@media (min-width: 1200px){
+  h1 {
+    font-size: 4rem;
   }
 }
 
@@ -270,8 +276,3 @@ button:focus {
   }
 }
 
-@media (min-width: 1234px) {
-  h2 > span {
-    display: inline;
-  }
-}
