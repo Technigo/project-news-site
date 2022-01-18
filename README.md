@@ -1,12 +1,24 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This is a responsive news site in HTML and CSS. 
+This is the first individual Technigo project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started to state mandatory features and brainstorm ideas for the site. I choose a concept and continued to sketch wireframe for mobile and desktop using inspiration from the web. 
+
+I picked a color palett that fited the theme I´ve chosen for the news site.
+
+I used Figma to do a prototype of the site.  
+
+When I started to code i coded for mobile first and then tablet and desktop. 
+
+My intention was to structure the css file in a logical way but next time I will see if there is another way to structure the code better. 
+
+If I had more time I would use some JavaScript to add som functionality for the navigation bar. 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+LINK TO NETLIFY!!
