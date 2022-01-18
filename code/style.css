@@ -167,20 +167,15 @@ a:hover {
         font-weight: 600;   
     }
 /* main news */
+    .main-news {
+        display: flex;
+    }
     .main-news-img {
         width: 50%;
         padding-left: 2vw;
-
+        margin: auto;
     }
 
-    .main-news-img {
-        flex-direction: row;
-    }
-    .main-news {
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-    }
 /* other news */
     .other-news {
         columns: 2;
