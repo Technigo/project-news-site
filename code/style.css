@@ -170,7 +170,7 @@ button {
   }
 }
 
-/* LAYOUT */
+/* LAYOUT MAIN SECTION */
 
 .main-container {
   display: flex;
@@ -204,7 +204,8 @@ button {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .news-feed--img {
@@ -230,7 +231,7 @@ button {
   }
 
   .big-news {
-    max-width: 45em;
+    max-width: 90em;
   }
 }
 
