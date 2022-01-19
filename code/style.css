@@ -1,4 +1,110 @@
 html {
-  background: #0025ff;
   color: #fff;
+  font-family: sans-serif;
+  margin:0;
+}
+
+body {
+  margin: 0;
+  background-image: url('images/coffebeans2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Hur fungerar CSS animation?*/
+  
+header {
+  background-color: #a97559;
+  color: #fff;
+}
+
+.website-header {
+  padding: 20px;
+  height: 80px;
+}
+
+.website-header h1 {
+  margin: auto 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #9c5239;
+}
+
+/* style the navigation bar links*/
+.navbar a  {
+  color: rgb(15, 15, 5);
+  padding: 10px;
+  justify-content: flex-end;
+  text-align: right;
+  text-decoration: none;
+
+}
+
+
+/*change color on hover*/
+.navbar a:hover {
+  background-color: white;
+}
+
+.big-news {
+  background: none;
+  margin: 2%;
+  padding: 5%;
+  border: #cd5c5c41;
+  border-style: groove;
+  text-align: center;
+}
+.big-news img {
+  height: 400px;
+}
+
+.the-other-news {
+  background: none;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+
+}
+.the-other-news img {
+  height: 500px;
+}
+.coffee-outdoor {
+  display: flex;
+
+}
+.coffee-outdoor p {
+  margin: 20px;
+  padding: 30px;
+}
+
+.div {
+  display: grid;
+  grid-template-rows: repeat(3,1fr) ;
+  
+}
+.div img {
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+
+
+}
+
+/*Hur fungerar CSS animation?*/
+
+
+/*Polaorid bilder genom boxshadow?*/
+
+.footer {
+  background: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+
 }
