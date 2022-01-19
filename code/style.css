@@ -1,4 +1,163 @@
+@media (max-width: 668px) {
+  .big-news-container {
+    flex-direction: column;
+  }
+  .small-news-container{
+    flex-direction: column;
+    
+  }
+}
+
+@media (min-width: 669px) {
+  flex-direction: 
+
+
+}
+
+/* here starts all other css, only media quiries above */
+
 html {
-  background: #0025ff;
+  background: #74a89d;
   color: #fff;
+}
+
+header {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 1px dotted brown;
+  width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  /* border:1px solid black; */
+  margin-left: 20px;
+  font-size: 50px;
+  /* margin-bottom: 0; */
+}
+
+/* h2 {
+  margin-top: 0;
+} */
+
+/* .head-site {
+  border:2px solid black;
+} */
+
+.logo {
+  background-color: black;
+  color: blue;
+  font-family: 'Righteous', cursive;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.nav-bar {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+
+a {
+  color: #6acdf5;
+  margin: 10px;
+}
+
+a:hover {
+  color: purple;
+  filter: invert(100%);
+  
+}
+
+
+/* a:visited {
+  color: #6acdf5;
+} */
+
+.big-news-container{
+  display:flex;
+  border: 2px solid black;
+  margin:40px;
+  padding: 40px;
+  height: 150px;
+  width: 1200px;
+  flex-wrap; nowrap;
+  justify-content: space-around;
+  font-family: 'Righteous';
+
+}
+
+.big-image {
+  border:2px solid black;
+  width: 200px;
+  margin: 20px;
+
+}
+.title-text {
+  /* text-align: center; */
+  border:1px solid black;
+  /* margin: 20px; */
+  /* padding: 30px; */
+  font-size: 100px;
+  /* flex-flow: wrap; */
+  /*position: absolute;*/
+}
+
+.small-news-container {
+  display: flex;
+  border: 1px solid white;
+  margin: 40px;
+  padding: 40px;
+  height: 300px;
+  width: 1200px;
+  /* justify-content: center; */
+  /* flex-direction: wrap;
+  justify-content: space-evenly; */
+  justify-content: center;
+  flex-direction: wrap;
+  
+
+
+}
+
+.news1, .news2, .news3 {
+  display: flex;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 30px;
+  height: 250px;
+  width: 700px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100px;
+  
+}
+
+.small-img{
+  width: 300px;
+}
+
+
+
+.news4, .news5, .news6 {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 30px;
+  height: 250px;
+  width: 700px;
+
+
 }
