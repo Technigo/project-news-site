@@ -3,21 +3,24 @@ body {
   background-color: azure;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .navbar {
   display: flex;
-  width: 100vw;
-  height: 15vw;
   background-color: rgb(223, 134, 134);
   align-items: center;
   font-family: 'Cormorant', serif;
 }
 
 .logo {
-  justify-content: start;
   padding: 3%;
 }
 
-.navbar img {
+.logo img {
   border-radius: 50%;
   width: 8vw;
   height: 8vw; 
@@ -26,12 +29,9 @@ body {
 .big-news {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .big-image img {
-  display: flex;
-  justify-content: center;
   width: 100vw;
 }
 
@@ -75,15 +75,21 @@ h5 {
 
 .news-box {
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
-  margin: 15%;
+  margin: 5% 0%;
   border: 1px solid black;
-  width: 70vw;
+  width: 50%;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .news-box img {
-  width: 70vw;
+  width: 100%;
 } 
 
 @media (min-width: 667px) and (max-width: 1025px) {
@@ -99,33 +105,17 @@ h5 {
     justify-content: center;
   } 
 
-  .news {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 10%;
-  } 
-
-  .news-image {
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: inline;
+  .news-box {
+    width: 34%;
   }
 
-  .news-image img {
-    width: 30vw;
-    display: inline;
-  }
-
-  .news-headline {
-    width: 30vw;
-  }
 }
 
-
+/*
 @media (min-width: 1025px) {
     .big-news {
       flex-direction: row;
       align-items: space-evenly;
       justify-content: space-evenly;
     }}
-  
+  */
