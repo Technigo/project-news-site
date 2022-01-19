@@ -54,27 +54,29 @@ header{
 .nav-bar h1{
 margin: auto 0;
 padding: 0 20px;
-
 letter-spacing: 1px;
 font-family: "The Nautigal", cursive;
 font-size: 40px;
 justify-content: space-around;
 }
 
+.search{
+  margin-top: 4px;
+  margin-left: 60px;
+}
 form.search button {
   background: rgba(250, 235, 215, 0.705);
   color: rgb(61, 6, 6);
-  font-size: 15px;
-  border: 1px solid rgba(250, 235, 215, 0.705);
+  font-size: 16px;
+  
   cursor: pointer;
+  
 }
 form.search button:hover {
   background: rgba(61, 6, 6, 0.055);
 }
 
 form.search input[type=text] {
-
-  
   background: rgba(250, 235, 215, 0.705);
 }
 
@@ -99,9 +101,8 @@ nav{
   text-decoration: none;
   font-weight: bold;
   font-family: 'The Nautigal', cursive;
-  
-  letter-spacing: 1px
-  ;
+  margin-bottom: 15px;
+  letter-spacing: 1px ;
  }
 
  nav ul{
@@ -181,9 +182,14 @@ nav{
 .featured img{
   height:500px;
   width: 800px;
+  margin-left: 20px;
 }
  
 .featured p {
+  flex:1;
   font-size: medium;
 font-weight: bolder;
+flex-wrap: wrap;
+margin: 20 20;
+
 }
