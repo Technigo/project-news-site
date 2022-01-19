@@ -1,4 +1,123 @@
-html {
-  background: #0025ff;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap');
+
+/* RESET CSS TO BORDER-BOX */
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #e6e6e6;
+  color: rgb(31, 31, 31);
+  margin: 0;
+}
+
+header{
+  background-color: #994C41;
+}
+
+h1{
+  color: #FFF8E8;
+  font-family: lora;
+  font-size: 5.9vw;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2{
+  margin: 1rem;
+  font-family: lora;
+  font-size: 5.9 vw;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF8E8
+}
+
+p{
+  font-family: poppins; 
+  color: #FFF8E8;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.logo{
+  color: #FFF8E8;
+  font-family: lora;
+  font-size: 1rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.menu-line{
+  width: 24px;
+  height: 1px;
+  fill: #FFF8E8;
+  background-color: #FFF8E8;
+}
+
+.home-intro h1{
+  color: rgb(34, 33, 33);
+  font-size: 5.9vw;
+  margin: 3rem;
+}
+.hero-image{
+  width: calc(100vw - 24px);
+  po
+}
+
+
+.read-more{
+  font-family: poppins; 
+  color: #FFF8E8;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.quote h1{
+  color: rgb(34, 33, 33);
+  font-size: 5.9vw;
+  margin: 3rem;
+}
+
+.quote p{
+  color: rgb(34, 33, 33);
+}
+
+.articles-container p, a{
+  color: rgb(34, 33, 33);
+  font-family: poppins;
+  text-align: left;
+}
+
+
+/* On screens that are 600px or more */
+@media screen and (min-width: 768px) {
+
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create two equal columns */
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 992px or more */
+@media screen and (min-width: 992px) {
+
+    /* Create three equal columns */
+  .column {
+    flex: 33%;
+    }
+}
+
+
+
