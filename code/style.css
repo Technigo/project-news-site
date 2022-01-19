@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -19,7 +19,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   letter-spacing: 0.125em;
-  font-size: clamp(1.5rem, 2.5vw, 5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   padding-left: 0.3em;
 }
 
@@ -45,17 +45,20 @@ p {
 
 .date-item {
   color: #BCA787;
+  padding-top: 0.5em;
 }
 
 
-/* BUTTONS */
+/* BUTTON */
 
 button {
   font-family: 'Be Vietnam Pro', sans-serif;
   background: #BCA787;
   color: #222222;
+  font-size: 1em;
+  box-shadow: 2px 3px #444444;
   padding: 12px 25px;
-  border-radius: 35px;
+  border-radius: 10px;
   cursor: pointer;
   align-self: flex-end;
 }
@@ -63,25 +66,15 @@ button {
 .big-news--button {
   margin-top: 2em;
 }
-
-.news-feed--button {
-  padding: 5px 14px;
-}
-
-
-@media (min-width: 768px) {
-  button {
-    font-size: 1em;
-    box-shadow: 2px 3px #444444;
-  }
   
-  button:hover,
-  button:focus {
-    background: #222222;
-    color: #BCA787;
-    transition: all 500 cubic-bezier(0.19, 1, 0.22, 1);
-    transform: scale(1.3);
-  }
+button:hover,
+button:focus {
+  background: #222222;
+  color: #BCA787;
+  transition: all 1000 ease-in-out;
+  transform: scale(1.1);
+  font-size: 1.125em;
+  text-transform: uppercase;
 }
 
 
@@ -163,7 +156,7 @@ button {
 
 @media (min-width: 992px){  
   .logo {
-    min-height: 7em;
+    min-height: 10em;
   }
   
   .sub-header > ul {
@@ -186,18 +179,20 @@ button {
 }
 
 .big-news {
-  padding: 1em;
+  padding: 1.75em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 90%;
-  border-bottom: 1px solid #E07A5F;
+  cursor: pointer;
 }
 
 .news-feed {
   background: #E7DCCB;
+  border-top: 1px solid #E07A5F;
   padding: 1.5em;
 }
+
 
 .news-feed--card {
   background: #F4F1DE;
@@ -209,7 +204,6 @@ button {
   margin-top: 1.5em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-content: center;
   cursor: pointer;
 }
@@ -222,7 +216,7 @@ button {
 
 .news-feed--img {
   min-width: 100%;
-  max-height: 11em;
+  max-height: 9em;
   border-radius: 15px;
 }
 
@@ -231,7 +225,7 @@ button {
 footer {
   background: #826E5B;
   margin-top: 1.5em;
-  padding: 1em;
+  padding: 0.75em;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -268,13 +262,12 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    grid-gap: 1.2em;
+    grid-gap: 2.5em;
   }
   
   .big-news {
     max-width: 90em;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -292,5 +285,16 @@ footer {
     object-fit: cover;
   }
 }
+  
+@media (max-width: 992px) {    
+  .big-news--button {
+    transform: translateX(2000%);
+    transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
 
-
+  .big-news:hover {
+    transition: all 500 cubic-bezier(0.19, 1, 0.22, 1);
+    transform: scale(1.05);
+    color: rgba(51, 51, 51, 0.5)
+  }
+}  
