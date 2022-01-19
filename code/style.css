@@ -31,7 +31,7 @@ header{
 .media-icons{
   margin: 0 10px;
   text-align: right;
-  letter-spacing: 3px;
+  letter-spacing: 7px;
   flex-grow: 1;
  padding:20px;
  cursor: pointer;
@@ -61,8 +61,25 @@ font-size: 40px;
 justify-content: space-around;
 }
 
+form.search button {
+  background: rgba(250, 235, 215, 0.705);
+  color: rgb(61, 6, 6);
+  font-size: 15px;
+  border: 1px solid rgba(250, 235, 215, 0.705);
+  cursor: pointer;
+}
+form.search button:hover {
+  background: rgba(61, 6, 6, 0.055);
+}
+
+form.search input[type=text] {
+
+  
+  background: rgba(250, 235, 215, 0.705);
+}
+
 nav{
-  background-color: rgba(214, 194, 194, 0.384);
+  background-color: rgba(214, 194, 194, 0.712);
   height:50px;
  
 
@@ -82,7 +99,7 @@ nav{
   text-decoration: none;
   font-weight: bold;
   font-family: 'The Nautigal', cursive;
-  font-family: 'The Nautigal', cursive;
+  
   letter-spacing: 1px
   ;
  }
@@ -119,7 +136,8 @@ nav{
 .main-news{
   display: flex;
 	flex-wrap: wrap;
-	margin: 30px 5%;
+	font-family: 'The Nautigal', cursive;
+  background-color: rgba(214, 194, 194, 0.842);
 
 }
 
@@ -130,13 +148,16 @@ nav{
 
 }
  h2{
-   margin: 30px;
+   margin: 0 50px;
 	font-weight: bolder;
-  color: black;
+   color: black;
+  font-size: 110px;
+  text-transform: uppercase;
+  letter-spacing: 1px;;
 }
 
-.featured{
-  flex: 2;
+.featured {
+  flex:3;
 }
 
 .latest{
@@ -145,4 +166,24 @@ nav{
 
 .editor{
   flex: 1;
+}
+.featured h2{
+ padding: 10px 200px;
+}
+
+.latest h2{
+  padding: 5px 80px;
+  margin-left: 10px;
+  width: 50%;
+  white-space: nowrap ;
+}
+
+.featured img{
+  height:500px;
+  width: 800px;
+}
+ 
+.featured p {
+  font-size: medium;
+font-weight: bolder;
 }
