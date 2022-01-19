@@ -1,15 +1,11 @@
 html {
-  background-color: whitesmoke;
   font-family: 'Trebuchet MS';
 }
 
 body {
   margin: 0;
-  display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  flex-direction: column;
 }
 
 img {
@@ -17,6 +13,13 @@ img {
   height: 90%;
   justify-content: center;
   margin: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  background-color: #FF6347;
 }
 
 /* scale to desktop size */
@@ -49,17 +52,15 @@ h1 {
   color: darkslategrey;
 }
 
-ul {
+.link {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding: 0.5rem;
-  background-color: #FF6347;
 }
 
-li {
-  display: list-item;
-  text-align: center;
-  gap: 2em;
+.headline {
+  border: blue 1px solid;
+}
+.article {
+  border: red 1px solid;
 }

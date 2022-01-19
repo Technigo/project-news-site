@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- dont forget the meta tag for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
       <nav>
-        <ul>
+        <ul class="link">
           <li><a href="https://google.com">Home</a></li>
           <li><a href="https://google.com">Food</a></li>
           <li><a href="https://google.com">Health</a></li>
@@ -23,14 +23,33 @@
 
     <section class="big-news">
       <!-- The big news content -->
-      <h1>This is a big deal of newsy stuff!</h1>
-      <img src="https://www.haifa-group.com/sites/default/files/field/image/Raspberry%20banner.png" alt="raspberry">
+      <div class="headline">
+        <h1>This is a big deal of newsy stuff!</h1>
+        <p>Here is a bit of article text. Blah blah blah.</p>
+        <img src="https://www.haifa-group.com/sites/default/files/field/image/Raspberry%20banner.png" alt="raspberry">
+      </div>
     </section>
 
-    <section class="">
+    <section class="articles">
       <!-- The other news  -->
+      <div class="article">
+        <h2>This is slightly less interesting article 2</h2>
+        <p>Here is a bit of article text. Blah blah blah.</p>
+      </div>
+      <div class="article">
+        <h2>This is slightly less interesting article 3</h2>
+        <p>Here is a bit of article text. Blah blah blah.</p>
+      </div>
+      <div class="article">
+        <h2>This is slightly less interesting article 4</h2>
+        <p>Here is a bit of article text. Blah blah blah.</p>
+      </div>
+      <div class="article">
+        <h2>This is slightly less interesting article 5</h2>
+        <p>Here is a bit of article text. Blah blah blah.</p>
+      </div>
     </section>
-    
+
     <footer>
       <p>Created by Arianna Allahyar.</p>
     </footer>
