@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap');
 
 /* RESET CSS TO BORDER-BOX */
 * {
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: #e6e6e6;
   color: rgb(31, 31, 31);
   margin: 0;
@@ -13,72 +13,96 @@ body {
 
 header{
   background-color: #994C41;
+  padding: 1rem;
 }
 
-h1{
+main{
+  padding: 1rem;
+}
+
+h1, h2, h3{
   color: #FFF8E8;
-  font-family: lora;
+  font-family: 'Playfair Display';
   font-size: 5.9vw;
   font-style: normal;
   font-weight: normal;
   text-align: center;
 }
 
-h2{
-  margin: 1rem;
-  font-family: lora;
-  font-size: 5.9 vw;
+h4{
+  margin: 1rem 0;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
 }
 
-a {
+a{
   text-decoration: none;
   color: #FFF8E8
 }
 
 p{
-  font-family: poppins; 
+  font-family: 'poppins'; 
   color: #FFF8E8;
   font-size: 1rem;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav p{
+  margin: 0;
+}
+
+.centered-font{
   text-align: center;
 }
 
 .logo{
   color: #FFF8E8;
-  font-family: lora;
+  font-family: 'Playfair Display';
   font-size: 1rem;
-  margin-top: 0;
-  text-align: left;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-menu{
+  display: none;
 }
 
 .menu-line{
-  width: 24px;
+  width: 1.5rem;
   height: 1px;
+  margin-bottom: 0.5rem;
   fill: #FFF8E8;
   background-color: #FFF8E8;
 }
 
-.home-intro h1{
+.home-intro h2{
   color: rgb(34, 33, 33);
   font-size: 5.9vw;
   margin: 3rem;
 }
 .hero-image{
-  width: calc(100vw - 24px);
-  po
+  width: 100%;
 }
 
-
 .read-more{
-  font-family: poppins; 
+  font-family: 'poppins'; 
   color: #FFF8E8;
   font-size: 1rem;
   text-align: center;
   text-decoration: underline;
 }
 
-.quote h1{
+.quote h3{
   color: rgb(34, 33, 33);
   font-size: 5.9vw;
   margin: 3rem;
@@ -88,36 +112,64 @@ p{
   color: rgb(34, 33, 33);
 }
 
-.articles-container p, a{
+.article-header{
+  margin: 0 0 0 1rem;
   color: rgb(34, 33, 33);
   font-family: poppins;
   text-align: left;
 }
 
+.row{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
-/* On screens that are 600px or more */
+.article{
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.article-image{
+  width: 100%;
+}
+
+.article-image-wrapper{
+  height: 34rem;
+  overflow: hidden;
+}
+
+
+/* On screens that are 768px or more */
 @media screen and (min-width: 768px) {
 
   /* Container for flexboxes */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
+  .row{
+    flex-direction: row;
   }
 
-  /* Create two equal columns */
-  .column {
-    flex: 50%;
+  .hamburger-menu{
+    display: none;
   }
-}
+
+  .desktop-menu{
+    display: flex;
+  }
+
+  .article{
+    width: calc(50% - 2rem);
+  }
 
 /* On screens that are 992px or more */
 @media screen and (min-width: 992px) {
-
-    /* Create three equal columns */
-  .column {
-    flex: 33%;
-    }
+  .article{
+    width: calc(33% - 2rem);
+  }
 }
+
+
 
 
 
