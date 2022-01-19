@@ -48,7 +48,7 @@ width: 100%;
 */
 }
 
-
+/*does not work*/
 @media (min-width: 1025px) {
 .navigation-bar a :hover {
   background-color: orangered;
@@ -60,4 +60,15 @@ width: 100%;
  h1 {
    color:orangered;  
   }
+}
+
+.big-news-article {
+color: black; 
+}
+
+.other-news {
+img {
+  width: 600px;
+}
+
 }
