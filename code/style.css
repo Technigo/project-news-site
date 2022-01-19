@@ -22,7 +22,13 @@ header {
 }
 
 nav {
+  /* The nav is not displayed in mobile devices*/
   display: none;
+}
+
+/* This is not visible in mobiles */
+nav a {
+  padding: 1rem;
 }
 
 /* Det här behöver ändras sen */
@@ -35,4 +41,57 @@ nav {
   color: white;
   display: grid;
   place-items: center;
+}
+
+/* Big news content start here */
+
+.big-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.big-news .image-container {
+  padding: 2.5rem;
+}
+
+.big-news-child {
+  padding: 2.5rem;
+  border: 1px solid red;
+}
+
+.big-news img {
+  max-width: 100%;
+}
+
+/* Desktop media queries */
+
+@media only screen and (min-width: 992px) {
+  nav {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+}
+
+/* Tablet media queries */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    background-color: deeppink;
+  }
+  
+  nav {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
 }
