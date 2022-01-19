@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I made a satirical newspaper about Electronic Dance Music.
+The task was to make a responsive site about our chosen topic, i believe i succeded.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I went mobile firts, it made it a whole lot easier, almost the whole site is made with grid, once i got the hang of it, it was fun and easy. I would not change a thing TBH, Im happy with the design and performance of the site.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://trepunkter.netlify.app

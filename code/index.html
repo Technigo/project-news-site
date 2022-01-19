@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Tre Punkter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav>
+        <!---------------NAVBAR--------------->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <img class="logo" src="IMG/TP-Logo-light.png" alt="TrePunkter logo">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="big_news_container">
+      <div class="big_news_part_1">
+        <img class="news_image" src="IMG/steveand2.jpg" alt="">
+      </div>
+      <div class="big_news_part_2">
+        <h1>SHM IS BACK!</h1>
+        <h2>Steve Angello (and his band)</h2>
+        <p>After a hiatus and years of cryptic messages and one-off performances,
+          superstar EDM trio Swedish House Mafia have finally returned with new
+          music. An anthemic new single called "It Gets Better"
+          <a href="https://edm.com/news/swedish-house-mafia-return-new-music-it-gets-better">Read more</a>
+        </p>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="smaller_news">
+      <div class="gallery">
+        <div class="gallery_picture_1">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/MAFIA.jpg" alt="SHM" />
+            </div>
+            <div class="card-body">
+              <p>
+                SHM in Stockholm, was it really that dope?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_picture_2">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/AMICORUM.jpg" alt="Tomorrowland" />
+            </div>
+            <div class="card-body">
+              <p>
+                Best version of Tomorrowland in our opinion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_picture_3">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/STEVE.jpg" alt="Steve Angello" />
+            </div>
+            <div class="card-body">
+              <p>
+                10 Steve Angello songs that bring us back.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_picture_4">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/LUKE.jpg" alt="Laidback Luke" />
+            </div>
+            <div class="card-body">
+              <p>
+                Laidback Luke named world's most technical DJ.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_picture_5">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/AVICII.jpg" alt="Avicii" />
+            </div>
+            <div class="card-body">
+              <p>
+                4 years since Tim left us.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery_picture_6">
+          <div class="card">
+            <div class="card-header">
+              <img src="IMG/UMF.jpg" alt="Ultra Music Festival" />
+            </div>
+            <div class="card-body">
+              <p>
+                Ultra Music Festival cancelled, AGAIN.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="music">
+      <iframe src="https://open.spotify.com/embed/artist/1h6Cn3P4NGzXbaXidqURXs?utm_source=generator&theme=0" width="90%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+    </section>
+
+    <footer>
+      <p>&#169; All rights reserved to Maurii and TrePunkter AB</p>
+    </footer>
   </body>
+
 </html>
+
+
