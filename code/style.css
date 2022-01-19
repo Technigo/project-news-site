@@ -6,7 +6,6 @@
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 /* Note: align-items: center; is for the header animation to expand
 from the center instead of the left side. */
@@ -38,7 +37,8 @@ footer a {
 header {
     display: inline-flex;
     justify-content: center;
-    margin: 10px 10px;
+    width: 100%;
+    margin: 10px 10px 10px 0;
 }
 
 .logo {
@@ -65,21 +65,11 @@ hr {
     border: 1px solid grey;
     margin: 1%;
 }
-/* social media icons */
-a img {
-    border-radius: 50%;
-    width: 4vw;
-    margin: 5px;
-}
-.social-icons {
-    display: inline-block;
-    margin: auto;
-}
-
 /* main news */
-.main-news * {
+.main-news, .main-news-img, .main-news-content {
     width: 90%;
     margin: auto;
+    gap: 10px;
 }
 .main-news-img {
     display: flex;
@@ -105,7 +95,7 @@ article a {
 }
 /* polaroid effect */
 .other-news-polaroid {
-    padding: 10px;
+    padding: 10px 0 10px 0;
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4);
@@ -128,10 +118,6 @@ a:hover {
       -webkit-text-fill-color: transparent;
 }
 
-.social-icons img:hover {
-    opacity:0.5;
-    box-shadow: 5px 3px 3px grey;
-}
 @keyframes expandHeader {
     to {
         transform: scaleX(1)
@@ -149,7 +135,7 @@ a:hover {
     }
     /* revealed items */
     .desktop-view-logo {
-        display: inline;
+        display: flex;
     }
     nav {
         display: flex;
@@ -166,6 +152,10 @@ a:hover {
         color: black;
         font-weight: 600;   
     }
+    .social-icons {
+        display: none;
+    }
+    
 /* main news */
     .main-news {
         display: flex;
@@ -190,5 +180,12 @@ a:hover {
 @media (min-width: 1024px) {
     .other-news{
         columns: 4;
+        margin-top: 20px;
+    }
+    .other-news article {
+        padding: 0;
+    }
+    .other-news * {
+        width: 95%;
     }
 }
