@@ -1,4 +1,219 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url("https://i.ibb.co/bsjcW0C/61e2ca5537f58.jpg");
+  background-size: cover;
+  background-color: #242321;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  background-color: rgb(144, 158, 178, 0.3);
+  background-blend-mode: screen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.syzygy-logo img {
+  height: 60px;
+  padding: 5px 10px;
+}
+.syzygy-logo-small {
+  display: none;
+}
+.topnav {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.topnav a:link {
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+.topnav a:visited {
+  color: white;
+}
+.topnav a:hover {
+  color: #e9b2b5;
+  transform: skew(-15deg, 0);
+}
+.topnav a:active {
+  color: #e9b2b5;
+}
+.main {
+  width: 80%;
+  margin: auto;
+}
+.big-news {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 5px;
+  margin: 20px 0;
+}
+.big-news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.big-news-item2 {
+  padding: 20px 25px;
+}
+.big-news-date-published {
+  font-size: 14px;
+  font-style: italic;
+  color: #b88588;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #a4abc6;
+  margin-bottom: 5px;
+}
+.big-news-read-more {
+  display: none;
+}
+.big-news-author {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #b88588;
+  font-size: 14px;
+}
+.big-news-article {
+  border-radius: 2%;
+  background-color: #f5eded;
+  box-shadow: 5px 5px rgb(164, 171, 198, 0.5);
+  padding: 25px 20px 10px 20px;
+}
+.big-news-text {
+  font-size: 14px;
+  color: #232331;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.other-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+.other-news a {
+  text-decoration: none;
+}
+.other-news > * {
+  background-color: #b88588;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+.other-news-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #131933;
+  color: white;
+  margin: 0px 20px;
+}
+.other-news-date-published {
+  font-size: 14px;
+  color: black;
+  margin: 10px 20px;
+}
+footer {
+  width: 400px;
+  height: auto;
+  color: #f4b3da;
+  opacity: 0.7;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 20px;
+}
+@media (min-width: 1024px) {
+  .other-news-img:hover {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main {
+    width: 90%;
+    margin: auto;
+  }
+  header {
+    justify-content: center;
+  }
+  .syzygy-logo {
+    display: none;
+  }
+  .topnav {
+    align-items: center;
+  }
+  .syzygy-logo-small {
+    display: block;
+  }
+  .syzygy-logo-small img {
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .other-news {
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .topnav {
+    display: none;
+  }
+  .main {
+    width: 95%;
+  }
+  .big-news {
+    flex-grow: 1;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+  .big-news-item2 {
+    padding: 5px 10px;
+  }
+  .big-news-read-more {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .big-news-read-more:link {
+    color: #232331;
+  }
+  .big-news-read-more:visited {
+    color: #232331;
+  }
+  .big-news-read-more:hover {
+    color: #a4abc6;
+    transform: skew(-15deg, 0);
+  }
+  .big-news-read-more:active {
+    color: #a4abc6;
+  }
+  .big-news-author,
+  .big-news-text {
+    display: none;
+  }
+  .other-news {
+    grid-template-columns: 1fr;
+  }
 }

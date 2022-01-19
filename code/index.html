@@ -2,21 +2,186 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+      <div class="logo-container">
+        <a href="#home" class="syzygy-logo">
+          <img
+            src="https://i.ibb.co/KyBfztZ/Untitled-design-5.png"
+            alt="syzygy-logo"
+          />
+        </a>
+      </div>
+      <div class="topnav">
+        <a href="#">About</a>
+        <a href="#">Big Questions</a>
+        <a href="#home" class="syzygy-logo-small">
+          <img
+            src="https://i.ibb.co/85jGDSg/Untitled-300-x-300-px-1.png"
+            alt="syzygy-logo-small"
+          />
+        </a>
+        <a href="#">Quizzes</a>
+        <a href="#">Top 10 Lists</a>
+      </div>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
+    <!-- The big news content -->
+    <div class="main">
+      <div class="big-news">
+        <div class="big-news-item1">
+          <img
+            class="big-news-img"
+            src="https://i.ibb.co/cwZ5FX3/jwst.jpg"
+            alt="james-webb-space-telescope"
+          />
+        </div>
+        <div class="big-news-item2">
+          <p class="big-news-date-published">Published 2 days ago</p>
+          <h2>
+            James Webb Telescope completes the final stage of deployment after
+            being fully unfolded in space
+          </h2>
+          <a href="#" class="big-news-read-more">Read more...</a>
+          <p class="big-news-author">By Lidia Bozart</p>
+          <div class="big-news-article">
+            <p class="big-news-text">
+              NASA scientists have hailed a "milestone decades in the making" as
+              the giant mirror of its new space telescope was successfully
+              unfurled.
+            </p>
+            <p class="big-news-text">
+              The James Webb Space Telescope (Webb) is the world's largest and
+              most complex science telescope. It was successfully launched into
+              space atop a European Ariane 5 rocket on December 25, 2021.
+            </p>
+            <p class="big-news-text">
+              The $10 billion revolutionary space observatory - a joint effort
+              between NASA, the European Space Agency, and the Canadian Space
+              Agency — is designed to detect the faint infrared light from the
+              earliest stars and galaxies formed over 13.5 billion years ago.
+            </p>
+            <p class="big-news-text">
+              "It's a time machine," NASA Administrator Bill Nelson said. "It's
+              going to take us back to the very beginnings of the universe. We
+              are going to discover incredible things that we never imagined.”
+            </p>
+            <p class="big-news-text">
+              Initially NASA estimated that the James Webb Space Telescope could
+              operate for at least five and a half years. Thanks to a seamless
+              launch, this timeline has now been extended to 10 years. The
+              lifespan of the telescope is up to the fuel reserves. Once fuel
+              runs out, the JWST's mission will end.
+            </p>
+          </div>
+        </div>
+      </div>
       <!-- The other news  -->
-    </section>
+      <div class="other-news">
+        <a href="#"
+          ><div class="other-news-item-1">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/dKdbbHV/extreme-weather.jpg"
+              alt="earth-weather"
+            />
+            <h3>
+              2021 saw record temperatures and deaths from natural disasters,
+              NASA reveals
+            </h3>
+            <p class="other-news-date-published">Published today</p>
+          </div></a
+        >
+        <a href="#">
+          <div class="other-news-item-2">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/xCWJkNH/exo-moon.jpg"
+              alt="exomoon"
+            />
+            <h3>
+              The hunt is on for exomoons around alien planets - scientists may
+              have just found one
+            </h3>
+            <p class="other-news-date-published">Published 4 days ago</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="other-news-item-3">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/hWVVcgT/mily-way.jpg"
+              alt="milky-way"
+            />
+            <h3>
+              Streams of stars orbiting the Milky Way shed light on galaxy's
+              dark matter
+            </h3>
+            <p class="other-news-date-published">Published 2 days ago</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="other-news-item-4">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/fXV9Ffv/Venus.jpg"
+              alt="venus"
+            />
+            <h3>
+              Venus may have alien 'lifeforms in its clouds', scientists suggest
+            </h3>
+            <p class="other-news-date-published">Published yesterday</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="other-news-item-5">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/xSY1bgM/exoplanet2.jpg"
+              alt="exoplanet"
+            />
+            <h3>
+              A team of amateur astronomers finds gigantic planet hidden in
+              plain sight
+            </h3>
+            <p class="other-news-date-published">Published last week</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="other-news-item-6">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/2Ww2PKq/halley-comet.jpg"
+              alt="haylley-comet"
+            />
+            <h3>Halley's Comet: Facts about history's most famous comet</h3>
+            <p class="other-news-date-published">Published 2 days ago</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="other-news-item-7">
+            <img
+              class="other-news-img"
+              src="https://i.ibb.co/nDHx6xr/far-away-galaxy.png"
+              alt="faraway-galaxy"
+            />
+            <h3>Hubble Telescope: picture of the day</h3>
+            <p class="other-news-date-published">Published today</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer>2022 © Justine Zwiazek</footer>
   </body>
 </html>
