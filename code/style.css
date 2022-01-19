@@ -40,6 +40,7 @@ input {
 
 section {
   background-color: white;
+  /*box-shadow: 20px 20px 10px rgb(179, 177, 177);*/
 }
  
 .big-news {
@@ -70,7 +71,11 @@ padding-top: 5%;
 h5 {
   border-bottom-style: solid;
   border-width: 1px;
+  display: flex;
+  justify-content:center;
 }
+
+
 
 @media (min-width: 668px) and (max-width: 1024px) {
 
