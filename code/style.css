@@ -5,21 +5,21 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #e6e6e6;
   margin: 0;
 }
 
-header{
+header {
   background-color: #994C41;
   padding: 1rem;
 }
 
-main{
+main {
   padding: 1rem;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   color: #dcd1b4;
   font-family: 'Playfair Display';
   font-size: 8vw;
@@ -28,71 +28,77 @@ h1, h2, h3{
   text-align: center;
 }
 
-h4{
+h4 {
   margin: 1rem 0;
   font-family: 'Playfair Display';
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
-a{
+a {
   text-decoration: none;
   color: #dcd1b4;
 }
 
-p{
+p {
   font-family: 'poppins'; 
   color: #dcd1b4;
   font-size: 1rem;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 
-nav p{
+nav p { 
   margin: 0;
 }
 
-footer{
+footer {
   background-color: #212121;
   padding: 5rem 1.5rem;
 }
 
-ul{
+ul {
   list-style-type: none;
   color: #dcd1b4;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  justify-content: space-evenly;
 }
 
-li{
+li {
   font-family: 'poppins';
 }
 
-.centered-font{
+.centered-font {
   text-align: center;
 }
 
-.logo{
+.logo {
   color: #dcd1b4;
   font-family: 'Playfair Display';
   font-size: 1rem;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: flex;
   flex-direction: column;
 }
 
-.desktop-menu{
+.desktop-menu {
   display: none;
 }
 
-.menu-line{
+.menu-line {
   width: 1.5rem;
   height: 1px;
   margin-bottom: 0.5rem;
@@ -100,16 +106,17 @@ li{
   background-color: #dcd1b4;
 }
 
-.home-intro h2{
+.home-intro h2 {
   color: #212121;
   font-size: 5.9vw;
   margin: 3rem;
 }
-.hero-image{
+
+.hero-image {
   width: 100%;
 }
 
-.hero-description{
+.hero-description {
   margin-bottom: 1.5rem;
 }
 
@@ -117,7 +124,7 @@ li{
   color: #dcd1b4;
 }
 
-.read-more{
+.read-more { 
   font-family: 'poppins'; 
   color: #dcd1b4;
   font-size: 1rem;
@@ -125,35 +132,35 @@ li{
   text-transform: uppercase;
 }
 
-.quote, .home-intro{
+.quote, .home-intro {
   border-bottom: 1px solid;
   border-top: 1px solid;
   margin: 6rem 1rem;
 }
 
-.quote h3{
+.quote h3 { 
   color: #212121;
   font-size: 5.9vw;
   margin: 3rem;
 }
 
-.quote p{
+.quote p {
   color: #6b6b6b;
 }
 
-.author{
+.author {
   font-size: 1.5rem;
   font-style: italic;
 }
 
-.article-header{
+.article-header {
   margin: 0 0 0 1rem;
   color: #212121;
   font-family: poppins;
   text-align: left;
 }
 
-.article-link{
+.article-link {
   text-decoration: underline;
 }
 
@@ -163,54 +170,77 @@ li{
   text-decoration: none;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
 }
 
-.article{
+.article {
   width: calc(100% - 2rem);
   margin: 1rem;
   padding: 1rem;
 }
 
-.article-image{
+.article-image {
   width: 100%;
+  box-shadow: 3px 3px 19px -4px #414248;
 }
 
-.article-image-wrapper{
-  height: 34rem;
+.article-image-wrapper {
   overflow: hidden;
 }
 
-.desktop-menu p{
-  margin-left: 1.5rem;
-}
-
-.stay-in-touch{
+.article p {
   color: #212121;
 }
 
+.yellow {
+  background-color: #816d3b;
+}
+
+.blue {
+  background-color: #65798e;
+}
+
+.plum {
+  background-color: #5a4041;
+}
+
+.darkgreen {
+  background-color: #424635;
+}
+
+.beige {
+  background-color: #dcd1b4;
+}
+
+.desktop-menu p {
+  margin-left: 1.5rem;
+}
+
+.stay-in-touch {
+  color: #212121;
+}
 
 /* On screens that are 768px or more */
 @media screen and (min-width: 768px) {
 
   /* Container for flexboxes */
-  .row{
+  .row {
     flex-direction: row;
   }
 
-  .hamburger-menu{
+  .hamburger-menu {
     display: none;
   }
 
-  .desktop-menu{
+  .desktop-menu {
     display: flex;
   }
 
-  .article{
+  .article {
     width: calc(50% - 2rem);
   }
 
