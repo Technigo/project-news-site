@@ -6,6 +6,7 @@
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /* Note: align-items: center; is for the header animation to expand
 from the center instead of the left side. */
@@ -15,6 +16,9 @@ a {
 }
 
 /* Hidden items */
+.breaker {
+    display: none;
+}
 .desktop-view-logo {
     display: none;
 }
@@ -35,18 +39,18 @@ footer a {
 
 /* Mobile first development */
 header {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     width: 100%;
-    margin: 10px 10px 10px 0;
+    margin-bottom: 10px 20px;
+}
+h1 {
+    align-self: center;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-}
-h1 {
-    padding: 8px;
+    width: 80px;
+    height: 80px;
 }
 
 h2 {
@@ -56,7 +60,7 @@ h2 {
 
 h3 {
     padding-left: 10px ;
-    border-left: 4px solid rgb(214, 116, 116);
+    border-left: 3px solid rgb(214, 116, 116);
 }
 p {
     line-height: 1.5;
@@ -67,13 +71,14 @@ hr {
 }
 /* main news */
 .main-news, .main-news-img, .main-news-content {
-    width: 90%;
+    width: 85%;
     margin: auto;
     gap: 10px;
 }
 .main-news-img {
     display: flex;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 .main-news-content p {
     padding: 10px;
@@ -87,18 +92,23 @@ hr {
     margin: auto;
 }
 article {
-    padding: 20px;
+    padding-top: 20px;
 }
 article a {
     box-sizing: content-box;
     width: 100%;
+}
+
+.other-news img {
+    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4);;
+    align-self: center;
 }
 /* polaroid effect */
 .other-news-polaroid {
     padding: 10px 0 10px 0;
     margin-bottom: 20px;
     background-color: white;
-    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4);
+    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4); */
 }
 
 /* Animation part (Demo)
@@ -106,7 +116,7 @@ If there's no forwards, the header will disappear after it has expanded!
 tranfrom-origin 0 0 otherwise the header will start to expand from the center.
 So I set it at 0 0 so it starts from the left of the x axis */
 
-header {
+.logo, .desktop-view-logo {
     animation: expandHeader 2s forwards;
     transform: scaleX(0);
     transform-origin: 0 0;
@@ -133,19 +143,30 @@ a:hover {
     h1 {
         display: none;
     }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 20px;
+    }
     /* revealed items */
     .desktop-view-logo {
         display: flex;
+        align-self: center;
+        width: 250px;
     }
     nav {
         display: flex;
         align-self: center;
+        padding: 20px;
     }
     
     ul {
         list-style-type: none;
         display: flex;
     }
+
     nav a {
         margin-right: 20px;
         text-decoration: none;
@@ -156,16 +177,22 @@ a:hover {
         display: none;
     }
     
+    .breaker {
+        display: block;
+        align-self: center;
+        width: 90%;
+        margin-top: 2vw;
+        border-bottom: 2px solid rgb(214, 116, 116);
+    }
 /* main news */
     .main-news {
         display: flex;
+        gap: 30px;
     }
     .main-news-img {
         width: 50%;
-        padding-left: 2vw;
         margin: auto;
     }
-
 /* other news */
     .other-news {
         columns: 2;
@@ -187,5 +214,29 @@ a:hover {
     }
     .other-news * {
         width: 95%;
+    }
+    .main-news-img {
+        width: 40%;
+    }
+    .main-news-content {
+        width: 50%;
+        align-self: center;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    nav {
+        display: flex;
+        align-self: center;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+    ul li {
+        margin: 2vw;
+        font-size: 20px;
     }
 }
