@@ -5,7 +5,6 @@ a {
     all: unset;
   }
 
-
   body {
 
     background-color: rgb(240, 240, 240);
@@ -14,7 +13,6 @@ a {
     /* justify-content: center; */
   
   }  
-
 
 p {
     font-family: 'Noto Serif', serif;
@@ -49,6 +47,23 @@ h3 {
     margin-block-end: 0;    
 }
 
+@media (max-width:480px) {
+
+    h3 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+    .timestamp {
+        font-size: 0.7rem;
+    }
+    .card {
+        height: 200px;
+    }
+    .card-img {
+       
+    }
+}
+
 /* HEADER */
 
 
@@ -56,7 +71,6 @@ h3 {
 
     background-color: #E4C1F9;
     padding: 15px;
-    width: vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -76,7 +90,9 @@ h3 {
 .logo {
 
     align-content: center;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
 }
 .header img {
     flex: 1;
@@ -85,6 +101,26 @@ h3 {
     display: inline-flex;
 
 }  
+.header p {
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #000000;
+    margin: 0;
+  
+  }
+
+  .weather {
+    text-align: end;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #a584b8;
+
+  }
 
 .menu {
 
@@ -92,13 +128,12 @@ h3 {
     flex-wrap: wrap;
     flex: 1;
     justify-content: space-between;
+    line-height: 1rem;
     background-color: #21122e;
-    height: 45px;
-    width: vw;
+    height: 20px;
     padding: 1rem;
 
 }
-
 
 .nav-list {
 
