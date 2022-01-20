@@ -1,4 +1,42 @@
 header{display:flex; justify-content:space-between; align-items:center; font-family: 'Courier New', Courier, monospace; font-size: 20px;}
 img{height: 40px;}
 a{text-decoration: none; color:black; padding: 0 20px;}
-body{background-color: blue;}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{margin:0 0; }
+.main{width: 80%; margin:auto}
+
+h1{margin: 0 0; font-family: 'Anton', sans-serif; font-size: 3.5vw;}
+
+.big-news {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0px;
+  margin-top:80px;
+  margin-bottom:150px;
+  border-bottom: 2px solid black;
+  padding-bottom: 50px;
+}
+
+.gallerypic{width:100%; object-fit:cover;}
+.gallerypic:hover{
+	opacity: .5;
+}
+
+
+.gallery__img {
+ width:100%; height:auto;
+ object-fit: cover;
+}
+
+.newsgrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 80px;
+     }
+
+ figcaption{font-size:40px;}
+ .pol{ width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;}
+  .pol:hover{opacity: .5;}
