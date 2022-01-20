@@ -7,7 +7,6 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See the header animation when they load the page
 - See the hover effect when hovering over links and social media icons
-- The  <h1> is only visible in the mobile view as it doesn't fit in the tablet and desktop view design
 
 ## The problem
 
