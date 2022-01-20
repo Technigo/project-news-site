@@ -3,70 +3,161 @@ html {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* .header-container{ */
-  /* display: flex; */
-  /* align-items: center; */
-  /* border:solid */
+body{
+margin: 0px;
 }
+
+.site-name{
+  text-align: center;
+}
+
+span{
+  font-size: 15px;
+}
+/* rules for the header */
 header{
-  background-color: white;
-  /* border: solid; */
+  border: solid;
   display: flex;
-  /* width:60%; */
-  /* height: 2%; */
-  /* margin: auto; */
-  /* text-align: start; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  /* border: solid; */
+  height: 70px;
+  width: 80px;
+  justify-self: end;
+  align-self: center;
 }
 
 ul{
+  /* border: solid; */
   list-style: none;
-  position: relative;
-  left: 100%;
+  justify-self: start;
 }
+
 a{
   color: black;
   text-decoration: none;
 }
-
-.logo{
-position: absolute;
-/* left: 90%; */
-left: 72%;
-height: 100px;
-width: 110px;
+/* meda rule to dissapear the sitename in header when shown in mobile */
+@media (max-width:668px){
+  .site-name{
+    display:none;
+  }
 }
 
-.site-name{
-  /* text-align: center; */
-  /* position: relative; */
-  
-  display: flex;
-  position: absolute;
-  left: 42%;
+/* media rule to make navbar into a row when shown on screen */
+
+@media (min-width: 1000px){ 
+  ul{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  li{
+    padding-left: 15px;
+  }
 }
 
-.big-news, .related-news{ 
+/* -------------------------------------------------------------- */
+.main-heading{
   text-align: center;
-  /* width: 600px; */
-  height: 100%;
-  width: 60%;
-  margin: auto; 
-  border: solid;
 }
 
-h2{
+/* ------------------------------------------------------------- */
+/* rules for the maine section with a news article. 1 column in mobile,
+2 columns on tablet and screen*/
+.big-news{
+  display: flex;
   border: solid;
-  /* margin: 10px 140px; */
-  padding: 1%;
-  text-align: start;
-  margin: 1% 18%;
+  text-align: center;
+  background-color: blue;
 }
 
-p{
+.article-heading{
   border: solid;
-  /* margin: 10px 140px; */
-  /* padding: 10px; */
-  text-align: start;
-  margin:1% 18%;
-  padding: 1%;
+  background-color: cyan;
 }
+
+.article{
+  border: solid;
+  text-align: center;
+  background-color: blueviolet;
+  }
+
+  .main-content-img{
+    height: 90%;
+    width: 90%;
+    justify-content: center;
+    margin: 20px;
+}
+
+  /* rules for main article in tablet and screen  */
+@media (min-width:668px){
+
+  .main-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+
+/* .main-content{ */
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  }
+}
+.main-content-img{
+  width: 40%;
+}  
+
+.text{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* -------------------------------------------------------------- */
+/* heading for news grid */
+
+.related-news{
+  text-align: center;
+}
+  /*---------------------------------------------------------------  */
+  /* code for the news grid. tablet: 2 columns, 2 rows. screen: 1 row. */
+
+    .news-grid{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .grid-img{
+      height: 90%;
+      width: 90%;
+      justify-content: center;
+      margin: 20px;
+    }
+/* rules for tablet */
+    @media (min-width: 668px) and (max-width: 1024px){
+      .news-grid{
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .grid-img{
+        width: 40%;
+      }
+    }
+/* ruls for screen */
+    @media (min-width: 1025px){
+      .news-grid{
+        flex-direction: row;
+      }
+       .grid-img{ 
+        width: 20%;
+      }
+    }
+
+    
