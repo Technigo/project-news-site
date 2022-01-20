@@ -1,5 +1,10 @@
-header{display:flex; justify-content:space-between; align-items:center; font-family: 'Courier New', Courier, monospace; font-size: 20px;}
+
+
+section img{ width:100%;height:500px;}
+header{ margin: 20px; display:flex; justify-content:space-between; align-items:center; font-family: 'Courier New', Courier, monospace; font-size: 20px; color:black;}
+
 img{height: 40px;}
+.logoandtext{display: flex; align-items: center;}
 a{text-decoration: none; color:black; padding: 0 20px;}
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -7,6 +12,7 @@ body{margin:0 0; }
 .main{width: 80%; margin:auto}
 
 h1{margin: 0 0; font-family: 'Anton', sans-serif; font-size: 3.5vw;}
+
 
 .big-news {
   display: grid;
@@ -31,7 +37,7 @@ h1{margin: 0 0; font-family: 'Anton', sans-serif; font-size: 3.5vw;}
 
 .newsgrid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-bottom: 80px;
      }
 
@@ -40,3 +46,52 @@ h1{margin: 0 0; font-family: 'Anton', sans-serif; font-size: 3.5vw;}
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;}
   .pol:hover{opacity: .5;}
+
+  @media only screen and (max-width: 600px) {
+     
+
+  body{background-color: tomato;}
+  a {display:none;}
+  h2{display:none;}
+  header{justify-content: center;}
+  h1{font-size: 25px; margin:0;}
+
+  .big-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 0px;
+    margin-top:30px;
+    margin-bottom:20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+  }
+
+  /*.big-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom:20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+  }*/
+  .gallerypic{width:auto}
+  .pol{width:60%}
+
+/*
+.newsgrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+   }*/
+   .newsgrid {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 40px;
+     }
+
+
+   h2{font-size: 15px;}
+}  
