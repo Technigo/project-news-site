@@ -6,7 +6,10 @@ html {
 
 .logo img {
   width: 20%;
+  border-style: solid;
+  border-width: 0.2px;
   border-radius: 50%;
+  box-shadow: none;
 }
 
 p {
@@ -26,6 +29,9 @@ a {
   padding: 0 5%;
 }
 
+a:hover{
+  opacity: 0.5; 
+}
 .menu {
   display:flex;
   justify-content:flex-end;
@@ -36,11 +42,16 @@ input {
   text-align: center;
   border: none;
   margin: 5%;
+  font-family: inherit;
 }
 
 section {
   background-color: white;
-  /*box-shadow: 20px 20px 10px rgb(179, 177, 177);*/
+  
+}
+
+img {
+  box-shadow: 5px 10px 19px rgb(179, 177, 177);
 }
  
 .big-news {
@@ -50,7 +61,8 @@ section {
 
 .big-news img {
   width: 100%;
-  padding-top: 5%;
+  margin-top: 5%;
+  
 }
 
 p1 {
@@ -75,13 +87,75 @@ h5 {
   justify-content:center;
 }
 
+footer {
+  height: 100px;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 
 @media (min-width: 668px) and (max-width: 1024px) {
+  
+  .menu {
+    justify-content:space-around;
+    margin-left: 20%;
+    font-size: small;
+  }
+  
+  input {
+    height: 30px;
+    border-radius: 4px;
+    font-size: larger;
+  }
+
+  .smaller-news {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .smaller-news img {
+    height: 405px;
+    max-width: 315px;
+  }
+
+  article {
+    width: 50%
+  }
 
 }
 
 @media (min-width:1025px) {
+
+  .menu {
+    justify-content:space-around;
+    margin-left: 20%;
+    font-size: larger;
+  }
+  
+  input {
+    width: 30%;
+    height: 35px;
+    border-radius: 4px;
+    font-size: larger;
+  }
+
+  .smaller-news {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .smaller-news img {
+    height: 405px;
+    max-width: 315px;
+  }
+
+  article {
+    width: 25%
+  }
 
 }
 
