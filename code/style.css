@@ -1,4 +1,33 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  
+}
+
+.header-container {
+  background: blue;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.left-header {
+  border: 3px solid black;
+}
+
+.right-header {
+  border: 3px solid black;
+  display: none;
+}
+
+.main-news {
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.left-main {
+  border: 3px solid black;
+}
+
+.right-main {
+  border: 3px solid black;
 }
