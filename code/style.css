@@ -1,4 +1,111 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #e0e2f1;
+  color: rgb(27, 26, 26);
+  }
+body {
+  margin:0;
 }
+
+  .nav ul{
+    list-style: none;
+    display: flex;
+    
+  }
+   /*navigation bar is not responsive*/
+  .nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+    transition: all .7s ease;
+   }
+   .nav ul li a:hover{
+     color: thistle;
+     background: tomato;
+   }
+
+  .header{
+    background-color:lightslategray;
+    overflow: hidden;
+
+  }
+  .nav{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    width:100%;
+    margin:auto;
+  }
+  
+  .nav img{
+    width:120px;
+    height:auto;
+
+  }
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  font-family: 'Rajdhani', sans-serif;
+ }
+p {
+  font-family: 'Scope One', serif;
+
+}
+.container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.image {
+  width: 100%; 
+  
+}
+ 
+
+  .cell-1 {
+    grid-column: span 2;
+    padding: 2rem;
+    background-color: rgb(185, 67, 185);
+    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
+    /*cell-1 should have some text, that is shown only in tablet size*/
+
+      }
+
+    .cell-2 {
+    background-color: lightgrey;
+    grid-column: span 2;
+    padding: 1rem;
+    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
+    }
+  .cell-3, .cell-4, .cell-5, .cell-6, .cell-7, .cell-8{
+    background-color:rgb(236, 179, 236);
+        padding: 1rem;
+    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
+  }
+  /* mobile */
+  @media (max-width:667px) {
+    .cell-1 {
+      grid-column: span 4;
+    }
+    .cell-2 {
+      grid-column: span 4;
+    }
+    .cell-3, .cell-4, .cell-5, .cell-6, .cell-7 {
+      grid-column: span 4;
+    }
+  } 
+  /* tablet */
+  @media (min-width: 668px) and (max-width:1024px) {
+    /* .cell-1 {
+      grid-column: span 4;
+    }
+    .cell-2 {
+      grid-column: span 4;
+    } */
+    .cell-3, .cell-4, .cell-5, .cell-6, .cell-7 {
+      grid-column: span 2;
+    }
+  } 
+ 
