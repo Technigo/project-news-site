@@ -18,4 +18,4 @@ This is how i approached the problem:
 
 ## View it live
 
-LINK TO NETLIFY!!
+Link to deployed website: https://emmahogberg-news-project.netlify.app/
