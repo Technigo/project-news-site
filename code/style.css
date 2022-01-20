@@ -39,13 +39,6 @@ header {
 .topnav a:visited {
   color: white;
 }
-.topnav a:hover {
-  color: #e9b2b5;
-  transform: skew(-15deg, 0);
-}
-.topnav a:active {
-  color: #e9b2b5;
-}
 .main {
   width: 80%;
   margin: auto;
@@ -63,7 +56,7 @@ header {
   height: 100%;
   object-fit: cover;
 }
-.big-news-item2 {
+.big-news-item-2 {
   padding: 20px 25px;
 }
 .big-news-date-published {
@@ -142,6 +135,13 @@ footer {
 @media (min-width: 1024px) {
   .other-news-img:hover {
     opacity: 0.5;
+  }
+  .topnav a:hover {
+    color: #e9b2b5;
+    transform: skew(-15deg, 0);
+  }
+  .topnav a:active {
+    color: #e9b2b5;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
