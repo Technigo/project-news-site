@@ -217,12 +217,19 @@ button:focus {
 
 .news-feed--img {
   min-width: 100%;
-  max-height: 9em;
+  max-height: 10em;
   border-radius: 15px;
 }
 
 .news-feed h2 {
   text-align: center;
+}
+
+.news-feed--card:last-child {
+  background: #BCA787;
+  align-self: flex-end;
+  justify-content: center;
+  align-content: center;
 }
 
 
