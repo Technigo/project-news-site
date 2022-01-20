@@ -16,15 +16,10 @@ padding: 275px 0;
 }
 
 .navigation-bar {
-overflow: hidden;  
 height: 100px;
 background-color: black;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-/*
-align-items: center;
-margin: 5px 10px;
-*/
+display: flex;
+justify-content: space-evenly;
 }
 
 .matchsticksnews-logo {
@@ -34,7 +29,6 @@ height: 100px;
 
 .site-name{
 font-size: 30px;
-grid-column: span 2;
 }
 
 .navigation-bar a {
@@ -42,10 +36,11 @@ padding: 35px;
 text-decoration: none;
 color:white;
 
-/*font-weight: bold;
-float: none;
-width: 100%;
-*/
+}
+
+@media (max-width: 667px) {
+.navigation-bar a {
+}  
 }
 
 /*does not work
@@ -62,46 +57,57 @@ width: 100%;
   }
 }
 
+.big-news {
+display: grid;
+grid-template-columns: 1fr;
+margin-left: 25px;
+margin-right: 25px;
+margin-bottom: 50px;
+
+}
+
 .big-news-article {
 color: black; 
-padding: 25px;
 }
 
 .big-news img{
-width: 500px; 
-padding: 50px; 
+width: 500px;
+margin-top: 25px; 
 }
 
-.other-news {
-display:grid;
-grid-template-rows: repeat(6, 1fr);  
-}
-
-.other-news img {
-width: 500px;  
-}
-
-@media (min-width:668 max-width: 1024px) {
-  .other-news {
+@media (min-width:668px) {
+  .big-news {
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;  
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 15px; 
   }  
   }
 
-@media (min-width: 1025px) {
+.other-news {
+display:grid;
+grid-template-columns: 1fr; 
+margin-left: 25px;
+margin-right: 25px;
+margin-bottom: 50px;
+
+}
+
+.other-news img {
+width: 300px;  
+}
+
+@media (min-width:668px) {
+  .other-news {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 15px; 
+  }  
+  }
+
+@media (min-width:1025px) {
 .other-news {
 display:grid;
 grid-template-columns: repeat(4, 1fr); 
-gap: 15px; 
+grid-gap: 15px; 
 }  
 }
-
-
-/*
-.other-news a {
-img {
-  width: 600px;
-}
-
-}*/
