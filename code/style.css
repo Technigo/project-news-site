@@ -7,6 +7,9 @@ a {
 body {
 
   background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 p {
@@ -147,6 +150,10 @@ h3 {
         margin-bottom: 0;
         justify-content: center;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         width:95vw;
         height: 550px;
     }
@@ -186,11 +193,11 @@ h3 {
 
     .text-top {
 
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         align-items: stretch;
-        justify-content:center;
-        margin: 4rem;
+        justify-content:center; */
+        margin: 0 4rem 0 4rem ;
         color: white;
         }
 
@@ -288,5 +295,174 @@ h3 {
     
     }
     
+/* MEDIA QUERIES */
 
 
+/* 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+@media (max-width: 480px) {
+    
+
+
+    .header {
+
+        background-color: rgb(56, 55, 55);
+
+    }
+    .menu {      flex-direction: column;
+    }
+
+    .nav-list{        
+        flex-direction: column;
+        display: none;
+    }
+
+    .top-container {
+
+        flex-direction: column;
+
+    }
+
+    .top-stories-box {}
+    .other-stories-container {}
+
+}
+
+@media (min-width:481px ) {
+    
+    .header {
+
+        background-color: rgb(107, 107, 107);
+
+    }
+    .menu {}
+
+
+    .nav-list{        
+        flex-direction: column;
+        display: none;
+    }
+    .top-container {
+
+        flex-direction: column;
+
+    }
+    .other-stories-container {}
+
+}
+
+
+@media (min-width:769px) {
+
+    .body {
+
+        flex-direction: column;
+    }
+    
+    .header {
+
+        background-color: rgb(166, 15, 204);
+
+        /* ta bort "aside" och fyll korten 100%bredd */
+
+    }
+    .menu {}
+
+
+    .nav-list, .menu {        
+        flex-direction: row;
+        display: inline-flex;
+        flex-grow: 1;
+    }
+
+    .top-stories-box {
+
+        height: 650px;
+        margin: 1rem;
+    }
+    .top-container {
+
+        flex-direction: column;
+        align-items: flex-end;
+        height: 93%;
+    }
+    .top-section {
+        height: 50%;
+        min-width: 100%;
+    }
+    .text-top {
+
+        display: block;
+
+    }
+
+    .top-img {
+
+        width: 100%;
+    }
+
+    .top-h1 {
+
+        font-size: 1.4rem;
+    }
+
+    .top-btn {
+
+        margin-bottom: 1rem;
+
+
+    }
+
+    .other-stories-container {
+        width: 95vw;
+        margin: auto;
+    }
+
+}
+
+
+@media (min-width:1025px) {
+    
+    .header {
+
+        background-color: rgb(109, 201, 90);
+
+    }
+    .menu {}
+
+
+    .nav-list{   
+
+        flex-direction: row;
+        display: block;
+
+    }
+    
+
+    .top-stories-box {}
+    .other-stories-container {}
+
+}
+
+
+@media (min-width:1201px) {
+    
+    .header {
+
+        background-color: rgb(230, 57, 57);
+
+    }
+    .menu {}
+    .top-stories-box {}
+    .other-stories-container {
+
+
+        grid-column: 1 / span 3;
+    }
+
+}
