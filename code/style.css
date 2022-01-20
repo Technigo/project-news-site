@@ -25,6 +25,7 @@ justify-content: space-evenly;
 .matchsticksnews-logo {
 width: 100px;
 height: 100px;
+filter: contrast(130%);
 }
 
 .site-name{
@@ -35,20 +36,12 @@ font-size: 30px;
 padding: 35px;
 text-decoration: none;
 color:white;
-
 }
 
+/*not sure what started here
 @media (max-width: 667px) {
 .navigation-bar a {
 }  
-}
-
-/*does not work
-@media (min-width: 1025px) {
-.navigation-bar a :hover {
-  background-color: orangered;
-  color: black;
-  }
 }*/
 
 @media (min-width: 668px) {
@@ -64,7 +57,7 @@ margin-top: 25px;
 margin-left: 25px;
 margin-right: 25px;
 margin-bottom: 50px;
-/*
+/* does not work
 border-style:solid;
 border-color: black;
 border-width: thin;
@@ -82,12 +75,21 @@ margin-top: 25px;
 
 .big-news a {
 text-decoration: none;
+color: orangered;
+}
+
+@media (min-width: 1025px) {
+.big-news a:hover {
+background-color: black;
+}  
 }
 
 .hr {
 border-top: 5px solid;  
 color: grey;
-width: 500px;
+margin-left: 0%;
+margin-right:0%;
+
 }
 
 @media (min-width:668px) {
