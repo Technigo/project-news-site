@@ -2,27 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>📰 Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>🐶Project 2: Dachshund Weekly</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--dont forget to check the meta tag for responsiveness -->
   </head>
   <body>
+
     <header>
       <img class="logo" src="images/news-site-logo.png">
-      <img class="menu-button" src="images/menu-button.png">
+      <nav>
+        <button class="subscribe-button">Subscribe</button>
+          <img class="menu-button" src="images/menu-button.png">
+      </nav>
     </header>
-
-    <section class="big-news">
-      <img class="big-news-img" src="images/dachshund-car.jpg">
-      <p>This is the big news text</p>
+        <!--Remember to add alternative img text using alt="alternative-text"-->
+    
+    <section class="flex-parent-big-news">  
+     <div class="flex-child-big-news">
+       <img class="big-news-img" src="images/dachshund-car.jpg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="flex-parent-other-news">
+
+      <a class="flex-child-sofisticated" href="#">
+        <img class="sofisticated" src="images/dachshund-sofisticated.jpg">
+        <h1>Books and film tips for the sofisticated dachshund</h1>
+      </a>
+      <a class="flex-child-vacation" href="#">
+        <img class="vacation" src="images/dachshund-vacation.jpg">
+        <h1>Fancy a vacation? Check out the best dog beaches here!</h1>
+      </a>
+      <a class="flex-child-puppies" href="#">
+        <img class="puppies" src="images/dachshund-puppy.jpg">
+        <h1>Expecting a litter? Best treatos for the soon-to-be-mother</h1>
+      </a>
+      <a class="flex-child-window" href="#">
+        <img class="window" src="images/dachshund-window.jpg">
+        <h1>How to make the garden squirrel stop harrassing you</h1>
+      </a>
+      <a class="flex-child-car" href=#>
+        <img class="car" src="images/dachshund-car.jpg">
+        <h1>Find out how to make your pawrents take you to the dog park more often</h1>
+      </a>
+
     </section>
 
     <footer>
-      <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Google - Flaticon</a>
+     <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Google - Flaticon</a>
     </footer>
   </body>
 </html>

@@ -2,6 +2,12 @@ html {
   background: #F5F5F5;
 }
 
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   width: 8rem;
   margin: 1rem;
@@ -9,7 +15,12 @@ html {
 
 .menu-button {
   width: 2rem;
-  margin: 1rem;
+}
+
+
+
+.subscribe-button {
+  margin-left: 2;
 }
 
 .big-news-img {
@@ -20,4 +31,19 @@ html {
 
 .p {
   size: 25px;
+}
+
+
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+}
+
+
+@media (min-width: 1025px) {
+
+}
+
+
 }
