@@ -1,30 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/daf25c654c.js" crossorigin="anonymous"></script>
+
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+
+<body>
+<div class="header">
+        
+  <!-- LOGO -->
+    <div class="logo">
+        <img src="images/news-logo-cropped.png" alt="Hard 2 swallow pills logo">
+    </div>
+
+    <p class="byline">Unwanted news since 2022</p></figcaption>
+    
+    <div class="weather">Today: <span id="datetime"></span><script>var dt = new Date();
+        document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
+    </div>
+    
+</div>
+
+    <!-- MENU -->
+    <nav class="menu">
+      <ul class="nav-list">
+          <li><a href="#home"><i class="fas fa-tablets"></i></a></li>
+          <li><a href="#breaking">Breaking</a></li>
+          <li><a href="#business">Business</a></li> 
+          <li><a href="#weather">Weather</a></li> 
+          <li><a href="#sports">Sports</a></li> 
+          <li><a href="#opinion">Opinion</a></li> 
+          <li><a href="#culture">Culture</a></li> 
+      </ul>
+    </nav>
+
+    <!-- TOP STORIES -->
+
+    <div class="top-stories-box">
+
+        <p class="top-h1">TOP STORIES</p>   
+
+        <div class="top-container">
+            
+            <!-- Top Story section 1 - IMAGE -->
+            <div class="top-section">
+                <img class="top-img" src="images/89941889-two-teenagers-are-having-fun-shopping-for-clothes-in-the-ladies-fashion-store.webp" alt="dress shopping"> 
+            </div>
+            
+            <!-- Top Story section 2 - TEXT -->
+            <div class="top-section">
+                <div class="text-top">
+                    <h1>“I WILL find an occassion to wear this see-through, rainbow-colored maxidress”</h1>
+                    <h2>and other wardrobe lies you’ve been telling yourself.</h2>
+                    <button class="top-btn">read more</button>
+                </div>
+            </div> 
+            
+            
+        </div>
+
+<!-- OTHER STORIES -->
+
+        <div class="other-stories-container">
+
+            <div class="card">
+                <img class="card-img" src="images/sex-love-life-2015-06-texting-main.jpeg" alt="man texting">
+                <article class="stories-headlines"><h3>Relationship experts agree: “Yes, they’re probably texting other people.”</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="images/woman-bar-sad-date.jpeg" alt="disappointed young woman">
+                <article class="stories-headlines"><h3>Not everything is indicative of ADHD - despite what Tiktok might say.</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="images/snake-tourist-india.jpeg" alt="white woman posing with indian elder man">
+                <article class="stories-headlines"><h3>Backpacking through India won’t make you more interesting.</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="images/1_dfknhnbgsufakqof8qukmg.png" alt="illustration of sad woman and instagram app">
+                <article class="stories-headlines"><h3>Fact check: Instagram therapists rarely actual therapists.</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+            
+            <div class="card">
+                <img class="card-img" src="images/sex-love-life-2015-06-texting-main.jpeg" alt="man texting">
+                <article class="stories-headlines"><h3>Relationship experts agree: “Yes, they’re probably texting other people.”</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="images/woman-bar-sad-date.jpeg" alt="">
+                <article class="stories-headlines"><h3>Not everything is indicative of ADHD - despite what Tiktok might say.</h3></article>
+                <a class="timestamp" href="">Updated 8hrs ago <i class="far fa-comment-alt"></i> 4</a>
+            </div>
+
+            
+
+
+        </div>
+
+<br>
+<br><br>
+<p></p>
+<p></p>
 
 
 
-    <h1>Test push to github</h1>
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <div></div>
+    <div></div>
 
-      <div>NEws section here</div>
-
-
-
-    </section>
-  </body>
+    
+</body>
 </html>
