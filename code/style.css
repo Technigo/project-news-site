@@ -1,29 +1,25 @@
-/*html {
-  background: #ffc62c;
-  color: #fff;
-} */
-
 body {
   margin: 0;
+  background: white
 }
 
 header {
-    width: 667px;
-    height: 100px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+  height: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo-img {
-  width: 100px;
+  width: 250px;
 }
 
 .topnav {
   background-color: #ffff;
   overflow: hidden;
+  font-family: 'Cinzel', serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -34,28 +30,62 @@ header {
   padding: 5px 16px;
   text-decoration: none;
   font-size: 17px;
-
-.article {
-display: flex;
-
 }
 
-/*.big-news {
-  display: flex;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #c0c0c0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #c59000;
+  color: #393e46;
+}
+
+/* Add a color to the active/current link 
+.topnav a.active {
+  background-color: #04AA6D;
+  color: rgb(20, 26, 107);*/
+}
+
+ /*article{
+display: flex;
+flex-direction: row;
 }*/
 
-.hot-air-balloons {
-  align-items: center;
+
+
+.big-news {
+  display: flex;
   justify-content: center;
-  width: 100%;
+  /* flex-direction: row; */
 }
 
 h1 {
-  position: absolute;  
-  left: 50%;                        /* horizontal alignment */
-  top: 50%;                         /* vertical alignment */
-  transform: translate(-50%, -50%); /* precise centering */
+  color: wheat;
+  margin: 10px;
+  font-size: 50px;
+  font-family: 'Cinzel', serif;
+
 }
+
+.big-news-img {
+  width: 95%;
+  margin: 10px;
+  border-radius: 43px;
+  
+
+}
+
+
+
+
 
 
 
