@@ -3,7 +3,8 @@
 
 /* Mobile  */
 
-body{
+body {
+  box-sizing: border-box;
   margin:0%;
   font-family: 'Montserrat', sans-serif;
   background-color: #f2f2f0;
@@ -11,35 +12,28 @@ body{
   
 /* <!-- Header  -->  */
 
-
 header {
   height: 130px;  
   display: flex;  
   align-items: center;  
-  justify-content: space-between; 
   padding: 16px;
   color:#d0c8b6;
-   
-} 
+ } 
 
 nav a {
    text-decoration: none;
    padding: 20px;
-  
 }
 
 .polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- width: 280x
- 
+   width: 280x
 }
-
-
 
 .headertext {
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .title {
@@ -53,17 +47,9 @@ nav a {
    margin-left: 40px;
  } 
       
-
  nav { 
   display: none; 
   font-size: 14px;
-
-} 
- 
- nav div { 
-  width: 30%;  
-  display: flex;  
-  justify-content:space-between;  
 } 
 
 .header-box {
@@ -72,37 +58,64 @@ nav a {
   justify-content: center;
 }
 
+.hover-underline-animation {
+  display:inline-block;
+  position: relative;
+  color: #f2f2f0;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #aeafa0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
  /* <!-- The news  -->  */
   
 .newsbox1 {
   display: flex; 
   flex-wrap: wrap;
   justify-content: center;
- 
-  
-  } 
+}
 
-  .child1 {
-    margin-bottom: 20px;
-   
-  }
+.child1 {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;   
+}
 
-  .image1{ 
-  
-    display: flex; 
-    align-items: center; 
-    flex-direction: column; 
-    margin: 10px;
-
-  
+.child2{
+  display: flex;
+  justify-content: center;
+}
     
-   }
+.a  {
+  text-decoration: none;
+}
+
+.text {
+  width: 80%;
+ }
+
+.image1{ 
+  margin: 10px;    
+}
  
-
-
    /* <!-- The other news  -->  */
 
-.flex-parent2 {
+.Newsbox2 {
   display: flex; 
   height: 100px; 
   flex-direction: row;
@@ -117,28 +130,32 @@ nav a {
   margin-left: 25px; 
   text-align: justify;
   
+  
  } 
   
 .footer-text  { 
-  color: black; 
   font-size: 14px;  
   margin-top: 5px; 
-  margin-bottom: 8px; 
   text-transform: uppercase; 
   text-align: center; 
   padding-bottom: 20px;
+  
+  
   } 
   
 .date { 
   text-align: center; 
   margin-top: 5px; 
   font-size: 10px;
+ 
+  
+ 
 } 
   
 .image{ 
   width: 300px; 
   margin: 10px;
-  margin-bottom: 20px;
+ 
 } 
   
 
@@ -152,7 +169,7 @@ header {
 } 
   
  nav { 
-  width: 80%;  
+  width: 60%;  
   display: flex;  
   justify-content: space-between; 
   
@@ -170,6 +187,7 @@ header {
   
 .logo { 
   position: absolute; 
+  margin-left: 50px;
  } 
   
 
@@ -191,7 +209,7 @@ header {
 
   nav { 
   width: 60%;  
-  justify-content: space-evenly; 
+  justify-content: stretch; 
  } 
   
      
@@ -205,12 +223,12 @@ header {
  }
 .newsbox1{
   height: 80%;
-display: grid;
+  display: grid;
   
   
 }
 
-  .flex-parent2{
+  .Newsbox2{
     display: flex;
     flex-wrap: wrap;
  
@@ -223,12 +241,10 @@ display: grid;
   /* width: 400px; */
 }
 
-
-
 .image1{ 
- width: 80%; 
+ width: 80%;
  
- .text{
-   width: 50%;
- }
 }
+
+ 
+
