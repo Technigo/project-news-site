@@ -9,21 +9,22 @@ main {
   justify-content: center;
 }
 
-.navbar {
+header {
   display: flex;
   background-color: rgb(223, 134, 134);
   align-items: center;
   font-family: 'Cormorant', serif;
+  justify-content: space-evenly;
 }
 
 .logo {
   padding: 3%;
+  width: 8%;
 }
 
 .logo img {
   border-radius: 50%;
-  width: 8vw;
-  height: 8vw; 
+  width: 100%;
 }
 
 .big-news {
@@ -59,7 +60,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Cormorant', serif;
   font-family: 'Cormorant Garamond', serif;
   margin: 0;
@@ -67,7 +68,7 @@ h4 {
 }
 
 h5 {
-  font-size: 13px;
+  font-size: 12px;
   font-family: 'Cormorant', serif;
   font-family: 'Cormorant Garamond', serif;
   margin: 0;
@@ -92,6 +93,36 @@ h5 {
   width: 100%;
 } 
 
+footer {
+  display: flex;
+  background-color: rgb(223, 134, 134);
+  align-items: center;
+  font-family: 'Cormorant', serif;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  width: 40%;
+}
+
+@media (max-width: 667px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
 @media (min-width: 667px) and (max-width: 1025px) {
   .big-news {
     flex-direction: row;
@@ -111,11 +142,22 @@ h5 {
 
 }
 
-/*
 @media (min-width: 1025px) {
-    .big-news {
-      flex-direction: row;
-      align-items: space-evenly;
-      justify-content: space-evenly;
-    }}
-  */
+  .big-news {
+    flex-direction: row;
+  }
+  .big-image img {
+    width: 50vw;
+  }
+
+  .big-text {
+    width: 50vw;
+    justify-content: center;
+  } 
+
+  .news-box {
+    width: 20%;
+  }
+
+  }
+
