@@ -7,7 +7,6 @@
 
 body{
   background-color: #e6e6e6;
-  color: rgb(31, 31, 31);
   margin: 0;
 }
 
@@ -21,9 +20,9 @@ main{
 }
 
 h1, h2, h3{
-  color: #FFF8E8;
+  color: #dcd1b4;
   font-family: 'Playfair Display';
-  font-size: 5.9vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -39,12 +38,12 @@ h4{
 
 a{
   text-decoration: none;
-  color: #FFF8E8
+  color: #dcd1b4;
 }
 
 p{
   font-family: 'poppins'; 
-  color: #FFF8E8;
+  color: #dcd1b4;
   font-size: 1rem;
 }
 
@@ -52,10 +51,26 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 nav p{
   margin: 0;
+}
+
+footer{
+  background-color: #212121;
+  padding: 5rem 1.5rem;
+}
+
+ul{
+  list-style-type: none;
+  color: #dcd1b4;
+  margin: 0;
+}
+
+li{
+  font-family: 'poppins';
 }
 
 .centered-font{
@@ -63,7 +78,7 @@ nav p{
 }
 
 .logo{
-  color: #FFF8E8;
+  color: #dcd1b4;
   font-family: 'Playfair Display';
   font-size: 1rem;
 }
@@ -81,12 +96,12 @@ nav p{
   width: 1.5rem;
   height: 1px;
   margin-bottom: 0.5rem;
-  fill: #FFF8E8;
-  background-color: #FFF8E8;
+  fill: #dcd1b4;
+  background-color: #dcd1b4;
 }
 
 .home-intro h2{
-  color: rgb(34, 33, 33);
+  color: #212121;
   font-size: 5.9vw;
   margin: 3rem;
 }
@@ -94,29 +109,58 @@ nav p{
   width: 100%;
 }
 
+.hero-description{
+  margin-bottom: 1.5rem;
+}
+
+.hero-description h4 {
+  color: #dcd1b4;
+}
+
 .read-more{
   font-family: 'poppins'; 
-  color: #FFF8E8;
+  color: #dcd1b4;
   font-size: 1rem;
-  text-align: center;
   text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.quote, .home-intro{
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin: 6rem 1rem;
 }
 
 .quote h3{
-  color: rgb(34, 33, 33);
+  color: #212121;
   font-size: 5.9vw;
   margin: 3rem;
 }
 
 .quote p{
-  color: rgb(34, 33, 33);
+  color: #6b6b6b;
+}
+
+.author{
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .article-header{
   margin: 0 0 0 1rem;
-  color: rgb(34, 33, 33);
+  color: #212121;
   font-family: poppins;
   text-align: left;
+}
+
+.article-link{
+  text-decoration: underline;
+}
+
+.article-link:hover {
+  color: #e6e6e6;
+  background-color: #212121;
+  text-decoration: none;
 }
 
 .row{
@@ -139,6 +183,14 @@ nav p{
 .article-image-wrapper{
   height: 34rem;
   overflow: hidden;
+}
+
+.desktop-menu p{
+  margin-left: 1.5rem;
+}
+
+.stay-in-touch{
+  color: #212121;
 }
 
 
