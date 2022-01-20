@@ -1,10 +1,13 @@
 @media (max-width: 668px) {
 
-  body {
+  /* body {
     flex-direction: column;
     flex-wrap: wrap;
-    
-  }
+    } */
+
+    .big-news-container{
+      flex-direction: column;
+    }
   h1 {
     color: brown;
   }
@@ -40,7 +43,8 @@ html {
 }
 
 body {
-  
+  display: block;
+  align-items: center;
 }
 
 header {
@@ -64,7 +68,8 @@ header {
 h1 {
   /* border:1px solid black; */
   font-family: 'Righteous', cursive;
-  margin-left: 20px;
+  margin-left: 170px;
+  margin-top: 40px;
   font-size: 50px;
   /* margin-bottom: 0; */
 }
@@ -107,7 +112,7 @@ h1 {
 
 
 .img-img {
- height: 20%;
+ height: 90%;
 -ms-flex-align: start;
 }
 .nav-bar {
@@ -127,10 +132,19 @@ h1 {
 a {
   color: #6acdf5;
   text-decoration: none;
+  
 }
 
 a.small-link {
   color: white;
+  text-align: center;
+
+}
+
+a.big-link {
+  color:black;
+  vertical-align: top;
+  
 }
 
 .nav-links {
@@ -208,6 +222,7 @@ a:hover {
 h3 {
   font-size: 90px;
   align-self: center;
+  vertical-align: ;
   /* margin-top 0;
   /* margin-bottom: 0; */
 
@@ -269,6 +284,8 @@ h3 {
   
 }
 
+
+
 p {
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -279,26 +296,28 @@ p {
   border-radius: 10%;
   border: 1px solid black;
   filter: drop-shadow(5px 5px rgb(29, 106, 150));
-  
-  
-  
-  /* overflow: hidden;
-   */
- 
+}
 
 .small-title {
+  /* font-size: 25px;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
+  transform: translate(-50%, -50%); */
+
 }
 
 .foot-text {
-  display: inline;
-  margin-left: 200px;
-  background-color: yellow;
-  font-size: smaller;
-  align-items: center;
+  /* display: inline;
+  margin-left: 200px; */
+  /* background-color: yellow; */
+  font-size: 20px;
+  text-align: center;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+  
+  
+
+
+
+  
