@@ -2,117 +2,204 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- meta tag for responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="wrapper">
 
-      <!-- The header content -->
+    <!-- Header -->
 
-      <header>
-        
-        <!-- Lägger in fake logo så länge, ändra till riktig logga sen -->
-        <div class="logo"><img src="./images/train_black_24dp.svg"></div>
-        <!-- För att ändra tillbaka till fejkloggan, lägg in:
+    <header>
+      <!-- Lägger in fake logo så länge, ändra till riktig logga sen -->
+      <div class="logo-container"><img src="./images/train_black_24dp.svg" /></div>
+      <!-- För att ändra tillbaka till fejkloggan, lägg in:
         <div class="logo"><span>Fake logo</span></div>
         -->
-        <h1>Interrail News</h1>
-        <nav>
-          <a href="#">About us</a>
-          <a href="#">Contact</a>
-          <a href="#">Another link</a>
-        </nav>
-      </header>
+      <h1>Interrail News</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </nav>
+    </header>
 
-       <!-- The big news content -->
+    <!-- The big news content -->
 
-      <section class="big-news">
-        <div class="image-container big-news-child">
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
+    <section class="big-news">
+      <div class="image-container big-news-child">
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+      </div>
+      <article class="main-news big-news-child">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+    </section>
+
+    <!-- The other news  -->
+
+    <section class="other-news">
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        <article class="main-news big-news-child">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-       
-
-      </section>
-
-        <!-- The other news  -->
-
-      <section class="other-news">
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-        <article class="card">
-          <header>
-            <h2>Heading</h2>
-          </header>
-          <img src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg" alt="train on a bridge">
-          <div class="other-news-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </article>
-      
-      </section>
-    </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <header>
+          <h2>Heading</h2>
+        </header>
+        <img
+          src="./images/johannes-hofmann-PM5a_R83-YQ-unsplash-edited.jpg"
+          alt="train on a bridge"
+        />
+        <div class="other-news-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+    </section>
   </body>
 </html>

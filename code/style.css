@@ -1,18 +1,24 @@
+
+/*
+Color scheme från coolors.co som jag delvis använt:
+EAEBED
+006989
+A3BAC3
+007090
+01A7C2
+
+*/
+
 html {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
 body {
-  margin: 0;
-  padding: 1rem;
-  width: 100%;
-}
-
-.wrapper {
   margin: 0 auto;
-  background-color: antiquewhite;
-  width: 100%;
+  max-width: 1200px;
+  background-color: #a3baca;
 }
 
 header {
@@ -20,7 +26,10 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: darkslategrey 1px solid;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background-color: #006989;
+  color: white;
 }
 
 /*Lägger in den här lite tillfälligt bara för att se fonten*/
@@ -33,19 +42,23 @@ nav {
   display: none;
 }
 
+nav ul li {
+  display: inline;
+}
+
 /* This is not visible in mobiles */
 nav a {
-  padding: 1rem;
   text-decoration: none;
-  color: black;
+  padding: 0 1rem;
+  color: white;
 }
 
 /* Det här behöver ändras sen */
-.logo {
+.logo-container {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  margin-right: 1rem;;
+  margin: 0 1rem;
   background-color: lightgreen;
   color: white;
   display: grid;
@@ -58,16 +71,18 @@ nav a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 0;
-  background-color: #ccccff;
 }
 
 .big-news-child {
   padding: 2.5rem;
-  border: 1px solid red;
+  border: 1px solid #007090;
+  background-color: #EAEBED;
 }
+
 
 .big-news img {
   max-width: 100%;
+  height: auto;
 }
 
 /*Other news content start here */
@@ -84,11 +99,37 @@ nav a {
   grid-template-rows: max-content 200px 1fr;
   padding: 1rem;
   border: 1px solid black;
+  background-color: #EAEBED;
 }
 
 .card img {
   max-width: 100%;
 }
+
+/* Tablet media queries */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
+  nav {
+    display: block;
+    /*Denna ändrar ordningen så att nav kommer före länkarna i header flex-boxen*/
+    order: -1;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  .big-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
 
 /* Desktop media queries */
 
@@ -118,33 +159,4 @@ nav a {
     gap: 2.5rem;
   }
   
-}
-
-
-/* Tablet media queries */
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .wrapper {
-    background-color: deeppink;
-  }
-  
-  nav {
-    display: block;
-    /*Denna ändrar ordningen så att nav kommer före länkarna i header flex-boxen*/
-    order: -1;
-  }
-
-  header {
-    justify-content: space-between;
-  }
-
-  header h1 {
-    display: none;
-  }
-
-  .big-news {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
 }
