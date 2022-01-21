@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+p, h2, a {
+    font-family: 'Outfit', sans-serif;
+    display: inline;
+}
+ h2 {
+    font-size: 1.3rem;
+ }
+
+ p {
+    font-size: 1rem;
+ }
+
+/* Trying to think mobile first here... */
+
+/* Used flexbox in the header */
+header {
+    background-color: rgb(233, 203, 247);
+    padding: 2.5rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-caption {
+    animation: color-change 4s infinite;
+    margin: 0;
+}
+
+/* Animation for the h1 in the header */
+@keyframes color-change {
+    0% { color: rgb(116, 228, 222); }
+    50% { color: rgb(172, 100, 223); }
+    100% { color: rgb(116, 228, 222); }
+}
+
+.main-nav {
+    display: none;
+}
+
+/* Used grid for the articles */
+.grid-container {
+    display: grid;
+    padding: 2.5rem;
+    grid-gap: 1rem;
+}
+
+.main-article-container,
+.grid-article-container {
+    border: 3px solid rgb(172, 100, 223);
+}
+
+.main-article-image,
+.grid-article-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-article-text-container,
+.grid-article-text-container {
+    padding: 0.1rem 0.3rem 0.3rem;
+}
+
+.read-article-link,
+footer a {
+    color:rgb(172, 100, 223);
+    text-decoration: none;
+    display: inline;
+}
+
+footer {
+    background-color:rgb(223, 181, 252); 
+    padding: 2.5rem;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    header {
+        height: 10rem;
+    }
+
+    .logo-caption {
+        font-size: 2.7rem;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .main-nav a {
+        font-family: 'Outfit', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+
+    header .hamburger-menu {
+        display: none;
+    }
+
+    .grid-item.grid-item--1  {
+        grid-column-start: span 2;
+    }
+
+    .main-article-heading {
+        font-size: 2rem;
+    }
+
+    .grid-article-container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    
+    header {
+        background-color: rgb(233, 203, 247);
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-caption {
+        font-size: 4.5rem;
+        margin: 0;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
+    .main-nav a {
+        font-family: 'Outfit', sans-serif;
+        text-decoration: none;
+        color: #000;
+        padding-bottom: 1px;
+    }
+
+    .main-nav a:hover {
+        color: rgb(172, 100, 223);
+        border-bottom: 1px solid rgb(172, 100, 223);
+        /* Had to add this padding to prevent the text from "jumping" when hovering */
+        padding: 0;
+    }
+
+    header .hamburger-menu {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(25% 1fr));
+    }
+    
+    .grid-item.grid-item--1  {
+        grid-column-start: span 4;
+    }
+
+    .grid-item {
+        grid-column-start: span 1;
+    }
+
+    .grid-item:hover {
+        box-shadow: 0 0 3px 1px rgba(172, 100, 223, 60%);
+    }
+
+    .read-article-link:hover {
+        color:rgb(116, 228, 222);
+        cursor: pointer;
+    }
+
+    .grid-article-container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    .main-article-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-article-image {
+        justify-self: center;
+    }
+
+    .main-article-heading {
+        font-size: 3rem;
+    }
+
+    .main-article-text-container p {
+        max-width: 55%;
+        display: block;
+        margin: 0;
+    }
+
+    footer a:hover {
+        color: #000;
+    }
+}
