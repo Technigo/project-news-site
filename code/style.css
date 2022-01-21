@@ -115,7 +115,7 @@ tranfrom-origin 0 0 otherwise the header will start to expand from the center.
 So I set it at 0 0 so it starts from the left of the x axis */
 
 .logo, .desktop-view-logo {
-    animation: expandHeader 2s forwards;
+    animation: expandLogo 2s forwards;
     transform: scaleX(0);
     transform-origin: 0 0;
 }
