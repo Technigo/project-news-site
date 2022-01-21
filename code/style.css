@@ -1,4 +1,97 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background-color:#e9d08c;
+  font-family: 'Special Elite';
+  color: black;
 }
+
+/* This is a media query INTE KLAR*/
+@media (min-width: 1025px) {
+  .other-news {
+   display: flex;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ }
+
+ /* This is styling for the header */
+header {
+  font-family: 'Special Elite';
+  font-weight: bold;
+  font-size: 150px;
+  color: black;
+  text-align: center;
+}
+
+/* This is styling for the navbar */
+.topnav {
+  background-color: rgb(210, 223, 137);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Styling links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Special Elite';
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: brown;
+  color: red;
+  font-family: 'Special Elite';
+}
+
+h1 {
+   color: black;
+   font-family: 'Special Elite';
+   text-align: center;
+  }
+
+h2 {
+  color: black;
+  font-family: 'Special Elite';
+  text-align: center;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(168, 169, 170);
+  padding-bottom: 25 px;
+  padding-left: 25 px;
+  padding-right: 25 px;
+  padding-top: 25 px;
+}
+
+.flex-container > div {
+  background-color: #b39f9f;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-family: 'Special Elite';
+  font-size: 30px;
+  color: black
+}
+
+/* This is styling for a picture */
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* This is styling forthe footer */
