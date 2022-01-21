@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Coffee newsite!</title>
-    <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    
-    <header>
 
-      <div class="website-header">
-        <img class="logo" src="images/Coffebeansicon.png" alt="Logo">
-        <h1>The World of Coffee!</h1>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Coffee newsite</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
 
-    <!--Navigation bar-->
-    <nav class="navbar">
+<body>
+
+  <header>
+  <div class="header">
+      <img class="logo" src="images/coffeebeansicon.png" alt="Logo">
+      <h1>The World of Coffee</h1>
+      <nav class="navbar">
       <ul>
-       <a href=#>about</a>
-       <a href=#>information</a>
-       <a href="mailto:terese.claesson@gmail.com">email</a>
-       <a href=#>help</a>
+        <li><a href=#>Home</a></li>
+        <li></li><a href=#>About</a></li>
+        <li><a href="mailto:terese.claesson@gmail.com">Contact</a></li>
+        <li></li><a href=#>Other</a></li>
       </ul>
     </nav>
-      
-      <!-- Some kind of logo and navbar -->
-    </header>
+  </div>
+  </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-      <h3>BIG NEWS!</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim facilisis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla, nisi ac tincidunt varius, sem nunc fermentum lectus, non fermentum ligula mauris sed tellus. Praesent at eleifend diam, id facilisis velit. Etiam eu imperdiet mauris. Donec vehicula felis lectus, at consectetur ante bibendum quis. Pellentesque imperdiet sem eros, in convallis velit pharetra vulputate. Praesent volutpat sapien vel bibendum malesuada. Sed sed nibh pretium, aliquam ante eget, finibus diam.
-      </p>
-      <img src="images/coffeecup.jpg" alt="Coffee cup">
-    </section>
-
-    <section class="the-other-news">
-      <!-- The other news  -->
-      <h2>OTHER NEWS!</h2>
-      <img src="images/plockakaffet.jpg" alt="Plockningsprocessen">
-      <p>
-        Sed odio quam, lobortis a ex et, cursus faucibus leo. Vestibulum cursus lacinia tortor, eget commodo felis laoreet non. Mauris ornare est eu tincidunt maximus. Quisque vulputate porta magna a egestas. Aenean scelerisque eros id porttitor pharetra. Vivamus nec nisi vehicula, bibendum metus in, cursus magna. Etiam varius ultrices diam, nec dignissim lacus ullamcorper ac. 
-      </p>
-
-      <div class="Coffee-outdoor">
+  <section class="main-news">
+    <div class="main-text">
+      <h2>No more Coffee?!</h2>
         <p>
-          <b>hej på dig min vän!!!!!!!!!</b> 
-          <button type="button" onclick="alert('Coffee is the best')">click me!</button>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim facilisis luctus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla, nisi ac tincidunt varius, sem
+          nunc fermentum lectus, non fermentum ligula mauris sed tellus. Praesent at eleifend diam, id facilisis velit.
+          Etiam eu imperdiet mauris. Donec vehicula felis lectus, at consectetur ante bibendum quis. Pellentesque imperdiet
+          sem eros, in convallis velit pharetra vulputate. Praesent volutpat sapien vel bibendum malesuada. Sed sed nibh
+          pretium, aliquam ante eget, finibus diam.
         </p>
-        <ul class="flex-container nowrap">
-           <li><img src="images/utomhuskaffe.jpg" alt="The Coffee on hike"></li>
-           <li><img src="images/what'syourstory.jpg" alt="The Coffee on hike"></li>
-           <li><img src="images/kaffeförpackning.jpg" alt="More Coffee"></li>
-           <li><img src="images/morecoffee.jpg" alt="light coffee picture"></li>
-        </ul>
-  
-      </div>
-    </section>
-
-  </body>
-  <footer>
-    <div class="footer">
-       <p>
-      Terese Claesson. 
-       </p>
     </div>
-  </footer>
+       <div class="main-picture">
+         <img src="images/coffeecup.jpg" alt="Coffee cup">
+        </div>
+    </div>
+  </section>
+
+  <section class="small-news">
+    <div class="cards-small-news">
+      <h2>The pandemic causes coffee shortage</h2>
+      <p>
+        The demand for coffee is avalancelike! Since the pandemic started the expert in the field have notice a
+        troubiling discovery. The coffee growers are alre with that aldready get Sed odio quam, lobortis a ex et, cursus
+        faucibus leo. Vestibulum cursus lacinia tortor, eget commodo felis laoreet non. Mauris ornare est eu tincidunt
+        maximus. Quisque vulputate porta magna a egestas. Aenean scelerisque eros id porttitor pharetra. Vivamus nec
+        nisi vehicula, bibendum metus in, cursus magna. Etiam varius ultrices diam, nec dignissim lacus ullamcorper ac.
+      </p>
+    </div>
+    <div class="small-news-container">
+      <figure class="container">
+          <img src="images/coffeepicking.jpg" alt="Picking process">
+          <h3> Coffe prices increase rapidly</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/coffeewraping.jpg" alt="The Coffee on hike">
+          <h3>jfjfjfj</h3>
+        </figure>
+          <figure class="container">
+          <img src="images/manycupsofcoffee.jpg" alt="The Coffee on hike">
+          <h3>hfhfhfh</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/coffeeshop.jpg" alt="More Coffee">
+          <h3>fhfhfhfhf</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/outdoorcoffee.jpg" alt="light coffee picture">
+          <h3>hfhfhfhf</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/bedcoffee.jpg" alt="light coffee picture">
+          <h3>fhfhfhfhf</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/what'syourstory.jpg" alt="light coffee picture">
+          <h3>gjgjgjgj</h3>
+        </figure>
+        <figure class="container">
+          <img src="images/meeting.jpg" alt="light coffee picture">
+          <h3>jhjhjhjhj</h3>
+        </figure>
+    </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="card-ending">
+      <p>
+        For more information about coffee related facts and news click the button below.
+      </p>
+
+    </div>
+  </section>
+
+</body>
+<footer>
+  <div class="footer">
+    <p>
+      Terese Claesson.
+    </p>
+    <button type="button" onclick="alert('Coffee is the best')">click me!</button>
+  </div>
+</footer>
+
 </html>

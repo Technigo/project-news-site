@@ -1,110 +1,138 @@
 html {
   color: #fff;
-  font-family: sans-serif;
-  margin:0;
+  font-family:Oswald, sans-serif;
 }
 
 body {
   margin: 0;
+  box-sizing: border-box;
   background-image: url('images/coffebeans2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
-/*Hur fungerar CSS animation?*/
   
 header {
   background-color: #a97559;
   color: #fff;
+
+}
+.header img {
+  display: inline-block;
+  margin: 1rem;
+  height: 5rem;
 }
 
-.website-header {
-  padding: 20px;
-  height: 80px;
+.header h1 {
+  display: inline;
+  padding-inline-start: 10rem;
+  justify-content: center;
 }
 
-.website-header h1 {
-  margin: auto 0;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-/* style the top navigation bar */
 .navbar {
   display: flex;
   background-color: #9c5239;
+  justify-content: flex-end;
+}
+.navbar li {
+  list-style: none;
+  display: inline;
+
 }
 
-/* style the navigation bar links*/
 .navbar a  {
   color: rgb(15, 15, 5);
   padding: 10px;
-  justify-content: flex-end;
-  text-align: right;
   text-decoration: none;
-
+  
 }
 
-
-/*change color on hover*/
 .navbar a:hover {
   background-color: white;
 }
 
-.big-news {
+.main-news {
   background: none;
   margin: 2%;
   padding: 5%;
   border: #cd5c5c41;
   border-style: groove;
   text-align: center;
+  display: grid;
+  height: auto;
+  width: auto;
 }
-.big-news img {
-  height: 400px;
+.main-picture img {
+  padding: 1rem;
+  width: 20rem;
+  height: 25rem;
+
+}
+.main-text {
+  padding: 1rem;
+
 }
 
-.the-other-news {
+.small-news {
+  width: 100%;
+}
+
+.cards-small-news {
   background: none;
-  margin: 20px;
-  padding: 10px;
+  margin: 1rem;
+  padding: 1rem;
   text-align: center;
 
 }
-.the-other-news img {
-  height: 500px;
+.small-news-container {
+  background: black;
+  color: #dbc1ac;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
-.coffee-outdoor {
+
+.container {
+  background: #9c5239;
+}
+.small-news-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+
+.card-ending {
   display: flex;
 
 }
-.coffee-outdoor p {
+.card-ending p {
   margin: 20px;
   padding: 30px;
+  text-align: center;
+  align-items: flex-end;
 }
-
-.div {
-  display: grid;
-  grid-template-rows: repeat(3,1fr) ;
-  
-}
-.div img {
-  height: 400px;
-  width: 400px;
-  padding: 5px;
-
-
-}
-
-/*Hur fungerar CSS animation?*/
-
-
-/*Polaorid bilder genom boxshadow?*/
 
 .footer {
   background: black;
   text-align: center;
-  font-size: 12px;
-  padding: 15px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
 
+@media screen and (max-width: 668px) {
+  .small-news-container {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .small-news-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
