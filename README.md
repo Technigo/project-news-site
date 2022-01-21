@@ -1,12 +1,11 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The main task is to create a responsive news/magazine website by using CSS gird and flexbox. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was to display different header items on mobile, tablet and desktop screen. 
+It was solved by placing two logo items and display them by media queries.
+Another issue was setting wider column width than screen width, for example, grid column minmax value was wider than container width that caused broken layout in mobile screen. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://technigo-w2-news.netlify.app
