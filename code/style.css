@@ -64,7 +64,6 @@ h2 {
   text-align: center;
 }
 
-
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -91,7 +90,12 @@ img {
   border-radius: 8px;
   max-width: 100%;
   height: auto;
-  
+  object-fit: contain;
 }
 
-/* This is styling forthe footer */
+/* This is styling for the footer */
+footer {
+  text-align: right;
+
+
+}
