@@ -241,6 +241,16 @@ main {
 
 .stay-in-touch {
   color: #212121;
+  animation-name: scroll;
+  animation-duration: 10s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll {
+  from { left: 100%; }
+  to { left: -80%; }
 }
 
 .quote, .home-intro {
