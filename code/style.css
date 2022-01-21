@@ -4,7 +4,7 @@ html, body, h1, h2, p {
 }
 
 .header-container {
-  background: #F0ECE3;
+  background: #c9c1b0;
   display: flex;
   align-items:center;
   padding: 8px;
@@ -18,9 +18,9 @@ html, body, h1, h2, p {
 }
 
 .round-logo-yoga {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  object-fit:cover;
   border-radius: 50%; 
 }
 
@@ -71,7 +71,7 @@ h2 {
 
 .big-news-text {
   color: #886F6F;
-  font-size: 20px;
+  font-size: 16px;
   padding: 8px;
   /* flex-grow: 1;
   flex-shrink: 1;
@@ -79,39 +79,49 @@ h2 {
   flex: 1;
 }
 
+p {
+  color:white;
+}
+
+/* Tablet version - KOLLA UPP STRL */
 @media (min-width: 667px) {
+  ul {
+    display:flex;
+  }
+
   .big-news {
    display:flex;
    padding: 8px;
   }
+
 }
 
-.small-news {
-  background-color: #C7B198;
-  border: 5px solid;
-  height: 750px;
-  padding: 25px;
-  margin: 10px;
+/*Desktop version - KOLLA UPP STRL */
+
+
+
+.small-news-container {
+  background-color:mediumvioletred;
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; 
 }
 
-.small-news> div {
+.small-news-container > div {
   background-color:thistle;
   font-family: 'Raleway', sans-serif;
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
+  width: 500px;
+  height: 250px;
   font-size: 12px;
-  margin: 15px;
-  padding: 5px;
+  margin: 4px;
+  padding: 4px;
   display: flex;
-  justify-content: center;
-  align-items:flex-end; 
+  justify-content: center; 
 }
 
+.small-news-container img {
+  max-width: 100%;
+  height: auto;
+}
 
 
