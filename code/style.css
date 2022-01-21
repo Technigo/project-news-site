@@ -51,36 +51,52 @@ header {
 /* Add a color to the active/current link 
 .topnav a.active {
   background-color: #04AA6D;
-  color: rgb(20, 26, 107);*/
-}
+  color: rgb(20, 26, 107);
+}*/
 
  /*article{
 display: flex;
 flex-direction: row;
 }*/
 
-
-
-.big-news {
-  display: flex;
-  justify-content: center;
-  /* flex-direction: row; */
-}
-
 h1 {
   color: wheat;
   margin: 10px;
   font-size: 50px;
   font-family: 'Cinzel', serif;
-
 }
+
+.big-news {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 .big-news-img {
   width: 95%;
   margin: 10px;
   border-radius: 43px;
-  
+}
 
+/*.h2 {
+STYLE THIS
+} */
+
+.small-news {
+  display: flex;
+  flex-flow: column;
+  object-fit: none;              /* to precerve size of img*/
+  height: 180px;
+  width: 500px;
+  object-position: 50% 50%;
+}
+
+
+.news-small {
+  margin: 50px;
+    width: 400px;
+    height: 800px;
 }
 
 
