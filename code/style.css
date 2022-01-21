@@ -47,22 +47,6 @@ h3 {
     margin-block-end: 0;    
 }
 
-@media (max-width:480px) {
-
-    h3 {
-    font-size: 1rem;
-    padding: 1rem;
-}
-    .timestamp {
-        font-size: 0.7rem;
-    }
-    .card {
-        height: 200px;
-    }
-    .card-img {
-       
-    }
-}
 
 /* HEADER */
 
@@ -321,5 +305,68 @@ h3 {
     padding: 0 2rem 0rem 0rem;
     justify-content: end;
     text-align: end;
+
+}
+
+
+
+@media all and (max-width:480px) {
+
+  /* "unwanted news"-part */
+    .header p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+
+        font-size: 1rem;
+    }
+
+    .weather {
+
+        font-size: 0.8rem;
+    }
+
+    .text-top > * {
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .other-stories-container {
+        align-content: space-between;
+        margin-top: 1rem;
+    }
+
+    h3 {
+    font-size: 1rem;
+    padding: 1rem;
+    }
+
+    .timestamp {
+        font-size: 0.7rem;
+    }
+    .card {
+        width: 47%;
+        flex: 1;
+        height: 370px;
+        margin-bottom: 1rem;
+    }
+    .card-img {
+
+        height: 40%;
+    }
+    .card-text {
+
+        padding: 0.7rem;
+    }
+}
+
+@media all and (max-width:768px) {
+
+
+
 
 }
