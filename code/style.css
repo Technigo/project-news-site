@@ -37,26 +37,21 @@ min-width: 900px;
 }
 
 .nav-bar h1{
-  color: antiquewhite;
+  color:rgba(250, 235, 215, 0.596);
  font-size: 20px;
  font-family: 'The Nautigal';
  margin: 30px 5px;
-
-opacity: 80%;
  
-  
 }
 
 .media-icons{
  text-align: end;
   color:rgba(250, 235, 215, 0.438);
   width: 100%;
-  font-size: small;
-  
+  font-size: small; 
 }
 
 .navbar-nav li a {
-  
   font-size: 10px;
   cursor: pointer;
   text-decoration: none;
@@ -66,6 +61,7 @@ opacity: 80%;
  color: rgba(250, 235, 215, 0.438);
  
  }
+
  .navbar-nav li a:hover{
    color:rgba(250, 235, 215, 0.438); 
    opacity: 70%;
@@ -107,7 +103,8 @@ opacity: 80%;
     padding: 10px;
     font-size: large;
     letter-spacing: 1px;
-     
+    cursor: pointer;
+
    }
   .nav-bar img{
     margin: 10px;
@@ -248,25 +245,32 @@ max-height: 400px;
 }
 
 .image1:hover{
+  cursor: pointer;
   transform: scale(1.01);
  
 }
 .image2:hover{
+  cursor: pointer;
   transform: scale(1.01);
 }
 .image3:hover{
+  cursor: pointer;
   transform: scale(1.01);
 }
 .image4:hover{
-  transform: scale(1.01);
+  cursor: pointer;
+  transform: scale(1.01);;
 }
 .image5:hover{
+  cursor: pointer;
   transform: scale(1.01);
 }
 .image6:hover{
+  cursor: pointer;
   transform: scale(1.01);
 }
 .image7:hover{
+  cursor: pointer;
   transform: scale(1.01);
 }
 .latest-images .image1 {
