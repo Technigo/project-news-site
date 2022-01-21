@@ -6,52 +6,96 @@
     <link rel="stylesheet" href="./style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--dont forget to check the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <header>
-      <img class="logo" src="images/news-site-logo.png">
-      <nav>
-        <button class="subscribe-button">Subscribe</button>
-          <img class="menu-button" src="images/menu-button.png">
-      </nav>
-    </header>
-        <!--Remember to add alternative img text using alt="alternative-text"-->
+    <div class="navbar">
+      <div class="container">
+        <img class="logo" src="images/news-site-logo.png">
+        
+        <img id="open-menu" class="mobile-menu" src="images/menu-button.png" alt="open navigation">
+        
+        <nav>
+          <img id="close-menu" class="mobile-menu-exit" src="images/close-menu.png" alt="close navigation">
+          <ul class="nav-links">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Vacation</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li class="subscribe-button"><a href="#">Subscribe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     
-    <section class="flex-parent-big-news">  
-     <div class="flex-child-big-news">
-       <img class="big-news-img" src="images/dachshund-car.jpg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     </div>
+    <section class="big-news">
+      <div class="container">
+        <ul>
+          <li>
+            <img class="big-news-img" src="images/big-news.jpg" alt="dachshunds cuddling">
+          </li>
+          <li>
+            <div class="big-news-text">
+              <h1 class="big-news-header">This is the Big News Header</h1>
+              <p class="big-news-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="flex-parent-other-news">
-
-      <a class="flex-child-sofisticated" href="#">
-        <img class="sofisticated" src="images/dachshund-sofisticated.jpg">
-        <h1>Books and film tips for the sofisticated dachshund</h1>
-      </a>
-      <a class="flex-child-vacation" href="#">
-        <img class="vacation" src="images/dachshund-vacation.jpg">
-        <h1>Fancy a vacation? Check out the best dog beaches here!</h1>
-      </a>
-      <a class="flex-child-puppies" href="#">
-        <img class="puppies" src="images/dachshund-puppy.jpg">
-        <h1>Expecting a litter? Best treatos for the soon-to-be-mother</h1>
-      </a>
-      <a class="flex-child-window" href="#">
-        <img class="window" src="images/dachshund-window.jpg">
-        <h1>How to make the garden squirrel stop harrassing you</h1>
-      </a>
-      <a class="flex-child-car" href=#>
-        <img class="car" src="images/dachshund-car.jpg">
-        <h1>Find out how to make your pawrents take you to the dog park more often</h1>
-      </a>
-
+    <section class="other-news">
+      <div class="container">
+        <ul>
+          <li>
+            <a class="flex-child-books" href="#">
+              <img class="books" src="images/books.jpg" alt="dachshund in armchair">
+              <h1 class="other-news-header">Books and film tips for the sofisticated dachshund</h1>
+            </a>
+          </li>
+          <li>
+            <a class="flex-child-vacation" href="#">
+              <img class="vacation" src="images/vacation.jpg" alt="dachshund on beach">
+              <h1 class="other-news-header">Fancy a vacation? Check out the best dog beaches here!</h1>
+            </a>
+          </li>
+          <li>
+            <a class="flex-child-puppies" href="#">
+              <img class="puppy" src="images/puppy.jpg" alt="dachshund puppy">
+              <h1 class="other-news-header">What to expect when expecting.. a litter!</h1>
+            </a>
+          </li>
+          <li>
+            <a class="flex-child-window" href="#">
+              <img class="squirrel" src="images/squirrel.jpg" alt="dachshund looking out from window">
+              <h1 class="other-news-header">How to make the garden squirrel stop harrassing you</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>
-     <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Google - Flaticon</a>
+     <p class="footer-text"><a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Google - Flaticon</a></p>
+    <p class="footer-text"><a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Fuzzee - Flaticon</a></p>
     </footer>
+
+    <script>
+      const mobileBtn = document.getElementById('open-menu')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('close-menu')
+
+      mobileBtn.addEventListener('click', () => {
+          nav.classList.add('nav-links');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+          nav.classList.remove('nav-links');
+      })
+
+    </script>
   </body>
 </html>
