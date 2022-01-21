@@ -1,20 +1,29 @@
 html {
-  background: #fff8e6;
+  background: rgb(238, 234, 222);
   color: #1e212d;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .top-nav {
-  background-color:honeydew;
+  background-color:rgb(250, 247, 236);
   margin-bottom:5%;
+  box-shadow: 5px 10px 19px rgb(179, 177, 177);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .logo img {
-  width: 20%;
+  width: 70px;
   border-style: solid;
   border-width: 0.2px;
   border-radius: 50%;
   box-shadow: none;
+  margin-top:5%;
 }
 
 p {
@@ -37,10 +46,12 @@ a {
 a:hover{
   opacity: 0.5; 
 }
+
 .menu {
   display:flex;
   flex-direction:column;
   align-items: flex-end;
+  margin: 5% 5% 0 0;
 }
 
 .menu a {
@@ -58,6 +69,7 @@ input {
 
 section {
   background-color: white;
+  margin: 0 10px 0 10px;
 }
 
 img {
@@ -142,7 +154,7 @@ footer {
   }
 
   article {
-    width: 50%
+   width: 50%;
   }
 
 }
@@ -151,7 +163,6 @@ footer {
 
   .menu {
     flex-direction: row;
-    justify-content:space-around;
     margin-left: 20%;
     font-size: larger;
   }
@@ -193,7 +204,6 @@ footer {
   }
 
   article {
-    width: 25%
     min-height: 522px;
   }
   
