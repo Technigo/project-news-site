@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Trebuchet MS';
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 .logo p {
   margin-left: 1rem;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.1rem;
   color: white;
 }
@@ -68,7 +68,7 @@ header {
 .other-news {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem;
   padding: 1rem;
 }
@@ -105,19 +105,21 @@ footer {
   color: white;
 }
 
-h1{
-  font-style: italic;
+h1 {
   margin: 0.5rem 0rem;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 h2 {
   color: black;
   margin: 0.5rem 0rem;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .date {
   color: rgb(169,169,169);
-  font-style: italic;
   text-transform: uppercase;
   font-size: 12px;
   /* margin: 0; */
