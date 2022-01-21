@@ -134,10 +134,14 @@ a:visited, a:link {
 
 .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
 .card1:focus p, .card2:focus p, .card3:focus p, .card4:focus p, .card5:focus p, .card6:focus p, .card7:focus p, .card8:focus p {
-  display: grid;
+  display: flex;
   position: absolute;
-  grid-template-rows: repeat(1fr, 1fr);
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: auto;
+  flex-wrap: wrap;
 }
 
 
