@@ -102,7 +102,6 @@ a:visited, a:link {
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
-
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
@@ -122,8 +121,6 @@ a:visited, a:link {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
- 
 }
 
 
@@ -133,7 +130,6 @@ a:visited, a:link {
 
 .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p, .card7 p, .card8 p {
   display: none;
-  
 }
 
 .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
@@ -142,13 +138,7 @@ a:visited, a:link {
   position: absolute;
   text-align: center;
   flex-direction: column;
-  
-  
-  
 }
-
-
-
 
 .card1:hover img, .card2:hover img, .card3:hover img, .card4:hover img, .card5:hover img, .card6:hover img, .card7:hover img, .card8:hover img {
   opacity: 0.2;
@@ -235,10 +225,9 @@ li {
     font-size: 14px;
     line-height: 20px; 
     flex-wrap: wrap;
-    
-    
   }
 
+  /* RESPONSIVE TO FIREFOX */
   @-moz-document url-prefix() {
     .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
   .card1:focus p, .card2:focus p, .card3:focus p, .card4:focus p, .card5:focus p, .card6:focus p, .card7:focus p, .card8:focus p {
@@ -289,8 +278,9 @@ li {
 
   .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p {
     line-height: 25px;
-    
     }
+
+    /* RESPONSIVE TO FIREFOX */ 
 
     @-moz-document url-prefix() {
       .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
@@ -298,8 +288,6 @@ li {
         width: 40%;
       }
     }  
-
-    
   }
   
 
@@ -317,7 +305,7 @@ li {
   }
 
  
-
+  /* RESPONSIVE TO FIREFOX */
     @-moz-document url-prefix() {
       .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
     .card1:focus p, .card2:focus p, .card3:focus p, .card4:focus p, .card5:focus p, .card6:focus p, .card7:focus p, .card8:focus p {
@@ -329,8 +317,8 @@ li {
 
 /*FOOTER*/
 footer {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   margin-top: -20px;
 }
 
@@ -353,6 +341,10 @@ footer a:nth-child(3):hover {
 
 footer a:nth-child(4):hover {
   filter: invert(99%) sepia(0%) saturate(1623%) hue-rotate(201deg) brightness(117%) contrast(100%) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .2));
+}
+
+footer p {
+  color: black;
 }
 
 /* ANIMATION */
