@@ -1,4 +1,4 @@
-/* General Styling */
+/* Font Styling */
 body {
   margin: 0;
   color: #f2e3d1;
@@ -23,6 +23,7 @@ h3 {
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
   font-size: .9rem;
+  padding: 1vh 0;
 }
 
 p {
@@ -40,6 +41,19 @@ footer {
   text-align: right;
 }
 
+.head-article p {
+  font-weight: 200;
+  padding: 1.5vh 0;
+  line-height: 1.5;
+}
+
+.head-article h4 {
+  text-decoration: none;
+  color: #c1b3c2;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200;
+}
+
 /* Navbar */
 .navbar {
   height: 5vh;
@@ -52,7 +66,6 @@ footer {
 .brand-logo {
   color: white;
   padding: 0 1.5vw 0 0;
-  transition: 1s;
 }
 
 .brand-1 {
@@ -66,7 +79,6 @@ footer {
 .hidden-logo {
   display: none;
   color: white;
-  transition: 1s;
 }
 
 .navbar-link-1 {
@@ -91,13 +103,14 @@ footer {
 
 .brand-logo:hover, .hidden-logo:hover {
   color: #c93c85;
+  transition: 1s;
 }
 
 /* Article Wrapper */
 .article-wrapper {
   display: grid;
-  padding: 5vh 5vw;
-  gap: 5vh 5vw;
+  padding: 5vw 5vw;
+  gap: 5vw;
 }
 
 /* Hashtag & Envelope Icons */
@@ -241,7 +254,6 @@ footer {
 @media (min-width: 668px) and (max-width: 1024px) {
 
   /* Navbar */
-
   .navbar {
     justify-content: space-around;
   }
@@ -252,6 +264,10 @@ footer {
 
   .hidden-logo, .navbar-link-1, .navbar-link-2, .navbar-link-3, .navbar-link-4 {
     display: inline-flex;
+  }
+
+  .navbar-link-1, .navbar-link-2, .navbar-link-3, .navbar-link-4 {
+    font-size: .9rem;
   }
 
   /* Article Wrapper */
@@ -266,6 +282,7 @@ footer {
     grid-column: 1 / span 2;
     padding: 2.5vw 2.5vw;
     flex-direction: column;
+    max-width: 85vw;
   }
 
   .head-content-2 {
@@ -279,6 +296,8 @@ footer {
 
   .main-image {
     max-width: 55vw;
+    object-fit: cover;
+    padding: 0 1vw 0 0;
   }
 
   .head-content {
@@ -302,16 +321,18 @@ footer {
 
   .hidden-content {
     display: inline-block;
+    font-size: 1rem;
   }
 
   /* Remaining Articles */
   .article {
     padding: 2.5vw 2.5vw;
     grid-column: span 1;
+    max-width: 38.75vw;
   }
 
   .article-image {
-    max-width: 40vw;
+    max-width: 38.75vw;
   }
 
   /* Top Left Corner Border */
@@ -371,7 +392,6 @@ footer {
 @media (min-width: 1025px) {
 
   /* Navbar */
-
   .brand-logo {
     padding: 0 1vw 0 0;
   }
@@ -380,6 +400,7 @@ footer {
     display: inline-flex;
     margin-left: auto;
     transition: 3s;
+    font-size: .9rem;
   }
 
   .article-wrapper {
@@ -393,7 +414,6 @@ footer {
   }
 
   /* Head Article */
-
   .head-content {
     display: flex;
     flex-direction: row;
@@ -419,6 +439,7 @@ footer {
 
   .main-image {
     max-width: 55vw;
+    object-fit: cover;
   }
 
   .read-more {
@@ -427,6 +448,11 @@ footer {
 
   .hidden-content {
     display: inline-block;
+    font-size: 1.1rem;
+  }
+
+  .head-article h2 {
+    font-size: 2rem;
   }
 
   /* Remaining Articles */
@@ -443,15 +469,13 @@ footer {
 
   /* Article Hover Effects */
 
-  .article-image, .main-image {
+  article:hover .article-image, article:hover .main-image {
     transition: 7s;
+    opacity: 0.05;
   }
 
-  .hidden-content, h2, h3, h4, footer {
+  article:hover .hidden-content, article:hover h2, article:hover h3, article:hover h4, article:hover footer {
     transition: 3s;
-  }
-
-  article:hover .article-image, article:hover .main-image, article:hover .hidden-content, article:hover h2, article:hover h3, article:hover h4, article:hover footer  {
     opacity: 0.05;
   }
 

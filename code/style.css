@@ -127,7 +127,10 @@ article .social-icons {
 }
 
 .main-image {
-  max-height: 45vh;
+  max-width: 55vh;
+  max-height: 90vh;
+  object-fit: cover;
+  object-position: 0 100%;
 }
 
 .main-header {
@@ -152,6 +155,7 @@ article .social-icons {
 .head-article:hover {
   background-color: white;
   color: black;
+  max-height: 500vh;
 }
 
 .head-article:hover .main-header {
