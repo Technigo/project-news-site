@@ -151,6 +151,11 @@ a:visited, a:link {
   transition: all ease-in-out 0.4s;
 }
 
+.card1 {
+  display: flex;
+  align-items: center;
+}
+
 /* Navbar in mobile format */
 button {
   background: none;
@@ -235,10 +240,7 @@ li {
   }
 }
 
-.card1 {
-  display: flex;
-  align-items: center;
-}
+
 
 /* TABLET */
 @media (min-width:668px) {
