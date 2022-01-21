@@ -102,6 +102,7 @@ a:visited, a:link {
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
+
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
@@ -121,15 +122,18 @@ a:visited, a:link {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
  
 }
+
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover {
   box-shadow: 6px 6px 20px rgba(122,122,122,0.712);
 }
 
 .card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p, .card7 p, .card8 p {
-  display: none; 
+  display: none;
+  
 }
 
 .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
@@ -149,6 +153,7 @@ a:visited, a:link {
 .card1:hover img, .card2:hover img, .card3:hover img, .card4:hover img, .card5:hover img, .card6:hover img, .card7:hover img, .card8:hover img {
   opacity: 0.2;
   transition: all ease-in-out 0.4s;
+  
 }
 
 /* Navbar in mobile format */
@@ -317,7 +322,7 @@ li {
       .card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p, .card5:hover p, .card6:hover p, .card7:hover p, .card8:hover p,
     .card1:focus p, .card2:focus p, .card3:focus p, .card4:focus p, .card5:focus p, .card6:focus p, .card7:focus p, .card8:focus p {
         width: 20%;
-        line-height: 20px;
+        line-height: 25px;
       }
     }
 }
