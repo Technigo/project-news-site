@@ -9,4 +9,4 @@ I started with researching flexbox and grid. I also searched for inspiration for
 If I had more time I would have started with learning how to do a hamburger menu. Because I realised I wanted one when I was half way through all of my coding and did not feel confident enough to go back. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://focused-kepler-abf55b.netlify.app/
