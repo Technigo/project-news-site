@@ -3,121 +3,300 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 
 body{
-  background-color: #eeeeee;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100%;
+  background-color: #dadada;
+  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
 }
 
-/* w and h takes up all scrren*/
-.container{
-  width: 100vw;  
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px 1fr 1fr 1fr 100px;
-
-  gap: 10px;
-
-  padding: 10px;
-  box-sizing: border-box;
-
+img {
+  width: 90%;
+  height: 90%; 
 }
-
-.container div {
-  padding: 10px;
-  border: 1px solid black;
-}
-
 
 header{
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
+display: flex;
+align-items: center;
+width: 100%;
+} 
 
 nav{
-outline: 1px solid grey;
-height: 80px;
+width: 100vw;  
+height: 100px;
+}
+
+.logo{
+  font-family: 'Long Cang';
+  font-size: 60px;
+  color: black;
+  padding: 20px 0px 20px 60px;
 }
 
 .menu-button {
+  display: flex;
   height: 30px;
   width: 30px;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin: 10px;
 }
 
-label.logo{
-  font-family: 'Long Cang';
-  font-size: 60px;
-  color: rgb(94, 94, 94);
-  line-height: 80px;
-  padding: 0 100px;
+/*removes button styling*/
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-nav ul{
-  float: right
-  /* margin: 20px 0px 20px 0px; */
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start; 
+  color: black;
+  padding: 14px;
+  line-height: 40px;
 }
 
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(197, 197, 197);
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px 10px;
+  border-radius: 10px;
 }
 
 nav ul li a {
   color: black;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
+  font-size: 20px;
+  padding: 14px 13px;
+  text-transform: uppercase;
+  border-radius: 13px;
+  font-family: Quicksand;
+  }
+
+  a:hover{
+    color: coral;
+  }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(206, 206, 206);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:list-item;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 213, 198);}
+
+.container-1{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-a.active a.hover{
-  background: gray;
-  transition: .5s;
+
+h1 {
+  font-size: 15px;
+  margin: 0px 0px 10px 0px;
+  font-family: Arial, Helvetica, sans-serif
 }
 
-.checkbtn{
-  font-size: 70px;
+ .container-1 h2 {
+  padding: 30px 0px;
+  font-family: Quicksand;
+  font-size: 20px;
+} 
+
+
+.container-2 h2 {
+  padding: 20px 0px;
+  font-family: Quicksand;
+  font-size: 20px;
+} 
+
+
+.container-1 container-2 p{
+  font-size: 15px;
+  line-height: 32px;
+  font-family: Raleway;
+}
+
+.big-news img{
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-inline-start: 20px;
+}
+
+.big-news h1{
+  background-color: black;
+  position: absolute;
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
+  bottom: 75%;
+  width: 50%;
+  padding: 20px;
+}
+
+.big-news-text{
+  width: 100%;
+  margin-inline-start: 10px;
+  padding: 40px;
+}
+
+.container-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-2 img{
+  width: 100%;
+  height: auto; 
+  margin-inline-start: 20px;
+}
+
+ .second-news-text{
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px; 
+}
+
+.container-3{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(4, 120vw);
+grid-gap: 15px;
+} 
+
+.container-3 img{
+  width: 70%;
+  height: auto;
+}
+
+.blog-post {
+  font-family: Raleway;
+  margin: 5px;
+  text-align: center;
+}
+
+.blog-post h2{
+  font-size: 20px;
+  font-family: quicksand;
+}
+
+.blog-post p{
+  font-size: 15px;
+}
+
+/*Tablet*/ 
+@media (min-width: 667px) and (max-width: 1024px){
+  body{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .big-news h1{
+    font-size: 30px;
+    bottom: 45%;
+    width: 60%;
+  }
+
+  .container-2{
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px;
+  }
+
+  .container-3{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4, 60vw);
+    } 
+}
+
+/* Computer layout*/
+@media (min-width: 1025px) {
+  body {
+    justify-content: left;
+}
+
+p{
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.container-1 h2{
+  font-size: 30px;
+}
+
+.container-2 h2{
+  font-size: 30px;
+}
+
+.menu-button {
   display: none;
 }
 
-#check{
-  display: none;
+.dropdown-content {
+  display: block;
+  position: static;
+  background: transparent;
+  box-shadow: none;
 }
 
-.big-news {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  
+.dropdown-list {
+  display: flex;
 }
 
-.second-news{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  
+.big-news h1{
+  background-color: black;
+  position: absolute;
+  color: white;
+  bottom: 40%;
+  width: 40%;
+  padding: 30px;
 }
 
-.text-second-news{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 4;
-  grid-column-end: 5;
- 
+.container-1{
+  flex-direction: column;
 }
 
+.container-2{
+  flex-direction: row;
+  padding: 10px;
+  margin: 30px;
+}
+
+.second-news {
+  width: 80%;
+}
+
+.second-news-text{
+  padding: 20px 40px 40px 50px;
+  width: 800px;
+}
+
+ .container-3{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(4, 30vw);
+  } 
+} 

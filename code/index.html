@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Long+Cang&family=Open+Sans:wght@300&family=Raleway:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Long+Cang&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
@@ -10,63 +11,125 @@
   </head>
   <body>
 
-    <section class="container">
-
-          <header>
-            <nav>
-              <input type="checkbox" id="check">
-              <img class="menu-button" src="/icons/bars-solid.svg" alt="menu"> 
-              <label for="check" class="checkbtn"></label>
-                <label class="logo">ARTifice</label>
-                    <ul>
-                      <li><a class="active" href="#">Home</a></li>
-                      <li><a href="#">Design</a></li>
-                      <li><a href="#">Art</a></li>
-                      <li> <a href="https://arkitekten.se/">Architecture</a></li>
-                      <li><a href="#">Travel</a></li>
-                      <li><a href="#">Contact</a></li>
-                  </ul>
-            </nav>
-        </header>
-
-          <div class="big-news">
-            <img>
-            <h1>BIG PICTURE WITH TEXT BOX ON</h1>
-          </div>
-
-          <div class="second-news">
-            <img>
-            <h1>Other pic news with story box on the side </h1>
-          </div>
-
-          <div class="text-second-news">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-            </p>
-          </div>
-
-
-
-
-
+    <header>
+      <div class="logo">ARTifice</div>
+      <nav class="dropdown">
+        <button><img class="menu-button" src="./icons/bars-solid.svg" alt="menu"> </button>
+        <div class="dropdown-content">
+          <ul class="dropdown-list">
+            <li><a href="">Design</a></li>
+            <li><a href="https://arkdes.se/?gclid=Cj0KCQiAraSPBhDuARIsAM3Js4rR72XNaetxz8qZ1akyh8RIaFhmK5bfJr9oWcmubBlX-uaMDix11E8aAn7-EALw_wcB">Art</a></li>
+            <li> <a href="https://arkitekten.se/">Architecture</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
         
 
 
+     <section class="container-1">
 
-      </section>
+          <article class="big-news">
+            <img src="./images/National_museum.jpg" alt="Picture of statues">
+            <h1>EXHIBITION: GREEK AND ROMAN ART</h1>
+          </article>
 
-    <!-- <section class="big-news">
-      <!-- The big news content
-      <article class="main">
-        <img src="./images/katsuma-tanaka-Dakbfhj51eE-unsplash.jpg" alt="Picture of desert">
-      </article>
-    </section> -->
+          <article class="big-news-text">
+            <h2>Let us take you on a tour</h2>
+            <p> Visit The Met Museum's collection of Greek and Roman art that comprises more than 
+              thirty thousand works ranging in date from the Neolithic period (ca. 4500 B.C.) 
+              to the time of the Roman emperor Constantine's conversion to Christianity in A.D. 
+              312. It includes the art of many cultures and is among the most comprehensive in 
+              North America. The geographic regions represented are Greece and Italy, 
+              but not as delimited by modern political frontiers: Greek colonies were 
+              established around the Mediterranean basin and on the shores of the Black Sea, 
+              and Cyprus became increasingly Hellenized. For Roman art, the geographical 
+              limits coincide with the expansion of the Roman Empire. The department also 
+              exhibits the art of prehistoric Greece (Helladic, Cycladic, and Minoan) and 
+              pre-Roman art of Italic peoples, notably the Etruscans.</p>
+            </article>
 
-    <section class="">
-      <!-- The other news  -->
+    </section>
+
+    <section class="container-2">
+          <div class="second-news">
+            <img src="./images/katsuma-tanaka-Dakbfhj51eE-unsplash.jpg" alt="Picture of desertroad">
+          </div>
+
+          <article class="second-news-text">
+            <h2>Travel desert style</h2>
+            <p>Road trips are one of the great pastimes of outdoor adventuring. But too often we set our 
+              sights on the objective rather than the actual rubber on the road. We lock our focus on the 
+              destination: the trails we'll be biking, the mountain we'll be skiing, the break we'll be surfing, 
+              the peak we'll be bagging. But what about the cool, funky, weird sights we're zipping past in our cars? 
+              They deserve our attention, too. For that reason, we're highlighting five must-visit 
+              desert locales.</p>
+              </article>
+  </section>
+
+
+    <!-- <div class="gallery"></div> -->
+
+    <section class="container-3">
+        <article class="blog-post">
+          <img src="./images/Design.jpg" alt="girl holding glassculpture">
+            <h2>Design</h2>
+            <p class="img-text">
+              Glasblowers the new it-craft. 
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/Architecture-3.jpg" alt="building">
+            <h2>Architecture</h2>
+            <p class="img-text">
+              Architecture gone nuts.
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/ArtPrints.jpg" alt="installation of objects">
+            <h2>Art</h2>
+            <p class="img-text">
+              Decorate your walls in style.
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/Travel_2.jpg" alt="tree in desert">
+          <h2>Travel</h2>
+          <p class="img-text">
+            Travel to Nabia this year.
+          </p>
+        </article>
+        <article class="blog-post">
+          <img src="./images/Glas_.jpg" alt="girl holding glassculpture">
+            <h2>Design</h2>
+            <p class="img-text">
+              Dress accordingly to your objects.
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/Artprints_2.jpg" alt="installation of objects">
+            <h2>Art</h2>
+            <p class="img-text">
+              Decorate your walls in style.
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/ETNA_man.jpg" alt="man on vulcano">
+            <h2>Travel</h2>
+            <p class="img-text">
+              Man on the moon.
+            </p>
+          </article>
+        <article class="blog-post">
+          <img src="./images/Dina Dilong-1.jpg" alt="cat wearing necklace">
+          <h2>Design</h2>
+          <p class="img-text">
+            Jewellery inspiration - for everyone. 
+          </p>
+        </article>
+
     </section>
   </body>
 </html>
