@@ -4,6 +4,11 @@ html {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.top-nav {
+  background-color:honeydew;
+  margin-bottom:5%;
+}
+
 .logo img {
   width: 20%;
   border-style: solid;
@@ -34,20 +39,25 @@ a:hover{
 }
 .menu {
   display:flex;
-  justify-content:flex-end;
+  flex-direction:column;
+  align-items: flex-end;
+}
+
+.menu a {
+  font-size: 100%;
+  padding-bottom: 5%;
 }
 
 input {
   width: 90%;
   text-align: center;
   border: none;
-  margin: 5%;
+  margin: 2% 5% 5% 5%;
   font-family: inherit;
 }
 
 section {
   background-color: white;
-  
 }
 
 img {
@@ -62,8 +72,17 @@ img {
 
 .big-news img {
   width: 100%;
-  margin-top: 5%;
-  
+  margin: 5% 0 5% 0;
+
+}
+
+p2 {
+  font-size:small;
+  color: rgb(212, 195, 167);
+}
+
+h2 {
+  margin-top: 0;
 }
 
 p1 {
@@ -101,11 +120,11 @@ footer {
 @media (min-width: 668px) and (max-width: 1024px) {
   
   .menu {
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left: 20%;
-    font-size: small;
   }
-  
+
   input {
     height: 30px;
     border-radius: 4px;
@@ -131,6 +150,7 @@ footer {
 @media (min-width:1025px) {
 
   .menu {
+    flex-direction: row;
     justify-content:space-around;
     margin-left: 20%;
     font-size: larger;
@@ -141,6 +161,25 @@ footer {
     height: 35px;
     border-radius: 4px;
     font-size: larger;
+  }
+
+  .big-news {
+    padding: 40px;
+  }
+
+  .big-news img {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .big-news-text {
+    width:40%;
+  }
+
+  .big-news a {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
   }
 
   .smaller-news {
@@ -157,7 +196,7 @@ footer {
     width: 25%
     min-height: 522px;
   }
-
+  
 }
 
 
