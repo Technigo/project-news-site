@@ -67,29 +67,36 @@ a{
 /* ------------------------------------------------------------- */
 /* rules for the maine section with a news article. 1 column in mobile,
 2 columns on tablet and screen*/
+
 .big-news{
   display: flex;
-  border: solid;
+  /* border: solid; */
   text-align: center;
-  background-color: blue;
+  /* background-color: blue; */
+  
 }
 
 .article-heading{
-  border: solid;
-  background-color: cyan;
+  /* border: solid; */
+  text-align: left;
+  margin: 0% 3%;
+  /* flex-wrap: nowrap; */
+  /* background-color: cyan; */
 }
 
 .article{
-  border: solid;
-  text-align: center;
-  background-color: blueviolet;
+  /* border: solid; */
+  text-align: left;
+  margin: 0% 3%;
+  /* background-color: blueviolet; */
+  /* justify-content: center; */
   }
 
   .main-content-img{
-    height: 90%;
-    width: 90%;
+    /* height: 90%; */
+    /* width: 90%; */
     justify-content: center;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
   /* rules for main article in tablet and screen  */
@@ -124,40 +131,73 @@ a{
 
 .related-news{
   text-align: center;
+  margin-top: 12%;
 }
   /*---------------------------------------------------------------  */
   /* code for the news grid. tablet: 2 columns, 2 rows. screen: 1 row. */
 
-    .news-grid{
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
-    .grid-img{
-      height: 90%;
-      width: 90%;
-      justify-content: center;
-      margin: 20px;
-    }
-/* rules for tablet */
-    @media (min-width: 668px) and (max-width: 1024px){
-      .news-grid{
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .grid-img{
-        width: 40%;
-      }
-    }
-/* ruls for screen */
-    @media (min-width: 1025px){
-      .news-grid{
-        flex-direction: row;
-      }
-       .grid-img{ 
-        width: 20%;
-      }
-    }
+  .news-grid{ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-    
+.grid-img{
+  height: 90%;
+  width: 90%;
+  margin: 2px 20px;
+  justify-content: center;
+}
+
+.news-grid-part1 .news-grid-part2
+.news-grid-part3 .news-grid-part4{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+.news-grid-part1-heading .news-grid-part2-heading
+.news-grid-part3-heading .news-grid-part4-heading{
+  text-align: left;
+  margin: 3% 20%;
+}
+
+/* rules for tablet */
+@media (min-width: 668px) and (max-width: 1024px){
+  .news-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+.news-grid-part1{
+  display: flex;
+  flex-direction: column;
+}
+.news-grid-part2{
+  display: flex;
+  flex-direction: column;
+}
+.news-grid-part3{
+  display: flex;
+  flex-direction: column;
+}
+.news-grid-part4{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ruls for screen */
+ @media (min-width: 1025px){ 
+      .news-grid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        /* flex-direction: row; */
+      }
+       /* .grid-img{  */
+        /* width: 20%; */
+        }
+
+
+}
+        
+}
