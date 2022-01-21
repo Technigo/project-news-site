@@ -32,68 +32,91 @@ header {
   grid-template-columns: minmax(200px, 1fr) minmax(320px, 1.5fr);
   gap: 1rem;
   margin: 1rem;
+  padding: 1rem;
 }
 
 .headline-img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: black 2px solid;
+  /* border-radius: 5%; */
+  /* border: black 2px solid; */
 }
 
 .headline-content {
-  display: grid;
-  border: black 2px solid;
+  display: block;
+  border-left: rgb(169,169,169) 2px solid;
+  padding: 1rem;
 }
 
 .other-news {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin: 1rem;
-
+  padding: 1rem;
 }
 
 .article {
-  text-align: center;
-  border: black 2px solid;
-/*  border-radius: 5%;
-  background-color: lightsalmon;
+  display: block;
+  text-align: left;
+  padding: 1rem;
+  border: rgb(169,169,169, 0.5) 2px solid;
+  /* border-radius: 5%; */
+  background-color: white;
   box-shadow: 5px 5px rgb(169,169,169, 0.5);
-  padding: 1rem 1rem 1rem 1rem; */
+  padding: 1rem 1rem 1rem 1rem;
 } 
 
-.article img {
+.article-img {
   width: 100%;
+  overflow: crop;
   height: auto;
-  object: cover;
+  object-position: cover;
+  /* border-radius: 5%; */
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  background-color:rgb(169,169,169);;
   text-align: center;
   font-weight: lighter;
   font-size: 80%;
   font-style: italic;
-  color: #36454F;
+  color: white;
 }
 
+h1{
+  font-style: italic;
+}
+
+h2 {
+  color: rgb(169,169,169);
+}
+
+p {
+
+}
 
 /* Desktop elements that should behave differently */
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   .nav-links{
     display: inline-block;
   }
 }
 
 /* Tablet elements that should behave differently */
-@media (min-width: 667px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 991px){
   .nav-links{
     display: inline-block;
   }
 } 
 
 /* Mobile elements that should behave differently */
-@media (max-width: 666px){
+@media (max-width: 767px){
   .nav-links{
     display: none;
   }
