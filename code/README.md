@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to build a news site. I have built a news site about interior design.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with researching flexbox and grid. I also searched for inspiration for colors, fonts and pictures for the site. I used the resources page on Notion, looked up a few questions on Stackoverflow but also googled alot. To get a hang of planning the project and the week I have tried a few different tools, such as todolists, jamboard etc. 
+
+If I had more time I would have started with learning how to do a hamburger menu. Because I realised I wanted one when I was half way through all of my coding and did not feel confident enough to go back. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
