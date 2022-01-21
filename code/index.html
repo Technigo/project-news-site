@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maple News | Breaking News About the Sweet Gold</title>
+  <title>Maple News | Breaking news about the sweet gold</title>
   <link rel="icon" href="other-images/maple-leaf.ico">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@600&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
-  <!-- dont forget the meta tag for responsiveness -->
 </head>
 
 <body>
@@ -32,20 +31,26 @@
           <li class="weather"><a target="_blank" href="https://www.svt.se/vader/">Weather</a></li>
         </ul>
       </nav>
-      <label for="checkbox">
-        <i class="fa fa-bars menu-icon"></i>
-      </label>
-      <a href="https://www.google.com/"><img src="other-images/logo-maple-news.svg" class="logo-mobile"
-          alt="Logo Maple News"></a>
-      <time>
-        <!-- Show date and time
+      <div class="mobile-wrap-item1">
+        <label for="checkbox">
+          <i class="fa fa-bars menu-icon"></i>
+        </label>
+      </div>
+      <div class="mobile-wrap-item2">
+        <a href="https://www.google.com/"><img src="other-images/logo-maple-news.svg" class="logo-mobile"
+            alt="Logo Maple News"></a>
+      </div>
+      <div class="mobile-wrap-item3">
+        <time>
+          <!-- Show date and time
                 Link Stack Overflow used:
                 https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
-        <p class="date">
-          <script> document.write(new Date().toLocaleDateString());
-          </script>
-        </p>
-      </time>
+          <p class="date">
+            <script> document.write(new Date().toLocaleDateString());
+            </script>
+          </p>
+        </time>
+      </div>
     </div>
   </header>
   <!-- END Header with logo, links and date only visible on mobile (max 1024px) -->
@@ -72,12 +77,12 @@
   <!-- START Header with ticker always visible -->
   <header class="ticker-wrap">
     <div class="ticker">
-      <div class="ticker-item"> <img src="other-images/maple-leaf.png" width="30px">BREAKING MAPLE NEWS<img
-          src="other-images/maple-leaf.png" width="30px"> </div>
+      <div class="ticker-item"> <img src="other-images/maple-leaf.png"">BREAKING MAPLE NEWS<img
+          src=" other-images/maple-leaf.png"> </div>
       <div class="ticker-item">Stolen barrels of maple syrup have been found.</div>
       <div class="ticker-item">MORE TO COME - STAY TUNED</div>
-      <div class="ticker-item"> <img src="other-images/maple-leaf.png" width="30px">BREAKING MAPLE NEWS<img
-          src="other-images/maple-leaf.png" width="30px"></div>
+      <div class="ticker-item"> <img src="other-images/maple-leaf.png">BREAKING MAPLE NEWS<img
+          src="other-images/maple-leaf.png"></div>
     </div>
   </header>
   <!-- END Header with ticker always visible -->
