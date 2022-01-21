@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This site describe the natural beauty of St. Martin, a tourist place of Bangladesh.
+One week project of practicing HTML, CSS (Grid,Flexbox) and responsiveness for mobile, tablet and desktop version.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
-## The problem
+## Way of solving problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+1. I structured the responsiveness using media query.
+2. Added text and image and test of it working good or not.
+3. Apply typography of shaping better.
+4. In future I will add humburger menu for mobile version.
+
 
 ## View it live
+
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
