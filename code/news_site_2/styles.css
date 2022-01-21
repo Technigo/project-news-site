@@ -150,8 +150,6 @@ footer {
   max-width: 80vw;
 }
 
-
-
 /* Pseudo-Borders */
 .top-left-corner-border, .top-right-corner-border, .bottom-left-corner-border .bottom-right-corner-border {
   position: relative;
@@ -456,7 +454,6 @@ footer {
   }
 
   /* Remaining Articles */
-
   .article {
     grid-column: span 1;
     max-width: 25vw;
@@ -468,7 +465,6 @@ footer {
   }
 
   /* Article Hover Effects */
-
   article:hover .article-image, article:hover .main-image {
     transition: 7s;
     opacity: 0.05;
@@ -530,6 +526,4 @@ footer {
     bottom: -2.5vw;
     left: -2.5vw;
   }
-
-
 }
