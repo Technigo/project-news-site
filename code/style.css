@@ -1,4 +1,4 @@
-* {
+body {
     font-family: Work Sans;
     margin: 0;
 }
@@ -6,16 +6,13 @@
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-/* Note: align-items: center; is for the header animation to expand
-from the center instead of the left side. */
+
 a {
     text-decoration: none;
     color: rgb(221, 116, 116);
 }
 
-/* Hidden items */
 .breaker {
     display: none;
 }
@@ -51,6 +48,7 @@ h1 {
 .logo {
     width: 80px;
     height: 80px;
+    margin-right: 10px;
 }
 
 h2 {
@@ -108,7 +106,7 @@ article a {
     padding: 10px 0 10px 0;
     margin-bottom: 20px;
     background-color: white;
-    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4); */
+    box-shadow: 0 2px 2px rgba(136, 130, 130, 0.4);
 }
 
 /* Animation part (Demo)
