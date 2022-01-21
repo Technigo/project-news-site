@@ -5,7 +5,8 @@ body {
 
 header {
   height: 4rem;
-  background-color: #C51D34;
+  /* background-color: #C51D34; */
+  background-color: #CF0107;
   /* background-color:rgb(169,169,169);; */
   display: flex;
   justify-content: space-between;
@@ -40,7 +41,7 @@ header {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  margin: 0rem 1rem 0rem 1rem;
+  margin: 0rem 0.75rem 0rem 0.75rem;
 }
 
 .big-news {
@@ -54,7 +55,7 @@ header {
 .headline-img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
   /* border-radius: 5%; */
   /* border: black 2px solid; */
 }
@@ -126,7 +127,7 @@ h2 {
 }
 
 p {
-
+  line-height: 130%;
 }
 
 /* Desktop elements that should behave differently */
