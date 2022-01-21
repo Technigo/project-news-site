@@ -31,26 +31,18 @@
           <li class="weather"><a target="_blank" href="https://www.svt.se/vader/">Weather</a></li>
         </ul>
       </nav>
-      <div class="mobile-wrap-item1">
-        <label for="checkbox">
+        <label class="mobile-wrap-item1" for="checkbox">
           <i class="fa fa-bars menu-icon"></i>
         </label>
-      </div>
-      <div class="mobile-wrap-item2">
-        <a href="https://www.google.com/"><img src="other-images/logo-maple-news.svg" class="logo-mobile"
+        <a class="mobile-wrap-item2" href="https://www.google.com/"><img src="other-images/logo-maple-news.svg" class="logo-mobile"
             alt="Logo Maple News"></a>
-      </div>
-      <div class="mobile-wrap-item3">
-        <time>
+        <time class="mobile-wrap-item3">
           <!-- Show date and time
                 Link Stack Overflow used:
                 https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
-          <p class="date">
-            <script> document.write(new Date().toLocaleDateString());
-            </script>
-          </p>
+          <script> document.write(new Date().toLocaleDateString());
+          </script>
         </time>
-      </div>
     </div>
   </header>
   <!-- END Header with logo, links and date only visible on mobile (max 1024px) -->
