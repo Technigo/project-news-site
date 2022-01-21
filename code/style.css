@@ -136,6 +136,7 @@ a:visited, a:link {
 .card1:focus p, .card2:focus p, .card3:focus p, .card4:focus p, .card5:focus p, .card6:focus p, .card7:focus p, .card8:focus p {
   display: grid;
   position: absolute;
+  grid-template-rows: repeat(1fr, 1fr);
 }
 
 
