@@ -1,6 +1,11 @@
+/*These style the main elements of entire website*/
+
 body {
   margin: 0;
-  background-color: azure;
+  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Spectral', serif;
+  background-image: url("background.png");
 }
 
 main {
@@ -9,43 +14,8 @@ main {
   justify-content: center;
 }
 
-header {
-  display: flex;
-  background-color: rgb(223, 134, 134);
-  align-items: center;
-  font-family: 'Cormorant', serif;
-  justify-content: space-evenly;
-}
-
-.logo {
-  padding: 3%;
-  width: 8%;
-}
-
-.logo img {
-  border-radius: 50%;
-  width: 100%;
-}
-
-.big-news {
-  display: flex;
-  flex-direction: column;
-}
-
-.big-image img {
-  width: 100vw;
-}
-
-.big-text {
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: 'Cormorant', serif;
-}
-
 h1 {
   font-size: 60px;
-  font-style: oblique;
   margin-top: 25px;
   margin-bottom: 0;
 }
@@ -61,43 +31,20 @@ h3 {
 
 h4 {
   font-size: 15px;
-  font-family: 'Cormorant', serif;
-  font-family: 'Cormorant Garamond', serif;
   margin: 0;
 
 }
 
 h5 {
   font-size: 12px;
-  font-family: 'Cormorant', serif;
-  font-family: 'Cormorant Garamond', serif;
   margin: 0;
 }
 
-.news-box {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  margin: 5% 0%;
-  border: 1px solid black;
-  width: 50%;
-}
+/*These style the header and its content*/
 
-.news {
+header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.news-box img {
-  width: 100%;
-} 
-
-footer {
-  display: flex;
-  background-color: rgb(223, 134, 134);
   align-items: center;
-  font-family: 'Cormorant', serif;
   justify-content: space-evenly;
 }
 
@@ -113,6 +60,90 @@ nav {
   width: 40%;
 }
 
+li {
+  font-size: 12px;
+}
+
+li:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.logo {
+  padding: 3%;
+  width: 8%;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/*These style the home image and text*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.big-image img {
+  width: 90vw;
+  border-radius: 75%;
+}
+
+.big-text {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+/*These style the articles and their content*/
+
+.news-box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 5% 0%;
+  border: 1px solid black;
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.news-box img {
+  width: 100%;
+}
+
+.news-box img:hover{
+  opacity:0.5;
+}
+
+.big-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+/*These style the footer OBS! navbar styling in header*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
 @media (max-width: 667px) {
   header {
     justify-content: flex-start;
@@ -121,10 +152,15 @@ nav {
   header nav {
     display: none;
   }
+
+  footer h2 {
+    display: none;
+  }
+
 }
 
 @media (min-width: 667px) and (max-width: 1025px) {
-  .big-news {
+  .home {
     flex-direction: row;
   }
   .big-image img {
@@ -143,7 +179,7 @@ nav {
 }
 
 @media (min-width: 1025px) {
-  .big-news {
+  .home {
     flex-direction: row;
   }
   .big-image img {
