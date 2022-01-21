@@ -1,6 +1,6 @@
 html {
-  background: #fff1e6ff;
-  color: black;
+  background: #fff8e6;
+  color: #1e212d;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -24,7 +24,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1e212d;
   font-size: 150%;
   padding: 0 5%;
 }
@@ -57,6 +57,7 @@ img {
 .big-news {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .big-news img {
@@ -95,7 +96,6 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-
 
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -155,6 +155,7 @@ footer {
 
   article {
     width: 25%
+    min-height: 522px;
   }
 
 }
