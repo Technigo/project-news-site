@@ -148,7 +148,7 @@ main {
   text-decoration: none;
 }
 
-.row {
+.article-section {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -283,7 +283,7 @@ li {
 /* On screens that are 768px or more */
 @media screen and (min-width: 768px) {
 
-  .row {
+  .article-section {
     flex-direction: row;
   }
 
