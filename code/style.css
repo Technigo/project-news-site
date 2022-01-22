@@ -18,7 +18,6 @@ body{
   align-items: center;
   justify-content: space-evenly;
   flex:wrap;
-  
 }
 
 .logo{
@@ -48,7 +47,7 @@ a:hover {
   opacity: 0.5;
 }
 
-.row {
+.big-news {
   display: flex;
   flex-direction: row;
   margin:20px;
@@ -58,8 +57,7 @@ a:hover {
 
 .column_1 {
   flex: 50%;
-  padding: 10px;
-  
+  padding: 10px;  
 }
 
 .column_2{
@@ -72,7 +70,6 @@ a:hover {
   max-width:100%;
   border-radius: 20px; 
   box-shadow: 10px -16px darkgray;
-  
 }
 
     h1{
@@ -105,11 +102,6 @@ a:hover {
     margin-top: 10px;
   }
 
-  .h4{
-    font-size: 25px;
-    
-  }
-
 
 .articles{
   display:flex;
@@ -128,7 +120,6 @@ a:hover {
   border-radius: 20px;
   box-shadow: 10px -16px darkgray;
   margin-top: 40px;
- 
 }
 
 .article_photo{
@@ -137,11 +128,54 @@ a:hover {
   border-radius: 20px;
 }
 
+footer {
+  background: darkgray;
+  margin-top: 1.5em;
+  padding: 0.75em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+  width: 30px;
+  border-radius: 50%;
+}
+
+
 @media (max-width: 667px) {
 
   .logo{
-    height:100px
-    
+    height:100px;
   }
 
   .links{
@@ -152,7 +186,7 @@ a:hover {
     justify-content: space-between;
   }
 
-  .row{
+  .big-news{
     flex-direction: column;
   }
 
@@ -172,14 +206,23 @@ a:hover {
     flex:wrap;
     flex-direction: column;
     display: block;
-    
   }
 
   .content{
     flex:wrap;
     flex-direction: column;
     width:500px;
-    
+  }
+
+  .fa {
+    width:20px;
+  }
+  .fa:hover {
+    display: none;
+}
+
+  li{
+    display: inline-block;
   }
 }
 
@@ -205,7 +248,7 @@ a:hover {
     display: block;
   }
 
-  .row{
+  .big-news{
     flex-direction: column;
   }
 
@@ -239,5 +282,11 @@ a:hover {
     width:100%;
   }
 
+  .fa {
+    width:20px;
+}
+
+  .fa:hover {
+  display: none;
 }
 }
