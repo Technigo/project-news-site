@@ -47,18 +47,20 @@ color: #D3DEDC;
   width: 100%;
 }
 .bignews-text {
-  color: #32C1CD;
+  color: #FFBD35;
   font-weight: 1500;
   position: absolute;
+  text-shadow: 1vw 1vw 2vw black;
+  -webkit-text-stroke: 0.05vw black;
 }
 .bignews-text h1 {
   font-size: 8vw;
-  text-shadow: 1vw 1vw 2vw black;
   margin-bottom: 0;
 }
 .bignews-text p {
   font-size: 2vw;
   padding: 3vw;
+  /* text-shadow: 1vw 1vw 2vw black; */
 }
 .bignews-image:hover {
   -webkit-transform: scaleX(-1);
