@@ -22,24 +22,35 @@
       <input type="checkbox" id="checkbox">
       <nav>
         <ul>
-          <li class="news"><a target="_blank" href="https://www.svt.se">News</a></li>
-          <li class="law"><a target="_blank" href="https://www.wsj.com/news/business/law-legal">Law & Business</a>
+          <li class="news">
+            <a target="_blank" href="https://www.svt.se">News</a>
           </li>
-          <li class="travel"><a target="_blank" href="https://edition.cnn.com/travel/">Travel</a></li>
-          <li class="sports"><a target="_blank" href="https://www.lapresse.ca/sports/">Sports</a></li>
-          <li class="society"><a target="_blank" href="https://www.healthline.com/health-news">Society</a></li>
-          <li class="weather"><a target="_blank" href="https://www.svt.se/vader/">Weather</a></li>
+          <li class="law">
+            <a target="_blank" href="https://www.wsj.com/news/business/law-legal">Law & Business</a>
+          </li>
+          <li class="travel">
+            <a target="_blank" href="https://edition.cnn.com/travel/">Travel</a>
+          </li>
+          <li class="sports">
+            <a target="_blank" href="https://www.lapresse.ca/sports/">Sports</a>
+          </li>
+          <li class="society">
+            <a target="_blank" href="https://www.healthline.com/health-news">Society</a>
+          </li>
+          <li class="weather">
+            <a target="_blank" href="https://www.svt.se/vader/">Weather</a>
+          </li>
         </ul>
       </nav>
       <label class="mobile-wrap-item1" for="checkbox">
         <i class="fa fa-bars menu-icon"></i>
       </label>
-      <a class="mobile-wrap-item2" href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg"
-          class="logo-mobile" alt="Logo Maple News"></a>
+      <a class="mobile-wrap-item2" href="https://maple-news.netlify.app">
+        <img src="./other-images/logo-maple-news.svg" class="logo-mobile" alt="Logo Maple News">
+      </a>
       <time class="mobile-wrap-item3">
-        <!-- Show date and time
-                Link Stack Overflow used:
-                https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
+        <!-- Show date and time, link Stack Overflow used: 
+        https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
         <script> document.write(new Date().toLocaleDateString());
         </script>
       </time>
@@ -49,22 +60,24 @@
 
   <!-- START Header with logo, links and date only visible on desktop (min 1025px) -->
   <header class="desktop">
-    <a title="Back to homepage" href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg"
-        alt="Logo Maple News"></a>
-    <a class="navbar news" target="_blank" title="News by SVT" href="https://www.svt.se">News</a>
+    <a title="Back to homepage" href="https://maple-news.netlify.app">
+      <img src="./other-images/logo-maple-news.svg" alt="Logo Maple News"></a>
+    <a class="navbar news" target="_blank" title="News by SVT" 
+      href="https://www.svt.se">News</a>
     <a class="navbar law" target="_blank" title="Law & Business by Wall Street Journal"
       href="https://www.wsj.com/news/business/law-legal">Law & Business</a>
-    <a class="navbar travel" target="_blank" title="Travel by CNN" href="https://edition.cnn.com/travel/">Travel</a>
+    <a class="navbar travel" target="_blank" title="Travel by CNN" 
+      href="https://edition.cnn.com/travel/">Travel</a>
     <a class="navbar sports" target="_blank" title="Sports by La Presse"
       href="https://www.lapresse.ca/sports/">Sports</a>
     <a class="navbar society" target="_blank" title="Society by Healthline"
       href="https://www.healthline.com/health-news">Society</a>
-    <a class="navbar weather" target="_blank" title="Weather by SVT" href="https://www.svt.se/vader/">Weather</a>
+    <a class="navbar weather" target="_blank" title="Weather by SVT" 
+      href="https://www.svt.se/vader/">Weather</a>
     <time>
-      <!-- Show date and time
-            Link Stack Overflow used:
-            https://stackoverflow.com/questions/32540044/html-display-current-date/32540850 -->
-      <script> document.write(new Date().toLocaleDateString());
+        <!-- Show date and time, link Stack Overflow used: 
+        https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
+        <script> document.write(new Date().toLocaleDateString());
       </script>
     </time>
   </header>
@@ -73,12 +86,18 @@
   <!-- START Header with ticker always visible -->
   <header class="ticker-wrap">
     <div class="ticker">
-      <div class="ticker-item"> <img src="./other-images/maple-leaf.png"">BREAKING MAPLE NEWS<img
-          src=" ./other-images/maple-leaf.png"> </div>
-      <div class="ticker-item">Stolen barrels of maple syrup have been found.</div>
-      <div class="ticker-item">MORE TO COME - STAY TUNED</div>
-      <div class="ticker-item"> <img src="./other-images/maple-leaf.png">BREAKING MAPLE NEWS<img
-          src="./other-images/maple-leaf.png"></div>
+      <div class="ticker-item">
+        <img src="./other-images/maple-leaf.png"">BREAKING MAPLE NEWS<img
+          src=" ./other-images/maple-leaf.png">
+      </div>
+      <div class="ticker-item">Stolen barrels of maple syrup have been found.
+      </div>
+      <div class="ticker-item">MORE TO COME - STAY TUNED
+      </div>
+      <div class="ticker-item">
+        <img src="./other-images/maple-leaf.png">BREAKING MAPLE NEWS<img
+          src="./other-images/maple-leaf.png">
+      </div>
     </div>
   </header>
   <!-- END Header with ticker always visible -->
@@ -89,22 +108,22 @@
       <!-- Background color added here because inline-style is the highest in specificity hierarchy: needed so the background doesn't become white with hover -->
       <a class="feature-picture" target="_blank"
         href="https://fortune.com/2021/12/08/global-maple-syrup-shortage-canada-quebec-emergency-reserve/">
-        <img src="./news-images/news-shortage.jpg" alt="Sugar shack in Canada">
-      </a>
+        <img src="./news-images/news-shortage.jpg" alt="Sugar shack in Canada"></a>
       <div class="feature-text">
-        <div class="feature-headline"><a target="_blank"
-            href="https://fortune.com/2021/12/08/global-maple-syrup-shortage-canada-quebec-emergency-reserve/">Global
-            maple syrup shortage: Canada has tapped into its emergency reserves</a>
+        <div class="feature-headline">
+          <a target="_blank"
+          href="https://fortune.com/2021/12/08/global-maple-syrup-shortage-canada-quebec-emergency-reserve/">Global
+          maple syrup shortage: Canada has tapped into its emergency reserves</a>
         </div>
-        <div class="feature-lead"><a target="_blank"
-            href="https://fortune.com/2021/12/08/global-maple-syrup-shortage-canada-quebec-emergency-reserve/"><br>The
-            great
-            maple syrup shortage of 2021 is upon us, and Canada is taking serious measures. The pandemic has
-            significantly increased demand for the “blonde gold.” So much so that global sales of maple syrup shot up by
-            almost 37% in the last year, according to the Quebec Maple Syrup Producers association. Simultaneously,
-            Quebec’s annual maple syrup harvest—which is responsible for the majority of the world’s supply—is lower
-            than last year’s. That’s why Quebec’s maple syrup producers have turned to their emergency supply for the
-            first time in three years.</a>
+        <div class="feature-lead">
+          <a target="_blank"
+          href="https://fortune.com/2021/12/08/global-maple-syrup-shortage-canada-quebec-emergency-reserve/"><br>The
+          great maple syrup shortage of 2021 is upon us, and Canada is taking serious measures. The pandemic has
+          significantly increased demand for the “blonde gold.” So much so that global sales of maple syrup shot up by
+          almost 37% in the last year, according to the Quebec Maple Syrup Producers association. Simultaneously,
+          Quebec’s annual maple syrup harvest—which is responsible for the majority of the world’s supply—is lower
+          than last year’s. That’s why Quebec’s maple syrup producers have turned to their emergency supply for the
+          first time in three years.</a>
         </div>
       </div>
     </section>
@@ -115,8 +134,7 @@
       <div class="card weather">
         <a class="card-picture" target="_blank"
           href="https://dailyinterlake.com/news/2021/dec/21/montanas-maple-syrup-producers-face-climate-change/">
-          <img src="./news-images/weather-montana.jpg" alt="Demonstration against global warming" title="Read more">
-        </a>
+          <img src="./news-images/weather-montana.jpg" alt="Demonstration against global warming" title="Read more"></a>
         <a class="card-headline" target="_blank"
           href="https://dailyinterlake.com/news/2021/dec/21/montanas-maple-syrup-producers-face-climate-change/">Montana's
           maple syrup producers face climate change challenges</a>
@@ -125,8 +143,7 @@
       <div class="card law">
         <a class="card-picture" target="_blank"
           href="https://ppaq.ca/en/news/7-millions-de-nouvelles-entailles-pour-les-3-prochaines-annees/">
-          <img src="./news-images/law-new-taps.jpg" alt="Maple trees with buckets">
-        </a>
+          <img src="./news-images/law-new-taps.jpg" alt="Maple trees with buckets"></a>
         <a class="card-headline" target="_blank"
           href="https://ppaq.ca/en/news/7-millions-de-nouvelles-entailles-pour-les-3-prochaines-annees/">7 million new
           taps</a>
@@ -135,17 +152,16 @@
       <div class="card sports">
         <a class="card-picture" target="_blank"
           href="https://www.nbcchicago.com/news/sports/beijing-winter-olympics/this-olympic-skiier-is-a-maple-syrup-expert/2725481/">
-          <img src="./news-images/sports-skiier.jpg" alt="Skiier on the slope">
-        </a>
+          <img src="./news-images/sports-skiier.jpg" alt="Skiier on the slope"></a>
         <a class="card-headline" target="_blank"
           href="https://www.nbcchicago.com/news/sports/beijing-winter-olympics/this-olympic-skiier-is-a-maple-syrup-expert/2725481/">This
           Olympic skiier is a maple syrup expert</a>
       </div>
 
       <div class="card society">
-        <a class="card-picture" target="_blank" href="https://www.purewow.com/food/does-maple-syrup-go-bad">
-          <img src="./news-images/society-bad.jpg" alt="Maple syrup poured over pancakes">
-        </a>
+        <a class="card-picture" target="_blank" 
+          href="https://www.purewow.com/food/does-maple-syrup-go-bad">
+          <img src="./news-images/society-bad.jpg" alt="Maple syrup poured over pancakes"></a>
         <a class="card-headline" target="_blank" href="https://www.purewow.com/food/does-maple-syrup-go-bad">Wait, does
           maple syrup go bad? (spoiler alert: yes, but yours is probably fine)</a>
       </div>
@@ -153,8 +169,7 @@
       <div class="card sports">
         <a class="card-picture" target="_blank"
           href="https://www.mtlblog.com/montreal/an-athlete-brought-maple-syrup-to-olympics-most-quebecois-thing-ever">
-          <img src="./news-images/sports-bring.jpg" alt="Professional cyclist">
-        </a>
+          <img src="./news-images/sports-bring.jpg" alt="Professional cyclist"></a>
         <a class="card-headline" target="_blank"
           href="https://www.mtlblog.com/montreal/an-athlete-brought-maple-syrup-to-olympics-most-quebecois-thing-ever">An
           athlete brought maple syrup to the Olympics & it's the most Quebecois thing ever</a>
@@ -162,8 +177,7 @@
 
       <div class="card news">
         <a class="card-picture" target="_blank" href="https://www.concordmonitor.com/maple-syrup-production-44556294">
-          <img src="./news-images/news-production.jpg" alt="Maple syrup dripping in a jar">
-        </a>
+          <img src="./news-images/news-production.jpg" alt="Maple syrup dripping in a jar"></a>
         <a class="card-headline" target="_blank"
           href="https://www.concordmonitor.com/maple-syrup-production-44556294">Maple syrup production fell everywhere
           last season</a>
@@ -172,8 +186,7 @@
       <div class="card law">
         <a class="card-picture" target="_blank"
           href="https://www.vicnews.com/news/supreme-court-agrees-to-hear-case-involving-fine-for-massive-maple-syrup-heist/">
-          <img src="./news-images/law-supreme.jpg" alt="Desk in a courtroom">
-        </a>
+          <img src="./news-images/law-supreme.jpg" alt="Desk in a courtroom"></a>
         <a class="card-headline" target="_blank"
           href="https://www.vicnews.com/news/supreme-court-agrees-to-hear-case-involving-fine-for-massive-maple-syrup-heist/">Supreme
           Court agrees to hear case involving fine for massive maple syrup heist</a>
@@ -182,8 +195,7 @@
       <div class="card law">
         <a class="card-picture" target="_blank"
           href="https://www.syracuse.com/business/2022/01/cny-maple-syrup-farm-closes-saying-bittersweet-goodbye-after-45-years.html">
-          <img src="./news-images/law-close.jpg" alt="Close-up of a sugar shack">
-        </a>
+          <img src="./news-images/law-close.jpg" alt="Close-up of a sugar shack"></a>
         <a class="card-headline" target="_blank"
           href="https://www.syracuse.com/business/2022/01/cny-maple-syrup-farm-closes-saying-bittersweet-goodbye-after-45-years.html">Maple
           syrup farm closes, saying bittersweet goodbye after 45 years</a>
@@ -192,8 +204,7 @@
       <div class="card society">
         <a class="card-picture" target="_blank"
           href="https://newsd.in/national-maple-syrup-day-2021-history-observance-celebrations-and-traditions-of-this-delicious-day/">
-          <img src="./news-images/society-national.jpg" alt="Bottle of maple syrup">
-        </a>
+          <img src="./news-images/society-national.jpg" alt="Bottle of maple syrup"></a>
         <a class="card-headline" target="_blank"
           href="https://newsd.in/national-maple-syrup-day-2021-history-observance-celebrations-and-traditions-of-this-delicious-day/">National
           Maple Syrup Day: celebrations and traditions of this delicious day</a>
@@ -202,8 +213,7 @@
       <div class="card law">
         <a class="card-picture" target="_blank"
           href="https://nationalpost.com/news/canada/the-great-maple-syrup-heist-trial-opens-in-largest-theft-ever-investigated-by-quebec-police">
-          <img src="./news-images/law-trial.jpg" alt="Bundles of Canadian money">
-        </a>
+          <img src="./news-images/law-trial.jpg" alt="Bundles of Canadian money"></a>
         <a class="card-headline" target="_blank"
           href="https://nationalpost.com/news/canada/the-great-maple-syrup-heist-trial-opens-in-largest-theft-ever-investigated-by-quebec-police">The
           great maple syrup heist: Trial opens in largest theft ever in Quebec</a>
@@ -212,8 +222,7 @@
       <div class="card travel">
         <a class="card-picture" target="_blank"
           href="https://news.yahoo.com/park-offers-maple-syrup-field-152938651.html">
-          <img src="./news-images/travel-bus.jpg" alt="School buses">
-        </a>
+          <img src="./news-images/travel-bus.jpg" alt="School buses"></a>
         <a class="card-headline" target="_blank"
           href="https://news.yahoo.com/park-offers-maple-syrup-field-152938651.html">Park offers maple syrup field trip
           opportunity</a>
@@ -222,36 +231,34 @@
       <div class="card society">
         <a class="card-picture" target="_blank"
           href="https://www.wweek.com/restaurants/2021/12/29/jim-dixons-diy-dish-swedish-style-caramelized-cabbage/">
-          <img src="./news-images/society-cabbage.jpg" alt="Cooked cabbage">
-        </a>
+          <img src="./news-images/society-cabbage.jpg" alt="Cooked cabbage"></a>
         <a class="card-headline" target="_blank"
           href="https://www.wweek.com/restaurants/2021/12/29/jim-dixons-diy-dish-swedish-style-caramelized-cabbage/">Jim
-          Dixon’s DIY Dish: Swedish-Style Caramelized Cabbage</a>
+          Dixon’s DIY Dish: Swedish-Style Caramelized Cabbage</a >
       </div>
 
     </section>
-    <!-- START News section -->
-
+    <!-- END News section -->
   </main>
 
   <footer>
     <div class="copyright">
       <span>Created by Nadia Lefebvre 🐘</span>
-      <a target="_blank" title="Technigo" href="https://www.technigo.io"><img src="./other-images/logo-technigo.svg"
-          alt="Logo Technigo">
-      </a>
+      <a target="_blank" title="Technigo" 
+        href="https://www.technigo.io">
+        <img src="./other-images/logo-technigo.svg" alt="Logo Technigo"></a>
     </div>
     <div class="follow">
       <span>Follow</span>
-      <a target="_blank" title="Linkedin Nadia Lefebvre" href="https://www.linkedin.com/in/nadiainsweden/" <i
-        class="fab fa-linkedin"></i>
-      </a>
-      <a target="_blank" title="GitHub Nadia Lefebvre" href="https://github.com/nadialefebvre" <i
-        class="fab fa-github"></i>
-      </a>
+      <a target="_blank" title="Linkedin Nadia Lefebvre" 
+        href="https://www.linkedin.com/in/nadiainsweden/"
+        <i class="fab fa-linkedin"></i></a>
+      <a target="_blank" title="GitHub Nadia Lefebvre" 
+        href="https://github.com/nadialefebvre"
+        <iclass="fab fa-github"></i></a>
       <a target="_blank" title="Stack Overflow Nadia Lefebvre"
-        href="https://stackoverflow.com/users/17550223/nadia-lefebvre" <i class="fab fa-stack-overflow"></i>
-      </a>
+        href="https://stackoverflow.com/users/17550223/nadia-lefebvre"
+        <i class="fab fa-stack-overflow"></i></a>
     </div>
   </footer>
 </body>

@@ -99,12 +99,9 @@ header.mobile {
     display: none;
   }
 }
-
 /* END Header with logo, links and date only visible on mobile (max 1024px) */
 
-
 /* START Header with logo, links and date only visible on desktop (min 1025px) */
-
 header.desktop {
   display: none;
 }
@@ -177,12 +174,9 @@ time {
     text-decoration-color: rgb(238, 130, 238, 0.50);
   }
 }
-
 /* END Header with logo, links and date only visible on desktop (min 1025px) */
 
-
 /* START Header with ticker always visible */
-
 @-webkit-keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);
@@ -240,9 +234,7 @@ time {
 .ticker-item img {
   width: 2rem;
 }
-
 /* END Header with ticker always visible */
-
 
 main {
   padding: 0 0.5rem;
@@ -254,9 +246,7 @@ main {
   }
 }
 
-
 /* START Feature section */
-
 .feature {
   margin: 1rem 0;
   display: grid;
@@ -299,13 +289,14 @@ main {
     text-align: center;
   }
 
-  /* Values to transform the overflow in an ellipsis, inspired by CodePen https://codepen.io/martinwolf/pen/qlFdp, but can't manage to find why the ellipsis appears over the last letters of text instead of after in Sarafi*/
+  /* Values to transform the overflow in an ellipsis, inspired by CodePen https://codepen.io/martinwolf/pen/qlFdp */
+  /* Can't manage to find why the ellipsis is displaying over the last letters of text instead of after in Sarafi */
   .feature-lead {
     display: block;
     display: -webkit-box;
     max-width: 800px;
     height: 168px;
-    /* height calc. is font-size*line-height*lines-to-show */
+    /* height calculation is font-size*line-height*lines-to-show */
     margin: 0 auto;
     text-align: justify;
     font-size: 20px;
@@ -317,12 +308,9 @@ main {
     /* needs values in px in order to work */
   }
 }
-
 /* END Feature section */
 
-
 /* START News section */
-
 .news-cards {
   background-color: rgb(240, 240, 240);
   color: black;
@@ -371,12 +359,9 @@ main {
     box-shadow: 0.15rem 0.15rem 0.3rem rgb(238, 130, 238, 0.50);
   }
 }
-
 /* END News section */
 
-
 /* START Footer */
-
 /* Bigger padding right and left for the footer than header and main so there is enough space to be able to touch all icons */
 footer {
   display: flex;
@@ -407,5 +392,4 @@ footer {
     padding: 2rem 6rem;
   }
 }
-
 /* END Footer */
