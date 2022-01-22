@@ -1,44 +1,156 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <title>HelsinkiSaunas</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
+  
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="logo-mobile"><span>Fake logo</span></div>
+      <h1 class='site-name'>HelsinkiSaunas</h1>
+      <nav class="navbar-tablet">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div class="logo-tablet"><span>Fake logo</span></div> 
+        <a href="#">Saunas</a>
+        <a href="#">Info</a>
+      </nav>
+      <nav class="navbar-desktop">
+        <a class="links-style-desktop"href="#">Home</a>
+        <a class="links-style-desktop"href="#">About</a> 
+        <a class="links-style-desktop"href="#">Saunas</a>
+        <a class="links-style-desktop"href="#">Info</a>
+      </nav>
+      <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
     </header>
 
+    
     <section class="big-news">
-      <img class="big-news-image"src="logo.svg">
-      <p class="big-news-text">Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate 
-        velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, 
-        sunt in culpa qui officia deserunt mollit anim id 
-        est laborum.Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate 
-        velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, 
-        sunt in culpa qui officia deserunt mollit anim id 
-        est laborum.</p>
+     <div class="big-news-image-container">
+        <a style="image-link-style"href="https://allasseapool.fi/?lang=en"target="_blank">
+        <div class="polaroid" polaroid-caption="#AllasSeaPool">
+          <img class="big-news-image" src="https://allasseapool.fi/wp-content/uploads/2021/06/allas-2016-opening_party-eetu_ahanen-045-1-1-scaled.jpg">
+        </div>
+        </a>
+      </div>
+      
+      <div class="big-news-text-container">
+        <div class="big-news-text-tablets-desktops">
+        <h1 class="big-news-title">Sea spa and an oasis for wellbeing nestled in the heart of Helsinki</h1>
+        <p>Allas Sea Pool is a marine spa and an oasis of urban culture right at the heart of the city. 
+          It offers new ways of enjoying the Baltic Sea, just a stone's throw away from the Market Square 
+          and other main attractions. Allas is open all year round, providing unique experiences and 
+          recreational activities for townies and travelers. The marine spa has three saunas, 
+          two warm water pools and one sea water pool, to which the water is pumped from nearby streams and filtered clean. 
+          In addition to these, an outdoor gym, restaurant, bar & café -services, 
+          guided wellness- & sports lessons and culture events are on offer.
+        </p>
+      </div>
+      <div class="big-news-text-mobile">
+        <h1 class="card-text">Sea spa and an oasis for wellbeing nestled in the heart of Helsinki</h1>
+        <p>Allas Sea Pool is a marine spa and an oasis of urban culture right at the heart of the city. 
+          It offers... <a class="link-read-more" href="https://allasseapool.fi/?lang=en" target="_blank"> read more</a>
+        </p>
+      </div>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news-cards-parent">
+      <div class="news-card-child">
+        <div class= "news-card-image-container"> 
+          <a style="image-link-style"href="https://arlansauna.net/front-page/?lang=en"target="_blank">
+          <div class="polaroid" polaroid-caption="#ArlanSauna">
+          <img class="news-card-image" src="https://cdnb.artstation.com/p/assets/images/images/040/062/073/large/saara-vakiparta-arla-ue-maindoor.jpg?1627745475">
+        </div>
+      </a>
+      </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">The most authentic urban culture in Helsinki</h3>
+        </div>
+      </div>
+      <div class="news-card-child">
+        <div class= "news-card-image-container"> 
+          <a style="image-link-style"href="https://kulttuurisauna.fi/"target="_blank">
+          <div class="polaroid" polaroid-caption="#KulttuuriSauna">
+          <img class="news-card-image" src="https://live.staticflickr.com/7509/15200834074_5b70c0f05e_b.jpg">
+        </div>
+      </a>
+      </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">A public sauna established in 2013 with a wood-heated single-fired mass stove</h3>
+        </div>
+      </div>
+      <div class="news-card-child">
+        <div class= "news-card-image-container"> 
+          <a style="image-link-style"href="https://www.kotiharjunsauna.fi/en/home/"target="_blank">
+          <div class="polaroid" polaroid-caption="#KotiharjunSauna">
+          <img class="news-card-image" src="https://images.prismic.io/matka-suomi/18c984ee6a34ffb0f25634f3784531ec3e03981e_helsinki-kotiharjun-sauna-my-helsinki-jussi-hellsten-2.jpg?auto=compress,format">
+        </div>
+      </a>
+        </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">Traditional public wood-burning sauna in Helsinki</h3>
+        </div>
+      </div>
+      <div class="news-card-child">
+        <div class= "news-card-image-container">
+          <a style="image-link-style"href="https://www.loylyhelsinki.fi/en/"target="_blank">
+          <div class="polaroid" polaroid-caption="#Löyly">
+            <img class="news-card-image" src="https://www.loylyhelsinki.fi/uploads/2019/08/a6b9832a-oma_sauna_iki-1024x683.jpg">
+          </div>
+        </a>
+        </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">An urban oasis occupying a stretch of beautiful Helsinki waterfront</h3>
+        </div>
+      </div>
+      <div class="news-card-child">
+        <div class= "news-card-image-container"> 
+          <a style="image-link-style"href="https://saunahermanni.fi/"target="_blank">
+          <div class="polaroid" polaroid-caption="#SaunaHermanni">
+          <img class="news-card-image" src="https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2017/03/sauna-hermanni_1_014.jpg">
+        </div>
+      </a>
+      </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">Public sauna founded in Helsinki in 1953</h3>
+        </div>
+      </div>
+      <div class="news-card-child">
+        <div class= "news-card-image-container">
+          <a style="image-link-style"href="https://www.sompasauna.fi/"target="_blank">
+          <div class="polaroid" polaroid-caption="#Sompasauna">
+          <img class="news-card-image" src="https://scontent-hel3-1.xx.fbcdn.net/v/t1.6435-9/44177334_1917167188362724_91604647332020224_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jsAPVPstVWQAX_EZRHl&_nc_ht=scontent-hel3-1.xx&oh=00_AT_PuxkrP-I60IOAtxunv3TTR2JvG8K6djSF8GtjMJKSuQ&oe=62127F1E">
+        </div>
+      </a>
+      </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text"">Wood-burning self-service sauna, built and maintained by a group of volunteers</h3>
+        </div>
+      </div>
+      <div class="news-card-child"> 
+        <div class= "news-card-image-container"> 
+          <a style="image-link-style"href="https://uusisauna.fi/"target="_blank">
+          <div class="polaroid" polaroid-caption="#UusiSauna">
+          <img class="news-card-image" src="https://uusisauna.fi/assets/img/portfolio/IMG_2609.jpeg">
+        </div>
+      </a>
+        </div>
+        <div class= "news-card-text-container">
+          <h3 class="card-text">Public sauna with a terrace for cooling off, and a bar and bistro</h3></div>
+      </div>
     </section>
+
+
+    <footer>
+      <p class="footer-text">&copy; 2022 Kristiina Kolu</p>
+    </footer>
   </body>
+
 </html>
