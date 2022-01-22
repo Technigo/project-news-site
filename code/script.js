@@ -19,7 +19,6 @@ let infos = [
 let msg = infos.join("&nbsp &nbsp &nbsp &nbsp &nbsp")
 marquee.innerHTML = msg;
 
-
 //Makes 'card' expand when a button is clicked byy toggling 'expand' class on the card and 'hide' class so that the content becomes visible
 let buttons = document.getElementsByClassName("xpand");
 for (let button of buttons) {
