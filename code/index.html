@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--external CSS connection-->
     <link rel="stylesheet" href="./style.css" />
     <!-- meta tag for responsiveness -->
@@ -10,14 +11,35 @@
   </head>
   <body>
 <!--menu-->
-<header>
-  <img class="item1" src="../img/logo.jpg" alt="logo"/>
-  <div class="item2">Travel St. Martin</div>
-  <div class="item3"><a href="#home">Home</a></div>
-  <div class="item4"><a href="#hotel">List of Hotel</a></div>
-  <div class="item5"><a href="#blog">Blog</a></div>
-  <div class="item6"><a href="#contact">Contact</a></div>
+
+<header class="mobilemenu">
+	<div class="dropdownlogo" style="float:left;">
+      	<img class="item1" src="../img/logo.jpg" alt="logo"/>
+      	<div class="item2">Visit St.Martin</div>
+	</div>
+	<div class="dropdown" style="float:right;">
+  		<button class="dropbtn"><i class="fa fa-bars"></i></button>
+   <div class="dropdown-content">
+        <div class="item3"><a href="#home">Home</a></div>
+        <div class="item4"><a href="#hotel">List of Hotel</a></div>
+        <div class="item5"><a href="#blog">Blog</a></div>
+        <div class="item6"><a href="#contact">Contact</a></div>
+  </div>
+</div>
 </header>
+
+
+  <header class="tabanddesktopmenu">
+    <img class="item1" src="../img/logo.jpg" alt="logo"/>
+    <div class="item2">Visit St.Martin</div>
+    <div class="item3"><a href="#home">Home</a></div>
+    <div class="item4"><a href="#hotel">List of Hotel</a></div>
+    <div class="item5"><a href="#blog">Blog</a></div>
+    <div class="item6"><a href="#contact">Contact</a></div>
+  
+  </header>
+
+
 <!--Main text upper part-->
     <section class="big-news">
       <div class="polaroid">
@@ -101,5 +123,21 @@
       </div>
     </section>
     
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+
+
+
   </body>
 </html>
+
+

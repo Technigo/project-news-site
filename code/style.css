@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   color: #000000;
   margin: 10px;
@@ -5,21 +11,94 @@ html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.dropdownlogo{
+  display:flex;
+  width: 70%;
+  font-size: 21px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+    margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: initial;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.tabanddesktopmenu{
+  display: none;
+ }
+
 header img{
   width: 50px;
   height: 50px;
  }
 
 header{
-  display: flex;
   margin: 20px 5px 25px 10px;
   font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #1267b6;
 }
+
 .item2 {
   margin-left: 20px;
   margin-top: 10px;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 15%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 header a{
@@ -28,16 +107,24 @@ header a{
 
 a {
   text-decoration: none;  
+  color: #1267b6;
 }
 .polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.polaroid:hover {
+box-shadow: 0 0 2px 1px #008cba80;
 
+}
 .polaroid p{
   text-align: center;
   padding: 10px;
 }
+.polaroid p:hover{
+  color: #008cba80;
+}
 /*section*/
+
 section{
   text-align: center;
 }
@@ -75,14 +162,20 @@ section p{
   color: #7a7a7a;
   margin-top: 25px;
   font-size: 16px;
+  margin-bottom: 30px;
 }
 
-/*for tab*/
+/*for tablet*/
+
 @media screen and (min-width: 768px) {
-  
+  .mobilemenu{display: none;}
+  .tabanddesktopmenu{
+    display: grid;
+   }
+
   .item1 { grid-area: logo; }
   .item2 { grid-area: txtTitle;
-           display:none;}
+  display: none;}
   .item3 { grid-area: link1; }
   .item4 { grid-area: link2; }
   .item5 { grid-area: link3; }
@@ -106,28 +199,29 @@ section p{
    }
 
 /*section*/
-.big-news{
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 20px;
 
-  margin-bottom: 20px;
+
+section h1{
+  margin-top: 35px;
 }
 
-.big-news-text{
-  margin-top: -20px;
-  margin-right: 20px;
-}
 .mainText{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 30px;
   grid-row-gap: 10px;
+  margin-top: 35px;
 }
+section p{
+  font-size: 20px;
+  padding: 5px;
+}
+
 }
 
 /*for desktop*/
+
 @media screen and (min-width: 992px) {
 
   .item2 { 
@@ -144,21 +238,24 @@ section p{
     grid-template-areas:
       'logo txtTitle link1 link2 link3 link4';
     grid-gap: 10px;
+    justify-items: right;
+    font-size: 15px;
+    
   }
  
 .mainText{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
+  grid-column-gap: 35px;
+  grid-row-gap: 30px;
 }
 
 .big-news{
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 10px;
-  margin-bottom: 20px;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 30px;
+  margin-bottom: 40px;
 }
 
 }
