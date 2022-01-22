@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. jkll
+Digital Food Magazine
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project is to build a responsive website for mobile, tablet and desktop by using HTML5 and CSS3
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by project by building a prototype in Figma. That provided a clear visual approach for the website and helped me to save time for styling in CSS. 
+The biggest challenges were the responsive navigation bar which is displayed differently on different devices. I've solved it by creating seperate navigation bars, later using media queries to hide and display. Next, the other challenge is to make the website responsive by using less media queries, and I came up with the solution of using autocolumn in Grid CSS, particularly autofit. Consequently, the columns will wrap into new row if the viewport is too narrow. 
+
+In order to solve all the problems above, I want to give a big shoutout to my Hippo team at Technigo class 2022, who helped me by giving me a lot of tips and always being supportive.
+
+If i had more time, I would love to experiencing more animation styles in CSS. The idea is to make the text and images fadeIn when the user scrolls over the pages.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
