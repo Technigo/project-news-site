@@ -1,10 +1,9 @@
 
 body {
   background: linear-gradient(to bottom right, #F6EABE, 
-  #FDA65D, #FFA810);
+  #FDA65D, #ff8741);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  /* padding: 10px; */
 }
 
 header {
@@ -17,7 +16,7 @@ header {
       to right bottom,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3)
-    ); /*  #94b190 d88c8c*/
+    ); 
   box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
 }
 
@@ -143,7 +142,6 @@ a:visited, a:link {
 .card1:hover img, .card2:hover img, .card3:hover img, .card4:hover img, .card5:hover img, .card6:hover img, .card7:hover img, .card8:hover img {
   opacity: 0.2;
   transition: all ease-in-out 0.4s;
-  
 }
 
 /* Navbar in mobile format */
@@ -160,7 +158,6 @@ button {
   align-self: center;
   grid-column-start: 3;
   display: inline;
-  
 }
 
 .meny ul {
@@ -186,7 +183,6 @@ button {
   width: 100%;
   animation-name: colorChange2;
   animation-duration: 5s;
-  
 }
 
 .meny button:focus + ul {
@@ -235,7 +231,6 @@ li {
     }
   }   */
 }
-
 
 
 /* TABLET */
@@ -291,7 +286,6 @@ li {
   }
   
 
-
 /* DESKTOP */
 @media (min-width:1024px) {
   .bigNews {
@@ -324,7 +318,6 @@ footer {
 
 footer img {
   margin: 10px;
-  
 }
 
 footer a:first-child:hover {
