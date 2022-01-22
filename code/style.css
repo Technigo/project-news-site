@@ -66,25 +66,28 @@ display: flex;
          display: flex;
        }
      }
+
+     @media (min-width: 668px) {
+       .icon-box a {
+         display: flex;        
+       } 
+     }
  
   @media (min-width: 668px) {
 .icon1 {
   background-color: white;
-  margin: 25px;
   }
 }
   
 @media (min-width: 668px) {
   .icon2 {
   background-color: white;
-  margin: 25px;
   }
 }
   
 @media (min-width: 668px) {
   .icon3 {
   background-color: white;
-  margin: 25px;
   }
 }
   
