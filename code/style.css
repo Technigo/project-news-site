@@ -112,19 +112,17 @@ h1 {
   grid-template-columns: 1fr;
   justify-items: center;
   margin: 1rem 0;
-  /* max-width: 95vw; */
-  /* max-height: 50rem; */
   gap: 20px;
 }
 
 .big-pic {
-  max-height: 100vw;
+  max-height: 90vw;
 }
 
 .big-news-text {
   text-align: center;
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: max(1.3rem, 2vw);
 }
 
 .cards {
@@ -132,23 +130,14 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin: 20px; */
 }
 
 .card {
   background: rgb(253, 253, 253);
-  /* display: grid; */
-  /* grid-template-rows: 5% 45% 50%; */
-  /* grid-template-rows: 1fr 4fr 5fr; */
-  /* grid-template-rows: fit-content(8ch) fit-content(8ch) 1fr; */
   margin: 1rem;
   max-width: min(100vw, 400px);
-  /* max-height: auto; */
   max-height: 25rem;
-  /* max-height: 30vh; */
-  /* max-height: min-content; */
   box-shadow: 0px -2px 20px 2px rgba(0, 0, 0, 0.4);
-  /* background: rgb(255, 255, 255); */
   transition: 400ms;
 }
 
@@ -165,8 +154,6 @@ h1 {
   background-color: white;
   border: none;
 }
-
-
 
 /*Second row of cards with pic*/
 .card-pic {
@@ -185,13 +172,26 @@ h1 {
 .content {
   padding: 1rem;
   margin: 0;
+  
+  font-family: "Georgia";
+  line-height: 1.5rem;
 }
 
 .hide {
   display: none;
 }
 
+.expand {
+  max-height: 40rem;
+}
 
+footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /* Changes header to flex container for larger screens 
@@ -201,8 +201,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+  }
+
+  .big-news {
+    grid-template-columns: 2fr 3fr;
   }
 
   .logo-imgs {
@@ -214,7 +216,14 @@ h1 {
   }
 }
 
+@media (min-width: 668px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.expand {
-  max-height: 40rem;
+  .soc-med {
+    display: grid;
+  }
 }

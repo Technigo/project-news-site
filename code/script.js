@@ -1,5 +1,6 @@
 // JS script for news website
 
+//marquee/news ticker with static info that could perhaps be sourced with fetch api eventually
 let blackStripe = document.getElementsByClassName("black-stripe")[0];
 let marquee = document.createElement("marquee");
 blackStripe.appendChild(marquee)
@@ -18,6 +19,8 @@ let infos = [
 let msg = infos.join("&nbsp &nbsp &nbsp &nbsp &nbsp")
 marquee.innerHTML = msg;
 
+
+//Makes 'card' expand when a button is clicked byy toggling 'expand' class on the card and 'hide' class so that the content becomes visible
 let buttons = document.getElementsByClassName("xpand");
 for (let button of buttons) {
     button.onclick = function(event) {
@@ -28,6 +31,8 @@ for (let button of buttons) {
     }
 }
 
+//sets the position for second 'invisible' logo img to be on top of first one
+//and readjust it when the screen is resized
 let correctLeft = document.getElementById("logo1").offsetLeft;
 let correctTop = document.getElementById("logo1").offsetTop;
 let logo2 = document.getElementsByClassName("logo2")[0];
@@ -40,4 +45,5 @@ function changeLogoPos() {
     logo2.style.top = document.getElementById("logo1").offsetTop + "px";
 }
 
+window.addEventListener('load', changeLogoPos)
 window.addEventListener('resize', changeLogoPos);
