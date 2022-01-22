@@ -175,3 +175,21 @@ grid-template-columns: repeat(4, 1fr);
 grid-gap: 15px; 
 }  
 }
+
+@media (min-width:1025px) {
+.hidden-hover {
+  background-color: orange;
+  padding: 20px;
+  display: none;
+}
+
+span:hover + .hidden-hover {
+  display: block;
+}  
+}
+
+@media (max-width:1024px){
+.hidden-hover {
+  display:none;
+}  
+}
