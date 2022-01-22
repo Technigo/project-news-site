@@ -1,0 +1,372 @@
+/* Styling for Project 2, Technigo Bootcamp: News Site */
+
+html {
+  background: #ffffff;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0.5rem;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Styling header/navbar and logo */
+.main-nav,
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo {
+  height: 70px;
+}
+
+.main-nav {
+  margin-top: 20px;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  font-size: 14px;
+  padding-inline-start: 0px;
+}
+
+.logo a,
+.main-nav a {
+  color: #000000;
+  text-transform: uppercase;
+  padding: 0 15px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Styling for the big-news section */
+.big-news 
+  /*Photo by Brina Blum for Unsplash*/ {
+  background-image: url("https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  padding: 4rem 2rem;
+  /* Grid style */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  margin: 4rem;
+  position: relative;
+}
+
+.light-layer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(75deg, #05000080, #a18a6476, #f5e9dace);
+  position: absolute;
+}
+
+.big-news article {
+  z-index: 1;
+}
+
+.big-news > h1 {
+  font-size: 3rem;
+  color: #ffe6bc;
+  text-shadow: 2px 2px 2px #482c07;
+  z-index: 1;
+}
+
+.big-news > p {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.big-news p {
+  color: rgb(255, 255, 255);
+}
+
+/* Styling the button in news */
+.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background-color: #907547;
+  color: #ffffff;
+  box-shadow: 1px 1px 3px 1px #000000;
+  opacity: 1;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 1;
+  background-color: #c3b091;
+  color: #000000;
+  transition: all 0.4s;
+}
+
+.button-2 {
+  color: #907547;
+  font-size: 12.5px;
+}
+
+a:hover {
+  color: #916e34;
+}
+
+header {
+  background: #ece2d7;
+  width: 100%;
+  text-align: center;
+  box-shadow: 12px 5px 10px 1px #dcdcdc;
+}
+
+/* Styling for the news-section */
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.picture-label img {
+  position: relative;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+}
+
+.picture-label span {
+  position: absolute;
+  background-color: rgb(246, 230, 230);
+  line-height: 0.875rem;
+  height: 24px;
+  color: #635d42;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  z-index: 3;
+  border-radius: 0 0 8px 0;
+}
+
+.news h3 {
+  font-size: 1em;
+}
+
+.news-article {
+  display: inline-block;
+  max-width: 90%;
+  max-height: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #e0d8c9;
+  border: 1px solid #c5d2c5;
+  object-fit: cover;
+  box-shadow: 12px 1px 10px 1px #dcdcdc;
+}
+
+.news-article img {
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  max-width: 90%;
+  max-height: 11em;
+}
+
+.news-article > div {
+  object-fit: contain;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.category-heading {
+  text-align: left;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+/* Styling footer */
+footer {
+  width: 100%;
+  background-color: #ece2d7;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-text-small {
+  font-size: 12.5px;
+}
+
+/* Social media icons in footer */
+.fa {
+  padding: 5px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #c3b091;
+}
+
+.fa-facebook {
+  background: ece2d7;
+  color: #907547;
+}
+
+.fa-linkedin {
+  background: ece2d7;
+  color: #907547;
+}
+
+.fa-instagram {
+  background: ece2d7;
+  color: #907547;
+}
+
+.fa-github {
+  background: ece2d7;
+  color: #907547;
+}
+
+/* Media queries*/
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar,
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: initial;
+  }
+
+  .big-news {
+    margin: 1rem;
+    margin-bottom: -40px;
+  }
+
+  .big-news > h1 {
+    font-size: 2rem;
+  }
+
+  p,
+  .button,
+  a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .navbar h3 {
+    visibility: hidden;
+  }
+
+  .main-nav {
+    margin-top: -30px;
+  }
+}
+
+/* Smartphones landscape mode */
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .navbar,
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: initial;
+  }
+
+  .main-nav {
+    margin-top: -30px;
+  }
+
+  .big-news {
+    margin: 1rem;
+    margin-bottom: -40px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .navbar h3 {
+    visibility: hidden;
+  }
+
+  .big-news h3 {
+    margin: 0.5rem;
+  }
+
+  .big-news > h1 {
+    font-size: 2rem;
+  }
+
+  p,
+  .button,
+  a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Smartphones portrait mode */
+@media only screen and (max-width: 420px) {
+  .navbar,
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: initial;
+  }
+
+  .main-nav {
+    margin-top: -30px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .navbar h3 {
+    visibility: hidden;
+  }
+
+  .big-news {
+    margin: 1rem;
+    margin-bottom: -40px;
+  }
+
+  .big-news > h1 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  .button,
+  a {
+    font-size: 0.9rem;
+  }
+}
