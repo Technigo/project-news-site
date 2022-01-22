@@ -17,7 +17,6 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
   background-color: #a3baca;
 }
 
@@ -26,10 +25,14 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 1rem;
   padding: 1rem 0;
   background-color: #006989;
   color: white;
+}
+
+.main-header h1 {
+  font-family: monospace;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -41,11 +44,15 @@ nav ul li {
   display: inline;
 }
 
-/* This is not visible in mobiles */
 nav a {
   text-decoration: none;
   padding: 0 1rem;
   color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  border: 1px solid white;
 }
 
 /* Det här behöver ändras sen */
@@ -60,6 +67,11 @@ nav a {
   place-items: center;
 }
 
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Big news content start here */
 
 .big-news {
@@ -67,18 +79,22 @@ nav a {
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   gap: 0;
-  border: 1px solid #007090;
+  
 }
 
 .big-news-child {
   padding: 1rem;
-  
   background-color: #EAEBED;
+  
 }
 
 .big-news img {
   max-width: 100%;
   height: auto;
+}
+
+.image-container {
+  padding: 0;
 }
 
 .big-news h2 {
@@ -99,11 +115,7 @@ nav a {
   margin: 1rem;
 }
 
-/*Ändra kanske lite här*/
 .card {
-  /*display: grid;
-  grid-template-rows: max-content 200px 1fr;
-  */
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #EAEBED;
@@ -156,14 +168,12 @@ footer {
 
   .main-header {
     justify-content: space-between;
-    margin-bottom: 0;
   }
 
   .main-header h1 {
     display: none;
   }
 
-  /*Ändra denna till flex?*/
   .big-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,12 +181,17 @@ footer {
 
   .big-news-child {
     border: 0;
+    box-shadow: none;
+  }
+
+  .image-container {
+    padding: 1rem;
   }
 
   .other-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
 
@@ -190,6 +205,7 @@ footer {
 
   .main-header {
     justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   .logo {
@@ -198,16 +214,24 @@ footer {
 
   .big-news {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .big-news-child {
+    box-shadow: none;
+  }
+
+  .image-container {
+    padding: 1rem;
   }
 
   .other-news {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
-    margin: 2rem 0;
+    gap: 1rem;
+    margin: 1.5rem 0;
   }
   
 }
