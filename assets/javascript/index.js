@@ -1,15 +1,16 @@
-const menu = document.querySelector(".navbar-toggle");
+const hamburgerMenu = document.querySelector(".navbar-toggle");
 const ul = document.querySelector(".navbar__list");
 const nav = document.querySelector(".navbar");
-const navLink = document.querySelectorAll(".navbar__item");
+const navLinks = document.querySelectorAll(".navbar__item");
 
-menu.addEventListener("click", () => {
-  ul.classList.toggle("show")
-  menu.classList.toggle("show")
+hamburgerMenu.addEventListener("click", () => {
+  ul.classList.toggle("show");
+  hamburgerMenu.classList.toggle("show")
 })
 
-navLink.forEach(link => {
+navLinks.forEach(link => {
   link.addEventListener("click", () => {
     ul.classList.remove("show");
+    hamburgerMenu.classList.toggle("show");
   })
 })
