@@ -29,14 +29,10 @@ header {
   gap: 1em;
 }
 
-.logo {
+.site-logo {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-}
-
-.webpage-title h1 {
-  margin-block-start: 0;
 }
 
 .webpage-title h1, p {
@@ -250,6 +246,9 @@ a:hover, a:active {
 @media (min-width: 768px) {
   header {
     padding: 5em 3em;
+  }
+  .webpage-title h1 {
+    margin-block-start: 0;
   }
   .hamburger-nav-mobile {
     display: none;
