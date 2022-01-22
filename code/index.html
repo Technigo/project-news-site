@@ -2,21 +2,166 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googlexwapis.com"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <header class="header">
+      <nav class="main-nav"> 
+          <!--Default nav bar -- for mobile-->
+              <div class="nav display-flex">
+                  <div class="left-nav-mobile display-flex">
+                      <button class="mobile-nav-btn">
+                          <ion-icon class="icon-mobile-nav" name="reorder-two-outline"></ion-icon>
+                      </button>
+                      <img class="logo" alt="Kitchen 86 logo" src="img/logo.png">
+                  </div>
+                  <button class="btn mobile-btn">
+                      subscribe
+                  </button>
+              </div>
+          <!--Tablet Nav Bar-->
+              <ul class="tablet-nav display-flex">
+                  <li><a href="#" class="style-nav-link link">Home</a></li>
+                  <li><a href="#" class="style-nav-link">News</a></li>
+                  <li><img class="logo" alt="Kitchen 86 logo" src="img/logo.png"></li>
+                  <li><a href="#" class="style-nav-link link">About us</a></li>
+                  <li><a href="#" class="style-nav-link link">Login</a></li>        
+              </ul>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+          <!--Desktop nav-->
+              <ul class="desktop-nav display-flex">
+                  <li ><a href="#" class="style-nav-link link">Home</a></li>
+                  <li ><a href="#" class=" style-nav-link link">News</a></li>
+                  <li ><a href="#" class="style-nav-link link">About us</a></li>
+                  <li ><a href="#" class="style-nav-link link">Login</a></li>
+                  <li><button class="btn">subscribe</button></li>
+              </ul>
+      </nav>
+  </header>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+  <!--Main News Section-->
+  <div class="container">
+       <section class="main-news-section margin-bottom grid">
+          <div class="main-img fade-in">
+              <img class="main-news-img fade-in" alt="A bolw of rice" src="img/main-news-img.jpg">
+          </div> 
+          <div class="header-text">
+              <h1 class="main-header">
+                  <a href="#" class="link title-link">50 Dinner Ideas To Treat Yourself & Your Loved Ones</a>
+              </h1>
+              <p class="subheader">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Eos beatae, repellat, soluta ut nostrum deleniti a deserunt molestias, 
+                  enim aperiam ex molestiae voluptas nisi. Cumque ipsa deleniti adipisci magni.
+              </p>
+              <form class="input-form">
+                  <input id="input" class="subcribe-input" type="text" placeholder="Enter your email here"/>
+                  <button class="btn" type="submit">Subcribe</button>
+              </form>
+          </div>
+        </section>
+  </div>
+
+  <!--Featured News Section-->
+  <div class="container background-color">
+      <section class="featured-news-section">
+          <h2 class="text-align margin-bottom">
+              <a href="#" class="title-link heading-secondary link">Featured News</a>
+          </h2>
+          <div class="news-container grid margin-bottom">
+              <div class="news">
+                  <img class="news-img" alt="breakfast with advocado" src="img/news-breakfast.png"/>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">30 healthy breakfast ideas</a>
+                      <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>      
+              </div>
+              <div class="news">
+                  <div class="dive-img"><img class="news-img" alt="turkey" src="img/news-turkey.png"></div>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">8 Secrets For a Juicy Roast Turkey </a>
+                      <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="frozen meat" src="img/news-frozen-meat.png"/>
+                      <div class="news-text-box">
+                          <a href="#" class="link news-link">How To Defrost Meat Safely </a>
+                          <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                              consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                          </p>
+                      </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="chocolate covers strawberry" src="img/news-strawberry.png"/>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">Where To Buy Chocolates Covers Strawberries?</a>
+                      <p class="news-subtitle text-align ">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="wine bottle" src="img/news-wine.jpeg"/>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">The Best Wine Under €25</a>
+                      <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="tea kettle" src="img/news-kettles.png"/>
+                  <div class="news-text-box">
+                  <a href="#link" class="link news-link">10 Best Electric Tea Kettles 2022</a>
+                  <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                      consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                  </p>
+                  </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="kitchen" src="img/news-kitchen.png"/>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">Kitchen Styling - My Top 5 Tips</a>
+                      <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>
+              </div>
+              <div class="news">
+                  <img class="news-img" alt="breakfast with advocado" src="img/eggs.png"/>
+                  <div class="news-text-box">
+                      <a href="#" class="link news-link">How To Fry Egg Like A Pro?</a>
+                      <p class="news-subtitle text-align">Lorem ipsum dolor sit amet, 
+                          consectetur  do eiusmod tempor incididunt ut labore et dolore 
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer container display-flex">
+          <div><img class="logo footer-logo" alt="Kitchen 86 logo" src="img/logo-white.png"></div>
+          <p class="footer-text">The magazine that changes your cook life</p>
+      <div class="social-media display-flex">
+          <a class="social-media-link" href="https://www.linkedin.com/in/nhung19/" target="_blank"><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon></ion-icon></a> 
+          <a class="social-media-link" href="https://www.instagram.com/suki.nhungphan/" target="_blank"><ion-icon class="footer-icon" name="logo-instagram"></ion-icon></ion-icon></a> 
+          <a class="social-media-link" href="https://github.com/sukiphan97" target="_blank"><ion-icon class="footer-icon" name="logo-github"></ion-icon></ion-icon></a> 
+          <a class="social-media-link" href="#" target="_blank"><ion-icon class="footer-icon" name="logo-facebook"></ion-icon></a> 
+      </div>
+      <span class="footer-text">© Suki Nhung Phan</span>
+  </footer>
   </body>
 </html>

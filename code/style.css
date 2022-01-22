@@ -1,4 +1,346 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+/* General styling*/
+.body {
+  height: 100%;
+}
+
+.container {
+  padding: 3.2rem ;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 3.2rem;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+}
+
+.logo {
+  width: 12rem;
+}
+
+/* Button styling */
+.btn {
+  font-size: 1.4rem ;
+  padding: 1rem 2.4rem;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #333;
+  color: #fff;
+  border: solid 2px #333;
+  cursor: pointer;
+  position: relative;
+} 
+
+.btn:hover , 
+.btn:hover{
+   background-color: transparent;
+   border: solid 2px #333;
+   color: #333;
+   transition: all 1s ease;
+}
+
+/* Styling links */
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.link:hover,
+.link:active {
+  color: #666;
+}
+
+.title-link {
+  font-size: 2.4rem;
+}
+
+/* Tablet and Desktop Nav links*/
+.style-nav-link {
+  font-size: 1.6rem;
+  color: #333;
+  text-decoration: none;
+  font-family: "lato",sans-serif ;
+}
+
+/* Nav bar Styling - Using Flex */
+.display-flex {
+  display:flex;
+  align-items: center;
+}
+
+/* Footer */
+
+.footer {
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #333;
+  color: #eee;
+}
+
+.footer-text {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #eee;
+}
+
+.social-media {
+  margin: 3.2rem 0 4.8rem 0;
+  gap: 2.4rem;
+}
+
+/* Mobile phone nav */
+
+.main-nav {
+  padding: 2.4rem 3.2rem;
+}
+.nav {
+  justify-content: space-between;
+}
+
+.mobile-nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #333;
+}
+
+/* Hide tablet navbar, desktop navbar,news's brief and subcribe form  on mobile*/
+.news-subtitle,
+.input-form,
+.tablet-nav,
+.desktop-nav {
+  display: none;
+}
+
+/* Tablet nav */ 
+.tablet-nav {
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+/*-----------------------*/
+/* Desktop-Form styling */
+.input-form {
+  gap: 1rem;
+}
+
+.subcribe-input {
+  border: 1px solid rgb(196, 196, 196);
+  width: 70%;
+  outline: none;
+  padding-left: 1rem ;
+}
+
+.subcribe-input:hover,
+.subcribe-input:active {
+  border: 1px solid #ffb74d;
+}
+
+.subcribe-input::placeholder {
+  color: rgb(196, 196, 196);
+  font-size: 1.2rem;
+}
+
+/* Main news section */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.subheader {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: "Lato",sans-serif;
+  color: #555;
+
+}
+
+/* Main news section */
+h1 {
+  text-align: center;
+}
+
+.main-news-section{
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.main-news-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Featured News Section */
+.background-color {
+  background-color: #fbe9e7 ;
+}
+
+.news-container {
+  grid-gap: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(365px,1fr)) ;
+}
+
+/* News-box animation */
+.news {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 2.4rem;
+  box-shadow: 5px 5px 20px rgba(151, 116, 19, 0.116);
+}
+
+.news:hover {
+  background-color: #ffccbc;
+  transform: translate(0, -5px);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.news-text-box {
+  padding: 2.4rem 0;
+}
+
+.news-img{
+  width: 100%;
+}
+
+/* The news's title is clickable  */
+.news-link {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.news-subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: "Lato",sans-serif;
+  color: #555;
+}
+
+/*--- Media query ---*/
+@media all and (min-width: 768px) {
+
+  .tablet-nav {
+      display:flex;
+  }
+  .nav, 
+  .mobile-btn,
+  .mobile-nav-btn {
+      display: none;
+  }
+ 
+  .container {
+      padding: 5.2rem ;
+  }
+  
+  /* Main news */
+  .main-news-section {
+      grid-template-columns: 45% 55%;
+  }
+
+  h1 {
+      text-align: left;
+  }
+  
+  /* Main news */
+  .header-text {
+      grid-row: 1/2;
+      padding-right: 3.2rem;
+  }
+
+  .input-form {
+      display: flex;
+  }
+
+  /* Featured news */
+  .heading-secondary {
+      font-size: 3.6rem;
+  }
+
+  .subheader,
+  .news-subtitle{
+      display: inline-block;
+  }
+
+  .news-text-box {
+      padding: 3.2rem 0;  
+  }
+  
+  .news-link {
+      font-size: 2.4rem;
+  }  
+}
+
+@media all and (min-width: 1040px) {
+  
+  /* Hide mobile and tablet */
+  .tablet-nav, 
+  .nav-element{
+      display: none;
+  }
+
+   /* Styling desktop navbar */
+  .nav, 
+  .desktop-nav,
+  .main-nav {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .desktop-nav {
+      gap: 4.8rem;
+      list-style: none;
+  }
+
+  .title-link {
+      font-size: 4.2rem;
+  }
+
+  .subheader {
+      font-size: 1.8rem;
+      line-height: 24px;
+  }
+}
+
+
+
