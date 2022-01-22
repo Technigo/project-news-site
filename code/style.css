@@ -1,12 +1,13 @@
-html {
-  box-sizing: border-box;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(221, 16, 16);
+  width: 100%;
   background: linear-gradient();
   font-family: Noto sans, sans-serif;
-  margin: 0;
 }
 
 header {
@@ -151,8 +152,13 @@ label {
   box-shadow: 2px 2px 4px 3px rgba(0,0,0,.1);
 }
 
+.small-news-link {
+  text-decoration: none;
+}
+
 .page-bottom {
   background-color: powderblue;
+  width: 100%;
   margin: 0;
   padding: 2em;
   text-align: center;
