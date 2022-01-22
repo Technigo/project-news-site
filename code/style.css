@@ -21,7 +21,7 @@ body {
   background-color: #a3baca;
 }
 
-header {
+.main-header {
   height: 5rem;
   display: flex;
   justify-content: flex-start;
@@ -30,11 +30,6 @@ header {
   padding: 1rem 0;
   background-color: #006989;
   color: white;
-}
-
-/*Lägger in den här lite tillfälligt bara för att se fonten*/
-header h1 {
-  font-family: 'Balsamiq Sans', cursive;
 }
 
 nav {
@@ -69,64 +64,119 @@ nav a {
 
 .big-news {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
   gap: 0;
+  border: 1px solid #007090;
 }
 
 .big-news-child {
-  padding: 2.5rem;
-  border: 1px solid #007090;
+  padding: 1rem;
+  
   background-color: #EAEBED;
 }
-
 
 .big-news img {
   max-width: 100%;
   height: auto;
 }
 
+.big-news h2 {
+  margin: 1rem 0;
+}
+
+.big-news p {
+  font-size: 0.8rem;
+}
+
 /*Other news content start here */
 
+/*Osäker på om jag ska ha grid eller flex*/
+
+/*Går också att köra display block?*/
+
 .other-news {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  margin: 1rem;
 }
 
 /*Ändra kanske lite här*/
 .card {
-  display: grid;
+  /*display: grid;
   grid-template-rows: max-content 200px 1fr;
+  */
   padding: 1rem;
-  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #EAEBED;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  background-color: lightgrey;
+}
+
+.card-header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background-color: #006989;
+  color: white;
 }
 
 .card img {
   max-width: 100%;
+  height: auto;
 }
+
+footer {
+  background-color: #006989;
+  color: white;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
 
 /* Tablet media queries */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) { 
+  body {
+    background-color: white;
+  }
+
   nav {
     display: block;
     /*Denna ändrar ordningen så att nav kommer före länkarna i header flex-boxen*/
     order: -1;
   }
 
-  header {
+  .main-header {
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
-  header h1 {
+  .main-header h1 {
     display: none;
   }
 
+  /*Ändra denna till flex?*/
   .big-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  }
+
+  .big-news-child {
+    border: 0;
+  }
+
+  .other-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
@@ -138,7 +188,7 @@ nav a {
     display: block;
   }
 
-  header {
+  .main-header {
     justify-content: space-between;
   }
 
@@ -157,6 +207,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
+    margin: 2rem 0;
   }
   
 }
