@@ -25,20 +25,22 @@
     margin: 40px 60px 0 60px;
     padding: 20px;
     overflow: hidden;
-    height: 140pxx;
+    height: 140px;
    
   }
+
   .logo-type {
     display: flex;
     justify-content: flex-start;
-    height: 140px;
-    width: 200px;
+    width: 12%;
+    height: auto;
   
   }
   
   .logo-img {
     align-self: center;
-    height: 120px;
+    width: 80%;
+    height: auto;
     -ms-flex-align: start;
     flex-shrink: 0;
   }
@@ -50,14 +52,14 @@
 
   h1 {
     font-family: 'Righteous', cursive;
-    font-size: 60px;
+    font-size: 400%;
     color: rgb(190, 229, 255);
     margin-bottom: 0;
     padding-top: 0;
   }
 
   .kids-ed {
-   font-size: 20px;
+   font-size: 40%;
    margin-top: 0;
    
   }
@@ -68,6 +70,8 @@
     align-self: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    width: 40%;
+    height: 20%;
     background-color: rgb(19, 19, 31);
     -webkit-border-radius: 15px;
     justify-content: space-evenly;
@@ -76,9 +80,9 @@
 
   .nav-links {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
+    font-size: 100%;
     padding: 0 30px 0 30px;
-    align-self: flex-end;
+    align-self: center;
   
   }
 
@@ -116,8 +120,8 @@
   .big-news-container{
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
+    align-content: center;
     /* align-content: center; */
     /* justify-content: space-evenly; */
     border: 5px solid black;
@@ -129,14 +133,14 @@
 
   .big-item1 {
     display: flex;
-    justify-content: flex-end;
-    margin: 10px 60px 0 40px;
+    justify-content: center;
+    margin: 20px 60px 0 40px;
   }
 
   h3 { 
-    margin: 0;
-    width: 500px;
-    height: 300px;
+    margin: 20px 0 0 10px;
+    padding: 0;
+    font-size: 70%;
     color: rgb(4, 6, 8);
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
@@ -146,16 +150,16 @@
 
   .big-item2 {
     display: flex;
+    justify-content: flex-end;
     margin: 10px 40px 10px 0;
   }
 
   .big-image {
-    align-self: center;
-    height: 390px;
-    margin: 0;
+    width: 80%;
+    height: auto;
     border-radius: 10%;
-    filter: drop-shadow(5px 5px rgb(0, 0, 0));
-    object-fit: fill;
+    filter: drop-shadow(5px 5px rgb(0, 168, 118));
+    overflow: hidden;
   }
 
 
@@ -176,18 +180,18 @@
   
   }
   
-  .news1, .news2, .news3 {
+  .news1, .news2, .news3, .news4, .news5, .news6 {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 20px;
+    margin: 10px 40px 40px 10px;
     height: 250px;
-    width: 300px;
+    width: auto;
     justify-content: center;
     }
   
   
-  .news4, .news5, .news6 {
+  /* .news4, .news5, .news6 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -196,7 +200,7 @@
     margin: 20px;
     height: 250px;
     width: 300px;
-  }
+  } */
  
   p {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -216,16 +220,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    /* height: 20px; */
-    /* width: 1400px; */
     margin: 0 0 60px 60px;
-    /* background-color: blue; */
+  
   }
   
   .footer-list {
     margin: 0 0 0 0x;
     padding: 20px 0 20px 0;
-    font-size: 15px;
+    font-size: 100%;
     color: rgb(199, 195, 136);
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -241,9 +243,15 @@
   @media (min-width: 669px) and (max-width: 1024px) {
 
 
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
     /* --------header section-------- */
     h1 {
-      font-size: 50px;
+      font-size: 250%;
+      margin: 45px 0 0 25px;
     }
    
     .nav-bar {
@@ -252,28 +260,34 @@
      justify-content: flex-start;
      align-items: ;
      padding: 10px;
-     height: 90px;
-     width: 80px;
+     height: 100%;
+     width: 10%;
      
    }
    
    .nav-links {
-     font-size: 12px;
+     font-size: 70%;
      padding: 0;
      margin-top: 5px;
      
+   }
+
+   .logo-img {
+     width: 100%;
+     height: auto;
    }
 
    /* --------big news section--------- */
    
     .big-news-container {
        flex-direction: row;
-       justify-content: flex-end;
+       justify-content: space-evenly;
+       
       
        
      }
      .big-item1 { 
-       margin: 0;
+       margin: 0 0 0 80px;
        padding: 0;
        text-align: center;
        box-sizing: content-box;
@@ -282,24 +296,26 @@
    
      h3 {
 
-       font-size: 70px;
+       font-size: 300%;
        text-align: center;
-       height: 300px;
-       width: 350px;
        margin: 0;
        padding: 20px 0 0 20px;
   
      }
   
      .big-item2 {
+       width: 50%;
+       height: auto;
+       margin: 0 0 0 100px;
+       padding: 10px;
        
      }
    
      .big-image {
-       width: 400px;
-       height: 300px;
-       margin-left: 60px;
-       border: 3px solid rgb(124, 19, 101);
+       width: 100%;
+       height: auto;
+       margin-left: 40px;
+       border: 1px solid rgb(124, 19, 101);
        filter: drop-shadow(5px 5px rgb(124, 19, 101));
        overflow: hidden;
      }
@@ -307,7 +323,20 @@
      /* -------small news section--------- */
    
      .small-news-container {
-       padding: 0 0 0 90px
+       padding: 0 0 0 90px;
+       flex-wrap: wrap;
+       height: 100%;
+     }
+
+     .news1, .news2, .news3, .news4, .news5, .news6 {
+
+      width: 40%;
+      height: auto;
+     }
+
+     .small-img {
+       width: 100%;
+       height: auto;
      }
   
       }
@@ -321,49 +350,65 @@
 
 
     header {
-      flex-direction: row;
+      /* flex-direction: row; */
+      flex-wrap: nowrap;
+      align-content: center;
     }
 
     .logo-type {
-      width: 65px;
+      width: 70%;
+      height:  auto;
+      margin: 0;
     }
+
+
+  .head-site {
+    width: 40%;
+    height: auto;
+    margin: 0 0 20px 20px;
+   
+  }
+
 
     .logo-img {
-      width: 65px;
-      height: 65px;
+      width: 100%;
+      height: auto;
     }
-    .head-site {
-      margin-left: 20px;
-    }
-
-    h1 {
-      font-size: 40px;
-    }
+   
+    /* h1 {
+      height: %;
+    } */
 
     .nav-bar {
+      background: rgb(47, 10, 68);
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: ;
+      justify-content: center;
+      width: auto;
+      height: 50%;
+      margin: 0 0 0 20px;
       padding: 10px;
-      height: 60px;
-      width: 60px;
+      
       
     }
 
     .nav-links {
-      font-size: 10px;
-      padding: 0;
       
-      
+      font-size: 18%;
+      padding: 0 0 10px 0;
+      align-self: center;
+  
     }
 
     h1 {
-      font-size: 25px;
+      font-size: 150%;
       padding: 35px 0 0 0;
+      margin: 0;
     }
+
     .kids-ed {
-      font-size: 10px;
+      font-size: 25%;
+      margin: 0;
      
     }
 
@@ -371,42 +416,84 @@
 
     .big-news-container {
       flex-wrap: wrap-reverse;
-      flex-direction: row;
-      justify-content: center;
-      
+      /* flex-direction: row; */
+   
     }
 
     .big-item1 {
-      height: 50px;
+      height: 100%;
+      margin: 0 0 20px 0;
   
     }
 
     h3 {
-      font-size: 30px;
+      font-size: 130%;
       text-align: center;
       
     }
 
     .big-item2 {
-      width: 550px;
+      margin: 10px;
+      width: 100%;
+      height: auto;
+      /* border: 2px solid red; */
       border-radius: 10%;
-      margin-left: 30px;
+      filter: drop-shadow(5px 5px rgb(124, 19, 101));
       overflow: hidden;
-      filter: drop-shadow(8px 8px rgb(15, 31, 29));
+      
       
     }
 
     .big-image {
+      width: 100%;
+      height: auto;
+      margin-left: ;
+      overflow: hidden;
       border: 2px solid black;
     }
 
    /* -----------small news section------- */
 
     .small-news-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+      height: 100%;
+      padding: 0;
+     
+    }
+  
 
-      height: 2000px;
-      padding: 0 0 0 90px;
+    .news1, .news2, .news3, .news4, .news5, .news6 {
+      
+      margin: 20px;
+      justify-content: space-evenly;
+    
+      
+    }
+    .small-img {
+      width: 100%;
+      height: auto;
+      
     }
 
-}
+    .footer {
+    justify-content:space-evenly;
+    }
+
+    .footer-list {
+      color: chocolate;
+      font-size: 50%;
+      margin: 0 60px 0 0;
+    }
+
+    .one {
+      margin: 0;
+    }
+
+    .two {
+      margin: 0;
+    }
+  
+  }
 
