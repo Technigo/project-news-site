@@ -72,6 +72,7 @@ header{
   margin-left: 20px;
   margin-top: 10px;
   animation-duration: 3s;
+
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -146,10 +147,12 @@ section p{
 /*for tablet*/
 @media screen and (min-width: 768px) {
   .mobilemenu{display: none;}
+
   .tabanddesktopmenu{
     display: grid;
     font-size: 16px;
    }
+
   .item1 { grid-area: logo; }
   .item2 { grid-area: txtTitle;
   display: none;}
@@ -181,27 +184,21 @@ section h1{
   animation-name: slidein;
 }
 
-
 @keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%;
   }
-
   75% {
     font-size: 300%;
     margin-left: 25%;
     width: 150%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-
-
-
 .mainText{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -235,6 +232,12 @@ section p{
     justify-items: right;
     font-size: 15px;
   }
+
+  section h1{
+    animation-fill-mode: none;
+  }
+  
+
 .mainText{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
