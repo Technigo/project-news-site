@@ -1,23 +1,41 @@
 
 /*
-Color scheme från coolors.co som jag delvis använt:
-EAEBED
-006989
-A3BAC3
-007090
-01A7C2
-
+Color scheme from Hook Agency:
+Dark green #164A41
+Medium green #4D774E
+Light green #9DC88D
+White #FFFFFF
+Natural yellow #F1B24A
 */
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 16px;
 }
 
 body {
-  margin: 0 auto;
-  background-color: #a3baca;
+  margin: 0;
+  background-color: #4D774E;
+  /*background-color: #9DC88D;*/
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+footer p {
+  font-family: 'Merriweather', serif;
 }
 
 .main-header {
@@ -26,13 +44,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
-  background-color: #006989;
+  background-color: #164A41;
   color: white;
 }
 
 .main-header h1 {
-  font-family: monospace;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 nav {
@@ -47,7 +64,7 @@ nav ul li {
 nav a {
   text-decoration: none;
   padding: 0 1rem;
-  color: white;
+  color: #F1B24A;
 }
 
 nav a:hover {
@@ -55,16 +72,9 @@ nav a:hover {
   border: 1px solid white;
 }
 
-/* Det här behöver ändras sen */
+
 .logo-container {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  margin: 0 1rem;
-  background-color: lightgreen;
-  color: white;
-  display: grid;
-  place-items: center;
+  padding: 1rem;
 }
 
 .main-container {
@@ -84,7 +94,7 @@ nav a:hover {
 
 .big-news-child {
   padding: 1rem;
-  background-color: #EAEBED;
+  background-color: #9DC88D;
   
 }
 
@@ -107,18 +117,15 @@ nav a:hover {
 
 /*Other news content start here */
 
-/*Osäker på om jag ska ha grid eller flex*/
-
-/*Går också att köra display block?*/
-
 .other-news {
   margin: 1rem;
+  
 }
 
 .card {
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #EAEBED;
+  background-color: #FFFFFF;
   margin-bottom: 1rem;
 }
 
@@ -126,26 +133,24 @@ nav a:hover {
   background-color: lightgrey;
 }
 
-.card-header {
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding: 1rem 0;
-  background-color: #006989;
-  color: white;
-}
-
 .card img {
   max-width: 100%;
   height: auto;
 }
 
+.other-news-content {
+  text-align: center;
+}
+
+.other-news-content p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
 footer {
-  background-color: #006989;
+  background-color: #164A41;
   color: white;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,13 +161,9 @@ footer {
 /* Tablet media queries */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) { 
-  body {
-    background-color: white;
-  }
-
   nav {
     display: block;
-    /*Denna ändrar ordningen så att nav kommer före länkarna i header flex-boxen*/
+    /*This changes the order of the items in the header*/
     order: -1;
   }
 
@@ -170,6 +171,7 @@ footer {
     justify-content: space-between;
   }
 
+  /*Hides the header h1*/
   .main-header h1 {
     display: none;
   }
