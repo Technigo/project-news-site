@@ -1,10 +1,10 @@
 # News Site
 
 Replace this readme with your own information about your project. 
+Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+
 A news site about animals for my second project for Technigo Bootcamp 2022. 
 It is responsive to diffrent screens. I think I managed to make it responsive to firefox as well, but unfortunately not to safari. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
