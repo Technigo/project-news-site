@@ -11,6 +11,11 @@ body {
 
 
 /* Header with logo and soc-med links in fullscreen and only "CNN" on small screen*/
+
+header {
+  margin: 1rem;
+}
+
 .CNN {
   text-decoration: none;
   text-align: center;
@@ -58,9 +63,16 @@ a {
 
 /*links to soc-med*/
 .soc-med {
-  display: none;
+  display: none;  
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.soc-icon:hover,
+.nav-links:hover,
+.xpand-button:hover {
+  color: rgb(167, 15, 15);
 }
 
 /* News ticker */
@@ -80,16 +92,12 @@ a {
 }
 
 .nav-links {
-  color: black;
   font-size: min(2rem, 4vw);
   padding: 0.5rem;
   max-width: max-content;
   font-weight: 500;
 }
 
-.nav-links:hover {
-  color: red;
-}
 
 h1 {
   font-size: 4rem;
@@ -103,10 +111,10 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  /* margin: 1rem 0;
-  max-width: 95vw;
-  max-height: 50rem;
-  gap: 20px; */
+  margin: 1rem 0;
+  /* max-width: 95vw; */
+  /* max-height: 50rem; */
+  gap: 20px;
 }
 
 .big-pic {
@@ -144,13 +152,47 @@ h1 {
   transition: 400ms;
 }
 
+/* first row of the card with category and 'more' button*/
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.xpand-button {
+  color: rgb(104, 104, 104);
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+}
+
+
+
+/*Second row of cards with pic*/
 .card-pic {
   max-width: calc(100vw - 2rem);
+}
+
+/*Third row of card with title of article*/
+.card-title {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/*Fourth row of card with article content
+  hidden before 'more' button is clicked*/
+.content {
+  padding: 1rem;
+  margin: 0;
 }
 
 .hide {
   display: none;
 }
+
+
+
 
 /* Changes header to flex container for larger screens 
     makes virus logo and soc-med links visible on large screens*/
@@ -168,7 +210,7 @@ h1 {
   }
 
   .soc-med {
-    display: block;
+    display: grid;
   }
 }
 
