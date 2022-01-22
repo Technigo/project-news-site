@@ -31,31 +31,35 @@
           <li class="weather"><a target="_blank" href="https://www.svt.se/vader/">Weather</a></li>
         </ul>
       </nav>
-        <label class="mobile-wrap-item1" for="checkbox">
-          <i class="fa fa-bars menu-icon"></i>
-        </label>
-        <a class="mobile-wrap-item2" href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg" class="logo-mobile"
-            alt="Logo Maple News"></a>
-        <time class="mobile-wrap-item3">
-          <!-- Show date and time
+      <label class="mobile-wrap-item1" for="checkbox">
+        <i class="fa fa-bars menu-icon"></i>
+      </label>
+      <a class="mobile-wrap-item2" href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg"
+          class="logo-mobile" alt="Logo Maple News"></a>
+      <time class="mobile-wrap-item3">
+        <!-- Show date and time
                 Link Stack Overflow used:
                 https://stackoverflow.com/questions/32540044/html-display-current-date/32540850#32540850 -->
-          <script> document.write(new Date().toLocaleDateString());
-          </script>
-        </time>
+        <script> document.write(new Date().toLocaleDateString());
+        </script>
+      </time>
     </div>
   </header>
   <!-- END Header with logo, links and date only visible on mobile (max 1024px) -->
 
   <!-- START Header with logo, links and date only visible on desktop (min 1025px) -->
   <header class="desktop">
-    <a href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg" alt="Logo Maple News"></a>
-    <a class="navbar news" target="_blank" href="https://www.svt.se">News</a>
-    <a class="navbar law" target="_blank" href="https://www.wsj.com/news/business/law-legal">Law & Business</a>
-    <a class="navbar travel" target="_blank" href="https://edition.cnn.com/travel/">Travel</a>
-    <a class="navbar sports" target="_blank" href="https://www.lapresse.ca/sports/">Sports</a>
-    <a class="navbar society" target="_blank" href="https://www.healthline.com/health-news">Society</a>
-    <a class="navbar weather" target="_blank" href="https://www.svt.se/vader/">Weather</a>
+    <a title="Back to homepage" href="https://maple-news.netlify.app"><img src="./other-images/logo-maple-news.svg"
+        alt="Logo Maple News"></a>
+    <a class="navbar news" target="_blank" title="News by SVT" href="https://www.svt.se">News</a>
+    <a class="navbar law" target="_blank" title="Law & Business by Wall Street Journal"
+      href="https://www.wsj.com/news/business/law-legal">Law & Business</a>
+    <a class="navbar travel" target="_blank" title="Travel by CNN" href="https://edition.cnn.com/travel/">Travel</a>
+    <a class="navbar sports" target="_blank" title="Sports by La Presse"
+      href="https://www.lapresse.ca/sports/">Sports</a>
+    <a class="navbar society" target="_blank" title="Society by Healthline"
+      href="https://www.healthline.com/health-news">Society</a>
+    <a class="navbar weather" target="_blank" title="Weather by SVT" href="https://www.svt.se/vader/">Weather</a>
     <time>
       <!-- Show date and time
             Link Stack Overflow used:
@@ -70,7 +74,7 @@
   <header class="ticker-wrap">
     <div class="ticker">
       <div class="ticker-item"> <img src="./other-images/maple-leaf.png"">BREAKING MAPLE NEWS<img
-          src="./other-images/maple-leaf.png"> </div>
+          src=" ./other-images/maple-leaf.png"> </div>
       <div class="ticker-item">Stolen barrels of maple syrup have been found.</div>
       <div class="ticker-item">MORE TO COME - STAY TUNED</div>
       <div class="ticker-item"> <img src="./other-images/maple-leaf.png">BREAKING MAPLE NEWS<img
@@ -111,7 +115,7 @@
       <div class="card weather">
         <a class="card-picture" target="_blank"
           href="https://dailyinterlake.com/news/2021/dec/21/montanas-maple-syrup-producers-face-climate-change/">
-          <img src="./news-images/weather-montana.jpg" alt="Demonstration against global warming">
+          <img src="./news-images/weather-montana.jpg" alt="Demonstration against global warming" title="Read more">
         </a>
         <a class="card-headline" target="_blank"
           href="https://dailyinterlake.com/news/2021/dec/21/montanas-maple-syrup-producers-face-climate-change/">Montana's
@@ -233,16 +237,20 @@
   <footer>
     <div class="copyright">
       <span>Created by Nadia Lefebvre 🐘</span>
-      <img src="./other-images/logo-technigo.svg" alt="Logo Technigo" width=30px">
+      <a target="_blank" title="Technigo" href="https://www.technigo.io"><img src="./other-images/logo-technigo.svg"
+          alt="Logo Technigo">
+      </a>
     </div>
     <div class="follow">
       <span>Follow</span>
-      <a target="_blank" href="https://www.linkedin.com/in/nadiainsweden/" <i class="fab fa-linkedin"></i>
+      <a target="_blank" title="Linkedin Nadia Lefebvre" href="https://www.linkedin.com/in/nadiainsweden/" <i
+        class="fab fa-linkedin"></i>
       </a>
-      <a target="_blank" href="https://github.com/nadialefebvre" <i class="fab fa-github"></i>
+      <a target="_blank" title="GitHub Nadia Lefebvre" href="https://github.com/nadialefebvre" <i
+        class="fab fa-github"></i>
       </a>
-      <a target="_blank" href="https://stackoverflow.com/users/17550223/nadia-lefebvre" <i
-        class="fab fa-stack-overflow"></i>
+      <a target="_blank" title="Stack Overflow Nadia Lefebvre"
+        href="https://stackoverflow.com/users/17550223/nadia-lefebvre" <i class="fab fa-stack-overflow"></i>
       </a>
     </div>
   </footer>

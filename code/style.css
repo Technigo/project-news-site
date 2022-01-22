@@ -305,7 +305,7 @@ main {
     display: -webkit-box;
     max-width: 800px;
     height: 168px;
-    /* height calculation: font-size*line-height*lines-to-show; */
+    /* height calc. is font-size*line-height*lines-to-show */
     margin: 0 auto;
     text-align: justify;
     font-size: 20px;
@@ -314,6 +314,7 @@ main {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    /* needs values in px in order to work */
   }
 }
 
@@ -376,11 +377,12 @@ main {
 
 /* START Footer */
 
+/* Bigger padding right and left for the footer than header and main so there is enough space to be able to touch all icons */
 footer {
   display: flex;
   justify-content: space-between;
   background-color: #82171A;
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 2rem;
   font-size: 1rem;
   font-family: 'Raleway', sans-serif;
 }
@@ -392,10 +394,17 @@ footer {
   column-gap: 0.5rem;
 }
 
-/* Bigger padding on mobile so there is enough space to be able to touch all icons properly */
+.copyright img {
+  width: 30px;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
 @media (min-width: 1025px) {
   footer {
-    padding: 0.5rem;
+    padding: 2rem 6rem;
   }
 }
 
