@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -34,12 +34,6 @@ nav {
 .logo {
   width: 100px;
   margin-top: 4px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
-  font-weight: bolder; */
 }
 
 a {
@@ -87,8 +81,15 @@ a {
   margin-bottom: 5px;
 }
 
-/* The other news */
+h2 {
+  color: #13233d;
+}
 
+p {
+  font-weight: lighter;
+}
+
+/* The other news */
 .other-news {
   display: flex;
   flex-direction: column;
@@ -127,7 +128,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* Footer wiht social media */
+/* Footer with social media */
 #lab_social_icon_footer {
   padding: 15px 0;
   background-color: #13233d;
@@ -161,7 +162,6 @@ a {
     display: flex;
     flex-direction: row;
     padding: 25px;
-    /* background-color: #ffafaf; */
   }
   
   .column {
@@ -169,12 +169,12 @@ a {
   }
   
   .image {
-    flex: 2;
+    flex: 1;
   }
 
   .main-img {
     max-width: 100%;
-    border: dotted 4px #13233d;
+    border: solid 10px #ffafaf;
 
   }
   
@@ -208,7 +208,7 @@ a {
     align-items: center;
     width: 100%;
     margin: 0px;
-    border: solid 10px #13233d;
+    border: solid 5px #13233d;
   }
 
   .article-text {
@@ -222,9 +222,9 @@ a {
   
    /* Logo & Navbar */
   .menu {
-      align-items: center;     
-      flex-wrap: nowrap;
-      background: none;
+    align-items: center;     
+    flex-wrap: nowrap;
+    background: none;
   }
 
   .logo {
@@ -248,22 +248,24 @@ a {
   .column {
     display: flex;
     justify-content: center;
-    
   }
   
   .image {
     flex: 2;
     align-items: center;
-    
   }
 
   .main-img {
-    max-width: 75%;
+    max-width: 90%;
   }
   
   .article {
-    flex: 1; 
+    flex: 2; 
     margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
 
@@ -278,16 +280,6 @@ a {
     display: flex;
     flex-direction: row;
   }
-
-  /* .other-news-image {
-    flex: 2;
-    max-width: 100%;
-  }
-
-  .news-article img{
-    opacity:0.5;
-    transition: 1s ease;
-  } */
     
   .news-article img:hover{
     opacity:1;
@@ -317,5 +309,4 @@ a {
   #lab_social_icon_footer #social-fb:hover {
     color: #3B5998;
   }
-
 }
