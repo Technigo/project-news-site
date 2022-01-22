@@ -67,15 +67,15 @@ display: flex;
        }
      }
 
-     @media (min-width: 668px) {
-       .icon-box a {
-         display: flex;        
-       } 
-     }
+@media (min-width: 668px) {
+.icon-box a {
+display: flex;        
+ } 
+}
  
-  @media (min-width: 668px) {
+@media (min-width: 668px) {
 .icon1 {
-  background-color: white;
+background-color: white;
   }
 }
   
@@ -99,11 +99,6 @@ margin-top: 25px;
 margin-left: 25px;
 margin-right: 25px;
 margin-bottom: 50px;
-/* does not work on top
-border-style:solid;
-border-color: black;
-border-width: thin;
-padding: 15px;*/
 }
 
 .big-news-article {
@@ -157,6 +152,8 @@ width: 300px;
 
 .other-news a {
 text-decoration: none;
+color: black;
+background-color: ;
 border-style:solid;
 border-color: grey;
 border-width: thin;
