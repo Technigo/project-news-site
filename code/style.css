@@ -1,174 +1,241 @@
 *{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-}
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 
+}
 body{
-  background-image:url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6058b1eed388d3a4a0831d09%2F960x0.jpg%3Ffit%3Dscale);
-  background-repeat: no-repeat;
+  background-image: url("https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/iStock_000019745738Medium_0-772x579.jpg");
   background-attachment: fixed;
-  background-size: 100% 100%;
-  font-family: fantasy;
-  
+  background-size:100% 100%;
+  min-height: 100vh;
 }
-body img{
-  align-items: center;
+
+p {
+		line-height: 2rem;
+		margin: 1.5rem; 
 }
-header{ 
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
+
+/* Navbar */
+nav {
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@0;1&display=swap');
+	padding: 0 5%;
+	height: 100px;
+	background: linear-gradient(222deg, #191b1b, #736bc7, #3a09b5) fixed;
+}
+.logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: #fff;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+nav .links li:hover{
+	background-color: tomato;
+	border-radius: 15px;
+	opacity: 75%;
+	
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+/* My flexbox big news*/
+
+.flexbox-container {
+	flex-direction: row;
+	font-size: 30px;
+	text-align: center;
+	 
+}
+.flexbox-img{
+	padding-top: 15px;
+	
+}
+.flexbox-text{
+justify-items: center;
+width: 100%;
+padding-top:3rem;
+}
+
+/* My Grid smaller news  */
+
+.grid-text{
+	text-align: center;
+	color: white;
+	display: grid;
+	padding: 2rem;
+}
+.grid-contanier {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.5rem;
+  }
+
+  .child-1, .child-2, .child-3, .child-4, .child-5, .child-6, .child-7, .child-8{
+	margin: 15px;
+	border-radius: 20px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	
+  }
+  .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7,.img-8, .img-flex {
+	border-radius: 30px;
+	box-shadow: 1px 1px 5px black;
+
+}
+footer  {
+background: linear-gradient(222deg, #191b1b, #736bc7, #3a09b5) fixed;
+padding:15px;
+text-align: center;}
+
+footer i:hover{
+	color:tomato;
+}
+
+
+/* Phones */
+
+@media (max-width:667px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	
+	.flex-container {
+		flex-direction: column;
+	  }
+	  .flexbox-text{
+		justify-items: center;
+		width: 100%;
+		}
+		
+
+
+	.grid-contanier {
+	justify-items: center;
+	  display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column: span 1;
+	}
+	p{
+		font-size: 14px;
+    line-height: 20px; 
+    flex-wrap: wrap;
+	}
 
 }
 
-.navbar {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
+/* TABLET */
+@media (min-width:668px){
+
+.flexbox-container{
+	flex-direction: column;
 
 }
-.navbar-links ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-
-.toggle-button{
-  position: absolute;
-  top: 12px;
-  right: 15px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
- 
-}
-.toggle-button .bar{
-  height: 3px;
-  width: 100%;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  
-}
-.navtext{
-  font-size: 20px;
-  gap: 3rem;
-}
-a, a:visited{
-  color: whitesmoke;
-}
-
-.bi bi-tsunami{
-  color: whitesmoke;
-  
-}
-
-.logoimg{
-  color:whitesmoke ;
-  margin-left: 30px;
-}
-
-label.logo{
-  color: antiquewhite;
-  font-size:40px;
-  line-height: 80px;
-  padding:  50px;
-  
-}
-nav{
-  width: 100%;
-  background: linear-gradient(270deg, #a3bcee, #3e2aae, #260675) fixed;
-  height: 60px;
-
-}
-
-nav ul{
-  float: right;
-  margin-right: 20px;
-
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-  box-sizing: border-box;
-}
-
-nav ul li a{
-  text-decoration: none;
-padding: 1rem;
-display: block;
-}
-nav li:hover{
-  background-color: #56647f;
-}
-li{
-  display: inline;
-  font-size: 30px;
-  color: whitesmoke;
-
-}
-
-.big-news{
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  
-}
-.img-box{
-  margin: 30px;
-  box-shadow: #a3bcee;
-  border:1px solid;
-  box-shadow: 2px 2px;
-}
-.big-news-text{
-  padding: 5rem;
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px; 
-  width: 400px;
-  color: whitesmoke;
+.flexbox-text{
+	justify-items: center;
+	width: 100%;
 }
 .grid-contanier{
-  grid-gap: 25px;
-  padding:20px;
-  width: 300px;
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-
-  
+	justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
-
-.grid-pic1, .grid-pic2, .grid-pic3, .grid-pic4{
-  height: 300px;
-  background: linear-gradient(270deg, #a3bcee, #3e2aae, #260675) fixed;
-  padding:3px;
-  
-  
-}
-
-.grid-contanier > img{
-  box-shadow: #a3bcee;
-  border:1px solid;
-  padding: 10px;
-  box-shadow: 2px 4px;
-  width: 100%;
-  height: 300%;
-  object-fit: cover;
+ 
 }
 
 
+/* DESKTOP */
 
+@media (min-width:1024px){
 
-
-
-
+.flexbox-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.flexbox-text{
+	justify-items: center;
+	width: 40%;
+	padding-top:3rem;
+}
+.grid-contanier{
+	justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr)
+	
+}
+}
