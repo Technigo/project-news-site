@@ -4,14 +4,6 @@ html {
   color: black;
 }
 
-/* This is a media query INTE KLAR*/
-@media (min-width: 1025px) {
-  .other-news {
-   display: flex;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
- }
-
  /* This is styling for the header */
 header {
   font-family: 'Special Elite';
@@ -23,9 +15,12 @@ header {
 
 /* This is styling for the navbar */
 .topnav {
-  background-color: rgb(210, 223, 137);
+  background-color:#e9d08c;
   overflow: hidden;
   text-align: center;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 25px;
 }
 
 /* Styling links inside the navigation bar */
@@ -35,7 +30,8 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: bold;
   font-family: 'Special Elite';
 }
 
@@ -47,37 +43,63 @@ header {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: brown;
-  color: red;
   font-family: 'Special Elite';
 }
 
 h1 {
-   color: black;
-   font-family: 'Special Elite';
-   text-align: center;
-  }
+  display: flex;
+  position: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Special Elite';
+  text-align: center;
+  margin: 50pt;
+  padding: 50px;
+}
 
 h2 {
   color: black;
   font-family: 'Special Elite';
-  text-align: center;
+  font-style: underline;
+  font-size: 120px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.other-news {
+  display: flex;
+  position: center;
+  justify-content: center;
+  border: black;
+  border-width: 1rem;
+  border-style: solid;
+  border-spacing: inherit;
 }
 
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
-  background-color: rgb(168, 169, 170);
-  padding-bottom: 25 px;
-  padding-left: 25 px;
-  padding-right: 25 px;
-  padding-top: 25 px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #e9d08c;
+  margin: 1rem;
+  text-align: center;
 }
 
-.flex-container > div {
+.flex-child {
   background-color: #b39f9f;
+  border-radius: 8px;
   width: 300px;
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
   line-height: 75px;
   font-family: 'Special Elite';
@@ -85,17 +107,14 @@ h2 {
   color: black
 }
 
-/* This is styling for a picture */
-img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 /* This is styling for the footer */
 footer {
   text-align: right;
+}
 
-
+/* This is the media queries*/
+@media (min-width: 1025px) {
+  .other-news {
+   display: flex;
+     }
 }
