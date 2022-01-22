@@ -3,20 +3,185 @@
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/all.css">
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <body>
+      <header> <!-- Some kind of logo and navbar -->
+          <div class="container-with-logo-and-title">
+              <img
+              class="logo"
+              src="images/main-image.jpg"
+              alt="Bright Site logo" />
+              <h1>The Bright Site</h1>
+              <!-- <p>- on the brighter side of news</p> -->
+          </div>
+    
+          <div class="hamburger-nav-mobile">
+              <input type="checkbox" id="menu-toggle"/>
+              <label id="menu-label" for="menu-toggle">
+                  <i class="fas fa-bars fa-2x menu-icon"></i>
+              </label>
+              <ul id="dropdown-menu">
+                  <li href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Something</li>
+                  <li href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Something</li>
+                  <li href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Something</li>
+                  </ul>
+    
+          </div>
+    
+          <nav class="navbar-tablet-desktop">
+              <a class="nav-item" href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Home</a>
+              <a class="nav-item" href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Contact</a>
+              <a class="nav-item" href="https://unsplash.com/photos/8mxSINYFoSw" target="-blank">Instagram</a>
+          </nav>
+      </header>
+    
+    
+      <section class="big-news-container"> <!-- The big news content -->
+          <img
+          class="big-news-image"
+          src="images/main-doggy.jpg"
+          alt="Doggy" />
+    
+          <div class="big-text-tablet-desktop">
+              <h1>
+              Researchers say solution against dog allergies is 'within grasp'
+              </h1>
+              <p>
+              There may be hope on the horizon for those who suffer from dog allergies,
+              thanks to recent research efforts from Osaka Prefecture University in Japan.
+              Researchers looking to artificially induce immune tolerance have for the first time
+              identified candidates for those parts of the molecules that make up dog allergens -
+              which could give us a 'dog allergy vaccine'.
+              </p>
+          </div>cd
+      </section>
+     
+        <div class="big-text-mobile">
+            <input type="checkbox" id="check-news">
+                <h2>
+                Researchers say solution against dog allergies is 'within grasp'
+                </h2>
+            <div class="additional-content">
+                <p>
+                There may be hope on the horizon for those who suffer from dog allergies,
+                thanks to recent research efforts from Osaka Prefecture University in Japan.
+                Researchers looking to artificially induce immune tolerance have for the first time
+                identified candidates for those parts of the molecules that make up dog allergens -
+                which could give us a 'dog allergy vaccine'.
+                </p>
+            </div>
+            <label for="check-news">Read more...</label>
+        </div>
+      
+    
+      <section class="container-other-news"> <!-- The other news  -->
+          <a href="https://reasonstobecheerful.world/a-diet-rich-in-probiotics-could-climate-proof-coral-reefs/" target="-blank">
+              <div class="small-news">
+                  <img
+                  class="small-news-picture"
+                  src="images/coral-reef.jpg"
+                  alt="coral-reef-picture"/>
+                  <p>
+                  Bacteria to the rescue - probiotics could save our coral reefs
+                  </p>
+              </div>
+          </a>
+    
+         <a href="https://www.google.com" target="-blank">
+              <div class="small-news">
+                 <img
+                  class="small-news-picture"
+                 src="images/betty-white.jpg"
+                  alt="description"/>
+                  <p>
+                  Animal shelters flooded with donations in honor of Betty White
+                  </p>
+              </div>
+          </a>
+    
+         <a href="https://www.google.com" target="-blank">
+          <div class="small-news">
+              <img
+              class="small-news-picture"
+              src="images/main-image.jpg"
+              alt="description"/>
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              quos facere alias deserunt pariatur ullam nam?
+              </p>
+          </div>
+        </a>
+    
+        <a href="https://www.google.com" target="-blank">
+            <div class="small-news">
+                <img
+                class="small-news-picture"
+                src="images/boy-with-pet.jpg"
+                alt="description"/>
+              <p>
+              According to the new law, pets in Spain are now considered members of the family
+              which means they have additional rights.
+              </p>
+            </div>
+        </a>
+    
+        <a href="https://www.google.com" target="-blank">
+            <div class="small-news">
+                <img
+                class="small-news-picture"
+                src="images/main-image.jpg"
+                alt="description"/>
+    
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                quos facere alias deserunt pariatur ullam nam?
+                </p>
+            </div>
+        </a>
+    
+        <a href="https://www.google.com" target="-blank">
+            <div class="small-news">
+                <img
+                class="small-news-picture"
+                src="images/chameleon-picture.jpg"
+                alt="description"/>
+    
+                <p>
+                  Ecuadorian Indigenous leader honored with environmental prize for protecting
+                  500 000 acres of Amazon rainforest.
+                </p>
+            </div>
+        </a>
+    
+        <a href="https://www.google.com" target="-blank">
+            <div class="small-news">
+                <img
+                class="small-news-picture"
+                src="images/main-image.jpg"
+                alt="description"/>
+    
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                quos facere alias deserunt pariatur ullam nam?
+                </p>
+            </div>
+        </a>
+    
+      </section>
+    
+      <footer class="page-bottom">
+          <p>
+            "What's a moth's life motto?
+          </p>
+          <p>
+          Always look on the Bright Site"
+          </p>
+      </footer>
+    
   </body>
 </html>
