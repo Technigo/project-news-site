@@ -4,54 +4,86 @@
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
     </style>
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Foodies</title>
+    <link rel="stylesheet" href="./style.css">
+  
   </head>
   <body>
 
     <header>
       <!-- Some kind of logo and navbar -->
       <div class="flex-container">
-      <div class="flex-container-item"><img src="Images\wine-glass.png" class="logo" alt="Fooderz-logo">
-      <h1>Foodies</h1></div>
-
+      <img src="Images\wine-glass.png" class="logo" alt="Fooderz-logo">
+      <h1>Foodies</h1>
+        <nav class="links">
         <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="#news">Recipes</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
       </ul>
-    </div>
+      </nav>
+      </div>
     </header>
 
     <!-- The big news content -->
-    <section class="big-news">
-    <div class="big_article"><img src="Images\wine.jpg" class="big_photo">
-     <div class="text"> <div class="h1">Top 100 wine you have to drink before you die!</h1></div><div class="h2">The experts have spoken! Thanks to the optimal conditions 
-       last year was great for wineproducers. But which ones should you drink now and which ones should you put in your winecellar and forget 
-      about for ten years? And what should you drink to that delicious fish? Our experts have the complete list and all the answers. </h2></div><div></div>
-    </div>
     
-
-    </section>
-
+    <div class="row">
+      <div class="column_1">
+      <img src="Images\wine2.jpg" class="main-photo">
+      </div>
+      <div class="column_2">
+        <h2>Top 100 wines to drink before you die!</h2>
+        <p>Last year was a great year for the wineproducers! But how should you know which ones are most worth having and which ones you
+          should forget about? We met some of the greatest wineproducers in the world. Italy, France, Usa - you name it. Read all about which bottles they think you have to put in your cellar. </p>
+      </div>
+    </div>
+  
+    
     <section class="articles">
-      <div class="content"><img src="Images\pasta.jpg" class="article_photo"> <div class="h3">Looking for pasta?</div><div class="h2_">Pasta for dinner tonight?
+      <div class="content"><img src="Images\pasta.jpg" class="article_photo"> <div class="h3">Looking for pasta?</div><div class="h2_">Pasta for 
+        dinner tonight?
         Who can resist a good bolognese or carbonare? Well, I can't! Look through our recipes and see what you can find.
       </div></div>
-      <div class="content"><img src="Images\coffee.jpg" class="article_photo"> <div class="h3">Is coffee healthy?</div><div class="h2_">Some love it and 
-        some despise it. Whatever you think about the taste of the black gold it does have some health benefits! Read more about it.</div>
-      </div>
-      <div class="content"><img src="Images\vegetables.jpg" class="article_photo"> <div class="h3">New year - new me?</div><div class="h2_">A new year has begun
-        and for many of us that comes with new promises of a healthy lifestyle. But how long will it last? Read here about sustainable changes!</div>
-      </div>
-      <div class="content"><img src="Images\asian-food.jpg" class="article_photo"> <div class="h3">We are traveling to Japan!</div><div class="h2_">Sushi 
-        has become a huge hit in the west. But doesn't Japan have more to offer then raw fish? We traveled to Japan to learn more about their delicious food!</div><div>
+
+      <div class="content"><img src="Images\coffee.jpg" class="article_photo"> <div class="h3">Is coffee healthy?</div>
+      <div class="h2_">Some love 
+        it and some despise it. Whatever you think about the taste of the black gold it does have some health benefits! Read more about it.</div>
       </div>
 
-      <!-- The other news  -->
+      <div class="content"><img src="Images\vegetables.jpg" class="article_photo"> <div class="h3">New year - new me?</div><div class="h2_">A new 
+        year has begun and for many of us that comes with new promises of a healthy lifestyle.
+         But how long will it last? Read here about sustainable changes!</div>
+      </div>
+
+      <div class="content"><img src="Images\asian-food.jpg" class="article_photo"> <div class="h3">We are traveling to 
+        Japan!</div><div class="h2_">Sushi 
+        has become a huge hit in the west. 
+        But doesn't Japan have more to offer then raw fish? We traveled to Japan to learn more about their delicious food!</div><div>
+         </div>
+        </div>
+
+        
+      <div class="content"><img src="Images\cocktail.jpg" class="article_photo"> <div class="h3">Need a cocktail?
+      </div><div class="h2_">There are a few things that taste as good as a cold cocktail on a warm summerday. Read all about
+        the recipes here and also what you can eat when you drink it.
+      </div><div>
+      </div></div>
+
+      <div class="content"><img src="Images\hamburger.jpg" class="article_photo"> <div class="h3">The most delicious hamburger!
+      </div><div class="h2_">We had a mission - to find the best burger. And we took our mission seriously. Find out which burger was the best!</div><div>
+      </div></div>
+
+      <div class="content"><img src="Images\bbq.jpg" class="article_photo"> <div class="h3">Summer is coming!</div><div class="h2_">In a few months the summer will be here again. And what is better then to barbeque in the summer? If you want a recipe to really impress your neighbours- look no more!</div><div>
+      </div></div>
+
+      <div class="content"><img src="Images\muffins.jpg" class="article_photo"> <div class="h3">Always up for dessert!</div><div class="h2_">It's weird that it seems like no matter how much food you eat you always have room for dessert. Always! Which one is your favourite?
+      </div></div>
+
     </section>
   </body>
 </html>
