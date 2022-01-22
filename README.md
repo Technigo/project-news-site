@@ -1,12 +1,20 @@
 # News Site
 
-Replace this readme with your own information about your project. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is part of Technigo Web Development Bootcamp, sprint 1 week 2, where we are supposed to build a responsive website
+that should change depending on if you visit it with a mobile, tablet or desktop.
+
+It has been rough but educational to. 
+
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had problems with understanding the very basics of HTML and CSS, how grid & flexbox work and how to handle rules for parent/child. 
+
+For my next project, I will spend more time planning the project.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://sleepy-volhard-fa4643.netlify.app/
+
+
