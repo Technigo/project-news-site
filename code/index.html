@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Your Life Science News</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Your Life Science News</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+  <div class="container">
     <header>
-      <!-- Some kind of logo and navbar KOLLA OM BILDEN SKA VARA EN BILD OCH EJ EN LÄNK -->
-      <img class="logo" src="https://img.icons8.com/ios/50/000000/dna-helix.png" alt="DNA-Helix" />
-      <h1>World of LifeScience</h1>
+      <div class="newssite-name">
+        <img class="logo" src="https://img.icons8.com/ios/50/000000/dna-helix.png" alt="logo" />
+        <h1>LifeScienceNews</h1>
+      </div>
       <nav class="navbar">
         <ul>
           <li><a href="#">About</a></li>
@@ -21,51 +28,48 @@
       </nav>
     </header>
 
-<!-- The big news content -->
-    <section class="big-news">
-      <div>
-        <img class= "main-image" src="img/mainnews.jpg" alt="Image of cancercells" >
-      </div>
+    <!-- The big news content -->
+    <section class="main-news">
+        <img class="main-image" src="img/cancercells.png" alt="Image of cancercells">
+      
       <div class="main-text">
-        <h1>Cancercells in several different tissues can be diagnosted with AI</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi ab fuga autem numquam vitae atque porro culpa sint dolore natus, accusantium molestias quia sapiente quis distinctio aspernatur unde magnam.</p>
-      </div> 
+        <h1>AI can recognize cancercells in several different tissues</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi ab fuga autem numquam vitae atque porro
+          culpa sint dolore natus, accusantium molestias quia sapiente quis distinctio aspernatur unde magnam.</p>
+      </div>
     </section>
 
     <!-- The other news  -->
     <section class="other-news">
-      <div class="news-one">
+      <div class="other-news-box">
+        <img src="img/celebration.png" alt="Image of fireworks">
         <h2>Sweden BIOAward 2022</h2>
-        <img src="img/firework.jpg" alt="Image of ireworks" >
       </div>
 
-      <div class="news-two">
+      <div class="other-news-box">
+        <img src="img/culturedcells.png" alt="Image of cultured cells">
         <h2>Copenhagen - new center for stemcells resarch</h2>
-        <img src="img/cellculture.jpg" alt="Image of cultured cells" >
       </div>
 
-      <div class="news-three">
+      <div class="other-news-box">
+        <img src="img/printedcells.png" alt="Imagde of 3D printed cells">
         <h2>3D printing cells</h2>
-        <img src="img/3Dprintedcells.jpg" alt="Imagde of 3D printed cells">
       </div>
 
-      <div class="news-four">
+      <div class="other-news-box">
+        <img src="img/cells.png" alt="Image of cells">
         <h2>Hepatic cells cultured on microchips</h2>
-        <img src="img/cells.jpg" alt="Image of cells">
       </div>
 
-      <div class="news-five">
+      <div class="other-news-box">
+        <img src="img/organtransplantation.png" alt="Image of a heart">
         <h2> Transplantation - Three new methods</h2>
-        <img src="img/transplantation.jpg" alt="Image of a heart">
-      </div>
-
-      <div class="news-six">
-        <h2>Collaborations for new cancer treatments</h2>
-        <img src="img/medicinebottles.jpg" alt="Image of medicine bottles">
       </div>
     </section>
+    
     <footer>
       <a href="https://icons8.com/icon/846/dna-helix">DNA Helix icon by Icons8</a>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
