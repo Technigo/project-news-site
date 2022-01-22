@@ -14,4 +14,4 @@ One week project of practicing HTML, CSS (Grid,Flexbox) and responsiveness for m
 
 ## View it live
 
-https://festive-morse-be0760.netlify.app/
+https://unruffled-mirzakhani-844e55.netlify.app
