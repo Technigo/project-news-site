@@ -1,22 +1,93 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Travel insights</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f68b8218c.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <img src="suitcase-logo1.jpeg" alt="Airplane logo">
+      <div class="site-name">TRAVEL <br> INSIGHTS
+      </div>
+       <nav>
+         <a href="#air">AIR</a>
+         <a href="#hotel">HOTEL</a>
+         <a href="#car">CAR</a>
+         <a href="#leisure">LEISURE</a>
+       </nav>
+       <div class="hamburger">
+        <i class="fas fa-bars fa-2x"></i>
+       </div>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
+    
+    <!-- Big news section-->
+    <section class="bignews-container">
+        <img class="bignews-image" src="airport-traveller.jpeg" alt="traveller at airport"> <!--style="width:100%--;"--> 
+        <div class="bignews-text">
+          <h1>Flight industry adapts technology to Covid-19</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <!-- Small news  section-->
+    <section class="smallnews-container">
+      <div class="smallnews-items">
+        <div class="scandic">
+          <section id="hotel"></section>
+          <img src="scandic-central.jpeg" alt="scandic central">
+          <h1>Grand opening of Scandic Central Gothenburg</h1>
+        </div>
+        <div class="mandarin">
+          <img src="mandarin-shenzen.jpeg" alt="mandarin schenzen">
+          <h1>Mandarin Oriental Schenzen opens up</h1>
+        </div>
+        <div class="sixt">
+          <section id="car"></section>
+          <img src="sixt.jpeg" alt="sixt">
+          <h1>Sixt reports record quaterly profit as recovery continues</h1>
+        </div>
+        <div class="hertz">
+          <img src="hertz-elonmusk.jpeg" alt="hertz elon musk">
+          <h1>Elon Musk talks about Tesla contract with Hertz</h1>
+        </div>
+        <div class="greece">
+          <section id="leisure"></section>
+          <img src="greece.jpeg" alt="greece">
+          <h1>Greece - still one of the favourite destinations</h1>
+        </div>
+        <div class="leisure">
+          <img src="leisure-dream.jpeg" alt="leisure dream">
+          <h1>Top 10 leisure dream destinations</h1>
+        </div>
+        <div class="virgin">
+          <section id="air"></section>
+          <img src="virgin-tobago.jpeg" alt="virgin tobago">
+          <h1>Virgin Atlantic return to Tobago </h1>
+        </div>
+        <div class="ethiad">
+          <img src="ethiad-carbon.jpeg" alt="ethiad carbon">
+          <h1>Ethiad Airways launches carbon offsetting scheme</h1>
+        </div>
+      </div>
     </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-icons">
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-facebook-f fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fas fa-envelope fa-2x"></i>
+       </div>
+        <p class="copywrite">© Copyright Josefin Eliasson 2022</p>
+      </div> 
+    </footer>
   </body>
 </html>
