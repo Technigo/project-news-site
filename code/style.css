@@ -21,7 +21,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: darkseagreen; */
   width: 100%;
 }
 
@@ -29,7 +28,6 @@ header{
   height: 70px;
   width: 80px;
   justify-self: flex-end;
-  /* align-self: center; */
 }
 
 ul{
@@ -42,9 +40,11 @@ a{
   text-decoration: none;
 }
 
+/* hover effect for navbar */
 a:hover {
 color: tomato;
 }
+
 /* meda rule to dissapear the site name in header when shown in mobile */
 @media (max-width:767px){
   .site-name{
@@ -54,7 +54,7 @@ color: tomato;
 
 /* media rule to make navbar into a row when shown on screen */
 
-@media (min-width: 992px){ 
+@media (min-width: 992px){
   ul{display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -64,18 +64,15 @@ color: tomato;
   }
 }
 
-/* -------------------------------------------------------------- */
 .main-heading{
   text-align: center;
 }
 
-/* ------------------------------------------------------------- */
-/* rules for the main section with a news article. 1 column in mobile,
-2 columns on tablet and screen*/
+/* rules for the main section with a news article.*/
 
 .big-news{
   display: flex;
-  text-align: center; 
+  text-align: center;
 }
 
 .article-heading{
@@ -89,7 +86,18 @@ color: tomato;
   }
 
 .main-content-img{
-    justify-content: center;
+  justify-content: center;
+  border: 1px solid;
+  padding: 1px;
+  box-shadow: 5px 10px lightgray;
+}
+
+.read-more{
+  font-style: italic;
+}
+
+.text{
+  margin-top: 5%;
 }
 
   /* rules for main article in tablet and screen  */
@@ -100,64 +108,51 @@ color: tomato;
     align-items: center;
     justify-content: center;
   }
-  
+
   img{
     max-width: 100%;
   }
 
 .main-content-img{
   width: 40%;
-}  
+}
 
 .text{
   flex-direction: row;
   flex-wrap: nowrap;
 }
+}
 
-/* -------------------------------------------------------------- */
 /* heading for news grid */
+.related-news-h1-container{
+  display: flex;
+  justify-content: center;
+}
 
 .related-news{
-  text-align: center;
   margin-top: 12%;
 }
-  /*---------------------------------------------------------------  */
-  /* code for the news grid. tablet: 2 columns, 2 rows. desktop: 1 row. */
 
-  /* rules for mobile */
-/* @media (min-width: 0) and (max-width: 767px) { */
+  /* /* code for the news grid. */
 
-  /* .news-grid{  */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  /* border: solid; */
-/* } */
-
-/* .grid-img{ */
-  /* height: 90%; */
-  /* width: 90%; */
-  /* margin: 2px 20px; */
-  /* justify-content: center; */
-/* } */
-
-/* .news-grid-item{ */
-  /* display: flex; */
-  /* text-align: center; */
-  /* flex-direction: column; */
+.news-grid{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
 }
-
-/* .news-grid-heading{ */
-  /* text-align: center; */
-  /* margin: 3% 20%; */
-/* } */
-/* } */
 
 .news-grid-heading:hover{
 color: tomato;
 }
 
-/* rules for tablet */
+.grid-img{
+  border: 1px solid;
+  padding: 1px;
+  box-shadow: 5px 10px lightgray;
+}
+
+
+/* rules for news grid tablet */
 @media (min-width: 768px) and (max-width: 991px){
   .news-grid{
     display: grid;
@@ -165,14 +160,14 @@ color: tomato;
     gap: 1%;
     margin: 2%;
   }
- 
+
   .news-grid-item{
     display: flex;
     flex-direction: column;
   }
 }
 
-/* rules for desktop */
+/* rules for news grid desktop */
 
 @media (min-width: 992px) {
 .news-grid{
