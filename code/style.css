@@ -10,16 +10,16 @@ body {
 
 header {
 background-image: url("https://images.unsplash.com/photo-1629573010718-5a4a1aea6c23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-background-repeat: no-repeat;
-background-size: cover;
 padding: 275px 0;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat center;
 }
 
 .navigation-bar {
 height: 100px;
 background-color: black;
 display: flex;
-justify-content: space-evenly;
 }
 
 .matchsticksnews-logo {
@@ -32,23 +32,62 @@ filter: contrast(130%);
 font-size: 30px;
 }
 
+@media (min-width: 668px) {
+  h1 {
+    color:orangered;  
+   }
+ }
+
+.navigation-bar a {
+display: none;  
+}
+
+@media (min-width: 668px) {
 .navigation-bar a {
 padding: 35px;
 text-decoration: none;
-color:white;
-}
-
-/*not sure what started here
-@media (max-width: 667px) {
-.navigation-bar a {
+color:white; 
+display: flex;
 }  
-}*/
+}
 
 @media (min-width: 668px) {
- h1 {
-   color:orangered;  
+  .navigation-bar {
+  justify-content: space-between;
+  }  
+  }
+
+  .icon-box {
+    display: none;  
+     }
+
+     @media (min-width: 668px) {
+       .icon-box {
+         display: flex;
+       }
+     }
+ 
+  @media (min-width: 668px) {
+.icon1 {
+  background-color: white;
+  margin: 25px;
   }
 }
+  
+@media (min-width: 668px) {
+  .icon2 {
+  background-color: white;
+  margin: 25px;
+  }
+}
+  
+@media (min-width: 668px) {
+  .icon3 {
+  background-color: white;
+  margin: 25px;
+  }
+}
+  
 
 .big-news {
 display: grid;
@@ -57,7 +96,7 @@ margin-top: 25px;
 margin-left: 25px;
 margin-right: 25px;
 margin-bottom: 50px;
-/* does not work
+/* does not work on top
 border-style:solid;
 border-color: black;
 border-width: thin;
