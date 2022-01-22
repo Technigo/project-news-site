@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,17 +7,18 @@ html {
   color: #000000;
   margin: 10px;
   font-size: 17px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.dropdownlogo{
-  display:flex;
+.dropdownlogo {
+  display: flex;
   width: 70%;
   font-size: 21px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -36,12 +37,11 @@ html {
   right: 0;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: initial;
 }
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -55,87 +55,84 @@ html {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-.tabanddesktopmenu{
-  display: none;
- }
-header img{
+
+header img {
   width: 50px;
   height: 50px;
- }
-header{
+
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+header {
   margin: 20px 5px 25px 10px;
   font-size: 25px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #1267b6;
 }
 .item2 {
   margin-left: 20px;
   margin-top: 10px;
-  animation-duration: 3s;
-
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 15%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+header a {
+  display: none;
 }
-header a{
-  display: none;  
- }
 a {
-  text-decoration: none;  
+  text-decoration: none;
   color: #1267b6;
 }
 .polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .polaroid:hover {
-box-shadow: 0 0 2px 1px #008cba80;
+  box-shadow: 0 0 2px 1px #008cba80;
 }
-.polaroid p{
+.polaroid p {
   text-align: center;
   padding: 10px;
 }
-.polaroid p:hover{
+.polaroid p:hover {
   color: #008cba80;
 }
 /*section*/
-section{
+section {
   text-align: center;
 }
-.big-news{
+.big-news {
   text-align: left;
   margin: 15px 5px 2px 5px;
 }
-.big-news img{
+.big-news img {
   width: 100%;
   height: 100%;
 }
-.big-news img:hover{
+.big-news img:hover {
   transform: scaleX(-1);
 }
-.mainText img{
+.mainText img {
   width: 100%;
   height: 100%;
 }
-.mainText img:hover{
+.mainText img:hover {
   transform: scaleX(-1);
 }
-section h1{
+section h1 {
   margin-top: 25px;
   font-size: 25px;
   font-weight: 400;
 }
-section p{
+section p {
   text-align: justify;
   line-height: 1.8;
   color: #7a7a7a;
@@ -143,112 +140,100 @@ section p{
   font-size: 16px;
   margin-bottom: 30px;
 }
+footer{
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
 
 /*for tablet*/
 @media screen and (min-width: 768px) {
-  .mobilemenu{display: none;}
-
-  .tabanddesktopmenu{
-    display: grid;
-    font-size: 16px;
-   }
-
-  .item1 { grid-area: logo; }
-  .item2 { grid-area: txtTitle;
-  display: none;}
-  .item3 { grid-area: link1; }
-  .item4 { grid-area: link2; }
-  .item5 { grid-area: link3; }
-  .item6 { grid-area: link4; }
-
-  header {
-    display: grid;
-    grid-template-areas:
-      'link1 link2 logo link3 link4';
-    grid-gap: 10px;
+  
+  header a {
+    display: flex;
+    color: #1267b6;
   }
-   header a{
-    display: flex; 
-    color: #1267b6; 
-   }
-   header a:hover{ 
-    color: #EF4022; 
+  header a:hover {
+    color: #ef4022;
     text-decoration: overline;
-   }
-
-/*section*/
-section h1{
-  margin-top: 35px;
-
-  animation-duration: 6s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
   }
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
+
+  /*section*/
+  section h1 {
+    margin-top: 35px;
   }
-  to {
-    margin-left: 0%;
-    width: 100%;
+
+  .mainText {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    margin-top: 35px;
   }
-}
-.mainText{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 10px;
-  margin-top: 35px;
-}
-section p{
-  font-size: 20px;
-  padding: 5px;
-}
+  section p {
+    font-size: 20px;
+    padding: 5px;
+  }
 }
 
 /*for desktop*/
 @media screen and (min-width: 992px) {
-  .item2 { 
-    display:grid;
-    margin-left: -40px;
-    font-size:35px;
+  .dropbtn {
+    display: none;
+  }
+  .dropdown {
+    display: inline;
+  }
+  .dropdown-content {
+    display: flex;
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .dropdown-content a {
+    display: inline;
+  }
+
+  .dropdown-content a:hover {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .item2 {
+    display: grid;
+    font-size: 35px;
     margin-top: 0;
   }
-  .item3 .item4 .item5 .item6{
+  .item3 .item4 .item5 .item6 {
     text-align: end;
   }
   header {
     display: grid;
-    grid-template-areas:
-      'logo txtTitle link1 link2 link3 link4';
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    justify-items: right;
     font-size: 15px;
   }
-
-  section h1{
+  section h1 {
     animation-fill-mode: none;
   }
-  
 
-.mainText{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 35px;
-  grid-row-gap: 30px;
-}
-.big-news{
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-column-gap: 30px;
-  margin-bottom: 40px;
-}
+  .mainText {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 30px;
+  }
+
+  .big-news {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+  }
 }
