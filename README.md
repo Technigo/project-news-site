@@ -14,4 +14,4 @@ Aswell having an onclick event listener on each card to jump to a page showing t
 
 ## Demo
 
-Demo Project: 
+Demo Project: https://condescending-hawking-97ff75.netlify.app/

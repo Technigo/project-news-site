@@ -177,7 +177,7 @@ body {
 }
 
 
-@media (max-width: 666px) {
+@media (max-width: 768px) {
   .navbar__list {
     position: fixed;
     left: -100%;
@@ -190,7 +190,7 @@ body {
 
   .navbar__list.show {
     left: 0;
-    background-color: rgba(0, 0, 0);
+    background-color: var(--clr-dark);
   }
 
   .navbar__item {
