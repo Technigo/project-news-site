@@ -70,6 +70,7 @@ p {
 }
 .main-news-content p {
     padding: 10px;
+    text-align: justify;
 }
 
 /* other news */
@@ -88,6 +89,9 @@ p {
 
 article {
     padding: 2vw;
+}
+article p, article a {
+    padding-left: 5px;
 }
 
 .other-news-polaroid {
