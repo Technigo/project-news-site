@@ -39,7 +39,7 @@ li {
 }
 
 li a {
-  color: #A68DAD;
+  color:black;
 }
 
 li a:hover {
@@ -54,9 +54,6 @@ li a:hover {
 }
 
 .big-card-image {
-  /* flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 1; */
   flex: 1;
 }
 
@@ -68,9 +65,6 @@ li a:hover {
 .big-card-text {
   font-size: 16px;
   padding: 8px;
-  /* flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 1; */
   flex: 1;
 }
 
@@ -86,18 +80,18 @@ h2 {
 }
 
 h3:hover {
-  background-color: yellow;
+  background-color:#D96098;
 }
 
 .cards {
-  background-color:thistle;
+  background-color:white;
   font-family: 'Bebas Neue', cursive;
 }
 
  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
   background-color:white;
   font-size: 20px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction:column;
@@ -125,50 +119,85 @@ h3 {
   color:#D96098;
 }
 
-/* Tablet version - KOLLA UPP STRL */
+/* TABLET SIZE */
 @media (min-width: 667px) and (max-width: 1024px) {
-  ul {
-    display:flex;
-  }
+  
+ ul {
+   display: flex;
+ } 
 
-  .big-news {
-   display:flex;
-   padding: 8px;
-  }
+ li {
+   font-size:12px;
+ }
+
+.header {
+  background-color: white;
+  justify-content:space-around;
+} 
+
+.site-name {
+  font-size: 24px;
+}
+
+.big-card {
+  display:flex;
+  align-items:center;
+  padding: 8px;
+}
+
+.big-card img {
+  border-radius: 4%;
+}
+
+h2 {
+  color:white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.cards img {
+  border-radius: 16%;
+}
 
 }
 
-/*Desktop version - KOLLA UPP STRL */
+/* DESKTOP SIZE */
 @media (min-width: 1025px) {
 
+  ul {
+    display: flex;
+  } 
+ 
+  li {
+    font-size:12px;
+  }
 
+  .header {
+    justify-content: space-around;
+  }
+
+  .site-name {
+    font-size: 48px;
+  }
+
+  .big-card {
+    display:flex;
+    padding: 8px;
+    align-items: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    height: 500px;
+  }
 }
 
-/* TESTING ONLY
-.flex-parent {
-  border: 2px solid;
-  height: 500px;
-  display: flex; 
-  justify-content:center;
-  align-items:center;
-}
 
-.flex-child {
-  margin: 5px;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 5px;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.pink {
-  background-color: pink;
-} */
