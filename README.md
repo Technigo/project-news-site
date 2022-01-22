@@ -14,4 +14,4 @@ In order to solve all the problems above, I want to give a big shoutout to my Hi
 If i had more time, I would love to experiencing more animation styles in CSS. The idea is to make the text and images fadeIn when the user scrolls over the pages.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://kitchen86-suki.netlify.app
