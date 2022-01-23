@@ -1,4 +1,260 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* 
+CSS Styles for multiple flexboxes.
+Followed the mobile-first principles and
+configured seperate styles for tablets and laptops/desktops.
+*/
+
+body {
+  margin: 0 auto;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.nav-container .logo {
+  margin: 0 10px;
+}
+
+.navbar {
+  flex: 100%;
+}
+
+.navbar-item {
+  border: solid 1px black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 2px 1px 5px 0px rgba(254, 177, 54, 1);
+  text-align: center;
+}
+
+.navbar-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-container {
+  padding: 0 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 50px;
+  border-bottom: 0.5px solid black;
+}
+
+.hero h1 {
+  width: 100%;
+}
+
+.hero-children {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.hero-p {
+  width: 100%;
+}
+
+/* STYLING FOR THE BIG NEWS SECTION */
+.featured-article {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.flex-container-2 {
+  flex: 100%;
+}
+
+.featured-article img {
+  box-shadow: 2px 1px 9px -1px rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+/* STYLING FOR THE POPULAR DESTINATIONS SECTION */
+.popular-destinations-header {
+  margin-top: 50px;
+}
+
+.popular-destinations {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-container-4 {
+  max-width: 100%;
+}
+
+.footer {
+  display: flex;
+  height: 176px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration:underline;
+  color:#000000;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+
+.news-article {
+  padding: 5px;
+  align-items: center;
+  position: relative;
+}
+
+/* Code to make text go on top of the image */
+.news-article-child {
+  position: absolute;
+  bottom: 8px;
+  color: white;
+  line-height: 1px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  /* Moves div -50% on the X axis */
+  transform: translateX(-50%);
+  left: 50%;
+
+}
+
+.black {
+  color: black;
+}
+
+.news-article img {
+  filter: saturate(70%);
+  object-fit: cover;
+  width: 100%;
+}
+
+.featured-article-button {
+  background: #feb136;
+  border: 1px solid #feb136;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  padding: 15px 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.featured-article-button:hover {
+  background-color: initial;
+  background-position: 0 0;
+  color: #feb136;
+}
+
+.featured-article-button:active {
+  opacity: .5;
+}
+
+.tag {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.widget {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  padding: 10px;
+  background-color: #347ef9;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  align-items: center;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Responsive styling - mobile first */
+
+@media (min-width:801px) {
+  /* tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  .featured-article {
+    flex-direction: row;
+  }
+
+  .flex-container-4 {
+    max-width: 33%;
+  }
+
+  .flex-container-2 {
+    flex: 50%;
+  }
+
+  .hero h1 {
+    width: 65%;
+  }
+
+  .hero-p {
+    flex: 45%;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer {
+    display: flex;
+  }
+}
+
+@media (min-width:1025px) {
+
+  /*  laptops, and desktops */
+  .flex-container-4 {
+    max-width: 25%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }

@@ -1,22 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2: Flexbox Practice</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>"
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <!-- Header that changes direction based on screen size -->
+    <div class="nav-container">
+      <div class="logo">
+        <img src="img/Travel..png" width="100px" target="_blank">
+      </div>
+      <div class="navbar">
+        <div class="navbar-item"><a href="#">Home</a></div>
+        <div class="navbar-item"><a href="#">Guides</a></div>
+        <div class="navbar-item"><a href="#">Top Picks</a></div>
+        <div class="navbar-item"><a href="#">Destinations</a></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Hero section with header and 2 column flexbox with gap -->
+    <div class="hero">
+      <h1>Find your inspiration for your next holiday.</h1>
+      <div class="hero-children">
+        <div class="hero-p">
+          <p>
+            If you’re anything like me you’ll have a never ending wish list of destinations and experiences to tap into
+            for your holiday inspiration. If not, you’re in luck because we've got you covered with a diverse selection
+            of
+            short breaks, experience travel and holidays to whet your wanderlust.
+          </p>
+        </div>
+        <div class="hero-p">
+          <p>
+            If you’re anything like me you’ll have a never ending wish list of destinations and experiences to tap into
+            for your holiday inspiration. If not, you’re in luck because we've got you covered with a diverse selection
+            of
+            short breaks, experience travel and holidays to whet your wanderlust.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flexbox with 2 items that change order when resized -->
+    <section class="featured-article">
+      <div class="flex-container-2">
+        <article>
+          <h2>
+            Ideas to plan for a great trip
+          </h2>
+          <p>
+            Planning a trip overseas, whether long or short, can seem overwhelming. But it doesn’t have to be! In this
+            article, we’ll show you how to take the stress out of planning a trip, by laying out a simple step-by-step
+            guide that’ll ensure you don’t forget anything. </p>
+          <button class="featured-article-button">Read More</button>
+        </article>
+      </div>
+      <div class="flex-container-2">
+        <img src="img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg" alt="article-1">
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <div class="popular-destinations-header">
+      <h2>Popular Destinations</h2>
+    </div>
+
+    <!-- Responsive flexbox with:
+      - 4 columns on laptop
+      - 3 on tablet
+      - 1 on mobile -->
+    <section class="popular-destinations">
+      <div class="flex-container-4">
+        <article class="news-article">
+          <img src="img/greece-ryan-spencer-XGKaRnWjv1c-unsplash.jpg" alt="article-1">
+          <div class="widget">
+            <span>Sunny</span>
+            <span>+35°</span>
+          </div>
+          <div class="news-article-child black">
+            <p class="tag">| SUMMER |</p>
+            <h3>Greece</h3>
+          </div>
+        </article>
+      </div>
+      <div class="flex-container-4">
+        <article class="news-article">
+          <img src="img/sweden-linus-mimietz-QYI__0vehUs-unsplash.jpg" alt="article-1">
+          <div class="widget">
+            <span> <i class="fa-solid fa-sun-bright"></i></span>
+            <span>Rainy</span>
+            <span>-2°</span>
+          </div>
+          <div class="news-article-child">
+            <p class="tag">| WINTER |</p>
+            <h3>Sweden</h3>
+          </div>
+        </article>
+      </div>
+      <div class="flex-container-4">
+        <article class="news-article">
+          <img src="img/iceland-jonny-auh-z99iWocuDt0-unsplash.jpg" alt="article-1">
+          <div class="widget">
+            <span>Snowy</span>
+            <span>-10°</span>
+          </div>
+          <div class="news-article-child">
+            <p class="tag">| WINTER |</p>
+            <h3>Iceland</h3>
+          </div>
+        </article>
+      </div>
+      <div class="flex-container-4">
+        <article class="news-article">
+          <img src="img/france2-cyril-mazarin-WSvth_lwCi0-unsplash (1).jpg" alt="article-1">
+          <div class="widget">
+            <span>Cloudy</span>
+            <span>+15°</span>
+          </div>
+          <div class="news-article-child">
+            <p class="tag">| SPRING |</p>
+            <h3>France</h3>
+          </div>
+        </article>
+      </div>
     </section>
-  </body>
+
+    <!-- Footer section with responsive flexbox -->
+    <div class="footer">
+      <div class="footer-left">
+        <p>
+          Made with ♡ in GR and SE
+        </p>
+      </div>
+      <div class="footer-center">
+        <p>
+          Week 2 Project for <a href="https://www.technigo.io/program">Technigo</a> Spring '22 | Fay Pistikozoglou
+        </p>
+      </div>
+      <div class="footer-right">
+        <p>
+          © Photos from <a href="https://www.unsplash.com">Unsplash</a>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
 </html>
