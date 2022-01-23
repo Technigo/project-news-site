@@ -149,19 +149,6 @@ h3 {
     cursor: cell;
 }
 
-@media (max-width:480px) {
-
-    .menu {
-
-        height: 12px;
-    }
-
-    .nav-list li {
-
-        font-size: 0.8rem;
-    }
-
-}
 
 .top-h1 {
 
@@ -261,7 +248,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    align-content: space-between;
     justify-content: space-around;
     width: 100%;
     /* height: 450px; */ 
@@ -312,11 +299,26 @@ h3 {
 
 @media all and (max-width:480px) {
 
+    .menu {
+
+        height: 12px;
+    }
+
+    .nav-list li {
+
+        font-size: 0.8rem;
+    }
+
   /* "unwanted news"-part */
     .header p {
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 1rem;
+    }
+
+    .menu {
+        width: vw;
+        justify-content: space-between;
     }
 
     h2 {
@@ -335,7 +337,13 @@ h3 {
         margin-right: 1rem;
     }
 
+    .top-h1 {
+
+        font-size: 0.8rem;
+    }
+
     .other-stories-container {
+
         align-content: space-between;
         margin-top: 1rem;
     }
@@ -348,25 +356,454 @@ h3 {
     .timestamp {
         font-size: 0.7rem;
     }
+
     .card {
         width: 47%;
         flex: 1;
         height: 370px;
         margin-bottom: 1rem;
     }
+
     .card-img {
 
         height: 40%;
     }
+
     .card-text {
 
         padding: 0.7rem;
     }
 }
 
-@media all and (max-width:768px) {
+
+@media all and (min-width:481px) and (max-width:768px) {
+
+    .logo {
+
+        align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .header img {
+        flex: 1;
+        max-width: 70%;
+        align-content: center;
+        display: inline-flex;
+    
+    }  
+    .header p {
+
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .weather {
+
+        padding-left: 2rem;
+        padding-right: 1.3rem;  
+
+    }  
+    
+
+    
+.menu {
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    line-height: 1rem;
+    background-color: #21122e;
+    height: 20px;
+    padding: 1rem;
+
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+   
+
+.nav-list li {
+
+    gap: 8%;
+
+}
+
+    .topstories-full-container   {
+
+        height: 750px;
+    }
+
+    .top-h1 {
+
+        font-size: 1.2rem;
+    }
+
+    h1 {
+
+        font-size: 1.7rem;
+    } 
+
+    .text-top {
+
+        margin: 2rem;
+    }
+
+    .text-top > * {
+
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
 
 
+    .top-btn {
+        
+        
+        }
+
+    .other-stories-container {
+        margin-top: 1rem;
+    }
+
+    .card {
+
+        height: 420px;
+        margin-bottom: 1rem;
+        max-width: 47%;
+        min-width: 47%;
+    }
+
+    .card-text {
+
+        padding-bottom: 1.4rem;
+    }
+
+    .timestamp {
+
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+
+    }
+
+}
+
+/* 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+@media all and (min-width:769px) and (max-width:1024px) {
+
+    .logo {
+
+        align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .header img {
+        flex: 1;
+        max-width: 60%;
+        align-content: center;
+        display: inline-flex;
+    
+    }  
+    .header p {
+
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .weather {
+
+        padding-left: 2rem;
+        padding-right: 1.3rem;  
+
+    }  
+    
+        
+    .menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+        line-height: 1rem;
+        background-color: #21122e;
+        height: 20px;
+        padding: 1rem;
+
+    }
+
+    .nav-list {
+
+        display: flex;
+        margin: 0;
+        margin-left: 1.2rem;
+        padding: 0;
+        list-style: none;
+        gap: 8%;
+        
+    }
+   
+
+    .nav-list li {
+
+        gap: 8%;
+
+    }
+
+    .topstories-full-container   {
+
+        width: 100%;
+        height: 750px;
+    }
+
+    .top-h1 {
+
+        font-size: 1.5rem;
+    }
+    .top-section {
+        justify-content: center;
+    }
+
+    h1 {
+
+        font-size: 2rem;
+    } 
+
+    .text-top {
+
+        margin: 2rem;
+        align-content: center;
+        width: 700px;
+    }
+
+    .text-top > * {
+
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+
+    .top-btn {
+
+        height: 60px;
+        width: 500px;
+
+        }
+
+
+
+    .other-stories-container {
+        margin: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    
+    .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-between;
+        max-width: 350px;
+        min-width: 250px;
+        height: 400px; 
+
+    }
+
+    .card-text {
+
+        padding-bottom: 1.4rem;
+    }
+
+    .timestamp {
+
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+
+    }
+
+
+}
+
+
+/* 1025px — 1200px: Desktops, large screens.
+1201px and more — */
+@media all and (min-width:1025px) and (max-width:1200px) {
+
+    .logo {
+
+        align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .header img {
+        flex: 1;
+        max-width: 60%;
+        align-content: center;
+        display: inline-flex;
+    
+    }  
+    .header p {
+
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .weather {
+
+        padding-left: 2rem;
+        padding-right: 1.3rem;  
+
+    }  
+    
+        
+    .menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+        line-height: 1rem;
+        background-color: #21122e;
+        height: 20px;
+        padding: 1rem;
+
+    }
+
+    .nav-list {
+
+        display: flex;
+        margin: 0;
+        margin-left: 1.2rem;
+        padding: 0;
+        list-style: none;
+        gap: 8%;
+        
+    }
+
+    .nav-list li {
+
+        gap: 8%;
+
+    }
+/* 1 */ .topstories-full-container {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0.6rem;
+}
+
+/* 2 */ .topstories-section-container  {
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+}
+
+    /* CHILDREN */ .topstories-section-container > * {
+    flex-grow:1;
+}
+
+.top-section {
+
+    height: 100%;
+}
+
+                .top-h1 {
+
+                    font-size: 1.5rem;
+                }
+                
+
+                h1 {
+
+                    font-size: 2rem;
+                } 
+
+                .text-top {
+
+                    margin: 2rem;
+                    align-content: center;
+                    width: 80%;
+                }
+
+                .text-top > * {
+
+                    margin-left: 1.3rem;
+                    margin-right: 1.3rem;
+                }
+
+
+                .top-btn {
+
+                    height: 60px;
+
+                    }
+
+
+
+    .other-stories-container {
+        margin: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    
+    .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-between;
+        max-width: 350px;
+        min-width: 250px;
+        height: 400px; 
+
+    }
+
+    .card-text {
+
+        padding-bottom: 1.4rem;
+    }
+
+    .timestamp {
+
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+
+    }
 
 
 }
