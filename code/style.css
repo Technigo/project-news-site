@@ -1,4 +1,180 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #555555;
+  color: black;
+  font-family: sans-serif;
 }
+
+body {
+  margin: 0;
+}
+
+
+/*LOGO AND NAV*/
+
+header {
+  height: 100px;
+  max-width: 1000px;
+  background-color: #555555;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+header img {
+  height: 60px; 
+  padding: 20px; 
+}
+
+header a {
+  color: white;
+  padding: 50px;  
+}
+
+a:hover {
+  color: orange;
+}
+
+@media (max-width: 666px) {
+header a {
+  display: none;
+}
+}
+
+@media (min-width: 667px) {
+  header {
+    height: 100px;
+    max-width: 1000px;
+    background-color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+  }
+}
+
+
+/*BIG NEWS*/
+
+
+h1 {
+  padding: 10px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-text {
+  padding: 10px;
+  margin-top: 0;
+}
+
+.big-news {
+  display: flex;
+  background: white;
+  flex-direction: column;
+}
+
+.big-news img {
+  padding: 20px;
+  max-height: 400px;
+  width: auto;
+}
+
+.big-news img:hover {
+  opacity: 0.3;
+}
+
+.big-news p {
+  padding: 20px;
+}
+
+.top-text-box {
+  background: white;
+  width: 300px;
+}
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+.big-news {
+  height: 500px;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  align-items: top;
+}
+
+.top-text-box {
+  background: white;
+  width: 500px;
+}
+
+h1 {
+  padding: 100px 20px 20px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+}
+
+@media (min-width: 1024px) {
+.big-news img {
+  padding: 20px;
+  max-height: 500px;
+  width: auto;
+}
+
+.big-news {
+  height: 600px;
+  display: flex;
+  background: white;
+  flex-direction: row;
+}
+
+.top-text-box {
+  background: white;
+  width: 600px;
+}
+
+h1 {
+  padding: 100px 20px 20px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+}
+
+
+
+
+/*ARTICLES*/
+ 
+.articles { 
+  background: #696969;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.articles img {
+  max-width: 300px;
+  padding: 20px 20px 0px 20px;
+}
+
+.articles img:hover {
+  opacity: 0.3;
+}
+
+article {
+  width: 100p;
+}
+
+article p {
+  padding: 10px;
+  margin: 0 20px;
+  max-width: 255px;
+  background: white;
+}
+
+
+
+
+
+
