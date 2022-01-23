@@ -7,7 +7,7 @@ header {
   position: fixed;
   width: 100%;
   height: 4rem;
-  background-color: #CF0107;
+  background-color: rgb(208, 1, 8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +44,10 @@ header {
   margin: 0rem 0.75rem 0rem 0.75rem;
 }
 
+.navbar-links a:hover{
+  text-decoration: underline;
+}
+
 .hamburger {
   width: 2rem;
   height: 0.2rem;
@@ -57,21 +61,19 @@ header {
   gap: 1rem;
   /* margin: 1rem; */
   /* margin: 4rem 1rem 1rem 1rem; */
-  padding: 6rem 1rem 1rem 1rem;
+  padding: 6rem 1rem 0rem 1rem;
 }
 
 .headline-img {
   width: 100%;
   height: auto;
   object-fit: fill;
-  /* border-radius: 5%; */
   /* border: black 2px solid; */
 }
 
 .headline-content {
   display: block;
-  border-left: rgb(169,169,169) 2px solid;
-  padding: 1rem;
+  padding: 0rem 1rem;
 }
 
 .other-news {
@@ -86,11 +88,9 @@ header {
   display: block;
   text-align: left;
   padding: 1rem;
-  border: rgb(169,169,169, 0.5) 2px solid;
-  /* border-radius: 5%; */
   background-color: white;
-  box-shadow: 5px 5px rgb(169,169,169, 0.5);
-  padding: 1rem 1rem 1rem 1rem;
+  border: rgb(169,169,169, 0.5) 2px solid;
+  box-shadow: 10px 10px rgb(169,169,169, 0.5);
 }
 
 .article-img {
@@ -98,7 +98,7 @@ header {
   overflow: crop;
   height: auto;
   object-position: cover;
-  /* border-radius: 5%; */
+  /* border-radius: 2%; */
 }
 
 footer {
@@ -106,12 +106,21 @@ footer {
   justify-content: center;
   align-items: center;
   height: 2rem;
-  background-color:rgb(169,169,169);;
+  background-color:rgb(169,169,169);
   text-align: center;
   font-weight: lighter;
   font-size: 80%;
-  font-style: italic;
   color: white;
+}
+
+.linkedin {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.linkedin:hover{
+  text-decoration: underline;
 }
 
 h1 {
@@ -144,6 +153,10 @@ p {
   text-transform: uppercase;
   padding: 0rem 0.25rem;
   color: black;
+}
+
+.read-more:hover {
+  font-weight: bold;
 }
 
 /* Desktop elements that should behave differently */
