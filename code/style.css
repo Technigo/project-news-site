@@ -7,7 +7,7 @@ a {
 
   body {
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(242, 230, 243);
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
@@ -16,6 +16,11 @@ a {
 
 p {
     font-family: 'Noto Serif', serif;
+}
+
+article {
+
+    display: inline;
 }
 
 h1 {
@@ -147,6 +152,7 @@ h3 {
 .nav-list li:hover {
     color: #d1641b;
     cursor: cell;
+    transform: scale(1.1);
 }
 
 
@@ -231,11 +237,12 @@ h3 {
         /* width: 278px; */
         height: 45px;
         border-radius: 4px;
-
+        transition: transform 0.5s;
         }
         
         .top-btn:hover {
             background: #FA8334;
+            transform: scale(1.05);
         }
         
 
@@ -276,6 +283,13 @@ h3 {
     max-width: 47%;
     min-width: 47%;
     height: 400px; 
+    transition: all 0.5s;
+
+
+}
+
+.card:hover {
+    transform: scale(1.07);
 
 }
 
@@ -288,6 +302,7 @@ h3 {
     padding-bottom: 2rem;
 }
 .timestamp {
+    color: #9055A2;
     font-family: noto sans;
     padding: 0 2rem 0rem 0rem;
     justify-content: end;
@@ -299,27 +314,45 @@ h3 {
 
 @media all and (max-width:480px) {
 
-    .menu {
+    .header {
 
-        height: 12px;
+        padding-bottom: 1rem;
+    
     }
+
+
+  /* "unwanted news"-part */
+    .header p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+        line-height: 0rem;
+        background-color: #21122e;
+        height: 8px;
+        padding: 1rem;
+    
+    }
+    
+    .nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 3%;
+    }
+
 
     .nav-list li {
 
         font-size: 0.8rem;
     }
 
-  /* "unwanted news"-part */
-    .header p {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-size: 1rem;
-    }
-
-    .menu {
-        width: vw;
-        justify-content: space-between;
-    }
 
     h2 {
 
@@ -360,18 +393,20 @@ h3 {
     .card {
         width: 47%;
         flex: 1;
-        height: 370px;
+        height: 300px;
+        justify-content: initial;
         margin-bottom: 1rem;
     }
 
     .card-img {
-
-        height: 40%;
+        max-height: 130px;
+        min-height: 100px;
+    
     }
 
     .card-text {
-
-        padding: 0.7rem;
+        padding: 0;
+        margin-top: 1rem;
     }
 }
 
@@ -397,7 +432,7 @@ h3 {
         padding-top: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .weather {
@@ -409,33 +444,33 @@ h3 {
     
 
     
-.menu {
-  
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-between;
-    line-height: 1rem;
-    background-color: #21122e;
-    height: 20px;
-    padding: 1rem;
 
-}
-
-.nav-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    .menu {
+        height: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+        line-height: 1rem;
+        background-color: #21122e;
+        height: 20px;
+        padding: 1rem;
     
-}
-   
+    }
+    
+    .nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 3%;
+    }
 
-.nav-list li {
 
-    gap: 8%;
+    .nav-list li {
 
-}
+        font-size: 1rem;
+    }
 
     .topstories-full-container   {
 
@@ -649,7 +684,7 @@ h3 {
 
 /* 1025px — 1200px: Desktops, large screens.
 1201px and more — */
-@media all and (min-width:1025px) and (max-width:1200px) {
+@media all and (min-width:1025px) and (max-width:1500px) {
 
     .logo {
 
@@ -660,7 +695,171 @@ h3 {
     }
     .header img {
         flex: 1;
-        max-width: 60%;
+        max-width: 50%;
+        align-content: center;
+        display: inline-flex;
+    
+    }  
+    .header p {
+
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .weather {
+
+        padding-left: 2rem;
+        padding-right: 1.3rem;  
+
+    }  
+    
+        
+    .menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+        line-height: 1rem;
+        background-color: #21122e;
+        height: 20px;
+        padding: 1rem;
+
+    }
+
+    .nav-list {
+
+        display: flex;
+        margin: 0;
+        margin-left: 1.2rem;
+        padding: 0;
+        list-style: none;
+        gap: 8%;
+        
+    }
+
+    .nav-list li {
+
+        gap: 8%;
+
+    }
+    /* 1 */ .topstories-full-container {
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0.6rem;
+    }
+
+    /* 2 */ .topstories-section-container  {
+
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        width: 100%;
+    }
+
+        /* CHILDREN */ .topstories-section-container > * {
+        flex-grow:1;
+    }
+
+    .top-section {
+
+        height: 100%;
+    }
+
+    .top-h1 {
+
+        font-size: 1.5rem;
+    }
+
+
+    h1 {
+
+        font-size: 2.4rem;
+    } 
+
+    .text-top {
+
+        margin: 2rem;
+        align-content: center;
+        width: 80%;
+    }
+
+    .text-top > * {
+
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+
+    .top-btn {
+
+        height: 60px;
+
+        }
+
+
+
+    .other-stories-container {
+        margin: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    
+    .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+        min-width: 300px;
+        height: 400px; 
+        max-width: 100%;
+
+    }
+
+    .card-text {
+
+        padding-bottom: 1.4rem;
+    }
+
+    .timestamp {
+
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+
+    }
+
+
+}
+
+@media all and (min-width:1500px) {
+
+    body {
+        margin: auto;
+        width: 1400px;
+    }
+
+    .logo {
+
+        align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .header img {
+        flex: 1;
+        max-width: 50%;
         align-content: center;
         display: inline-flex;
     
@@ -736,36 +935,36 @@ h3 {
     height: 100%;
 }
 
-                .top-h1 {
+    .top-h1 {
 
-                    font-size: 1.5rem;
-                }
-                
+        font-size: 1.5rem;
+    }
+    
 
-                h1 {
+    h1 {
 
-                    font-size: 2rem;
-                } 
+        font-size: 2.5rem;
+    } 
 
-                .text-top {
+    .text-top {
 
-                    margin: 2rem;
-                    align-content: center;
-                    width: 80%;
-                }
+        margin: 2rem;
+        align-content: center;
+        width: 80%;
+    }
 
-                .text-top > * {
+    .text-top > * {
 
-                    margin-left: 1.3rem;
-                    margin-right: 1.3rem;
-                }
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
 
 
-                .top-btn {
+    .top-btn {
 
-                    height: 60px;
+        height: 60px;
 
-                    }
+        }
 
 
 
@@ -775,7 +974,7 @@ h3 {
         flex-wrap: wrap;
         flex-direction: row;
         align-content: space-between;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         gap: 1rem;
     }
@@ -785,11 +984,11 @@ h3 {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-content: space-around;
+        align-content: space-between;
         justify-content: space-between;
-        max-width: 350px;
-        min-width: 250px;
+        min-width: 300px;
         height: 400px; 
+        max-width: 100%;
 
     }
 
@@ -804,6 +1003,4 @@ h3 {
         font-size: 0.8rem;
 
     }
-
-
 }
