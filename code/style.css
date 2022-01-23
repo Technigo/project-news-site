@@ -121,17 +121,18 @@ header {
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 668px) {
+@media (min-width:0px) and (max-width:667px){
+
   .small-news-container {
     grid-template-columns: 1fr;
   }
+
   .navbar {
     display: none;
   }
 }
 
-
-@media screen and (max-width: 1024px) {
+@media (min-width:668px) and (max-width:1024px){
   .small-news-container {
     grid-template-columns: 1fr 1fr;
   }
