@@ -1,0 +1,99 @@
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.logo-ticko{
+    display: grid;
+    grid-column-start: 1;
+    align-self: center;
+}
+
+.icon-menu{
+    display: grid;
+    grid-column-start: 2;
+  /*hur ska jag få menyn i mitten?*/
+}
+
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+    }
+
+    a:link, a:visited {
+    text-decoration: none;
+    }
+    
+    a:hover, a:active {
+    color: rgb(110, 8, 8);
+    font-size: 110%;
+    }
+
+    .button {
+        background-color:#6a65fa;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 1rem;
+        text-align: end;
+      }
+
+
+/*Tablet VARFÖR SYNS INTE MIN NAVBAR?*/ 
+@media (min-width: 667px) and (max-width: 1024px){
+
+    .main-header{
+        grid-template-columns: repeat(5, 1fr) ;
+    }
+
+    .nav-menu {
+        grid-column: 2 / 6;
+        justify-content: space-around;
+        align-self:center;
+    }
+
+    .icon-menu {
+    display: none;
+    }
+
+/*Copmuter VARFÖR SYNS INTE MIN NAVBAR?*/
+
+@media (min-width: 1025px){
+
+    .main-header{
+        grid-template-columns: repeat(5, 1fr) ;
+    } 
+
+    .nav-menu {
+        grid-column: 2 / 6;
+        justify-content: space-around;
+        align-self:center;
+    }
+
+    .icon-menu {
+    display: none;
+    }
+
+
+}
+
+
+
+
+
+}
