@@ -50,8 +50,9 @@ header {
 
 .hamburger {
   width: 2rem;
-  height: 0.2rem;
+  height: 2px;
   margin: 0.25rem 1rem 0.25rem 0rem;
+  padding: 0.5px;
   background-color: white;
 }
 
@@ -89,8 +90,9 @@ header {
   text-align: left;
   padding: 1rem;
   background-color: white;
-  border: rgb(169,169,169, 0.5) 2px solid;
-  box-shadow: 10px 10px rgb(169,169,169, 0.5);
+  border: rgb(208, 0,8, 0.5) 2px solid;
+  /* strech goal: add box shadow. Commented out bc didn't like the result */
+  /* box-shadow: 10px 10px rgb(169,169,169, 0.5); */
 }
 
 .article-img {
