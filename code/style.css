@@ -9,7 +9,7 @@
 
 body{
   width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,0.7147233893557423) 0%, rgba(196,216,237,1) 58%);
   display: flex;
@@ -139,26 +139,28 @@ h1 {
 }
 
 .container-3{
-  
+
 display: grid;
 grid-template-columns: repeat(1, 1fr);
 grid-template-rows: repeat(4, 120vw);
 grid-gap: 15px;
+
 } 
 
 .blog-post img{
-  max-width: 70%;
-  height: auto;
+  object-fit: cover;
+  width: 80%;
+  max-height: 100%;
+  padding: 1rem;
 }
 
 .blog-post {
   font-family: Raleway;
-  margin: 2rem;
   text-align: center;
   background: rgb(241, 241, 233);
   border-radius: 2rem;
-  height: 90%;
-
+  max-height: 100%;
+  width: 70%;
 }
 
 .blog-post p{
@@ -169,10 +171,12 @@ footer {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 228, 196, 0.349);
+  margin-top: 2rem;
+  
   }
 
   footer p {
-    margin-left: 2rem;
+    margin: 2rem;
     font-family: 'Roboto Mono', monospace;
   }
 
