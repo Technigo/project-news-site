@@ -1,115 +1,104 @@
 html {
-  background: #e0e2f1;
-  color: rgb(27, 26, 26);
-  }
-body {
-  margin:0;
-  box-sizing: border-box;
+    background: #e0e2f1;
+    color: rgb(27, 26, 26);
 }
-.header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 120px;
-  background-color:rgb(60, 136, 73);
 
-  /* overflow: hidden; */
+body {
+    margin: 0;
+    box-sizing: border-box;
 }
-.hamburger-menu {
-  right: 10px;
-    position: absolute;
-    top: 15px;
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(60, 136, 73);
 }
-.nav{
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  align-items: center;
-  width:100%;
-  margin:auto;
-  /* background-color:rgb(60, 136, 73); */
-}
-  .nav ul{
-    list-style: none;
+
+.nav {
     display: flex;
-  }
-   /*navigation bar is not responsive*/
-  .nav ul li a{
-    text-decoration: none;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    color: whitesmoke;
-    padding: 1.5rem;
-        transition: all .7s ease;
-   }
-   .nav ul li a:hover{
-     color: rgb(241, 177, 124);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+    }
+        .nav ul li a {
+            text-decoration: none;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 36px;
+            color: whitesmoke;
+            padding: 1.5rem;
+            transition: all .7s ease;
         }
 
-  .nav img{
-    width: 75px;
-    margin-top: 10px;
-    margin-left: 10px;
-    height: auto;
-  }
-  .nav-mobile {
-    display: none;
-    /* background-color:lightslategray; */
-  }  
-  h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h2 {
-  font-family: 'Rajdhani', sans-serif;
- }
-p {
-  font-family: 'Scope One', serif;
+            .nav ul li a:hover {
+                color: rgb(241, 177, 124);
+            }
 
+    .nav img {
+        width: 75px;
+        margin-top: 10px;
+        margin-left: 10px;
+        height: auto;
+    }
+
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+p {
+    font-family: 'Scope One', serif;
+}
+
 .container {
-  margin-top: 160px;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-gap: 1.5rem;
+    margin-top: 115px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
 }
 
 .image {
-  width: 100%; 
-  object-fit: cover;
-  height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    height: 26rem;
 }
 
-.small-logo{
-  height: 50px;
-  margin: 5px 5px 0 10px;
+.small-logo {
+    height: 50px;
+    margin: 5px 5px 0 10px;
 }
- 
-  .small-border-radius {
+
+.small-border-radius {
     border-radius: 5px;
-  }
+}
 
-  .cell-1 {
+.large-cell {
     grid-column: span 2;
     padding: 2rem;
     background-color: lightgray;
-    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
-    /*cell-1 should have some text, that is shown only in tablet size*/
+    box-shadow: 10px 10px 10px gray;
+}
 
-      }
 
-    .cell-2 {
-    background-color: lightgrey;
-    grid-column: span 2;
+.small-cell {
+    background-color: rgb(137, 194, 137);
     padding: 1rem;
-    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
-    }
-  .cell-3, .cell-4, .cell-5, .cell-6, .cell-7, .cell-8{
-    background-color:rgb(137, 194, 137);
-    padding: 1rem;
-    box-shadow: 10px 15px 5px -4px rgb(68, 67, 67);
-  }
-  /*
-  .footer {
+    box-shadow: 10px 10px 10px gray;
+}
+
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -117,45 +106,53 @@ p {
     background-color: rgb(60, 136, 73);
     color: white;
     text-align: center;
-  }*/
+}
 
-  /* mobile */
-  @media (max-width:667px) {
-    .cell-1 {
-      grid-column: span 4;
+/* mobile */
+.nav-mobile {
+    display: none;
+}
+
+.hamburger-menu {
+    right: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+@media (max-width:667px) {
+    .large-cell {
+        grid-column: span 4;
     }
-    .cell-2 {
-      grid-column: span 4;
+
+    .small-cell {
+        grid-column: span 4;
     }
-    .cell-3, .cell-4, .cell-5, .cell-6, .cell-7 {
-      grid-column: span 4;
-           }
+
     .nav-mobile {
         display: block;
-            /* background-color:lightslategray; */
-    }  
+    }
+
     .nav {
-      display: none;
-    }  
-    .header {
-      height: 60px;
+        display: none;
     }
 
     .container {
-       margin-top: 60px;
+        margin-top: 50px;
     }
-  }      
-  
-  
-  /* tablet */
-  @media (min-width: 668px) and (max-width:1024px) {
-    /* .cell-1 {
-      grid-column: span 4;
+
+    .image {
+        height: 15rem;
     }
-    .cell-2 {
-      grid-column: span 4;
-    } */
-    .cell-3, .cell-4, .cell-5, .cell-6, .cell-7 {
-      grid-column: span 2;
+}
+
+
+/* tablet */
+@media (min-width: 668px) and (max-width:1024px) {
+    .small-cell {
+        grid-column: span 2;
     }
-  }
+
+    .image {
+        height: 16rem;
+    }
+}
