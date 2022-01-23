@@ -1,12 +1,8 @@
-# News Site
+<b>About</b>
+Creating a news site with mobile-first responsive design using css grid and flexbox.
 
-Replace this readme with your own information about your project. 
+<b>Problem approach</b>
+Requirements was to create a news site with article sections responsive to mobile, tablet and desktop views, with one, two respectively four cards in a row (or column). Started off by dividing the page in sections using grid, then centering section content using flex. Pure html and css. Possible to add menu animations using JS in the hamburger menu.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+<b>Live demo: </b>
+https://thirsty-varahamihira-7a8675.netlify.app/
