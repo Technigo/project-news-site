@@ -100,7 +100,6 @@ header {
   overflow: crop;
   height: auto;
   object-position: cover;
-  /* border-radius: 2%; */
 }
 
 footer {
@@ -191,7 +190,9 @@ p {
     display: flex;
     flex-direction: column;
   }
-
+  h1 {
+    font-size: 30px;
+  }
   .big-news {
   display: grid;
   grid-template-columns: 1fr;
