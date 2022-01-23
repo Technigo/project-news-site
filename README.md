@@ -1,12 +1,17 @@
-# News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+
+
+
+## News site: For this project I did a news site about what's new in the world of Hollywood. 
+I used flexbox for the header and a css grid layout for the news articles.
+
+## The problem: I had so much trouble working with grid layout, especially applying some header elements in it. 
+So by asking around I found it was easier to use flexbox for the header section so I then removed it from the grid container. If I had more time I would make more changes to the header using flexbox.
+I also managed to find a way to better work with margins and paddings since this gave me a headache. By adding background colors and borders to elements it was easier to notice all changes that was made.
+I started this project by going through the materials and watching the live sessions. I googled A LOT to learn more about flexbox and grid but I still need more time to work with these. 
+Media queries were easier to pick up then learning about the different layout techniques.
+
+## View it live
