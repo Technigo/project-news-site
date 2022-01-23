@@ -75,9 +75,20 @@ li:hover{
   width: 8%;
 }
 
+
 .logo img {
-  border-radius: 50%;
+  border-radius: 90%;
   width: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #fcfcfc;
+  }
+  100% {
+    background-color: #5574db;
+  }
 }
 
 /*These style the home image and text*/
@@ -85,8 +96,9 @@ li:hover{
 .home {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .big-image img {
