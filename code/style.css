@@ -185,10 +185,21 @@ h3 {
     font-size: 48px;
   }
 
+  .round-logo-yoga {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 50%; 
+  }
+
   .big-card {
     display:flex;
     padding: 8px;
-    align-items: center;
+    align-items:stretch;
+  }
+
+  .big-card p {
+    font-size: 18px;
   }
 
   .cards {
