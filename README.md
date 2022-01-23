@@ -9,4 +9,5 @@ did a very simple plan in the beginning but ended up working a bit unstructured.
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://focused-mayer-454031.netlify.app
