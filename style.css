@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Apex new";
+    transition: all .3s cubic-bezier(.16,.8,.62,1.52);
+}
+
+.section{
+    min-height: 100vh;
+    padding: 0 7%;
+    padding-top: 9rem;  
+}
+
+html{
+  overflow-x: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
+/*/ Button /*/
+.btn{
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 18px;
+  color: black;
+  margin: 10px;
+  padding: 7px 22px;
+  text-decoration: none;
+  border: 1px solid rgb(28, 179, 28);
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background: rgb(28, 179, 28);
+  transition: .2s;
+}
+
+button span{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  transition: .3s transform ease-in;
+}
+
+/*/--- Hamburger ends ---/*/
+
+/*/----- Home -----/*/ 
+.home{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+/*/----- Navbar -----/*/ 
+.navbar{
+    min-height: 70px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px; 
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: white;
+}
+
+li{
+  list-style: none; 
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar a:hover{
+    color: rgb(28, 179, 28);
+}
+/*/----- Navbar ends -----/*/
+
+
+
+
+/*/----- Home -----/*/ 
+.home{
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*/ Background video /*/
+.home video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  /*/ Text overlay - Home page/*/
+  .home-text{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    align-items: center;
+  }
+  
+  .home-text h1 {
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 0.5em;
+    text-align: center;
+    position: relative;
+  }
+  
+  .home-text p{
+    font-size: 1.1em;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+    position: relative;
+  }
+  
+  /*/ Buttons - Home page /*/
+  .home-text a{
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid rgb(28, 179, 28);
+    border-radius: 25px;
+  }
+  
+  .home-text a:hover {
+    background: rgb(28, 179, 28);
+    transition: .2s;
+  }
+
+  .title-price{
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+  }
+  .title-price h3{
+      font-size: 1rem;
+  }
+/*/----- Home page ends -----/*/
+
+
+
+/*/----- Article -----/*/
+.article{
+  background: #222;
+  padding: 100px 100px;
+  position: relative;
+  align-items: center;
+}
+ 
+.heading{
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+.heading span{
+  color: green;
+}
+
+.article .heading{
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 2rem;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.article .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article .box-container .box{
+  background: #fff;
+  border: .1rem solid rgba(0,0,0,.1);
+  padding: .2rem;
+  margin: .8rem;
+  border-radius: .2rem;
+  box-shadow: 0 .5rem rgba(0,0,0,.1);
+  text-align: center;
+  
+}
+
+.article h1{
+  padding: 2rem;
+}
+
+.article .box-container .box img{
+  height: 8rem;
+  padding: .2rem;
+  margin-top: 10px;
+}
+
+.article .box-container .box h3{
+  font-size: 1.5rem;
+  color: #666;
+  padding: .4rem 0;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.article .box-container .box p{
+  font-size: .8rem;
+  color: #999;
+  padding: .2rem;
+}
+
+.article .box-container .box:hover{
+  transform: translateY(-1rem);
+}
+
+.article .btn{
+  line-height: 3rem;
+  font-size: 15px;
+  color: black;
+  margin: 10px;
+  padding: 7px 22px;
+  text-decoration: none;
+  border: 1px solid rgb(28, 179, 28);
+  border-radius: 25px;
+}
+/*/----- Article page ends -----/*/
+
+
+
+
+/*/ ----- Alternative sport of the day ------- /*/
+.daily{
+  background: rgb(27, 27, 27); 
+  padding: 40px 100px;
+}
+
+.daily .heading{
+  text-align: center;
+  padding: 2rem; 
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.daily .box-container .box h3{
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem 0;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.daily .box-container .box p{
+  font-size: 1.4rem;
+  color: #fff;
+  padding: .5rem;
+}
+
+.daily .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.daily .box-container .box{
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.daily .box-container .box img{
+  width: 25rem;
+  border-radius: 10px;
+  box-shadow: 1 .5rem rgba(10, 10, 10, 0.1);
+
+}
+
+.daily .btn{
+  line-height: 3rem;
+  font-size: 15px;
+  color: white;
+  margin: 30 40px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: 1px solid rgb(28, 179, 28);
+  border-radius: 25px;
+}
+
+.daily .box-container .box img:hover{
+  transform: translateY(-1rem);
+}
+
+
+
+/*/ Alternative sport of the day - Ends /*/
+
+
+
+/*/----- Footer -----/*/
+.footer{
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(27, 27, 27); 
+}
+
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 2rem;
+  font-weight: normal;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  color: #fff;
+  padding-bottom: 1rem 0;
+  font-weight: normal;
+}
+
+.footer .credit{
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1rem;
+  border-top: .1rem 
+}
+/*/----- Footer - ends -----/*/
+
+
+
+/*/----- Media queries -----/*/
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    font-size: 60px;
+    background-color: #111;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .nav-item{
+    margin: 16px 0;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
+
+}
+
+

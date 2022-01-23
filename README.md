@@ -1,12 +1,9 @@
-# News Site
+# project-news-site
 
-Replace this readme with your own information about your project. 
+News Site\
+This news site is about alternative sports such as dog surfing and chess boxing. You can read all the latest news about each sport. Enjoy!
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The problem\
+I have worked with flex box for the articles and I also used javascript for the hamburger menu to make it responsive to fit all screen sizes. I had some problems with opening the mobile menu and i solved it by structure the menu differently in the ul class and added settings in the media query. If i had more time i would have focused more on the design and also alignment of all content
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+View it live\
