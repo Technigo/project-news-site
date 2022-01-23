@@ -2,21 +2,110 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="logo">
+        <img src="logo.png" width="40px" height="40px" />
+        <h1>Stockholm News Magazine</h1>
+      </div>
+      <nav>
+        <a href="">Start</a>
+        <a href="">About us</a>
+        <a href="">Magazine</a>
+        
+        <span class="hamburgermenu">
+          <img src="hamburgermenu.png" width="40px" height="40px"/>
+        </span>
+      </nav>
     </header>
 
+
     <section class="big-news">
+      <article>
+        <img src="https://www.svtstatic.se/image/imax/1280/33809042/1641796136?format=auto" alt="Corona virus and health worker" />
+        <div class="big-news-text">
+          <span>
+          <h1>Latest news</h1>
+          <p>Covid-19</p>
+          <button>Read more</button>
+        </span>
+        </div>
+      </article>
       <!-- The big news content -->
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="card-news">
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33893018/1642429671?format=auto" alt="Zlatan and football team" />
+        <span class="card-text">
+          <h2>Football News</h2>
+          <p>Zlatan still "avstängd"</p>
+        </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33889366/1642413420?format=auto" alt="Wennergarn castle"/>
+        <span class="card-text">
+        <h2>Fire at Wennergarn Castle</h2>
+        <p>Apartment fire during Monday</p>
+      </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33868554/1642164389?format=auto" alt="Melodifestivalen and Oscar Zia"/>
+        <span class="card-text">
+        <h2>Melodifestivalen</h2>
+        <p>Cancelled due to new restrictions on Covid-19</p>
+      </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/28904194/1603980412?format=auto" alt="Dramaten Stockholm"/>
+        <span class="card-text">
+        <h2>Dramaten</h2>
+        <p>Theatre cancelled due to Covid-19</p>
+      </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33561934/1639464519?format=auto" alt="Golden Globe and person taking pic of it"/>
+        <span class="card-text">
+        <h2>Here's the Golden Globe nominees</h2>
+        <p>The complete list</p>
+        </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33756306/1641204494?format=auto" alt="Janet Jackson performing"/>
+        <span class="card-text">
+        <h2>New documentary on Janet Jackson</h2>
+        <p>She is the producer</p>
+        </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/32937494/1634820656?format=auto" alt="Pics of nature, a whale, a road and an organism"/>
+        <span class="card-text">
+        <h2>The unknown heros and enemies of climate</h2>
+        <p>Did you know?</p>
+        </span>
+      </article>
+      <article>
+        <img class="card-image" src="https://www.svtstatic.se/image/wide/992/33824854/1641898676?format=auto" alt="Kända idrottare på bild tillsammans"/>
+        <span class="card-text">
+        <h2>Swedish Sport Gala 2022</h2>
+        <p>What you'll need to know</p>
+        </span>
+      </article>
     </section>
+
+    <footer>
+      <p>2022</p>
+      <p>Pics from svt.se</p>
+      <p>News topics also from svt.se</p>
+      <p>All news credit goes to svt.se</p>
+    </footer>
   </body>
 </html>
