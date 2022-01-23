@@ -290,14 +290,13 @@
    
     .big-news-container { 
        flex-direction: row;
-       justify-content: space-evenly;
+       justify-content: stretch;
 
      }
 
      
      .big-item1 { 
-       margin: 0 0 0 80px;
-       padding: 0;
+      
        width: 0;
        align-items: center;
      } 
@@ -313,7 +312,7 @@
      .big-item2 {
        width: 50%;
        height: auto;
-       margin: 0 0 0 100px;
+       margin: 0 0 0 28%;
        filter: drop-shadow(5px 5px rgb(124, 19, 101));
        padding: 10px;
        
