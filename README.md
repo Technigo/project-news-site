@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Making a responsive news-site and choosing a theme that I picked myself and build it from scratch. The webpage should have a title,logo and navbar and different news card/articles. I choose to do a desktop first approach. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The first time I created a responsive webpage and working with media queries,flexbox,grid and other elements. I used figma for making a sketch and to plan my project news site. Then a started coding, googling, looking at videos at youtube and asking question in the groupmeetings. There were many problems and a lot of googling etc.
+
+If I hade more time, I would make animation, more hover effects and boxshadows. I would also fix my text better. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
