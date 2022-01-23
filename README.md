@@ -1,10 +1,4 @@
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-
-
-
 ## News site: For this project I did a news site about what's new in the world of Hollywood. 
 I used flexbox for the header and a css grid layout for the news articles.
 
@@ -15,3 +9,4 @@ I started this project by going through the materials and watching the live sess
 Media queries were easier to pick up then learning about the different layout techniques.
 
 ## View it live
+https:/hollywood-news.netlify.app
