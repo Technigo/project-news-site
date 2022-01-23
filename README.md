@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a responsive classic newspaper site (one page) that should include a header with logo and navbar, one big news article and a few smaller ones.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+To accomplish the assignment I used flexbox on both the header and the content with the articles. I started with the HTML structure and then styled one element at a time. For this project I styled desktop first which maybe was the wrong way to approach it since it's more optimal to do mobile first. If I would to do it all over again I would design mobile first. One thing I struggled with was to make the navbar responsive only using CSS. I solved it by arranging the list items in a column on mobile devices. If I hade more time on this project I would try to style the responsive navigation even more, maybe with a hamburger icon that expands on mobile devices. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://lisen-project-news-site.netlify.app/
