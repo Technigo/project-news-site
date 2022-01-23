@@ -9,4 +9,4 @@ The first time I created a responsive webpage and working with media queries,fle
 If I hade more time, I would make animation, more hover effects and boxshadows. I would also fix my text better. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://tender-newton-ef44c4.netlify.app/
