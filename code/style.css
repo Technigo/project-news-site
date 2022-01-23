@@ -141,10 +141,17 @@ color: tomato;
  text-align: center;
 }
 
+.news-grid-article{
+  text-align: left;
+  margin: 0 3% 3% 3%;
+}
+
+/* news grid hover effect */
 .news-grid-heading:hover{
 color: tomato;
 }
 
+/* box shadow effect */
 .grid-img{
   border: 1px solid;
   padding: 1px;
@@ -180,4 +187,28 @@ color: tomato;
   display: flex;
   flex-direction: column;
 }
+}
+
+/* company name above footer */
+.company-name-container{
+  display: flex;
+  justify-content: center;
+}
+
+.company-name{
+  color: gray;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialmedia-icon{
+  justify-self: center;
+  width: 30%;
+  height: 70%;
+  filter: opacity(40%);
 }
