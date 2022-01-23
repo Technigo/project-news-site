@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is about creating magazine or newspaper site. Site changes depending on if you visit the site from a mobile, tablet or desktop. It contains big news section and a grid of cards with other news. On desktop sized screens, there is four cards in a row, two in a row on tablets and on mobile, there is one card on each row.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used flexbox for the layout with media queries to make the responsive design. I used also some animation with hover effects to make images zoom out and change the angle. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://jovial-almeida-0b01be.netlify.app/
