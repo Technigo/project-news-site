@@ -6,11 +6,11 @@ Assignment: Create a responsive design with three different views (desktop, tabl
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used a combination of grid and flexbox. If I hade more time I would fix the positioning of the image and the text in the big news section, especially in the tablet view.
 
 ## View it live
 
-https://festive-bell-26018b.netlify.app/
+https://jessicas-news-site-project.netlify.app/
 
 
 

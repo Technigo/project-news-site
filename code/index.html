@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
   <head>
-    <title>Project 2: The News Site</title>
+    <title>Veggie News</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -9,20 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- CSS -->
-    
     <link rel="stylesheet" href="./style.css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Work+Sans&display=swap" rel="stylesheet">
+    
   </head>
   <body>
 
     <!-- Header -->
 
-    <header class="main-header">
-      <div class="logo-container"><img src="./images/carrot-icon.png" /></div>
+    <header class="header">
+      <div class="logo-container"><img src="./images/carrot-icon.png" alt="carrot-icon" /></div>
       <h1>Veggie News</h1>
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li><a href="#">About us</a></li>
           <li><a href="#">Contact</a></li>
@@ -33,16 +35,16 @@
 
     <main class="main-container">
 
-    <!-- The big news content -->
+    <!-- Big news section -->
 
-    <section class="big-news">
-      <div class="image-container big-news-child">
+    <section class="big-news-section">
+      <div class="big-news-image-container">
         <a href="https://unsplash.com/photos/jSQxj-Ug0H8"><img
           src="./images/broccoli.jpg"
           alt="broccoli"
         /></a>
       </div>
-      <article class="main-news big-news-child">
+      <article class="big-news-article">
         <h2>Broccoli</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -65,89 +67,88 @@
       </article>
     </section>
 
-    <!-- The other news  -->
+    <!-- Other news section -->
 
-    <section class="other-news">
-      <article class="card">
+    <section class="other-news-section">
+      <article class="other-news-card">
         <img
           src="./images/avocado.jpg"
           alt="avocado"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Avocado</h2>
-            <p>Lite text här..</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
           src="./images/kale.jpg"
           alt="kale"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Kale</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
           src="./images/brussels-sprouts.jpg"
           alt="Brussels sprouts"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Brussels sprouts</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
           src="./images/bellpepper.jpg"
           alt="Bell pepper"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Bell pepper</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
           src="./images/beetroot.jpg"
           alt="Beetroot"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Beetroot</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
-          src="./images/cauliflower2.jpg"
+          src="./images/cauliflower.jpg"
           alt="cauliflower"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Cauliflower</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
-      <article class="card">
+      <article class="other-news-card">
         <img
           src="./images/tomato.jpg"
           alt="tomato"
         />
-        <div class="other-news-content">
+        <div class="other-news-text">
             <h2>Tomato</h2>
-            <p>Lite text här</p>
+            <p>Lorem ipsum dolor sit amet...</p>
         </div>
       </article>
     </section>
 
-    <!-- End other news -->
-
-  </main>
+    </main>
 
     <!-- Footer -->
 
     <footer>
       <p>&copy; 2022 Jessica Sandler</p>
     </footer>
+
   </body>
 </html>
