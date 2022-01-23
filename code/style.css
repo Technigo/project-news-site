@@ -33,13 +33,13 @@ flex-direction:column;
 }
 
 .newssite-name h1{
-  color: white;
+  color: #32533D;
   padding: 1rem;
   font-size: 1.5rem;
   transition: 0.5s linear;
 }
 .newssite-name h1:hover{
-  color: pink;
+  color: #F8C0C8;
 }
 
 .navbar {
@@ -54,6 +54,7 @@ flex-direction:column;
 }
 
 .navbar a {
+  color: #32533D;
   text-decoration: none;
   font-size: 0.6rem;
   padding: 1rem;
@@ -62,8 +63,8 @@ flex-direction:column;
 }
 
 .navbar a:hover{
-  background: pink;
-  color: green;
+  background: #F8C0C8;
+  color: #fff;
 }
 
 /* Main news for mobile*/
@@ -90,6 +91,7 @@ flex-direction:column;
 }
 
 .main-text h1{
+  color: #32533D;
   font-size: 1rem;
   font-weight: bolder;
   padding: 1rem;
@@ -115,6 +117,7 @@ flex-direction:column;
   place-items: center;
   padding: 1rem;
   margin: 0.5rem;
+  box-shadow: 10px 5px 5px black;
 }
 .other-news-box img{
   max-width: 100%;
@@ -126,6 +129,7 @@ flex-direction:column;
 }
 
 .other-news-box h2{
+  color: #32533D;
  align-items: center;
  justify-items: center;
  font-size: 1.2rem; 
@@ -145,6 +149,7 @@ footer {
 footer a{
 font-size: 15px;
 text-decoration: none;
+color:#32533D;
 background: #fff;
 border: 1px solid black;
 padding: 10px;
@@ -174,7 +179,7 @@ padding: 10px;
   .main-news{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 0.8rem;
     place-items: center;
   }
 
@@ -186,6 +191,7 @@ padding: 10px;
    grid-column: 2 / 3;
    font-size: 1rem;
    margin: 1rem 1rem 0 1rem;
+   cursor: pointer;
   }
 
   .main-news p{
@@ -205,6 +211,10 @@ padding: 10px;
     display: grid;
     justify-items: center;
     align-items: center;
+  }
+
+  .other-news-box h2{
+    cursor: pointer;
   }
 
   .other-news-box img:hover{
@@ -235,10 +245,18 @@ padding: 10px;
   grid-template-columns: repeat(autofit, minmax(80%, 1fr));
 }
 
+.main-text h1{
+  cursor: pointer;
+}
+
   .other-news {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .other-news-box h2{
+    cursor: pointer;
   }
 
   .other-news-box img:hover{
