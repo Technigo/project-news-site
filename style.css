@@ -1,3 +1,5 @@
+/*HEADER*/
+
 .main-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,6 +7,7 @@
     background-color: white;
     padding: 10px;
     border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 .nav-menu {
@@ -17,12 +20,13 @@
     align-self: center;
 }
 
+/*hur ska jag få menyn i mitten?*/
 .icon-menu{
     display: grid;
     grid-column-start: 2;
-  /*hur ska jag få menyn i mitten?*/
 }
 
+/*NAVBAR*/
 
 a {
     font-size: 24px;
@@ -51,14 +55,81 @@ a {
         cursor: pointer;
         border-radius: 1rem;
         text-align: end;
-      }
+   }
 
+.picture-putin{
+    width: 300px;
+    margin: 0;
+}
+
+.grid-main-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    background-color: #dbdaf8;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+     }
+
+     /*SMÅ NYHETERNA*/
+
+     .grid-item1 {
+        background-color: white;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        
+    }
+    
+    .grid-item2 {
+        background-color: #dbdaf8;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        }
+    
+        .picture-virus {
+        width: 200px;
+        height: auto;
+        }
+    
+    
+    .grid-item3 {
+        background-color: white;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    
+    .grid-item4 {
+        background-color: #dbdaf8;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    .link-in-text {
+        color: darkblue;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+     }
+
+    
+
+/* Varför har jag skrivit detta?
+     body{
+        position: relative;
+        box-sizing: border-box;
+        margin: 10PX;
+    } */
 
 /*Tablet VARFÖR SYNS INTE MIN NAVBAR?*/ 
 @media (min-width: 667px) and (max-width: 1024px){
 
-    .main-header{
-        grid-template-columns: repeat(5, 1fr) ;
+    .main-header {
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .nav-menu {
@@ -71,12 +142,44 @@ a {
     display: none;
     }
 
+    .grid-main-news {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        background-color: #dbdaf8;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+}
+    /*SEPARERA BILD MED TEXT*/ 
+.main-news-left{
+    padding: 10px;
+    grid-template-columns:
+}
+.main-news-right{
+    padding: 10px;
+}
+
+.grid-small-news{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+color: darkblue;
+font-family:Arial, Helvetica, sans-serif
+}
+
+
+
+
 /*Copmuter VARFÖR SYNS INTE MIN NAVBAR?*/
 
 @media (min-width: 1025px){
 
     .main-header{
-        grid-template-columns: repeat(5, 1fr) ;
+        grid-template-columns: repeat (5, 1fr) ;
     } 
 
     .nav-menu {
@@ -88,6 +191,37 @@ a {
     .icon-menu {
     display: none;
     }
+
+    .grid-main-news {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        background-color: #dbdaf8;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+}
+    /*SEPARERA BILD MED TEXT*/ 
+.main-news-left{
+    padding: 10px;
+    grid-template-columns:
+}
+.main-news-right{
+    padding: 10px;
+}
+
+/*Varför fungerar inte detta nu, att dela upp i fyra?*/
+.grid-small-news {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  h1{
+    font-style: oblique;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
 
 
 }
