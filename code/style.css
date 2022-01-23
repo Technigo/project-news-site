@@ -36,12 +36,19 @@ header {
   color: white;
 }
 
-.nav-links a {
+.navbar-links a {
   text-transform: uppercase;
   color: white;
   font-weight: bold;
   text-decoration: none;
   margin: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.25rem 1rem 0.25rem 0rem;
+  background-color: white;
 }
 
 .big-news {
@@ -132,23 +139,35 @@ p {
 
 /* Desktop elements that should behave differently */
 @media (min-width: 992px) {
-  .nav-links{
+  .navbar-links{
     display: inline-block;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
 
 /* Tablet elements that should behave differently */
 @media (min-width: 768px) and (max-width: 991px){
-  .nav-links{
+  .navbar-links{
     display: inline-block;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
 
 /* Mobile elements that should behave differently */
 @media (max-width: 767px){
-  .nav-links{
+  .navbar-links{
     display: none;
   }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
   .big-news {
   display: grid;
   grid-template-columns: 1fr;
