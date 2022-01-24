@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week’s project was to create a classic magazine or newspaper site. The site should contain a header with a name of the site, a logo and a navbar. Further the site should have a big news section and a grid of cards with other news. The site should be responsive.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used flex for creating the layout of the site. I think I planned it out pretty well timewise. If I had had more time I would have done more with the animation-part and also a bit more styling.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://gallant-ritchie-7f8b1c.netlify.app/
