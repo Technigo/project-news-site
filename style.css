@@ -1,30 +1,28 @@
-/*HEADER*/
 
 body {
     margin: 0;
  }
 
+/*HEADER*/
 
 .main-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
     border: 2px solid black;
-   
 }
 
 .nav-menu {
     display: none;
 }
 
-.logo-ticko{
+.logo-ticko {
     display: grid;
     grid-column-start: 1;
     align-self: center;
 }
 
-/*hur ska jag få menyn i mitten?*/
-.icon-menu{
+.icon-menu {
     display: grid;
     grid-column-start: 2;
     place-self: center;
@@ -32,7 +30,7 @@ body {
 
 /*NAVBAR*/
 
-a {
+    a {
     font-size: 24px;
     text-decoration: none;
     margin: 10px;
@@ -60,25 +58,24 @@ a {
         cursor: pointer;
         border-radius: 1rem;
         text-align: end;
-   }
+    }
 
-.picture-putin{
-    width: 300px;
-    margin: 0;
-}
+    .picture-putin {
+        width: 300px;
+        margin: 0;
+    }
 
-.grid-main-news {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #dbdaf8;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    .grid-main-news {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #dbdaf8;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 
-     }
+/*SMÅ NYHETERNA*/
 
-     /*SMÅ NYHETERNA*/
-
-     .grid-item1 {
+    .grid-item1 {
         background-color: white;
         padding: 10px;
         border-bottom: 1px solid black;
@@ -90,12 +87,12 @@ a {
         padding: 10px;
         border-bottom: 1px solid black;
         border-top: 1px solid black;
-        }
+    }
     
-        .picture-virus {
+    .picture-virus {
         width: 200px;
         height: auto;
-        }
+    }
     
     
     .grid-item3 {
@@ -117,23 +114,21 @@ a {
         font-size: 16px;
         text-decoration: none;
         font-weight: bold;
-     }
+    }
 
-
-    
 
 /*-------TABLET-----*/ 
 
-@media (min-width: 667px) and (max-width: 1024px){
+@media (min-width: 667px) and (max-width: 1024px) {
 
     .main-header {
         grid-template-columns: repeat(5, 1fr);
     }
 
 
-nav{
+    nav {
     display: inline;
-}
+    }
 
     .nav-menu {
         display: flex;
@@ -143,7 +138,7 @@ nav{
     }
 
     .icon-menu {
-    display: none;
+        display: none;
     }
 
     .grid-main-news {
@@ -152,28 +147,28 @@ nav{
         background-color: #dbdaf8;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-     }
+    }
 
 
-.main-news-left {
-    padding: 10px; 
-}
+    .main-news-left {
+        padding: 10px; 
+    }
 
 
-.main-news-right{
-    padding: 10px;
-}
+    .main-news-right {
+        padding: 10px;
+    }
 
-.grid-small-news {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    .grid-small-news {
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-h1 {
-color: darkblue;
-font-family:Arial, Helvetica, sans-serif;
-}
+    h1 {
+        color: darkblue;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 
 }
 
@@ -181,21 +176,16 @@ font-family:Arial, Helvetica, sans-serif;
 
 @media (min-width: 1025px) {
 
-    .main-header {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    } 
-
-
-
+   
     h1 {
         font-style: oblique;
         color: black;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
-nav{
-    display: inline;
-}
+    nav {
+        display: inline;
+    }
    
 
     .nav-menu {
@@ -206,7 +196,7 @@ nav{
     }
 
     .icon-menu {
-    display: none;
+        display: none;
     }
 
     .grid-main-news {
@@ -217,23 +207,20 @@ nav{
         border-bottom: 1px solid black;
     }    
 
-.main-news-left {
-    padding: 10px;  
-}
+    .main-news-left {
+        padding: 10px;  
+    }
 
-.main-news-right{
-    padding: 10px;
-}
-
-
-.grid-small-news {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-}
+    .main-news-right {
+        padding: 10px;
+    }
 
 
+    .grid-small-news {
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
 }
+
