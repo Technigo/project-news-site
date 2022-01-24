@@ -1,0 +1,99 @@
+body {
+    background-color:olive ;
+}
+
+header {
+  justify-content: space-between;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 30px;
+  background-color:seashell; 
+   font-size: 12px;   
+display:flex;
+
+}
+.logo {
+  
+display: flex;
+width: 300px;
+min-height:200px;
+}
+
+h1 {
+  font-family:'Gill Sans', sans-serif;
+  font-weight: 300px;
+  font-size: 50px;
+  text-transform: lowercase;
+    
+  }
+   
+.container {
+display:flexbox;
+ border: 0px solid black;  
+ justify-content:right;
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+.other-news {
+  border: 3px; solid white;
+}
+
+ h2 { 
+  text-transform:first-letter;
+  font-family:'Gill Sans', sans-serif;
+  font-size:  30px;
+  text-align: center;
+@media (min-width: 667 px) and (max-width: 1024px )
+   
+  }
+nav ul {
+list-style: none;
+}
+ul {
+  
+  margin: 0;
+  padding: 0; 
+
+ }
+  a { text-decoration: none;
+    color: black;
+  }
+li {
+  margin: 20px;
+  list-style: none;
+float:right ;
+font-size: 20px;
+
+} 
+
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media (min-width: 667px) and (max-width: 1024px ){
+
+}
+
+.child {
+  padding: 5px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (min-width: 667px) and (max-width: 1024px ){
+
+}
+
+.child {
+ padding: 5px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+@media (min-width: 667px) and (max-width: 1024px ){
+  
+}
+
+  
