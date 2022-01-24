@@ -1,37 +1,275 @@
-html {
-  background: white;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  margin: 0;
-}
-
-.navbar {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   color: #000000;
-  text-align: center;
-  padding: 14px 16px;
+}
+
+/* ---- Logo & Navbar ---- */
+nav {
+  background: #ffffff;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  width: 100%;
+  height: 200px;
+}
+
+.menu {   
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: inline;
+  flex-direction: row;
+  padding: 30px 5px;
+  margin-left: 80px;
+  display: none;
+}
+
+.logo {
+  position: relative;
+  width: 300px;
+  flex-direction: row;
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+a {
+  color: #f0b616;
   text-decoration: none;
-  font-size: 17px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
-.navbar a:hover {
-  color: rgb(114, 114, 114);
+a:hover {
+  background: gray;
+  transition: .5s;
+  border-radius: 20px;
 }
 
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
+.item {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
 }
 
-img {
-  width: 140px;
+.logo-hidden {
+  display: none;
+}
+
+
+/* ----- Big news ----- */
+.big-news {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.column-image {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.big-news-image {
+  width: 100%;
+  height: 100%;
+}
+
+.big-news-article {
+  padding: 15px;
+}
+
+.big-news-text-top {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.big-news-text-middle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.big-news-text-bottom {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+h2 {
+  color: #f0b616;
+}
+
+p {
+  font-weight: lighter;
+}
+
+/* ---- Small news ----*/
+
+.other-news {
+  display: grid;
+}
+
+.article-box {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.news-article {
+  border: solid 10px #f0b616;
+}
+
+.other-image {
+  display: grid;
+}
+
+.article-text {
+  padding: 15px;
+}
+
+.text-top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-middle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-bottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---- Tablet ---- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+   /* ---- Logo & Navbar ---- */
+
+.menu li a {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 5px;
+    margin-left: 0;
+  }
+
+  .logo-hidden {
+    display: inline-block;
+    width: 350px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* ---- Big news ---- */
+
+  .big-news-image {
+    max-width: 100%;
+  }
+  
+  .article {
+    flex: 2; 
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+
+  /* ---- Small news ----*/
+
+  .article-box {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+  }
+
+  .other-news-image {
+    width: 100%;
+    height: auto;
+  }
+    
+  .news-article img:hover{
+    opacity: 1;
+    transition: 1s ease;
+  }
+
+  .article-text {
+    padding: 10px;
+  }
+}
+
+/* ---- Desktop ---- */
+
+@media only screen and (min-device-width: 1025px) {
+  
+   /* ---- Logo & Navbar ---- */
+
+  .menu li a {
+    display: inline;
+    flex-direction: row;
+    padding: 30px 5px;
+    margin-left: 80px;
+  }
+
+  .logo {
+    position: relative;
+    width: 400px;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-top: 20px;
+  }
+
+  /* ---- Big news ---- */
+
+  .big-news-image {
+    max-width: 100%;
+  }
+  
+  .article {
+    flex: 2; 
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+
+  /* ---- Small news ----*/
+
+  .article-box {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 
+  }
+
+  .other-news-image {
+    width: 100%;
+    height: auto;
+  }
+    
+  .news-article img:hover{
+    opacity: 1;
+    transition: 1s ease;
+  }
+
+  .article-text {
+    padding: 10px;
+  }
 }
