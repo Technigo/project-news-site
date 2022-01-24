@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐶Project 2: Dachshund Weekly</title>
     <link rel="stylesheet" href="./style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--dont forget to check the meta tag for responsiveness -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,18 @@
 
     <div class="navbar">
       <div class="container">
-        <img class="logo" src="images/news-site-logo.png">
-        
+        <img class="logo" src="images/dog-logo.png">
         <img id="open-menu" class="mobile-menu" src="images/menu-button.png" alt="open navigation">
-        
         <nav>
           <img id="close-menu" class="mobile-menu-exit" src="images/close-menu.png" alt="close navigation">
-          <ul class="nav-links">
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Vacation</a></li>
-            <li><a href="#">Lifestyle</a></li>
-            <li class="subscribe-button"><a href="#">Subscribe</a></li>
-          </ul>
+          <div class="nav-links">
+            <ul>
+              <li><a href="#">Vacation</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Books</a></li>
+              <li class="subscribe-button"><a href="#">Subscribe</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
@@ -34,15 +33,17 @@
     <section class="big-news">
       <div class="container">
         <ul>
-          <li>
-            <img class="big-news-img" src="images/big-news.jpg" alt="dachshunds cuddling">
-          </li>
-          <li>
-            <div class="big-news-text">
-              <h1 class="big-news-header">This is the Big News Header</h1>
-              <p class="big-news-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </li>
+          <div>
+            <li>
+              <img class="big-news-img" src="images/big-news.jpg" alt="dachshunds cuddling">
+            </li>
+          </div>
+          <div class="big-news-text">
+            <li>
+              <h1 class="big-news-header">Hello and welcome to a new issue of DW! </h1>
+              <p class="big-news-article"> Yes, it is a brand new number of you favourite magazine in your paws! This week will be all about lifestyle. We will give you our best tips on everything from beaches to quarantine-friendly movies and..<span class="read-more-button">read more</span> <span class="read-more"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
@@ -50,37 +51,58 @@
     <section class="other-news">
       <div class="container">
         <ul>
-          <li>
-            <a class="flex-child-books" href="#">
-              <img class="books" src="images/books.jpg" alt="dachshund in armchair">
-              <h1 class="other-news-header">Books and film tips for the sofisticated dachshund</h1>
-            </a>
-          </li>
-          <li>
-            <a class="flex-child-vacation" href="#">
-              <img class="vacation" src="images/vacation.jpg" alt="dachshund on beach">
-              <h1 class="other-news-header">Fancy a vacation? Check out the best dog beaches here!</h1>
-            </a>
-          </li>
-          <li>
-            <a class="flex-child-puppies" href="#">
-              <img class="puppy" src="images/puppy.jpg" alt="dachshund puppy">
-              <h1 class="other-news-header">What to expect when expecting.. a litter!</h1>
-            </a>
-          </li>
-          <li>
-            <a class="flex-child-window" href="#">
-              <img class="squirrel" src="images/squirrel.jpg" alt="dachshund looking out from window">
-              <h1 class="other-news-header">How to make the garden squirrel stop harrassing you</h1>
-            </a>
-          </li>
+          <div>
+            <li>
+              <a href="#">
+                <img class="other-news-img" src="images/books.jpg" alt="dachshund in armchair">
+                <h1 class="other-news-header">Book and film tips for the sofisticated dachshund</h1>
+                <h1 class="header-tablet-1">Books & films</h1>
+                <h1 class="header-tablet-2">for the sofisticated doxie</h1>
+                <h1 class="header-desktop">Books and films</h1>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img class="other-news-img" src="images/vacation.jpg" alt="dachshund on beach">
+                <h1 class="other-news-header">Fancy a vacation? Check out the best dog beaches here!</h1>
+                <h1 class="header-tablet-1"> Fancy a vacation?</h1>
+                <h1 class="header-tablet-2">Top 10 dog beaches</h1>
+                <h1 class="header-desktop">Top 10  dog beaches</h1>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img class="other-news-img" src="images/puppy.jpg" alt="dachshund puppy">
+                <h1 class="other-news-header">What to expect when expecting.. puppies!</h1>
+                <h1 class="header-tablet-1">What to expect..</h1>
+                <h1 class="header-tablet-2">When expecting puppies!</h1>
+                <h1 class="header-desktop">Expecting  puppies?</h1>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img class="other-news-img" src="images/squirrel.jpg" alt="dachshund looking out from window">
+                <h1 class="other-news-header">How to make the garden squirrel stop harrassing you</h1>
+                <h1 class="header-tablet-1">Annoying garden squirrel?</h1>
+                <h1 class="header-tablet-2">Here's our best barking tips</h1>
+                <h1 class="header-desktop">Garden squirrel: Your nemesis</h1>
+              </a>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
 
     <footer>
-     <p class="footer-text"><a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Google - Flaticon</a></p>
-    <p class="footer-text"><a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Fuzzee - Flaticon</a></p>
+      <p class="footer-text">Logo made with Adobe Creative Cloud Express</p>
+      <p class="footer-text">All images found on <a href="https://unsplash.com/">Unsplash</a></p>
+      <p class="footer-text"><a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icon created by "Google" - Flaticon</a> <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icon created by "Fuzzee" - Flaticon</a></p>
     </footer>
 
     <script>
