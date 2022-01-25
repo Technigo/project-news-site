@@ -277,14 +277,18 @@ footer {
   }
 
   .news-feed {
-    margin-inline: 2em;
+    margin-inline: 1em;
+  }
+  
+  .news-feed--card {
+    max-width: 15em;
   }
 
   .news-feed--cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2.5em;
+    gap: 1.5em;
   }
   
   .big-news {
@@ -309,6 +313,10 @@ footer {
 
   .news-feed {
     max-width: 1500px;
+  }
+
+  .news-feed--card {
+    max-width: 13em;
   }
 }
   
