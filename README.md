@@ -7,11 +7,11 @@ One week project of practicing HTML, CSS (Grid,Flexbox) and responsiveness for m
 ## Way of solving problem
 
 1. I structured the responsiveness using media query.
-2. Added text and image and test of it working good or not.
+2. Added text and image then test for working good or not.
 3. Apply typography of shaping better.
-4. In future I will add humburger menu for mobile version.
 
 
-## View it live
+
+## View on live
 
 https://unruffled-mirzakhani-844e55.netlify.app
