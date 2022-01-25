@@ -16,12 +16,12 @@ main {
 
 h1 {
   font-size: 60px;
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h3 {
   font-style: italic;
+  margin: 0;
 }
 
 h4 {
@@ -42,17 +42,16 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
+nav {
+width: 40%;
+}
 
-ul {
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-}
-
-nav {
-  width: 40%;
 }
 
 li {
@@ -99,7 +98,7 @@ li:hover{
 .big-image img {
   width: 90vw;
   border-radius: 75%;
-  margin: 5%;
+  margin: 5% 0;
 }
 
 .big-text {
@@ -167,7 +166,7 @@ footer {
 
 }
 
-@media (min-width: 667px) and (max-width: 1025px) {
+@media (min-width: 667px) {
   .home {
     flex-direction: row;
   }
