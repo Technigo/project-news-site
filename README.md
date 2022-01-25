@@ -12,4 +12,5 @@ I had many small problems, one of which was that the aforementioned logo only ha
 Other that the hovering effect, the most problem I had was with sizing objects and all the elementes inside their container element. The pictures posed the most problems. I solved it by setting max-widths on almost all my objects.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://61eac11c55fd2cfd014806fd--goofy-lovelace-f2e62b.netlify.app/#
