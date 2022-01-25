@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This project has been the very first webpage I have done! The goal was to build to work with either flexbox or grid and media queries to create a repsonsive webpage. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Since this was the first time for me, my goal was to create a website with a proper build up and structure. I think this was my biggest challenge besides from proper css selection. I started working with my desired design in figma and also mobile-first. If I had more time I would try to better understand the proper strucuture of HTML, how to select in CSS in a cleaner way and also how hiearchy works. 
+
+ I struggled a lot with the image cropping and the flex box of the bigger articles. I would have wanted to not mix viewport and %, and I would also have designed the big article differently (I tried, and failed with row-reverse)
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://hungry-easley-29ee74.netlify.app/
