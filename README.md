@@ -13,4 +13,4 @@ Other that the hovering effect, the most problem I had was with sizing objects a
 
 ## View it live
 
-https://61eac11c55fd2cfd014806fd--goofy-lovelace-f2e62b.netlify.app/#
+https://goofy-lovelace-f2e62b.netlify.app/
