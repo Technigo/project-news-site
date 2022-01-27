@@ -166,7 +166,7 @@ h1 {
 .container-2 img{
   width: 100%;
   height: auto; 
-  margin-inline-start: 20px;
+  margin-inline-start: 8px;
 }
 
  .second-news-text{
@@ -228,6 +228,11 @@ grid-gap: 15px;
     margin: 30px;
   }
 
+
+.container-2 img{
+  margin-inline-start: 20px;
+}
+
   .container-3{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -256,6 +261,10 @@ h1 {
 
 .container-2 h2{
   font-size: 30px;
+}
+
+.container-2 img{
+  margin-inline-start: 20px;
 }
 
 .menu-button {
@@ -304,6 +313,6 @@ h1 {
  .container-3{
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(4, 30vw);
+  grid-template-rows: repeat(2, 30vw);
   } 
 } 
