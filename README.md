@@ -1,4 +1,4 @@
-# News Site
+# News Site 🌵
 
 This week's project is to create a responsive newspaper site, using Flexbox and Grid. The layout changes depending on if you visit the site from a mobile, tablet or desktop. Further the site have a big news section and a grid of cards with other news. On desktop sized screens, there whould be four cards in a row, two in a row on tablets and on mobile there should just be one card on each row.
 
@@ -10,4 +10,4 @@ If I had more time I would create a hamburger menu as well.
 
 ## View it live
 
-https://flamboyant-lovelace-8895f3.netlify.app/
+https://news-site-plants-daily.netlify.app/
