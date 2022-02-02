@@ -17,12 +17,10 @@ h1, h2 {
 }
 
 p {
-  font-family: 'Work sans', Helvetica, sans-serif;
   line-height: 1.4;
 }
 
 a {
-  font-family: 'Work sans', Helvetica, sans-serif;
   font-weight: 700;
 }
 
@@ -163,7 +161,7 @@ footer {
     justify-content: space-between;
   }
 
-  /*Hides the header h1*/
+  /*Hides the header h1 but it would be better to make it visible on tablets as well.*/
   .header h1 {
     display: none;
   }
