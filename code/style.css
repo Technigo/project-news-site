@@ -70,7 +70,7 @@ a:hover {
 /* ----- Big news ----- */
 .big-news {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   padding: 20px;
   width: 100%;
   height: auto;
@@ -179,6 +179,11 @@ p {
 
   /* ---- Big news ---- */
 
+  .big-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
   .big-news-image {
     max-width: 100%;
   }
@@ -238,6 +243,11 @@ p {
 
   /* ---- Big news ---- */
 
+  .big-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
   .big-news-image {
     max-width: 100%;
   }
