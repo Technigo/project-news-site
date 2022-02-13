@@ -1,14 +1,23 @@
 # News Site
 
-This site describe the natural beauty of St. Martin, a tourist place of Bangladesh.
 One week project of practicing HTML, CSS (Grid,Flexbox) and responsiveness for mobile, tablet and desktop version.
 
+**🔵  Blue Level (Minimum Requirements)**
 
-## Way of solving problem
+- Style your page.
+- Use CSS Grid or Flexbox to layout the page.
+- Create a responsive design with the following views; Desktop 4 columns, tablet 2 columns, mobile 1 column.
+- The site should have a header, a main news article, a grid of news articles.
+- Play around with hover effects, i.e. change colors, add or remove borders or flip the image upside down.
 
-1. I structured the responsiveness using media query.
-2. Added text and image then test for working good or not.
-3. Apply typography of shaping better.
+**🔴  Red Level (Intermediary Goals)**
+
+- Add a box shadow to make the photos look like polaroids
+- Align the cards to the center of the page
+
+**⚫  Black Level (Advanced Goals)**
+
+- Add some animations to your project
 
 
 
