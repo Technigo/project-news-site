@@ -7,4 +7,4 @@ As a part of an Technigo Boot camp assignment I have created a mockup magazine s
 I ended up making a site based on the "mobile first" principle, and used combination of grid and flexbox to style the page. Biggest challenge was getting started with the actual coding instead of just planning and planning. If I had more time a would have liked to create more advanced hover effects and centered the grid-items for example. 
 
 ## View it live
-See what it's all about: https://determined-curran-644911.netlify.app/?fbclid=IwAR2vLAdGwi23GqpMKgkFtVvK2iCxtpl3JRVznIVFV09YEWgbGaXK0LNM1Qc
+See what it's all about: https://hair-in-my-face.netlify.app/
