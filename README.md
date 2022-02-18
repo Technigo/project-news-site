@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment for this project was to build a responsive news site containing a header with the name of the site, a logo and a navbar and two news sections, other presenting the main news and the other one as a grid section containing smaller news reports. The site should adapt its content based on whether it is used on mobile, tablet or desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by making a sketch of the website content and the different structures for different devices. I used both flexbox and grid in building the header, main news section and the smaller news grid.
+
+With more time I would have perfected the styling of the page more.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://the-bright-site.netlify.app/
