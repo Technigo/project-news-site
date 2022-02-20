@@ -4,6 +4,27 @@ Digital Food Magazine
 
 The project is to build a responsive website for mobile, tablet and desktop by using HTML5 and CSS3
 
+
+# Project's Requirements
+
+**🔵  Blue Level (Minimum Requirements)**
+
+- Style your page.
+- Use CSS Grid or Flexbox to layout the page.
+- Create a responsive design with the following views; Desktop 4 columns, tablet 2 columns, mobile 1 column.
+- The site should have a header, a main news article, a grid of news articles.
+- Play around with hover effects, i.e. change colors, add or remove borders or flip the image upside down.
+
+**🔴  Red Level (Intermediary Goals)**
+
+- Add a box shadow to make the photos look like polaroids
+- Align the cards to the center of the page
+
+**⚫  Black Level (Advanced Goals)**
+
+- Add some animations to your project
+
+
 ## The problem
 
 I started by project by building a prototype in Figma. That provided a clear visual approach for the website and helped me to save time for styling in CSS. 
