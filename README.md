@@ -22,7 +22,7 @@ The project is to build a responsive website for mobile, tablet and desktop by u
 
 **⚫  Black Level (Advanced Goals)**
 
-- Add some animations to your project
+- Add some animations to your project.
 
 
 ## The problem
