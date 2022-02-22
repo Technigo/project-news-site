@@ -16,4 +16,4 @@ The problems that still stands are that my nav bar in mobile landscape dosn't wo
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-https://jolly-curie-fde811.netlify.app/
+https://project-news-site-linneafrisk.netlify.app/
