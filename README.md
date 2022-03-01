@@ -8,4 +8,4 @@ This was our first project and approved it in a way that was not good. If I were
 
 ## View it live
 
-On netlify
+https://inspiring-bhaskara-9a841b.netlify.app/code/
