@@ -69,7 +69,7 @@ body {
     .grid-main-news {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #dbdaf8;
+        background-color: #f2f1fc;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
@@ -85,7 +85,7 @@ body {
     }
     
     .grid-item2 {
-        background-color: #dbdaf8;
+        background-color: #f2f1fc;
         padding: 10px;
         border-bottom: 1px solid black;
         border-top: 1px solid black;
@@ -105,7 +105,7 @@ body {
     }
     
     .grid-item4 {
-        background-color: #dbdaf8;
+        background-color: #f2f1fc;
         padding: 10px;
         border-bottom: 1px solid black;
         border-top: 1px solid black;
@@ -124,7 +124,10 @@ body {
 @media (min-width: 667px) and (max-width: 1024px) {
 
     .main-header {
-        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
     }
 
 
@@ -146,7 +149,7 @@ body {
     .grid-main-news {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #dbdaf8;
+        background-color: #f2f1fc;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
@@ -178,6 +181,14 @@ body {
 
 @media (min-width: 1025px) {
 
+    .main-header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        
+    }
    
     h1 {
         font-style: oblique;
@@ -204,7 +215,7 @@ body {
     .grid-main-news {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #dbdaf8;
+        background-color: #f2f1fc;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }    
@@ -223,6 +234,7 @@ body {
         height: 500px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
     }
 
 }
