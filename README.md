@@ -5,4 +5,4 @@ My first project at Technigos bootcamp. It is a responsive news site created wit
 My first time creating a responsive website so I started with a sketch of the three sreen modes. My main problem was figuring out how to layout my page. And I ended up using both flexbox and grid. I looked at Stack Overflow, googled a lot to learn both how flexbox and grid works. If I had more time I would like to add a hamburger menu in mobile mode. 
 
 ## View it live
-https://sad-morse-e0473f.netlify.app/
+https://project-newsite.netlify.app/
