@@ -1,8 +1,7 @@
 # News Site
 
-This weeks assignment was to build A news site. 
-I choose to do one that displays art, travel and exhibitions since that's my current field I and I hade the pictures for it. 
-
+This weeks assignment was to build a news site. 
+I choose to do one that displays art, travel and exhibitions since that's my current field I and I have the pictures for it. 
 
 ## The problem
 
