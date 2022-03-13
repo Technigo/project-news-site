@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This weeks assignment was to build A news site. 
+I choose to do one that displays art, travel and exhibitions since that's my current field I and I hade the pictures for it. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This is my first time building a responsive page so I learned about CSS, Flexbox, Grids and media queries.
+Deep dived into HTML, CSS and CSS Grids and flexbox, there is SO much that I’ve learned this last week. 
+When a problem arose, I either googled, asked a programer friend or my classmates.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://keen-heisenberg-eaf660.netlify.app
