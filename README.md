@@ -1,12 +1,8 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The news site contains a header with name, logo and navbar and is responsive using flexbox and grid. It has a big news section and a grid of cards with other news with hover effects for desktop mode.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+There is a bug for the hidden hover effect where a line of text is revealed on hover on desktop mode which glitches but stops by clicking on it. If I had more time I would fix this.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://cocky-northcutt-6390f0.netlify.app/
