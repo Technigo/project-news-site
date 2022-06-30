@@ -1,4 +1,216 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline
+}
+
+body {
+  line-height: 0,5;
+  background-color: #242424;
+  font-family: outfit;
+  align-content: center;
+}
+
+p{
+margin:9px;
+}
+
+.atleti {
+  height: 150px;
+  width:150px;
+  margin:15px;
+}
+
+.main-header{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+  flex-direction: column-reverse;
+  background-color:#242424;
+  align-items: center;
+}
+
+img {
+  align-items: center;
+}
+
+.sitename{
+text-align:center;
+color:rgb(248, 248, 248);
+}
+
+.h1{
+font-size: 55pt;
+margin: -5px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+ul{
+  list-style: none;
+  overflow: hidden;
+  font-size: 14pt;
+  justify-content: flex-end;
+  margin-bottom: 10pt;
+}
+
+li {
+  float:left;
+  display: inline;
+  padding:2px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align:right;
+  padding:10pt;
+  text-decoration: none;
+  font-weight: 300;
+ background-color: #F4E139;
+ border-radius: 2%;
+}
+
+li a:hover {
+  background-color: #06767B;
+}
+
+.sitename{
+align-items: flex-end;
+}
+
+.main-article{
+  display:flex;
+  flex-direction: column;
+  background-color: #06767B;
+}  
+
+.article-pic {  
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+}  
+
+.djokovic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.heading{
+  font-size: 16pt;
+}
+
+.article-text{
+  font-size: 14pt;
+padding: 5pt;
+}
+
+img {
+  width:  300px;
+  height: 300px;
+  object-fit:cover;
+}
+
+.cardbox{
+  display: flex;
+  align-items:center;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color:#242424;
+}
+
+.card{
+  height:400px;
+  width: 320px;
+  padding:10px;
+  background-color: #06767B;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card:hover{
+  background-color: #F4E139;
+}
+
+
+.footer{
+  display:flex;
+  background-color:#06767B;
+}
+
+.text-footer{
+margin: 10pt;
+}
+
+
+@media (min-width: 667px) and (max-width: 1024px){
+  .main-article {
+    flex-direction: row;
+}
+.article-pic{
+  height:250px;
+  width:250px;
+}
+.article-text {
+  font-size: 12pt;
+}
+  .cardbox{
+    flex-direction: row;
+  }
+  img {
+    width:  250px;
+    height: 250px;
+  }
+  .card {
+    height: 400px;
+    width: 275px;
+    margin: 25px;
+}
+}
+
+@media (min-width:1024px){
+  .main-header{
+    flex-direction: column-reverse;
+  }
+    .atleti {
+      height: 200px;
+      width:200px;
+      margin:25px;
+    }
+
+    .main-article {
+      flex-direction: row;
+  }
+  
+    .cardbox{
+      flex-direction: row;
+      flex-wrap: nowrap
+    }
+    .card {
+      height: 300px;
+      width: 255px;
+      margin: 20px;
+  }
+    img {
+      width:  200px;
+      height: 200px;
+    }
+  }
+  
