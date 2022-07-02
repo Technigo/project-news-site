@@ -16,7 +16,7 @@
 html {
   box-sizing: border-box;
 
-  background: blue;
+  background: black;
   color: white;
   font-family: "Quicksand", sans-serif;
 }
@@ -94,7 +94,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0.5rem 1rem 1rem 1rem;
+
+  margin: 0rem 1rem 0 0;
 }
 
 .big-news-imagebox {
@@ -112,8 +113,7 @@ html {
 
 .big-news-text {
   width: 100%;
-  margin: 0.2rem 0 0 0;
-  padding: 0;
+  margin: 0.2rem 0 1rem 1rem;
 }
 
 .big-news-heading {
@@ -126,7 +126,7 @@ html {
 
 .big-news-button {
   display: none;
-  background-color: var(--accent-color);
+  background-color: black;
   border: none;
   border-radius: 10px;
   color: white;
@@ -184,6 +184,7 @@ html {
 
   .big-news {
     justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   .big-news-imagebox {
@@ -215,39 +216,33 @@ html {
   .big-news-button {
     display: block;
   }
-/*
-  .big-news-text {
-    margin-top: 4rem;
-  }
-
-  .big-news-p {
-    display: block;
-  }
-  */
 
   /* OTHER NEWS SECTION TABLET */
 
   .other-news-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 0 1rem;
+    grid-template-columns: 302px 302px;
+    gap: 5rem;
+    margin: 0 1.5rem;
     padding-top: 1.5rem;
   }
 
   .other-news {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: black;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 10%;
   }
 
   .other-news-image {
-    width: 200px;
-    margin: 0;
+    width: 270px;
+    border-radius: 10%;
   }
 
   .other-news-textbox {
-    background: black;
-    padding: 0rem;
+
+    padding: .2rem 0 1rem 0;
     
     /* behövs? */
     width: fit-content;
