@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
-  background-color: #5158ff;
-  margin: 0
+  background-color: #5e5fab;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -33,11 +34,11 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: #ffb3df;
+  background-color: #ff80a0;
 }
 
 .nav-page-link {
-  color: #fff666;
+  color: #eed29c;
   border-bottom: 2px dotted transparent;
   font-size: 1.2em;
   font-family: sans-serif;
@@ -55,7 +56,7 @@ body {
 }
 
 .grid-col-title {
-  color: #fff666;
+  color: #eed29c;
   font-family: sans-serif;
   margin: 0 0 8px;
 }
@@ -90,8 +91,9 @@ body {
   height: 232px;
 }
 
- .grid__item__title {
-  font-size: 20px;
+ .grid-item-title {
+  font-family: sans-serif;
+  font-size: 15px;
   line-height: 1.3;
   width: 70%;
 }
@@ -101,3 +103,46 @@ body {
     height: 168px;
 }
 
+.grid-item-author, .grid-item-category {
+  font-family: sans-serif;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 740px) {
+
+  /*Nav*/
+
+  .nav-page {
+    box-sizing: border-box ;
+    padding: 0 16px;
+    width: 100%; 
+  }
+
+  .nav-page-link:last-of-type {
+    padding: 0 16px 0 0;
+  }
+
+  /*Grid*/
+
+  .grid-col-2, .grid-col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /*Grid Items*/
+
+  .grid-item-lg {
+    border: none;
+    padding: 0;
+
+  }
+  .grid-item-md  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-item-img {
+    height: 232px;
+  }
+}
