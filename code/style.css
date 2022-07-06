@@ -166,12 +166,27 @@ html {
 /* - TABLET - */
 
 @media (min-width: 668px) {
-  .navbar-hamburger-icon {
+  .moon-logo, .navbar-logo-text, .navbar-hamburger-icon {
     display: none;
   }
 
+  .navbar {
+    justify-content: center;
+  }
+
   .navbar-menu {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .tablet-logo-centered {
+    display: inline-block;
+  }
+
+  .navbar-logo-text {
+    display: none;
   }
 
   .big-news-imagebox {
