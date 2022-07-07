@@ -34,13 +34,16 @@ html {
   color: green;
   padding: 30px 10px;
   width: 400px;
-  display: block;
   margin: 20px 5px; 
-  border: 3px groove rebeccapurple
+  border: 10px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   
 }
 .other-news img{
-  width: 100%;
+  width: 100%
 }
 
 .button {
@@ -65,14 +68,12 @@ html {
 
 .flex-parent {
 border: 2px solid yellow;
-height: 500px; 
+height: 700px; 
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-evenly;
+flex-direction: row;
 }
 
-.flex-child {
-  margin: 5px;
-  width: 100px;
-  height: 40px;
-}
+
+
