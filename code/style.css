@@ -3,6 +3,14 @@ html {
   color: #fff;
 }
 
+@media (min-width: 668px) {
+  html {
+    background: beige; 
+
+  }
+}
+
+
 .top-heading{
   color: rebeccapurple
 }
@@ -53,4 +61,18 @@ html {
   background-color: darkslategray;
   transition-duration: 0.4s;
   color: indianred;
+}
+
+.flex-parent {
+border: 2px solid yellow;
+height: 500px; 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.flex-child {
+  margin: 5px;
+  width: 100px;
+  height: 40px;
 }
