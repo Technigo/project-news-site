@@ -1,28 +1,46 @@
 html {
-  background: #0025ff;
-  color: #fff;
-}
-
-@media (min-width: 668px) {
-  html {
-    background: beige; 
-
-  }
+  background: whitesmoke;
+  color: black;
+  font-family: sans-serif;
+font-size: large;
 }
 
 
 .top-heading{
-  color: rebeccapurple
+  color: rebeccapurple;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 400%;
+
 }
 
+.nav{
+  color: #4CAF50;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.logo{
+  width: 10%;
+  justify-content: center;
+}
+
+
+
 .big-news{
-  background-color: goldenrod;
-  color: darkolivegreen;
+  background-color: white;
+  color: black;
   padding: 10px 5px;
   width: 400px;
-  display: block;
+  display: flex;
   margin: 20px 5px;
-  border: 15px dotted red
+  border: 5px; gray;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column
+
   
 }
 .big-news img{
@@ -30,8 +48,8 @@ html {
   
 }
 .other-news{ 
-  background-color: azure;
-  color: green;
+  background-color: white);
+  color: black;
   padding: 30px 10px;
   width: 400px;
   margin: 20px 5px; 
@@ -42,15 +60,23 @@ html {
   flex-direction: column;
   
 }
+
+@media (min-width: 668px) {
+  .flex-parent {
+   flex-wrap: wrap;
+
+  }
+  
+}
 .other-news img{
   width: 100%
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: lightgray;
   border: none;
   border-radius: 12px;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -63,7 +89,7 @@ html {
 .button:hover {
   background-color: darkslategray;
   transition-duration: 0.4s;
-  color: indianred;
+  color: white;
 }
 
 .flex-parent {
