@@ -118,22 +118,19 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin-left: 1.2rem;
+  margin: 0 1.2rem;
 }
 
 .other-news {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 1rem;
 }
 
 .other-news-image {
   border-top-left-radius: 15%;
   border-bottom-right-radius: 15%;
   width: 150px;
-}
-
-.other-news-textbox {
-  margin: 1.5rem 1.5rem 0 1.2rem;
 }
 
 .other-news-link {
@@ -149,12 +146,14 @@ html {
   margin-left: 0.5rem;
 }
 
-/* – ******************** MEDIA QUERIES ************************** – */
+/* \\\\\\\\\\ MEDIA QUERIES ////////// */
 
-/* - TABLET - */
+/* T  A  B  L  E  T */
 
 @media (min-width: 668px) {
-  .moon-logo, .navbar-logo-text, .navbar-hamburger-icon {
+  .moon-logo,
+  .navbar-logo-text,
+  .navbar-hamburger-icon {
     display: none;
   }
 
@@ -185,7 +184,7 @@ html {
     text-decoration: underline 2px solid var(--accent-color);
     text-underline-offset: 4px;
   }
-  
+
   .big-news-imagebox {
     width: 55%;
     max-width: 600px;
@@ -220,7 +219,7 @@ html {
     border-radius: 12px;
     color: var(--text-color);
     font-family: var(--main-font);
-    
+
     width: 5.5rem;
     height: 2.2rem;
   }
@@ -232,23 +231,24 @@ html {
 
   .other-news-grid {
     grid-template-columns: 1fr 1fr;
-    margin: 0 2rem;
+    margin: 0;
   }
 
   .other-news {
     grid-template-columns: 1fr;
     justify-items: center;
+    gap: 0;
   }
 
   .other-news-image {
     width: 75%;
+    transition: ease-in-out 0.1s;
+    margin-top: 0.5rem;
   }
 
-  .other-news-image {
-    transition: ease-in-out 0.1s;
-  }
   .other-news-image:hover {
     transform: rotate(-2deg);
+    filter: grayscale() blur(2px);
   }
   .other-news-image:active {
     transform: rotate(0deg);
@@ -259,17 +259,22 @@ html {
     margin: 1.2rem 0rem 1rem;
   }
 
+  .other-news-textbox {
+    margin: 0.5rem 1.5rem 0 1.2rem;
+  }
 }
 
-/* - DESKTOP - */
+/* D  E  S  K  T  O  P */
 
 @media (min-width: 1025px) {
-  
-  .navbar-hamburger-icon, .navbar-menu .tablet-logo-centered {
+  .navbar-hamburger-icon,
+  .navbar-menu .tablet-logo-centered {
     display: none;
   }
 
-  .moon-logo, .navbar-logo-text, .navbar-menu {
+  .moon-logo,
+  .navbar-logo-text,
+  .navbar-menu {
     display: flex;
   }
 
