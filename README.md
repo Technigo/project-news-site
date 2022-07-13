@@ -23,4 +23,4 @@ There are a lot of things I would fix if it was supposed to be a "real" page and
 The images are downloaded from unsplash.com and I resized and cropped them to make them fit and behave like I wanted them to.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://62cebd161f72a713919b61f0--voluble-pixie-baf448.netlify.app/
