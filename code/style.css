@@ -13,14 +13,27 @@ font-size: large;
 
 }
 
-.nav{
-  color: #4CAF50;
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 140%; 
 
 }
+
+.nav :link {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.nav :hover {
+  color: chartreuse;
+}
+
+.nav :active{
+  color: darkorchid;
+}
+
+
+
 
 .logo{
   width: 10%;
@@ -48,7 +61,7 @@ font-size: large;
   
 }
 .other-news{ 
-  background-color: white);
+  background-color: white;
   color: black;
   padding: 30px 10px;
   width: 400px;
@@ -61,15 +74,9 @@ font-size: large;
   
 }
 
-@media (min-width: 668px) {
-  .flex-parent {
-   flex-wrap: wrap;
 
-  }
-  
-}
 .other-news img{
-  width: 100%
+  width: 40%
 }
 
 .button {
@@ -96,9 +103,37 @@ font-size: large;
 border: 2px solid yellow;
 height: 700px; 
 display: flex;
-align-items: center;
-justify-content: space-evenly;
-flex-direction: row;
+flex-direction: column
+}
+
+@media (min-width: 667px) and (max-width: 1024px){
+.flex-parent {
+  height: 1000px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}
+
+@media (min-width: 1025px) {
+  .flex-parent {
+    height: 1500px;
+    flex-direction: row;
+  }
+  
+}
+
+
+
+
+
+.grid-parent{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.grid-item{
+  background: pink;
 }
 
 
