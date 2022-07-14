@@ -1,4 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #C3C3BD;
+  color: #333;
+}
+
+/* Mobile first */
+header {
+  background-color:#F4F4ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #053C17;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #053C17;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #A7BAAD;
+}
+
+.active {
+  color: #A7BAAD;
+}
+
+.big-news {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #848484;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.news-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #366245;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+button:hover {
+  background-color: #72917C;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+.news-grid-child {
+  background-color: white;
+  grid-column: span 4;
+  padding: 10px;
+  border: 1px solid #848484;
+  box-shadow: 5px 5px 3px #848484;
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 600px) {
+
+  header {
+    flex-direction: row;
+    padding: 20px;
+    gap: 0 10px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-self: flex-end;
+    margin-left: auto;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .big-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex-child {
+    width: 40%;
+    margin: 20px;
+    flex-grow: 1;
+  }
+
+  .news-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    width: 25%;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+  
+
+/* Desktop */
+
+  @media screen and (min-width: 960px) {
+    .news-grid {
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .news-grid-child {
+      grid-column: span 3;
+    }
 }
