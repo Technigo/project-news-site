@@ -3,16 +3,6 @@ html {
   color: #fff;
 }
 
-.container {
-  display: grid; 
-  grid-template-columns:repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  height: 900px;
-  margin: 10px;
-  gap: 10px;
-  
-}
-
 .grid-item {
   color: #ffffff;
   font-size: 20px;
@@ -20,11 +10,34 @@ html {
   padding: 100px;
 }
 
-.item1 {
-  background: deepskyblue;
-  grid-column: span 4;
+/* Navigation */
+
+.navigation {
+  background: #ffffff;
+  padding: 30px;
+  position: relative;
 }
 
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  padding: 0px 20px;
+  max-width: 1300px;
+  background: pink;
+}
+.nav-bar {
+  background: deepskyblue;
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.logo {
+  color: #ffffff;
+
+}
 .item2 {
   background: orangered;
   grid-column: 1/3;
@@ -56,4 +69,15 @@ html {
 }
 .item9 {
   background: maroon;
+}
+
+
+.nav-container {
+  display: grid; 
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 500px;
+  margin: 10px;
+  gap: 10px;
+  
 }
