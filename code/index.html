@@ -4,65 +4,86 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
-    <title>Project 1: The News Site</title>
+    <title>Project 1: The Rock Climbing News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+    </style>
+        <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <nav class="nav-container">
-      <div class="logo">LOGO</div>
-      <div class="burger-icon">Menu</div>
-      <ul class="nav-items main-nav mobile-hide">
-        <li class="list-item"><a href="#">Home</a></li>
-        <li class="list-item"><a href="#">Articles</a></li>
-        <li class="list-item"><a href="#">Inspiration</a></li>
-        <li class="list-item"><a href="#">Videos</a></li>
-      </ul>
+    <nav class="navigation">
+      <div class="nav-container">
+        <div class="logo"><img src="/project-news-site/code/noun-mountain-4212086.png" alt="logo" style="width: 100px;height:100px"></div>
+        <!--<div class="slogan"><p>The one to read</p></div>-->
+        <ul class="nav-items main-nav mobile-hide">
+          <li class="list-item"><a href="#">Home</a></li>
+          <li class="list-item"><a href="#">Articles</a></li>
+          <li class="list-item"><a href="#">Inspiration</a></li>
+          <li class="list-item"><a href="#">Videos</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <div class="main-container">
+    
+    <section class="quotes-slide">
+      <div class="quote"> <!--Maybe they can slide?-->
+        <h3>“If my mind can conceive it and my heart can believe it, then I can achieve it.”</h3>
+      </div>
+    </section>
+    
+    <section class="big-news">
       <div class="container">
         <div class="featured-container">
           <div class="main-article">
             <h1>Featured this week</h1>
-            <img src="xxxx" alt="featured image">
+            <img src="/project-news-site/code/pexels-tobias-aeppli-1609512.jpg" alt="featured image" style="width: 667px;height:auto">
+            <video width="667px" height="auto" autoplay loop>
+              <source src="/project-news-site/code/boy-climbing-up-a-rocky-mountain.mp4" type="video/mp4">
+            </video>
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
           </div>
         </div>
+      </div>  
+    </section>    
+
+    <section class="other-news">
         <div class="sub-container">
           <div class="sub-featured">
             <div class="sub1">
               <h3>text</h3>
-              <img src="xx" alt="img1">
+              <img src="/project-news-site/code/pexels-nans-3381105.jpg" alt="img1" style="width: 667px;height:auto">
             </div>
             <div class="sub2">
               <h3>text</h3>
-              <img src="xx" alt="img2">
+              <img src="/project-news-site/code/pexels-stefan-stefancik-91224.jpg" alt="img2" style="width: 667px;height:auto">
             </div>
             <div class="sub3">
               <h3>text</h3>
-              <img src="xx" alt="img3">
+              <img src="/project-news-site/code/pexels-zak-bentley-2924738.jpg" alt="img3" style="width: 667px;height:auto">
             </div>
             <div class="sub4">
               <h3>text</h3>
-              <img src="xx" alt="img4">
+              <img src="/project-news-site/code/pexels-pixabay-53213.jpg" alt="img4" style="width: 667px;height:auto">
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
       </section>
-
-      <!-- Some kind of logo and navbar -->
-
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="other-news">
-      <!-- The other news  -->
-    </section>
   </body>
 </html>
+
+
+
+
+
+
+<!--attribution
+
+Climbing by Adrien Coquet from NounProject.com
+https://icons8.com
+Rock Climbing by Azam Ishaq from NounProject.com
+
+Mountain by CAMB from NounProject.com
+
+
+
+-->
