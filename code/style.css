@@ -2,6 +2,7 @@ html {
   background: #ffffff;
   color: rgb(0, 0, 0);
   font-family: 'Mukta', sans-serif;
+  display: block;
 }
 
 .body {
@@ -10,15 +11,8 @@ html {
 
 /* Navigation */
 
-.navigation {
-  display: block;
-  background-color: rgb(255, 255, 255);
-
-}
-
 .nav-container {
-  max-width: 667px;
-  width: 100%;
+  
   margin: auto;
   box-shadow: 0px 4px 10px rgba(199, 199, 199, 0.137);
   display: flex;
@@ -39,44 +33,61 @@ html {
 }
 */
 
+/*quotes*/
+
 .quotes-slide {
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 667px;
-  width: 100%;
-  height: 300px;
+  height: auto;
 }
 
-.quote {
+.slide-content {
   font-style: italic;
   color: rgb(0, 0, 0);
   padding: 50px;
 }
 
+/* Featured News*/
 
 .big-news {
   max-width: 667px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 100%;
+  height: auto;
+  display: flex;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  grid-template-areas: 
-  "bigNews bigNews bigNews bigNews"
-  "otherNews otherNews otherNews otherNews"
+  justify-content: center;
 }
 
 .featured-container {
-  grid-area: bigNews;
-  min-height: 250px;
-  background-color: rgb(255, 255, 255);
+  margin: auto;
+  display: flex;
+  max-width: 667px;
+  height: auto;
+  gap: 10px;
 }
+
+
+
+/*
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "bigNews bigNews bigNews bigNews"
+  "otherNews otherNews otherNews otherNews" */
+
+  
+
+
+/* Other News */
+.sub1 {
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 
 .sub-container {
   grid-area: otherNews;
@@ -97,7 +108,7 @@ html {
   
 }
 
-
+/*
 .grid-item {
   color: #ffffff;
   font-size: 20px;
@@ -105,4 +116,4 @@ html {
   padding: 100px;
 }
 
-
+*/
