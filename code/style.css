@@ -37,15 +37,17 @@ h2
 .top-heading {
   color: rebeccapurple;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 400%;
+  font-size: 600%;
 }
 
 .grid-item {
   text-align: center;
+  
 }
 
 .big-item {
   grid-column: span 8;
+  background-color: 
 }
 
 .navbar{
@@ -65,7 +67,7 @@ h2
 }
 
 .nav :hover {
-  color: chartreuse;
+  color: gray;
 }
 
 .nav :active{
@@ -80,9 +82,9 @@ h2
 }
 
 .big-news-container {
-height: 1000px; 
-width: 4000px;
-padding: 100px;
+height: 100%; 
+width:  100%;
+padding: 50px;
 display: flex;
 flex-direction: row;
 align-items:center;
@@ -92,9 +94,9 @@ text-align: center;
 
 
 .big-news{
-  padding: 50px 100px;
-  height: 1200px;
-  width: 1200px;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
   display: flex;
   margin: 10px 5px;
   align-items: center;
@@ -113,22 +115,19 @@ text-align: center;
 .other-news{ 
   background-color: white;
   padding: 10px;
-  width: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
-  
-  
 }
 
-
 .other-news img{
-  width: 700px;
+  width: 70%;
 }
 
 .button {
-  background-color: lightgray;
+  background-color: rebeccapurple;
   border: none;
   border-radius: 12px;
   color: black;
@@ -136,40 +135,46 @@ text-align: center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 45px;
 
 
 }
 
 .button:hover {
-  background-color: darkslategray;
+  background-color:gray;
   transition-duration: 0.4s;
   color: white;
 }
 
+.other-news-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .other-news-container {
-  margin: 40px;
-height: auto;
-width: auto;
+
+height: 50%;
+width: 50%;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-
 
 }
 
-@media (min-width: 667px) and (max-width: 1024px){
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
 .other-news-container {
-  height: 400px;
   flex-direction: row;
   flex-wrap: wrap;
+  
+
+  
 }
 }
 
 @media (min-width: 1025px) {
   .other-news-container {
-    height: 1500px;
     flex-direction: row;
   }
   
