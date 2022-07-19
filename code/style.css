@@ -38,20 +38,26 @@ h1 {
   margin-right: 30px;
 }
 
+.dropdown-content {
+  display: block;
+  width: 400px; 
+}
+
 a {
    text-decoration: none;
    color: maroon;
    font-family: helvetica;
    font-size: 20px;
+   display: inline;
   }
 
 h5 {
-  padding: 0px 15px;
   font-weight: lighter;
+  display: inline;
+  padding: 15px; 
 }
 
-
- a:hover {background: hotpink;}
+ h5:hover {background: hotpink;}
  
  
 .big-news {
@@ -75,6 +81,12 @@ h5 {
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+.rubrik {
+  color:  rgb(27, 27, 27); 
+  font-size: 30px; 
+ margin: 15px 0px 50px; 
 }
 
 .big-box-left img {
@@ -146,11 +158,6 @@ h2 {
   display: block;
 }
 
-.rubrik {
-  color:  rgb(27, 27, 27); 
-  font-size: 30px; 
-  padding: 0px 0px 40px 0px; 
-}
 
 h3 {
   font-family: helvetica;
@@ -185,20 +192,32 @@ p {
 .big-box-right:hover {background: hotpink;}
 h3:hover {background: pink;}
 
-@media (min-width: 668px) and (max-width: 1024px) {
+.dropbtn {
+  visibility: hidden;
+  width: 0px; 
+}
 
+@media (min-width: 668px) and (max-width: 1024px) {
+.header {
+  background-color: rgb(240, 225, 177);
+}
+  
   .head {
     font-size: 30px;
-    height: 80px;
+    height: 130px;
   }
   
+  .topnav {
+    margin-right: 0px;
+  }
+
   h1 {
-    padding: 25px 25px 25px 0px;
-    margin-top: 0px;
+    padding: 15px 25px 25px 0px;
+    margin-top: 10px;
   }
   
   .head img {
-    width: 50px;
+    width: 40px;
     height: 40%;
     padding: 15px;
     margin-top: 0px;
@@ -226,14 +245,51 @@ h3:hover {background: pink;}
 } 
 
 @media (max-width: 667px) {
+  
+  .dropbtn {
+    visibility: visible;
+    width: 75px; 
+    background-color: #f4f0d8;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    width: 75px;
+  }
+  
+  .dropdown-content a {
+    color:maroon;
+    padding: 12px 5px;;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: hotpink}
+  .topnav:hover .dropdown-content {
+    display: block;
+  }
+  
+  .topnav:hover .dropbtn {
+    background-color: hotpink;
+  }
+  
   .head {
-    font-size: 20px;
+    font-size: 25px;
     height: 80px;
     margin-left: 5px;
   }
   
   .logoleft {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .topnav {
@@ -246,15 +302,17 @@ h3:hover {background: pink;}
   }
   
   .head img {
-    width: 40px;
+    width: 50px;
     height: 30%;
     padding: 15px;
     margin-top: 0px;
   }
   
   a {
-     padding: 0px;
      font-size: 10px;
+   }
+   h5 {
+    padding: 5px; 
    }
 
 .big-news {grid-template-columns: repeat(1, 1fr);}
@@ -286,36 +344,3 @@ p {
  }
 }
 
-
-@media (max-width: 386px) {
-
-  .head {
-    font-size: 15px;
-    margin-left: 0px;
-  }
-
-  .topnav {
-    margin-right: 0px;
-  }
-  
-  .logoleft {
-    margin-top: 10px;
-  }
-  
-  h1 {
-    padding: 15px 0px 15px 0px;
-    margin-top: 13px;
-  }
-  
-  .head img {
-    width: 20px;
-    height: 30%;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  a {
-     padding: 0px;
-     font-size:10px;
-   }
-}

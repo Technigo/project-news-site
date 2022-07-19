@@ -11,8 +11,6 @@ Since it's my first time coding I've been building and learning at the same time
 
 3) Third problem - writing "good code" when you're changing your layout throughout the work, for example H5 is in the header while H1-H4 is in the body, which doesn't make sense?
 
-4) What's the smallest size you should build for? The layout doesn't look good when it's smaller than 325px, is that fine?
-
 If I would have more time I would redo it just to understand it even better. I would also spend more time on the layout and "good coding", cause now I'm not sure if all my CSS is necessary.
 
 
