@@ -37,9 +37,21 @@ h2
 .top-heading {
   color: rebeccapurple;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 600%;
+  font-size: 500%;
 }
 
+@media (min-width: 667px) and (max-width: 1024px) {
+  .top-heading{
+  font-size: 600%;
+  
+  }
+}
+
+@media (min-width: 1025px) {
+  .top-heading {
+   font-size: 700%;
+  }
+}
 .grid-item {
   text-align: center;
   
@@ -58,12 +70,34 @@ h2
 .nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 160%; 
+ flex-direction: column;
+ display: flex;
+ justify-content: center;
+ 
+}
 
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .nav{
+    flex-direction: row;
+  font-size: 100%;
+  
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav {
+   flex-direction: row;
+   font-size: 130%;
+  }
+  
 }
 
 .nav :link {
   color: blueviolet;
   text-decoration: none;
+  padding: 10px;
+  
 }
 
 .nav :hover {
@@ -123,11 +157,12 @@ text-align: center;
 }
 
 .other-news img{
-  width: 70%;
+  width: 100%
+  
 }
 
 .button {
-  background-color: rebeccapurple;
+  background-color: gray;
   border: none;
   border-radius: 12px;
   color: black;
@@ -141,7 +176,7 @@ text-align: center;
 }
 
 .button:hover {
-  background-color:gray;
+  background-color:rebeccapurple;
   transition-duration: 0.4s;
   color: white;
 }
@@ -154,8 +189,7 @@ text-align: center;
 
 .other-news-container {
 
-height: 50%;
-width: 50%;
+height: 100%;
 display: flex;
 flex-direction: column;
 
@@ -167,9 +201,6 @@ flex-direction: column;
 .other-news-container {
   flex-direction: row;
   flex-wrap: wrap;
-  
-
-  
 }
 }
 
