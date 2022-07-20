@@ -15,4 +15,4 @@ If I would have more time I would redo it just to understand it even better. I w
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://genuine-tanuki-1ff937.netlify.app
