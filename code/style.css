@@ -158,7 +158,6 @@ h2 {
   display: block;
 }
 
-
 h3 {
   font-family: helvetica;
   font-size: 18px;
@@ -316,6 +315,7 @@ h3:hover {background: pink;}
    }
 
 .big-news {grid-template-columns: repeat(1, 1fr);}
+
 .big-box-left {
   margin-bottom: 0px;
 }
@@ -323,11 +323,6 @@ h3:hover {background: pink;}
 .big-box-right {
   margin-top: 0px;
 }
-
-.other-news {grid-template-columns: repeat(1, 1fr);}
-h2 {
-  font-size: 18px;
- }
 
 p {
   font-size: 13px;
@@ -341,6 +336,11 @@ p {
  h3 {
   font-size: 12px;
   padding: 20px; 
+ }
+
+ .other-news {grid-template-columns: repeat(1, 1fr);}
+h2 {
+  font-size: 18px;
  }
 }
 
