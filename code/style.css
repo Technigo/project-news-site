@@ -67,8 +67,8 @@ body {
     padding: 20px;
     width: 300px;
   
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     justify-content: center;
     margin: 20px;
   }
@@ -81,6 +81,7 @@ body {
 @media (min-width: 1025px) {
   body{
   flex-direction: row; 
+  flex-wrap:wrap;
   }
   .grey-box{
     background-color: rgb(238, 231, 231, 0,04);
