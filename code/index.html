@@ -1,84 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Project 1: The Rock Climbing News Site</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 <body>
-  <nav class="nav-container" style="width: 667px; height:auto">
-    <div class="logo"><img src="mountain-logo.png" alt="logo" style="width: 100px; height:100px"></div>
-        <!--<div class="slogan"><p>The one to read</p></div>-->
-    <ul class="nav-items main-nav mobile-hide">
-      <li class="list-item"><a href="#">Home</a></li>
-      <li class="list-item"><a href="#">Articles</a></li>
-      <li class="list-item"><a href="#">Inspiration</a></li>
-      <li class="list-item"><a href="#">Videos</a></li>
-    </ul>
-    </div>
-  </nav>
-    
-  <section class="quotes-slide" style="width: 667px; height:auto">
-    <div class="slide-content"> <!--Maybe they can slide?-->
-      <h3>“If my mind can conceive it<br>and my heart can believe it,<br> then I can achieve it.”</h3>
-    </div>
-  </section>
-    
-  <section class="big-news" style="width: 667px; height:auto">
-    <div class="featured-container">
-      <div class="main-article">
-        <h1>Featured this week</h1>
-        <video width="667px" height="auto" autoplay loop>
-          <source src="boy-climbing2.mp4">
-        </video>
-          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+  <div class="wrapper">
+    <header class="header">
+      <img class="logo" src="/images-videos/logo.png" alt="logo">
+      <h5 class="magazine-name">nine c plus</h5>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>            
+      </ul>
+    </header>
+    <section class="slide-quotes">
+      <h1 class="quote">“If my mind can conceive it and my heart can believe it, then I can achieve it.”</h1>
+    </section>
+    <div class="divider"><h3>Featured News</h3></div>
+    <section class="featured-news">
+      <div class="featured1">
+        <video src="/images-videos/boy-climbing2.mp4" autoplay loop></video>
+        <article class="featured-article">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </article>
       </div>
-    </div>  
-  </section>    
-
-  <section class="other-news">
-    <div class="sub-container">
-      <div class="sub-featured">
-        <div class="sub1">
-          <h3>text</h3>
-          <img src="hiking.jpg" alt="img1" style="width: 667px; height:auto">
-        </div>
-        <div class="sub2">
-          <h3>text</h3>
-          <img src="hanging.jpg" alt="img2" style="width: 667px; height:auto">
-        </div>
-        <div class="sub3">
-          <h3>text</h3>
-          <img src="snow.jpg" alt="img3" style="width: 667px; height:auto">
-        </div>
-        <div class="sub4">
-          <h3>text</h3>
-          <img src="hand.jpg" alt="img4" style="width: 667px; height:auto">
-        </div>
+    </section>
+    <div class="divider"><h3>Get inspired</h3></div>
+    <section class="other-news">
+      <div class="other item1">
+        <img src="/images-videos/horizon.jpg" alt="man landscape">
+        <article class="other-article">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </article>
       </div>
-    </div>
-  </section>
-</body>
-</html>
-
-
-
-
-
-
-<!--attribution
-
-Climbing by Adrien Coquet from NounProject.com
-https://icons8.com
-Rock Climbing by Azam Ishaq from NounProject.com
-
-Mountain by CAMB from NounProject.com
-
-
-
--->
+      <div class="divider line"><h3></h3></div>
+      <div class="other item2">
+        <img src="/images-videos/hiking.jpg" alt="people walking">
+        <article class="other-article">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </article>
+      </div>
+      <div class="divider line"><h3></h3></div>
+      <div class="other item3">
+        <img src="/images-videos/hand.jpg" alt="people walking">
+        <article class="other-article">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>  
+        </article>
+      </div>
+      <!-- <div class="other item4">
+        <img src="/images-videos/snow.jpg" alt="people walking">
+        <article class="other-article">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </article>
+      </div> -->
+    </section>
+    <aside class="aside aside-1">Aside 1</aside>
+    <aside class="aside aside-2">Aside 2</aside>
+    <footer class="footer">Footer</footer>
+  </div>
