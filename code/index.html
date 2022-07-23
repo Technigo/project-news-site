@@ -1,23 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-      <h1>logo</h1>
-    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomsy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <nav class="nav-bar">
+            <div class="container-logo">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav-link" id="navi-list">
+                <li class="nav-list"><a href="#">About</a></li>
+                <li class="nav-list"><a href="#">Projects</a></li>
+                <li class="nav-list"><a href="#">News</a></li>
+                <li class="nav-list"><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu" id="toogle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+      
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="headline">
+        <div class="headline-image"><a href="#"><img src="images/plant-image.jpg" alt="plant-image"></a></div>   
+        <article class="main-article">
+            <h1><a href="#">Labitur Quaeque Evertit</a></h1>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit soluta odit fuga molestias, ab doloribus rem iure dolor ratione nam modi assumenda incidunt. Aperiam consequatur cupiditate fugit veniam voluptates? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit soluta odit fuga molestias, ab doloribus rem iure dolor ratione nam modi assumenda incidunt. Aperiam consequatur cupiditate fugit veniam voluptates?
+            </h3> 
+            <button><a href="#">Read More</a></button>
+        </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news">
+        <div class="container-grid">
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news1.jpg" alt="newsone"></div>
+                <h1><a href="#">Fugiat Quos</a></h1>
+                <p>Vim ei mollis erroribus.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news2.jpg" alt="newstwo"></div>
+                <h1><a href="#">Harum Iriure</a></h1>
+                <p>Integre prompta dolores id vis.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news3.jpg" alt="newsthree"></div>
+                <h1><a href="#">Ne Meliore</a></h1>
+                <p>Ea dolorem tibique his.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news4.jpg" alt="newsfour"></div>
+                <h1><a href="#">Movet Tibique</a></h1>
+                <p>Vim adipisci similique elaboraret.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news5.jpg" alt="newsfive"></div>
+                <h1><a href="#">Sed Efficiendi</a></h1>
+                <p>Id vix eius fugit scriptorem.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news6.jpg" alt="newssix"></div>
+                <h1><a href="#">Vel Putant</a></h1>
+                <p>Postea essent, rebum singulis no.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news7.jpg" alt="newsseven"></div>
+                <h1><a href="#">Vim Utamur</a></h1>
+                <p>Qui an facilis epicuri disputationi.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+            <div class="news-grid">
+                <div class="grid-image"><img src="images/news8.jpg" alt="newseight"></div>
+                <h1><a href="#">Dissentias Eos</a></h1>
+                <p>Per ceteros ponderum repudiand.</p>
+                <button class="grid-button"><a href="#">Read More</a></button>
+            </div>
+        </div>
     </section>
-  </body>
+    <footer class="main-footer">
+        <h3>Copyright &copy2022 Bloomsy AB</h3>
+    </footer>
+</body>
+
+<script>
+    const toogleButton = document.getElementById('toogle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toogleButton.addEventListener('click',()=> {
+        naviList.classList.toggle('active');
+    })
+</script>
 </html>
