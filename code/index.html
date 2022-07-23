@@ -2,21 +2,277 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="icon" type="image/x-icon" href="hnfavicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"async></script>
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+        <div class="title-container">
+            <img class="logo" src="https://cdn-icons.flaticon.com/png/512/1132/premium/1132393.png?token=exp=1656759872~hmac=cbd4f8444c95a5df18da16fc82733a65" alt="Happy News logo">
+            <h1 class="site-name">Happy news</h1>
+        </div> 
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item" id="nav-3"><a class="nav-link" href="#tech">Tech</a></li>
+                <li class="nav-item" id="nav-4"><a class="nav-link" href="#amusements">Amusements</a></li>
+                <li class="nav-item" id="nav-1"><a class="nav-link" href="#research">Research</a></li> 
+                <li class="nav-item" id="nav-2"><a class="nav-link" href="#sports">Sports</a></li> 
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <main>
+        <section class="big-news">
+            <article class="big-news-section big-news-image-box">
+                <img class="big-news-image" src="https://images.pexels.com/photos/1422673/pexels-photo-1422673.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Big news image">
+            </article>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+            <article class="big-news-section big-news-text-box">
+                <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                <h1>Monopoly no longer legal to refere to as a fun board game</h1>
+                <p class="big-news-p">Due to increasingly intence conflict during Monopoly-sessions at game nights across the globe, world leaders have come together to legislate a ban for use of the words "Monopoly" and "fun" in the same sentence. 
+                Jelly beans tart chocolate bar halvah gummies jelly beans shortbread apple pie. Apple pie danish cheesecake chocolate bar sugar plum. Tiramisu ice cream tart caramels carrot cake sesame snaps soufflé.<a class="read-more" href="#">></a></p> 
+            
+                <p class="big-news-p hidden-p">Cake cake topping sugar plum jujubes marzipan. Jelly apple pie chocolate cake croissant jujubes dessert cake. Toffee tiramisu croissant pie icing muffin cookie. Tart chocolate bar icing jelly pastry gummies gingerbread lollipop cake.
+                Toffee bear claw danish cake oat cake cotton candy sweet jelly-o pastry. Wafer sugar plum oat cake powder tootsie roll sesame snaps. Gingerbread tart shortbread cake topping ice cream. Cupcake toffee icing lemon drops cake.</p>
+                <a href="#"><button>Read more about it!</button></a>    
+            </article>
+        </section>
+
+
+        <section class="small-news">
+            <h2 id="tech" class="section-headline">Tech</h2>
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=800" alt="smart watch on wrist">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>VitalWatch takes the stage</h3>
+                        <p class="small-news-p">VitalWatch, the new smart watch from CopyCat Company was introduced on The Grand Tech Symposium this week. One of its' more prominent features is a screen thermometer.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/3183135/pexels-photo-3183135.jpeg?auto=compress&cs=tinysrgb&w=800" alt="sleeping woman with vr-visor">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Virtual workplace</h3>
+                        <p class="small-news-p">Since the Covid-19 pandemic outbreak, companies have had most of their meetings online. Now, Norways largest oil company have gone further, for environmental reasons.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/3608056/pexels-photo-3608056.jpeg?auto=compress&cs=tinysrgb&w=800" alt="wind turbines">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Wind turbins 2.0</h3>
+                        <p class="small-news-p">Researchers in the Netherlands have developed software to greatly increase the efficiency of wind turbines by 830%.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="friendly robot">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Companion robots for the elderly</h3>
+                        <p class="small-news-p">The Japanese government passed a new law on monday stating that all Japanese citizens over 80 years of age are entitled to a robot companion.</p>
+                    </article>
+                </article>
+            </a>
+
+            <h2 id="amusements" class="section-headline">Amusements</h2>
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/11064529/pexels-photo-11064529.jpeg?auto=compress&cs=tinysrgb&w=800" alt="rollercoaster">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Worlds longest rollercoaster ride just got even longer</h3>
+                        <p class="small-news-p">In a square of the city Xianjing, in the heart of the Hunan province in China, the worlds longest rollercoaster ride breaks its' previous record.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/3945673/pexels-photo-3945673.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Playstation VR console">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Latest game releases for Playstation</h3>
+                        <p class="small-news-p">Loved the games for Playstation One despite the graphics? Here's your chance to get compleatly immersed in poor graphics with PS1VR.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/1576303/pexels-photo-1576303.jpeg?auto=compress&cs=tinysrgb&w=800" alt="abandoned circus">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Circus - a dying art form or experience-based therapy?</h3>
+                        <p class="small-news-p">Every year, less people go to the circus for entertainment. In Northern Ireland, however, Circus Therapy is becoming increasingly popular.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=800" alt="french bulldog dessed as unicorn">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Fur coated models take over the catwalk</h3>
+                        <p class="small-news-p">Europes biggest dog fashion designer competition takes place i Milan this week.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <h2 id="research" class="section-headline">Research</h2>
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800" alt="scientist with microscope">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Researchers at Arkham University may have found a cure for all deseases</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg?auto=compress&cs=tinysrgb&w=800" alt="nebula">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Earth 3.5 recently formed in neighbouring nebula</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mars rover">
+                    </article>    
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Mars Rover makes shocking discovery</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/2877338/pexels-photo-2877338.jpeg?auto=compress&cs=tinysrgb&w=800" alt="book with pages foldet to a heart">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Reading sci-fi improves over-all quality of life, study suggests</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            <h2 id="sports" class="section-headline">Sports</h2>
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=800" alt="swimmer in swimmingpool">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Competative swimming completely cured paralysed mans glutes</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/551852/pexels-photo-551852.jpeg?auto=compress&cs=tinysrgb&w=800" alt="adventurer on mountain peak">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Norwegian adventurer Tine Lusekofte, checks off last item on bucketlist</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/1250643/pexels-photo-1250643.jpeg?auto=compress&cs=tinysrgb&w=800" alt="girl on longboard">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Longboard Ultra Marathon</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="news-card">
+                    <article class="card-section small-image-section">
+                        <img class="small-news-image" src="https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="girl playing e-sports">
+                    </article>
+                    <article class="card-section">
+                        <p class="time-stamp"> Published on <time datetime="2022-07-20">July 20, 2022</time></p>
+                        <h3>Worlds' largest e-sporting event, a complete success</h3>
+                        <p class="small-news-p">Cupcake ipsum dolor sit amet chocolate bar oat cake sweet roll. Fruitcake pastry biscuit gummies carrot cake halvah halvah lollipop fruitcake.</p>
+                    </article>
+                </article>
+            </a>
+
+            
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/good" title="good icons">Happy News logo created by Freepik - Flaticon</a>
+    </footer>
   </body>
 </html>
