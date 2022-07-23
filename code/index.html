@@ -3,20 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <section class="top-nav">
+        <div class="logo-container">
+          <img class="logo" src="./images/oak-leaf-logo.png" alt="logo of an oak leaf">
+          <h1 class="web-title">Green Gardens</h1>
+        </div>
+        <!--Responsive hamburger menu-->
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+          <li><a class="menu-link" href="">Home</a></li>
+          <li><a class="menu-link" href="">Contact</a></li>
+          <li><a class="menu-link" href="">About Us</a></li>
+          <li><a class="menu-link" href="">Log In</a></li>
+          <li><a class="menu-link" href="">Sign Up</a></li>
+        </ul>
+     </section>
     </header>
-
+    <!--main news-->
     <section class="big-news">
-      <!-- The big news content -->
+      <div class="top-pic">
+        <h1 class="desktop-main-title"><a href="https://www.allaboutgardening.com/organic-gardening-tips/">11 Organic Gardening Tips and Hacks To Grow Your Best Organic Garden</a></h1>
+        <img class="img-1" src="./images/lettuce.jpg" alt="picture of a grden with a row of lettuce">
+          <div class="text-box" id="main-text-box">
+            <section>
+              <p>Organic gardening can be a bit tricky, especially for newer gardeners just starting out. 
+              That's why having a few tips and tricks up your sleeve over the average gardener can pay dividends. 
+              While you can't shortcut a perfect organic garden, you can definitely give yourself a running head start.</p>
+              <p><a href="https://www.allaboutgardening.com/organic-gardening-tips/"> In this article</a>, 
+              organic gardening specialist Logan Hailey outlines her 11 favorite tips to make sure you start off planting on the right foot. </p>
+             </section>
+          </div>
+      </div>
     </section>
-
-    <section class="">
-      <!-- The other news  -->
+<!---secondary news, 1 column on phone, 2 on tablet, 4 on desktop-->
+    <section class="secondary-news">
+      <div class="grid-container">
+        <div class="small-news">
+          <h1 class="small-header"><a href="https://www.gardendesign.com/trees/">Trees for Your Garden</a></h1>
+          <img class="img-2" src="./images/tree.jpg" alt="picture of a tree">
+          <div class="text-box">
+            <p>Finding the right tree for your home garden can be a challenge. 
+            Whether you are looking to add a bit of shade to your property or to screen a view of a neighboring home, trees are often the solution.</p>
+            <p>trees can also be used to create a focal point in your garden. Fruit trees are also beautiful and can be grown in orchard fashion or incorporated into your garden. </p>
+        </div>
+        </div>
+        <div class="small-news">
+          <h1 class="small-header"><a href="https://morningchores.com/beneficial-garden-insects/">Beneficial Insects to Protect Your Garden and How to Attract Them</a></h1>
+          <img class="img-2" src="./images/insects.jpg" alt="picture of three different insects">
+          <div class="text-box">
+            <p>I never thought much about the insects in my garden until I had pepper plants with these little bugs that would move around every time I saw them. 
+            I later learned that they were sharpshooters. And sharpshooters suck the life out of your plants by getting in the root system and taking the water from the plant. Not fun!</p>
+            <p>Thankfully I was able to get rid of them but I did learn that it is important to know about harmful bugs as well as good bugs. Today we are going to focus on the good bugs.
+            Here's a list of insects that you want in your garden and how to get them there without having to purchase them.</p>
+          </div>
+        </div>
+        <div class="small-news">
+          <h1 class="small-header"><a href="https://farm-a-yard.com/why-do-we-need-weeds/">Why Do We Need Weeds?</a></h1>
+          <img class="img-2" src="./images/weeds.jpg" alt="picture of a dandelion">
+          <div class="text-box">
+            <p>Besides all the important restorative work that “weeds” do for the soil, this is just a reminder that spring is the very best time to enjoy eating fresh, tender “weeds”.  Fresh in salad, or sauteed in grassfed butter, added to eggs,soup or stir fried dishes, these greens are packed with nutrients that you need.
+            These greens know how to “mine” deep into the soil to bring up important minerals & nutrients and make them available to the plant and to YOU!</p>
+            <p>Did you know that plantain is found worldwide (there is probably some in your yard right now!) and is a popular wound healer, body purifier, congestion aid and neutralizer of poison and toxic elements?</p>
+          </div>
+        </div>
+        <div class="small-news">
+          <h1 class="small-header"><a href="https://www.permaculturenews.org/2016/06/03/why-our-lawns-are-bad-for-the-environment-and-how-to-change-them-for-the-better/">Our Lawns Are Bad for the Environment and How to Change Them for the Better</a></h1>
+          <img class="img-2" src="./images/lawn-mower.jpg" alt="picture of a lawn mower">
+          <div class="text-box">
+            <p>Lawns were a European invention, England to be precise, and they were the undertaking of the fabulously wealthy, seeking to bring the glade closer to home.
+            Originally, they were cultivated with more useful (though not necessarily used) plants like chamomile or thyme.
+            However, the trend moved towards closely cropped grasses, first maintained by grazing sheep then by men with scythes and finally, eventually, moving along (in fast forward) to the suburban land owner with his lawnmower, trimmers, and multitude of weapons against nature. </p>
+          </div>  
+        </div>
+      </div>
     </section>
+    <footer>
+      <div class="footer">
+        <p>Green Gardens 2022.</p>
+      </div>
+    </footer>
   </body>
 </html>
