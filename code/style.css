@@ -1,30 +1,61 @@
 html {
-  background: white
+  background: #faeffa;
   color: black;
-  font-family:Arial, Helvetica, sans-serif;
-font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
 }
+@media (min-width: 667px) and (max-width: 1024px) {
+  html {
+    font-size: 120%;
+  }
+  }
+
+  @media (min-width: 1025px) {
+    html{
+        font-size: 150%;
+      }
+      }
+
+p {
+  display: block;
+  text-align: center;
+}
+
+@keyframes example {
+  0%   {background-color: rebeccapurple}
+  25%  {background-color: rgb(102, 66, 97);}
+  50%  {background-color: rgb(105, 84, 114)}
+  100% {background-color: rgb(116, 54, 178)}
+}
+
+
 
 h1
 {
-  font-family:Arial, Helvetica, sans-serif;
   color: gray;
-  font-size: 300%;
-}
+  font-size: 200%;
+  }
+
 
 h2
 {
-  font-family:Arial, Helvetica, sans-serif;
   color: gray;
-  font-size: 200%;
+  font-size: 100%;
+ 
 }
+
+@media (min-width: 1025px)  {
+  h2 {
+    font-size: 100%;
+
+  }
+  }
 
 .grid-parent {
   grid-template-columns: repeat(8, 1fr);
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
  grid-gap: 5px;
-        
 }
 
 .logo{
@@ -34,16 +65,21 @@ h2
 .logo-container{
   text-align: left;
 }
+
 .top-heading {
   color: rebeccapurple;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 500%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .top-heading{
   font-size: 600%;
-  
   }
 }
 
@@ -52,9 +88,9 @@ h2
    font-size: 700%;
   }
 }
+
 .grid-item {
-  text-align: center;
-  
+  text-align: center; 
 }
 
 .big-item {
@@ -64,7 +100,6 @@ h2
 
 .navbar{
   grid-column: 4 / 6;
-  
 }
 
 .nav {
@@ -73,15 +108,12 @@ h2
  flex-direction: column;
  display: flex;
  justify-content: center;
- 
 }
-
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .nav{
     flex-direction: row;
   font-size: 100%;
-  
   }
 }
 
@@ -90,14 +122,12 @@ h2
    flex-direction: row;
    font-size: 130%;
   }
-  
 }
 
 .nav :link {
   color: blueviolet;
   text-decoration: none;
   padding: 10px;
-  
 }
 
 .nav :hover {
@@ -123,28 +153,24 @@ display: flex;
 flex-direction: row;
 align-items:center;
 justify-content:center;
-text-align: center;
-}
+text-align: left;
 
+}
 
 .big-news{
   padding: 10px 20px;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
   display: flex;
   margin: 10px 5px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  
+  background-color:white;
 }
 .big-news img{
-  width: 80%;
-  
+  width: 60%;
 }
-
-
 
 .other-news{ 
   background-color: white;
@@ -154,12 +180,43 @@ text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+ 
 }
 
 .other-news img{
-  width: 100%
+  width: 100%;
   
 }
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .other-news {
+    width: 40%;
+  }
+  }
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    .other-news img {
+      width: 70%;
+    }
+    }
+
+  @media (min-width: 1025px) {
+    .other-news {
+        width: 23%;
+      }
+    }
+
+  @media (min-width: 1025px) {
+      .other-news img{
+          width: 60%;
+          padding: 10px 10px 40px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+        }
+        }
 
 .button {
   background-color: gray;
@@ -170,10 +227,24 @@ text-align: center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 45px;
-
-
+  font-size: 25px;
+  margin-top: 10px;
 }
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .button {
+    font-size: 80%
+  }
+  }
+
+  @media (min-width: 1025px) {
+    .button {
+      font-size: 50%;
+  
+  
+    }
+    
+  }
 
 .button:hover {
   background-color:rebeccapurple;
@@ -188,11 +259,10 @@ text-align: center;
 }
 
 .other-news-container {
-
 height: 100%;
 display: flex;
 flex-direction: column;
-
+justify-content: center;
 }
 
 
@@ -201,12 +271,16 @@ flex-direction: column;
 .other-news-container {
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 }
 
 @media (min-width: 1025px) {
   .other-news-container {
     flex-direction: row;
+flex-wrap: wrap;
+
+
   }
   
 }
