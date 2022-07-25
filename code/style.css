@@ -29,16 +29,17 @@ body {
   background: rgb(255, 255, 255);
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   box-shadow: 0px 5px 10px 0px rgba(138, 134, 134, 0.082);
 }
 
 .logo {
-  width: 100px;
+  width: 100px;  
 }
 
 .magazine-name {
+  display: block;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -74,7 +75,10 @@ body {
 .footer {
   display: block;
   background: rgb(255, 255, 255);
-  padding: 25px;
+  padding: 15px;
+  font-size: .8em;
+  text-align: end;
+  box-shadow: 0px -5px 10px 0px rgba(138, 134, 134, 0.3);
 }
 
 .grid-footer-container {
@@ -92,13 +96,11 @@ body {
   grid-column: span 8 / auto;
   justify-content: flex-end;
   align-items: flex-end;  
-  margin: auto;
+  
 }
 
 .flex-footer-child{
   display: block;
-  margin: 0 20px 0 20px;
-  padding: 50px;
 }
 
 p1 , p2 ,p3 {
@@ -168,6 +170,11 @@ img {
     font-family: 'Montserrat', sans-serif;
   }
 
+  .header {
+    align-items: center;
+    
+  }
+  
   .other-news { 
     display: flex;
     flex-flow: row wrap;
@@ -219,6 +226,12 @@ img {
 
 @media all and (min-width: 1024px) {
    
+  .header {
+    align-items: center;
+    justify-content: flex-start;
+  }
+    
+
   .quote {
     margin: 50px 0 50px 0;
     padding: 50px;
@@ -258,5 +271,12 @@ img {
     align-items: flex-start;
     gap: 10px;
   }
+
+  .pics:hover {
+    opacity: .5;
+    transition: .4s ease;
+  }
+  
+
 }
 
