@@ -4,15 +4,16 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
 }
+
 @media (min-width: 667px) and (max-width: 1024px) {
   html {
-    font-size: 120%;
+  font-size: 120%;
   }
   }
 
-  @media (min-width: 1025px) {
-    html{
-        font-size: 150%;
+@media (min-width: 1025px) {
+  html{
+  font-size: 150%;
       }
       }
 
@@ -21,33 +22,21 @@ p {
   text-align: center;
 }
 
-@keyframes example {
-  0%   {background-color: rebeccapurple}
-  25%  {background-color: rgb(102, 66, 97);}
-  50%  {background-color: rgb(105, 84, 114)}
-  100% {background-color: rgb(116, 54, 178)}
-}
-
-
-
 h1
 {
   color: gray;
   font-size: 200%;
   }
 
-
 h2
 {
   color: gray;
   font-size: 100%;
- 
 }
 
 @media (min-width: 1025px)  {
   h2 {
     font-size: 100%;
-
   }
   }
 
@@ -74,7 +63,13 @@ h2
   animation-duration: 4s;
   animation-iteration-count: 2;
   animation-direction: alternate;
+}
 
+@keyframes example {
+  0%   {background-color: rebeccapurple}
+  25%  {background-color: rgb(102, 66, 97);}
+  50%  {background-color: rgb(105, 84, 114)}
+  100% {background-color: rgb(116, 54, 178)}
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -154,7 +149,6 @@ flex-direction: row;
 align-items:center;
 justify-content:center;
 text-align: left;
-
 }
 
 .big-news{
@@ -168,6 +162,7 @@ text-align: left;
   flex-direction: column;
   background-color:white;
 }
+
 .big-news img{
   width: 60%;
 }
@@ -182,12 +177,10 @@ text-align: left;
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
- 
 }
 
 .other-news img{
-  width: 100%;
-  
+width: 100%;
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -209,14 +202,14 @@ text-align: left;
     }
 
   @media (min-width: 1025px) {
-      .other-news img{
-          width: 60%;
-          padding: 10px 10px 40px 10px;
+  .other-news img{
+  width: 60%;
+  padding: 10px 10px 40px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
-        }
-        }
+   }
+   }
 
 .button {
   background-color: gray;
@@ -240,10 +233,7 @@ text-align: left;
   @media (min-width: 1025px) {
     .button {
       font-size: 50%;
-  
-  
     }
-    
   }
 
 .button:hover {
@@ -265,32 +255,17 @@ flex-direction: column;
 justify-content: center;
 }
 
-
-
 @media (min-width: 667px) and (max-width: 1024px) {
 .other-news-container {
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 }
 
 @media (min-width: 1025px) {
-  .other-news-container {
-    flex-direction: row;
+.other-news-container {
+flex-direction: row;
 flex-wrap: wrap;
-
-
   }
-  
 }
-
-
-
-
-
-
-
-
-
 
