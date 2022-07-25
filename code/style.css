@@ -1,18 +1,28 @@
-html {
-  background: #0025ff;
-  color: #fff;
-}
-
 body {
   background-color: burlywood;
   display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
   font-family: 'DM Sans', sans-serif;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: auto;
   margin: 2%;
+}
+
+header {
+  
+}
+
+header img {
+  display: flex;
+  width: 60px;
+  height: auto;
+}
+
+
+.content {
+  justify-content: center;
+
 }
 
 .presentation {
@@ -76,20 +86,21 @@ h1 {
   font-size: 15px;
 }
 
-.content {
+.content-area {
   width: 90%;
   height: auto;
   overflow: auto;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
   overflow: auto;
 }
-
+/*
 .content-area {
   margin-bottom: 80px;
 }
-
+*/
 @media (min-width: 668px) {
 .content-area {
   max-width: 1024px;
