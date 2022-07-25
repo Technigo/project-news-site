@@ -2,3 +2,146 @@ html {
   background: #0025ff;
   color: #fff;
 }
+
+body {
+  background-color: burlywood;
+  display: flex;
+  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  margin: 2%;
+}
+
+.presentation {
+  background-color: rgb(131, 106, 75);
+  position: relative;
+  display: flex;
+  align-items: flex-start;  
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+}
+
+.presentation img {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  height: auto;
+  border: solid wheat;
+}
+
+@media (min-width: 668px) {
+.presentation img {
+  width: 660px;
+}}
+
+@media (min-width: 1024px) {
+.presentation img {
+  width: 1020px;
+  }}
+
+.presentation-text {
+  width: 300px;
+  height: 250px;
+  padding: 5%;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@media (min-width: 668px) {
+.presentation-text {
+  width: 580px;
+  height: 150px;
+}}
+
+@media (min-width: 1024px) {
+.presentation-text {
+  width: 1000px;
+  height: 150px;
+}}
+
+h1 {
+  color: aquamarine;
+  font-size: 40px;
+}
+
+.presentation p {
+  color: azure;
+  font-size: 15px;
+}
+
+.content {
+  width: 90%;
+  height: auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  overflow: auto;
+}
+
+.content-area {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 668px) {
+.content-area {
+  max-width: 1024px;
+}}
+
+@media (min-width: 1024px) {
+.content-area {
+  max-width: 2000px;
+}}
+
+main {
+  display: block; 
+}
+
+.box {
+  margin-bottom: 75px;
+  margin-top: 70px;
+  margin-right: 2%;
+  display: block;
+  background-color: bisque;
+  padding: 2%;
+}
+
+@media (min-width: 668px) {
+.box {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}}
+
+@media (min-width: 1024px) {
+.box {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+}}
+
+.box h2 {
+  color: rgb(84, 181, 179);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.box img {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
