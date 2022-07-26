@@ -1,75 +1,97 @@
+/* variables */
+:root {
+  --primary: #4d8291;
+  --secondary: #000000;
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/* base styles */
 body {
   background: linear-gradient(
     109.6deg,
     rgb(204, 228, 247) 11.2%,
     rgb(237, 246, 250) 100.2%
   );
-  color: #4d8291;
-  font: 14px "Noto Sans", sans-serif;
+  overflow-x: hidden;
+  font-family: "NotoSans Regular";
 }
-.top-heading {
-  display: flex;
+.button {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
 }
-.top-heading img {
-  width: 10%;
-  padding: 1%;
+.button:hover {
+  color: var(--secondary);
+  background: var(--primary);
 }
-.top-heading h1 {
-  font: 50px "Megrim", sans-serif;
-  display: flex;
-  justify-content: flex-start;
+/* fonts */
+@font-face {
+  font-family: "Megrim Regular";
+  src: url(assets/fonts/Megrim-Regular.ttf);
 }
-.top-heading h2 {
-  font: 20px "Oswald", sans-serif;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end;
+@font-face {
+  font-family: "NotoSans Regular";
+  src: url(assets/fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald Regular";
+  src: url(assets/fonts/Oswald-Regular.ttf);
+}
+h1,
+h2,
+h3 {
+  color: var(--primary);
+  font-weight: normal;
+}
+p,
+a,
+li {
+  color: var(--secondary);
+}
+h2,
+h3 {
+  font-family: "Oswald Regular";
+  font-size: 1.2em;
+}
+h1 {
+  font-family: "Megrim Regular";
+  font-size: 4em;
+}
+.leading {
+  font-size: 1em;
+}
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
 }
 
-.island-info {
-  border: 2px solid;
-  height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.island-info h3 {
-  font: 20px "Oswald", sans-serif;
-}
-.islands {
-  margin: 5px;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 5px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.islands img {
-  height: 60%;
-  width: 60%;
-}
-
-@media (min-width: 667px) and (max-width: 1024px) {
+/*large tablets & laptop styles */
+@media screen and (min-width: 960px) {
   body {
-    flex-direction: row;
-
-    flex-wrap: wrap;
-  }
-  img {
-    width: 40px;
+    font-size: 18px;
   }
 }
-@media (min-width: 1025px) {
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
   body {
-    flex-direction: row;
-  }
-  img {
-    width: 40px;
+    font-size: 20px;
   }
 }
