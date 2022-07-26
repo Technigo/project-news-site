@@ -1,12 +1,8 @@
-/* nav-bar section */
+/* generic nav-bar section */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 20px;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: auto; /* Full width */
@@ -14,7 +10,6 @@ nav {
 
 nav h2 {
   color: blueviolet;
-  font-size: 40px;
 }
 
 nav h2 span {
@@ -24,14 +19,12 @@ nav h2 span {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 20px;
 }
 
 nav ul li a {
   color: purple;
   text-decoration: none;
   font-weight: bold;
-  font-size: 30px;
 }
 
 nav ul li a:hover {
@@ -42,11 +35,8 @@ nav ul li a:hover {
 button {
   border: none;
   background: #ea1538;
-  padding: 12px 30px;
-  border-radius: 30px;
   color: white;
   font-weight: bold;
-  font-size: 15px;
 }
 
 button:hover {
@@ -55,7 +45,7 @@ button:hover {
   transition: 0.4s;
 }
 
-/* home page grid*/
+/* generic homepage grid*/
 .grid-parent {
   display: grid;
   gap: 20px;
@@ -88,8 +78,35 @@ button:hover {
   }
 }
 
-/* computer section grid*/
+/* computer section*/
 @media (min-width: 1025px) {
+  /* computer section nav-bar*/
+  nav {
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+  }
+
+  nav h2 {
+    font-size: 40px;
+  }
+
+  nav ul li {
+    padding: 10px 10px;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+  }
+
+  button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+
+  /* computer section grid*/
   .grid-parent {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
