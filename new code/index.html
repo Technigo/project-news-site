@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juicy knowledge</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="javascript.js"></script>
   </head>
   <body></body>
 </html>
@@ -14,14 +15,24 @@
   <nav>
     <h2>Juicy <span>knowledge</span></h2>
     <!-- Some kind of logo and navbar -->
-    <ul>
-      <li><a href="https://www.google.com/">Home</a></li>
-      <li><a href="https://www.google.com/">About</a></li>
-      <li><a href="https://www.google.com/">Service</a></li>
-      <li><a href="https://www.google.com/">Portfolio</a></li>
-      <li><a href="https://www.google.com/">Contact us</a></li>
-    </ul>
-    <button type="button">Subscribe</button>
+    <div class="nav-links-desktop">
+      <ul>
+        <li><a href="https://www.google.com/">Home</a></li>
+        <li><a href="https://www.google.com/">About</a></li>
+        <li><a href="https://www.google.com/">Service</a></li>
+        <li><a href="https://www.google.com/">Portfolio</a></li>
+        <li><a href="https://www.google.com/">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="dropdown-tablet-mobile">
+      <button class="dropbtn" onclick="myDropdown()"></button>
+      <div class="dropdown-content" id="dropdown-id">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <button class="subscribe" type="button">Subscribe</button>
   </nav>
 
   <section class="grid-parent">

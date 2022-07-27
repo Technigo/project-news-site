@@ -32,14 +32,52 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-button {
+/* Style The Dropdown Button */
+.dropbtn {
+  background-image: url("menu-icon.png");
+  background-size: 41px 42px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown-tablet-mobile {
+  position: relative;
+  display: inline-block;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Toggle the dropdown menu on click */
+.toggle-dropdown {
+  display: block;
+}
+
+.subscribe {
   border: none;
   background: #ea1538;
   color: white;
   font-weight: bold;
 }
 
-button:hover {
+.subscribe:hover {
   transform: scale(1.3);
   cursor: pointer;
   transition: 0.4s;
@@ -48,29 +86,109 @@ button:hover {
 /* generic homepage grid*/
 .grid-parent {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 .grid-item {
   background: pink;
 }
 
-/* mobile-phone section grid*/
+/* mobile-phone section */
 @media (max-width: 666px) {
+  /* mobile-phone section nav-bar*/
+  .nav-links-desktop {
+    display: none;
+  }
+
+  nav {
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+  }
+
+  nav h2 {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    padding: 10px 10px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .subscribe {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    background: #ea1538;
+    color: white;
+    font-weight: bold;
+  }
+
+  button :hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
   /* mobile-phone home page grid */
   .grid-parent {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 200px;
-    grid-auto-rows: 100px;
+    grid-template-rows: 250px;
+    grid-auto-rows: 180px;
   }
 }
 
-/* tablet section grid*/
+/* tablet section */
 @media (min-width: 667px) and (max-width: 1024px) {
+  /* tablet section nav-bar*/
+  .nav-links-desktop {
+    display: none;
+  }
+
+  nav {
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+  }
+
+  nav h2 {
+    font-size: 40px;
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+  }
+
+  .subscribe {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    background: #ea1538;
+    color: white;
+    font-weight: bold;
+  }
+
+  button :hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  /* tablet section grid*/
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 180px;
   }
 
   .big-grid-item {
@@ -81,6 +199,10 @@ button:hover {
 /* computer section*/
 @media (min-width: 1025px) {
   /* computer section nav-bar*/
+  .dropdown-tablet-mobile {
+    display: none;
+  }
+
   nav {
     padding-top: 20px;
     padding-left: 2%;
@@ -89,15 +211,19 @@ button:hover {
   }
 
   nav h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   nav ul li {
-    padding: 10px 10px;
+    padding: 5px 10px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
   }
 
   nav ul li a {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   button {
@@ -110,7 +236,7 @@ button:hover {
   .grid-parent {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 180px;
   }
 
   .big-grid-item {
