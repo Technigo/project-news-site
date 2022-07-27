@@ -31,7 +31,7 @@ body {
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: center;
-  box-shadow: 0px 5px 10px 0px rgba(138, 134, 134, 0.082);
+  box-shadow: 0 5px 10px 0 rgba(138, 134, 134, 0.082);
 }
 
 .logo {
@@ -44,6 +44,39 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+/* ----------------CONTACT FORM---------------- */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #3e3f3e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #888a89;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px 20px 20px 20px;
 }
 
 /* ----------------DIVIDERS---------------- */
@@ -78,7 +111,7 @@ body {
   padding: 15px;
   font-size: .8em;
   text-align: end;
-  box-shadow: 0px -5px 10px 0px rgba(138, 134, 134, 0.3);
+  box-shadow: 0 -5px 10px 0 rgba(138, 134, 134, 0.3);
 }
 
 .grid-footer-container {
@@ -181,6 +214,7 @@ img {
     align-content: center;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 50px;
   }
 
   .divider {
@@ -214,6 +248,7 @@ img {
   .menu a:hover {
     transform: scale(1.2);
     text-shadow: none;
+    cursor: pointer;
   }
 
   .pics {
@@ -239,44 +274,40 @@ img {
 
   .featured-news {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 15px;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 10px 0 rgba(138, 134, 134, 0.082);
   }
 
   .featured1 {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
-
+ 
   .featured-article{
-    width: auto;
     margin: 50px;
     border-top: 2px solid rgba(0, 0, 0, 0.322);
     border-bottom: 2px solid rgba(0, 0, 0, 0.322);
     text-align: center;
   }
   
-  video {
-    width: 50%;
-  }
   .other {
     max-width: 24%;
   }
-
+  
   .other-news { 
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 10px;
+    border-top-width: ;
   }
 
   .pics:hover {
     opacity: .5;
     transition: .4s ease;
   }
-  
-
 }
-
