@@ -4,6 +4,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
+
+@media (max-width:667px) {
 header {
   background-color: white;
   height: 100px;
@@ -17,11 +20,14 @@ background-color: rgb(255, 255, 255);
 color: black;
 display: flex;
 flex-direction: row;
+margin: auto;
 
   }
-.h2 {
-  font-weight: bolder;
-}
+  h1 {
+    font-style: oblique;
+    font-size: 34px;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-around;
@@ -33,6 +39,7 @@ flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
+ 
   }
   li {
     float: left;
@@ -58,6 +65,18 @@ flex-direction: row;
   gap: 10px
 }
 
+h2 {
+  font-size: 24px;
+}
+p {
+  font-size: 16px;
+  margin-top: 0px;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
 .big-news {
   background-color: white;
   grid-column: span 1;
@@ -72,15 +91,15 @@ flex-direction: row;
 .big-news img {
   max-width: 100%;
   height: auto;
-  
-}
+  border-radius: 5px;
 
+}
 
 .other-news {
  background: white;
  display: flex;
- flex-direction: row;
- align-items: center;
+ flex-direction: row-reverse;
+ align-items: stretch;
  padding: 15px;
  border-radius: 10px;
  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -89,6 +108,7 @@ flex-direction: row;
 .other-news img {
   max-width: 50%;
   height: auto;
+  border-radius: 5px;
 
 }
 
@@ -110,18 +130,62 @@ flex-direction: row;
 
 
 
+}
 
 
 @media (min-width: 668px ) and (max-width:1024px) {
 
   body {
-  background-color: white;
+  background-color: rgb(234, 56, 56);
+  }
+    .logo {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    flex-direction: row;
+
+      }
+    .h2 {
+      font-weight: bolder;
+    }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
+  }
+  li {
+    float: left;
+ 
   }
   
+  a {
+    display: block;
+    padding: 8px;
+    background-color: white;
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 54px;
+  }
+
+  .navbar a:hover {
+    color: grey;
+  }
+
   .news-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+    }
+  
   .big-news {
     grid-column: span 2;
   }
@@ -141,8 +205,7 @@ flex-direction: row;
    
    }  
 
-}
-
+  }
 
 @media (min-width:1025px) {
   body {
