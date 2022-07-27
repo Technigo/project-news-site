@@ -1,7 +1,7 @@
 body {
   background-color: burlywood;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   overflow: auto;
   font-family: 'DM Sans', sans-serif;
   width: 100%;
@@ -10,19 +10,71 @@ body {
 }
 
 header {
-  
+  display: block;
+  height: 65px;
+  position: relative;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-header img {
+.page-header {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  float: left;
+}
+/*
+@media (min-width: 668px) {
+header img {
+    display: flex;
+    align-items: center;
+}}
+
+@media (min-width: 668px)  {
+.header h3 {
+    display: none;
+  }}
+*/
+header img {
   width: 60px;
   height: auto;
 }
 
+.links {
+  display: none;
+}
+
+@media (min-width: 668px) {
+.links {
+  display: inline-block;
+  float: right;
+  padding: 2%;
+  margin-right: 5%;  
+}}
+
+@media (min-width: 1024px) {
+.links {
+  display: inline-block;
+  float: right;
+  padding: 2%;
+  margin-right: 5%;    
+}}
+
+a:-webkit-any-link {
+  color: brown;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+ color: rgb(246, 238, 229); 
+ background-color: rgb(131, 106, 75);
+}
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .presentation {
