@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>climbing-magazine-contact</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>climbing-magazine-contact</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -16,11 +21,22 @@
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Articles</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>            
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>            
       </ul>
     </header>
-    
-    
+		<div class="container">
+			<form action="#">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				<label for="email">Enter your email:</label>
+  			<input type="text" id="email" name="email" placeholder="youremail@example.com" required>
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>	
 </body>
 </html>
