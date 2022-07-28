@@ -19,12 +19,33 @@ main {
   display: grid;
 }
 
+@keyframes icon {
+  0% {
+    transform: translateX(3000px);
+  }
+  60% {
+    display: hidden;
+    transform: translateX(-50px);
+  }
+  75% {
+    display: inline;
+    transform: translateX(0px);
+  }
+}
+
 /*** Header section ***/
 header {
+  overflow: hidden;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+
+header img {
+  transform: translateX(0px);
+  animation-name: icon;
+  animation-duration: 3s;
 }
 
 .navbar {
