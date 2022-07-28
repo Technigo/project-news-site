@@ -23,10 +23,13 @@ main {
   0% {
     transform: translateX(3000px);
   }
-  60% {
+  30% {
+    transform: translateX(3000px);
+  }
+  80% {
     transform: translateX(-50px);
   }
-  75% {
+  95% {
     transform: translateX(0px);
   }
 }
@@ -41,9 +44,8 @@ header {
 }
 
 header img {
-  transform: translateX(0px);
   animation-name: icon;
-  animation-duration: 3s;
+  animation-duration: 3.5s;
 }
 
 .navbar {
