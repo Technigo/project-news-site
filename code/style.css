@@ -149,7 +149,8 @@ header img {
   width: 330px;
 }
 
-.big-news-header:hover {
+.big-news-header:hover,
+.big-news-header:focus {
   background-position: 0px center;
   transition: background-position 320ms ease-in-out 0s;
 }
