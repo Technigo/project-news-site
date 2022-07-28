@@ -66,7 +66,7 @@ header {
   text-align: center;
   height: 50px;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 23px;
   transform: translateY(-10px);
 }
 #headerLinks > a {
@@ -74,6 +74,10 @@ header {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+#headerLinks a:hover {
+  font-weight: 600;
 }
 
 /** **/
