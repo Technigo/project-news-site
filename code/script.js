@@ -1,3 +1,4 @@
+//js-code for hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -15,54 +16,54 @@ document.querySelectorAll("nav.link").forEach(n => n.
 
 
 
-// Select all slides
-const slides = document.querySelectorAll(".slide");
+// Select all spotlights  slides=spotlights  slide = spotlight
+const spotlights = document.querySelectorAll(".spotlight");
 
 // loop through slides and set each slides translateX property to index * 100% 
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${indx * 100}%)`;
+spotlights.forEach((spotlight, indx) => {
+  spotlight.style.transform = `translateX(${indx * 100}%)`;
 });
 
 // current slide counter
-let curSlide = 0;
+let curSpotlight = 0;
 
 // select next slide button
-const nextSlide = document.querySelector(".btn-next");
+const nextSpotlight = document.querySelector(".btn-next");
 
 
 
 // maximum number of slides
-let maxSlide = slides.length - 1;
+let maxSpotlight = spotlights.length - 1;
 
 // add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
+nextSpotlight.addEventListener("click", function () {
   // check if current slide is the last and reset current slide
-  if (curSlide === maxSlide) {
-    curSlide = 0;
+  if (curSpotlight === maxSpotlight) {
+    curSpotlight = 0;
   } else {
-    curSlide++;
+    curSpotlight++;
   }
 
 //   move slide by -100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+spotlights.forEach((spotlight, indx) => {
+  spotlight.style.transform = `translateX(${100 * (indx - curSpotlight)}%)`;
   });
 });
 
 // select prev slide button
-const prevSlide = document.querySelector(".btn-prev");
+const prevSpotlight = document.querySelector(".btn-prev");
 
 // add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
+prevSpotlight.addEventListener("click", function () {
   // check if current slide is the first and reset current slide to last
-  if (curSlide === 0) {
-    curSlide = maxSlide;
+  if (curSpotlight === 0) {
+    curSpotlight = maxSpotlight;
   } else {
-    curSlide--;
+    curSpotlight--;
   }
 
   //   move slide by 100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  spotlights.forEach((spotlight, indx) => {
+    spotlight.style.transform = `translateX(${100 * (indx - curSpotlight)}%)`;
   });
 });
