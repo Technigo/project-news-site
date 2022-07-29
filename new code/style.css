@@ -1,4 +1,6 @@
 /* generic nav-bar section */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Space+Mono&display=swap");
+
 header {
   display: flex;
   align-items: center;
@@ -82,6 +84,34 @@ header ul li a:hover {
 .grid-parent {
   display: grid;
   gap: 10px;
+}
+
+/* generic articles */
+.news {
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* IMPORTANT: you need this for non-chrome browsers */
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+.news h2 {
+  width: 100%;
+  height: 15%;
+  margin: 0;
+}
+
+.news p {
+  width: 100%;
+  height: 35%;
+  margin: 0;
+}
+
+.news img {
+  align-content: center;
+  height: 50%;
+  object-fit: contain;
 }
 
 .grid-item {
