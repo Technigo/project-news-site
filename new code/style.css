@@ -1,5 +1,5 @@
 /* generic nav-bar section */
-nav {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,26 +8,26 @@ nav {
   width: auto; /* Full width */
 }
 
-nav h2 {
+header h2 {
   color: blueviolet;
 }
 
-nav h2 span {
+header h2 span {
   color: rgb(22, 34, 167);
 }
 
-nav ul li {
+header ul li {
   list-style-type: none;
   display: inline-block;
 }
 
-nav ul li a {
+header ul li a {
   color: purple;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+header ul li a:hover {
   color: #ea1538;
   transition: 0.3s;
 }
@@ -63,6 +63,7 @@ nav ul li a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border: 1px solid black;
 }
 
 /* Toggle the dropdown menu on click */
@@ -94,17 +95,17 @@ nav ul li a:hover {
     display: none;
   }
 
-  nav {
+  header {
     padding-top: 20px;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 20px;
   }
 
-  nav h2 {
+  header h2 {
     font-size: 30px;
     width: 40%;
-    margin: 0px;
+    margin: 0;
   }
 
   .subscribe {
@@ -138,14 +139,14 @@ nav ul li a:hover {
     display: none;
   }
 
-  nav {
+  header {
     padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 20px;
   }
 
-  nav h2 {
+  header h2 {
     font-size: 40px;
   }
 
@@ -183,26 +184,26 @@ nav ul li a:hover {
     display: none;
   }
 
-  nav {
+  header {
     padding-top: 20px;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 20px;
   }
 
-  nav h2 {
+  header h2 {
     font-size: 35px;
   }
 
-  nav ul li {
+  header ul li {
     padding: 5px 10px;
   }
 
   ul {
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
   }
 
-  nav ul li a {
+  header ul li a {
     font-size: 20px;
   }
 
