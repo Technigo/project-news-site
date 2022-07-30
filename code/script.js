@@ -1,21 +1,23 @@
 // HAMBURGER MENU
-// Elements with class "hamburger" respectively "nav-menu" are added to arrays named haburger respectively navMenu
+// Elements with class "hamburger" respectively "nav-menu" are added to arrays named hamburger respectively navMenu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+
 // When hamburger is being clicked, give hamburger and navMenu class "active". This makes it possible to style the active state with css.
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 })
 
-//funkar inte!!!!! When link in the menu is clicked, remove class "active" from hamburger and navMenu and thereby reset their stylig to default
-document.querySelectorAll("nav-menu .nav-item").forEach(n => n.
-  addEventListener("click", () => {
-      hamburger.classlist.remove("active");
-      navMenu.classList.remove("active");
+//When link in the menu is clicked, remove class "active" from hamburger and navMenu and thereby reset their stylig to default
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach(link => link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
   }))
+  
 
-//SPOTLIGHT-CAROUSEL
+// SPOTLIGHT-CAROUSEL
 // All elements with class .spotlight is selected and added to array spotlights
 const spotlights = document.querySelectorAll(".spotlight");
 
@@ -47,7 +49,6 @@ spotlights.forEach((spotlight, index) => {
   spotlight.style.transform = `translateX(${100 * (index - currentSpotlight)}%)`;
   });
 });
-
 
 // Select previous-button
 const prevSpotlight = document.querySelector(".btn-prev");
