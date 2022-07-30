@@ -1,0 +1,143 @@
+.flex-parent {
+  border: 2px solid black;
+  height: 700px;
+}
+
+.flex-child {
+  margin: 5px;
+  width: 1400px;
+  height: 200px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.grey {
+  background: grey;
+}
+
+.grey img {
+  width: 15%;
+  padding: 30px;
+}
+
+.grey h1 {
+  font-size: 80px;
+  padding: 30px;
+}
+
+.grey button {
+  height: 30px;
+  width: 50px;
+  display: block;
+  padding: 20px, 50px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  font: bolder;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: beige;
+}
+
+.big-grid-item {
+  grid-column: span 2;
+}
+
+.big-grid-item img {
+  width: 400px;
+  height: 200px;
+  padding: 40px;;
+}
+
+.medium-grid-item {
+  grid-column: span 2;
+}
+
+.medium-grid-item h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: pink;
+  width: 500px;
+}
+
+.medium-grid-item button {
+height: 30px;
+width: 50px;
+background-color: aqua;
+color: black;
+font-size: 10px;
+}
+
+.one-grid-item h1 {
+  font-size: 15px;
+}
+
+.one-grid-item button {
+  background-color: coral;
+  color: black;
+  padding: 10px;
+}
+
+.one-grid-item img {
+  width: 150px;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.two-grid-item h1 {
+  font-size: 15px;
+}
+
+.two-grid-item img {
+  width: 150px;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.two-grid-item button {
+  background-color: coral;
+  color: black;
+  padding: 10px;
+}
+
+.three-grid-item h1 {
+  font-size: 15px;
+}
+
+.three-grid-item img {
+  width: 150px;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.three-grid-item button {
+  background-color: coral;
+  color: black; 
+  padding: 10px;
+}
+
+.four-grid-item h1 {
+  font-size: 15px;
+}
+
+.four-grid-item img {
+  width: 150px;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.four-grid-item button {
+  background-color: coral;
+  color: black; 
+  padding: 10px;
+}
+ @media (min-width: 667px) and (max-width: 1024)
+
+ @media (min-width: 1025)
