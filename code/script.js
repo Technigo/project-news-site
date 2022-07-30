@@ -1,69 +1,67 @@
-//js-code for hamburger menu
+// HAMBURGER MENU
+// Elements with class "hamburger" respectively "nav-menu" are added to arrays named haburger respectively navMenu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
+// When hamburger is being clicked, give hamburger and navMenu class "active". This makes it possible to style the active state with css.
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll("nav.link").forEach(n => n.
+//funkar inte!!!!! When link in the menu is clicked, remove class "active" from hamburger and navMenu and thereby reset their stylig to default
+document.querySelectorAll("nav-menu .nav-item").forEach(n => n.
   addEventListener("click", () => {
       hamburger.classlist.remove("active");
       navMenu.classList.remove("active");
   }))
 
-
-
-
-// Select all spotlights  slides=spotlights  slide = spotlight
+//SPOTLIGHT-CAROUSEL
+// All elements with class .spotlight is selected and added to array spotlights
 const spotlights = document.querySelectorAll(".spotlight");
 
-// loop through slides and set each slides translateX property to index * 100% 
-spotlights.forEach((spotlight, indx) => {
-  spotlight.style.transform = `translateX(${indx * 100}%)`;
+// Set respective elements translateX property to 100% times their position in the array  
+spotlights.forEach((spotlight, index) => {
+  spotlight.style.transform = `translateX(${index * 100}%)`;
 });
 
-// current slide counter
-let curSpotlight = 0;
+// Create variable for spotlight in view on the page
+let currentSpotlight = 0;
 
-// select next slide button
+// Select next-button
 const nextSpotlight = document.querySelector(".btn-next");
 
-
-
-// maximum number of slides
+// Create a variable for maximum number of slides in the array
 let maxSpotlight = spotlights.length - 1;
 
-// add event listener and navigation functionality
+// When the "next-button" is clicked, if currentSpotlight is equal to maxSpotlight, set currentSpotlight to 0. 
+// So if you reach the last image, go back to the first. If currentSpotlight is not equal to maxSpotlight, increase the value of currentSpotlight with 1.
 nextSpotlight.addEventListener("click", function () {
-  // check if current slide is the last and reset current slide
-  if (curSpotlight === maxSpotlight) {
-    curSpotlight = 0;
+  if (currentSpotlight === maxSpotlight) {
+    currentSpotlight = 0;
   } else {
-    curSpotlight++;
+    currentSpotlight++;
   }
 
-//   move slide by -100%
-spotlights.forEach((spotlight, indx) => {
-  spotlight.style.transform = `translateX(${100 * (indx - curSpotlight)}%)`;
+// Move spotlight by -100%
+spotlights.forEach((spotlight, index) => {
+  spotlight.style.transform = `translateX(${100 * (index - currentSpotlight)}%)`;
   });
 });
 
-// select prev slide button
+
+// Select previous-button
 const prevSpotlight = document.querySelector(".btn-prev");
 
-// add event listener and navigation functionality
+// Does the same as the funtion for the next button but if currentSpotlight is not equal to maxSpotlight, decrease the value of currentSpotlight with 1.
 prevSpotlight.addEventListener("click", function () {
-  // check if current slide is the first and reset current slide to last
-  if (curSpotlight === 0) {
-    curSpotlight = maxSpotlight;
+  if (currentSpotlight === 0) {
+    currentSpotlight = maxSpotlight;
   } else {
-    curSpotlight--;
+    currentSpotlight--;
   }
 
-  //   move slide by 100%
-  spotlights.forEach((spotlight, indx) => {
-    spotlight.style.transform = `translateX(${100 * (indx - curSpotlight)}%)`;
+  // Move spotlight by 100%
+  spotlights.forEach((spotlight, index) => {
+    spotlight.style.transform = `translateX(${100 * (index - currentSpotlight)}%)`;
   });
 });
