@@ -18,3 +18,4 @@ To further develop the site, the articles could pop out in a box on top of the s
 
 
 ## View it live
+https://gilded-bonbon-e7665e.netlify.app/
