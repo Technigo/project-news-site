@@ -8,88 +8,80 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="nav-bar">
+    <!--header+nav bar-->
+    <header>
       <h1>Greece</h1>
-      <ul class="nav-links">
-        <li class="nav-item"><a href="#featured">Featured</a></li>
-        <li class="nav-item"><a href="#islands">Islands</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="featured" class="grid">
-      <div class="featured-text">
-        <h2>Featured Item</h2>
-        <img src="assets/images/hold.jpg" alt="Milos img" />
-        <h3 class="titles">Milos</h3>
-        <p class="leading">
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#featured">Featured</a></li>
+          <li class="nav-item"><a href="#islands">Islands</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!--featured island-->
+      <h2>Featured Item</h2>
+      <section class="featured">
+        <img src="assets/images/milos.jpg" alt="Picture of Milos" />
+        <h3>Milos</h3>
+        <p class="info-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
           consequat.
         </p>
-        <a href="#" class="button">Read More</a>
-      </div>
-    </section>
-    <section id="#islands">
-      <h2>Islands</h2>
-      <div class="islands grid">
-        <a href="#"
-          ><img src="assets/images/hold.jpg" alt="crete img" />
+      </section>
+      <!--islands section-->
+      <section class="islands">
+        <article class="card">
+          <img src="assets/images/crete.jpg" alt="Picture of Crete" />
           <h3>Crete</h3>
-          <p class="leading">
+          <p class="info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
             consequat.
           </p>
-        </a>
-        <a href="#"
-          ><img src="assets/images/hold.jpg" alt="crete img" />
-          <h3>Crete</h3>
-          <p class="leading">
+        </article>
+        <article class="card">
+          <img src="assets/images/mykonos.jpg" alt="Picture of Mykonos" />
+          <h3>Mykonos</h3>
+          <p class="info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
             consequat.
           </p>
-        </a>
-        <a href="#"
-          ><img src="assets/images/hold.jpg" alt="crete img" />
-          <h3>Crete</h3>
-          <p class="leading">
+        </article>
+        <article class="card">
+          <img src="assets/images/zakynthos.jpg" alt="Picture of Zakynthos" />
+          <h3>Zakynthos</h3>
+          <p class="info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
             consequat.
           </p>
-        </a>
-        <a href="#"
-          ><img src="assets/images/hold.jpg" alt="crete img" />
-          <h3>Crete</h3>
-          <p class="leading">
+        </article>
+        <article class="card">
+          <img src="assets/images/santorini.jpg" alt="Picture of Santorini" />
+          <h3>Santorini</h3>
+          <p class="info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
             consequat.
           </p>
-        </a>
-        <a href="#"
-          ><img src="assets/images/hold.jpg" alt="crete img" />
-          <h3>Crete</h3>
-          <p class="leading">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
-            consequat.
-          </p>
-        </a>
-      </div>
-    </section>
+        </article>
+      </section>
+    </div>
+    <!--footer-->
     <footer>
-      <div class="grid">
-        <p class="copyright">Copyright 2022 Julia Östedt</p>
+      <div class="footer">
         <ul class="social">
           <li>
             <a href="https://www.linkedin.com/in/juliaostedt/"
-              ><img src="assets/images/LI-In-Bug.png" alt="linkedin"
+              ><img src="assets/images/logo-linkedin.png" alt="linkedin"
             /></a>
           </li>
           <li>
             <a href="https://github.com/juliaostedt"
-              ><img
-                src="assets/images/GitHub-Mark-Light-120px-plus.png"
-                alt="github"
+              ><img src="assets/images/logo-github.png" alt="github"
             /></a>
           </li>
         </ul>
+        <p class="copyright">Copyright 2022 Julia Östedt</p>
       </div>
     </footer>
   </body>

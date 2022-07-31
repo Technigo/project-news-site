@@ -23,22 +23,41 @@ body {
     rgb(204, 228, 247) 11.2%,
     rgb(237, 246, 250) 100.2%
   );
-  overflow-x: hidden;
   font-family: "NotoSans Regular";
 }
-.button {
-  background: none;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  padding: 6px 12px;
-  border-radius: 20px;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-  display: inline-block;
 }
-.button:hover {
-  color: var(--secondary);
-  background: var(--primary);
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 5px;
+  padding: 10px;
+  color: #4d8291;
+}
+.nav-links a:hover {
+  background: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+}
+
+footer .social {
+}
+footer .copyright {
+  font-size: 0.8em;
+}
+footer img {
+  max-width: 30px;
+  padding: 5px;
 }
 /* fonts */
 @font-face {
@@ -53,12 +72,6 @@ body {
   font-family: "Oswald Regular";
   src: url(assets/fonts/Oswald-Regular.ttf);
 }
-h1,
-h2,
-h3 {
-  color: var(--primary);
-  font-weight: normal;
-}
 p,
 a,
 li {
@@ -66,32 +79,55 @@ li {
 }
 h2,
 h3 {
-  font-family: "Oswald Regular";
-  font-size: 1.2em;
+  font: 1.5em "Oswald Regular";
+  color: var(--primary);
+  font-weight: normal;
+  margin: 15px;
 }
 h1 {
-  font-family: "Megrim Regular";
-  font-size: 4em;
+  font: 4em "Megrim Regular";
+  color: var(--primary);
 }
-.leading {
+.info-text {
   font-size: 1em;
+  margin: 15px;
 }
 /* mobile styles */
-
-/* small tablet styles */
-@media screen and (min-width: 620px) {
+.nav-bar ul {
+  display: none;
+}
+.featured {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
 }
 
-/*large tablets & laptop styles */
-@media screen and (min-width: 960px) {
-  body {
-    font-size: 18px;
-  }
+.featured img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.islands {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1;
+  border: 2px solid black;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* tablet styles */
+@media screen and (min-width: 668px) {
 }
 
 /* desktop styles */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   body {
-    font-size: 20px;
   }
 }
