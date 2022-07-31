@@ -7,57 +7,60 @@ body {
 
 
 @media (max-width:667px) {
-header {
-  background-color: white;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  
-
-}
-.logo {
-background-color: rgb(255, 255, 255);
-color: black;
-display: flex;
-flex-direction: row;
-margin: auto;
-
-  }
-  h1 {
-    font-style: oblique;
-    font-size: 34px;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
- 
-  }
-  li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
+  header {
     background-color: white;
-    margin: 5px;
-    text-decoration: none;
-    color: rgb(56, 56, 56);
-    font-size: 14px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    }
+  
+   h1 {
+      font-style: oblique;
+      font-size: 40px;
+      padding-left: 20px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: flex-end;
+   
+    }
+    li {
+      float: left;
+    }
+    
+    a {
+      display: block;
+      padding: 8px;
+      background-color: white;
+      margin: 5px;
+      text-decoration: none;
+      color: rgb(56, 56, 56);
+      font-size: 14px;
+    }
+  
+    .navbar a:hover {
+      color: grey;
   }
-
-  .navbar a:hover {
-    color: grey;
-}
+  
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
 
 .news-items {
   display: grid;
@@ -115,7 +118,7 @@ h3 {
 .text-box {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 
@@ -138,56 +141,88 @@ h3 {
   body {
   background-color: rgb(234, 56, 56);
   }
-    .logo {
-    background-color: rgb(255, 255, 255);
-    color: black;
+  
+  header {
+    background-color: white;
+    height: 100px;
     display: flex;
-    flex-direction: row;
-
-      }
-    .h2 {
-      font-weight: bolder;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
-  .navbar {
+  
+   h1 {
+    font-style: oblique;
+    font-size: 50px;
+    margin-bottom: -10px;
     display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
- 
-  }
-  li {
-    float: left;
- 
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: flex-end;
+   
+    }
+    li {
+      float: left;
+    }
+    
+    a {
+      display: block;
+      padding: 8px;
+      background-color: white;
+      margin: 5px;
+      text-decoration: none;
+      color: rgb(56, 56, 56);
+      font-size: 14px;
+    }
+  
+    .navbar a:hover {
+      color: grey;
   }
   
-  a {
-    display: block;
-    padding: 8px;
-    background-color: white;
-    margin: 5px;
-    text-decoration: none;
-    color: rgb(56, 56, 56);
-    font-size: 54px;
+  h2 {
+    font-size: 24px;
   }
-
-  .navbar a:hover {
-    color: grey;
+  p {
+    font-size: 18px;
+    margin-top: 0px;
   }
-
+  h3 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
   .news-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     }
   
   .big-news {
     grid-column: span 2;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .big-news img {
+    grid-column: span 2;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .big-news .text-box {
+    display: flex;
+    flex-direction: column;
   }
   
   .other-news {
@@ -202,8 +237,13 @@ h3 {
    .other-news img {
      max-width: 100%;
      height: auto;
-   
    }  
+
+   .text-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
 
   }
 
