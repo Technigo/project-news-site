@@ -1,6 +1,8 @@
 /* generic nav-bar section */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Space+Mono&display=swap");
 
+/* background-image: url("https://images.unsplash.com/photo-1516105442523-f6e1d7888852?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTkzNzQ2NTM&ixlib=rb-1.2.1&q=80"); */
+
 header {
   display: flex;
   align-items: center;
@@ -8,6 +10,7 @@ header {
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: auto; /* Full width */
+  background: white;
 }
 
 header h2 {
@@ -86,6 +89,22 @@ header ul li a:hover {
   gap: 10px;
 }
 
+.grid-item .big-grid-item {
+  display: flex;
+}
+
+.grid-item {
+  color: rgba(245, 242, 245, 0.635);
+}
+
+.big-grid-item img {
+  height: 100%;
+}
+
+.grid-item.big-grid-item {
+  background: black;
+}
+
 /* generic articles */
 .news {
   display: flex;
@@ -108,14 +127,19 @@ header ul li a:hover {
   margin: 0;
 }
 
+p::first-letter {
+  font-weight: bold;
+}
+
 .news img {
   align-content: center;
   height: 50%;
   object-fit: contain;
+  background-color: transparent;
 }
 
 .grid-item {
-  background: pink;
+  background: rgb(2, 2, 2);
 }
 
 /* mobile-phone section */
@@ -158,7 +182,7 @@ header ul li a:hover {
   .grid-parent {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 250px;
-    grid-auto-rows: 180px;
+    grid-auto-rows: 280px;
   }
 }
 
@@ -199,7 +223,7 @@ header ul li a:hover {
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px;
-    grid-auto-rows: 180px;
+    grid-auto-rows: 350px;
   }
 
   .big-grid-item {
@@ -253,7 +277,7 @@ header ul li a:hover {
   .grid-parent {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
-    grid-auto-rows: 180px;
+    grid-auto-rows: 250px;
   }
 
   .big-grid-item {
