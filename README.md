@@ -11,4 +11,4 @@ To place everything where I wanted to I used the flexbox approach since it's sim
 If I would redo this task I would want to try out a different visual appearance aswell as working with values that would make the design close to the sketches or vice verse, since precentages doesn't represent exactly what I had in mind.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://astounding-arithmetic-2f329d.netlify.app
