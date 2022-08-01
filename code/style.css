@@ -8,21 +8,29 @@ body {
 
 @media (max-width:667px) {
   header {
-    background-color: white;
     height: 100px;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
     }
-  
-   h1 {
+.logo-sitename {
+display: flex;
+align-items: flex-end;
+
+}
+
+.logo-sitename img{
+  height: 68px;
+}
+  h1 {
       font-style: italic;
-      font-size: 40px;
+      font-size: 28px;
       padding-left: 20px;
       margin-bottom: 5px;
       display: flex;
       align-items: flex-end;
     }
-  
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -45,8 +53,8 @@ body {
       font-size: 14px;
     }
   
-    .navbar a:hover {
-      color: grey;
+    a:hover {
+      color: #f57272;;
   }
   
   h2 {
@@ -121,41 +129,35 @@ h3 {
   padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 @media (min-width: 668px ) and (max-width:1024px) {
-
-  body {
-  background-color: rgb(255, 255, 255);
-  }
   
   header {
-    background-color: white;
-    height: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding:20px;
     }
-  
+
+    .logo-sitename {
+      display: flex;
+      
+      }
+      
+      .logo-sitename img{
+        height: 68px;
+      }
+
    h1 {
     font-style: italic;
     font-size: 50px;
-    margin-bottom: -10px;
     display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
     }
   
     ul {
@@ -173,15 +175,14 @@ h3 {
     a {
       display: block;
       padding: 8px;
-      background-color: white;
       margin: 5px;
       text-decoration: none;
       color: rgb(56, 56, 56);
       font-size: 14px;
     }
   
-    .navbar a:hover {
-      color: grey;
+    a:hover {
+      color:  #f57272;
   }
   
   h2 {
@@ -248,26 +249,62 @@ h3 {
     padding-top: 10px;
   }
 
+  /* .text-box a{
+    padding: 0px;
+    margin:0px;
+  }
+
+  .button {
+    background-color: rgb(249 218 218);
+    border-radius: 40px;
+    width: 93px;
+    height: 35px;
+    padding: 10px;
+
+  }
+
+  .button:hover  {
+    background-color: #f57272;
+    color: white;
+    }
+
+  .button a{
+    padding: 5px;
+    margin: 0px;
+    color:black;
+  }
+
+  .button a:hover{
+    color: white;
+  } */
+
   }
 
 @media (min-width:1025px) {
-  body {
-    background-color: rgb(238, 255, 0);
-  }
-  header {
-    background-color: white;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding:20px;
+      }
+  
+      .logo-sitename {
+        display: flex;
+        align-items: center;
+        
+        }
+        
+        .logo-sitename img{
+          height: 90px;
+        }
   
    h1 {
     font-style: italic;
     font-size: 50px;
     margin-bottom: -10px;
-    display: flex;
+    padding: 20px;
     }
   
     ul {
@@ -288,11 +325,11 @@ h3 {
       margin: 5px;
       text-decoration: none;
       color: rgb(56, 56, 56);
-      font-size: 14px;
+      font-size: 18px;
     }
   
     a:hover {
-      color: grey;
+      color:  #f57272;
   }
   
   h2 {
@@ -358,8 +395,9 @@ h3 {
     flex-direction: column;
     padding-top: 10px;
   }
+}
 
-  .text-box a{
+  /* .text-box a{
     padding: 0px;
     margin:0px;
   }
@@ -370,7 +408,6 @@ h3 {
     width: 93px;
     height: 35px;
     padding: 10px;
-    margin-top: 60px;
   }
 
   .button:hover  {
@@ -383,6 +420,5 @@ h3 {
     color:black;
   }
   .button a:hover{
-    color: white;
-  }
-}
+    color: white; */
+  /* } */
