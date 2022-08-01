@@ -31,10 +31,10 @@ h2 {
 button {
   background-color: rgba(255, 255, 255, 0.838);
   border: none;
-  padding: 12px;
+  padding: 10px;
   margin-top: 15px;
   color:#eaa561;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 50%;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 8px 3px 3px #e2a05e;
@@ -150,7 +150,7 @@ a:hover {
 }
 
 .flex-child-news img {
-  max-height:280px;
+  max-height:230px;
   border: #e2a05e outset 5px;
 }
  
@@ -175,6 +175,10 @@ a:hover {
     font-size: 25px;
   }
   
+  button {
+    font-size: 14px;
+    padding: 14px;
+  }
   .logo img {
     max-height: 70px;
   }
@@ -246,6 +250,11 @@ a:hover {
  
 /*Desktop*/
 @media (min-width: 1025px) {
+  button {
+    font-size: 14px;
+    padding: 14px;
+  }
+  
   .logo {
     display: flex;
     flex-direction: row;
