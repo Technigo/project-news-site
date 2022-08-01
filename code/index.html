@@ -4,19 +4,90 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    
+    <!-- Top Navigation Menu -->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <a href="#home" class="logo">
+        <img src="images/logo.svg" alt="Technigo Logo">
+      </a>
+      <div id="mainNav">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- Navigation links (hidden by default) -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/menu.svg" alt="menu">
+      </a>
+      <div id="burgerLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <!-- Main content area -->
+    <main>
+      <section class="top-news">
+        <article class="big-article">
+          <img src="images/blue_cheese.jpg" alt="Blue Cheese">
+          <div class="big-article-content">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu velit at et ultrices nibh faucibus risus. Morbi amet pellentesque lectus euismod leo lobortis egestas lectus. Elementum lectus integer eget fermentum. </p>
+            <button>Read more</button>
+        </div>
+        </article>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <section class="news-list">
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+        <article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article><article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article><article class="small-article">
+          <img src="images/orange_cheese.jpg" alt="Orange cheese">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </article>
+      </section>
+  </main>
+    <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function myFunction() {
+        var x = document.getElementById("burgerLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
