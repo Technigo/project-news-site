@@ -10,7 +10,7 @@ Try-fail-understand loop until success.
 
 When I started my first lines of code I didn't have a plan. I realized that I needed to create some kind of structure in both the html and css files to find me around.
 
-If I had more time I would have worked with more styling and organized things better. I realized that a better grid structure and naming things propper would have helped me keeping things clear and not repeating code lines when styling.
+If I had more time I would have worked with more styling and organized things better. I realized that a better grid structure and naming things properly would have helped me keeping things clear and not repeating code lines when styling.
 
 ## View it live
 
