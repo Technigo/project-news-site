@@ -29,14 +29,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
+  margin: 15px;
 }
 .nav-links {
-  display: flex;
   list-style: none;
+  display: flex;
 }
 .nav-links a {
   text-decoration: none;
+  text-transform: uppercase;
   letter-spacing: 5px;
   padding: 10px;
   color: #4d8291;
@@ -51,13 +52,14 @@ footer {
 }
 
 footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5em;
+  padding: 5px;
 }
+
 footer .copyright {
   font-size: 0.8em;
-}
-footer img {
-  max-width: 30px;
-  padding: 5px;
 }
 /* fonts */
 @font-face {
@@ -85,8 +87,9 @@ h3 {
   margin: 15px;
 }
 h1 {
-  font: 4em "Megrim Regular";
+  font: 5em "Megrim Regular";
   color: var(--primary);
+  margin: 0;
 }
 .info-text {
   font-size: 1em;
@@ -96,38 +99,52 @@ h1 {
 .nav-bar ul {
   display: none;
 }
+.nav-bar i {
+  display: none;
+}
 .featured {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
 }
-
 .featured img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 10px;
 }
-
 .islands {
   display: flex;
   flex-direction: column;
 }
-
 .card {
   flex: 1;
   border: 2px solid black;
 }
-
 .card img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 10px;
 }
 
 /* tablet styles */
-@media screen and (min-width: 668px) {
+@media (min-width: 667px) and (max-width: 1024px) {
+  .nav-bar i {
+    display: block;
+    margin: 20px;
+    font-size: 2em;
+    color: var(--primary);
+  }
+  body {
+    background: whitesmoke;
+  }
 }
 
 /* desktop styles */
-@media screen and (min-width: 1024px) {
-  body {
+@media (min-width: 1024px) {
+  .nav-bar ul {
+    display: flex;
+  }
+  .nav-bar i {
+    display: none;
   }
 }
