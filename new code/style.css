@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 /* generic nav-bar section */
 header {
   display: flex;
@@ -128,7 +138,7 @@ header ul li a:hover {
   height: 100%;
   overflow: auto;
   text-align: center;
-  margin: 10px 20px;
+  margin: 5px 20px;
 }
 
 .news h2 {
@@ -136,6 +146,20 @@ header ul li a:hover {
   height: 15%;
   margin: 0;
 }
+
+/* .news p::before {
+  content: "0";
+  background: white;
+  font-size: 2px;
+  display: block;
+}
+
+.news p::after {
+  content: "0";
+  background: white;
+  font-size: 2px;
+  display: block;
+} */
 
 .news p {
   width: 100%;
@@ -149,7 +173,7 @@ p::first-letter {
 
 .news img {
   align-content: center;
-  height: 50%;
+  height: 47%;
   object-fit: contain;
   background-color: transparent;
 }
