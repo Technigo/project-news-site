@@ -2,21 +2,166 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodster</title>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+   
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+
+      <img src="foodster-logo.svg" width="60px" alt="foodster-logo">
+      <h1>Foodster</h1>
+      
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </label>
+
+      <nav id="main-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>  
+      </nav>
+
     </header>
 
+
     <section class="big-news">
-      <!-- The big news content -->
+      
+      <div class="big-news_item" >
+        <div class="big-news_image"> <img src="big-news-mobile.png" alt="aperol"></div>
+        <div class="big-news_image-desktop"> <img src="big-news-desktop.png" alt="aperol"></div>
+        <div class="big-news-text">
+          <div class="big-news_headline">Why is everyone drinking Aperol?</div>
+          <div class="big-news_intro">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <a class="button" href="#">read more</a>
+        </div>
+      </div>
+    
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+
+    <section class="block">
+      <div class="container">
+        <h2>Did you know?</h2>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Read full article</a>
+      </div>
     </section>
+
+
+    <section class="articles">
+
+      <div class="article__grid">
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-1.png" alt="pancake" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">My 5 steps to a perfect breakfast</div>
+            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-2.png" alt="citrus-drinks" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">When life gives you lemons...</div>
+            <div class="article__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-3.png" alt="dinner" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">Dinner is served!</div>
+            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-4.png" alt="garlic" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">A thing for garlic</div>
+            <div class="article__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-5.png" alt="lemon-drink" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">Our best summer drinks</div>
+            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-6.png" alt="ice-cream" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">Ice cream summer!</div>
+            <div class="article__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-7.png" alt="couscous" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">Why is couscous always a good idea?</div>
+            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+        <a href="#" class="article__item">
+          <div class="article__image"><img src="article-8.png" alt="buns" /></div>
+          <div class="article__text">
+            <div class="article__author">By Steven Stevenson</div>
+            <div class="article__title">All things rhubarb</div>
+            <div class="article__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+    
+    <section class="footer">
+      <div class="footer-container">
+        <p style="color: white">Register for free</p>
+        <a class="footer-button" href="">Sign up!</a>
+      </div>
+    </section>
+
+
   </body>
 </html>

@@ -1,4 +1,421 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #fae155;
+  color: black; 
+}
+
+body {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+header img {
+  margin-top: 20px;
+  justify-content: center
+}
+
+@media (max-width: 666px) {
+  header img {
+    margin: 20px 20px;
+    justify-content: center
+  }
+}
+
+header h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 666px) {
+  header h1 {
+    font-size: 25px;
+    margin-bottom:10px;
+    display: none;
+  }
+}
+
+
+#main-menu {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background: black;
+  margin: 0px;
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+  padding-inline-start: 0px;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#main-menu a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+    to bottom, 
+    black,black 20%, 
+    transparent 20%, transparent 40%, 
+    black 40%, black 60%,
+    transparent 60%, transparent 80%, 
+    black 80%, black 100%
+  );
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  transition: 0.3s;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+
+@media (max-width: 666px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+}
+
+
+.big-news_item {
+  background-color: #F4F3EE;
+}
+
+.big-news_image img {
+  height: auto;
+  width: 100%;
+}
+
+.big-news_image-desktop img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.big-news_headline {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: 30px;
+  margin: 20px 40px 20px 40px;
+  color: black;
+  text-align: center;
+}
+
+.big-news_intro {
+  font-size: 15px;
+  margin: 20px 40px 20px 40px;
+  color: black;
+  text-align: center;
+}
+
+.button {
+  color: black;
+  border: black solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .big-news_item {
+    display: flex;
+    background-color: #f7f6f3;
+    flex-direction: row;
+    grid-template-columns: auto;
+  }
+
+  .big-news_image {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .big-news_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .big-news-text {
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .big-news_headline {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 40px 20px 40px;
+    color: black;
+    text-align: center;
+  }
+  
+  .big-news_intro {
+    font-size: 15px;
+    margin: 20px 40px 20px 40px;
+    color: black;
+    text-align: center;
+  }
+  
+  .button {
+    color: black;
+    border: black solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .big-news_item {
+    display: flex;
+    background-color: #f7f6f3;
+    flex-direction: row;
+    grid-template-columns: auto;
+  }
+
+  .big-news_image {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .big-news_image {
+    display: none;
+  }
+
+  .big-news_image-desktop img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .big-news-text {
+    max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .big-news_headline {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 40px 20px 40px;
+    color: black;
+    text-align: center;
+  }
+  
+  .big-news_intro {
+    font-size: 15px;
+    margin: 20px 40px 20px 40px;
+    color: black;
+    text-align: center;
+  }
+  
+  .button {
+    color: black;
+    border: black solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+.container {
+  display: block;
+  background-color: #e3b6d6;
+  padding: 30px 40px 40px 40px;
+}
+
+.container a {
+  color: #0073cd;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .container {
+    padding: 30px 120px 40px 120px;
+}
+}
+
+@media (min-width: 1025px) {
+  .container {
+    padding: 30px 250px 40px 250px;
+}
+}
+
+.article__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr)
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .article__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .article__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px;
+  }  
+}
+
+.article__item {
+  background-color: #F4F3EE;
+}
+
+.article__grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.article__image img {
+  width: 100%;
+  height: auto;
+}
+
+.article__text {
+  padding: 20px 40px 40px 40px;
+}
+
+.article__author {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.article__title {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.article__description {
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0073cd;
+  padding: 40px;
+}
+
+.footer-container p {
+  margin: 10px;
+}
+
+.footer-container a {
+  color: white;
+  border: white solid;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+h1 {
+  margin: 0 auto;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #0073cd;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 200;
+  margin-bottom: 20px 40px 40px 40px;
+  color: #0073cd;
 }
