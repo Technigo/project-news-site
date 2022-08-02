@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,31 +12,47 @@
   <title>climbing-magazine-contact</title>
 </head>
 <body>
-	<div class="wrapper">
-    <header class="header">
-      <div class="logo-container">
-        <img class="logo" src="./images-videos/logo.png" alt="logo">
-          <h5 class="magazine-name">nine c plus</h5>
+  <div class="wrapper">
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="./images-videos/logo.png" alt="logo">
+        <h5 class="magazine-name">nine c plus</h5>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>            
+    </ul>
+  </header>
+    <div class="container">
+      <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Enter your email:</label>
+        <input type="text" id="email" name="email" placeholder="youremail@example.com" required>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  <footer class="footer">
+    <div class="grid-footer-container">
+      <div class="flex-footer-container">
+        <div class="flex-footer-child info1">
+          <p1></p1>
+          <p2></p2>
+          <p3></p3>
+        </div>
+        <div class="flex-footer-child info2">
+          <p1>First project: July 2022</p1>
+          <a href="contact.html"><p2>Send an email</p2></a>
+          <p3>Pictures and media: Mixkit and Pexels </p3>
+        </div>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>            
-      </ul>
-    </header>
-		<div class="container">
-			<form action="#">
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-				<label for="email">Enter your email:</label>
-  			<input type="text" id="email" name="email" placeholder="youremail@example.com" required>
-				<label for="subject">Subject</label>
-				<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</div>	
+    </div>
+  </footer>	
 </body>
 </html>

@@ -10,7 +10,8 @@ Try-fail-understand loop until success.
 
 When I started my first lines of code I didn't have a plan. I realized that I needed to create some kind of structure in both the html and css files to find me around.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had more time I would have worked with more styling and organized things better. I realized that a better grid structure and naming things propper would have helped me keeping things clear and not repeating code lines when styling.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://classy-sopapillas-d3a7c4.netlify.app
