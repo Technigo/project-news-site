@@ -8,5 +8,7 @@ I started by sketching up a desktop, tablet and mobile version of the site. Afte
 
 Lastly I added a box between the big news part and the grid part, and a footer, just to make the site a little bit more easy on the eye.
 
+TEST
+
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
