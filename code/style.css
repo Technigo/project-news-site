@@ -137,13 +137,14 @@ h3 {
   header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding:20px;
     }
 
     .logo-sitename {
       display: flex;
+      align-items: center;
       
       }
       
@@ -153,11 +154,9 @@ h3 {
 
    h1 {
     font-style: italic;
-    font-size: 50px;
-    display: flex;
-    margin: 0;
-    align-items: center;
-    padding: 10px;
+    font-size: 40px;
+    margin-bottom: -10px;
+    padding: 20px;
     }
   
     ul {
