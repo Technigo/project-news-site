@@ -98,6 +98,7 @@ header ul li a:hover {
   display: grid;
   gap: 10px;
   width: auto;
+  justify-items: center;
 }
 
 .grid-item {
@@ -110,6 +111,9 @@ header ul li a:hover {
 
 .big-grid-item {
   display: flex;
+  flex-wrap: wrap;
+  float: center;
+  justify-items: center;
 }
 
 .big-grid-item img {
@@ -137,6 +141,7 @@ header ul li a:hover {
 /* generic articles */
 .news {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-height: 0; /* IMPORTANT: you need this for non-chrome browsers */
   height: 100%;
@@ -150,20 +155,6 @@ header ul li a:hover {
   height: 15%;
   margin: 0;
 }
-
-/* .news p::before {
-  content: "0";
-  background: white;
-  font-size: 2px;
-  display: block;
-}
-
-.news p::after {
-  content: "0";
-  background: white;
-  font-size: 2px;
-  display: block;
-} */
 
 .news p {
   width: 100%;
