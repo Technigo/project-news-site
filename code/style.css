@@ -1,4 +1,76 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  min-height: 100vh;
+  justify-content: center;
+  background: #fefefe;
+  color: rgb(63, 63, 63);
+}
+
+/* - - - Logo and navbar - - - */
+
+.logo {
+  font-size:x-large;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color:rgb(63, 63, 63);
+}
+
+.nav-links {
+  list-style: none;
+  display: inline-block;
+}
+
+
+
+/* - - - Article card - - - */
+
+.article {
+  padding: 10px;
+}
+
+.article-text p {
+  color:#E31C79;
+}
+
+.article-title h1 {
+  color:green;
+}
+
+
+/* - - - Feature article - - - */
+
+.article--featured {
+  background: lightblue;
+  max-width: 100%;
+}
+
+.article--featured img {
+  width: 100%;
+}
+
+
+/* - - - Regular articles - - - */
+
+.article--regular {
+  background: orange;
+}
+
+.article--regular img {
+  width: 100%;
+}
+
+
+/* - - - Tablet media queries - - - */
+
+@media (min-width:668px) {
+  
+}
+
+
+/* - - - Dekstop media queries - - - */
+
+@media (min-width:1025px) {
+  
 }

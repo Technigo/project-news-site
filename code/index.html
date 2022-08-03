@@ -2,21 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Catnews</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/123ae26214.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <i class="fa-solid fa-paw logo-icon"></i>
+            <p class="logo-text">Catnews</p>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">Menu item</a></li>
+          <li class="nav-item"><a href="#">Menu item</a></li>
+          <li class="nav-item"><a href="#">Menu item</a></li>
+          <li class="nav-item"><a href="#">Menu item</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="articles-grid">
+      <div class="article article--featured">
+        <a href="#">
+          <img src="https://i.pinimg.com/564x/8f/7e/00/8f7e00104df8f2b3d89af451808f209b.jpg">
+          <h1 class="article-title">Feature article title</h1>
+          <p class="article-text">Feature article text</p>
+        </a>
+      </div>
     </section>
-
-    <section class="">
-      <!-- The other news  -->
+    
+    <section class="articles-grid">
+      <div class="article article--regular">
+        <a href="#">
+          <img src="https://i.pinimg.com/564x/8f/7e/00/8f7e00104df8f2b3d89af451808f209b.jpg">
+          <h1 class="article-title">Regular article title</h1>
+          <p class="article-text">Regular article text</p>
+        </a>
+      </div>
+      <div class="article article--regular">
+        <a href="">
+          <img src="https://i.pinimg.com/564x/8f/7e/00/8f7e00104df8f2b3d89af451808f209b.jpg">
+          <h1 class="article-title">Regular article title</h1>
+          <p class="article-text">Regular article text</p>
+        </a>
+      </div>
+      <div class="article article--regular">
+        <a href="#">
+          <img src="https://i.pinimg.com/564x/8f/7e/00/8f7e00104df8f2b3d89af451808f209b.jpg">
+          <h1 class="article-title">Regular article title</h1>
+          <p class="article-text">Regular article text</p>
+        </a>
+      </div>
+      <div class="article article--regular">
+        <a href="#">
+          <img src="https://i.pinimg.com/564x/8f/7e/00/8f7e00104df8f2b3d89af451808f209b.jpg">
+          <h1 class="article-title">Regular article title</h1>
+          <p class="article-text">Regular article text</p>
+        </a>
+      </div>
     </section>
   </body>
 </html>
