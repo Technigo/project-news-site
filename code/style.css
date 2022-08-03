@@ -24,6 +24,7 @@ body {
     rgb(237, 246, 250) 100.2%
   );
   font-family: "NotoSans Regular";
+  margin: 10px;
 }
 .nav-bar {
   display: flex;
@@ -44,6 +45,21 @@ body {
 }
 .nav-links a:hover {
   background: white;
+  box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.6);
+}
+.button {
+  background: none;
+  padding: 10px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  border: 1px solid whitesmoke;
+}
+.button:hover {
+  color: var(--primary);
+  background: white;
+  box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.6);
 }
 footer {
   display: flex;
@@ -75,25 +91,27 @@ footer .copyright {
   src: url(assets/fonts/Oswald-Regular.ttf);
 }
 p,
-a,
 li {
   color: var(--secondary);
+  margin: 5px;
 }
-h2,
-h3 {
-  font: 1.5em "Oswald Regular";
+
+a {
   color: var(--primary);
-  font-weight: normal;
-  margin: 15px;
 }
 h1 {
   font: 5em "Megrim Regular";
   color: var(--primary);
   margin: 0;
 }
+h3 {
+  font: 1.5em "Oswald Regular";
+  color: var(--primary);
+  margin: 5px;
+}
 .info-text {
   font-size: 1em;
-  margin: 15px;
+  margin: 5px 5px 25px;
 }
 /* mobile styles */
 .nav-bar ul {
@@ -105,7 +123,7 @@ h1 {
 .featured {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  margin: 20px 0;
 }
 .featured img {
   max-width: 100%;
@@ -115,10 +133,6 @@ h1 {
 .islands {
   display: flex;
   flex-direction: column;
-}
-.card {
-  flex: 1;
-  border: 2px solid black;
 }
 .card img {
   max-width: 100%;
@@ -134,8 +148,19 @@ h1 {
     font-size: 2em;
     color: var(--primary);
   }
-  body {
-    background: whitesmoke;
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .islands {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
   }
 }
 
@@ -146,5 +171,19 @@ h1 {
   }
   .nav-bar i {
     display: none;
+  }
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .islands {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
   }
 }
