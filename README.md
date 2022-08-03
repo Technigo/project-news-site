@@ -8,7 +8,5 @@ I started by sketching up a desktop, tablet and mobile version of the site. Afte
 
 Lastly I added a box between the big news part and the grid part, and a footer, just to make the site a little bit more easy on the eye.
 
-TEST
-
 ## View it live
 https://chipper-meringue-f5e637.netlify.app
