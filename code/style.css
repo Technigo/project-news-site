@@ -1,4 +1,328 @@
-html {
-  background: #0025ff;
-  color: #fff;
+  body {
+    background: #f5d571;
+    color: white;
+    margin: 0;
+    font-family: 'taviraj', serif;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .navigator {
+    background-color: #333;
+    height: 80px;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+  }
+  
+  .fa-solid {
+    color: #f5e6b8;
+    position: absolute;
+    left: 25px;
+  }
+
+  h1 {
+    color: #f5e6b8;
+    position: absolute;
+    font-size: 45px;
+    left: 100px;
+  }
+
+  .nav-text1, .nav-text2 {
+    display: none;
+    position: absolute;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .nav-text1 {
+    right: 140px;
+  }
+
+  .nav-text2 {
+    right: 50px;
+  }
+
+  .fa-bars {
+    position: absolute;
+    right: 60px;
+    display: none;
+    font-size: 25px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .big-news {
+    background-color: #f0ce67;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border: 3px solid orange;
+    border-style: ridge;
+    box-shadow: 5px 7px 9px 0px #965006;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: #965006;
+    font-size: 60px;
+    margin: 5px 30px 0 30px;
+    text-shadow: 3px 3px #5c3810;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animation {
+    0%   {color: #47280a;}
+    15%  {color: #3e2812;}
+    25%  {color: #814d14;}
+    35%  {color: #966530;}
+    50%  {color: #603a11;}
+    65%  {color: #965006;}
+    85%  {color: #985e21;}
+    95%  {color: #674016;}
+    100% {color: #47280a;}
+  }
+
+  .big-news-small-text {
+    font-size: 30px;
+  }
+
+  .big-news-small-text:hover {
+    text-shadow: 1px 1px grey;
+  }
+
+  .big-news-text-body {
+    font-size: 20px;
+  }
+
+  .big-news-small-text, .big-news-text-body {
+    margin: 0 25px;
+  }
+
+  .lego-image {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .other-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .lego-news {
+    background-color: #f0ce67;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 4px 4px #fce27c;
+  }
+
+  .lego-news:hover {
+    background-color: #f5be5f;
+    border: 2px solid #f5ab2c;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 10px 5px 5px 5px;
+  }
+
+  .lego-news-text {
+    margin: 0 5px 25px 5px;
+  }
+ 
+  .lego-news-text:hover {
+    text-shadow: 1px 1px grey;;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-color: #f0ce67;
+    padding: 15px 0 0 0;
+    height: 70px;
+  }
+ 
+ .foot-text1, .foot-text2 {
+    padding: 16px 16px;
+    text-shadow: 2px 2px #c59723;
+  }
+
+ .foot-text1:hover {
+    background-color: #f5be5f;
+  }
+
+  .foot-text2:hover {
+    background-color: #f5be5f;
+  }
+
+  .button {
+    padding: 10px 16px;
+    border-radius: 25px;
+    border: none;
+    background-color: #f5ab2c;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 3px #965006;
+  }
+
+  .button:hover {
+    box-shadow: 4px 6px 8px #703908;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+/*tablet*/
+@media (min-width: 668px) and (max-width: 1023px) {
+  h1 {
+    font-size: 50px;
+    left: 150px;
+  }
+
+  .fa-solid {
+    left: 60px;
+  }
+
+  .fa-bars {
+    display: inline;
+  }
+
+  .bars {
+    display: flex;
+    align-items: center;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .lego-image {
+    width: 50%;
+  }
+
+  .other-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .lego-news {
+    width: 48%;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .button {
+    position: absolute;
+    left: 40%;
+  }
+
+  .foot-text1, .foot-text2 {
+    display: none;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    left: 150px;
+  }
+
+  .fa-solid {
+    left: 65px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .nav-text1:hover {
+    background-color: #111;
+  }
+
+  .nav-text2:hover {
+    background-color: #111;
+  }
+
+  .nav-text1, .nav-text2 {
+    display: inline-block;
+    padding: 14px 16px;
+  }
+
+  .big-news {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .big-news-text {
+    padding-left: 40px;
+   }
+
+  .other-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .lego-image {
+    width: 35%;
+    padding-right: 40px;
+  }
+
+  .lego-news {
+    width: 23%;
+  }
+
+  .lego-news:hover {
+    border: 1px solid grey;
+    padding: 3px;
+    box-shadow: 7px 7px 4px #703908;
+    float: left;
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+
+  img {
+    width: 98%;
+  }
+
+  .button, .foot-text1, .foot-text2 {
+    display: none;
+  }
 }
