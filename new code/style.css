@@ -97,8 +97,6 @@ header ul li a:hover {
 .grid-parent {
   display: grid;
   gap: 10px;
-  width: auto;
-  justify-items: center;
 }
 
 .grid-item {
@@ -114,6 +112,7 @@ header ul li a:hover {
   flex-wrap: wrap;
   float: center;
   justify-items: center;
+  width: auto;
 }
 
 .big-grid-item img {
