@@ -97,7 +97,6 @@ header ul li a:hover {
 .grid-parent {
   display: grid;
   gap: 10px;
-  min-width: 0;
 }
 
 .grid-item {
@@ -198,7 +197,7 @@ p::first-letter {
 
   /* mobile-phone home page grid */
   .grid-parent {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: 250px;
     grid-auto-rows: 280px;
   }
@@ -242,7 +241,7 @@ p::first-letter {
 
   /* tablet section grid*/
   .grid-parent {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 300px;
     grid-auto-rows: 350px;
   }
@@ -315,7 +314,7 @@ p::first-letter {
 
   /* computer section grid*/
   .grid-parent {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: 300px;
     grid-auto-rows: 250px;
   }
