@@ -197,6 +197,7 @@ p::first-letter {
 
   /* mobile-phone home page grid */
   .grid-parent {
+    /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: 250px;
     grid-auto-rows: 280px;
@@ -241,6 +242,7 @@ p::first-letter {
 
   /* tablet section grid*/
   .grid-parent {
+    /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 300px;
     grid-auto-rows: 350px;
@@ -314,6 +316,7 @@ p::first-letter {
 
   /* computer section grid*/
   .grid-parent {
+    /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: 300px;
     grid-auto-rows: 250px;
