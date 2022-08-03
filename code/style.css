@@ -31,15 +31,15 @@
 @media screen and (max-width: 667px) {
   .navbar a {
     float: none;
-    display: block;
+    display: none;
   }
 
  .logo {
-    display: block; 
-    margin: 0 auto; 
-    padding: 10px;
-    float: none; 
- }
+  display: block; 
+  margin: 0 auto; 
+  padding: 40px;
+  float: none; 
+}
   }
 
 
@@ -59,7 +59,7 @@ h1 {
   font-family:'newsreader', sans-serif;
   font-size: 70px;
   font-stretch: ultra-condensed;
-  padding-top: 50px;
+  padding-top: 10px;
 
   }
   
