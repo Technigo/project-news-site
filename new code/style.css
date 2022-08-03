@@ -97,22 +97,20 @@ header ul li a:hover {
 .grid-parent {
   display: grid;
   gap: 10px;
+  min-width: 0;
 }
 
 .grid-item {
+  background: rgb(2, 2, 2);
   color: rgba(245, 242, 245, 0.635);
-}
-
-.grid-item.big-grid-item {
-  background: black;
 }
 
 .big-grid-item {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   float: center;
   justify-items: center;
-  width: auto;
+  width: auto; */
 }
 
 .big-grid-item img {
@@ -170,10 +168,6 @@ p::first-letter {
   height: 47%;
   object-fit: contain;
   background-color: transparent;
-}
-
-.grid-item {
-  background: rgb(2, 2, 2);
 }
 
 /* mobile-phone section */
