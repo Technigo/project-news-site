@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This projects' aim was to build a new site from scratch and it being responsive for mobile, tablet and desktop.
+The website is my first ever project. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+In the beginning I started coding and designing the layout for desktop - however, half way in I realized that I should have started with the mobile view. Getting the different responsive views to look OK in grid was the biggest challenges I faced. During the project, I've learnt a lot regarding grids and responsiveness, and if I were to do it all over - it would be so much faster and smoother. The navbar in the mobile view doesn't look so good, originally I wanted a dropdown menu and I'm imagining that's what it'll look like when it's expanded ;-) 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Check out my deployed project here, enjoy! 
+https://storied-choux-872962.netlify.app/
