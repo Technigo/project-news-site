@@ -2,21 +2,116 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+      <nav>
+        <ul>
+          <li class="logo etm">
+            <a href="#"><img src="etm.png" alt="etm logo. Click for home." 
+              style="height: 70px;"/></a></li>
+          <li class="logo exiit">
+            <a href="#"><img src="exiit.png" alt="exiitetravlemagazine"
+              style="height: 70px;"/></a></li>
+          <li class="bar nr1"><a href="#">Home</a></li>
+          <li class="bar nr2"><a href="#">Articles</a></lic>
+          <li class="bar nr3"><a href="#">Travel Categories</a></li>
+          <li class="bar nr4"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>  
     </header>
 
-    <section class="big-news">
+    <section id="grid">
+
       <!-- The big news content -->
+     
+      <article class="one">
+        <div class="big-news">
+          <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/trainstation.jpg" alt="Trainstation">
+          <h1> Tågluffa i Europa</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Feugiat scelerisque varius morbi 
+            enim nunc faucibus a. Orci dapibus ultrices in iaculis. 
+            Tortor posuere ac ut consequat semper viverra nam. </p>
+          <a class="btn" href="#" target="_blank"> Read more! </a>
+        </div>
+      </article> 
+
+      <!-- The other news  -->
+  
+      <article class="other-news">
+        <div class="to">
+          <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/map-iceland.jpg" alt="Iceland">
+          <h2>Iceland by car</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Orci dapibus ultrices in iaculis.
+          </p>
+          <a class="btn" href="#" target="_blank"> Read more! </a>
+        </div>
+      </article>
+
+      <article class="other-news">
+        <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/map-australia.jpg" alt="Australia">
+        <h2>Australia in a Caravan</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.
+        </p>
+        <a class="btn" href="#" target="_blank"> Read more! </a>
+      </article>
+
+      <article class="other-news">
+        <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/are.jpg" alt="Åre">
+        <h2>Skiing in Åre </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.
+        </p>
+        <a class="btn" href="#" target="_blank"> Read more! </a>
+      </article>
+
+      <article class="other-news">
+        <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/surfer-bali.jpg" alt="Bali">
+        <h2>Surfers paradise in Bali</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.
+        </p>
+        <a class="btn" href="#" target="_blank"> Read more! </a>
+      </article>
+
+      <article class="other-news">
+        <img src="/Volumes/NO_NAME/_technigo/Project/project-news-site/code/img/portugal-algarve.jpg" alt="Portugal">
+        <h2>Surfing in the Atlantic</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.
+        </p>
+        <a class="btn" href="#" target="_blank"> Read more! </a>
+      </article>
+ 
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- Footer contact info  -->
+    <footer>
+      <div class="footer">
+        <h3>Never stop exploring!</h3>
+        <ul class="contact-list">
+          <li><a href="mailto:email@example.com" target="_blank">contact@etm.com</a></li>
+          <li><a href="http://exiitetravlemagazine.com" target="_blank">Exiitetravelmagazine.com</a></li>
+          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="http:/instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
   </body>
 </html>

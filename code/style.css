@@ -1,4 +1,265 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #e2e2da;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Baskerville",serif;
+  font-size: 1.2rem;
+}
+
+ul, li, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+} 
+h1, h2, h3, p, a {
+  margin-left: 10px;
+}
+
+/* Header
+-------------------------------*/
+header, footer {
+  border-top: 3px solid #343434 ;
+  border-bottom: 3px solid #343434;
+  background-color: #5e5d5d ;
+}
+
+nav {
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  /* border: 3px solid black;  */
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1rem; 
+  color:#262626;
+  text-decoration: none;
+  justify-content: left;
+  /* border: 3px solid red;  */
+}
+
+.bar, .etm {
+  display: none;
+}
+
+.exiit a:hover {
+  background-color: transparent;
+}
+
+section {
+  padding: 50px;
+}
+
+#grid {
+  display: block; 
+}
+
+#grid > article {
+  border: 3px solid #343434;
+  margin: 15px; 
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12), 
+              0 3px 5px rgba(0,0,0,0.24);
+}
+
+/* Big news 
+-------------------------------*/
+
+.big-news {
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.12), 
+              0 1px 5px rgba(0,0,0,0.24);
+}
+
+.big-news img {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.big-news h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.big-news p {
+  margin-right: 30px;
+}
+
+.btn {
+  color: #e1dcdc;
+  background: #343434;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  width: 110px ;
+  justify-content: center;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: rgba(181, 141, 23, 0.8);
+}
+
+/* other news 
+-------------------------------*/
+.other-news p {
+  margin-right: 20px;
+}
+
+.other-news h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.other-news img {
+  width: 349px;
+  height: 320px;
+  object-fit: cover;
+   /* border: 3px solid yellow;    */
+}
+
+/* Footer  -   contact info
+-------------------------------*/
+
+h3 {
+  display: block;
+  margin-left: 25px;
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-align: left; 
+}
+
+.contact-list {
+  display: block;
+  list-style-type: none;
+  justify-content: center; 
+  
+}
+
+.contact-list a {
+  color: rgb(204, 150, 12);
+  display: block;
+  padding: 1rem;  
+}
+
+.contact-list a:hover {
+  background: rgba(204, 150, 12, 0.865);
+  color: #312b22;
+}
+
+ /* Responsive
+-------------------------------*/
+  /* Design for mobile device <667px */
+
+  /* Tablet device 668-1023px */
+@media screen and (min-width: 668px) {
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  li.etm {order: 3;}
+  li.nr1 {order: 1;}
+  li.nr2 {order: 2;}
+  li.nr3 {order: 4;}
+  li.nr4 {order: 5;}
+  
+  .bar {
+    display: block;
+    margin: 0px 5px;
+  }
+      
+
+  .etm {
+    display: block;
+    margin: 0px 20px; 
+/*       border: 3px solid yellow;    */
+  }
+
+  nav a:hover {
+  background: #312b22;
+  color: rgb(204, 150, 12);
+  }
+
+  .etm a:hover {
+    background-color: transparent;
+  }
+
+  .exiit {
+     display: none;
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }  
+  
+  .one {
+    grid-column: 1 / 3;
+  } 
+  .other-news img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+  }
+}
+
+  /* Desctop device >1024px */
+@media screen and (min-width: 1023px) {
+  
+  nav ul {
+    justify-content: left; 
+    /* border: 3px solid black;  */
+  }
+
+.exiit {
+  margin-right: 100px
+}
+
+.logo {
+    display: block;
+    /* border: 3px solid yellow;    */
+}
+
+li.etm {order: 1;}
+li.exiit {order: 2;}
+li.nr1 {order: 3;}
+li.nr2 {order: 4;}
+li.nr3 {order: 5;}
+li.nr4 {order: 6;}
+  
+  #grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .one {
+    grid-column: 1 / 5;
+  }
+
+  .big-news img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
 }
