@@ -11,4 +11,4 @@ Lastly I added a box between the big news part and the grid part, and a footer, 
 TEST
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://chipper-meringue-f5e637.netlify.app
