@@ -1,0 +1,247 @@
+h1,h2,p {
+    margin: 0px;
+}
+
+body {
+        display:flex;
+        flex-direction: column;
+}
+
+h1 {
+font-size: 40px; 
+margin-top: 25px;  
+margin-bottom: 5px;
+}
+
+h2 {
+font-size: 20px;  
+}
+
+p {
+    font-size: 15px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo-container {
+    width: 150px;
+}
+
+.logo-container img {
+    width: 100%
+}
+
+.top-bar nav {
+    align-self: flex-end;
+    justify-content: space-between;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.box-one {
+    margin: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-one img {
+    width: 100%;
+}
+
+.box-one-text {
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content:center;
+    text-align: center;
+}
+
+
+.box-two {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.box-two img {
+    width: 50%;
+    object-fit: contain;
+    border-right: 1px solid grey;
+}
+
+.box-two-text {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-two-text h2 {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .logo-container {
+        width: 200px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+    }
+ 
+    .box-one {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    h1 {
+        font-size: 52px; 
+        margin-top: 30px;  
+        margin-bottom: 5px;
+        }
+
+    .header-text {
+        font-size: 20px;
+    }
+
+    .all-box-two {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .box-two {
+        display: flex;
+        width: 40%;
+        border: 2px solid grey;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    .box-two img {
+        width: 100%;
+        height: 70%;
+        border-bottom: 1px solid grey;
+    }
+    
+    .box-two-text {
+        width: auto;
+        height: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;  
+        }
+
+    p {
+        font-size: 15px;
+    }
+}
+   
+@media (min-width: 1025px) {
+
+    .logo-container {
+        width: 300px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .box-one {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        border: 2px solid black;
+    }
+
+    .box-one img {
+        width: 60%;
+    }
+    
+    .box-one-text {
+        width: 40%;
+        display:flex;
+        flex-direction: column;
+        align-content:center;
+        justify-content:center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .header-text {
+        font-size: 15px;
+    }
+
+    .all-box-two {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .box-two {
+        display: flex;
+        width: 20%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    .box-two img {
+        width: 100%;
+        height: 65%;
+        border-bottom: 2px solid black;
+    }
+    
+    .box-two-text {
+        height: 35%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;  
+        }
+
+    p {
+        font-size: 15px;
+    }
+}
+
