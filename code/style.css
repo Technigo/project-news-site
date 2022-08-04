@@ -35,11 +35,18 @@ a {
 }
 
 .site-name {
-  border: red 1px solid;
+  border: green 1px solid;
+  font-family: 'Lexend Exa', sans-serif;
+  font-weight: 500;
+  font-size: x-large;
 }
 
 .main-menu {
   border: hotpink 1px solid;
+}
+
+.main-menu a {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* - - - Article grid - - - */
@@ -66,12 +73,14 @@ a {
   flex-grow: 1;
 }
 
-.article-text p {
-  color:#E31C79;
+.article-content h1 {
+  color:green;
+  font-family: 'Libre Caslon Text', serif;
 }
 
-.article-title h1 {
-  color:green;
+.article-content p {
+  color:#E31C79;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .article-picture {
