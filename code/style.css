@@ -63,8 +63,8 @@ a {
   color:hotpink;
 }
 
-/* - - - Article grid - - - */
 
+/* - - - Article grid - - - */
 
 .article-grid {
   display: grid;
@@ -72,6 +72,7 @@ a {
   border: dotted black;
   grid-gap: 10px;
 }
+
 
 /* - - - Article - - - */
 
@@ -88,29 +89,32 @@ a {
 }
 
 .article-content h1 {
-  color:green;
   font-family: 'Libre Caslon Text', serif;
 }
 
 .article-content p {
-  color:#E31C79;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .article-picture {
-  border: hotpink 1px solid;
 }
 
 .article-picture img {
   max-width:100%;
+  width:100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 
 /* - - - Featured article - - - */
 
+.article--featured {
+}
 
 
-/* - - - Regular articles - - - */
+
+
 
 
 
@@ -135,10 +139,17 @@ a {
     flex-direction: row;
   }
   
+  .article--featured {
+    flex-direction: column;
+  }
+
   .article-picture {
     width: 30%;
   }
-    
+
+  .article--featured .article-picture {
+    width: 100%;
+  }
     
 }
 
@@ -157,6 +168,10 @@ a {
 
   .article-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .article--featured {
+    grid-column:span 2;
   }
   
 }
@@ -177,6 +192,10 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .article--featured {
+    grid-column:span 4;
   }
 
 }
