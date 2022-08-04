@@ -1,12 +1,22 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This project is a responsive newspaper webpage, developed with the aim of practising both CSS Grid and Flexbox in laying out a webpage. 
+The page has a main news section and under that 4 cards of news items when viewed on a desktop, 2 cards on a tablet and one on a mobile.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+After sketching out my 3 different views for the page, I implemented the header and footer using Flexbox. The midsection of the page, where the news items are presented were laid out using CSS Grid. 
+
+Additionally, in the mobile view, I decided to further display each news item card with Flexbox as I didn't manage to layout the text to the side of the picture with CSS Grid alone. 
+
+Javascript was also used in the header, to listen for a click on the menu icon in mobile view and then display and hide the navbar. 
+
+If I had more time I would further experiment with doing the whole page with only Flexbox and with only CSS Grid. I would also further develope the site with individual pages for the news items in which I could experiment with different layouts of the page.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+Link to deployed project:
+
+

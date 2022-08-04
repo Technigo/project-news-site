@@ -1,22 +1,167 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./mobile.css"/>
+    <link rel="stylesheet" href="./tablet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <!-- Header done using flexbox -->
+      <div class="container">
+        <img class="logo" src="images/logo.svg" alt="Technigo logo">
+        
+        <h1>TravelNews</h1>
+      
+        <div class="nav-toggle" id="navToggle">
+          <img class="navIcon" id="hamburger" src="images/menu.png" alt="hamburger menu">
+          <img class="navIcon hidden" src="images/close.png" alt="close hamburger">
+        </div>
+
+        <nav class="">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li> 
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul> 
+        </nav>
+        
+      </div>    
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <div class="wrapper">
+      <!-- The big news content - a CSS Grid container -->
+      <section class="big-news">
+        
+          <div class="news-item main">
+            <img class="large-img" src="images/red_rock_c.jpg" alt="Red rock formation">
+          </div>
+                  
+          <div class="news-item main">
+            <a href="#">
+              <div>
+                <h2>Red Rock Canyon - a true feast for nature enthusiasts</h2>
+              </div>
+            </a>
+            
+            <a href="#">
+              <p><b>Red Rock Canyon National Conservation Area in Nevada, USA is 
+                visited by more than three million people each year.</b> 
+              </p>
+              <p>The conservation area is characterised by a dramatic landscape of large red rock formations, a set of 
+                sandstone peaks and walls which were formed by thrust  faults (thrust faults occur
+                when a section of land slips over another at a low angle).</p>
+              <p>
+                Hiking and trails as well as other reacreational activities, such as biking, rock climbing and camping
+                are the most popular activities at the Red Rock.
+                <br>
+                For those interested in geology or plants and wildlife the conservation area has a lot to offer too.
+                Red Rock Canyon is home to the desert tortoise and desert bighorn sheep among other animals and around 
+                600 species of plants including banana yucca and agave. 
+              </p>
+            </a>
+          </div>      
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- The other news - a CSS Grid container -->
+      <section class="other-news">
+        <a href="#">
+          <div class="news-item small">
+            <div class="left">
+              <img class="small-img" src="images/coffee_c.jpg" alt="Woman drinking coffee">
+            </div> 
+            
+            <div class="right">
+              <h4>Combine work and vacation |</h4>
+                <p>
+                  Workation trend exploding with 
+                  more people taking advantage of remote work.
+                </p>
+            </div>        
+          </div>
+        </a>
+
+        <a href="#">      
+          <div class="news-item small">
+            <div class="left">
+              <img class="small-img" src="images/planets_c.jpg" alt="Planets circling an open book">
+            </div>
+
+            <div class="right">
+              <h4>Travel really does broaden the mind |</h4>
+              <p>
+                New study finds travel can positively alter the brain.
+              </p>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="news-item small">
+            <div class="left">
+              <img class="small-img" src="images/winter_c.jpg" alt="Tree covered by snow">
+            </div>
+            <div class="right">
+              <h4>Winter travel on the rise |</h4>
+                <p>
+                  Crowds and high prices are reasons why more are embracing winter escapes instead of the beach.
+                </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="news-item small">
+            <div class="left">
+              <img class="small-img" src="images/colosseum_c.jpg" alt="The colosseum">
+            </div>
+            <div class="right">
+              <h4>Top historical attractions |</h4>
+              <p>
+                From the ancient Inca city to the largest structure of the Roman Empire,
+                see our list of top historical sites.
+              </p>
+            </div>
+          </div>
+        </a>
+      </section>
+
+    <!-- End of wrapper --> 
+    </div>
+      
+    <footer>
+      <!-- Footer done using flexbox -->
+      <div class="foot-container">
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Work for us</a></li> 
+            <li><a href="#">Complaints & corrections</a></li>
+            <li><a href="#">Press & media</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul> 
+
+          <hr>
+
+          <h3>TravelNews</h3>
+          
+          <p>Follow us on social media</p>
+          
+          <div>
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>&nbsp;
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>&nbsp;
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+          </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- -->
   </body>
 </html>

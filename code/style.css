@@ -1,4 +1,164 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f3faf9;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+header {
+  background-color: rgb(73, 124, 162);
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  color: #fff; 
+}
+
+h2, h3, h4 {
+  color:rgb(73, 124, 162);
+}
+
+h4, h4 + p {
+  display: inline;
+}
+
+p {
+  padding: 0.4rem 0;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 10%;
+  padding: 1.25rem;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.25rem;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.1rem; 
+  color: white;
+}
+
+li :hover {
+  color: rgb(10, 11, 11);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 10% 20%;
+}
+
+.big-news, .other-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin: 12px;
+}
+
+.news-item {
+  background-color: rgb(243, 242, 241);
+  padding: 10px;
+}
+
+.main {
+  grid-column: span 2;
+  padding: 15px;
+}
+
+.left {
+  margin-bottom: 5px;
+}
+
+.right {
+  width: 100%; 
+  height: 85px; 
+}
+
+.large-img {
+  width: 100%;
+  height: 100%;
+}
+
+.small-img {
+  width: 100%;
+  height: 175px; 
+}
+
+hr {
+  width: 60%;
+  color: rgb(128, 131, 131);
+}
+
+footer {
+  background-color:#eaeaea;
+  text-align: center;
+  width: 100%;
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+footer ul {
+  padding: 1.5rem;
+}
+
+footer li a, footer p {
+  color: rgb(99, 99, 101);
+  padding: 1rem;
+}
+
+footer h3 { 
+  padding: 1rem; 
 }
