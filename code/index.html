@@ -7,10 +7,11 @@
   </head>
     <title>WTB: What to Binge?</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
 
+  </head>
+
+  <body>
+<!-- Some kind of logo and navbar -->
     <header class="logo-header">
      <div class="wrapper">
       <div class="top image">
@@ -22,27 +23,30 @@
         </div>
         <div class="top navbar">
           <nav class="navbar">
-            <div class="nav-one"></div>
-            <button>Home</button>
-            <div class= "nav-two"></div>
-            <button>About us</button>
-            <div class="nav-three"></div>
-            <button>Why Binge?</button>
+            <a href="http://www.x.se"><button>Home</button></a>
+            <a href="http://www.y.se"><button>About us</button></a>
+            <a href="http://www.z.se"><button>Why Binge?</button></a>
+            <div class="navbar-search">
+              <a href="http://www.å.se"><button>
+                <img src="search.png"></button>
+              </a>
+            </div>
             <h2>Search news</h2><input form="search" />
           </nav>
         </div>
  
-    </div> <!-- Some kind of logo and navbar -->
+    </div>
       
     </header>
 
     <section class="big-news-section">
       <!-- The big news content -->
-      <div class="big-news first"><p>some text</p></div><!-- theese divs are made for flexbox-->
-      <div class="big-news second"></div>
-      <div class="big-news third"></div>
+      <div class="big-news news-pic"><img src="https://live.staticflickr.com/7426/13158484383_18c5eebd32_b.jpg"></div> <!-- theese divs are made for flexbox-->
+      <div class="big-news news-text"><h1>The 50 Best TV Shows on Netflix Right Now
+      </h1><p>Nullam sit amet eros mattis, rutrum sapien in,  sem nisi mollis nulla, sit amet convallis ipsum tellus non lacus.</p></div>
+      <!-- not used right now <div class="big-news third"></div>
       <div class="big-news fourth"></div>
-      <div class="big-news fifth"></div><!--not yet used-->
+      <div class="big-news fifth"></div> not yet used-->
       
     </section>
 
@@ -51,11 +55,12 @@
 
       <div class="tiny-news-wrapper">
         <!-- The smaller news  -->
-       <div class="tiny-news"></div><!-- theese divs are made for flexbox-->
-       <div class="tiny-news"></div>
-       <div class="tiny-news"></div>
-       <div class="tiny-news"></div>
-       <div class="tiny-news"></div>
+       <div class="tiny-news">1</div> <!-- theese divs are made for flexbox-->
+       <div class="tiny-news"><p>some random small text</p></div>
+       <div class="tiny-news">3</div>
+       <div class="tiny-news">4</div>
+       <div class="tiny-news">5</div>
+       <div class="tiny-news">6</div>
       </div>
     </section>
   </body>
