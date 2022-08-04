@@ -11,7 +11,13 @@ body {
   background: #ffffff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* - - - Logo and navbar - - - */
+
 .header {
   border: blue 1px solid;
   margin: 0 auto;
@@ -22,6 +28,10 @@ body {
   border: red 1px solid;
   font-size: x-large;
   display: inline-block;
+}
+
+.site-branding {
+  text-transform: uppercase;
 }
 
 .site-name {
@@ -108,6 +118,7 @@ body {
 
   .header {
     flex-direction: column;
+    align-items: center;
   }
 
   .article-grid {
