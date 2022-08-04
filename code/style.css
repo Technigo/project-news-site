@@ -97,27 +97,27 @@ a {
 .big-news, .other-news {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  margin: 12px;
+  gap: 0.31rem;
+  margin: 0.5rem;
 }
 
 .news-item {
-  background-color: rgb(243, 242, 241);
-  padding: 10px;
+  background-color: #eaeaea;
+  padding: 0.63rem;
 }
 
 .main {
   grid-column: span 2;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .left {
-  margin-bottom: 5px;
+  margin-bottom: 0.31rem;
 }
 
 .right {
   width: 100%; 
-  height: 85px; 
+  height: 6rem;
 }
 
 .large-img {
@@ -127,7 +127,7 @@ a {
 
 .small-img {
   width: 100%;
-  height: 170px; 
+  height: 11rem; 
 }
 
 hr {
