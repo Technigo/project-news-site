@@ -1,28 +1,39 @@
 body {
-  min-height: 100vh;
   justify-content: center;
   background: #fefefe;
   color: rgb(63, 63, 63);
 }
 
 /* - - - Logo and navbar - - - */
+.header {
+  border: blue 1px solid;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+}
 
-.logo {
-  font-size:x-large;
+.site-logo {
+  border: red 1px solid;
+  font-size: x-large;
   display: inline-block;
 }
 
-.navbar a {
-  text-decoration: none;
-  color:rgb(63, 63, 63);
+.site-name {
+  border: red 1px solid;
 }
 
-.nav-links {
-  list-style: none;
-  display: inline-block;
+.main-menu {
+  border: hotpink 1px solid;
 }
 
+/* - - - Article grid - - - */
 
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: dotted black;
+  grid-gap: 10px;
+}
 
 /* - - - Article card - - - */
 
@@ -62,9 +73,27 @@ body {
 }
 
 
+/* - - - Mobile media queries - - - */
+
+@media (max-width:667px) {
+  .site-name {
+    display: none;
+  }
+
+  .main-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+
 /* - - - Tablet media queries - - - */
 
 @media (min-width:668px) {
+  .header {
+    flex-direction: column;
+  }
   
 }
 
