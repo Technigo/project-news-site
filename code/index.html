@@ -1,23 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <link rel="icon" href="Images\146295.png" type="image/icon type">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+
+    <title>Fem&Tech News</title>
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+
+ <!-- Logo and navbar-->
+
+    <header class="header container">
+      <img class="logo-img" src="Images\logo.png" alt="Fem&Tech Logo" /> 
+     <h1>Fem&Tech News</h1>
+     <nav>
+       <a href="#big-news">Featured</a>
+       <a href="#small-news">News</a>
+       <a href="#career">Career</a>
+     </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-      Hello
+    
+<!-- The featured news content -->
+  
+    <section class="big-news-parent">
+      <div id="big-news" class="big-news-img">
+       <img src="Images\femaleengineer.jpg" alt="Female engineer">
+      </div>
+      <div class="big-news-text">   
+       <h3>The world needs more women engineers</h3>
+        <p>According to a recent World Economic Forum report, the share of women in computer and mathematical jobs is 23%, and a mere 11% in architecture and engineering jobs. However, women engineers are making some waves in this field against all odds.</p>
+       <p>For centuries, women have played an essential role as designers and builders of critical structures and machines even before the term ‘engineer’ was coined in the 11th century. However, fields, such as engineering, have been largely kept shut from women. Upon the establishment of educational institutions, most universities didn’t admit women until the early 1800s. But this has never deterred women from participating in the engineering sector. In 1876, Elizabeth Bragg, unfettered by the gender disparities and discrimination, became the first female recipient of an engineering degree when she got her bachelor’s in civil engineering from the University of Berkeley, paving the way for thousands of women of the 19th century who followed her lead. It wasn’t until the World War II that serious attention was paid to women’s education in technical fields. Even in the 21st century, STEM continues to be dominated by men. With the gruesome gender gap and hiring discrimination, women continue to endure struggles in this field.</p>
+       <a href="https://www.thenews.com.pk/magazine/you/970600-the-world-needs-more-women-engineers" target="blank">Read more ➝</a>
+      </div>
+ 
+    </section>
+  
+<!-- The other news  -->
+
+    <div id="small-news" class="news-title">News</div>
+    <section class="small-news-parent">
+      <div class="small-news-child">
+        <img src="Images\woman.jpg" alt="A woman sitting">
+        <h3>Closing the Gender Gap in Women’s Health</h3>
+        <p>The female body shouldn’t be treated as a medical mystery. And yet, more often than not, women scour the internet, wondering whether or not their female health symptoms are considered “normal.”</p>
+        <p>According to Google’s “Year in Search”,  women’s health was searched more in 2021 than ever before in the U.S.</p>
+        <a href="https://femtech.live/closing-the-gender-gap-in-womens-health/" target="blank">Read more ➝</a>
+      </div>
+      
+      <div class="small-news-child">
+        <img src="Images\tampon.jpg" alt="Tampons in a row"> 
+          <h3>CBD tampons - here's what you need to know</h3>
+          <p>There are many choices to be found on store shelves when it comes to period care. You need only look at the vast array of products available while shopping at a pharmacy or grocery store. From pads to tampons, supplements, and pain medication, you can find dozens of choices to make you feel better during this time. But some women have discovered a far more natural option for dealing with period pain and menstrual cramps: CBD tampons.</p>
+          <a href="https://wearekynd.com/blogs/what-we-are-talking-about/cbd-tampons-for-period-pain-heres-what-you-need-to-know" target="blank">Read more ➝ </a>
+      </div>
+  
+      <div class="small-news-child">
+        <img src="Images\women.jpg" alt="A female doctor and patient">
+        <h3>Women’s Health Research Needs a Reboot</h3>
+        <p>Women’s Health needs a reboot with more inclusive health research. Northwell Health’s Raise Health Forum says that healthcare must take steps to address women’s specific needs by acknowledging sex and gender are key factors in health outcomes.</p>
+        <a href="https://femtech.live/womens-health-research-needs-a-reboot/" target="blank">Read more ➝</a>
+      </div>
+
+      <div class="small-news-child">
+        <img src="Images\Super Woman_Isometric.png" alt="Wonder woman">
+        <h3>How Femtech Moves From Niche To Essential</h3>
+        <p>Women hold up half the sky. Yet the technology supporting women’s health is still not where it should be in terms of being perceived as an essential or gaining equal investors’ attention.
+           According to Crunchbase data, 2021 was a special year for femtech as global venture funding in the segment crossed the $1.2 billion mark for the first time.
+           Maven Clinic raised $110 million and reached unicorn status, Elvie raised $87 million, and Flo Health raised $50 million—all in just the last few months, demonstrating the success stories the industry is craving.</p>
+        <a href="https://news.crunchbase.com/startups/femtech-vc-investment-startups-womens-health/" target="blank">Read more ➝</a>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <div id="career" class="news-title">Career</div>
+    <section class="small-news-parent">
+      <div class="small-news-child">
+        <img id="community" src="Images\boss.jpg" alt="Woman with a mug that says boss">
+        <h3>Research engineer shares five tips for women who want to succeed in engineering</h3>
+        <p>Being fearless has helped Dr Lorena Caires Moreira forge a career in the male-dominated world of engineering, now the Coventry University researcher says it is one of her five top tips for future female engineers.</p> 
+        <p>A recent report released by the House of Commons revealed that companies with a higher percentage of female leaders outperformed those dominated by men and highlights that women should play a major role in the post-pandemic economic recovery.</p>
+        <a href="https://www.themanufacturer.com/articles/research-engineer-shares-five-tips-for-women-who-want-to-succeed-in-engineering/" target="blank"> Read more ➝ </a>
+      </div>
+
+      <div class="small-news-child">
+        <img src="Images\businesswomen.jpg" alt="Businesswomen working">
+        <h3>'Everything Is Solvable': Advice From Female CEOs in Tech</h3>
+        <p>As executives working in tech, Susan Stone, Ashley Rose, Kathy Hannun and Agnieszka Wilk have defied the odds. And those looking to succeed in the field can—and should—learn from their career journeys.</p>
+        <p>Two things can be true at once: <br>
+            1. Rectifying the gender gap will take more than simply having women in executive positions in tech.<br>
+            2. We can—and should—learn from the women who've made it to executive positions in tech.</p>
+        <a href="https://www.techopedia.com/everything-is-solvable-advice-from-female-ceos-in-tech/2/34712" target="blank">Read more ➝</a>
+      </div>
+
+      <div class="small-news-child">
+        <img src="Images\gendersymbol.jpg" alt="Gender symbols">
+        <h3>8 female CEOs on bridging the gender gap in tech </h3>
+        <p>The technology industry is booming – in the first quarter of 2021, global venture investments reached $125 billion (a 94% year on year increase). But if a rising tide lifts all boats, why has the inclusion and participation of women in tech not also shot up?</p>
+        <p>According to the most recent Global Gender Gap Report, it will now take 135.6 years to reach gender parity, up from about 100 years in 2020. Here, we meet 8 women CEOs and 2021 Technology Pioneers, who are working to change this statistic.</p>
+        <a href="https://www.weforum.org/agenda/2021/06/8-women-ceos-on-bridging-the-gender-gap-in-tech/" target="blank">Read more ➝</a>
+      </div>
+
+      <div class="small-news-child">
+        <img src="Images\twowomen.jpg" alt="Two businesswomen">
+          <h3>Join SWE - Society of Women Engineers!</h3>
+          <p>For more than seven decades, SWE has given women engineers a unique place and voice within the engineering industry. The organization is centered around a passion for our members’ success and continues to evolve with the challenges and opportunities reflected in today’s exciting engineering and technology specialties. </p>
+          <p>SWE invite you to explore the values, principles, and priorities that guide their initiatives and learn how together, WE can continue to make a lasting impact on the future.</p>
+          <a href="https://swe.org/">Read more ➝</a>
+        </div>
+
     </section>
+
+
+<!-- Footer  -->
+  <footer class="footer container">
+    <div>
+      <h1>Fem&Tech</h1>
+      <img src="Images\working.png" alt="Icon woman working"> <br>
+      <a href="#">Contact us</a>
+      <a href="#">Subscribe</a>
+    </div>
+  </footer>
+
   </body>
-</html>
+  </html>
+  
