@@ -52,10 +52,18 @@ a {
   grid-gap: 10px;
 }
 
-/* - - - Article card - - - */
+/* - - - Article - - - */
 
-/* .article {
+.article {
   padding: 10px;
+  border: blue 1px dashed;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-content {
+  border: hotpink 1px solid;
+  flex-grow: 1;
 }
 
 .article-text p {
@@ -64,35 +72,33 @@ a {
 
 .article-title h1 {
   color:green;
-} */
+}
+
+.article-picture {
+  border: hotpink 1px solid;
+}
+
+.article-picture img {
+  max-width:100%;
+}
 
 
 /* - - - Featured article - - - */
 
-/* .article--featured {
-  background: lightblue;
-  max-width: 100%;
-}
-
-.article--featured img {
-  width: 100%;
-} */
 
 
 /* - - - Regular articles - - - */
 
-/* .article--regular {
-  background: orange;
-}
-
-.article--regular img {
-  width: 100%;
-} */
 
 
 /* - - - Mobile media queries - - - */
 
 @media (max-width:667px) {
+
+  body {
+    padding:0 10px;
+  }
+
   .site-name {
     display: none;
   }
@@ -102,10 +108,15 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
-  body {
-    padding:0 10px;
+  .article {
+    flex-direction: row;
   }
   
+  .article-picture {
+    width: 30%;
+  }
+    
+    
 }
 
 
