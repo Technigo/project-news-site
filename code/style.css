@@ -14,7 +14,7 @@ header {
   display: block;
   height: 65px;
   position: relative;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -24,19 +24,32 @@ header {
   flex-direction: row;
   float: left;
 }
-
 /*
 @media (min-width: 668px) {
-header img {
-    display: flex;
-    align-items: center;
+header {
+  display: flex;
+  justify-content: space-evenly;
+}}
+/*
+@media (min-width: 668px) {
+.page-header img {
+  display: flex;
+  align-self: baseline;
+}}
+*/
+@media (min-width: 668px)  {
+.page-header h3 {
+  display: none;
 }}
 
-@media (min-width: 668px)  {
-.header h3 {
-    display: none;
-  }}
-*/
+@media (min-width: 1024px)  {
+.page-header h3 {
+  display: block;
+  height: 65px;
+  position: relative;
+  margin-bottom: 5%;
+  text-align: center;
+}}
 
 header img {
   width: 60px;
@@ -49,15 +62,15 @@ header img {
 
 @media (min-width: 668px) {
 .links {
-  display: inline-block;
-  float: right;
+  display: flex;
+  justify-content: space-around;
   padding: 2%;
   margin-right: 5%;  
 }}
 
 @media (min-width: 1024px) {
 .links {
-  display: inline-block;
+  display: block;
   float: right;
   padding: 2%;
   margin-right: 20%;    
@@ -75,7 +88,7 @@ a:hover {
 }
 
 .menu {
-  display: inline-block;
+  display: block;
   float: right;
   padding: 2%;
   margin-right: 20%;
@@ -168,6 +181,7 @@ h1 {
   flex-direction: row;
   flex-flow: row wrap;
   overflow: auto;
+  margin-right: 20%;
 }
 
 @media (min-width: 668px) {
