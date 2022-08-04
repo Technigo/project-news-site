@@ -15,6 +15,5 @@ The bigger problem I faced was when tackling the navbar responsiveness. I used g
 If I had more time I would have fine tuned the styling to align the content better. Example being that my news boxes as currently have two of the sub news boxes (box-two) with a very light background whereas the other two have a white backgrouund. I would also move on to the stretch goals and play around with more functionality.
 
 ## View it live
+https://fabulous-haupia-e1a0bd.netlify.app
 
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
