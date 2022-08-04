@@ -11,12 +11,11 @@ body {
     height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 20px;
     }
 .logo-sitename {
 display: flex;
-align-items: flex-end;
 
 }
 
@@ -26,13 +25,15 @@ align-items: flex-end;
   padding: 10px;
   border-radius: 60px;
 }
+.sitename {
+  display: flex;
+  align-items: center;
+}
+
   h1 {
-      font-style: italic;
       font-size: 36px;
-      padding-left: 20px;
-      margin-bottom: 5px;
-      display: flex;
-      align-items: flex-end;
+      margin: 0px;
+      padding: 20px;
     }
 
     ul {
@@ -211,7 +212,6 @@ h3 {
       }
 
    h1 {
-    font-style: italic;
     font-size: 48px;
     margin: 0px;
     padding: 20px;
@@ -231,8 +231,8 @@ h3 {
     
     a {
       display: block;
-      padding: 8px;
-      margin: 5px;
+      padding: 4px;
+      margin: 0px;
       text-decoration: none;
       color: rgb(56, 56, 56);
       font-size: 14px;
@@ -250,7 +250,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .mobile-links {
     display: flex;
@@ -351,7 +351,6 @@ h3 {
         }
   
    h1 {
-    font-style: italic;
     font-size: 70px;
     margin: 0px;
     padding: 20px;
