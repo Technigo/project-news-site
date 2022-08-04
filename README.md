@@ -1,6 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+My assignment is to create a classic news site that responds to different devices/sizes.
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
