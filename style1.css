@@ -194,6 +194,7 @@ p {
     border-right: 1px solid grey;
 }
 
+
 .box-two-text {
     width: 50%;
     margin: 20px;
@@ -331,6 +332,7 @@ p {
         justify-content: center;
         flex-wrap: wrap;
         text-align: center;
+        padding: 10px;
     }
 
     h2 {
@@ -474,6 +476,8 @@ p {
     
     .box-two-text {
         height: 35%;
+        width: fit-content;
+        padding: 10px;
         margin: auto;
         display: flex;
         flex-direction: column;
