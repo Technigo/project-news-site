@@ -1,6 +1,6 @@
 # News Site
 
-An assignent to practice creating a responsive web page with the looks as a newspaper site. 
+An assignent to practice creating a responsive web page with the looks as a news site. 
 
 ## The problem
 
@@ -10,8 +10,8 @@ I used CSS grid as a tool to create the cards and choose the number of columns a
 
 I used the inspector in the web browser a lot during this assignment. I used it to try different ideas and see the instant change and then i copied into my code. It was a total aha-moment when i found out how useful that was!
 
-I didn't put much time to focus on the design och the content itself because i wanted to use that time to do the rest of the pre-course. I would like to try more special fonts and get better at understanding the styling of fonts. I also would like to play around with more effects and how to create more/less content that is only showed in different viewports (more links in the desktop-view for example). 
+I didn't put much time to focus on the design och the content itself because i wanted to use that time to do the rest of the pre-course. I would like to try work with more other fonts and play around more with colors on the page. If i had more time I would also like to play around with more effects. Looking forward to learn more about javascript! 
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sweet-hummingbird-3f5e64.netlify.app/
