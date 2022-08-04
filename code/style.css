@@ -1,14 +1,20 @@
 body {
-  justify-content: center;
-  background: #fefefe;
+  background: #efefef;
   color: rgb(63, 63, 63);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  background: #ffffff;
 }
 
 /* - - - Logo and navbar - - - */
 .header {
   border: blue 1px solid;
   margin: 0 auto;
-  max-width: 1000px;
   display: flex;
 }
 
@@ -28,13 +34,13 @@ body {
 
 /* - - - Article grid - - - */
 
-/* 
+
 .article-grid {
   display: grid;
   grid-template-columns: 1fr;
   border: dotted black;
   grid-gap: 10px;
-} */
+}
 
 /* - - - Article card - - - */
 
@@ -85,6 +91,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  body {
+    padding:0 10px;
+  }
   
 }
 
@@ -92,8 +102,16 @@ body {
 /* - - - Tablet media queries - - - */
 
 @media (min-width:668px) {
+  .container {
+    max-width: 80%;
+  } 
+
   .header {
     flex-direction: column;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr 1fr;
   }
   
 }
@@ -102,5 +120,12 @@ body {
 /* - - - Dekstop media queries - - - */
 
 @media (min-width:1025px) {
+  .container {
+    max-width: 1000px;
+  } 
   
+  .article-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }
