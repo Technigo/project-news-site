@@ -9,14 +9,38 @@
   <body>
     <header>
       <div class="logo-sitename">
-        <img src="logo.svg" alt="logo">
-         <h1>SITE NAME</h1>
+        <div class="logo">
+          <img src="logo.svg" alt="logo"> </div>
+        <div class="sitename">
+        <h1>SITE NAME</h1></div>
       </div>
-        <ul>
-          <li><a href="morenews.asp">more articles</a></li>
-          <li><a href="contact.asp">contact</a></li>
-          <li><a href="about.asp">about</a></li>
-        </ul>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <div class="hamburgermenu"> 
+              <div class="line"></div>       
+              <div class="line"></div>       
+              <div class="line"></div>
+          </div>   
+          </button>
+          <div class="dropdown-content">
+            <div class="mobile-links">
+              <a href="#">archive</a>
+              <a href="#">contact</a>
+              <a href="#">about</a>
+            </div>
+            <div class="hide-on-mobile">
+              <a href="#">world news</a>
+              <a href="#">science</a>
+              <a href="#">business</a>
+              <a href="#">sports</a>
+              <a href="#">culture</a>
+              <a href="#">climate</a>
+              <a href="#">opinions</a>
+              <a href="#">travel</a>
+            </div>
+          </div>
+        </div>
+        
     </header>
 
     <section class="news-items">

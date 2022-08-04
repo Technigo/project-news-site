@@ -11,6 +11,7 @@ body {
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 20px;
     }
 .logo-sitename {
@@ -24,7 +25,7 @@ align-items: flex-end;
 }
   h1 {
       font-style: italic;
-      font-size: 28px;
+      font-size: 36px;
       padding-left: 20px;
       margin-bottom: 5px;
       display: flex;
@@ -56,7 +57,60 @@ align-items: flex-end;
     a:hover {
       color: #f57272;;
   }
+  .hamburgermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   
+  .line {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+  }
+  .dropbtn {
+    background-color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #dfdfdf}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #f57272;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+
   h2 {
     font-size: 24px;
   }
@@ -136,10 +190,8 @@ h3 {
   
   header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding:20px;
+    flex-direction: column;
+    padding: 20px;
     }
 
     .logo-sitename {
@@ -154,8 +206,8 @@ h3 {
 
    h1 {
     font-style: italic;
-    font-size: 40px;
-    margin-bottom: -10px;
+    font-size: 48px;
+    margin: 0px;
     padding: 20px;
     }
   
@@ -182,6 +234,25 @@ h3 {
   
     a:hover {
       color:  #f57272;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .mobile-links {
+    display: flex;
+  }
+
+  .hide-on-mobile {
+    display: flex;
+  
   }
   
   h2 {
@@ -248,61 +319,32 @@ h3 {
     padding-top: 10px;
   }
 
-  /* .text-box a{
-    padding: 0px;
-    margin:0px;
-  }
-
-  .button {
-    background-color: rgb(249 218 218);
-    border-radius: 40px;
-    width: 93px;
-    height: 35px;
-    padding: 10px;
-
-  }
-
-  .button:hover  {
-    background-color: #f57272;
-    color: white;
-    }
-
-  .button a{
-    padding: 5px;
-    margin: 0px;
-    color:black;
-  }
-
-  .button a:hover{
-    color: white;
-  } */
-
   }
 
 @media (min-width:1025px) {
 
     header {
       display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      justify-content: space-between;
-      padding:20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
       }
   
       .logo-sitename {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        
         }
         
-        .logo-sitename img{
-          height: 90px;
+        .logo img{
+          height: 100px;
         }
   
    h1 {
     font-style: italic;
-    font-size: 50px;
-    margin-bottom: -10px;
+    font-size: 70px;
+    margin: 0px;
     padding: 20px;
     }
   
@@ -324,13 +366,30 @@ h3 {
       margin: 5px;
       text-decoration: none;
       color: rgb(56, 56, 56);
-      font-size: 18px;
+      font-size: 20px;
     }
   
     a:hover {
       color:  #f57272;
   }
-  
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .mobile-links {
+    display: flex;
+  }
+  .hide-on-mobile {
+    display: flex;
+  }
+
   h2 {
     font-size: 24px;
     margin: 0px 0px 10px 0px;
@@ -396,28 +455,3 @@ h3 {
   }
 }
 
-  /* .text-box a{
-    padding: 0px;
-    margin:0px;
-  }
-
-  .button {
-    background-color: rgb(249 218 218);
-    border-radius: 40px;
-    width: 93px;
-    height: 35px;
-    padding: 10px;
-  }
-
-  .button:hover  {
-    background-color: #f57272;
-    color: white;
-    }
-  .button a{
-    padding: 5px;
-    margin: 0px;
-    color:black;
-  }
-  .button a:hover{
-    color: white; */
-  /* } */
