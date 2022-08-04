@@ -97,6 +97,7 @@ header ul li a:hover {
 .grid-parent {
   display: grid;
   gap: 10px;
+  grid-row: 311px;
 }
 
 .grid-item {
@@ -143,7 +144,7 @@ header ul li a:hover {
   height: 100%;
   overflow: auto;
   text-align: center;
-  margin: 5px 20px;
+  margin: 26px 20px;
 }
 
 .news h2 {
@@ -164,9 +165,10 @@ p::first-letter {
 
 .news img {
   align-content: center;
-  height: 47%;
+  height: 45%;
   object-fit: contain;
   background-color: transparent;
+  margin-bottom: 10px;
 }
 
 /* mobile-phone section */
@@ -200,7 +202,7 @@ p::first-letter {
     /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: 250px;
-    grid-auto-rows: 280px;
+    grid-auto-rows: 279px;
   }
 
   /* mobile-phone big-grid section */
@@ -211,7 +213,7 @@ p::first-letter {
     font-size: 15px;
   }
 
-  .main-news {
+  .juicy {
     display: none;
   }
 }
@@ -244,7 +246,7 @@ p::first-letter {
   .grid-parent {
     /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 300px;
+    grid-template-rows: 400px;
     grid-auto-rows: 350px;
   }
 
@@ -255,11 +257,10 @@ p::first-letter {
 
 /* tablet section big grid*/
 .juicy {
-  float: left;
+  /* display: none; */
 }
 
 .main-news {
-  float: right;
   flex-direction: column;
   overflow: auto;
   text-align: center;
@@ -319,7 +320,7 @@ p::first-letter {
     /* makes sure the text does not spill over the screen-size 1fr = minmax(auto, 1fr)*/
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: 300px;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 330px;
   }
 
   .big-grid-item {
