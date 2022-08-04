@@ -16,37 +16,51 @@ a {
   color: inherit;
 }
 
+
+
 /* - - - Logo and navbar - - - */
 
 .header {
-  border: blue 1px solid;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px;
 }
 
 .site-logo {
-  border: red 1px solid;
-  font-size: x-large;
+  font-size: xxx-large;
   display: inline-block;
+  justify-content: end;
 }
 
 .site-branding {
   text-transform: uppercase;
+  display: flex;
+  align-items: end;
 }
 
 .site-name {
-  border: green 1px solid;
   font-family: 'Lexend Exa', sans-serif;
   font-weight: 500;
-  font-size: x-large;
+  font-size: xxx-large;
+  margin-left: 10px;
 }
 
 .main-menu {
-  border: hotpink 1px solid;
+
 }
 
 .main-menu a {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-menu-item {
+  margin: 2.5px 5px;
+  padding: 2.5px;
+}
+
+.main-menu-item:hover {
+  color:hotpink;
 }
 
 /* - - - Article grid - - - */
@@ -157,6 +171,12 @@ a {
   
   .article-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
 }
