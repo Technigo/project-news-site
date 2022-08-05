@@ -24,13 +24,12 @@ body {
     rgb(237, 246, 250) 100.2%
   );
   font-family: "NotoSans Regular";
-  margin: 10px;
+  margin: 30px;
 }
-.nav-bar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
 }
 .nav-links {
   list-style: none;
@@ -66,14 +65,12 @@ footer {
   justify-content: center;
   margin: 6px;
 }
-
 footer .social {
   display: flex;
   justify-content: space-evenly;
   font-size: 2.5em;
   padding: 5px;
 }
-
 footer .copyright {
   font-size: 0.8em;
 }
@@ -95,7 +92,6 @@ li {
   color: var(--secondary);
   margin: 5px;
 }
-
 a {
   color: var(--primary);
 }
@@ -139,7 +135,6 @@ h3 {
   max-height: 100%;
   border-radius: 10px;
 }
-
 /* tablet styles */
 @media (min-width: 667px) and (max-width: 1024px) {
   .nav-bar i {
@@ -163,7 +158,6 @@ h3 {
     padding: 10px;
   }
 }
-
 /* desktop styles */
 @media (min-width: 1024px) {
   .nav-bar ul {
