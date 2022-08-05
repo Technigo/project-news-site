@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The task was to create a news site with some requirements;
+A responsive site with a header containing the name of the site, a logo and a navbar. Further, the site should have a big news section and a grid of cards with other news. On desktop-sized screens, there should be four cards in a row, two in a row on tablets and on mobile, there should just be one card on each row.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I did mobile first and change the style depening on width of the screen.
+I used www.w3schools.com a lot apart from the tutorials Technigo provides.
+
+If I had more time I would have med forms for log in, clickable links and a working mobile menu as well as look into css animations.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://fancy-meringue-155c75.netlify.app/
