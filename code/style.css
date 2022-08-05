@@ -1,63 +1,142 @@
-.navbar {
-  width: 100%;
-  background-color: 00;
-  overflow: auto 
-}
 
-/* Navbar link styling */
-.navbar a {
-  float: right;
-  text-align: center;
-  padding: 25px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: sans-serif;
-  
-}
-
-/* Navbar effects */
-.navbar a:hover {
-  background-color: #ffffff99;
-  color: #876e91;
-}
-
-/* Current/active navbar link */
-.active {
-  background-color: #876e91E6;
-}
-
+ body
+ {
+   background-image: url(https://images.unsplash.com/photo-1655083974309-6e03a3966021?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTY4NTY1MDU&ixlib=rb-1.2.1&q=80);
+   background-position: center;
+   background-repeat: no-repeat; 
+   background-size: cover;
+   margin: 5px;
+   color: #000000;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+ 
 /* Responsive navbar, compact screen less than 667*/
 @media screen and (max-width: 667px) {
-  .navbar a {
-    float: none;
-    display: none;
-  }
+ #menu-hamburger{
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menu-hamburger a{
+   text-decoration: none;
+   color: #472f59;
+   transition: color 0.3s ease;
+ }
+ 
+ #menu-hamburger a :hover{
+   color: rgb(119, 73, 152);
+ }
+ 
+ 
+ /* the input is a ticbox, this code hides it*/
+ #menu-hamburger input{
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   cursor: pointer;
+
+   opacity: 0; 
+   z-index: 2; 
+   -webkit-touch-callout: none;
+ }
+ 
+ /* ------ Hamburger menu visuals  ------*/
+ #menu-hamburger span{
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   z-index: 1;
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menu-hamburger span:first-child {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menu-hamburger span:nth-last-child(2) {
+   transform-origin: 0% 100%;
+ }
+ 
+
+ #menu-hamburger input:checked ~ span {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+
+ #menu-hamburger input:checked ~ span:nth-last-child(3) {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+
+ #menumenu-hamburger Toggle input:checked ~ span:nth-last-child(2) {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+
+ #menu-expand{
+   position: absolute;
+   width: 375px;
+   height: 300px;
+   margin: -100px 0 0 -70px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #e6d9d9;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu-expand li{
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menu-hamburger input:checked ~ ul
+ {
+   transform: none;
+ }
 
  .logo {
   display: block; 
   margin: 0 auto; 
-  padding: 40px;
   float: none; 
 }
-  }
-
-
-/*  Background */
-body {
-  background-image: url(https://images.unsplash.com/photo-1655083974309-6e03a3966021?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTY4NTY1MDU&ixlib=rb-1.2.1&q=80);
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  margin: 5px;
-  }
-
-
+ }
 /* text styling */
 h1 {
   color: #2f2a32;
-  font-family:'newsreader', sans-serif;
-  font-size: 70px;
+  font-family: "avenir next";
+  font-size: 50px;
   font-stretch: ultra-condensed;
   padding-top: 10px;
 
@@ -70,11 +149,9 @@ h1 {
   
 h2 {
   color: #221d25;
-  font-family:'newsreader', sans-serif;
-  font-size: 50px;
+  font-family: "avenir next"; 
+  font-size: 30px;
   font-stretch: ultra-condensed;
-  font-style: italic; 
-  padding: 20px;
   padding-bottom: 70px;
 }
 
@@ -144,6 +221,8 @@ justify-items: center;
 color:#876e91;
 }
 
+
+
 /* -------   RESPONSIVE TABLET  ---------  */ 
 
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -151,6 +230,53 @@ color:#876e91;
 .body {
 margin: 20px;
 }
+
+/* Expanded menu - no hamburger */
+
+ 
+#menu-hamburger input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menu-expand {
+    position: top;
+    width: 100%;
+    padding-left: 5px;
+    background: #e6d9d9;
+    list-style-type: none;
+}
+#menu-expand a {
+  float: right;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* Navbar effects */
+#menu-expand a:hover {
+  background-color: #ffffff99;
+  color: #876e91;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #876e91E6;
+}
+
+
 
 .grid{
   display: grid;
@@ -196,6 +322,51 @@ padding-top: 20px;
 .body {
   margin: 20px;
 }
+
+/*Navbar desktop, 
+no hamburger*/
+ 
+#menu-hamburger input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+
+#menu-expand {
+  position: top;
+  width: 100%;
+  padding-left: 5px;
+  background: #e6d9d9;
+  list-style-type: none;
+}
+#menu-expand a {
+float: right;
+text-align: center;
+padding: 25px;
+color: white;
+text-decoration: none;
+font-size: 18px;
+font-family: sans-serif;
+}
+
+/* Navbar effects */
+#menu-expand a:hover {
+background-color: #ffffff99;
+color: #876e91;
+}
+
+/* Current/active navbar link */
+.active {
+background-color: #876e91E6;
+}
+
 
 .grid{
     display: grid;
