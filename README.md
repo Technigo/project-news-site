@@ -1,7 +1,15 @@
 # News Site
 The assignment was to create a responsive news site using HTML and CSS, as a pre-course for the Technigo bootcamp. The site would be structured using boxmodel with flexbox and/or grid-elements.  
 
-## The problem
+## Features
+
+• Created with HTML and CSS
+
+• Use of CSS Flexbox
+
+• Content responsiveness to different screen sizes - mobile, tablet and desktop
+
+## The working progress
 I started with reading up on flexbox and grid elements, as well as the basics in HTML and CSS. I studied the course material and googled and youtubed a lot. I also explored the "Inspect" tool in Chrome, which gave me very valuable insights from "the real world". 
 
 I then sketched on the design of the site (using  autodraw.com), but had a pretty clear image in mind of what I wanted it to look like. I also early knew what theme I wanted for the site - women in tech!
