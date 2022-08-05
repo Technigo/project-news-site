@@ -17,7 +17,12 @@ a {
   color: inherit;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -49,7 +54,7 @@ p {
 }
 
 .site-name {
-  font-family: 'Lexend Exa', sans-serif;
+  font-family: "Lexend Exa", sans-serif;
   font-weight: 500;
   font-size: 3rem;
   margin-left: 10px;
@@ -57,7 +62,7 @@ p {
 }
 
 .main-menu a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.027rem;
   font-size: 1rem;
   font-weight: 600;
@@ -72,7 +77,6 @@ p {
   color: hotpink;
 }
 
-
 /* - - - ARTICLE GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .article-grid {
@@ -80,7 +84,6 @@ p {
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
-
 
 /* - - - ARTICLE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -95,14 +98,14 @@ p {
 }
 
 .article-content h1 {
-  font-family: 'Libre Caslon Text', serif;
+  font-family: "Libre Caslon Text", serif;
   font-size: 1.2rem;
   padding: 3px 0 0 0;
   font-weight: 700;
 }
 
 .article-content p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.9rem;
   padding: 5px 0 0 0;
 }
@@ -115,7 +118,6 @@ p {
   min-width: 100px;
   object-fit: cover;
 }
-
 
 /* - - - FEATURED ARTICLE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -133,11 +135,9 @@ p {
   max-width: 90%;
 }
 
-
 /* - - - MOBILE MEDIA QUERIES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-@media (max-width:667px) {
-
+@media (max-width: 667px) {
   body {
     padding: 0 5px;
   }
@@ -166,7 +166,7 @@ p {
   .article-picture {
     width: 30%;
   }
-  
+
   .article-content h1 {
     padding: 2px 0 0 0;
   }
@@ -187,16 +187,14 @@ p {
   .article--featured .article-content p {
     max-width: 95%;
   }
-   
 }
-
 
 /* - - - TABLET MEDIA QUERIES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-@media (min-width:668px) {
+@media (min-width: 668px) {
   .container {
     max-width: 80%;
-  } 
+  }
 
   .header {
     flex-direction: column;
@@ -220,18 +218,17 @@ p {
   }
 }
 
-
 /* - - - DESKTOP MEDIA QUERIES - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - */
 
-@media (min-width:1025px) {
+@media (min-width: 1025px) {
   .container {
     max-width: 1000px;
-  } 
+  }
 
   .site-logo {
     padding-left: 10px;
   }
-  
+
   .article-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -261,13 +258,11 @@ p {
 
   .article--featured img {
     min-height: 400px;
-    object-position: bottom center; 
+    object-position: bottom center;
   }
 
   .article--regular img {
     max-height: 180px;
     max-width: 220px;
   }
-
-
 }
