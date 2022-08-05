@@ -1,12 +1,14 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Thee task was to create a responsive news site. It should contain a header with the name of the site, a logo and a navbar. The site should have a big news section and a grid of cards with other news. On desktop-sized screens, there should be four cards in a row, two in a row on tablets and on mobile, there should just be one card on each row.
 
 ## The problem
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had trouble understanding how to applicate flexbox and grid to my own code. I understand the theoretics behind it but stuggle to see how to use it properly. I ended up sketching with a pen and paper to try and get a good overview of what I actually needed to do. This helped but I still don't think my code is 100% correct.
+
+Next would be to align the sizing of the images.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://keen-bonbon-5adca7.netlify.app/
