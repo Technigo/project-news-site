@@ -38,7 +38,10 @@ html {
   background-color:#FF5C8A;
   grid-column: span 2;
 }
-
+.logo-image{
+  max-width: 30px;
+  max-height: 30px;
+}
 .top button{
   background-color:#F94204; /* same as background */
   border: none;
@@ -82,6 +85,15 @@ html {
   display:none;
 }
 
+a {
+
+  color:white;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color:black;
+}
 
 .big-news-section{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -126,7 +138,7 @@ align-items: center;
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 
 /* .tiny-news-info{
@@ -153,25 +165,28 @@ align-items: center;
 
 /*responsiveness Tablets*/
 @media (min-width: 667px) and (max-width: 1024px) {
+  /*header text*/
   .text h1{
     
-    font-size: 30px;
+    font-size: 20px;
     display:grid;
     color:#F78409;
   }
 
   .big-news-section{
-
-    flex-direction: row;
     background:#F78409;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 13px;
+    padding: 5px;
+
   }
 
   .big-news{
-  width: 310px;
+  width: 297px;
   min-height: 300px;
-
+  padding: 5px;
 
   }
 
@@ -218,6 +233,7 @@ align-items: center;
   min-height: 350px;
   max-width: 500px;
   max-height: 500px;
+  padding: 5px;
 }
 
 .navbar{
@@ -258,7 +274,7 @@ min-width: 300px;
   display: flex;
   flex-direction: row;
   padding: 2px;
-  column-gap: 10px;
+  column-gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -266,6 +282,16 @@ min-width: 300px;
   
 .tiny-news{
   max-width: 20%;
-  margin: 2px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
 }
+
+.tiny-news-image {
+max-width: 30px;
+max-height: 40px; 
+
+}
+
 }
