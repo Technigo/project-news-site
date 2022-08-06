@@ -1,14 +1,25 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+My task was to create a single page responsive news site containing a navigation bar with a logo in it, one large feature article and a few more smaller articles as well. The smaller articles had to be displayed the following way: one column on mobile, two on tablet, and four on desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I began by using Balsamic to create wireframes, which I then printed and planned out the elements and their class names on. Once I had that done I went on to writing the basic HTML structure and CSS. After that I went on to turning some elements into flex-boxes and CSS grids. The last thing was adding all the content and fine tuning the styling such as font sizes and element spacing.
+
+If I had more time, I would look in to how to write the code is such a way that it required less media queries but still have the same (or better) level of responsiveness.
+
+### Technologies used:
+
+- HTML
+- CSS
+- Flexbox
+- CSS Grid
+
+- [Prettier](https://www.prettier.io/) for code linting
+- [Netlify](https://www.netlify.com/) for deployment
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
+You can find a live version of the project here:
 
+<https://catnews.netlify.app/>
