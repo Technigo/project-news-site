@@ -210,6 +210,8 @@ p::first-letter {
     background: url("lime.png");
     object-fit: contain;
     padding-bottom: 160px;
+    color: white;
+    text-shadow: 1px 1px black;
   }
 
   .main-news {
@@ -270,13 +272,23 @@ p::first-letter {
   }
 
   .main-news {
-    background: url("lime-tablet.png");
-    padding-top: 70px;
+    background: url("lime-t.png");
     color: white;
+    text-shadow: 2px 1px black;
   }
 
   .main-news h1 {
     padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .main-news p {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  .news p {
+    font-size: 20px;
   }
 
   .read-more {
