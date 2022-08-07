@@ -1,22 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soccer4U</title>
+  <link rel="Stylesheet" type="text/css" href="style.css">
 
-    <section class="">
-      <!-- The other news  -->
+</head>
+
+<body>
+
+  <header>
+
+    <img class="logo" src="soccer-logo1.jpg" alt="Soccer logo" />
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav>
+      <ul>
+        <li><a href="">Premier league</a></li>
+        <li><a href="">Champions league</a></li>
+        <li><a href="">La Liga</a></li>
+        <li><a href="">Allsvenskan</a></li>
+        <li><a href="">Hem</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <section class="container">
+    <section class="grid-main-article">
+      <div>
+        <img src="Premier League ranking.jfif" alt="Premier Leauge article">
+
+        <h2><br>Premier League 2022-23 kit ranking:</h2>
+        <p> Which club's jerseys are this season's best?</p>
+      </div>
     </section>
-  </body>
+    <section class="grid-sub-article">
+      <div class="sub-article">
+        <img class="article-image" src="Luis-Suarez.jpg" alt="La Liga article">
+          <h3 class="article-text">Luis Suarez had long planned for Nacional return, yet homecoming is still surreal
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="isco.jpg" alt="Champions League article">
+          <h3 class="article-text">Sevilla to sign Isco after Real Madrid release
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="Mbappe.jpg" alt="Champions League article">
+          <h3 class="article-text">Mbappe: Champions League is PSG's objective
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="Charles De Ketelaere.jpg" alt="Champions League article">
+          <h3 class="article-text">Milan confirm signing of Belgium international De Ketelaere
+          </h3>
+      </div>
+    </section>
+    <section class="grid-sub-article">
+      <div class="sub-article">
+        <img class="article-image" src="Robert-Lewandowski.jpg" alt="La Liga article">
+          <h3 class="article-text">What makes Real Madrid, Robert Lewandowski special: It's all about shot quality
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="Liverpool.jpg" alt="Premier Leauge article">
+          <h3 class="article-text">Liverpool rescue a point at Fulham, but could be left playing catch-up
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="Napoliorjuve.jpg" alt="Champions League article">
+          <h3 class="article-text">Sassuolo managing director confirms Napoli and Juve want Raspadori
+          </h3>
+      </div>
+      <div class="sub-article">
+        <img class="article-image" src="zlatan.jpg" alt="Champions League article">
+          <h3 class="article-text">Zlatan Ibrahimovic's most colourful and controversial quotes
+          </h3>
+      </div>
+    </section>
+  </section>
+</body>
+
 </html>
