@@ -1,4 +1,242 @@
-html {
-  background: #0025ff;
-  color: #fff;
-}
+body {
+  background-color: rgba(155, 9, 9, 0);
+  }
+  
+  /*HEADER*/
+  .header {
+  background-color: rgb(117, 159, 117);
+  height: 100px;
+  }
+  .header
+  h1{
+  float: right;
+  padding: 20px;
+  font-size: 50px;
+  height: 100px;
+  width: 80%;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  }
+  .header
+  img{
+  margin: 13px 20px 10px 20px;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  }
+  
+  /* NAVBAR*/
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  }
+  li {
+  list-style: none;
+  }
+  .navbar {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(117, 159, 117);
+  }
+  .nav-links a {
+  color:white;
+  }
+  
+  .menu {
+  display: flex;
+  gap: 3em;
+  font-size:18px;
+  }
+  .menu li:hover {
+  background-color: rgb(162, 191, 162);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  }
+  menu li {
+  padding: 5px 14px
+  }
+  
+  /*CHECKBOX HACK*/
+  input[type=checkbox] {
+  display: none;
+  }
+  
+  /*HAMBURGER MENU*/
+  .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  }
+  
+  /*PANORAMA BIG NEWS*/
+  .flex-parent.panorama {
+  background-color:white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+  }
+  .flex-child.panorama {
+  background:rgba(211, 35, 35, 0.692);
+  width: 1200px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 10px;
+  }
+  .flex-child.panorama img {
+  width: 800px;
+  height:100%;
+  border-radius: 10px;
+  }
+  
+  /*TEXT HOVER*/
+  a {
+  color: black;
+  text-decoration: none;
+  }
+  a:hover {
+  color:rgb(70, 70, 70);
+  }
+  
+  /*ARTICLES*/
+  .flex-parent {
+  background-color:white;
+  height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  }
+  
+  .flex-child {
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 5px;
+  }
+  
+  .flex-child img {
+  width: 100%;
+  height:400px;
+  border-radius: 10px;
+  }
+  
+  
+  .pasta {
+  background: rgba(203, 185, 45, 0.684);
+  border-radius: 10px;
+  }
+  
+  .florence {
+  background: rgba(46, 113, 155, 0.487);
+  border-radius: 10px;
+  }
+  
+  .rome {
+  background: rgba(201, 201, 178, 0.435);
+  border-radius: 10px;
+  }
+  
+  .view {
+  background: rgba(4, 59, 4, 0.374);
+  border-radius: 10px;
+  }
+  
+  
+  @media (max-width: 666px) {
+  /*NAVBAR*/
+  .menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(117, 159, 117);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+  }
+  .menu li:hover {
+  display: inline-block;
+  background-color: rgb(162, 191, 162);
+  transition: 0.3s ease;
+  }
+  /*CHECKBOX HACK*/
+  input[type=checkbox]:checked ~ .menu{
+  display: block;
+  }
+  /*HAMBURGER*/
+  .hamburger {
+  display: block;
+  }
+  
+  /*PANORAMA BIG NEWS*/
+  .flex-child.panorama {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  }
+  .flex-child.panorama img {
+  width: 100%;
+  height:300px;
+  border-radius: 5px;
+  }
+  
+  /*ARTICLES*/
+  .flex-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  
+  .flex-child img {
+  width: 100%;
+  height:400px;
+  }
+  
+  }
+  
+  @media (min-width: 667px) and (max-width: 1024px) {
+  
+  /*PANORAMA BIG NEWS*/
+  .flex-child.panorama {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  }
+  .flex-child.panorama img {
+  width: 600px;
+  height:100%;
+  border-radius: 5px;
+  }
+  
+  /*ARTICLES*/
+  .flex-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  }
