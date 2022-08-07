@@ -22,4 +22,4 @@ About technologies im not so sure yet, I started following a youtube channel tha
 If I had more time id certainly use flexbox and will research it more this week before the class starts. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://62eff0400e3e5c33a68b162a--legendary-clafoutis-55c090.netlify.app/
