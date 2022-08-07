@@ -1,12 +1,9 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This website is my first within Technigos boot camp for Web developers. It is done in the so called "pre course", which has been taken place before the "real" course starts. With help from pre recorded videos (and google!) I have, like the task said, created a very basic website, where I have used both CSS Grid and Flexbox to put things in the right order. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Since I am completely new to this, I have had some issues with placing some elements exactly where I would have wanted them. I also know that my code probably is a bit hard to follow, or that it is named in a way that probably could have been better. Hopefully I will get the hang of those things as the real course starts. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://knitit-projectnewssite.netlify.app 
