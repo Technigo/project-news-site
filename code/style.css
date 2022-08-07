@@ -1,14 +1,7 @@
-/*my colors: 
-
-orange: #F78409;
-röd: #F94204;
-rosa: #FF5C8A;
-blå: #69C1DF;
-rosa2: #FF7AA0;
+/* colors: 
 grey-logo: #454241fc;
 red-logo: ab4c49;
 blue-logo: #acbdbe;
-
 */
 
 html {
@@ -17,14 +10,19 @@ html {
 }
 
 
-.wrapper {
+.nav-wrapper {
   border: none;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
+
 .text h1{
+  display:none;
+}
+
+.search-p{
   display:none;
 }
 
@@ -34,14 +32,17 @@ html {
   text-align: right;
 }
 
-.top h2{
-  font-size: small;
-}
 
 .top{
   background-color: #454241fc;
   grid-column: span 2;
 }
+
+.top p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+}
+
 .logo-image{
   max-width: 120px;
   max-height: 120px;
@@ -58,7 +59,7 @@ html {
   width: 50px;
   height: 40px;
   transition-duration: 0.4s;
-  border-radius: 20%;
+  border-radius: 30%;
  
 }
   .top button:hover {
@@ -92,10 +93,6 @@ input:focus, textarea {
   display: flex;
   justify-content: right;
   align-items: end;
-}
-
-.navbar h2{
-  display:none;
 }
 
 a {
@@ -206,32 +203,9 @@ padding: 6px;
     grid-column: span 3;
   }
 
-/*   .big-news-section{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: rgb(244, 244, 220);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    } 
-
-  .stor-nyhet{
-    max-width: 45%; 
-
-    }
-    
-    
-  .nyhet-bild img{
-    max-width: 100%;
-    height: auto;
-    
-  }    
-
-  .nyhet-text{
-    max-height: 230px;
-    min-height: 230px;
-  } */
+  .search-p{
+    display:none;
+  }
 
   .big-news-section{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -245,15 +219,13 @@ padding: 6px;
     } 
   
   .stor-nyhet{
-    max-width: 45%; 
-/*    min-width: 40%; */
+    max-width: 45%;
   
     }
     
     
   .nyhet-bild img{
     max-width: 100%;
-    /* min-height: 290px; */
     height: 300px;
     
   }    
@@ -266,26 +238,6 @@ padding: 6px;
     min-height: 290px;
   }
 
-
-
-/*   .stor-nyhet{
-    max-width:70%; 
-    min-width: 47%;
-  
-    }
-    
-    
-  .nyhet-bild img{
-    max-width: 100%;
-    height: 350px;
-    
-  }    
-  
-  .nyhet-bild{
-    min-height: 350px;
-    max-width: 500px;
-    
-  } */
 .tiny-news-wrapper{
   display: flex;
   flex-direction: row;
@@ -346,9 +298,13 @@ padding: 6px;
 
 .stor-nyhet{
   min-width: 47%;
+  font-size: 15px;
 
   }
   
+  .extrap{
+    display:flex;
+  }
   
 .nyhet-bild img{
   max-width: 100%;
@@ -394,11 +350,8 @@ min-width: 300px;
 padding : 7px 2px
 }
 
-.navbar h2{
+.search-p{
   display:inline;
-  font-size: 10px;
-  font-family: 'verdana';
-  padding: 8px 0px 8px 8px;
 }
 
 .navbar-search button{
@@ -440,10 +393,6 @@ padding : 7px 2px
   font-size: large;
 }
 
-
-.extrap{
-  display:flex;
-}
 
 }
 
