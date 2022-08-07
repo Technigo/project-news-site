@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a news site that uses both Flexbox and CSS Grid to create a responsive user experience. The 'cards' (articles) shrink, expand and rearrange themselves responsively to provide the best viewing experience on mobile, tablet and PC screens. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was to create a responsive website capable of rearranging and shrinking/expanding its content according to the size of the user's screen. 
+
+I started by creating an HTML skeleton with the containers and container items needed to create a functional news site layout. I decided to primarily use Flexbox for the header/navbar and a CSS Grid layout for the 'cards'.
+
+After setting up the initial layout and cards with HTML and CSS, I used 3 pixel categories of media queries to make the website responsive (mobile, tablet and PC). I then experimented with various CSS styling properties to improve the look and functionality of the website.
+
+If I had more time, I would have looked more into UX design principles to improve the appearance of the website.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://jnbjensen-tech-talk.netlify.app/
