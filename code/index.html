@@ -1,22 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <!-- do i need this?-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7c916fe5d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!--header-->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="smallheader">
+        <!--navbar-->
+        <nav class="navbar">
+          <div class="logo">
+            <img src="img/1x/logo.png" />
+            <h1>DRAWING</h1>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="welcome-block">
+          <h3>
+            Get <span>inspired</span> and take your
+            <span>drawing skills</span> to the next <span>level</span>
+          </h3>
+        </div>
+
+        <div class="text-block">
+          <h4 class="my-text-header">Latest</h4>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/oo8_NODWjbw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div id="dialog1" class="triangle_down"></div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <div class="icon-container">
+      <div class="icon-box">
+        <i class="icon fa-brands fa-youtube"></i>
+        <p>Tutorials</p>
+      </div>
 
-    <section class="">
-      <!-- The other news  -->
+      <div class="icon-box">
+        <i class="icon fa-solid fa-paintbrush"></i>
+        <p>brushes</p>
+      </div>
+      <div class="icon-box">
+        <i class="icon fa-brands fa-instagram-square"></i>
+        <p>Socials</p>
+      </div>
+    </div>
+    <section class="grid-parent">
+      <a href="https://www.youtube.com/watch?v=-c3L90nsesw">
+        <div class="grid-item tube">
+          <i class="icon fa-brands fa-youtube"></i>
+          <p>
+            Having problem drawing portraits? Not anymore! with this tutorial
+            you will be a master in no time
+          </p>
+        </div>
+      </a>
+      <a
+        href="https://www.etsy.com/DrifterStudio/listing/773250221/amazing-watercolor-painting-kit-for?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1596802008714"
+      >
+        <div class="grid-item brush">
+          <i class="icon fa-solid fa-paintbrush"></i>
+          <p>Amazing Watercolor Painting kit for Procreate</p>
+        </div>
+      </a>
+      <a href="https://procreate.brushes.work/oil-pastel-canvas-brush/">
+        <div class="grid-item brush">
+          <i class="icon fa-solid fa-paintbrush"></i>
+          <p>
+            Want to create that oil painted look? Go and get this Oil Pastel
+            Canvas Brush now!
+          </p>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/artbyahlman/">
+        <div class="grid-item insta">
+          <i class="icon fa-brands fa-instagram-square"></i>
+          <p>Get inspired by Artbyahlman!</p>
+        </div>
+      </a>
+      <a
+        href="https://procreate.brushes.work/big-eyelashes-brushset-by-taozipie/"
+      >
+        <div class="grid-item brush">
+          <i class="icon fa-solid fa-paintbrush"></i>
+          <p>Big eyelashes brushset</p>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/becwinnel/">
+        <div class="grid-item insta">
+          <i class="icon fa-brands fa-instagram-square"></i>
+          <p>Check out becwinnel on Instagram!</p>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/andreaspedersen.se/">
+        <div class="grid-item insta">
+          <i class="icon fa-brands fa-instagram-square"></i>
+          <p>Get inspired by Andreas Pedersen!</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=oo8_NODWjbw">
+        <div class="grid-item tube">
+          <i class="icon fa-brands fa-youtube"></i>
+          <p>Learn about Procreate in 10 minutes!</p>
+        </div>
+      </a>
     </section>
   </body>
 </html>

@@ -1,4 +1,223 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* take away margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.smallheader {
+  background-color: rgb(174, 181, 214);
+  display: flex;
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  align-content: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav-links li {
+  margin-left: 5%;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+header {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url("./img/background.jpeg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container holding the box and the text */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 32px;
+  min-height: calc(70vh - 80px);
+  flex-wrap: wrap;
+}
+
+.welcome-block {
+  padding: 30px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-block h3 {
+  font-family: "Lobster", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center;
+}
+
+/* .welcome-block h3 span {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+} */
+
+/* what's new-box */
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 400px;
+  opacity: 0.8;
+  padding: 30px;
+  border-radius: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-block h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-block p {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* .triangle_down {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #ffffff;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 16px;
+  margin-top: 16px;
+} */
+
+.icon-container {
+  background-color: rgb(174, 181, 214);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 30px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.icon-box p {
+  margin-top: 16px;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.grid-item {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  padding: 16px;
+}
+
+.grid-item p {
+  color: #201f1f;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 30px;
+  text-align: center;
+}
+.grid-item.brush {
+  background-color: rgb(154, 195, 216);
+}
+
+.grid-item.tube {
+  background-color: rgb(234, 133, 137);
+}
+
+.grid-item.insta {
+  background-color: rgb(234, 133, 187);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+/* 
+a:hover {
+  transform: scale(1.05);
+} */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 20px;
+  }
 }
