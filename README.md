@@ -1,5 +1,5 @@
 # News Site
-This website is my first within Technigos boot camp for Web developers. It is done in the so called "pre course", which has been taken place before the "real" course starts. With help from pre recorded videos (and google!) I have, like the task said, created a very basic website, where I have used both CSS Grid and Flexbox to put things in the right order. 
+This website is my first within Technigos boot camp for Web developers. It is done in the so called "pre course", which has been taken place before the "real" course starts. With help from pre recorded videos (and google!) I have, like the task said, created a very basic website, where I have used both CSS Grid and Flexbox to put things in the right order. I have also used media queries to make the website responsive.
 
 ## The problem
 
