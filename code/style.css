@@ -10,13 +10,22 @@ body {
   margin-left: 10%;
 }
 
-header {
-  display: block;
+@media screen and (max-width: 667px)  {
+.navigation { 
   height: 65px;
-  position: relative;
+  width: 100%;
   margin-bottom: 5%;
   text-align: center;
-}
+}}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-right: 30%;
+  margin-bottom: 2%;
+}}
 
 .page-header {
   display: flex;
@@ -24,56 +33,96 @@ header {
   flex-direction: row;
   float: left;
 }
-/*
-@media (min-width: 668px) {
-header {
+
+@media (min-width: 668px) and (max-width: 1023px) {
+.page-header {
+  order: 1;
   display: flex;
-  justify-content: space-evenly;
 }}
-/*
-@media (min-width: 668px) {
-.page-header img {
-  display: flex;
-  align-self: baseline;
+
+@media (min-width: 1024px) {
+.page-header {
+  margin-bottom: 2%;
 }}
-*/
-@media (min-width: 668px)  {
+
+@media (min-width: 668px) and (max-width: 1023px) {
+.logo {
+  order: 1;
+}}
+
+@media (min-width: 668px) and (max-width: 1023px) {
 .page-header h3 {
   display: none;
 }}
 
-@media (min-width: 1024px)  {
-.page-header h3 {
-  display: block;
-  height: 65px;
-  position: relative;
-  margin-bottom: 5%;
-  text-align: center;
+@media (min-width: 668px) and (max-width: 1023px) {
+.left {
+  order: 0;
+  display: flex;
+  margin-right: 10%;
 }}
 
-header img {
+@media (min-width: 668px) and (max-width: 1023px) {
+.right {
+  order: 2;
+  display: flex;
+}}
+
+.page-header img {
   width: 60px;
   height: auto;
 }
 
-.links {
+.links-left {
+  display: none;
+}
+
+.links-right {
   display: none;
 }
 
 @media (min-width: 668px) {
-.links {
+.links-left {
   display: flex;
-  justify-content: space-around;
-  padding: 2%;
-  margin-right: 5%;  
+  align-items: center;
+  padding: 10%;
+  font-size: 25px;
+}}
+
+@media (min-width: 668px) {
+.links-right {
+  display: flex;
+  align-items: center;
+  padding: 10%;
+  font-size: 25px;
 }}
 
 @media (min-width: 1024px) {
-.links {
-  display: block;
+.left {
+  display: flex;
   float: right;
-  padding: 2%;
   margin-right: 20%;    
+}}
+
+@media (min-width: 1024px) {
+.right {
+  display: flex;
+  float: right;
+  margin-right: 20%;    
+}}
+
+@media (min-width: 1024px) {
+.links-right {
+  display: flex;
+  flex-flow: row;
+  padding: 2%;
+}}
+
+@media (min-width: 1024px) {
+.links-left {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }}
 
 a:-webkit-any-link {
@@ -88,22 +137,19 @@ a:hover {
 }
 
 .menu {
-  display: block;
-  float: right;
   padding: 2%;
-  margin-right: 20%;
 }
 
 @media (min-width: 668px) {
 .menu {
   display: none;
 }}
-
+/*
 @media (min-width: 1024px) {
 .menu {
   display: none;
 }}
-
+*/
 .content {
   display: flex;
   flex-wrap: wrap;

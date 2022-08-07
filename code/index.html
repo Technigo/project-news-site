@@ -16,25 +16,28 @@
 
 <body>
 <header>
-    <div class="page-header">
-        <img src="logo.png" alt="logo">
-        <h3>the Garden</h3>
-    </div>
+    <nav class="navigation">
+        <div class="page-header">
+            <img src="logo.png" alt="logo">
+            <h3>the Garden</h3>
+        </div>
 
-    <a href="http://google.se">
-        <svg class="menu" fill="currentColor" focusable="false" height="3em" stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" width="2em" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 3H2V4H14V3Z"></path>
-            <path d="M14 7H2V8H14V7Z"></path>
-            <path d="M14 11H2V12H14V11Z"></path>
-        </svg> 
-    </a>
-
-        <a href="http://google.se" class="links">Greens</a>
-        <a href="http://google.se" class="links">Flowers</a>
-        <a href="http://google.se" class="links">Seeds</a>
-        <a href="http://google.se"class="links">Archive</a>
-
-    
+        <a href="http://google.se">
+            <svg class="menu" fill="currentColor" focusable="false" height="3em" stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 3H2V4H14V3Z"></path>
+                <path d="M14 7H2V8H14V7Z"></path>
+                <path d="M14 11H2V12H14V11Z"></path>
+            </svg> 
+        </a>
+        <div class="left">
+            <a class="links-left" href="http://google.se">Greens</a>
+            <a class="links-left" href="http://google.se">Flowers</a>
+        </div>
+        <div class="right">
+            <a class="links-right" href="http://google.se">Seeds</a>
+            <a class="links-right" href="http://google.se">Archive</a>
+        </div>
+    </nav>
 </header>
 <div class="content">
     <div class="presentation">
@@ -135,4 +138,3 @@
 </body>
 </html>
 
-Fixa vad det är som händer i headern när jag har ändrat med links-klassen. Är det en css fråga?
