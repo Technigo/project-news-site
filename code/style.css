@@ -1,4 +1,171 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: whitesmoke;
+  color: rgb(64, 71, 120);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile first */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#upper-left-corner {
+  display: flex;
+}
+
+.logo {
+  margin: 10px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+h1 {
+  margin-top: 80px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+nav {
+  display: none;
+  /* need to insert a hamburgermenu-img but do not know how, javascript? */
+}
+
+/*This is the cointainer for all the giphys*/
+.giphys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border-radius: 2%;
+  width: inherit;
+  height: auto;
+  /*not sure why the space on the left and right side of the img is larger than space on top, maybe it is due to inherit....*/
+}
+
+.picture-big-g {
+  width: 100%;
+  height: auto;
+}
+
+.big-giphy {
+  width: 90%;
+  height: auto;
+  border:rgb(64, 71, 120) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.small-giphy {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  border:rgb(64, 71, 120) dotted;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+
+
+/* Tablet second */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  nav {
+    display: block;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .giphys {
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    display: grid;  
+    justify-content: center;
+  }
+  
+  .big-giphy {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+  }
+
+  .picture-big-g {
+    width: 50%;
+  }
+}
+
+
+/* Desktop third */
+@media (min-width: 1025px) {
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  nav {
+    display: block;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around; /*space between img and text is too big, but if I set text to flex-start there is no space at all ant that is worse*/
+  }
+
+  .giphys {
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px;
+    display: grid;  
+    align-items: flex-start;
+    justify-content: center; /*not working, and not know why*/
+  }
+  
+  .big-giphy {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inheret;
+    border: 0;
+  }
+
+  .picture-big-g {
+    width: 40%;
+    margin: 20px 0;
+    padding-left: 10%; /*not sure padding is the correct way to place a child, but it worked..*/
+  }
+
+  .bid-giphy-text {
+    padding-right: 10%;
+  }
 }
