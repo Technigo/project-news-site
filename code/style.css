@@ -5,6 +5,18 @@
 html {
   background: #C3C3BD;
   color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes background {
+  0% {background-color: #9400D3; color: #333;}
+  15% {background-color: #4B0082; color: white;}
+  30% {background-color: #0000FF; color: white;}
+  45% {background-color: #00FF00; color: #333;}
+  60% {background-color: #FFFF00; color: #333;}
+  75% {background-color: #FF7F00; color: #333;}
+  90% {background-color: #FF0000; color: #333;}
+  100% {background-color: #C3C3BD; color: #333;}
 }
 
 /* Mobile first */
@@ -18,6 +30,7 @@ header {
 h1 {
   color: #053C17;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 nav {
@@ -66,6 +79,9 @@ button {
   color: white;
   padding: 10px 20px;
   border: none;
+  font-size: 16px;
+  animation-name: background;
+  animation-duration: 6s;
 }
 
 button:hover {
@@ -85,6 +101,12 @@ button:hover {
   padding: 10px;
   border: 1px solid #848484;
   box-shadow: 5px 5px 3px #848484;
+  cursor: pointer;
+}
+
+.news-grid-child img {
+  width: 100%;
+  height: 200px;
 }
 
 
