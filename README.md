@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I wanted to focus this assignment on understanding Flex, especially the responsive mobile first design.Replace this readme with your own information about your project. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started off with desktop even though I understand it is easier developing mobile first. But I felt I needed to do it this way to easier understand how everything is structured. So I focused on flex instead of css grid, partially because I feel that flex is more versatile but also because I would like to work and understand one at a time. I didn't really understand how to set upo navigation only using flex (and html of course) so I dug into javascript a bit as well. Didn't turn out to good though.... :) 
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Next time I would start mobile first and work from there for sure
+
