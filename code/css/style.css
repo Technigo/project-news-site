@@ -112,7 +112,7 @@ button:hover {
 
 /* Tablet */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 668px) {
 
   header {
     flex-direction: row;
@@ -155,10 +155,9 @@ button:hover {
   }
 }
   
-
 /* Desktop */
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1024px) {
     .news-grid {
       grid-template-columns: repeat(12, 1fr);
     }
