@@ -13,4 +13,5 @@ When I stumbled across new commands I tried to google and learn what their funkt
 If I’d more time I would have tried to solve the final bugs that I couldn’t solve. The main issues that still bugg me is that I couldn’t center everything without there being negative consequences and I couldn’t transform the logo exactly how I wanted it without distorting the aspect ratio. After that the main thing would be to get the page interactive!
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://frabjous-gumdrop-9ac00b.netlify.app/code/
