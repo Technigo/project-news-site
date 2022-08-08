@@ -1,0 +1,1102 @@
+/* Here is all the css styling for the webpage, welcome
+    it starts with declaring the body as a flexbox, with a column direction.
+*/
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+/* here i style the header for the page with a background color that will,
+follow the pages style throu out. I make the header a parent so i can
+get the layout i want inside it, with a logo, site name, and a nav menu */
+
+.layout-header {
+    margin: 2px;
+    padding: 2px;
+    background-color: rgb(93, 0, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* here is the sites name that i styled to make it pop more. */
+.site-name {
+    margin-top: 40px;
+    margin-left: 50px;
+    border: 1px white; 
+    align-self: center;
+    width: 400px;
+    height: 70px;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: inherit;
+    text-decoration: none; 
+    letter-spacing: 8px;
+}
+/* here we style the logo so it more centered in the "box"*/
+.logo {
+    margin: 5px;
+    padding: 2px;
+}
+/* here starts all the navigation menu styling, its styled so before you hover 
+over the symbol nothing happens, once you hover the background will change slightly
+and if you click the symbol a menu will drop down with the links, java
+helps hide the menu if you click somewhere else. so its styled to not 
+be displayed unless you click the button */
+
+.navigation div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 15px;
+}
+
+.navigation {
+    width: 60px;
+    float: left;
+    overflow: hidden;
+}
+
+.navigation :hover {
+    background-color: rgb(110, 0, 0); 
+}
+
+.dropbtn {
+    background-color:rgb(93, 0, 0);
+    width: 45px;
+    display: block;
+    margin: 2.3em 0 0 -1em;
+    border: none;
+    color: white;
+    font-family: inherit; 
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.show {
+    display:block;
+}
+
+.line:hover {
+   height: 2px;
+   width: 2px;
+   margin: 10px;
+}
+
+/* here i make the main articel a parent, to help get the header (h2) and the
+"p" (paragraph) where i want it*/
+.main-artic {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-picture {
+    margin: 2px;
+}
+
+.big-picture img {
+    width: 100%;
+    height: 365px;
+    flex: 100%;
+}
+
+.main-articel { 
+    width: 100%;
+    background-color: rgba(240,238,239,255);
+    border: 5px whitesmoke;
+    border-color: antiquewhite;
+    margin: 2px;
+    padding: 2px;
+    flex: 100%;
+}
+    
+.main-articel h2 {
+    border: 1px white; 
+    align-self: center;
+
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+}
+
+.main-articel p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/* here is the css-grid start, so i style it with how i want it to look on
+mobile with 1 column. And i make all the arcticels "parents so we can change
+the children (the img and the arctiel) the way we want them to look on mobile 
+  then i copy that onto the next articel and so on  */ 
+.grid-articels {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    gap: 10px;
+    padding: 30px;
+    background-color: rgb(239 239 243);
+}
+
+.grid-1-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-1-pic {
+    grid-column: 1;
+}
+
+.articel-1-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-1 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-1 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-1 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.grid-2-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-2-pic {
+    grid-column: 1;
+}
+
+.articel-2-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+    width: 100%;
+}
+
+.articel-2 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-2 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+    margin-left: 3%;
+}
+
+.articel-2 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.grid-3-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-3-pic {
+    grid-column: 1;
+    
+}
+
+.articel-3-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-3 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-3 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-3 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.grid-4-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-4-pic {
+    grid-column: 1;
+}
+
+.articel-4-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-4 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-4 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-4 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.grid-5-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-5-pic {
+    grid-column: 1;
+}
+
+.articel-5-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-5 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-5 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-5 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.grid-6-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-6-pic {
+    grid-column: 1;
+}
+
+.articel-6-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-6 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-6 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-6 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.grid-7-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-7-pic {
+    grid-column: 1;
+}
+
+.articel-7-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-7 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-7 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-7 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+    font-size: 90%;
+}
+
+.grid-8-articel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 200px;
+    background-color: rgba(240,238,239,255);
+}
+
+.articel-8-pic {
+    grid-column: 1;
+}
+
+.articel-8-pic img {
+    padding: 2px;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-8 {
+    grid-column: 2;
+    height: 197px;
+    padding: 3px;
+}
+
+.articel-8 h3 {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.articel-8 p {
+    align-self: center;
+    font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+    color: rgb(93, 0, 0);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+    font-size: 90%;
+}
+/* here is the start for how we want the tablet to behave if you enter the 
+webpage on it (or change the size freely on desktop) the diffrents here is that
+we want 2 columns, so we change much of the flex to 50% to make it fit */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: none;
+    }
+
+    .main-artic {
+        flex-direction: row;
+    }
+
+    .big-picture {
+       flex:50%
+    }
+
+    .big-picture img {
+        height: 100%;
+    }
+
+    .main-articel {
+       flex: 50%;
+    }
+
+    .main-articel h2 {
+        border: 1px white; 
+        align-self: center;
+    
+        font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+        color: rgb(93, 0, 0);
+        font-size: 27px;
+        font-weight: bold;
+        text-decoration: none; 
+        letter-spacing: 4px;
+    }
+    
+    .main-articel p {
+        align-self: center;
+        font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+        color: rgb(93, 0, 0);
+        font-style: italic;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .grid-articels {
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(4, 200px);
+        width: 100vw;
+        height: 100vh;
+        margin: 10px;        
+        padding: 10px;
+    }
+
+    .grid-1-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-1-pic img {
+        width: 100%;
+    }
+
+    .articel-1 {
+        height: 197px;
+    }
+
+    .articel-1 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-1 p {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+    
+    .grid-2-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-2-pic img {
+        width: 100%;
+    }
+
+    .articel-2 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-2 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-2 p {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-3-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-3-pic img {
+        width: 100%;
+    }
+
+    .articel-3 {
+        height: 197px;
+    }
+
+    .articel-3 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-3 p {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-4-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-4-pic img {
+        width: 100%;
+    }
+
+    .articel-4 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-4 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-4 p {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-5-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-5-pic img {
+        width: 100%;
+    }
+
+    .articel-5 {
+        height: 197px;
+    }
+
+    .articel-5 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-5 p {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-6-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-6-pic img {
+        width: 100%;
+    }
+
+    .articel-6 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-6 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-6 p {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-7-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-7-pic img {
+        width: 100%;
+    }
+
+    .articel-7 {
+        height: 197px;
+    }
+
+    .articel-7 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-7 p {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-8-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 50vw;
+    }
+
+    .articel-8-pic img {
+        width: 100%;
+    }
+
+    .articel-8 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-8 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-8 p {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+} 
+/* Here start the desktop layout, so i make the grid behave so that i displays
+in 4 columns, and make the articels fit next to eachother. */
+
+@media (min-width: 1025px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: none;
+    }
+
+    .main-artic {
+        flex-direction: row;
+    }
+
+    .big-picture {
+        flex: 50%;
+    }
+
+    .big-picture img {
+        height: 100%;
+    }
+
+    .main-articel {
+        flex: 50%;
+    }
+
+    .main-articel h2 {
+        border: 1px white; 
+        align-self: center;
+    
+        font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+        color: rgb(93, 0, 0);
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none; 
+        letter-spacing: 8px;
+    }
+    
+    .main-articel p {
+        align-self: center;
+        font-family: "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden", "Bahnschrift SemiBold SemiConden";
+        color: rgb(93, 0, 0);
+        font-style: italic;
+        letter-spacing: 4px;
+        font-size: 25px;
+    }
+
+    .grid-articels {
+        grid-template-columns: repeat(4, 95%) ;
+        grid-template-rows: repeat(2, 200px);
+        width: 25vw;
+        height: 100vh;
+        margin: 10px;        
+        padding: 10px;
+        background-color: white;
+    }
+
+    .grid-1-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255); 
+        width: 23.5vw;
+    }
+
+    .articel-1-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-1 {
+        height: 197px;
+    }
+
+    .articel-1 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-1 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+    
+    .grid-2-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23.5vw;
+    }
+
+    .articel-2-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-2 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-2 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-2 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-3-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23.5vw;
+    }
+
+    .articel-3-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-3 {
+        height: 197px;
+    }
+
+    .articel-3 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-3 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-4-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23vw;
+    }
+
+    .articel-4-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-4 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-4 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-4 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-5-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23.5vw;
+    }
+
+    .articel-5-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-5 {
+        height: 197px;
+    }
+
+    .articel-5 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-5 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-6-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23.5vw;
+    }
+
+    .articel-6-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-6 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-6 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-6 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-7-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23.5vw;
+    }
+
+    .articel-7-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-7 {
+        height: 197px;
+    }
+
+    .articel-7 h3 {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-7 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .grid-8-articel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 200px;
+        background-color: (240,238,239,255);
+        width: 23vw;
+    }
+
+    .articel-8-pic img {
+        width: 100%;
+        height: 110px;
+        padding-top: 15px;
+    }
+
+    .articel-8 {
+        height: 197px;
+        width: 100%;
+    }
+
+    .articel-8 h3 {
+        font-size: 70%;
+        margin-left: 3%;
+    }
+
+    .articel-8 p {
+        width: 95%;
+        font-size: 70%;
+        margin-left: 3%;
+    }
+    /* I ran into alot of problems, and i think i made things more diffuclt 
+    for myself, but i learned alot throu the process. */
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Articel-style2.css"/> 
+        <script type="text/javascript" src="C:\Users\vikto\Code\language.js"></script>
+        <title>Proposal Ideas</title>
+    </head>
+    <body>
+        <!--Hello and welcome to my first (kinda first) "real" website.
+            I start with a custom header, thats its own section. i used css flexbox to
+            design it. With one box with a custom img with the logo
+            the second box the site namne. And the third box is the navigation menu.
+            i created how i wanted it to look, but couldn't get it clickeable. So i googled
+            and since Java is similar to C# i created a class that makes it clickable with links
+            to my subpages. -->
+        <section class="layout-header">
+            <div class="logo"><img src="C:\Users\vikto\Code\logo2.png" style="width: 80px;height:85px";></div>   
+            <div class="site-name">PROPOSAL IDEAS</div>
+            <div class="navigation">
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>        
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Articelwebsite2.html">Home</a>
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+            </div>
+        </section>
+        <!-- This is the second section with my main articel and picture. Here i also used flexbox
+             to get the layout i wanted. So 1 box is a custom img where i put the wanted size and with in html.
+             the second box the articel -->
+        <section> 
+            <div class="main-artic"> 
+                <div class="big-picture"><img src="C:\Users\vikto\Code\big-picture-logo.jpg"></div>
+                <div class="main-articel"><h2>Proposal Idea "villdugiftadigmedmig.com"</h2><br>
+                    <p>Är du en fena på websidor eller känner någon som är? Då kan det vara en idé att sätta samman en alldeles egen, unik websida för frieriet</p>
+                </div> 
+            </div>
+        </section>
+        <!-- here is the third section, where i tried a css grid layout to experiment with
+            where the layout changes from mobile layout < 667px 1 i column. To tablet wich is 667px to max
+            1024px. Then 4 columns on desktop with + 1025px 
+            each div-class-articel is a parent and child (grid term) with on grid (box)
+            being a picture and the second a articel-->
+        <section class="grid-articels">
+            <div class="grid-1-articel">
+                <div class="articel-1-pic"><img src="C:\Users\vikto\Code\articel-1-pic.jpg"></div>
+                <div class="articel-1"><h3>Proposal idea ”Keep it simple but great”</h3><br>
+                    <p>Det är lätt att krångla till det utan att det alltid behövs. Vad älskar din käresta allra mest?</p>
+                </div>
+            </div>
+            <div class="grid-2-articel">
+                <div class="articel-2-pic"><img src="C:\Users\vikto\Code\articel-2-pic.jpg"></div>
+                <div class="articel-2"><h3>Proposal idea ”Helikopterfrieriet”</h3><br>
+                    <p>Storslaget är inte för alla, men om det är något för dig och din älskade så kommer du gilla Helikopterfrieriet.</p>
+                </div>
+            </div>
+            <div class="grid-3-articel">
+                <div class="articel-3-pic"><img src="C:\Users\vikto\Code\articel-3-pic.jpg"></div>
+                <div class="articel-3"><h3>Proposal idea ”Hans och Greta 2.0”</h3><br>
+                    <p>Ett frieri för den kreativa! Här kan du ta ut svängarna och göra precis hur och vad du vill</p>
+                </div>
+            </div>
+            <div class="grid-4-articel">
+                <div class="articel-4-pic"><img src="C:\Users\vikto\Code\articel-4-pic.jpg"></div>
+                <div class="articel-4"><h3>Proposal idea ”Viva Las Vegas”</h3><br>
+                    <p>Är du ett stort Elvis fan? Eller är kanske hen det? Varför inte göra det mest klassiska (om du är från Usa).</p>
+                </div>
+            </div>
+            <div class="grid-5-articel">
+                <div class="articel-5-pic"><img src="C:\Users\vikto\Code\articel-5-pic.jpg"></div>
+                <div class="articel-5"><h3>Proposal idea ”Biofilmen”</h3><br>
+                    <p>Här får din kreativa sida titta fram, du ska nu göra en kort film där du friar till din älskade, som ni kommer uppleva på… biografen.</p>
+                </div>
+            </div>
+            <div class="grid-6-articel">
+                <div class="articel-6-pic"><img src="C:\Users\vikto\Code\articel-6-pic.jpg"></div>
+                <div class="articel-6"><h3>Proposal idea ”Lyssna och lär”</h3><br>
+                    <p>Har din älskling uttryckt en önskan om hur hen vill bli friad till? Gör så. Precis så, utan krusiduller. Lycka till!</p>
+                </div>
+            </div>
+            <div class="grid-7-articel">
+                <div class="articel-7-pic"><img src="C:\Users\vikto\Code\articel-7-pic.jpg"></div>
+                <div class="articel-7"><h3>Proposal idea ”Ring i glaset”</h3><br>
+                    <p>Den klassiska ringet i glaset, planera en fin middag på er favoritrestaurang (eller hemma). Sen skålar ni för kärleken, efter det skålar ni för ett ja!</p>
+                </div>
+            </div>
+            <div class="grid-8-articel">
+                <div class="articel-8-pic"><img src="C:\Users\vikto\Code\articel-8-pic.jpg"></div>
+                <div class="articel-8"><h3>Proposal idea ”Skrivet på himlen”</h3><br>
+                    <p>Också en klassiker från förr, ordna ett plan och helst en pilot också. Och skriv ”vill du gifta dig med mig?” på himlen, så kan någon annan i närheten passa på också.</p>
+                </div>
+            </div>
+        </section>
+
+</body>
+</html>
