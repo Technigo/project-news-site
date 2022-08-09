@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+Created a blockchain news site. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Had to create a newssite  using a layout with CSS flex / CSS grid. 
 
-## The problem
+I had to choose which CSS approach to use. I ended up using both flex and grid. Uploaded some pictures through css, added some animation effects and made it responive into a responsive wed design. I would have invested more in the footer effect and it's placements.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Tools used in this project: Github, The terminal, Netlify and VS code.
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the deployed project:
+https://stellular-madeleine-4f3191.netlify.app
