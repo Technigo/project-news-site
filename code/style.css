@@ -8,7 +8,6 @@ body {
 }
 
 a {
-  font-size: 17px;
   text-decoration: none;
   color: rgb(33, 60, 81);
 }
@@ -71,7 +70,6 @@ nav a:hover {
   color: white;
 }
 
-
 /*NEWS SECTION*/ 
 
 .big-news-parent {
@@ -95,15 +93,41 @@ nav a:hover {
 }
 
 .small-news-parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 20px;
+  text-align: center;
+} 
 
 .small-news-parent img {
   max-width: 80%;
   height: auto;
+}
+
+.small-news-parent a {
+  text-decoration: none;
+  color: rgb(33, 60, 81);
+  background:
+    linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    ),
+    linear-gradient(
+      to right,
+      rgb(44, 161, 182),
+      rgb(128, 169, 202),
+      rgb(88, 98, 213)
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.small-news-parent a:hover {
+  background-size: 0 2px, 100% 2px;
 }
 
 .small-news-child {
@@ -113,7 +137,6 @@ nav a:hover {
   text-align: center;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
-
 
 /*FOOTER*/
 
@@ -143,7 +166,7 @@ footer a:hover {
 
 /*Small screen - to change header and footer layout*/
 
-@media screen and (max-width: 700px){
+@media (max-width: 666px) {
   
   .header{ 
     display: flex;
@@ -179,43 +202,42 @@ footer a:hover {
 
 /*TABLET*/
 
-@media screen and (min-width: 701px){
+@media (min-width: 667px) and (max-width: 1024px) {
+
   nav {
     display: inline-block;
     margin-left: auto;
   }
   
+  .logo-img {
+    margin: 15px 12px 15px 15px;
+  }
+
   .big-news-parent {
     display: flex;
     flex-direction: column;
+    margin: 30px;
   }
 
   .big-news-img img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .small-news-parent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .small-news-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
-    margin: 0px;
-    padding: 0px;
   }
 
-  .small-news-child {
-    width: 300px;
-  }
-    
 }
 
 /* DESKTOP */
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1025px) {
 
   .big-news-parent {
     display: flex;
@@ -235,21 +257,14 @@ footer a:hover {
   }
 
   .small-news-parent {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: auto;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px;
+  }  
 
-  .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .small-news-child{
-    width: 25%;
-    margin: 10px;
+  nav {
+    display: inline-block;
+    margin-left: auto;
   }
 
 }
