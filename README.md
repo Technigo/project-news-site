@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
+This is a news paper for a pre-course with Technigo. My topic is about bikes. 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First i starded to form my viusal set up in figjam to have a plan how to build my site. Then i started with html and after that css. 
+I started to look at other website to get some inspiration and i´ve been using google for help. 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here you can find my news paper live : https://stunning-faloodeh-a7f91b.netlify.app/
+
