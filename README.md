@@ -1,12 +1,13 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a book club for everyone that loves a good book, regardless the genre.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+In the beginning i strugle with sections, divs and classes, and also when to use . before or not in css. With google and help from a collegue I solved it. I had trouble with responsiveness and still have between width 668-767. I have not been able to solve it. I still don't know when to use flexbox or CSS grid - maybe its up to me. To be honest I struggled with everything - but it was a lot of fun, including the headache :) 
+
+NOTE! I missed both how to commit and create a pull request. This is now done.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://the-pink-book-club.netlify.app/
+
+
