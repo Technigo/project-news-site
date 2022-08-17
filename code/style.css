@@ -5,7 +5,7 @@
    background-position: center;
    background-repeat: no-repeat; 
    background-size: cover;
-   margin: 5px;
+   margin: 0px;
    color: #000000;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
@@ -133,9 +133,10 @@
 h1 {
   color: #2f2a32;
   font-family: "avenir next";
-  font-size: 50px;
+  font-size: 60px;
   font-stretch: ultra-condensed;
   padding-top: 10px;
+  padding: 10px;
 
   }
   
@@ -149,7 +150,8 @@ h2 {
   font-family: "avenir next"; 
   font-size: 30px;
   font-stretch: ultra-condensed;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  padding: 10px;
 }
 
 h3 {
@@ -164,7 +166,7 @@ h4 {
 
 .top-news {
 text-align: center; 
-padding: 10px; 
+padding:0; 
 }
 
 p {
@@ -315,7 +317,7 @@ padding-top: 20px;
 
 /*  ------ RESPONSIVE DESKTOP ---------  */
 
-@media (min-width: 1112px){ 
+@media (min-width: 1080px){ 
 .body {
   margin: 20px;
 }
@@ -364,12 +366,12 @@ color: #876e91;
 background-color: #876e91E6;
 }
 
-
 .grid{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: (2, 100px);
+
 }
 .fit {
   float: left; 
@@ -387,14 +389,15 @@ font-size: 20px;
 }
 .top-news {
   float: center;
-  margin: 90px; 
-  padding-left: 550px; 
-  padding-right: 100px;
+  margin: 10px; 
+  padding-left: 50px; 
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .container-head-news {
   height: 600px;
-  padding: 40px;
+  padding: 10px;
   width: auto; 
 }
 
