@@ -149,11 +149,11 @@ h2 {
   font-family: "avenir next"; 
   font-size: 30px;
   font-stretch: ultra-condensed;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h4 {
@@ -222,7 +222,7 @@ color:#876e91;
 
 /* -------   RESPONSIVE TABLET  ---------  */ 
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 768px) and (max-width: 1117px) {
 
 .body {
 margin: 20px;
@@ -293,7 +293,7 @@ height: 350px;
 .top-news {
     float: center;
     justify-items: center;
-    padding-left: 200px;
+    padding-left: 180px;
     padding-top: 40px;
   }
 
@@ -315,7 +315,7 @@ padding-top: 20px;
 
 /*  ------ RESPONSIVE DESKTOP ---------  */
 
-@media (min-width: 1100px) and (max-width: 1920px){ 
+@media (min-width: 1112px){ 
 .body {
   margin: 20px;
 }
