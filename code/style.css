@@ -1,4 +1,109 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #B1D7B4;
+  color: darkblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.top-heading-parent{
+  background-color:#F7F6DC;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+header img {
+  width: 20%;
+}
+.logo-name.child{
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  text-align: right;
+
+}
+.navigation {
+  font-size:15px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  justify-content: center;
+}
+
+section.big-news {
+  background-color: #7FB77E;
+  padding: 5px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+
+.big-news img {
+  margin: 3px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #F7F6DC;
+  flex-direction: column;
+} 
+.big-news-text{
+  text-align: center;
+}
+
+.big-news h1 {
+  margin: 3px;
+  padding: 5px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #F7F6DC;
+  flex-direction: column;
+  text-align: center;
+}
+  .big-news h2{
+    margin: 3px;
+    padding: 5px;
+    border: 1px solid #F7F6DC;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+@media (min-width: 667px) and (max-width: 1024px){
+  .big-news{
+    flex-direction: row;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .big-news{
+    flex-direction: row;
+    font-size: 46px;
+  }
+}
+
+section.small-news{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px;
+  gap: 5px;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.grid-item{
+  background-color: #F7F6DC;
+}
+
+@media (min-width: 667px) and (max-width: 1024px){
+  section.small-news {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1025px){
+  section.small-news{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+}
 }

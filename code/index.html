@@ -2,21 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" >
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header class="top-heading-parent">
+      <img src="./woody-xl.png" alt="logo of the newspaper">
+      <h1 class="logo-name-child"> WOODY NEWS </h1>
+      <nav class="navigation">
+        <a class="navigation-logo" href="#">
+        <a class="navigation-link" href="#">Home</a>
+        <a class="navigation-link" href="#">World</a>
+        <a class="navigation-link" href="#">Economy</a>
+        <a class="navigation-link" href="#">Culture</a>
+      </nav>
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+        <img src="./banana-faces.jpg" alt="Picture of bananas with faces painted">
+        <div class="big-news-text">  
+          <h1> Massive fruit fly invasion! </h1>
+          <h2> West part of Sweden is now preparing for the most intense fruit fly period of the century</h2>
+       </div>
     </section>
-
-    <section class="">
-      <!-- The other news  -->
+      
+    <section class="small-news">
+        <div class="grid-item first-picture"><img src="./flower.png" alt="Flowers"></div>
+        <div class="grid-item first-text">Latest from the flower forcast</div>
+        <div class="grid-item second-picture"><img src="./species.png" alt="New species"></div>
+        <div class="grid-item second-text">New species found in wine cellar</div>
+        <div class="grid-item third-picture"><img src="./popeye.png" alt="Popeye"></div>
+        <div class="grid-item third text">Donald Duck announces collaboration with Popeye!</div>
+        <div class="grid-item forth picture"><img src="./cup.png" alt="Winners cup"></div>
+        <div class="grid-item forth text">The winners of the annual PECK competition </div>
     </section>
   </body>
 </html>
+
