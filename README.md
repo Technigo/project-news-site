@@ -1,6 +1,6 @@
 # News Site
 
-My task was to create a single page responsive news site containing a navigation bar with a logo in it, one large feature article and a few more smaller articles as well. The smaller articles had to be displayed the following way: one column on mobile, two on tablet, and four on desktop.
+My task was to create a one page responsive news site containing a navigation bar with a logo in it, one large feature article and a few more smaller articles as well. The smaller articles had to be displayed the following way: one column on mobile, two on tablet, and four on desktop.
 
 ## The problem
 
