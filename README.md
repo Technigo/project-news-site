@@ -1,12 +1,8 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project-news-site was my first coding project, and a part of my Technigo pre-course. The assignment was to create a news site about whichever subject, and make it responsive.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+A big part of the project was to learn how and when to use Flexbox and CSS grid. Since this was the first time facing these techniques, I had a bit of a hard time figuring out when to use Flexbox and when to use Grid. Looking back at it (and for the future) I would have chosen Grid to a greater extent than I did. It turned out I had to work for a while to realize that. From what I understand, Grid would have allowed me to steer the layout more. I used Grid for the Big news-section and it turned out looking better than the section below. For example, in the last section I was not able to make the button stay at "the bottom" of the container, since their position was relative to the text above.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://boisterous-lolly-21186d.netlify.app/
