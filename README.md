@@ -25,4 +25,4 @@ The big image resized/minimized/vanished when I changed the size of the page for
     object-position: bottom;
 
 ## View it live
-https://62e81815c9075909d4d7b263--sprightly-selkie-7bd1f6.netlify.app/
+
