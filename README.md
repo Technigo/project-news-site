@@ -4,7 +4,6 @@ Thee task was to create a responsive news site. It should contain a header with 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 I had trouble understanding how to applicate flexbox and grid to my own code. I understand the theoretics behind it but stuggle to see how to use it properly. I ended up sketching with a pen and paper to try and get a good overview of what I actually needed to do. This helped but I still don't think my code is 100% correct.
 
 Next would be to align the sizing of the images.
