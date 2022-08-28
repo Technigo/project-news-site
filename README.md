@@ -18,4 +18,4 @@ To further develop the site, the articles could pop out in a box on top of the s
 
 
 ## View it live
-https://delightful-praline-eda5a7.netlify.app/
+https://gilded-bonbon-e7665e.netlify.app/
