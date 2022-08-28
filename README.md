@@ -10,4 +10,4 @@ Next would be to align the sizing of the images.
 
 ## View it live
 
-https://keen-bonbon-5adca7.netlify.app/
+https://greek-islands.netlify.app/
