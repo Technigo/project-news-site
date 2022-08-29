@@ -25,4 +25,5 @@ The big image resized/minimized/vanished when I changed the size of the page for
     object-position: bottom;
 
 ## View it live
+https://naturenews1.netlify.app/
 
