@@ -187,7 +187,7 @@ footer {
       /** Tablet **/
 
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
         /** Header and navbar **/
 
@@ -220,13 +220,14 @@ footer {
   .big-news-article {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .big-news-text {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-   width: 35%;
+    width: 35%;
   }
 
   .big-image {
@@ -273,7 +274,7 @@ footer {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
 
 
         /** Header and navbar **/
@@ -315,6 +316,7 @@ footer {
 
   .big-news-article {
     display: flex;
+    align-items: center;
   }
 
   .big-news-text {
