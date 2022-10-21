@@ -82,6 +82,10 @@ header {
   cursor: pointer;
 }
 
+label {
+  opacity: 0
+}
+
 
    /**** Big news ****/
 
@@ -127,13 +131,13 @@ a {
   margin: 5%;
 }
 
-h5 {
-  font-size: 12px;
+h4 {
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 10px;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -159,7 +163,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #8adb8ec9;
-  padding: 1%;
+  padding: 5%;
 }
 
 .social, .email-info {
@@ -170,7 +174,7 @@ footer {
 
 .newsletter {
   border: 1px solid black;
-  padding: 2px 15px;
+  padding: 5px 15px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgb(0 0 0 / 70%);
   margin: 5px;
@@ -258,7 +262,7 @@ footer {
     height:40vw;
   }
 
-  h5 {
+  h4 {
     font-size: 13px;
   }
   
@@ -341,7 +345,7 @@ footer {
   .hidden-paragraph {
     all: unset;
     color: black;
-    size: 15px;
+    font-size: 15px;
     line-height: 2;
     padding-top: 4%;
   }
@@ -369,18 +373,9 @@ footer {
   }
 
   .desktop-button:hover {
-    animation-name: scale;
-    animation-duration: 0.8s;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
   }
-
-  @keyframes scale {
-   50%{
-    transform: scale(1.2); 
-  } 100% {
-    transform: scale(1);
-  }
-  }
-
 
        /** Small news content **/
        
@@ -397,7 +392,7 @@ footer {
     height: 30vw;
   }
 
-  h5 {
+  h4 {
     font-size: 15px;
   }
   
