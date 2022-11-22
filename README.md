@@ -1,7 +1,5 @@
 # News Site
 
-#1 Individual project
-
 Bootcamp pre-course assignment, create a responsive News website
 
 Tech focus:
