@@ -19,5 +19,5 @@ If I had more time I would further experiment with doing the whole page with onl
 
 Link to deployed project:
 
-https://luminous-naiad-205249.netlify.app/
+https://news-site.brucette.com/
 
