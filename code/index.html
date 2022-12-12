@@ -2,21 +2,106 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News About Minimalism</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+      <nav>
+        <section class="top-nav">
+          <div>
+            <a href="#"><p class="site-logo">minimalism.</p></a>
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+          <ul class="menu">
+            <li><a href="#">news</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">subscribe</a></li>
+          </ul>
+        </section>
     </header>
 
+        <!--Intro Text Area-->
+        <main>
+        <section class="intro">
+        <article>
+        <h2>news and articles about minimalism</h2>
+        <p>If you’re curious about, new to, or simply interested in learning more about minimalism, this is a great place to start.<br>
+          Below you’ll find various definitions of minimalism, the benefits, challenges, and real-life examples so you can decide if minimalism is right for you.<br><br>
+          <strong>Spoiler alert</strong>: it probably is.</p>
+        </article>
+        </section>
+
+        <!-- The big news content -->
     <section class="big-news">
-      <!-- The big news content -->
+      <a class="big-news-picture" target="_blank" href="https://www.elledecor.com/design-decorate/interior-designers/a27471472/minimalist-interior-design-tips/">
+        <img src="./img/Minimalist-interior-design.jpg" alt="Minimalist interior">
+      </a>
+      <div class="big-news-text">
+        <h2>everything you need to know about minimalist design.</h2>
+        <p>Clean lines, reductive, uncluttered, monochromatic, simplicity, "less is more"—these are some of the terms and concepts that immediately come to mind when thinking about minimalism.<br><br>
+          The minimalist approach uses only the essential elements: light, form and beautiful materials, usually in an open plan layout, to create a sense of freedom and relaxation. 
+          There is no excessive ornamentation and decoration.
+          Instead, the few details that are used are uncomplicated and blend harmoniously into the setting.</p>
+        <a class="read-more" href="#">Read more</a>
+      </div>
     </section>
 
-    <section class="">
+    <section class="small-news">
       <!-- The other news  -->
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/minimalist-wardrobe.jpg" alt="How To Create A Minimalist Wardrobe">
+        </a>
+        <a class="small-text" target="_blank" href="https://theecohub.com/minimalist-wardrobe/">10 steps to the essential minimalist wardrobe</a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/declutter.jpg" alt="decluttering tips">
+        </a>
+        <a class="small-text" target="_blank" href="#">Organize your home with these professional decluttering tips</a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/digital-minimalism.jpg" alt="Digital minimalism">
+        </a>
+        <a class="small-text" target="_blank" href="#">Digital minimalism - the relationship with our apps, tools, and phones </a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/minimalist-tattoo.jpg" alt="most popular minimalist tattoo ideas">
+        </a>
+        <a class="small-text" target="_blank" href="#">Most popular minimalist tattoo ideas that concentrates on a very clean design</a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/minimalist-code-wallpaper.jpg" alt="Minimalist wallpapers & backgrounds">
+        </a>
+        <a class="small-text" target="_blank" href="#">Top downloaded minimalist wallpapers & backgrounds 2022</a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/30-Day-Minimalism-Challenge.jpg" alt="30-Day minimalism challenge">
+        </a>
+        <a class="small-text" target="_blank" href="#">30-Day minimalism challenge, this is going to be easy</a>
+      </div>
+      <div class="small-wardrobe">
+        <a class="small-picture" target="_blank" href="#">
+          <img src="./img/Minimalist-lifestyle.jpg" alt="Minimalist Lifestyle">
+        </a>
+        <a class="small-text" target="_blank" href="#">What is a Minimalist Lifestyle? (And What It’s Not)</a>
+      </div>
     </section>
+  </main>
+  <footer>
+    <div class="made-by">Made by<a href="mailto:sammyolsson@gmail.com">Sammy,</a><a href="https://www.technigo.io/">Technigo</a>Boot Camp Student '23.</div>
+  </footer>
   </body>
 </html>
