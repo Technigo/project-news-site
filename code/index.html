@@ -4,19 +4,65 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <section class="header-flex-parent">
+        <a class="header-logo flex-child" href="#">
+          <img src="../assets/logo.jpg" alt="logo" class="header-logo">
+        </a>
+        <a class="flex-child header-site-title" href="#">"EdNews"</a>
+        <nav class="flex-child ml-auto">
+          <a class="header-link" href="#">news</a>
+          <a class="header-link" href="#">archive</a>
+          <a class="header-link" href="#">about</a>
+          <a class="header-link" href="#">contact</a>
+        </nav>
+      </section>
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+      <div class="big-news-image">
+        <img src="../assets/big-image.jpg" alt="stor bild">
+      </div>
+      <div class="big-news-text">
+        <h1>Science Says: Lying In Sofa And Watching YouTube All Day Is Good, Actually</h1>
+        <p>If you spend 5+ hours a day on your sofa watching random recommended videos on YouTube, you do in fact live a fulfilling and rewarding life and actually not the opposite. Scientists have said that and who are we to question them.</p>
+        <input type="button" value="En knapp!" />
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news-grid">
+      <div class="news-grid-item">
+        <img src="../assets/dog.jpg" alt="news-item-picture">
+          <div class="news-grid-text">
+          <p class="title">Dogs Are Cool</p>
+          <p class="introduction">You heard it here first... They are cool</p>
+        </div>
+      </div>
+      <div class="news-grid-item">
+        <img src="../assets/cat.jpg" alt="news-item-picture">
+          <div class="news-grid-text">
+          <p class="title">Cats Are Cool, Too</p>
+          <p class="introduction">You gotta give it up for cats</p>
+        </div>
+      </div>
+      <div class="news-grid-item">
+        <img src="../assets/owl.jpg" alt="news-item-picture">
+          <div class="news-grid-text">
+          <p class="title">Owls Are Cool But A Little Scary</p>
+          <p class="introduction">They sound scary but they are not really</p>
+        </div>
+      </div>
+      <div class="news-grid-item">
+        <img src="../assets/panda.jpg" alt="news-item-picture">
+          <div class="news-grid-text">
+          <p class="title">Pandas... You Guessed It; Also Cool</p>
+          <p class="introduction">They're so lazy and clumsy but it's charming to be honest</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
