@@ -2,21 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="logo-container">
+        <img class="logo" src="" />
+      </div>
+      <h1 class="main-heading">Stockholm Times</h1>
+      <div class="nav-container">
+        <ul>
+          <li>News</li>
+          <li>Sports</li>
+          <li>Tech</li>
+          <li>Log In</li>
+        </ul>
+      </div>
     </header>
 
+    <!-- The big news content -->
     <section class="big-news">
-      <!-- The big news content -->
+      <div class="big-news-box">
+        <h1 class="big-news-title">Chemistry Nobel awarded for mirror-image molecules</h1>
+        <img class="big-news-image" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"/>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="grid-container">
+    <!-- Other news  -->
+      <section class="other-news">
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1625258110856-e1f042875340?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"/>
+          <h3>News heading 1</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1646227163793-7aae7155d5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+          <h3>Explosions in central Kyiv amid air raid warning</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1597449031666-21da12583121?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Black hole breakthroughs win Nobel physics prize/h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"/>
+          <h3>Stockholm mother 'kept son for decades in flat'</h3>
+        </div>     
+      </section>
+
+      <!-- Sports  -->
+      <section class="sports">
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Sports heading 1</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1544298621-a28c00544483?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9nZXIlMjBmZWRlcmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+          <h3>Sports heading 2</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1570621810296-d7caf9839060?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Sports heading 3</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Sports heading 4</h3>
+      </section>
+
+      <!-- Tech  -->
+      <section class="tech">
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+          <h3>Tech heading 1</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+          <h3>Tech heading 2</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Tech heading 3</h3>
+        </div>
+        <div class="news-item">
+          <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <h3>Tech heading 4</h3>
+      </section>
     </section>
+
   </body>
 </html>

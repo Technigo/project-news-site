@@ -4,6 +4,16 @@ Replace this readme with your own information about your project.
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
+The task is to create a news site that is responsive to different screen sizes. 
+The site should contain: 
+    -header
+    -main news article, 
+    -grid of news articles
+
+Desktop 4 columns
+Tablet 2 columns
+Mobile 1 column
+
 ## The problem
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?

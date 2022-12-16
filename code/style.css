@@ -1,4 +1,62 @@
 html {
-  background: #0025ff;
+  background: black;
   color: #fff;
 }
+
+*{
+  box-sizing: border-box;
+}
+h1 {
+  color: yellowgreen;
+  font-size: 30px;
+}
+
+.main-heading{
+  color: pink;
+  font-size: 50px;
+}
+
+div {
+  margin: 20px, 20px;
+  padding: 50px;
+}
+
+.big-news-box{
+  object-fit:cover;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+.news-item{
+  width:200px;
+  height:200px;
+  grid-column-gap: 50px;
+  
+}
+
+
+
+
+li{
+  display:inline;
+  margin:10px;
+  padding: 50px;
+}
+/*tablet*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .main-heading {
+    color: red;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1025px) {
+  .main-heading {
+    color: yellow;
+  }
+}               
