@@ -1,18 +1,21 @@
 html {
-  background: pink;
+  background: white;
   color:blue;
 }
 
 *{
   box-sizing: border-box;
 }
+
 h1 {
-  color: yellowgreen;
+  color: black;
   font-size: 30px;
 }
 
+
+
 .main-heading{
-  color:orange;
+  color:black;
   font-size: 100px;
   text-align: center;
 }
@@ -35,58 +38,58 @@ li{
 
 .big-news-box{
   display:grid;
-  
-  margin: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 70px;
   align-items: center;
-  
+  justify-items: center;
+  background-color: black;
+  height: 800px;
+  background-image: url("https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+  background-size:cover;
+  object-fit: cover;
+  background-position:center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   
 }
 
-.big-news-image{
-  
+.big-news-title {
+  color:whitesmoke;
+  font-size: 70px;
+  margin:50px;
+  align-self:flex-end;
 }
+  
+  
+
+
+/* .big-news-image{
+  
+  width:800px;
+  
+} */
 
 
 
 .news-grid {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* column-gap: 5px;
-  row-gap: 5px;
-  margin: 10px;
-   */
+  margin: 50px 50px 50px 50px;
+  justify-items: center;
+   
 }
 
-
-/* .other-news{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content:space-between;
-  align-items:center;
-  margin:50px;
-  
-  
-} */
-
-/* .news-item{
-  flex-wrap: wrap;
-  justify-content: center; 
-  
-  
-} */
 
 .news-item-image{
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.news-item-caption{
+  font-size: 30px;
 }
 
 
-
-.nav-container{
-  
-}
 
 /*tablet*/
 @media (min-width: 667px) and (max-width: 1024px) {
