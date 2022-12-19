@@ -17,7 +17,7 @@ body {
 }
 
 /* för telefoner  */
-@media (min-width: 0px) and (max-width: 599px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .navbar-links {
     display: none;
   }
@@ -51,7 +51,7 @@ body {
 }
 
 /* för tablets */
-@media (min-width: 600px) and (max-width: 999px)
+@media (min-width: 768px) and (max-width: 991px)
 {
   .navbar-title {
     display: none;
@@ -100,7 +100,7 @@ body {
 }
 
 /* för datorer och tablets på långsidan */
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .navbar-logo {
     width: 5vw;
     height: 100%;
