@@ -1,12 +1,15 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A news-site; made to practice responsive design, flexbox and grid in CSS.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started designing everything for the computer, when I really should have gone mobile-first.
+
+I fought a lot with CSS, especially image sizes, and positioning, but with a lot of trial-and-error and copious use of "Inspect Element" I got it figured out.
+
+I need to learn more about naming conventions and get better at the @media rule. I also constantly thought I was either making it too simple, or too advanced, lol.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+It should be at https://warm-rugelach-acb13f.netlify.app/ !
