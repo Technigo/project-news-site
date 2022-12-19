@@ -1,320 +1,349 @@
-html {
-  font-size: 100%;
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin: 20px 35px 20px 35px
+}
+
+.logo {
+  width: 250px;
+  height: auto;
 }
 
 .site-logo {
-  margin-left: 5px;
-  color: white;
-  font-family: Verdana;
-  font-size: 1.5rem;
-}
-
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  font-family: Tahoma;
-}
-
-.small-text {
   color: black;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-h2 {
-  vertical-align: center;
-  text-align: center;
+.nav-link {
+  list-style: none;
 }
 
-html, body {
-  margin: 0;
-  height: 100%;
+.nav-link .nav-list {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
-* {
-  font-family: Verdana;
-  box-sizing: border-box;
+.nav bar a  {
+  color: green;
+  text-decoration: none;
 }
 
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: black;
-  background: black;
-  color: #FFF;
-  height: 50px;
-  padding: 1em;
+.nav bar a:hover {
+  color: blue;
 }
 
 .menu {
-  color: white;
-  font-family: Verdana;
+  display: none;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: gray;
+  margin-bottom: 4px;
+}
+
+.headline {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  align-items: flex-end;
+  border: 1 px solid white;
+  box-shadow: 5px 5px 16px saddlebrown;
+  background-color: white;
+  max-width: 100%;
+}
+
+.headline-image {
+  max-width: 50%;
   margin: 0;
-  padding: 0;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-    align-items: flex-end;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-}
-
-h2 {
-  color: black;
-  font-family: Verdana;
-  text-align: center;
-  margin-top: 35px;
-}
-
-main {
-  padding: 1rem;
-  display: block;
-}
-
-.intro {
-  max-width: 640px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 2rem;
-}
-
-article p {
-  display: block;
-  color: black;
-  font-family: Verdana;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-/* Big News Section*/
-.big-news {
-  background-color:Gainsboro;
-  margin: 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 1.5rem;
-  padding: 1rem 1rem;
-  grid-template-columns: 3fr 2fr;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.big-news-picture img {
+.headline-image img {
   width: 100%;
-}
-
-.big-news-text {
-  color: black;
-  font-family: Verdana;
-}
-
-/* Read more-Button */
-.read-more {
-  padding: 10px 25px;
-  margin-top: 20px;
-  font-family: Verdana;
-  font-weight: 500;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
-  color: black;
-  font-family: Verdana;
-}
-
-.read-more:after {
-  position: absolute;
-  content: "";
-  width: 0;
   height: 100%;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -1;
-  background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-}
-
-.read-more:hover {
-  color: rgb(0, 0, 0);
-}
-
-.read-more:hover:after {
-  left: auto;
-  right: 0;
-  width: 100%;
-}
-
-.read-more:active {
-  top: 2px;
-}
-
-/* Small News Section*/
-.small-news {
-  background-color: rgb(240, 240, 240);
-  color: black;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  text-align: center;
-  grid-gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.small-picture img {
-  -o-object-fit: cover;
+  margin: 0;
   object-fit: cover;
-  width: 100%;
-  height: 16rem;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-.small-text {
-  font-size: 1rem;
-  font-family: Verdana;
-}
-
-div {
+.main-article {
   display: block;
+  margin: 8% 4%;
+  max-width: 50%;
+  height: auto;
 }
 
-a {
+.main-article h1 {
+  font-size: h1;
+  color: black;
+}
+
+.main-article a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-article a:hover {
+  color: gray;
+}
+
+.main-article h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.main-article h1, h3 {
+  margin: 30px;
+}
+
+.headline button {
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  background-color: coral;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 20px;
+  color: white;
   text-decoration: none;
 }
 
-footer {
-  display: flex;
+.headline button a {
+  color: black;
+  text-decoration: none;
+}
+
+.headline button a:hover {
+  color: gray;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: 35px;
+  margin: 35px;
+}
+
+.news-grid {
+  margin: 80px 20px 20px 20px;
+  padding: 0 0 30px 0;
+  border: 1px solid white;
+  box-shadow: 1px 2px 50px gray;
+  background-color: white;
+}
+
+.news-grid p {
+  margin: 30px;
+  overflow: hidden;
+  color: gray;
+}
+
+.news-grid h1 {
   text-align: center;
-  background-color: black;
-  font-family: Verdana;
+}
+
+.news-grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.news-grid a:hover {
+  color: gray;
+}
+
+.grid-image {
+  max-width: 100%;
+  height: 300px;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.grid-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.news-grid p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.grid-button {
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  background-color: coral;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.grid-button a {
   color: white;
 }
 
-.made-by {
-  display: flex;
-  align-items: flex-end;
-  -moz-column-gap: 0.5rem;
-  column-gap: 0.5rem;
+.grid-button a:hover {
+  color: gray;
 }
 
-.made-by a {
-  color: white;
-  font-family: Verdana;
-  text-decoration: underline;
+.main-footer {
+  text-align: center;
+  background: gainsboro;
+  margin-top: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 15px;
 }
 
+/*Tablet Size*/
+@media (max-width: 1024px) {
+  .nav-bar {
+    flex-direction: column;
+  }
 
-* {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
+  .headline {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .headline-image {
+    max-width: 100%;
+  }
+
+  .headline-image img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .headline h1 {
+    text-align: left;
+  }
+
+  .headline button {
+    display: block;
+    margin: auto;
+  }
+
+  .main-article {
+    display: block;
+    margin: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container-grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid-image {
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .grid image img {
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
 
-@media (min-width: 1025px) {
-  footer {
-    padding: 2rem 6rem;
-    font-size: 1rem;
-  }}
+/*Mobile Size*/
+@media (max-width: 667px) {
+  .nav-bar {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .nav-bar .container-logo {
+    width: 100%;
+  }
+
+  .nav-link .nav-list {
+    display: block;
+  }
+
+  .nav-link {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  .logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: auto;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+  }
+
+  .headline {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .headline-image {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .headline-image img {
+    max-width: 100%;
+  }
+
+  .headline button {
+    display: block;
+    margin: auto;
+  }
+
+  .main-article {
+    max-width: 100%;
+    margin: 30px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .container-grid {
+    grid-template-columns: 100%;
+  }
+
+  .news-grid {
+    margin: 50px 0 50px 0;
+  }
+
+  .grid-image {
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .grid-image img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
