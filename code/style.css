@@ -49,22 +49,32 @@ h1 {
   margin: 0;
   padding: 20px;
   background-color: black;
-  
+  overflow:hidden;
   
 }
 
-li{
+.nav-container li{
   display:inline;
-  margin:10px;
-  padding: 100px;
+  margin:10px 100px;
+  padding: 10px;
   font-size: 30px;
   color: white;
+  float: left;
+}
+
+.nav-container input[type=text] {
+  float: right;
+  padding: 10px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 25px;
 }
 
 .big-news-box{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 50px 100px;
+  margin: 50px 70px;
   align-items: center;
   justify-items: center;
   background-color: black;
@@ -72,8 +82,8 @@ li{
   background-image: url("https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
   background-size:cover;
   object-fit: cover;
-  background-position:center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position:center;
+  background-repeat: no-repeat;
   
 }
 
@@ -89,11 +99,19 @@ li{
 .news-grid {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3.8rem;
   margin: 70px;
   align-items: center;
   justify-items: center;
-  word-wrap: break-word;
-  word-wrap: break-all;
+  
+
+  @media(max-width: 1140px) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+  @media(max-width: 768px) {
+  grid-template-columns: repeat(1, 1fr);
+}
   
    
 }
@@ -103,11 +121,14 @@ li{
   width: 500px;
   height: 500px;
   object-fit: cover;
-  /* justify-items: auto; */
+  
+  
 }
 
 .news-item-caption{
-  font-size: 22px;
+  font-size: 25px;
+  position:relative;
+  overflow:hidden;
   
   
 }
@@ -124,15 +145,15 @@ li{
 
 
 /*tablet*/
-@media (min-width: 667px) and (max-width: 1024px) {
+/* @media (min-width: 667px) and (max-width: 1024px) {
   .main-heading {
     color: red;
   }
-}
+} */
 
 /*desktop*/
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .main-heading {
     color: black;
   }
-}               
+}                */
