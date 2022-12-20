@@ -1,9 +1,5 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
 The task is to create a news site that is responsive to different screen sizes. 
 The site should contain: 
     -header
