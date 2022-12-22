@@ -46,6 +46,7 @@ body {
 
   .news-grid-item {
     grid-column: 1 / span 4; 
+    flex-direction: row;
   }
 
   .news-grid-item img {
@@ -77,8 +78,8 @@ body {
 
   .navbar-logo-tablet {
     display: inline-block;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
 
   .big-news {
@@ -95,6 +96,11 @@ body {
 
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .news-grid-item {
+    flex-direction: row;
   }
 
   .news-grid-item img {
@@ -130,6 +136,10 @@ body {
 
   .news-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .news-grid-item {
+    flex-direction: column;
   }
 
   .news-grid-item img {
@@ -223,7 +233,6 @@ body {
 
 .news-grid-item {
   display: flex;
-  flex-direction: row;
   border-top: 3px solid black;
   background: white;
   padding: 10px;
