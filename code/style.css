@@ -16,19 +16,47 @@ body {
   flex-direction: column;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 /* för telefoner  */
 @media (min-width: 0px) and (max-width: 767px) {
-  .navbar-links {
+  .navbar {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .navbar-links {   
+    display: none;
+  } 
+
+  .navbar-logo {
     display: none;
   }
 
-  .navbar-logo {
+  .navbar-logo-menu {
+    display: initial;
     width: 50px;
     height: 50px;
+    margin-left: auto;
   }
 
   .navbar-logo-tablet {
     display: none;
+  }
+
+  .menu-toggle {
+    display: initial;
+  }
+
+  #hamburger-menu-toggle-1 {
+    display: none;
+  }
+
+  #hamburger-menu-toggle-1:checked ~ .navbar-links {
+    display: flex;
+    justify-content: space-around;
   }
 
   .big-news {
@@ -59,6 +87,11 @@ body {
 /* för tablets */
 @media (min-width: 768px) and (max-width: 991px)
 {
+  .navbar {
+    flex-direction: row;
+    height: 50px;
+  }
+  
   .navbar-title {
     display: none;
   }
@@ -80,6 +113,14 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
+  }
+  
+  .navbar-logo-menu {
+    display: none;
+  }
+
+  #hamburger-menu-toggle-1 {
+    display: none;
   }
 
   .big-news {
@@ -112,6 +153,11 @@ body {
 
 /* för datorer och tablets på långsidan */
 @media (min-width: 992px) {
+  .navbar {
+    flex-direction: row;
+    height: 50px;
+  }
+  
   .navbar-logo {
     width: 5vw;
     height: 100%;
@@ -125,9 +171,22 @@ body {
     display: none;
   }
 
+  .navbar-links {
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .navbar-logo-menu {
+    display: none;
+  }
+
+  #hamburger-menu-toggle-1 {
+    display: none;
+  }
+
   .big-news-image img {
     border: 1px solid black;
-    height: 30vh;
+    height: 50vh;
   }
 
   .read-more {
@@ -147,31 +206,25 @@ body {
     height: 20vh;
   }
 
-  .navbar-links {
-    justify-items: center;
-    margin-left: auto;
-  }
+
 
 }
 
 
 .navbar {
   display: flex;
-  flex-direction: row;
-  height: 7vh;
   background: white;
   color: black;
-  justify-content: flex-start;
   padding: 10px;
   gap: 10px;
   margin-bottom: 10px;
   border-bottom: 3px solid black;
+  justify-content: space-around;
 }
 
 .navbar-logo-and-text {
   display: flex;
   align-content: flex-start;
-
 }
 
 .navbar-title {
@@ -181,6 +234,7 @@ body {
   align-self: center;
   justify-self: center;
 }
+
 
 .navbar-link {
   font-size: 2vw;
@@ -253,8 +307,11 @@ body {
 
 .news-grid-item:hover {
   background: pink;
-
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px lightgray;
+  cursor: pointer;
 }
+
 
 .title {
   font-weight: bold;

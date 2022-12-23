@@ -6,22 +6,25 @@
     <title>"EdNews"</title>
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <section class="navbar">
         <div class="navbar-logo-and-text">
           <img src="./assets/logo.jpg" alt="logo" class="navbar-logo">
-          <a class="flex-child navbar-title" href="#">"EdNews"</a>
-        </div>
-        <nav class="flex-child navbar-links">
-          <a class="navbar-link" href="#">news</a>
-          <a class="navbar-link" href="#">archive</a>
-          <img src="./assets/logo.jpg" alt="logo" class="navbar-logo-tablet">
-          <a class="navbar-link" href="#">about</a>
-          <a class="navbar-link" href="#">contact</a>
-        </nav>
+          <a class="navbar-title" href="#">"EdNews"</a>
+        <label class="button menu-toggle" data-menu-toggle for="hamburger-menu-toggle-1">
+          <img src="./assets/logo.jpg" alt="logo" class="navbar-logo-menu">
+        </label>
+      </div>
+        <input id="hamburger-menu-toggle-1" type="checkbox" />
+          <nav class="navbar-links">
+            <a class="navbar-link" href="#">news</a>
+            <a class="navbar-link" href="#">archive</a>
+            <img src="./assets/logo.jpg" alt="logo" class="navbar-logo-tablet">
+            <a class="navbar-link" href="#">about</a>
+            <a class="navbar-link" href="#">contact</a>
+          </nav>
       </section>
     </header>
 
