@@ -26,10 +26,18 @@ body {
     flex-direction: column;
     height: 100%;
   }
+
+  .navbar-logo-and-text {
+    justify-content: space-around;
+  }
   
   .navbar-links {   
     display: none;
   } 
+
+  .navbar-link a {
+    font-size: 14px;
+  }
 
   .navbar-logo {
     display: none;
@@ -103,6 +111,7 @@ body {
 
   .navbar-link {
     align-self: center;
+    font-size: 3vw;
   }
 
   .navbar-logo {
@@ -171,6 +180,9 @@ body {
     display: none;
   }
 
+  .navbar-link {
+    font-size: 2vw;
+  }
   .navbar-links {
     justify-content: center;
     margin-left: auto;
@@ -237,7 +249,6 @@ body {
 
 
 .navbar-link {
-  font-size: 2vw;
   padding: 10px;
   text-decoration: none;
   color: #000;
