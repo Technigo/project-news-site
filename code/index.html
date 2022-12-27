@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div class="nav-container">
-        <ul>
-          <li>News</li>
-          <li>Sports</li>
-          <li>Tech</li>
-          <li>World</li>
-          <li>Log In</li>
+      <nav class="navbar">
+        <!-- <img class="logo-image" src="https://cdn.pixabay.com/photo/2016/08/17/18/05/flower-of-life-1601163_960_720.png" /> -->
+        <div class="logo">Stockholm Times</div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle"/>
+          <label for="checkbox_toggle" class="hamburger">&#9776</label>
+          <div class="menu">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sports</a></li>            
+            <li><a href="#">Tech</a></li>
+            <li class="world">
+              <a href="#">World</a>
+              <ul class="dropdown">
+                <li><a href="#">Asia</a></li>
+                <li><a href="#">Africa</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">North America</a></li>
+                <li><a href="#">South America</a></li>
+              </ul>
+            </li>
+          </div>
         </ul>
-        <input type="text" placeholder="Search">
-      </div>
-      <div class="logo-container">
-        <h1 class="main-heading one">Stockholm</h1>
-        <img class="logo" src="https://cdn.pixabay.com/photo/2016/08/17/18/05/flower-of-life-1601163_960_720.png" />
-        <h1 class="main-heading two">Times</h1>
-      </div>
-      
-      
+        <input type="text" placeholder="Search" id="searchbar">
+      </nav>
+            
     </header>
 
     <!-- The big news content -->
@@ -61,12 +72,14 @@
       <!-- Sports  -->
       <section id="sports" class="news-grid">
         <div class="news-item">
-          <a target="_blank" href="https://www.bbc.com/sport/sports-personality/64027088"><img class="news-item-image" src="https://images.unsplash.com/photo-1671016233730-44258a88eb03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1133&q=80"></a>
+          <a target="_blank" href="https://www.bbc.com/sport/sports-personality/64027088">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1671016233730-44258a88eb03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1133&q=80">
+          </a>
           <a target="_blank" href="https://www.bbc.com/sport/sports-personality/64027088"><h3 class="news-item-caption">Lionel Messi named BBC World Sport Star of the Year</h3></a>
         </div>
         <div class="news-item">
           <a target="_blank" href="https://www.bbc.com/sport/tennis/63018231"><img class="news-item-image" src="https://images.unsplash.com/photo-1544298621-a28c00544483?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9nZXIlMjBmZWRlcmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></a>
-          <a target="_blank" href="https://www.bbc.com/sport/tennis/63018231"><h3 class="news-item-caption">Roger Federer hopes to 'party again together' with fans after retirement</h3></a>
+          <a target="_blank" href="https://www.bbc.com/sport/tennis/63018231"><h3 class="news-item-caption">Federer hopes to 'party again together' with fans after retirement</h3></a>
         </div>
         <div class="news-item">
           <a target="_blank" href="https://www.bbc.com/sport/cricket/64016092"><img class="news-item-image" src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"></a>
