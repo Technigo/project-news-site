@@ -1,4 +1,34 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+header{
+  background:#dfbf9f;
+}
+
+.logo{
+  width: 75px;
+  height: 75px;
+  }
+
+h1{
+  font-size:30px;
+  font-family: monaco;
+  }
+
+h2{
+  font-size: 15px;
+  font-family: monaco;
+  }
+
+.head-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,100px);
+  gap: 10px;
+}
+
+.head-child{
+  background: white;
+}
+
+.big-photo{
+  height: 300px;
 }
