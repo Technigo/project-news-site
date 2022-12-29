@@ -22,8 +22,9 @@ h1 {
   justify-content: space-between;
   margin: 0;
   padding: 20px;
-  background-color: black;
+  background-color:black;
   color:white;   
+  height:150px;
   
 }
 
@@ -35,11 +36,17 @@ h1 {
 
 .logo{
   font-size:35px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 900px;
+  text-align: left;
   
+  
+}
+
+.logo-image{
+  width:auto;
+  height: 150px;
+  margin-left: 0px;
 }
 
 .menu{
@@ -209,19 +216,18 @@ h1 {
 
 
 
-.news-item{
+/* .news-item{
   /* display: flex;
   align-items:center;
   justify-content:center;
   flex-direction: column;
    */
   
-  
+
   /* box-shadow: 5px 10px grey; */
   
   
   
-}
 
 .news-item a{
   display: flex;
@@ -244,20 +250,14 @@ h1 {
 }
 
 .news-item-image{
-  width: 300px;
-  height: 300px;
-  object-fit: cover; 
-  
-  
-  
-  
-    
+  width: 350px;
+  height: 350px;
+  object-fit: cover;       
 }
 
 .news-item-caption{
   font-size: 20px;
-  width: 300px;
-  /* margin-left: 50px; */
+  width: 350px;
   overflow:hidden;
   
   
