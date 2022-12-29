@@ -39,6 +39,7 @@ h1 {
   flex-wrap: wrap;
   padding-top: 15px;
   padding-bottom: 15px;
+  
 }
 
 .menu{
@@ -49,7 +50,7 @@ h1 {
 }
 
 .menu li{
-  padding:5px 15px;
+  padding:5px 40px;
   list-style: none;
 }
 
@@ -198,22 +199,35 @@ h1 {
 .news-grid {
   display:grid;
   grid-template-columns: 25% 25% 25% 25%;
-  margin: 100px 150px;
+  margin: 80px 0px;
   justify-content: space-evenly;
+  column-gap: 10px;
   
   
 }
-    
+  
+
 
 
 .news-item{
-  display: flex;
+  /* display: flex;
   align-items:center;
-  justify-content:baseline;
+  justify-content:center;
   flex-direction: column;
+   */
+  
+  
   /* box-shadow: 5px 10px grey; */
   
   
+  
+}
+
+.news-item a{
+  display: flex;
+  align-items:center;
+  
+  flex-direction: column;
   
 }
 
@@ -230,19 +244,21 @@ h1 {
 }
 
 .news-item-image{
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: cover; 
+  
+  
   
   
     
 }
 
 .news-item-caption{
-  font-size: 25px;
-  width: 350px;
-  position:relative;
-  /* overflow:hidden; */
+  font-size: 20px;
+  width: 300px;
+  /* margin-left: 50px; */
+  overflow:hidden;
   
   
   
