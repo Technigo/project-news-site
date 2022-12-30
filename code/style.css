@@ -1,31 +1,31 @@
 
 header{
-  background:#5e4934;
-  border: 5px solid #ffe5cc;
+  background:#32cdcd;
+  border: 5px solid #4d2600;
 }
 
 .header-parent{
   display: grid;
   gap: 10px;
-  grid-template-columns: 10% 40% 40%;
+  grid-template-columns: 20% 35% 35%;
   grid-template-rows: [row1-start] 70% [row1-end] 30%;
 }
   
 .header-child{
   display: grid;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px #0f3e3e;
   }
 
 .icon{
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
   }
 
 .icon-img{
   width: 50%;
-  border: 5px solid #ffe5cc;
+  border: 5px solid #4d2600;
   border-radius: 25%;
   place-self: center;
   }
@@ -37,17 +37,17 @@ header{
 }
 
 h1{
-  font-family: monaco;
-  color: #ffe5cc;
+  font-family: 'Amita';
+  color: #d6f5f5;
   font-size: 50px;
   margin: 0;
   padding: 0;
 }
 
 h2{
-  font-family: monaco;
-  color: #ffe5cc;
-  font-size: 15px;
+  font-family: 'Amita';
+  color: #d6f5f5;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
@@ -55,14 +55,14 @@ h2{
 
 .navbar{
   grid-row: 2/3;
-  grid-column: 1/3;
+  grid-column: 2/3;
   }
 
 ul{
   list-style-type:none;
-  font-family: monaco;
-  color: #ffe5cc;
-  font-size: 15px;
+  font-family: 'Amita';
+  color: #d6f5f5;
+  font-size: 18px;
   padding: 0;
   margin:0;
 }
@@ -72,8 +72,8 @@ li{
 }
 
 li a {
-  margin: 10px 15px;
-  color: #ffe5cc;
+  margin: 5px 15px;
+  color: #d6f5f5;
 }
 
 a:link {
@@ -81,7 +81,7 @@ a:link {
  }
 
 a:hover {
-  color: lightblue;
+  color: #4d2600;
 }
 
 .search{
@@ -91,8 +91,8 @@ a:hover {
   }
 
 input[type=text] {
-  font-family: monaco;
-  border: 5px solid #ffe5cc;
+  font-family: 'Amita';
+  border: 5px solid #4d2600;
   border-radius: 5px;
   margin-bottom: 20px;
   width: 100%;
