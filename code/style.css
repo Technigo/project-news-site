@@ -24,7 +24,7 @@ h1 {
   padding: 20px;
   background-color:black;
   color:white;   
-  height:150px;
+  height:100px;
   
 }
 
@@ -35,17 +35,17 @@ h1 {
 }
 
 .logo{
-  font-size:35px;
+  font-size:30px;
   padding-left: 0px;
   padding-right: 900px;
   text-align: left;
-  
+    
   
 }
 
 .logo-image{
   width:auto;
-  height: 150px;
+  height: 100px;
   margin-left: 0px;
 }
 
@@ -155,28 +155,44 @@ h1 {
   font-size: 15px; 
 } 
 
-.big-news-box{
+.big-news-box a{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 50px 200px;
-  align-items: center;
-  justify-items: center;
-  background-color: black;
+  /* align-items: center;
+  justify-items: center; */
+  /* background-color: black; */
   height: 800px;
-  background-image: url("https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
-  background-size:cover;
-  object-fit: cover;
-  background-position:center;
-  background-repeat: no-repeat;
   
   
+  position: relative;
+    
 }
 
+.big-news-image{
+  width:100%; 
+  height:800px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+ 
+}
+
+
+
 .big-news-title {
-  color:whitesmoke;
+  color:red;
   font-size: 70px;
-  margin:50px;
-  align-self:flex-end;
+  position: absolute;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  align-self: end;
+  
+  
+  
+  
+  
+  
+  
 }
 
 .subheading{
@@ -249,6 +265,10 @@ h1 {
   border: 1px solid #0066FF; 
 }
 
+.big-news-box:hover {
+  border: 1px solid palevioletred;
+}
+
 .news-item-image{
   width: 350px;
   height: 350px;
@@ -256,13 +276,16 @@ h1 {
 }
 
 .news-item-caption{
-  font-size: 20px;
+  font-size: 28px;
   width: 350px;
   overflow:hidden;
-  
-  
-  
-  
+  font-weight:bold;
+}
+
+.news-item-text{
+  width:350px;
+  font-size: 25px;
+  margin-top: 10px;
 }
 
 .footer{
