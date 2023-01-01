@@ -4,19 +4,27 @@
     <meta charset="utf-8" />
     <title>The Void</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/code/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
-      <figure>
-        <img src="/code/logo.svg" alt="logotype" style="width: 30px" />
-      </figure>
+      <h2>THE VOID</h2>
+      <a class="toggle-nav" onclick="toggleNavigation()">
+        <i class="fa fa-bars"></i>
+      </a>
       <!-- Some kind of logo and navbar -->
-      <nav>
+      <nav role="navigation" class="navigation toggle-visibility">
         <ul>
-          <li>About</li>
-          <li>Gadgets</li>
-          <li>Contact</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gadgets</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -25,10 +33,14 @@
       <section class="main-news">
         <!-- The big main content -->
         <div>
-          <img src="./assets/images/galaxy.jpg" alt="picture from space" />
+          <img
+            class="main-image"
+            src="./assets/images/galaxy.jpg"
+            alt="picture from space"
+          />
         </div>
         <div>
-          <h2>Get Into Space</h2>
+          <h1>Get Into Space</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
@@ -103,7 +115,7 @@
       </section>
 
       <section class="fun-facts">
-        <div>
+        <div class="item item-a">
           <img src="./assets/images/moon-trees.jpg" alt="space photo" />
           <p>
             Lorem ipsum dolor sit amet consectetur. Vitae hendrerit diam augue
@@ -128,7 +140,7 @@
             pellentesque cras tristique pellentesque justo senectus.
           </p>
         </div>
-        <div>
+        <div class="item item-b">
           <img src="./assets/images/space-photo.jpg" alt="space photo" />
           <p>
             Lorem ipsum dolor sit amet consectetur. Vitae hendrerit diam augue
@@ -157,6 +169,8 @@
     </main>
     <footer>
       <h3>Let Our Adventure Begin</h3>
+      <p>🚀</p>
     </footer>
   </body>
+  <script src="/code/scripts.js"></script>
 </html>
