@@ -8,20 +8,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Literata:opsz,wght@7..72,500&display=swap" rel="stylesheet">
   </head>
+  
   <body>
-    <header>
-      <nav>
-      <h1>Daily Mews</h1>
-      <!-- Some kind of logo and navbar -->
-        <li>
-        <ul>news</ul>
-        <ul>editorial</ul>
-        <ul>lifestyle</ul>
-        <ul>culture</ul>
-      </li>
-    </nav>
-    </header>
 
+    <!-- Logo and navbar -->
+   <header>
+    <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="burger-menu">
+        <img src="./hamburger.png" alt="menu icon">
+      </label>
+      <div class="logo">
+      <img src="./logo.svg" alt="logo of a cat footprint">
+      </div>
+      <div class ="site-name">
+        <h1>Daily Mews</h1>
+      </div>
+          <ul class="navbar">
+            <li><a href="#">news</a></li>
+            <li><a href="#">editorial</a></li>
+            <div class="logo-navbar"><img src="./logo.svg"></div>
+            <li><a href="#">lifestyle</a></li>
+            <li><a href="#">culture</a></li>
+         </ul>
+  </header>
+
+  <!-- Big news -->
     <section class="big-news">
       <div class="articleimg">
       <img src="https://vioszabo.se/nappin200px.jpg" alt="cat looking up from an empty bowl">
@@ -32,6 +43,7 @@
       </div>
     </section>
 
+    <!--Other news-->
     <section class="grid-container">
       <div class="news-item item1">
         <div class="articleimg">

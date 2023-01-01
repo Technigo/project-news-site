@@ -1,74 +1,86 @@
+*, 
+*:before, 
+*:after { 
+  box-sizing: border-box; 
+}
+
 html {
   background: #a6a8b3;
   color: #000000;
+  font-family: 'Arimo', sans-serif;
 }
-@media (min-width: 667px) and (max-width: 1024px) {
-  h1, h2, h3 {
-    font-size: 80%;
-  }
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px; 
-  }
-  img {
-    width: 40%
-  }
-  .text-wrapper {
-    margin-left: 5px;
-  }
-  p {
-    font-size: 80%;
-  } 
-}
-@media (min-width: 1024px) {
-  h2, h3 {
-    font-size: 100%;
-  }
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
-    background-color: purple;
-  }
-  img {
-    width: 100%;
-  }
-  .text-wrapper {
-    margin-left: 10px;
-  }
-  p {
-    font-size: 100%;
-  }
-}
-.grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
+
 h1 {
   font-family: 'Literata', serif;
   font-size: 300%;
   margin: 0;
 }
+
 h2, h3 {
   font-family: 'Literata', serif;
   margin: 0
 }
-.news-item {
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+font-variant: small-caps;
+list-style: none;
+}
+
+
+/* || Menu and navbar */
+
+header {
   display: grid;
-  gap: 10px;
-  padding: 10px;
-  background-color:antiquewhite;
+  grid-template-columns: 1fr 1fr;
 }
-.articleimg {
-  display: flex;
-  flex-direction: row;
+
+.navbar,
+.site-name,
+.logo-navbar {
+  display: none;
+  }
+
+.logo {
+  grid-row: 1;
+  grid-column: 1;
+  max-width: max-content;
 }
+
+.burger-menu {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: right;
+  align-self: center;
+}
+
+ ul {
+  font-size: 200%;
+ }
+
+  #nav-toggle:checked ~ .navbar {
+    display: block;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    background-color: aliceblue;
+    padding: 2em;
+    margin: 2em;
+    justify-self: right;
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+  
+/* || Big news */
+
 .big-news {
   background-color: blue;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
 }
 
 .text-wrapper {
@@ -77,20 +89,130 @@ h2, h3 {
   align-items: flex-start;
   margin-left: 20px;
 }
-nav {
+
+/* || Other news */
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.news-item {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  gap: 10px;
+  padding: 10px;
+  background-color:antiquewhite;
+  max-width: 667px;
 }
-li {
+
+.articleimg {
   display: flex;
-  flex-wrap: wrap;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
-ul {
-  font-family: 'Arimo', sans-serif;
-  font-variant: small-caps;
+
+/* || Tablet */ 
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  
+h1, h2, h3, p {
+    font-size: 80%;
+  }
+
+.logo,
+.site-name,
+.burger-menu,
+#nav-toggle {
+    display: none;
+  }
+
+.logo-navbar {
+  display: contents;
 }
-p {
-  font-family: 'Arimo', sans-serif;
-  font-size: 80%
+
+header {
+  display: grid;
+  height: 120px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  align-items: center;
+  justify-items: space-around;
+}
+
+.navbar {
+  display: contents;
+  font-size: 150%;
+  list-style: none;
+  gap: 1em;
+}
+
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+.article-img {
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 50%
+  }
+  
+.text-wrapper {
+    margin-left: 1.5em;
+  }
+
+}
+
+/* || Desktop */
+
+@media (min-width: 1025px) { 
+  h2, h3 {
+    font-size: 100%;
+  }
+
+  #nav-toggle, 
+  .burger-menu,
+  .logo-navbar {
+    display: none;
+  }
+  
+header {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+  }
+
+.site-name {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+
+}
+
+.navbar {
+    height: 100px;
+    display: contents;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: purple;
+  }
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .text-wrapper {
+    margin-left: 10px;
+  }
+  p {
+    font-size: 100%;
+  }
 }
