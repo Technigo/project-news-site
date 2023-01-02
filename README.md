@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The task was to create a classic magazine or newspaper site, using Flexbox and CSS Grid. The also needed to be responsive, being user frindly both from devices such as; mobile, tablet and desktop.
 
 ## The problem
 
