@@ -1,22 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamster News of the World</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header class="nav-container">
+      <div class="header-image">
+        <img src="images/hamster_logo.png" class="header-logo" alt="Hamster logo">
+      
+        <div class="header-text">
+          <h1>Hamster News of the World</h1>
+        </div>
+      </div>
+
+      <div class="header-navbar">
+        <ul class="navbar">
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+          <li ><a href="about.asp">About</a></li>
+        </ul>
+      </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <section class="main-section">
+      <section class="big-news-section">
+        <div class="big-news news-image">
+          <img src="images/hamster_image.png" alt="Hamster">
+        </div>
+  
+        <div class="big-news nyhet-text">
+          <div class="date-stamp">
+            <p>Added <time datetime="2022-08-06">July 8th 2022</time></p>
+          </div>
+            <h1>Latest news flash: Winter white dwarf hamster "Dolly" gave birth to 30 pups</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum dignissim sapien a sagittis cursus. Vestibulum tristique accumsan velit,
+              tincidunt volutpat neque feugiat id. Suspendisse accumsan ante id dui lacinia,
+              id ultrices quam varius. Nunc consequat condimentum urna. Aliquam nec diam luctus,
+              ullamcorper lectus a, imperdiet quam. Nulla sed porta eros, ut luctus lorem.
+              Ut scelerisque ex a semper condimentum...</p>
+        </div>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
+      <section class="tiny-news-section">
+        <div class="tiny-news-wrapper">
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/cage.png" alt="Cage">
+            <p>Big test: Fun cages for your hamster to thrive in</p>
+          </div>
+
+          <div class="tiny-news">
+            <img class="tiny-news-image" src="images/hamster_food.png" alt="Hamster eating from a palm">
+              <p>Are you over feeding you hamster? These are the signs!</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class="tiny-news-image" src="images/water_dispenser.png" alt="Water dispenser">
+            <p>The best water dispensers for hot summer days</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/hamster_wheel.png" alt="Hamster wheel">
+            <p>Interview with the vet: Will your hamster wheel create back injuries?</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/medal.png" alt="Gold medal">
+            <p>Our readers have voted: This is the all time favourite hamster species!</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/zoo.png" alt="Zoo">
+            <p>Roborovski hamster "Marie Antionette" on the run</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/question_mark.png" alt="question_mark">
+            <p>What to name your hamster? We got the perfect names to chose from!</p>
+          </div>
+  
+          <div class="tiny-news">
+            <img class=tiny-news-image src="images/startup.png" alt="Space ship">
+            <p>Finally - first hamster in space</p>
+          </div>
+        </div>
+  
+      </section>
     </section>
   </body>
 </html>
