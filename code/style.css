@@ -7,7 +7,7 @@
 h1 {
   text: verdana;
   font-style: italic;
-  color: rgb(192, 43, 43);
+  color: rgb(105, 29, 171);
   font-size:x-large;
   margin-left: 30px;
   display: flex;
@@ -15,55 +15,89 @@ h1 {
 }
 
 nav {
-    width: 100%;
-    height: 16vh;
-    background-color: #f6eb47;
-    display:inline-flex;
-    padding: 10px 10px 10px 10px;
+  width: 100%;
+  height: 16vh;
+  background-color: #E8F3F5;
+  display:inline-flex;
+  padding: 10px 10px 10px 10px;
+  justify-content: flex-end;
 }
 
 img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
   cursor: pointer;
-  margin: 0px;
+  display: block;
 }
 
-
-.list {
-  display:flex;
-  justify-content:right;
-  list-style:none;
-  align-items:center;
-  font-size: 30px;
-  font-style: verdana;
+li, a, button {
+font-family: verdana;
+font-weight: 500;
+font-size: 16px;
+color:rgb(125, 47, 202);
+text-decoration: none;
 }
 
-
-a {
-  text-decoration:none;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content:space-evenly;
+.nav_links {
+  list-style: none;
 }
 
-.cta {
-  text-decoration: none;
-  font-size: 20px;
-  font-style: verdana;
+.nav_links li {
+  display: inline-block;
+  padding: 30px 20px;
+}
+
+.nav_links li a {  
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: rgb(224, 14, 171);
+}
+
+button {
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
+  background-color:rgba(183, 185, 207,1)
+} 
+
+button:hover {
+  background-color:rgba(183, 185, 207, 0.8)
 }
 
-
-.flex-parent {
+.flex-parent-logo {
   border: 10px solid white;
   display: flex;
   height: 80px;
   width: 320px;
+  margin-right: auto;
 }
 
 .flex-child-image {
   width: auto;
   height:auto;
 }
+
+.flex-parent-list {
+ display: flex;
+ list-style: none;
+}
+
+.grid-parent-big-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.grid-parent-other-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+}
+
+
+
