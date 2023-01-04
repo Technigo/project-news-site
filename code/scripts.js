@@ -3,4 +3,5 @@ let navigationBtn = document.querySelector(".toggle-nav");
 
 function toggleNavigation() {
   navigation.classList.toggle("toggle-visibility");
+  navigation.classList.toggle("mobile-nav");
 }
