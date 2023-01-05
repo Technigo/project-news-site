@@ -1,4 +1,45 @@
 html {
   background: #0025ff;
-  color: #fff;
+  color: black;
 }
+
+@media (min-width: 668px){
+  body {
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: red;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    gap: 15px;
+    
+  }
+
+  .grid-item {
+    background: pink;
+  }
+
+  .grid-header {
+    grid-column: span 4;
+  }
+
+  .grid-big-news {
+    grid-column: span 4;
+  }
+
+  .grid-other-news {
+  }
+}
+
