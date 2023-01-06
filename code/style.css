@@ -1,11 +1,5 @@
-*, 
-*:before, 
-*:after { 
-  box-sizing: border-box; 
-}
-
 html {
-  background: #a6a8b3;
+  background: #D0C4C4;
   color: #000000;
   font-family: 'Arimo', sans-serif;
 }
@@ -18,7 +12,8 @@ h1 {
 
 h2, h3 {
   font-family: 'Literata', serif;
-  margin: 0
+  margin: 0;
+  line-height: 90%;
 }
 
 a {
@@ -37,6 +32,8 @@ list-style: none;
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
 }
 
 .navbar,
@@ -48,14 +45,11 @@ header {
 .logo {
   grid-row: 1;
   grid-column: 1;
-  max-width: max-content;
 }
 
 .burger-menu {
   grid-column: 2;
   grid-row: 1;
-  justify-self: right;
-  align-self: center;
 }
 
  ul {
@@ -65,77 +59,80 @@ header {
   #nav-toggle:checked ~ .navbar {
     display: block;
     grid-row-start: 2;
-    grid-column-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: aliceblue;
-    padding: 2em;
-    margin: 2em;
-    justify-self: right;
+    padding: 20px;
+    width: 100%;
   }
 
   #nav-toggle {
     display: none;
   }
-  
+
 /* || Big news */
 
 .big-news {
-  background-color: blue;
-  display: grid;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin: 0;
 }
 
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 20px;
+.big-news img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 1em;
 }
+
 
 /* || Other news */
 
 .grid-container {
   display: grid;
   gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
-.news-item {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-  background-color:antiquewhite;
-  max-width: 667px;
+.news-item,
+.item1 {
+background-color: white;
+padding: 1em;
+padding-bottom: 4em;
+padding-top: 3em;
 }
 
-.articleimg {
-  display: flex;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+.news-item img,
+.item1 img {
+ display: block;
+ max-width: 100%;
+ padding-bottom: 1em;
 }
 
-/* || Tablet */ 
+
+
+/* || Tablet */
 
 @media (min-width: 668px) and (max-width: 1024px) {
   
-h1, h2, h3, p {
-    font-size: 80%;
+h2, h3 {
+    line-height: 100%;
   }
 
 .logo,
 .site-name,
 .burger-menu,
-#nav-toggle {
+#nav-toggle,
+#nav-toggle:checked ~ .navbar {
     display: none;
   }
-
 .logo-navbar {
   display: contents;
 }
 
 header {
   display: grid;
-  height: 120px;
+  height: 80px;
   width: 100%;
   grid-template-columns: 1fr 1fr auto 1fr 1fr;
   align-items: center;
@@ -149,45 +146,57 @@ header {
   gap: 1em;
 }
 
+
 .grid-container {
+  display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1.5em;
-    gap: 1.5em;
+    gap: 2em;
   }
 
-.article-img {
-    object-fit: contain;
-    max-width: 100%;
-    min-width: 50%
-  }
-  
-.text-wrapper {
-    margin-left: 1.5em;
-  }
+/* || Item 1 */
+
+.item1 {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  padding-bottom: 2em;
+}
+
+.item1 img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 1em;
+}
+
+.text-wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
 
 }
 
-/* || Desktop */
+ /* || Desktop */
 
 @media (min-width: 1025px) { 
-  h2, h3 {
-    font-size: 100%;
-  }
 
-  #nav-toggle, 
-  .burger-menu,
-  .logo-navbar {
-    display: none;
-  }
-  
-header {
+  header {
     display: grid;
     grid-template-columns: auto 2fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-
   }
 
+  #nav-toggle, 
+  .burger-menu,
+  .logo-navbar,
+  #nav-toggle:checked ~ .navbar {
+    display: none;
+  }
+  
 .site-name {
   display: block;
   grid-column: 2;
@@ -202,17 +211,22 @@ header {
 
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
-    background-color: purple;
+    grid-template-rows: 1fr repeat(1fr);
+    gap: 2em;
   }
-  img {
-    max-width: 100%;
-    object-fit: cover;
+
+  .item1 {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    padding-bottom: 2em;
   }
-  .text-wrapper {
+
+  .text-wrapper,
+  .text-wrapper-1 {
     margin-left: 10px;
-  }
-  p {
-    font-size: 100%;
-  }
+  }  
 }
