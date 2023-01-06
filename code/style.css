@@ -3,12 +3,6 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -47,8 +41,8 @@ p {
 }
 
 .logo {
-  width: 10%;
-  padding: 1.25rem;
+  width: 7%;
+  padding: 1rem;
 }
 
 .nav-toggle {
@@ -161,4 +155,10 @@ footer li a, footer p {
 
 footer h3 { 
   padding: 1rem; 
+}
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+  .big-news, .other-news {
+    grid-template-columns: 1fr 1fr;
+  }
 }
