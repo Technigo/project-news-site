@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <!-- <img class="logo-image" src="s-logo.jpg"/> -->
-        <div class="logo">
-          Stockholm
-          <br>
-          Times
+        <div class="logo-container">
+          <img class="logo-image" src="s-logo.jpg"/> 
+          <div class="logo">
+            Stockholm
+            <br>
+            Times
+          </div>
         </div>
         <ul class="nav-links">
           <input type="checkbox" id="checkbox_toggle"/>
           <label for="checkbox_toggle" class="hamburger">&#9776</label>
           <div class="menu">
-            <li><a href="#">News</a></li>
-            <li><a href="#">Sports</a></li>            
-            <li><a href="#">Tech</a></li>
+            <li><a href="#other-news">News</a></li>
+            <li><a href="#sports">Sports</a></li>            
+            <li><a href="#tech">Tech</a></li>
             <li class="world">
               <a href="#">World</a>
               <ul class="dropdown">
@@ -57,8 +59,8 @@
 
     <section class="grid-container">
     <!-- Other news  -->
-    <h2 class="subheading">News</h2>
-      <section id="other-news" class="news-grid">
+    <h2 class="subheading" id="other-news">News</h2>
+      <section class="news-grid">
         <div class="news-item">
           <a target="_blank" href="https://www.bbc.com/news/world-asia-china-64102176"> 
             <img class="news-item-image" src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
@@ -92,8 +94,8 @@
 
       
       <!-- Sports  -->
-      <h2 class="subheading">Sports</h2>
-      <section id="sports" class="news-grid">
+      <h2 class="subheading" id="sports">Sports</h2>
+      <section class="news-grid">
         <div class="news-item">
           <a target="_blank" href="https://www.bbc.com/sport/sports-personality/64027088">
             <img class="news-item-image" src="https://images.unsplash.com/photo-1671016233730-44258a88eb03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1133&q=80">
@@ -124,8 +126,8 @@
       </section>
 
       <!-- Tech  -->
-      <h2 class="subheading">Tech</h2>
-      <section id="tech" class="news-grid">
+      <h2 class="subheading" id="tech">Tech</h2>
+      <section class="news-grid">
         <div class="news-item">
           <a target ="_blank" href="https://www.bbc.com/news/business-64099654">
             <img class="news-item-image" src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
