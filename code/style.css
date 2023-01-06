@@ -1,4 +1,55 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #FFFFFF;
 }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 10px);
+  background: #87A5F7;
+  color: #0D1837;
+  border-bottom: #275DF1 solid 5px;
+  padding: 10px;
+
+}
+.logo {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  max-width: 65px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+  border: #0B35A8 solid 2px;
+  border-radius: 50%;
+}
+h1 {
+  font-size: 20px;
+  grid-column: 2 / 4;
+  grid-row-start: 4;
+
+}
+.topnav {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+ul {
+  list-style-type: none;
+  width: 50px;
+  margin: 5px;
+}
+ul li {
+  margin: 2px;
+}
+
+a {
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
