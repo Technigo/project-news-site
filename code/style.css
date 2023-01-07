@@ -44,7 +44,7 @@ header h2 {
   padding-left: 2rem;
 }
 
-header a{
+header a {
   padding-right: 2rem;
 }
 nav {
@@ -53,19 +53,17 @@ nav {
   padding: 2rem 0;
 }
 
-.mobile-nav{
+.mobile-nav {
   display: block;
-    position: absolute;
-    z-index: 999;
-    margin-top: 18rem;
-    right: 0;
-    height: 15rem;
-    max-height: 20rem;
-    max-width: 12rem;
-    text-align: right;
-    background: black;
-  
-
+  position: absolute;
+  z-index: 999;
+  margin-top: 18rem;
+  right: 0;
+  height: 15rem;
+  max-height: 20rem;
+  max-width: 12rem;
+  text-align: right;
+  background: black;
 }
 li {
   padding-top: 0.5rem;
@@ -77,7 +75,6 @@ li a {
 }
 
 .main-news {
-  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -222,8 +219,7 @@ footer p {
 }
 
 @media screen and (min-width: 1000px) {
-
-  .main-news{
+  .main-news {
     flex-direction: row;
     margin: 2rem;
   }
@@ -233,7 +229,7 @@ footer p {
     height: auto;
   }
 
-  h1{
+  h1 {
     margin-top: 3rem;
   }
 
