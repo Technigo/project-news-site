@@ -56,9 +56,10 @@ text-decoration: none;
 }
 
 button {
-  padding: 30px;
+  padding: 10px 24px;
   border: none;
   border-radius: 10px;
+  margin-top: 20px;
   cursor: pointer;
   background-color:rgba(183, 185, 207,1)
 } 
@@ -88,8 +89,26 @@ button:hover {
 .grid-parent-big-news {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  gap: 10px;
+  grid-template-rows: 150px 5px 5px 5px;
+  gap: 100px;
+  align-items: center;
+  border: 5px solid rgb(100, 132, 169);
+  padding: 20px;
+}
+
+.grid-item-big-img {
+  object-fit: cover;  
+  max-width: 100%;
+  aspect-ratio: 1 / 1.2;
+}
+
+.card__description {
+  font-size: 15px;
+  font-family: Verdana;
+}
+
+.card-text {
+  font-family: verdana;
 }
 
 .grid-parent-other-news {
@@ -97,7 +116,22 @@ button:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 73vh;
+  background-color:#E8F3F5;
+  
 }
 
+.grid-item-card {
+  border: 5px solid rgb(100, 132, 169);
+}
 
+.grid-item-card img {
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+
+}
 
