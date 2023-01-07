@@ -77,3 +77,21 @@ color:aliceblue;
 .grid-item {
   padding: 10px;
 }
+
+@media (max-width: 667px) {
+  .grid-parent {
+    grid-template-columns: 1fr;
+  }
+  .big-news img {
+    width: 100%;
+  }
+  .big-news {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .grid-parent {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
