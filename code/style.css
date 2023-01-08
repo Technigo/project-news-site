@@ -3,22 +3,48 @@ html {
   color: black;
 }
 
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*MEDIA QUERY FÖR MOBIL-STORLEK*/
+@media (max-width:667px){
+  body {
+    text-align: left;
+    background: lightgoldenrodyellow;
+  }
+
+  .grid.parent {
+    display: grid;
+    grid-template-columns: 1 fr; 
+    grid-template-rows: repeat(8, 100px);
+  }
+
+}
+
+/*MEDIA QUEARY FÖR TABLET-STORLEK*/
 @media (min-width: 668px){
   body {
     text-align: left;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: red;
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(8, 150px);
+    gap: 15px;
+  }
+
+  .grid-item {
+    background: lightseagreen;
   }
 }
 
-
+/*MEDIA QUEARY FÖR DESKTOP*/
 @media (min-width: 1024px) {
 
-  body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
+  
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
