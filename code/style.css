@@ -5,33 +5,28 @@ html {
 
 body {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
 @media (max-width:667px){
-  body {
-    text-align: left;
+  .grid-parent {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(10, 100px);
+    gap: 15px;
+  }
+
+  .grid-item{
     background: lightgoldenrodyellow;
   }
-
-  .grid.parent {
-    display: grid;
-    grid-template-columns: 1 fr; 
-    grid-template-rows: repeat(8, 100px);
-  }
-
 }
 
 /*MEDIA QUEARY FÖR TABLET-STORLEK*/
 @media (min-width: 668px){
-  body {
-    text-align: left;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
   .grid-parent {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 150px);
     gap: 15px;
   }
@@ -39,18 +34,25 @@ body {
   .grid-item {
     background: lightseagreen;
   }
+
+  .grid-header{
+    grid-column: span 2;
+  }
+
+  .grid-big-news{
+    grid-column: span 2;
+  }
+
 }
 
 /*MEDIA QUEARY FÖR DESKTOP*/
 @media (min-width: 1024px) {
-
   
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 150px);
     gap: 15px;
-    
   }
 
   .grid-item {
