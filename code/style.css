@@ -1,4 +1,62 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/*project-news-site*/
+
+.navbar {
+  background-color: var(--primary-bg-color);
+}
+
+.navbar a {
+  color: var(--primary-text-color);
+}
+
+.navbar a:hover {
+  background-color: var(--secondary-bg-color);
+  border-radius: 20px;
+  text-decoration: underline;
+}
+
+.logo-nav {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/*.link {
+  color: var(--primary-text-color);
+  transition: all 200ms ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.fa-linkedin {
+  display: flex;
+  font-size: 38px;
+  justify-content: left;
+  color: #0270ad;
+  padding-left: 25px;
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
+}
+
+.fa-github {
+  display: flex;
+  font-size: 38px;
+  justify-content: left;
+  color: var(--primary-text-color);
+  padding-left: 25px;
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
+}*/
+
+footer .logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.footer-container {
+  padding-top: 100px;
+  margin: 0 auto;
 }
