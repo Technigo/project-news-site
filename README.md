@@ -1,8 +1,9 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+Assignment: To create a classic magazine or newspaper site with an extensive news section and a grid of cards with other news. The name of the site should be in a header, there should be a logo, and a navbar and the site should be responsive whether the page is viewed from a mobile device, tablet, or desktop. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This site mimics a classic magazine about the best animals in the world: Cats. The site contains interesting facts, tips for pet ownership, and quotes pertaining to cats. 
+
 
 ## The problem
 
