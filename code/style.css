@@ -1,4 +1,107 @@
+@import url(https://fonts.google.com/share?selection.family=Josefin%20Sans:ital,wght@0,200;0,300;0,400;1,200;1,410;1,500;1,600);
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: lightcyan;
+  color: black;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+body {
+  background-color: lightcoral;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  min-height: 50px;
+  background-color: aqua;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 8px;
+  width: 30%;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item:hover a {
+  color: #f386a3;
+}
+
+/* not attendet to yet */
+
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: lighter;
+  color: purple;
+  text-align: center;
+}
+
+.big-news {
+  display: grid;
+  grid-template-rows: (1rem, 2rem, 1rem);
+  grid-gap: auto;
+}
+
+
+/* from old */
+@media (min-width: 668px) and (max-width: 1024px) {
+  body{
+      flex-direction: row;
+      background: peru;
+      flex-wrap: wrap;
+  }
+  img {
+      width: 40%;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+      flex-direction: row;
+      background: palevioletred;
+  }
+
+  img {
+      width: 40%;
+  }
 }
