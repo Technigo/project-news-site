@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,6 +41,11 @@ text-decoration: none;
 
 .nav_links {
   list-style: none;
+}
+
+.nav_links > li {
+  margin: 0 1rem;
+  overflow: hidden;
 }
 
 .nav_links li {
@@ -94,34 +100,38 @@ button:hover {
   align-items: center;
   border: 5px solid rgb(100, 132, 169);
   padding: 20px;
+  overflow: hidden;
 }
 
-.grid-item-big-img {
-  object-fit: cover;  
+.grid-item-big-card-img {
+  display: block;
   max-width: 100%;
-  aspect-ratio: 1 / 1.2;
+}
+
+.card__title {
+  font-family: verdana;
+  margin-top: 180px;
 }
 
 .card__description {
-  font-size: 15px;
   font-family: Verdana;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.card-text {
+p {
   font-family: verdana;
-}
+}  
 
 .grid-parent-other-news {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  gap: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  width: 100%;
-  height: 73vh;
-  background-color:#E8F3F5;
+    display: grid;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 73vh;
+    background-color:#E8F3F5;
   
 }
 
@@ -135,3 +145,25 @@ button:hover {
 
 }
 
+footer {
+  position: aboslute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+}
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .grid-parent-other-news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+@media (min-width: 1025px) {
+  .grid-parent-other-news {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+  
