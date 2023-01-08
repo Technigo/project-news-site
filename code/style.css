@@ -14,7 +14,7 @@ body {
 nav {
   width: 100%;
   min-height: 50px;
-  background-color: aqua;
+  background-color: #ffff;
 }
 
 .navbar {
@@ -53,24 +53,46 @@ nav {
 
 .nav-item:hover a {
   color: #f386a3;
+  font-weight: 500;
 }
 
-/* not attendet to yet */
-
-
-h1 {
-  font-style: italic;
-  font-size: 24px;
-  font-weight: lighter;
-  color: purple;
-  text-align: center;
-}
+/* big news articel */
 
 .big-news {
-  display: grid;
-  grid-template-rows: (1rem, 2rem, 1rem);
-  grid-gap: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#47bfb1;
+  margin: 0 8px 8px;
+  padding: 0 0 10px;
 }
+
+.big-img {
+  width: 90%;
+  padding: 10px 10px
+}
+
+h1 {
+  width: 65%;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
+.big-text {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
 
 
 /* from old */
