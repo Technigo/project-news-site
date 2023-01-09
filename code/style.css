@@ -17,9 +17,11 @@ body {
     gap: 15px;
   }
 
-  .grid-item{
+  .grid-item {
     background: lightgoldenrodyellow;
   }
+
+  
 }
 
 /*MEDIA QUEARY FÖR TABLET-STORLEK*/
@@ -68,6 +70,19 @@ body {
   }
 
   .grid-other-news {
+  }
+
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .company-name{
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
   }
 }
 
