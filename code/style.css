@@ -77,12 +77,25 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
+  header a {
+    text-decoration: none;
+  }
+
   .company-name{
     font-weight: bold;
-    color: rgb(255, 0, 0);
-    font-size: 18px;
+    font-size: 30px;
+    color:aqua;
     display: flex;
     align-items: center;
+  }
+
+  .company-name a {
+    color:rgb(0, 146, 114);
+  }
+
+  .nav-bar{
+    
   }
 }
 
