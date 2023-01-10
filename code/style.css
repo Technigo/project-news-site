@@ -6,14 +6,14 @@ html {
 .header{
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px;
   border: solid white;
 }
+
 
 .title{
   margin: 0;
   flex-shrink: 0;
-  margin-left: 25px;
 }
 
 .flex-container{
@@ -21,9 +21,11 @@ html {
   align-items: center;
 }
 
+
 .box-1-header img{
-  max-height: 50px;
+  width: 20%;
 }
+
 
 .link{
   margin-left: 16px;
@@ -66,14 +68,32 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-
+  border: solid white;
 }
 
 .other-news-articles{
 border: solid white;
+display: grid;
+grid-template-columns: 1fr;
+
+}
+
+.other-news-img{
+  width: 100%;
+}
+
+.other-news-h3{
+font-style: oblique;
+font-weight: 400;
 
 
 }
+.other-news-button{
+  background-color: black;
+  border: solid pink;
+  color: orange;
+}
+
 
 .flex-container-footer{
   display: flex;
