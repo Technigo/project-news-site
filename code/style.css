@@ -6,19 +6,22 @@ html {
   padding: 0;
   margin: 0;
 }
-header {
+.header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 10px);
+  justify-items: center;
   background: #87A5F7;
   color: #0D1837;
   border-bottom: #275DF1 solid 5px;
-  padding: 10px;
+  padding: 5px;
 
 }
+
 .logo {
-  grid-column-start: 1;
-  grid-row-start: 2;
+  grid-row: 2;
+}
+.logo-image {
   max-width: 65px;
   max-height: 65px;
   width: auto;
@@ -136,5 +139,37 @@ h2 {
   flex: 1 0 60%;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+
+  .header {
+    grid-template-columns: repeat(8, 1fr); 
+  }
+
+  .logo {
+    grid-column: 4 / 6;
+    grid-row: 6;
+  }
+
+  h1 {
+    font-size: 35px;
+    grid-row: 1;
+    grid-column: 3 / 7;
+  }
+
+  .info-boxes {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .box  {
+    width: 40%;
+    border: none;
+  }
+
+
 }
 
