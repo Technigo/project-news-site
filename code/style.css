@@ -12,7 +12,10 @@ h1 {
 /* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
 */
 
-@media (min-width: 668px) {
+@media (min-width: 667px) and (max-width: 1024) {
+  body {
+    
+  }
   h1 {
     color: red;
   }
