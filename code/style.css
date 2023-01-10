@@ -1,11 +1,13 @@
 html {
   background: #FFFFFF;
+  font-family: Arial,Helvetica,sans-serif;
 }
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 .header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,6 +23,7 @@ html {
 .logo {
   grid-row: 2;
 }
+
 .logo-image {
   max-width: 65px;
   max-height: 65px;
@@ -29,13 +32,15 @@ html {
   border: #0B35A8 solid 2px;
   border-radius: 50%;
 }
+
 h1 {
   font-size: 20px;
   grid-column: 2 / 4;
   grid-row-start: 4;
 
 }
-.topnav {
+
+.navbar {
   grid-column-start: 4;
   grid-row-start: 1;
 }
@@ -43,8 +48,8 @@ h1 {
 ul {
   list-style-type: none;
   width: 50px;
-  margin: 5px;
 }
+
 ul li {
   margin: 2px;
 }
@@ -57,22 +62,21 @@ a {
 
 .big-news {
   margin-top: 10px;
-  padding: 5px;
+  padding: 5px 0; 
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column-reverse;
-  border-bottom: #275DF1 solid 5px;
-
 }
+
 .main-text {
   max-width: 80%;
   width: auto;
   height: auto;
-  text-align: left;
   padding-bottom: 10px;
   color:#0D1837;
 }
+
 h2 {
   text-align: center;
 }
@@ -115,7 +119,7 @@ h2 {
   justify-content: start;
   align-items: center;
   margin: 5px;
-  border-bottom: #275DF1 solid 5px;
+  background-color: #0D1837;
 }
 
 .info-boxes img {
@@ -141,6 +145,10 @@ h2 {
   align-items: center;
 }
 
+.image-box img {
+  padding: 10px;
+}
+
 @media (min-width: 668px) and (max-width: 1023px) {
 
   .header {
@@ -158,6 +166,28 @@ h2 {
     grid-column: 3 / 7;
   }
 
+  .navbar {
+    grid-column: 1 / 10;
+    grid-row: 6;
+    width: 90%;
+  }
+
+  ul {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  ul li {
+    display: inline-block;
+    }
+
+  a {
+    color: #0D1837;
+    font-size: 20px;
+    padding: 10px;
+  }  
+
   .info-boxes {
     flex-direction: row;
     align-items: center;
@@ -166,10 +196,35 @@ h2 {
   }
 
   .box  {
-    width: 40%;
+    width: 48%;
+    height: 250px;
     border: none;
   }
 
 
 }
 
+@media (min-width: 1024px) {
+
+  .info-boxes {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .box  {
+    width: 24%;
+    height: 250px;
+    border: none;
+    flex-direction: column;
+  }
+
+  .text-in-fatbox {
+    flex: 1 0 20%;
+  }
+  
+  .image-box {
+    flex: 1 0 80%;
+  }  
+}
