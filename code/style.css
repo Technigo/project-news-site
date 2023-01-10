@@ -6,7 +6,32 @@ html {
 }
 h1 {
   color: white;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
+
+.navbar {
+  border: 2px solid green;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  margin: 20px;
+  border: solid black;
+  padding: 20px;
+  display: flex;
+
+}
+
+
 /* styling for tablet (668 > 1024px) */
 
 /* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
