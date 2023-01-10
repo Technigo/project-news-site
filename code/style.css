@@ -1,4 +1,22 @@
+/* generell styling (for mobile < 667px). Resten är mediaqueries */ 
+
 html {
   background: #0025ff;
   color: #fff;
 }
+h1 {
+  color: white;
+}
+/* styling for tablet (668 > 1024px) */
+
+/* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
+*/
+
+@media (min-width: 668px) {
+  h1 {
+    color: red;
+  }
+
+}
+
+/* styling for desktop (1024px eller större)
