@@ -14,11 +14,10 @@
     <header>
       <nav class="navbar">
         <div class="logo-container">
-          <img class="logo-image" src="s-logo.jpg"/> 
+          <div> <img class="logo-image" src="s-logo.jpg"/> </div>
           <div class="logo">
-            Stockholm
-            <br>
-            Times
+            <span>Stockholm</span>
+            <span>Times</span>
           </div>
         </div>
         <ul class="nav-links">
@@ -45,6 +44,12 @@
             
     </header>
 
+    <div class="display-date">
+      <span id = "day">day</span>
+      <span id = "daynum">00</span>
+      <span id = "month">month</span>
+      <span id = "year">0000</span>
+    </div>
     
 
     <!-- The big news content -->
@@ -159,8 +164,7 @@
         </div>  
       </section>
     </section>
-
-    <footer class ="footer">Copyright 2022 Stockholm Times. Credits: News items taken from BBC.com</footer>
-
+    <footer class ="footer">Copyright 2022 Stockholm Times. Credits: News articles taken from BBC.com</footer>
+    <script class ="display-date" src="date.js"></script>
   </body>
 </html>

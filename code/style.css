@@ -36,26 +36,29 @@ h1 {
 }
 
 .logo-container{
+  
   display: flex;
   justify-content: left;
+ 
+
+  
 }
 
 .logo{
+  display: flex;
+  flex-direction: column;
   font-size:20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-left: 0px;
+  padding: 0px;
   margin-left: 20px;
   text-align: left;
-  align-self: center;
-  
-  
+  align-self: center;  
 }
 
 .logo-image{
   width:auto;
-  height: 80px;
+  height: 70px;
   margin-left: 0px;
- 
+  align-self: center; 
 }
 
 
@@ -172,18 +175,32 @@ h1 {
   font-size: 15px; 
 } 
 
+.display-date{
+  font-size: 30px;
+  margin:30px 350px;
+  text-align: end;
+
+  
+  
+}
+
 .big-news-box a{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 50px 300px;
+  margin: 10px 350px 50px 350px;
   height: 800px;
   position: relative;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
 }
 
 .big-news-box a:visited{
   text-decoration: none;
   color:whitesmoke;
+}
+
+.big-news-box a:hover{
+  filter:brightness(80%);
 }
 
 .big-news-image{
@@ -193,7 +210,6 @@ h1 {
   grid-column-end: span 2;
  
 }
-
 
 
 .big-news-title {
@@ -206,7 +222,6 @@ h1 {
   margin-left: 25px;
   
 }
-
 
 
 .subheading{
@@ -236,33 +251,24 @@ h1 {
 .news-grid {
   display:grid;
   grid-template-columns: 25% 25% 25% 25%;
+ 
   margin: 80px 0px;
   justify-content: space-evenly;
-  column-gap: 30px;
-  
-  
+  column-gap: 30px;  
 }
 
 
-
-/* .news-item{
-  /* display: flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction: column;
-   */
-  
-
-  /* box-shadow: 5px 10px grey; */
-  
-  
+.news-item{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+ 
   
 
 .news-item a{
   display: flex;
   align-items:center;
-  
   flex-direction: column;
+  padding: 15px;   
   
 }
 
@@ -271,7 +277,10 @@ h1 {
   color:black;
 }
 
-.grid-container:hover {
+.news-item a:hover{
+  filter:brightness(80%);
+}
+/* .grid-container:hover {
   border: 1px solid red; 
 }
 
@@ -285,7 +294,7 @@ h1 {
 
 .big-news-box:hover {
   border: 1px solid palevioletred;
-}
+} */
 
 .news-item-image{
   width:100%;
@@ -371,6 +380,8 @@ h1 {
     
    
   }
+
+  
 }
 
 
