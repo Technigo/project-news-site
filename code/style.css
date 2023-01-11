@@ -1,4 +1,25 @@
 html {
-  background: #0025ff;
+  background: #FFDAB9;
   color: #fff;
+}
+h1 { 
+  color: aqua;
+  font-family: Brush Script MT;
+}
+@media (min-widht: 668px) {
+  h1 {
+    color: bisque;
+  }
+}
+
+font-size: 52px;
+body {
+  background: #8d8b8b;
+}
+
+.logo {
+  text-indent: -10px;
+  background: url('logo.png');
+  width: 960px;
+  height: 148px;
 }
