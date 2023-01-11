@@ -9,3 +9,146 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #a4e59c;
+  
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(47, 100, 64);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #bdf0b7;
+  color: rgb(47, 100, 64);
+  border-radius: 8px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  margin-top: 6px;
+}
+
+
+
+/* Add media queries for responsiveness - when the screen is 668px wide or less, stack the links on top of each other*/ 
+@media screen and (max-width: 668px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+.band { 
+  width: 90%;
+  max-width: 1240px;
+  margin: 20px auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+/* media querie for responsivnes - when the screen hits a minimun of 668px will have two columns*/
+@media only screen and (min-width: 668px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  
+  .item-1 {
+    grid-column: 1/ span 2;
+  }
+
+  .item-1 .card h1{
+   font-size: 30px;
+  }
+  
+}
+
+/* media querie for responsivness - when the screen hits a minimun of 1024px will have four columns*/
+@media only screen and (min-width: 1024px) {
+  .band {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+
+.card article {
+  padding: 20px;
+  flex: 1;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* typography */
+.card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+.card p { 
+  line-height: 1.4;
+  flex: 1;
+}
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
