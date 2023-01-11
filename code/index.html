@@ -2,19 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>Daily Mews</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Literata:opsz,wght@7..72,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;700;800&family=Literata:opsz,wght@7..72,500&display=swap" rel="stylesheet">
   </head>
   
   <body>
-
-    <!-- Logo and navbar -->
-   <header>
+   <!-- Logo and navbar -->
+    <header>
       <div class="logo">
-      <img src="./logo.svg" alt="logo of a cat footprint">
+        <img src="./logo.svg" alt="logo of a cat footprint" style="height:60px">
       </div>
       <div class ="site-name">
         <h1>Daily Mews</h1>
@@ -23,90 +22,105 @@
       <label for="nav-toggle" class="burger-menu">
         <img src="./hamburger.png" alt="menu icon">
       </label>
-          <ul class="navbar">
-            <li><a href="#">news</a></li>
-            <li><a href="#">editorial</a></li>
-            <div class="logo-navbar"><img src="./logo.svg"></div>
-            <li><a href="#">lifestyle</a></li>
-            <li><a href="#">culture</a></li>
-         </ul>
-  </header>
+      <ul class="navbar">
+        <li><a href="#">news</a></li>
+        <li><a href="#">editorial</a></li>
+        <div class="logo-navbar">
+          <img src="./logo.svg" alt="logo of a cat footprint" style="height:50px">
+        </div>
+        <li><a href="#">lifestyle</a></li>
+        <li><a href="#">culture</a></li>
+      </ul>
+   </header>
 
-  <!-- Big news -->
-
-  <section class="big-news">
-      <div class="big-news-img">
-      <img src="./bowls-2-612x612.jpg"></div>
-      <div class="text-wrapper-1">
-      <h2>Bowls still empty</h2>
-      <p>No estimate on when refill might be expected, sources say</p>
+   <section class="grid-container">
+     <!-- Big news -->
+      <div class="big-news">
+        <div class="big-article-img">
+          <img src="./bowls-2-612x612.jpg">
+        </div>
+        <div class="big-text-wrapper">
+          <h2>Bowls still empty</h2>
+          <strong>No estimate on when refill might be expected, sources say</strong>
+          <p>Our correspondent on site reports humans in the area. So far they have not responded to any attempts of contact.</p>
+          <button>Follow our live updates</button>
+       </div>
       </div>
-    </section>
-   
-
-    <!--Other news, images to be 612x408-->
-    <section class="grid-container">
-      <div class="item1">
-        <div class="articleimg">
-        <img src="./20201023.jpg"></div>
-        <div class="text-wrapper-1">
-        <h2>Cat union formed</h2>
-        <p>“We work hard as cats, knocking over plants and napping. We demand fair compensation” chaircat Popcorn says. "Absurd claims" according to humans</p>
+      <!--Item 1, the second important news item-->
+      <div class="news-item item1">  
+        <div class="article-img">
+          <p class="tag">NEWS</p>
+          <img src="./20201023.jpg">
+        </div>
+        <div class="big-text-wrapper">
+          <h3>Cat union formed</h3>
+          <p>“We work hard as cats. Just this week we toppled three plants, slept 18 hours and walked over several keyboards. We demand fair compensation” chaircat Popcorn says. "Absurd claims" according to humans 
+          </p>
+        </div>
       </div>
-    </div>
-      
-     
       <div class="news-item item2">
-        <div class="articleimg">
-        <img src="./IMG_0630.jpg"></div>
+        <div class="article-img">
+          <p class="tag">EDITORIAL</p>
+          <img src="./IMG_0630.jpg">
+        </div>
         <div class="text-wrapper">
-          <h2>Birds, why do they even exist?</h2>
+          <h4>Birds, why do they even exist?</h4>
+        </div>
       </div>
-    </div>
       <div class="news-item item3">
-        <div class="articleimg"></div>
-        <img src="./nap.jpg">
+        <div class="article-img">
+          <p class="tag">LIFESTYLE</p>
+          <img src="./20210626_151104_246.jpg">
+        </div>
         <div class="text-wrapper">
-          <h2>New trend: waking up at 3 for more nap time during the day</h2>
-      </div>
+          <h4>New trend: wake up at 3 for more nap time during the day</h4>
+        </div>
       </div>  
       <div class="news-item item4">
-        <div class="articleimg">
-        <img src="./20220409_115446.jpg"></div>
+        <div class="article-img">
+          <p class="tag">LIFESTYLE</p>
+          <img src="./lifestyle.jpg">
+        </div>
         <div class="text-wrapper">
-          <h2>Ignore expensive toys - play with trash instead!</h2>
-      </div>
+          <h4>Ignore expensive toys - play with trash instead!</h4>
+        </div>
       </div>
       <div class="news-item item5">
-        <div class="articleimg">
-        <img src="./IMG_0625.JPG">
-      </div>
+        <div class="article-img">
+          <p class="tag">NEWS</p>
+          <img src="./pexels-gustavo-fring-6816859.jpg">
+        </div>
         <div class="text-wrapper">
-          <h2>Study shows most cats avoid the vet</h2>
+          <h4>Study shows most cats avoid the vet</h4>
+        </div>
       </div>
-    </div>
-    <div class="news-item item6">
-      <div class="articleimg">
-      <img src="./pexels-pixabay-39484.jpg">
+      <div class="news-item item6">
+        <div class="article-img">
+          <p class="tag">CULTURE</p>
+          <img src="./20220802.jpg">
+        </div>
+        <div class="text-wrapper">
+          <h4>Cardboard box review</h4>
+        </div>
       </div>
-      <div class="text-wrapper">
-        <h2>Cat tv: squirrel feeder lives up to hype</h2>
-    </div>
-  </div>
-  <div class="news-item item7">
-    <div class="articleimg">
-    <img src="./catrain-612x612.jpg"></div>
-    <div class="text-wrapper">
-      <h2>Weather forecast: bad</h2>
-  </div>
-</div>
-<div class="news-item item8">
-  <div class="articleimg">
-  <img src="./20220802.jpg"></div>
-  <div class="text-wrapper">
-    <h2>Latest cardboard box review</h2>
-</div>
-</div>
+      <div class="news-item item7">
+        <div class="article-img">
+          <p class="tag">WEATHER</p>
+          <img src="./catrain-612x612.jpg">
+        </div>
+        <div class="text-wrapper">
+          <h4>Weather report: Not okay</h4>
+        </div>
+      </div>
+      <div class="news-item item8">
+        <div class="article-img">
+          <p class="tag">CULTURE</p>
+          <img src="./pexels-pixabay-39484.jpg">
+        </div>
+        <div class="text-wrapper">
+          <h4>Cat tv: squirrel feeder lives up to hype</h4>
+        </div>
+      </div>
     </section>
   </body>
 </html>
