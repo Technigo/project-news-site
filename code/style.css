@@ -1,8 +1,9 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
 html {
-  background: #0025ff;
+  background: hsl(231, 100%, 50%);
   color: #fff;
+  margin: 20px;
 }
 h1 {
   color: white;
@@ -11,40 +12,68 @@ h1 {
   
 }
 
+header img {
+ width: 100px;
+ margin: 20px;
+ padding: 20px;
+ 
+ 
+}
+
 .navbar {
   border: 2px solid green;
-  margin: 20px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
-
+  justify-content: center;
+  flex-direction: column;
 }
+
 li {
-  list-style: none;
   font-size: 20px;
   margin: 20px;
   border: solid black;
   padding: 20px;
-  display: flex;
-
+  
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
 
 /* styling for tablet (668 > 1024px) */
 
 /* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
 */
 
-@media (min-width: 667px) and (max-width: 1024) {
+@media (min-width: 668px) and (max-width: 1024px) {
   body {
-    
+    background-color: red;
   }
-  h1 {
-    color: red;
+  .navbar {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+} 
+
+/* styling for desktop (1024px eller större) */
+
+@media (min-widht:1025px) {
+    body {
+      background-color: red;
+    }
+
+    .navbar {
+      justify-content: space-evenly;
+      flex-direction: row;
+     
+    }
   }
 
-}
 
-/* styling for desktop (1024px eller större)
+
