@@ -15,4 +15,4 @@ If I had more time and could redo it, I would have designed it mobile-first, to 
 
 I made a classic news site:
 
-PASTE NETLIFY LINK HERE WHEN DONE
+https://verdant-melba-8ae074.netlify.app/index.html
