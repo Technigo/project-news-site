@@ -9,14 +9,16 @@ html {
 
 h1 {
   color: white;
-  margin-left: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }
 
 .logo {
   width: 60px;
-  margin-bottom: 20px;
+  margin: 10px;
+  padding: 10px;
 
 }
 
@@ -58,6 +60,30 @@ a {
 li {
   list-style: none;
 }
+ .big-news {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(3, 100px);
+   gap: 10px;
+ }
+
+ .grid-item {
+  background: pink;
+ }
+
+ .big-grid-item {
+  grid-column: span 8;
+ } 
+
+ .medium-grid-item {
+  grid-column: span 4;
+ }
+
+ .lonely-grid-item {
+  grid-column: 8/9;
+ }
+ 
+
 
 /* styling for tablet (668 > 1024px) */
 
@@ -85,12 +111,16 @@ li {
      .menu {
        display: none;
      }
+
+    .big-news {
+      display: grid;
+    }
 }
 
 
 /* styling for desktop (1024px eller större) */
 
-@media (min-widht:1025px) {
+@media (min-widht: 1025px) {
    
 .navbar {
   border: 2px solid green;
