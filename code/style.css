@@ -1,6 +1,7 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
 html {
+  font-family: san;
   background: hsl(231, 100%, 50%);
   color: #fff;
   margin: 20px;
@@ -12,21 +13,32 @@ h1 {
   
 }
 
-header img {
- width: 100px;
- margin: 20px;
- padding: 20px;
- 
- 
+.logo {
+  width: 60px;
+  margin-bottom: 20px;
+
 }
 
+.hamburger {
+  height: 3px;
+  width: 30px;
+  background: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu {
+  margin-right: 10px;
+  float: left;
+  padding-top: 10px;
+}
 .navbar {
   border: 2px solid green;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
 }
 
 li {
