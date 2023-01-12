@@ -1,4 +1,325 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: white;
+  color: black;
+  font-family: Georgia, serif;
 }
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+
+/*Center logo*/
+header {
+display: flex;
+}
+
+h1 {
+text-decoration: overline;
+margin: 30px 0 10px 0;
+font-family: Monaco;
+font-size: 35px;
+}
+
+.button-subscribe {
+  padding: 3px;
+  align-self: flex-start;
+  font-size: 11px;
+  border: none;
+  border-radius: %;
+  background-color: #F0F0F0;
+}
+
+.button-subscribe:hover {
+  background-color: aqua;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 0px;
+  list-style-type: none;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  /*Set nav bar to 100% width?*/
+}
+
+li a {
+  color: #666;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  color: purple;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 2px;
+  border: none;
+  margin: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+/*Can you autofit margins in a grid??*/
+.grid-container-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  align-content:  center;
+  column-gap: 10px;
+}
+
+.news-big {
+    grid-column: span 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-spain {
+  height: 225px;
+  width: 325px;
+  border: solid grey 1px;
+  border-radius: 10%;
+}
+
+.news-big h2 {
+  font-size: 20px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.news-big p {
+  font-size: 18px;
+  padding: 0;
+}
+
+.news-small {
+  display: grid;
+  justify-content: space-around;
+  grid-column: span 4;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.card {
+  border: solid black 1px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  grid-column: span 4;
+  margin: 25px;
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+}
+
+p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+/*Button should be aligned to bottom of box*/
+.button-readmore {
+  align-self: center;
+  margin: 10px 0;
+  border: solid grey 0.5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid grey 5px;
+}
+
+footer h4 {
+  margin: 15px 0 5px 0;
+}
+
+.fa {
+  color: black;
+  text-decoration: none;
+}
+
+/* Tablet media query*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  header {
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 50px 0 25px 0;
+    justify-self: center;
+    font-size: 42px;
+  }
+
+  .button-subscribe {
+    padding: 3px;
+    align-self: flex-start;
+    margin: 5px;
+  }
+
+  ul {
+    flex-direction: row;
+  }
+
+  .topnav input[type=text] {
+    padding: 4px;
+    text-align: start;
+  } 
+
+  .grid-container-main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .news-big {
+    grid-column: span 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    justify-items: center;/*Is this needed or Grid changes?*/
+  }
+
+  .img-spain {
+    height: 300px;
+    width: 448px;
+    border: solid grey 1px;
+    border-radius: 10%;
+  }
+
+  .news-small {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 40px;
+  }
+
+  .card {
+    display: flex;
+    cursor: pointer;
+    grid-column-end: span 4;
+  }
+}
+/* End of tablet media query*/
+
+
+/* Desktop media query*/
+@media (min-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+  
+  h1 {
+    text-decoration: overline;
+    margin: 70px 0 40px 0;
+    font-size: 54px;
+  }
+
+  .button-subscribe {
+      padding: 3px;
+      justify-self: flex-start;
+      margin: 5px;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    text-align: start;
+  }
+  
+  .grid-container-main {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .news-big {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .img-spain {
+    height: 400px;
+    width: auto;
+    border: solid grey 1px;
+    border-radius: 10%;
+  }
+
+  .news-big h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .news-big p {
+    font-size: 20px;
+    text-align: justify;
+    text-align: center;
+  }
+
+  .news-big .button-readmore {
+    font-size: 18px;
+    align-self: center;
+  }
+
+  .news-small {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+
+  .card {
+    display: flex;
+    cursor: pointer;
+    grid-column: span 3;
+  }
+
+
+  .news-spain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    font-weight: bold;
+    flex-direction: row; /*Is this needed or Grid changes?*/
+  }
+}
+/* End of desktop media query*/
