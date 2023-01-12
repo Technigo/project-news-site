@@ -23,13 +23,13 @@ const months = [
   ];
 
 const dayWeek =[
+    "Sunday,", 
     "Monday,",
     "Tuesday,",
     "Wednesday,",
     "Thursday,",
     "Friday,",
-    "Saturday,",
-    "Sunday,"
+    "Saturday,",    
   ]
 
   const IDCollection = ["day","daynum","month","year"];
