@@ -1,4 +1,80 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #b3d8f2;
+  color: black;
+}
+
+header {
+  margin: 15px 15px 5px 15px;
+}
+
+.nav-bar {
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+}
+
+h1 {
+  color: black;
+  font-family: arial;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.nav-item {
+  color: black;
+  font-family: helvetica;
+  text-decoration: none;
+  margin: 0px;
+}
+
+a:hover {
+  color: floralwhite;
+}
+
+.big-news-container { 
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: ;
+  grid-gap: 15px;
+  height: 300px;
+  padding: 15px 15px 5px 15px;
+}
+
+.big-news-image {
+  grid-column: 1 / 5;
+  background: pink;
+}
+
+.big-news-text {
+  grid-column: 5 / 9;
+  background: pink;
+}
+
+h2 {
+padding: 5px;
+text-align: center;
+}
+
+p {
+  padding: 10px;
+}
+
+.smaller-news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 15px;
+  padding: 15px 15px 10px 15px;  
+}
+
+.small-news {
+  background: whitesmoke;
+}
+
+h3 {
+  padding: 10px;
+  color: green;
 }
