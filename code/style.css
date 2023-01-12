@@ -1,11 +1,12 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
 html {
-  font-family: san;
-  background: hsl(231, 100%, 50%);
-  color: #fff;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: blue;
   margin: 20px;
+  padding: 20px;
 }
+
 h1 {
   color: white;
   margin-left: 20px;
@@ -67,24 +68,47 @@ li {
   body {
     background-color: red;
   }
-  .navbar {
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-} 
+  
+     .navbar {
+       border: 2px solid green;
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       flex-direction: row;
+     }
+  
+     .hamburger {
+       display: none;
+     }
+  
+     .menu {
+       display: none;
+     }
+}
+
 
 /* styling for desktop (1024px eller större) */
 
 @media (min-widht:1025px) {
-    body {
-      background-color: red;
-    }
+   
+.navbar {
+  border: 2px solid green;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
 
-    .navbar {
-      justify-content: space-evenly;
-      flex-direction: row;
-     
-    }
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+    
   }
 
 
