@@ -9,7 +9,7 @@ html {
   text-decoration: none;
 }
 
-h1 {
+h1 h2 h3 {
   color: black;
   font-size: 30px;
 }
@@ -196,11 +196,13 @@ h1 {
   height: 800px;
   position: relative;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-decoration: none;
+  color: white;
 }
 
 .big-news-box a:visited {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 
 .big-news-box a:hover {
@@ -223,6 +225,7 @@ h1 {
   margin-left: 25px;
   text-shadow: 4px 4px black;
   backdrop-filter: blur(5px);
+  
 }
 
 .subheading {
@@ -244,14 +247,12 @@ h1 {
 
 .grid-container {
   display: grid;
-
   margin: 100px 300px;
 }
 
 .news-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-
   margin: 80px 0px;
   justify-content: space-evenly;
   column-gap: 30px;
@@ -261,18 +262,13 @@ h1 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.videos {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
-}
 
 .news-item a {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 15px;
+  color:black;
 }
 
 .news-item a:visited {
@@ -295,12 +291,14 @@ h1 {
   width: 100%;
   overflow: hidden;
   font-weight: bold;
+  color:black;
 }
 
 .news-item-text {
   width: 100%;
   font-size: 20px;
   margin-top: 10px;
+  color:black;
 }
 
 .footer {
