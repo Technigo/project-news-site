@@ -1,12 +1,11 @@
 html {
   background: white;
-  color:black;
-    
+  color: black;
 }
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   text-decoration: none;
 }
 
@@ -15,219 +14,207 @@ h1 {
   font-size: 30px;
 }
 
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-between;
   margin: 0;
   padding: 20px;
-  background-color:black;
-  color:white;   
-  height:80px;
-  
+  background-color: black;
+  color: white;
+  height: 80px;
 }
 
-
-.nav-links a{
-  color:white;
+.nav-links a {
+  color: white;
   text-decoration: none;
-  
 }
 
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: left;
- 
 }
 
-.logo{
+.logo {
   display: flex;
   flex-direction: column;
-  font-size:20px;
+  font-size: 20px;
   padding: 0px;
   margin-left: 20px;
   text-align: left;
-  align-self: center;  
+  align-self: center;
 }
 
-.logo-image{
-  width:auto;
+.logo-image {
+  width: auto;
   height: 70px;
   margin-left: 0px;
-  align-self: center; 
+  align-self: center;
 }
 
-
-
-.menu{
+.menu {
   display: flex;
-  font-size:30px;
-  gap:1em;
-   
+  font-size: 30px;
+  gap: 1em;
 }
 
-.menu li{
-  padding:5px 40px;
+.menu li {
+  padding: 5px 40px;
   list-style: none;
 }
 
-.menu li:hover{
+.menu li:hover {
   background-color: red;
   border-radius: 5px;
   transition: 0.5s ease;
 }
 
-.world{
+.world {
   position: relative;
 }
 
-.dropdown{
+.dropdown {
   background-color: black;
   padding: 1em 0;
-  position:absolute;
-  display:none; 
+  position: absolute;
+  display: none;
   border-radius: 8px;
-  top:50px;
+  top: 50px;
   z-index: 999;
-
 }
 
-.dropdown li + li{
+.dropdown li + li {
   margin-top: 10px;
-
 }
 
-.dropdown li{
+.dropdown li {
   padding: 0.5em 1em;
   width: 8em;
-  text-align:center;
+  text-align: center;
 }
 
-.dropdown li:hover{
+.dropdown li:hover {
   background-color: red;
 }
 
-.world:hover .dropdown{
+.world:hover .dropdown {
   display: block;
 }
 
 #checkbox_toggle {
-  display:none;
+  display: none;
 }
 
-.hamburger{
-  display:none;
-  font-size:30px;
-  user-select:none;
+.hamburger {
+  display: none;
+  font-size: 30px;
+  user-select: none;
 }
 
-@media (max-width: 1024px){
-  .menu{
-    display:none;
-    position:absolute;
-    background-color:black;
-    right:0;
-    left:0;
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
     text-align: center;
-    padding:17px 0;
+    padding: 17px 0;
   }
-  .menu li:hover{
-    display:inline-block;
+  .menu li:hover {
+    display: inline-block;
     background-color: red;
     transition: 0.5s ease;
   }
-  .menu li + li{
-    margin-top:12px;
+  .menu li + li {
+    margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu{
-    display:block;
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
   }
-  .hamburger{
-    display:block;
+  .hamburger {
+    display: block;
   }
-  .dropdown{
+  .dropdown {
     left: 50%;
-    top: 30px;    
-    transform: translateX(20%); 
-   
-  }  
+    top: 30px;
+    transform: translateX(20%);
+  }
 
-  .navbar{
+  .navbar {
     position: relative;
     z-index: 999;
   }
 
-  #searchbar{
-    display:none;
+  #searchbar {
+    display: none;
   }
 }
 
-.navbar input[type=text] {
+.navbar input[type="text"] {
   float: right;
   padding: 10px;
   border: none;
   margin-top: 8px;
   margin-right: 16px;
-  font-size: 15px; 
-} 
-
-.display-date{
-  font-size: 30px;
-  margin:30px 400px;
-  text-align: end;
-
+  font-size: 15px;
 }
 
-.red-dot{
+.display-date {
+  font-size: 30px;
+  margin: 30px 400px;
+  text-align: end;
+}
+
+.red-dot {
   display: inline-block;
-  width:20px;
-  height:20px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: red;
-  margin-right:10px;
-  animation:blink 1.5s infinite;
- 
+  margin-right: 10px;
+  animation: blink 1.5s infinite;
 }
 
-@keyframes blink{
-  0% {opacity:0;}
-  50% {opacity:1;}
-  100% {opacity:0;}
-
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.big-news-box a{
-  display:grid;
+.big-news-box a {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 10px 400px 50px 400px;
   height: 800px;
   position: relative;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  
-    
 }
 
-.big-news-box a:visited{
+.big-news-box a:visited {
   text-decoration: none;
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
-.big-news-box a:hover{
-  filter:brightness(80%);
+.big-news-box a:hover {
+  filter: brightness(80%);
 }
 
-.big-news-image{
-  width:100%; 
-  height:800px;
+.big-news-image {
+  width: 100%;
+  height: 800px;
   grid-column-start: 1;
   grid-column-end: span 2;
- 
 }
 
-
 .big-news-title {
-  
   font-size: 60px;
   position: absolute;
   grid-column-start: 1;
@@ -236,11 +223,9 @@ h1 {
   margin-left: 25px;
   text-shadow: 4px 4px black;
   backdrop-filter: blur(5px);
-  
 }
 
-
-.subheading{
+.subheading {
   display: flex;
   align-items: center;
   font-size: 35px;
@@ -250,87 +235,81 @@ h1 {
 }
 
 .subheading::after {
-  content: '';
+  content: "";
   flex: 1;
   margin-left: 1rem;
   height: 1px;
   background-color: #000;
 }
-  
- .grid-container{
+
+.grid-container {
   display: grid;
-  
-  margin: 100px 300px; 
-  
-  
- }
+
+  margin: 100px 300px;
+}
 
 .news-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  
+
   margin: 80px 0px;
   justify-content: space-evenly;
-  column-gap: 30px; 
-  
-  
+  column-gap: 30px;
 }
 
-
-.news-item{
+.news-item {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
- 
- .videos{
-  display: flex;
-  align-items:center;
-  flex-direction: column;
-  padding: 15px;   
- }
 
-.news-item a{
+.videos {
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  padding: 15px;   
-  
+  padding: 15px;
 }
 
-.news-item a:visited{
+.news-item a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.news-item a:visited {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.news-item a:hover{  
-  filter:brightness(80%);
+.news-item a:hover {
+  filter: brightness(80%);
 }
- 
-.news-item-image{
-  width:100%;
+
+.news-item-image {
+  width: 100%;
   height: 350px;
-  object-fit: cover;       
+  object-fit: cover;
 }
 
-.news-item-caption{
+.news-item-caption {
   font-size: 25px;
   width: 100%;
-  overflow:hidden;
-  font-weight:bold;
+  overflow: hidden;
+  font-weight: bold;
 }
 
-.news-item-text{
-  width:100%;
+.news-item-text {
+  width: 100%;
   font-size: 20px;
   margin-top: 10px;
 }
 
-.footer{
+.footer {
   background-color: black;
   color: white;
   padding: 20px;
   margin: 0px;
   font-size: 20px;
-  align-content:flex-start;
+  align-content: flex-start;
 }
 
 /* tablet */
@@ -340,62 +319,60 @@ h1 {
     grid-template-columns: 50% 50%;
   }
 
-  .big-news-box a, .grid-container{
+  .big-news-box a,
+  .grid-container {
     margin: 50px;
   }
 
-  .big-news-title{
+  .big-news-title {
     font-size: 55px;
   }
 
-  .display-date{
+  .display-date {
     font-size: 20px;
-    margin:30px 50px;
+    margin: 30px 50px;
   }
-
 }
 
 /*mobile*/
-@media (max-width:666px){  
-  .news-grid{
+@media (max-width: 666px) {
+  .news-grid {
     grid-template-columns: 100%;
   }
 
-  .big-news-box a{
+  .big-news-box a {
     margin: 50px;
   }
 
-  .grid-container{
+  .grid-container {
     margin: 50px;
   }
 
-  .news-item-text{
+  .news-item-text {
     display: none;
   }
 
-  .big-news-title{
+  .big-news-title {
     font-size: 45px;
     grid-column-start: 1;
     grid-column-end: span 2;
-    color:black;
+    color: black;
     text-shadow: none;
   }
 
-  .big-news-image{
-    width:100%; 
-    height:400px;
+  .big-news-image {
+    width: 100%;
+    height: 400px;
     grid-column-start: 1;
     grid-column-end: span 2;
-    margin-top:70px;
+    margin-top: 70px;
   }
 
-  .display-date{
+  .display-date {
     font-size: 20px;
-    margin:30px 50px;
-    text-align: end;  
+    margin: 30px 50px;
+    text-align: end;
   }
-
-  
 }
 
 

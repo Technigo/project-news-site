@@ -9,99 +9,110 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
-
   <body>
     <header>
+      <!--Navigation bar-->
       <nav class="navbar">
         <div class="logo-container">
-          <div> <img class="logo-image" src="s-logo.jpg"/> </div>
+          <div>
+            <img class="logo-image" src="s-logo.jpg" />
+          </div>
           <div class="logo">
             <span>Stockholm</span>
             <span>Times</span>
           </div>
         </div>
         <ul class="nav-links">
-          <input type="checkbox" id="checkbox_toggle"/>
+          <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776</label>
           <div class="menu">
-            <li><a href="#other-news">News</a></li>
-            <li><a href="#sports">Sports</a></li>            
-            <li><a href="#tech">Tech</a></li>
+            <li>
+              <a href="#other-news">News</a>
+            </li>
+            <li>
+              <a href="#sports">Sports</a>
+            </li>
+            <li>
+              <a href="#tech">Tech</a>
+            </li>
             <li class="world">
               <a href="">World</a>
               <ul class="dropdown">
-                <li><a href="">Asia</a></li>
-                <li><a href="">Africa</a></li>
-                <li><a href="">Europe</a></li>
-                <li><a href="">North America</a></li>
-                <li><a href="">South America</a></li>
+                <li>
+                  <a href="">Asia</a>
+                </li>
+                <li>
+                  <a href="">Africa</a>
+                </li>
+                <li>
+                  <a href="">Europe</a>
+                </li>
+                <li>
+                  <a href="">North America</a>
+                </li>
+                <li>
+                  <a href="">South America</a>
+                </li>
               </ul>
             </li>
             <li>
               <span class="red-dot"></span>
-              <a href="">Watch Live</a></li>
+              <a href="">Watch Live</a>
+            </li>
           </div>
         </ul>
         <input type="text" placeholder="Search" id="searchbar">
       </nav>
-            
     </header>
-
+    <!--Date-->
     <div class="display-date">
-      <span id = "day">day</span>
-      <span id = "daynum">00</span>
-      <span id = "month">month</span>
-      <span id = "year">0000</span>
+      <span id="day">day</span>
+      <span id="daynum">00</span>
+      <span id="month">month</span>
+      <span id="year">0000</span>
     </div>
-    
-
     <!-- The big news content -->
     <section class="big-news">
       <div class="big-news-box">
         <a target="_blank" href="https://www.bbc.com/news/science-environment-63121338">
           <h2 class="big-news-title">Three scientists win Nobel for chemistry 'Lego'</h2>
-          <img class="big-news-image" src="https://images.unsplash.com/photo-1659975045301-b213fab4058b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"/>
+          <img class="big-news-image" src="https://images.unsplash.com/photo-1659975045301-b213fab4058b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" />
         </a>
       </div>
     </section>
-
-    
     <section class="grid-container">
-    <!-- Other news  -->
-    <h2 class="subheading" id="other-news">News</h2>
+      <!-- Other news  -->
+      <h2 class="subheading" id="other-news">News</h2>
       <section class="news-grid">
         <div class="news-item">
-          <a target="_blank" href="https://www.bbc.com/news/world-asia-china-64102176"> 
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/world-asia-china-64102176">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
             <h3 class="news-item-caption">People rush to book travel as borders finally reopen</h3>
             <h3 class="news-item-text">Chinese people have rushed to book overseas travel after Beijing announced it would reopen its borders next month.</h3>
           </a>
         </div>
         <div class="news-item">
           <a target="_blank" href="https://www.bbc.com/news/world-europe-63967017">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1646227163793-7aae7155d5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1646227163793-7aae7155d5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
             <h3 class="news-item-caption">Explosions in central Kyiv amid air raid warning</h3>
             <h3 class="news-item-text">Ukrainian officials say they shot down over a dozen drones during a Russian attack on the capital city of Kyiv early on Wednesday morning.</h3>
-          </a>  
+          </a>
         </div>
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/science-environment-54420240">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1597449031666-21da12583121?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/science-environment-54420240">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1597449031666-21da12583121?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
             <h3 class="news-item-caption">Black hole breakthroughs win Nobel physics prize</h3>
             <h3 class="news-item-text">Three scientists have been awarded the 2020 Nobel Prize in Physics for work to understand black holes.</h3>
           </a>
         </div>
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/world-asia-64065206">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1629626752470-a5fbbcfdc45a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/world-asia-64065206">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1629626752470-a5fbbcfdc45a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
             <h3 class="news-item-caption">Taliban arrest women protesting against university ban</h3>
             <h3 class="news-item-text">The Taliban have arrested five women taking part in a protest in the Afghan capital, Kabul, against the ban on women attending universities.</h3>
           </a>
-        </div>  
-         
+        </div>
       </section>
-
-      
       <!-- Sports  -->
       <h2 class="subheading" id="sports">Sports</h2>
       <section class="news-grid">
@@ -133,43 +144,41 @@
             <h3 class="news-item-text">The United Nations is calling on sports organisations across the world to do more for sustainability.</h3>
           </a>
       </section>
-
       <!-- Tech  -->
       <h2 class="subheading" id="tech">Tech</h2>
       <section class="news-grid">
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/business-64099654">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
-            
+          <a target="_blank" href="https://www.bbc.com/news/business-64099654">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
             <h3 class="news-item-caption">Apple and Tesla: Tech shares tumble amid supply issues</h3>
             <h3 class="news-item-text">Apple and Tesla stocks have tumbled over growing concerns about delays in their production lines in China.</h3>
           </a>
         </div>
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/business-63130593">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/business-63130593">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" />
             <h3 class="news-item-caption">Tech trends 2023: Flying taxis and satellite phones</h3>
             <h3 class="news-item-text">At 1:03am on Monday 5 December, the most powerful laser on the planet flashed into life at the Lawrence Livermore National Laboratory (LLNL) in California.</h3>
           </a>
         </div>
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/technology-64003237">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/technology-64003237">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
             <h3 class="news-item-caption">Netflix password sharing may be illegal, says UK government</h3>
             <h3 class="news-item-text">Sharing passwords for online streaming services such as Netflix is against the law, according to a government agency.</h3>
           </a>
         </div>
         <div class="news-item">
-          <a target ="_blank" href="https://www.bbc.com/news/technology-64075067">
-            <img class="news-item-image" src="https://images.unsplash.com/photo-1636114673156-052a83459fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+          <a target="_blank" href="https://www.bbc.com/news/technology-64075067">
+            <img class="news-item-image" src="https://images.unsplash.com/photo-1636114673156-052a83459fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
             <h3 class="news-item-caption">Meta settles Cambridge Analytica scandal case for $725m</h3>
             <h3 class="news-item-text">Facebook owner Meta has agreed to pay $725m (£600m) to settle legal action over a data breach linked to political consultancy Cambridge Analytica.</h3>
           </a>
-        </div>  
+        </div>
       </section>
-     
     </section>
-    <footer class ="footer">Copyright 2022 Stockholm Times. Credits: News articles taken from BBC.com</footer>
-    <script class ="display-date" src="date.js"></script>
+    <!--Footer-->
+    <footer class="footer">Copyright 2022 Stockholm Times. Credits: News articles taken from BBC.com</footer>
+    <script class="display-date" src="date.js"></script>
   </body>
-</html>
+  </html>
