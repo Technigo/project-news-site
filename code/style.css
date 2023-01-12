@@ -77,21 +77,22 @@ h2 {
 
 p {
   font-family: var(--paragraph-font-family);
+  margin-right: 50px;
 }
 
 p::first-letter {
   font-size: 58px;
 }
 
-.flex-parent .big-news {
+.flex-parent fa-linkedin {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/*.flex-child-big-news {
+.flex-child .fa-github {
   margin-right: 20px;
-}*/
+}
 
 .grid-parent {
   display: grid;
@@ -104,9 +105,10 @@ p::first-letter {
   height: 30%;
   max-width: 50%;
   margin-top: 20px;
+  margin-left: 70px;
 }
 
-/*.link {
+.link {
   color: var(--primary-text-color);
   transition: all 200ms ease;
 }
@@ -131,7 +133,7 @@ p::first-letter {
   color: var(--primary-text-color);
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-}*/
+}
 
 .logo-footer {
   display: flex;
