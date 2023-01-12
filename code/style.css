@@ -22,6 +22,18 @@ nav {
   display:inline-flex;
   padding: 10px 10px 10px 10px;
   justify-content: flex-end;
+  position: relative;
+}
+
+.navbar #myLinks {
+  display: none;
+}
+
+.navbar a.icon {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 img {
@@ -94,13 +106,7 @@ button:hover {
 
 .grid-parent-big-news {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 5px 5px 5px;
-  gap: 100px;
-  align-items: center;
-  border: 5px solid rgb(100, 132, 169);
-  padding: 20px;
-  overflow: hidden;
+  grid-template-columns: 1fr;
 }
 
 .grid-item-big-card-img {
@@ -110,13 +116,10 @@ button:hover {
 
 .card__title {
   font-family: verdana;
-  margin-top: 180px;
 }
 
 .card__description {
   font-family: Verdana;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 p {
@@ -124,46 +127,67 @@ p {
 }  
 
 .grid-parent-other-news {
-    display: grid;
-    gap: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 100%;
-    height: 73vh;
-    background-color:#E8F3F5;
-  
+  display: grid;
+  background-color:#E8F3F5;
 }
 
 .grid-item-card {
   border: 5px solid rgb(100, 132, 169);
-}
-
+  }
+  
 .grid-item-card img {
   aspect-ratio: 1 / 1.2;
   object-fit: cover;
-
-}
-
-footer {
-  position: aboslute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-}
-
-
-@media (min-width: 668px) and (max-width: 1024px) {
-  .grid-parent-other-news {
-    grid-template-columns: repeat(2, 1fr);
   }
 
-
-}
-
-@media (min-width: 1025px) {
-  .grid-parent-other-news {
-    grid-template-columns: repeat(4, 1fr);
+  footer {
+    text-align: center;
+    font-family: verdana;
   }
-}
+
+  .technigo-logo img {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media (min-width: 668px) and (max-width: 1024px) {
+    
+    .grid-parent-big-news {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 150px 5px 5px 5px;
+      gap: 100px;
+      align-items: center;
+      border: 5px solid rgb(100, 132, 169);
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .grid-parent-other-news {
+      grid-template-columns: repeat(2, 1fr);
+  
+    }
+  }
+  
+  @media (min-width: 1025px) {
+  
+    .grid-parent-big-news {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 150px 5px 5px 5px;
+      gap: 100px;
+      align-items: center;
+      border: 5px solid rgb(100, 132, 169);
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .grid-parent-other-news {
+      grid-template-columns: repeat(4, 1fr);
+  
+    }
+
+    }
+  
+    
   

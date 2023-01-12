@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- dont forget the meta tag for responsiveness -->
-    <meta name = “viewport” content = “width=device-width, initial-scale=1.0”>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  </head>
     <header>
       <!-- Some kind of logo and navbar -->
       <div class="navbar">
@@ -15,17 +15,22 @@
             <img class ="flex-child-image"src="./chocolate-logo.jpg" alt="Chocolate-logo">
             <h1 class ="flex-child-logo-title">The Chocolate Post</h1>
           </section>
+          <div id="myLinks">
           <ul class ="nav_links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-          <a class ="cta" href="#"><button>Contact</button></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
         </nav>
       </div>    
     </header>
     <body>
-    <section class="grid-parent-big-news">
+     <section class="grid-parent-big-news">
       <!-- The big news content -->
       <div class="grid-item-big-card-img">
         <img src="./chocolate-cake-fudge.jpeg" alt ="chocolate-fudge-cake">
@@ -39,15 +44,12 @@
         <a class ="click-me" href="https://www.sweetestmenu.com/chocolate-fudge-layer-cake/"><button>Bake me!</button></a>
       </div>
     </section>
-
     <section class="grid-parent-other-news">
       <!-- The other news  -->
       <div class="grid-item-card">
         <img src="./chocolate-drink.jpeg" alt="chocolate-drink">
-        <div class="class_content">
         <p>What alcohol pairs well with chocolate?</p>
         <a href="https://www.toastmag.co.nz/spirits/pairing-chocolate-and-alcohol">Drink me!</a>
-        </div>
       </div>
       <div class="grid-item-card">
         <img src="./vegan-chocolate.jpeg" alt="vegan-chocolate">
@@ -66,10 +68,8 @@
       </div>
       <div class="grid-item-card">
         <img src="./chocolate-drink.jpeg" alt="chocolate-drink">
-        <div class="class_content">
         <p>What alcohol pairs well with chocolate?</p>
         <a href="https://www.toastmag.co.nz/spirits/pairing-chocolate-and-alcohol">Drink me!</a>
-        </div>
       </div>
       <div class="grid-item-card">
         <img src="./vegan-chocolate.jpeg" alt="vegan-chocolate">
@@ -88,7 +88,7 @@
       </div>
     </section>
     <footer>
-      <p>Class of 2023 - Fiona Klacar</p>
+      <p>Technigo Class of 2023 - Fiona Klacar</p>
     </footer>
   </body>
 </html>
