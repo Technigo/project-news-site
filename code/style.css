@@ -12,12 +12,19 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/*body {
+  background-image: url("../img/a_cat.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}*/
+
 .border-container {
   border: 10px outset var(--border-color);
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  width: 80%;
+  width: 60%;
   max-width: fit-content;
 }
 
@@ -65,10 +72,11 @@
 }
 
 h1 {
-  text-align: center;
+  /*text-align: center;*/
   font-family: var(--logo-name-font-family);
   font-size: 48px;
   font-weight: normal;
+  margin-left: -60px;
 }
 
 h2 {
@@ -106,6 +114,7 @@ p::first-letter {
   max-width: 50%;
   margin-top: 20px;
   margin-left: 70px;
+  border-top-left-radius: 20%;
 }
 
 .link {
@@ -171,4 +180,82 @@ p::first-letter {
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   text-decoration: none;
+}
+
+.logo-magazine {
+  margin-left: 850px;
+}
+
+/*https://codepen.io/zajonsss/pen/abqZZe, January 12, 2023*/
+.kwadrat {
+  width: 232px;
+  height: 180px;
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+}
+.trojkat {
+  position: relative;
+  overflow: hidden;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  margin: 81px 0 0 16px;
+}
+
+.trojkat_bg {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url("../img/smirre.jpg");
+  background-size: 100%;
+  background-position: center top;
+  transform: skew(-10deg, -10deg) rotate(-45deg);
+  transition: 0.3s;
+}
+
+.trojkat_bg:hover {
+  background-size: 90%;
+}
+
+.kwadrat2 {
+  width: 232px;
+  height: 170px;
+  border-top: 1px solid #000;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.trojkat2 {
+  position: relative;
+  overflow: hidden;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 16px;
+}
+.trojkat_bg2 {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url("../img/smirre.jpg");
+  background-size: 100%;
+  background-position: center top;
+  transform: skew(-10deg, -10deg) rotate(-45deg);
+  transition: 0.3s;
+}
+
+.trojkat_bg2:hover {
+  background-size: 90%;
 }
