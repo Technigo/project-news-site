@@ -17,7 +17,7 @@ function toggleMenu() {
     }
 }
 /* Event Listener */
-toggle.addEventListener( 'click', togglemenu, false)
+toggle.addEventListener( 'click', toggleMenu, false)
 
 const items = document.querySelectorAll(".item");
 /* Activate Submenu */
