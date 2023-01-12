@@ -1,4 +1,117 @@
 html {
-  background: #0025ff;
+  background: pink;
   color: #fff;
 }
+
+*{
+  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background: silver;
+  padding: 0 15px;
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+.menu,
+.submenu{ /*för att ta bort cirklarna*/
+  list-style-type: none;
+
+}
+.logo{
+  font-size: 20px;
+  padding: 7.5px 10 7.5px 0; /*7,5 top och bottom, 10 right, 0 left*/
+}
+.item{
+  padding: 10px ;
+
+}
+
+.item.button{
+  padding: 9px 5px ;
+}
+.item:not(.button) a:hover, 
+.item a:hover::after {
+ color: red;
+
+}
+/*mobile navigation*/
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a{
+  padding: 15px;
+} 
+
+.toggle{
+ order: 1;
+  font-size: 20px;
+}
+.item.button{
+  order: 2;
+}
+.item{
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+  
+
+}
+.button.secondary{
+border-bottom: 1px pink solid;
+}
+
+.submenu{
+  /* gör så att submeny inte syns  */
+  display: none;
+
+}
+.submenu-active .submenu {
+  /*kommer att användas vid java 
+  to hide or show the submenu*/
+  display: block;
+
+}
+.has-submenu > a::after {
+  /* so we can add icons next to the text*/
+font-family: "Font Awesome 5 free";
+font-size: 12px;
+line-height: 16px;
+font-weight: 900;
+content: "\f078";
+color: pink;
+padding-left: 5px
+
+
+}
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active{
+  background-color: gray;
+  border-radius: 3px;
+
+}
+
+
+
+

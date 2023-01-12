@@ -4,11 +4,58 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/89b5f4f24f.js" crossorigin="anonymous"></script>
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+     
+     
+ <nav class="menu"> <!--Flexbox container-->
+  <ul class="menu">
+    <li class="logo"> <a href="#"> LÄGGA BILD HÄR</a> </li>
+    <li class="item"> <a href="#"> Home</a> </li>
+    <li class="item"> <a href="#">  About</a> </li>
+
+<li class="item has-submenu"> <!--Flexbox items has-submenu 
+        är för java och css-->
+    <a tabindex="0"> news</a> <!--Tabindex 0 för att de som använder 
+          keyboards kan tab genom menyerna-->
+            <ul class="submenu">
+                <li class="subitem"><a href="#"> Travels</a></li>
+                <li class="subitem"><a href="#">By train</a></li>
+                <li class="subitem"><a href="#">Guided Tours</a></li>
+                <li class="subitem"><a href="#">News</a></li>
+           </ul>
+  </li>
+          
+          <li class="item has-submenu">
+            <a tabindex="0"> Lisbon</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#"> lala</a></li>
+                    <li class="subitem"><a href="#">lolo</a></li>
+                    <li class="subitem"><a href="#">lele</a></li>
+                </ul>
+          </li>
+  
+
+   
+            <li class="item"><a href="#"> Blog</a></li>
+            <li class="item"><a href="#">contact</a></li>
+           
+            
+            <li class="item button"><a href="#">login</a></li>
+            <li class="item button secondary"><a href="#">sign up</a></li>
+            <!--button for js ngt är dubbelt här!-->
+            <li class="toggle"> <a href="#"> <i class="fas fa-bars"></i> </a></li>
+          
+         
+    </ul>
+          
+  </nav>
+  
+   
     </header>
     <h1> The empty plate</h1>
     <H2>Lissabon Issue</H2>
@@ -20,5 +67,7 @@
     <section class="Small-News">
       <!-- The other news  -->
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
