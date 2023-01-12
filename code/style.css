@@ -27,9 +27,8 @@ a{
 }
 .logo{
   font-size: 20px;
-  padding: 7.5px 10 7.5px 0; /*7,5 top och bottom, 10 right, 0 left*/
+  padding: 7.5px 10 7.5px 0px; /*7,5 top och bottom, 10 right, 0 left*/
  
-
 }
 .item{
   padding: 10px ;
@@ -39,12 +38,13 @@ a{
 .item.button{
   padding: 9px 5px ;
 }
+
 .item:not(.button) a:hover, 
 .item a:hover::after {
  color: red;
-
 }
-/*mobile navigation*/
+
+
 .menu{
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +76,6 @@ a{
 .active .item {
   display: block;
   
-
 }
 .button.secondary{
 border-bottom: 1px pink solid;
@@ -123,49 +122,54 @@ padding-left: 5px
   display: inline-block
 }
 /* slut nav*/
-/*mobile first*/
 
+
+/*MOBIL news*/
 
 .title{
   display: flex;
 justify-content: center;
+ }
 
-  
-}
 .title h1{
   font-size: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   
 }
-.big-news {
+
+
+.gridparent{
   display: grid;
   grid-template-columns: 1fr;
-  border: black solid;
+  border: solid #0080ff;
+}
+.solen {
+ display: flex;
+  justify-content: center;
+ 
+}
+.solen img{ /*bilden svarar inte*/
+  height: 200px;
+  width: 200px;
 
 }
 
-.big-news img{
-  border: grey solid;
-  grid-column-start: 1;
-  grid-column-end: 2;
- padding: 10px 10px 10px 10px;
-  height: 200px;
-  width: 200px;
- 
-  
-
+.big-news{
+  display: flex;
+  justify-content: center;
 }
 .big-news H2{
   font-size:50px ;
-  text-align: center;
+text-align: center;
   grid-column-start: 1;
   grid-column-end: 2;
- 
 
 }
+
 .big-news p{
   text-align: center;
+ 
   grid-column-start: 1;
   grid-column-end: 2;
 }
@@ -174,27 +178,84 @@ justify-content: center;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  justify-content: center;
-  border: solid red;
+  justify-items: center;
+  border: solid green; 
 
-  
 }
 
+
 .small-news img{
+
+height: 200px;
+width: 200px;
+
+
+}
+
+.small-news h3{
   grid-column-start: 1;
   grid-column-end: 2;
-  padding: 10px 10px 10px 10px;
-  height: 200px;
-  width: 200px;
+ 
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 
 }
 
 .small-news p{
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-column: 1/2;
   font-size: 15px;
- 
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+
+.food{
+  grid-column-start: 1;
+  grid-column-end: 2; 
+
 
 }
+
+.days{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+}
+.drinks{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.beaches{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.pets{
+  grid-column-start: 1;
+  grid-column-end: 2; 
+
+}
+.night{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.trams{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.walking{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
 
 /*PADDA*/
 @media all and (min-width: 700px) {
@@ -252,22 +313,18 @@ justify-content: center;
   flex-wrap: wrap;
   
 }
-.big-news {
+.gridparent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  border: red solid;
+  justify-content: center;
 
 }
 
-.big-news img{
-  border: violet solid;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  
- padding: 10px 10px 10px 10px;
-  height: 200px;
-  width: 200px;
+.gridparent img{
+  border: green solid;
+padding: 10px 10px 10px 10px;
+  height: 500px;
+  width: 500px;
  
   
 
@@ -275,35 +332,50 @@ justify-content: center;
 .big-news H2{
   font-size:50px ;
   text-align: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  
  
 
 }
 .big-news p{
   text-align: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .small-news{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+
   align-content: center;
   justify-content: center;
   border: solid green;
 
   
 }
+.small-news h3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+ 
+  font-size: 60px;
+  display: flex;
+  justify-content: center;}
+
+  .small-news p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+   font-size: 30px;
+    display: flex;
+    justify-content: center;}
 
 .small-news img{
   padding: 10px 10px 10px 10px;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border: solid black;
+  align-self: center;
 
 }
+
 
 .food{
   grid-column-start: 1;
@@ -346,7 +418,6 @@ justify-content: center;
 
 }
 
-
 }
 
 
@@ -354,7 +425,7 @@ justify-content: center;
 
 /*desktop*/
 
-@media (min-width:960px){
+@media (min-width:960px) {
 
   /*navigation*/
  .menu{ align-items: flex-start;     
@@ -410,26 +481,19 @@ justify-content: center;
     flex-wrap: wrap;
     
   }
-  .big-news {
+  .gridparent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    border: black solid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
   
   }
   
-  .big-news img{
-    border: grey solid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    
-   padding: 10px 10px 10px 10px;
-    height: 200px;
-    width: 200px;
-   
-    
-  
-  }
+  .gridparent img{
+    border: violet solid dotted;
+  padding: 10px 10px 10px 10px;
+    height: 600px;
+    width: 600px;}
+
   .big-news H2{
     font-size:50px ;
     text-align: center;
@@ -451,14 +515,13 @@ justify-content: center;
     align-content: center;
     justify-content: center;
     border: solid red;
-  
-    
+ 
   }
   
   .small-news img{
     padding: 10px 10px 10px 10px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
   
   }
  
