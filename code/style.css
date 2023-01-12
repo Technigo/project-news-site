@@ -9,7 +9,7 @@ h1 {
   text: verdana;
   font-style: italic;
   color: rgb(105, 29, 171);
-  font-size:x-large;
+  font-size: 20px;
   margin-left: 30px;
   display: flex;
   align-items: center;
@@ -32,6 +32,7 @@ nav {
 .navbar a.icon {
   display: block;
   position: absolute;
+  cursor: pointer;
   right: 10px;
   top: 10px;
 }
@@ -138,21 +139,35 @@ p {
 .grid-item-card img {
   aspect-ratio: 1 / 1.2;
   object-fit: cover;
-  }
+}
 
-  footer {
-    text-align: center;
-    font-family: verdana;
-  }
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: verdana;
+  text-align: center;
+  background-color: #a9bdc0;
+  padding: 10px 0px;
+}
 
-  .technigo-logo img {
-    width: 10px;
-    height: 10px;
-  }
+.technigo-logo {
+  width: 20x;
+  height: 20px;
+  padding-right: 10px;
+}
 
-  @media (min-width: 668px) and (max-width: 1024px) {
+
+@media (min-width: 668px) and (max-width: 1024px) {
     
-    .grid-parent-big-news {
+  .navbar #myLinks {
+    display: flex;
+  }
+
+  .navbar a.icon {
+    display: none;
+  }
+
+  .grid-parent-big-news {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 150px 5px 5px 5px;
@@ -163,15 +178,23 @@ p {
       overflow: hidden;
     }
 
-    .grid-parent-other-news {
+  .grid-parent-other-news {
       grid-template-columns: repeat(2, 1fr);
   
     }
   }
   
-  @media (min-width: 1025px) {
+@media (min-width: 1025px) {
   
-    .grid-parent-big-news {
+  .navbar #myLinks {
+    display: flex;
+  }
+
+  .navbar a.icon {
+    display: none;
+  }
+ 
+  .grid-parent-big-news {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 150px 5px 5px 5px;
@@ -182,7 +205,7 @@ p {
       overflow: hidden;
     }
 
-    .grid-parent-other-news {
+  .grid-parent-other-news {
       grid-template-columns: repeat(4, 1fr);
   
     }

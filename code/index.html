@@ -24,8 +24,18 @@
           </ul>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>  
         </a>
+        <script>
+         function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+             x.style.display = "none";
+          } else {
+           x.style.display = "block";
+         }
+          } 
+        </script>
         </nav>
       </div>    
     </header>
@@ -88,7 +98,8 @@
       </div>
     </section>
     <footer>
-      <p>Technigo Class of 2023 - Fiona Klacar</p>
+      <img class ="technigo-logo" src="logo.svg" alt=Technigo-SVG>
+      <p>Class of 2023 - Fiona Klacar</p>
     </footer>
   </body>
 </html>
