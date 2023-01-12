@@ -18,12 +18,7 @@
 .navbar a {
   color: var(--primary-text-color);
   text-decoration: none;
-  margin: 5px;
-}
-
-.navbar li {
-  list-style: none;
-  display: inline;
+  font-family: var(--headings-font-family);
 }
 
 .navbar a:hover {
@@ -32,10 +27,24 @@
   text-decoration: underline;
 }
 
+/*.navbar-ul {
+  position: relative;
+  bottom: 35px;
+}*/
+
+.navbar li {
+  list-style: none;
+  display: inline;
+}
+
 .logo-nav {
+  position: relative;
+  top: 18px;
   width: 50px;
   border-radius: 50%;
-  margin-right: 5px;
+  box-shadow: var(--box-shadow);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .active {
@@ -95,16 +104,17 @@ h1 {
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
 }*/
 
-.logo {
+.logo-footer {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-.logo img {
+.logo-footer img {
   width: 50px;
   border-radius: 50%;
+  box-shadow: var(--box-shadow);
 }
 
 .logoTextSpan {

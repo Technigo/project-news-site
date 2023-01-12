@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/818262a977.js"
@@ -15,7 +19,6 @@
     <header>
       <!-- Some kind of logo and navbar -->
       <nav class="navbar">
-        <div class="container">
           <a href="#"
             ><img
               src="../img/a_cat.jpg"
@@ -23,99 +26,96 @@
               title="Logo, black cat"
               class="logo-nav"
           /></a>
-          <div class="container">
-            <div>
-              <ul>
-                <li>
-                  <a class="active" aria-current="page" href="#" title="Home"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a href="./tips.html" title="Tips">Tips</a>
-                </li>
-                <li>
-                  <a href="quotes.html" title="Quotes & Memes"
-                    >Quotes & Memes</a
-                  >
-                </li>
-                <li>
-                  <a href="contact.html#contact" title="Contact">Contact</a>
-                </li>
-              </ul>
-            </div>
+          <div>
+            <ul class="navbar-ul">
+              <li>
+                <a class="active home-nav" aria-current="page" href="#" title="Home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="./tips.html" title="Tips">Tips</a>
+              </li>
+              <li>
+                <a href="quotes.html" title="Quotes & Memes">Quotes & Memes</a>
+              </li>
+              <li>
+                <a href="contact.html#contact" title="Contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
       <h1>Catz Magazine</h1>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-      <div class="container">
-        <div class="flex-parent grid-parent">
-          <div class="flex-child grid-child-big-news">
-            <div class="big-news">
-              <img
-                src="../img/sunSalutatingCat.jpg"
-                class="img-big-news"
-                alt="Smirre Training App"
-                title="Smirre Training"
-              />
+    <div class="container">
+      <section class="big-news">
+        <!-- The big news content -->
+        <div class="container">
+          <div class="flex-parent grid-parent">
+            <div class="flex-child grid-child-big-news">
+              <div class="big-news">
+                <img
+                  src="../img/sunSalutatingCat.jpg"
+                  class="img-big-news"
+                  alt="Smirre Training App"
+                  title="Smirre Training"
+                />
+              </div>
             </div>
-          </div>
-          <div class="flex-child grid-child-big-news">
-            <div class="big-news">
-              <h2>The Latest Rage - Yoga for Cats!</h2>
-              <p>
-                Yoga Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto aperiam odit sed fugit alias, distinctio molestiae
-                expedita repellendus amet impedit sint sit iure voluptatem eius
-                quisquam quam atque velit. Cumque?
-              </p>
+            <div class="flex-child grid-child-big-news">
+              <div class="big-news">
+                <h2>The Latest Rage - Yoga for Cats!</h2>
+                <p>
+                  Yoga Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto aperiam odit sed fugit alias, distinctio molestiae
+                  expedita repellendus amet impedit sint sit iure voluptatem
+                  eius quisquam quam atque velit. Cumque?
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-      <!-- On desktop-sized screens: four cards in a row, 
+      <section class="">
+        <!-- The other news  -->
+        <!-- On desktop-sized screens: four cards in a row, 
          On tablets: two in a row, 
         On mobile: one card on each row. -->
-    </section>
-    <footer>
-      <div class="logo">
-        <img
-          src="../img/a_cat.jpg"
-          alt="Logo, black cat"
-          title="Logo, black cat"
-        />
-        <span class="logoTextSpan">Michelle Wegler 2023</span>
-      </div>
-      <div class="flex-parent">
-        <div class="flex-child">
-          <a
-            href="https://www.linkedin.com/in/michellewegler/"
-            title="Linkedin Profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
-            ><span class="sr-only">Linkedin</span></a
-          >
+      </section>
+      <footer>
+        <div class="logo-footer">
+          <img
+            src="../img/a_cat.jpg"
+            alt="Logo, black cat"
+            title="Logo, black cat"
+          />
+          <span class="logoTextSpan">Michelle Wegler 2023</span>
         </div>
-        <div class="flex-child">
-          <a
-            href="https://github.com/smirrebinx/Responsive-Portfolio.git"
-            title="Github Profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-github" aria-hidden="true"></i
-            ><span class="sr-only">Github</span></a
-          >
+        <div class="flex-parent">
+          <div class="flex-child">
+            <a
+              href="https://www.linkedin.com/in/michellewegler/"
+              title="Linkedin Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+              ><span class="sr-only">Linkedin</span></a
+            >
+          </div>
+          <div class="flex-child">
+            <a
+              href="https://github.com/smirrebinx/Responsive-Portfolio.git"
+              title="Github Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github" aria-hidden="true"></i
+              ><span class="sr-only">Github</span></a
+            >
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
