@@ -21,3 +21,376 @@ h1{
   color: rgb(255, 255, 255);
   margin: 0;
 }
+
+p{
+  margin: 0px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0 var(--main-padding);
+  margin: 0px;
+}
+
+h3{
+  font-size: 16px;
+  padding: 0 var(--main-padding);
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+hr {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border: 0.5px dotted white;
+  opacity: 0.2;
+}
+
+/* Grid overall layout */
+
+.container{
+  max-width: 1200px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  margin: 30px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr 1.2fr 1.8fr 0.2fr;
+  gap: 10px;
+  grid-template-areas: 
+  "header header header header"
+  "nav nav nav nav"
+  "main main main main"
+  "content content content content";
+}
+
+/* Grid design of header and navbar */
+.container header {
+  grid-column: 1/5;
+  background-color: rgba(70, 100, 155, 0.753);
+  color: white;
+  border-top-left-radius: var(--main-radius);
+  border-top-right-radius: var(--main-radius);
+  padding: 15px;
+  display: flex;
+  justify-content: center;     /*Placerar längs vertikala axeln*/
+  align-items: center;                /*Centrerar längs horisontella axeln*/
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.logo-img {
+  max-width: 110px;
+  margin: auto;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+}
+
+/* Grid design of only navbar */
+
+.container nav {
+  grid-column: 1/5;
+  background-color: rgba(70, 100, 155, 0.753);
+  color: white;
+  padding: 15px;
+}
+
+.navbar1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;     /*Placerar längs vertikala axeln*/
+  align-items: center;                /*Centrerar längs horisontella axeln*/ 
+  margin: 0 70px;
+}
+
+.navbar1 a {
+font-size: 20px;
+}
+
+.navbar1 a:hover {
+  font-size: 20px;
+  opacity: 0.6;
+  }
+
+
+
+
+/* Grid design of the large news section */
+.container main {
+  grid-column: 1/5;
+  background-color: rgb(190, 202, 236);
+  display: flex;
+  padding: var(--main-padding);
+
+}
+
+.main-article-container {
+  background-color: #E8B9B9;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
+}
+
+.main-article {
+  margin: auto;
+  display: inline-block;
+  justify-content: flex-start;
+}
+
+.img-main-article {
+  margin: auto;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.img-main-article:hover {
+  opacity: 0.7;
+}
+
+.button-readmore{
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.5px solid black;
+  padding: 10px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.button-readmore:hover {
+  opacity: 0.6;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Overall grid design of the smaller news section. Here we create 4 columns and 2 rows. */
+.container content {
+  grid-column: 1/5;
+  background-color: rgb(165, 186, 241);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0px;
+}
+
+
+/* Detailed design of smaller news sections */
+
+.container content {
+  background-color: rgb(190, 202, 236)
+}
+.minor-article {
+  margin: var(--main-margin);
+  background-color: #E8B9B9;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(34, 34, 39, 0.3) 0px 7px 29px 0px;
+}
+
+.img-minor-articles {
+  margin: 10px auto;
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.img-minor-articles:hover {
+  opacity: 0.7;
+}
+
+.text-minor-article {
+  padding: 14px;
+}
+
+
+
+
+/* Grid design of the footer */
+.container footer {
+  grid-column: 1/5;
+  background-color: rgba(70, 100, 155, 0.753);
+  border-bottom-left-radius: var(--main-radius);
+  border-bottom-right-radius: var(--main-radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-subscribe{
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.5px solid black;
+  padding: 6px 8px;
+  font-size: 14px;
+  margin: 0 4px;
+}
+
+.button-subscribe:hover {
+  opacity: 0.6;
+  color: white;
+  border: 1px solid white;
+}
+
+.container footer h3 {
+  font-size: 20px;
+}
+
+.container footer a {
+  color: rgb(255, 255, 255);
+}
+
+.container footer a:hover {
+  font-size: 14px;
+}
+
+.img-arrow{
+  max-width: 25%;
+  margin: 0 38%;
+}
+
+.img-arrow:hover {
+  opacity: 0.5;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------ Tablet design*/
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  /* Overall grid design of the smaller news section. Here we create 2 columns and 4 rows. */
+.container content {
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+}
+
+.container {
+  margin: 15px 90px;
+  }
+
+  
+.container main {
+      flex-direction: row;
+  }
+
+  .main-article-container {
+      flex-direction: column;
+  }
+
+h1{
+  font-size: 40px;
+}
+
+  
+.img-main-article {
+  max-width: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.minor-article {
+  margin: 15px;
+}
+
+.navbar1 {
+  margin: 0 20px;
+}
+
+  
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------ Phone design*/
+@media (max-width: 667px) {
+
+          /* Overall grid design of the smaller news section. Here we create 1 columns and auto rows. */
+.container content {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+
+.container {
+  margin: 5px 20px;
+  }
+
+  .container main {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .main-article-container {
+      flex-direction: column;
+  }
+
+h1{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 20px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+h3{
+  font-size: 16px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+
+.img-main-article {
+  max-width: 90%;
+  margin: auto auto 10px auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.minor-article {
+  margin: 25px;
+}
+
+.img-minor-articles {
+  width: 90%;
+}
+
+
+}
+
+
+
+
+
+
