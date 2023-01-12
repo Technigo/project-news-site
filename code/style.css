@@ -1,7 +1,8 @@
 /*project-news-site*/
 :root {
   --headings-font-family: "Xanh Mono", monospace;
-  --paragraph-font-family: "PT Sans Narrow", sans-serif;
+  --logo-name-font-family: "Rubik Gemstones", cursive;
+  --paragraph-font-family: "Newsreader", serif;
   --border-color: #94b1aa;
   --primary-bg-color: #94b1aa;
   --secondary-bg-color: #f4f6f6;
@@ -9,6 +10,15 @@
   --secondary-text-color: #000;
   --image-link-color: #f4f6f6;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.border-container {
+  border: 10px outset var(--border-color);
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 80%;
+  max-width: fit-content;
 }
 
 .navbar {
@@ -19,6 +29,8 @@
   color: var(--primary-text-color);
   text-decoration: none;
   font-family: var(--headings-font-family);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .navbar a:hover {
@@ -49,10 +61,26 @@
 
 .active {
   font-weight: bold;
+  font-size: 20px;
 }
 
 h1 {
   text-align: center;
+  font-family: var(--logo-name-font-family);
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: var(--paragraph-font-family);
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+}
+
+p::first-letter {
+  font-size: 58px;
 }
 
 .flex-parent .big-news {
@@ -73,8 +101,9 @@ h1 {
 }
 
 .img-big-news {
-  height: 50%;
+  height: 30%;
   max-width: 50%;
+  margin-top: 20px;
 }
 
 /*.link {
