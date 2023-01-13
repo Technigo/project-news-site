@@ -1,22 +1,19 @@
 
-
-html {
-
-}
-
 body {
   background: #ffffff;
+  width: 100%;
 }
 
 
-.flex-parent {
+.flex-parent-header {
   background: #fffff0;
-  border: 5px solid blue;
-  height: 300px;
+  height: 170px;
+  width: 98%;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -24,16 +21,46 @@ body {
 }
 
 .logo img {
-  height: 260px;
-  margin: 20px;
+  height: 120px;
+  margin: 10px 10px 10px 15px;
 }
 
 .icon-mobile {
-  alignt-content: center;
+  align-content: center;
 } 
 
 .icon-mobile img {
-  height: 80px;
-  margin: 60px;
+  height: 20px;
+  margin: 20px 20px 20px 10px;
 }
 
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 100px);
+  border: 3px dotted blue;
+  gap: 30px;
+}
+
+.grid-item {
+  background: pink;
+  border: 2px solid blue;
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.big-grid-item {
+  grid-row: span 4;
+}
+
+.big-grid-item img {
+  grid-column: span 2;
+  max-height: 100%;
+  max-width: 50%;
+  object-fit: cover; 
+}
+
+.big-grid-item h1, p {
+  grid-column: 3 / 5;
+}
