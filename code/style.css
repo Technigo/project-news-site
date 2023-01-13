@@ -1,4 +1,41 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: beige;
+  color: rgb(7, 6, 6);
+}
+
+.title-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px
+}
+
+.logo-container {
+  width: 250px;
+  height: 5px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.navigation {
+  grid-column: 8/9;
+}
+
+.big-news {
+  display: flex;
+  height: 500px;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: column;
+}
+
+.main-story {
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  align-content: center
+}
+
+.main-story-text {
+  flex-direction: column;
+  
 }
