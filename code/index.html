@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>The Alabama Pine Journal - News Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
+  <body> 
+<!-- Here comes the logo followed by the nav -->
+     <div> 
+      <header>
+        <img src=".code/alabamalogo.jpg" class="logo" style="float: left; margin: 17px 80px 11px 0px;">
+        <img src=".code/pinetimessmall.jpg" class="logosmall" style="float: left; margin: 17px 80px 11px 7px;">
+          <br>        
+            <nav class="navbar">
+            <a href="http://www.google.com">ARCHIVE</a>
+            <a href="http://www.google.com">SEARCH</a>
+            <a href="mailto:pererikandreas@gmail.com">CONTACT</a>
+            <br style="clear: both;" /></p>
+            </nav>
+      </header>
+<!-- Here´s the big news content -->
+     <div>
+      <section class="grid-parent">
+        <div class="grid-item big-news-grid">
+          <img class="bignewspicture" src=".code/greenpines.jpeg">
+            <div class="bignewstext">
+              <article>
+                <h1>This is a beautiful tree.</h1>
+                <p class="bignewstext">The quote commes from Gus Palmer, Head of KFT (Kentucky Free Tree) 
+                when seeing pictures of the newly found micropine near the southern limit of the Sierra Madre 
+                Occidental mountain range in northwestern and western Mexico.</p>
+                <br>
+                <button><a href="https://en.wikipedia.org/wiki/Sierra_Madre_Occidental">Read article</a></button>
+             </article>
+         </div>
+     </div> 
+<!-- Here´s more news(cards)  -->
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/trafficlights.jpg"><h2>Accedents due to broken traffic-lights along E75.</h2><p class="morenewstext">Traffic lights around the Alabama area and especially the E75 is a hazzard...<br><button><a href="https://www.shmoop.com/drivers-ed/alabama/traffic-lights-and-signals.html">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/logs.jpeg"><h2>Logladyacademy, heres the 2023 nominations.</h2><p class="morenewstext">The classic Alabama event is back: "After the pandemic its time to hand out prizes" the jury says...  <br><button><a href="https://en.wikipedia.org/wiki/Log_Lady">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/fogpines.jpeg"><h2>Scientists: Fog = Woods best friend</h2><p class="morenewstext">Scientists agrees; fog or the moisture in the air is what the trees like...<br><button><a href="https://www.caryinstitute.org/news-insights/media-coverage/fog-connects-ecosystems">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/axe.jpeg"><h2>Axe-company expands in Alabama</h2><p class="morenewstext">Finest steel and the hardest woods is the usp of the Alabama axe company, Woddy&Sones...<br><button><a href="https://www.arms-n-armor.com/blogs/news/what-new-with-the-burgundian-pole-axe">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/foggywoods.jpeg"><h2>Climatechanges, </h2><p class="morenewstext">How does the undeniable climatechange affect the dark wood and fine nature surounding Alabama...<br><button><a href="https://coveringclimatenow.org/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HAdnXMb-inUioq09SEtQJHgAOoGZK8LIh6A4xbHuhlO7y4YLExKxFcaAk64EALw_wcB">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/snowonpines.jpg"><h2>Winters has arrived</h2><p class="morenewstext">The hardware store are bunkering salt and shovels. Winter is here and with that comes snow...<br><button><a href="https://www.britannica.com/place/Alabama-state/Climate">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/workershand.jpg"><h2>Local designer opens studio </h2><p class="morenewstext">From furniture to exclusive artwork and jewleries, the local craftmans and designers...<br><button><a href="https://www.alabamawoodworker.com/">Read article</a></button></p></div>
+        <div class="grid-item more-news-grid"><img class="more-news-picture" src=".code/cameraman.jpg"><h2>Leeland Hay new documentary</h2><p class="morenewstext">The rarest among pines has its home i Mexico and ofcourse Alabamas own Leeland Hay is...<br><button><a href="https://www.youtube.com/watch?v=k_xKhHwqeW8">Watch movie</a></button></p></div>
+      </div>
     </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+   </div>
+<!-- And here comes the Flexbox footer  -->
+    <footer>
+      <div class="Credits">MADE BY <a href="http:/technigo.io"><img class="logo-technigo" src=".code/logo-technigo.jpeg"></a> STUDENT ANDREAS AXELSSON  
+      </div>
+    </footer>
   </body>
 </html>

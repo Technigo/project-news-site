@@ -1,4 +1,298 @@
+/* News-site-project by Andreas Axelsson for Technigo spring 2023.
+CSS are written in the order of the site-layout from top to bottom. 
+Mobile first and ending with the Media Queries for Tablet and Desktop. */
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #fbcc33;
+  color: black;
+  font-size: 17px;
 }
+/* Header and Navbar (Mobile First) */
+
+.logo {
+  margin-top: 10px;
+  margin-right: 0px;
+  width: 350px;
+  display: none;
+}
+
+.logosmall {
+  margin-left: 30px;
+  margin-right: 0px;
+  width: 350px;
+}
+
+.navbar {
+  margin-top: 10px;
+  text-align: right;
+  display: grid;
+  font-family: Arial;
+  font-style: black;
+  font-weight: bolder;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(19, 131, 41);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(19, 131, 41);
+  text-decoration: none;
+}
+
+/* Grid starts with the main news and h1 followed by more newscards bellow with h2 */
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(250px);
+  gap: 10px;
+}
+ 
+.big-news-grid {
+  margin-top: -20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background: white;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: grid;
+  text-align: center, right;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.bignewspicture {
+  width: 280px;
+  height: 100%;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.bignewstext {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.grid-item {
+  display: grid;
+  background: white
+}
+
+.more-news-grid {
+  padding: 10px;
+  justify-content: left;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: grid;
+  text-align: center, right;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.more-news-picture {
+  width: 120px;
+  height: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.morenewstext {
+  font-size: 15px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 5px;
+  background-color: #fbcc33;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: white; 
+  padding: 10px;
+  font-size: 13px;
+  font-family: Arial;
+  font-style: black;
+  font-weight: bold;
+}
+
+footer img{
+  justify-content: center;
+  height: 10px;
+}
+/* Here comes the Media Queries starting with the tablet */
+
+@media only screen and (min-width: 600px) {
+          
+          .logosmall {
+            display: none;
+          }
+          .logo {
+            position: center;
+            display: flex;
+          }
+          .more-news-grid {
+            padding: 10px;
+            justify-content: left;
+            grid-column: span 1;
+            grid-row: span 1;
+            display: grid;
+            text-align: center, right;
+            grid-template-columns: 1fr;
+            column-gap: 0px;
+          }
+          .more-news-picture {
+            width: 375px;
+            height: 370px;
+            font-size: 10px;
+          }
+          .morenewstext {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+          }
+          .grid-parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(370px, 370px);
+            gap: 10px;
+          }
+          h1 {
+            margin-top: 35px;
+            margin-bottom: 10px;
+            font-size: 50px;
+          }
+          .big-news-grid {
+            margin-left: -10px;
+            margin-right: -10px;
+            background: white;
+            grid-column: span 2;
+            grid-row: span 1;
+            display: grid;
+            text-align: center, right;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0px;
+          }
+          .bignewstext {
+            font-size: 19px;
+            margin-bottom: 0px;
+            margin-right: 40px;
+          }
+          .bignewspicture {
+            width: 300px;
+            height: 100%;
+            margin-bottom: 0px;
+          }
+          nav {
+            margin-top: 40px;
+            font-family: Arial;
+            font-size: 20;
+            font-style: black;
+            font-weight: bolder;
+            display: inline;
+          }
+      }
+
+/* And heres the Media Queries for desktop */
+
+      @media only screen and (min-width: 992px) {
+
+          .logosmall {
+            display: none;
+          }
+          .logo {
+            margin-top: 20px;
+            margin-right: 0px;
+            width: 400px;
+          }
+          .more-news-grid {
+            padding: 10px;
+            justify-content: left;
+            grid-column: span 1;
+            grid-row: span 1;
+            display: grid;
+            text-align: center, right;
+            grid-template-columns: 1fr;
+            column-gap: 0px;
+          }
+          .more-news-picture {
+            width: 325px;
+            height: 325px;
+            font-size: 10px;
+          }
+          .morenewstext {
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+          }
+          .grid-parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(250px, 250px, 250px, 250px);
+            gap: 10px;
+          }
+          h1 {
+            margin-top: 60px;
+            margin-bottom: 50px;
+            font-size: 50px;
+          }
+          .big-news-grid {
+            margin-left: -10px;
+            margin-right: -10px;
+            background: white;
+            grid-column: span 4;
+            grid-row: span 1;
+            display: grid;
+            text-align: center, right;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 40px;
+          }
+          .bignewstext {
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-right: 40px;
+          }
+          .bignewspicture {
+            width: 600px;
+            height: 500px;
+            margin-bottom: 0px;
+          }
+          
+          nav {
+            font-family: Arial;
+            font-style: black;
+            font-size: 20px;
+            font-weight: bolder;
+            color: black;
+            text-align: center;        
+          }
+      }
