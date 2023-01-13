@@ -15,4 +15,4 @@ The navbar could have a dropdown under News that could list different categories
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://noras-travel-news.netlify.app/
