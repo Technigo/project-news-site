@@ -6,13 +6,7 @@
 }
 
 h1 {
-  text: verdana;
-  font-style: italic;
-  color: rgb(105, 29, 171);
-  font-size: 20px;
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 nav {
@@ -20,25 +14,21 @@ nav {
   height: 16vh;
   background-color: #E8F3F5;
   display:inline-flex;
-  padding: 10px 10px 10px 10px;
   justify-content: flex-end;
   position: relative;
-}
-
-.navbar #myLinks {
-  display: none;
+  margin-top: -40px;
 }
 
 .navbar a.icon {
-  display: block;
+  align-self: flex-end;
+  display: initial;
   position: absolute;
   cursor: pointer;
-  right: 10px;
   top: 10px;
 }
 
 img {
-  height: auto;
+  height: 100%;
   max-width: 100%;
   cursor: pointer;
   display: block;
@@ -61,9 +51,16 @@ text-decoration: none;
   overflow: hidden;
 }
 
+.navbar #myLinks {
+  display: flex;
+}
+
 .nav_links li {
-  display: inline-block;
+  flex-direction: column;
   padding: 30px 20px;
+  background-color: white;
+  gap: 30px;
+  cursor: pointer;
 }
 
 .nav_links li a {  
@@ -73,6 +70,53 @@ text-decoration: none;
 .nav_links li a:hover {
   color: rgb(224, 14, 171);
 }
+
+.flex-parent-logo {
+  border: 10px solid white;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  height: 80px;
+  width: 70px;
+  margin-right: auto;
+}
+
+.flex-child-image {
+  width: auto;
+  height: auto;
+}
+
+body { 
+  padding-top: 40px; 
+}
+
+.grid-parent-big-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 5px solid rgb(100, 132, 169);
+}
+
+.grid-item-big-card-img {
+  width: auto;
+  height: auto;
+  object-fit: cover;   
+}
+
+.grid-item-big-text {
+  padding: 40px 40px;
+}
+
+.card__title {
+  font-family: verdana;
+}
+
+.card__description {
+  font-family: verdana;
+}
+
+p {
+  font-family: verdana;
+} 
 
 button {
   padding: 10px 24px;
@@ -86,46 +130,6 @@ button {
 button:hover {
   background-color:rgba(183, 185, 207, 0.8)
 }
-
-.flex-parent-logo {
-  border: 10px solid white;
-  display: flex;
-  height: 80px;
-  width: 320px;
-  margin-right: auto;
-}
-
-.flex-child-image {
-  width: auto;
-  height:auto;
-}
-
-.flex-parent-list {
- display: flex;
- list-style: none;
-}
-
-.grid-parent-big-news {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.grid-item-big-card-img {
-  display: block;
-  max-width: 100%;
-}
-
-.card__title {
-  font-family: verdana;
-}
-
-.card__description {
-  font-family: Verdana;
-}
-
-p {
-  font-family: verdana;
-}  
 
 .grid-parent-other-news {
   display: grid;
@@ -148,6 +152,7 @@ footer {
   text-align: center;
   background-color: #a9bdc0;
   padding: 10px 0px;
+  margin-top: 30px;
 }
 
 .technigo-logo {
@@ -156,27 +161,47 @@ footer {
   padding-right: 10px;
 }
 
-
+@media (max-width: 667px) {
+  
+  .navbar #myLinks {
+    display: none;
+  }
+  }
+  
 @media (min-width: 668px) and (max-width: 1024px) {
     
-  .navbar #myLinks {
-    display: flex;
+
+h1 {
+  display: none;
+}
+
+  .nav_links li {
+    display: inline-block;  
+    padding: 30px 20px;
+    background-color: #E8F3F5;
   }
 
   .navbar a.icon {
     display: none;
   }
 
+  .nav_links li {
+    background-color: none;
+  }
+
   .grid-parent-big-news {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 150px 5px 5px 5px;
-      gap: 100px;
+      gap: 10px;
       align-items: center;
       border: 5px solid rgb(100, 132, 169);
-      padding: 20px;
       overflow: hidden;
     }
+
+  .grid-item-big-text {
+      margin-top: 50px;    
+    }
+    
 
   .grid-parent-other-news {
       grid-template-columns: repeat(2, 1fr);
@@ -186,8 +211,28 @@ footer {
   
 @media (min-width: 1025px) {
   
-  .navbar #myLinks {
+  h1 {
+    text: verdana;
+    font-style: italic;
+    color: rgb(105, 29, 171);
+    font-size: 20px;
+    margin-left: 30px;
     display: flex;
+    align-items: center;
+  }
+
+  .flex-parent-logo {
+    border: 10px solid white;
+    display: flex;
+    height: 80px;
+    width: 350px;
+    margin-right: auto;
+  }
+
+  .nav_links li {
+    display: inline-block;  
+    padding: 30px 20px;
+    background-color: #E8F3F5;
   }
 
   .navbar a.icon {
@@ -195,15 +240,13 @@ footer {
   }
  
   .grid-parent-big-news {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 150px 5px 5px 5px;
-      gap: 100px;
-      align-items: center;
-      border: 5px solid rgb(100, 132, 169);
-      padding: 20px;
-      overflow: hidden;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    border: 5px solid rgb(100, 132, 169);
+    overflow: hidden;
+  }
 
   .grid-parent-other-news {
       grid-template-columns: repeat(4, 1fr);
