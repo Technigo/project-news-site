@@ -1,0 +1,30 @@
+
+code for the styling of the navbar
+
+.navbar {
+    align-content: center;
+    border: 5px solid blue;
+    margin-right: 40px;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    background: pink;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: tomato;
+    text-decoration: none;
+    box-shadow: 2px 4px tomato;
+  }
+  
+  .navbar a:hover {
+    background:tomato;
+    box-shadow: 2px 4px pink;
+    color: pink;
+  }

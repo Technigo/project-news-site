@@ -1,4 +1,39 @@
+
+
 html {
-  background: #fffff0;
-  color: #000;
+
 }
+
+body {
+  background: #ffffff;
+}
+
+
+.flex-parent {
+  background: #fffff0;
+  border: 5px solid blue;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  align-content: center;
+}
+
+.logo img {
+  height: 260px;
+  margin: 20px;
+}
+
+.icon-mobile {
+  alignt-content: center;
+} 
+
+.icon-mobile img {
+  height: 80px;
+  margin: 60px;
+}
+
