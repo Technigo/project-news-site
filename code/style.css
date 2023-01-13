@@ -124,6 +124,9 @@ a:hover {
 }
 
 .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 80%;
   width: auto;
   height: auto;
@@ -138,6 +141,15 @@ h2 {
 .main-text p {
   text-align: center;
   font-size: 13px;
+}
+
+button {
+  background-color: #87A5F7;
+  color: #FFFFFF;
+  padding: 5px;
+  margin-top: 5px;
+  border: 4px solid #275DF1;
+  border-radius: 6px;
 }
 
 .big-news img {
