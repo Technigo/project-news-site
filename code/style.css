@@ -1,8 +1,63 @@
 html {
-  background: #485285;
+  background: hwb(66 72% 20%);
   color: #fff;
 }
 
-header{
-  background-color: #9ae4c5;
+h1{
+  color: #ffffff;
+  display: inline;
+  font-family: papyrus;
+  font-size: 32px;
+  margin: -5px 5px;
+  text-transform: uppercase;
 }
+
+img{
+  width: 30px;
+  padding: 3px;
+}
+
+
+header{
+  background-color: rgb(133, 126, 108);
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgb(198, 197, 129);
+  color: black;
+}
+
+.big-news{
+  margin: 15px 0px;
+  padding: 10px;
+  display: flexbox;
+  grid-gap: 10px;
+  background-color: rgb(139, 106, 106);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.other-news{
+  background-color: rgb(95, 95, 114);
+
+}
+
