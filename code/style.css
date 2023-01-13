@@ -10,7 +10,7 @@ html {
   margin: 0;
 }*/
 
-nav{
+nav{ /*HUr gör jag för att fylla ut hela*/
   background: silver;
   padding: 0 15px;
 
@@ -126,142 +126,92 @@ padding-left: 5px
 
 /*MOBIL news*/
 
-.title{
-  display: flex;
-justify-content: center;
+.main{
+display: grid;
+ grid-template-columns: 1fr;
+place-items: center;
+}
+
+#title{
+grid-column: 1/2;
  }
 
-.title h1{
-  font-size: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+#title h1{
+  grid-column: 1/2;
+  font-size: 50px;
 }
 
-
-.gridparent{
-  display: grid;
-  grid-template-columns: 1fr;
-  border: solid #0080ff;
+#title img{
+border: #fff 20px;
+ width: 500px;
+ height: 500px;
+ padding: 10px 10px 10px 10px;
 }
 .solen {
- display: flex;
-  justify-content: center;
+ grid-column: 1/2;
  
-}
-.solen img{ /*bilden svarar inte*/
-  height: 200px;
-  width: 200px;
 
 }
 
-.big-news{
+.bildwrapwrap{
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.big-news H2{
-  font-size:50px ;
+
+.bildwrap{
+  width: 100%; /*or whatever you choose*/
+   margin: auto;
+}
+
+.bildwrap img{
+  border: white solid 20px;
+  display:block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  
+}
+
+.BOX{
+display: grid;
+grid-template-columns: 1fr;
+
+  
+}
+
+.BOX h3{
+font-size: 30px;
 text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
+padding: 5px 5px;
 
 }
 
-.big-news p{
-  text-align: center;
- 
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
+.BOX p{
+display: flex;
+justify-content: center;
+font-size: 15px;
+}  
+.small-newswrap{
 
-.small-news{
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-  justify-items: center;
-  border: solid green; 
-
-}
-
-
-.small-news img{
-
-height: 200px;
-width: 200px;
-
-
-}
-
-.small-news h3{
-  grid-column-start: 1;
-  grid-column-end: 2;
- 
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-
-}
-
-.small-news p{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-column: 1/2;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-
-  
-}
-
-
-.food{
-  grid-column-start: 1;
-  grid-column-end: 2; 
-
-
-}
-
-.days{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  
-}
-.drinks{
-  grid-column-start: 1;
-  grid-column-end: 2;
-
-}
-.beaches{
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.pets{
-  grid-column-start: 1;
-  grid-column-end: 2; 
-
-}
-.night{
-  grid-column-start: 1;
-  grid-column-end: 2;
-
-}
-.trams{
-  grid-column-start: 1;
-  grid-column-end: 2;
-
-}
-.walking{
-  grid-column-start: 1;
-  grid-column-end: 2;
+  border: solid 20px;
+  display:block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: auto;
 
 }
 
 
 /*PADDA*/
 @media all and (min-width: 700px) {
-  .menu {
+
+  .menu{
       justify-content: center;
   }
+
   .logo {
       flex: 1;
   }
@@ -275,7 +225,7 @@ width: 200px;
       text-align: right;
       order: 2;}
 
-      /* Button up from tablet screen */
+      /* Button up from tablet screen*/
     .menu li.button a {
       padding: 10px 15px;
       margin: 5px 0;
@@ -302,135 +252,109 @@ width: 200px;
 
 /*START PADDA*/
 
-.title{
-  display: flex;
-justify-content: center;
 
-}
-.title h1{
-  font-size: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}
-.gridparent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    }
+    
+    #title{
+    grid-column: 1/3;
+     }
+    
+    #title h1{
+      grid-column: 1/3;
+      font-size: 50px;
+      border: yellow solid 10px;
+    }
+    
+    #title img{
+      border: white solid 20px;
+      display:block;
+      max-width: 600px;
+      height: auto;
+      margin: auto;
+    }
+    
+    
+.solen {
+grid-column: 1/3;
+      }
 
-}
-
-.gridparent img{
-  border: green solid;
-padding: 10px 10px 10px 10px;
-  height: 500px;
-  width: 500px;
+    .solen p, h2{
+      grid-column: 2/3;
+      text-align: center;
+    }
  
-  
+    
 
-}
-.big-news H2{
-  font-size:50px ;
-  text-align: center;
-  
- 
-
-}
-.big-news p{
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.small-news{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  align-content: center;
-  justify-content: center;
-  border: solid green;
-
+.solen img{
+  border: white solid 20px;
+  display:block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: auto;
   
 }
-.small-news h3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
- 
-  font-size: 60px;
-  display: flex;
-  justify-content: center;}
 
-  .small-news p {
-    grid-column-start: 1;
-    grid-column-end: 2;
-   font-size: 30px;
-    display: flex;
-    justify-content: center;}
-
-.small-news img{
-  padding: 10px 10px 10px 10px;
-  height: 300px;
-  width: 300px;
-  border: solid black;
-  align-self: center;
-
-}
-
-
-.food{
-  grid-column-start: 1;
-  grid-column-end: 2; 
- 
-
-}
-.days{
-  grid-column-start: 2;
-  grid-column-end: 3; 
+.BOX{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
   
 }
-.drinks{
-  grid-column-start: 1;
-  grid-column-end: 2; 
+
+.BOX h3{
+font-size: 30px;
+text-align: center;
+padding: 5px 5px;
+
+}
+
+.BOX p{
+text-align: center;
+}
+
   
+#food{
+  grid-column: 1/2; 
 }
-.beaches{grid-column-start: 2;
-  grid-column-end: 3; 
-  
+#days{
+  grid-column: 2/3;
 }
-.pets{
-  grid-column-start: 1;
-  grid-column-end: 2; 
-
+#drinks{
+  grid-column: 1/2;
 }
-.night{
-  grid-column-start: 2;
-  grid-column-end: 3; 
-
+#beaches{
+  grid-column: 2/3;
 }
-.trams{
-  grid-column-start: 1;
-  grid-column-end: 2; 
-
+#pets{
+  grid-column: 1/2;
 }
-.walking{
-  grid-column-start: 2;
-  grid-column-end: 3; 
-
+#night{
+  grid-column: 2/3;
 }
-
+#trams{
+  grid-column: 1/2;
+}
+#walking{
+  grid-column: 2/3
+}
 }
 
 
 
-
-/*desktop*/
+/*desktop
 
 @media (min-width:960px) {
 
-  /*navigation*/
+  /*navigation
  .menu{ align-items: flex-start;     
   flex-wrap: nowrap;
-  background: none;
+  background: violet;
+ 
 }
 .logo {
   order: 0;
@@ -440,9 +364,7 @@ padding: 10px 10px 10px 10px;
 .logo img{
   height: 300px;
   width: 300px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block
+
 }
 .item {
   order: 1;
@@ -468,106 +390,103 @@ padding: 10px 10px 10px 10px;
 }
 /*navigation stop*/
 
-/*START*/
+/*START
+.main{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+} */
 
-  .title{
-    display: flex;
-  justify-content: center;
-  
-  }
-  .title h1{
-    font-size: 100px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-  .gridparent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-  
+@media (min-width:960px){
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: start;
   }
   
-  .gridparent img{
-    border: violet solid dotted;
-  padding: 10px 10px 10px 10px;
-    height: 600px;
-    width: 600px;}
+  #title{
+  grid-column: 1/5;
+   }
+  
+  #title h1{
+    grid-column: 1/5;
+    font-size: 50px;
+    border: yellow solid 10px;
+  }
+  
+  #title img{
+    border: white solid 20px;
+    display:block;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+  }
+  
+  
+.solen {
+grid-column: 1/5;
+    }
 
-  .big-news H2{
-    font-size:50px ;
+  .solen p, h2{
+    grid-column: 2/3;
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-   
+  }
+
   
-  }
-  .big-news p{
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  
-  .small-news{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-content: center;
-    justify-content: center;
-    border: solid red;
- 
-  }
-  
-  .small-news img{
-    padding: 10px 10px 10px 10px;
-    height: 250px;
-    width: 250px;
-  
-  }
- 
-  
-  .food{
-    grid-column-start: 1;
-    grid-column-end: 2; 
-   
 
-  }
-  .days{
-    grid-column-start: 2;
-    grid-column-end: 3; 
-    
-  }
-  .drinks{
-    grid-column-start: 3;
-    grid-column-end: 4; 
-    
-  }
-  .beaches{grid-column-start: 4;
-    grid-column-end: 5; 
-    
-  }
-  .pets{
-    grid-column-start: 1;
-    grid-column-end: 2; 
+.solen img{
+border: white solid 20px;
+display:block;
+max-width: 400px;
+width: 100%;
+height: auto;
+margin: auto;
 
-  }
-  .night{
-    grid-column-start: 2;
-    grid-column-end: 3; 
-
-  }
-  .trams{
-    grid-column-start: 3;
-    grid-column-end: 4; 
-
-  }
-  .walking{
-    grid-column-start: 4;
-    grid-column-end: 5; 
-
-  }
-
- 
 }
 
+.BOX{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 
+column-gap: 20px ;
+
+}
+
+.BOX h3{
+font-size: 30px;
+text-align: center;
+padding: 5px 5px;
+
+}
+
+.BOX p{
+text-align: center;
+}
+.small-newswrap img{
+
+}
+
+#food{
+grid-column: 1/2; 
+}
+#days{
+grid-column: 2/3;
+}
+#drinks{
+grid-column: 3/4;
+}
+#beaches{
+grid-column: 4/5;
+}
+#pets{
+grid-column: 1/2;
+}
+#night{
+grid-column: 2/3;
+}
+#trams{
+grid-column: 3/4;
+}
+#walking{
+grid-column: 4/5
+}
+}
