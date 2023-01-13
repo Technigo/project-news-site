@@ -1,22 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 1: The News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/aa0e0188fe.js" crossorigin="anonymous"></script>
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+  <header class="navbar" id="home">
+    <div class="logo order-logo">
+      <i class="fa-solid fa-globe"></i>
+      <p>travel stories</p>
+    </div>
+    <a class="navbar-element order-home" href="#home">Home</a>
+    <a class="navbar-element order-news" href="#news">News</a>
+    <a class="navbar-element order-contact" href="#contact">Contact</a>
+    <a class="navbar-element order-about" href="#about">About</a>
+  </header>
+
+  <section class="big-news">
+    <a target="_blank" href="https://www.bbc.com/travel/article/20230108-hydra-the-greek-island-that-banned-wheels"><img
+        class="big-news-img" src="https://ychef.files.bbci.co.uk/1600x900/p0dpljrx.webp"
+        alt="Hydra: The Greek island that banned wheels" /></a>
+    <div>
+      <p class="big-news-title">Hydra: The Greek island that banned wheels</p>
+      <p class="big-news-text">Europe's isle that prohibited vehicles</p>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20221130-mchon-the-french-breakfast-you-dont-know">
+        <img class="news-item-img" src="https://ychef.files.bbci.co.uk/1600x900/p0dkqvqm.webp"
+          alt="The French breakfast you don't know" />
+      </a>
+      <div class="news-item-text">
+        <p class="title">CULINARY ROOTS</p>
+        <p class="text">The French breakfast you don't know</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank"
+        href="https://www.bbc.com/travel/article/20230103-the-peak-of-the-balkans-trail-europes-last-true-wilderness"><img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1600x900/p0dr77tx.webp"
+          alt="Europe's most misunderstood country?" /> </a>
+      <div class="news-item-text">
+        <p class="title">SLOWCOMOTION</p>
+        <p class="text">Europe's most misunderstood country?</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20221206-the-british-island-stuck-in-time"> <img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1600x900/p0dltbm4.webp"
+          alt="Britain's defiant outlier island" /></a>
+      <div class="news-item-text">
+        <p class="title">HIDDEN BRITAIN</p>
+        <p class="text">Britain's defiant outlier island</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20230104-japans-beloved-slow-motion-train"><img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1600x900/p0dsy1db.webp"
+          alt="Japan's stunning locomotive anomaly" /> </a>
+      <div class="news-item-text">
+        <p class="title">RAIL JOURNEYS
+        </p>
+        <p class="text">Japan's stunning locomotive anomaly</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank"
+        href="https://www.bbc.com/travel/article/20230109-the-kings-highway-the-road-that-reveals-jordans-history">
+        <img class="news-item-img" src="https://ychef.files.bbci.co.uk/976x549/p0dv5dgt.jpg"
+          alt="The King's Highway: The road that reveals Jordan's history" />
+      </a>
+      <div class="news-item-text">
+        <p class="title">THE OPEN ROAD</p>
+        <p class="text">The King's Highway: The road that reveals Jordan's history</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20230111-canadas-1300km-atlantic-rail-route"><img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1280x720/p0dqcsp6.webp"
+          alt="A return to old-school Canadian glamour" /> </a>
+      <div class="news-item-text">
+        <p class="title">RAIL JOURNEYS</p>
+        <p class="text">A return to old-school Canadian glamour</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20221122-zimbabwes-stunning-80km-safari-train"> <img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1280x720/p0dh0h31.webp" /></a>
+      <div class="news-item-text">
+        <p class="title">RAIL JOURNEYS</p>
+        <p class="text">Zimbabwe's stunning 80km safari train</p>
+      </div>
+    </article>
+    <article class="news-item">
+      <a target="_blank" href="https://www.bbc.com/travel/article/20221213-indias-spiritual-city-that-sings"><img
+          class="news-item-img" src="https://ychef.files.bbci.co.uk/1280x720/p0dnssdx.webp"
+          alt="India's spiritual city that 'sings'" /> </a>
+      <div class="news-item-text">
+        <p class="title">ADVENTURE & EXPERIENCE
+        </p>
+        <p class="text">India's spiritual city that 'sings'</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <div id="contact" class="contact">
+      <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/noraterbocs/"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <a class="contact-icon" target="_blank" href="mailto:nora.terbocs@gmail.com"><i
+          class="fa-regular fa-envelope"></i></a>
+      <a class="contact-icon" target="_blank" href="https://github.com/noraterbocs"><i
+          class="fa-brands fa-github"></i></a>
+    </div>
+    <div id="about" class="about">
+      <p>Nora Terbocs </p>
+      <p>Web development Student 2023</p>
+      <p>Technigo</p>
+    </div>
+  </footer>
+</body>
+
 </html>

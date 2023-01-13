@@ -1,12 +1,18 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a travel related newsite.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I planed the design based on the project brief.
+The project is built in html and css.
+It has been made responsive by applying the mobile first approach.
+For positioning and layout I have used flexbox and grid.
+
+Future ideas:
+This project could be extended with a json file to store the news data in there and with javascript it could be mapped through.
+The navbar could have a dropdown under News that could list different categories.
 
 ## View it live
+
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
