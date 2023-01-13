@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap');
+
+html {
+  background: rgb(238, 237, 237);
+  color: rgb(32, 32, 32);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none; /* no underline */
+}
+
+.header-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(226, 226, 189);
+  padding: 10px 30px;
+}
+
+.header-container ul {
+  display:flex;
+}
+
+.header-container ul li {
+  margin-left: 40px;
+}
+
+.header-container img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.header-container div{
+  display: flex;
+  align-items: center;
+}
+
+#header-tablet {
+  display: none;
+}
+
+.big-news {
+  display: flex;
+  padding: 20px 30px;
+  min-height: 300px;
+  background: rgb(238, 189, 93);
+  margin: 30px 30px;
+  border-radius: 15px;
+  transition: .2s ease;
+}
+
+.big-news:hover {
+  background: pink;
+}
+
+.big-news-img {
+  background-image: url(../img/pasta-impiattata.jpg);
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+} 
+
+.big-news-text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-news-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 0px 30px;
+  margin: 50px 0;
+}
+
+.grid-item {
+  background: rgb(70, 60, 112);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.grid-item-img {
+  background-image: url(../img/pasta-panna-piselli.jpg);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#grid-item1 {
+  background: rgb(60, 87, 112);
+}
+
+#grid-item1 .grid-item-img {
+  background-image: url(../img/sium.jpg);
+}
+
+
+@media (max-width: 991.98px) {
+  #header-tablet {
+    display: flex;
+  }
+  #header-default {
+    display: none;
+  }
+  .header-container ul li {
+    margin: 0 10px;
+  }
+  .header-container {
+    justify-content: space-around;
+  }
+  .header-container img {
+    margin-right: 0;
+  }
+  .grid-news-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  #header-tablet {
+    display: none;
+  }
+  #header-default {
+    display: flex;
+  }
+  .header-container ul {
+    display: none;
+  }
+  .big-news {
+    flex-direction: column;
+  }
+  .big-news-img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
+  .big-news-text {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .grid-news-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-container img {
+    margin-right: 15px;
+  }
+  .header-container {
+    justify-content: flex-start;
+  }
+}
