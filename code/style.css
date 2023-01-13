@@ -107,16 +107,16 @@ li {
           background: pink;
         }
     
-        .big-grid-item {
+        .grid-item-1 {
           grid-column: span 8;
         }
     
-        .medium-grid-item {
+        .grid-item-2 {
           grid-column: span 4;
         }
     
-        .lonely-grid-item {
-          grid-column: 8/9;
+        .grid-item-3 {
+          grid-column: span 12;
         }
     
         img {
