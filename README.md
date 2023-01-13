@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+My first Technigo bootcamp project, in the pre-course. The assignment was to build a responsive news site layout with css grid and flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had to learn everything from scratch so a lot of googling and trial and error! I took the example layout in the assignment description and tried to make it my own instead of making an exact copy. If I had more time I would try it the other way around, and use flexbox where I now have a grid layout and vice versa, just to see what I like better. I used the graceful degradation approach.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
