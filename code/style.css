@@ -3,11 +3,11 @@ html {
   box-sizing: border-box;
 }
 
+
 body {
   background: wheat;
   margin: auto;
 }
-
 
 .flex-parent-header {
   background: #fffff0;
@@ -15,7 +15,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 
@@ -24,28 +24,29 @@ body {
 }
 
 .logo img {
-  height: 120px;
-  margin: 10px 10px 10px 15px;
+  height: 130px;
 }
 
+.logolarge {
+  display: none;
+}
 
 .navbar {
   display: none;
   align-content: center;
-  border: 5px solid blue;
-  margin-right: 40px;
+  margin: 15px;
 }
   
 .navbar a {
   display: inline-block;
   background: pink;
-  height: 40px;
-  width: 140px;
+  height: 28px;
+  width: 85px;
   text-align: center;
   padding: 10px;
   margin: 15px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: tomato;
   text-decoration: none;
@@ -57,7 +58,6 @@ body {
   box-shadow: 2px 4px pink;
   color: pink;
 }
-
 
 
 .news-grid {
@@ -174,4 +174,23 @@ button {
 button:hover {
   box-shadow: 4px 4px orange;
   background-color: pink;
+}
+
+
+@media (min-width: 668px) {
+ .navbar {
+  display: block;
+ }
+
+}
+
+@media (min-width: 1024px) {
+ .logolarge {
+  display: inline-block;
+ }
+
+ .logosmall {
+  display: none;
+ }
+  
 }
