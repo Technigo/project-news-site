@@ -3,8 +3,26 @@ html {
     background-attachment:fixed;
 }
 
-.logo {
-  text-align: center;
+body {
+  margin: 0;
+}
+
+/* Logo and navbar */
+.logo-name {
+display:flex;
+justify-content: center;
+}
+
+.logo-name img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+}
+
+header h1 {
+  font-family: phosphate;
+  letter-spacing: 1px;
   font-size: 50px;
   color:aliceblue;
 }
@@ -15,23 +33,21 @@ html {
   align-items: center;
 }
 
-a {
+.topnav a {
   text-decoration: none;
   color:#003366;
-  font-weight: bold;
   font-size: 25px;
+  font-family: phosphate;
+  letter-spacing: 1px;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
 
-a:hover {
+.topnav a:hover {
   color: aliceblue;
 }
 
-.body {
-  margin: 0;
-}
-
+/* The big news content */ 
 .big-news {
   display:flex;
   align-items: center;
@@ -61,6 +77,7 @@ background-color: #003366;
 color:aliceblue;
 }
 
+/* The other news */
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -74,10 +91,53 @@ color:aliceblue;
   border-radius: 0 30px 0 30px;
 }
 
+.grid-parent img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  }
+
+.grid-parent button {
+  border:aliceblue;
+  border-radius:20px;
+  padding: 15px;
+  margin: 5px;
+  background-color:aliceblue;
+  color:#003366;
+  font-weight: bold;
+}
+
+.grid-parent button:hover {
+  background-color: #003366;
+  color:aliceblue;
+}
+
 .grid-item {
   padding: 10px;
 }
 
+footer {
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color:aliceblue;
+  font-size: 15px;
+  font-family: phosphate;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a:hover {
+  color:#009999;
+}
+
+/* Responsive design */
 @media (max-width: 667px) {
   .grid-parent {
     grid-template-columns: 1fr;
