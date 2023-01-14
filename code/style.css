@@ -7,6 +7,48 @@ html {
   padding: 20px;
 }
 
+header {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.mormor {
+  display: grid;
+  grid-template-columns: 1 fr;
+  border: 3px solid black;
+  padding: 50px;
+  background-color: brown;
+  gap: 10px;
+}
+
+.big-mama-news {
+  grid: 1 / 2; /* definierar mammas relation till moromor */
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+/* byt namn till big-mama-baby*/
+
+.big-news-item {
+  background-color: aqua;
+  box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
+ 
+  
+}
+
+img {
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; /* att den cropas istället för att sizas upp/ner */
+  object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
+}
+
 h1 {
   color: white;
   margin: 20px;
@@ -51,7 +93,6 @@ li {
   padding: 20px;
   
 }
-
 
 
 
