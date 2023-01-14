@@ -12,7 +12,7 @@ html {
 .website-header {
   margin-bottom: 30px;
   padding: 10px;
-  height: 150px;
+  height: 200px;
   font-size: 15px;
   background-color: black;
   background-size: cover;
@@ -22,6 +22,7 @@ html {
 }
 
 .website-header h1 {
+  padding: 0px;
   color: white;
   margin: auto 0;
   font-size: 45px;
@@ -33,6 +34,7 @@ html {
 }
 
 nav {
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,12 +143,53 @@ button:hover {
   gap: 10px;
 }
 
-.grid-item {
+.grid-parent img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-image {
+  min-height: 100px;
+}
+
+.grid-item p {
+  font-size: 15px;
   background: white;
 }
 
-.grid-item img {
+.grid-item h3 {
+  padding-top: ;
+  background: white;
+}
+
+.grid-item {
+  background: white;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/*
+.grid-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+*/
+.grid-text {
+  width: 100%;
+}
+
+/*.grid-item img {
   width: 350px;
+}
+*/
+
+.grid-item img:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+  cursor: pointer;
 }
 
 .website-footer {
@@ -172,6 +215,9 @@ button:hover {
 }
 
 @media (min-width: 1025px) {
+  .website-header {
+    height: 150px;
+  }
   .grid-parent {
     margin-left: auto;
     margin-right: auto;
