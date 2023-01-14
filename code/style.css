@@ -64,7 +64,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat (8, 1fr);
   gap: 20px;
   margin-bottom: 20px;;
 }
@@ -76,9 +76,11 @@ body {
 .big-card {
   height: auto;
   background-color: #fffff0;
+  grid-column: span 8;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 5px;
 }
 
 .big-card article {
@@ -114,6 +116,7 @@ p {
 .small-card {
  border: 2px, solid blue;
  background-color: wheat;
+ grid-column: span 8;
 }
 
 
@@ -139,7 +142,7 @@ p {
 h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
   color: black;
   padding: 0px, 5px, 5px, 5px;
   margin: 10px;
@@ -182,6 +185,10 @@ button:hover {
   display: block;
  }
 
+.small-card {
+  grid-column: span 4;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -193,4 +200,11 @@ button:hover {
   display: none;
  }
   
+ .small-card {
+  grid-column: span 2;
+ }
+
+ h3 {
+  font-size: 23px;
+ }
 }
