@@ -1,4 +1,8 @@
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   background: #ffffff;
   width: 100%;
@@ -43,111 +47,61 @@ h1 {
   padding-right: 5px;
 }
 
-.big-text p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.small-text p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 25px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
-}
 
 
-.grid-parent {
+.news-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(9, 200px);
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-.grid-item {
-  background: rgb(245, 219, 170);
-  grid-column: span 4;
+.news-card {
+  border: 2px solid blue;
 }
 
-.big-grid-item {
-  grid-row: span 3;
-  background-color: #fffff0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;
+.big-card {
+  height: 400px;
+  background-color: aquamarine;
 }
 
-.big-image {
-  grid-column: span 2;
-  height: 100%;
-  background-image: url(./busystreet1.jpg);
-  background-size: cover;
-  background-position: center;
+.small-card {
+ border: 2px, solid blue;
 }
 
-.big-text {
-  grid-column: span 2;
-}
-
-.small-grid-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-}
-
-.small-image1 {
-  height: 100%;
-  background-image: url(./sunflowers.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-image2 {
-  height: 100%;
-  background-image: url(./manreading.jpg);
-  background-size: cover;
-  background-position: left;
-}
-
-.small-image3 {
-  height: 100%;
-  background-image: url(./work.jpg);
-  background-size: cover;
-  background-position: right;
-}
-
-.small-image4 {
-  height: 100%;
-  background-image: url(./hands.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-image5 {
-  height: 100%;
-  background-image: url(./newspapers.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-image6 {
-  height: 100%;
-  background-image: url(./youth.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-text {
-  padding: 5px;
+.big-card article {
+  border: 1px #cccccc solid;
   margin: auto;
+  height: 400px;
+}
+
+.small-card article {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+  box-shadow: 6px 6px lightsalmon;
+}
+
+.small-card article:hover {
+  box-shadow: 9px 9px lightsalmon
+}
+
+.small-card img {
+  object-fit: cover;
+}
+
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+  padding: 0px, 5px, 5px, 5px;
+  margin: 10px;
+
+}
+
+a {
+  text-decoration: none;
 }
