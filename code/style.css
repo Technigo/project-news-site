@@ -9,6 +9,10 @@ html {
   color: black;
 }
 
+body {
+  display: inline-block;
+}
+
 header {
   border-bottom: solid 2px;
 }
@@ -139,8 +143,8 @@ p {
 .small-news {
   display: flex;
   background: whitesmoke;
-  height: 350px;
-  width: 300px;
+  height: 450px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -163,7 +167,6 @@ h2:hover, h3:hover {
 
 
 @media (max-width: 666px) {
-
   .nav-bar {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 60px;
@@ -230,21 +233,24 @@ h3 {
 
 
 @media (min-width: 667px) (max-width: 1024px) {
+  .header {
+  }
+
   .nav-bar {
   grid-template-columns: repeat(2, 1fr);
   /*grid-template-columns: 85px 3fr 2fr;*/
   grid-template-rows: 60px;
+  /*width: auto;*/
   }
  
   .big-news-box {
+    max-width: 100%;
   }
   
   .big-image {
   }
   
   .big-news-textbox {
-    width: auto;
-    height: 600px;
   }
   
   .big-news-paragraph {
