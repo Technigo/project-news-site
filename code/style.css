@@ -19,14 +19,26 @@ img {
 
 /*Center logo*/
 header {
-display: flex;
+display: grid;
+grid-template-columns: repeat(4, 1fr)
+}
+
+.logo-wineglass {
+  width: 50px;
+  height: 50px;
 }
 
 h1 {
-text-decoration: overline;
 margin: 30px 0 10px 0;
 font-family: Monaco;
 font-size: 35px;
+align-content: center;
+grid-column: 2 / span 2;
+text-align: center;
+}
+
+button {
+  cursor: pointer;
 }
 
 .button-subscribe {
@@ -36,6 +48,7 @@ font-size: 35px;
   border: none;
   border-radius: 10%;
   background-color: #F0F0F0;
+  grid-column: 4 / -1;
 }
 
 .button-subscribe:hover {
@@ -87,11 +100,11 @@ li a:hover {
 }
 
 .news-big {
+    display: flex;
     grid-column: span 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row: 1 / 2;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .img-spain {
@@ -112,12 +125,19 @@ li a:hover {
   padding: 0;
 }
 
+.news-spain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .news-small {
   display: grid;
   justify-content: space-around;
   grid-column: span 4;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  row-gap: 30px;
+  margin: 30px 0;
 }
 
 .card {
@@ -127,8 +147,8 @@ li a:hover {
   text-align: center;
   display: flex;
   cursor: pointer;
-  grid-column: span 4;
-  margin: 25px;
+  grid-column: 2 / span 2;
+  box-shadow: 3px 5px 5px grey;
 }
 
 h3 {
@@ -154,6 +174,7 @@ footer {
   align-items: center;
   flex-direction: column;
   border-top: solid grey 5px;
+  margin: 0 0 15px 0;
 }
 
 footer h4 {
@@ -168,20 +189,28 @@ footer h4 {
 /* Tablet media query*/
 @media (min-width: 667px) and (max-width: 1024px) {
   header {
-    justify-content: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr)
+    }
+
+  .logo-wineglass {
+    width: 60px;
+    height: 60px;
   }
   
   h1 {
     margin: 50px 0 25px 0;
     justify-self: center;
     font-size: 42px;
-  }
+    align-content: center;
+    grid-column: 3 / span 4;
+    text-align: center;
+}
 
   .button-subscribe {
     padding: 3px;
-    align-self: flex-start;
     margin: 5px;
+    grid-column: 8 / -1;
   }
 
   ul {
@@ -206,11 +235,12 @@ footer h4 {
     grid-row-end: 2;
     align-items: center;
     justify-items: center;/*Is this needed or Grid changes?*/
+    margin: 20px 0;
   }
 
   .img-spain {
-    height: 300px;
-    width: 448px;
+    height: 480px;
+    width: 650px;
     border: solid grey 1px;
     border-radius: 10%;
   }
@@ -218,35 +248,56 @@ footer h4 {
   .news-small {
     grid-column: span 8;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: 20px repeat(6, 1fr) 20px;
+    row-gap: 50px;
+    column-gap: 70px;
+    margin: 30px 0;
   }
 
   .card {
-    display: flex;
-    cursor: pointer;
-    grid-column-end: span 4;
+    grid-row: span 1;
+  }
+
+  .card:nth-child(1n) {
+    grid-column: 2 / span 3;
+  }
+
+  .card:nth-child(2n) {
+    grid-column: 5 / span 3;
   }
 }
 /* End of tablet media query*/
 
 
-/* Desktop media query*/
-@media (min-width: 1024px) {
+/* Desktop media query*/ 
+/*HJÄLP NÅGONTING ÄR FEL HÄR*/
+@media (min-width: 1025px) {
+
   header {
-    justify-content: center;
-  }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr)
+    }
   
+  .logo-wineglass {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px; 
+  }
+
   h1 {
-    text-decoration: overline;
     margin: 70px 0 40px 0;
     font-size: 54px;
+    grid-column: 3 / 11;
+    text-align: center;
+    color: blue;
   }
 
   .button-subscribe {
       padding: 3px;
-      justify-self: flex-start;
       margin: 5px;
+      grid-column: 11 / -1;
+      align-self: flex-end;
+      justify-self: flex-end;
   }
   
   .topnav input[type=text] {
@@ -256,6 +307,9 @@ footer h4 {
   
   .grid-container-main {
     grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .news-big {
@@ -265,6 +319,11 @@ footer h4 {
     grid-row-end: 2;
     align-items: center;
     justify-items: center;
+  }
+
+  .news-spain {
+    display: flex;
+    flex-direction: column;
   }
 
   .img-spain {
@@ -294,20 +353,28 @@ footer h4 {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 40px;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 30px 30px;
   }
 
-  .card {
-    display: flex;
-    cursor: pointer;
-    grid-column: span 3;
+  .news-small .card:nth-child(4n+1) {
+    grid-column: 1 / 4;
   }
 
-
-  .news-spain {
-    display: flex;
-    flex-direction: column;
+  .news-small .card:nth-child(4n+2) {
+    grid-column: 4 / span 3;
   }
+
+  .news-small .card:nth-child(4n+3) {
+    grid-column: 7 / span 3;
+  }
+
+  .news-small .card:nth-child(4n+4) {
+    grid-column: 10 / -1;
+  }
+  
 
   ul {
     display: flex;
