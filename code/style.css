@@ -1,4 +1,111 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: rgb(255, 254, 254);
+  color: black;
 }
+
+body {
+  font-family:  'Open Sans', sans-serif;
+  margin: 5%;
+  
+  
+}
+
+header {
+
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end; 
+}
+
+ul li a{
+  padding: 0 40px;
+  color: green; 
+  text-decoration: none;
+  display: inline;
+   
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; 
+  
+  
+}
+
+.big-news {
+
+  display: flex;
+  align-items: center;
+  
+}
+
+.content-left {
+  width: 60%;
+  padding: 5%;
+
+
+}
+
+main h1 {
+  font-size: 40px;
+  color: blue;
+  text-transform: uppercase;
+
+  
+}
+
+main p {
+  font-size: large;
+  font-weight: 400;
+  color: gray ;
+  line-height: 31.5px;
+  margin: 30px 0;
+}
+
+button {
+  padding: 15px 30px;
+  background: gainsboro;
+  color: aliceblue;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.grid-item {
+
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+footer {
+
+  text-align: center;
+  font-size: 15px;
+}
+
