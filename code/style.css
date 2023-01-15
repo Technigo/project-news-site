@@ -1,154 +1,15 @@
 html {
-  background: white;
-  color: black;
+  background: rgb(255, 255, 255);
+  color: rgb(9, 9, 9);
   font-family: Georgia, serif;
-}
-
-body {
-  margin: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  height: 200px;
-}
-
-/*Center logo*/
-header {
-display: grid;
-grid-template-columns: repeat(4, 1fr)
-}
-
-.logo-wineglass {
-  width: 50px;
-  height: 50px;
-}
-
-h1 {
-margin: 30px 0 10px 0;
-font-family: Monaco;
-font-size: 35px;
-align-content: center;
-grid-column: 2 / span 2;
-text-align: center;
-}
-
-button {
-  cursor: pointer;
-}
-
-.button-subscribe {
-  padding: 3px;
-  align-self: flex-start;
-  font-size: 11px;
-  border: none;
-  border-radius: 10%;
-  background-color: #F0F0F0;
-  grid-column: 4 / -1;
-}
-
-.button-subscribe:hover {
-  background-color: aqua;
-}
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 7px 0px;
-  list-style-type: none;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-  flex-direction: column;
-  font-family: Georgia, serif;
-  /*Set nav bar to 100% width?*/
-}
-
-li a {
-  color: #666;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-li a:hover {
-  color: purple;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 2px;
-  border: none;
-  margin: 4px;
-  text-align: center;
-  font-size: 12px;
-  font-family: Helvetica;
-}
-/*Can you autofit margins in a grid??*/
-.grid-container-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
-  align-content:  center;
-  column-gap: 10px;
-}
-
-.news-big {
-    display: flex;
-    grid-column: span 4;
-    grid-row: 1 / 2;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-spain {
-  height: 225px;
-  width: 325px;
-  border: solid grey 1px;
-  border-radius: 10%;
-}
-
-.news-big h2 {
-  font-size: 20px;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.news-big p {
-  font-size: 18px;
-  padding: 0;
-}
-
-.news-spain {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.news-small {
-  display: grid;
-  justify-content: space-around;
-  grid-column: span 4;
-  grid-template-columns: 30px 1fr 1fr 30px;
-  row-gap: 30px;
-  margin: 30px 0;
-}
-
-.card {
-  border: solid black 1px;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-  display: flex;
-  cursor: pointer;
-  grid-column: 2 / span 2;
-  box-shadow: 3px 5px 5px grey;
+body {
+  margin: 0;
 }
 
 h3 {
@@ -162,34 +23,209 @@ p {
   margin: 0;
 }
 
-/*Button should be aligned to bottom of box*/
-.button-readmore {
-  align-self: center;
-  margin: 10px 0;
-  border: solid grey 0.5px;
+a {
+  text-decoration: none;
+  color: rgb(9, 9, 9);
 }
+
+button {
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(202, 207, 210);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+
+header {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+background-color: rgb(225, 228, 229);
+}
+
+.logo-wineglass {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+margin: 30px 0 10px 0;
+font-family: Monaco;
+font-size: 35px;
+grid-column: 2 / span 2;
+text-align: center;
+}
+
+.button-subscribe {
+  padding: 5px 3px;
+  margin: 10px;
+  align-self: flex-start;
+  grid-column: 4 / -1;
+}
+
+.button-subscribe:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.nav-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
+}
+
+/*Navigation links hidden in mobile-first*/
+nav ul {
+  display: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li a {
+  color: rgb(102, 102, 102);
+  font-size: 18px;
+}
+
+li a:hover {
+  color: rgb(176, 176, 176);
+}
+
+.nav-section input[type=text] {
+  padding: 6px;
+  grid-area: 1 / -2 / 2 / -1;
+  border: solid 1px rgb(231, 231, 231);
+  font-size: 12px;
+  font-family: Helvetica;
+  height: 30px;
+  align-self: center;
+  margin: 0 5px;
+}
+
+/*Showing the hamburger menu button mobile-first*/
+.hamburger-menu {
+  display: flex;
+  width: 100%;
+  padding: 8px 5px;
+  overflow: hidden;
+  grid-area: 1 / 1 / 2 / 4;
+  border: 1px 0 solid rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
+}
+
+/*Showing the navigation links when the hamburger menu button is clicked in mobile-first*/
+.hamburger-menu:active + ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu i {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  float: left;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.news-big {
+  display: flex;
+  grid-area: 1 / 1 / 2 / 5;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 0 0;
+  opacity: 0.8;
+}
+
+.img-spain {
+  height: 280px;
+  width: 350px;
+  border: solid rgb(128, 128, 128) 1px;
+  border-radius: 10%;
+}
+
+.news-big h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-big p {
+  font-size: 18px;
+  margin: 0 10%;
+}
+
+.news-big:hover {
+  opacity: 1;
+}
+
+.news-spain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*News grid mobile-first section*/
+.news-small {
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  row-gap: 30px;
+  margin: 30px 0;
+}
+
+.card {
+  display: flex;
+  grid-column: 2 / span 2;
+  border: solid rgb(9, 9, 9) 1px;
+  justify-self: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 3px 5px 5px rgb(128, 128, 128);
+  max-width: 400px;
+  opacity: 0.75;
+  background-color: rgb(255, 255, 255);
+}
+
+.card:hover {
+opacity: 1;
+}
+
+.button-readmore {
+  margin: 10px 0;
+}
+/*News grid section mobile-first end*/
 
 footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-top: solid grey 5px;
+  border-top: solid rgb(128, 128, 128) 5px;
   margin: 0 0 15px 0;
+  font-size: 26px;
 }
 
 footer h4 {
+  font-size: 18px;
   margin: 15px 0 5px 0;
 }
 
-.fa {
-  color: black;
+/*Contact info icons*/
+.fa footer {
+  color: rgb(9, 9, 9);
   text-decoration: none;
 }
 
-/* Tablet media query*/
-@media (min-width: 667px) and (max-width: 1024px) {
+/* Tablet media query start*/
+@media (min-width: 667px) {
   header {
-    display: grid;
     grid-template-columns: repeat(8, 1fr)
     }
 
@@ -197,57 +233,104 @@ footer h4 {
     width: 60px;
     height: 60px;
   }
-  
+
   h1 {
     margin: 50px 0 25px 0;
-    justify-self: center;
     font-size: 42px;
-    align-content: center;
     grid-column: 3 / span 4;
-    text-align: center;
-}
+  }
 
   .button-subscribe {
-    padding: 3px;
-    margin: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
     grid-column: 8 / -1;
+    justify-self: flex-end;
+    font-weight: bold;
+    font-size: 10px;
   }
 
+.nav-section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr)
+}
+
+.topnav {
+  grid-area: 1 / 1 / 2 / 8;
+}
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  /*Showing navigation bar with navigation links in tablet and desktop media query*/
+  nav ul {
+    display: flex;
+  }
+  
   ul {
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 0;
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
+    font-family: Georgia, serif;
+    margin: 0;
+  }
+  
+  li a {
+    text-align: center;
+    padding: 20px 16px;
+  }
+  
+  .nav-section input[type=text] {
+    grid-area: 1 / -2 / 2 / -1;
+    height: 25px;
+    border: none;
+    margin: 4px;
   }
 
-  .topnav input[type=text] {
-    padding: 4px;
-    text-align: start;
-  } 
+  .nav-section input[type=text]:hover {
+    outline: solid 1px rgb(9, 9, 9);
+  }
+
+  .nav-section input[type=text]:focus {
+    outline: solid 1px rgb(9, 9, 9);
+  }
 
   .grid-container-main {
-    display: grid;
     grid-template-columns: repeat(8, 1fr);
-    justify-content: space-evenly;
-    align-items: center;
   }
 
   .news-big {
-    grid-column: span 8;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: center;
-    justify-items: center;/*Is this needed or Grid changes?*/
+    grid-area: 1 / 2 / 2 / 8;
     margin: 20px 0;
   }
 
-  .img-spain {
-    height: 480px;
-    width: 650px;
-    border: solid grey 1px;
-    border-radius: 10%;
+  .news-big h2 {
+    font-size: 26px;
   }
 
+  .news-big p {
+    font-size: 20px;
+    margin: 10px 100px;
+  }
+
+  .news-big .button-readmore {
+    font-size: 14px;
+  }
+
+  .img-spain {
+    height: 400px;
+    width: 600px;
+  }
+
+  /*News grid section tablet start*/
   .news-small {
     grid-column: span 8;
-    display: grid;
     grid-template-columns: 20px repeat(6, 1fr) 20px;
     row-gap: 50px;
     column-gap: 70px;
@@ -255,6 +338,7 @@ footer h4 {
   }
 
   .card {
+    display: flex;
     grid-row: span 1;
   }
 
@@ -265,95 +349,83 @@ footer h4 {
   .card:nth-child(2n) {
     grid-column: 5 / span 3;
   }
+  /*News grid section tablet end*/
 }
-/* End of tablet media query*/
+/*End of tablet media query*/
 
 
-/* Desktop media query*/ 
-/*HJÄLP NÅGONTING ÄR FEL HÄR*/
-@media (min-width: 1025px) {
-
+/* Desktop media query start*/ 
+@media (min-width: 1024px) {
   header {
-    display: grid;
     grid-template-columns: repeat(12, 1fr)
-    }
+  }
   
   .logo-wineglass {
     width: 60px;
     height: 60px;
-    margin: 0 10px; 
   }
 
   h1 {
     margin: 70px 0 40px 0;
     font-size: 54px;
     grid-column: 3 / 11;
-    text-align: center;
-    color: blue;
   }
 
   .button-subscribe {
-      padding: 3px;
-      margin: 5px;
-      grid-column: 11 / -1;
-      align-self: flex-end;
-      justify-self: flex-end;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    grid-column: 11 / -1;
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .nav-section {
+    grid-template-columns: repeat(12, 1fr)
+  }
+
+  .topnav {
+    grid-area: 1 / 1 / 2 / 12;
   }
   
-  .topnav input[type=text] {
-    padding: 6px;
-    text-align: start;
+  .nav-section input[type=text] {
+    grid-area: 1 / -2 / 2 / -1;
   }
   
   .grid-container-main {
     grid-template-columns: repeat(12, 1fr);
-    display: grid;
-    justify-content: space-evenly;
-    align-items: center;
   }
 
   .news-big {
-    grid-column-start: 3;
-    grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .news-spain {
-    display: flex;
-    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 12;
+    flex-direction: row;
   }
 
   .img-spain {
     height: 400px;
     width: auto;
-    border: solid grey 1px;
-    border-radius: 10%;
+    margin: 20px 0 0 0;
   }
 
   .news-big h2 {
     font-size: 30px;
-    text-align: center;
+    padding: 10px 0 0 0;
   }
 
   .news-big p {
     font-size: 20px;
-    text-align: justify;
-    text-align: center;
+    padding: 0 5px;
+    margin: 0;
   }
 
   .news-big .button-readmore {
-    font-size: 18px;
-    align-self: center;
+    font-size: 16px;
   }
 
+  /*News grid section desktop start*/
   .news-small {
     grid-column: span 12;
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     row-gap: 30px;
     column-gap: 30px;
     margin: 30px 30px;
@@ -374,19 +446,6 @@ footer h4 {
   .news-small .card:nth-child(4n+4) {
     grid-column: 10 / -1;
   }
-  
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 7px 0px;
-    list-style-type: none;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-    font-weight: bold;
-    flex-direction: row; /*Is this needed or Grid changes?*/
-  }
+  /*News grid section desktop end*/
 }
-/* End of desktop media query*/
+/*End of desktop media query*/
