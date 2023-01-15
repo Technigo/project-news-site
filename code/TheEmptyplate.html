@@ -3,30 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./emptyplatestyle.css">
     <script src="https://kit.fontawesome.com/89b5f4f24f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-     <section class="main">
-    <header>
-      <!-- Some kind of logo and navbar -->
+
+
      
-     
- <nav class="menu"> <!--Flexbox container-->
-  <ul class="menu">
-    <li class="logo"> <a href="http://google.se"> <img src="Logga.jpeg" alt="Logga" class="Logga">
-    
-    <h2> The empty plate</h2>
-    </a> 
-      
-    </li>
+<header
   
+      <!-- Some kind of logo and navbar -->
+     <nav class="menu"> <!--Flexbox container-->
+   
+  <ul class="menu">
+
+    <li class="logo"> <a href="http://google.se">     
+      <img src="Logga.jpeg" alt="Logga" class="Logga" >     <h1>The Empty Plate</h1>
+     
+    </a> 
+    
+    </li>
+ 
     <li class="item"> <a href="#"> Home</a> </li>
     <li class="item"> <a href="#">  About</a> </li>
-
+   
 <li class="item has-submenu"> <!--Flexbox items has-submenu 
         är för java och css-->
+        
     <a tabindex="0"> news</a> <!--Tabindex 0 för att de som använder 
           keyboards kan tab genom menyerna-->
             <ul class="submenu">
@@ -35,40 +39,53 @@
                 <li class="subitem"><a href="#">Guided Tours</a></li>
                 <li class="subitem"><a href="#">News</a></li>
            </ul>
+           
   </li>
           
           <li class="item has-submenu">
             <a tabindex="0"> Lisbon</a>
                 <ul class="submenu">
-                    <li class="subitem"><a href="#"> lala</a></li>
-                    <li class="subitem"><a href="#">lolo</a></li>
-                    <li class="subitem"><a href="#">lele</a></li>
+                    <li class="subitem"><a href="#"> lala</a>
+                    </li>
+                    <li class="subitem"><a href="#">lolo</a>
+                    </li>
+                    <li class="subitem"><a href="#">lele</a>
+                    </li>
                 </ul>
           </li>
-  
-
-   
-            <li class="item"><a href="#"> Blog</a></li>
-            <li class="item"><a href="#">contact</a></li>
-           
-            
-            <li class="item button"><a href="#">login</a></li>
-            <li class="item button secondary"><a href="#">sign up</a></li>
-            <!--button for js ngt är dubbelt här!-->
-            <li class="toggle"> <a href="#"> <i class="fas fa-bars"></i> </a></li>
           
+          <li class="item"><a href="#"> Blog</a></li>
+          <li class="item"><a href="#">contact</a></li>
+ 
+          
+        
+          <i class="fas fa-bars"></i> </a></li>
+         
+           
+            <!--button for js ngt är dubbelt här!-->
+            
+         
          
     </ul>
-          
+
   </nav>
-   </header>
+
+        </header>
+ 
+
+
+   <div class="main">
 <!--Title-->
    <div class="picture-container"> 
     
-    <div class="polaroid image1" polaroid-caption=" The Lisbon Issue">
+    <div class="polaroid image1">
             <img src="IMG_5860.jpeg" alt="Pictureofsunset">
+            <h3>The Lisbon issue</h3>
     </div>
-
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Morbi eu eros turpis. <br>
+      Fusce et purus at arcu faucibus sodales.<br>
+</p>
      
  </div>
  <!--Title-->
@@ -78,24 +95,24 @@
    
   <a href="http://google.se">
   
-   <div class="polaroid image1" polaroid-caption="Lisbon"> <img src="Lisbonsun.jpeg" alt="Pictureofsunset">
+   <div class="polaroid image1" polaroid-caption="Lisbon"> <img src="Lisbonsun.jpeg" alt="Lisbon">
    </div>
        
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
            Morbi eu eros turpis. <br>
            Fusce et purus at arcu faucibus sodales.<br>
            Quisque congue justo vel cursus vehicula.</p>
-         
-    </a>
-  </div>
+         </a></div>
+     </div>
+    </div>
 
   
-  <div class="bildersmall">
-    <div class="where to eat">
+  <section class="bildersmall">
+    <div class="wheretoeat">
         <a href="http://google.se">
-          <div class="polaroid image2" polaroid-caption="Where to eat">
-         <img src="Food.jpeg" alt="Pictureofsunset" class="small-newswrap">
-         <h3>Where to eat</h3>
+          <div class="polaroid image2">
+         <img src="Food.jpeg" alt="Pictureofsunset">
+         <h3>Where to eat</h3> </div>
      
                
     
@@ -105,11 +122,11 @@
         Quisque congue justo vel cursus vehicula.</p>
    </a></div>
               
-    <div class="to do">
+    <div class="todo">
           <a href="http://google.se">
-          <div class="polaroid image3" polaroid-caption="To do in Lisbon">
+          <div class="polaroid image3">
           <img src="days.jpeg" alt="Pictureofsunset"> 
-          <h3>To do in Lisbon</h3>
+          <h3>To do in Lisbon</h3> </div>
       
        
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
@@ -118,11 +135,10 @@
                  Quisque congue justo vel cursus vehicula.</p>
                  </a></div>
          
-              
-   <div class="drinks">
+<div class="drinks">
           <a href="http://google.se">
   
-      <div class="polaroid image4" polaroid-caption="Drinks">
+      <div class="polaroid image4">
               <img src="drinks.jpeg" alt="Pictureofsunset">
           <h3>Drinks</h3> </div>   
        
@@ -134,7 +150,7 @@
 
   <div class="becahes">
                   <a href="http://google.se">
-                  <div class="polaroid image4" polaroid-caption="Drinks">
+                  <div class="polaroid image4">
                   <img src="beaches.jpeg" alt="Pictureofsunset"> 
               <h3>Beaches</h3> </div>
         
@@ -169,16 +185,16 @@
          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
           Morbi eu eros turpis. <br>
            Fusce et purus at arcu faucibus sodales.<br>
-           Quisque congue justo vel cursus vehicula.</p> </a> 
+           Quisque congue justo vel cursus vehicula.</p> </a> </div>
          
   
      
  <div class="trams">
     <a href="http://google.se">
       <div class="polaroid image7" polaroid-caption="Elétricos">
-  <img src="thetrams.jpeg" alt="Elétricos">
+  <img src="thetrams.jpeg" alt="Elétricos"> <h3>Elétricos de Lisboa</h3></div>
   
-  <h3>Elétricos de Lisboa</h3></div>
+
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
     Morbi eu eros turpis. <br>
      Fusce et purus at arcu faucibus sodales.<br>
@@ -187,21 +203,22 @@
   
 <div class="train">
   <a href="http://google.se">
- <div class="polaroid image8" polaroid-caption="Travel by train">
-  <img src="Walking.jpeg" alt="walkabout">
-  <h3>To get here by train</h3></div>
-           
+ <div class="polaroid image8">
+  <img src="Walking.jpeg" alt="walkabout"> <h3>To get here by train</h3></div>
+
   
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
      Morbi eu eros turpis. <br>
       Fusce et purus at arcu faucibus sodales.<br>
     Quisque congue justo vel cursus vehicula.</p>  </a> </div>
  
-  </div>
+    </section>
 
- </section>
+
       
-  
+  <footer>
+
+  </footer>
 
     <script src="script.js"></script>
   </body>
