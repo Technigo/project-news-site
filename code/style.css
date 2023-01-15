@@ -1,4 +1,122 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+h1 {
+  font-family: Optima, sans-serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Optima, sans-serif;
+}
+
+h3 {
+  font-family: Optima, sans-serif;
+  font-size: 40px;
+  color: darkslategray;
+  margin:0%;
+}
+
+h4 {
+  margin: 0%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.breaking-news {
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 5px lightgray;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+
+.breaking-news img {
+  display: flex;
+  height: 200px;
+  border-radius: 2px;
+  padding-right: 10px;
+}
+
+.breaking-news-text {
+  display: flex;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: Optima, sans-serif;
+  font-size: 25px;
+  color: dimgray;
+}
+
+.newsbox{
+  border: 2px solid;
+  margin: 10px;
+  width: 20%;
+  height: 10%;
+}
+
+.smallnews{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+@media (max-width: 667px) {
+    .menu{
+      display: flex;
+      flex-direction: row;
+      font-size: 10px;
+    }
+    .breaking-news-text {
+      font-size: 15px;
+    }
+    .smallnews{
+      align-items: center;
+      flex-direction: column;
+    }
+    .newsbox {
+      width:70%;
+    }
+  }
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  .breaking-news {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .breaking-news-text {
+    font-size: 15px;
+  }
+  .newsbox {
+    width:40%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
