@@ -1,63 +1,99 @@
-html {
-  background: hwb(66 72% 20%);
-  color: #fff;
+html { background-color: rgb(255, 255, 255);
 }
 
-h1{
-  color: #ffffff;
-  display: inline;
-  font-family: papyrus;
-  font-size: 32px;
-  margin: -5px 5px;
+body {
+  min-height: 100vh;
+  align-items: center;
+  color: #262323;
+  font-family: 'Rise of Kingdom', sans-serif;
   text-transform: uppercase;
 }
 
-img{
-  width: 30px;
-  padding: 3px;
+h1{
+  display: inline;
+  font-size: 55px;
+  color: #FDEEDA;
+  text-shadow: 4px 2px #000000;
 }
 
+p{
+  max-width: 80%;
+}
+
+header img{
+  width: 40px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.big-news img{
+  width: 80%;
+  margin-top: 30px;
+  object-fit: cover;
+}
+
+.small-news img{
+  width: 50%;
+  object-fit: cover;
+  border: 10px solid #FDEEDA;
+  align-items: center;
+}
 
 header{
-  background-color: rgb(133, 126, 108);
+    background-image: linear-gradient(rgb(152, 100, 61), rgb(217, 233, 233));
+  display: block;
 }
 
 .navbar {
-  background-color: #333;
-  overflow: hidden;
+  background-color: rgb(73, 70, 70);
+  padding: 12px;
 }
 
 .navbar a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 5px;
+  color: #a09e9e;
+  padding: 10px;
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  background-color: rgb(198, 197, 129);
+  background-color: rgb(255, 255, 234);
   color: black;
 }
 
-.big-news{
-  margin: 15px 0px;
-  padding: 10px;
-  display: flexbox;
-  grid-gap: 10px;
-  background-color: rgb(139, 106, 106);
-}
-
-.container{
+.main-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  text-align: center;
+  grid-template-columns: 1fr;
 }
 
-.other-news{
-  background-color: rgb(95, 95, 114);
-
+.news-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg");
+  background-color: #ccc37f;
+  justify-items: center;
 }
 
+.big-news{
+  grid-column: 1 / -1;  
+}
+
+article{
+  width: 90%;
+  display: inline-block;
+}
+
+
+@media (min-width: 668px) and (max-width: 1024px){
+  .news-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px){
+  .news-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
