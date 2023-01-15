@@ -13,4 +13,4 @@ If you had more time, what would be next?
 Have more "fun" with the grid, explore effects that could be added with CSS.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://surfs-up-4c58d3.netlify.app/
