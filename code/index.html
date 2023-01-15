@@ -10,16 +10,16 @@
   </head>
   <body>
     <div class="grid-parent">
-        
-        <div class="grid-item grid-header">
-          
+        <div class="grid-item grid-header">          
           <!--HEADER-->
           <header>
-          <!--LOGO for Company name-->
+
+            <!--LOGO for Company name-->        
             <div class="company-name">
               <a href="x"class="active">Company name</a>
             </div>
-            <!-- NAVBAR -->
+
+            <!-- NAVBAR FOR DESKTOP AND PAD -->
             <div class="nav-bar">
                 <nav>
                   <a class="active" href="#home">Home</a>
@@ -29,6 +29,7 @@
               </nav>           
             </div>
             
+            <!--NAVBAR FOR MOBILE-->
             <div class="mobile-menu">
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">       
                 <i class="material-icons" style="font-size: 36px;">dehaze</i>
@@ -38,10 +39,9 @@
                 <a href="#podcasts">Podcasts</a>
                 <a href="#books">Books</a>
                 <a href="#contact">Contact</a>
-              </div>          
-              
+              </div>      
             </div>
-
+            <!--Javascript for mobile-menu-->
             <script>
               function myFunction() {
                 var x = document.getElementById("myLinks");
@@ -52,13 +52,21 @@
                 }
               }
             </script>
-
           </header>
-
         </div> 
 
-        <div class="grid-item grid-big-news">BIG NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
+        <div class="grid-item grid-big-news">
+          <article>
+            <h1>Murder solved after 15 years!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. At tellus at urna condimentum mattis pellentesque id nibh tortor. Praesent tristique magna sit amet purus gravida. Odio aenean sed adipiscing diam donec. Dolor sed viverra ipsum nunc aliquet bibendum. Molestie at elementum eu facilisis sed. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Fames ac turpis egestas integer eget aliquet nibh praesent tristique.</p>
+          </article>
+        </div>
+        <div class="grid-item grid-other-news">
+          <article>
+            <h1>Murder solved after 15 years!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. At tellus at urna condimentum mattis pellentesque id nibh tortor. Praesent tristique magna sit amet purus gravida. Odio aenean sed adipiscing diam donec. Dolor sed viverra ipsum nunc aliquet bibendum. Molestie at elementum eu facilisis sed. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Fames ac turpis egestas integer eget aliquet nibh praesent tristique.</p>
+          </article>
+        </div>
         <div class="grid-item grid-other-news">OTHER NEWS</div>
         <div class="grid-item grid-other-news">OTHER NEWS</div>
         <div class="grid-item grid-other-news">OTHER NEWS</div>

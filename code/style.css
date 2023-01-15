@@ -1,19 +1,20 @@
+
+/*Background and text color*/
 html {
   background: #0025ff;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
+/*Styling for body, font and text-align*/
 body {
-  text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*Header: basic styiling*/
+/*Header: basic styling*/
 header {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-
 }
 /*Remove decorations that make the link look like links*/
 header a {
@@ -32,7 +33,7 @@ header a {
   color:rgb(0, 146, 114);
 }
 
-/* Påbörjan av styling nav-bar*/
+/* Styling of nav-bar (only in desktop and pad)*/
 .nav-bar {
   font-size: 20px;
 }
@@ -41,6 +42,14 @@ header a {
 .nav-bar a {
   padding: 5px;
   color:rgb(0, 146, 114);
+}
+
+.grid-big-news{
+  padding: 10px;
+}
+
+.grid-other-news{
+  padding: 10px;
 }
 
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
@@ -84,7 +93,7 @@ header a {
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 150px);
+    grid-template-rows: repeat(8);
     gap: 15px;
   }
 
@@ -112,7 +121,7 @@ header a {
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(5);
     gap: 15px;
     justify-content: center;
 
