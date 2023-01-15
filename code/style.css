@@ -98,7 +98,7 @@ p {
   font-family: var(--paragraph-font-family);
 }
 
-p::first-letter {
+.big-news p::first-letter {
   font-size: 58px;
 }
 
@@ -112,7 +112,7 @@ p::first-letter {
   margin-right: 20px;
 }
 
-.grid-parent {
+.grid-parent-big-news {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(7, 100px);
@@ -150,6 +150,90 @@ p::first-letter {
   text-align: center;
 }*/
 
+.other-news h2 {
+  margin: 30px 0 20px 70px;
+}
+
+.grid-parent-other-news {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(7, 100px);
+  gap: 10px;
+}
+
+.img-other-news-div {
+  text-align: left;
+}
+
+.img-other-news-one,
+.img-other-news-two,
+.img-other-news-three,
+.img-other-news-four {
+  display: flex;
+  height: 60%;
+  max-width: 100%;
+  margin: 20px;
+}
+
+/*.img-big-news-one {
+  margin: 160px 0 0 70px;
+}*/
+
+.img-other-news-two {
+  border-top-left-radius: 20%;
+}
+
+.card {
+  display: flex;
+  background: #94b1aa;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px 40px 40px;
+  overflow: hidden;
+  /*margin: 0 10px;*/
+}
+
+.card-body {
+  position: relative;
+}
+
+/*
+.card-thumb {
+  width: 70%;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.client-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-name {
+  position: absolute;
+  font-family: "Indie Flower", cursive;
+  font-size: 14px;
+  bottom: 10px;
+  right: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 5px 20px;
+  background: #f4f6f6;
+}
+
+.review {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+  color: #f4f6f6;
+}*/
+
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -169,6 +253,10 @@ p::first-letter {
   background: var(--secondary-bg-color);
   color: var(--secondary-text-color);
   border: 1px solid var(--border-color);
+}
+
+.other-news-paragraph {
+  margin: 30px 0 20px 70px;
 }
 
 .fa-instagram {
