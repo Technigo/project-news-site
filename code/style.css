@@ -139,8 +139,7 @@ h2 {
 }
 
 .main-text p {
-  text-align: center;
-  font-size: 13px;
+  display: none;
 }
 
 button {
@@ -176,19 +175,21 @@ button {
   color: #0D1837;
   text-align: center;
   font-size: 15px;
-  border-bottom: 1px solid #87A5F7;
-  border-top: 1px solid #87A5F7;
+  border-bottom: 2px solid #87A5F7;
+  border-top: 2px solid #87A5F7;
   margin: 2px 10px;
   padding: 5px 0px;
 }
 
 .box  {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
   align-items: center;
-  border-top: 2px solid #87A5F7;
+  background: #e6e6ff;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .info-boxes img {
@@ -295,11 +296,18 @@ button {
     flex: 1 0 50%;
   }
 
+  .main-text p {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
   .info-boxes {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px;
   }
 
   .info-boxes p {
@@ -330,8 +338,8 @@ button {
     max-width: 90%;
     max-height: 90%;
     padding: 0;
-    margin-left: 5px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin-top: 15px;
   }
 
 }
@@ -405,11 +413,22 @@ button {
     flex: 1 0 50%;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
+  .main-text p {
+    display: block;
+    font-size: 20px;
+
+  }
+
   .info-boxes {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .box  {
@@ -418,7 +437,7 @@ button {
     border: none;
     flex-direction: column;
     background: #87A5F7;
-    margin: 10px 0;
+    margin: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
