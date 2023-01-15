@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  background-color: lightcoral;
   margin: 0;
 }
 
@@ -62,7 +61,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color:#47bfb1;
-  padding: 0 0 10px;
+  padding: 0 0 20px;
 }
 
 .big-img {
@@ -81,20 +80,76 @@ h1 {
   margin: 0;
 }
 
-.big-text {
+.p-big {
   width: 90%;
   font-size: 14px;
   font-weight: 300;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+
+/* big news article */
+.medium-news {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px;
+  gap: 8px;
+}
+
+.small-box {
+  width: 30%;
+  background-color:#47bfb1;
+  margin: 0;
+}
+
+.small-img {
+  width: 90%;
+  align-self: center;
+  padding: 10px 10px 0 10px;
+}
+
+.p-medium {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 10px 10px 10px;
+  margin: 0;
+}
+
+.medium-box {
+  width: fit-content;
+  background-image: url(./img/tatto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
   color: #fff;
   padding: 0 20px 10px 20px;
   margin: 0;
 }
 
-/* many articles in one section right here */
+h4 {
+  font-style: italic;
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+}
+
+
+/* Many articles in one grid right here */
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-
   column-gap: 2px;
   row-gap: 4px;
   margin: 8px;
@@ -110,16 +165,45 @@ h1 {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
-  border:#000 2px;
 }
 
 .grid-item>p {
   color: #5c63ad;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 2px;
+}
+
+.grid-item:hover {
+  background-color: #f04c29;
 }
 
 a, a:visited {
   text-decoration: none;
 }
+
+/* quote section */
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#5c63ad;
+  padding: 20px 0;
+  margin: 8px;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 600px;
+  color:#f386a3;
+  padding: 20px 60px;
+  margin: 0;
+}
+
+
 
 /* the end of story ie footer */
 footer {
@@ -129,7 +213,6 @@ footer {
   font-size: 9px;
   font-weight: 300;
 }
-
 
 .foot-links {
   display: flex;
@@ -193,6 +276,7 @@ footer {
   }
 
 }
+
 
 @media (min-width: 1025px) {
   body {
