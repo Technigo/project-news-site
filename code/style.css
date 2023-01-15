@@ -156,15 +156,8 @@ footer {
   justify-content: center;
 }
 
-footer img {
-  height: 120px;
-}
-
-footer img:hover {
-  height: 130px;
-}
-
 button {
+  display: none;
   text-decoration: none;
   background-color: orange;
   text-align: center;
@@ -173,8 +166,9 @@ button {
   box-shadow: 4px 4px pink;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: 22px;
-  padding: 2px;
+  font-size: 100px;
+  padding: 30px;
+  margin: 50px auto 40px auto;
   border-radius: 5px;
 }
 
@@ -182,6 +176,17 @@ button:hover {
   box-shadow: 4px 4px orange;
   background-color: pink;
 }
+
+
+footer img {
+  height: 120px;
+}
+
+footer img:hover {
+  height: 130px;
+}
+
+
 
 
 @media (min-width: 668px) {
@@ -244,7 +249,7 @@ p {
  }
 
  .small-card article {
-  width: 85%;
+  width: 90%;
   height: 900px;
   padding-left: 20px;
 }
@@ -252,6 +257,10 @@ p {
  h3 {
   font-size: 55px;
  }
+
+button {
+  display: block;
+}
 
 footer {
   height: 320px;
