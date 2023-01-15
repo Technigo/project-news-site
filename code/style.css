@@ -24,7 +24,7 @@
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  width: 60%;
+  width: 80%;
   max-width: fit-content;
 }
 
@@ -71,12 +71,21 @@
   font-size: 20px;
 }
 
+a {
+  color: var(--primary-text-color);
+  transition: all 200ms ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   /*text-align: center;*/
   font-family: var(--logo-name-font-family);
   font-size: 48px;
   font-weight: normal;
-  margin-left: -60px;
 }
 
 h2 {
@@ -85,7 +94,6 @@ h2 {
 
 p {
   font-family: var(--paragraph-font-family);
-  margin-right: 50px;
 }
 
 p::first-letter {
@@ -105,25 +113,44 @@ p::first-letter {
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /*grid-template-rows: repeat(2, 100px);*/
+  /*grid-template-rows: repeat(4, 100px);*/
   gap: 10px;
 }
 
-.img-big-news {
-  height: 30%;
+/*.medium-grid-item {
+  grid-column: span 1;
+}*/
+
+.big-news {
+  margin-left: 20px;
+}
+
+.img-big-news-one {
+  height: 70%;
   max-width: 50%;
-  margin-top: 20px;
-  margin-left: 70px;
+  margin: 20px 0px 60px 50px;
   border-top-left-radius: 20%;
 }
 
-.link {
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 5px 5px 5px 0;
+  text-transform: capitalize;
+  background: var(--primary-bg-color);
+  box-shadow: var(--box-shadow);
   color: var(--primary-text-color);
-  transition: all 200ms ease;
+  width: 215px;
 }
 
-.link:hover {
-  text-decoration: underline;
+.primary-link:hover {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+  background: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--border-color);
 }
 
 .fa-linkedin {
@@ -144,6 +171,8 @@ p::first-letter {
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
 }
 
+/*footer*/
+
 .logo-footer {
   display: flex;
   align-items: center;
@@ -155,6 +184,7 @@ p::first-letter {
   width: 50px;
   border-radius: 50%;
   box-shadow: var(--box-shadow);
+  margin-top: 5px;
 }
 
 .logoTextSpan {
@@ -180,10 +210,6 @@ p::first-letter {
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   text-decoration: none;
-}
-
-.logo-magazine {
-  margin-left: 850px;
 }
 
 /*https://codepen.io/zajonsss/pen/abqZZe, January 12, 2023*/
