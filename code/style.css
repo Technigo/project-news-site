@@ -44,6 +44,7 @@ li a:hover {
 }
   img {
     width: 40%;
+    max-width: 100%;
   }
   }
 @media (min-width: 1025px) {
@@ -90,17 +91,20 @@ p {
   margin: auto;
   float: none;
   width: 46px;
+  max-width: 100%;
  
 }
-.head-news {
+.container-head-news {
   display: column;
   background-color: #3c4245;
   width: auto;
+  height: 450px;
   text-align: center;
   justify-content: center;
   padding-top: 20px;
+  padding: 0 1em;
 }
-.head-news :hover {
+.container-head-news :hover {
   color: #BC8F8F;
  } 
 .top-news {
@@ -119,9 +123,11 @@ p {
   background-color: #3c4245;
   margin: 20px;
   height: 500px;
-  width: auto;
+  max-width: 350px;
+  min-width: 350px;
   padding-top: 20px;
   padding-bottom: 50px;
+  padding: 0 1em;
   margin-top: 40px;
   justify-items: center;
 }
@@ -148,17 +154,15 @@ p {
   text-align: center;
 }
 
-.head-news {
-  height: 450px;
-  width: auto;
-}
+
 .item {
   justify-item: center;
   margin-top: 40px;
 }
 .fit-image {
   padding-top: 20px;
+  max-width: 100%;
 }
 
-}
+
   
