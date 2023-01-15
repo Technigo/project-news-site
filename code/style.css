@@ -46,15 +46,9 @@ a{
   color: white;
 }
 
-hr {
-  display: block;
-  margin: auto;
-  width: 75%;
-  border: 0.5px dotted white;
-  opacity: 0.2;
-}
 
-/* Grid overall layout */
+
+/*---------- Overall Grid container Layout*/
 
 .container{
   max-width: 80%;
@@ -72,7 +66,8 @@ hr {
   "content content content content";
 }
 
-/* Grid design of header*/
+
+/*---------- Layout of the header */
 .container header {
   grid-column: 1/5;
   background-color: rgba(70, 100, 155, 0.753);
@@ -81,10 +76,11 @@ hr {
   border-top-right-radius: var(--main-radius);
   padding: 15px;
   display: flex;
-  justify-content: center;     /*Placerar längs vertikala axeln*/
-  align-items: center;                /*Centrerar längs horisontella axeln*/
+  justify-content: center;
+  align-items: center;
 }
 
+/*Deatiled design of the header*/
 .title-logo {
   display: flex;
   flex-direction: row;
@@ -99,7 +95,8 @@ hr {
   aspect-ratio: 1 / 1;
 }
 
-/* Grid design of navbar */
+
+/*---------- Layout of the navbar */
 
 .container nav {
   grid-column: 1/5;
@@ -193,8 +190,8 @@ transform: rotate(-405deg);
 
 
 
+/*---------- Layout of the large news section */
 
-/* Grid design of the large news section */
 .container main {
   grid-column: 1/5;
   background-color: rgb(190, 202, 236);
@@ -202,6 +199,8 @@ transform: rotate(-405deg);
   padding: var(--main-padding);
 
 }
+
+/*Detailed design of the large news section */
 
 .main-article-container {
   background-color: #E8B9B9;
@@ -243,10 +242,12 @@ transform: rotate(-405deg);
   border: 1px solid white;
 }
 
-/* Overall grid design of the smaller news section. Here we create 4 columns and 2 rows. */
+
+/*---------- Layout of the smaller news section */
+
 .container content {
   grid-column: 1/5;
-  background-color: rgb(165, 186, 241);
+  background-color: rgb(190, 202, 236);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -256,9 +257,6 @@ transform: rotate(-405deg);
 
 /* Detailed design of smaller news sections */
 
-.container content {
-  background-color: rgb(190, 202, 236)
-}
 .minor-article {
   margin: var(--main-margin);
   background-color: #E8B9B9;
@@ -284,7 +282,7 @@ transform: rotate(-405deg);
 
 
 
-/* Grid design of the footer */
+/*---------- Layout of the footer */
 .container footer {
   grid-column: 1/5;
   background-color: rgba(70, 100, 155, 0.753);
@@ -297,6 +295,7 @@ transform: rotate(-405deg);
   align-items: center;
 }
 
+/*Detailed design of footer */
 .button-subscribe{
   background-color: rgba(255, 255, 255, 0.2);
   border: 0.5px solid black;
@@ -332,6 +331,13 @@ transform: rotate(-405deg);
   opacity: 0.5;
 }
 
+hr {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border: 0.5px dotted white;
+  opacity: 0.2;
+}
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -339,25 +345,19 @@ transform: rotate(-405deg);
 
 /*------------------------------ Tablet design*/
 @media (min-width: 667px) and (max-width: 1024px) {
-
-  /* Overall grid design of the smaller news section. Here we create 2 columns and 4 rows. */
+  
+/*---------- Overall Grid container Layout, adapted for tablet --> We switch to 2 columns*/
 .container content {
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(4, 1fr);
 }
+
+/*Detailed design of tablet view*/
 
 .container {
   max-width: 80%;
   margin: 10px auto;
   }
 
- 
-     /* Navbar drop down menu*/
-.menu li {
-  margin: 0 1rem;
-}
-
-  
 .container main {
       flex-direction: row;
   }
@@ -370,14 +370,12 @@ h1{
   font-size: 40px;
 }
 
-  
 .img-main-article {
   max-width: 90%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 5px;
 }
-
 
 .main-article p{
   column-count: 1;
@@ -387,6 +385,10 @@ h1{
   margin: 15px;
 }
 
+     /* Navbar drop down menu*/
+     .menu li {
+      margin: 0 1rem;
+    }
   
 }
 
@@ -396,20 +398,71 @@ h1{
 /*------------------------------ Phone design*/
 @media (max-width: 667px) {
 
-          /* Overall grid design of the smaller news section. Here we create 1 columns and auto rows. */
+/*---------- Overall Grid container Layout, adapted for phone --> We switch to 1 column*/
 .container content {
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
 }
+
+/*Detailed design of phone view*/
 
 .container {
   max-width: 90%;
   margin: 10px auto;
   }
 
+  .container main {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .main-article-container {
+      flex-direction: column;
+  }
+
+h1{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 20px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+h3{
+  font-size: 16px;
+  padding-left: 8px;
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.img-main-article {
+  max-width: 90%;
+  margin: auto auto 10px auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.main-article p{
+  column-count: 1;
+}
+
+.minor-article {
+  margin: 15px 25px;
+}
+
+.img-minor-articles {
+  width: 90%;
+}
 
 
-/* Navbar drop down menu */
+/* Navbar drop down menu for phones */
 
 .menu-button-container {
   display: flex;
@@ -460,60 +513,6 @@ h1{
   padding: 25px 0px;
 }
 
-
-
-  .container main {
-      flex-direction: column;
-      flex-wrap: wrap;
-  }
-
-  .main-article-container {
-      flex-direction: column;
-  }
-
-h1{
-  font-size: 35px;
-}
-
-h2{
-  font-size: 20px;
-  padding-left: 8px;
-  margin: 0px;
-}
-
-h3{
-  font-size: 16px;
-  padding-left: 8px;
-  margin: 0px;
-}
-
-p{
-  margin: 0px;
-  font-size: 12px;
-  padding: 8px;
-}
-
-
-.img-main-article {
-  max-width: 90%;
-  margin: auto auto 10px auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin-bottom: 5px;
-}
-
-
-.main-article p{
-  column-count: 1;
-}
-
-.minor-article {
-  margin: 25px;
-}
-
-.img-minor-articles {
-  width: 90%;
-}
 
 
 }

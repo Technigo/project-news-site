@@ -8,6 +8,8 @@ I began by sketching out an overall layout of how I roughly wanted the design to
 
 Since this is my first time using CSS grid and flexbox, I thought it was easier for me to design the website for desktop applications first, and get all the content where I wanted it, and then adapt it to tablet and mobile devices. I built the overall layout with CSS grid and used flexbox for some of the content. In the beginning, I found flexbox to be really challenging compared to grid, since it felt like a much more “loose cannon” and not as easy to control. Now, I’ve come around to really like it.
 
+The interactive hamburger bar I would say is the most complex part of my code. I searched the web for hamburger bar templates until I found one that I liked, then adapted it to fit my design och incorporated it into the code.
+
 If I had more time and could redo it, I would have designed it mobile-first, to get familiarized with that approach of coding. One of the biggest challenges for me was getting the pictures to look alright for all screen sizes, so I would dive in to that topic a bit more also.
 
 
