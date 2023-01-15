@@ -21,6 +21,16 @@ body {
     background: lightgoldenrodyellow;
   }
 
+  header {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+  .nav-bar{
+    display: none;
+  }
+  
   
 }
 
@@ -45,6 +55,10 @@ body {
     grid-column: span 2;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
 }
 
 /*MEDIA QUEARY FÖR DESKTOP*/
@@ -55,6 +69,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 150px);
     gap: 15px;
+    justify-content: center;
+
   }
 
   .grid-item {
@@ -97,8 +113,17 @@ body {
   }
 
   /* Påbörjan av styling nav-bar*/
-  .nav-bar{
+  .nav-bar {
+    font-size: 20px;
+  }
 
+  .nav-bar a {
+    padding: 5px;
+    color:rgb(0, 146, 114);
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
 
