@@ -1,8 +1,7 @@
 @import url(https://fonts.google.com/share?selection.family=Josefin%20Sans:ital,wght@0,200;0,300;0,400;1,200;1,410;1,500;1,600);
 
 html {
-  background: lightcyan;
-  color: black;
+  background: white;
   font-family: 'Josefin Sans',sans-serif;
 }
 
@@ -56,7 +55,7 @@ nav {
   font-weight: 400;
 }
 
-/* big news articel */
+/* big news article */
 .big-news {
   display: flex;
   flex-direction: column;
@@ -122,8 +121,6 @@ a, a:visited {
   text-decoration: none;
 }
 
-
-
 /* the end of story ie footer */
 footer {
   width: 100%;
@@ -132,7 +129,6 @@ footer {
   font-size: 9px;
   font-weight: 300;
 }
-
 
 
 .foot-links {
@@ -151,7 +147,7 @@ footer {
   color: #000;
 }
 
-/* from old */
+/* responsive */
 @media (min-width: 668px) {
   body{
       flex-direction: row;
@@ -175,6 +171,7 @@ footer {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 300;
+    padding: 0 30px 0 0;
   }
   
   .nav-item a {
@@ -194,8 +191,6 @@ footer {
     row-gap: 2px;
     margin: 8px;
   }
-  
-
 
 }
 
@@ -203,6 +198,8 @@ footer {
   body {
       flex-direction: row;
       background: palevioletred;
+      max-width: 1280px;
+      margin: 0 auto;
   }
 
   img {
@@ -213,4 +210,5 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2px;
     margin: 8px;
+}
 }
