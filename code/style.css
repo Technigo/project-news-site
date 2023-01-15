@@ -89,69 +89,12 @@ h1 {
   margin: 0;
 }
 
-/* big news article */
-.medium-news {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 8px;
-  gap: 8px;
-}
-
-.small-box {
-  width: 30%;
-  background-color:#47bfb1;
-  margin: 0;
-}
-
-.small-img {
-  width: 90%;
-  align-self: center;
-  padding: 10px 10px 0 10px;
-}
-
-.p-medium {
-  font-size: 14px;
-  font-weight: 300;
-  color: #fff;
-  padding: 0 10px 10px 10px;
-  margin: 0;
-}
-
-.medium-box {
-  width: fit-content;
-  background-image: url(./img/tatto.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
-
-h3 {
-  font-style: italic;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px 10px 20px;
-  margin: 0;
-}
-
-h4 {
-  font-style: italic;
-  font-size: 15px;
-  color: #fff;
-  text-align: left;
-  padding: 10px;
-  margin: 0;
-}
-
-
 /* Many articles in one grid right here */
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2px;
-  row-gap: 4px;
+  column-gap: 8px;
+  row-gap: 8px;
   margin: 8px;
 }
 
@@ -187,9 +130,10 @@ a, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color:#5c63ad;
   padding: 20px 0;
-  margin: 8px;
+  margin: 8px 0 0 0;
 }
 
 h2 {
@@ -203,6 +147,70 @@ h2 {
   margin: 0;
 }
 
+/* medium news */
+.medium-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-img {
+  width: 280px;
+  padding: 0 20px 0 0;
+  margin: 8px 0;
+}
+
+.small-box {
+  display: flex;
+  height: 250px;
+  background-color: #47bfb1;
+  margin: 8px 0;
+}
+
+
+h4 {
+
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.p-medium {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.medium-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 240px;
+  background-image: url(./img/tatto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: solid #47bfb1 8px;
+  border-top: solid #47bfb1 8px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
+
 
 
 /* the end of story ie footer */
@@ -210,8 +218,9 @@ footer {
   width: 100%;
   min-height: 50px;
   background-color: #ffff;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 300;
+  margin-top: 8px;
 }
 
 .foot-links {
@@ -271,8 +280,55 @@ footer {
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2px;
-    row-gap: 2px;
     margin: 8px;
+  }
+
+  .quote {
+    width: auto;
+    margin: 8px;
+  }
+
+  .medium-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px;
+    gap: 8px;
+  }
+
+  .small-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+    height: 280px;
+    background-color:#47bfb1;
+    border: solid #47bfb1 8px;
+    margin: 0;
+  }
+
+  .small-img {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .p-medium {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+  }
+
+  .medium-box {
+    width: 75%;
+    height: 240px;
+    background-image: url(./img/tatto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid #47bfb1 8px;
+    padding: 20px 40px;
+    margin: 0;
   }
 
 }
