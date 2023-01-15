@@ -13,6 +13,7 @@ header {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+
 }
 /*Remove decorations that make the link look like links*/
 header a {
@@ -23,10 +24,9 @@ header a {
 .company-name{
   font-weight: bold;
   font-size: 30px;
-  color:aqua;
   display: flex;
-  align-items: center;
 }
+
 /*company-name text color*/
 .company-name a {
   color:rgb(0, 146, 114);
@@ -37,6 +37,7 @@ header a {
   font-size: 20px;
 }
 
+/*nav-bar links styling*/
 .nav-bar a {
   padding: 5px;
   color:rgb(0, 146, 114);
@@ -47,7 +48,7 @@ header a {
   .grid-parent {
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(10, 100px);
+    grid-template-rows: repeat(10);
     gap: 15px;
   }
 
@@ -55,12 +56,6 @@ header a {
     background: lightgoldenrodyellow;
   }
 
-  header {
-    display:flex;
-    justify-content: space-between;
-    padding: 10px;
-
-  }
   .nav-bar{
     display: none;
   }
@@ -69,16 +64,18 @@ header a {
     overflow: hidden;
     position: relative;
   }
-  
+
   .mobile-menu #myLinks{
     display: none;
-    background-color: cornflowerblue;
+    background-color: bisque;
+    /*width: 100vw;*/
   }
 
-
-
-
-  
+  .mobile-menu a {
+    padding: 5px;
+    color:rgb(0, 146, 114);
+    display: block;
+  }
   
 }
 
@@ -135,8 +132,6 @@ header a {
 
   .grid-other-news {
   }
-
-  
 
   .mobile-menu {
     display: none;
