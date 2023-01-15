@@ -27,10 +27,30 @@ ul {
 
 ul li a{
   padding: 0 40px;
-  color: green; 
+  color: rgb(11, 11, 136);
   text-decoration: none;
   display: inline;
    
+}
+
+a:link {
+
+  color:black;
+
+}
+
+a:visited {
+
+  color:black;
+
+}
+
+a:active {
+  color:rgb(11, 11, 136);
+}
+
+a:hover {
+  color:rgb(160, 43, 175);
 }
 
 main {
@@ -49,33 +69,52 @@ main {
   
 }
 
+.big-news-article {
+  display: block;
+  
+}
+
 .content-left {
   width: 60%;
   padding: 5%;
 
+}
+
+.content-article {
+  justify-content: center;
+  padding: 5%;
+  
 
 }
 
 main h1 {
-  font-size: 40px;
-  color: blue;
+  font-size: 35px;
+  color: #292437;
   text-transform: uppercase;
 
-  
+}
+
+main h3 {
+  font-size: large;
+  font-weight: 400;
+  line-height: 31.5px;
+  color: black;
+  margin: 30px 0;
+
 }
 
 main p {
   font-size: large;
   font-weight: 400;
-  color: gray ;
   line-height: 31.5px;
+  color: rgb(11, 11, 136);
   margin: 30px 0;
 }
 
 button {
   padding: 15px 30px;
-  background: gainsboro;
-  color: aliceblue;
+  background: #deb5fe;
+  color: whitesmoke;
   outline: none;
   border: none;
   font-weight: 700;
@@ -97,6 +136,7 @@ button {
 
 .grid-item {
 
+  background-color: white;
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -109,3 +149,35 @@ footer {
   font-size: 15px;
 }
 
+h2 {
+
+  text-transform: uppercase;
+  font-size: 22px;
+
+}
+
+h3 {
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 15px;
+
+  }
+
+  p {
+
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 15px;
+    color: rgb(11, 11, 136)
+    
+
+  }
+
+  .down{
+
+    color: black;
+  }
+
+  
+
+ 
