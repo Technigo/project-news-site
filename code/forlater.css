@@ -1,118 +1,68 @@
-Code for the grid v1 mobile::after
+media queries for desktop, based on the browser view
 
-.big-text p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+.flex-parent-header {
+  height: 600px;
+ }
 
-.small-text p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
+ .logo img {
+  height: 500px;
+ }
+
+ .navbar a {
+    height: 90px;
+    width: 350px;
+    font-size: 70px;
+ }
+
+
+.news-grid {
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 25px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 40px 90px 20px 90px;
+  font-size: 280px;
 }
 
-
-.grid-parent {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(9, 200px);
-  gap: 30px;
+p {
+ font-size: 100px;
+ padding-left: 100px;
+ padding-right: 100px;
 }
 
-.grid-item {
-  background: rgb(245, 219, 170);
-  grid-column: span 4;
+.big-card {
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
-.big-grid-item {
-  grid-row: span 3;
-  background-color: #fffff0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;
-}
-
-.big-image {
+ .small-card {
   grid-column: span 2;
-  height: 100%;
-  background-image: url(./busystreet1.jpg);
-  background-size: cover;
-  background-position: center;
+  margin-bottom: 40px;
+ }
+
+ .small-card article {
+  width: 90%;
+  height: 900px;
+  padding-left: 20px;
 }
 
-.big-text {
-  grid-column: span 2;
+ h3 {
+  font-size: 55px;
+ }
+
+button {
+  display: block;
 }
 
-.small-grid-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+footer {
+  height: 320px;
+  margin-top: 100px;
 }
 
-.small-image1 {
-  height: 100%;
-  background-image: url(./sunflowers.jpg);
-  background-size: cover;
-  background-position: center;
+footer img {
+  height: 250px;
 }
-
-.small-image2 {
-  height: 100%;
-  background-image: url(./manreading.jpg);
-  background-size: cover;
-  background-position: left;
-}
-
-.small-image3 {
-  height: 100%;
-  background-image: url(./work.jpg);
-  background-size: cover;
-  background-position: right;
-}
-
-.small-image4 {
-  height: 100%;
-  background-image: url(./hands.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-image5 {
-  height: 100%;
-  background-image: url(./newspapers.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-image6 {
-  height: 100%;
-  background-image: url(./youth.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.small-text {
-  padding: 5px;
-  margin: auto;
-}
-
-
-
-
-
 
 
 
