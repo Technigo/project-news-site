@@ -8,6 +8,40 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Header: basic styiling*/
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+/*Remove decorations that make the link look like links*/
+header a {
+  text-decoration: none;
+}
+
+/*company-name text styling, should be changed to logo later*/
+.company-name{
+  font-weight: bold;
+  font-size: 30px;
+  color:aqua;
+  display: flex;
+  align-items: center;
+}
+/*company-name text color*/
+.company-name a {
+  color:rgb(0, 146, 114);
+}
+
+/* Påbörjan av styling nav-bar*/
+.nav-bar {
+  font-size: 20px;
+}
+
+.nav-bar a {
+  padding: 5px;
+  color:rgb(0, 146, 114);
+}
+
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
 @media (max-width:667px){
   .grid-parent {
@@ -30,6 +64,20 @@ body {
   .nav-bar{
     display: none;
   }
+
+  .mobile-menu{
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .mobile-menu #myLinks{
+    display: none;
+    background-color: cornflowerblue;
+  }
+
+
+
+
   
   
 }
@@ -88,39 +136,7 @@ body {
   .grid-other-news {
   }
 
-  /*Header: basic styiling*/
-  header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  /*Remove decorations that make the link look like links*/
-  header a {
-    text-decoration: none;
-  }
-
-  /*company-name text styling, should be changed to logo later*/
-  .company-name{
-    font-weight: bold;
-    font-size: 30px;
-    color:aqua;
-    display: flex;
-    align-items: center;
-  }
-/*company-name text color*/
-  .company-name a {
-    color:rgb(0, 146, 114);
-  }
-
-  /* Påbörjan av styling nav-bar*/
-  .nav-bar {
-    font-size: 20px;
-  }
-
-  .nav-bar a {
-    padding: 5px;
-    color:rgb(0, 146, 114);
-  }
+  
 
   .mobile-menu {
     display: none;

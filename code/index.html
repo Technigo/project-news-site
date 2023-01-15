@@ -30,20 +30,20 @@
             </div>
             
             <div class="mobile-menu">
-              <nav>
-                <a href="#home">Home</a>
+              <div id="myLinks">
+                <a href="#home" class="active">Home</a>
                 <a href="#podcasts">Podcasts</a>
                 <a href="#books">Books</a>
                 <a href="#contact">Contact</a>
-              </nav>
+              </div>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">       
-              <i class="material-icons" style="font-size: 36px;">dehaze</i>
+                <i class="material-icons" style="font-size: 36px;">dehaze</i>
               </a>
             </div>
 
             <script>
               function myFunction() {
-                var x = document.getElementById("mobile-menu");
+                var x = document.getElementById("myLinks");
                 if (x.style.display === "block") {
                   x.style.display = "none";
                 } else {
