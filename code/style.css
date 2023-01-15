@@ -1,4 +1,214 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #fffffff5;
+  color: rgb(0, 0, 0);
+  font-family: arial;
 }
+
+@media (min-width: 667px) and (max-width:1024px) {
+  body {
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  img {
+    width: 40%;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+}
+
+  img {
+    width: 40%
+}
+
+
+}
+
+.navbar a {
+  grid-area: auto;
+  float: right;
+  color:lightcoral;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.navbar {
+display: row;
+grid-template-columns: 2;
+}
+
+
+  .navbar a:hover {
+    background-color: #fcbae3;
+    color: black;
+    border-radius: 25px;
+    border: 2px solid rgb(232, 187, 103);
+  }
+
+  .navbar a.active {
+    background-color: rgb(232, 187, 103);
+    color: black;
+    border-radius: 25px;
+    border: 2px solid lightcoral;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+  }
+
+  .sitename {
+    width: 200px;
+  }
+
+
+.big-news {
+  margin: 10px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+  .Manne {
+    display: block;
+    width: 400px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    
+  }
+
+  .news-text {
+    margin: 50px;
+    width: 650px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .news-text a {
+    float: center;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#ffffff;
+    color: lightcoral;
+    border-radius: 25px;
+    border: 2px solid rgb(232, 187, 103);
+  }
+
+  
+
+.Other-news {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  text-align: center;
+  vertical-align: top;
+}
+
+  .one {
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .Knit {
+      width: 50%;
+    }
+
+  .two {
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .books {
+      width: 50%;
+    }
+
+  .three {
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .plants {
+      width: 50%
+    }
+
+  .four {
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .pasta {
+      width: 50%
+    }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+  h2 {
+    height: 80px;
+    width: 500px;
+    display: block;
+    font-family: arial;
+  }
+
+  p {
+    height: 100px;
+    width: 500px;
+    display: block;
+    padding: 10 px 20px;
+    font-family: arial;
+  }
+  
+  
+
+
+
+ 
