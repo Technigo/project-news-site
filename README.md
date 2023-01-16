@@ -11,4 +11,4 @@ After that I watched and read up on the different elements and tools provided fo
 If I hade more time I would try to make the Grid design in FlexBox instead.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://clinquant-liger-e79170.netlify.app/
