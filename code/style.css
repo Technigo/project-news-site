@@ -125,7 +125,7 @@ p {
 }
 
 .small-card article:hover {
-  box-shadow: 9px 9px white
+  box-shadow: 9px 9px pink;
 }
 
 .small-card img {
@@ -206,10 +206,39 @@ footer img:hover {
 
 
 @media (min-width: 1024px) {
+  .news-grid {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .big-card {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
   .small-card {
     grid-column: span 2;
     margin-bottom: 40px;
    }
-}
 
+  .small-card article {
+    width: 90%;
+  }
+
+  h2 {
+    padding: 10px 30px 5px 30px;
+    font-size: 50px;
+  }
+
+  p {
+  font-size: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+}
 
