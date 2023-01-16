@@ -1,9 +1,5 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
 The assignment was to make a news-site and learn the basic structure of html, css, css flexbox, css grid and media queries.
 
 ## The problem
