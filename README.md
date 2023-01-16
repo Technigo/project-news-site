@@ -25,4 +25,4 @@ If I had more time I would:
 - Fix thre resizing of the big news image on tablet, not happy with how it looks right now.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+(https://earnest-sorbet-0d6a88.netlify.app/)
