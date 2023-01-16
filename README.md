@@ -2,7 +2,7 @@
 
 Replace this readme with your own information about your project. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I created a magazine site about chocolate, containing a header (with the name of the site, a logo and a navbar), a big news section and a section for other news. I made the site responsive to mobile, tablet and desktop. 
 
 ## The problem
 
