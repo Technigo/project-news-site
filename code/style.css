@@ -107,9 +107,10 @@ ul li a:hover {
 
 /* || Big news */
 .big-news {
+  display: grid;
   background-color: white;
-  padding: 1em;
   grid-column-start: 1;
+  padding: 1em;
 }
 
 .big-news img {
@@ -128,12 +129,39 @@ ul li a:hover {
   font-size: xx-large;
 }
 
+.breaking-container {
+  background-color: red;
+  display: block;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.breaking {  
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
 /* || Other news */
 .news-item {
 background-color: white;
 padding: 1em;
 padding-bottom: 4em;
 box-shadow: 5px 5px 10px #5c5b5b;
+}
+
+.news-item:hover {
+transform : scale(1.1);
 }
 
 .news-item img {
@@ -186,14 +214,32 @@ box-shadow: 5px 5px 10px #5c5b5b;
   grid-column-end: span 2;
 }
 
+.breaking-container {
+  grid-row-start: 1;
+  grid-column-end: span 2;
+}
 
 .big-text-wrapper {
-  grid-area: 1 / 2;
+  grid-row-start: 2;
+  grid-column-start: 2;
   padding-left: 1em;
+  padding-top: 2em;
+}
+
+.big-article-img {
+  grid-row-start: 2;
 }
 
 .item1 {
 padding-bottom: 0;
+}
+
+.item1-text-wrapper {
+  grid-area: 1 / 2;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 }
@@ -226,7 +272,7 @@ h4 {
 
 .grid-container {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr repeat(1fr);
+  grid-template-rows: repeat(1fr);
   gap: 2em;
 }
 
@@ -239,10 +285,20 @@ h4 {
   grid-column-end: span 2;
 }
 
+.item1-text-wrapper {
+  grid-area: 1 / 4;
+  padding-left: 1em;
+}
+
 .big-news {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: repeat(1fr);
   grid-column-end: span 4;
+}
+
+.breaking-container {
+  grid-row-start: 1;
+  grid-column-end: span 3;
 }
 
 .big-news img {
@@ -250,7 +306,7 @@ h4 {
 }
 
 .big-text-wrapper {
-  grid-area: 1 / 4;
+  grid-area: 2 / 3;
   padding-left: 1em;
 }
 
