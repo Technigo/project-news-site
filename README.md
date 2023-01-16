@@ -14,4 +14,4 @@ I would have a footer for example that I wasnt able to figure out why it always 
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://fantastic-cajeta-db372c.netlify.app
