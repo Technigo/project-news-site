@@ -1,19 +1,19 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
-html {
+body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: blue;
-  margin: 20px;
-  padding: 20px;
+  background-color: blue; /*mobile*/
+ 
 }
 
-header {
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 30px;
+p {
+  margin: 0px;
+  font-size: 12px;
+  padding: 8px;
 }
+
+/* mormor är grid-container för hela sidan*/
+
 .mormor {
   display: grid;
   grid-template-columns: 1 fr;
@@ -21,7 +21,21 @@ header {
   padding: 50px;
   background-color: brown;
   gap: 10px;
+  margin: 10px auto;
+  
 }
+
+.container-hero {
+  background-color: yellow;
+  grid-column: 1/5;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 
 .big-mama-news {
   grid: 1 / 2; /* definierar mammas relation till moromor */
@@ -33,9 +47,7 @@ header {
 
 }
 
-/* byt namn till big-mama-baby*/
-
-.big-news-item {
+.big-news-baby {
   background-color: aqua;
   box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
  
@@ -51,9 +63,10 @@ img {
 
 h1 {
   color: white;
+  font-size: 55px;
   margin: 20px;
   padding: 20px;
-  font-family
+  font-family:fantasy;
   
 }
 
@@ -104,7 +117,7 @@ li {
 
 @media (min-width: 668px) and (max-width: 1024px) {
   body {
-    background-color: red;
+    background-color: red; /*tablet*/
   }
   
      .navbar {
@@ -169,7 +182,10 @@ li {
 /* styling for desktop (1024px eller större) */
 
 @media (min-width: 1025px) {
-   
+
+  body {
+    background-color: white; /*desktop*/ 
+  }
 .navbar {
   border: 2px solid green;
   padding: 10px;
