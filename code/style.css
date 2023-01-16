@@ -1,4 +1,203 @@
-html {
-  background: #0025ff;
-  color: #fff;
+h1 {
+    color: purple;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: plum;
 }
+
+.top-heading h1{
+    color: rgb(224, 56, 224);
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+h2 {
+    color: indigo;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+p {
+    font-size: 16;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 25;
+    padding: 50px;
+  }
+  
+  nav li {
+    margin:  50px;
+  }
+  
+  nav a {
+    color : purple;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+  }
+
+  nav {
+    float: right;
+  }
+
+ 
+  form {
+    display: flex;
+    color-scheme: purple;
+    position: absolute; right: 0;
+    padding: 50PX;
+    padding-right: 80px;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: purple;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 10px;
+    border: none;
+  }
+  
+.top-heading {
+    color:rgb(39, 3, 39);
+    background-color: rgb(58, 9, 63);
+    padding: 30px;
+    font-size: 50px;
+ 
+}
+.About-us{
+    color: indigo;
+    background-color:seashell;
+    padding: 50px;
+    float: right;
+}
+
+.About-us img {
+   
+    width: 300px;
+   height: 300px;
+   
+}
+ 
+
+.specials img {
+    width: 100%;
+   
+}
+
+.flex-parent-specials {
+ 
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: seashell;
+    padding: 20px;
+   
+}
+/*.flex-child-specials {
+
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: fuchsia;
+}*/
+
+
+.flex-parent-artist {
+   
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:seashell;
+    flex-direction: row;
+}
+/*.flex-child-artist {
+
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: purple;
+}*/
+
+.flex-parent-donate img {
+    width: 50%;
+    align-items: left;
+    background-color: seashell;
+   
+}
+
+
+.flex-parent-donate {
+    background-color:seashell;
+    flex-direction: row;
+    padding: 200px;
+    padding-bottom: 400px;
+    color: indigo;
+}
+
+img {
+    width:220px;
+    height:220px;
+    border: 30px solid rgb(236, 230, 230);
+   
+    box-shadow: 4px 4px 8px #272327;
+    transform: rotate(2deg);
+        }
+ 
+img:hover {
+    opacity: 0.5;
+  }
+
+
+button {
+    height: 40px;
+    display: block;
+    padding:  10px 20px;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background: purple;
+    border-radius: 20px;
+    }
+
+      
+button:hover {
+        color: rgb(205, 151, 229);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+footer {
+    font-size: 15px;
+    color: rgb(39, 3, 39);
+    background-color: rgb(199, 120, 207);
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+      
