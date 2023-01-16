@@ -4,10 +4,6 @@ h1 {
   font-size: 60px;
 }
 
-h2 {
-  font-family: Optima, sans-serif;
-}
-
 h3 {
   font-family: Optima, sans-serif;
   font-size: 40px;
@@ -27,15 +23,40 @@ body {
 .header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 70px;
+  padding: 20px;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 15%;
   width: 70%;
+  font-family: Optima, sans-serif;
+  color: black;
+  font-size: 20px;
+  border-bottom: solid 1px black;
+  padding-bottom: 20px;
+}
+
+a:link {
+  background-color: lightgrey;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+a:visited{
+  color: black;
+}
+a:hover {
+  color: grey;
 }
 
 .breaking-news {
@@ -45,20 +66,19 @@ body {
   width: 70%;
   margin-left: 15%;
   margin-top: 20px;
+  border-radius: 10px;
 }
-
-.breaking-news img {
-  display: flex;
-  height: 200px;
-  border-radius: 2px;
-  padding-right: 10px;
-}
-
-.breaking-news-text {
-  display: flex;
-  font-size: 20px;
-  margin-top: 10px;
-}
+  .breaking-news img {
+    display: flex;
+    height: 200px;
+    border-radius: 2px;
+    padding-right: 10px;
+  }
+  .breaking-news-text {
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+  }
 
 h4 {
   font-family: Optima, sans-serif;
@@ -67,10 +87,11 @@ h4 {
 }
 
 .newsbox{
-  border: 2px solid;
-  margin: 10px;
+  box-shadow: 5px 5px 5px gray;
+  margin: 20px;
   width: 20%;
   height: 10%;
+  border-radius: 10px;
 }
 
 .smallnews{
@@ -79,6 +100,19 @@ h4 {
   flex-flow: wrap;
   justify-content: space-between;
   padding-top: 10px;
+}
+
+footer {
+  font-size: 14px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px;
+  margin-top: 5px;
+  padding-top: 10px;
+  width: 50%;
+  margin-left: 25%;
+
 }
 
 @media (max-width: 667px) {
@@ -97,6 +131,9 @@ h4 {
     .newsbox {
       width:70%;
     }
+    footer{
+      white-space: nowrap;
+    }
   }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -104,7 +141,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: 14px;
   }
   .breaking-news {
     flex-direction: row;
@@ -117,5 +154,8 @@ h4 {
     width:40%;
     flex-direction: row;
     justify-content: space-between;
+  }
+  footer{
+    white-space: nowrap;
   }
 }
