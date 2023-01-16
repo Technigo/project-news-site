@@ -3,17 +3,61 @@
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: blue; /*mobile*/
+  font-size: 100%;
  
+}
+h1 {
+  color: white;
+  font-family:fantasy;
+}
+
+.logo {
+  width: 60px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  
+
+}
+
+.hamburger {
+  height: 3px;
+  width: 30px;
+  background:white;
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+.menu {
+  padding-top: 10px;
+  color: white;
+}
+
+.navbar {
+  border: 2px solid green;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
+}
+
+li {
+  font-size: 20px;
+  margin: 20px;
+  border: solid black;
+  padding: 20px; 
 }
 
 p {
   margin: 0px;
-  font-size: 12px;
   padding: 8px;
+  font-size: 70%;
 }
 
 /* mormor är grid-container för hela sidan*/
-
+/*
 .mormor {
   display: grid;
   grid-template-columns: 1 fr;
@@ -21,18 +65,18 @@ p {
   padding: 50px;
   background-color: brown;
   gap: 10px;
-  margin: 10px auto;
+  margin: 10px auto; 
   
-}
+}*/
 
 .container-hero {
-  background-color: yellow;
-  grid-column: 1/5;
+  background-color: #3e2f5bff;
+  size: 100%;
   padding: 15px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -51,7 +95,6 @@ p {
   background-color: aqua;
   box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
  
-  
 }
 
 img {
@@ -59,53 +102,10 @@ img {
   aspect-ratio: 1 / 1;
   object-fit: cover; /* att den cropas istället för att sizas upp/ner */
   object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
-}
-
-h1 {
-  color: white;
-  font-size: 55px;
-  margin: 20px;
-  padding: 20px;
-  font-family:fantasy;
-  
-}
-
-.logo {
-  width: 60px;
+  padding: 10px;
   margin: 10px;
-  padding: 10px;
-
 }
 
-.hamburger {
-  height: 3px;
-  width: 30px;
-  background: black;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.menu {
-  margin-right: 10px;
-  float: left;
-  padding-top: 10px;
-}
-.navbar {
-  border: 2px solid green;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
-}
-
-li {
-  font-size: 20px;
-  margin: 20px;
-  border: solid black;
-  padding: 20px;
-  
-}
 
 
 
