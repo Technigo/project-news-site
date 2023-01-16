@@ -11,4 +11,4 @@ I started out by making a basic sketch for all three layouts. Then started out b
 If I had more time I would make the website truly responsive by learning and using other units than px like %, auto-fit, auto-fill and properties like max-width, min-width and so on. I would also like to gain a greater understanding of transitions and transformations and use that in the styling. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://harmonious-tarsier-058160.netlify.app/ 
