@@ -5,19 +5,26 @@ header{
 
 }
 
-.header-title{
+.title{
 line-height: 0px;
 font-size: 2vw;
 margin: 5px;
 }
 
-.header-title h5{
-  display: inline;
+.nav-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav a {
-  padding: 15px;
+.nav-item{
+  margin: 10px;
   font-size: 3vw;
+}
+
+
+a{
   text-decoration: none;
 }
 
