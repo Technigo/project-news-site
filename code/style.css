@@ -26,7 +26,7 @@ p {
 
 h1 {
   color: #0415d1;
-  font-family: didot;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.8rem;
   font-weight: bold;
   grid-column: 2 / 6;
@@ -102,7 +102,7 @@ a:hover {
 .big-news-box {
   display: flex;
   height: 500px;
-  margin: 20px;
+  margin: 20px 20px 5px 20px;
 }
 
 .big-image {
@@ -169,15 +169,8 @@ h2:hover, h3:hover {
 
 .small-news-text {
   font-size: 0.6rem;
-  padding: 0px 20px 10px 25px;
+  padding: 0px 20px 10px 20px;
 }
-
-/*.signature-small {
-  font-size: 0.6rem;
-  font-weight: bold;
-  font-stretch: ultra-condensed;
-  padding-bottom: 20px;
-}*/
 
 
 @media (max-width: 666px) {
@@ -189,25 +182,32 @@ h2:hover, h3:hover {
   display: none;
 } 
 
-h2 {
-  font-size: 2rem;
+h1 {
+  font-size: 1.5rem;
+  padding-left: 10px;
 }
 
-h3 {
+h2 {
   font-size: 1.8rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 .big-news-box {
-  margin: 20px;
+  height: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  object-fit: cover;
   /*gap: 10px;*/
 }
 
 .big-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  width: auto\9; /* ie8 */
+  object-fit: cover; /*This worked well!*/
+  /*width: auto\9; /* ie8 */
   margin: 0px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
@@ -215,14 +215,16 @@ h3 {
 }
 
 .big-news-textbox {
-  max-width: 100%;
-  height: 500px;
+  /*max-width: 100%;*/
+  height: auto; 
+  /*height: 500px;*/
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;
   border-bottom-left-radius: 2%;
 }
 
 .big-news-paragraph {
+  font-size: 0.9rem;
   padding-top: 0px;
   padding-bottom: 5px;
 }
@@ -234,18 +236,20 @@ h3 {
 
 .small-news {
   grid-column: 1fr;
-  height: 700px;
+  height: 555px;
   width: auto;
 }
 
 .small-image {
-  max-width: 100%;
+  height: 80%;
+  object-fit: cover;
+  /*max-width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 10px;*/
 }
 
 .small-news-text {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 }
 
@@ -269,16 +273,16 @@ h3 {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 20px 20px 5px 20px;
   }
   
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   h4 {
-    font-size: x-small;
+    font-size: 0.8rem;
     padding: 10px 20px 10px 20px;
   }
  
@@ -288,18 +292,23 @@ h3 {
 
   .big-news-box {
     max-width: 100%;
+    height: 490px;
+    /*margin-bottom: 5px;*/
   }
   
   .big-image {
-    width: auto;
-    height: 250px;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+   /*width: auto;
+    height: 250px;*/
   }
   
   .big-news-textbox {
   }
 
   .big-news-paragraph {
-    font-size: x-small;
+    font-size: 0.7rem;
     padding: 10px 20px 10px 20px;
   }
   
@@ -316,7 +325,7 @@ h3 {
   }
 
   .small-news-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
 }
