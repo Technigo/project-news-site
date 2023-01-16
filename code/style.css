@@ -36,8 +36,17 @@ h1 {
   font-size: 6vw;
   grid-column: 2 / 4;
   grid-row-start: 4;
-
+  animation: animation-h1 2s ease-in-out alternate infinite;
 }
+
+/* animation for h1 header */
+@keyframes animation-h1 {
+0% {color: #275DF1;}
+30% {color: #0B35A8;}
+100% {color: #0D1837;}
+}
+
+
 label {
   grid-column: 4;
   grid-row: 4;
@@ -179,6 +188,36 @@ button {
   padding: 10px 0px;
 
 }
+
+.animation-box {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 0;
+}
+
+.animation-box p {
+  grid-column: 1;
+  width: 90px;
+  text-align: center;
+  margin: 2px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  background: #0B35A8;
+  font-size: 15px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #87A5F7;
+  animation: animation-banner 4s ease-in-out infinite alternate;
+}
+
+/* animation for the banner */
+@keyframes animation-banner {
+  0% {grid-column: 1; background: #275DF1;}
+  25% {grid-column: 2;}
+  50% {grid-column: 3; background: #275DF1;}
+  100% {grid-column: 4;}
+}
+
 
 .info-boxes {
   display: flex;
@@ -323,6 +362,23 @@ button {
     font-size: 14px;
   }
 
+  .animation-box {
+    grid-template-columns: repeat(8, 1fr);
+    margin: 10px 0;
+  }
+
+  /* animation for the banner */
+@keyframes animation-banner {
+  0% {grid-column: 1; background: #275DF1;}
+  12.5% {grid-column: 2;}
+  25% {grid-column: 3; background: #275DF1;}
+  37.5% {grid-column: 4;}
+  50% {grid-column: 5;}
+  62.5% {grid-column: 6;}
+  75% {grid-column: 7;}
+  100% {grid-column: 8;}
+}  
+
   .info-boxes {
     flex-direction: row;
     align-items: center;
@@ -443,6 +499,31 @@ button {
     font-size: 20px;
 
   }
+
+  .animation-box {
+    grid-template-columns: repeat(12, 1fr);
+    margin: 10px 0;
+  }
+
+  .animation-box p {
+    animation: animation-banner 8s ease-in-out infinite alternate;
+  }
+
+  /* animation for the banner */
+@keyframes animation-banner {
+  0% {grid-column: 1; background: #275DF1;}
+  8% {grid-column: 2;}
+  16% {grid-column: 3; background: #275DF1;}
+  24% {grid-column: 4;}
+  32% {grid-column: 5;}
+  40% {grid-column: 6;}
+  48% {grid-column: 7;}
+  56% {grid-column: 8;}
+  64% {grid-column: 9;}
+  72% {grid-column: 10;}
+  80% {grid-column: 11;}
+  100% {grid-column: 12;}
+}  
 
   .info-boxes {
     flex-direction: row;
