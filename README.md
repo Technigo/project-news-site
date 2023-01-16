@@ -6,7 +6,7 @@ Displaying 1 column on mobile, 2 columns on tablets and 4 on desktop with set br
 
 ## The problem
 
-I planned in Figma.
+I planned in [Figma](https://www.figma.com/file/9nAnpyhMeLF0y2dNAWvu60/Daily-Mews?node-id=0%3A1&t=ouQxG38dDVJLHM6y-1).
 
 I used a combination of grid and flexbox. I wanted a hamburger menu without using JS so I looked at different non-JS solutions and tweaked them.
 
