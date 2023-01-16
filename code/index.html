@@ -8,13 +8,13 @@
     <!-- dont forget the meta tag for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <header>
+  <body>
+    <header>
       <!-- Some kind of logo and navbar -->
-    <div class="navbar">
       <nav>
         <section class ="flex-parent-logo">
-          <img class ="flex-child-image"src="./chocolate-logo.jpg" alt="Chocolate-logo">
-          <h1 class ="flex-child-logo-title">The Chocolate Post</h1>
+          <img src="./chocolate-logo.jpg" alt="Chocolate-logo">
+          <h1>The Chocolate Post</h1>
         </section>
         <div id="myLinks">
           <ul class ="nav-links">
@@ -24,11 +24,10 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>  
-          </a>
-        <script>
-          function myFunction() {
+        </a>
+        <script> function myFunction() {
           var x = document.getElementById("myLinks");
           if (x.style.display === "block") {
           x.style.display = "none";
@@ -38,9 +37,7 @@
           }
         </script>
       </nav>
-    </div>    
-  </header>
-  <body>
+    </header>
     <section class="grid-parent-big-news">
       <!-- The big news content -->
       <div class="grid-item-big-card-img">
