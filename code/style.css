@@ -55,8 +55,14 @@ hr {
   border: none;
   height: 1px;
   background: black;
+  display: inline;
 }
 
+.widget-top {
+  display: none;
+  width: 100%;
+  display: inline;
+}
 /* Grid starts with the main news and h1 followed by more newscards bellow with h2 */
 
 .grid-parent {
@@ -157,6 +163,15 @@ footer img{
           .logo {
             position: center;
             display: block;
+          }
+          hr {
+            border: none;
+            height: 1px;
+            background: black;
+          }
+          
+          .widget-top {
+           display: inline;
           }
           .more-news-grid {
             padding: 10px;
