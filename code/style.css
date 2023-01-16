@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 html {
   background: #fff;
   color: #fff;
-  font-family: Poppins, sans-serif
+  font-family: Poppins, sans-serif;
 }
 
 nav {
@@ -30,10 +30,10 @@ body {
   .navbar-logo-and-text {
     justify-content: space-around;
   }
-  
-  .navbar-links {   
+
+  .navbar-links {
     display: none;
-  } 
+  }
 
   .navbar-link a {
     font-size: 14px;
@@ -81,7 +81,7 @@ body {
   }
 
   .news-grid-item {
-    grid-column: 1 / span 4; 
+    grid-column: 1 / span 4;
     flex-direction: row;
   }
 
@@ -89,17 +89,15 @@ body {
     height: 150px;
     width: 150px;
   }
-
 }
 
 /* för tablets */
-@media (min-width: 768px) and (max-width: 991px)
-{
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar {
     flex-direction: row;
     height: 50px;
   }
-  
+
   .navbar-title {
     display: none;
   }
@@ -123,7 +121,7 @@ body {
     width: 50px;
     height: 50px;
   }
-  
+
   .navbar-logo-menu {
     display: none;
   }
@@ -148,16 +146,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   .news-grid-item {
     flex-direction: row;
   }
 
   .news-grid-item img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
-
 }
 
 /* för datorer och tablets på långsidan */
@@ -166,7 +162,7 @@ body {
     flex-direction: row;
     height: 50px;
   }
-  
+
   .navbar-logo {
     width: 5vw;
     height: 100%;
@@ -175,7 +171,7 @@ body {
   .navbar-title {
     font-size: 4vw;
   }
-  
+
   .navbar-logo-tablet {
     display: none;
   }
@@ -214,10 +210,9 @@ body {
   }
 
   .news-grid-item img {
-    width: 15vw;
-    height: 20vh;
+    height: 150px;
+    width: 150px;
   }
-
 }
 
 .navbar {
@@ -286,13 +281,7 @@ body {
   color: black;
   gap: 10px;
   justify-content: space-evenly;
-
 }
-
-/* this is for giving the news-grid items alternating background colors */
-
-/* .news-grid-item:nth-child(even) {background-color: lightgray} */
-/* .news-grid-item:nth-child(odd) {background-color: white} */
 
 .news-grid-item {
   display: flex;
@@ -324,5 +313,3 @@ body {
 .title {
   font-weight: bold;
 }
-
-
