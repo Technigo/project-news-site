@@ -10,9 +10,18 @@ html {
   gap: 2rem;
 }
 
-.title , .logo-container , .navigation {
-  background-color: whitesmoke;
+ul {
+  margin: 0;
+  padding: 4px;
+  
 }
+
+li {
+  float: right;
+  display: inline;
+  padding: 4px
+}
+
 
 .title {
   font-size: 25px;
@@ -64,10 +73,17 @@ align-content: center;
   border: 2px solid;
   padding: 2rem;
   gap: 2rem;
+  align-content: center;
   justify-content: center;
+  flex-direction: column
 
 }
 
-.articles {
-  font-size: 15px;
+.article-one, .article-two, .article-three, .article-four, .article-five, .article-six, .article-seven, .article-eight {
+  border: 2px solid;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
