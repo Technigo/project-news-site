@@ -15,7 +15,7 @@ For the "main" news and small news-boxes I went with flexbox. Trough this projec
 I struggled with the img and text in the boxes, how to make them responsive but still fit. I tried to have most of the values in percentage to have them adjust and fit next to each other all the time. Here I need to learn more about what is the best way to achieve this.
 Also how to choose size on the objects in the grid.
 
-I tried to ass some animations, I copied the one for the pulse function for the button. I created the moving box, not very smooth. It was fun to try and I look forward to gain more knowledge.
+I tried to add some animations, I copied the one for the pulse function for the button. I created the moving box, not very smooth. It was fun to try and I look forward to gain more knowledge.
 
 ## View it live
 https://63c6829565342b192de2fa87--ephemeral-blancmange-0415fb.netlify.app 
