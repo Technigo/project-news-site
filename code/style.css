@@ -1,4 +1,117 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+/*Header*/
+header {
+    border-top: 2px solid #100646;
+    border-bottom: 2px solid #100646;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 40px;
+    background: #100646;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.headerLogos{
+display: flex;
+align-items: center;
+}
+
+.tnLogo{
+    height: 4em;
+}
+
+.headerLogo {
+    width: 5em;
+    padding-right: 20px;
+}
+
+.mainNavbar {
+    display: flex;    
+}
+
+.mainNavbar li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.mainNavbar li a {
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+/*End of header*/
+
+/*Big news section*/
+.bigNewsLink {
+    text-decoration: none;
+    color: black;
+}
+
+.big-news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.bigNewsImg{
+    object-fit: cover;
+    width: 60%;
+    height: 60%;
+    padding-right: 10px;
+}
+
+.bigNewsText {
+    padding: 20px;
+    width: 40%;
+}
+
+/*End of big news section*/
+
+/*Other news*/
+.other-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    
+}
+
+.newsCard{
+    margin: 10px;
+    background: #ddd;
+    text-decoration: none;
+    color: black;
+}
+
+.newsCard:hover {
+    background: #ccc;
+}
+
+.otherNewsImage{
+    width: 100%;
+}
+
+.newsCard p {
+    text-align: center;
+}
+
+footer {
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background: #100646;
+   display: flex;
+   align-items: center;
+   color: white;
+   padding-left: 10px;
 }
