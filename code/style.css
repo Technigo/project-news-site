@@ -139,8 +139,9 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 15px;
-  padding: 15px 20px 5px 20px;
-  margin-bottom: 10px;
+  margin: 15px 20px 15px 20px;
+  /*padding: 15px 20px 15px 20px;
+  margin-bottom: 10px;*/
 }
 
 .small-news {
@@ -200,6 +201,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   object-fit: cover;
+  margin: 15px 15px 5px 15px;
 }
 
 .big-image {
@@ -230,6 +232,7 @@ h3 {
 .news-grid { 
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  margin: 10px 15px 5px 15px;
 }
 
 .small-news {
