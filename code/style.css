@@ -1,8 +1,8 @@
-/* generell styling (for mobile < 667px). Resten är mediaqueries */ 
+/* generell styling (for mobile < 667px) */ 
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: blue; /*mobile*/
+  background-color: blue; /*mobile (ska ändras) */
   font-size: 100%;
 }
 
@@ -11,7 +11,7 @@ body {
 .container-hero {
   background-color: #3e2f5bff;
   size: 100%;
-  padding: 15px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,12 +46,7 @@ h1 {
 }
 
 .navbar {
-    border: 2px solid green;
-    padding: 10px;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
+    display: none; 
 }
 
 li {
@@ -91,7 +86,6 @@ img {
 
 /* SMALL NEWS SECTION MOBILE */
 
-/* Jennies förslag på main styling - which means below 668 since you do mobile first approach */
 .small-mama-news {
   display: grid;
   grid-template-columns: 1fr;
@@ -105,13 +99,13 @@ img {
 @media (min-width: 668px) and (max-width: 1024px) {
  
   body {
-    background-color: red; /*tablet-*/
+    background-color: red; /*färg ska ändras*/
   }
   
   /* HERO SECTION TABLET*/
+
 .container-hero {
   background-color: #3e2f5bff;
-  margin: 20px;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -119,7 +113,7 @@ img {
 }
     .navbar {
       border: 2px solid green;
-      padding: 10px;
+      padding: 2px;
       display: flex;
       align-items: flex-end;
       flex-direction: row;
@@ -142,21 +136,21 @@ img {
           list-style: none;
         }
        
-     /* BIG NEWS SECTION (lägga in styling så bilden blir lite mindre*/
+     /* BIG NEWS SECTION (Fråga 1: Hur lägga in styling så bilden blir lite mindr?e*/
 
     .big-news-text {
-    font-size: /* Jennie, samma som ovan, jag lyckas inte ändra storleken på texten */
+    font-size: /* Fråga 2: Samma issue som ovan, jag lyckas inte ändra storleken på texten */
   } 
     /* SMALL NEWS SECTION TABLET*/
       
-   /* Jennies förslag för media query for tablet. Jennie: detta funkar men jag undrar hur jag gör för att få kolumnerna centererade? Just nu är avståndet till höger större än vänster.. */ 
+   /* Fråga 3: Här undrar jag hur jag gör för att få kolumnerna centererade? Just nu är avståndet till höger större än vänster.. */ 
    
    .small-mama-news {
       grid-template-columns: 1fr 1fr;
       /* 2 cols, evenly sized */ 
     }
 
-    /* Jennie: jag lyckas inte ändra storleken på bilden genom denna target (nedan) , varför inte? Jag skulle vilja att big-news-bilden tar upp mera plats än de övriga i tablet och desktop-mode */
+    /* Fråga 4: jag lyckas inte ändra storleken på bilden genom denna target (nedan) , varför inte? Jag skulle vilja att big-news-bilden tar upp mera plats än de övriga i tablet och desktop-mode */
 
   .big-news-img {
     size: 400px;
@@ -169,7 +163,7 @@ img {
 @media (min-width: 1025px) {
 
   body {
-    background-color: white; /*desktop*/ 
+    background-color: white; /*desktop (ändra!)*/ 
   }
 
 /* HERO SECTION FOR DESKTOP */
@@ -210,8 +204,6 @@ li {
 }
 
 /* BIG-NEWS SECTION DESKTOP */ 
-
-/* Jennies förslag for desktop */
 
 .big-mama-news {
   display: grid;
