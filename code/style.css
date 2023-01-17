@@ -192,12 +192,14 @@ h1 h2 h3 {
 .big-news-box a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 10px 400px 50px 400px;
+  margin: 10px 350px 50px 350px;
   height: 800px;
   position: relative;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   text-decoration: none;
   color: white;
+
+  border: solid red;
   
   
 }
@@ -222,7 +224,7 @@ h1 h2 h3 {
   font-size: 60px;
   position: absolute;
   grid-column-start: 1;
-  grid-column-end: span 1;
+  grid-column-end: span 2;
   align-self: end;
   margin-left: 25px;
   text-shadow: 4px 4px black;
@@ -349,7 +351,7 @@ h1 h2 h3 {
 
   
   .grid-container {
-    margin: 50px;
+    margin: 20px;
   }
 
   .news-item-text {
@@ -359,12 +361,9 @@ h1 h2 h3 {
   .big-news-box a {
     display: grid;
     grid-template-columns: 1fr;
-    
     height: 550px;
-    margin: 50px;
+    margin: 20px;
     padding:15px;
-    
-    
   }
 
   .big-news-title {
@@ -374,7 +373,6 @@ h1 h2 h3 {
     color: black;
     text-shadow: none;
     backdrop-filter:none;
-    
     margin-left: 0;       
   }
 
@@ -418,7 +416,6 @@ h1 h2 h3 {
   .big-news-title {
     font-size: 20px;
     grid-column:1/2;
-    
     color: black;
     text-shadow: none;
     backdrop-filter:none;
