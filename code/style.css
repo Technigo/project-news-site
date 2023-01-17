@@ -69,7 +69,6 @@ h4 {
 
 .nav-bar {
   display: grid;
-  /*grid-template-columns: repeat(11, 1fr);*/
   grid-template-columns: 85px 3fr 2fr;
   background: white;
   height: 70px;
@@ -140,8 +139,6 @@ a:hover {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 15px;
   margin: 15px 20px 15px 20px;
-  /*padding: 15px 20px 15px 20px;
-  margin-bottom: 10px;*/
 }
 
 .small-news {
@@ -197,27 +194,22 @@ h3 {
 }
 
 .big-news-box {
-  height: 100%;
   flex-wrap: wrap;
-  justify-content: center;
-  object-fit: cover;
+  /*justify-content: center;
+  object-fit: cover;*/
   margin: 15px 15px 5px 15px;
 }
 
 .big-image {
   width: 100%;
-  height: auto;
   object-fit: cover; 
-  margin: 0px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   border-bottom-left-radius: 0%;
 }
 
 .big-news-textbox {
-  /*max-width: 100%;*/
   height: auto; 
-  /*height: 500px;*/
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;
   border-bottom-left-radius: 2%;
@@ -237,12 +229,10 @@ h3 {
 
 .small-news {
   grid-column: 1fr;
-  /*height: 555px;*/
   width: auto;
 }
 
 .small-image {
-  /*height: 80%;*/
   object-fit: cover;
 }
 
@@ -259,9 +249,6 @@ h3 {
   .nav-bar {
   grid-template-rows: 60px;
   height: 60px;
-  /*grid-template-columns: repeat(4, 1fr);
-  height: 60px;
-  grid-template-rows: 60px;*/
   }
 
   h1 {
@@ -287,7 +274,6 @@ h3 {
   }
 
   .big-news-box {
-    /*max-width: 100%;*/
     height: 100%;
   }
   
@@ -314,7 +300,6 @@ h3 {
     grid-column: 1fr;
     height: 100%;
   /*height: 655px;*/
-
   }
 
   .small-image {
