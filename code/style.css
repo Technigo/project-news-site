@@ -1,3 +1,5 @@
+
+/* added border-box to all elements*/
 * { 
   box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ body {
   background-color:rgb(235, 198, 204);
     
 }
-
+/* added a nice flower icon to the navbar */
 img.icon {
   width: 50px;
   height: 50px;
@@ -16,13 +18,13 @@ img.icon {
   margin: 10px;
 }
 
+/* added navbar with nice hover buttons */
 .header {
   overflow: hidden;
   background-color:#d3f2eb;
   padding: 5px 5px;
   border-radius: 10px;
 }
-
 
 .header a {
   float: left;
@@ -77,11 +79,12 @@ h1 {
   justify-content: center;
 }
 
+/* start of grid */
 :root {
   --main-radius: 10px;
   --main-padding: 20px;
 }
-
+/* grid-parent for mobile first design */
 .container {
   display: grid;
   height: 100vh;
@@ -105,9 +108,16 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-align: center;
+  display: grid;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
 
-
-
+/* link to another webbsite */
 a:link {
   text-decoration: none;
 }
@@ -126,7 +136,7 @@ a:active {
   text-decoration: underline;
 }
 
-
+/* button link with nice hover effect */
 a.button {
   background-color:#e3bfda;
   color: black;
@@ -146,7 +156,7 @@ a.button {
 .button:hover {
   background: rgb(160, 237, 246);
 }
-
+/* main area with image and text */
 .main {
   grid-area: main;
   border-radius: var(--main-radius);
@@ -172,7 +182,7 @@ p {
   margin: 20px;
 }
 
-
+/* the images in the news card section */
 img.bouquet, img.sunflower, img.coralflower, 
 img.arrangemang, img.rose, img.daisy, img.blue, img.pink {
   width: 50%;
@@ -183,14 +193,12 @@ img.arrangemang, img.rose, img.daisy, img.blue, img.pink {
   margin-top: 5px;
 }
 
-
-
 article {
   font-size: 15px;
   margin: 20px;
   text-align: justify;
 }
-
+/* the grid-children */
 .content1 {
   background: rgb(220, 220, 206);
   grid-area: content1;
@@ -249,8 +257,7 @@ article {
   padding-top: var(--main-padding);
 }
 
-
-
+/* last up is the footer with technigo logo */
 footer {
   background: rgb(217, 231, 234);
   grid-area: footer;
@@ -271,15 +278,8 @@ img.logo {
   margin-top: 5px;
 }
 
-a {
-  text-align: center;
-  display: grid;
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 1rem;
-}
 
+/* this part has the media queries for tablet size */
 
 @media (min-width: 667px) and (max-width: 1024px)  {
   .container {
@@ -305,7 +305,7 @@ a {
 
   }
 
-
+/* this part has the media queries for desktop size */
   
 @media (min-width: 1025px) {
   .container {
