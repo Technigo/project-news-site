@@ -26,10 +26,13 @@ p {
 
 h1 {
   color: #0415d1;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.8rem;
+  font-style: oblique;
   font-weight: bold;
   grid-column: 2 / 6;
+  padding-left: 10px;
 }
 
 h2 {
@@ -70,7 +73,6 @@ h4 {
   grid-template-columns: 85px 3fr 2fr;
   background: white;
   height: 70px;
-  /*margin-bottom: 15px;*/
   align-items: center;
   
 }
@@ -101,25 +103,21 @@ a:hover {
 
 .big-news-box {
   display: flex;
-  height: 500px;
+  height: 100%; /*This seem to make the height of the box 
+  flexible with its contents*/
   margin: 20px 20px 5px 20px;
 }
 
 .big-image {
-  width: auto;
-  height: 100%;
-  object-fit: fill;
-  /*margin-right: 15px;
-  border-radius: 2%;*/
+  width: 50%;
+  object-fit: cover;
   border-top-left-radius: 2%;
   border-bottom-left-radius: 2%;
 }
 
 .big-news-textbox {
-  width: auto;
-  height: 100%;
+  height: auto;
   background: pink;
-  /*border-radius: 2%;*/
   border-top-right-radius: 2%;
   border-bottom-right-radius: 2%;
 }
@@ -148,8 +146,7 @@ a:hover {
 .small-news {
   display: flex;
   background: whitesmoke;
-  height: 470px;
-  width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -169,26 +166,29 @@ h2:hover, h3:hover {
 
 .small-news-text {
   font-size: 0.6rem;
-  padding: 0px 20px 10px 20px;
+  padding: 10px 20px 20px 20px;
 }
+
 
 
 @media (max-width: 666px) {
   .nav-bar {
-  grid-template-columns: repeat(5, 1fr);
-}
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 60px;
+  height: 60px;
+  }
 
 .nav {
   display: none;
 } 
 
 h1 {
-  font-size: 1.5rem;
-  padding-left: 10px;
+  font-size: 1.6rem;
+  padding-left: 0px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h3 {
@@ -200,14 +200,12 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   object-fit: cover;
-  /*gap: 10px;*/
 }
 
 .big-image {
   width: 100%;
   height: auto;
-  object-fit: cover; /*This worked well!*/
-  /*width: auto\9; /* ie8 */
+  object-fit: cover; 
   margin: 0px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
@@ -236,16 +234,13 @@ h3 {
 
 .small-news {
   grid-column: 1fr;
-  height: 555px;
+  /*height: 555px;*/
   width: auto;
 }
 
 .small-image {
-  height: 80%;
+  /*height: 80%;*/
   object-fit: cover;
-  /*max-width: 100%;
-  height: auto;
-  padding: 10px;*/
 }
 
 .small-news-text {
@@ -259,17 +254,15 @@ h3 {
   }
 
   .nav-bar {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px;
   height: 60px;
-  grid-template-rows: 60px;
-  /*grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: 85px 3fr 2fr;
-  grid-template-rows: 60px;
-  /*width: auto;*/
+  /*grid-template-columns: repeat(4, 1fr);
+  height: 60px;
+  grid-template-rows: 60px;*/
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   h2 {
@@ -291,17 +284,14 @@ h3 {
   }
 
   .big-news-box {
-    max-width: 100%;
-    height: 490px;
-    /*margin-bottom: 5px;*/
+    /*max-width: 100%;*/
+    height: 100%;
   }
   
   .big-image {
     width: 60%;
     height: auto;
     object-fit: cover;
-   /*width: auto;
-    height: 250px;*/
   }
   
   .big-news-textbox {
@@ -319,13 +309,18 @@ h3 {
   
   .small-news {
     grid-column: 1fr;
-    height: 655px;
-  /*height: 600px;*/
+    height: 100%;
+  /*height: 655px;*/
 
   }
 
+  .small-image {
+    height: 80%;
+    object-fit: cover;
+  }
+
   .small-news-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
 }
