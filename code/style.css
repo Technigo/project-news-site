@@ -87,18 +87,15 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-
 }
 
-.big-news-baby {
-  background-color: aqua;
-  box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
+.big-news-text {
+  width: 50%;
+}
  
-}
 
 img {
-  max-width: 300px;
+  max-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover; /* att den cropas istället för att sizas upp/ner */
   object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
