@@ -6,21 +6,24 @@ html {
   background: #fbcc33;
   color: black;
   font-size: 17px;
-  margin-left: 0;
+  margin: 0;
 }
-/* Header and Navbar (Mobile First) */
+
+/* Header and Navbar*/
 
 .logo {
   margin-top: 10px;
   margin-right: 0;
-  width: 350px;
+  width: 40%;
   display: none;
 }
 
 .logosmall {
   margin-left: 30px;
   margin-right: 0;
-  width: 350px;
+  margin-top: 10px;
+  width: 300px;
+  height: 100%;
 }
 
 .navbar {
@@ -52,24 +55,17 @@ a:active {
   text-decoration: none;
 }
 
-hr {
-  border: none;
-  height: 1px;
-  background: black;
-  display: inline;
-}
-
 .widget-top {
-  display: none;
   width: 100%;
   display: inline;
 }
+
 /* Grid starts with the main news and h1 followed by more newscards bellow with h2 */
 
 .grid-parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(250px);
+  grid-template-rows: repeat(100%);
   gap: 10px;
 }
  
@@ -82,18 +78,20 @@ hr {
   grid-row: span 1;
   display: grid;
   text-align: center, right;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
 }
 
 .bignewspicture {
-  width: 280px;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 h1 {
   margin-top: 20px;
   font-size: 50px;
+  margin-right: 10px;
 }
 
 .bignewstext {
@@ -116,17 +114,16 @@ h1 {
   display: grid;
   text-align: center, right;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 10px;
 }
 
 .more-news-picture {
   width: 120px;
-  height: 100%;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 h2:hover {
@@ -154,9 +151,47 @@ footer img{
   justify-content: center;
   height: 10px;
 }
-/* Here comes the Media Queries starting with the tablet */
 
-@media only screen and (min-width: 768px) {
+/* Media Queries starting with small Mobile (Iphone SE) */
+
+    @media only screen and (max-width: 375px) {
+          .logosmall {
+            margin-left: 30px;
+            margin-right: 0;
+            margin-top: 10px;
+            width: 220px;
+            height: 100%;
+          }
+          nav {
+            margin-top: 40px;
+            font-family: Arial;
+            font-size: 13px;
+            font-style: black;
+            font-weight: bold;
+            display: inline;
+          }
+          .morenewstext {
+            display: none;
+          }
+          .more-news-grid {
+            padding: 10px;
+            justify-content: left;
+            grid-column: span 1;
+            grid-row: span 1;
+            display: grid;
+            text-align: center, right;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+          }
+          h2 {
+            font-size: 15px;
+            margin-top: 10px;
+          }
+    }
+
+/* Media Queries for Tablets */
+
+      @media only screen and (min-width: 768px) {
           
           .logosmall {
             display: none;
@@ -164,11 +199,8 @@ footer img{
           .logo {
             position: center;
             display: block;
-          }
-          hr {
-            border: none;
-            height: 1px;
-            background: black;
+            margin-top: 10px;
+            width: 40%;
           }
           
           .widget-top {
@@ -185,9 +217,8 @@ footer img{
             column-gap: 0;
           }
           .more-news-picture {
-            width: 375px;
-            height: 370px;
-            font-size: 10px;
+            width: 100%;
+            height: 100%;
           }
           .morenewstext {
             font-size: 20px;
@@ -201,7 +232,7 @@ footer img{
           .grid-parent {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(370px, 370px);
+            grid-template-rows: repeat(100%, 100%);
             gap: 10px;
           }
           h1 {
@@ -232,7 +263,7 @@ footer img{
             margin-bottom: 0;
           }
           nav {
-            margin-top: 40px;
+            margin-top: 20px;
             font-family: Arial;
             font-size: 19px;
             font-style: black;
@@ -251,7 +282,7 @@ footer img{
           .logo {
             margin-top: 20px;
             margin-right: 0;
-            width: 400px;
+            width: 40%px;
           }
           .more-news-grid {
             padding: 10px;
@@ -264,8 +295,8 @@ footer img{
             column-gap: 0;
           }
           .more-news-picture {
-            width: 325px;
-            height: 325px;
+            width: 100%;
+            height: 100%;
             font-size: 10px;
           }
           .morenewstext {
@@ -280,7 +311,7 @@ footer img{
           .grid-parent {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: repeat(250px, 250px, 250px, 250px);
+            grid-template-rows: repeat(100%, 100%, 100%, 100%);
             gap: 10px;
           }
           h1 {
