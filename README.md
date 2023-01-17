@@ -1,12 +1,11 @@
-# News Site
+# News site
 
-Replace this readme with your own information about your project. 
+##### This is a project I created for the Technigo Web Developer Bootcamp of 2023. The assignment was to create a news site using basic HTML and CSS. I decided to create a site hosting news "articles" and images I created with AI generators.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# The problem
 
-## The problem
+##### CSS Grid and Flexbox proved to be most useful for this specific project. When running into problems, I mostly turned to Google for help. I would like for my code to be a lot more streamlined and readable, and if I had more time on my hands I would polish the code. I also would like to find a solution to my font of choice not being supported by Safari.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+# View it live
 
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+##### https://fake-news-daily.netlify.app
