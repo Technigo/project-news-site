@@ -20,8 +20,47 @@
   background-repeat: no-repeat;
 }*/
 
+h1 {
+  /*text-align: center;*/
+  font-family: var(--logo-name-font-family);
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h2,
+h3,
+h4 {
+  font-family: var(--headings-font-family);
+  font-weight: lighter;
+}
+
+h3 {
+  margin-top: 60px;
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+}
+
+/*figure {
+  border: thick var(--border-color) solid;
+}*/
+
+em {
+  display: block;
+}
+
+figcaption {
+  background-color: var(--border-color);
+  color: var(--primary-text-color);
+  font: var(--paragraph-font-family);
+  padding: 5px;
+  text-align: center;
+}
+
 .border-container {
   border: 10px outset var(--border-color);
+  background-color: var(--secondary-bg-color);
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -80,28 +119,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-h1 {
-  /*text-align: center;*/
-  font-family: var(--logo-name-font-family);
-  font-size: 48px;
-  font-weight: normal;
-}
-
-h2,
-h3,
-h4 {
-  font-family: var(--headings-font-family);
-  font-weight: lighter;
-}
-
-h3 {
-  margin-top: 60px;
-}
-
-p {
-  font-family: var(--paragraph-font-family);
 }
 
 .big-news p::first-letter {
@@ -244,6 +261,7 @@ p {
   box-shadow: var(--box-shadow);
   color: var(--primary-text-color);
   width: 215px;
+  text-decoration: underline;
 }
 
 .primary-link:hover {
