@@ -11,4 +11,7 @@ I started out trying to make the structure of the layout, putting to practice th
 If I had more time I would try to add more elements, like a sidebar, footer or a hamburger menu. I would also like to play more with the design of the page.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+Link to my deployed site:
+
+https://comforting-otter-fcebbd.netlify.app/
