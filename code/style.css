@@ -34,17 +34,14 @@ h4 {
   font-weight: lighter;
 }
 
-h3 {
-  margin-top: 60px;
-}
-
 p {
   font-family: var(--paragraph-font-family);
 }
 
-/*figure {
-  border: thick var(--border-color) solid;
-}*/
+figure {
+  /* border: thick var(--border-color) solid;*/
+  max-width: 90%;
+}
 
 em {
   display: block;
@@ -54,8 +51,9 @@ figcaption {
   background-color: var(--border-color);
   color: var(--primary-text-color);
   font: var(--paragraph-font-family);
-  padding: 5px;
   text-align: center;
+  max-width: 90%;
+  padding: 5px 0 5px 0;
 }
 
 .border-container {
@@ -85,11 +83,6 @@ figcaption {
   border-radius: 20px;
   text-decoration: underline;
 }
-
-/*.navbar-ul {
-  position: relative;
-  bottom: 35px;
-}*/
 
 .navbar li {
   list-style: none;
@@ -121,24 +114,20 @@ a:hover {
   text-decoration: underline;
 }
 
+.logo-magazine {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
 .big-news p::first-letter {
   font-size: 58px;
-}
-
-.flex-parent fa-linkedin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-child .fa-github {
-  margin-right: 20px;
 }
 
 .grid-parent-big-news {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(7, 100px);
+  grid-template-rows: repeat(6, 100px);
   gap: 10px;
 }
 
@@ -158,7 +147,7 @@ a:hover {
 .img-big-news-two {
   display: flex;
   height: 60%;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 /*.img-big-news-one {
@@ -182,10 +171,7 @@ a:hover {
   grid-template-columns: repeat(4, 4fr);
   /*grid-template-rows: repeat(2, 100px);*/
   gap: 10px;
-}
-
-.other-news-paragraph {
-  margin: 30px 0 20px 70px;
+  margin: 30px 30px 20px 50px;
 }
 
 .other-news-div {
@@ -198,7 +184,7 @@ a:hover {
 .img-other-news-four {
   display: flex;
   height: 60%;
-  max-width: 100%;
+  max-width: 70%;
   border-radius: 10%;
 }
 
@@ -277,7 +263,7 @@ a:hover {
 .fa-instagram {
   display: flex;
   font-size: 38px;
-  justify-content: left;
+  justify-content: center;
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   background-clip: text;
@@ -346,10 +332,14 @@ a:hover {
   text-decoration: none;
 }
 
-.logo-magazine {
+.flex-parent footer {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 20px 0 20px 0;
+}
+
+.flex-child footer {
+  display: inline-flex;
 }
 
 /*https://codepen.io/zajonsss/pen/abqZZe, January 12, 2023*/
@@ -425,4 +415,10 @@ a:hover {
 
 .trojkat_bg2:hover {
   background-size: 90%;
+}
+
+@media (min-width: 667px) {
+  h3 {
+    margin-top: 60px;
+  }
 }
