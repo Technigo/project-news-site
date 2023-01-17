@@ -1,12 +1,9 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+My first html-page with css-stylings. The site was designed to resemble and old pergament paper with contemporary fonts and picture-styles. The page is built with responsive design; one column for mobile, two columns for tablet and four columns for large screens.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I made a simple a sketch on a peace of paper and tried to make all the elements act accordingly. I used different containers with different display-properties (eg. grid, flexbox) to alter the elements for the purpose. If I had more time I would resize the images more thoroughly.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://github.com/jonsjak/project-news-site.git
