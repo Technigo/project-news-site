@@ -212,9 +212,9 @@ button {
 
 /* animation for the banner */
 @keyframes animation-banner {
-  0% {grid-column: 1; background: #275DF1;}
-  25% {grid-column: 2;}
-  50% {grid-column: 3; background: #275DF1;}
+  0% {grid-column: 1; background:#87A5F7;}
+  25% {grid-column: 2; background: #275DF1;}
+  50% {grid-column: 3; background: #0B35A8;}
   100% {grid-column: 4;}
 }
 
@@ -369,14 +369,14 @@ button {
 
   /* animation for the banner */
 @keyframes animation-banner {
-  0% {grid-column: 1; background: #275DF1;}
-  12.5% {grid-column: 2;}
-  25% {grid-column: 3; background: #275DF1;}
-  37.5% {grid-column: 4;}
-  50% {grid-column: 5;}
-  62.5% {grid-column: 6;}
-  75% {grid-column: 7;}
-  100% {grid-column: 8;}
+  0% {grid-column: 1; background: #87A5F7;}
+  12.5% {grid-column: 2; background: #87A5F7;}
+  25% {grid-column: 3; background: #87A5F7;}
+  37.5% {grid-column: 4; background: #275DF1;}
+  50% {grid-column: 5; background: #275DF1;}
+  62.5% {grid-column: 6; background-color: #0B35A8;}
+  75% {grid-column: 7; background-color: #0B35A8;}
+  100% {grid-column: 8; background-color: #0B35A8;}
 }  
 
   .info-boxes {
@@ -511,17 +511,17 @@ button {
 
   /* animation for the banner */
 @keyframes animation-banner {
-  0% {grid-column: 1; background: #275DF1;}
-  8% {grid-column: 2;}
-  16% {grid-column: 3; background: #275DF1;}
-  24% {grid-column: 4;}
-  32% {grid-column: 5;}
+  0% {grid-column: 1; background: #87A5F7;}
+  8% {grid-column: 2; background: #275DF1;}
+  16% {grid-column: 3;}
+  24% {grid-column: 4; background: #87A5F7;}
+  32% {grid-column: 5; background: #275DF1;}
   40% {grid-column: 6;}
-  48% {grid-column: 7;}
-  56% {grid-column: 8;}
+  48% {grid-column: 7; background: #87A5F7;}
+  56% {grid-column: 8; background: #275DF1;}
   64% {grid-column: 9;}
-  72% {grid-column: 10;}
-  80% {grid-column: 11;}
+  72% {grid-column: 10; background-color: #87A5F7;}
+  80% {grid-column: 11; background: #275DF1;}
   100% {grid-column: 12;}
 }  
 
