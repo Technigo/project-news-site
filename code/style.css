@@ -2,14 +2,15 @@
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: blue; /*mobile (ska ändras) */
+  background-color: #CD8987; 
   font-size: 100%;
+  margin: 10px;
 }
 
 /* HERO SECTION FOR MOBILE */
 
 .container-hero {
-  background-color: #3e2f5bff;
+  background-color: #5B7386;
   size: 100%;
   padding-top: 10px;
   display: flex;
@@ -68,7 +69,8 @@ p {
     display: flex;
     background-color: rgb(190, 202, 236);
     size: 100%;
-    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .big-news-text {
@@ -82,8 +84,11 @@ img {
   object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
   padding: 10px;
   margin: 10px;
-}
 
+}
+.grid__img {
+
+}
 /* SMALL NEWS SECTION MOBILE */
 
 .small-mama-news {
@@ -92,6 +97,7 @@ img {
   /* 1 cols, evenly sized */
   gap: 4px;
   /* gap is the space between the items */
+  background-color:#CCFBFE;
 }
 
 /* STYLING FOR TABLET (668 > 1024px) */
@@ -163,11 +169,14 @@ img {
 @media (min-width: 1025px) {
 
   body {
-    background-color: white; /*desktop (ändra!)*/ 
+      /*desktop (ändra!)*/ 
   }
 
 /* HERO SECTION FOR DESKTOP */
 
+.logo {
+  margin-left: 20px;
+}
 .container-hero {
   background-color: #3e2f5bff;
   margin: 20px;
