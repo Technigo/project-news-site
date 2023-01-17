@@ -1,22 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake News Daily</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <section class="grid-parent">
+      <div class="grid-item flex-parent-header header-container">
+        <div class="header-title">
+          <h1 class="no-margin">Fake News Daily</h1>
+          <h2 class="no-margin">
+            When real reporting just doesn't do it anymore.
+          </h2>
+        </div>
+        <div class="nav-items nav-items-desktop">
+          <a class="active" href="#home">HOME</a>
+          <a href="#news">NEWS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <div class="nav-items nav-items-mobile">
+          <div class="dropdown">
+            <span>☰</span>
+            <div class="dropdown-content">
+              <p>HOME</p>
+              <p>NEWS</p>
+              <p>CONTACT</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
+      <div class="grid-item big-grid-item flex-parent-big-article">
+        <div class="flex-child Trump">
+          <img class="big-article-picture" src="trump_pyongyang.jpg" />
+        </div>
+        <div class="flex-child big-article-text">
+          <h3>
+            Former President Trump Honored with Golden Statue in Pyongyang,
+            North Korea
+          </h3>
+          <p>
+            PYONGYANG, NORTH KOREA — In a surprise move, the North Korean
+            government unveiled a statue of former President of the United
+            States, Donald Trump, in the center of Pyongyang. The statue, which
+            stands at 15 feet tall, depicts President Trump with a stern look on
+            his face and is adorned with gold. The statue's base is inscribed
+            with the words "The Great Negotiator". The unveiling of the statue
+            was attended by North Korean leader Kim Jong-un, who praised
+            President Trump for his efforts to bring peace and stability to the
+            Korean Peninsula and for improving relations between the two
+            countries during his time as President.
+          </p>
+          <p class="flex-child big-article-text-desktop">
+            The unveiling of the statue was met with mixed reactions. Some North
+            Koreans praised the government for honoring a former US leader,
+            while others criticized the decision, citing the historically
+            hostile relations between the two countries. In the United States,
+            the news of the statue's unveiling was met with surprise and
+            confusion. Many officials and political analysts have expressed
+            skepticism about the reasons behind the statue, given the
+            complicated relationship between the two nations during President
+            Trump's tenure. <br />
+            <br />
+            This move is seen as a significant change in the diplomatic
+            relations between the two countries, and a clear sign of the efforts
+            made by President Trump to improve the relations between the
+            nations, despite facing challenges during his tenure as President.
+          </p>
+        </div>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="pizza_bear.jpg" class="small-article-image" />
+        <h4>
+          Pizzagate 2.0? American Black Bear Completes 8-Hour Shift at Local
+          Pizzeria
+        </h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="helsinki_palm.jpg" class="small-article-image" />
+        <h4>
+          As Global Temperatures Soar, Helsinki Plants 1,000 Palm Trees Along
+          Southernmost Streets
+        </h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="president_jobs.jpg" class="small-article-image" />
+        <h4>He's Back! A Resurrected Steve Jobs Runs for President</h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="kanye_argentina.jpg" class="small-article-image" />
+        <h4>In a Highly Suspicious Move, Kanye West Moves to Argentina</h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="second_chernobyl.jpg" class="small-article-image" />
+        <h4>Dormant Chernobyl Power Plant Inexplicably Explodes Again</h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="hotair_restaurant.png" class="small-article-image" />
+        <h4>Michelin Star Restaurant in Stockholm Serving Hot Air</h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="anubis.png" class="small-article-image" />
+        <h4>
+          The First Furry? Fursuit Bearing the Likeness of Anubis Found in
+          Tutankhamon's Grave
+        </h4>
+      </div>
+      <div class="grid-item small-grid-item">
+        <img src="cyborg_baby.png" class="small-article-image" />
+        <h4>
+          New Milestone in AI Development as First "Baby" is Born of Cyborg
+          Parents in Liechtenstein
+        </h4>
+      </div>
     </section>
   </body>
 </html>
