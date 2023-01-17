@@ -1,4 +1,154 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 html {
-  background: #0025ff;
-  color: #fff;
+  background: whitesmoke;
+  font-family: "Roboto";
+}
+
+a:hover {
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  text-align: right;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+main {
+  padding: 50px;
+}
+
+.presentation {
+  color: black;
+  display: flex;
+  justify-content: center;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+.presentation img {
+  max-width: 230px;
+}
+
+.presentation h1 {
+  font-size: 26px;
+}
+
+.presentation p {
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.posts > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+}
+
+/* box-shadow syns inte*/
+.posts > ul > li {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: black (0, 0, 0, 0.22) 0 0.065rem 0.25rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+.posts > ul > li > figure {
+  margin: 0;
+  max-height: 272px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+.posts > ul > li > figure > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.posts > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+.posts > ul > li > figure > figcaption > h1 {
+  color: black;
+  padding: 30px;
+  font-size: 10px;
+  text-align: center;
+}
+.posts > ul > li > h2 {
+  font-size: 18px;
+  color: black;
+  line-height: 1.2;
+  padding: 15px;
+  text-align: center;
+}
+
+.posts > ul > li > p {
+  font-size: 15px;
+  color: black;
+  line-height: 1.2;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+}
+footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: 1024px) {
+  .main-content {
+    background-color: darkgrey;
+  }
+}
+@media all and (max-width: 794px) {
+  .main-content {
+    background-color: grey;
+  }
+}
+@media all and (max-width: 446px) {
+  .main-content {
+    background-color: lightgray;
+  }
+  .presentation img {
+    width: 200px;
+  }
 }
