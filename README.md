@@ -14,3 +14,4 @@ Figma, Visual Studio Code, GitHub, Netlify, HTML and CSS.
 If I had more time I would've wanted to spend more time on the styling and optimizing the media queries. Also would've been nice to create a styling that wasn't that childish. But hey, I'm not going to be the designer in the end.
 
 ## View it live
+https://marias-news-site.netlify.app/
