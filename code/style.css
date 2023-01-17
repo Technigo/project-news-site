@@ -2,7 +2,7 @@
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #CD8987; 
+  background-color: #8675A9; 
   font-size: 100%;
   margin: 20px;
 }
@@ -10,7 +10,7 @@ body {
 /* HERO SECTION FOR MOBILE */
 
 .container-hero {
-  background-color: #5B7386;
+  background-color: #EDDFEF;
   size: 100%;
   padding-top: 10px;
   display: flex;
@@ -22,7 +22,7 @@ body {
 
 
 h1 {
-  color: white;
+  color: black;
   font-family:fantasy;
   
 }
@@ -37,14 +37,14 @@ h1 {
 .hamburger {
   height: 3px;
   width: 30px;
-  background:white;
+  background: black;
   display: block;
   margin-bottom: 5px;
 }
 
 .menu {
   padding-top: 10px;
-  color: white;
+  color: black;
 }
 
 .navbar {
@@ -54,8 +54,8 @@ h1 {
 li {
   font-size: 20px;
   margin: 20px;
-  border: solid black;
   padding: 20px; 
+  color: black;
 }
 
 
@@ -92,7 +92,7 @@ img {
   /* 1 cols, evenly sized */
   gap: 4px;
   /* gap is the space between the items */
-  background-color:#CCFBFE;
+  background-color:#B7B6C1;
 }
 
 .small-news-gridkid {
@@ -113,7 +113,6 @@ img {
   /* HERO SECTION TABLET*/
 
 .container-hero {
-  background-color: #3e2f5bff;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -146,7 +145,7 @@ img {
 
         a {
           text-decoration: none;
-          color: #fff;
+      
         }
     
         li {
@@ -154,7 +153,7 @@ img {
         }
        
      /* BIG NEWS SECTION TABLET */
-     
+
   .big-mama-news {
     display: flex;
   }
@@ -183,12 +182,11 @@ img {
   margin-left: 20px;
 }
 .container-hero {
-  background-color: #3e2f5bff;
   margin: 20px;
   width: auto;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .navbar {
   padding: 10px;
@@ -207,11 +205,12 @@ img {
 
 a {
   text-decoration: none;
-  color: #fff;
+ 
+  
 }
 
 li {
-  list-style: none;
+  list-style: none; 
 }
 
 /* BIG-NEWS SECTION DESKTOP */ 
