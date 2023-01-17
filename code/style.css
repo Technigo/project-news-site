@@ -815,12 +815,14 @@ footer {
         font-size: 30px;
         width: 300px;
         margin:0;
+        position: relative;
+        left:8px;
         animation-name: animation;
         animation-duration: 1.0s;
         animation-timing-function: ease-out;
         animation-direction: alternate;
         animation-iteration-count: infinite;
-        animation-play-state: running;    
+        animation-play-state: running;  
     }
 
     @keyframes animation {
