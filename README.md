@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We had to create a news website in this assignment. My website is about Cats and Tattoos!
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had a lot of problems, namely the navbar. I looked up so many different css-only navbar tutorials and codepens and everyone does it so differently that I just don't really get it. I messed up the media queries with that, because I wanted to hide the hamburger fold-out on everything but mobile. I would go back and add more detail to the title, get a logo, and figure out the media query hamburger thing if I had more time.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here's the link to my project! https://github.com/OscarSindemark/project-news-site
