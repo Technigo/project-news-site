@@ -5,10 +5,6 @@ html {
 }
 */
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   background: white;
 }
@@ -17,87 +13,110 @@ body {
   font: sans-serif;
 }
 
-.website-header {
-  margin-bottom: 35px;
-  padding: 7px;
-  height: 200px;
-  font-size: 15px;
-  background-color: #222;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.website-header h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 25px;
-}
-
-.website-header img {
-  margin: 80px 10px;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  display: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 3%;
-  padding-right: 3%;
+  background: #222;
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .menu li {
-  margin-left: 100px;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   font-size: 16px;
-  list-style-type: none;
-  list-style-position: inside;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3px;
+  padding: 15px 5px;
 }
 
-nav ul li a {
-  color: gray;
-  text-decoration: none;
+.menu li a {
+  display: block;
+}
+
+.logo a {
+  font-size: 20px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: white;
-  transition: 0.3s;
+.button.secondary {
+  border-bottom: 1px #444 solid;
 }
 
-button {
+/* Mobile Menu*/
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
   display: none;
-  border: none;
-  background: gray;
-  border: 12px 30px;
-  border-radius: 30px;
-  color: white;
-  font-style: bold;
-  font-size: 16px;
 }
 
-button:hover {
-  transform: scale(1.2);
+.item.active {
+  display: block;
+}
+.toggle {
   cursor: pointer;
-  transition: 0.3s;
+}
+
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+}
+
+.bars::before,
+.bars::after {
+  background: #999;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+}
+
+.bars::before {
+  top: 5px;
+}
+
+.bars::after {
+  top: -5px;
 }
 
 .big-news {
+  padding-top: 1em;
   display: flex;
   margin: auto;
-  margin-bottom: 30px;
+  margin-top: 30px;
   position: relative;
   text-align: left;
   background: #222;
@@ -120,7 +139,7 @@ button:hover {
   color: white;
   position: absolute;
   font-weight: bold;
-  bottom: 0;
+  bottom: 10px;
   /*background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 1) 5%,
@@ -259,84 +278,66 @@ button:hover {
 }
 
 @media (min-width: 1025px) {
-  .website-header {
-    height: 150px;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .website-header {
-    margin-bottom: 35px;
-    padding: 7px;
-    height: 150px;
-    font-size: 15px;
-    background-color: #222;
-    background-size: cover;
+  .menu {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .website-header h1 {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: white;
-    font-size: 25px;
+  .logo a {
   }
 
-  .website-header img {
-    margin: 80px 10px;
-    height: 50px;
-    width: 50px;
-    position: absolute;
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
     display: none;
   }
+  .logo {
+    order: 0;
+  }
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 3%;
-    padding-right: 3%;
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
   }
 
   .menu li {
-    font-size: 16px;
-    list-style-type: none;
-    display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 10px;
   }
 
-  nav ul li a {
-    color: gray;
+  .menu li.button {
+    padding-right: 0;
+  }
+
+  .button.secondary {
+    border: 0;
+  }
+
+  .button a {
     text-decoration: none;
-    font-weight: bold;
+    padding: 7px 15px;
+    background: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
   }
-
-  nav ul li a:hover {
-    color: white;
-    transition: 0.3s;
+  .button.secondary a {
+    background: transparent;
   }
-
-  button {
-    display: inline;
-    border: none;
-    background: gray;
-    border: 12px 30px;
-    border-radius: 30px;
-    color: white;
-    font-style: bold;
-    font-size: 16px;
+  .button a:hover {
+    transition: all 0.3s;
   }
-
-  button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: 0.3s;
+  .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border: #005959;
+  }
+  .button.secondary a:hover {
+    color: #ddd;
+    background: #006d6d;
   }
 
   .grid-parent {
@@ -347,7 +348,7 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     column-gap: 20px;
-    row-gap: 10px;
+    row-gap: 20px;
     width: 80%;
   }
   .big-news img {
@@ -362,6 +363,7 @@ button:hover {
     width: 45%;
     left: 10px;
     right: 350px;
+    bottom: 5px;
     color: white;
     position: absolute;
     font-weight: bold;

@@ -6,6 +6,19 @@
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
 
     <!-- dont forget the meta tag for responsiveness -->
   </head>
@@ -13,19 +26,18 @@
   <body>
     <header>
       <div class="website-header">
-        <div class="logo"> <img src="../images/logo2.png" alt="" srcset=""></div>
         <!--<img src="/project-news-site/images/logo.png" alt="Logo-header" />-->
-        <nav class="navbar">
-          <h1>TMB News</h1>
+        <nav>
           <ul class="menu">
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Economy</a></li>
-            <li><a href="#">Entertainment</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li class="logo"><a href="#">TMB News</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Local</a></li>
+            <li class="item"><a href="#">Europe</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item button"><a href="#">Login</a></li>
+            <li class="item button secondary"><a href="#">Sign up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
           </ul>
-          <button type="button">Subscribe</button>
         </nav>
       </div>
       <!-- Some kind of logo and navbar -->
@@ -45,9 +57,10 @@
 
       At the center of the mission was a modified Boeing 747 aircraft, the Cosmic Girl, fitted with Virgin Orbit’s Launcher One rocket, which was carrying nine civil and defense satellites.
         
-      Interested viewers who watched the launch via Virgin Orbit’s livestream below were faced with disappointment: the mission failed.</p>
+      Interested viewers who watched the launch via Virgin Orbit’s livestream below were faced with disappointment: the mission failed.</br> </br> </br> </br>
+      READ MORE>> </p>
 
-      <h3>READ MORE</h3>
+      
 
       <!-- The big news content -->
     </section>
