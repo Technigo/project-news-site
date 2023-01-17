@@ -1,4 +1,3 @@
-@import url(https://fonts.google.com/share?selection.family=Josefin%20Sans:ital,wght@0,200;0,300;0,400;1,200;1,410;1,500;1,600);
 
 html {
   background: white;
@@ -65,8 +64,8 @@ nav {
 }
 
 .big-img {
-  width: 90%;
-  padding: 10px 10px
+  width: 95%;
+  padding: 10px 10px;
 }
 
 h1 {
@@ -107,7 +106,7 @@ h1 {
 .grid-item>img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
 .grid-item>p {
@@ -216,8 +215,7 @@ h3 {
   margin: 0;
 }
 
-
-/* the end of story ie footer */
+/* the end of story ie the footer */
 footer {
   width: 100%;
   min-height: 50px;
@@ -230,20 +228,47 @@ footer {
 .foot-links {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   list-style: none;
-  padding: 0 10px 10px 0;
-  margin: 0;
+  padding: 0 8px;
+  margin: 8px;
+}
+
+.some-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.some-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.mailto {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.technigo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tech-logo {
+  width: 40px;
 }
 
 .foot-links a {
   display: inline-block;
-  padding: 3px;
   text-decoration: none;
+  margin: 3px;
   color: #000;
 }
 
-/* responsive */
+.foot-links:hover a {
+  color: #f386a3;
+}
+
+/* responsive for tablet */
 @media (min-width: 668px) {
   body{
       flex-direction: row;
@@ -258,6 +283,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 0 0 8px 0;
   }
 
   .nav-links {
@@ -267,7 +293,7 @@ footer {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 300;
-    padding: 0 30px 0 0;
+    padding: 0 8px 0 0;
   }
   
   .nav-item a {
@@ -283,8 +309,6 @@ footer {
 
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2px;
-    margin: 8px;
   }
 
   .quote {
@@ -319,12 +343,12 @@ footer {
   }
 
   h4 {
-    width: fit-content;
+    width: 150px;
     padding: 0 0 8px 0;
   }
 
   .p-medium {
-    max-width: fit-content;
+    max-width: 150px;
     padding: 0 0 8px 0;
   }
 
@@ -338,17 +362,13 @@ footer {
 
 }
 
-
+/* responsive for desktop */
 @media (min-width: 1025px) {
   body {
       flex-direction: row;
       background: #fff;
-      max-width: 1280px;
+      max-width: 1100px;
       margin: 0 auto;
-  }
-
-  img {
-      width: 40%;
   }
 
 /* grid for desktop */
@@ -363,13 +383,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 8px;
     gap: 8px;
 }
   .small-box {
     max-width: 220px;
-    height: 300px;
-    padding: 20px 0;
+    height: 320px;
+    padding: 0 0 20px 0;
 }
    .small-img {
     max-width: 220px;
