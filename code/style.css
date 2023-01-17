@@ -65,10 +65,10 @@ p {
 /* BIG NEWS SECTION MOBILE*/
 
 .big-mama-news {
-    grid-column: 1/5;
-    background-color: rgb(190, 202, 236);
     display: flex;
+    background-color: rgb(190, 202, 236);
     size: 100%;
+    margin: 10px;
 }
 
 .big-news-text {
@@ -76,7 +76,7 @@ p {
 }
 
 img {
-  max-width: 250px;
+  max-width: 100px;
   aspect-ratio: 1 / 1;
   object-fit: cover; /* att den cropas istället för att sizas upp/ner */
   object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
@@ -136,7 +136,7 @@ img {
           list-style: none;
         }
        
-     /* BIG NEWS SECTION (Fråga 1: Hur lägga in styling så bilden blir lite mindr?e*/
+     /* BIG NEWS SECTION TABLET (Fråga 1: Hur lägga in styling så bilden blir lite mindr?e*/
 
     .big-news-text {
     font-size: /* Fråga 2: Samma issue som ovan, jag lyckas inte ändra storleken på texten */
@@ -206,9 +206,13 @@ li {
 /* BIG-NEWS SECTION DESKTOP */ 
 
 .big-mama-news {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* 4 cols, evenly sized */
+  display: flex;
+}
+.big-news-img {
+  max-width: 30%;
+}
+.big-news-text {
+  font-size: 25px;
 }
 /* SMALL-NEWS SECTION FOR DESKTOP */
 
