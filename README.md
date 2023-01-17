@@ -15,5 +15,7 @@ The tools and techniques I used to solve it was many different Codepens to pract
 I finally managed to get a decent result on the assignment but if I had more time I could probably do it better.
 I would make the site 100% responsive at it isn't that right now - only almost responsive... I would also style the navigation bar better - I can see that the green for "Home" is below the other ones but this I'm not sure how to fix right now.
 
+If I had more time I'd try to make the big news item better and responsive - maybe using the tricks in this video: https://www.youtube.com/watch?v=sKFW3wek21Q
+
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link: https://ylvakarlsson.netlify.app/
