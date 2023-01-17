@@ -1,4 +1,156 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #f9f9f9;
+  color: #000000;
 }
+
+@media only screen and (min-width: 668px) {
+  header {
+    color:
+  }
+
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
+    flex-direction: row;
+    background: red(254, 53, 37);
+    flex-wrap: wrap;
+  }
+  img {
+    width: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+    grid-template-columns: repeat(6, 1fr);
+    background: white;
+  }
+  img {
+    width: 40px;
+  }
+}
+
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.nav {
+  padding: 2rem;
+}
+
+.cell {
+  padding: 1rem;
+  margin: auto 0;
+  width: 200px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 200; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  hover: blue;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.navbar <.img {
+  width: 40px;
+  height: 40px;
+}
+
+img {
+ display: block;
+  width: 338px;
+  height: 338px;
+  object-fit: cover;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.dog {
+  width: 680px;
+  height: 500px;
+}
+
+h1 {
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.p {
+  margin; 10px;
+  size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-item-main{
+  grid-column: 1 / 8;
+}
+
+.container{
+  padding: 2rem;
+  
+}
+
+.grid-item {
+  background:;
+}
+
+.flex-parent{ 
+  border: 2px white;
+  height: 550px;
+  width: 1375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+
+
+.flex-child pink{
+  width: 800px;
+}
+
+.flex-child{
+  margin: 5px;
+  width: 800px;
+  height: 500px;
+}
+
+.flex > .child{
+  flex-grow: 1;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons i {
+  margin: 1rem;
+  cursor: pointer;
+}
+
