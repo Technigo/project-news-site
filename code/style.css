@@ -221,7 +221,7 @@ h2:after {
     text-decoration: underline;
     width: 200px;
     height: 30px;
-    margin:auto;    
+    margin:auto;
 }
 
 .small-news-item {
@@ -326,6 +326,10 @@ footer {
 }
 }
 
+#logo-button {
+    cursor: pointer;
+}
+
 .footer-icons {
   display: flex;  
   flex-direction: row;
@@ -342,7 +346,6 @@ footer {
 
 .footer-nav-bar { 
     display:none;
-
 }
 
 .footer-copyright {
@@ -811,6 +814,12 @@ footer {
         font-size: 30px;
         width: 300px;
         margin:0;
+        animation-name: bigger;
+        animation-duration: 1.0s;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;    
     }
 
 .small-news-item {
