@@ -2,21 +2,144 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News About Crossfit</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <!-- Added meta tag for responsiveness -->
   </head>
+
   <body>
+    <div><header class="header">
+      <!-- Logo -->
+            <a href="/"><img src="C:\Users\YlvaKarlsson\Documents\technigo-projects\project-news-site\code\logo-breaking-news-png.png" height="50" width="156" /></a>
+            <a href="#" class="logo">About Crossfit</a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+      <!-- Menu / Navigation bar-->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="#">Trending news</a></li>
+              <li><a href="#">Blog</a> </li>
+              <li><a href="#">About</a></li>
+              <li><a class="active" href="#">Home</a></li>
+          </ul>
+      </nav>
+    </div>
+
     <header>
-      <!-- Some kind of logo and navbar -->
+      <h1>The world's latest news site about Crossfit</h1>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
+    <!-- The big news content -->
+      <section class="big-news">
+        <div class=big-news-headline>Top News of January</div>
+        <div class="big-news-media"><h3>How to crossfit without a "box"</h3>
+          <img src="https://media.istockphoto.com/id/1424352171/photo/young-sweaty-strong-muscular-bodybuilder-woman-weightlifting-workout-cross-training-in-the.jpg?b=1&s=170667a&w=0&k=20&c=laMYAWDDwDFAxDhHua3wgJxDs0IUih2u6RCBFChrKiY=" alt="Strong-muscular-woman-weightlifting-workout-crossfit-training" height="250px"></div>
+          <div class="big-news-item">
+        <p>We give you the 10 biggest secret about how to be fit like a crossfitter without a "box". You can use the equipment in your home - and we show you all the secrets about it!</p>
+        <p>If you prefer the perfect crossfit workout without leaving the house - this is the article for you.</p>
+        <button type="button" class="big-news-button">Read more</button></div>
+      
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+<!-- The other news  -->
+    <section class="container">
+      <div class="row">
+        <!-- flex-container -->
+          <div class="col-md-12 flex-container">
+            <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                    <a href="#">
+                          <div class="card-front bg-violet">
+                              <i class="fa fa-pie-chart fa-3x tile-icon icon-white"></i>
+                              <h4>Your Lifelong Savings thanks to crossfit</h4>
+                              <img src="https://media.istockphoto.com/id/1424352171/photo/young-sweaty-strong-muscular-bodybuilder-woman-weightlifting-workout-cross-training-in-the.jpg?b=1&s=170667a&w=0&k=20&c=laMYAWDDwDFAxDhHua3wgJxDs0IUih2u6RCBFChrKiY=" alt="Strong-muscular-woman-weightlifting-workout-crossfit-training" class="responsive"></a>
+                              <p class="detail">$999,999</p>
+                          </div>
+                          <div class="card-back bg-violet">
+                              <p class="title">Investigated by XXX in a study between 2000-2022</p>
+                              <p class="desc">When doing crossfit at least 3-4 times a week - this is the average amount of lifelong savings.</p>
+                              <p class="link">Details <i class="fa fa-chevron-circle-right"></i></p>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+              
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                      <a href="#">
+                          <div class="card-front bg-magenta">
+                              <i class="fa fa-heart fa-3x tile-icon icon-white"></i>
+                              <h4>EIHH Total Balance - study from 2023</h4>
+                              <img src="https://media.istockphoto.com/id/1424352171/photo/young-sweaty-strong-muscular-bodybuilder-woman-weightlifting-workout-cross-training-in-the.jpg?b=1&s=170667a&w=0&k=20&c=laMYAWDDwDFAxDhHua3wgJxDs0IUih2u6RCBFChrKiY=" alt="Strong-muscular-woman-weightlifting-workout-crossfit-training" class="responsive"></a>
+                              <p class="detail">$123,456</p>
+                          </div>
+                          <div class="card-back bg-magenta">
+                              <p class="title">Estimated Increased Heart Health</p>
+                              <p class="desc">Working out in crossfit shows in the study from University Hospital of Loisiana that the overall heart health will increase and save a lot of money.</p>
+                              <p class="link">Details <i class="fa fa-chevron-circle-right"></i></p>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+              
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                    <a href="#">
+                          <div class="card-front bg-blue">
+                              <i class="fa fa-sun-o fa-3x tile-icon icon-white"></i>
+                              <h4>Crossfit Workout Savings from 2022!</h4>
+                              <img src="https://media.istockphoto.com/id/1424352171/photo/young-sweaty-strong-muscular-bodybuilder-woman-weightlifting-workout-cross-training-in-the.jpg?b=1&s=170667a&w=0&k=20&c=laMYAWDDwDFAxDhHua3wgJxDs0IUih2u6RCBFChrKiY=" alt="Strong-muscular-woman-weightlifting-workout-crossfit-training" class="responsive"></a>
+                              <p class="detail">$450,000</p>
+                          </div>
+                          <div class="card-back bg-blue">
+                              <p class="title">According to USA:s counsil of Health</p>
+                              <p class="desc">Estimated amount saved in Hospital workers overall payroll-costs and life-saving costs at the hospital.</p>
+                              <p class="link">Details <i class="fa fa-chevron-circle-right"></i></p>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+              
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                      <a href="#">
+                          <div class="card-front bg-green">
+                              <i class="fa fa-bar-chart fa-3x tile-icon icon-white"></i>
+                              <h4>General Balance Forecast 2023</h4>
+                              <img src="https://media.istockphoto.com/id/1424352171/photo/young-sweaty-strong-muscular-bodybuilder-woman-weightlifting-workout-cross-training-in-the.jpg?b=1&s=170667a&w=0&k=20&c=laMYAWDDwDFAxDhHua3wgJxDs0IUih2u6RCBFChrKiY=" alt="Strong-muscular-woman-weightlifting-workout-crossfit-training" class="responsive"></a>
+                              <p class="detail">$780,120</p>
+                          </div>
+                          <div class="card-back bg-green">
+                              <p class="title">Estimated Balance in Total</p>
+                              <p class="desc">Latest years investment in overall health and above all the increased popularity in Crossfit shows us the REAL benefits - full forecast numbers for 2023!</p>
+                              <p class="link">Details <i class="fa fa-chevron-circle-right"></i></p>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- flex-item -->
+          </div>
+          <!-- /flex-container -->
+      </div>
     </section>
+
   </body>
 </html>
