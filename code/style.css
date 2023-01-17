@@ -1,4 +1,209 @@
-html {
-  background: #0025ff;
-  color: #fff;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #dca497;
+}
+
+.inner-header {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #e9cfc0;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: #9d595a;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.logo-container h1 span {
+    font-weight: 800;
+}
+
+.navigation {
+    float:right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #e4b661;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    padding: 5px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.container p {
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 300;    
+}
+
+.container a {
+    padding: 0px 0px;
+    color: #9d595a;
+    text-align: center;
+    margin: 0px 0px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+.box1 {
+    width: 640px;
+    height: 370px;
+    background-color: white;
+    padding: 10px;
+    order: 1;
+    margin: 10px;
+}
+
+.box2 {
+    width: 300px;
+    height: 370px;
+    background-color: white;
+    padding: 10px;
+    order: 2;
+    margin: 10px;
+}
+
+.box-image {
+    height: 170px;
+    margin-bottom: 0px;
+    background-size: cover;
+}
+
+.bg-1 {
+    background-image: url('./images/space.jpg');
+}
+
+.bg-2 {
+    background-image: url('./images/traktor.jpg');
+}
+
+.box1:hover {
+    transform: scale(1.03);
+}
+.box2:hover {
+    transform: scale(1.03);
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-areas:
+    'Border Border Border'
+    'Article1 Article2 Article3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.border {
+    grid-area: Border;
+    background: #dca497;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: #9d595a 1px solid;
+    margin: 10px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.article1 {
+    grid-area: Article1;
+    background: white;
+    color: black;
+    padding: 20px;
+    
+}
+
+.article2 {
+    grid-area: Article2;
+    background: white;
+    color: black;
+    padding: 20px;
+
+}
+
+.article3 {
+    grid-area: Article3;
+    background: white;
+    color: black;
+    padding: 20px;
+
+}
+
+.grid h2 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 300;
+    color: #9d595a;
+}
+
+.grid p{
+    padding-top: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.grid img{
+    height: 170px;
+    margin-bottom: 0px;
+    background-size: cover;
+}
+
+.article1:hover {
+    transform: scale(1.03);
+}
+.article2:hover {
+    transform: scale(1.03);
+}
+.article3:hover {
+    transform: scale(1.03);
 }
