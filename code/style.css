@@ -166,6 +166,22 @@ h2:after {
     padding: 5px 10px;
     margin:20px 0px 15px 15px;
     align-self: flex-start;
+    animation-name: bigger;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 .big-news-small-image {
@@ -381,11 +397,14 @@ footer {
         font-family: montserrat,sans-serif;
         font-weight: 900;
         font-style: normal;
-        color: rgb(144, 194, 68);
-        padding:0px;
         font-size:14px;
-        width:118px;
+        color: rgb(144 194 68);
+        border: 2px solid rgb(144 194 68);
+        background-color:  rgb(255, 239, 213);
         text-align: center;
+        margin:2px 25px;
+        padding:1px 5px;
+        border-radius:5px;
     }
 
     .button-1 {
@@ -409,9 +428,9 @@ footer {
         height:400px;
         margin:40px 60px;
         box-shadow: 0 0 0 5px rgb(144 194 68), 
-        0 0 0 12px antiquewhite, 
+        0 0 0 12px rgb(255, 239, 213), 
         0 0 0 16px rgb(144 194 68), 
-        0 0 0 23px antiquewhite, 
+        0 0 0 23px rgb(255, 239, 213), 
         0 0 0 27px rgb(144 194 68);
         border-radius: 5px;
         position: relative;
@@ -620,9 +639,9 @@ footer {
     }
 
     .header-name {
-        width:300px;
         position:relative;
-        bottom:-10px;
+        bottom:-12px;
+        left:-70px;
     }
 
     .header-navigation {
@@ -745,7 +764,6 @@ footer {
         right:-20px;
         bottom:-5px;
         transform: rotate(-2deg);
-
     }
 
     .big-news-small-image:hover {
