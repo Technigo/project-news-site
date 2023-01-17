@@ -4,7 +4,7 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: #CD8987; 
   font-size: 100%;
-  margin: 10px;
+  margin: 20px;
 }
 
 /* HERO SECTION FOR MOBILE */
@@ -24,6 +24,7 @@ body {
 h1 {
   color: white;
   font-family:fantasy;
+  
 }
 
 .logo {
@@ -57,16 +58,12 @@ li {
   padding: 20px; 
 }
 
-p {
-  margin: 0px;
-  padding: 8px;
-  font-size: 70%;
-}
+
 
 /* BIG NEWS SECTION MOBILE*/
 
 .big-mama-news {
-    display: flex;
+    display: block;
     background-color: rgb(190, 202, 236);
     size: 100%;
     margin-top: 5px;
@@ -74,24 +71,22 @@ p {
 }
 
 .big-news-text {
-  width: 100%;
+ margin-right: 20px;
+ padding: 20px;
+
 }
 
 img {
-  max-width: 100px;
+  max-width: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover; /* att den cropas istället för att sizas upp/ner */
-  object-position: 25% 75%; /* för att bilderna ska cropas så att allt hänger med */
+  object-position: 70% 30%; /* för att bilderna ska cropas så att allt hänger med */
   padding: 10px;
   margin: 10px;
-
-}
-.grid__img {
-
 }
 /* SMALL NEWS SECTION MOBILE */
 
-.small-mama-news {
+.small-mama-news-container {
   display: grid;
   grid-template-columns: 1fr;
   /* 1 cols, evenly sized */
@@ -100,14 +95,21 @@ img {
   background-color:#CCFBFE;
 }
 
+.small-news-gridkid {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  /* att den cropas istället för att sizas upp/ner */
+  object-position: 30% 70%;
+  /* för att bilderna ska cropas så att allt hänger med */
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
 /* STYLING FOR TABLET (668 > 1024px) */
 
 @media (min-width: 668px) and (max-width: 1024px) {
  
-  body {
-    background-color: red; /*färg ska ändras*/
-  }
-  
   /* HERO SECTION TABLET*/
 
 .container-hero {
@@ -115,16 +117,25 @@ img {
   width: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
+
+/* sorry for the h1 and logo-soulution, I know this is not a great way of postisioning elements but i just cant seem to find out how to target these elements in another way rigth now */
     .navbar {
-      border: 2px solid green;
-      padding: 2px;
+      padding-left: 100px;
       display: flex;
-      align-items: flex-end;
       flex-direction: row;
     }
+    
+    h1 {
+      margin-left: 100px;
+    }
   
+    .logo {
+      margin-left: 50px;
+    }
+
      .hamburger {
        display: none;
      }
@@ -139,27 +150,24 @@ img {
         }
     
         li {
-          list-style: none;
+          list-style: none; 
         }
        
-     /* BIG NEWS SECTION TABLET (Fråga 1: Hur lägga in styling så bilden blir lite mindr?e*/
+     /* BIG NEWS SECTION TABLET */
+     
+  .big-mama-news {
+    display: flex;
+  }
 
-    .big-news-text {
-    font-size: /* Fråga 2: Samma issue som ovan, jag lyckas inte ändra storleken på texten */
-  } 
     /* SMALL NEWS SECTION TABLET*/
       
-   /* Fråga 3: Här undrar jag hur jag gör för att få kolumnerna centererade? Just nu är avståndet till höger större än vänster.. */ 
-   
-   .small-mama-news {
+   .small-mama-news-container {
       grid-template-columns: 1fr 1fr;
       /* 2 cols, evenly sized */ 
     }
 
-    /* Fråga 4: jag lyckas inte ändra storleken på bilden genom denna target (nedan) , varför inte? Jag skulle vilja att big-news-bilden tar upp mera plats än de övriga i tablet och desktop-mode */
-
   .big-news-img {
-    size: 400px;
+    size: 500px;
   }
 
 }
@@ -168,9 +176,6 @@ img {
 
 @media (min-width: 1025px) {
 
-  body {
-      /*desktop (ändra!)*/ 
-  }
 
 /* HERO SECTION FOR DESKTOP */
 
@@ -186,7 +191,6 @@ img {
   justify-content:space-between;
 }
 .navbar {
-  border: 2px solid green;
   padding: 10px;
   display: flex;
   align-items: flex-end;
@@ -204,8 +208,6 @@ img {
 a {
   text-decoration: none;
   color: #fff;
-  
- 
 }
 
 li {
@@ -215,21 +217,29 @@ li {
 /* BIG-NEWS SECTION DESKTOP */ 
 
 .big-mama-news {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 .big-news-img {
-  max-width: 30%;
+  max-width: 400px;
 }
+
 .big-news-text {
-  font-size: 25px;
+  font-size: 100%;
 }
+
 /* SMALL-NEWS SECTION FOR DESKTOP */
 
-.small-mama-news {
+.small-mama-news-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* 4 cols, evenly sized */
-  gap: 4px;
-  /* gap is the space between the items */
+  padding: 20px;
 }
+.small-news-gridkid {
+  max-width: 200px;
+
+}
+
 }
