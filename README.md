@@ -1,12 +1,9 @@
-# News Site
+# News Site 
 
-Replace this readme with your own information about your project. 
+The aim of this project was to build a responsive news site using grid, flexbox and media queries. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+As this is my very first project, I mainly focused on understanding the fundamentals of HTML and CSS. That is for example how to use different sectioning tags and classes in HTML and positioning items with the help of grid and flexbox in CSS. 
 
-## The problem
+My biggest challenge was due to starting with the layout for desktop. This made the project more complicated as I really struggled with the responsiveness. The large amount of code in media queries made the project messy and I no longer knew what I had written and why. I restarted the whole project once I no longer could understand my own code. This time I started with the layout for mobile and made sure to write as clean as possible as well as I tried to avoid fixed measurements, so I did not have to overwrite everything in media queries. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+here is a link to the final draft: https://finerthingsclub.netlify.app 
