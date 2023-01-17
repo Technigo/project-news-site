@@ -308,6 +308,22 @@ footer {
     height:70px;
     object-fit: cover;
     width: 70px;
+    animation-name: stretch;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+0% {
+    transform: scale(0.9);
+}
+
+100% {
+    transform: scale(1.0);
+}
 }
 
 .footer-icons {
@@ -574,7 +590,7 @@ footer {
     /* FOOTER */
 
     .fa-brands {
-        color: rgb(144, 194, 68);
+        color: rgb(255, 239, 213);
         font-size: 20px;
         margin:20px 15px 40px 15px;
     }
@@ -631,10 +647,6 @@ footer {
         width:20vw;
         position: relative;
         top:0;
-    }
-
-    .logo:hover {
-        transform: scaleX(-1);
     }
 
     .header-name {
