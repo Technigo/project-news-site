@@ -1,5 +1,6 @@
 html {
 background-color: rgb(255, 239, 213);
+scroll-behavior: smooth;
 }
 
 body { 
@@ -814,13 +815,23 @@ footer {
         font-size: 30px;
         width: 300px;
         margin:0;
-        animation-name: bigger;
+        animation-name: animation;
         animation-duration: 1.0s;
         animation-timing-function: ease-out;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-play-state: running;    
     }
+
+    @keyframes animation {
+        0% {
+            transform: scale(1.0);
+        }
+        
+        100% {
+            transform: scale(1.1);
+        }
+        }
 
 .small-news-item {
         padding:10px;
