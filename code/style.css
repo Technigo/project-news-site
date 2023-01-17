@@ -4,8 +4,22 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: blue; /*mobile*/
   font-size: 100%;
- 
 }
+
+/* HERO SECTION FOR MOBILE */
+
+.container-hero {
+  background-color: #3e2f5bff;
+  size: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+
 h1 {
   color: white;
   font-family:fantasy;
@@ -16,8 +30,6 @@ h1 {
   margin: 10px;
   padding: 10px;
   display: flex;
-  
-
 }
 
 .hamburger {
@@ -26,7 +38,6 @@ h1 {
   background:white;
   display: block;
   margin-bottom: 5px;
-
 }
 
 .menu {
@@ -56,43 +67,18 @@ p {
   font-size: 70%;
 }
 
-/* mormor är grid-container för hela sidan*/
-/*
-.mormor {
-  display: grid;
-  grid-template-columns: 1 fr;
-  border: 3px solid black;
-  padding: 50px;
-  background-color: brown;
-  gap: 10px;
-  margin: 10px auto; 
-  
-}*/
-
-.container-hero {
-  background-color: #3e2f5bff;
-  size: 100%;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
+/* BIG NEWS SECTION MOBILE*/
 
 .big-mama-news {
-  grid: 1 / 2; /* definierar mammas relation till moromor */
-  background-color: pink;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    grid-column: 1/5;
+    background-color: rgb(190, 202, 236);
+    display: flex;
+    size: 100%;
 }
 
 .big-news-text {
-  width: 50%;
+  width: 100%;
 }
- 
 
 img {
   max-width: 250px;
@@ -103,6 +89,8 @@ img {
   margin: 10px;
 }
 
+/* SMALL NEWS SECTION MOBILE */
+
 /* Jennies förslag på main styling - which means below 668 since you do mobile first approach */
 .small-mama-news {
   display: grid;
@@ -112,18 +100,16 @@ img {
   /* gap is the space between the items */
 }
 
-
-
-/* styling for tablet (668 > 1024px) */
-
-/* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
-*/
+/* STYLING FOR TABLET (668 > 1024px) */
 
 @media (min-width: 668px) and (max-width: 1024px) {
+ 
   body {
-    background-color: red; /*tablet*/
+    background-color: red; /*tablet-*/
   }
   
+  /* HERO SECTION TABLET*/
+
      .navbar {
        border: 2px solid green;
        padding: 10px;
@@ -149,29 +135,55 @@ img {
         li {
           list-style: none;
         }
-       /* Jennies förslag for tablet */
        
-       .big-mama-news {
-          grid-template-columns: 1fr 1fr;
-          /* 2 cols, evenly sized */
-        }
-  
+     /* BIG NEWS SECTION (lägga in styling så bilden blir lite mindre*/
+
+    .big-news-text {
+    font-size: /* Jennie, samma som ovan, jag lyckas inte ändra storleken på texten */
+  } 
+    /* SMALL NEWS SECTION TABLET*/
+      
+   /* Jennies förslag för media query for tablet. Jennie: detta funkar men jag undrar hur jag gör för att få kolumnerna centererade? Just nu är avståndet till höger större än vänster.. */ 
+   
+   .small-mama-news {
+      grid-template-columns: 1fr 1fr;
+      /* 2 cols, evenly sized */ 
+    }
+
+    /* Jennie: jag lyckas inte ändra storleken på bilden genom denna target (nedan) , varför inte? Jag skulle vilja att big-news-bilden tar upp mera plats än de övriga i tablet och desktop-mode */
+
+  .big-news-img {
+    size: 400px;
+  }
+
 }
-
-
-/* styling for desktop (1024px eller större) */
+  
+/* STYLING FOR DESKTOP (1024px or larger ) */
 
 @media (min-width: 1025px) {
 
   body {
     background-color: white; /*desktop*/ 
   }
+
+/* HERO SECTION FOR DESKTOP */
+
+.container-hero {
+  background-color: #3e2f5bff;
+  size: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:flex-start;
+  padding-bottom: 30px;
+
+}
 .navbar {
   border: 2px solid green;
   padding: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-end;
   flex-direction: row;
 }
 
@@ -186,18 +198,24 @@ img {
 a {
   text-decoration: none;
   color: #fff;
+  
+ 
 }
 
 li {
   list-style: none;
 }
 
-/* Jennies förslag för media query for desktop */
+/* BIG-NEWS SECTION DESKTOP */ 
+
+/* Jennies förslag for desktop */
 
 .big-mama-news {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* 4 cols, evenly sized */
 }
+/* SMALL-NEWS SECTION FOR DESKTOP */
 
 .small-mama-news {
   display: grid;
@@ -205,4 +223,5 @@ li {
   /* 4 cols, evenly sized */
   gap: 4px;
   /* gap is the space between the items */
+}
 }
