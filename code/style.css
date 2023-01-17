@@ -53,7 +53,6 @@ header {
 
 .video-news {
   grid-column: 2 / 3;
-  align-content: flex-start;
 }
 
 .video-news iframe {
@@ -68,6 +67,10 @@ header {
 h3 {
   font-size: 25px;
   padding-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
 }
 
 .news-article {
@@ -105,7 +108,8 @@ h3 {
 
 .bottom-row {
   grid-column: 1 / 5;
-  padding: 20px 15px 30px 15px;
+  padding: 40px 15px 10px 15px;
+  font-style: italic;
 }
 
 
@@ -118,7 +122,6 @@ h3 {
   padding: 20px 10px 60px;
   background: black;
   border-radius: 6px;
-  justify-content: space-evenly;
 }
 
 .flex-child {
@@ -212,7 +215,6 @@ form, .form-fields {
     "d d"
     "e e";
   }
-  
   .navbar {
     grid-area: a;
     width: 100%;
@@ -252,8 +254,8 @@ form, .form-fields {
    .portable-only {
     width: 440px;
    }
-
   }
+  
 
 
 @media screen and (max-width: 667px) {
@@ -305,29 +307,30 @@ form, .form-fields {
     .desktop-only-wrapper:hover > h5 {
       visibility: visible;
     }
-
     .flex-child:hover {
       filter: brightness(1.25);
       border: 2px solid azure;
       transition: 0.1s;
     }
-
     .btn-home:hover {
       color: #2a2a2a;
       background-color: azure;
       transition: 0,5s;
       padding: 1px 10px 1px 10px;
       font-size: 18px;
-     }
-
-       .btn-home a:hover {
-         color:#2a2a2a;
-       }
-
-      .btn-home span {
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-       }
+    }
+    .btn-home a:hover {
+      color:#2a2a2a;
+    }
+    .btn-home span {
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
   }
+  @media screen and (min-width: 668px) and (max-width: 1024px) {
+    .img-width-size, .img-height-size {
+    max-width: 442px;
+  }
+}
   
