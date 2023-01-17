@@ -7,6 +7,8 @@
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gxp2wtj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/4af0a9e375.js" crossorigin="anonymous"></script>
   </head>
   <body class="all-content-wrapper">
@@ -16,6 +18,16 @@
       <img class="logo" src="./images/mag-logo-oi.svg" alt="magazine-logo">
       <h1 class="header-name">Stories</h1>
       <nav class="header-navigation">
+        <div class="nav-hamburger">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+              <a class="my-link-items" href="https://www.google.com/" target="_blank">LATEST</a>
+              <a class="my-link-items" href="https://www.google.com/" target="_blank">ART</a>
+              <a class="my-link-items" href="https://www.google.com/" target="_blank">PHOTOGRAGHY</a>
+              <a class="my-link-items" href="https://www.google.com/" target="_blank">CONTACT</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>  
         <ul class="nav-bar">  
           <li><a class="nav-item button-1" href="https://www.google.com" target="_blank">LATEST</a></li>
           <li><a class="nav-item button-2" href="https://www.google.com" target="_blank">ART</a></li>
