@@ -46,12 +46,12 @@ h1 {
 }
 
 .navbar {
-  border: 2px solid green;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
+    border: 2px solid green;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
 }
 
 li {
@@ -109,15 +109,21 @@ img {
   }
   
   /* HERO SECTION TABLET*/
-
-     .navbar {
-       border: 2px solid green;
-       padding: 10px;
-       display: flex;
-       align-items: center;
-       justify-content: space-evenly;
-       flex-direction: row;
-     }
+.container-hero {
+  background-color: #3e2f5bff;
+  margin: 20px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+    .navbar {
+      border: 2px solid green;
+      padding: 10px;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+    }
   
      .hamburger {
        display: none;
@@ -170,14 +176,11 @@ img {
 
 .container-hero {
   background-color: #3e2f5bff;
-  size: 100%;
-  padding: 15px;
+  margin: 20px;
+  width: auto;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content:flex-start;
-  padding-bottom: 30px;
-
+  justify-content:space-between;
 }
 .navbar {
   border: 2px solid green;
