@@ -1,12 +1,15 @@
-# News Site
+# Pre-course Project-News Site
 
-Replace this readme with your own information about your project. 
+This project was a pre-course assignment for Technigo Frontend-developer bootcamp. The aim of the task was to prepare for the bootcamp by getting introduced to the basics in html and css, as-well as Github and the platforms used throughout the bootcamp. Making sure everyone starts on kind of the same level and as a "warm-up" before starting with the actual bootcamp.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to build a one-page "news-site" with a header, navbar and two sections. The site should be responsive to different devises and the code semantically correct. We should use both Grid and Flexbox to the layout.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+My plan was to build a news site for the "dog-mom"-community with playful content and articles for all the dog-owners identifying as a "dog-parent". I started of by doing a mindmap with ideas of articles and came up with a lot of fun ideas as Dating-special - "how to make your step-siblings to also fall in love" or "help - I’m dating a cat-person!" and "Astro-reading - what can your pups zodiac tell you". Unfortunately I never got to use any of this content due to my huge struggling just to get the image-grid working. Using both Grid and Flexbox turned out to be much harder than expected, and starting with setting up layout with media queries turned out being a really bad decision. The amount of code just grew and in my enthusiasm for "getting things done" i lost control over my workflow and started making really bad decisions. This was one (of the many!) pitfalls i hopefully will avoid in future projects. Long story "short" (sorry for already writing a novel), this projects outcome this site is far-from-ready and (in my opinion) barely even presentable is honestly not impressive at all. But seen from the goal of making it (described earlier) i must say it was a huge succession. Thanks to this project i spent far more hours practicing the crafts of writing vanilla-code in html and css than i (to be honest) never would have spent if not forced to. I learned the hard way that its much more time-saving to actually spend time reading documentation (instead of trial and error-debugging in desperation for hours). Ive learned the importance of using a backlog even when im just working solo, scheduling and got some very useful insights in how to think when it comes to timemanegement. And now im just talking about the meta-learning about how to plan and structure my work! Ive obviously also got to learn and practice not only the basics but even a bit more "advanced" training in several developer-tools, programming-languages and som of the commonly used platforms in the world of programming.
+
+If I would have more time I think that I actually just would delete this whole project and start all over with a fresh new folder and a repo and in a Marie Kondo-kind of way just get rid of everything that i no longer need and keeping all the wisdom from the experience. And then i think (and hope) i would be able to more effectively create the site i originally aimed to. And I might then actually be proud of the outcome as-well. Hopefully some day soon i will go back to this little catastrophe-repo and hopefully laugh at my attempts to look as i know what i was doing lol. But now Im just going to take a well needed day off just hanging out with my beloved dog <3.
 
 ## View it live
+
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
