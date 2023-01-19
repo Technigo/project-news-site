@@ -10,13 +10,13 @@
 }
 
 .logo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   flex: 1;
   font-size: 40px;
   text-align: left;
   text-align: justify;
   height: auto;
-  color: #008b8b;
+  color: #483D8B;
   font-weight: bold;
 }
 
@@ -80,6 +80,9 @@ h1 {
 .flex-initial-article {
   flex:2;
   text-align: center;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #008B8B;
 }
 
 .flex-initial-image {
@@ -88,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(238, 130, 238);
@@ -117,8 +120,8 @@ h2 {
   }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10 px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 11 px;
 }
 
 .grid-parent {
@@ -131,7 +134,7 @@ p {
 }
 
   /* Removed a command for the grit-smaller-image as I am not sure yet
-  if I need to use styling for it */ 
+  if I need to use styling for it */
 
 .grid-smaller-article img {
   width: 400px;
