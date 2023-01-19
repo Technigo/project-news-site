@@ -137,8 +137,10 @@ p {
   box-sizing: border-box;
 }
 
-  /* Removed a command for the grit-smaller-image as I am not sure yet
-  if I need to use styling for it */
+  /* Removed a command for the grit-smaller-article as I am not sure yet
+  if I need to use styling for it. Also I am having issues with the combination
+  of flexbox and grid when it comes to responsiveness for different devices. 
+  I need to improve this bit to make it look much better. */
 
 .grid-smaller-article img {
   width: 400px;
