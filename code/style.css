@@ -5,40 +5,71 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.grid-parent{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-item-header {
+  background-color: #ede3d8;
+  padding: 35px;
+  width: 600px;
+  margin-bottom: 10px;
+  color: black; 
+  font-style: italic;
+  font-size: 48px;
+  text-align: left;
+  grid-column: span 12; 
+}
+
+
 p {
   font-size: 18px;
 }
 
-.Name-of-website {
-  color: black; 
-  font-style: italic;
-  font-size: 48px;
+
+h2 {
+  color: darkolivegreen;
+  border-bottom: 8px double;
 }
 
-.top {
-  background-color: #ede3d8;
-  padding: 35px;
-  width: 1400px;
-}
 
 .big-news {
   background-color: #b2d8b2;
   padding: 35px;
-  width: 1400px;
+  width: 600px;
+  margin-bottom: 15px;
+  border: 2px dotted; 
+  grid-column: 8/8
 }
 
 .big-news img {
 width: 100%;
 }
 
-.Other-news {
-  background-color: gainsboro;
-  padding: 35px;
-  width: 400px;
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
+      flex-direction: row;
+      background: grey;
+      flex-wrap: wrap;  
+  }
+  img {
+      width: 30%;
+  }
+} 
+
+@media (min-width: 1025px) {
+  body {
+      flex-direction: row;
+      background: blue;
+  }
+  img {
+      width: 30%;
+  }
 }
 
-.Other-news img {
-  width: 100%;
-}
+
 
 
