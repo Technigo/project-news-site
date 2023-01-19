@@ -1,4 +1,188 @@
-html {
-  background: #0025ff;
-  color: #fff;
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  background-color: rgb(238, 130, 238)
+}
+
+.logo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex: 1;
+  font-size: 40px;
+  text-align: left;
+  text-align: justify;
+  height: auto;
+  color: #008b8b;
+  font-weight: bold;
+}
+
+/* I need to continue working on this navbar as it drives me nuts at 
+the moment and looks terrible haha. Sorry about that! */
+
+.navigation-choices {
+  text-align: right;
+  align-items: stretch;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: auto;
+  list-style: none;
+  gap: 4em;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: auto
+}
+
+.choice-1 {
+  flex: 1;
+}
+
+.choice-2 {
+  flex: 1;
+}
+
+.choice-3 {
+ flex: 1;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(106, 90, 220);
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 500%;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 80px;
+}
+
+.flex-initial-article {
+  flex:2;
+  text-align: center;
+}
+
+.flex-initial-image {
+  flex:1;
+  flex-grow: 1;
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(238, 130, 238);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  
+@media (min-width: 668px) and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  .flex-initial-image {
+    width: 40%;
+}
+  }
+
+@media (max-width: 667px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  .flex-initial-image {
+    width: 40%;
+}
+  }
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10 px;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1 fr));
+  gap: 40px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+  /* Removed a command for the grit-smaller-image as I am not sure yet
+  if I need to use styling for it */ 
+
+.grid-smaller-article img {
+  width: 400px;
+  height: 300px;
+  }
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .grid-parent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  }
+
+@media (max-width: 667px) {
+  .grid-parent { 
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+  }
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+article {
+  color: black;
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #008B8B;
+}
+
+img:hover {
+  transform: scaleX(-1);
+  border-style: dotted;
+  border-color: rgb(106, 90, 220);
+}
+
+footer {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 100px;
 }

@@ -2,21 +2,145 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project 2: The News Site</title>
+    <title>What's up in the Nordics?</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
   </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<body>
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <div class="navbar-container"> 
+      <div class="logo">Terrible header</div>
+      <div class="navigation-choices"> 
+        <a class="choice-1" href="#">Home</a>
+        <a class="choice-2" href="#">About</a>
+        <a class="choice-3" href="#">Contact</a>
+      </div>
+    </div>
 
-    <section class="">
+    <h1>What's up in the Nordics?</h1>
+  </header>
+
+<section class="flex-container">
+   <!-- The big news content -->
+  <div class="flex-initial-article"> 
+    <h2>Are you in the Nordic region and want to know what fun stuff is happening near you?</h2>
+      <p>The Nordic countries are full of surprises and strange customs, and there is always something fun going on, regardless of which country you have decided to visit. 
+        Check out our articles on the latest happenings in the Nordic country of your choice. 
+        Our Scandi-correspondents have made sure to find the most fun and quirky news from all over the Scandinavian countries, to ensure that there is something for everyone. 
+        Want to see how the Danish celebrate the first week of March? You'll find it here.
+        Interested in what fun stuff you can eat in Norway when you visit? Yes, you'll find that here.
+        Can you also find any fun outdoor activity in Sweden which includes animals? Of course, just click around and you'll hit the jackpot!</p>
+  </div>
+  <div class="flex-initial-image"> <!-- If I add the image style to CSS instead, it messes everything up completely, not sure why  -->
+    <img src="./Images/MakeThisDayGreat.jpg" alt="Sign saying Make This Day Great" style="width:550px;height:300px;">
+  </div>
+</section>
+
+<section class="grid-parent">
       <!-- The other news  -->
-    </section>
-  </body>
+  <div class="grid-smaller-article"> 
+    <article> 
+      <img src="./Images/Denmark.jpg" alt="Nyhavn with Danish flags">
+      <h3>Welcoming spring with happy Danish people </h3>
+        <p>Did you know that the Danish have a tradition of celebrating the onset of spring by a series of funny customs, all taking place in the first week of March? 
+          Neither did we. If you happen to be in Denmark during this week, you can expect to see many vendors selling a very strong minty drink, to be had together with 
+          a bun of really spicy pölse, the two are to be enjoyed together with family and friends in the sunshine that we haven't seen for so long. 
+          If you are fortunate, you might also come across the tradition of pop-up auctions in a garden near you. 
+          Intrigued? Click this article to find out more about what our teak-obsessed neighbours are up to in a few weeks time, all in the spirit of "hygge".</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/ReindeerStockholm.jpg" alt="Raindeer standing around in snow">
+      <h3>Come join the reindeer-run in Stockholm!</h3>
+        <p>A reindeer? In Stockholm? Isn't that a bit too far south? Yes, but reindeer can travel too you know, ever heard of Rudolph?. 
+          If you have no idea what to do this weekend and you want to experience something new, you can head out to Gärdet to watch a reindeer-run. Not with a sled behind 
+          the reindeer but with humans on mini-skis. Sound wild? It is!
+          The contestants will need to complete a course with twists and turns, while skiing behind their reindeer. Fastest to complete the course wins. And don't worry, this 
+          is not F1, to avoid injuries the contestants race the course one at a time. This event is sure to make you both laugh, cheer, and go "aaawww". And yes, you may pet 
+          the reindeer after the race.</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Algaeburger.jpg" alt=" Hamburger with algae on top">
+      <h3>Can you actually eat that? Yes, if you are in Norway you can!</h3>
+        <p>Let's be honest here, Norway has not really been highlighted for its cuisine, with the national dish said to be the supermarket freeze-box pizza Grandiosa. That 
+          aside, there is a dish not many of us have heard of. 
+          If you are in Norway in the winter, check out our guide on where to find the secret, but delicious, lefse-burger. The burger is made with an algae that only grows 
+          in the winter months, and has to be harvested by breaking the ice open in order to pick it up. Though the combination of lefse and algae, in a burger, might sound 
+          less than exciting at first glance, it is actually quite the taste sensation...</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Iceland.jpg" alt="Woman standing beside large blocks of ice">
+      <h3>Ice-festival coming up in Reykjavik</h3>
+        <p>Much like the ice-hotel in northern Sweden, you can check-in to sleep on your very own icy bed in Reykjavik during the yearly ice-festival.
+          Aside from an ice hotel, of course equipped with an ice bar as well, there will be ice carving contests and much more. For those with a need for speed, there will 
+          be a chance to ride in a real bobsleigh at high speeds, together with professionals. The bobsleigh course is beautifully located just outside the city centre, with 
+          very scenic views around the course. For the little ones the will be ice rinks for skating, with the Icelandic olympic gold champions of ice hockey visting, as well
+          as a figure skating performance by the national figure skating champions to the hit song Husavik from the movie Eurovision Song Contest - the story of Fire saga.</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Kitesurfing.jpg" alt="Kitesurfing in waves">
+      <h3>Go kitesurfing on the Faroe Islands</h3>
+        <p>While the Faroe Islands might not be on the top ten most visited places for holidaying in the Scandics, it is actually a really good spot for those who enjoy 
+          kitesurfing. It is ideally located as there is hardly a day without wind, and waves are plenty and fun. No, it isn't Mallorca, but if you make sure to dress right 
+          you will have a blast. Just make sure you are not having too much fun with the winds, or they might carry you back to Denmark! As the daredevils we are, we of 
+          course went there for a crash course on how to kitesurf, in an enviromemnt hard to find elsewhere. There is even a kitesurfing history museum downtown, for those 
+          who want to dive even deeper into the sport.</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Finland.jpg" alt=" Flag of Finland">
+      <h3>Kokkola brings the good stuff</h3>
+        <p>If you find yourself in the vicinity of Kokkola in February, you should make a stop and explore this little gem. 
+          Every February, Kokkola hosts a food festival where you can sample different Finnish-Swedish crossover food, as well as well known delicacies from both
+          countries. Word is out that the Karelian pirogues with a Swedish meatball filling are not to be missed. They are served with brown sauce dip and make an 
+          excellent street food dish. For those of you who have yet to try Memma, this is the place to be. Though traditionally served around Easter, this is the 
+          early-bird version and it is served both with the more traditional cream, as well as the more contemporary version as part of a baked Alaska.</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Svalbard.jpg" alt="Puffin bird in water">
+      <h3>Swim race on Svalbard</h3>
+        <p>For those who dare, the annual swim race taking place in the harbour of Longyearbyen is coming up. The event draws a huge crowd and international participants,
+          who all eagerly get in the less than warm water to have a 8 km swim around the harbor waters. It is not only the cold water that poses an obstacle to the 
+          contestants, but also the fact that there might be a surprise polar bear when you least expect it. On the more positive side, the fauna here also ups your chances 
+          of seeing a beluga whale and perhaps even a walrus. Puffin birds are plenty and you will see their bright orange feet whether you are in the water or safely 
+          watching from land.</p>
+    </article>
+  </div>
+
+  <div class="grid-smaller-article">
+    <article>
+      <img src="./Images/Popcorn.jpg" alt="Movie Popcorn">
+      <h3>Drive-in movies in Mariehamn</h3>
+        <p>Every Saturday evening, from March to October, you can take your car and head for the drive-in movie set up in a huge parking lot in Mariehamn. Movie buffs
+          without a car are more than welcome as well, and there is space to set up a blanket or a camping chair. They even have a popcorn wagon which will go from car to car
+          before the movie starts. Need a refill mid-movie? No worries, just order in the app and the vendor will come to your car. Sounds sweet, right?
+          We have the full program listed and it is a mix of new and old, to suit all tastes. Make sure to check it out!</p>
+    </article>
+  </div>
+</section>
+  
+
+  <footer>
+    <p>NOTE: In case you were actually wondering, these are not real news, they are straight from an imaginary mind! All images taken from <a href="https://www.pexels.com/sv-se/">Pexels.com</a> (no copyright/credit needed).</p>
+  </footer>
+</body>
 </html>
