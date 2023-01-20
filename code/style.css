@@ -246,15 +246,12 @@ a:hover {
   border-bottom-left-radius: 50px;
   padding: 5px 20px;
   background: #f4f6f6;
-}
+}*/
 
 .review {
-  font-family: "Indie Flower", cursive;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 30px;
-  color: #f4f6f6;
-}*/
+  font-family: var(--paragraph-font-family);
+  text-align: center;
+}
 
 .primary-link {
   border-radius: 4px;
@@ -285,6 +282,12 @@ a:hover {
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   background-clip: text;
+}
+
+.icon-div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*footer*/
@@ -364,7 +367,7 @@ a:hover {
 }
 
 .trojkat_bg {
-  display: flex;
+  display: aboslute;
   justify-content: center;
   position: absolute;
   width: 200%;
@@ -380,9 +383,9 @@ a:hover {
   background-size: 90%;
 }
 
-/*.trojkat_bg:hover {
+.trojkat_bg:hover {
   background-size: 90%;
-}*/
+}
 
 .kwadrat2 {
   width: 232px;
@@ -403,6 +406,8 @@ a:hover {
   margin: -100px 0 0 16px;
 }
 .trojkat_bg2 {
+  position: absolute;
+  justify-content: center;
   position: absolute;
   width: 200%;
   height: 200%;
