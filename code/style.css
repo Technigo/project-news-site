@@ -4,6 +4,7 @@
   --logo-name-font-family: "Rubik Gemstones", cursive;
   --headings-font-family: "Rye", cursive;
   --paragraph-font-family: "Newsreader", serif;
+  --footer-font-family: "Newsreader", serif;
   --border-color: #94b1aa;
   --primary-bg-color: #94b1aa;
   --secondary-bg-color: #f4f6f6;
@@ -286,24 +287,6 @@ a:hover {
   background-clip: text;
 }
 
-.fa-linkedin {
-  display: flex;
-  font-size: 38px;
-  justify-content: left;
-  color: #0270ad;
-  padding-left: 25px;
-  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-}
-
-.fa-github {
-  display: flex;
-  font-size: 38px;
-  justify-content: left;
-  color: var(--primary-text-color);
-  padding-left: 25px;
-  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-}
-
 /*footer*/
 
 .footer {
@@ -326,27 +309,30 @@ a:hover {
 
 .logoTextSpan {
   padding: 10px;
-  font-family: "Indie Flower", cursive;
+  font-family: var(--footer-font-family);
+}
+
+.footer-icons {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fa-linkedin,
+.fa-github {
+  /*display-flex*/
+  font-size: 38px;
+  padding-left: 25px;
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
+  text-decoration: none;
 }
 
 .fa-linkedin {
-  display: flex;
-  font-size: 38px;
-  justify-content: center;
   color: #0270ad;
-  padding-left: 25px;
-  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-  text-decoration: none;
 }
 
 .fa-github {
-  display: flex;
-  font-size: 38px;
-  justify-content: center;
   color: var(--primary-text-color);
-  padding-left: 25px;
-  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-  text-decoration: none;
 }
 
 .flex-parent footer {
