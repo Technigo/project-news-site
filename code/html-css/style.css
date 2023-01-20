@@ -51,11 +51,11 @@ h1 {
     display: none; 
 }
 
-li {
+li a {
   font-size: 20px;
   margin: 20px;
   padding: 20px; 
-  color: black;
+  
 }
 
 
@@ -125,6 +125,7 @@ img {
       padding-left: 100px;
       display: flex;
       flex-direction: row;
+     
     }
     
     h1 {
@@ -145,11 +146,13 @@ img {
 
         a {
           text-decoration: none;
+          color: black;
       
         }
     
         li {
           list-style: none; 
+          color: black;
         }
        
      /* BIG NEWS SECTION TABLET */
@@ -193,6 +196,7 @@ img {
   display: flex;
   align-items: flex-end;
   flex-direction: row;
+ 
 }
 
 .hamburger {
@@ -205,12 +209,15 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
+  
  
   
 }
 
 li {
   list-style: none; 
+ 
 }
 
 /* BIG-NEWS SECTION DESKTOP */ 
