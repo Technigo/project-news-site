@@ -1,7 +1,7 @@
 
 /*Background and text color*/
 html {
-  background: #1C315E;
+  background: #EFEFEF;
   color: rgb(0, 0, 0);
 }
 
@@ -11,11 +11,16 @@ body {
   text-align: left;
 }
 
+.h1 {
+  margin: 0;
+}
+
 /*Header: basic styling*/
 header {
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 /*Remove decorations that make the link look like links*/
 header a {
@@ -37,35 +42,41 @@ header a {
 /* Styling of nav-bar (only in desktop and pad)*/
 .nav-bar {
   font-size: 20px;
+  
 }
 
 /*nav-bar links styling*/
 .nav-bar a {
-  padding: 5px;
-  color: #88A47C;
+  padding: 15px;
+  color: black;
 }
 
 a:hover{
-  color: #E6E2C3;
+  color: #D2001A;
+  background-color: #EFEFEF;
 }
-
 
 .grid-big-news{
-  padding: 10px;
-  background: #E6E2C3;
-}
-
-.grid-big-news img {
-  width: 100%;
+  padding: 20px;
+  background: white;
 }
 
 .grid-other-news{
-  padding: 10px;
-  background: #E6E2C3;
+  padding: 20px;
+  background: white;
 }
 
 .grid-header {
-  background: #227C70;
+  background: white;
+}
+
+.grid-header img {
+  width: 120px;
+  height: 120px;
+}
+
+.big-news {
+  padding: 10px;
 }
 
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
@@ -93,12 +104,28 @@ a:hover{
 
   .mobile-menu a {
     padding: 5px;
-    color:  #88A47C;
+    color:  #D2001A;
     display: block;
     font-size: 20px;
     justify-content: center;
   }
-    
+
+  .grid-big-news{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .grid-big-news img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+  }
+
+  .big-news p {
+    display: none;
+  }
 }
 
 /*MEDIA QUEARY FÖR TABLET-STORLEK*/
@@ -117,10 +144,17 @@ a:hover{
 
   .grid-big-news{
     grid-column: span 2;
+    display: flex;
   }
 
   .mobile-menu {
     display: none;
+  }
+
+  .grid-big-news img {
+    width: 280px;
+    object-fit: cover;
+    
   }
 
 }
@@ -134,7 +168,7 @@ a:hover{
     grid-template-rows: repeat(5);
     gap: 15px;
     justify-content: center;
-    padding: 0px 150px 0px 150px;
+    padding: 0px 100px 0px 100px;
     
   }
 
@@ -144,10 +178,16 @@ a:hover{
 
   .grid-big-news {
     grid-column: span 4;
+    display: flex;
   }
 
   .mobile-menu {
     display: none;
   }
+
+  .grid-big-news img {
+    width: 500px;
+  }
+  
 }
 
