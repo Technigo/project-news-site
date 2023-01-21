@@ -3,7 +3,9 @@
   --navbar-font-family: "Newsreader", serif;
   --logo-name-font-family: "Rubik Gemstones", cursive;
   --headings-font-family: "Rye", cursive;
+  --second-headings-font-family: "Rancho", cursive;
   --paragraph-font-family: "Newsreader", serif;
+  --review-paragraph-font-family: "Cabin", sans-serif;
   --footer-font-family: "Newsreader", serif;
   --border-color: #94b1aa;
   --primary-bg-color: #94b1aa;
@@ -29,14 +31,16 @@ h1 {
 }
 
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--headings-font-family);
   font-weight: lighter;
 }
 
 h4 {
   text-align: center;
+  font-family: var(--second-headings-font-family);
+  font-size: 32px;
+  margin: 20px 0 20px 0;
 }
 
 p {
@@ -146,7 +150,7 @@ a:hover {
 }*/
 
 .big-news-paragraph {
-  margin: 30px 0 20px 50px;
+  margin: 30px 0 20px 40px;
 }
 
 .img-big-news-div {
@@ -173,7 +177,7 @@ a:hover {
 }*/
 
 .other-news h3 {
-  margin: 30px 0 20px 50px;
+  margin: 30px 0 20px 40px;
 }
 
 .grid-parent-other-news {
@@ -181,7 +185,7 @@ a:hover {
   grid-template-columns: repeat(4, 4fr);
   /*grid-template-rows: repeat(2, 100px);*/
   gap: 10px;
-  margin: 30px 30px 20px 50px;
+  margin: 30px 40px 20px 40px;
 }
 
 /*.other-news-div {
@@ -249,7 +253,7 @@ a:hover {
 }*/
 
 .review {
-  font-family: var(--paragraph-font-family);
+  font-family: var(--review-paragraph-font-family);
   text-align: center;
 }
 
@@ -323,7 +327,6 @@ a:hover {
 
 .fa-linkedin,
 .fa-github {
-  display: flex;
   font-size: 38px;
   padding-left: 25px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
@@ -425,8 +428,26 @@ a:hover {
   background-size: 90%;
 }
 
-@media (min-width: 667px) {
-  h3 {
-    margin-top: 60px;
+/*@media (min-width: 667px) {
+  .big-news-paragraph,
+  .primary-link {
+    margin-bottom: 60px;
+    color: red;
+  }
+}*/
+
+@media (max-width: 667px) {
+  .border-container {
+    max-width: 100%;
+  }
+
+  .big-news-paragraph {
+    margin-bottom: 60px;
+    color: red;
+  }
+
+  .primary-link {
+    margin-bottom: 60px;
+    color: red;
   }
 }
