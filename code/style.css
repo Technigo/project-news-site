@@ -17,10 +17,7 @@
 }
 
 /*body {
-  background-image: url("../img/a_cat.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  margin: 0 80px;
 }*/
 
 h1 {
@@ -52,10 +49,6 @@ figure {
   max-width: 90%;
 }
 
-em {
-  display: block;
-}
-
 figcaption {
   background-color: var(--border-color);
   color: var(--primary-text-color);
@@ -65,18 +58,23 @@ figcaption {
   padding: 5px 0 5px 0;
 }
 
+figcaption em {
+  display: block;
+}
+
 .figcaption-other-news {
   background-color: var(--secondary-bg-color);
   max-width: 90%;
 }
 
 .border-container {
+  /*display: flex;*/
   border: 10px outset var(--border-color);
   background-color: var(--secondary-bg-color);
-  margin: 0 auto;
+  margin: 0 90px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  width: 90%;
+  /* max-width: 90%;*/
   max-width: fit-content;
 }
 
@@ -288,6 +286,10 @@ a:hover {
   background-clip: text;
 }
 
+.pets {
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
+}
+
 .icon-div {
   justify-content: center;
   align-items: center;
@@ -437,13 +439,23 @@ a:hover {
 }*/
 
 @media (max-width: 667px) {
+  body {
+    margin: 0 20px 0 20px;
+  }
+
+  .logo-magazine {
+    width: 100%;
+  }
+
   .border-container {
-    max-width: 100%;
+    border-color: red;
+    width: 100%;
+    margin: 0 20px 0 20px;
   }
 
   .big-news-paragraph {
-    margin-bottom: 60px;
     color: red;
+    width: 100%;
   }
 
   .primary-link {
