@@ -278,23 +278,20 @@ a:hover {
   border: 1px solid var(--border-color);
 }
 
-.fa-instagram {
+.icon-div {
   display: flex;
-  font-size: 38px;
   justify-content: center;
-  padding-left: 25px;
+  align-items: center;
+}
+
+.fa-instagram {
+  font-size: 38px;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   background-clip: text;
 }
 
 .pets {
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
-}
-
-.icon-div {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /*footer*/
