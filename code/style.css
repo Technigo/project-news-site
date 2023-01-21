@@ -11,13 +11,8 @@ body {
   text-align: left;
 }
 
-.h1 {
-  margin: 0;
-}
-
 /*Header: basic styling*/
 header {
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,52 +22,32 @@ header a {
   text-decoration: none;
 }
 
-/*company-name text styling, should be changed to logo later*/
-.company-name{
-  font-weight: bold;
-  font-size: 30px;
-  display: flex;
-}
-
-/*company-name text color*/
-.company-name a {
-  color: #88A47C;
-}
-
 /* Styling of nav-bar (only in desktop and pad)*/
 .nav-bar {
-  font-size: 20px;
-  
+  font-size: 25px;
 }
 
 /*nav-bar links styling*/
 .nav-bar a {
-  padding: 15px;
   color: black;
+  padding: 0px 18px 0px 18px;
 }
 
-a:hover{
+/*changes colours when hovering links*/
+.nav-bar a:hover{
   color: #D2001A;
   background-color: #EFEFEF;
 }
 
-.grid-big-news{
-  padding: 20px;
+.grid-item {
+  box-shadow: 3px 3px 3px #cfcfcf;
   background: white;
-}
-
-.grid-other-news{
-  padding: 20px;
-  background: white;
-}
-
-.grid-header {
-  background: white;
+  padding: 15px;
 }
 
 .grid-header img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 .big-news {
@@ -104,28 +79,39 @@ a:hover{
 
   .mobile-menu a {
     padding: 5px;
-    color:  #D2001A;
+    color:  black;
     display: block;
     font-size: 20px;
     justify-content: center;
   }
 
+  .mobile-menu a:hover{
+    color: #D2001A;
+    background-color: #EFEFEF;
+  }
+
   .grid-big-news{
-    display: flex;
+    display: block;
     flex-direction: column;
 
   }
 
   .grid-big-news img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     object-fit: cover;
+    display: block;
 
   }
 
   .big-news p {
     display: none;
   }
+
+  .grid-other-news img {
+    width: 100%;
+    object-fit: cover;
+  }
+
 }
 
 /*MEDIA QUEARY FÖR TABLET-STORLEK*/
@@ -153,8 +139,12 @@ a:hover{
 
   .grid-big-news img {
     width: 280px;
+    object-fit: cover;    
+  }
+
+  .grid-other-news img {
+    width: 100%;
     object-fit: cover;
-    
   }
 
 }
@@ -181,12 +171,22 @@ a:hover{
     display: flex;
   }
 
+  .grid-other-news {
+    display: flex;
+    flex-direction: column;
+  }
+
   .mobile-menu {
     display: none;
   }
 
   .grid-big-news img {
     width: 500px;
+  }
+
+  .grid-other-news img {
+    width: 100%;
+    object-fit: cover;
   }
   
 }
