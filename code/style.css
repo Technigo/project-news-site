@@ -50,7 +50,6 @@ figure {
 }
 
 figcaption {
-  background-color: var(--border-color);
   color: var(--primary-text-color);
   font-family: var(--review-paragraph-font-family);
   font-size: 15px;
@@ -441,14 +440,31 @@ a:hover {
     margin: 0 20px 0 20px;
   }
 
+  .other-news h3 {
+    text-align: center;
+    margin: 30px 0 30px 0;
+  }
+
   .logo-magazine {
     width: 100%;
   }
 
   .border-container {
-    border-color: red;
     width: 100%;
     margin: 0 20px 0 20px;
+  }
+
+  .grid-parent-big-news {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 100px);
+    gap: 10px;
+  }
+
+  .grid-parent-other-news {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
   }
 
   .big-news-paragraph {
@@ -456,8 +472,7 @@ a:hover {
     width: 100%;
   }
 
-  .primary-link {
-    margin-bottom: 60px;
-    color: red;
+  .other-news {
+    width: 100%;
   }
 }
