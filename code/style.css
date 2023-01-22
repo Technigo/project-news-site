@@ -157,6 +157,26 @@ a:hover {
   border-top-left-radius: 20%;
 }
 
+.video-big-news-one,
+.video-big-news-two {
+  display: flex;
+  border: var(--border-color) inset 5px;
+}
+
+.video-big-news-one {
+  height: 60%;
+  max-width: 90%;
+}
+
+.video-big-news-two {
+  max-height: 20%;
+  max-width: 50%;
+}
+
+.video-big-news-two-figcaption {
+  text-align: left;
+}
+
 .other-news h3 {
   margin: 30px 0 20px 40px;
 }

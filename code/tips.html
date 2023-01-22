@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Cabin&family=Newsreader:opsz@6..72&family=PT+Sans+Narrow&family=Rancho&family=Rubik+Gemstones&family=Rye&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/818262a977.js"
@@ -51,29 +55,277 @@
           </div>
         </div>
       </nav>
-      <section class="logo-magazine">
-        <div class="kwadrat">
-          <div class="trojkat">
-            <div class="trojkat_bg"></div>
-          </div>
+    </header>
+    <section class="logo-magazine">
+      <div class="kwadrat">
+        <div class="trojkat">
+          <div class="trojkat_bg"></div>
         </div>
-        <h1>Catz Magazine</h1>
-        <div class="kwadrat2">
-          <div class="trojkat2">
-            <div class="trojkat_bg2"></div>
+      </div>
+      <h1>Catz Magazine</h1>
+      <div class="kwadrat2">
+        <div class="trojkat2">
+          <div class="trojkat_bg2"></div>
+        </div>
+      </div>
+    </section>
+    <div class="border-container">
+      <section class="big-news">
+        <!-- The big news content -->
+        <div class="grid-parent-big-news">
+          <div class="grid-child-big-news paragraph-grid-item">
+            <div class="big-news-paragraph">
+              <h2>Crazy for Catnip</h2>
+              <h3>Why cats lose their minds over this perennial herb</h3>
+              <p>
+                So, what is catnip anyway? Catnip is one of the approximately
+                250 species in the mint family and has a leafy green appearance.
+                Nepetalactone, the essential oil in catnip, can turn even the
+                laziest couch potato into a crazy furball—if said furball
+                happens to have inherited the sensitivity to its effects. The
+                trait doesn't emerge until a cat is between three and six months
+                old; until then, a kitten will not have a response. Sensitivity
+                to this herb is hereditary—an estimated 50 percent of cats have
+                no reaction.
+              </p>
+              <h3>Smelling vs. Eating</h3>
+              <p>
+                The most intense catnip experience starts with the nose—one
+                whiff of the stuff and your cat promptly goes nuts. Researchers
+                suspect that the herb targets feline "happy" receptors in the
+                brain. When eaten, however, it tends to have the opposite effect
+                and your cat mellows out.Most cats react to catnip by rolling,
+                flipping, rubbing, and eventually zoning out. They may meow or
+                growl at the same time. Other cats become hyperactive or
+                downright aggressive, especially if you approach them. Usually
+                these sessions last about 10 minutes, after which your cat loses
+                interest. It may take as long as two hours for him to "reset"
+                and become susceptible to it again. Be mindful of overindulgence
+                though—cats are unlikely to overdose on catnip, but they can get
+                sick if they eat too much. Trust your kitty to know when they've
+                had enough.
+              </p>
+
+              <div class="primary-link">
+                <a
+                  href="https://www.humanesociety.org/resources/crazy-catnip"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Take Me to Humane Society</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid-child-big-news medium-grid-item">
+            <div class="video-big-news-div">
+              <figure>
+                <video
+                  controls
+                  class="video-big-news-one"
+                  alt="A cat smelling a tea bag wrapper and falling off the table"
+                >
+                  <source src="../video/catnip.mp4" type="video/mp4" />
+                </video>
+                <figcaption>
+                  <em>Video:</em><em> Smirre Archives</em>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="grid-child-big-news medium-grid-item">
+            <div class="video-big-news-div">
+              <figure>
+                <video
+                  controls
+                  class="video-big-news-two"
+                  alt="A cat responding meow to the question: What are your thoughts about catnip"
+                >
+                  <source src="../video/interview.mp4" type="video/mp4" />
+                </video>
+                <figcaption class="video-big-news-two-figcaption">
+                  <em>Video:</em><em> Smirre Archives</em>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
-    </header>
-
-    <section class="big-news">
-      <h2>Tips</h2>
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <section class="other-news">
+        <h3>Cats Try Out B&B:s</h3>
+        <!-- The other news  -->
+        <!-- On desktop-sized screens: four cards in a row, 
+         On tablets: two in a row, 
+        On mobile: one card on each row. -->
+        <div class="grid-parent-other-news">
+          <div class="grid-child-other-news paragraph-grid-item">
+            <div class="other-news-paragraph">
+              <h4>Bouldering</h4>
+              <div class="grid-child-other-news medium-grid-item">
+                <div class="other-news-div">
+                  <div class="card">
+                    <div>
+                      <p class="review">
+                        <q
+                          >Bouldering was so much fun, but at the same time,
+                          very scary!</q
+                        >
+                      </p>
+                      <div class="icon-div">
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                      </div>
+                    </div>
+                    <figure>
+                      <img
+                        src="../img/climbingCat.jpg"
+                        class="img-other-news-two"
+                        alt="A cat climbing"
+                      />
+                      <figcaption class="figcaption-other-news">
+                        <em>Photo:</em><em>Smirre Archives</em>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-child-other-news paragraph-grid-item">
+            <div class="other-news-paragraph">
+              <h4>Outdoor Yoga</h4>
+              <div class="grid-child-other-news medium-grid-item">
+                <div class="other-news-div">
+                  <div class="card">
+                    <div>
+                      <div>
+                        <p class="review">
+                          <q>I absolutely adore outdoor yoga!</q>
+                        </p>
+                        <div class="icon-div">
+                          <i class="material-icons pets" aria-hidden="true"
+                            >pets</i
+                          >
+                          <i class="material-icons pets" aria-hidden="true"
+                            >pets</i
+                          >
+                          <i class="material-icons pets" aria-hidden="true"
+                            >pets</i
+                          >
+                          <i class="material-icons pets" aria-hidden="true"
+                            >pets</i
+                          >
+                          <i class="material-icons pets" aria-hidden="true"
+                            >pets</i
+                          >
+                        </div>
+                      </div>
+                      <figure>
+                        <img
+                          src="../img/outoodoorYogaCat.jpg"
+                          class="img-other-news-one"
+                          alt="A cat doing yoga outdoors"
+                        />
+                        <figcaption class="figcaption-other-news">
+                          <em>Photo:</em><em>Smirre Archives</em>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-child-other-news paragraph-grid-item">
+            <div class="other-news-paragraph">
+              <h4>Power Walkin'</h4>
+              <div class="grid-child-other-news medium-grid-item">
+                <div class="other-news-div">
+                  <div class="card">
+                    <div>
+                      <p class="review">
+                        <q>Walking is nice, but no sweat!</q>
+                      </p>
+                      <div class="icon-div">
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                      </div>
+                    </div>
+                    <figure>
+                      <img
+                        src="../img/walkingCat.jpeg"
+                        class="img-other-news-three"
+                        alt="A cat walking"
+                      />
+                      <figcaption class="figcaption-other-news">
+                        <em>Photo:</em><em>Smirre Archives</em>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-child-other-news paragraph-grid-item">
+            <div class="other-news-paragraph">
+              <h4>Abs Crunchin'</h4>
+              <div class="grid-child-other-news medium-grid-item">
+                <div class="other-news-div">
+                  <div class="card">
+                    <div>
+                      <p class="review"><q>Omg, I hate crunches!</q></p>
+                      <div class="icon-div">
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                        <i class="material-icons pets" aria-hidden="true"
+                          >pets</i
+                        >
+                      </div>
+                    </div>
+                    <figure>
+                      <img
+                        src="../img/crunchingCat.jpg"
+                        class="img-other-news-four"
+                        alt="A cat doing crunches"
+                      />
+                      <figcaption class="figcaption-other-news">
+                        <em>Photo:</em><em>Smirre Archives</em>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer>
       <div class="logo-footer">
         <img src="../img/a_cat.jpg" alt="Logo, black cat" />
