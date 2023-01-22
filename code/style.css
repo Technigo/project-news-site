@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 /*Background and text color*/
 html {
@@ -11,33 +17,76 @@ body {
   text-align: left;
 }
 
-/*Header: basic styling*/
+/*Header: basic styling
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+}*/
 /*Remove decorations that make the link look like links*/
 header a {
   text-decoration: none;
 }
 
-/* Styling of nav-bar (only in desktop and pad)*/
+nav {
+  background-color: rgb(156, 156, 156);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:rgb(0, 0, 0);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+  background: yellow;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+/* Styling of nav-bar (only in desktop and pad)
 .nav-bar {
   font-size: 25px;
 }
 
-/*nav-bar links styling*/
+/*nav-bar links styling
 .nav-bar a {
   color: black;
   padding: 0px 18px 0px 18px;
 }
 
-/*changes colours when hovering links*/
+/*changes colours when hovering links
 .nav-bar a:hover{
   color: #D2001A;
   background-color: #EFEFEF;
-}
+} */
 
 .grid-item {
   box-shadow: 3px 3px 3px #cfcfcf;
@@ -63,6 +112,7 @@ header a {
     gap: 15px;
   }
 
+  /*
   .nav-bar{
     display: none;
   }
@@ -74,7 +124,6 @@ header a {
 
   .mobile-menu #myLinks{
     display: none;
-    /*width: 100vw;*/
   }
 
   .mobile-menu a {
@@ -88,6 +137,42 @@ header a {
   .mobile-menu a:hover{
     color: #D2001A;
     background-color: #EFEFEF;
+  }*/
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(156, 156, 156);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: yellow;
+    color:rgb(156, 156, 156);
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
   }
 
   .grid-big-news{
@@ -133,9 +218,9 @@ header a {
     display: flex;
   }
 
-  .mobile-menu {
+  /*.mobile-menu {
     display: none;
-  }
+  }*/
 
   .grid-big-news img {
     width: 280px;
@@ -176,9 +261,9 @@ header a {
     flex-direction: column;
   }
 
-  .mobile-menu {
+  /*.mobile-menu {
     display: none;
-  }
+  }*/
 
   .grid-big-news img {
     width: 500px;

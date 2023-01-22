@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
     
     <!-- dont forget the meta tag for responsiveness -->
@@ -17,22 +18,30 @@
           <!--HEADER-->
           <header>
 
-            <!--LOGO for Company name-->        
-            <div class="company-name">
-              <a href="x"class="active"><img src="logo.png" alt="Two police officers and car"/></a>
-            </div>
-
             <!-- NAVBAR FOR DESKTOP AND PAD -->
             <div class="nav-bar">
-                <nav>
-                  <a class="active" href="#news">News</a>
-                  <a href="#podcasts">Podcasts</a>
-                  <a href="#books">Books</a>
-                  <a href="#contact">Contact</a>
+              <nav>
+              <div class="logo">
+                <img src="logo.png" alt="Two police officers and car"/>
+              </div>
+                  <div class="openMenu">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                  <ul class="mainMenu">
+                    <li><a class="active" href="#news">News</a></li>
+                    <li><a href="#podcasts">Podcasts</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="closeMenu">
+                      <i class="fa fa-times"></i>
+                    </div>
+
+                </ul>
               </nav>           
             </div>
             
-            <!--NAVBAR FOR MOBILE-->
+            <script src="./app.js"></script>
+           <!--NAVBAR FOR MOBILE
             <div class="mobile-menu">
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">       
                 <i class="material-icons" style="font-size: 36px;">dehaze</i>
@@ -44,7 +53,8 @@
                 <a href="#contact">Contact</a>
               </div>      
             </div>
-            <!--Javascript for mobile-menu-->
+            
+           
             <script>
               function myFunction() {
                 var x = document.getElementById("myLinks");
@@ -54,48 +64,69 @@
                   x.style.display = "block";
                 }
               }
-            </script>
+            </script>-->
+
+            
+  
           </header>
         </div> 
 
+        <!--Big news div-->
         <div class="grid-item grid-big-news">
-          <img src="police-16-9.jpg" alt="Police officers making an arrest."/>
+          <img src="images/police-16-9.jpg" alt="Police officers making an arrest."/>
           <div class ="big-news">
             <article>
-              <h1>Murder solved after 15 years!</h1>
+              <h1>True crime genre attracts young people to become police officers</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Viverra mauris in aliquam sem fringilla ut morbi 
                     tincidunt augue. Cras pulvinar mattis nunc sed blandit libero 
-                    volutpat sed cras. </p>
+                    volutpat sed cras.</p>
             </article>
           </div>
         </div>
+        <!--Other news divs-->
         <div class="grid-item grid-other-news">
-          <img src="forensic-16-9.jpg" alt="Forensic technician gathering evidence."/>
-          <h3>New technique withing forensic science</h3>
+          <img src="images/forensic-16-9.jpg" alt="Forensic technician gathering evidence.">
+          <h3>Forensic technicians found new evidence in drug trafficking case</h3>
         </div>
+
         <div class="grid-item grid-other-news">
-            <img src="science-16-9.jpg" alt="Scientist working.">
-            <h3>Murder solved after 15 years!</h3>
+          <img src="images/trial-16-9.jpg" alt="Suspect and police officer.">
+          <h3>Arrest made in 23 year old murder case in New York</h3>
         </div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
-        <div class="grid-item grid-other-news">OTHER NEWS</div>
 
+        <div class="grid-item grid-other-news">
+          <img src="images/police2-16-9.jpg" alt="Police officer at demonstration.">  
+          <h3>Facebook sued for not stopping fake news in connection to violent rallies</h3>
+        </div>
 
-          
+        <div class="grid-item grid-other-news">
+          <img src="images/MFM-16-9.jpg" alt="MFM podcast hosts.">
+          <h3>My Favorite Murder voted the best true crime podcast of 2022</h3>
+        </div>
+
+        <div class="grid-item grid-other-news">
+          <img src="images/jack-16-9.jpg" alt="Illustration of Jack the Ripper victim.">
+          <h3>Historians present new theories on Jack the Ripper case</h3>
+        </div>
+
+        <div class="grid-item grid-other-news">
+          <img src="images/yellowtape-16-9.jpg" alt="Yellow tape.">
+          <h3>True crime fans obtruct police work by walking into crime scene </h3>
+        </div>
+
+        <div class="grid-item grid-other-news">
+          <img src="images/science-16-9.jpg" alt="Scientist working.">
+          <h3>Revolutionizing new technique within forensic science</h3>
+        </div>
+
+        <div class="grid-item grid-other-news">
+          <img src="images/crimecon-16-9.jpg" alt="Crimecon panel">
+          <h3>CrimeCon finally returns to Orlando after 2 years. </h3>
+        </div>
+
       </main> 
-          <section class="big-news">
-            <!-- The big news content -->
-          </section>
-
-          <section class="">
-            <!-- The other news  -->
-          </section>
       
     </div>
   </body>
