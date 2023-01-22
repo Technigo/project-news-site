@@ -4,9 +4,6 @@ The task was to build a news site that contained a header (including name of the
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-******
 I decided to use the design sketch provided by Technigo as inspiration for my news website. In the end the design did not look exactly like the sketch. I sort of changed my mind whe I was working on the website, mostly because a lot of the tecniques were new to me. I decided to make the theme of the site true crime, since it's one of my hobbies. 
 
 I started created the main structure of the website using CSS grid. I started by looking at the videos provided by Technigo, after that I started googling just in order to get some more advanced examples of the techniques thought in the videos. Inside the grids I used flexbox to structure the text and images. 
@@ -18,4 +15,4 @@ I had some trouble with the images, first on how to get them visible and then ho
 When I was building to website I had a tendency to code the HTML and CSS at the same time, which turned out to be a little problematic because it made the process a little more blurry. In hindsight I should have started with mainly the HTML and after that done the styling with CSS. But I think the reason was that I wanted to be able to see the changes that I did every step of the way and therefore I started to style the page at the same time. It's something that I will think of next time. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://thunderous-monstera-f70db4.netlify.app/ 
