@@ -8,58 +8,65 @@
     <link rel="stylesheet" href="./style.css"/>      
   </head>
 
-  <section class="grid-parent">
   <body>
-
-    <div class="grid-item-header">
-      <header>
-        <h1 class="Name-of-website">The Daily Traveller</h1>
-        <h2>Bringing You travel news from far and wide</h2>            
-        <!-- Some kind of logo and navbar -->
-      </header>
+   <section class="flex-parent">
+        <h1 class="name-of-website">The Daily Traveller</h1>
+      <div class="flex-child topnav">
+        <a href="https://www.google.com/">Home</a>
+        <a href="https://www.google.com/">Archive</a>
+        <a href="https://www.google.com/">Contact</a>             
     </div>
-    
-    <div class="big-news">
-        <h1>Vancouver Island Special!</h1> 
-        <p>This week we visit the Canadian westcoast.</p>
-        <img src="./images/sea_taxi.jpg" alt="picture of sea_taxi">
+  </section>
+     
+  <section class="grid-parent">  
+    <div class="grid-item big-news">
+        <h1 class="main-news">Vancouver Island Special!&#127809</h1>
+        <p>This week we visit the Canadian westcoast.</p> 
+        <button class="button button1">Read more</button>
+        <img src="./images/sea_taxi.jpg" alt="Sea_taxi">
     </div>
          
-      <div class="blue-box"> 
-        <h1>A day in Victoria</h1>
-        <p>Visit this gem on Vancouver Island.</p>
-        <img src="./images/Victoria.jpg" alt="Picture of Victoria">
-      </div>
+    <div class="grid-item bear">
+      <h1>Beware of the bear!</h1>
+      <p>Make sure you read this before your walk in the woods.</p>
+      <img src="./images/bear_in_water.jpg" alt="Bear_in_water">
+    </div>
 
-      <div class="yellow-box">
-        <h1>Have a whale of a time!</h1>
-        <p>When visiting the island, why not take the opportunity to see some whales.</p>
-        <img src="./images/whale_safari.jpg" alt="Picture of whalesafari">
-      </div>
+    <div class="grid-item route">
+      <h1>Scenic routes on the island</h1>
+      <p>Make sure to bring your &#128247</p>
+      <img src="./images/road.jpg" alt="Road">
+    </div>
+        
+    <div class="grid-item cafe">
+      <h1>Surely delicious</h1>
+      <p>A café that is tucked away in the forest. The cupcakes are worth the drive.</p>
+      <img src="./images/shirley_delicious.jpg" alt="Café">
+    </div>
 
-      <div class="pink-box">
-        <h1>Beware of the bear!</h1>
-        <p>Make sure you read this before your walk in the woods.</p>
-        <img src="./images/bear_in_water.jpg" alt="Picture of bear_in_water">
-      </div>
+    <div class="grid-item whale">
+      <h1>Have a whale of a time!</h1>
+      <p>When visiting the island, why not take the opportunity to see some whales.</p>
+      <img src="./images/whale_safari.jpg" alt="Whalesafari">
+    </div>
 
-      <div class="red-box">
-        <h1>Scenic routes on the island</h1>
-        <p>Make sure to bring your camera.</p>
-        <img src="./images/road.jpg" alt="Picture of road">
-      </div>
-          
-      <div class="green-box">
-        <h1>Surely delicious</h1>
-        <p>A café that is tucked away in the forest. The cupcakes are worth the drive.</p>
-        <img src="./images/shirley_delicious.jpg" alt="Picture of café">
-      </div>
+    <div class="grid-item victoria"> 
+      <h1>A day in Victoria</h1>
+      <p>&#10004 Shopping &#10004 Restaurants &#10004 Gardens</p>
+      <img src="./images/Victoria.jpg" alt="Victoria">
+    </div>
 
-      <div class="grey-box">
-        <h1>Miss the city pulse?</h1>
-        <p> Jump on the ferry and Vancouver is just two hours away.</p>
-        <img src="./images/ferry1.jpg" alt="Picture of ferry">
-      </div>
+    <div class="grid-item ferry">
+      <h1>Miss the city pulse?</h1>
+      <p> Jump on the ferry and Vancouver is just two hours away.</p>
+      <img src="./images/ferry1.jpg" alt="Ferry">
+    </div>
+
+    <style>
+      img {
+        width: 100%;
+      }
+      </style>
     </body>
   </section>
 </html>
