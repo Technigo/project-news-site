@@ -16,20 +16,30 @@ body {
   text-align: left;
 }
 
-.grid-big-news:hover {
-  opacity: 0.7;
-}
-
+/*hover effect grid-other news*/
 .grid-other-news:hover{
   opacity: 0.7;
 }
 
-nav {
-  background-color: white;
-  color: black;
+/*basic styling for all grid items, padding, box-shadow, background*/
+.grid-item {
+  box-shadow: 3px 3px 3px #cfcfcf;
+  background: white;
+  padding: 15px;
+}
+
+/*border of header*/
+.grid-header {
+  border-bottom: 7px solid #D2001A;
+}
+
+/*styling of nav-bar*/
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  color: black;
 }
 
 nav .mainMenu {
@@ -67,32 +77,19 @@ nav .mainMenu .closeMenu,
   cursor: pointer;
 }
 
-.grid-item {
-  box-shadow: 3px 3px 3px #cfcfcf;
-  background: white;
-  padding: 15px;
-}
-
+/*size of logo*/
 .logo img {
   width: 130px;
   height: 130px;
 }
 
+/*padding for big-news-div incl the article*/
 .big-news {
   padding: 15px;
 }
 
-.grid-header {
-  border-bottom: 7px solid #D2001A;
-}
-
-.footer {
-  text-align: center;
-  text-decoration: none;
-  padding: 15px;
-}
-
-h1{
+/*text styling h1, h3 and p*/
+h1 {
   padding-bottom: 10px;
   font-size: 30px;
 }
@@ -105,15 +102,23 @@ h3 {
   padding-top: 5px;
 }
 
+/*styling of footer*/
+.footer {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
 @media (max-width:667px){
+  /*styling of grids*/
   .grid-parent {
     display: grid;
     grid-template-columns: 1fr; 
     grid-template-rows: repeat(10);
     gap: 15px;
   }
-
+/*styling of mobile-menu*/
   nav .mainMenu {
     height: 100vh;
     position: fixed;
@@ -145,27 +150,25 @@ h3 {
     color: #D2001A;
     border-bottom: 3px solid #D2001A;
   }
-
-  .icons i {
-    display: inline-block;
-    padding: 12px;
-  }
-
+/*grid-big-news styling*/
   .grid-big-news{
     display: block;
     flex-direction: column;
   }
 
+/*image styling grid big news*/
   .grid-big-news img {
     width: 100%;
     object-fit: cover;
     display: block;
   }
 
+/*remove paragraph in big-news in mobile*/
   .big-news p {
     display: none;
   }
 
+/*styling image in grid-other news*/
   .grid-other-news img {
     width: 100%;
     object-fit: cover;
@@ -175,6 +178,7 @@ h3 {
 
 /*MEDIA QUEARY FÖR TABLET-STORLEK*/
 @media (min-width: 668px){
+  /*styling of the grids*/
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -190,34 +194,36 @@ h3 {
   .grid-big-news{
     grid-column: span 2;
     display: flex;
+    flex-direction: column;
   }
 
-  .grid-big-news img {
-    width: 280px;
-    object-fit: cover;    
-  }
-
+  .footer {
+    grid-column: span 2;
+  }  
+  
+/*styling images*/
   .grid-other-news img {
     width: 100%;
     object-fit: cover;
   }
 
-  .footer {
-    grid-column: span 2;
+  .grid-big-news img {
+    width: 100%;
+    object-fit: cover;    
   }
+
 }
 
 /*MEDIA QUEARY FÖR DESKTOP*/
 @media (min-width: 1024px) {
-  
+/*styling of grids*/
   .grid-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5);
     gap: 15px;
     justify-content: center;
-    padding: 0px 100px 0px 100px;
-    
+    padding: 0px 100px 0px 100px; 
   }
 
   .grid-header {
@@ -227,6 +233,7 @@ h3 {
   .grid-big-news {
     grid-column: span 4;
     display: flex;
+    flex-direction: row;
   }
 
   .grid-other-news {
@@ -234,10 +241,11 @@ h3 {
     flex-direction: column;
   }
 
-  /*.mobile-menu {
-    display: none;
-  }*/
+  .footer {
+    grid-column: span 4;
+  }
 
+/*styling of images*/
   .grid-big-news img {
     width: 500px;
   }
@@ -247,8 +255,5 @@ h3 {
     object-fit: cover;
   }
   
-  .footer {
-    grid-column: span 4;
-  }
 }
 
