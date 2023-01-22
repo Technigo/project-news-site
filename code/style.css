@@ -4,7 +4,6 @@
   padding: 0px;
 }
 
-
 /*Background and text color*/
 html {
   background: #EFEFEF;
@@ -17,20 +16,17 @@ body {
   text-align: left;
 }
 
-/*Header: basic styling
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
-/*Remove decorations that make the link look like links*/
-header a {
-  text-decoration: none;
+.grid-big-news:hover {
+  opacity: 0.7;
+}
+
+.grid-other-news:hover{
+  opacity: 0.7;
 }
 
 nav {
-  background-color: rgb(156, 156, 156);
-  color: rgb(255, 255, 255);
+  background-color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,12 +43,14 @@ nav .mainMenu li a {
   text-decoration: none;
   text-transform: uppercase;
   color:rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.2s ease;
 }
 
 nav .mainMenu li a:hover {
-  background: yellow;
+  background: #EFEFEF;
+  color: #D2001A;
+  border-bottom: 3px solid #D2001A;
 }
 
 nav .openMenu {
@@ -69,38 +67,42 @@ nav .mainMenu .closeMenu,
   cursor: pointer;
 }
 
-
-
-/* Styling of nav-bar (only in desktop and pad)
-.nav-bar {
-  font-size: 25px;
-}
-
-/*nav-bar links styling
-.nav-bar a {
-  color: black;
-  padding: 0px 18px 0px 18px;
-}
-
-/*changes colours when hovering links
-.nav-bar a:hover{
-  color: #D2001A;
-  background-color: #EFEFEF;
-} */
-
 .grid-item {
   box-shadow: 3px 3px 3px #cfcfcf;
   background: white;
   padding: 15px;
 }
 
-.grid-header img {
+.logo img {
   width: 130px;
   height: 130px;
 }
 
 .big-news {
-  padding: 10px;
+  padding: 15px;
+}
+
+.grid-header {
+  border-bottom: 7px solid #D2001A;
+}
+
+.footer {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+h1{
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h3 {
+  padding-top: 5px;
 }
 
 /*MEDIA QUERY FÖR MOBIL-STORLEK*/
@@ -112,33 +114,6 @@ nav .mainMenu .closeMenu,
     gap: 15px;
   }
 
-  /*
-  .nav-bar{
-    display: none;
-  }
-
-  .mobile-menu{
-    overflow: hidden;
-    position: relative;
-  }
-
-  .mobile-menu #myLinks{
-    display: none;
-  }
-
-  .mobile-menu a {
-    padding: 5px;
-    color:  black;
-    display: block;
-    font-size: 20px;
-    justify-content: center;
-  }
-
-  .mobile-menu a:hover{
-    color: #D2001A;
-    background-color: #EFEFEF;
-  }*/
-
   nav .mainMenu {
     height: 100vh;
     position: fixed;
@@ -149,7 +124,7 @@ nav .mainMenu .closeMenu,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:rgb(156, 156, 156);
+    background:white;
     transition: top 1s ease 0s;
     display: none;
   }
@@ -166,8 +141,9 @@ nav .mainMenu .closeMenu,
   }
 
   nav .mainMenu li a:hover {
-    background: yellow;
-    color:rgb(156, 156, 156);
+    background: #EFEFEF;
+    color: #D2001A;
+    border-bottom: 3px solid #D2001A;
   }
 
   .icons i {
@@ -178,14 +154,12 @@ nav .mainMenu .closeMenu,
   .grid-big-news{
     display: block;
     flex-direction: column;
-
   }
 
   .grid-big-news img {
     width: 100%;
     object-fit: cover;
     display: block;
-
   }
 
   .big-news p {
@@ -218,10 +192,6 @@ nav .mainMenu .closeMenu,
     display: flex;
   }
 
-  /*.mobile-menu {
-    display: none;
-  }*/
-
   .grid-big-news img {
     width: 280px;
     object-fit: cover;    
@@ -232,6 +202,9 @@ nav .mainMenu .closeMenu,
     object-fit: cover;
   }
 
+  .footer {
+    grid-column: span 2;
+  }
 }
 
 /*MEDIA QUEARY FÖR DESKTOP*/
@@ -274,5 +247,8 @@ nav .mainMenu .closeMenu,
     object-fit: cover;
   }
   
+  .footer {
+    grid-column: span 4;
+  }
 }
 
