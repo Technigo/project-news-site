@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
@@ -12,154 +13,166 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');</style>
     <link rel="stylesheet" href="./style.css" />
-
+ 
   </head>
 
   <body>
 
     <header>
 
-        <nav class="navbar">
+        <input type="checkbox" id="toggle">
 
-            <div class="logotype">
-                <img src="./images/logo3.jpg" class="logo">
-            </div>
-            
-            <div class="brand">
-                <span>Recent trends in digital design</span> 
-            </div>
-            
-           
+        <nav>
+                <div class="navbar-logo">
+                    <img src="./images/logo3.jpg" class="logo">
+                </div>
+    
+                <a class="navbar-brand" href="./index.html">
+                    Recent trends in digital design
+                </a>
+        
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    
 
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html""> Web 3.0</a></li>
-                    <li><a href="./index.html"">Emotional Design</a></li>
-                    <li><a href="./index.html"">AI</a></li>
-                    <li><a href="./index.html"">Metaverse</a></li>
+                </label>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Web 3.0</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Emotional Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Metaverse</a>
+                    </li>
                 </ul>
-            </div>
-
         </nav>
-
+     
     </header>
 
-    <main>
+   <main>
+    
+    <section class="big-news">
 
-        <section id="big-news">
+        <div class="flex-parent">
 
-            <div class="content-left">
+            <div class="flex-child-text">
+
                 <h1>The heuristics of Neurodesign</h1>
-                <p>
-                    Exactly how the mind works is still largely a mystery. 
+                <p> Exactly how the mind works is still largely a mystery. 
                     And as with most mysteries, there are clues that give resolution 
                     to the interworking of how we think. How we think involves a swarm 
                     of highly interrelated mental processes including attention, memory,
                     and thinking.
                 </p>
-                <button> <a href="./index.html""> Read more </a> </button>
+
+                <button> <a href="./index.html"> Read more </a> </button>
+
+            </div>
+
+            <div class="flex-child-picture">
+
+                <img src="./images/image1.jpg" alt="Article design" class="head-image"> 
                 
             </div>
-         
-            <div class="content-right"> 
-                 <img src="./images/image1.jpg" alt="Article design" class="head-image"> 
-            </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section id="less-news">  <!--GRID PARENT-->
+    <section class="news">
 
+        <div class="grid-parent">
 
-            <div class="grid-item"> 
-      
-                <img src="./images/image4.jpg" alt="Purple abstratc picture" class="picturearticle">
+            <div class="grid-child-1">
+
+                <div class="content-important">
+                    <img src="./images/image4.jpg" alt="Purple abstratc picture" class="article-image">
             
-                <h2><a href="./article1.html">What does Web 3.0 mean for us?</a></h2> 
-                
-                <h3>Over 30 years Tim Berners-Lee invented the World Wide Web.
+                    <h2><a href="./article1.html">What does Web 3.0 mean for us?</a></h2> 
+                </div>
+
+                <h3 class="article-intro"> Over 30 years Tim Berners-Lee invented the World Wide Web.
                   Imagine a new type of internet that not only accurately interprets what 
                   you input, but understands everything you convey,
                   voice or other media, one where all content you consume is more tailored to you.</h3> 
             
-                <p>One that gives you full privacy controls over the data you share with 
+                <p class="article-intro">One that gives you full privacy controls over the data you share with 
                    other parties, allows you to earn money if you provide it to advertisers
                    or interact with certain applications, and remains free from draconian 
                    third-party censorship.</p>
-            
+
             </div>
-              
-            <div class="grid-item">
-            
-                    <img src="./images/image3.jpg" alt="Purple abstratc picture" class="picturearticle">
+
+            <div class="grid-child-2">
+
+                <div class="content-important">
+                    <img src="./images/image3.jpg" alt="Purple abstratc picture" class="article-image">
               
                     <h2><a href="./article2.html">Spotify’s Embodiment of Emotional Design</a></h2>
-            
-                    <h3>Statistic states that as of the first quarter of 2022, Spotify had 
+                </div>
+
+                <h3 class="article-intro" >Statistic states that as of the first quarter of 2022, Spotify had 
                   182 million subscribers worldwide, up from 158 million in 2021. Spotify's subscriber base increased in the 
                   last few years and has doubled since early 2017.</h3> 
-            
-            
-                    <p>Something that stands out in particular about Spotify’s overall experience 
-                  is its focus on personalisation, which can be drawn from a practice called 
-                  Emotional Design. Spotify utilises positive emotional triggers throughout 
-                  their product to delight users based on a user’s tracks.</p> 
-            
+
+                <p class="article-intro">Something that stands out in particular about Spotify’s overall experience 
+                    is its focus on personalisation, which can be drawn from a practice called 
+                    Emotional Design. Spotify utilises positive emotional triggers throughout 
+                    their product to delight users based on a user’s tracks.</p> 
             </div>
+
+            <div class="grid-child-3">
+                <div class="content-important">
+                    <img src="./images/image2.jpg" alt="Purple abstratc picture" class="article-image">
             
-            <div class="grid-item">
-            
-                  <img src="./images/image2.jpg" alt="Purple abstratc picture" class="picturearticle">
-            
-                  <h2><a href="./article3.html">When AI can make art, what does it mean for creativity?</a></h2>
-            
-                  <h3>Image-generators such as Dall-E 2 can produce pictures on any theme you wish 
-                    for in seconds. Some creatives are alarmed but others are sceptical of the 
-                    hype.</h3> 
-            
-                  <p>The domestic proliferation of TV after World War II drew audiences away from
-                     theaters and in the process helped dismantle the old studio system. The “digital
-                      revolution” has recalibrated where, when, and how we watch, even as it has caused
-                       cinephiles to mourn the loss of celluloid. Media says that cinema is under threat.</p> 
-            
+                    <h2><a href="./article3.html">When AI can make art, what does it mean for creativity?</a></h2>
+                </div>
+               
+          
+                <h3 class="article-intro">Image-generators such as Dall-E 2 can produce pictures on any theme you wish 
+                  for in seconds. Some creatives are alarmed but others are sceptical of the 
+                  hype.</h3> 
+          
+                <p class="article-intro">The domestic proliferation of TV after World War II drew audiences away from
+                   theaters and in the process helped dismantle the old studio system. The “digital
+                    revolution” has recalibrated where, when, and how we watch, even as it has caused
+                     cinephiles to mourn the loss of celluloid. Media says that cinema is under threat.</p> 
+          
             </div>
-            
-            <div class="grid-item">
-            
-                    <img src="./images/image5.jpg" alt="Purple abstratc picture" class="picturearticle">
+
+            <div class="grid-child-4">
+                <div class="content-important">
+                    <img src="./images/image5.jpg" alt="Purple abstratc picture" class="article-image">
                     
                     <h2> <a href="./article4.html">Nike Will Design Sneakers for the Metaverse</a></h2>
-                    
-                    <h3>Swoosh members will compete to create digital kicks with the brand’s
-                       design staff and bag a royalty cut. But not even Nike knows how it’s 
-                       going to work.</h3> 
+                </div>
             
-                
-            
-                    <p>Swoosh exists on a domain named “.nike” and will be a digital space for
-                       registered members. It’s currently in beta, and registration to join opens 
-                       in May. The platform will initially focus on community building and present
-                       members with “challenges” to get a sense of what they want to see. The 
-                       brand’s first virtual collection will launch in August 2023.</p> 
-            
+                <h3 class="article-intro">Swoosh members will compete to create digital kicks with the brand’s
+                   design staff and bag a royalty cut. But not even Nike knows how it’s 
+                   going to work.</h3> 
+        
+                <p class="article-intro">Swoosh exists on a domain named “.nike” and will be a digital space for
+                   registered members. It’s currently in beta, and registration to join opens 
+                   in May. The platform will initially focus on community building and present
+                   members with “challenges” to get a sense of what they want to see. The 
+                   brand’s first virtual collection will launch in August 2023.</p>
             </div>
-        
-        </section>
+        </div>
+    </section>
 
-    </main>
+   </main>
+  </body>
 
-      
-        <footer>
-      
-            <p class="down">Website & Images by Maja Zimnoch | 2023 |  
-            <a href="mailto:majamzimnoch@gmail.com" target="_blank">Drop me a letter</a>
-            </p>
-    
-        </footer>
-
-    </body>
-
-    </html>
-
-  
-        
+</html>
