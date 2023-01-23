@@ -1,4 +1,58 @@
 html {
-  background: #0025ff;
+  background: whitesmoke;
   color: #fff;
 }
+
+img {
+  width: 600px;
+
+}
+
+.flex-parent {
+  display: flex; 
+  min-height: 100vh; 
+  flex-direction: column; 
+  border: 2px solid blue; 
+}
+
+title {
+  text-color: black;  
+}
+
+header {
+  text-color: purple; 
+  background-color: pink; 
+  font-size: 50px;
+}
+
+.header img {
+  float: left; 
+  width: 50px; 
+  height: 50px; 
+  background: #555; 
+}
+
+.header {
+  position: relative; 
+  top: 18px; 
+  left: 10px;
+ }
+
+ .topnav {
+  position:relative; 
+  top: 18px; 
+  left: 10px;
+ }
+
+
+
+ .other-news {
+  margin: 6px blue solid;  
+  Width: 150px; 
+  background-color: lightblue;
+ }
+
+ .one {
+  background-color: grey; 
+
+ }
