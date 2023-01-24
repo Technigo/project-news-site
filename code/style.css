@@ -1,4 +1,30 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  background-color:white;
+}
+.navbar {
+  width: 600px;
+  height: 40px;
+  background-color: rgba(239,199,29,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logotype {
+  max-width: 400px;
+}
+.logo {
+  
+}
+.navbar-menu{
+  color: darkslategray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.panorama {
+  max-width: 1024px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
