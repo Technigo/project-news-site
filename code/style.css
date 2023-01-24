@@ -186,7 +186,12 @@ box-shadow: 5px 5px 10px #5c5b5b;
     font-size: large;
   }
 
-.navbar,
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+}
+
 .logo-navbar {
   display: contents;
 }
