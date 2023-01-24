@@ -148,14 +148,24 @@ a:hover {
 }
 
 .img-big-news-one,
-.img-big-news-two {
+.img-big-news-two,
+.img-big-news-illustration-one {
   display: flex;
   height: 60%;
   max-width: 90%;
 }
 
+.img-big-news-one,
+.img-big-news-two {
+  border: var(--border-color) inset 5px;
+}
+
 .img-big-news-two {
   border-top-left-radius: 20%;
+}
+
+.video-big-news-div h4 {
+  text-align: center;
 }
 
 .video-big-news-one,
@@ -178,7 +188,7 @@ a:hover {
   text-align: left;
 }
 
-.other-news h3 {
+.other-news h4 {
   margin: 30px 0 20px 40px;
 }
 
