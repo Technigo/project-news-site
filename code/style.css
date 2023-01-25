@@ -145,9 +145,6 @@ a:hover {
 .img-big-news-one,
 .img-big-news-two,
 .img-big-news-illustration-one {
-  /*display: flex;*/
-  /*height: 60%;
-  max-width: 90%;*/
   width: 100%;
   height: auto;
 }
@@ -203,9 +200,8 @@ a:hover {
 }
 
 .img-other-news {
-  display: flex;
-  height: 60%;
-  max-width: 90%;
+  width: 100%;
+  height: auto;
   border-radius: 10%;
 }
 
@@ -425,7 +421,8 @@ a:hover {
   }
 
   .video-big-news-div {
-    display: flex;
+    width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
   }
