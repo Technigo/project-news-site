@@ -7,7 +7,7 @@ This site mimics a classic magazine about the best animals in the world: Cats. T
 
 ## The problem
 
- Apart from some of the examples from Technigo's videos there were also information from blogs and forums. If there would have been more time one of the pages (News & Reviews) would have been prettier on mobile. 
+ Apart from some of the examples from Technigo's videos I also found new inspiration from blogs and forums. I used parts from my previous sites and adapted that information to CSS Grid, which was new to me. If there would have been more time one of the pages (News & Reviews) would have been prettier on mobile. 
 
 ## View it live
 https://jazzy-florentine-47e1e7.netlify.app/
