@@ -10,4 +10,4 @@ This site mimics a classic magazine about the best animals in the world: Cats. T
  Apart from some of the examples from Technigo's videos there were also information from blogs and forums. If there would have been more time one of the pages (News & Reviews) would have been prettier on mobile. 
 
 ## View it live
-https://app.netlify.com/sites/jazzy-florentine-47e1e7
+https://jazzy-florentine-47e1e7.netlify.app/
