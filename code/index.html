@@ -4,53 +4,70 @@
     <meta charset="utf-8" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content width="device-width" initial-scale="1.0">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   
   <body>
+    <div class="grid-parent">
     
-  <section class="header">
+      <!--HEADER SECTION-->
+      <section class="header-flex-parent">
 
-    <div class="site-identity">
-      <img src="logonews.png" alt="My logo" />
-      <h1><a href="#">Fake News Headquarter</a></h1>
-  </div>  
-  <nav class="site-navigation">
-    <ul class="nav">
-      <a href="#">About</a>
-      <a href="#">News</a>
-      <a href="#">Contact</a>
-    </ul>
-  </nav>
+        <div class="site-identity">
+            <img class="logo" src="logonews.png" alt="My logo" />
+            <h1 class="header-name">Fake News Headquarter</h1>
+              <nav class="nav-bar">
+                <a href="#">About</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+              </nav>
+        </div>
   
-   </section>
-    
-      <!-- Some kind of logo and navbar -->
-   
-    <section class="big-news">
-      <img src="./speeding-frog.jpeg">
-      <main class="big-news-content">
-        <h2>A vicious frog was caught this afternoon </h2>
-        <p>bka bka kdksaugfdifkyagfkauyfgakudygafkagfskg</p>
-        <h1> Frog arrested for speeding</h1>
-        <p></p>
-      </main>   
-
-      <nav class="big-news-nav"></nav
+      </section>
+      <section class="big-news">    
+              <!-- The big news content -->
+              <img src="./speeding-frog.jpeg" alt="frog in car"/>
+              <h2>Frog arrested for speeding</h2>
+            <p class="big-news-article">A vicious frog was caught speeding this afternoon. Snail mother of four is furious: "We could have got killed"</p>
+          
       
-      <!-- The big news content -->
-    </section>
+      </section>
 
     <section class="other-news-parent">
-      <div class="other-news one">one</div>
-      <div class="other-news two">two</div>
-      <div class="other-news three">three</div>
-      <div class="other-news four">four</div>
-      <div class="other-news five">five</div>
-      <div class="other-news six">six</div>
-      <div class="other-news seven">seven</div>
-      <div class="other-news eight">eight</div>
+      <div class="grid-item other-news one">
+        <img src="./bulldog.jpeg" alt="bulldog" >
+        <h3>Harold just graduated from Harvard</h3>
+      </div>
+      <div class="grid-item other-news two" >
+        <img src="./chilldog.jpeg" alt="dog chilling" >
+        <h3>Lola thinks 'Netflix and chill' is overrated</h3>
+      </div>
+      <div class="grid-item other-news three" >
+        <img src="./dogmassage.jpeg" alt="dog massages other dog">
+        <h3>Connie 'has your back'</h3>
+      </div>
+      <div class="grid-item other-news four">
+        <img src="./paca.jpeg" alt="alpaca">
+        <h3> Does your head get cropped when taking selfies?</h3>
+        <p>Flaca the alpaca is here to help.</p>
+      </div>
+      <div class="grid-item other-news five">
+        <img src="./parrott.jpeg" alt="parrot">
+        <h3>Asta said her last goodbyes before taking off to Australia</h3>
+      </div>
+      <div class="grid-item other-news six">
+        <img src="./owl.jpeg" alt="owl">
+        <h3>Meet the grumpiest owl in Europe: Åke</h3>
+        </div>
+      <div class="grid-item other-news seven">
+        <img src="./puppy.jpeg"  alt="puppy">
+        <h3> Depression rates are going up</h3>
+      </div>
+      <div class="grid-item other-news eight">
+        <img src="./bird.jpeg" alt="bird">
+        <h3>Anita almost hit a tree - Now she wants to warn others</h3>
+      </div>
       
       <!-- The other news  -->
     </section>
