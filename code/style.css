@@ -1,6 +1,6 @@
 
 header{
-  background:#32cdcd;
+  background:#2db9b9;
   border: 5px solid #4d2600;
 }
 
@@ -37,7 +37,7 @@ header{
 }
 
 h1{
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #d6f5f5;
   font-size: 50px;
   margin: 0;
@@ -45,7 +45,7 @@ h1{
 }
 
 h2{
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #d6f5f5;
   font-size: 18px;
   margin: 0;
@@ -60,7 +60,7 @@ h2{
 
 ul{
   list-style-type:none;
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #d6f5f5;
   font-size: 20px;
   padding: 0;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 input[type=text] {
-  font-family: 'Amita';
+  font-family: 'Nunito';
   border: 5px solid #4d2600;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -129,7 +129,7 @@ input[type=text] {
 }
 
 h3{
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #4d2600;
   font-size: 20px;
   padding: 0;
@@ -137,7 +137,7 @@ h3{
 }
 
 p{
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #4d2600;
   margin: 5px;
   padding: 0;
@@ -149,7 +149,7 @@ button {
   padding: 8px 20px 12px 20px;
   border: none;
   background: #4d2600;
-  font-family: 'Amita';
+  font-family: 'Nunito';
   color: #fff3e6;
   font-size: 14px;
   margin: 10px;
@@ -162,8 +162,10 @@ button a {
   color:#fff3e6;
 }
 
-button a:hover {
-  color: #32cdcd;
+button:hover {
+  color: #4d2600;
+  background: #2db9b9;
+  transform: scale(1.2);
 }
 
 .other-news{
@@ -191,8 +193,40 @@ button a:hover {
 }
 
 footer{
-  background:#32cdcd;
+  background:#2db9b9;
   border: 5px solid #4d2600;
   margin-top: 10px;
-  height: 40px;
+  height: 120px;
+  
+}
+
+.contactme{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.contact-logo{
+  width: 40px;
+  opacity: .65;
+}
+
+.contact-logo:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Nunito';
+  color: #d6f5f5;
 }
