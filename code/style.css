@@ -12,7 +12,7 @@ body {
 
   text-align: right;
   list-style: none;
-  letter-spacing:2.5px;
+  letter-spacing:2px;
   padding:50px;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 #topnav ul li a {
-  color : rgb(43, 38, 43);
+  color : rgb(66, 60, 66);
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
@@ -68,21 +68,24 @@ form
 }
 
 button {
-  background-color: rgb(81, 83, 79); /* sets the background color of the button */
-  color: seashell;
+  background-color: rgba(104, 99, 99, 0.555); 
   border-radius: 7px;
   font-family: 'Courier New', Courier, monospace;
   border: none; 
   font-size: 15px; 
+  color: seashell;
 }
 
 h1 {
-  color: rgb(104, 99, 99);
+  color: seashell;
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace ;
   font-weight: lighter;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(104, 99, 99, 0.185) ;
+  letter-spacing: 8px;
 
 
 }
@@ -101,6 +104,7 @@ h2 {
   font-family: 'Courier New', Courier, monospace ;
   font-weight: lighter;
   text-align: center ;
+  padding-top: 100px;
 
 }
 
@@ -111,7 +115,7 @@ h3 {
   font-weight: lighter;
   text-align: center;
   text-decoration: underline;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 
 
@@ -136,43 +140,42 @@ h4 {
 .menu-bar {
   width: 30px; 
   height: 4px; 
-  background-color:rgba(104, 99, 99, 0.527); /* color of the bars */
-  margin: 6px 0; /* space between the bars */
+  background-color:rgba(104, 99, 99, 0.527); 
+  margin: 6px 0; 
 }
 
 .menu {
   position: absolute;
-  top: 100%; /* position below the menu icon */
-  left: 0; /* align to the left */
-  width: 100%; /* take up the full width of the container */
-  background-color: rgba(255, 255, 255, 0.123); /* background color of the menu */
-  display: none; /* hide the menu by default */
+  top: 100%; 
+  left: 0; 
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.123);
+  display: none; 
 }
 
 
 .menu ul {
-  list-style: none; /* remove bullet points */
-  padding: 0; /* remove padding */
-  margin: 0; /* remove margin */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .menu li {
-  display: block; /* display each list item as a block */
+  display: block; 
 }
 
 .menu a {
-  display: block; /* display the link as a block */
-  padding: 10px; /* add padding */
-  text-decoration: none; /* remove underline */
-  color: #000; /* text color */
+  display: block; 
+  padding: 10px; 
+  text-decoration: none; 
+  color: rgb(145, 135, 135);
 }
 
-/* Show the menu when the menu icon is clicked */
 .menu-icon:active + .menu, .menu-icon:focus + .menu {
   display: block;
 }
 
-/* Show the menu icon on smaller screens */
+
 @media screen and (max-width: 768px) {
   .menu-icon {
       display: block;
