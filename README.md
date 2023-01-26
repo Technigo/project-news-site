@@ -7,4 +7,4 @@ This project was to build a news site from scratch. It's a one page site with a 
 Wow this was not easy at all, but hey it's my first time ever coding. I found the Responsive design to be challenging. It's a bit frustrating that the site doesen't look exacly like i wanted to. 
 
 ## View it live
-https://rococo-cuchufli-df0365.netlify.app/
+https://cheery-smakager-b90270.netlify.app/
