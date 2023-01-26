@@ -19,7 +19,6 @@ nav ul {
   list-style-type: none;
   margin: 5px; 
   padding: 20px; 
-  flex-direction: wrap; 
   
 }
 nav ul li {
@@ -99,13 +98,12 @@ header .menu a {
   font-family: Rockwell, Rockwell;
 }
 .h1 :hover {
-  background-color: 00;
   color: #BC8F8F;
 }
 p {
   color: #8f8787;
-  font-size: 20px
-    font-family: Rockwell, Rockwell;
+  font-size: 15px;
+  font-family: Rockwell, Rockwell;
   text-align: center;
 }
 
@@ -142,7 +140,7 @@ p {
    
 }
 .grid .item {
-  flex-basis: 100%
+  flex-basis: 100%;
   width: 25%;
   background-color: #fff; 
   padding: 20px; 
@@ -175,7 +173,7 @@ p {
   
   .item {
     width: 50%; 
-    margin-bottom: 20;
+    margin-bottom: 20px;
   }
   .grid .item {
     flex-basis: 50%;
