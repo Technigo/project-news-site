@@ -1,0 +1,241 @@
+
+
+
+
+
+body {
+  background-color: seashell;
+  margin: 100px;
+  
+}
+#topnav ul{
+
+  text-align: right;
+  list-style: none;
+  letter-spacing:2.5px;
+  padding:50px;
+}
+
+#topnav ul li {
+  float: right;
+
+}
+
+#topnav ul li a {
+  color : rgb(43, 38, 43);
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  margin:25px;
+ 
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  letter-spacing:2.5px;
+  margin:25;
+  
+}
+
+
+
+
+nav a {
+  color : rgb(43, 38, 43);
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+
+}
+
+
+
+.menu-container {
+  display: flex;
+ 
+}
+
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: left;
+   
+}
+
+button {
+  background-color: rgb(81, 83, 79); /* sets the background color of the button */
+  color: seashell;
+  border-radius: 7px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none; 
+  font-size: 15px; 
+}
+
+h1 {
+  color: rgb(104, 99, 99);
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 50px;
+
+
+}
+
+p {
+  color: rgb(104, 99, 99);
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: lighter;
+}
+
+
+h2 {
+  color: rgb(145, 135, 135);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: lighter;
+  text-align: center ;
+
+}
+
+h3 {
+  color: rgb(145, 135, 135);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 50px;
+}
+
+
+h4 {
+  color: rgb(145, 135, 135);
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: lighter;
+  text-align: center;
+  padding: 100px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+ 
+  cursor: pointer; 
+}
+
+.menu-bar {
+  width: 30px; 
+  height: 4px; 
+  background-color:rgba(104, 99, 99, 0.527); /* color of the bars */
+  margin: 6px 0; /* space between the bars */
+}
+
+.menu {
+  position: absolute;
+  top: 100%; /* position below the menu icon */
+  left: 0; /* align to the left */
+  width: 100%; /* take up the full width of the container */
+  background-color: rgba(255, 255, 255, 0.123); /* background color of the menu */
+  display: none; /* hide the menu by default */
+}
+
+
+.menu ul {
+  list-style: none; /* remove bullet points */
+  padding: 0; /* remove padding */
+  margin: 0; /* remove margin */
+}
+
+.menu li {
+  display: block; /* display each list item as a block */
+}
+
+.menu a {
+  display: block; /* display the link as a block */
+  padding: 10px; /* add padding */
+  text-decoration: none; /* remove underline */
+  color: #000; /* text color */
+}
+
+/* Show the menu when the menu icon is clicked */
+.menu-icon:active + .menu, .menu-icon:focus + .menu {
+  display: block;
+}
+
+/* Show the menu icon on smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+  .menu {
+      display: none;
+  }
+}
+
+
+.grid-parent {
+
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 60px;
+  
+}
+
+.grid-item {
+  background-color: seashell;
+  
+}
+
+.big-grid-item {
+  grid-column: span 4;
+ 
+}
+
+#header-grid {
+  grid-column: span 4;
+
+}
+
+video {
+  height: 100%;
+  width: 100%;
+
+}
+
+img {
+
+  height: 100%;
+  width: 100%;
+}
+
+img:hover {
+  opacity: 0.3;
+ 
+}
+
+
+footer {
+    font-size: 15px;
+    color: rgb(39, 36, 34);
+    background-color: seashell;
+   text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px;
+
+}
+
+
+
+
+
+
