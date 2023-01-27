@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Project 2: The News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   
@@ -18,24 +19,13 @@
             <img class="logo" src="logonews.png" alt="My logo" />
             <h1 class="header-name">Fake News Headquarter</h1>
               <nav class="nav-bar">
-                <ul class="menu">
-                  <li class="item">
-                    <a href="https://www.google.com" target="_blank">About</a>
-                  </li>
-                  <li class="item">
-                    <a href="https://www.google.com" target="_blank">News</a>
-                  </li>
-                  <li class="item" >
-                  <a href="https://www.google.com" target="_blank">Contact</a>
-                  </li class="toggle">
-                    <span class="bars">
-                      ::before
-                      ::after
-  
-                    </span>
-                </li>
-                
-              </ul>
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                  <ul class="menu">
+                    <li><a href="https://www.google.com" target="_blank">Home</a></li>
+                    <li><a href="https://www.google.com" target="_blank">News</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Contact</a></li>
+                  </ul>
               </nav>
         </div>
   
@@ -47,8 +37,8 @@
           </div>
             <div> 
               <h2>Frog arrested for speeding</h2>
-              <p>A vicious frog was caught speeding this afternoon. Snail mother of four is furious: "We could have got killed"</p>
-              <p> It was a normal afternoon in the small town Froskeby when the speeding had the locals raising eyebrows. The driver claimed someone must have glued his foot to the gas pedal.</p>
+              <p> <b>A vicious frog was caught speeding this afternoon. Snail mother of four is furious: "We could have got killed"</b> </p>
+              <p> It was a normal afternoon in the small town Froskeby when the speeding had the locals raising eyebrows. The driver claims someone must have glued his foot to the gas pedal. The police are now investigating who might have done this. </p>
             </div> 
       </section>
 
@@ -68,7 +58,6 @@
       <div class="flex-child other-news four">
         <img src="./paca.jpeg" alt="alpaca">
         <h3> Does your head get cropped when taking selfies?</h3>
-        <p>Flaca the alpaca is here to help.</p>
       </div>
       <div class="flex-child other-news five">
         <img src="./parrott.jpeg" alt="parrot">
