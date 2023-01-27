@@ -16,6 +16,34 @@
     .other-news{
         display: block;
     }
+
+    .tnLogo {
+        height: 2.5em;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        margin-right: 50px;
+    }
+
+    .mainNavbar {
+        display: none;
+        margin-right: 12px;
+        position: absolute;
+        right: 0;
+        top: 86px;
+        background: #f1f1f1;
+    }
+
+    .mainNavbar li {
+        padding-top: 8px;
+    }
+
+    .mainNavbar li a {
+        color:black;
+    }
+
+    
 }
 
 @media screen and  (min-width: 668px) and (max-width: 1023px) { /*Tablet*/
@@ -23,8 +51,31 @@
         width: 100%;
     }
    
-     .other-news{
+    .other-news{
         grid-template-columns: 1fr 1fr;
     }
 
+    .burger {
+        display: block;
+        width: 40px;
+        margin-right: 86px;
+    }
+
+    .mainNavbar {
+        display: none;
+        margin-right: 30px;
+        position: absolute;
+        right: 0;
+        top: 86px;
+        background: #f1f1f1;
+
+    }
+
+    .mainNavbar li {
+        padding-top: 8px;
+    }
+
+    .mainNavbar li a {
+        color:black;
+    }
 }
