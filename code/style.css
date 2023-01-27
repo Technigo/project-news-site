@@ -66,7 +66,7 @@ h2 {
 h3 {
   color: #374c4d;
   font-family: Anybody;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 h4 {
@@ -90,6 +90,10 @@ span {
 
 .no-margin {
   margin: 0;
+}
+
+.little-margin {
+  margin-top: 10px;
 }
 
 .grid-parent {
@@ -147,11 +151,24 @@ span {
   .Trump {
     max-width: 70%;
     height: 100%;
+    fle-grow: 1;
+  }
+
+  .flex-parent-big-article {
+    grid-column-start: span 8;
+    display: flex;
+    justify-content: center;
+    border: 5px solid white;
   }
 
   .big-article-text {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 }
 
@@ -166,8 +183,8 @@ span {
 .flex-parent-big-article {
   grid-column-start: span 8;
   display: flex;
-  justify-content: space-between;
-  border: 10px solid white;
+  justify-content: center;
+  border: 5px solid white;
 }
 
 .big-article-text {
