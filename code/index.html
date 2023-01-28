@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visit Öland</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
@@ -11,12 +12,17 @@
       <nav class="header1">
         <div class="logotype"><img src="./Images/Visit öland.png" alt="Logotype Visit Öland"></div>
         <div class="navbar">  
-            <ul>
-            <li><a href="./index.html">home</a></li>
-            <li><a href="./index.html">about</a></li>
-            <li><a href="mailto:sofia.gerdmar@gmail.com">contact</a></li>
-            </ul> 
+          <ul>
+            <li><a class="lank" href="./index.html">home</a></li>
+            <li><a class="lank" href="./index.html">about</a></li>
+            <li><a class="lank" href="mailto:sofia.gerdmar@gmail.com">contact</a></li>
+          </ul> 
+          <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
+        </div>        
       </nav>
     </header>
     <section class="main">    
@@ -27,24 +33,28 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisl et neque cursus, vel scelerisque lacus mattis. Sed rhoncus tempor interdum. Fusce mattis sem eget nisi lacinia condimentum. Mauris magna purus, gravida non tincidunt in, facilisis eu metus. Nulla at enim dictum, pretium arcu et, ultricies turpis. Ut metus eros, vehicula at leo eget, volutpat laoreet turpis. Morbi ut mollis mi.</p>
     <p>Donec sollicitudin neque tortor, eu auctor odio rhoncus et. In hac habitasse platea dictumst. Vestibulum molestie neque ligula, sit amet sodales dolor finibus quis. Nam nec dolor vehicula, gravida quam id, condimentum quam. Cras scelerisque sem eget libero dictum pharetra. Nunc sit amet turpis nisl. Sed volutpat tortor vitae dui tincidunt, in ullamcorper velit vulputate. Vestibulum ornare id lectus eget dapibus.</p>
     </section>
-
     <section class="squares">
       <!-- The other news  -->
       <div class="small-news">
         <h2>sightseeing</h2>
-        <img src="https://picsum.photos/id/442/200/200" alt="Picture of map"></div>
+        <a class="img-link" href="./index.html">
+        <img src="https://picsum.photos/id/442/200/200" alt="Picture of map"></a></div>
       <div class="small-news">
         <h2>dining</h2>
-        <img src="https://picsum.photos/id/30/200/200" alt="Picture of coffee cup"></div>
+        <a class="img-link" href="./index.html">
+        <img src="https://picsum.photos/id/30/200/200" alt="Picture of coffee cup"></a></div>
       <div class="small-news">
         <h2>beaches</h2>
-        <img src="https://picsum.photos/id/640/200/200" alt="Picture of beach"></div>
+        <a class="img-link" href="./index.html">
+        <img src="https://picsum.photos/id/640/200/200" alt="Picture of beach"></a></div>
       <div class="small-news">
         <h2>nature</h2>
-        <img src="https://picsum.photos/id/112/200/200" alt="Picture of wheatfield"></div>
+        <a class="img-link" href="./index.html">
+        <img src="https://picsum.photos/id/112/200/200" alt="Picture of wheatfield"></a></div>
     </section>
     <footer>
       <img class="logo" src="./Images/logo.svg" alt="Logo Technigo">
+      <h3>Created by Sofia Gerdmar, Technigo Web Development Bootcamp Spring '23</h3>
     </footer>
     </section>
 </body>

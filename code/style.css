@@ -21,13 +21,27 @@ body {
   align-items: center;
   border-radius: 5px 15px;
 }
- ul {
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 20px;
+  width: 20px;
+}
+.line {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 4px;
+  background: rgba(239,199,29,0.6);
+}  
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
  }
-a {
+a.lank:link {
   text-decoration: none;
   color: #181404;
   font-family: helvetica, sans-serif;
@@ -39,7 +53,10 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-a:hover {
+a.lank:visited {
+  color: #181404;
+}
+a.lank:hover {
   display: inline-block;
   background-color: rgba(239,199,29,0.3);
   border-radius: 5px 15px;
@@ -98,15 +115,25 @@ h2 {
   margin-bottom: 0px;
 }
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color:  #fbf3d3;
-  border-radius: 15px 5px;
+  border-radius: 5px 15px;
   height: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
 .logo {
+  display: flex;
   height: 40px;
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+h3 {
+  display: flex;
+  font-size: 14px;
+  margin-right: 10px;
 }
