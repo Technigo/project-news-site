@@ -61,6 +61,17 @@ figcaption em {
   max-width: 90%;
 }
 
+.figcaption-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 5px;
+  background: var(--primary-bg-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-text-color);
+  text-decoration: underline;
+  text-align: center;
+}
+
 .border-container {
   border: 10px outset var(--border-color);
   background-color: var(--secondary-bg-color);
@@ -178,10 +189,6 @@ a:hover {
   text-align: center;
 }
 
-.video-big-news-two-figcaption a {
-  text-decoration: underline;
-}
-
 .other-news h4 {
   margin: 30px 0 20px 40px;
 }
@@ -216,7 +223,6 @@ a:hover {
   border-radius: 4px;
   padding: 20px 15px;
   margin: 5px;
-  text-transform: capitalize;
   background: var(--primary-bg-color);
   box-shadow: var(--box-shadow);
   color: var(--primary-text-color);
