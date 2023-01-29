@@ -133,45 +133,6 @@ span {
   z-index: 1;
 }
 
-@media (max-width: 1024px) {
-  .nav-items-desktop {
-    display: none;
-  }
-
-  .big-article-text-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav-items-mobile {
-    display: none;
-  }
-
-  .Trump {
-    max-width: 70%;
-    height: 100%;
-    fle-grow: 1;
-  }
-
-  .flex-parent-big-article {
-    grid-column-start: span 8;
-    display: flex;
-    justify-content: center;
-    border: 5px solid white;
-  }
-
-  .big-article-text {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  h3 {
-    font-size: 15px;
-  }
-}
-
 .flex-parent-header {
   grid-column-start: span 8;
   display: flex;
@@ -183,19 +144,21 @@ span {
 .flex-parent-big-article {
   grid-column-start: span 8;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
   border: 5px solid white;
+  overflow-y: scroll;
 }
 
 .big-article-text {
   margin: 10px;
   width: 50%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .big-article-picture {
   object-fit: cover;
-  height: 100%;
+  max-height: 100%;
   max-width: 100%;
   border-radius: 5px;
 }
@@ -236,7 +199,54 @@ span {
   height: 300px;
   border-radius: 10px;
   border: 10px solid white;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+@media (min-width: 1024px) {
+  .nav-items-mobile {
+    display: none;
+  }
+
+  .flex-parent-big-article {
+    grid-column-start: span 8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 5px solid white;
+  }
+
+  .big-article-picture {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .trump {
+    max-width: 70%;
+    height: 100%;
+    flex-grow: 1;
+  }
+
+  .big-article-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-items-desktop {
+    display: none;
+  }
+
+  .big-article-text-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
