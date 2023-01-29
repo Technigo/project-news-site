@@ -1,4 +1,259 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #0000FF;
+  height: 100%;
+}
+
+/*START Mobile design*/
+
+.grid-container {
+  display: grid;
+  width: auto;
+  background-color: #FFFF00;
+  grid-template: 20px 130px 39px 1fr / auto;
+  grid-template-areas: 
+  "ticker"
+  "header"
+  "icon-bar"
+  "big-news"
+  "news-card"
+  "footer"
+}
+
+.ticker {
+  grid-area: ticker;
+  overflow: hidden;
+  background: #228B22;
+}
+
+.ticker-animation { 
+  display: flex;
+  height: 35px;
+}
+
+.ticker-item {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: gold;
+
+}
+ 
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-200%, 0, 0); }
+}
+.ticker-animation { animation: tickerh linear 15s infinite; }
+.ticker-animation:hover { animation-play-state: paused; }
+
+header {
+  display: flex;
+  grid-area: header;
+  background-color:#FFFF00;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #191970;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+i.iconoir-sun-light::before {
+  content: " ";
+  display: block;
+  background: currentColor;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  width: 2em;
+  height: 2em;
+}
+
+.icon-bar {
+  grid-area: icon-bar;
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  background-color:#0000FF;
+  overflow: auto;
+}
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  color: white;
+}
+
+.big-news {
+  display: flex;
+  flex-direction: column;
+  background-color: #1E90FF;
+  border: 1px solid black;
+  grid-area: big-news;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(34, 34, 39, 0.6) 0px 7px 29px 0px;
+}
+
+.big-news-image {
+  margin: 5px auto 2px auto;
+  max-width: 90%;
+  object-fit: cover;
+  border: 2px solid black;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-news p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  color: black;
+
+}
+
+h4 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFF00;
+  display: inline;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 5px auto auto auto;
+  text-decoration: underline;
+
+}
+
+h2 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+  display: inline;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1px;
+  margin-bottom: 4px;
+}
+
+.big-news button {
+  background-color:#FFFF00;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.big-news a {
+  color: black;
+}
+
+.news-card-image {
+  margin: 10px auto;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #228B22;
+  border: 1px solid black;
+  grid-area: news-card;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  display: inline;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1px;
+  margin-bottom: 4px;
+}
+
+.news-card p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.news-card a{
+  color: orangered;
+}
+
+.news-card button{
+  background-color: gold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  grid-area: footer;
+  background-color:#1E90FF;
+  margin-top: 10px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.footer h3 {
+  color: white;
+}
+
+.footer p {
+  color: black;
+}
+
+.footer button{
+  margin-top: 5px;
+  background-color:#0000FF;
+  color:#FFFF00;
+}
+
+/*END Mobile design*/
+/*START Tablet design*/
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  
+}
+
+/*END Tablet design*/
+/*START Desktop design*/
+
+@media (min-width: 1025px) {
+
 }
