@@ -144,7 +144,7 @@ span {
 .flex-parent-big-article {
   grid-column-start: span 8;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   border: 5px solid white;
   overflow-y: scroll;
@@ -152,14 +152,14 @@ span {
 
 .big-article-text {
   margin: 10px;
-  width: 50%;
+  width: 100%;
   overflow-y: scroll;
 }
 
-.big-article-picture {
-  object-fit: cover;
-  max-height: 100%;
-  max-width: 100%;
+.big-article-image {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -210,28 +210,26 @@ span {
   .flex-parent-big-article {
     grid-column-start: span 8;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-evenly;
     border: 5px solid white;
   }
 
-  .big-article-picture {
-    object-fit: cover;
+  .big-article-image {
+    object-fit: fill;
     height: 100%;
-    max-width: 100%;
-    border-radius: 5px;
+    width: 100%;
   }
 
   .trump {
-    max-width: 70%;
     height: 100%;
-    flex-grow: 1;
+    width: 100%;
   }
 
   .big-article-text {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    width: 100%;
   }
 
   h3 {
