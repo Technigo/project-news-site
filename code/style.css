@@ -1,4 +1,54 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #7d8de9;
+  color: #000000;
+}
+
+.header {
+
+  text-align: center;
+}
+
+.big-news {
+justify-content: center;
+}
+
+.news {
+
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  border: 10px solid rgb(17, 61, 25);
+  padding: 20px;
+}
+
+
+.flex-container {
+  justify-content: center;
+display: flex;
+flex-wrap: wrap;
+background-color: darkorchid;
+margin: 20px;
+
+
+}
+
+.flex-container > div {
+
+  background-color: lightgray;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024) {
+  .flex-container {
+  flex-direction: row;
+  }
 }
