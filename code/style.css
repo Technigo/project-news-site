@@ -37,7 +37,7 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 15%;
+  margin: 0 auto;
   width: 70%;
   font-family: Optima, sans-serif;
   color: black;
@@ -88,19 +88,25 @@ h4 {
 
 .newsbox{
   box-shadow: 5px 5px 5px gray;
-  margin: 20px;
-  width: 20%;
-  height: 10%;
   border-radius: 10px;
+  padding: 15px;
 }
 
+/* Saving this for learning flexbox
 .smallnews{
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-between;
   padding-top: 10px;
-}
+} */
+
+.smallnews{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 40px 60px;
+} 
 
 footer {
   font-size: 14px;
@@ -110,9 +116,8 @@ footer {
   border-top: solid 1px;
   margin-top: 5px;
   padding-top: 10px;
-  width: 50%;
-  margin-left: 25%;
-
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 667px) {
@@ -121,18 +126,14 @@ footer {
       flex-direction: row;
       font-size: 10px;
     }
+    .breaking-news {
+      flex-direction: column;
+    }
     .breaking-news-text {
       font-size: 15px;
     }
     .smallnews{
-      align-items: center;
-      flex-direction: column;
-    }
-    .newsbox {
-      width:70%;
-    }
-    footer{
-      white-space: nowrap;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -150,12 +151,13 @@ footer {
   .breaking-news-text {
     font-size: 15px;
   }
+  .smallnews{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 20px;
+  }
   .newsbox {
-    width:40%;
     flex-direction: row;
     justify-content: space-between;
-  }
-  footer{
-    white-space: nowrap;
   }
 }
