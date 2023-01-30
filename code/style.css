@@ -169,6 +169,20 @@ span {
   object-fit: cover;
 }
 
+.small-grid-item img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.small-grid-item img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
 .header-title {
   background: #e4eded;
 }
