@@ -55,7 +55,7 @@ h1 h2 h3 {
 
 .menu {
   display: flex;
-  font-size: 30px;
+  font-size: 1vw;
   gap: 1em;
 }
 
@@ -115,6 +115,19 @@ h1 h2 h3 {
   display: none;
   font-size: 30px;
   user-select: none;
+}
+
+
+#searchbar{
+  width: 100%;
+  max-width: 300px;
+  size:1vw;
+}
+
+@media (min-width: 1025px) and (max-width: 1075px) {
+  #searchbar{
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -444,7 +457,7 @@ h1 h2 h3 {
 
   .big-news-image {
     width: 100%;
-    height: 300px;
+    height: 250px;
     grid-column:1/2;    
   }
 
