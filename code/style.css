@@ -134,23 +134,23 @@ p {
 /* Grid styles */
 .grid {
   display: grid; 
-  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 5px;
+  margin: 0 auto;
   
    
 }
 .grid .item {
-  flex-basis: 100%;
   width: 25%;
   background-color: #fff; 
-  padding: 20px; 
+  padding: 5px; 
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
   margin: 20px;
-  margin-top: 40px;
-  max-width: 350px;
-  min-width: 350px;
+  max-width: 300px;
+  min-width: 300px;
   justify-content: center;
   
   
