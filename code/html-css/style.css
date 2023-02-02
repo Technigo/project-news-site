@@ -1,30 +1,28 @@
-/* generell styling (for mobile < 667px) */ 
+/* generell styling (for mobile < 667px) */
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #8675A9; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #8675a9;
   font-size: 100%;
-  margin: 20px;
+  margin: 0px;
 }
 
 /* HERO SECTION FOR MOBILE */
 
 .container-hero {
-  background-color: #EDDFEF;
-  size: 100%;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(218, 9, 204, 0.5)),
+    url("/project-news-site/code/heroimage.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px solid black;
 }
-
 
 h1 {
   color: black;
-  font-family:fantasy;
-  
+  font-family: fantasy;
 }
 
 .logo {
@@ -40,40 +38,45 @@ h1 {
   background: black;
   display: block;
   margin-bottom: 5px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu {
-  padding-top: 10px;
+  padding-bottom: 10px;
   color: black;
 }
 
+.hamburger-container {
+  border: 3px solid red;
+
+  padding: 10px;
+  text-align: center;
+}
 .navbar {
-    display: none; 
+  display: none;
 }
 
 li a {
   font-size: 20px;
   margin: 20px;
-  padding: 20px; 
-  
+  padding: 20px;
 }
-
-
 
 /* BIG NEWS SECTION MOBILE*/
 
 .big-mama-news {
-    display: block;
-    background-color: rgb(190, 202, 236);
-    size: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  display: block;
+  background-color: rgb(190, 202, 236);
+  size: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .big-news-text {
- margin-right: 20px;
- padding: 20px;
-
+  margin-right: 20px;
+  padding: 20px;
 }
 
 img {
@@ -92,7 +95,7 @@ img {
   /* 1 cols, evenly sized */
   gap: 4px;
   /* gap is the space between the items */
-  background-color:#B7B6C1;
+  background-color: #b7b6c1;
 }
 
 .small-news-gridkid {
@@ -109,143 +112,130 @@ img {
 /* STYLING FOR TABLET (668 > 1024px) */
 
 @media (min-width: 668px) and (max-width: 1024px) {
- 
   /* HERO SECTION TABLET*/
 
-.container-hero {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
+  .container-hero {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 
-/* sorry for the h1 and logo-soulution, I know this is not a great way of postisioning elements but i just cant seem to find out how to target these elements in another way rigth now */
-    .navbar {
-      padding-left: 100px;
-      display: flex;
-      flex-direction: row;
-     
-    }
-    
-    h1 {
-      margin-left: 100px;
-    }
-  
-    .logo {
-      margin-left: 50px;
-    }
+  /* sorry for the h1 and logo-soulution, I know this is not a great way of postisioning elements but i just cant seem to find out how to target these elements in another way rigth now */
+  .navbar {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+  }
 
-     .hamburger {
-       display: none;
-     }
-  
-     .menu {
-       display: none;
-     }
+  h1 {
+    margin-left: 100px;
+  }
 
-        a {
-          text-decoration: none;
-          color: black;
-      
-        }
-    
-        li {
-          list-style: none; 
-          color: black;
-        }
-       
-     /* BIG NEWS SECTION TABLET */
+  .logo {
+    margin-left: 50px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  li {
+    list-style: none;
+    color: black;
+  }
+
+  /* BIG NEWS SECTION TABLET */
 
   .big-mama-news {
     display: flex;
   }
 
-    /* SMALL NEWS SECTION TABLET*/
-      
-   .small-mama-news-container {
-      grid-template-columns: 1fr 1fr;
-      /* 2 cols, evenly sized */ 
-    }
+  /* SMALL NEWS SECTION TABLET*/
+
+  .small-mama-news-container {
+    grid-template-columns: 1fr 1fr;
+    /* 2 cols, evenly sized */
+  }
 
   .big-news-img {
     size: 500px;
   }
-
 }
-  
+
 /* STYLING FOR DESKTOP (1024px or larger ) */
 
 @media (min-width: 1025px) {
+  /* HERO SECTION FOR DESKTOP */
 
+  .logo {
+    margin-left: 20px;
+  }
+  .container-hero {
+    margin: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar {
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+  }
 
-/* HERO SECTION FOR DESKTOP */
+  .hamburger {
+    display: none;
+  }
 
-.logo {
-  margin-left: 20px;
-}
-.container-hero {
-  margin: 20px;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.navbar {
-  padding: 10px;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
- 
-}
+  .menu {
+    display: none;
+  }
 
-.hamburger {
-  display: none;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-.menu {
-  display: none;
-}
+  li {
+    list-style: none;
+  }
 
-a {
-  text-decoration: none;
-  color: black;
-  
- 
-  
-}
+  /* BIG-NEWS SECTION DESKTOP */
 
-li {
-  list-style: none; 
- 
-}
+  .big-mama-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/* BIG-NEWS SECTION DESKTOP */ 
+  .big-news-img {
+    max-width: 400px;
+  }
 
-.big-mama-news {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+  .big-news-text {
+    font-size: 100%;
+  }
 
-.big-news-img {
-  max-width: 400px;
-}
+  /* SMALL-NEWS SECTION FOR DESKTOP */
 
-.big-news-text {
-  font-size: 100%;
-}
-
-/* SMALL-NEWS SECTION FOR DESKTOP */
-
-.small-mama-news-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* 4 cols, evenly sized */
-  padding: 20px;
-}
-.small-news-gridkid {
-  max-width: 200px;
-
-}
-
+  .small-mama-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 4 cols, evenly sized */
+    padding: 20px;
+  }
+  .small-news-gridkid {
+    max-width: 200px;
+  }
 }
