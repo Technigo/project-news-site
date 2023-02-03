@@ -20,6 +20,10 @@ body {
   border: 2px solid black;
 }
 
+.herotext-logo {
+  display: flex;
+}
+
 h1 {
   color: black;
   font-family: fantasy;
@@ -112,26 +116,14 @@ img {
 @media (min-width: 668px) and (max-width: 1024px) {
   /* HERO SECTION TABLET*/
 
-  .container-hero {
-    width: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
   /* sorry for the h1 and logo-soulution, I know this is not a great way of postisioning elements but i just cant seem to find out how to target these elements in another way rigth now */
   .navbar {
-    padding-left: 100px;
-    display: flex;
     flex-direction: row;
+    display: flex;
   }
 
   h1 {
-    margin-left: 100px;
-  }
-
-  .logo {
-    margin-left: 50px;
+    text-align: center;
   }
 
   .hamburger {
@@ -150,6 +142,8 @@ img {
   li {
     list-style: none;
     color: black;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* BIG NEWS SECTION TABLET */
