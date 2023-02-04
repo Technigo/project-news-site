@@ -1,214 +1,174 @@
+
 html {
-  background: #fffffff5;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
-  font-family: arial;
 }
 
-@media (min-width: 667px) and (max-width:1024px) {
-  body {
-    flex-direction: row;
-    flex-wrap:wrap;
-  }
-
-  img {
-    width: 40%;
-  }
-
+body {
+  background: rgb(243, 241, 255);
+  margin: 30px 50px;
+  align-items: 1,4rem;
 }
 
-@media (min-width: 1025px) {
-  body {
-    flex-direction: row;
-}
-
-  img {
-    width: 40%
-}
-
-
-}
-
-.navbar a {
-  grid-area: auto;
-  float: right;
-  color:lightcoral;
-  text-align: center;
-  padding: 14px 16px;
+.btn {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px;
   text-decoration: none;
-  font-size: 18px;
-  font-family:Arial, Helvetica, sans-serif
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(223, 169, 178);
 }
 
-.navbar {
-display: row;
-grid-template-columns: 2;
+.btn:hover {
+  background-color: rgb(233, 198, 121);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-decoration: none;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(223, 169, 178);
 }
 
-
-  .navbar a:hover {
-    background-color: #fcbae3;
-    color: black;
-    border-radius: 25px;
-    border: 2px solid rgb(232, 187, 103);
-  }
-
-  .navbar a.active {
-    background-color: rgb(232, 187, 103);
-    color: black;
-    border-radius: 25px;
-    border: 2px solid lightcoral;
-  }
-
-  .logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 70px;
-    height: 70px;
-  }
-
-  .sitename {
-    width: 200px;
-  }
-
-
-.big-news {
-  margin: 10px;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  padding: 30px;
-  flex-wrap: wrap;
-  overflow: auto;
+img {
+max-width: 100%;
+border-radius: 30px;
+display: flex;
 }
 
-  .Manne {
-    display: block;
-    width: 400px;
-    margin: 5px;
-    background: rgb(255, 255, 255);
-    
-  }
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
 
-  .news-text {
-    margin: 50px;
-    width: 650px;
-    height: 350px;
-    background: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 20px;
-  }
+.nav-bar ul {
+display: grid;
+grid-gap: 20px;
+padding: 0;
+list-style: none;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-  .news-text a {
-    float: center;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#ffffff;
-    color: lightcoral;
-    border-radius: 25px;
-    border: 2px solid rgb(232, 187, 103);
-  }
-
-  
-
-.Other-news {
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  flex-wrap: wrap;
+.nav-bar a {
+  background: rgb(233, 198, 121);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
   text-align: center;
-  vertical-align: top;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px rgb(163, 138, 84) ;
+  border-radius: 10px;
 }
 
-  .one {
-    flex-direction: column;
-    margin: auto;
-    width: 350px;
-    height: 300px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-bar a:hover {
+  background: rgb(235, 225, 181);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: 5px;
+}
+
+#logo {
+  display: grid;
+  margin: 15px; 
+  float: right;
+  height: 60px; 
+  width: 70px;
+}
+
+.top-container {
+  display: flex;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.showcase {
+  min-height: 400px;
+  background: pink;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 2px 2px rgb(167, 164, 190);
+  border-radius: 5%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: rgb(138, 184, 199);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+}
+
+.nav-bar h2 {
+  font-size: 35px;
+  margin-top: 0;
+  color: white;
+  text-shadow: 2px 2px rgb(167, 164, 190);
+}
+
+.top-box {
+  display: grid;
+  align-items: center;
+  padding: 1,5rem;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box {
+  background: pink;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-radius: 5%;
+  box-shadow: 2px 2px rgb(167, 164, 190);
+}
+
+footer {
+  font-style: arial;
+  font-size: small;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+@media (max-width:767px) {
+  .top-container {
+   grid-template-columns: 1fr;
   }
 
-    .Knit {
-      width: 50%;
-    }
-
-  .two {
-    flex-direction: column;
-    margin: auto;
-    width: 350px;
-    height: 300px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .nav-bar ul {
+    grid-template-columns: 1fr;
   }
 
-    .books {
-      width: 50%;
-    }
-
-  .three {
-    flex-direction: column;
-    margin: auto;
-    width: 350px;
-    height: 300px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .boxes {
+    grid-template-columns: 1fr;
   }
+}
 
-    .plants {
-      width: 50%
-    }
-
-  .four {
-    flex-direction: column;
-    margin: auto;
-    width: 350px;
-    height: 300px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-    .pasta {
-      width: 50%
-    }
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
-
-
-  h2 {
-    height: 80px;
-    width: 500px;
-    display: block;
-    font-family: arial;
-  }
-
-  p {
-    height: 100px;
-    width: 500px;
-    display: block;
-    padding: 10 px 20px;
-    font-family: arial;
+@media (min-width:768px) and (max-width:1023px) {
+  .top-container {
+    grid-template-columns: 1fr 1fr;
   }
   
+  .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
   
-
-
-
- 
+}
