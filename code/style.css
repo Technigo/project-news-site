@@ -37,12 +37,24 @@ ul {
     width: 100%;
 }
 
+.title-headline{
+padding: 10px;
+}
+
 /* Logo */
 .logo {
     display: inline-block;
     color: var(--white);
-    font-size: 60px;
+    /* font-size: 60px; */
     margin-left: 10px;
+   
+      font-size: 8vw;
+    
+}
+
+#header-wrapper {
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Nav menu */
@@ -79,6 +91,7 @@ ul {
 
 .nav {
   max-height: 0;
+  top: 20vh;
   transition: max-height .5s ease-out;
 }
 
@@ -144,42 +157,6 @@ ul {
 
 /* Responsiveness */
 
-@media (max-width: 400px) {
-  .flex-grid,
-  .flex-grid-thirds
-    display: block;
-  }
-    .col {
-      width: 100%;
-      margin: 0 0 10px 0;
-}
-
-@media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-
-    }
-
-    .menu li {
-        float: left;
-    }
-
-    .menu a:hover {
-        background-color: transparent;
-        color: var(--grey);
-        
-    }
-    
-    .hamb {
-        display: none;
-    }
-
-}
 
 html {
   background: #0026ff56;
@@ -353,31 +330,40 @@ body {
 .big-news {
   display: grid;
   border: solid red;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto); */
   gap: 10px;
   font-weight: 700;
+  padding: 40px;
+  margin: 10px;
+  flex-wrap: row;
 }
 
 .big-news-headline {
+  
   font-size: 24px;
-  grid-column: 1 / 4;
+ 
   padding: 10px;
 }
 
 .big-news-media {
-  grid-column: 1 / 3;
-  margin: 20px;
+ 
+  padding: 10px;
 }
 
-.big-news-item {
-  grid-column: 3 / 5;
+.big-news-img{
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.big-news-newsflash {
+  
+
+/* .big-news-newsflash {
   background-color: #63666a;
   border: solid red;
-}
+} */
 
 .big-news-button {
   background-color: #f32308ad; /* red */
@@ -403,3 +389,145 @@ body {
   margin: 5px;
 }
 
+/* MEDIA */
+
+/* 
+@media (max-width: 400px) {
+  .flex-grid,
+    .flex-grid-thirds{display: block;}
+  }
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+}
+
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--grey);
+        
+    }
+    
+    .hamb {
+        display: none;
+    }
+
+} */
+
+@media (max-width: 375px) {
+  body{
+    background-color: blue;
+  }
+  /* .logo{
+    font-size: 5vw;
+  } */
+  .big-news {
+    padding: 10px;
+    }
+  
+  .flex-grid,
+    .flex-grid-thirds{display: block;}
+  }
+    .col {
+      width: 100%;
+      margin: 0 0 5px 0;
+}
+
+@media (min-width: 910px) {
+  body{
+    background-color: #00c389;
+  }
+  .big-news {
+    display: grid;
+    border: solid red;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    font-weight: 700;
+    padding: 40px;
+    margin: 10px;
+  }
+  .logo{
+    font-size: 60px;
+  }
+  .header{
+    padding-bottom: 10px;
+  }
+  
+  .big-news-headline {
+    
+    font-size: 24px;
+    grid-column: 1 / 4;
+    padding: 10px;
+  }
+  
+  .big-news-media {
+    grid-column: 1 / 3;
+    padding: 10px;
+  }
+  
+  .big-news-img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .big-news-item {
+    grid-column: 3 / 5;
+  }
+
+  
+  .big-news-button {
+    background-color: #f32308ad; /* red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .hamb {
+    display: none;
+  }
+
+
+.nav{
+  max-height: none;
+  top: 0;
+  position: relative;
+  float: right;
+  width: fit-content;
+  background-color: transparent;
+
+}
+
+.menu li {
+  float: left;
+}
+
+.menu a:hover {
+  background-color: transparent;
+  color: var(--grey);
+  
+}
+
+  
+}
