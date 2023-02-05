@@ -3,37 +3,34 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #8675a9;
-  font-size: 100%;
   margin: 0px;
 }
 
 /* HERO SECTION FOR MOBILE */
 
 .container-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(218, 9, 204, 0.5)),
-    url("/project-news-site/code/heroimage.jpg");
-  height: 400px;
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(194, 9, 218, 0.3)),
+    url("/project-news-site/code/unicorndog.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 300px;
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
   border: 2px solid black;
 }
 
-.herotext-logo {
-  display: flex;
-}
-
-h1 {
-  color: black;
+.herotext {
+  color: rgb(0, 0, 0);
   font-family: fantasy;
+  font-size: 7vw;
 }
 
 .logo {
-  width: 60px;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
+  width: 20vw;
+  object-fit: contain;
 }
 
 .hamburger {
@@ -85,7 +82,7 @@ img {
   max-width: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover; /* att den cropas istället för att sizas upp/ner */
-  object-position: 70% 30%; /* för att bilderna ska cropas så att allt hänger med */
+  object-position: 30% 70%; /* för att bilderna ska cropas så att allt hänger med */
   padding: 10px;
   margin: 10px;
 }
@@ -117,13 +114,38 @@ img {
   /* HERO SECTION TABLET*/
 
   /* sorry for the h1 and logo-soulution, I know this is not a great way of postisioning elements but i just cant seem to find out how to target these elements in another way rigth now */
+  .container-hero {
+    height: 400px;
+    display: flex;
+    position: relative;
+  }
+
   .navbar {
     flex-direction: row;
     display: flex;
+    background-color: antiquewhite;
+    border-radius: 50px 20px;
+    padding: 10px;
+    margin-top: auto;
+  }
+  nav {
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-right: 30px;
   }
 
-  h1 {
-    text-align: center;
+  .herotext {
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  li {
+    list-style: none;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .hamburger {
@@ -132,18 +154,6 @@ img {
 
   .menu {
     display: none;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  li {
-    list-style: none;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   /* BIG NEWS SECTION TABLET */
@@ -168,11 +178,54 @@ img {
 
 @media (min-width: 1025px) {
   /* HERO SECTION FOR DESKTOP */
+  .container-hero {
+    height: 400px;
+    display: flex;
+    position: relative;
+  }
 
+  .navbar {
+    flex-direction: row;
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 50px 20px;
+    padding: 10px;
+    margin-top: auto;
+  }
+  nav {
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .herotext-logo {
+    margin-top: auto;
+    margin-right: 20px;
+    font-size: 2vw;
+    margin-right: 10px;
+  }
+
+  li {
+    list-style: none;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
   .logo {
     margin-left: 20px;
   }
-  .container-hero {
+  /*.container-hero {
     margin: 20px;
     width: auto;
     display: flex;
@@ -202,7 +255,7 @@ img {
   li {
     list-style: none;
   }
-
+ */
   /* BIG-NEWS SECTION DESKTOP */
 
   .big-mama-news {
