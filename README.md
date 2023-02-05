@@ -13,7 +13,7 @@ Layout's sketch was made in Figma. During the development of the project, the fi
 Website was built first for the mobile usage, and later on for tablet and desktop. This helped with making the web fully responsive. 
 
 ## View it live
-Deployed web:
-https://voluble-jalebi-cd5fc6.netlify.app 
-Figma sketch:
-https://www.figma.com/file/rj9sfVuLULp2jKG7jrj0vi/Project-1---Article-Website?node-id=0%3A1&t=DPIx4G5t6otoPb1c-1 
+<a href="https://keen-mandazi-860e4f.netlify.app "> Deployed web </a>
+
+<a href="https://www.figma.com/file/rj9sfVuLULp2jKG7jrj0vi/Project-1---Article-Website?node-id=0%3A1&t=DPIx4G5t6otoPb1c-1 ">
+Figma sketch </a>
