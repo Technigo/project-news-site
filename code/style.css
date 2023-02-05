@@ -1,436 +1,326 @@
-html, body {
-
+body {
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-
+  font-family:'Open Sans', sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-h2 {
-  
-  font-size: large;
-
+a {
+  color: #000;
 }
 
-h3 {
-
-  font-size: medium;
+.header {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  z-index: 3;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8%;
-  height: 150px;
-  line-height: 75px;
-  background: rgb(255, 254, 254);
-  align-items: center;
-  
-}
-
-nav .logo {
-  max-width: 120px;
-
-
-}
-
-nav .navbar-brand .navbar-logo {
-  color:rgb(125, 31, 137);
-  font-size: 28px;
-  font-weight: 500;
-  letter-spacing: .5px;
-
-}
-
-nav .nav-list {
-  display: flex;
+.header ul {
+  margin: 0;
+  padding: 3% 0%;
   list-style: none;
+  overflow: hidden;
+  background-color: white;
 
 }
 
-/* the part below makes the list section more to the right, not closer to the centre - because of passing 30)*/
-nav .nav-list .nav-item {
-  cursor: crosshair;
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid #bba1fa;
+  text-decoration: none;
+
+}
+
+.header ul a:hover {
+  background-color: #bba1fa;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  padding: 1px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.header .logo-pic {
+  float: left !important;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+}
+
+.header .menu {
+  clear:both;
+  max-height: 0; 
+  /* due to this, the menu will open later on when we click on the symbol and will flow nicely */ 
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  /* parent conatiner of the span. absolute position on this child*/
+  float: right;
+  cursor: pointer;
+
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width:18px;
+  position: relative;
+  transition:background .2s ease-out;
+
+}
+
+.header .menu-icon .nav-icon:before {
+  background: #333;
+  content:"";
+  display: block;
   height: 100%;
-  padding: 0 20px;
-  transition: .4s;
-} 
-
-nav .nav-list .nav-item:hover{
-  background: hsl(256, 84%, 68%);
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
 
 }
 
-nav .nav-list .nav-link {
-  color: #232121;
-  font-size: 15px;
-  font-weight: 500;
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content:"";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
 
 }
 
-
-a:link {
-
-  color:black;
-
+.header .menu-btn {
+  display: none;
 }
 
-a:visited {
-
-  color:black;
-
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
 }
 
-a:active {
-  color:rgb(11, 11, 136);
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
 }
 
-a:hover {
-  color:hsl(256, 84%, 68%);
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Things above used for the nav bar */
 
 .flex-parent {
-
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  padding: 0 8%;
-  padding-bottom: 6%;
+  padding-bottom: 10%;
 }
 
-.flex-child-text {
-  display: flex;
-  flex-wrap: wrap;
-  
+.big-news-picture {
+  width: 100%;
+  padding-top: ;
 }
 
-.head-image {
-  max-width: 600px;
+.big-news-header {
+  padding: 0 2%;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.big-news-text{
+  padding: 1% 2%;
+  font-size: 20px;
+}
+
+.big-news-text-smaller {
+  padding: 1% 2%;
+  font-size: 18px;
 }
 
 button {
-  
-  background: #deb5fe;
+  background: #bba1fa;
   outline: none;
   border: none;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 50px;
-  padding: 15px 30px;
-  
+  padding: 3% 5%;
+  margin-left: 3%;
+
+}
+
+.news-picture {
+  width: 100%;
 }
 
 .grid-parent {
-  padding: 0 8%;
-  align-items: flex-start;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: 1fr;
   margin-bottom: 5%;
 
 }
 
-.article-image {
-  max-width: 280px;
-
-
+.news-picture {
+  width: 100%;
 }
 
-.image-articlepage {
-  max-width: 800px;
- 
+.news-header {
+  padding: 0 2%;
+  font-size: 18px;
 }
 
-.flex-newspage {
-
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content:flex-start;
-  align-content: flex-start;
-  padding: 0 8%;
-  padding-bottom: 6%;
-  margin: 2%;
-  
-  
+.news-text {
+  padding: 0 2%;
 }
 
+footer {
+  text-align: center;
+}
 
-.down {
-
+.footer {
   font-size: 12px;
-  padding: 1%;
-  background-color: #deb5fe;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), hsl(256, 84%, 68%));
-}
-
-input {
-  display: none;
-
+  padding-bottom: 2%;
 }
 
 
+@media (min-width:668px) and (max-width:1023px) {
 
-@media (min-width: 667px) and (max-width: 1023px) {
-
-nav {
-  padding: 0 2rem;
-}
-
-nav .nav-list .nav-item{
-  padding: 0 20px;
-
-}
-
-nav .navbar-brand  {
-  display: none;
-
-}
-
-
-nav .nav-list {
-  display: flex;
-  list-style: none;
-
-}
-
-/* the part below makes the list section more to the right, not closer to the centre - because of passing 30)*/
-nav .nav-list .nav-item {
-  cursor: crosshair;
-  height: 100%;
-  padding: 0 20px;
-  transition: .4s;
-} 
-
-nav .nav-list .nav-item:hover{
-  background: #8e6af2;
-
-}
-
-nav .nav-list .nav-link {
-  color: #232121;
-  font-size: 13px;
-  font-weight: 500;
-
-}
-
-.flex-parent {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  padding: 0 8%;
-  padding-bottom: 6%;
-  padding-top: 6%;
-  flex-wrap: wrap-reverse;
-  }
-  
-.flex-child-text {
-  display: flex;
-  flex-wrap: wrap;
-      
-  }
-  
-.head-image {
-  max-width: 600px;
-  }
-  
-button {
-      
-  background: #deb5fe;
-  outline: none;
-  border: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 50px;
-  padding: 15px 30px;
-      
-  }
-.grid-parent {
-  padding: 0 8%;
-  align-items: flex-start;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.article-image {
-  max-width: 320px;
-
-}
-
-.image-articlepage {
-  max-width: 667px;
- 
-}
-
-input {
-  display: none;
-
-}
-
-}
-
-@media (max-width: 667px) {
-
-  nav .nav-list  {
-      display: grid;
-      position: absolute;
-      background: rgb(255, 255, 255);
-      width: 100%;  
-      top: 75px;
-      left: 0;
-      transform: translateY(-100%);
-      /* transform: translateY(-100%); */
-      z-index: 1;
-      transition: .6s;
-      list-style: none;
-
-  }
-
-    nav .navbar-brand .navbar-logo {
-      color:rgb(125, 31, 137);
-      font-size: 28px;
-      font-weight: 500;
-      letter-spacing: .2px;
-  
-  }
-
-  nav .navbar-brand {
+  .header .logo {
       display: none;
   }
 
-  nav .nav-list .nav-item {
-      padding-left: 15px;
-    }
-
-  nav .navbar-toggler {
-     display: grid !important;
-      
-}
-
-nav .navbar-toggler {
-  display: none;
-  height: min-content;
-  margin: 18px -10px 0 0;
-  cursor: pointer;
-  
-}
-
-nav .navbar-toggler .bar {
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background: rgb(0, 0, 0);
-  border-radius: 10%;
-  transition: .4s;
-}
-
-input {
-  display: none;
-
-}
-
-input:checked ~ nav .nav-list {
-  transform: translateY(0);
-
-}
-
-input:checked ~ nav .navbar-toggler {
-  margin-top: 35px;
-
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-  position: absolute;
-  transform: rotate(45deg);
-
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-  display: none;
-}
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-  transform: rotate(-45deg);
-
-}
-
-.big-news-article {
-  align-items: center;
-}
-.flex-parent {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  padding: 0 4%;
-  padding-bottom: 8%;
-  padding-top: 6%;
-  flex-wrap: wrap-reverse;
-  }
-  
-.flex-child-text {
-  display: flex;
-  
-  
-  }
-  
-.head-image {
-  max-width: 667px;
-  
+  .header li {
+      float: left;
   }
 
-.image-articlepage {
-      max-width: 500px;
+  .header li a {
+      padding: 20px 30px;
+
+  }
+
+  .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+
+  .header .menu-icon {
+      display: none;
+
+  }
+
+  .grid-parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 5%;
+      gap: 18px;
+  
+  }
      
-    }
-  
-button {
-      
-  background: #deb5fe;
-  outline: none;
-  border: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 50px;
-  padding: 15px 30px;
-      
+
+}
+
+@media (min-width:1024px) {
+
+  .header {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+  } 
+
+  .header .logo {
+      padding-top: 2%;
+      padding-left: 3%;
+      font-size: 24px;
+     
   }
-.grid-parent {
-  padding: 2% 3%;
-  align-items: flex-start;
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
 
-.content-important {
-  display: flex;
-  gap: 10px;
-}
+  .header li {
+      float: left;
+  }
 
-.article-intro {
-  display: none;
-}
+  .header li a {
+      padding: 20px 30px;
+
+  }
+
+  .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+
+  .header .menu-icon {
+      display: none;
+
+  }
+
+  .header ul {
+      margin-right: 2%;
+  }
+
+  /* Below main*/
+
+  .big-news {
+      padding-top: 12%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      margin: 2%;
+      align-items: flex-end;
+  }
+
+  .big-news-picture {
+
+      width: 50%;
+      float: right;
+      padding-left: 3%;
+      padding-top: 3%;
+  }
+
+  button {
+
+      border-radius: 25px;
+      padding: 20px ;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 2%;
+
+  }
+
+
+  /* Below section with short articles */
+
+  .grid-parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      margin-right: 2%;
+      gap: 18px;
   
-
-.article-image {
-  max-width: 200px;
-}
-
-.down {
-
-  display: none;
+  }
 
 }
+
+@media (max-width:347px) {
+
+  .header .logo {
+      display: none;
 }
