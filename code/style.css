@@ -11,26 +11,28 @@ body {
 .container-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(194, 9, 218, 0.3)),
     url("/project-news-site/code/unicorndog.jpg");
-  background-position: left bottom;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 300px;
+  height: 200px;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: flex-start;
   display: flex;
-  border: 2px solid black;
 }
 
 .herotext {
   color: rgb(0, 0, 0);
   font-family: fantasy;
   font-size: 7vw;
+  margin-top: auto;
+  margin-right: auto;
 }
 
-.logo {
+.logo img {
   width: 20vw;
-  object-fit: contain;
+  margin-top: auto;
+  margin-right: auto;
 }
 
 .hamburger {
