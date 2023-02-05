@@ -1,28 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This is a simple website, built in VSC. The theme of the webiste is dedicated to the digital design. Styling of the webiste is kept in a minimalistic way to match the main theme. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-This assignment is a simple newspaper site. It is responsive, has the right size for laptops, tablets and smart phones.
-
-It consists of a nav bar with a logo, one main article (flex box) and four smaller ones(css grid).
-
-Hyperlinks lead to new sites, some of them (when necessary) open in a new tab.
-
-The theme of the newspapaer is realated to the recent trends in a digital design.
-
-Articles used for this projects are copied from diffferent sources (names are mentioned on articles sites).
+Both flex box and css grid were used. 
 
 Simple and abstract images are made by me. 
 
 ## The problem
 
-I started with designing the layout. I used a simple pen and paper.
+Layout's sketch was made in Figma. During the development of the project, the final outcome changed the form and is slightly different from the sketch - this is because of testing the website's utility. 
 
-I used both flex box and css grid. 
-
-I made the web responsive by usage of media queries and a html meta tag. 
+Website was built first for the mobile usage, and later on for tablet and desktop. This helped with making the web fully responsive. 
 
 ## View it live
 Deployed web:
