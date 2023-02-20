@@ -1,27 +1,35 @@
 body {
   background-color:white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .header1 {
-  width: 1008px;
-  margin-right: 20px;
+  max-width: 1024px;
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: row;
 }
+
 .logotype {
   max-width: 400px;
   margin-bottom: -16px;
 }
+
 .navbar {
-  width: 620px;
   height: 40px;
   background-color: rgba(239,199,29,0.6);
   border-radius: 5px 15px;
+  padding-left: 30px;
+  padding-right: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }  
+
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -29,17 +37,20 @@ body {
   height: 20px;
   width: 20px;
 }
+
 .line {
   width: 20px;
   height: 4px;
   background: rgba(239,199,29,0.6);
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
+
 a.lank:link {
   text-decoration: none;
   color: #181404;
@@ -52,57 +63,31 @@ a.lank:link {
   justify-content: space-evenly;
   align-items: center;
 }
+
 a.lank:visited {
   color: #181404;
 }
+
 a.lank:hover {
   display: inline-block;
   background-color: rgba(239,199,29,0.3);
   border-radius: 5px 15px;
 }
-@media (min-width: 1024px) {
-  .hamburger-menu {
-    display: none;
-  }
-}
-@media (min-width: 668px) and (max-width: 1023px) {
-  .header1 {
-    width: 752px;
-  }
-  .navbar {
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 20px;
-    margin-right: 14px; 
-  }
-  .hamburger-menu {
-    display: none;
-  }
-}
-@media (max-width: 667px) {
-  .header1 {
-    width: 667px;
-  }
-  .navbar {
-    display: none;
-  }
-  .hamburger-menu {
-    position: relative;
-    margin-right: 50px;
-  }
-}
+
 .main {
   background-color: rgba(239,199,29,0.1);
   max-width: 1024px;
   margin-top: 20px;
 }
+
 .panorama {
-  max-width: 986px;
+  width: 98%;
   margin-top: 12px;
   margin-bottom: 10px;
   margin-left: 10px;
   border: 0.5px solid rgba(239,199,29,0.3);
 }
+
 h1 {
  color: #181404;
  font-family: garamond, serif;
@@ -111,6 +96,7 @@ h1 {
  margin-top: 10px;
  margin-bottom: -10px;
 }
+
 p {
   color: #181404;
   font-family: Helvetica, sans-serif;
@@ -118,6 +104,7 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .squares {
   margin-top: 20px;
   display: grid;
@@ -125,6 +112,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .small-news {
   width: auto;
   height: 260px;
@@ -136,6 +124,7 @@ p {
   border-radius: 5px 15px;
   justify-content: space-evenly;
 }
+
 h2 {
   font-family: Helvetica, sans-serif;
   font-variant: small-caps;
@@ -144,41 +133,7 @@ h2 {
   display: grid;
   justify-content: flex-start;
 }
-@media (min-width: 668px) and (max-width: 768px) {
-  .main {
-    width: 738px;
-  }
-  .panorama {
-    width: 718px;
-  }
-  .squares {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .small-news {
-    width: 250px;
-    margin-left: 60px;
-  }
-}
-@media (max-width: 667px) {
-  .main {
-    width: 620px;
-  }
-  .panorama {
-    width: 600px;
-  }
-  p {
-    column-count: 2;
-  }
-  .squares {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: space-around;
-    align-content: center;
-    margin-left: 190px;
-  }
-  .small-news {
-    width: 220px;
-  }
-}
+
 footer {
   background-color:  #fbf3d3;
   border-radius: 5px 15px;
@@ -190,6 +145,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   height: 40px;
   margin-left: 10px;
@@ -197,8 +153,68 @@ footer {
   margin-bottom: 5px;
   display: flex;
 }
+
 h3 {
   font-size: 14px;
   margin-right: 10px;
   display: flex;
+}
+
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 20px;
+    /* margin-right: 14px;  */
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .squares {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 668px) and (max-width: 768px) {
+  .main {
+    width: 738px;
+  }
+  .squares {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .small-news {
+    width: 250px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 667px) {
+  .main {
+    width: 620px;
+  }
+  p {
+    column-count: 2;
+  }
+  .navbar {
+    display: none;
+  }
+  .hamburger-menu {
+    position: relative;
+    margin-right: 50px;
+  }
+  .squares {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 190px;
+  }
+  .small-news {
+    width: 220px;
+  }
 }
