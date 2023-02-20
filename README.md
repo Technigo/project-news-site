@@ -12,3 +12,5 @@ If I hade more time I would try to make the Grid design in FlexBox instead.
 
 ## View it live
 https://clinquant-liger-e79170.netlify.app/
+
+![Newssite](https://user-images.githubusercontent.com/121789853/220186334-c452f452-d449-40c4-ae59-7f17c39ce095.png)
