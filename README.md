@@ -1,6 +1,7 @@
 # News Site
 
 Precourse project for Technigo- to build our own newssite.
+My first page ever
 
 ## The problem
 I started with going through the tutorials from the material we got from Technigo. As this is the first time I code I also watched alot of others tutorials and googled alot to try to understand how flex and grid works and how to use it to make a responsive homepage.
@@ -14,4 +15,4 @@ I would have a footer for example that I wasnt able to figure out why it always 
 
 
 ## View it live
-https://fantastic-cajeta-db372c.netlify.app
+https://scintillating-licorice-b4dc6d.netlify.app
