@@ -9,5 +9,5 @@ I wanted to make my image cards clickable and didn´t know how to do it at first
 If I had more time I would add a burger menu.
 
 ## View it live
-https://soft-alpaca-e30a0d.netlify.app
+https://ajmalnews.netlify.app/
 
