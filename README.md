@@ -18,4 +18,4 @@ Also how to choose size on the objects in the grid.
 I tried to add some animations, I copied the one for the pulse function for the button. I created the moving box, not very smooth. It was fun to try and I look forward to gain more knowledge.
 
 ## View it live
-https://63c6829565342b192de2fa87--ephemeral-blancmange-0415fb.netlify.app 
+https://hiketheworld.netlify.app
