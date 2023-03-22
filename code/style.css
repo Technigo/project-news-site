@@ -1,4 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
   background-color:white;
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +59,7 @@ ul {
 a.lank:link {
   text-decoration: none;
   color: #181404;
-  font-family: helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-variant: small-caps;
   font-size: 18px;
   padding: 10px;
@@ -85,7 +90,6 @@ a.lank:hover {
   margin-top: 12px;
   margin-bottom: 10px;
   margin-left: 10px;
-  border: 0.5px solid rgba(239,199,29,0.3);
 }
 
 h1 {
@@ -171,7 +175,6 @@ h3 {
     flex-direction: row;
     justify-content: flex-end;
     margin-left: 20px;
-    /* margin-right: 14px;  */
   }
   .hamburger-menu {
     display: none;
