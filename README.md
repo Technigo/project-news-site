@@ -1,4 +1,4 @@
-# News Site
+# News Site 📰
 
 Our pre course was about creating a news website using grid and flex.
 
