@@ -7,4 +7,4 @@ My first Technigo bootcamp project, in the pre-course. The assignment was to bui
 I had to learn everything from scratch so a lot of googling and trial and error! I took the example layout in the assignment description and tried to make it my own instead of making an exact copy. If I had more time I would try it the other way around, and use flexbox where I now have a grid layout and vice versa, just to see what I like better. I used the graceful degradation approach.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://genuine-baklava-349503.netlify.app/
