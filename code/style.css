@@ -5,53 +5,31 @@ html {
 
 h1{
   color:#F7941F; 
-  font-size: 50px; 
+  font-size: 1.5em; 
   font-family: "monaco", monospace;
   text-shadow: 2px 2px 4px #000000;
 }
 h2{
   color:#F7941F;  
-  font-size: 30px; 
+  font-size: 1em; 
   font-family: "monaco", monospace;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 p {
   color:#000000;
-  font-size: 20px; 
+  font-size: 0.5em; 
   font-family: "monaco", monospace;
 }
 
 a {
 	text-decoration: none;
   color:#000000;
-  font-size: 20px; 
+  font-size: 0.5em; 
   font-family: "monaco", monospace;
 }
 
 .banner {
-  background-color:#0025FF;
-  overflow: hidden;
-  margin: 20px;
-}
-
-.news {
-  animation : slide 20s linear infinite;
-}
-
-@keyframes slide {
-  0% {
-    transform: translatex(0%)
-  }
-
-  100% {
-    transform: translatex(100%)
-  }
-}
-
-.banner p{
-  color: #fff;
-  text-align:left;
-  font-size: 15px; 
+  display: none;
 }
 
 
@@ -119,6 +97,7 @@ a {
   padding: 20px;
   margin:20px;
   display: flex;
+  flex-direction: column;
 }
 
 .big-news-box {
@@ -162,6 +141,36 @@ a {
 }
 
 @media (min-width: 667px) {
+  .banner {
+    display: block;
+    background-color:#0025FF;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .news {
+    animation : slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translatex(0%)
+    }
+  
+    100% {
+      transform: translatex(100%)
+    }
+  }
+  
+  .banner p{
+    color: #fff;
+    text-align:left;
+    font-size: 15px; 
+  }
+
+  .big-news {
+    flex-direction: row;
+  }
 	.nav-bar,
 	.nav-bar-right {
 		display: flex;
@@ -180,11 +189,39 @@ a {
 
 
 @media (min-width: 1024px) {
+  .banner {
+    display: block;
+    background-color:#0025FF;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .news {
+    animation : slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translatex(0%)
+    }
+  
+    100% {
+      transform: translatex(100%)
+    }
+  }
+  
+  .banner p{
+    color: #fff;
+    text-align:left;
+    font-size: 15px; 
+  }
 	.nav-bar {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
+  .big-news {
+    flex-direction: row;
+  }
   .grid-with-news-items {
     grid-template-columns: repeat( 4,1fr);
     }
