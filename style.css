@@ -14,6 +14,7 @@
     --containerbackground: #F9F2ED;
     --headingcolor: #ef4444;
     --buttoncolor: #ef4444;
+    --buttonhover: #dc2626;
     --tile1st: #78C8FF;
     --tile2nd: #3AB0FF;
     --tile3rd: #0073CE;
@@ -22,7 +23,7 @@
 }
 
 p {
-    color: #0073CE;
+    color: var(--textcolor);
 }
 
 h1,
@@ -35,11 +36,7 @@ h6 {
     font-family: 'Press Start 2P';
 }
 
-button {
-    color: var(--buttoncolor);
-}
-
-/* header ---------------------------------------------------------------------------*/
+/* header/navbar ---------------------------------------------------------------------------*/
 header {
     width: 100%;
     height: 12vh;
@@ -69,6 +66,14 @@ li {
     padding: 15px;
 }
 
+#hamburgermenu {
+    display: none;
+}
+
+li:hover {
+    transform: translate(4%, 6%);
+}
+
 /* news ---------------------------------------------------------------------------*/
 
 #news {
@@ -93,7 +98,7 @@ li {
     max-height: 100%;
     /*beides max nötig, so kein object-fit nötig*/
     max-width: 100%;
-    border-radius: 25%;
+    border-radius: 30px;
 }
 
 #news_right {
@@ -126,9 +131,13 @@ button {
     border-radius: 15px;
 }
 
+button:hover {
+    background-color: var(--buttonhover);
+}
+
 /* cardgrid ----------------------------------------------------------*/
 #heading_grid {
-
+    text-align: center;
     margin: 0 auto 3vh auto;
     padding-left: 0.5em;
 }
@@ -215,6 +224,23 @@ button {
         min-width: 300px;
     }
 
+    header {
+        height: 7vh;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #hamburgermenu {
+        display: unset;
+        padding: 15px;
+    }
+
+    #news {
+        margin-top: 7vh;
+    }
+
     #news {
         flex-direction: column;
         max-height: unset;
@@ -227,12 +253,14 @@ button {
 
     #news_left img {
         padding: 10%;
+        border-radius: 70px;
     }
 
     #cardgrid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 350px);
         max-width: 250px;
+        padding: 3%;
     }
 
     #news_right p {
