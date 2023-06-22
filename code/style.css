@@ -1,4 +1,245 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbit', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Mono', monospace;*/
+    /* old color red: F87474*/
+    --headerbackground: #3AB0FF;
+    --containerbackground: #F9F2ED;
+    --headingcolor: #ef4444;
+    --buttoncolor: #ef4444;
+    --tile1st: #78C8FF;
+    --tile2nd: #3AB0FF;
+    --tile3rd: #0073CE;
+    --textcolor: #0073CE;
+    --tiletext: #320265;
+}
+
+p {
+    color: #0073CE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headingcolor);
+    font-family: 'Press Start 2P';
+}
+
+button {
+    color: var(--buttoncolor);
+}
+
+/* header ---------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    height: 12vh;
+    background-color: var(--headerbackground);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#headerimage {
+    height: 100%;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 2%;
+}
+
+li {
+    font-family: 'Press Start 2P';
+    color: white;
+    padding: 15px;
+}
+
+/* news ---------------------------------------------------------------------------*/
+
+#news {
+    margin-top: 12vh;
+    background-color: var(--containerbackground);
+    display: flex;
+    max-height: 40vh;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 5vh;
+}
+
+#news_left {
+    display: flex;
+    /* so rechts kleben*/
+    width: 50%;
+    justify-content: flex-end;
+}
+
+#news_left img {
+    padding: 3%;
+    max-height: 100%;
+    /*beides max nötig, so kein object-fit nötig*/
+    max-width: 100%;
+    border-radius: 25%;
+}
+
+#news_right {
+    display: flex;
+    padding: 3%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#news_right h2 {
+    margin-bottom: 0.8em;
+}
+
+#news_right p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#poll_closed {
+    font-size: 0.7em;
+    margin-bottom: 8%;
+}
+
+button {
+    background-color: var(--buttoncolor);
+    color: white;
+    border: 0;
+    max-width: 10em;
+    height: 2.5em;
+    border-radius: 15px;
+}
+
+/* cardgrid ----------------------------------------------------------*/
+#heading_grid {
+
+    margin: 0 auto 3vh auto;
+    padding-left: 0.5em;
+}
+
+#cardgrid {
+    background-color: var(--containerbackground);
+    display: grid;
+    max-width: 1000px;
+    padding: 2%;
+    margin: 0 auto 3vh auto;
+    border-radius: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    gap: 0.5em;
+    /* % gibt unten zu wenig Platz*/
+}
+
+#cardgrid div {
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: center;      useless*/
+    /*align-items: start;   already std-setting*/
+}
+
+#cardgrid div:nth-child(3n+1) {
+    background-color: var(--tile1st);
+}
+
+#cardgrid div:nth-child(3n+2) {
+    background-color: var(--tile2nd);
+}
+
+#cardgrid div:nth-child(3n+3) {
+    background-color: var(--tile3rd);
+}
+
+#cardgrid img {
+    height: 80%;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+#cardgrid p {
+    color: var(--tiletext);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+/* @media ----------------------------------------------------------*/
+
+@media (max-width: 1023px) {
+    #cardgrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 350px);
+        max-width: 500px;
+    }
+
+    #news_left img {
+        padding: 5%;
+    }
+
+    #news_right h2 {
+        font-size: 1.2em;
+    }
+
+    #news_right p {
+        font-size: 0.9em;
+    }
+
+    p#poll_closed {
+        font-size: 0.6em;
+    }
+
+    #heading_grid {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 668px) {
+
+    body {
+        min-width: 300px;
+    }
+
+    #news {
+        flex-direction: column;
+        max-height: unset;
+    }
+
+    #news_left,
+    #news_right {
+        width: 100%;
+    }
+
+    #news_left img {
+        padding: 10%;
+    }
+
+    #cardgrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 350px);
+        max-width: 250px;
+    }
+
+    #news_right p {
+        font-size: 0.8em;
+    }
+
+    p#poll_closed {
+        font-size: 0.6em;
+    }
 }
