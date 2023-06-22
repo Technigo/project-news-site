@@ -35,8 +35,8 @@ We suggest that you start thinking about what your page will look like. Have a l
 
 ### Links
 
-- Solution URL: [https://]
-- Live Site URL: [https:///]
+- Solution URL: [https://https://github.com/colognia/Technigo-project1-news-site]
+- Live Site URL: [https://https://colognia.github.io/Technigo-project1-news-site/]
 
 ## My process
 - making a sketch with figma to check out colors
