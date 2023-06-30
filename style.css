@@ -9,7 +9,6 @@
     font-family: 'Orbit', sans-serif;
     font-family: 'Press Start 2P', cursive;
     font-family: 'Roboto Mono', monospace;*/
-    /* old color red: F87474*/
     --headerbackground: #3AB0FF;
     --containerbackground: #F9F2ED;
     --headingcolor: #ef4444;
@@ -49,8 +48,8 @@ header {
 }
 
 #headerimage {
-    height: 100%;
-    object-fit: contain;
+    /*height: 100%;
+    object-fit: contain;*   set automatically in flex*/
 }
 
 ul {
@@ -72,6 +71,7 @@ li {
 
 li:hover {
     transform: translate(4%, 6%);
+    cursor: pointer;
 }
 
 /* news ---------------------------------------------------------------------------*/
@@ -127,12 +127,13 @@ button {
     color: white;
     border: 0;
     max-width: 10em;
-    height: 2.5em;
-    border-radius: 15px;
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 30px;
 }
 
 button:hover {
     background-color: var(--buttonhover);
+    cursor: pointer;
 }
 
 /* cardgrid ----------------------------------------------------------*/
@@ -152,7 +153,7 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 350px);
     gap: 0.5em;
-    /* % gibt unten zu wenig Platz*/
+    /* % does not provide suff space at bottom*/
 }
 
 #cardgrid div {
@@ -160,7 +161,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*justify-content: center;      useless*/
+    /*justify-content: center;      useless, no space left*/
     /*align-items: start;   already std-setting*/
 }
 
@@ -180,6 +181,10 @@ button:hover {
     height: 80%;
     width: 100%;
     padding-bottom: 1em;
+}
+
+#cardgrid img:hover {
+    filter: brightness(120%);
 }
 
 #cardgrid p {

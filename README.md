@@ -13,6 +13,12 @@ We suggest that you start thinking about what your page will look like. Have a l
 ✓ The site should have a header, a main news article, a grid of news articles.
 ✓ Play around with hover effects, i.e. change colors, add or remove borders or flip the image upside down.
 
+- Stretch goals
+  Shall only be realized after having sent in basic solution.
+- Add a box-shadow to make the photos look like polaroids -> did not like that, picked brightness
+- Align the cards to the centre of the page
+- Add some CSS animations to your project
+
 ## Table of contents
 
   - [Overview](#overview)
@@ -27,7 +33,7 @@ We suggest that you start thinking about what your page will look like. Have a l
 
 ## Overview
 
-1st challenge for front end developers.
+1st challenge for front end developer students.
 
 ### Screenshot
 
@@ -54,18 +60,17 @@ We suggest that you start thinking about what your page will look like. Have a l
 
 ### What I learned
 
-
+More on positioning img in grid/flex cells which can be tricky sometimes. Made a sketch in figma, figured out how to dynamically change back-color of grid cells thru :nth-child(xn+y), used filter attribute for img 1st time.
 
 ### Continued development
 
-
+Getting more routine in placing items in grid/flex cells.
 
 ### Useful resources
 
-
+w3schools, dev.mozilla.org, stackoverflow
 
 ## Author
 
-- Frontend Mentor - [@colognia] (https://www.frontendmentor.io/profile/colognia)
 - Linkedin - (https://www.linkedin.com/in/frauke-s-395242201/)
 
