@@ -46,6 +46,7 @@ We suggest that you start thinking about what your page will look like. Have a l
 
 ## My process
 - making a sketch with figma to check out colors
+- creating sth like a logo in photoshop
 - build html
 - create css
 - check and verify frequently with firefox and its developer console
@@ -61,6 +62,7 @@ We suggest that you start thinking about what your page will look like. Have a l
 ### What I learned
 
 More on positioning img in grid/flex cells which can be tricky sometimes. Made a sketch in figma, figured out how to dynamically change back-color of grid cells thru :nth-child(xn+y), used filter attribute for img 1st time.
+
 
 ### Continued development
 
