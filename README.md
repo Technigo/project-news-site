@@ -37,7 +37,7 @@ We suggest that you start thinking about what your page will look like. Have a l
 
 ### Screenshot
 
-![](./solution_desktop.png) and ![](./solution_mobile.png)
+![](./pics/screenshots/screenshot_desktop.png) and ![](./pics/screenshots/scrrensthot_mobile.png)
 
 ### Links
 
