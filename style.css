@@ -139,6 +139,11 @@ button {
 button:hover {
     background-color: var(--buttonhover);
     cursor: pointer;
+    position: relative;
+}
+
+.car1anchor {
+    position: relative;
 }
 
 /* quest ---------------------------------------------------------------------------*/
@@ -155,10 +160,22 @@ button:hover {
     font-size: 0.9em;
 }
 
-.hidden_car {
-    max-height: 1.5em;
+.hidden_car_sample {
+    width: 2.5rem;
     margin: 5px 0;
     vertical-align: middle;
+}
+
+.car1 {
+    width: 2.5rem;
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    filter: opacity(0%);
+}
+
+.car1:hover {
+    filter: opacity(100%);
 }
 
 /* cardgrid ----------------------------------------------------------*/
