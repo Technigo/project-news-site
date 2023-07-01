@@ -35,6 +35,11 @@ h6 {
     font-family: 'Press Start 2P';
 }
 
+h3 {
+    text-align: center;
+    margin: 0 auto 3vh auto;
+}
+
 /* header/navbar ---------------------------------------------------------------------------*/
 header {
     width: 100%;
@@ -80,10 +85,10 @@ li:hover {
     margin-top: 12vh;
     background-color: var(--containerbackground);
     display: flex;
-    max-height: 40vh;
+    mmax-height: 40vh;
     width: 100%;
     border-radius: 25px;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
 }
 
 #news_left {
@@ -136,11 +141,31 @@ button:hover {
     cursor: pointer;
 }
 
-/* cardgrid ----------------------------------------------------------*/
-#heading_grid {
+/* quest ---------------------------------------------------------------------------*/
+.quest {
+    background-color: var(--containerbackground);
+    border-radius: 25px;
     text-align: center;
-    margin: 0 auto 3vh auto;
-    padding-left: 0.5em;
+    padding: 1em;
+    margin-bottom: 5vh;
+}
+
+.quest p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+.hidden_car {
+    max-height: 1.5em;
+    margin: 5px 0;
+    vertical-align: middle;
+}
+
+/* cardgrid ----------------------------------------------------------*/
+
+
+.invisible_car:hover {
+    background-color: green;
 }
 
 #cardgrid {
