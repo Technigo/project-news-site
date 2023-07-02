@@ -50,6 +50,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 #headerimage {
@@ -169,6 +170,7 @@ button:hover {
 .car1 {
     width: 2.5rem;
     position: absolute;
+    /*anchor is span under button*/
     right: 5rem;
     top: 0;
     filter: opacity(0%);
@@ -176,14 +178,42 @@ button:hover {
 
 .car1:hover {
     filter: opacity(100%);
+    transition: 1s ease;
+}
+
+.car2anchor>img.car2 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    position: absolute;
+    /*anchor is div from giana sisters*/
+    right: 1rem;
+    top: 4rem;
+    filter: opacity(0%);
+}
+
+.car2anchor>img.car2:hover {
+    filter: opacity(100%);
+    transition: 1s ease;
+    /*not working*/
+    filter: brightness(100%) !important;
+}
+
+.car3 {
+    width: 2.5rem;
+    position: absolute;
+    /*anchor is body*/
+    left: 11rem;
+    top: 1rem;
+    filter: opacity(0%);
+    z-index: 2;
+}
+
+.car3:hover {
+    filter: opacity(100%);
+    transition: 1s ease;
 }
 
 /* cardgrid ----------------------------------------------------------*/
-
-
-.invisible_car:hover {
-    background-color: green;
-}
 
 #cardgrid {
     background-color: var(--containerbackground);
@@ -233,6 +263,10 @@ button:hover {
     color: var(--tiletext);
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
+}
+
+.car2anchor {
+    position: relative;
 }
 
 /* @media ----------------------------------------------------------*/
