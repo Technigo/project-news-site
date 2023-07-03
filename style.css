@@ -269,8 +269,20 @@ button:hover {
     position: relative;
 }
 
-/* @media ----------------------------------------------------------*/
+/* footer ----------------------------------------------------------*/
+#footerdiv {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
 
+div#footerdiv p {
+
+    display: inline-block;
+    padding: 10px;
+}
+
+/* @media ----------------------------------------------------------*/
 @media (max-width: 1023px) {
     #cardgrid {
         grid-template-columns: repeat(2, 1fr);
