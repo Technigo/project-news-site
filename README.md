@@ -50,23 +50,25 @@ We suggest that you start thinking about what your page will look like. Have a l
 - build html
 - create css
 - check and verify frequently with firefox and its developer console
-- consulting my own notes regarding usage of tags/options, consulting developers.mozilla.org and w3schools
+- consulting my own notes regarding usage of tags/options, consulting developers.mozilla.org and w3schools, checcing stackovrflow
+- after sending in working on hiding 3 little cars on the page as a quest for visitors, which become visible by mouse over. Not an animation, but a little gimmick.
 
 
 ### Built with
 
+- photoshop
 - Semantic HTML5 markup
 - CSS custom properties
 - editor: visual studio code
 
 ### What I learned
 
-More on positioning img in grid/flex cells which can be tricky sometimes. Made a sketch in figma, figured out how to dynamically change back-color of grid cells thru :nth-child(xn+y), used filter attribute for img 1st time.
+More on positioning img in grid/flex cells which can be tricky sometimes. Made a sketch in figma, figured out how to dynamically change back-color of grid cells thru :nth-child(xn+y), used filter attribute for img 1st time and learned about interfering filter options. Moreover had problems with overwriting selectors, but now understand why.
 
 
 ### Continued development
 
-Getting more routine in placing items in grid/flex cells.
+Getting more routine in placing items in grid/flex cells. Playing more around with img modifications/animations.
 
 ### Useful resources
 
