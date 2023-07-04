@@ -53,9 +53,16 @@ header {
     z-index: 1;
 }
 
+.logodiv {
+    position: relative;
+    /*extra div necessary to act as an rel anchor for car3*/
+}
+
 #headerimage {
     /*height: 100%;
-    object-fit: contain;*   set automatically in flex*/
+    object-fit: contain;*   set automatically in flex if is part of flex. here is block.*/
+    max-height: 100%;
+
 }
 
 ul {
@@ -182,8 +189,8 @@ button:hover {
 }
 
 .car2anchor>img.car2 {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     /*anchor is div from giana sisters*/
     right: 1rem;
@@ -194,15 +201,14 @@ button:hover {
 .car2anchor>img.car2:hover {
     filter: opacity(100%);
     transition: 1s ease;
-    /*not working*/
-    filter: brightness(100%) !important;
+    /*filter: brightness(100%); interferes with opacity, with both no transition effect.*/
 }
 
 .car3 {
     width: 2.5rem;
     position: absolute;
-    /*anchor is body*/
-    left: 11rem;
+    /*anchor is .logodiv*/
+    left: 17rem;
     top: 1rem;
     filter: opacity(0%);
     z-index: 2;
@@ -215,7 +221,7 @@ button:hover {
 
 /* cardgrid ----------------------------------------------------------*/
 
-#cardgrid {
+.cardgrid {
     background-color: var(--containerbackground);
     display: grid;
     max-width: 1000px;
@@ -228,7 +234,7 @@ button:hover {
     /* % does not provide suff space at bottom*/
 }
 
-#cardgrid div {
+.cardgrid div {
     padding: 7%;
     display: flex;
     flex-direction: column;
@@ -237,29 +243,29 @@ button:hover {
     /*align-items: start;   already std-setting*/
 }
 
-#cardgrid div:nth-child(3n+1) {
+.cardgrid div:nth-child(3n+1) {
     background-color: var(--tile1st);
 }
 
-#cardgrid div:nth-child(3n+2) {
+.cardgrid div:nth-child(3n+2) {
     background-color: var(--tile2nd);
 }
 
-#cardgrid div:nth-child(3n+3) {
+.cardgrid div:nth-child(3n+3) {
     background-color: var(--tile3rd);
 }
 
-#cardgrid img {
+.cardgrid img {
     height: 80%;
     width: 100%;
     padding-bottom: 1em;
 }
 
-#cardgrid img:hover {
+.cardgrid img:hover {
     filter: brightness(120%);
 }
 
-#cardgrid p {
+.cardgrid p {
     color: var(--tiletext);
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
@@ -284,7 +290,7 @@ div#footerdiv p {
 
 /* @media ----------------------------------------------------------*/
 @media (max-width: 1023px) {
-    #cardgrid {
+    .cardgrid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 350px);
         max-width: 500px;
@@ -349,7 +355,7 @@ div#footerdiv p {
         border-radius: 70px;
     }
 
-    #cardgrid {
+    .cardgrid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 350px);
         max-width: 250px;
