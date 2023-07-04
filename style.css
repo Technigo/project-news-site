@@ -55,6 +55,8 @@ header {
 
 .logodiv {
     position: relative;
+    max-width: 0%;
+    /*oherwise consuming too much space in flexcontainer, hamburger menu gets pushed outside*/
     /*extra div necessary to act as an rel anchor for car3*/
 }
 
@@ -93,7 +95,7 @@ li:hover {
     margin-top: 12vh;
     background-color: var(--containerbackground);
     display: flex;
-    mmax-height: 40vh;
+    max-height: 40vh;
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1vh;
@@ -111,7 +113,7 @@ li:hover {
     max-height: 100%;
     /*beides max nötig, so kein object-fit nötig*/
     max-width: 100%;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 #news_right {
