@@ -2,3 +2,50 @@ html {
   background: antiquewhite;
   color: #fff;
 }
+
+h2 {
+  color: darkred;
+}
+
+h3 {
+  color: brown;
+}
+
+p {
+  color: brown;
+}
+
+header {
+  display: inline;
+  background-color: chocolate;
+}
+
+header img {
+  width: 15%;
+  border-radius: 50%;
+  display: inline;
+}
+
+h1 {
+  display: inline;
+}
+
+main img {
+  width: 50%
+}
+
+.big-news {
+  display: grid;
+  grid-template-columns:
+    gap: 10px;
+}
+
+.other-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: white;
+}
