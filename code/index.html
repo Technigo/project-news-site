@@ -6,27 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Villa Vibes</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
   <header class="navbar">
     <div class="logo">
       <h1>
-        <img src="/images/villa-vibes-logo.svg" alt="The Villa Vibes Logo">
+        <img src="/images/villa-vibes-logo-white.svg" alt="The Villa Vibes Logo">
       </h1>
     </div>
     <nav class="links">
-      <a href="#latest-news">Latest news</a>
-      <a href="#recents">Recents</a>
-      <a href="#most-read">Most read</a>
+      <a class="link" href="#latest-news">
+        <img class="menu-img" src="/images/latest-white.png" alt="Icon for latest news">
+        <span class="link-text">Latest news</span>
+      </a>
+      <a class="link" href="#recents">
+        <img class="menu-img" src="/images/recents-white.png" alt="Icon for recent news">
+        <span class="link-text">Recents</span>
+      </a>
+      <a class="link" href="#most-read">
+        <img class="menu-img" src="/images/most-read-white.png" alt="Icon for most read news">
+        <span class="link-text">Most read</span>
+      </a>
     </nav>
   </header>
 
   <section class="latest-news" id="latest-news">
-    <h2>Latest news</h2>
-    <article>
-      <div>
-        <img src="/images/garden-image.jpg" alt="Image of someone watering a plant">
+    <div class="heading">
+      <img class="link-img" src="/images/latest.png" alt="Icon for latest news">
+      <h2>Latest news</h2>
+    </div>
+    <article class="big-article">
+      <div class="big-article-first-child">
+        <img class="article-image-large" src="/images/garden-image.jpg" alt="Image of someone watering a plant">
       </div>
       <div>
         <h3>Nature's Enchanted Haven Unveiled: Majestic Landscaping Transformation
@@ -35,53 +51,81 @@
           Prepare to be mesmerized by the breathtaking results of a transformative landscaping project. Majestic trees,
           vibrant blooms, and sparkling fountains create a serene oasis. Explore hidden treasures and a dedicated
           children's play area. Step into a realm of natural splendor and embrace the enchantment.</p>
+        <button src="#" class="btn">Read all about it</button>
       </div>
     </article>
   </section>
 
   <section class="recents" id="recents">
-    <h2>Recents</h2>
-    <article>
+    <div class="heading">
+      <img class="link-img" src="/images/recents.png" alt="Icon for recent news">
+      <h2>Recents</h2>
+    </div>
+    <article class="recent-articles">
       <div>
-        <img src="/images/gardener.jpg" alt="Image of a gardener">
-        <h3>Plant Heist: Renowned Gardener's Prized Collection Vanished
-        </h3>
+        <a href="#">
+          <img class="article-image-small" src="/images/gardener.jpg" alt="Image of a gardener">
+        </a>
+        <div>
+          <h4>Plant Heist: Renowned Gardener's Prized Collection Vanished
+          </h4>
+        </div>
       </div>
       <div>
-        <img src="/images/fire.jpg" alt="Image of a fire">
-        <h3>Garden Inferno: Iconic Villa Paradise Reduced to Ashes!
-        </h3>
+        <a href="#">
+          <img class="article-image-small" src="/images/fire.jpg" alt="Image of a fire">
+        </a>
+        <h4>Garden Inferno: Iconic Villa Paradise Reduced to Ashes!
+        </h4>
       </div>
       <div>
-        <img src="/images/underground.jpg" alt="Image of people digging in the ground">
-        <h3>Hidden Oasis Unveiled: Astonishing Discovery Beneath Famous Villa!
-        </h3>
+        <a href="#">
+          <img class="article-image-small" src="/images/underground.jpg" alt="Image of people digging in the ground">
+        </a>
+        <h4>Hidden Oasis Unveiled: Astonishing Discovery Beneath Famous Villa!
+        </h4>
+      </div>
+      <div>
+        <a href="#">
+          <img class="article-image-small" src="/images/reno.jpg" alt="Image of an ongoing renovation">
+        </a>
+        <h4>Villa's Renovation Reveals Fascinating Stories from the Past!
+        </h4>
       </div>
     </article>
   </section>
 
   <section class="most-read" id="most-read">
-    <h2>Most read</h2>
-    <article>
-      <div>
-        <img src="/images/retreat.jpg" alt="Image of a garden retreat">
+    <div class="heading">
+      <img class="link-img" src="/images/most-read.png" alt="Icon for most read news">
+      <h2>Most read</h2>
+    </div>
+    <article class="most-read-articles">
+      <div class="most-read-item">
+        <div>
+          <img class="article-image-large" src="/images/retreat.jpg" alt="Image of a garden retreat">
+        </div>
+        <div>
+          <h3>A Yard Transformed into a Stunning Garden Retreat
+          </h3>
+          <p>
+            In Willowdale, a neglected yard has undergone a remarkable transformation, becoming a breathtaking garden
+            oasis thanks to the passion and vision of local landscapers, Jane and Mark Anderson.</p>
+          <button src="#" class="btn">Read all about it</button>
+        </div>
       </div>
-      <div>
-        <h3>From Neglect to Serene Oasis: A Yard Transformed into a Stunning Garden Retreat
-        </h3>
-        <p>
-          In Willowdale, a neglected yard has undergone a remarkable transformation, becoming a breathtaking garden
-          oasis thanks to the passion and vision of local landscapers, Jane and Mark Anderson.</p>
-      </div>
-      <div>
-        <img src="/images/furniture.jpg" alt="Image of furniture in a livingroom">
-      </div>
-      <div>
-        <h3>Exploring Interior Design Trends: From Vibrant Colors to Innovative Furniture
-        </h3>
-        <p>
-          Villa Vibes takes a closer look at the latest trends in interior design, from bold color palettes to
-          innovative furniture designs that are revolutionizing home decor.</p>
+      <div class="most-read-item">
+        <div>
+          <img class="article-image-large" src="/images/furniture.jpg" alt="Image of furniture in a livingroom">
+        </div>
+        <div>
+          <h3>Exploring Interior Design Trends: From Vibrant Colors to Innovative Furniture
+          </h3>
+          <p>
+            Villa Vibes takes a closer look at the latest trends in interior design, from bold color palettes to
+            innovative furniture designs that are revolutionizing home decor.</p>
+          <button src="#" class="btn">Read all about it</button>
+        </div>
       </div>
     </article>
   </section>
