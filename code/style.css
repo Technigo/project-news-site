@@ -1,4 +1,47 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padiing:0;
+}
+
+nav{
+  background: #006E7F;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+}
+
+main{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-container{
+  margin: 100px auto;
+  max-width: 700px;
+  height:400px;
+  background: #888;
+  padding: 50px 80px;
+}
+
+.about-container h1{
+font-size: 40px;
+}
+
+
+.grid{
+  margin: 0 auto;
+  background:#333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 100px 30px;
+
+}
+
+.grid-child{
+  height: 240px;
+  width: 180px;
+  background: pink;
 }
