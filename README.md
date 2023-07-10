@@ -50,7 +50,7 @@ We suggest that you start thinking about what your page will look like. Have a l
 - build html
 - create css
 - check and verify frequently with firefox and its developer console
-- consulting my own notes regarding usage of tags/options, consulting developers.mozilla.org and w3schools, checcing stackovrflow
+- consulting my own notes regarding usage of tags/options, consulting developers.mozilla.org and w3schools, checking stackoverflow
 - after sending in working on hiding 3 little cars on the page as a quest for visitors, which become visible by mouse over. Not an animation, but a little gimmick.
 
 
