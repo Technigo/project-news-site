@@ -1,23 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftsAsia Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header part: logo,sitename,navbar-->
     <header>
-      <!-- Some kind of logo and navbar -->
+        <div class="logo" >
+        <img src="./pics/logoCraft.svg" alt="logo">
+        </div>
+        <div class="sitename" >
+            <h1>Crafts</h1>
+            <h1>Asia</h1>
+        </div>
+        
+            <nav class="navbar">
+            <ul>
+                <li><a href="#" target="_blank">Tradition</a></li>
+                <li><a href="#" target="_blank">DIY</a></li>
+                <li><a href="#" target="_blank">Food</a></li>
+                <li><a href="#" target="_blank">Homemade</a></li>
+            </ul>
+            </nav>
+        
     </header>
+    <!-- Main part:Bigpicture Part,Discover more info -->
+    <main>
+    <!-- BigPicture Part -->
+    <div class="bigpic_container">
+        <div class="Bigpic">
+            <img  src="./pics/picture.png" alt="BigPicture">
+        </div>
+        <div class="main_info">
+        <h2>Knitting is as Simple as 1, 2, 3</h2>
+        <p>Knitting boils down to three essential skills. These are the cast on, knit stitch, and the cast off. These three techniques make up the backbone of knitting. Master them and you’re officially a knitter. It’s that simple!</p>
+        <button type="button" class="read_it_more" onclick="click">Read it more
+        </button>
+        </div>
+    </div>
+    <!--Discover more info-->
+    <div class="container">
+        <!-- The first grid row  -->
+        <div class="picture">
+        <a class="item" href="#" >
+            <img src="./pics/tradtional.png" alt="tradtion"> 
+            <div class="title">Porcelain</div>
+        </a>   
+        <p>Fine-grained and translucent ceramic wares are called porcelain. </p>
+        </div>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/chinesetraditional.png" alt="chinesetraditional">
+            <div class="title">Lantern</div>
+        </a> 
+        <p>A collapsible paper lantern or sky lantern in bright colours, primarily red but also other colours</p>
+    </div>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/sewing.png" alt="sewing">
+            <div class="title">Embroidery</div>
+        </a>
+        <p>Art of decorating material, primarily textile fabric, by means of a needle and thread (and sometimes fine wire).</p>
+    </div>
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/dumplings.png" alt="dumpling">
+            <div class="title">Dumplings</div>
+        </a>
+        <p>A dumpling is a small mass of dough that can be boiled, fried, baked, or steamed.</p>
+    </div>
+    <!-- The second grid row -->
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/handcrafts.png" alt="sculpture">
+            <div class="title">Sculpture</div>
+        </a>
+        
+        <p>An artistic form in which hard or plastic materials are worked into three-dimensional art objects.</p>
+    </div>
+
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/tradtionalhandcrafts.png" alt="pottery">
+            <div class="title">Pottery</div>
+        </a>
+        <p>Pottery is the process and the products of forming vessels and other objects with clay and other raw materials</p>
+    </div>
+
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/painting.png" alt="painting">
+            <div class="title">Painting</div>
+        </a>
+        <p>Painting is the practice of applying paint, pigment, color or other medium to a solid surface</p>
+    </div>
+
+    <div class="picture">
+        <a href="#" class="item">
+            <img src="./pics/chineseFood.png" alt="chinesefood">
+            <div class="title">Street Food</div>
+        </a>
+        <p>Malatang is a popular street food in China that is very similar to hot pot.</p>
+    </div>
+    </div>  
+
+</main>
+    <footer>
+        <h3>Contact</h3>
+        <div>
+            <a href="#" target="_blank">
+                <img src="./pics/twitter.svg" alt="twitter">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./pics/ins.svg" alt="instgram">
+            </a>
+        </div>
+       
+    </footer>
+</body>
 </html>
