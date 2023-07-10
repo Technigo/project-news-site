@@ -2,46 +2,99 @@
 *{
   box-sizing:border-box;
   margin:0;
-  padiing:0;
+  padding:0;
+  font-family: "Roboto"
 }
 
 nav{
   background: #006E7F;
+  padding: 30px 0;
   color:white;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+h1{
+  font-size: 60px;
+  font-family:"Cherry Cream Soda"
+}
+
+.secondary-heading{
+  font-size: 40px;
+  font-family: "Cherry Cream Soda";
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: solid black 5px;
+}
+ul{
+  display: flex;
+  align-items: center;
+}
+
+ul li{
+  text-decoration: none;
+  font-size: 20px;  
+  list-style: none;
+}
+
+ul li:not(:last-child){
+  margin-right: 20px;
 }
 
 main{
-  max-width: 1000px;
   margin: 0 auto;
 }
 
+.berlin-wall-img{
+  width: 500px;
+  margin-right: 30px;
+}
+
+.text-box{
+  padding: 20px 30px;     
+}
+
 .about-container{
-  margin: 100px auto;
-  max-width: 700px;
-  height:400px;
+  margin: 200px auto;
+  max-width: 900px;
+  height:fit-content;
   background: #888;
-  padding: 50px 80px;
+  display: flex;
+  
 }
 
 .about-container h1{
-font-size: 40px;
+  font-size: 40px;
 }
 
 
 .grid{
+  width: fit-content;
   margin: 0 auto;
-  background:#333;
+  background: #006E7F;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 100px 30px;
+  column-gap: 30px;
+  row-gap: 60px;
+  padding: 100px 60px;
 
 }
 
 .grid-child{
-  height: 240px;
-  width: 180px;
-  background: pink;
+  width: 240px;
+  padding-bottom: 20px;
+  background: #fbcfe8;
+
+}
+
+.grid-child img{
+  width: 100%;
+
+}
+
+.grid-child h2{
+  display: block;
+  font-size: 20px;
+  margin: 14px;
 }
