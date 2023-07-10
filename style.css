@@ -45,12 +45,19 @@ header {
     width: 100%;
     height: 12vh;
     background-color: var(--headerbackground);
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.headercontainer {
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /*centering*/
 }
 
 .logodiv {
@@ -327,6 +334,10 @@ div#footerdiv p {
 
     header {
         height: 7vh;
+    }
+
+    .headercontainer {
+        height: 100%;
     }
 
     ul {
