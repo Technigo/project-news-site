@@ -12,4 +12,4 @@ The main problems I approached are the responsive design and magazine/news webpa
 I am going to add a contact form in the footer part, a sticky position in the header section and a dropdown box for the navbar in the responsive design if I have more time. 
 
 ## View it live
-
+https://craftasia-news-site.netlify.app/
