@@ -3,6 +3,11 @@ html {
   color: #fff;
 }
 
+h1 {
+  color: black;
+  font-family: Optima, sans-serif;
+}
+
 h2 {
   color: darkred;
 }
@@ -16,28 +21,52 @@ p {
 }
 
 header {
-  display: inline;
-  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 2%;
 }
 
-header img {
-  width: 15%;
-  border-radius: 50%;
-  display: inline;
+.logo img {
+  width: 50%;
+  border-radius: 70%;
 }
 
-h1 {
-  display: inline;
+.header-text {
+  margin-right: 30%;
 }
 
-main img {
-  width: 50%
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black
 }
 
 .big-news {
   display: grid;
-  grid-template-columns:
-    gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.big-news-image {
+  background-color: white;
+  padding: 2%;
+}
+
+.big-news-textbox {
+  background-color: white;
+  padding: 2%;
 }
 
 .other-news {
@@ -48,4 +77,23 @@ main img {
 
 .grid-item {
   background-color: white;
+  padding: 4%;
+  transition: all .2s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.1)
+}
+
+.photo {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
