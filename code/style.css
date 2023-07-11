@@ -62,6 +62,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .bigpic_container .Bigpic img {
@@ -74,6 +78,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 70%;
   margin: 0 10px;
   padding: 25px;
   text-align: center;
@@ -82,17 +87,15 @@ main {
 
 .bigpic_container .main_info h2 {
   font-size: 30px;
-  background-color: #ededed;
   line-height: 50px;
 }
 
 .bigpic_container .main_info p {
   font-size: 18px;
   line-height: 60px;
-  background-color: #ededed;
 }
 
-.bigpic_container .main_info .button {
+.bigpic_container .main_info button {
   margin-top: 30px;
 }
 
@@ -208,6 +211,7 @@ footer div a {
     height: 275px;
   }
   .bigpic_container .main_info {
+    width: 100%;
     margin: 0;
   }
   .bigpic_container .main_info h2 {
@@ -225,6 +229,7 @@ footer div a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   .container .picture {
     display: -webkit-box;
@@ -240,7 +245,10 @@ footer div a {
   }
 }
 
-@media screen and (min-width: 668px) and (max-width: 1023px) {
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  header .navbar a {
+    font-size: 20px;
+  }
   main {
     margin: 20px;
     padding: 0;
@@ -291,11 +299,8 @@ footer div a {
 }
 
 @media screen and (min-width: 1024px) {
-  .bigpic_container .main_info {
-    height: 400px;
-  }
-  .bigpic_container .main_info p {
-    line-height: 30px;
+  .bigpic_container .Bigpic img {
+    width: 100%;
   }
   .container {
     -webkit-column-gap: 10px;
