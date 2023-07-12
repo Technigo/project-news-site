@@ -10,6 +10,15 @@ p {
   font-family: 'Crimson Text', serif;
 }
 
+.genre,
+.date {
+  font-weight: 100;
+}
+
+.date {
+  font-style: italic;
+}
+
 .article-image-large,
 .article-image-small {
   border-radius: 5px;
@@ -54,13 +63,21 @@ p {
   margin-bottom: 2rem;
 }
 
+.most-read-articles:last-child {
+  margin-bottom: 2rem;
+}
+
 .btn {
   border-radius: 25px;
   color: #ffffff;
-  background-color: #d33b84;
+  background-color: #566781;
   padding: 0.7rem 1.2rem;
   border: none;
   transition: transform .2s;
+}
+
+.btn:hover {
+  background-color: #465771;
 }
 
 a .btn {
@@ -68,7 +85,7 @@ a .btn {
 }
 
 .navbar {
-  background-color: #3BD38A;
+  background-color: #a08a6a;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -114,7 +131,33 @@ a {
   flex-wrap: wrap;
 }
 
+.recent-articles>div:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.recents {
+  background-color: #f5f1ed;
+  margin-top: 1rem;
+}
+
+.footer {
+  color: white;
+  background-color: #a08a6a;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  margin: 2rem auto;
+}
+
+
+
 @media (min-width: 667px) {
+  .link-text:hover {
+    text-decoration: underline;
+  }
+
   .links {
     display: flex;
     justify-content: flex-end;
@@ -129,6 +172,11 @@ a {
   a>.link-text {
     display: block;
   }
+
+  .recent-articles>div:not(:first-child) {
+    margin-top: 0;
+  }
+
 }
 
 @media (max-width: 1023px) and (min-width: 667px) {
@@ -145,7 +193,8 @@ a {
 
   .most-read-articles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
   }
 
@@ -166,7 +215,7 @@ a {
   }
 
   .article-image-large {
-    height: 400px;
+    height: 450px;
   }
 
   .big-article-first-child {
