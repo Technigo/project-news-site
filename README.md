@@ -13,4 +13,4 @@ With more time next step would be to improve the design further, work more on th
 
 ## View it live
 
-***Netlify link***
+https://idahcollin-project-news-site.netlify.app
