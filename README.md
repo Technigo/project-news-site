@@ -1,6 +1,6 @@
 # News Site
 
-Pre-course project for the Technigo Web Developer Bootcamp. The assignment was to create a magazine/newspaper site using basic HTML and CSS. Following was to be included: header, big news section, a grid of cards with other news and hover effects. Responsive design with specific views was to be included.
+Pre-course project for the Technigo Web Developer Bootcamp. The assignment was to create a responsive magazine/newspaper site using basic HTML and CSS. Following was to be included: header, big news section, a grid of cards with other news and hover effects.
 
 ## The problem
 

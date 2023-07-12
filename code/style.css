@@ -10,14 +10,17 @@ h1 {
 
 h2 {
   color: darkred;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
   color: brown;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
   color: brown;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -55,7 +58,7 @@ nav ul li a {
   }
 
   h1 {
-    color: darksalmon;
+    color: brown;
     font-size: 45px;
   }
 
@@ -71,7 +74,7 @@ nav ul li a {
   }
 
   h1 {
-    color: darksalmon;
+    color: brown;
     font-size: 60px;
   }
 
@@ -94,6 +97,10 @@ nav ul li a {
 .big-news-textbox {
   background-color: lightsalmon;
   padding: 4%;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -153,4 +160,6 @@ a {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
