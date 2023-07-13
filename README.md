@@ -13,4 +13,4 @@ I also descided to make some hover-effects to images and buttons, so that it wou
 If I had more time I would keep making the site even prettier, by also taking the time in the sketching fase to also sketch out the looks of the site, rather than only skething on the layout. If I had more time (and knowledge) I would also create JavaScript functions for some parts, perhaps add in the "real" time, rather than hard coding it etc. I would also create "real" subpages, so that the links would actually lead somewhere. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The site can be viewed on via this Netlify link: https://sunny-moonbeam-ed8a3f.netlify.app/ 
