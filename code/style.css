@@ -28,6 +28,11 @@ header .logo {
   cursor: pointer;
 }
 
+header .logo img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 header .sitename {
   font-size: 22px;
   line-height: 26px;

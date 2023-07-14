@@ -16,6 +16,11 @@ header{
         width:55px;
         height: 54px;
         cursor: pointer;
+        img {
+            &:hover{
+                transform: scale(1.25);
+            }
+        }
     }
     
     .sitename{
