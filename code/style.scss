@@ -108,8 +108,15 @@ main{
     text-align: center;
     background-color:#ededed;
     align-content:center;
-    .picture p {
+    .picture {
+        p {
         word-wrap: break-word;
+        }
+        img{
+            &:hover{
+        transform: scale(1.05);
+            }
+        }
     }
     .item{
         position:relative;

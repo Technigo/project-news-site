@@ -135,6 +135,11 @@ main {
   word-wrap: break-word;
 }
 
+.container .picture img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .container .item {
   position: relative;
   color: white;
