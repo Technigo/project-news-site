@@ -83,8 +83,8 @@ main {
 }
 
 .berlin-wall-img {
-  width: 500px;
-  margin-right: 30px;
+  width: 650px;
+  margin-right: 5px;
 }
 
 .text-box {
@@ -95,6 +95,12 @@ main {
   margin: 200px auto 100px;
   width: fit-content;
   position: relative;
+}
+
+.about-container:hover img {
+  /* transform: scale(105%); */
+  border-right: dotted 10px rgba(250, 13, 115);
+  border-left: dotted 10px rgba(250, 13, 115);
 }
 
 .about-inner {
@@ -117,13 +123,46 @@ main {
   width: 80%;
 }
 
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.about-text a {
+  -webkit-text-stroke: rgba(250, 13, 115) 2px;
+  background: rgba(255, 250, 24);
+  color: #fff;
+  margin-top: 20px;
+  padding: 3px 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.about-second-box a {
+  position: absolute;
+  top: 160px;
+  left: 180px;
+  transform: rotate(-12deg);
+  padding: 14px 50px;
+  border: dotted 10px rgba(250, 13, 115);
+}
+
+.about-first-box a:hover {
+  transform: rotate(180deg);
+  box-shadow: inset 2px 2px 2px rgba(250, 13, 115, 0.5);
+}
+
+.about-second-box a:hover {
+  transform: rotate(20deg);
+  border: dotted 10px rgba(0, 247, 255);
+}
+
 .about-container h2 {
   font-size: 60px;
   font-family: "Cherry Cream Soda";
-  transform: rotate(9deg);
-  position: absolute;
-  top: -50px;
-  left: 30px;
+
   background: -webkit-linear-gradient(
     90deg,
     rgba(250, 13, 32) 6%,
@@ -138,13 +177,41 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.about-second-box h2 {
-  transform: rotate(-9deg);
+.about-first-box h2 {
+  transform: rotate(9deg);
   position: absolute;
   top: -50px;
   left: 30px;
 }
 
+.about-second-box h2 {
+  transform: rotate(-6deg);
+  position: absolute;
+  top: -120px;
+  right: 0;
+}
+
+.about-container h3 {
+  font-family: "Cherry Cream Soda";
+  writing-mode: vertical-rl;
+  font-size: 60px;
+  position: absolute;
+  color: rgba(252, 161, 18);
+}
+
+.about-first-box h3 {
+  left: -80px;
+  top: 0;
+}
+
+.about-second-box h3 {
+  right: -80px;
+  top: 0;
+}
+
+.news-heading {
+  border-top: #000 20px double;
+}
 .grid {
   width: fit-content;
   margin: 0 auto;
@@ -223,4 +290,219 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Berlin Text animation */
+
+.sign,
+.fast-flicker,
+.flicker {
+  letter-spacing: 2;
+  font-family: "Cherry Cream Soda";
+  text-transform: uppercase;
+  font-size: 100px;
+  color: rgba(0, 247, 255);
+  text-shadow:
+    0 0 0.6rem rgba(255, 250, 24),
+    0 0 1.5rem rgba(252, 161, 18),
+    -0.2rem 0.1rem 1rem rgba(252, 161, 18),
+    0.2rem 0.1rem 1rem rgba(252, 161, 18),
+    0 -0.5rem 2rem rgba(0, 255, 10),
+    0 0.5rem 3rem rgba(0, 255, 10);
+  animation:
+    shine 2s forwards,
+    flicker 3s infinite;
+}
+
+.sign-first {
+  text-align: center;
+  border-bottom: #000 20px double;
+}
+
+.sign-second {
+  position: absolute;
+  writing-mode: vertical-rl;
+  right: -120px;
+  bottom: 0;
+  font-size: 60px;
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: rgb(24, 255, 205);
+    text-shadow:
+      0 0 0.6rem rgba(255, 250, 24),
+      0 0 1.5rem #ffba65,
+      -0.2rem 0.1rem 1rem #ffba65,
+      0.2rem 0.1rem 1rem #ffba65,
+      0 -0.5rem 2rem rgba(0, 255, 10),
+      0 0.5rem 3rem rgba(0, 255, 10);
+  }
+  28%,
+  33% {
+    color: #65d6ff;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: rgb(49, 250, 13);
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation:
+    shine 2s forwards,
+    blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation:
+    shine 2s forwards,
+    blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: rgb(250, 195, 13);
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(247, 106, 148);
+    text-shadow:
+      0 0 0.6rem rgba(255, 250, 24),
+      0 0 1.5rem rgb(224, 124, 167),
+      -0.2rem 0.1rem 1rem rgb(245, 164, 199),
+      0.2rem 0.1rem 1rem rgb(238, 140, 182),
+      0 -0.5rem 2rem rgb(206, 80, 245),
+      0 0.5rem 3rem rgba(250, 13, 175);
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
