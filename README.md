@@ -1,8 +1,9 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+An assignment meant to showcase understanding of HTML and CSS. Site will be responsive to look good depending on what device a user would use to view it. 
 
 ## The problem
 
