@@ -210,7 +210,7 @@ main {
 }
 
 .news-heading {
-  padding-left: 50px;
+  padding-left: 200px;
   font-size: 30px;
   margin-bottom: 100px;
   border-top: #000 20px double;
@@ -651,5 +651,67 @@ footer {
   100% {
     top: 0;
     right: 120%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 70px 40px;
+  }
+
+  .news-heading {
+    padding-left: 30px;
+  }
+
+  .about-container {
+    margin: 150px auto 80px;
+  }
+
+  .berlin-wall-img {
+    width: 350px;
+  }
+  .about-inner {
+    max-width: 650px;
+  }
+
+  .text-box {
+    padding: 0;
+  }
+
+  .about-text {
+    font-size: 22px;
+  }
+  .about-text a {
+    padding: 2px 4px;
+  }
+
+  .about-second-box a {
+    padding: 4px 16px;
+    border: dotted 6px rgba(250, 13, 115);
+  }
+  .about-container h2 {
+    font-size: 46px;
+  }
+
+  .about-first-box h2 {
+    transform: rotate(10deg);
+    top: -35px;
+  }
+
+  .about-second-box h2 {
+    transform: rotate(-7eg);
+    top: -100px;
+  }
+
+  .about-container h3 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 910px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
