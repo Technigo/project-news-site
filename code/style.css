@@ -1,4 +1,47 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.site-title {
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav {
+  display: block;
+  background-color: turquoise;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.nav-menu-items {
+  margin: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.nav-menu-items a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.trending {
+  font-weight: 700;
+  color: black;
+  margin-right: 1rem;
 }
