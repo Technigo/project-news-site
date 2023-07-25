@@ -1,23 +1,301 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>Summer in Stockholm for families</title>
+  <link rel="stylesheet" style="text/css " href="./style.css" />
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
 
-    <section class="">
-      <!-- The other news  -->
+<body>
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <nav class="navbar">
+      <img src="../code/logo-mini.svg" />
+      <div>News</div>
+      <div><a href="#link_to_travel">Travel</a></div>
+      <div><a href="#link_to_Museums">Museums</a></div>
+      <div><a href="#link_to_Paddling-pools">Paddling-pools</a></div>
+      <div><a href="#link_to_Playgrounds">Playgrounds</a></div>
+      <div><a href="#link_to_4H-Farms">4H-petfarms</a></div>
+      <div>Weather</div>
+      <div>Log In</div>
+      <div>
+        <form action="/search" method="GET" name="Search Form">
+          <label for="search-input"></label>
+          <input type="text" id="search-input" name="search-query" />
+          <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+  <br>
+
+  <main class="big-news">
+    <!-- The big news content -->
+    <article id="welcome">
+      <a target="_blank" href="https://www.visitstockholm.com/">
+        <figure>
+          <img src="stockholm.webp" alt="skeppsholmen">
+          <figcaption>
+            <h3>Welcome to Stockholm city</h3>
+          </figcaption>
+        </figure>
+      </a>
+      <strong>Welcome to Stockholm, one of the world’s most beautiful capitals. Stretched upon 14 islands around one
+        of
+        Europe’s largest and best-preserved medieval city centres, the city offers stunning activities for you to
+        discover with family and friends.</strong>
+    </article>
+  </main>
+  <br>
+
+
+  <!-- The other news  -->
+  <article>
+    <h2>
+      <a id=link_to_travel>Travel</a>
+    </h2>
+    <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://www.stromma.com/en-se/stockholm/">
+          <img src="https://www.visitstockholm.com/media/original_images/67aa5a85f2cb49c7ad233bb24f6f4acf.jpg"
+            alt="stromma">
+          <figcaption>
+            <h3>Strömma sight-seeing</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://en.accropark.se/">
+          <img src="https://lida.se/wp-content/uploads/sites/2/2021/04/IMG_4331_jj-1024x768.jpeg" alt="accropark">
+          <figcaption>
+            <h3>Lida accropark</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.kungligaslotten.se/english.html">
+          <img
+            src="https://www.kungligaslotten.se/images/18.4dc756d188477e49f38c74f/1686215643244/50-ar-for-sverige-slottsbacken-utstallning-foto-lisa-raihle-rehback.jpg"
+            alt="">
+          <figcaption>
+            <h3>Kungligaslotten</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.junibacken.se/en/">
+          <img src="https://www.junibacken.se/wp-content/uploads/2020/02/k9a4068-768x512.jpg" alt="junibacken">
+          <figcaption>
+            <h3>Junibacken</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://skansen.se/en/">
+          <img src="https://skansen.se/wp-content/uploads/2023/04/Nationaldagen_FotoAnnaHugosson_bildnr11webbpuff.jpg"
+            alt="skansen">
+          <figcaption>
+            <h3>Skansen oppen museum</h3>
+          </figcaption>
+        </a>
+      </div>
+    </Section>
+    <h2>
+      <a id=link_to_Museums>Museums</a>
+    </h2>
+    <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://www.nrm.se/en/16.html">
+          <img
+            src="https://www.nrm.se/images/18.4a8bf74015c9db7e596686b8/1500455325739/T-rex-Fossil-Evolution-600x350.gif"
+            alt="naturhistoriska riksmuseet">
+          <figcaption>
+            <h3>Naturhistoriska Riksmuseet</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.tekniskamuseet.se/en/">
+          <img src="https://wwwtekniskamusee.cdn.triggerfish.cloud/uploads/2021/09/hyper-human-barn-680x382.jpg"
+            alt="tekniska museet">
+          <figcaption>
+            <h3>Tekniska museet</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.tomtit.se/en/">
+          <img src="https://www.tomtit.se/imagevault/publishedmedia/o59hrfvfukuf44a5ujzz/DSC_0892.jpg" alt="tomtit">
+          <figcaption>
+            <h3>Tomtit museum</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.sjohistoriska.se/en">
+          <img
+            src="https://www.sjohistoriska.se/globalassets/sjohistoriska-museet/bilder/samlingar/fotografier/fotoarkivet1.jpg?w=992"
+            alt="sjohistoriska-museet">
+          <figcaption>
+            <h3>Sjöhistoriska Museet</h3>
+          </figcaption>
+        </a>
+      </div>
+    </Section>
+    <h2>
+      <a id=link_to_Paddling-pools>Paddling-pools</a>
+    </h2>
+    <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://fyrishov.se/om-oss/english/">
+          <img src="https://fyrishov.se/content/uploads/2015/05/700x384_%C3%84ventyrsbad_Vattenrutsch.jpg"
+            alt="fyrishov">
+          <figcaption>
+            <h3>Fyrishov waterpark</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://motionera.stockholm/trana-gymma-simma/husbybadet/">
+          <img
+            src="https://www.barnistan.se/storage/img/containers/assets/2473db1b-8d40-431d-834c-7d677482c078/husbybadet.jpg/030f9443ee003399db1339ce2b0cba91.jpg"
+            alt="husby">
+          <figcaption>
+            <h3>Husby paddling pool</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://www.varmdo.se/gustavsbergsbadet.4.7779a6ea16b218ead022788a.html">
+          <img
+            src="https://www.barnistan.se/storage/img/containers/assets/502b3c4e-2b9f-4235-bd86-b131f06b8c41/gustav_02.jpg/f1bc9a04d76268ef018d1e21acfca323.jpg"
+            alt="gustavsberg">
+          <figcaption>
+            <h3>Gustavsbergbadet</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/plaskdamm/blackens-plaskdamm/">
+          <img
+            src="https://parker.stockholm/optimized/serviceunitspage/filer/hitta/b29a5336-42d6-4562-971e-928cfae77910.jpeg"
+            alt="blacken">
+          <figcaption>
+            <h3>Blacken paddling pool</h3>
+          </figcaption>
+        </a>
+      </div>
+    </Section>
+    <h2>
+      <a id=link_to_Playgrounds>Playgrounds</a>
+    </h2>
+    <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://www.jarvastaden.se/index.php/98-mulle-meck">
+          <img
+            src="https://emvwr2994ad.exactdn.com/wp-content/uploads/2020/05/mulle-meck-parken-768x464.jpg?strip=all&lossy=1&quality=77&ssl=1"
+            alt="mulle-meck">
+          <figcaption>
+            <h3>Mulle Meck parc</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/bryggartappans-lekplats/">
+          <img
+            src="https://parker.stockholm/optimized/serviceunitspage/filer/hitta/781f77f2-3880-48bf-b876-8658f927a571.jpeg"
+            alt="bryggartappan">
+          <figcaption>
+            <h3>Bryggarstäppan playground</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank"
+          href="https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/ivar-los-park-lekplats/">
+          <img
+            src="https://emvwr2994ad.exactdn.com/wp-content/uploads/2020/05/ivar-los-park-lekplats-768x464.jpg?strip=all&lossy=1&quality=77&ssl=1"
+            alt="ivar-los">
+          <figcaption>
+            <h3>Ivar Los playground</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank"
+          href="https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/kristinebergs-slottspark/">
+          <img
+            src="https://parker.stockholm/optimized/serviceunitspage/filer/hitta/c985c612-fbf8-4ffc-b1d6-ddb35728f941.jpeg"
+            alt="uggleparken">
+          <figcaption>
+            <h3>kristinebergs-slottspark</h3>
+          </figcaption>
+        </a>
+      </div>
+    </Section>
+
+    <h2>
+      <a id=link_to_4H-Farms>4H-petfarms</a>
+    </h2>
+    <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://storaskuggans4hgard.se/">
+          <img src="https://storaskuggans4hgard.se/wp-content/uploads/IMG_2822-e1642167366325.jpg">
+          <figcaption>
+            <h3>Storaskuggan 4H farm</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.4h.se/bjorklundshage/">
+          <img
+            src="https://www.4h.se/bjorklundshage/wp-content/uploads/sites/99/2018/05/thumbnail_OriginalPhoto-650459190.610215.jpg"
+            alt="bjorklundshage">
+          <figcaption>
+            <h3>Björklundshage 4H farm</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.4h.se/hagelby/">
+          <img src="https://www.4h.se/hagelby/wp-content/uploads/sites/47/2014/12/Bild3.jpg" alt="hagelby">
+          <figcaption>
+            <h3>Hagelby petfarm</h3>
+          </figcaption>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://www.4h.se/riddersvik/">
+          <img src="https://www.4h.se/riddersvik/wp-content/uploads/sites/129/2022/01/image2-2-437x300.jpg"
+            alt="riddersvik">
+          <figcaption>
+            <h3>Riddersvik 4H farm</h3>
+          </figcaption>
+        </a>
+      </div>
+    </Section>
+  </article>
+
+  <aside>
+    <h2>For further planning</h2>
+    <section class="moreinfo">
+      <a target="_blank" href="https://sl.se/en/in-english">SL- Stockholm metro</a>
     </section>
-  </body>
+    <section class="moreinfo">
+      <a target="_blank" href="https://www.smhi.se/en/q/Stockholm/2673730">SMHI- weather forecast</a>
+    </section>
+  </aside>
+  <br>
+
+  <footer>
+    <div class="foot">Contact Us</div>
+    <div class="foot">Subscribe</div>
+    <div class="foot">Instagram</div>
+  </footer>
+
+</body>
+
 </html>

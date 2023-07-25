@@ -1,4 +1,152 @@
 html {
-  background: #0025ff;
+  background-image: #7f992b;
   color: #fff;
+}
+
+body {
+  background-color: rgb(245, 239, 184);
+}
+
+nav {
+  background-color: rgb(106, 96, 96);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navbar {
+  margin: 2px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #a77b0b
+}
+
+nav img {
+  width: 6%;
+  margin: 5px 30px;
+}
+
+
+.big-news {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5rem;
+}
+
+#welcome {
+  grid-column: 2/5;
+}
+
+#welcome a {
+  text-decoration: none;
+}
+
+strong {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+figcaption {
+  display: block;
+  bottom: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 10px 1px 10px;
+  margin-top: 0cm;
+  background-color: #2b352e;
+}
+
+h3 {
+  color: aliceblue;
+  font-size: medium;
+  text-decoration: none;
+}
+
+h2 {
+  background-color: #a77b0b;
+  border: 2px solid black;
+  font-size: large;
+  padding: 20px;
+  margin-top: 2cm;
+}
+
+
+.activities {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(auto, 1fr));
+  grid-template-rows: min-content;
+  box-sizing: border-box;
+  gap: 5px;
+}
+
+.card {
+  grid-column: span 1;
+  background-color: black;
+  border: 2px solid #191c28;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 2px 5px;
+}
+
+.moreinfo a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(94, 53, 0);
+  border: 2px solid black;
+  border-radius: 6px;
+  color: antiquewhite;
+  padding: 5px;
+  margin: 5px;
+  width: 10%;
+}
+
+.moreinfo a:hover {
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: rgb(106, 96, 96);
+}
+
+.foot {
+  margin: 15px;
+  padding: 5px;
+  width: 10%;
+  flex-grow: 0.001;
+  align-self: center;
 }
