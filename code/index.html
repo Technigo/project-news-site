@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Hub</title>
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+  <header>
+
+    <img class="logo" src="../images/science-logo-svg.svg" alt="The Science Hub logo">
+
+    <article class="site-name">
+      <span>Science Hub</span>
+    </article>
+
+    <nav class="navbar">
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+
+        <!-- USING CHECKBOX HACK FOR HAMBURGER ICON-->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENU OPTIONS -->
+        <div class="menu">
+          <li><a href="https://www.google.com/">Research</a></li>
+          <li><a href="https://www.google.com/">Topics</a></li>
+          <li><a href="https://www.google.com/">Podcasts</a></li>
+          <li><a href="https://www.google.com/">More</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="big-news-container">
+    <article class="grid-item big-news">
+      <img class="big-news-img" src="../images/honey-bee.jpg" alt="Honey bee at work">
+      <div class="big-news-title">Mind-Blowing Honey Bee</div>
+      <div class="big-news-text">Scientists make a groundbreaking discovery about honey bees: Unveiling their
+        astonishing secret superpower in pollination! Prepare to be captivated as we reveal the mind-boggling findings
+        that could reshape our understanding of ecological balance. Click now to delve into the scientific marvels of
+        honey bees and witness the profound impact of their extraordinary pollination abilities!</div>
+    </article>
+  </section>
+
+
+  <section class="other-news-container">
+
+    <article class="other-news-item">
+      <img src="../images/sleep.jpg" alt="The power of sleep">
+      <div class="other-news-item-text">
+        <h1>The power of sleep</h1>
+        <p>Sleep has long puzzled scientists. Its purpose, benefits, and
+          detrimental effects when lacking remained a mystery until recently.
+        </p>
+      </div>
+    </article>
+
+    <article class="other-news-item">
+      <img src="../images/bat.jpg" alt="Tiny fungus causing big problems">
+      <div class="other-news-item-text">
+        <h1>Tiny fungus causing big problems</h1>
+        <p>An emerging disease causes regional population collapse of a common north American Bat Species.</p>
+      </div>
+    </article>
+
+    <article class="other-news-item">
+      <img src="../images/microplastics.jpg" alt="Microplastics found in fish and fishmeal">
+      <div class="other-news-item-text">
+        <h1>Microplastics in fish and fishmeal</h1>
+        <p>Microplastics have emerged as concerning contaminants due to their ingestion by marine organisms.
+        </p>
+      </div>
+    </article>
+
+    <article class="other-news-item">
+      <img src="../images/cell.jpg" alt="The building blocks of Alzeimer">
+      <div class="other-news-item-text">
+        <h1>The building blocks of Alzheimer</h1>
+        <p>New mouse model unravels explosive interaction between Alzheimer's proteins!</p>
+      </div>
+    </article>
+
+  </section>
+  </div>
+
+  <div class="footer">
+    <p class="footer-text">This news site was made by Susanne Ekenheim as the first project in web developmet
+      bootcamp. August 2023</p>
+
+</body>
+
 </html>
