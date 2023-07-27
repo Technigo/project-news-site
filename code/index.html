@@ -3,21 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Global Health News</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf26016f57.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <!-- Header for mobile and ipad screens - only logo and hamburger icon shown, toggle the menu with help of the checkbox -->
+    <header class="mobile">
+      <div class="mobile-wrap">
+        <img class="logo" src="./images/earth-globe-logo.png" alt="Earth globe logo">        
+        <div class="menu">
+          <input type="checkbox" id="checkbox">
+          <label class="menu-icon" for="checkbox"><i class="fa fa-bars menu-icon"></i></label>        
+          <ul class="menu-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="contact">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header for desktops - logo, company name and navbar -->    
+    <header class="desktop">
       <!-- Some kind of logo and navbar -->
+      <div class="site-name-logo">
+        <img class="logo" src="./images/earth-globe-logo.png" alt="Earth globe logo"> 
+        <h3>HealthyGlobe</h3>
+      </div>
+      
+      <nav class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#about">About us</a>
+        <a href="contact">Contact us</a>
+      </nav>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
+      <div class="container">
+        <img src="./images/plastic_pollution.jpg" alt="Plastic pollution in Cote d'ivoire - Credit: UNEP/Ollivier Girard">      
+        <div class="text-block">
+          <h1>HISTORIC GLOBAL PLASTICS TREATY IN PLACE 2024</h1>
+          <p>The world could have an international treaty within two years that will guide the production, redesign and recycling of plastic after representatives of 175 UN nations endorsed a resolution to end plastic pollution. <a href="https://www.scidev.net/global/news/world-leaders-set-to-pen-historic-plastics-treaty/"><strong>Read more</strong></a></p>
+        </div>
+      </div>
     </section>
 
-    <section class="">
+    <section class="other-news">
       <!-- The other news  -->
+      <div class="article">
+        <img src="./images/amr.jpeg" alt="Lab assistant growing culture viruses and bacteria in the “Infectious Room” of the Cancer Institute of Columbia. Source: PAHO/WHO">
+        <div class="article-text">
+          <h3>Antimicrobial resistance expected to cause 5.2 million deaths in the Western Pacific by 2030</h3>
+          <a href="https://www.who.int/westernpacific/news/item/13-06-2023-antimicrobial-resistance-expected-to-cause-5.2-million-deaths-in-the-western-pacific-by-2030#:~:text=Manila%20%E2%80%93%20An%20estimated%205.2%20million,impact%20of%20antimicrobial%20resistance%20(AMR)"><strong>Read more</strong></a>
+        </div>
+      </div>
+      
+      <div class="article">
+        <img src="./images/sleep.jpeg" alt="A good sleep - Source: https://sph.umich.edu/pursuit/2020posts/why-sleep-is-so-important-to-your-health.html">
+        <div class="article-text">
+          <h3>High-quality sleep promotes resilience to depression and anxiety</h3>
+          <a href="https://www.sciencedaily.com/releases/2023/07/230713141922.htm"><strong>Read more</strong></a>
+        </div>
+      </div>
+      
+      <div class="article">
+        <img src="./images/skycrapers.jpg" alt="Skyscrapers - Source: United Nations">
+        <div class="article-text">
+          <h3>Cities Alive: Designing for urban childhoods</h3>
+          <a href="https://www.arup.com/perspectives/publications/research/section/cities-alive-designing-for-urban-childhoods"><strong>Read more</strong></a>
+        </div>
+      </div>
+      
+      <div class="article">
+        <img src="./images/food-future.png" alt="In the future, an array of technologies may help to bring tomatoes from farm to plate. Source: KINWUN/ISTOCK/GETTY IMAGES PLUS">
+        <div class="article-text">
+          <h3>What does the future of food look like in 2050?</h3>
+          <a href="https://steakholderfoods.com/the-does-the-future-of-food-look-like-in-2050/#:~:text=1.-,What%20food%20will%20we%20be%20eating%20in%202050%3F,minerals%20and%20high%20in%20protein."><strong>Read more</strong></a>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="./images/girl-and-mom.jpeg" alt="A two-year-old girl and her mother wait to see a doctor at a pediatric oncology unit in Ghana. Source: WHO/Ernest Ankomah">
+        <div class="article-text">
+          <h3>Over 350,000 children in developing world missing out on cancer treatment</h3>
+          <a href="https://news.un.org/en/story/2023/07/1139142"><strong>Read more</strong></a>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="./images/Alzheimers-brain-scan.webp" alt="A doctor looks at PET brain scans in Phoenix on Aug. 14, 2018. Source: Matt York / AP file">
+        <div class="article-text">
+          <h3>3 unanswered questions about the newly approved Alzheimer's drug Leqembi</h3>
+          <a href="https://www.nbcnews.com/health/aging/3-unanswered-questions-newly-approved-alzheimers-drug-leqembi-rcna66121"><strong>Read more</strong></a>
+        </div>
+      </div>
     </section>
+
+    <!--Footer - copyright and contact info-->
+    <footer>
+      <div class="copyright">
+        <h3>&copy; Hang Nguyen 2023</h3>
+      </div>
+
+      <div class="contact">
+        <ul class="socials">
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
