@@ -1,3 +1,4 @@
+/* Gereral styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,22 +6,8 @@
   font-family: "Roboto";
 }
 
-nav {
-  background: rgb(250, 13, 32);
-  background: linear-gradient(
-    90deg,
-    rgba(250, 13, 32, 0.7805716036414566) 6%,
-    rgba(250, 13, 115, 0.8421962535014006) 19%,
-    rgba(250, 13, 175, 0.7525603991596639) 33%,
-    rgba(252, 161, 18, 0.6181066176470589) 49%,
-    rgba(255, 250, 24, 0.6881346288515406) 72%,
-    rgba(0, 255, 10, 0.6881346288515406) 86%,
-    rgba(0, 247, 255, 0.7161458333333333) 100%
-  );
-  padding: 20px 0;
-  color: white;
-  display: flex;
-  justify-content: space-around;
+main {
+  margin: 0 auto;
 }
 
 a {
@@ -42,54 +29,27 @@ h1 {
   border-bottom: solid black 5px;
 }
 
-ul {
+/* Navigation */
+
+nav {
+  background: rgb(250, 13, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 13, 32, 0.7805716036414566) 6%,
+    rgba(250, 13, 115, 0.8421962535014006) 19%,
+    rgba(250, 13, 175, 0.7525603991596639) 33%,
+    rgba(252, 161, 18, 0.6181066176470589) 49%,
+    rgba(255, 250, 24, 0.6881346288515406) 72%,
+    rgba(0, 255, 10, 0.6881346288515406) 86%,
+    rgba(0, 247, 255, 0.7161458333333333) 100%
+  );
+  padding: 20px 0;
+  color: white;
   display: flex;
-  align-items: end;
-  color: rgb(0, 110, 127, 0.9);
+  justify-content: space-around;
 }
 
-ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  color: inherit;
-  letter-spacing: -1px;
-  font-family: "Cherry Cream Soda";
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-}
-
-ul li {
-  list-style: none;
-  transition: all ease 0.3s;
-}
-
-ul li:not(:last-child) {
-  margin-right: 20px;
-}
-
-ul li:hover {
-  transform: translateY(5px);
-}
-
-.nav-under {
-  height: 40px;
-  font-size: 20px;
-  color: #fff;
-  background: rgb(0, 110, 127, 0.9);
-}
-
-main {
-  margin: 0 auto;
-}
-
-.berlin-wall-img {
-  width: 650px;
-  margin-right: 5px;
-}
-
-.text-box {
-  padding-top: 200px;
-}
+/* Hero Section */
 
 .about-container {
   margin: 200px auto 100px;
@@ -101,6 +61,11 @@ main {
   /* transform: scale(105%); */
   border-right: dotted 10px rgba(250, 13, 115);
   border-left: dotted 10px rgba(250, 13, 115);
+}
+
+.berlin-wall-img {
+  width: 650px;
+  margin-right: 5px;
 }
 
 .about-inner {
@@ -131,6 +96,8 @@ main {
   font-size: 28px;
 }
 
+/* About btn */
+
 .about-text a {
   -webkit-text-stroke: rgba(250, 13, 115) 2px;
   background: rgba(255, 250, 24);
@@ -158,6 +125,8 @@ main {
   transform: rotate(20deg);
   border: dotted 10px rgba(0, 247, 255);
 }
+
+/* About heading */
 
 .about-container h2 {
   font-size: 60px;
@@ -208,6 +177,8 @@ main {
   right: -80px;
   top: 0;
 }
+
+/* News Section */
 
 .news-heading {
   padding-left: 200px;
@@ -276,6 +247,8 @@ main {
   height: 100%;
 }
 
+/* Footer */
+
 footer {
   margin-top: 100px;
   color: #fff;
@@ -296,7 +269,7 @@ footer {
   align-items: center;
 }
 
-/* Berlin Text animation */
+/* "Berlin"  Text animation */
 
 .sign,
 .fast-flicker,
@@ -514,9 +487,8 @@ footer {
 /* Text moving animation */
 :root {
   --duration: 6s;
-  --size: 100vw;
-  --characters: 14;
-  --delay-character: 0.2s;
+  --characters: 21;
+  --delay-character: 0.3s;
   --font-size: 30px;
 }
 
@@ -663,17 +635,15 @@ footer {
   .berlin-wall-img {
     width: 350px;
   }
+
   .about-inner {
     max-width: 650px;
-  }
-
-  .text-box {
-    padding: 0;
   }
 
   .about-text {
     font-size: 22px;
   }
+
   .about-text a {
     padding: 2px 4px;
   }
@@ -863,5 +833,9 @@ footer {
       top: 0;
       right: 160%;
     }
+  }
+
+  :root {
+    --font-size: 24px;
   }
 }
