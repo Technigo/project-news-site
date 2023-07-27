@@ -9,4 +9,4 @@ A responsive one-page website for global health news using HTML and CSS.
 - Potential improvements: Some effect when one hover over an article, more CSS animations and box shadows in the drop-down menu
 
 ## View it live
-https://64c2c2416d1bb9007efce33a--bespoke-paletas-847c77.netlify.app/
+https://64c2ca1f101f6100088e35ed--bespoke-paletas-847c77.netlify.app/
