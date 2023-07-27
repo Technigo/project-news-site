@@ -542,6 +542,9 @@ footer {
   transition: ease all 0.4s;
 }
 
+.text {
+  transform: translateX(-50px);
+}
 .frame span:nth-of-type(1) {
   -webkit-animation-delay: calc(var(--delay-character) * 1);
   animation-delay: calc(var(--delay-character) * 1);
@@ -638,7 +641,7 @@ footer {
 @keyframes frameMove {
   0% {
     top: 0;
-    right: 0;
+    right: -50px;
   }
   100% {
     top: 0;
@@ -721,10 +724,8 @@ footer {
     font-size: 70px;
   }
 
-  .sign-second {
-    right: -120px;
-    bottom: 0;
-    font-size: 4 0px;
+  .big-news {
+    display: flex;
   }
 
   .about-inner {
@@ -755,7 +756,7 @@ footer {
 
   .about-second-box a {
     width: fit-content;
-    top: 360px;
+    top: 380px;
     left: 100px;
     transform: rotate(-12deg);
   }
@@ -784,32 +785,61 @@ footer {
     margin-bottom: 20px;
   }
 
+  .about-container h2 {
+    border: dotted 4px #000;
+    text-align: center;
+  }
+
   .about-container h3 {
     display: none;
   }
 
   .about-container {
     width: 300px;
+    margin: 80px auto;
+  }
+
+  .about-second-box {
+    margin-top: 400px;
+  }
+
+  .about-second-box::before {
+    content: "";
+    background-image: url("./images/bear.webp");
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: -340px;
+    background-position: top;
+    background-size: cover;
+    border: #000 solid 6px;
+    margin-left: 40px;
   }
 
   .sign-second {
     font-size: 40px;
-    bottom: -200px;
+    bottom: 150px;
+    left: 50px;
+    writing-mode: unset;
+    transform: rotate(-30deg);
   }
 }
 
 @media (max-width: 660px) {
-  .about-container {
-    margin: 80px auto;
+  .big-news {
+    flex-direction: column;
   }
 
-  .about-container h2 {
-    text-align: center;
-    border: dotted 4px #000;
+  .about-container {
+    margin: 60px auto;
+  }
+
+  .about-second-box::before {
+    display: none;
   }
   .grid {
     grid-template-columns: repeat(1, 1fr);
-    padding: 70px 40px;
+    padding: 60px 40px;
     gap: 40px;
   }
 
@@ -819,5 +849,19 @@ footer {
 
   .sign-second {
     display: none;
+  }
+  .news-heading {
+    margin-bottom: 60px;
+  }
+
+  @keyframes frameMove {
+    0% {
+      top: 0;
+      right: -20px;
+    }
+    100% {
+      top: 0;
+      right: 160%;
+    }
   }
 }
