@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" , initial-scale=1.0>
   <!-- Change the title below -->
   <title>Summer in Stockholm for families</title>
   <link rel="stylesheet" style="text/css " href="./style.css" />
@@ -14,39 +15,34 @@
     <!-- Some kind of logo and navbar -->
     <nav class="navbar">
       <img src="../code/logo-mini.svg" />
-      <div>News</div>
-      <div><a href="#link_to_travel">Travel</a></div>
-      <div><a href="#link_to_Museums">Museums</a></div>
-      <div><a href="#link_to_Paddling-pools">Paddling-pools</a></div>
-      <div><a href="#link_to_Playgrounds">Playgrounds</a></div>
-      <div><a href="#link_to_4H-Farms">4H-petfarms</a></div>
-      <div>Weather</div>
-      <div>Log In</div>
-      <div>
-        <form action="/search" method="GET" name="Search Form">
-          <label for="search-input"></label>
-          <input type="text" id="search-input" name="search-query" />
-          <button type="submit">Search</button>
-      </div>
+      <a href="#link_to_travel">Travel</a>
+      <a href="#link_to_Museums">Museums</a>
+      <a href="#link_to_Paddling-pools">Paddling-pools</a>
+      <a href="#link_to_Playgrounds">Playgrounds</a>
+      <a href="#link_to_4H-Farms">4H-petfarms</a>
     </nav>
   </header>
-  <br>
 
   <main class="big-news">
     <!-- The big news content -->
-    <article id="welcome">
-      <a target="_blank" href="https://www.visitstockholm.com/">
-        <figure>
-          <img src="stockholm.webp" alt="skeppsholmen">
-          <figcaption>
-            <h3>Welcome to Stockholm city</h3>
-          </figcaption>
-        </figure>
-      </a>
-      <strong>Welcome to Stockholm, one of the world’s most beautiful capitals. Stretched upon 14 islands around one
-        of
-        Europe’s largest and best-preserved medieval city centres, the city offers stunning activities for you to
-        discover with family and friends.</strong>
+    <article class="welcome">
+      <div>
+        <a target="_blank" href="https://www.visitstockholm.com/">
+          <figure>
+            <img src="stockholm.webp" alt="skeppsholmen">
+            <figcaption>
+              <h3>Welcome to Stockholm city</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="welcome-text">
+        <h1>"Varmt välkommen"</h1>
+        <strong>Welcome to Stockholm, one of the most beautiful capitals. Stretched upon 14 islands, the city offers
+          varied stunning activities for you to
+          discover with family and friends.</strong>
+        <button>Click for more information</button>
+      </div>
     </article>
   </main>
   <br>
@@ -58,6 +54,15 @@
       <a id=link_to_travel>Travel</a>
     </h2>
     <Section class="activities">
+      <div class="card">
+        <a target="_blank" href="https://www.stromma.com/en-se/stockholm/">
+          <figure>
+            <img src="https://www.visitstockholm.com/media/original_images/67aa5a85f2cb49c7ad233bb24f6f4acf.jpg"
+              alt="stromma">
+            <figcaption>Strömma sight-seeing</figcaption>
+          </figure>
+        </a>
+      </div>
       <div class="card">
         <a target="_blank" href="https://www.stromma.com/en-se/stockholm/">
           <img src="https://www.visitstockholm.com/media/original_images/67aa5a85f2cb49c7ad233bb24f6f4acf.jpg"

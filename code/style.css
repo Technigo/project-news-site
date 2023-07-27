@@ -12,13 +12,18 @@ nav {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: center;
+}
 
+nav img {
+  width: 6%;
+  margin: 5px 10px;
 }
 
 .navbar {
-  margin: 2px;
+  margin: 10px 0px;
   width: 100%;
   flex-grow: 1;
 }
@@ -26,47 +31,59 @@ nav {
 .navbar a {
   text-decoration: none;
   color: #fff;
+  padding: 5px;
 }
 
 .navbar a:hover {
   color: #a77b0b
 }
 
-nav img {
-  width: 6%;
-  margin: 5px 30px;
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-even;
+  flex-direction: row;
 }
 
-
-.big-news {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 5rem;
-}
-
-#welcome {
-  grid-column: 2/5;
-}
-
-#welcome a {
+.welcome a {
   text-decoration: none;
+}
+
+.welcome a:hover {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.welcome figure {
+  margin: 1px;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.welcome-text {
+  margin: 10px 20px;
+  padding: 5px;
+  width: 250px;
+  color: #2b352e;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 strong {
   text-decoration: none;
-  color: black;
   font-size: 15px;
   text-align: center;
+  inline-size: 150px;
+  overflow-wrap: break-word;
 }
 
-.card a {
-  text-decoration: none;
-}
-
-.card a:hover {
-  font-style: italic;
-  opacity: 0.5;
+.welcome-text button {
+  display: block;
+  background-color: rgb(94, 53, 0);
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 3px;
 }
 
 img {
@@ -82,7 +99,7 @@ figcaption {
   width: 100%;
   box-sizing: border-box;
   padding: 3px 10px 1px 10px;
-  margin-top: 0cm;
+  margin-top: 1px;
   background-color: #2b352e;
 }
 
@@ -103,19 +120,31 @@ h2 {
 
 .activities {
   display: grid;
-  grid-template-columns: repeat(5, minmax(auto, 1fr));
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
   grid-template-rows: min-content;
   box-sizing: border-box;
-  gap: 5px;
+  column-gap: 5px;
+  row-gap: 10px;
 }
 
 .card {
   grid-column: span 1;
   background-color: black;
-  border: 2px solid #191c28;
-  border-radius: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
   flex: 1;
-  box-shadow: 2px 5px;
+  box-shadow: 3px 2px rgb(187, 184, 184);
+  box-sizing: border-box;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  font-style: italic;
+  opacity: 0.5;
 }
 
 .moreinfo a {
@@ -149,4 +178,40 @@ footer {
   width: 10%;
   flex-grow: 0.001;
   align-self: center;
+}
+
+
+@media screen and (max-width:667px) {
+  .welcome {
+    flex-direction: column;
+  }
+
+  .welcome-text {
+    width: 500px;
+  }
+
+  .activities {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    place-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    margin-top: 1px;
+  }
+
+  body {
+    background-color: whitesmoke;
+  }
+}
+
+@media screen and (min-width:668px) and (max-width:1023px) {
+  .activities {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+
+    body {
+      background-color: grey;
+    }
+  }
 }
