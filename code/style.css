@@ -46,3 +46,28 @@ a:visited {
 .navigation-title {
     font-weight: 600;
 }
+
+@media only screen and (max-width: 667px) {
+    .navigation-links {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 668px) {
+    .navigation-hamburger {
+        display: none;
+    }
+}
+
+.navigation-hamburger {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-line {
+    height: 2px;
+    width: 22px;
+    background-color: black;
+}
