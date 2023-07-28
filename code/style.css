@@ -173,7 +173,7 @@ li a:hover {
 /* Phone */
 @media (max-width: 768px) {
   body {
-    width: 100%;
+    width: 80%;
     margin-left: 0;
   }
 
@@ -215,6 +215,19 @@ li a:hover {
 
   img {
     width: 100%;
+  }
+
+  .small-articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-articles article {
+    background-color: #F7E9D7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   }
 }
 
