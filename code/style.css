@@ -173,7 +173,7 @@ li a:hover {
 /* Phone */
 @media (max-width: 768px) {
   body {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -228,6 +228,15 @@ li a:hover {
     margin: 10px;
     border-radius: 20px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .image-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
   }
 }
 
