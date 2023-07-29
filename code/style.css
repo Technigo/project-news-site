@@ -1,4 +1,62 @@
 html {
-  background: #0025ff;
+  background: #efc1e5;
   color: #fff;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  grid-column: 1 / span 2;
+}
+
+h1 { 
+  display: flex;
+  background-color: rgb(224, 211, 194);
+  padding: 5px;
+  border: white solid;
+}
+
+nav {
+  grid-column: 3 / 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  background-color: #bd229b;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.big-news {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.news-grid {
+  display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-cell {
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 300px;
+  height: 200px;
 }
