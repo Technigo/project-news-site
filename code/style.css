@@ -1,4 +1,318 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  font-family: "avenir next", helvetica, arial, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+  height: 2rem;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0.5rem
+}
+
+.navbar img {
+  height: 90%;
+}
+
+.nav-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: white;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-news {
+  background-color: black;
+  color: white;
+  height: auto;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.main-news img {
+  width: 100%;
+}
+
+.main-news-text h1 {
+  text-align: center;
+}
+
+.main-news-text p {
+  display: none;
+}
+
+.boxes {
+  max-width: 1600px;
+  margin: 10px;
+  display: grid;
+  gap: 1rem;
+}
+
+.box {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  font-size: 0.5rem;
+  width: 45%;
+  height: 90%;
+}
+
+.box-text p {
+  margin-top: -2px;
+}
+
+.box img {
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.three img {
+  object-position: right;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    height: 6rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar img {
+    margin: 10px;
+  }
+
+  .nav-brand {
+    display: block;
+    margin-right: auto;
+  }
+
+  .nav-brand p {
+    margin-top: -40px;
+    font-style: italic;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-news {
+    height: auto;
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease;
+  }
+
+  .main-news:hover {
+    background-color: grey;
+  }
+
+  .main-news-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .main-news-text p {
+    width: 300px;
+    display: block;
+    margin-left: 20px;
+  }
+
+  .main-news img {
+    height: 20rem;
+    width: 50%
+  }
+
+  .main-news h1 {
+    width: 20rem
+  }
+
+  .box {
+    height: 30rem;
+    display: block;
+    transition: 0.7s ease;
+  }
+
+  .box img {
+    height: 65%;
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .box-text {
+    margin-top: -10px;
+    display: block;
+    width: 83%;
+    font-size: 1rem
+  }
+
+  .box-text p {
+    margin-top: -13px;
+    font-size: 1.1rem;
+  }
+
+  .box:hover {
+    background-color: grey;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    height: 6rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar img {
+    margin: 10px;
+  }
+
+  .nav-brand {
+    display: block;
+    margin-right: auto;
+  }
+
+  .nav-brand p {
+    margin-top: -40px;
+    font-style: italic;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-news {
+    height: auto;
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease;
+  }
+
+  .main-news:hover {
+    background-color: grey;
+  }
+
+  .main-news-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .main-news-text p {
+    width: 330px;
+    display: flex;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+
+  .main-news img {
+    height: 25rem;
+    width: 50%
+  }
+
+  .main-news h1 {
+    width: 20rem;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .box {
+    height: 25rem;
+    display: block;
+    transition: 0.7s ease;
+  }
+
+  .box img {
+    height: 60%;
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .box-text {
+    display: block;
+    width: 83%;
+    font-size: 0.7rem
+  }
+
+  .box-text p {
+    margin-top: -4px;
+    font-size: 1.0rem;
+  }
+
+  .box:hover {
+    background-color: grey;
+  }
+
 }
