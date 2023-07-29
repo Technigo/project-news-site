@@ -12,8 +12,8 @@ nav {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
   align-content: center;
 }
 
@@ -31,7 +31,7 @@ nav img {
 .navbar a {
   text-decoration: none;
   color: #fff;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .navbar a:hover {
@@ -41,23 +41,15 @@ nav img {
 .welcome {
   display: flex;
   align-items: center;
-  justify-content: space-even;
+  justify-content: center;
   flex-direction: row;
-}
-
-.welcome a {
-  text-decoration: none;
-}
-
-.welcome a:hover {
-  font-style: italic;
-  opacity: 0.5;
 }
 
 .welcome figure {
   margin: 1px;
   border: 2px solid black;
   background-color: black;
+  flex-grow: 1;
 }
 
 .welcome-text {
@@ -65,7 +57,6 @@ nav img {
   padding: 5px;
   width: 250px;
   color: #2b352e;
-  flex-grow: 1;
   box-sizing: border-box;
 }
 
@@ -83,7 +74,12 @@ strong {
   color: aliceblue;
   text-align: center;
   padding: 5px;
-  margin: 10px 3px;
+  margin: 20px 0px;
+}
+
+.welcome-text button:hover {
+  background-color: rgb(106, 96, 96);
+  font-style: italic;
 }
 
 img {
@@ -138,11 +134,11 @@ h2 {
   box-sizing: border-box;
 }
 
-.card a {
+a {
   text-decoration: none;
 }
 
-.card a:hover {
+a:hover {
   font-style: italic;
   opacity: 0.5;
 }
@@ -153,11 +149,11 @@ h2 {
   text-align: center;
   background-color: rgb(94, 53, 0);
   border: 2px solid black;
-  border-radius: 6px;
+  border-radius: 2px;
   color: antiquewhite;
   padding: 5px;
   margin: 5px;
-  width: 10%;
+  width: 200px;
 }
 
 .moreinfo a:hover {
@@ -209,9 +205,10 @@ footer {
   .activities {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
-
-    body {
-      background-color: grey;
-    }
   }
+
+  body {
+    background-color: rgb(170, 171, 166);
+  }
+
 }
