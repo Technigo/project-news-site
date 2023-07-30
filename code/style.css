@@ -78,7 +78,7 @@ a:visited {
 
 .hero-image {
     border-radius: 16px 0 0 16px;
-    width: 50%;
+    max-width: 50%;
 }
 
 .hero-content {
@@ -87,7 +87,11 @@ a:visited {
 
 .hero-heading {
     margin-top: 0;
-    margin-bottom: 5px
+    margin-bottom: 0px
+}
+
+.hero-preview {
+    margin-top: 5px;
 }
 
 .hero-button {
@@ -131,6 +135,10 @@ a:visited {
     .second-link {
         order: 1;
     }
+
+    .hero-image {
+        max-width: 40%;
+    }
 }
 
 @media only screen and (max-width: 667px) {
@@ -153,4 +161,18 @@ a:visited {
     .navigation-hamburger {
         display: flex;
     }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .hero-preview {
+        display: none;
+    }
+
 }
