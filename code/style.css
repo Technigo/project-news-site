@@ -47,21 +47,9 @@ a:visited {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 667px) {
-    .navigation-links {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 668px) {
-    .navigation-hamburger {
-        display: none;
-    }
-}
-
 .navigation-hamburger {
     padding: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -70,4 +58,26 @@ a:visited {
     height: 2px;
     width: 22px;
     background-color: black;
+}
+
+@media only screen and (max-width: 667px) {
+    .navigation-links {
+        display: none;
+    }
+
+    .navigation-title {
+        display: none;
+    }
+
+    .navigation-hamburger {
+        display: flex;
+    }
+}
+
+@media (min-width: 668px) {
+    .navigation-title {
+        display: none;
+    }
+
+
 }
