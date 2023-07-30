@@ -19,28 +19,27 @@ a:visited {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     border-bottom: 1px solid black;
 }
 
+.grow {
+    flex-grow: 1;
+}
+
+.navigation-brand {
+    order: 0;
+}
+
+.navigation-title,
 .navigation-link {
     display: block;
     padding: 20px;
 }
 
-.navigation-link-effect:hover {
+.navigation-link:hover {
     color: #373f51;
     padding: 19px 20px 1px 20px;
-}
-
-.navigation-links {
-    display: flex;
-    flex-direction: row;
-}
-
-.navigation-brand {
-    display: flex;
-    padding-left: 20px;
 }
 
 .navigation-title {
@@ -49,6 +48,7 @@ a:visited {
 
 .navigation-hamburger {
     padding: 20px;
+    height: 19px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -60,8 +60,47 @@ a:visited {
     background-color: black;
 }
 
+@media (max-width: 1024px) {
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .navigation-title {
+        display: none;
+    }
+
+    .grow {
+        display: none;
+        flex-grow: 0;
+    }
+
+    .navigation-brand {
+        order: 2;
+    }
+
+    .navigation-link {
+        order: 3;
+    }
+
+    .first-link {
+        order: 0;
+    }
+
+    .second-link {
+        order: 1;
+    }
+}
+
 @media only screen and (max-width: 667px) {
-    .navigation-links {
+    .navigation-brand {
+        order: 0;
+    }
+
+    .grow {
+        flex-grow: 1;
+    }
+
+    .navigation-link {
         display: none;
     }
 
@@ -72,12 +111,4 @@ a:visited {
     .navigation-hamburger {
         display: flex;
     }
-}
-
-@media (min-width: 668px) {
-    .navigation-title {
-        display: none;
-    }
-
-
 }
