@@ -222,9 +222,7 @@ li a:hover {
 
   .small-articles {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .small-articles article {
@@ -259,7 +257,9 @@ li a:hover {
 
   .small-articles {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .small-articles article {
