@@ -15,7 +15,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin: 70px 0px 0px 40px;
-  text-shadow: 0 0 5px #b1197e;
+  text-shadow: 0 0 5px #8f848b;
 }
 
 .header-title {
@@ -31,7 +31,7 @@ header {
 h1 {
   font-size: 100px;
   font-family: Rosalia;
-  color: #eca2bd;
+  color: #f29ad3;
   text-align: left;
   margin: 0;
 }
@@ -74,6 +74,7 @@ p.special-font {
 
 /* Links */
 a {
+  color: #644114;
   text-decoration: none;
 }
 
@@ -179,10 +180,12 @@ li a:hover {
 
   header {
     margin: 30px 10px 0 10px;
+    width: 80%;
   }
 
   .header-title {
     margin: -10px 0px 30px 10px;
+    width: 70%;
   }
 
   .resizable-image {
@@ -219,7 +222,9 @@ li a:hover {
 
   .small-articles {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .small-articles article {
@@ -250,5 +255,18 @@ li a:hover {
 
   .resizable-image {
     width: 15%;
+  }
+
+  .small-articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-articles article {
+    background-color: #F7E9D7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   }
 }
