@@ -3,24 +3,233 @@
 
 <head>
   <meta charset="utf-8" />
-  <!-- Change the title below -->
-  <title>The New New Mag</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The New New Art Magazine</title>
   <link rel="stylesheet" href="./style.css" />
-  <!-- dont forget the meta tag for responsiveness -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
   <header>
-    <!-- Some kind of logo and navbar -->
+    <!-- logo -->
+    <img class="logo" src="./img/newnewlogo.png" alt="Picture of a Logo">
+
+    <!-- heading -->
+    <h1 class="top-heading">The <div>new new</div> art magazine</h1>
   </header>
 
-  <section class="big-news">
-    <!-- The big news content -->
-  </section>
+  <body>
+    <!-- navbar -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="index.html">This weeks news</a>
+      <a href="contact.html">About</a>
+      <a href="contact.html">contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+    </div>
 
-  <section class="">
-    <!-- The other news  -->
-  </section>
-</body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Latest news first text-box-->
+    <main>
+      <section>
+
+        <div class="flex-container">
+
+          <div class="flexbox-left">
+            <h1> The new new mag is brand new!</h1>
+            <p> Welcome to new new mag, a brand new new online magazine
+              depicting the art scene in various countries and contexts. <br><br> We collect the most interesting events
+              of the week, and offer a wide span of interviews with artists from all over the world. Click below to join
+              our release party!
+            </p>
+            <button class="button1"> Join our party!</button>
+          </div>
+
+          <!-- Latest news first pic-box-->
+
+          <div class="flexbox-right">
+            <img src="./img/newnewlogo.png" alt="logo">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- first rolling text -->
+
+      <marquee class="rollingtext" behavior="scroll" direction="left">THIS NEW NEW MAG IS BRAND NEW</marquee>
+
+      <!-- first big text -->
+
+      <h1> "THIS MAGAZINE IS ABOUT ART"</h1>
+      <h1> "AND TEXT"</h1>
+      <h1> "AND OTHER POETIC STRUCTURES"</h1>
+
+
+      <!-- The first row news content -->
+
+      <section>
+        <div class="grid-container">
+
+          <div class="item1">
+
+            <div class="poster">
+              <img src="./img/posters_content_second.JPG" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>The Content shows</h2>
+              <h3> OPEN CALL!</h3>
+              <p> Sign up and particiapte at the Content Show @ Folkteatern GBG 26/9 2023.
+              </p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+          <div class="item2">
+
+            <div class="poster">
+              <img src="./img/posters_content_second2.JPG" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>The Content shows</h2>
+              <h3>OPEN CALL!</h3>
+              <p>Sign up and particiapte at the Content Show @ Folkteatern GBG 15/11 2023.
+              </p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+
+          <div class="item3">
+
+            <div class="poster">
+              <img src="./img/artwork_house.png" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>The fake charity auction</h2>
+              <h3>AUCTION!</h3>
+              <p>Come by Kurzbauergasse 9, EG10 and look at the upcoming exhibition. And make a bit!</p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+          <div class="item4">
+
+            <div class="poster">
+              <img src="./img/newnewlogo.png" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>The opening party</h2>
+              <h3>PARTY!</h3>
+              <p>Come and join our release party! Drinks and food! Dance allt night! </p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+
+
+          <!-- The second row news content -->
+
+
+          <div class="item5">
+
+            <div class="poster">
+              <img src="./img/dance.jpg" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>Art City Bologna</h2>
+              <h3>EXHIBITION!</h3>
+              <p>Come by Via Belle Arti 54, Bologna, and visit the exhibition of the sculpture departement!</p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+          <div class="item6">
+
+            <div class="poster">
+              <img src="./img/garden.jpg" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>Garden Sculptures</h2>
+              <h3>EXHIBITION!</h3>
+              <p>Take a trip to the swedish archipelago and visit the exhibition "Garden Sculptures"!</p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+
+          <div class="item7">
+
+            <div class="poster">
+              <img src="./img/bellearti.jpg" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>Our Data Bodies</h2>
+              <h3>EXHIBITION!</h3>
+              <p>Come by Halfsister Berlin and look at the exhibition "Our Data Bodies" as a part of Transmediale!</p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+          <div class="item8">
+
+            <div class="poster">
+              <img src="./img/treno.jpg" alt="poster">
+            </div>
+
+            <div class="textbox">
+              <h2>Pics of a ride</h2>
+              <h3>EXHIBITION!</h3>
+              <p>Come by Kurzbauergasse 9, EG10 and look at the upcoming exhibition "Pics of a ride"!</p>
+              <button class="button2"> Read more</button>
+            </div>
+
+          </div>
+
+
+      </section>
+
+      <!-- Second rolling text -->
+      <marquee class="rollingtext" behavior="scroll" direction="left">THIS NEW NEW MAG IS BRAND NEW</marquee>
+
+      <!-- second big text -->
+
+      <h1> "THIS MAGAZINE IS ABOUT ART"</h1>
+      <h1> "AND TEXT"</h1>
+      <h1> "AND OTHER POETIC STRUCTURES"</h1>
+
+    </main>
+
+    <footer>
+      <p>Created by Isa Robertini</p>
+    </footer>
+  </body>
 
 </html>
