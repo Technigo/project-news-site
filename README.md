@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I have made a news site about Celebritys. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I found it hard to adjust it to phone and tablet, had to do small changes all the time to view it and see if it looks good. (Is it a easier way to do that tho?)
+
+I'm a perfectionist so if I had time I could sit to the end of days and add more more more lol.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://celebritynewstechnigo.netlify.app/
