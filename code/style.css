@@ -184,8 +184,8 @@ li a:hover {
   }
 
   .header-title {
-    margin: -10px auto 30px;
-    max-width: 90%;
+    margin: -5px auto 0px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -259,10 +259,11 @@ li a:hover {
   }
 
   .header-title {
-    margin: -10px 0px 30px 10px;
+    margin: 0px 0px 30px 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .resizable-image {
