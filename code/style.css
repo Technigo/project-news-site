@@ -1,4 +1,33 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #bbbcc0;
+  color: #03000a;
+  gap: 10px;
+}
+
+header {
+  background: #c9cace;
+  border: 1px solid#03000a;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section {
+  background-color: #c9cace;
+  border: 1px solid black;
+  padding: 10px;
+
+}
+
+.Links {
+  border: #bbbcc0 solid 10px;
+  margin: 10px;
+
+}
+
+.smaller-news1 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
 }
