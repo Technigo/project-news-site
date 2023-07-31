@@ -180,15 +180,25 @@ li a:hover {
   }
 
   header {
-    width: 100%;
+    width: 90%;
   }
 
   .header-title {
-    margin: -5px auto 0px;
+    margin: -5px auto 10px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  li {
+    list-style: none;
+    margin: 5px 0;
   }
 
   .resizable-image {
