@@ -1,13 +1,13 @@
 html {
   background: #bbbcc0;
   color: #03000a;
-  gap: 10px;
+
 }
 
 header {
   background: #c9cace;
-  border: 1px solid#03000a;
-  padding: 10px;
+  border: 1px #03000a solid;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,16 +18,47 @@ section {
   background-color: #c9cace;
   border: 1px solid black;
   padding: 10px;
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+.div {
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+.big-news {
+  text-align: center;
 
 }
 
 .Links {
-  border: #bbbcc0 solid 10px;
-  margin: 10px;
 
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  font-size: 40px;
 }
 
 .smaller-news1 {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-columns: repeat (3, 1fr);
+}
+
+
+@media (min-width: 667px)and (max-width: 1024px) {
+  .smaller-news1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .smaller-news1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
