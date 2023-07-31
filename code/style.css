@@ -4,24 +4,28 @@ html {
 }
 
 header {
-  display: block;
-  border: gray solid;
+  display: flex;
+  height: 200px;
+  background-color: gray solid;
   border-radius: 5px;
   grid-column: 1 / 5;
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
+  margin-top: 30px;
+  align-items: flex-start;
 }
 
 body {
   display: grid;
   font-family: "Georgia";
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 200px);
+  grid-template-rows: repeat(5, 150px);
 }
 
 .logo {
   display: flex;
   align-items: flex-start;
   grid-column: 1 / 3;
+  margin-top: 0px;
 }
 
 h1 { 
@@ -37,7 +41,7 @@ nav {
   grid-row-start: 1;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px;
 }
 
@@ -53,15 +57,22 @@ nav {
 
 .big-news {
   grid-column: 3 / span 2;
-  grid-row-start: 2;
+  grid-row-start: 4;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.main-news {
+  text-align: right;
 }
 
 .news-grid {
   display: flex;
   grid-column: 1 / span 2;
-  grid-row-start: 2;
+  grid-row-start: 4;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .grid-cell {
@@ -81,7 +92,6 @@ h2 {
   font-family: "Georgia";
   font-size: 30px;
   margin-bottom: 0px;
-  margin-right: 20px;
   justify-content: flex-end;
 }
 
@@ -96,7 +106,7 @@ h4 {
   color: white;
   text-decoration: none;
   margin-top: 0px;
-  margin-right: 20px;
   justify-content: flex-end;
 }
+
 
