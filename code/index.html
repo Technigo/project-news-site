@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Change the title below -->
-    <title>News Site</title>
+    <title>GameNews</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -12,96 +12,117 @@
     />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <div class="site-container">
+      <header>
+        <!-- Some kind of logo and navbar -->
+        <nav>
+          <img src="./images/5800_9_03.jpg" alt="logo" class="logo" />
+          <h1 class="site-title">GameNews</h1>
+          <ul class="top-nav-links">
+            <li>Home</li>
+            <li>PC</li>
+            <li>Playstation</li>
+            <li>Nintendo</li>
+            <li>XBOX</li>
+          </ul>
+        </nav>
+        <nav class="site-nav">
+          <ul class="nav-menu">
+            <li class="nav-menu-items trending">Trending:</li>
+            <li class="nav-menu-items"><a> Baldurs Gate III </a></li>
+            <li class="nav-menu-items"><a> Diablo IV </a></li>
+            <li class="nav-menu-items"><a> Starfield </a></li>
+            <li class="nav-menu-items"><a> Final Fantasy XVI </a></li>
+            <li class="nav-menu-items"><a> Zelda: Tears of the Kingdom </a></li>
+          </ul>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." class="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </nav>
+      </header>
 
-      <h1 class="site-title">GameNews</h1>
-      <nav class="site-nav">
-        <ul class="nav-menu">
-          <li class="nav-menu-items trending">Trending:</li>
-          <li class="nav-menu-items"><a> Baldurs Gate III </a></li>
-          <li class="nav-menu-items"><a> Diablo IV </a></li>
-          <li class="nav-menu-items"><a> Starfield </a></li>
-          <li class="nav-menu-items"><a> Final Fantasy XVI </a></li>
-          <li class="nav-menu-items"><a> Zelda: Tears of the Kingdom </a></li>
-        </ul>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." class="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
-      </nav>
-    </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-      <div class="big-news__article">
-        <a href="/">
+      <div class="page-container">
+        <section class="big-news">
+          <!-- The big news content -->
           <div class="zoom-img">
             <img src="./images/bg3.jpg" alt="baldurs-gate-3-image" />
           </div>
-          <div class="big-news__text">
-            <h1>The most beginner friendly classes</h1>
-            <p>lorem ipsum dipsum hey banana goes to pineapple</p>
+          <div class="big-news__article">
+            <h1 class="big-news__text-title">
+              Larian Studios' New Project Is Arriving Soon
+            </h1>
+            <div class="big-news__text-bread">
+              <p class="big-news-bread">
+                Embark on an unforgettable adventure in Baldur's Gate 3, a
+                richly detailed fantasy RPG. Unravel the mysteries of the Mind
+                Flayers, battle fierce creatures, and forge alliances in a
+                dynamic world. Make tough choices with real consequences,
+                shaping your destiny as you lead a party through epic quests and
+                thrilling battles.
+              </p>
+            </div>
           </div>
-        </a>
-      </div>
-    </section>
+        </section>
 
-    <section class="small-news">
-      <!-- The other news  -->
-      <div class="small-news__article">
-        <a href="/">
-          <div class="small-news__image">
-            <img src="./images/diablo.jpg" alt="diablo-4-image" />
+        <section class="small-news">
+          <!-- The other news  -->
+          <div class="small-news__article">
+            <a href="/">
+              <div class="small-news__image">
+                <img src="./images/diablo.jpg" alt="diablo-4-image" />
+              </div>
+              <div class="small-news__text">
+                lorem ipsum dipsum hey banana goes to pineapple
+              </div>
+            </a>
           </div>
-          <div class="small-news__text">
-            lorem ipsum dipsum hey banana goes to pineapple
+          <div class="small-news__article">
+            <a href="/">
+              <div class="small-news__image">
+                <img
+                  src="./images/starfield.jpg"
+                  alt="starfield-image"
+                  class="small-news__image"
+                />
+              </div>
+              <div class="small-news__text">
+                lorem ipsum dipsum hey banana goes to pineapple
+              </div>
+            </a>
           </div>
-        </a>
+          <div class="small-news__article">
+            <a href="/">
+              <div class="small-news__image">
+                <img
+                  src="./images/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg"
+                  alt="zelda-image"
+                  class="small-news__image"
+                />
+              </div>
+              <div class="small-news__text">
+                lorem ipsum dipsum hey banana goes to pineapple
+              </div>
+            </a>
+          </div>
+          <div class="small-news__article">
+            <a href="/"
+              ><div class="small-news__image">
+                <img
+                  src="./images/Final_Fantasy_XVI.png"
+                  alt="ffxvi-image"
+                  class="small-news__image"
+                />
+              </div>
+              <div class="small-news__text">
+                lorem ipsum dipsum hey banana goes to pineapple
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
-      <div class="small-news__article">
-        <a href="/">
-          <div class="small-news__image">
-            <img
-              src="./images/starfield.jpg"
-              alt="starfield-image"
-              class="small-news__image"
-            />
-          </div>
-          <div class="small-news__text">
-            lorem ipsum dipsum hey banana goes to pineapple
-          </div>
-        </a>
-      </div>
-      <div class="small-news__article">
-        <a href="/">
-          <div class="small-news__image">
-            <img
-              src="./images/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg"
-              alt="zelda-image"
-              class="small-news__image"
-            />
-          </div>
-          <div class="small-news__text">
-            lorem ipsum dipsum hey banana goes to pineapple
-          </div>
-        </a>
-      </div>
-      <div class="small-news__article">
-        <a href="/"
-          ><div class="small-news__image">
-            <img
-              src="./images/Final_Fantasy_XVI.png"
-              alt="ffxvi-image"
-              class="small-news__image"
-            />
-          </div>
-          <div class="small-news__text">
-            lorem ipsum dipsum hey banana goes to pineapple
-          </div>
-        </a>
-      </div>
-    </section>
+    </div>
   </body>
 </html>

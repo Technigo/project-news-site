@@ -3,11 +3,54 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Upper navbar */
+.top-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.top-nav-links li {
+  cursor: pointer;
+}
+
+.top-nav-links li:hover {
+  color: grey;
+}
+
 .site-title {
   display: flex;
   justify-content: center;
 }
 
+/* Lower navbar */
 .site-nav {
   display: flex;
   justify-content: center;
@@ -18,7 +61,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style-type: none;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
@@ -68,36 +110,59 @@
   border: 1px solid white;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  height: 50%;
-  padding: 0 5px 0 5px;
+  padding: 4px 10px;
 }
 
 .search-box button:hover {
   color: black;
 }
 
-.big-news {
+/* .big-news {
   margin: 50px 100px 30px 100px;
   display: flex;
+} */
+
+.page-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-height: 800px;
+  margin: 10px 0 0 0;
 }
 
+.big-news {
+  grid-column: 2 span;
+  grid-row: 1 span;
+}
+
+.big-news__article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border: 1px solid red;
+}
 .big-news a {
   text-decoration: none;
   color: black;
   display: flex;
 }
 
-.big-news__article {
-  height: 400px;
-  width: 1000px;
-  margin: 0 auto;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
+.big-news__text-title {
+  font-size: 2.5rem;
+  width: 300px;
+  text-transform: capitalize;
 }
 
-.big-news__text {
-  border: 1px pink solid;
+.big-news__text-bread {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.big-news-bread {
+  width: 380px;
+  line-height: 1.5;
 }
 
 /* .big-news img {
@@ -109,13 +174,13 @@
 
 .zoom-img {
   overflow: hidden;
-  height: 400px;
-  width: 600px;
+  max-width: 800px;
+  height: auto;
 }
 
 .zoom-img img {
   height: 400px;
-  width: 600px;
+  width: 800px;
   object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
