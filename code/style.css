@@ -180,12 +180,12 @@ li a:hover {
 
   header {
     margin: 30px 10px 0 10px;
-    width: 80%;
+    width: 100%;
   }
 
   .header-title {
     margin: -10px 0px 30px 10px;
-    width: 70%;
+    width: 100%;
   }
 
   .resizable-image {
@@ -251,6 +251,16 @@ li a:hover {
     margin-left: 50px;
   }
 
+  header {
+    margin: 30px 10px 0 10px;
+    width: 100%;
+  }
+
+  .header-title {
+    margin: -10px 0px 30px 10px;
+    width: 100%;
+  }
+
   .resizable-image {
     width: 15%;
   }
@@ -263,6 +273,7 @@ li a:hover {
   }
 
   .small-articles article {
+    flex-basis: calc(50% - 10px);
     background-color: #F7E9D7;
     padding: 20px;
     margin: 10px;
