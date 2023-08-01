@@ -9,4 +9,4 @@ I struggled a lot with flexbox and then used grid instead wich I found was way e
 I forced myself to teak a break, and move or eat something and solved almost every problem myself. I used slack at one time to ask for help and got the help i needed very fast. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://64c8f1b3e2b0cc0086f4b886--elaborate-cactus-10d9a7.netlify.app/
