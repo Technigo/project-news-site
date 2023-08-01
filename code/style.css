@@ -11,7 +11,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  box-shadow: 10px 10px 15px rgb(9, 10, 10);
 }
 
 section {
@@ -19,21 +20,21 @@ section {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
+  text-align: center;
   box-shadow: 10px 10px 15px rgb(9, 10, 10);
 }
 
-.div {
-  box-shadow: 10px 10px 10px lightblue;
+img {
+  width: 30%;
 }
 
-.big-news {
-  text-align: center;
-
+.logo {
+  width: 10%;
 }
 
 .Links {
 
-  margin: 10px;
+  margin: 20px;
 }
 
 a {
@@ -43,12 +44,12 @@ a {
 }
 
 a:hover {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .smaller-news1 {
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
+  grid-template-columns: repeat (1, 1fr);
 }
 
 
