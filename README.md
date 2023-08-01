@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I choose a site about sailboats and the offshore race gotland runt.
+It was a fun project but i got overwelmed with information a few times and got stuck.
+I struggled a lot with flexbox and then used grid instead wich I found was way easier to understand.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I forced myself to teak a break, and move or eat something and solved almost every problem myself. I used slack at one time to ask for help and got the help i needed very fast. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
