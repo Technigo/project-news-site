@@ -124,7 +124,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  *grid-column: span 1;
   background-color: white;
   border: 2px solid rgb(209, 204, 204);
   border-radius: 5px;
@@ -189,7 +188,6 @@ nav a:hover {
   background-color: rgb(94, 53, 0);
   color: aliceblue;
   transition: transform 0.8s ease-in-out;
-  *transform-style: preserve-3d;
 }
 
 .card a:hover {
