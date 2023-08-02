@@ -19,7 +19,7 @@ body {
   display: grid;
   font-family: "Georgia";
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-rows: repeat(7, 150px);
 }
 
 .logo {
@@ -109,4 +109,8 @@ h4 {
   justify-content: flex-end;
 }
 
-
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
