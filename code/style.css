@@ -1,5 +1,6 @@
 html {
   background-image: #7f992b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
 }
 
@@ -12,7 +13,6 @@ body {
 
 h2 {
   background-color: #a77b0b;
-  *border: 2px solid black;
   font-size: large;
   padding: 20px;
   margin-top: 2cm;
@@ -48,15 +48,16 @@ nav a:hover {
 .welcome {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
+  width: 100%;
   margin: 0px 10px;
 
 }
 
 .welcome figure {
   margin: 1px;
-  *border: 2px solid black;
+  border: 2px solid black;
   background-color: black;
   position: relative;
 }
@@ -76,20 +77,20 @@ nav a:hover {
 
 .welcome h3 {
   color: aliceblue;
-  font-size: medium;
+  font-size: small;
 }
 
 .welcome-text {
   margin: 10px 20px;
   padding: 5px;
-  width: 250px;
+  width: 500px;
   color: #2b352e;
   box-sizing: border-box;
 }
 
 .welcome-text strong {
   text-decoration: none;
-  font-size: 15px;
+  font-size: small;
   text-align: center;
   inline-size: 150px;
   overflow-wrap: break-word;
@@ -120,7 +121,10 @@ nav a:hover {
 }
 
 .card {
-  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  *grid-column: span 1;
   background-color: white;
   border: 2px solid rgb(209, 204, 204);
   border-radius: 5px;
@@ -140,10 +144,12 @@ nav a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
+
 }
 
 .card img:hover {
   opacity: 0.8;
+
 }
 
 .card figcaption {
@@ -177,22 +183,27 @@ nav a:hover {
   margin: 5px;
   width: 100px;
   text-decoration: none;
+  font-size: small;
   border: 2px solid black;
   border-radius: 2px;
   background-color: rgb(94, 53, 0);
   color: aliceblue;
+  transition: transform 0.8s ease-in-out;
+  *transform-style: preserve-3d;
 }
 
 .card a:hover {
   font-style: italic;
+  transform: rotate(360deg);
 }
 
 aside p {
   color: black;
   margin: 5px;
   display: inline-block;
-  animation: 3s moreinfotext;
+  animation: 15s moreinfotext;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
   width: 100%;
 }
 
@@ -260,6 +271,7 @@ footer {
 @media screen and (max-width:667px) {
   .welcome {
     flex-direction: column;
+    margin: 0;
     border: 2px solid rgb(209, 204, 204);
     border-radius: 5px;
     box-shadow: 3px 2px rgb(187, 184, 184);
