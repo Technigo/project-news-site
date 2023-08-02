@@ -2,22 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <title>Cooking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#"><img class="logo-nav" src="img/logo.png" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Breakfast</a></li>
+          <li><a href="#">Lunch</a></li>
+          <li><a href="#">Dinner</a></li>
+          <li><a href="#">Food news</a></li>
+        </ul>
+    </nav>
     </header>
 
     <section class="big-news">
-      <!-- The big news content -->
+      <div class="highlights-photo">
+        <img class=" highlights-dish" src="img/highlights-dish.jpeg" alt="News">
+      </div> 
+      <div class="highlights-news">
+        <h3 class="">SUMMER'S NEW FAVE SALAD.</h3>
+        <h1 class="">Blueberry Peach Feta Salad.</h1>
+        <p class="highlights-paragraph">Blueberries, peaches, cucumbers, AND feta? You’ll be amazed by how well this combination comes together in salad form. This might become the most vibrant, elegant salad you’ll bring to a picnic in the park or a summer BBQ dinner..</p>
+      </div>
     </section>
 
-    <section class="">
+    <section class="other-news">
       <!-- The other news  -->
+      <article class=" random-news">
+        <img src="img/pasta.jpeg">
+        <p class="other-paragraph">Spicy Cottage Cheese Pasta</p>
+        </article>
+        <article class=" random-news"> 
+          <img src="img/hummus.jpeg">
+          <p class="other-paragraph" >Homemade hummus</p>
+          </article>
+          <article class=" random-news">
+             <img src="img/pizza.jpeg">
+            <p class="other-paragraph">Neapolitan Pizza</p>
+            </article>
+            <article class=" random-news"> 
+              <img src="img/salad.jpeg">
+              <p class="other-paragraph">Salad</p>
+              </article>
     </section>
+    <footer>
+      <div class="copyright">
+        <p>This project was coded by Klaudia Wróblewska</p>
+      </div>
+    </footer>
   </body>
 </html>

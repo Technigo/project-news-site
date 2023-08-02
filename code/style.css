@@ -1,4 +1,253 @@
-html {
-  background: #0025ff;
-  color: #fff;
+:root{
+  --firstly-color: #d94ffc;
+  --secondly-color:#fffcf3;
+  --tiredly-color:#1a1717;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--secondly-color);
+  color:var(--tiredly-color);
+  font-family: var(--default-font-family);
+}
+
+a {
+  color: #000;
+}
+
+h3, h1{
+  font-family: var(--heading-font-family);
+}
+
+.navbar-links {
+  display: none;
+  font-size: 2rem;
+}
+
+.nav-toggle-label {
+  display: block;
+}
+.nav-toggle-label span {
+  display: block;
+  width: 1.563rem;
+  height: 0.188rem;
+  background-color: #fff;
+  margin: 0.313rem 0;
+}
+
+/* Hide the hamburger menu on startup */
+#nav-toggle:not(:checked) ~ .navbar-links {
+  display: none;
+}
+
+/* Show the hamburger menu below when clicking on the icon */
+#nav-toggle:checked ~ .navbar-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:#d94ffc;
+  padding: 0.625rem;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #d94ffc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  position: relative;
+}
+
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 1.25rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+.logo-nav {
+  width: 4.2rem;
+  margin-left: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+
+
+/* Media Query  for desktop */
+@media (min-width: 1025px) {
+  h1{
+    text-align: center;
+    padding: 3rem;
+    font-size: 4rem;
+  }
+  h3{
+  border-bottom: 0.25rem solid var(--firstly-color);
+  color: #000000;
+  font-size: 2.5em;
+  display: inline;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 2;
+  }
+  .highlights-news{
+    text-align: center;
+  }
+  .highlights-paragraph{
+    padding-left: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+  }
+  .nav-toggle-label {
+      display: none;
+  }
+
+  #nav-toggle:not(:checked) ~ .navbar-links {
+    display: flex;
+  }
+
+  .big-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+  }
+ 
+
+  .other-news{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+  .other-news img{
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0rem 0.15rem 0.3rem rgba(0, 0, 0, 0.5);
+  }
+  .random-news{
+    padding: 1rem;
+    border: 1px solid var(--firstly-color);
+  }
+  .other-paragraph{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .other-paragraph:hover{
+    color: #d94ffc;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 1.25rem;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+
+  .highlights-dish{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .copyright{
+    background-color: var(--firstly-color);
+  color: var(--secondly-color);
+  padding: 3.125rem;
+  text-align: center;
+  }
+  
+}
+
+/* Media Query for (Tablet) */
+@media (min-width: 667px) and (max-width: 1024px) {
+ 
+  .big-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+  }
+ 
+
+  .other-news{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+  .navbar-links {
+      display: none;
+  }
+
+  .nav-toggle-label {
+      display: block;
+  }
+
+  .nav-toggle-label span {
+      display: block;
+      width: 1.563rem;
+      height: 0.188rem;
+      background-color: #fff;
+      margin: 0.313rem 0;
+  }
+
+  /* Hide the hamburger menu on startup */
+  #nav-toggle:not(:checked) ~ .navbar-links {
+      display: none;
+  }
+
+  /* Show the hamburger menu below when clicking on the icon */
+  #nav-toggle:checked ~ .navbar-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #d94ffc;
+      padding: 0.625rem;
+      width: 100%;
+  }
+}
+
+
+
+
+
