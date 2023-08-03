@@ -2,6 +2,7 @@
   --firstly-color: #d94ffc;
   --secondly-color:#fffcf3;
   --tiredly-color:#1a1717;
+  --fourthly-color:#fcf3ff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -18,13 +19,13 @@ body {
 }
 
 a {
-  color: #000;
+  color: var(--tiredly-color);
 }
 
 h3, h1{
   font-family: var(--heading-font-family);
 }
-
+/*------------------------------------------------------Style for  nav bar---------------------------------------------*/
 .navbar-links {
   display: none;
   font-size: 2rem;
@@ -37,7 +38,7 @@ h3, h1{
   display: block;
   width: 1.563rem;
   height: 0.188rem;
-  background-color: #fff;
+  background-color: var(--secondly-color);
   margin: 0.313rem 0;
 }
 
@@ -53,14 +54,14 @@ h3, h1{
   position: absolute;
   top: 100%;
   left: 0;
-  background-color:#d94ffc;
+  background-color: var(--firstly-color);
   padding: 0.625rem;
   width: 100%;
 }
 
 .navbar {
-  background-color: #d94ffc;
-  color: #fff;
+  background-color: var(--firstly-color);
+  color: var(--secondly-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,19 +83,35 @@ h3, h1{
 }
 
 .navbar-links a {
-  color: #fff;
+  color: var(--secondly-color);
   text-decoration: none;
 }
 
 .nav-toggle {
   display: none;
 }
+.navbar-logo{
+  display: flex;
+  align-items: center;
+}
+.navbar-logo p {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.navbar-logo a{
+  text-decoration: none;
+  color: var(--secondly-color);
+}
 .logo-nav {
   width: 4.2rem;
   margin-left: 1.5rem;
   margin-right: 0.3rem;
 }
+   /*------------------------------------------------------Style for big new---------------------------------------------*/
+ 
+  /*------------------------------------------------------Style for oder news---------------------------------------------*/
 
+  /*------------------------------------------------------Style for footer---------------------------------------------*/
 
 
 /* Media Query  for desktop */
@@ -106,54 +123,181 @@ h3, h1{
   }
   h3{
   border-bottom: 0.25rem solid var(--firstly-color);
-  color: #000000;
+  color: var(--tiredly-color);
   font-size: 2.5em;
   display: inline;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   z-index: 2;
   }
-  .highlights-news{
-    text-align: center;
+/*------------------------------------------------------Style for  nav bar---------------------------------------------*/
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
   }
-  .highlights-paragraph{
+  
+  .navbar-links li {
+    margin-left: 1.25rem;
+    border-bottom: 0.25rem solid var(--fourthly-color);
+  color: var(--tiredly-color);
+  display: inline;
+  letter-spacing: 0.1em;
+  z-index: 2;
+  }
+
+  .navbar-links li:hover {
+    margin-left: 1.25rem;
+    border-top: 0.25rem solid var(--fourthly-color);
+    border-bottom: none;
+  color: var(--tiredly-color);
+  display: inline;
+  letter-spacing: 0.1em;
+  z-index: 2;
+  opacity: 0.7;
+  
+  }
+  
+  .navbar-links a {
+    color:var(--secondly-color);
+    text-decoration: none;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle-label {
+    display: none;
+}
+
+#nav-toggle:not(:checked) ~ .navbar-links {
+  display: flex;
+}
+  /*------------------------------------------------------Style for big new---------------------------------------------*/
+  .highlights-news {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .highlights-dish {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .highlights-dish:hover {
+    transform: scale(1.1); 
+  }
+  
+  .highlights-paragraph {
     padding-left: 2rem;
     padding-top: 5rem;
     text-align: center;
     line-height: 1.5;
     font-size: 2rem;
   }
-  .nav-toggle-label {
-      display: none;
+  
+  .highlights-news a {
+    text-decoration: none;
   }
-
-  #nav-toggle:not(:checked) ~ .navbar-links {
-    display: flex;
-  }
-
-  .big-news{
+  
+  .big-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5rem;
+    margin: 1rem;
+    background-color: var(--fourthly-color);
   }
+  
+  .highlights-name {
+    width: 28ch;
+    animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 4rem;
+    display: inline-block;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
  
+/*------------------------------------------------------Style for oder news---------------------------------------------*/
+
+
+/* animation  */
+h4{
+  border-bottom: 0.25rem solid var(--firstly-color);
+  color: var(--tiredly-color);
+  display: inline;
+  letter-spacing: 0.1em;
+  z-index: 2;
+
+}
+.animation-header {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3em;
+  text-align: center; 
+  width: 100%;
+}
+
+
+@keyframes ticker {
+  0% {
+    transform: translateX(calc(-100% - 35vw)) ;
+  }
+  100% {
+    transform: translateX(calc(100% + 35vw));
+  }
+}
+
+
+.animation-header h4 {
+  display: inline-block;
+  animation: ticker 15s linear infinite;
+}
+
 
   .other-news{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
     margin: 1rem;
+    
   }
   .other-news img{
     object-fit: cover;
     width: 100%;
     height: 30rem;
     box-shadow: 0rem 0.15rem 0.3rem rgba(0, 0, 0, 0.5);
+    
   }
+  .other-news img:hover {
+    transform: scale(1.1); 
+  }
+
   .random-news{
     padding: 1rem;
-    border: 1px solid var(--firstly-color);
+    background-color: var(--fourthly-color);
+  }
+  .random-news a {
+    text-decoration: none;
   }
   .other-paragraph{
     font-size: 3rem;
@@ -161,58 +305,44 @@ h3, h1{
     padding: 2rem;
   }
   .other-paragraph:hover{
-    color: #d94ffc;
-  }
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links li {
-    margin-left: 1.25rem;
-  }
-  
-  .navbar-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav-toggle {
-    display: none;
+    color: var(--firstly-color);
+    border-bottom: 0.25rem solid var(--firstly-color);
+    display: inline;
+    
   }
 
-  .highlights-dish{
-    max-width: 100%;
-    object-fit: cover;
-  }
+  /*------------------------------------------------------Style for footer---------------------------------------------*/
   .copyright{
-    background-color: var(--firstly-color);
+  background-color: var(--firstly-color);
   color: var(--secondly-color);
   padding: 3.125rem;
   text-align: center;
+  }
+  .copyright p{
+    font-size: 2rem;
+    color:  var(--secondly-color);
+  }
+  .technigo{
+  width: 4.2rem;
+  }
+  .social-links{
+    display: flex;
+    justify-content: center;
+  }
+  footer .social-links a{
+    margin: 0 20px;
+    border: 1px solid var(--branding-color);
+    padding: 10px 14px;
+    font-size: 4rem;
+    color:  var(--fourthly-color);
+    transition: all 100ms ease-in-out;
   }
   
 }
 
 /* Media Query for (Tablet) */
 @media (min-width: 667px) and (max-width: 1024px) {
- 
-  .big-news{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5rem;
-  }
- 
-
-  .other-news{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    text-align: center;
-    grid-gap: 1rem;
-    margin: 1rem;
-  }
+ /*------------------------------------------------------Style for  nav bar---------------------------------------------*/
   .navbar-links {
       display: none;
   }
@@ -225,7 +355,7 @@ h3, h1{
       display: block;
       width: 1.563rem;
       height: 0.188rem;
-      background-color: #fff;
+      background-color: var(--secondly-color);
       margin: 0.313rem 0;
   }
 
@@ -241,10 +371,19 @@ h3, h1{
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: #d94ffc;
+      background-color: var(--firstly-color);
       padding: 0.625rem;
       width: 100%;
   }
+    /*------------------------------------------------------Style for big new---------------------------------------------*/
+  .big-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+  }
+  /*------------------------------------------------------Style for oder news---------------------------------------------*/
+
+  /*------------------------------------------------------Style for footer---------------------------------------------*/
 }
 
 

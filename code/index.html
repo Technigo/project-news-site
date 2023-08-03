@@ -1,70 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Cooking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar-logo">
-          <a href="#"><img class="logo-nav" src="img/logo.png" alt="logo"></a>
-        </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="navbar-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Breakfast</a></li>
-          <li><a href="#">Lunch</a></li>
-          <li><a href="#">Dinner</a></li>
-          <li><a href="#">Food news</a></li>
-        </ul>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cooking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@100;200&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3317e7b26d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="/code/index.html"><img class="logo-nav" src="img/logo.png" alt="logo"></a> <a href="/code/index.html">
+          <p> Enjoy your meal</p>
+        </a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="navbar-links">
+        <li><a href="/code/index.html">Home</a></li>
+        <li><a href="https://www.goodhousekeeping.com/food-recipes/easy/g871/quick-breakfasts/"
+            target="_blank">Breakfast</a></li>
+        <li><a href="https://www.ica.se/artikel/snabb-nyttig-lunch/" target="_blank">Lunch</a></li>
+        <li><a href="https://www.delish.com/cooking/recipe-ideas/g3166/cheap-easy-recipes/" target="_blank">Dinner</a>
+        </li>
+        <li><a href="https://www.delish.com/food-news/" target="_blank">Food news</a></li>
+      </ul>
     </nav>
-    </header>
+  </header>
 
-    <section class="big-news">
-      <div class="highlights-photo">
-        <img class=" highlights-dish" src="img/highlights-dish.jpeg" alt="News">
-      </div> 
-      <div class="highlights-news">
-        <h3 class="">SUMMER'S NEW FAVE SALAD.</h3>
-        <h1 class="">Blueberry Peach Feta Salad.</h1>
-        <p class="highlights-paragraph">Blueberries, peaches, cucumbers, AND feta? You’ll be amazed by how well this combination comes together in salad form. This might become the most vibrant, elegant salad you’ll bring to a picnic in the park or a summer BBQ dinner..</p>
-      </div>
+  <!-- Section big news also header -->
+  <section class="big-news">
+    <div class="highlights-photo">
+      <img class=" highlights-dish" src="img/highlights-dish.jpeg" alt="News">
+    </div>
+    <div class="highlights-news">
+      <h3 class="">SUMMER'S NEW FAVE SALAD.</h3>
+      <a href="https://www.delish.com/cooking/recipe-ideas/a43331235/blueberry-peach-feta-salad-recipe/"
+        target="_blank">
+        <h1 class="highlights-name">Blueberry Peach Feta Salad.</h1>
+      </a>
+      <p class="highlights-paragraph">Blueberries, peaches, cucumbers, AND feta? You'll be amazed by how well this
+        combination comes together in salad form. This might become the most vibrant, elegant salad you'll bring to a
+        picnic in the park or a summer BBQ dinner..</p>
+    </div>
+  </section>
+
+  <!-- Section other news with grid -->
+  <section class="animation-header">
+    <section class="animation-header">
+      <h4>
+        More recipes
+      </h4>
     </section>
 
-    <section class="other-news">
-      <!-- The other news  -->
-      <article class=" random-news">
-        <img src="img/pasta.jpeg">
-        <p class="other-paragraph">Spicy Cottage Cheese Pasta</p>
-        </article>
-        <article class=" random-news"> 
-          <img src="img/hummus.jpeg">
-          <p class="other-paragraph" >Homemade hummus</p>
-          </article>
-          <article class=" random-news">
-             <img src="img/pizza.jpeg">
-            <p class="other-paragraph">Neapolitan Pizza</p>
-            </article>
-            <article class=" random-news"> 
-              <img src="img/salad.jpeg">
-              <p class="other-paragraph">Salad</p>
-              </article>
-    </section>
-    <footer>
-      <div class="copyright">
-        <p>This project was coded by Klaudia Wróblewska</p>
+  </section>
+
+  <section class="other-news">
+    <!-- The other news  -->
+    <article class=" random-news">
+      <img src="img/pasta.jpeg">
+      <a href="https://www.delish.com/cooking/recipe-ideas/a44361345/spicy-cottage-cheese-pasta-recipe/"
+        target="_blank">
+        <p class="other-paragraph"> Spicy Cottage Cheese Pasta</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/hummus.jpeg">
+      <a href="https://www.delish.com/cooking/recipe-ideas/a43854375/hummus-recipe/" target="_blank">
+        <p class="other-paragraph">Homemade hummus</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/pizza.jpeg">
+      <a href="https://italienskpizza.se/napolitansk-pizzadeg/" target="_blank">
+        <p class="other-paragraph">Neapolitan Pizza</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/salad.jpeg">
+      <a href="https://www.delish.com/cooking/recipe-ideas/a39564289/classic-nicoise-salad-recipe/" target="_blank">
+        <p class="other-paragraph">Salad</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/roti.jpeg">
+      <a href="https://www.cookwithmanali.com/roti-recipe/" target="_blank">
+        <p class="other-paragraph">Indian Roti</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/dumplings.jpeg">
+      <a href="https://aniagotuje.pl/przepis/pierogi-ruskie" target="_blank">
+        <p class="other-paragraph">Dumplings</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/focaccia.jpeg">
+      <a href=" https://www.koket.se/leila-bakar/leila-lindholm/enkel-focaccia-leilas-recept" target="_blank">
+        <p class="other-paragraph">Focaccia</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/salmon.jpeg">
+      <a href=" https://www.56kilo.se/lax-i-ugn-med-kramig-citron-och-ostsas/" target="_blank">
+        <p class="other-paragraph">Salmon in cream</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/pad-thai.jpeg">
+      <a href=" https://www.ica.se/recept/pad-thai-720986/" target="_blank">
+        <p class="other-paragraph">Pad thai</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/grilled trout.jpeg">
+      <a href="https://www.allrecipes.com/recipe/228043/whole-grilled-trout/" target="_blank">
+        <p class="other-paragraph">Grilled trout</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/polish-noodels.jpeg">
+      <a href="https://aniagotuje.pl/przepis/kluski-z-miesem" target="_blank">
+        <p class="other-paragraph">Polish noodels</p>
+      </a>
+    </article>
+    <article class=" random-news">
+      <img src="img/taco.jpeg">
+      <a href="https://www.ica.se/recept/tacos-722416/" target="_blank"></a>
+      <p class="other-paragraph">Tacos</p>
+      </a>
+    </article>
+  </section>
+
+  <!-- Footer, contact -->
+  <footer>
+    <div class="copyright">
+      <div class="social-links">
+        <a href="https://github.com/klaudiaW0410" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/klaudiawroblewska0410/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://stackoverflowteams.com/c/technigo/users/501/?tab=profile" target="_blank">
+          <i class="fa-brands fa-stack-overflow"></i>
+        </a>
+        <a href="https://www.technigo.io/" target="_blank"><img class="technigo" src="img/logo.svg" alt="logo"></a>
       </div>
-    </footer>
-  </body>
+      <p>This project was coded by Klaudia Wróblewska</p>
+    </div>
+  </footer>
+</body>
+
 </html>
