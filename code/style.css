@@ -53,6 +53,7 @@ nav a:hover {
   width: 100%;
   margin: 0px 10px;
 
+
 }
 
 .welcome figure {
@@ -98,7 +99,7 @@ nav a:hover {
 
 .welcome-text button {
   display: block;
-  background-color: rgb(94, 53, 0);
+  background-color: #b5592a;
   color: aliceblue;
   text-align: center;
   padding: 5px;
@@ -185,7 +186,7 @@ nav a:hover {
   font-size: small;
   border: 2px solid black;
   border-radius: 2px;
-  background-color: rgb(94, 53, 0);
+  background-color: #b5592a;
   color: aliceblue;
   transition: transform 0.8s ease-in-out;
 }
@@ -197,35 +198,34 @@ nav a:hover {
 
 aside p {
   color: black;
-  margin: 5px;
-  display: inline-block;
-  animation: 15s moreinfotext;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  width: 100%;
-}
-
-@keyframes moreinfotext {
-  from {
-    margin-left: 100%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
 }
 
 .moreinfo a {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: rgb(94, 53, 0);
+  background-color: #b5592a;
   border: 2px solid black;
   border-radius: 2px;
   color: antiquewhite;
   padding: 5px;
   margin: 5px;
   width: 200px;
+  animation-name: flip-with-rotate;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  transform: rotateY(180deg)
+}
+
+@keyframes flip-with-rotate {
+  0% {
+    transform: perspective(300px) rotateY(0);
+  }
+
+  100% {
+    transform: perspective(300px) rotateY(180deg)
+  }
 }
 
 .moreinfo a:hover {
@@ -267,8 +267,18 @@ footer {
 
 
 @media screen and (max-width:667px) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  nav a,
+  footer {
+    font-size: smaller;
+  }
+
   .welcome {
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     border: 2px solid rgb(209, 204, 204);
     border-radius: 5px;
@@ -276,6 +286,7 @@ footer {
   }
 
   .welcome-text {
+    font-size: small;
     width: 100%;
   }
 
@@ -285,9 +296,10 @@ footer {
     justify-content: center;
   }
 
-  body {
-    background-color: whitesmoke;
+  *footer {
+    font-size: smaller;
   }
+
 }
 
 @media screen and (min-width:668px) and (max-width:1023px) {
@@ -301,7 +313,7 @@ footer {
   }
 
   body {
-    background-color: rgb(170, 171, 166);
+    background-color: #f0f2eb;
   }
 
 }
