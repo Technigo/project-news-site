@@ -1,4 +1,147 @@
+
+/* Removing all default margin (8px)for every object on the page
+The border-box sets the size of the border box, this means that the content box, padding box and the border box is included
+in the size set for different elements.
+The universal selector (*) selects all HTML elements on the page.*/
+
 html {
-  background: #0025ff;
-  color: #fff;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*Maybe use Viewport height (vh) units to allow the body to set a minimum height value based upon the full height of the viewport.
+If I use this then it should be min-height: 100vh; */
+
+body {
+  background: #f7f5ff;
+  color: #3b373b;
+  width: auto;
+}
+
+/*Mobile viewport*/
+@media (max-width: 667px) {
+  .nav-links {display: none;}
+}
+
+/*Tablet viewport*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .triple-bars {display: none;}
+}
+
+/*Desktop viewport*/
+@media (min-width: 1025px) {
+  .triple-bars {display: none;}
+}
+
+header {
+  background-color: #c2b3ff;
+}
+
+/* Used flex-grow: 1; because the header shrinks and 
+gets smaller than the body when the screen size shrinks */
+
+.website-header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  }
+
+ .logo-website-name {
+    width: 20%;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    Justify-content: flex-start;
+  }
+
+  .website-name h1 {
+    color: white;
+  }
+
+  .logo {
+    width: 25%;
+  }
+  
+.nav {
+  width: 30%;
+  height: 100px;
+  padding: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+ margin-left: 10px;
+}
+
+/* Removes the bulletpoints/changes the style of the list */
+ul {
+  list-style-type: none;
+}
+/*To make the list horizontal instead of vertical. <li> is a block element by default*/
+.nav-links li {
+  display: inline;
+}
+
+.triple-bars {
+  width: 25%;
+}
+
+.link-home {
+  background: white;
+}
+
+.link-about-us {
+  background: white;
+}
+
+.link-contact-us {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.big-news {
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 5px;
+  flex-direction: column;
+}
+
+.news-cards {
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 5px;
+}
+
+.news-card-one {
+  border: 1px solid black;
+}
+.news-card-two {
+  border: 1px solid black;
+}
+.news-card-three {
+  border: 1px solid black;
+}
+
+.news-card-four {
+  border: 1px solid black;
+}
+.news-card-five {
+  border: 1px solid black;
 }
