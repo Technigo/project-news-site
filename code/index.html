@@ -17,8 +17,13 @@
     <div class="site-container">
       <header>
         <!-- Some kind of logo and navbar -->
-        <nav>
-          <img src="./images/5800_9_03.jpg" alt="logo" class="logo" />
+        <nav class="upper-nav">
+          <a
+            href="https://www.freepik.com/free-vector/cute-shiba-inu-dog-gamer-holding-keyboard-with-headphone-cartoon-vector-icon-illustration-animal_29660032.htm#query=dog%20gaming%20logo&position=5&from_view=keyword&track=ais"
+            target="_blank"
+          >
+            <img src="./images/5800_9_03.jpg" alt="logo" class="logo" />
+          </a>
           <h1 class="site-title">GameNews</h1>
           <ul class="top-nav-links">
             <li>Home</li>
@@ -31,15 +36,17 @@
         <nav class="site-nav">
           <ul class="nav-menu">
             <li class="nav-menu-items trending">Trending:</li>
-            <li class="nav-menu-items"><a> Baldurs Gate III </a></li>
-            <li class="nav-menu-items"><a> Diablo IV </a></li>
-            <li class="nav-menu-items"><a> Starfield </a></li>
-            <li class="nav-menu-items"><a> Final Fantasy XVI </a></li>
-            <li class="nav-menu-items"><a> Zelda: Tears of the Kingdom </a></li>
+            <li class="nav-menu-items">Baldurs Gate III</li>
+            <li class="nav-menu-items">Diablo IV</li>
+            <li class="nav-menu-items">Starfield</li>
+            <li class="nav-menu-items">Final Fantasy XVI</li>
+            <li class="nav-menu-items">Zelda: Tears of the Kingdom</li>
           </ul>
           <div class="search-box">
             <input type="text" placeholder="Search..." class="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit" class="search-button">
+              <i class="fa fa-search"></i>
+            </button>
           </div>
         </nav>
       </header>
@@ -102,56 +109,58 @@
         <section class="small-news">
           <!-- The other news  -->
           <div class="small-news__article">
-            <a href="/">
-              <div class="small-news__image">
-                <img src="./images/diablo.jpg" alt="diablo-4-image" />
-              </div>
-              <div class="small-news__text">
-                lorem ipsum dipsum hey banana goes to pineapple
-              </div>
-            </a>
+            <div class="small-news__image">
+              <img src="./images/diablo.jpg" alt="diablo-4-image" />
+            </div>
+            <h5 class="small-news__category">Diablo 4</h5>
+            <h3 class="small-news__title">Catch Up On Patch 1.1.1</h3>
+            <p class="small-news__text">
+              lorem ipsum dipsum hey banana goes to pineapple
+            </p>
+          </div>
+
+          <div class="small-news__article">
+            <div class="small-news__image">
+              <img
+                src="./images/starfield.jpg"
+                alt="starfield-image"
+                class="small-news__image"
+              />
+            </div>
+            <h5 class="small-news__category">Starfield</h5>
+            <h3 class="small-news__title">Catch Up On Patch 1.1.1</h3>
+            <p class="small-news__text">
+              lorem ipsum dipsum hey banana goes to pineapple
+            </p>
           </div>
           <div class="small-news__article">
-            <a href="/">
-              <div class="small-news__image">
-                <img
-                  src="./images/starfield.jpg"
-                  alt="starfield-image"
-                  class="small-news__image"
-                />
-              </div>
-              <div class="small-news__text">
-                lorem ipsum dipsum hey banana goes to pineapple
-              </div>
-            </a>
+            <div class="small-news__image">
+              <img
+                src="./images/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg"
+                alt="zelda-image"
+                class="small-news__image"
+              />
+            </div>
+            <h5 class="small-news__category">Zelda: Tears of the Kingdom</h5>
+            <h3 class="small-news__title">Catch Up On Patch 1.1.1</h3>
+            <p class="small-news__text">
+              lorem ipsum dipsum hey banana goes to pineapple
+            </p>
           </div>
+
           <div class="small-news__article">
-            <a href="/">
-              <div class="small-news__image">
-                <img
-                  src="./images/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg"
-                  alt="zelda-image"
-                  class="small-news__image"
-                />
-              </div>
-              <div class="small-news__text">
-                lorem ipsum dipsum hey banana goes to pineapple
-              </div>
-            </a>
-          </div>
-          <div class="small-news__article">
-            <a href="/"
-              ><div class="small-news__image">
-                <img
-                  src="./images/Final_Fantasy_XVI.png"
-                  alt="ffxvi-image"
-                  class="small-news__image"
-                />
-              </div>
-              <div class="small-news__text">
-                lorem ipsum dipsum hey banana goes to pineapple
-              </div>
-            </a>
+            <div class="small-news__image">
+              <img
+                src="./images/ff16.png"
+                alt="ffxvi-image"
+                class="small-news__image"
+              />
+            </div>
+            <h5 class="small-news__category">Final Fantasy 16</h5>
+            <h3 class="small-news__title">Catch Up On Patch 1.1.1</h3>
+            <p class="small-news__text">
+              lorem ipsum dipsum hey banana goes to pineapple
+            </p>
           </div>
         </section>
       </div>
