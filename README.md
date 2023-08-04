@@ -1,6 +1,3 @@
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
 The assignment was to make a news site using some of the most common structures and layouts. The site should also look different depensing on if the viewer's using a mobile, tablet or desktop.
 
 The problem
@@ -14,4 +11,4 @@ If I had more time I'd spend some of it to make the background look more "profes
 I'd also spend some time trying to figure out how to not make the logo flip like the rest of the pictures. I want it to remain the same. 
 And, also something I've spent quite alot of time on, but I guess is really simple, is to make the section with the big news centered on the page!
 
-Link to the site: 
+Link to the site: https://glavanews.netlify.app/
