@@ -19,12 +19,12 @@ If I use this then it should be min-height: 100vh; */
 body {
   background: #f7f5ff;
   color: #3b373b;
-  width: auto;
+  min-height: 100vh;
 }
 
 /*Mobile viewport*/
 @media (max-width: 667px) {
-  .nav-links {display: none;}
+  .nav-list {display: none;}
 }
 
 /*Tablet viewport*/
@@ -41,44 +41,38 @@ header {
   background-color: #c2b3ff;
 }
 
-/* Used flex-grow: 1; because the header shrinks and 
-gets smaller than the body when the screen size shrinks */
-
-.website-header {
-  height: 100px;
+.site-header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
   }
 
- .logo-website-name {
-    width: 20%;
-    height: 100px;
-    padding: 5px;
+ .logo-wrapper {
+    height: 100%;
+    padding: 10px;
     display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
-    Justify-content: flex-start;
   }
 
-  .website-name h1 {
+  .logo-wrapper h1 {
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 150%;
   }
 
-  .logo {
-    width: 25%;
+  .circle-logo {
+    width: 10%;
+    margin-right: 5px;
   }
   
-.nav {
-  width: 30%;
-  height: 100px;
-  padding: 5px;
+.nav-wrapper {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-}
-
-.nav-links a {
- margin-left: 10px;
 }
 
 /* Removes the bulletpoints/changes the style of the list */
@@ -86,28 +80,40 @@ ul {
   list-style-type: none;
 }
 /*To make the list horizontal instead of vertical. <li> is a block element by default*/
-.nav-links li {
+.nav-list li {
   display: inline;
+  margin-left: 10px;
 }
 
 .triple-bars {
-  width: 25%;
+  width: 30%;
+  max-height: 50%;
+  object-fit: contain;
 }
 
-.link-home {
-  background: white;
+.nav-link {
+padding: 5px;
+border: none;
+border-radius: 5px;
+font-weight:bold;
 }
 
-.link-about-us {
-  background: white;
+.home {
+  background: #ffce99;
 }
 
-.link-contact-us {
-  background: white;
+.about-us {
+  background: #b3ffb3;
 }
 
-a {
+.contact-us {
+  background: #99ccff;
+}
+
+.nav-list a {
   text-decoration: none;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .big-news {
