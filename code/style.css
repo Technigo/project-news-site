@@ -90,6 +90,7 @@ nav a:hover {
 }
 
 .welcome-text strong {
+  text-indent: 50px;
   text-decoration: none;
   font-size: small;
   text-align: center;
@@ -132,6 +133,18 @@ nav a:hover {
   box-sizing: border-box;
 }
 
+.card:nth-child(1) {
+  grid-area: 1/1/2/3;
+}
+
+.card:nth-child(3) {
+  grid-area: 1/4/3/5;
+}
+
+.card:nth-child(4) {
+  grid-area: 2/2/3/4;
+}
+
 .card figure {
   margin: 0px;
   padding: 0px;
@@ -171,6 +184,7 @@ nav a:hover {
 }
 
 .card p {
+  text-indent: 25px;
   font-size: small;
   color: black;
   margin: 10px 5px;
@@ -296,6 +310,26 @@ footer {
     justify-content: center;
   }
 
+  .card:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+
+  .card:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+
+  .card:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+
+  .card:nth-child(4) {
+    grid-area: 4/1/5/2;
+  }
+
+  .card:nth-child(5) {
+    grid-area: 5/1/6/2;
+  }
+
   *footer {
     font-size: smaller;
   }
@@ -310,6 +344,26 @@ footer {
   .activities {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
+  }
+
+  .card:nth-child(1) {
+    grid-area: 1/1/2/3;
+  }
+
+  .card:nth-child(2) {
+    grid-area: 2/1/3/3;
+  }
+
+  .card:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+
+  .card:nth-child(4) {
+    grid-area: 3/2/4/3;
+  }
+
+  .card:nth-child(5) {
+    grid-area: 4/1/5/3;
   }
 
   body {
