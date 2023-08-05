@@ -19,16 +19,19 @@ body {
 .box-one {
   color: navy;
   background-color: aquamarine;
-  margin: 10px 5px 20px 5px;
+  margin: 10px 10px 20px 10px;
   padding: 25px;
+  display: inline;
+
 }
 
 .box-two {
   color: orange;
   background-color: bisque;
-  margin: 10px 5px 20px 5px;
+  margin: 10px 10px 10px 10px;
   padding: 25px;
-  border: 3px dotted green;
+  display: inline;
+  border: 3px dotted green;                   
 
 }
 
@@ -37,15 +40,17 @@ body {
   height: 500px;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: center; 
+  
 
 }
 
 .flex-child {
-  margin: 5px;
-  width: 10%;
-  height: 50px;
-  
+  height: 130px;
+  width: 130;
+  height: 130px;
+  margin: 50px;
+  padding: 30px;
 
 }
 
