@@ -70,7 +70,6 @@ img:hover {
 }
 
 .stora-nyheten {
-  background: white;
   height: 65%;
   padding: 20px;
   display: flex;
@@ -108,8 +107,10 @@ img:hover {
 }
 
 .mindre-nyheter {
-  display: flex;
-  flex-wrap:wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  gap: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
   /*för att få divvarna bredvid varandra inuti den här boxen*/
@@ -123,7 +124,6 @@ img:hover {
 
 
 .grid-item {
-  background: white;
   flex:25%;
   border-radius: 40px;
   border: solid lightgrey;
@@ -133,13 +133,15 @@ img:hover {
 
 @media (min-width:667px) and (max-width:1024px) {
   /*This is the middle version*/
-  body {
+  body, html {
     background: orange;
   }
 
   .mindre-nyheter {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+    gap: 7px;
   }
  .stora-nyheten-img {
     display:none;
@@ -148,19 +150,27 @@ img:hover {
     display:none;
  }
 
+
+
+
 }
 
 @media (min-width:0px) and (max-width:668px) {
 /*this is the mobile version*/
-  body {
+  body, html {
     background: yellow;
+  }
+  .header-rubrik {
+    display: none;
   }
   .stora-nyheten-img {
     display:none;
  }
-  .header-rubrik {
-    display: none;
-  }
+  .mindre-nyheter {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(8, 12,5%);
+    gap: 7px;
 
 }
 
