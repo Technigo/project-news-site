@@ -8,7 +8,7 @@ News site project using flex box and css grid
 * Box-sizing
 * Position:relative and position:absolute
 * grid-template-columns: repeat (4, minmax(auto,1fr))
-top left and right corners of img having also border-radius in accordance to figure having border-radius
+* top left and right corners of img having also border-radius in accordance to figure having border-radius
 * 2 distinct groups in navbar for further styling using flex
 * hyperlinks within a page for user-experience
 user-agent stylesheet overiding own styling- use * for own default from beginning next time
