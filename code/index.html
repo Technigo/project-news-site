@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>Art News</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<!--do this change-->
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+  <header class="header">
+    <!-- Logo here -->
+    <img class="logo" src="logo.svg" alt="">
+    <!-- Some kind of logo and navbar -->
+    <nav class="nav" id="myNavbar">
+      <a href="About">News</a>
+      <a href="About">About</a>
+      <a href="About">Contact</a>
+    </nav>
+    <!-- CTA === Call to Action -->
+    <button>Login</button>
+  </header>
+
+
+
+  <div class="hero">
+    <h1>Welcome to</h1>
+    <p>Art News</p>
+    <p class="small-p">This is a site about art in all forms from all over the world</p>
+  </div>
+
+
+
+
+
+  <section class="flex-parent">
+
+    <div class="flex-child red">
+      <div class="flex-child redtwo">
+        <h2>What's about all the plastic?</h2>
+
+        <div id="text"> Plastic waste in the art sector refers to the practice of using discarded plastic
+          materials or parts in
+          artistic creations or installations. The art sector has recognized that plastic waste is a pervasive issue
+          causing environmental damage, and many artists are now adopting this material as a way to raise awareness and
+          promote sustainable practices.The primary purpose of using plastic waste in art is to repurpose and transform
+          these materials into creative and thought-provoking works of art. By using plastics that would otherwise end
+          up
+          in landfills or oceans, artists are able to contribute to the reduction of waste and demonstrate innovative
+          ways
+          of recycling.
+          Artists using plastic waste often aim to communicate an environmental message.
+        </div>
+
+        <button class="button">Read more</button>
+      </div>
+    </div>
+
+    <div class="flex-img">
+      <img src="./image/martijn-baudoin.jpg">
+    </div>
+
+  </section>
+
+
+  <div class="articles">
+    <!-- The other news  -->
+
+    <ul>
+      <ul class="article-2">
+        <figure>
+          <img src="./image/textile-net.jpg" alt="textile-net">
+          <figcaption>
+            <h2>Photo art - fishingnet<h2>
+          </figcaption>
+        </figure>
+      </ul>
+    </ul>
+
+    <ul class="article-3">
+      <figure>
+        <img src="./image/textile-photo.jpg" alt="textile-photo">
+        <figcaption>
+          <h2>Photo art with textiles</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-4">
+      <figure>
+        <img src="./image/umbrella.jpg" alt="umbrella">
+        <figcaption>
+          <h2>Umbrellas in the streets</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-5">
+      <figure>
+        <img src="./image/wale.jpg" alt="wale">
+        <figcaption>
+          <h2>Sculpture - Wale</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-6">
+      <figure>
+        <img src="./image/cadillac.jpg" alt="Cadillac">
+        <figcaption>
+          <h2>Cadillac</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-7">
+      <figure>
+        <img src="./image/aman.jpg" alt="A man">
+        <figcaption>
+          <h2>A man</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-8">
+      <figure>
+        <img src="./image/catplane.jpg" alt="Cat Plane">
+        <figcaption>
+          <h2>Cat Plane</h2>
+        </figcaption>
+      </figure>
+    </ul>
+
+    <ul class="article-9">
+      <figure>
+        <img src="./image/sho.jpg" alt="Sho">
+        <figcaption>
+          <h2>"Sho"</h2>
+        </figcaption>
+      </figure>
+    </ul>
+  </div>
+
+
+  <footer>
+    <p class="footer">Frida Lindskog Technigo Web Developer bootcamp 2023</p>
+  </footer>
+
+</body>
+
 </html>
