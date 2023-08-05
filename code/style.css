@@ -15,8 +15,8 @@ a {
 
 .navigation-bar {
   list-style-type: none;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .main-header {
@@ -74,7 +74,7 @@ img:hover {
 .stora-nyheten {
   background: black;
   height: 65%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   display: flex;
   border: solid rgb(252, 221, 252);
   border-radius: 15px;
@@ -83,19 +83,15 @@ img:hover {
 
 }
 
-
-
 .stora-nyheten :hover {
-  opacity: 50%;
+  opacity: 30%;
   border-radius: 25px;
   border-color: white;
 }
 
-
 .stora-nyheten-img {
   width: 30%;
   height: 80%;
-  
 }
 
 .stora-nyheten-headline {
@@ -103,7 +99,14 @@ img:hover {
   font-size: x-large;
   font-weight: bold;
   padding-left: 20px;
-  
+
+}
+
+.stora-nyheten-ingress {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 .mindre-nyheter {
@@ -125,7 +128,7 @@ img:hover {
   background: lightgrey;
   flex:25%;
   border-radius: 40px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .other-news2 {
