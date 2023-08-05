@@ -132,9 +132,35 @@ img:hover {
 
 
 @media (min-width:667px) and (max-width:1024px) {
+  /*This is the middle version*/
   body {
+    background: orange;
+  }
+
+  .mindre-nyheter {
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: orange;
   }
+ .stora-nyheten-img {
+    display:none;
+ }
+ .header-rubrik {
+    display:none;
+ }
+
 }
+
+@media (min-width:0px) and (max-width:668px) {
+/*this is the mobile version*/
+  body {
+    background: yellow;
+  }
+  .stora-nyheten-img {
+    display:none;
+ }
+  .header-rubrik {
+    display: none;
+  }
+
+}
+
