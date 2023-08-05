@@ -22,38 +22,26 @@ body {
   min-height: 100vh;
 }
 
-/*Mobile viewport*/
-@media (max-width: 667px) {
-  .header-nav-list {display: none;}
-}
-
-/*Tablet viewport*/
-@media (min-width: 667px) and (max-width: 1024px) {
-  .header-hamburger {display: none;}
-  .main {
-    grid-template-columns: 1fr 1fr;
-  }  
-  .first-news, .second-news {
-  grid-column: 1 / span 2;
-  }
-}
-
-/*Desktop viewport*/
-@media (min-width: 1025px) {
-  .header-hamburger {display: none;}
-  .main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  } 
-  .first-news {
-    grid-column: 1 / span 4;
-    }
-  .second-news {
-    grid-column: 1 /span 2;
-  }
-}
-
 header {
-  background-color: #c2b3ff;
+  background-color:black;
+}
+
+main {
+  font-family: Montserrat, sans-serif;
+  width: 80%;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 48px;
+  justify-content: center;
+}
+
+footer {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0 0 16px 10px;
 }
 
 .header-website {
@@ -139,28 +127,22 @@ a {
 
 /* News cards */
 
-main {
-  font-family: Montserrat, sans-serif;
-  margin: 16px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 16px;
-  justify-content: center;
+.card {
+  background: white;
+  box-shadow: 0 2px 5px rgb(121, 120, 120);  
+  /* offset-x (pos means shadow to the right, neg means shadow to the left | offset-y (pos means shadow below, neg means shadow above| blur-radius | color */
+  overflow: hidden; 
 }
 
-/* Big news section */
 
-
-/* Other news */
-.card {
-  overflow: hidden; 
+.card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
+
 .card-image {
-    height: 200px;
+    height: 40%;
     width: 100%;
     object-fit: cover;
 }
@@ -174,12 +156,34 @@ main {
 }
 
 .card-link {
-  color: #3b373b; 
+  color:#3b373b;
 }
 
-footer {
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  font-size: 10px;
-  margin: 0 0 16px 10px;
+
+/*Mobile viewport*/
+@media (max-width: 667px) {
+  .header-nav-list {display: none;}
+}
+
+/*Tablet viewport*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .header-hamburger {display: none;}
+  main {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .first-news {
+    grid-column: 1 / span 2;
+  }
+}
+
+/*Desktop viewport*/
+@media (min-width: 1025px) {
+  .header-hamburger {display: none;}
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  } 
+ 
+  .second-news {
+    grid-column: 1 / span 2;
+  }
 }
