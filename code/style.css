@@ -1,71 +1,86 @@
-html {
-  
+* {
+  box-sizing: border-box;
+} /*för att kunna skriva siffror som procent för större/mindre skärmar*/ 
+
+body, html {
+  background-color: rgb(249, 217, 222);
+height:100%;
+width:100%;
 }
 
-h1 {
-  color: rgb(11, 12, 75);
-}
+.main-header {
+  /* felstavad, -streck för att kopplas till headern */
 
-@media (min-width: 668px) {
-  h1 {
-      color:rgb(51, 51, 169)
-  }
-}
+  background-color: grey;
+  /*för tydlighet, ska inte vara med sen*/
 
-body {
-  background-color: antiquewhite;
-}
-
-.box-one {
-  color: navy;
-  background-color: aquamarine;
-  margin: 10px 10px 20px 10px;
-  padding: 25px;
-  display: inline;
-
-}
-
-.box-two {
-  color: orange;
-  background-color: bisque;
-  margin: 10px 10px 10px 10px;
-  padding: 25px;
-  display: inline;
-  border: 3px dotted green;                   
-
-}
-
-.flex-parent {
-  border: 2px dotted maroon;
-  height: 500px;
+  padding: 10px;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center; 
+  /*DET HÄR E VIKTIGT, HÖR ÄR FLEXBOXEN DE PRATAR OM*/
+
+}
+
+/*kod för länkarna på höger sida i headern, kan också ge dem en klass*/
+.main-header a {
+  color: white;
+padding: 10px;
+  border: dotted;
+  /*kan tas bort, men lättare att träffa länken om man ser var den slutar*/
+height: 40px;
+}
+
+/*bilden ser rätt ut, vet inte varför css för den ligger i html bara.  / är sökning i filsystemet på din dator*/
+img {
+  border: solid green;
+  /* att visa bilden, ta bort*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  opacity: 50%;
+  border-radius: 25px;
+}
+
+/*effekt när du hovrar, runda hörnen är en klassisk sak. Lägre opacitet brukar göras tvärtom, från 80% till 100 */
+
+.header-bild {
+  width: 40px;
+  height: 40px;
+}
+
+.header-rubrik {
+
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0px 50px 5px 50px;
+  padding: 0px 50px 5px 50px;
+  /*skapar marginal ovanför/höger/under/vänster. måste vara lika mycket för alla saker som ska ligga bredvid varandra*/
+
+}
+
+.stora-nyheten{
+  background: maroon;
+height: 50%;
+}
+
+.mindre-nyheter {
+  display: flex;
+ flex-wrap:wrap;
+  /*för att få divvarna bredvid varandra inuti den här boxen*/
+}
+
+.grid-item {
+  background: yellowgreen;
+  flex:25%;
   
-
 }
 
-.flex-child {
-  height: 130px;
-  width: 130;
-  height: 130px;
-  margin: 50px;
-  padding: 30px;
-
-}
-
-.yellow {
-  background: yellow;
-}
-
-.green {
-  background: green;
-}
-
-.blue {
-  background: blue;
-}
-
-.brown {
-  background: brown;
+.other @media (min-width: 668px) {
+  h1 {
+    color: rgb(51, 51, 169)
+  }
 }

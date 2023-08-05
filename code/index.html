@@ -2,56 +2,63 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
+
+    <title>The New Amsterdam Times</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+   <header class="main-header">
+   <img class="header-bild" src="./images news/logo news.jpg" alt="Logo New Amsterdam Times">
+   <h1 class="header-rubrik">The New Amsterdam Times</h1>
+   <a href="#">Home</a>
+   <a href="#">Politics</a>
+   <a href="#">Culture</a>
+   <a href="#">Puzzle</a>
+ </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+ <section class="stora-nyheten">
+   <!-- align="left" i bilden gör så att annat får vara bredvid bilden i sin box/ruta. kan lägga till igen om du vill-->
+  <img src="./images news/Old American Map.jpg" alt="The Americas in the 1600s" width="400">
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-    <div>
-      <h1>The New Amsterdam Times</h1>
-      <h2>Out of print since 1664</h2>
-    </div>
-      <p class="box-one" >
-        Top story
-      </p>
+   <p class="box-one">Tomorrow We're the New YORK Times </p>
+ 
+
+ </section>
+
+ <section class="mindre-nyheter">
+   <!-- The other news  -->
+
+   <div class="grid-item other-news-1">
+     <img src="#" alt="förklaring 1" class="liten-bild">
+     <p>
+       Did Versailles just get inaugaurated?
+     </p>
+
+   </div>
+
+   <div class="grid-item other-news 2">
+     <img src="#" alt="bild 2's förklaring" class="liten-bild">
+     <p>
+      Kronenburg Destillery opens!
+     </p>
     
-      <p class="box-two">
-        Not so top story
-      </p>
+    </div>
 
-    <section class="flex-parent">
+   <div class="grid-item other-news 3">   <img src="#" alt="bild 2's förklaring" class="liten-bild">
+     <p>
+    Some Pope is alive I guess
+     </p>
+    
+    </div>
 
-    <div class="flex-child yellow">
-      <img src="./images news/newspaper blue door.jpg" alt="blue door and newspaper" 
-      width="150px" height="150px">
-      <button>Click here</button>
-      
+   <div class="grid-item other-news 4"><img src="#" alt="bild 2's förklaring" class="liten-bild">
+     <p>
+  Finally we're over the plague! Oh wait.
+     </p>
     </div>
-    <div class="flex-child green">
-      <img src="./images news/newspaper blue door.jpg" alt="blue door and newspaper" 
-      width="200px" height="200px">
-    </div>
-    <div class="flex-child blue">
-      <img src="./images news/newspaper blue door.jpg" alt="blue door and newspaper" 
-      width="200px" height="200px">
-    </div>
-    <div class="flex-child brown">
-      <img src="./images news/newspaper blue door.jpg" alt="blue door and newspaper" 
-      width="200px" height="200px">
-    </div>
-    <div class="flex-child yellow"></div>
+
+ </section>
 
   </body>
 </html>
