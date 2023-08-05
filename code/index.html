@@ -3,27 +3,56 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test</title>
   <link rel="stylesheet" href="./style.css" />
-  <!-- dont forget the meta tag for responsiveness -->
+  <!-- dont forget the meta tag for responsiveness se vid hva er denne delen-->
+  <!--obs sjekk media only i css.tilfeldig kode. hvordan bruker jeg det-->
 </head>
 
 <body>
   <header>
     <!-- Some kind of logo and navbar -->
-    <h1>Elba</h1>
-    Elba prøver igjen
-    funker ikke live
-
+    <h1>Navn</h1>
   </header>
 
-  <section class="big-news">
-    <!-- The big news content -->
+  <section class="flex-parent">
+    <div class="flex-child red">
+      <img src="./blomst.png" alt="">
+      <button>Click here</button></button>
+    </div>
+    <div class="flex-child blue">
+      <img src="./blomst2.png" alt="">
+      <button>Click here</button>
+    </div>
   </section>
 
-  <section class="">
-    <!-- The other news  -->
-  </section>
+  <div class="first-section-box">
+    <section class="big-news">
+      <p>en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del
+        tekst en del tekst en del tekst en del tekst</p>
+      <!-- The big news content -->
+    </section>
+
+    <section class="daily-news">
+      <p>en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del tekst en del
+        tekst en del tekst en del tekst en del tekst
+      </p>
+      <!-- The other news  -->
+    </section>
+  </div>
 </body>
+</div>
+<section class="grid-parent">
+  <div class="grid-item big-grid-item">☀️</div>
+  <div class="grid-item medium-grid-item">☀️</div>
+  <div class="grid-item medium-grid-item">☀️</div>
+  <div class="grid-item">☀️</div>
+  <div class="grid-item">☀️</div>
+  <div class="grid-item">☀️</div>
+  <div class="grid-item">☀️</div>
+  <div class="grid-item lonely-grid-item">☀️</div>
+</section>
+
 
 </html>
