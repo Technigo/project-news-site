@@ -3,36 +3,47 @@
 } /*för att kunna skriva siffror som procent för större/mindre skärmar*/ 
 
 body, html {
-  background-color: rgb(249, 217, 222);
-height:100%;
-width:100%;
+  background-color: black;
+  height:100%;
+  width:100%;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation-bar {
+  list-style-type: none;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
 }
 
 .main-header {
   /* felstavad, -streck för att kopplas till headern */
 
-  background-color: grey;
-  /*för tydlighet, ska inte vara med sen*/
-
   padding: 10px;
+  border-radius: 15px;
+  border: solid rgb(252, 221, 252);
   display: flex;
   /*DET HÄR E VIKTIGT, HÖR ÄR FLEXBOXEN DE PRATAR OM*/
 
 }
 
-/*kod för länkarna på höger sida i headern, kan också ge dem en klass*/
 .main-header a {
   color: white;
-padding: 10px;
-  border: dotted;
-  /*kan tas bort, men lättare att träffa länken om man ser var den slutar*/
-height: 40px;
+  padding: 10px;
+  border: solid rgb(252, 221, 252);
+  height: 40px;
+  border-radius: 15px;
 }
 
-/*bilden ser rätt ut, vet inte varför css för den ligger i html bara.  / är sökning i filsystemet på din dator*/
+
+
 img {
-  border: solid green;
-  /* att visa bilden, ta bort*/
+  border: solid rgb(252, 221, 252);
+  border-radius: 15px;
+
 }
 
 img {
@@ -43,9 +54,8 @@ img {
 img:hover {
   opacity: 50%;
   border-radius: 25px;
+  border-color: white;
 }
-
-/*effekt när du hovrar, runda hörnen är en klassisk sak. Lägre opacitet brukar göras tvärtom, från 80% till 100 */
 
 .header-bild {
   width: 40px;
@@ -53,34 +63,78 @@ img:hover {
 }
 
 .header-rubrik {
-
-  color: black;
+  color: rgb(252, 221, 252);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 0px 50px 5px 50px;
-  padding: 0px 50px 5px 50px;
-  /*skapar marginal ovanför/höger/under/vänster. måste vara lika mycket för alla saker som ska ligga bredvid varandra*/
+  padding: 0px 20px 20px 10px;
+  margin: 0px 20px 20px 10px;
+    /*skapar marginal ovanför/höger/under/vänster. måste vara lika mycket för alla saker som ska ligga bredvid varandra*/
 
 }
 
-.stora-nyheten{
-  background: maroon;
-height: 50%;
+.stora-nyheten {
+  background: black;
+  height: 65%;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  border: solid rgb(252, 221, 252);
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+
+.stora-nyheten :hover {
+  opacity: 50%;
+  border-radius: 25px;
+  border-color: white;
+}
+
+
+.stora-nyheten-img {
+  width: 30%;
+  height: 80%;
+  
+}
+
+.stora-nyheten-headline {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 20px;
+  
 }
 
 .mindre-nyheter {
   display: flex;
- flex-wrap:wrap;
+  flex-wrap:wrap;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
   /*för att få divvarna bredvid varandra inuti den här boxen*/
+
 }
 
-.grid-item {
-  background: yellowgreen;
-  flex:25%;
-  
+.liten-bild {
+  height: 70px;
+  width: 60px;
 }
+
+
+.grid-item {
+  background: lightgrey;
+  flex:25%;
+  border-radius: 40px;
+  padding: 10px 10px 10px 10px;
+}
+
+.other-news2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 .other @media (min-width: 668px) {
   h1 {
     color: rgb(51, 51, 169)
   }
-}
+
