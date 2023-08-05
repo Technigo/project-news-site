@@ -80,7 +80,7 @@ img:hover {
 }
 
 .stora-nyheten :hover {
-  opacity: 30%;
+  opacity: 60%;
   border-radius: 25px;
   border-color: black;
 }
@@ -106,14 +106,24 @@ img:hover {
   padding-left: 20px;
 }
 
+.stora-nyheten-ingress-forts {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  padding-left: 20px;
+}
+
+.stora-nyheten-ingress-forts2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  padding-left: 20px;
+}
+
 .mindre-nyheter {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 50%);
   gap: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-  /*för att få divvarna bredvid varandra inuti den här boxen*/
 
 }
 
@@ -134,7 +144,7 @@ img:hover {
 @media (min-width:667px) and (max-width:1024px) {
   /*This is the middle version*/
   body, html {
-    background: orange;
+    background: rgb(157, 241, 117);
   }
 
   .mindre-nyheter {
@@ -144,21 +154,18 @@ img:hover {
     gap: 7px;
   }
  .stora-nyheten-img {
-    display:none;
+    display: 25%;
  }
  .header-rubrik {
     display:none;
  }
-
-
-
 
 }
 
 @media (min-width:0px) and (max-width:668px) {
 /*this is the mobile version*/
   body, html {
-    background: yellow;
+    background: rgb(255, 255, 179);
   }
   .header-rubrik {
     display: none;
@@ -174,3 +181,4 @@ img:hover {
 
 }
 
+}
