@@ -4,71 +4,78 @@
 <head>
   <meta charset="utf-8" />
   <!-- Change the title below -->
-  <title>Best news</title>
+  <title>News daily</title>
   <link rel="stylesheet" href="./style.css" />
   <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+<!--START OF THE HEADER-->
 
 <body>
   <div>
     <header>
-      <!-- Some kind of logo and navbar -->
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+      <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">MC</div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+          <!--CHECKBOX HACK -->
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <input type="checkbox" id="checkbox_toggle" />
+
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">help</a></li>
+            <li><a href="/">hola senora</a></li>
+          </div>
+        </ul>
+      </nav>
     </header>
   </div>
-  <!-- End of the navigation -->
+  <!-- End of the HEADER -->
 
-  <div>
-    <section class="grid-parent">
-      <div class="grid-item grid-a">a</div>
-      <div class="grid-item grid-b">b</div>
-      <div class="grid-item grid-c">c</div>
-      <div class="grid-item lonly">lonly</div>
-      <div class="grid-item grid-d">
-        <p>Tester hvordan dette funker aaaaaaaaaaaaa aaaaaa aaaaaa aaaaaaa aaaaa</p>
-        <p>sssss</p>
-        <div class="image3 img3">
-          <img src="/code/Image1.png"></a>
-        </div>
-        <div>
-          <p></p>
-          <a href="www.google.com">test</a>
-        </div>
-        <div class="grid-item grid-e">e</div>
-        <div class="grid-item grid-f">f</div>
-        <div class="grid-item grid-g">g</div>
-        <div class="grid-item grid-h">h</div>
-        <div class="grid-item grid-i">i</div>
-        <div class="grid-item grid-j">j</div>
-    </section>
-  </div>
-  <div>
-    <h1>News Article</h1>
-    <h2>What article is about</h2>
-  </div>
-  <div>
-    <section>
-      <!-- The big news content -->
-      <p>All the text about the news <a href="https://google.com">here</a></p>
-    </section>
-    <section class="grid-item">
-      <img src="./Image1.png" alt="Picture of logo">
-      <p>More text about the news</p>
+  <!--GRID STARTS HERE-->
+  <section class="grid-parent">
+
+    <div class="grid-item grid-a">
+      <p> A- More text about the news</p>
       <a href="https://google.com">Read more here</a>
-    </section>
-  </div>
-  <div>
-    <section class="">
+    </div>
+
+    <div class="grid-item grid-b">
+      <p> B - Tester hvordan dette funker aaaaaaaaaaaaa aaaaaa aaaaaa aaaaaaa aaaaa</p>
+      <p>sssss</p>
+    </div>
+
+    <div class="grid-item grid-c">
+      <p>-C-</p>
+      <a href="www.google.com">test</a>
+    </div>
+
+    <div class="grid-item lonly">
       <!-- The other news  -->
-      <p>More information</p>
-    </section>
-  </div>
+      <p>LONLY More information</p>
+    </div>
+
+    <div class="grid-item grid-d">d her </div>
+    <div class="grid-item grid-e">e</div>
+    <div class="grid-item grid-f">f</div>
+    <div class="grid-item grid-g">g</div>
+    <div class="grid-item grid-h">h</div>
+    <div class="grid-item grid-i">i</div>
+    <div class="grid-item grid-j">j</div>
+  </section>
+
 </body>
+
+<!--FOOTER-->
 <footer>
   <ul>
     <a href="www.facebook.com">
