@@ -32,10 +32,11 @@ a:visited {
 .navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .grow {
-    flex-grow: 1;
+    display: none;
 }
 
 .navigation-brand {
@@ -44,7 +45,7 @@ a:visited {
 
 .navigation-title,
 .navigation-link {
-    display: block;
+    display: none;
     padding: 20px;
 }
 
@@ -60,7 +61,7 @@ a:visited {
 .navigation-hamburger {
     padding: 20px;
     height: 19px;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -87,16 +88,6 @@ a:visited {
 .hero-image {
     border-radius: 16px 16px 0 0;
 }
-
-/* .hero-content-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content {
-    width: 85%;
-} */
 
 .hero-heading {
     margin-top: 0px;
@@ -160,6 +151,30 @@ a:visited {
 }
 
 @media only screen and (min-width: 668px) {
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .navigation-hamburger {
+        display: none;
+    }
+
+    .navigation-link {
+        display: block;
+    }
+
+    .navigation-brand {
+        order: 1;
+    }
+
+    .first-section {
+        order: 0;
+    }
+
+    .second-section {
+        order: 2;
+    }
+
     .hero {
         flex-direction: row;
     }
@@ -181,6 +196,7 @@ a:visited {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 16px;
     }
 
     .hero-content {
@@ -203,6 +219,23 @@ a:visited {
 }
 
 @media only screen and (min-width: 1024px) {
+    .navigation-title {
+        display: block;
+    }
+
+    .navigation-brand {
+        order: 0;
+    }
+
+    .first-section {
+        order: 1;
+    }
+
+    .grow {
+        flex-grow: 1;
+        display: block;
+    }
+
     .hero-image {
         max-width: 50%;
     }
@@ -211,57 +244,4 @@ a:visited {
         grid-template-columns: repeat(4, 1fr);
     }
 
-}
-
-@media (max-width: 1024px) {
-    .navigation {
-        justify-content: space-between;
-    }
-
-    .navigation-title {
-        display: none;
-    }
-
-    .grow {
-        display: none;
-        flex-grow: 0;
-    }
-
-    .navigation-brand {
-        order: 2;
-    }
-
-    .navigation-link {
-        order: 3;
-    }
-
-    .first-link {
-        order: 0;
-    }
-
-    .second-link {
-        order: 1;
-    }
-}
-
-@media only screen and (max-width: 667px) {
-    .navigation-brand {
-        order: 0;
-    }
-
-    .grow {
-        flex-grow: 1;
-    }
-
-    .navigation-link {
-        display: none;
-    }
-
-    .navigation-title {
-        display: none;
-    }
-
-    .navigation-hamburger {
-        display: flex;
-    }
 }
