@@ -1,12 +1,8 @@
 # News Site
+The assignment was to create some sort of a news site using CSS grid and Flexbox. Four news cards on desktop, two cards on tablet, and single card rows on mobile.
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
+I first needed to understand the whole idea of Flexbok and CSS grid. I looked at the examples given on the "Build a news site" project page, I watched several clips on YouTube, and I've had good help from the W3Schools code library. Since then it has been trial and error all the way. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+If I had more time, I would have added a footer, split the main news into two columns in desktop mode, and made nicer buttons.
