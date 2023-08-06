@@ -1,4 +1,140 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #e2cc9c;
+  color: black;
+  font-family: Helvetica, sans-serif;
 }
+
+.flex-navbar {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.flex-navbar-child {
+  margin: 0;
+  width: 150px;
+  height: 20px;
+}
+
+.flex-navbar a {
+  display: block;
+  float: right;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.logo {
+  height: 30px;
+  width: 60px;
+}
+
+a:hover {
+  background-color: #bea17d;
+}
+
+.feature-heading {
+  font-size: 35px;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.grid-item {
+  grid-column: span 1;
+  background: #bea17d;
+  padding: 4px;
+  margin: 5px;
+  text-align: center;
+}
+
+.big-grid-item {
+  grid-column: span 4;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.big-grid-item h1 {
+  font-size: 70px;
+}
+
+.medium-grid-item {
+  grid-column: span 4;
+  background-color: #bea17d;
+  margin: 5px;
+  padding: 5px;
+  max-width: 100%;
+  border: 1px solid #895a2f;
+}
+
+.medium-grid-item img {
+  background-color: #ffebcc;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  max-width: 50%;
+  border: 1px solid #895a2f;
+}
+
+.medium-grid-item img:hover {
+  opacity: 0.5;
+}
+
+.medium-grid-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-text {
+  padding-right: 10px;
+}
+
+.article-heading {
+  font-weight: bolder;
+}
+
+.article-picture img {
+  float: center;
+  height: 225px;
+  width: 99%;
+}
+
+.article-picture:hover {
+  opacity: 0.5;
+}
+
+.last-grid-item {
+  grid-column: span 4;
+  display: flex;
+  background: #bea17d;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness, it is only for desktop atm. */
+
+/*media query for tablet - 2 rows of articles
+@media (min-width: 667px) and (max-width: 1024px) {
+  grid-item {
+    grid-column: span 4;
+  }
+}*/
+
+/*media query for desktop - 4 rows of articles 
+@media (min-width: 1025px) {
+  grid-item {
+    grid-column: span 2;
+  }
+} */
