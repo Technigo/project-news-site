@@ -1,12 +1,15 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+Technigo Fall Bootcamp 2023 - Pre-course assignment
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Create a classic magazine or newspaper site with a header, a logo and a navbar. The site should have a big news section and a grid of cards with other news. On desktop-sized screens, there should be four cards in a row, two in a row on tablets and on mobile, there should just be one card on each row.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I luckily had no problems setting up the relevant programs to begin and went ok making a simple design. I used both Flexbox and CSS grid to help construct my layout. I asked one question on our slack group and used google alot as well as the w#schools website to get help on CSS or HTML I didnt know.
+
+Unfortunely, I got Covid a week before this was due :-( I had difficulty making the page responsive and was not able to solve this problem while very sick. The page looks terrible in mobile and is only configured for desktop. Sorry!
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+
