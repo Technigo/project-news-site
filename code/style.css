@@ -1,7 +1,34 @@
 html {
-  background: #b6a699;
+  background: #333;
   color: brown;
 }
+
+/*START OF HEADER*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/*END OF HEADER*/
 
 h1 {
   color: #0e0402;
@@ -22,13 +49,13 @@ h1 {
 }
 
 .grid-a {
-  background-color: #c516d1;
+  background-color: white;
   grid-column: span 6;
 }
 
 .grid-b {
   grid-column: 1 / 4;
-  background-color: hotpink;
+  background-color: white;
 }
 
 .grid-c {
@@ -41,6 +68,14 @@ h1 {
 
 .grid-d {
   grid-column: 1 / 3;
+  width: fit-content;
+  margin-bottom: 1em;
+}
+
+.img3 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .grid-e {
@@ -65,4 +100,27 @@ h1 {
 
 .grid-j {
   grid-column: 5/7
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #212121;
+  padding: 5rem 1.5rem;
+}
+
+li {
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+ul {
+  color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
 }
