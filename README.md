@@ -27,4 +27,8 @@ My greatest takeaway from this is - I'll live.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Netlify decided to block my account today without much warning, so I've done a copy and posted it to Github pages in the meantime.
+
+Hopefully I'll soon be able to post the Netlify link and start the continous deployment of the page (I couldn't unfortunately figure out how to publish the news-site repository and had to make a copy).
+
+Please find the site here https://shiqwan.github.io/s
