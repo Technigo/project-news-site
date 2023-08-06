@@ -25,6 +25,7 @@ a {
   padding: 10px;
   border-radius: 10px;
   border: solid black;
+  border-inline-width: 1px;
   display: flex;
 
 }
@@ -33,23 +34,21 @@ a {
   color: black;
   padding: 10px;
   border: solid black;
+  border-inline-width: 1px;
   height: 40px;
   border-radius: 15px;
+  
 }
 
-img {
-  border: solid black;
-  border-radius: 15px;
-
-}
 
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
+
 img:hover {
-  opacity: 50%;
   border-radius: 25px;
   border-color: black;
 }
@@ -130,12 +129,13 @@ img:hover {
   width: 60px;
 }
 
-
 .grid-item {
   flex:25%;
-  border-radius: 40px;
-  border: solid lightgrey;
-  padding: 5px 10px;
+  border-radius: 20px;
+  border: solid black;
+  border-inline-width: 1px;
+  padding: 10px 10px;
+  text-align: center;
 }
 
 
