@@ -3,46 +3,38 @@ html {
   color: #cdc3a4;
 }
 
-/* TEST AND CLEAN UP */
-.logo {
-  color: #cdc3a4;
-  font-family: 'Playfair Display';
-  font-size: 1.5rem;
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.desktop-menu {
-  display: none;
-  text-transform: uppercase;
-  margin-left: 1.5rem;
+li {
+  float: left;
 }
 
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-}
-
-/* its all hamb.lines now, how do i change it? */
-.menu-line {
-  width: 1.5rem;
-  height: 1px;
-  margin-bottom: 0.5rem;
-  fill: #cdc3a4;
-  background-color: #cdc3a4;
-  margin-left: auto;
-}
-
-.desktop-menu {
-  display: none;
-  text-transform: uppercase;
-  margin-left: auto;
-}
-
-
-.desktop-menu a:hover {
-  color: #5a4041;
-  background-color: #cdc3a4;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+
+
 
 /* TEST AND CLEAN UP (ABOVE) */
 
@@ -65,12 +57,11 @@ html {
   grid-column: span 8;
   background-color: #787d68;
   color: #cdc3a4;
-  margin-top: 20px;
+  margin-top: 60px;
   font-family: 'Playfair Display';
   font-size: 40px;
 }
 
-/* ADD MARGIN */
 .sidebar {
   grid-column: 1 / 3;
   border-style: solid;
@@ -108,6 +99,28 @@ html {
 }
 
 /*GRID STOPS HERE*/
+
+footer {
+  background-color: #212121;
+  padding: 5rem 1.5rem;
+}
+
+
+li {
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+
+ul {
+  color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .first-section-box {
   padding: 20px;
@@ -161,11 +174,3 @@ button {
   color: hotpink;
   font-size: 10px;
 }
-
-
-
-
-
-@media (min-width: 668px) and (max-width: 1024px) {}
-
-@media (min-width: 1024px) {}
