@@ -1,4 +1,278 @@
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: linear-gradient(#22c1c3, #fdbb2d);
+  background-size: contain;
+  color: rgb(80, 80, 80);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*header start*/
+header {
+  display: flex;
+  background: #78fcfe;
+  top: 0;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+}
+
+header button {
+  width: 80px;
+  height: 32px;
+}
+
+header div {
+  display: flex;
+  height: 30px;
+  padding: 24px;
+  max-width: 1024px;
+}
+
+.nav {
+  display: flex;
+  font-family: "Courier New";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d5758;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.header img {
+  width: 100px;
+}
+
+/*header end*/
+
+h1 {
+  text-align: center;
+  font-family: "Courier New";
+  font-weight: 200;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Courier New";
+  margin-top: 5px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+div p {
+  color: #0d5758;
+  font-size: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: 16px;
+}
+
+/* Hero CSS */
+.hero {
+  max-width: 100%;
+  padding: 2em 3em;
+}
+
+.hero .small-p {
+  font-size: 1.5em;
+  letter-spacing: 0px;
+}
+
+/* End Hero CSS */
+
+/*moving logo*/
+.box img {
+  width: 100px;
+}
+
+#logo {
+  position: sticky;
+  size: 1px;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+}
+
+/*moving logo end*/
+
+/*The big news start*/
+.flex-parent {
+  display: flex;
+  /* width: 1100px; */
+  width: 100%;
+  border: 2px solid #0d5758;
+  padding: 4px;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.flex-img img {
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-child {
+  margin: 20px;
+  width: 500px;
+}
+
+.redtwo {
+  color: #0d5758;
+  font-size: px;
+  text-align: center;
+  margin: 5px;
+}
+
+.redtwo h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#text {
+  font-size: 18px;
+  text-align: left;
+}
+
+.button {
+  background-color: #0d5758;
+  border: none;
+  color: #22c1c3;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Courier New";
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4rem;
+}
+
+.button:hover {
+  background-color: #fdbb2d;
+}
+
+.blue img {
+  width: inherit;
+  border: 2px solid #0d5758;
+}
+
+/*The big news en*/
+
+/*small articles start*/
+.articles {
+  display: grid;
+  /* grid-template-columns: 40% 40%;
+  grid-template-rows: 30% 30% 30% 30%; */
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.articles img {
+  /* height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 2px solid #0d5758;
+  padding: 4px;
+  object-fit: cover; */
+  width: 200px;
+  max-width: 100%;
+  border: 2px solid #0d5758;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-2:hover {
+  transform: scale(1.1);
+}
+
+.article-3:hover {
+  transform: scale(1.1);
+}
+
+.article-4:hover {
+  transform: scale(1.1);
+}
+
+.article-5:hover {
+  transform: scale(1.1);
+}
+
+.article-6:hover {
+  transform: scale(1.1);
+}
+
+.article-7:hover {
+  transform: scale(1.1);
+}
+
+.article-8:hover {
+  transform: scale(1.1);
+}
+
+.article-9:hover {
+  transform: scale(1.1);
+}
+
+/*small articles end*/
+
+/* media queries - for tablet*/
+@media screen and (min-width: 768px) {
+  /* .flex-parent {
+    display: flex;
+    width: 1100px;
+    border: 2px solid #0d5758;
+    padding: 4px;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  } */
+
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* media query - for Desktop */
+  @media screen and (min-width: 1024px) {
+    .articles {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .flex-parent {
+      display: flex;
+      width: 1100px;
+      border: 2px solid #0d5758;
+      padding: 4px;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+}
+
+footer {
+  background: #fed376;
+  height: 70px;
+  padding: 24px;
 }
