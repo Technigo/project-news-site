@@ -13,6 +13,8 @@ html {
   padding: 0;
 }
 
+/*All html elements*/
+
 /*Viewport height (vh) units to allow the body to set a minimum height value based upon the full height of the viewport.
 If I use this then it should be min-height: 100vh; */
 
@@ -44,6 +46,7 @@ footer {
   margin: 0 0 16px 10px;
 }
 
+/*Styling of the header*/
 .header-website {
   height: 70px;
   display: flex;
@@ -118,7 +121,7 @@ a {
   text-decoration: none;
 }
 
-/* News cards */
+/* Styling of the News cards */
 
 .card {
   background: white;
@@ -127,12 +130,10 @@ a {
   overflow: hidden; 
 }
 
-
 .card-body {
   display: flex;
   flex-direction: column;
 }
-
 
 .card-image, .card-image-first, .card-image-second {
     height: 40%;
@@ -153,7 +154,6 @@ a {
   color:#3b373b;
   cursor: pointer;
 }
-
 
 /*Mobile viewport*/
 @media (max-width: 667px) {
@@ -187,7 +187,7 @@ a {
 
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: minmax(1fr, 450px) 1fr 1fr;
   } 
  
   .first-news {
@@ -200,7 +200,7 @@ a {
   
   .card-image-first {
     height: 100%;
-    width: 60%;
+    width: 65%;
     object-fit: cover;
   }
 
@@ -223,6 +223,7 @@ a {
   .second-news {
     grid-column: 1 / span 2;
   }
+
   .second-news p {
     display: none;
   }
