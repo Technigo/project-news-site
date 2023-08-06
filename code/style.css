@@ -141,7 +141,7 @@ a {
 }
 
 
-.card-image, .card-image-first {
+.card-image, .card-image-first, .card-image-second {
     height: 40%;
     width: 100%;
     object-fit: cover;
@@ -196,6 +196,7 @@ a {
 
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   } 
  
   .first-news {
@@ -212,6 +213,11 @@ a {
     object-fit: cover;
   }
 
+  .card-image-second {
+    height: 80%;
+    width: auto;
+    object-fit: cover;
+}
   .card-news-article {
   display: flex;
   flex-direction: column;
@@ -225,5 +231,8 @@ a {
 
   .second-news {
     grid-column: 1 / span 2;
+  }
+  .second-news p {
+    display: none;
   }
 }
