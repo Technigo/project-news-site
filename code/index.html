@@ -1,23 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fake News Journal</title>
+</head>
+<body>
     <header>
-      <!-- Some kind of logo and navbar -->
+        <div class="logo">
+          <img src="fnj.svg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Breaking</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Advertisers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <main class="container">
+        <section class="big-news">
+            <div class="main-news-article">
+                <h1>BREAKING: Ice Cream Causes Brain Freeze Epidemic!</h1>
+                <h6>JUNE 20 06:33 AM</h6>
+                <img src="pexels-somben-chea-1294943.jpg" alt="Main News Image" class="news-image">
+                <p>Hässleholm, a town in southern Sweden, faced a problem on Saturday when an ice cream shop named 'Glassgubben' offered an unlimited toppings deal on their 'Banana Split Explosion.' Many people rushed to get it, but they suffered from severe brain freeze, shortness of breath, and sugar shock. The store stopped the promotion, and a medical team set up an "Ice Cream Crisis Center" to assist affected customers.</p>
+                <button class="continue-reading-button">Continue Reading</button>
+            </div>
+        </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+        <section class="news-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Aliens Seen at Park! Government Has No Answers</h2>
+                    <h6>JUNE 20 04:31 AM</h6>
+                    <img src="pexels-otto-rascon-9482211.jpg" alt="Main News Image" class="news-image">
+                    <p>In a surprising event, people say they saw aliens playing in a park. They saw strange lights and heard weird sounds. But the government says they don't know anything about it. People are talking about it online, and experts who study aliens want answers. The situation is puzzling, and everyone is curious about what really happened.</p>
+                    <button class="continue-reading-button">Continue Reading</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>Local Library Extends Opening Hours to Support Community</h2>
+                    <h6>JUNE 19 08:15 PM</h6>
+                    <img src="pexels-abby-chung-1106468.jpg" alt="Main News Image" class="news-image">
+                    <p>The local library has decided to extend its opening hours to better serve the community. Students and book lovers will have more time to use books, resources, and study in a quiet environment. The residents are grateful for the library's commitment to education and knowledge-sharing. The new hours will begin next week, benefiting the community's learning and reading opportunities.</p>
+                    <button class="continue-reading-button">Continue Reading</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>World Leaders Unite to Fight Climate Change</h2>
+                    <h6>JUNE 19 11:01 AM</h6>
+                    <img src="pexels-markus-spiske-2990644.jpg" alt="Main News Image" class="news-image">
+                    <p>Leaders convene for a crucial summit addressing urgent climate issues. They emphasize the need for collective action in combating environmental challenges and encouraging sustainability. Key topics include reducing greenhouse gases and preserving nature. The global community commits to protecting the planet for future generations. The summit aims to foster cooperation and implement practical solutions to global environmental problems.</p>
+                    <button class="continue-reading-button">Continue Reading</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>Peace Agreement Signed Between Two Nations</h2>
+                    <h6>JUNE 19 07:16 AM</h6>
+                    <img src="pexels-jonathan-meyer-752473.jpg" alt="Main News Image" class="news-image">
+                    <p>In a major development, two countries sign a historic peace deal, ending years of conflict. Leaders from both sides promise to work for lasting peace and cooperation. The agreement aims to improve relations and bring stability to the region. Diplomats and the global community praise the efforts to resolve long-standing issues. The signing ceremony represents a new era of hope and reconciliation between the nations.</p>
+                    <button class="continue-reading-button">Continue Reading</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
