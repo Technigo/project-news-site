@@ -13,7 +13,7 @@ html {
   padding: 0;
 }
 
-/*Maybe use Viewport height (vh) units to allow the body to set a minimum height value based upon the full height of the viewport.
+/*Viewport height (vh) units to allow the body to set a minimum height value based upon the full height of the viewport.
 If I use this then it should be min-height: 100vh; */
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color:#EBD3A3;
+  background:#98817b;
 }
 
 main {
@@ -52,6 +52,7 @@ footer {
 
 .header-logo-wrapper {
   height: 100%;
+  width: auto;
   padding-left: 16px;
   padding-bottom: 10px;
   display: flex;
@@ -62,17 +63,17 @@ footer {
 .header-logo-wrapper h1 {
   color: white;
   font-family: Montserrat, sans-serif;
+  font-weight:100; /*thin*/
   font-size: 150%;
 }
 
 .header-logo-wrapper img {
-  width: 10%;
+  height: min(50%, 55px);
   margin-right: 5px;
-  padding-bottom: 3px;
 }
   
 .header-nav-wrapper {
-  width: 50%;
+  width: min(40%, 240px);
   height: 100%;
   padding: 10px;
   display: flex;
@@ -101,19 +102,11 @@ ul {
 padding: 5px;
 border: none;
 border-radius: 5px;
-font-weight:bold;
+font-weight:100;
 }
 
-.home {
-  background: #b7b7a4;
-}
-
-.about-us {
-  background: #b7b7a4;
-}
-
-.contact-us {
-  background: #b7b7a4;
+.header-nav-link:hover, .header-nav-link:active {
+  background: #674c47;
 }
 
 .header-nav-list a {
@@ -165,7 +158,10 @@ a {
 /*Mobile viewport*/
 @media (max-width: 667px) {
   .header-nav-list {display: none;}
-
+  .header-nav-wrapper {
+    width: min(30%, 240px);
+    height: 100%;
+  }
 }
 
 /*Tablet viewport*/
@@ -175,7 +171,6 @@ a {
     grid-template-columns: 1fr 1fr;
   }  
 
-
   .first-news {
     grid-column: 1 / span 2;
   }
@@ -184,12 +179,8 @@ a {
 /*Desktop viewport*/
 @media (min-width: 1025px) {
 
-  .header-website {
-    height: 120px;
-  }
-
   .header-logo-wrapper h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
   
   .header-hamburger {display: none;}
