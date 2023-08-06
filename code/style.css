@@ -18,6 +18,7 @@ h2 {
   margin-top: 2cm;
 }
 
+/* navbar*/
 nav {
   display: flex;
   flex-direction: row;
@@ -45,6 +46,7 @@ nav a:hover {
   color: #a77b0b
 }
 
+/*main-news*/
 .welcome {
   display: flex;
   align-items: center;
@@ -53,8 +55,6 @@ nav a:hover {
   box-sizing: border-box;
   width: 100%;
   margin: 0px 10px;
-
-
 }
 
 .welcome figure {
@@ -113,6 +113,7 @@ nav a:hover {
   font-style: italic;
 }
 
+/*news-cards*/
 .activities {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
@@ -215,6 +216,7 @@ aside p {
   color: black;
 }
 
+/*aside*/
 .moreinfo a {
   display: block;
   text-decoration: none;
@@ -247,6 +249,7 @@ aside p {
   font-style: italic;
 }
 
+/*footer*/
 footer {
   display: flex;
   flex-direction: row;
@@ -280,7 +283,7 @@ footer {
   color: #fff;
 }
 
-
+/*viewport-responsiveness*/
 @media screen and (max-width:667px) {
   body {
     background-color: whitesmoke;
