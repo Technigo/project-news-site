@@ -25,4 +25,5 @@ Conclusion:
 
 Next time I need to build a good groundstructure in how I want it to look like. This time I was a bit eager to fill up with content and understand how it all worked. I feel my way of working with this has been a bit messy and hopefully I can become better at that.
  
-
+Netlify link:
+https://adorable-elf-1929f3.netlify.app/
