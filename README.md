@@ -17,4 +17,4 @@ I've used both flexbox and CSS grid, both challenging in their own way. Everytim
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the deployed project: https://inspiring-moonbeam-e74cc8.netlify.app/
