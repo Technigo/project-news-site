@@ -1,5 +1,5 @@
 html {
-  background: #5a4041;
+  background: #787d68;
   color: #cdc3a4;
 }
 
@@ -7,7 +7,7 @@ html {
 .logo {
   color: #cdc3a4;
   font-family: 'Playfair Display';
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .desktop-menu {
@@ -46,33 +46,34 @@ html {
 
 /* TEST AND CLEAN UP (ABOVE) */
 
+/*GRID STARTS HERE*/
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  background-color: whitesmoke;
-  gap: 20px;
-  grid-template-rows: 200px 400px 400px 400px 300px;
+  grid-template-rows: 700px 400px 500px 300px 500px;
+  background-color: #787d68;
+  gap: 30px;
 }
 
 .grid-item {
-  padding: 20px;
   font-size: 30px;
   text-align: center;
-  background-color: #787d68;
-
+  background-color: WHITE;
 }
 
 .grid-one {
-  grid-column: 1 / 9;
-  background-color: #5a4041;
+  grid-column: span 8;
+  background-color: #787d68;
   color: #cdc3a4;
   margin-top: 20px;
   font-family: 'Playfair Display';
   font-size: 40px;
 }
 
+/* ADD MARGIN */
 .sidebar {
   grid-column: 1 / 3;
+  border-style: solid;
 }
 
 .grid-two {
@@ -81,10 +82,13 @@ html {
 
 .grid-three {
   grid-column: 1 / 9;
+  background-color: #cdc3a4;
 }
 
 .grid-four {
   grid-column: 1 / 3;
+  font-size: 10px;
+  /*HOW TO KEEP TEXT AND PICS INSIDE GRIDCELL????*/
 }
 
 .grid-five {
@@ -99,6 +103,12 @@ html {
   grid-column: 7 / 9;
 }
 
+.grid-eight {
+  grid-column: span 8;
+}
+
+/*GRID STOPS HERE*/
+
 .first-section-box {
   padding: 20px;
   background-color: bisque;
@@ -106,20 +116,17 @@ html {
 
 .big-news {
   font-size: 15px;
-  padding: 20px;
   background-color: #e646c8;
 }
 
 .daily-news {
   font-size: 15px;
-  padding: 20px;
   background-color: pink;
 }
 
 .flex-parent {
   height: 300px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -128,7 +135,6 @@ html {
   width: 250px;
   height: 250px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
