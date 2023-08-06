@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-} /*för att kunna skriva siffror som procent för större/mindre skärmar*/ 
+} 
 
 body, html {
   background-color: white;
@@ -36,8 +36,6 @@ a {
   height: 40px;
   border-radius: 15px;
 }
-
-
 
 img {
   border: solid black;
@@ -144,7 +142,7 @@ img:hover {
 @media (min-width:667px) and (max-width:1024px) {
   /*This is the middle version*/
   body, html {
-    background: rgb(157, 241, 117);
+    background: rgb(249, 250, 249);
   }
 
   .mindre-nyheter {
@@ -165,7 +163,7 @@ img:hover {
 @media (min-width:0px) and (max-width:668px) {
 /*this is the mobile version*/
   body, html {
-    background: rgb(255, 255, 179);
+    background: rgb(250, 250, 248);
   }
   .header-rubrik {
     display: none;
