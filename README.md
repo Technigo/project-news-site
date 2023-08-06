@@ -4,8 +4,6 @@ An assignment meant to showcase understanding of HTML and CSS. Site will be resp
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
 I looked around at different news sites and decided to go with something gaming related as that is a big interest of mine. I looked at different layouts and before deciding on my design. Everything was made with HTML & CSS. If I would've had more time I probably would have used something like Bootstrap to simplify and speed up the process.
 
 ## View it live
