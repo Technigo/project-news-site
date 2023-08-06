@@ -15,7 +15,7 @@ sources I've been using when I got problems:
 
 Margin around the dokument in the browser.
 During the Q&A I learned about the reset tag to use in the css file. This took away the preinstalled margins and styling that comes with chrome amongs other. When I added this it solved alot of small problems I couldn't understand. 
-It also made some other problems that I now can't solve. More about that below.
+
 
 
 I realised that often when i got stuck with something and one thing worked but when I did it again it didn't work, I've missed a letter or something like that in the html file. It took me a while when I was looking but when I found it and solved the problem it was often a simple thing like that.
