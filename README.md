@@ -4,8 +4,6 @@ The assigment is to create a responsive news site/magazine article with a navbar
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
 How I went about the project: I startet at the top with the navbar and worked my way down to the main news article, then to the smaller articles and lastly, the footer. I like structure nad working on a page as I view it.
 
 I wrote the html and css at the same time, mostly to see if things were working out as I went along. Being my first project it was a steep learning curve with a lot of trial and failure, but I guess that´s how it is when learning something new.
