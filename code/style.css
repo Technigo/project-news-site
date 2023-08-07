@@ -109,11 +109,6 @@ input[type=checkbox] {
     display: block;
   }
 
-  @media (min-width: 600px) {
-    .grid-item {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 }
 
 
@@ -275,4 +270,33 @@ button {
   font-size: 10px;
 }
 
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 1024px) {
+
+  /* Grid styles -------------------------------------------------*/
+  .grid-parent {
+    display: block;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+
+    /* Change display to block for mobile layout */
+  }
+
+
+  .grid-item {
+    width: 100%;
+    /* Each grid item takes up the full width */
+    margin-bottom: 20px;
+    /* Add some space between grid items */
+  }
+
+  .grid-four,
+  .grid-five,
+  .grid-six,
+  .grid-seven {
+    display: grid;
+    /* Add display property */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
