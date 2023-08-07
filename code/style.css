@@ -1,4 +1,278 @@
-html {
-  background: #0025ff;
-  color: #fff;
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+ul li a{
+  padding: 0 20px;
+  text-decoration: none; 
+  font-weight: 500;
+  font-size: 15px;
+  color:#399b94;
+  display: inline-block;
+}
+
+li a::after{
+  content:''; 
+  display: block;
+  height:4px;
+  width: 0;
+  background:#399b94;
+  transition: all .5s;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+nav a.active {
+  color: #1f4441;
+}
+
+.sub-btn{
+  padding: 10px 20px;
+  background: #48a29c;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700; 
+  border-radius: 60px;
+}
+
+main{
+  display: flex;
+  border: 1px;
+  height: calc(100wh-100px);
+  align-items: stretch;
+  justify-content: center;
+}
+
+.content-left, .content-right {
+  flex: 1 0 0;
+}
+
+.right-img{
+  max-width: auto;
+}
+
+.content-left{
+  display: block;
+  max-width: auto;
+  height: 450px;
+  background: #e0efef;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-right {
+  background: url(./img/locations/Freyja.jpg) no-repeat center;
+  background-size: cover;
+  height:450px;
+}
+
+main h1{
+  display: block;
+  font-size: 40px;
+  color:#133B4F;
+  font-family: 'Borel', cursive;
+  padding: 50px 50px;
+  margin-top: 80px;
+}
+
+.cta{
+  padding: 15px 30px;
+  background: #399b94;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.locations{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+}
+
+.card-container{
+  width: 100%;
+  position: relative;
+  border-radius: 5px; 
+  /*border: 3px solid #fff;*/
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 5px; 
+}
+
+.card-body{
+  width: 100%;
+  height: 0;
+  bottom: 0;
+	background: linear-gradient(transparent,#5d6e8d 58%);
+  color:#fff; 
+  border-radius:5px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: left;
+  transition: 1s ease;
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 10px 0 10px;
+}
+
+.card-sub-title{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.card-content{
+  font-size:10px;
+  line-height: 15px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.card-container:hover .card-body{
+  width:100%;
+  height: 100%;
+}
+  
+  @media (min-width: 1024px){
+    
+    .card-container{
+        flex: 25%;
+        max-width: 25%;
+        padding: 5px;
+      /*
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      flex-wrap: wrap;*/
+    }
+  }
+  
+  @media (min-width: 667px) and (max-width: 1024px) {
+
+    .header-right {
+      float: none;
+    }
+
+    main h1{
+      font-size: 25px;
+      padding: 20px 20px;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .cta{
+      padding: 15px 30px;
+      margin-left: 20px;
+      border-radius: 30px;
+    }
+    .card-container{
+      flex: 50%;
+      max-width: 50%;
+      padding: 5px;
+      /*
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      flex-wrap: wrap;*/
+    }
+  }
+
+  @media screen and (max-width: 667px) {
+   
+    header, main{
+      flex-direction: column;
+      margin: 20% 0;
+    }
+    
+    ul{
+      display: block;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.5;
+      margin: 10%;
+    }
+    
+    ul li a{
+      font-size: 20px;
+    }
+
+    .sub-btn{
+      padding: 5px 20px;
+    }
+
+    .content-left{
+      display: block;
+      padding-bottom: 25px;
+    }
+
+    .content-right {
+      flex-basis: 450px;
+    }
+
+    main h1{
+      font-size: 30px;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding-bottom: 15px;
+    }
+
+    .card-container{
+      flex: 100%;
+      max-width: 100%;
+      padding: 5px;
+      /*display: grid;
+      grid-template-columns: 1fr;*/
+    }
+    
+  }
+  
+  .footer {
+    color:#399b94;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+
+
