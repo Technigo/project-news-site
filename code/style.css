@@ -3,15 +3,12 @@ html {
   color: #fff;
 }
 
-@media(max-width: 667px) {
+@media screen and (max-width:667px) {
   body {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
   }
   nav {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     grid-row-start: 3;
