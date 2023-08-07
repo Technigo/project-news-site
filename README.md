@@ -24,11 +24,12 @@ Your task is to create a classic magazine or newspaper site. The site should con
 * top left and right corners of img having also border-radius in accordance to figure having border-radius
 * 2 distinct groups in navbar for further styling using flex
 * hyperlinks within a page for user-experience
-user-agent stylesheet overiding own styling- use * for own default from beginning next time
+* user-agent stylesheet overiding own styling- use * for own default from beginning next time
+* scroll up to top page button added with position-fixed and z-index
 * grid-area for each grid nth-child on each viewport
-* Started with desktop viewport like Technigo Annika video but mobile-first is best-practice
-* Content not primordial if getting stuck but Google bard used (have to understand how to train the machine)
-* under 400px screen width, elements unaligned - hamburger menu to be used next time
+* Started with desktop viewport but mobile-first is best-practice
+* Content not primordial if getting stuck but Google bard used (not efficient- have to understand how to train the machine)
+* under 400px screen width, elements unaligned (hamburger menu or scroll-down menu to be used next time)
 
 ### If given more time/to explore: 
 * mobile-first
