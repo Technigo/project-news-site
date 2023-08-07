@@ -1,23 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
+<head>
+  <meta charset="utf-8" />
+  <title>Yogini news</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--for the responsive design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--The header with a navbar. In the navbar there is a logo, a top header and links-->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://cdn.pixabay.com/photo/2020/09/08/06/24/yoga-5553733_1280.png" alt="yogini logo" />
+      </div>
+      <h1 class="top-header">YOGINI NEWS</h1>
+      <ul class="navlinks">
+        <li class="nav-item"><a href="#">News</a></li>
+        <li class="nav-item"><a href="#">Archive</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--The featured article at the top. The image is a link to the full article (doesn't lead anywhere right now though)-->
     <section class="big-news">
-      <!-- The big news content -->
+      <article>
+        <h2>Virtual Reality Revolutionizes Yoga Experience</h2>
+        <figure>
+          <a href="#">
+            <img src="https://i.pinimg.com/564x/94/17/6a/94176a6ebefb90c5d47e7fb3f362917d.jpg"
+              alt="Featured article - yoga">
+          </a>
+          <figcaption>VR revolutionizes yoga experience</figcaption>
+        </figure>
+        <p>In a groundbreaking fusion of ancient tradition and modern technology, the world of yoga is embracing virtual
+          reality (VR). Yogis worldwide can now immerse themselves in stunning virtual landscapes, enhancing their
+          practice with visual and auditory stimuli. </p>
+        <p>This innovative approach offers personalized sessions, adaptive difficulty levels, and real-time feedback,
+          revolutionizing the way yoga is learned and mastered. As enthusiasts step into this digital realm, questions
+          about maintaining the authenticity of the practice arise. While some laud the convenience and engagement,
+          others ponder the potential detachment from true mindfulness. The collision of yoga and VR sparks a
+          conversation about the evolution of tradition in the digital age.</p>
+      </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <!--A news grid for the other news. The images are links to the articles-->
+    <section class="other-news">
+      <div class="news-grid">
+        <article class="article">
+          <h3>Yoga Tourism Soars: </h3>
+          <p>Offer Spiritual Wellness and Adventure</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/4e/0d/62/4e0d62db106b5376e9e0b298c35bfe46.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Exploring the global surge in yoga tourism, where travelers seek physical, mental, and spiritual
+              rejuvenation in exotic locales.</figcaption>
+          </figure>
+        </article>
+
+        <article class="article">
+          <h3>Breaking Boundaries:</h3>
+          <p>Adaptive Yoga Paves the Way for Inclusivity</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/7d/46/09/7d4609b67e77231fe353ab90727740b0.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Highlighting the transformative power of adaptive yoga, providing accessible and inclusive
+              practice spaces
+              for individuals with disabilities.</figcaption>
+          </figure>
+        </article>
+
+        <article class="article">
+          <h3>Yoga as Prescription: </h3>
+          <p>Community Embraces Yoga for Stress Relief</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/9b/b6/f3/9bb6f3632a2dc3f9efb62f6a6b48a5d2.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Medical professionals increasingly prescribe yoga to combat stress-related ailments, sparking
+              conversations
+              about its integration into mainstream healthcare.</figcaption>
+          </figure>
+        </article>
+
+        <article class="article">
+          <h3>Eco-Yoga: </h3>
+          <p>Uniting Sustainability and Spiritual Practice</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/14/bd/7d/14bd7d266d755a2592d2dce0d08c49c0.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Delving into the rise of eco-conscious yoga retreats and studios that intertwine environmental
+              stewardship
+              with mindful movement.</figcaption>
+          </figure>
+        </article>
+
+        <article class="article" id="next-last-article">
+          <h3>Yoga and Technology Converge: </h3>
+          <p>Can AI Personal Trainers Enhance Your Practice?</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/eb/f2/0d/ebf20d706721df6ba08065fbc7bf8541.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Exploring the fusion of artificial intelligence and yoga, as virtual trainers offer tailored
+              guidance to practitioners worldwide.</figcaption>
+          </figure>
+        </article>
+
+        <article class="article" id="last-article">
+          <h3>Yoga's Healing Embrace: </h3>
+          <p>Holistic Path to Post-Pandemic Recovery</p>
+          <figure>
+            <a href="#">
+              <img src="https://i.pinimg.com/564x/96/88/17/968817d4e46b6e34e92178b6737f1f3b.jpg" alt="" width="200px">
+            </a>
+            <figcaption>Incorporating yoga into wellness regimes emerges as a potent tool for physical and mental
+              rejuvenation post-pandemic.</figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
-  </body>
+  </main>
+</body>
+
 </html>

@@ -1,4 +1,209 @@
+/*Setting some color variables*/
+:root {
+  --primaryBackground: whitesmoke;
+  --headerBackground: #ffe4c4;
+  --headerFontColor: #F4A460;
+  --fontColor: #781313;
+  --linkColor: #F4A460;
+  --linkHoverColor: #fcf2e4;
+  --backgroundGrid: #E8C1A7;
+}
+
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
 html {
-  background: #0025ff;
-  color: #fff;
+  background: var(--primaryBackground);
+  color: var(--fontColor);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 auto;
+}
+
+/*Places header on top, doesn't move when you scroll*/
+header {
+  position: sticky;
+  top: 20px;
+}
+
+/*the navbar is a flexbox*/
+.navbar {
+  width: 100%;
+  background-color: var(--headerBackground);
+  padding: 10px 20px 10px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*the links to the articles become a little transparent when hovered*/
+a:hover {
+  opacity: 0.7;
+  transition: 0.5s ease-in;
+}
+
+.logo>img {
+  width: 100px;
+  padding: 10px;
+
+  /*white background is not visible*/
+  mix-blend-mode: multiply;
+  contrast: (1);
+
+  /*rotating logo when you open the site
+  */
+  animation-name: rotating-logo;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 2;
+}
+
+/*rotation function*/
+@keyframes rotating-logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Centers the header in the middle of the navbar*/
+.top-header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--headerFontColor);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+/*slows the hover-effect*/
+.nav-item a:hover {
+  color: var(--linkHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+
+/*Centers the feature article on the website with margin auto. Max-width so it doesn't get hard to read*/
+.big-news {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  margin: 50px auto 20px;
+  font-weight: 200;
+}
+
+.big-news h2 {
+  color: var(--headerFontColor);
+}
+
+.big-news p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.other-news {
+  padding: 25px;
+  background: var(--backgroundGrid);
+}
+
+/*the other news are showed in a css grid, default is four columns*/
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/*the content of each article is a flexbox*/
+article {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  color: var(--primaryBackground);
+}
+
+.article p {
+  color: var(--primaryBackground);
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+article figure {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+article figcaption {
+  width: 210px;
+  margin-top: 5px;
+}
+
+/*Mobile - removes the site name from navbar. changes CSS grid to one single column*/
+@media (max-width: 667px) {
+  .top-header {
+    display: none;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*Tablet - removes the site name. changes the css grid to two columns*/
+@media (min-width: 668px) and (max-width: 1100px) {
+  .top-header {
+    display: none;
+  }
+
+  .top-header-tablet {
+    display: none;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Desktop - centers the bottom two articles in the middle of the last grid row*/
+@media (min-width: 1101px) {
+  #next-last-article {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #last-article {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
