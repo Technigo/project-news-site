@@ -3,6 +3,24 @@ html {
   color: #fff;
 }
 
+@media(max-width: 667px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-start: 3;
+  }
+  .big-news {
+    grid-row-start: 5;
+  }
+}
+
 header {
   display: flex;
   height: 200px;
@@ -44,7 +62,6 @@ nav {
   justify-content: flex-end;
   align-items: center;
   margin: 10px;
-  flex-wrap: wrap;
 }
 
 .nav-button {
@@ -103,7 +120,7 @@ nav {
   text-align: right;
 }
 
-.nav-button:hover {
+a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color:#c067ac;
 }
@@ -118,27 +135,47 @@ h4 {
   justify-content: flex-end;
 }
 
-#contact-form {
+.formInputContainer {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
   align-items: flex-end;
+  margin: 1.5rem 0rem;
 }
 
-input {
+.formInputContainer label {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.formInputContainer input,
+select {
   background-color: rgb(221, 214, 214);
-  margin: 20px;
   width: 300px;
   height: 25px;
-  align-items: flex-end;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+textarea {
+  margin-right: 10px;
+  background-color: rgb(221, 214, 214);
+}
+
+#submit {
+  margin-right: 10px;
   font-family: Georgia;
+  padding: 5px;
+  color: white;
+  background-color: rgb(221, 214, 214);
+  height: 50px;
+  width: 200px;
+  font-size: 15px;
 }
 
-#feedback {
-  width: 300px;
-  height: 100px;
+#submit:hover {
+  background-color:#c067ac;
+  color:rgb(155, 153, 153);
 }
-
 
 .about {
   display: flex;
@@ -184,4 +221,48 @@ ul img {
 
 li {
   margin-top: 5px;
+}
+
+.read-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-button {
+  background-color: #c067ac;
+  border-radius: 5px;
+  display: inline;
+  padding: 3px;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+h6 {
+  color:rgb(155, 153, 153);
+  text-align: right;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.grid-cell img {
+  float: left;
+  width: 100px;
+  margin-left: 0px;
+}
+
+.archive {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 7;
+  margin-right: 10px;
+  border: solid rgba(167, 170, 179, 0.3);
+  border-radius: 5px;
+  text-align: right;
 }
