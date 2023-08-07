@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1 class="header-title">Unicorn News</h1>
+    <div class="header-logo">&#129412</div>
+    <nav>
+      <a href="#">Start</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger-menu">&#9776;</div>
+  </header>
+  <div class="big-news-container">
+    <img class="big-news-img" src="/assets/unicorn.jpg" alt="Unicorn">
+    <article class="big-news-content">
+      <h1>This is big unicorn news!</h1>
+      <p class="big-news-paragraph">This is not a real unicorn, but a really nice fake one. This is our top news because this is "Unicorns", where you always find the best news about unicorns.</p>
+    </article>
+  </div>
+  <div class="other-news-container">
+    <article class="other-news-content">
+      <img class="other-news-img" src="/assets/cake.jpg" alt="Cake">
+    <h2>This is a cake</h2>
+    <p>Another amazing unicorn, but this time on a cake.</p>
+    </article>
+    <article class="other-news-content">
+      <img class="other-news-img" src="/assets/colors.jpg" alt="Cake">
+    <h2>Just nice colors</h2>
+    <p>If you like unicorn news I bet you also like these colors!</p>
+    </article>
+    <article class="other-news-content">
+      <img class="other-news-img" src="/assets/surfing.jpg" alt="Cake">
+    <h2>Unicorns also enjoy surfing</h2>
+    <p>This is just another piece of important news about unicorns.</p>
+    </article>
+    <article class="other-news-content">
+      <img class="other-news-img" src="/assets/houses.jpg" alt="Cake">
+    <h2>An amazing house</h2>
+    <p>It probably lives alot of unicorns in this house. Which is great news.</p>
+    </article>
+  </div>
+<script src="script.js"></script>
+</body>
 </html>
