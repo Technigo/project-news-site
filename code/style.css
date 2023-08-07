@@ -124,6 +124,7 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   background-color: #b5592a;
+  opacity: 0.7;
   border: 2px solid aliceblue;
   border-radius: 50px;
   color: aliceblue;
@@ -313,6 +314,10 @@ footer {
     font-size: smaller;
   }
 
+  nav {
+    column-gap: 1px;
+  }
+
   .welcome {
     flex-direction: column;
     justify-content: space-between;
@@ -357,6 +362,9 @@ footer {
     font-size: smaller;
   }
 
+  .foot-list {
+    column-gap: 20px;
+  }
 }
 
 @media screen and (min-width:668px) and (max-width:1023px) {
