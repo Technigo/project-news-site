@@ -8,17 +8,23 @@ body {
   font-family: 'Playfair Display';
 }
 
-/*linje top og bunn utenom instagram*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*linje top og bunn utenom */
+/*tall ol foran link2 og 3*/
+/* NAVBAR link hamb-linj farge STYLING STARTS */
 a {
   text-decoration: overline;
 }
 
-/*tall ol foran link2 og 3*/
 li {
   list-style: circle;
 }
 
-/* NAVBAR ink hamb-linj farge STYLING STARTS */
 .navbar {
   display: flex;
   align-items: center;
@@ -28,15 +34,14 @@ li {
   color: #cdc3a4;
 }
 
-/* NAVBAR links (words) STARTS */
-.nav-links a {
-  color: #cdc3a4;
-}
-
-/* LOGO BoE */
 .logo {
   font-size: 38px;
   color: #fff;
+}
+
+/* NAVBAR links (words) STARTS */
+.nav-links a {
+  color: #cdc3a4;
 }
 
 /* NAVBAR MENU PC linje rundt alle tre ord */
@@ -66,22 +71,25 @@ li {
 }
 
 /* RESPONSIVE NAVBAR MENU STARTS */
-
 /* CHECKBOX HACK chekboks not visible */
 input[type=checkbox] {
   display: none;
 }
 
-/* HAMBURGER MENU (makes the hamburger non visible in the PC version)*/
+.services:hover .dropdown {
+  display: block;
+}
+
+/* HAMBURGER MENU (hamburger not visible in the PC version)*/
 .hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
 }
+}
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-
 
   /* mobile version: hides the written menu*/
   .menu {
@@ -112,20 +120,11 @@ input[type=checkbox] {
 }
 
 
-
 /*footer*/
-
 footer {
   background-color: #606453;
   padding: 5rem 1.5rem;
 }
-
-
-li {
-  text-transform: uppercase;
-}
-
-/*hva er det over*/
 
 ul {
   list-style-type: none;
@@ -137,6 +136,7 @@ ul {
   gap: 2em;
   font-size: 18px;
   color: #cdc3a4;
+  text-transform: uppercase;
 }
 
 li a:footer {
@@ -144,7 +144,6 @@ li a:footer {
   text-decoration: none;
 }
 
-/*farge link og under er hover*/
 li a {
   color: #cdc3a4;
   text-decoration: overline;
@@ -157,6 +156,17 @@ li:hover {
 }
 
 /*footer above*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
