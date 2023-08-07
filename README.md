@@ -1,12 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+News site on nordic minimalistic interior design.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used all sorts of resources to get a grip of the main html and css structure. 
+
+I started off the project by drawing a simple design for mobile device and then scaled the design to tablet and desktop. 
+I created the html structure first, then I added styling to assure that the site responded as I expected. 
+After that I kept on adding styling, including images and icons. 
+
+I will continue to add a section for news letter subscription and a section to connect through social media. 
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.

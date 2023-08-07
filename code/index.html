@@ -1,23 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>Simple Nordic Living</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/b9a5599f75.js" crossorigin="anonymous"></script>
+  <!-- Font Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="content-wrapper">
+      <a href="#">
+        <img src="../img/SNL.png" alt="simple-nordic-life-logo">
+      </a>
+      <nav>
+        <div class="hamburger">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H18V2H0V0ZM0 5H18V7H0V5ZM0 10H18V12H0V10Z" fill="black" />
+          </svg>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#trending">Trends</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Hero section content goes here -->
+      <div class="content-wrapper">
+        <h1>Explore the Timeless Beauty of Scandinavian Minimalist Design.</h1>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section id="trending" class="featured-trends">
+      <div class="content-wrapper">
+        <div class="trend">
+          <img src="../img/featured-minimalist-light.jpg" alt="Minimalist Lighting Innovations">
+          <h3>Minimalist Lighting Innovations</h3>
+          <p>Illuminate your space with the essence of minimalism. Dive into the world of innovative lighting designs
+            that embrace simplicity while delivering artistic and functional illumination.</p>
+          <a href="minimalist-lighting-article.html" class="learn-more-link">Learn more</a>
+        </div>
+
+        <div class="trend">
+          <img src="../img/featured-kitchen.jpg" alt="Scandinavian Kitchen">
+          <h3>Functional Simplicity in Scandinavian Kitchens</h3>
+          <p>Discover how Scandinavian kitchens achieve functionality and elegance through clean lines, open shelving,
+            and practical layouts.</p>
+          <a href="scandinavian-kitchen-article.html" class="learn-more-link">Learn more</a>
+        </div>
+      </div>
     </section>
-  </body>
+
+    <section class="designer-spotlight">
+      <div class="content-wrapper">
+        <article>
+          <figure class="designer-image">
+            <img src="../img/anna-berglund.jpg" alt="Designer Anna Berglund">
+          </figure>
+          <div class="designer-content">
+            <h2>Designer Spotlight:<br> Anna Berglund</h2>
+            <p>Meet Anna Berglund, an influential figure in Scandinavian design. With a passion for blending
+              functionality
+              and aesthetics, Anna has brought a unique perspective to the world of interior design.</p>
+            <p>Her work is characterized by clean lines, natural materials, and a focus on creating spaces that evoke a
+              sense of tranquility and harmony.</p>
+            <p>Anna's designs often draw inspiration from the serene landscapes of her native Sweden, translating the
+              essence of Nordic beauty into functional and timeless interiors.</p>
+            <p>As a thought leader in minimalist design, Anna continues to inspire and shape the way we perceive and
+              experience our living spaces.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="design-gallery">
+      <!-- Design inspiration gallery content goes here -->
+      <div class="content-wrapper">
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-1-stairs.jpg" alt="Wooden stairs in hallway">
+            <figcaption>Inviting wooden stairs in a sunlit hallway.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-2-flowers.jpg" alt="Tulips in a vase">
+            <figcaption>Brightening up the room with a vase of fresh tulips.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-3-kitchen.jpg" alt="Scandinavian kitchen with black kitchen cabinets">
+            <figcaption>Elegantly designed Scandinavian kitchen with sleek black cabinets.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-4-kid.jpg" alt="A kid sitting in a sofa holding a yellow pillow">
+            <figcaption>Cozy moments: A child enjoying comfort on a sofa with a cheerful yellow pillow.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-5-furniture.jpg" alt="Modern minimalist furniture in a white room">
+            <figcaption>Showcasing modern minimalism in a serene white room.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-6-shadow.jpg" alt="Cool living space with striped shadow">
+            <figcaption>Creating artistic intrigue with creative shadow play in the living space.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-7-chairs.jpg" alt="Four minimalist design chairs against wall">
+            <figcaption>Simplicity at its best: Four minimalist chairs against a textured wall.</figcaption>
+          </div>
+        </figure>
+        <figure class="gallery-item">
+          <div class="image-container">
+            <img src="../img/gallery-8-flowers-bed.jpg" alt="Flower arrangements in bed">
+            <figcaption>Nature's touch: Gentle flower arrangements adding charm to the bedroom.</figcaption>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="about-us">
+      <!-- About us content goes here -->
+      <div class="content-wrapper">
+        <h2>About Simple Nordic Living</h2>
+        <p>Simple Nordic Living is more than just a magazine – it's a celebration of the Scandinavian design philosophy
+          that emphasizes functional beauty and the art of living with intention.</p>
+        <p>Our mission is to inspire you to embrace the elegance of minimalism, sustainable practices, and the timeless
+          allure of the Nordic aesthetic. Whether you're a design enthusiast or simply seeking tranquility in your
+          surroundings, our platform offers insights, stories, and ideas that resonate with the essence of Nordic
+          simplicity.</p>
+        <p>Join us as we delve into the world of Scandinavian minimalism, where less truly is more, and where every
+          element serves a purpose, creating spaces that breathe, inspire, and rejuvenate.</p>
+      </div>
+    </section>
+      
+  </main>
+  
+  <footer>
+    <!-- Footer content goes here -->
+    <div class="content-wrapper">
+      <div class="back-to-top">
+        <a href="#top">Back to Top</a>
+      </div>
+      <div class="copyright">
+        Copyright 2023 | Simple Nordic Living
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
