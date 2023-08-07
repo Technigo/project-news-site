@@ -14,4 +14,6 @@ The grid for the "other news" was done with some help from the pre-course.
 If I had more time (or perhaps more experience) I would plan more ahead of starting. Like what colors do I want where? And I would start working out the layout before I had too much content in the HTML-document, it's hard to test and change in the files when the content starts to add up!
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://64d141a29b25601bdbb776c6--magical-dango-a7a09b.netlify.app/
+
+HERE IT IS LIVE!
