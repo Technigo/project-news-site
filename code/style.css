@@ -1,4 +1,191 @@
 html {
-  background: #0025ff;
+  background: #ffffff;
+  color: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  padding: 5px;
+  font-size: medium;
+}
+
+header {
+  background-color: #333;
+  display: flex;
+}
+
+.logo-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  padding: 30px 10%;
+  justify-content: space-between;
+}
+
+.site-title {
+  margin-left: 10px;
   color: #fff;
+}
+
+.topnav {
+  list-style: none;
+  display: flex;
+}
+
+.topnav li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: solid;
+  margin-right: 20px;
+}
+
+.topnav li a {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.topnav li a:hover,
+.topnav li a:focus {
+  color: rgb(201, 119, 119);
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.logo {
+  width: 50px;
+  position: left;
+}
+
+main {
+  display: flex;
+  background-color: rgb(255, 127, 133);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.h1 {
+  display: block;
+  margin-block: 20px;
+}
+
+.big-news {
+  display: block;
+  background: #ffffff;
+  max-width: 85%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.big-news-child {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.big-news-child {
+  flex: 0.8;
+}
+
+.big-news-child p {
+  width: 80%;
+}
+
+.big-image {
+  display: block;
+  height: auto;
+  width: 85%;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-content: center;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 85%;
+  margin-bottom: 20px;
+}
+
+.news-grid-item {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+article {
+  margin: 20px;
+  padding: 20px;
+  border: 10px;
+  align-content: center;
+}
+.small-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 480px) {
+  .news-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .topnav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1;
+  }
+
+  .topnav li {
+    padding: 15px 0;
+  }
+
+  .topnav li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon:hover {
+    color: #c77777;
+  }
+
+  .menu-icon.active {
+    color: #c77777;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
