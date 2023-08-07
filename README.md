@@ -40,3 +40,5 @@ Your task is to create a classic magazine or newspaper site. The site should con
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://genuine-crostata-0a4194.netlify.app/
