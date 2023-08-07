@@ -3,20 +3,17 @@ html {
   color: #cdc3a4;
 }
 
-/* gjelder hele, må bytte */
-body {
-  font-family: 'Playfair Display';
-}
-
+/* UTILITIES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*linje top og bunn utenom */
-/*tall ol foran link2 og 3*/
-/* NAVBAR link hamb-linj farge STYLING STARTS */
+body {
+  font-family: 'Playfair Display';
+}
+
 a {
   text-decoration: overline;
 }
@@ -25,6 +22,7 @@ li {
   list-style: circle;
 }
 
+/* NAVBAR STYLING STARTS */
 .navbar {
   display: flex;
   align-items: center;
@@ -34,64 +32,51 @@ li {
   color: #cdc3a4;
 }
 
+.nav-links a {
+  color: #cdc3a4;
+}
+
+/* LOGO */
 .logo {
   font-size: 38px;
   color: #fff;
 }
 
-/* NAVBAR links (words) STARTS */
-.nav-links a {
-  color: #cdc3a4;
-}
-
-/* NAVBAR MENU PC linje rundt alle tre ord */
+/* NAVBAR MENU */
 .menu {
   display: flex;
-  gap: 2em;
+  gap: 1em;
   font-size: 18px;
 }
 
-/* NAVBAR MENU PC linje rundt hvert enkelt ord */
-.menu li {
-  padding: 5px 14px;
-}
-
-/* NAVBAR MENU PC hover rundt bokstaver ord */
 .menu li:hover {
   background-color: #787d68;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
-/* UTILITIES dropdown box size */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.menu li {
+  padding: 5px 14px;
 }
 
 /* RESPONSIVE NAVBAR MENU STARTS */
-/* CHECKBOX HACK chekboks not visible */
+
+/* CHECKBOX HACK */
+
 input[type=checkbox] {
   display: none;
 }
 
-.services:hover .dropdown {
-  display: block;
-}
-
-/* HAMBURGER MENU (hamburger not visible in the PC version)*/
+/* HAMBURGER MENU */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 30px;
   user-select: none;
 }
-}
+
 
 /* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-
-  /* mobile version: hides the written menu*/
+@media (max-width: 913px) {
   .menu {
     display: none;
     position: absolute;
@@ -102,51 +87,48 @@ input[type=checkbox] {
     padding: 16px 0;
   }
 
-  /*mobile version: space between written menu in downdrop hamburger bar*/
+  .menu li:hover {
+    background-color: #787d68;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  /*NOT WORKING*/
+
   .menu li+li {
     margin-top: 20px;
   }
 
-  /*mobile version downdrop menu (inkl farge) */
   input[type=checkbox]:checked~.menu {
     display: block;
   }
 
-  /*mobile version box around hamburger inkl color */
   .hamburger {
     display: block;
   }
 
+  /*why is the font size not changing?*/
+  ul {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 50px;
+  }
 }
 
 
 /*footer*/
 footer {
   background-color: #606453;
-  padding: 5rem 1.5rem;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #606453;
-  display: flex;
-  gap: 2em;
-  font-size: 18px;
-  color: #cdc3a4;
-  text-transform: uppercase;
-}
+  gap: 3em;
+  font-size: 30px;
 
-li a:footer {
-  background-color: #787d68;
-  text-decoration: none;
-}
-
-li a {
-  color: #cdc3a4;
-  text-decoration: overline;
 }
 
 li:hover {
@@ -154,6 +136,23 @@ li:hover {
   border-radius: 5px;
   transition: 0.3s ease;
 }
+
+.fa {
+  padding: 20px 50px;
+  width: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.2;
+}
+
+.fa {
+  background: #606453;
+  color: #cdc3a4;
+}
+
 
 /*footer above*/
 
@@ -177,16 +176,15 @@ li:hover {
 .grid-parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 700px 400px 500px 300px 500px;
   background-color: #787d68;
   gap: 30px;
+  height: fit-content;
 }
 
 .grid-item {
   font-size: 30px;
   text-align: center;
   background-color: WHITE;
-  border: 1px solid #ccc;
   padding: 10px;
   overflow: hidden;
   display: flex;
@@ -265,61 +263,6 @@ h1 {
   grid-column: span 8;
 }
 
-/*GRID STOPS HERE*/
-
-.first-section-box {
-  padding: 20px;
-  background-color: bisque;
-}
-
-.big-news {
-  font-size: 15px;
-  background-color: #e646c8;
-}
-
-.daily-news {
-  font-size: 15px;
-  background-color: pink;
-}
-
-.flex-parent {
-  height: fill;
-  display: flex;
-  justify-content: center;
-}
-
-.flex-child {
-  margin: 10px;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.red {
-  background: #6d5a64;
-}
-
-.blue {
-  background: blue;
-}
-
-img {
-  width: 100px;
-  height: 80px;
-}
-
-button {
-  height: 52px;
-  display: block;
-  padding: 10px 20px;
-  border: 1px solid;
-  background: snow;
-  color: #ff69b4;
-  font-size: 10px;
-}
-
 @media screen and (max-width: 1024px) {
 
   /* Grid styles -------------------------------------------------*/
@@ -327,26 +270,66 @@ button {
     display: block;
     box-sizing: border-box;
     grid-template-columns: 1fr;
-
     /* Change display to block for mobile layout */
   }
-
 
   .grid-item {
     width: 100%;
     /* Each grid item takes up the full width */
     margin-bottom: 20px;
     /* Add some space between grid items */
-  }
 
-  .grid-four,
-  .grid-five,
-  .grid-six,
-  .grid-seven {
-    display: grid;
-    /* Add display property */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+    /*GRID STOPS HERE*/
 
-}
+    .first-section-box {
+      padding: 20px;
+      background-color: bisque;
+    }
+
+    .big-news {
+      font-size: 15px;
+      background-color: #e646c8;
+    }
+
+    .daily-news {
+      font-size: 15px;
+      background-color: pink;
+    }
+
+    .flex-parent {
+      height: fill;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-child {
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .red {
+      background: #6d5a64;
+    }
+
+    .blue {
+      background: blue;
+    }
+
+    img {
+      width: 100px;
+      height: 80px;
+    }
+
+    button {
+      height: 52px;
+      display: block;
+      padding: 10px 20px;
+      border: 1px solid;
+      background: snow;
+      color: #ff69b4;
+      font-size: 10px;
+    }
