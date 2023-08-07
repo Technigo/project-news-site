@@ -2,6 +2,7 @@ html {
   background-image: #7f992b;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,10 +109,28 @@ nav a:hover {
   margin: 20px 0px;
 }
 
-.welcome-text button:hover {
+.welcome-text button:hover,
+.scroll-top-button:hover {
   background-color: rgb(106, 96, 96);
   font-style: italic;
 }
+
+/*scroll-top button*/
+.scroll-top-button a {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 10;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b5592a;
+  border: 2px solid aliceblue;
+  border-radius: 50px;
+  color: aliceblue;
+  padding: 15px;
+  margin: 20px 0px;
+}
+
 
 /*news-cards*/
 .activities {
