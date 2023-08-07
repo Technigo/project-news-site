@@ -1,4 +1,118 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #EAD9EB;
+  color: #00BF63;
+  font-family: 'Noto Sans Vithkuqi', sans-serif;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 200px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #00BF63;
+  font-size: 13px;
+  font-weight: bold;
+}
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #8C52FF;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100;
+}
+
+.flex-parent-box1 {
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+.flex-box1-child1 {
+  flex: 1;
+}
+
+.flex-box1-child2 {
+  flex: 1;
+}
+
+button {
+  height: 40px;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background: green;
+  color: #EAD9EB;
+  font-weight: bold;
+  font-family: 'Noto Sans Vithkuqi', sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.flex-box1-parent2 {
+  height: 500 px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.flex-child {
+  margin: 5px;
+  width: 200px;
+  height: 160px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child img {
+  max-width: 100%; /* Ensure the image doesn't exceed the square's width */
+  max-height: 100%; /* Ensure the image doesn't exceed the square's height */
+}
+
+
+/* Responsive layout for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-parent-box1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .flex-child {
+    width: calc(50% - 20px); /* Adjust the width to have 2 squares per row with some spacing */
+    height: 160px; /* Adjust the height as needed */
+  }
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 767px) {
+  .flex-parent-box1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .flex-child {
+    width: 100%; /* Adjust the width to have 1 square per row */
+    height: 160px; /* Adjust the height as needed */
+  }
 }
