@@ -1,5 +1,5 @@
 html {
-  background: #e2cc9c;
+  background: #f9f5eb;
   color: black;
   font-family: Helvetica, sans-serif;
 }
@@ -21,7 +21,7 @@ html {
   display: block;
   float: right;
   text-align: center;
-  color: #f2f2f2;
+  color: #895a2f;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -48,7 +48,7 @@ a:hover {
 
 .grid-item {
   grid-column: span 1;
-  background: #bea17d;
+  background: #d4bfaa;
   padding: 4px;
   margin: 5px;
   text-align: center;
@@ -60,15 +60,20 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   height: 200px;
+  background-image: url("./img_header_bgsml2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .big-grid-item h1 {
-  font-size: 70px;
+  font-size: 20px;
+  color: #f9f5eb;
+  font-family: Avantgarde;
 }
 
 .medium-grid-item {
   grid-column: span 4;
-  background-color: #bea17d;
+  background-color: #d4bfaa;
   margin: 5px;
   padding: 5px;
   max-width: 100%;
@@ -121,7 +126,7 @@ a:hover {
 .last-grid-item {
   grid-column: span 4;
   display: flex;
-  background: #bea17d;
+  background: #d4bfaa;
   align-items: center;
   justify-content: center;
   height: 40px;
@@ -144,11 +149,19 @@ a:hover {
   .article-grid {
     grid-column: span 2;
   }
+
+  .big-grid-item h1 {
+    font-size: 50px;
+  }
 }
 
 /*media query for desktop - 4 rows of articles */
 @media (min-width: 1025px) {
   .article-grid {
     grid-column: span 1;
+  }
+
+  .big-grid-item h1 {
+    font-size: 70px;
   }
 }
