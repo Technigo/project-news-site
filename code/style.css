@@ -25,6 +25,7 @@ html {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  word-wrap: normal;
 }
 
 .logo {
@@ -37,7 +38,8 @@ a:hover {
 }
 
 .feature-heading {
-  font-size: 35px;
+  font-size: 45px;
+  padding: 6px;
 }
 
 .grid-parent {
@@ -66,7 +68,8 @@ a:hover {
 }
 
 .big-grid-item h1 {
-  font-size: 20px;
+  font-size: 30px;
+  /* dont know how to make the heading automatically shrink for responsiveness */
   color: #f9f5eb;
   font-family: Avantgarde;
 }
@@ -100,6 +103,11 @@ a:hover {
 
 .feature-text {
   padding-right: 10px;
+  font-size: 18px;
+}
+
+.article-text {
+  padding-right: 10px;
 }
 
 .article-heading {
@@ -108,14 +116,13 @@ a:hover {
 
 .article-picture img {
   float: center;
-  height: 225px;
+  height: auto;
   width: 99%;
 }
 
 .article-picture:hover {
   opacity: 0.5;
 }
-
 
 .article-grid {
   columns: 1;
@@ -135,12 +142,18 @@ a:hover {
 }
 
 
-/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness by the 7th */
+/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness by the 7th, but I think it is done now */
 
 /*media query for mobile - 1 row of articles. I don't seem to need this as it defaults to what is above anyway */
-@media (min-width: 667px) {
+@media screen and (max-width: 667px) {
   .article-grid {
     grid-column: span 4;
+  }
+
+  /* this isnt working*/
+  .flex-navbar a {
+    float: none;
+    width: 100%;
   }
 }
 
