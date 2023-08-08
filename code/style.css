@@ -111,6 +111,13 @@ a:hover {
   opacity: 0.5;
 }
 
+
+.article-grid {
+  columns: 1;
+  grid-column: span 4;
+  /* this works here */
+}
+
 .last-grid-item {
   grid-column: span 4;
   display: flex;
@@ -123,18 +130,25 @@ a:hover {
 }
 
 
-/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness, it is only for desktop atm. */
+/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness by the 7th */
 
-/*media query for tablet - 2 rows of articles
-@media (min-width: 667px) and (max-width: 1024px) {
-  grid-item {
+/*media query for mobile - 1 row of articles. I don't seem to need this as it defaults to what is above anyway */
+@media (min-width: 667px) {
+  .article-grid {
     grid-column: span 4;
   }
-}*/
+}
 
-/*media query for desktop - 4 rows of articles 
-@media (min-width: 1025px) {
-  grid-item {
+/*media query for tablet - 2 rows of articles */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .article-grid {
     grid-column: span 2;
   }
-} */
+}
+
+/*media query for desktop - 4 rows of articles */
+@media (min-width: 1025px) {
+  .article-grid {
+    grid-column: span 1;
+  }
+}
