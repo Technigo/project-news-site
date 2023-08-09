@@ -13,4 +13,4 @@ After that I kept on adding styling, including images and icons.
 I will continue to add a section for news letter subscription and a section to connect through social media. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+You can check out the site at Netlify: simple-nordic-living.netlify.app

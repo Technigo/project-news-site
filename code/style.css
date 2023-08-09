@@ -120,7 +120,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/hero-image-2.jpg');
+  background-image: url('img/hero-image-2.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -136,6 +136,10 @@ header nav ul {
 .featured-trends {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+}
+
+#trending {
   margin-top: 20px;
 }
 
@@ -373,6 +377,10 @@ footer {
 
   .hero h1 {
     font-size: 5rem;
+  }
+
+  #trending {
+    margin-top: 50px;
   }
 
   /* Gallery Section */
