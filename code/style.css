@@ -38,11 +38,11 @@ a {
   color: inherit;
 }
 
-h3 a {
-  transform: 0.3s;
+.title a, .title-t a, li a {
+  transition: 0.3s;
 }
 
-h3 a:hover, li a:hover{
+.title a:hover, .title-t a:hover, li a:hover{
   color: var(--blue);
 }
 
@@ -267,10 +267,6 @@ footer {
  align-items: center;
 }
 
-.bottom-nav ul li a {
-  transition: 0.3s;
-}
-
 .bottom-nav a {
   color: var(--greyish);
   font-weight: 700;
@@ -379,7 +375,6 @@ footer .social-network {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition: 0.3s;
   }
   
   .nav-list {
