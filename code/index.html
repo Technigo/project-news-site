@@ -1,23 +1,206 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE FONT MONTSERRAT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>KPOP Magazine</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Top header START-->
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="header-container">
+          <a href="#"><img src="images/black-logo.svg" alt="" class="black-logo"></a>
+        <nav class="top-nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#"><img src="images/about.png" alt="" class="about"></a></li>
+          </ul>
+        </nav>
+        <img src="images/icon-hamburger.svg" alt="" class="icon-hamburger" style="width: 2rem;">
+      </div>
     </header>
+    <!-- Top header END -->
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <!-- Trending section STARTS here -->
+    <section class="trending">
+      <div class="title-wrapper">
+        <h2>Trending</h2>
+        <a href="#" class="button btn-view-all">View all</a>
+      </div>
+      <div class="articles-wrapper">
+        <!-- Trending nr 1 -->
+        <article class="first">
+          <a href="#"><img src="images/jungkook.png" alt=""></a>
+          <div class="text-box">
+            <h3 class="title800"><a href="#">Jungkook | Seven</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Big Hit Music</p>
+          </div>
+        </article>
+        <!-- Trending nr 2 -->
+        <article class="second">
+          <a href="#"><img src="images/newjeans.png" alt=""></a>
+          <div class="text-box">
+            <h3 class="title800"><a href="#">NewJeans | Super Shy</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Newjeans.kr</p>
+          </div>
+        </article>
+        <!-- Trending nr 3 -->
+        <article class="third">
+          <a href="#"><img src="images/zerobaseone.png" alt=""></a>
+          <div class="text-box">
+            <h3 class="title800"><a href="#">ZEROBASEONE | In Bloom</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: WAKEONE@twitter</p>
+          </div>
+        </article>
+      </div>
     </section>
+    <!-- Trending END -->
 
-    <section class="">
-      <!-- The other news  -->
+    <!-- Latest news section STARTS here -->
+    <section class="latest-news">
+      <div class="title-wrapper">
+        <h2>Latest News</h2>
+        <a href="#" class="button btn-view-all">View all</a>
+      </div>
+      <div class="articles-wrapper">
+        <article class="news-article">
+          <a href="#"><img src="images/V.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">V | Taehyung</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: </p>
+          </div>
+        </article>
+        <article class="news-article">
+          <a href="#"><img src="images/seventeen.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">SEVENTEEN</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Pledis Entertainment</p>
+          </div>
+        </article>
+        <article class="news-article">
+          <a href="#"><img src="images/zerobaseone.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">ZEROBASEONE</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: WAKEONE@twitter</p>
+          </div>
+        </article>
+        <article class="news-article">
+          <a href="#"><img src="images/jungkook.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">Jungkook</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Big Hit Music</p>
+          </div>
+        </article>
+        <article class="news-article">
+          <a href="#"><img src="images/newjeans.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">NewJeans</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Newjeans.kr</p>
+          </div>
+        </article>
+        <article class="news-article">
+          <a href="#"><img src="images/enhypen.png" alt=""></a>
+          <div class="text-box">
+            <p class="date">xx Month, 2023</p>
+            <h3 class="title"><a href="#">ENHYPEN</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+            <a href="#" class="button btn-read-more">Read more</a>
+            <p class="image-source">Image source: Belift Lab</p>
+          </div>
+        </article>
+      </div>
     </section>
-  </body>
+    <!-- Latest news END-->
+
+    <!-- Follow us etc. section STARTS here -->
+    <aside class="follow-us">
+      <div class="title-wrapper">
+        <h2>Follow us</h2>
+      </div>
+      <div class="social-network">
+        <a href="#"><img src="images/fb-icon.svg" alt=""></a>
+        <a href="#"><img src="images/ig-icon.svg" alt=""></a>
+        <a href="#"><img src="images/spotify-icon.svg" alt=""></a>
+      </div>
+      <img src="images/heart-small.png" alt="" class="heart">
+      <div class="subscribe">
+        <a href="" class="button btn-subscribe">Subscribe</a>
+        <!-- Subscription information -->
+        <p class="lorem-subscribe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti reiciendis...</p>
+      </div>
+      <!-- Spotify k-pop playlist -->
+      <iframe style="border-radius:12px; margin-top: 20px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9tPFwDMOaN1?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </aside>
+    <!-- Follow us END -->
+
+    <!-- Magazine issues section STARTS here -->
+    <section class="magazine-issues">
+      <div class="title-wrapper">
+        <h2>Magazine Issues</h2>
+        <a href="#" class="button btn-view-all">View all</a>
+      </div>
+      <div class="magazines">
+        <img src="images/1.png" alt="">
+        <img src="images/2.png" alt="">
+        <img src="images/3.png" alt="">
+        <img src="images/4.png" alt="">
+      </div>
+    </section>
+    <!-- Magazine issues END -->
+
+    <!-- Footer section STARTS here -->
+    <footer>
+      <div class="container">
+        <a href="" class="button btn-subscribe">Subscribe</a>
+        <nav class="bottom-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">K-pop magazine</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-network">
+          <a href="#"><img src="images/fb-icon-long.svg" alt=""></a>
+          <a href="#"><img src="images/ig-icon-long.svg" alt=""></a>
+          <a href="#"><img src="images/spotify-icon-long.svg" alt=""></a>
+        </div>
+        <img src="images/logo-white.svg" alt="" class="white-logo">
+      </div>
+    </footer>
+    <!-- Footer END -->
+  </div>
+</body>
 </html>
