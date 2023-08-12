@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+  <!-- Change the title below -->
+  <title>House Of Shade</title>
+  <!-- dont forget the meta tag for responsiveness -->
+
+
+</head>
+
+<body>
+
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <div class="navbar">
+      <div class="logo"><a href="#">House Of Shade</a></div>
+      <ul class="links">
+        <li><a href="hero">home</a></li>
+        <li><a href="fashion">fashion</a></li>
+        <li><a href="culture">culture</a></li>
+        <li><a href="contact">contact</a></li>
+      </ul>
+
+      <a href="#" class="action_btn">Subscribe</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="hero">home</a></li>
+      <li><a href="fashion">fashion</a></li>
+      <li><a href="culture">culture</a></li>
+      <li><a href="contact">contact</a></li>
+      <li><a href="#" class="action_btn">Subscribe</a></li>
+    </div>
+
+  </header>
+
+
+  <script>
+    const togglebtn = document.querySelector('.toggle_btn')
+    const togglebtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.propdown_menu')
+
+    togglebtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      togglebtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+
+    }
+
+
+  </script>
+
+  <!-- The big news content -->
+  <section class="big-news">
+
+    <div class="flex-box">
+      <img src="./Images/houseofshade_5.jpg" alt="hand and sculpture">
+      <h2>No She Did Not!</h2>
+      <p> Read all about the womans benefits of taking over the world and make it a better place. World peace and free
+        cava for all mankind.</p>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- The other news  -->
+  <section class="other-news">
+
+    <div class="grid-item"><img src="./Images/houseofshade_2.jpg" alt="woman wiith flower">
+      <h2>What To Wear</h2>
+    </div>
+
+    <div class="grid-item"><img src="./Images/houseofshade_13.jpg" alt="woman listning">
+      <h2>All The Tea</h2>
+    </div>
+
+    <div class="grid-item"><img src="./Images/houseofshade_1.jpg" alt="drag queen at a party">
+      <h2>The Parties</h2>
+    </div>
+
+  </section>
+
+  <section class="quote">
+
+    <div class="quote-box">
+      <h2>
+        "She Done Already Has Herses"
+      </h2>
+
+      <p>- Ru Paul Charles</p>
+    </div>
+
+
+
+
+  </section>
+
+
+</body>
+
 </html>
