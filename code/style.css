@@ -336,3 +336,30 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+
+
+
+/* JAG HAR PROBLEM MED ATT FÖRSTÅ OCH SÄTTA RESPONSIVE */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: block;
+
+  }
+
+  .class {
+    flex-direction: row;
+
+  }
+
+  .img {
+    width: 40%;
+  }
+
+
+
+}
