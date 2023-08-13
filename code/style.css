@@ -1,5 +1,5 @@
 html {
-  background: #ffffff;
+  background: antiquewhite;
   color: #000000;
 }
 
@@ -11,6 +11,7 @@ html {
 }
 
 body {
+
   height: 100%;
   background-color: antiquewhite;
   background-size: 100%;
@@ -152,6 +153,7 @@ header {
 
 
 
+/* THE BIG NEWS CONTENT */
 
 .big-news {
 
@@ -175,12 +177,16 @@ header {
 
 }
 
-.flex-box h2 {
+.flex-box li {
   padding: 5px;
-  font-size: 24px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex-box a {
+  font-size: 24px;
 }
 
 .flex-box p {
@@ -192,6 +198,9 @@ header {
   justify-content: center;
 }
 
+
+
+/* THE OTHER NEWS */
 
 .other-news {
   display: grid;
@@ -209,14 +218,24 @@ header {
   place-items: center;
 }
 
-.grid-item h2 {
+.grid-item li {
 
-  font-size: 16px;
+
   margin: 10px;
   display: grid;
   place-items: center;
+
 }
 
+.grid-item a {
+
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+
+/* QUOTE */
 .quote {
   display: flex;
   background-color: none;
@@ -236,7 +255,7 @@ header {
 }
 
 .quote h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 10px;
   font-style: italic;
   align-items: center;
@@ -245,24 +264,75 @@ header {
 }
 
 .quote p {
-  font-size: 16px;
-  padding-left: 130px;
-  font-style: italic;
+  font-size: 18px;
+  padding-left: 175px;
+  s font-style: italic;
   align-items: center;
   justify-content: center;
 
 }
 
 .quote {
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-name: slidein;
 }
 
 @keyframes slidein {
   from {
     margin-left: 50%;
-
   }
 
-  to
+  to {
+    margin-left: 0%;
+  }
+
+
+}
+
+/* THE LAST NEWS */
+
+.the-last-news {
+
+  display: flex;
+  margin-bottom: 500px;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.last-news {
+  background-color: none;
+  padding: 20px;
+  width: 1000px;
+  justify-content: center;
+
+}
+
+.last-news img {
+  width: 100%;
+
+
+}
+
+.last-news li {
+  padding: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-news a {
+  font-size: 24px;
+}
+
+.last-news p {
+  padding: 2px;
+  font-size: 16px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
