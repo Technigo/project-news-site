@@ -1,4 +1,176 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: rgb(247, 190, 199);
+  color: rgb(95, 94, 94);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 20px;
+  width: 600px;
+  background-color: white;
+  overflow: auto;
+}
+
+.navigation li {
+  float: right;
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(247, 190, 199);
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  background-color: rgb(228, 225, 225);
+  color: rgb(241, 171, 182)
+}
+
+.logo {
+  color: rgb(124, 121, 121);
+  font-style: oblique;
+  font-size: 30px;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+color: white;
+font-size: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: oblique;
+}
+
+h1 {
+  margin: 40px;
+}
+
+.big-news {
+  background-color: whitesmoke;
+  padding: 20px;
+  width: 600px;
+}
+
+.big-news img {
+width: 300px;
+padding: 40px;
+}
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.fika {
+  background-color: white;
+padding: 15px;
+width: 610px;
+align-items: center;
+flex-direction: column;
+}
+
+.fika img {
+  width: 40%;
+  margin-top: 40px;
+  align-items: center;
+flex-direction: column;
+}
+
+@media (min-width: 1025px) {
+  .navigation {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 20px;
+  width: 600px;
+  background-color: white;
+  overflow: auto;
+}
+
+.navigation li {
+  float: right;
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(247, 190, 199);
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  background-color: rgb(228, 225, 225);
+  color: rgb(241, 171, 182)
+}
+}
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  html {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .fika {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+  
+  .fika img {
+    width: 30%;
+  }
+
+  .navigation li {
+  float: right;
+  }
+
+  .navigation li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(247, 190, 199);
+  padding: 15px 20px;
+  text-transform: uppercase;
+  }
+
+  .navigation li a:hover {
+  background-color: rgb(228, 225, 225);
+  color: rgb(241, 171, 182)
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .fika {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+  }
+  .fika img {
+    width: 20%
+  }
 }
