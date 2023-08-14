@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/50b270bd34.js" crossorigin="anonymous"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .logo img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .news-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Positioning for desktop and tablet */
+  }
+
+  .news-image {
+    max-width: 200px;
+    margin-right: 20px; /* Add spacing between image and content */
+  }
+
+  .news-content {
+    flex: 1;
+  }
+
+  .news-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .news-text {
+    margin-top: 10px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: darkred;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .icon {
+    display: none; /* Hide the icon by default */
+    color: white; /* Set the icon color to white */
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; /* Revert to top alignment */
+    }
+
+    .news-image {
+      max-width: 200px;
+      margin-right: 20px; /* Add spacing between image and content */
+    }
+
+    .news-content {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .news-section {
+      display: block;
+    }
+
+    .news-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .news-content {
+      text-align: center;
+    }
+
+    .icon {
+      display: block; /* Show the icon on small screens */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+    }
+
+    nav {
+      display: none; /* Hide the navigation links by default */
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    /* Show the navigation links when the icon is clicked */
+    .icon.active + nav {
+      display: flex;
+    }
+  }
+  
+</style>
+<title>Responsive Magazine Site</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <i class="fa-solid fa-bars icon" style="color: #f3f4f7;"></i>
+      <img src="https://tse4.mm.bing.net/th?id=OIP.FXH-qzkg8TwCBvyZzdRUfQHaHa&pid=Api&P=0&h=220" alt="Magazine Logo">
+      News
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Features</a>
+      <a href="#">Opinions</a>
+      <div class="breadcrumb">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Features</a>
+        <a href="#">Opinions</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="news-section">
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/180427130953-01-insight-lander.jpg?q=x_3,y_169,h_1684,w_2993,c_crop/h_438,w_780" alt="Breaking News" class="news-image">
+    <div class="news-content">
+      <h2 class="news-title">Breaking News Title</h2>
+      <p class="news-text">CNN— Mars is rotating more quickly than it used to, according to data that NASA’s InSight lander collected on the red planet.
+        
+        The now-retired InSight was armed with a suite of instruments, including antennae and a radio transponder called RISE, or the Rotation and Interior Structure Experiment. The instruments were used to track Mars’ rotation during the mission’s first 900 days on the planet.
+        
+        Astronomers determined that the planet’s spin is increasing by about 4 milliarcseconds per year², or shortening the length of a Martian day by a fraction of a millisecond per year. A Martian day lasts about 40 minutes longer than a day on Earth.</p>
+      <div class="buttons">
+        <button class="button">Read More</button>
+        <button class="button">Share</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/211122135648-brooklyn-bugs-tempura-tarantula-story-restricted.jpg?q=x_2,y_0,h_898,w_1596,c_crop/h_438,w_780" alt="News Image" class="card-image" style="width:100%;height:60%;">
+      <h3>Giant spiders invade the New York dining scene</h3>
+      <p>New York City-based chef Joseph Yoon started cooking insects four years ago for an art project. </p>
+    </div>
+    <div class="card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/230812033203-05-wwc-aus-france-2023.jpg?c=16x9&q=h_438,w_780,c_fill" alt="News Image" class="card-image" style="width:100%;height:60%;">
+      <h3>Four teams remain, which is favorite to win Women’s World Cup?</h3>
+      <p>After weeks of grueling Women’s World Cup action, only Spain, Sweden, Australia and England remain in the competition </p>
+    </div>
+    <div class="card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/230814103215-01-mount-etna-erupts-0823.jpg?c=16x9&q=h_438,w_780,c_fill" alt="News Image" class="card-image" style="width:100%;height:60%;">
+      <h3>Volcanic cloud closes airport after Mount Etna erupts</h3>
+      <p>A cloud of volcanic ash spewing from Europe’s most active volcano has prompted the closure of one of Sicily’s largest airports, leading to flights being delayed, canceled and diverted.</p>
+    </div>
+    <div class="card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/230811051210-fashion-bundle-new-2.jpg?c=16x9&q=h_438,w_780,c_fill" alt="News Image" class="card-image" style="width:100%;height:60%;">
+      <h3>Meet the second-hand personal shoppers thrifting so you don’t have to</h3>
+      <p>Micah Russelll, a 28-year-old from Oklahoma City, is a full-time personal shopper and stylist </p>
+    </div>
+    <!-- Repeat the card structure for other news items -->
+  </div>
+</body>
+</html>
+
+<script>
+    // Function to toggle the active state of the hamburger icon and navigation
+    function toggleMenu() {
+      var icon = document.querySelector('.icon');
+      var nav = document.querySelector('nav');
+      icon.classList.toggle('active');
+      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+    }
+  </script>
