@@ -7,4 +7,4 @@ To build a news site with a focus on creating a clear structure, working with gr
 I looked through all the information that Technigo provided, tried out a lot of different solutions, and searched for solutions myself. 
 
 ## View it live
-newnew-magmag.netlify.app
+https://newnew-magmag.netlify.app/
