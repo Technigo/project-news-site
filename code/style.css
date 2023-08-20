@@ -1,4 +1,97 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  color: dimgray;
+  font-family: "Calibri Light", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 64px auto auto;
+  margin: 0px 16px;
+}
+
+.header-logo {
+  grid-column: 1 / 2;
+}
+
+.header-logo img {
+  width: 64px;
+  height: auto;
+}
+
+.header-text {
+  grid-column: 2 / 3;
+  margin-left: 8px;
+  margin-top: auto;
+  font-size: 32px;
+}
+
+.header-links {
+  grid-column: 3 / 4;
+  margin-top: auto;
+  justify-self: right;
+  display: inline-flex;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.body1-parent { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin: 32px 16px;
+  gap: 16px;
+}
+
+.body1-child {
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+#body1-image {
+  max-width: 50%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+#body1-text {
+  flex-direction: column;
+  justify-content: left;
+}
+
+#body1-button {
+  align-self: center;
+  margin: 8px;
+  padding: 8px;
+  color: dimgray;
+  border-color: transparent;
+  width: 128px;
+}
+
+.body2-parent {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  margin: 32px 16px;
+  gap: 16px;
+  color: dimgray;
+  font-family: "Calibri Light", sans-serif;
+}
+
+.body2-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.body2-images {
+  align-self: center;
+  max-width: 50%;
+  height: auto;
 }
