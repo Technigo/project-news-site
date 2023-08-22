@@ -14,4 +14,4 @@ But now I came upon the real problem. How was I suppose to turn this into code? 
 Through out the project I watched so many videos but sometimes I couldn’t find the answer to my ideas that I wanted to make, anywhere. So I look forward to learn more so that I can be the one finding and make the answers myself.
 
 ## View it live
-https://phenomenal-pudding-945937.netlify.app/
+https://kpop-magazine.netlify.app/
