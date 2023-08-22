@@ -1,12 +1,8 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was the first assignment for the Technigo web development bootcamp. The task was to build a news site to give us the basic understanding of HTML and CSS, but also how to make a website responsive and how to layout using CSS grid and flexbox. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used flexbox to make the basic layout of boxes for all three responsive sites. I chose to keep the design, including colour choice, simple to be able to focus on solving the problems of flexbox. I made a hamburger menu for the mobile site, although it's missing functions as my knowledge in javascript still is limited. If I had more time I would have played around more with effects, as giving the site a news ticker for example. I would also have deep dived more into text design and what margins and font sizes are most satisfying for the eye. For some reason the desktop version has an empty space at the bottom of the site - given more time I will look into why.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://blackandwhitenews.netlify.app/
