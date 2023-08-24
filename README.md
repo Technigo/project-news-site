@@ -14,4 +14,5 @@ I would probably want to do more animations! And adding more details to the site
 My background is in graphic design, so I'd love to properly design a website, getting nice lines and a bit of a better flow. And fix the hamburger menu fold down thing, seems too small? add more pages? 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://news-site-pedestal.netlify.app
