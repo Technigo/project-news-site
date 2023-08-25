@@ -1,50 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  background-image: #7f992b;
+  background-color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   justify-content: center;
   background-color: rgb(245, 239, 184);
 }
 
 h2 {
   background-color: #a77b0b;
-  font-size: large;
-  padding: 20px;
-  margin-top: 2cm;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* navbar*/
+header {
+  position: relative;
+  width: 100vw;
+  height: 5rem;
+  margin: 0 auto;
+}
+
 nav {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  box-sizing: border-box;
-  padding: 0px 30px;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  padding: 10px auto;
+  margin-bottom: 1rem;
   width: 100%;
   background-color: rgb(106, 96, 96);
 }
 
 nav img {
-  width: 10%;
+  width: 4rem;
   padding: 20px 10px;
 }
 
+nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  margin: 0 auto;
+}
+
 nav a {
-  text-decoration: none;
-  color: #fff;
+  color: #f0f2eb;
   padding: 5px 10px;
 }
 
 nav a:hover {
   color: #a77b0b
+}
+
+/* hamburger-menu and dropdown menu on mobile viewport */
+header .hamburger {
+  display: none;
+  color: #f0f2eb;
+  cursor: pointer;
 }
 
 /*main-news*/
@@ -55,7 +87,7 @@ nav a:hover {
   flex-direction: row;
   box-sizing: border-box;
   width: 100%;
-  margin: 0px 10px;
+  margin: 0px auto;
 }
 
 .welcome figure {
@@ -70,9 +102,8 @@ nav a:hover {
 }
 
 .welcome figcaption {
-  box-sizing: border-box;
   width: 100%;
-  padding: 1px 2px;
+  padding: 5px 2px;
   background-color: #2b352e;
   position: absolute;
   bottom: 0;
@@ -84,7 +115,7 @@ nav a:hover {
 }
 
 .welcome-text {
-  margin: 10px 20px;
+  margin: 10px auto;
   padding: 5px;
   width: 500px;
   color: #2b352e;
@@ -155,18 +186,6 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-.card:nth-child(1) {
-  grid-area: 1/1/2/3;
-}
-
-.card:nth-child(3) {
-  grid-area: 1/4/3/5;
-}
-
-.card:nth-child(4) {
-  grid-area: 2/2/3/4;
-}
-
 .card figure {
   margin: 0px;
   padding: 0px;
@@ -192,7 +211,7 @@ nav a:hover {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 5px;
+  padding: 10px 5px;
   background-color: #2b352e;
 }
 
@@ -315,6 +334,49 @@ footer {
   }
 
   nav {
+    padding: 0 20px;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  header .hamburger {
+    display: block;
+  }
+
+  nav .hamburger:hover {
+    color: #a77b0b;
+  }
+
+  nav .hamburger:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 1rem;
+    top: 65px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(106, 96, 96);
+    opacity: 0.85;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .dropdown-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem;
+    margin: 5px;
+  }
+
+  nav {
     column-gap: 1px;
   }
 
@@ -368,6 +430,11 @@ footer {
 }
 
 @media screen and (min-width:668px) and (max-width:1023px) {
+
+  nav .nav-links {
+    gap: 50px;
+  }
+
   .welcome {
     flex-wrap: nowrap;
   }
