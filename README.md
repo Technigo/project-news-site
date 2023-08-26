@@ -27,8 +27,4 @@ My greatest takeaway from this is - I'll live.
 
 ## View it live
 
-Netlify decided to block my account today without much warning, so I've done a copy and posted it to Github pages in the meantime.
-
-Hopefully I'll soon be able to post the Netlify link and start the continous deployment of the page (I couldn't unfortunately figure out how to publish the news-site repository and had to make a copy).
-
-Please find the site here https://shiqwan.github.io/s
+https://project-news-site-1138.netlify.app
