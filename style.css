@@ -140,7 +140,7 @@ html {background-color: pink;
   .grid-parent,
   .grid-parent1 {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat (1, 1fr); 
     gap: 10px;
   }
   
@@ -185,7 +185,7 @@ html {background-color: pink;
   .grid-parent,
   .grid-parent1 {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat (2, 1fr); 
     gap: 10px;
   }
 .grid-item,
@@ -228,7 +228,7 @@ html {background-color: pink;
     .grid-parent,
   .grid-parent1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
   }
   .grid-item,
   .grid-item1 {
