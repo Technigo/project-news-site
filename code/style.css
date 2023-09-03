@@ -1,57 +1,108 @@
-html {
-  background: #EAD9EB;
+html {background: #EAD9EB;;
+  color: #fff;
+}
+
+h1 {
+  color: white;
+  font-family: Optima, sans-serif;
+}
+
+h2 {
   color: #00BF63;
-  font-family: 'Noto Sans Vithkuqi', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-nav {
+
+h3 {
+  color: #00BF63;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  color: #00BF63;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
   display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  padding: 2%;
 }
-nav img {
-  width: 200px;
+
+.logo img {
+  width: 100%;
 }
-.nav-links {
-  flex: 1;
-  text-align: right;
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
 }
-.nav-links ul li {
+
+nav ul li {
+  margin-left: 10px;
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
-.nav-links ul li a {
+
+nav ul li a {
   color: #00BF63;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: bold;
-}
-.nav-links ul li::after{
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #8C52FF;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-.nav-links ul li:hover::after {
-  width: 100;
+  font-family: 'Poppins', sans-serif;
 }
 
-.flex-parent-box1 {
-  display: flex;
-  flex-direction: row;
-  background: white;
+nav {
+  margin-left: auto;
+}
+With this CSS modification, the navigation links will be aligned to the right of the header.
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .logo img {
+    width: 50%;
+  }
+
+  h1 {
+    color: #00BF63;
+    font-size: 45px;
+  }
+
+  .header-text {
+    margin-right: 12%;
+  }
 }
 
-.flex-box1-child1 {
-  flex: 1;
+@media (min-width: 1025px) {
+  .logo img {
+    width: 50%;
+  }
+
+  h1 {
+    color: #00BF63;
+    font-size: 60px;
+  }
+
+  .header-text {
+    margin-right: 20%;
+  }
 }
 
-.flex-box1-child2 {
-  flex: 1;
+.big-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 30px;
+}
+
+.big-news-image {
+  background-color: white;
+  padding: 4%;
+}
+
+.big-news-textbox {
+  background-color: white;
+  padding: 4%;
 }
 
 button {
@@ -67,52 +118,67 @@ button {
   border-radius: 15px;
 }
 
-.flex-box1-parent2 {
-  height: 500 px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 20px;
+.underline-on-hover:hover {
+  text-decoration: underline;
 }
 
-.flex-child {
-  margin: 5px;
-  width: 200px;
-  height: 160px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
+@media (min-width: 667px) and (max-width: 1024px) {
+  .big-news {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .big-news {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px
+  }
+}
+
+.other-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .other-news {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .other-news {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .grid-item {
+    transition: all .2s ease-in-out;
+  }
+
+  .grid-item:hover {
+    transform: scale(1.1)
+  }
+}
+
+.grid-item {
   background-color: white;
+  padding: 8%;
+}
+
+.photo {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.flex-child img {
-  max-width: 100%; /* Ensure the image doesn't exceed the square's width */
-  max-height: 100%; /* Ensure the image doesn't exceed the square's height */
-}
-
-
-/* Responsive layout for tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-parent-box1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .flex-child {
-    width: calc(50% - 20px); /* Adjust the width to have 2 squares per row with some spacing */
-    height: 160px; /* Adjust the height as needed */
-  }
-}
-
-/* Responsive layout for mobile */
-@media screen and (max-width: 767px) {
-  .flex-parent-box1 {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .flex-child {
-    width: 100%; /* Adjust the width to have 1 square per row */
-    height: 160px; /* Adjust the height as needed */
-  }
+  text-align: center;
 }
