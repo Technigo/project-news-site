@@ -33,6 +33,11 @@ html {
   width: 60px;
 }
 
+.burger-menu {
+  height: 30px;
+  width: 60px;
+}
+
 a:hover {
   background-color: #bea17d;
 }
@@ -141,7 +146,6 @@ a:hover {
   padding: 5px;
 }
 
-
 /* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness by the 7th, but I think it is done now */
 
 /*media query for mobile - 1 row of articles. I don't seem to need this as it defaults to what is above anyway */
@@ -150,11 +154,21 @@ a:hover {
     grid-column: span 4;
   }
 
-  /* this isnt working*/
   .flex-navbar a {
-    float: none;
-    width: 100%;
+    display: none;
   }
+
+  /*added 08/09/23 */
+  .burger-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* this isnt working*/
+.flex-navbar a {
+  float: none;
+  width: 100%;
 }
 
 /*media query for tablet - 2 rows of articles */
@@ -166,6 +180,10 @@ a:hover {
   .big-grid-item h1 {
     font-size: 50px;
   }
+
+  .burger-menu {
+    display: none;
+  }
 }
 
 /*media query for desktop - 4 rows of articles */
@@ -176,5 +194,9 @@ a:hover {
 
   .big-grid-item h1 {
     font-size: 70px;
+  }
+
+  .burger-menu {
+    display: none;
   }
 }
