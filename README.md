@@ -1,12 +1,12 @@
-# News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# Weather App
+This is a pre-course project for Technigo bootcamp. I build this site out of my love for Berlin.
+The data is static and no api used.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The problem was design. I wanted to make this to represente Berlin. So I decided to use raindow color, and tried to make it pop and fun, like Berlin.
+I explore many designs and CSS propaties, and in the end I am quite happy about how this looks like.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+Link: https://app.netlify.com/sites/tourmaline-cendol-e09256/
