@@ -33,11 +33,6 @@ html {
   width: 60px;
 }
 
-.burger-menu {
-  height: 30px;
-  width: 60px;
-}
-
 a:hover {
   background-color: #bea17d;
 }
@@ -181,8 +176,14 @@ a:hover {
     display: none;
   }
 
+  .burger-button {
+    height: 30px;
+    width: 50px;
+    background-color: #f9f5eb;
+  }
+
   .dropbtn {
-    background-image: url("./burger-button.png");
+    background-color: #f9f5eb;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 16px;
