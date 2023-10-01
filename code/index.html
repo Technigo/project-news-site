@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Technigo Web Development Boot Camp. Pre-Course project. First website written in HTML, before learning Java Script -->
 
 <head>
   <meta charset="utf-8" />
@@ -7,34 +8,48 @@
   <link rel="stylesheet" href="./style.css" />
   <meta name="desciption" content="Technigo: Pre-course: News site.">
   <meta name="author" content="Beckie Morton">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- dont forget the meta tag for responsiveness - see above -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta tag ofr responsiveness -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@300;400&family=Roboto:wght@100&family=Titan+One&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <!-- Header which includes the Navigation menu bar, logo, and burger menu images that will appear for web and tablet -->
   <header class="header">
-    <!-- Some kind of logo and navbar -->
     <nav class="flex-navbar">
       <img class="logo" src="logo.svg" alt="info about image goes here" />
-      <a class="flex-navbar-child" href="path/to/subpage">Latest news</a>
+      <a class="flex-navbar-child" href="path/to/subpage">News</a>
       <a class="flex-navbar-child" href="path/to/subpage">Archive</a>
       <a class="flex-navbar-child" href="path/to/subpage">Tracking</a>
-      <a class="flex-navbar-child" href="path/to/subpage">Hyena Facts</a>
+      <a class="flex-navbar-child" href="path/to/subpage">Facts</a>
       <a class="flex-navbar-child" href="path/to/subpage">About Us</a>
       <a class="flex-navbar-child" href="path/to/subpage">Contact</a>
-      <img class="burger-menu" src="burger-menu.svg" alt="burger menu 3 lines" />
     </nav>
+    <div class="dropdown">
+      <button class="dropbtn"></button>
+      <div class="dropdown-content">
+        <a href="#">News</a>
+        <a href="#">Archive</a>
+        <a href="#">Tracking</a>
+        <a href="#">Facts</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
   </header>
 
+  <!-- Website headline/title -->
   <section class="grid-parent">
-    <!-- The big news content -->
     <div class="grid-item big-grid-item">
       <h1>The Laughing Hyena</h1>
     </div>
   </section>
 
+  <!-- The other news - feature/hero article  -->
   <section class="grid-parent">
-    <!-- The other news - feature article  -->
     <div class="grid-item medium-grid-item">
       <a class="feature-picture" target="_blank" href="https://roundglasssustain.com/wildvaults/intelligent-hyenas">
         <img src="./img_hyena_mumandkid.jpg" alt="The Vilified Hyena is an Agile and Intelligent Creature"></a>
@@ -51,11 +66,11 @@
         </a>
       </div>
     </div>
+
     <!-- The other news - further articles  -->
     <div class="grid-item article-grid">
       <a class="article-picture" target="_blank"
         href="https://www.scientificamerican.com/article/hungry-hyenas-can-help-human-health/">
-        <!-- do i need a class name for this? -->
         <img src="./img_hyena1.jpg" alt="The Vilified Hyena is an Agile and Intelligent Creature"></a>
       <div class="article-heading">
         Hungry Hyenas Can Help Human Health
@@ -81,7 +96,6 @@
     <div class="grid-item article-grid">
       <a class="article-picture" target="_blank"
         href="https://news.mongabay.com/2022/05/spotted-hyenas-adapt-to-climate-change-in-famed-tanzanian-park/">
-        <!-- do i need a class name for this? -->
         <img src="./img_2hyenas.jpg" alt="2 Hyenas"></a>
       <div class="article-heading">
         Spotted hyenas adapt to climate change in famed Tanzanian park
@@ -95,7 +109,6 @@
     <div class="grid-item article-grid">
       <a class="article-picture" target="_blank"
         href="https://www.natgeokids.com/au/discover/animals/general-animals/spotted-hyena-facts/">
-        <!-- do i need a class name for this? -->
         <img src="./img_hyena2.jpg" alt="Hyena 2"></a>
       <div class="article-heading">
         Spotted Hyena Facts!

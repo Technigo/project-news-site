@@ -1,7 +1,7 @@
 html {
   background: #f9f5eb;
   color: black;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .flex-navbar {
@@ -76,7 +76,7 @@ a:hover {
   font-size: 30px;
   /* dont know how to make the heading automatically shrink for responsiveness */
   color: #f9f5eb;
-  font-family: Avantgarde;
+  border-radius: 1em;
 }
 
 .medium-grid-item {
@@ -86,6 +86,7 @@ a:hover {
   padding: 5px;
   max-width: 100%;
   border: 1px solid #895a2f;
+  border-radius: 1em;
 }
 
 .medium-grid-item img {
@@ -95,6 +96,7 @@ a:hover {
   padding: 5px;
   max-width: 50%;
   border: 1px solid #895a2f;
+  border-radius: 1em;
 }
 
 .medium-grid-item img:hover {
@@ -111,6 +113,15 @@ a:hover {
   font-size: 18px;
 }
 
+.feature-text {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.feature-heading {
+  font-weight: 700;
+}
+
 .article-text {
   padding-right: 10px;
 }
@@ -123,6 +134,7 @@ a:hover {
   float: center;
   height: auto;
   width: 99%;
+  border-radius: 1em;
 }
 
 .article-picture:hover {
@@ -146,7 +158,9 @@ a:hover {
   padding: 5px;
 }
 
-/* I got covid on Monday 31/07/23 and was too sick to be able to fix my page's responiveness by the 7th, but I think it is done now */
+.burger-menu {
+  display: none;
+}
 
 /*media query for mobile - 1 row of articles. I don't seem to need this as it defaults to what is above anyway */
 @media screen and (max-width: 667px) {
@@ -154,27 +168,72 @@ a:hover {
     grid-column: span 4;
   }
 
+  .feature-heading {
+    font-weight: 700;
+    font-size: 39px;
+  }
+
   .flex-navbar a {
     display: none;
   }
 
-  /*added 08/09/23 */
+  .flex-navbar {
+    display: none;
+  }
+
   .burger-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
-}
 
-/* this isnt working*/
-.flex-navbar a {
-  float: none;
-  width: 100%;
+  .dropbtn {
+    background-image: url("./burger-button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d4bfaa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #f9f5eb;
+  }
 }
 
 /*media query for tablet - 2 rows of articles */
 @media (min-width: 668px) and (max-width: 1024px) {
   .article-grid {
     grid-column: span 2;
+    border-radius: 1px;
   }
 
   .big-grid-item h1 {
