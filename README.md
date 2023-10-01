@@ -10,6 +10,8 @@ I luckily had no problems setting up the relevant programs to begin and went ok 
 
 Unfortunely, I got Covid a week before this was due :-( I had difficulty making the page responsive and was not able to solve this problem until the 8th August. I am not happy with the overall look of the website, but hoping to learn how to make them look better!. I am also not happy with the header, I tried to do a sub-heading underneath but could not format it correctly and while sick I had to let this one go. Even though the project is past due I will still continue to work on it now I'm feeling a bit better.
 
+UPDATE - WEEK 5 - A few things fixed for a resubmit, nav bar is now responsive and displays a burger menu with dropdown and hover effect for mobiles.
+
 ## View it live
 
 https://sensational-toffee-a14f18.netlify.app/
