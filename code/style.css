@@ -36,9 +36,6 @@ li {
   grid-template-columns:repeat(4, 1fr);  
   gap: 10px;
 }
-.grid-parent :hover {
-  color: #fafade;
-}
 .big-grid-item { 
   color:#30302c;
   background: #ebe6ae; 
@@ -56,6 +53,11 @@ li {
   background: #ebe6ae;
   margin: 5px;
   padding: 10px;
+  transition: 0.3s ease;
+}
+.grid-item:hover {
+  background-color: #fafade;
+  color: #30302c;
 }
 .grid-item img {
   width: 100%;
@@ -65,4 +67,24 @@ footer {
   background-color: #fafade;
   color: #30302c;
   font-size: 10px;
+}
+/* Desktop view: 4 columns */
+@media (min-width: 1024px) {
+  .grid-parent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablet view: 2 columns */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .grid-parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view: 1 column */
+@media (max-width: 767px) {
+  .grid-parent {
+    grid-template-columns: 1fr;
+  }
 }
