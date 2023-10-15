@@ -7,6 +7,10 @@ a {
 li {
   list-style: none;
 }
+.nav-container {
+  display: flex; 
+  flex-direction: column;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -31,6 +35,20 @@ li {
 .menu li {
   padding: 5px 14px;
 }
+
+/* Desktop view: Adjust the layout for larger screens */
+@media screen and (min-width: 1025px) {
+  .nav-container {
+    flex-direction: row; /* Switch back to a row layout */
+    justify-content: space-between; /* If needed */
+  }
+}
+
+/* Tablet and Mobile view: Keep the column layout */
+@media screen and (max-width: 1024px) {
+  /* No additional changes needed for the navigation layout */
+}
+
 .grid-parent {  
   display: grid;
   grid-template-columns:repeat(4, 1fr);  
@@ -62,29 +80,40 @@ li {
 .grid-item img {
   width: 100%;
 }
+
 footer {
   text-align: center;  
   background-color: #fafade;
   color: #30302c;
   font-size: 10px;
 }
-/* Desktop view: 4 columns */
-@media (min-width: 1024px) {
+/* Desktop view: 4 columns for grid-parent, grid-item, and big-grid-item */
+@media screen and (min-width: 1025px) {
   .grid-parent {
     grid-template-columns: repeat(4, 1fr);
   }
+  .big-grid-item {
+    grid-column: span 4;
+  }
 }
 
-/* Tablet view: 2 columns */
-@media (max-width: 1023px) and (min-width: 768px) {
+/* Tablet view: 2 columns for grid-parent, grid-item, and big-grid-item */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
   }
+  .big-grid-item {
+    grid-column: span 2;
+  }
 }
 
-/* Mobile view: 1 column */
-@media (max-width: 767px) {
+/* Mobile view: 1 column for grid-parent, grid-item, and big-grid-item */
+@media screen and (max-width: 768px) {
   .grid-parent {
     grid-template-columns: 1fr;
   }
+  .big-grid-item {
+    grid-column: span 1;
+  }
 }
+
