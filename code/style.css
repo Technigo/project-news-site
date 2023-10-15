@@ -36,17 +36,16 @@ li {
   padding: 5px 14px;
 }
 
-/* Desktop view: Adjust the layout for larger screens */
+/* Desktop view: */
 @media screen and (min-width: 1025px) {
   .nav-container {
-    flex-direction: row; /* Switch back to a row layout */
-    justify-content: space-between; /* If needed */
+    flex-direction: row; 
+    justify-content: space-between; 
   }
 }
 
-/* Tablet and Mobile view: Keep the column layout */
+/* Tablet and Mobile view: */
 @media screen and (max-width: 1024px) {
-  /* No additional changes needed for the navigation layout */
 }
 
 .grid-parent {  
