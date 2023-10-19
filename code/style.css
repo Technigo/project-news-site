@@ -6,12 +6,18 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  width: 100%;
+  position: relative;
+}
 
 html {
   background: linear-gradient(#22c1c3, #fdbb2d);
   background-size: contain;
   color: rgb(80, 80, 80);
   font-family: "Courier New", Courier, monospace;
+  width: 100%;
 }
 
 /*header start*/
@@ -35,7 +41,6 @@ header div {
   display: flex;
   height: 30px;
   padding: 24px;
-  max-width: 1024px;
 }
 
 .nav {
@@ -94,31 +99,15 @@ div p {
 
 /* End Hero CSS */
 
-/*moving logo*/
-.box img {
-  width: 100px;
-}
-
-#logo {
-  position: sticky;
-  size: 1px;
-  top: 10%;
-  left: 10%;
-  z-index: -1;
-}
-
-/*moving logo end*/
-
 /*The big news start*/
 .flex-parent {
   display: flex;
-  /* width: 1100px; */
-  width: 100%;
+  width: 100%; /* Set to 100% for mobile */
   border: 2px solid #0d5758;
-  padding: 4px;
+  padding: 20px;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 20px;
 }
 
 .flex-img img {
@@ -129,19 +118,19 @@ div p {
   background-size: cover;
 }
 
-.flex-child {
+.flex-child-red {
   margin: 20px;
-  width: 500px;
+  width: 100%;
 }
 
-.redtwo {
+.flex-child-redtwo {
   color: #0d5758;
   font-size: px;
   text-align: center;
   margin: 5px;
 }
 
-.redtwo h2 {
+.flex-child-redtwo h2 {
   font-weight: 300;
   margin-bottom: 20px;
   font-size: 30px;
@@ -181,17 +170,13 @@ div p {
 /*small articles start*/
 .articles {
   display: grid;
-  /* grid-template-columns: 40% 40%;
-  grid-template-rows: 30% 30% 30% 30%; */
   grid-template-columns: 1fr;
   justify-content: center;
   text-align: center;
-  margin: auto;
   margin-top: 20px;
 }
 
 .articles img {
-
   width: 200px;
   max-width: 100%;
   border: 2px solid #0d5758;
@@ -235,11 +220,10 @@ div p {
 /*small articles end*/
 
 /* media queries - for tablet*/
-@media screen and (min-width: 768px) {
-
+/* @media screen and (min-width: 768px) {
   .flex-parent {
     display: flex;
-    /* width: 1100px; */
+
     width: 100%;
     border: 2px solid #0d5758;
     padding: 4px;
@@ -248,36 +232,24 @@ div p {
     margin: auto;
   }
 
-  .flex-img img {
-    max-width: 100%;
-    object-fit: cover;
-  }
-
   .articles {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 /* media query - for Desktop */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .articles {
     grid-template-columns: repeat(4, 1fr);
   }
 
   .flex-parent {
     display: flex;
-    width: 1100px;
+    width: 100%;
     border: 2px solid #0d5758;
     padding: 4px;
     flex-direction: row;
     justify-content: center;
     margin: auto;
   }
-}
-
-
-footer {
-  background: #fed376;
-  height: 70px;
-  padding: 24px;
-}
+} */
