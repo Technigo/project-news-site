@@ -28,6 +28,13 @@ Don't be afraid to try things out and have fun in this process! Go wild with col
   - [The site magazine](https://www.thesitemagazine.com/thesitemagazine)
   - [Mike McQuade](https://mikemcquade.com/)
 
+## Requirements
+- Style your page.
+- Use CSS Grid and Flexbox to layout the page.
+- Create a responsive design with the following views: Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px).
+- The site should have a header, a main news article, and a grid of news articles.
+- Play around with hover effects, i.e. change colours, add or remove borders or flip the image upside down.
+
 ## Stretch goals
 **Make sure you've committed and pushed a version of your project before starting on the stretch goals. These are just suggestions, if you want to add something else go ahead. We want you to be creative!**
 
