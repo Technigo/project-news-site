@@ -10,8 +10,8 @@ Before you get started, we want you to take a step back from the screen, grab a 
 
 Start by drawing an outer wrapper, a box wrapping the entire page. Then, continue by filling this box with content: A header box, a main box, a box for navigation, etc. The final sketch should consist of a box, within a box, within a box, within a box. 
 Tip! Use markers to highlight the different boxes to clarify which box is wrapping the other. See example below 👇
-<img width="619" alt="Skärmavbild 2023-11-27 kl  16 35 29" src="https://github.com/Technigo/project-news-site/assets/51529201/4d8a34ef-1199-49e0-93ef-7e9ab24c8ec1">
-<img width="617" alt="Skärmavbild 2023-11-27 kl  16 35 18" src="https://github.com/Technigo/project-news-site/assets/51529201/4cdf808a-c19e-47c9-9af1-479f6018f703">
+<img width="500" alt="Skärmavbild 2023-11-27 kl  16 35 29" src="https://github.com/Technigo/project-news-site/assets/51529201/4d8a34ef-1199-49e0-93ef-7e9ab24c8ec1">
+<img width="500" alt="Skärmavbild 2023-11-27 kl  16 35 18" src="https://github.com/Technigo/project-news-site/assets/51529201/4cdf808a-c19e-47c9-9af1-479f6018f703">
 
 ### HTML
 Once you finish sketching, you’ll have a ‘recipe’ for your HTML document! Every box on your sketch represents a container, a div/section/main, or other element. Add your containers and content from the sketch into your HTML document, starting from the top and the outside, going in. Continue to add content by creating the HTML elements you need. Don't forget to start thinking about classes already to be able to style more easily when it comes to that.
