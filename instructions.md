@@ -24,10 +24,9 @@ Don't be afraid to try things out and have fun in this process! Go wild with col
 ### Inspiration
 - Want to find some nice images to use? Check in the [Image resources](https://www.notion.so/04237e2fdd624562acd58643dac93016?pvs=21) from the Toolbox.
 - Want to see some examples of former students’ projects? Have a look at Nadia’s [Maple News](https://maple-news.netlify.app/), Åsa’s [Therapy a la Gucci](https://gallant-ritchie-7f8b1c.netlify.app/) or Christoffer’s [Daily Ziko](https://optimistic-bohr-c8ad3d.netlify.app/).
-
 - Not a designer? Get some design inspiration for your grid 👇
-  - [**The site magazine**](https://www.thesitemagazine.com/thesitemagazine)
-  - [**Mike McQuade**](https://mikemcquade.com/)
+  - [The site magazine](https://www.thesitemagazine.com/thesitemagazine)
+  - [Mike McQuade](https://mikemcquade.com/)
 
 ## Stretch goals
 **Make sure you've committed and pushed a version of your project before starting on the stretch goals. These are just suggestions, if you want to add something else go ahead. We want you to be creative!**
