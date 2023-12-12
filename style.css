@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Nunito&family=Saira+Extra+Condensed:wght@100;400&family=Shizuru&display=swap');
 
+body {
+
+    display: flex; 
+    flex-direction: column;
+    row-gap: 20px;
+}
 
 header {
     display: flex;
@@ -11,13 +17,13 @@ header {
 .logo {
     height: 40px;
     width: 40px;
-} 
+}
 
 
 
 
 h1 {
-    font-family: "New Rocker"; 
+    font-family: "New Rocker";
     font-size: 30px;
     margin: 0;
 }
@@ -25,17 +31,8 @@ h1 {
 
 
 
-.news-number2 {
-    
-    display: grid;
-    grid-template-columns: max-content max-content;
-    display: flex;
-    column-gap: 30px;
-    align-items: center;
-}
+.small-news {
 
-.news-number3 {
-    
     display: grid;
     grid-template-columns: max-content max-content;
     display: flex;
