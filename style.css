@@ -2,8 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
 
 body {
 
@@ -42,38 +41,43 @@ h1 {
 
 
 .big-news {
-    font-family: "Montserrat";
+    font-family: "Comfortaa";
 
 
 }
 
 .small-news {
-    font-family: "Montserrat";
+    font-family: "Comfortaa";
     display: grid;
-    grid-template-columns: max-content max-content;
-    display: flex;
+    grid-template-columns: 1fr 1fr;
+    
     column-gap: 30px;
     align-items: center;
     
     
 }
 
-.small-news p {font-weight: 100;
+.small-news h4 {
+    font-size: 22px;
+}
 
+.small-news p {font-weight: 300;
+    font-size: 13px;
 }
 
 .small-news:nth-child(odd) img {
     
-    border: 5px solid #41d62d;
+    border: 5px solid #f2e189;
 }
 
 .small-news:nth-child(even) img {
     
-    border: 5px solid #f2971f;
+    border: 5px solid #e2a5f1;
 }
 
 .small-news img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
 
-
-    
 }
