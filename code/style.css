@@ -1,4 +1,83 @@
-html {
-  background: #0025ff;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=New+Rocker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
+
+body {
+
+    display: flex; 
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #e7f7e6
+}
+
+header {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+
+.logo {
+    height: 40px;
+    width: 70px;
+}
+
+
+.intro {
+    height: 220px;
+    width:330px;
+
+
+}
+
+h1 {
+    font-family: "Nerko One";
+    color: #A0ECF6;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.big-news {
+    font-family: "Comfortaa";
+
+
+}
+
+.small-news {
+    font-family: "Comfortaa";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    column-gap: 30px;
+    align-items: center;
+    
+    
+}
+
+.small-news h4 {
+    font-size: 22px;
+}
+
+.small-news p {font-weight: 300;
+    font-size: 13px;
+}
+
+.small-news:nth-child(odd) img {
+    
+    border: 5px solid #f2e189;
+}
+
+.small-news:nth-child(even) img {
+    
+    border: 5px solid #e2a5f1;
+}
+
+.small-news img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+
 }
