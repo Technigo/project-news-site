@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=New+Rocker&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 
 
 
@@ -8,6 +10,7 @@ body {
     display: flex; 
     flex-direction: column;
     row-gap: 20px;
+    background-color: #e7f7e6
 }
 
 header {
@@ -19,16 +22,21 @@ header {
 
 .logo {
     height: 40px;
-    width: 40px;
+    width: 70px;
 }
 
 
+.intro {
+    height: 220px;
+    width:330px;
 
+
+}
 
 h1 {
-    font-family: "New Rocker";
-    color: #961DF6;
-    font-size: 30px;
+    font-family: "Nerko One";
+    color: #A0ECF6;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -46,6 +54,8 @@ h1 {
     display: flex;
     column-gap: 30px;
     align-items: center;
+    
+    
 }
 
 .small-news p {font-weight: 100;
@@ -60,4 +70,10 @@ h1 {
 .small-news:nth-child(even) img {
     
     border: 5px solid #f2971f;
+}
+
+.small-news img {
+
+
+    
 }
