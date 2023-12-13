@@ -24,12 +24,24 @@ header {
     width: 70px;
 }
 
-
 .intro {
-    height: 220px;
-    width:330px;
+    position: relative;
 
+}
 
+.intro-image {
+    width: 100%;    
+   
+}
+
+.intro-text {
+
+    background-color: #a0ecf6a5;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 h1 {
