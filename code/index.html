@@ -1,23 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Change the title below -->
+  <title>Sofia's News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta name="description" content="Current, exciting and trending news from my cat Azzi">
+  <link rel="icon" href="./assets/shield-cat-solid.svg" sizes="any" type="image/svg+xml">
+</head>
+
+<body>
+  <header>
+    <!-- Some kind of logo and navbar -->
+    <nav>
+      <ul class="flex-container">
+        <li class="nav-item icon"><img src="./assets/shield-cat-solid.svg" alt=""> AZZI</li>
+        <li class="nav-item"><a href="#">News 1</a></li>
+        <li class="nav-item"><a href="#">News 2</a></li>
+        <li class="nav-item"><a href="#">News 3</a></li>
+      </ul>
+    </nav>
+    <div role="banner" class="grid-container">
+      <div class="grid-item-6">
+        <h1>Latest news from my cat</h1>
+        <h2>🐾 Welcome to Azzi's Adventure Chronicle! 🐾</h2>
+        <p>Meet Azzi, the furry luminary of our heartwarming tale. From the tiniest of paws to the grandiose leaps of
+          his
+          feline prowess, Azzi's journey has been nothing short of extraordinary. Join us as we whisk you away into the
+          enchanting world of this whiskered wonder, starting from the very beginning.</p>
+        <button></button>
+      </div>
+      <div class="grid-item-6">
+        <video class="" autoplay muted>
+          <source src="./assets/azzi_480.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <section class="big-news">
       <!-- The big news content -->
+      <div>
+      </div>
+      <div>
+        <p>As Azzi graduated from kittenhood, a daring move awaited him. The bustling excitement of a new home became
+          his
+          canvas, and oh, the adventures that awaited! Each nook and cranny held the promise of discovery, and Azzi
+          embraced
+          it all with whiskers held high.</p>
+      </div>
     </section>
 
-    <section class="">
+    <section class="grid-container">
       <!-- The other news  -->
+      <div class="grid-item-12 flex-container">
+        <div>
+          <h2>More great news</h2>
+          <p>Breaking Mews! Azzi's apartment escapades are the talk of the town. From daring acrobatics on the
+            windowsill
+            to stealthy ninja moves during midnight play, this feline phenom knows how to keep us on our toes. Follow
+            along as we unveil the day-to-day chronicles of Azzi's apartment antics.</p>
+        </div>
+
+        <!--------------- News items ------------------------>
+        <div class="flex-item">
+          <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+          <time datetime="2023-12-09" class="xs">09 dec 2023</time>
+          <h3>Azzi is waiting to come home</h3>
+          <p>Azzi is growing up and getting ready to move.</p>
+          <button>Read more</button>
+        </div>
+        <div class="flex-item">
+          <img src="./assets/Azzi_231123_380x380.jpeg" alt="" width="100%">
+          <time datetime="2023-11-23" class="xs">23 nov 2023</time>
+          <h3>Azzi is waiting to come home</h3>
+          <p>Azzi is growing up and getting ready to move.</p>
+          <button>Read more</button>
+        </div>
+        <div class="flex-item">
+          <img src="./assets/Azzi_231013_380x380.jpg" alt="" width="100%">
+          <time datetime="2023-10-13" class="xs">13 oct 2023</time>
+          <h3>Azzi is waiting to come home</h3>
+          <p>Azzi is growing up and getting ready to move.</p>
+          <button>Read more</button>
+        </div>
+
+        <div>
+          <p>Stay tuned for more purr-sonal updates, heartwarming tales, and perhaps a few surprises as we delve deeper
+            into the enchanting world of Azzi. Don't miss a whisker – bookmark Azzi's Adventure Chronicle for your daily
+            dose of feline delight!</p>
+        </div>
+      </div>
     </section>
-  </body>
+
+  </main>
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-item-3">
+        <img class="logo" src="./logo.svg" alt="">
+      </div>
+      <div class="grid-item-6">
+        <h4>rubrik</h4>
+        <p>text</p>
+      </div>
+      <div class="grid-item-3">
+        <ul>
+          <li><a href="#">Länk</a></li>
+          <li><a href="#">Länk</a></li>
+          <li><a href="#">Länk</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
 </html>
