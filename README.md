@@ -1,8 +1,8 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+This is my first project of the Technigo Bootcamp.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I need to create a fully responsive news site using HTML and CSS.
 
 ## The problem
 
