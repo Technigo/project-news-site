@@ -8,91 +8,148 @@
   <title>Sofia's News Site</title>
   <link rel="stylesheet" href="./style.css" />
   <!-- dont forget the meta tag for responsiveness -->
-  <meta name="description" content="Current, exciting and trending news from my cat Azzi">
+  <meta name="description" content="Current, exciting and trending news from my kitten Azzi">
   <link rel="icon" href="./assets/shield-cat-solid.svg" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
-  <header>
+  <header class="grid-container">
     <!-- Some kind of logo and navbar -->
-    <nav>
-      <ul class="flex-container">
-        <li class="nav-item icon"><img src="./assets/shield-cat-solid.svg" alt=""> AZZI</li>
-        <li class="nav-item"><a href="#">News 1</a></li>
-        <li class="nav-item"><a href="#">News 2</a></li>
-        <li class="nav-item"><a href="#">News 3</a></li>
+    <div class="grid-item col-l-1 flex-container">
+      <img class="logo flex-item" src="./assets/shield-cat-solid.svg" alt="">
+      <p class="flex-item h2">AZZImews</p>
+    </div>
+    <div class="grid-item col-l-1">
+      <ul>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item"><button>Sign up</button></li>
+      </ul>
+    </div>
+    <nav class="grid-item col-l-2">
+      <ul class="menu">
+        <li class="nav-item xs"><a href="#">Adventures</a></li>
+        <li class="nav-item"><a href="#bigNews">Tales</a></li>
+        <li class="nav-item"><a href="otherNews">Everyday</a></li>
       </ul>
     </nav>
-    <div role="banner" class="grid-container">
-      <div class="grid-item-6">
-        <h1>Latest news from my cat</h1>
-        <h2>🐾 Welcome to Azzi's Adventure Chronicle! 🐾</h2>
-        <p>Meet Azzi, the furry luminary of our heartwarming tale. From the tiniest of paws to the grandiose leaps of
-          his
-          feline prowess, Azzi's journey has been nothing short of extraordinary. Join us as we whisk you away into the
-          enchanting world of this whiskered wonder, starting from the very beginning.</p>
-        <button></button>
-      </div>
-      <div class="grid-item-6">
-        <video class="" autoplay muted>
-          <source src="./assets/azzi_480.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
   </header>
 
-  <main>
-    <section class="big-news">
-      <!-- The big news content -->
-      <div>
-      </div>
-      <div>
-        <p>As Azzi graduated from kittenhood, a daring move awaited him. The bustling excitement of a new home became
-          his
-          canvas, and oh, the adventures that awaited! Each nook and cranny held the promise of discovery, and Azzi
-          embraced
-          it all with whiskers held high.</p>
+  <main class="grid-container">
+    <!--------------- The big news content --------------->
+    <section id="bigNews" class="big-news grid-item">
+      <div class="grid-item flex-container news-card">
+        <a href="">
+          <div class="flex-item">
+            <p class="extra">Extra!!!</p>
+          </div>
+          <div class="flex-item">
+            <video autoplay muted>
+              <source src="./assets/azzi_480.mp4">
+            </video>
+          </div>
+          <div class="flex-item">
+            <h2>🚨 BREAKING MEWS</h2>
+            <p>Azzi Discovers Secret Portal to Kitty Wonderland in the Closet! 🚪🌈</p>
+          </div>
+        </a>
       </div>
     </section>
 
-    <section class="grid-container">
-      <!-- The other news  -->
-      <div class="grid-item-12 flex-container">
-        <div>
-          <h2>More great news</h2>
-          <p>Breaking Mews! Azzi's apartment escapades are the talk of the town. From daring acrobatics on the
-            windowsill
-            to stealthy ninja moves during midnight play, this feline phenom knows how to keep us on our toes. Follow
-            along as we unveil the day-to-day chronicles of Azzi's apartment antics.</p>
+    <!--------------- The other news  ---------------------->
+    <section id="otherNews" class="grid-container grid-item">
+      <!-------------- Shorts ------------------------------>
+      <div class="grid-item news-card">
+        <h2>This just in</h2>
+        <hr>
+        <ul>
+          <li><a href="#">Whisker-Whirling Adventures: Azzi's Wild Ride on the Rolling Desk Chair Sparks Chaos – You
+              Won't Believe
+              the Outcome!</a></li>
+          <li><a href="#">Azzi's Elaborate Cardboard Fort Takes Shape – Witness the Majesty of His Feline Kingdom!</a>
+          </li>
+          <li><a href="#">Heartwarming Tales: Azzi Spreads Love and Joy with His Unique Cuddling Technique – Prepare for
+              Heart Melt!
+            </a></li>
+          <li><a href="#">Everyday Wonders: Azzi's Attempt to Steal a Bite of a Cheeseburger Leads to Hilarious Culinary
+              Chaos!</a></li>
+          <li><a href="#">Everyday Wonders: Azzi Falls Asleep in Unprecedented Daytime Snooze – Is This the End of
+              Playtime?</a></li>
+        </ul>
+      </div>
+      <!--------------- News items ------------------------>
+      <div class="grid-item flex-container">
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🌟 FLUFFY FIASCO</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Azzi's Epic Battle Against the Red Dot –
+              Who Will Triumph? 💥🐾</p>
+          </a>
         </div>
-
-        <!--------------- News items ------------------------>
-        <div class="flex-item">
-          <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
-          <time datetime="2023-12-09" class="xs">09 dec 2023</time>
-          <h3>Azzi is waiting to come home</h3>
-          <p>Azzi is growing up and getting ready to move.</p>
-          <button>Read more</button>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231123_380x380.jpeg" alt="" width="100%">
+            <h3>🚀 SPACE CAT AZZI</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Feline Explorer Conquered the Untamed
+              Heights of the Bookshelf Galaxy! 📚🌌</p>
+          </a>
         </div>
-        <div class="flex-item">
-          <img src="./assets/Azzi_231123_380x380.jpeg" alt="" width="100%">
-          <time datetime="2023-11-23" class="xs">23 nov 2023</time>
-          <h3>Azzi is waiting to come home</h3>
-          <p>Azzi is growing up and getting ready to move.</p>
-          <button>Read more</button>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231013_380x380.jpg" alt="" width="100%">
+            <h3>🎭 CAT-ASTROPHE AVERTED</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Hilarious Encounter with a Feather Duster
+              Turns Into a Comedy Spectacle! 🤣🪶</p>
+          </a>
         </div>
-        <div class="flex-item">
-          <img src="./assets/Azzi_231013_380x380.jpg" alt="" width="100%">
-          <time datetime="2023-10-13" class="xs">13 oct 2023</time>
-          <h3>Azzi is waiting to come home</h3>
-          <p>Azzi is growing up and getting ready to move.</p>
-          <button>Read more</button>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>❤️ PAW-SITIVELY HEROIC</h3>
+            <p><span class="news-category">Heartwarming Tales </span>Tiny Toy Mouse Rescued, Melts Hearts Across the
+              Nation! 🐭🦸‍♂️</p>
+          </a>
         </div>
-
-        <div>
-          <p>Stay tuned for more purr-sonal updates, heartwarming tales, and perhaps a few surprises as we delve deeper
-            into the enchanting world of Azzi. Don't miss a whisker – bookmark Azzi's Adventure Chronicle for your daily
-            dose of feline delight!</p>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🌈 RAINBOW NAPS</h3>
+            <p><span class="news-category">Heartwarming Tales </span>Midday Siesta Turns Into a Technicolor Dream –
+              Witness the Magic! 😴🌈</p>
+          </a>
+        </div>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🎶 MEOW-SICAL PRODIGY</h3>
+            <p><span class="news-category">Heartwarming Tales </span>Late-Night Serenade Takes the Neighborhood by
+              Storm! 🎤🌙</p>
+          </a>
+        </div>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🍣 SUSHI SAMURAI</h3>
+            <p><span class="news-category">Everyday Wonders </span>Azzi Attempts to Master the Art of Stealing Sushi –
+              Results Are Adorable! 🍣🐾</p>
+          </a>
+        </div>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🧹 FURRY CLEANING FAIRY</h3>
+            <p><span class="news-category">Everyday Wonders </span>Unconventional Approach to Dusting Leaves Everyone in
+              Stitches! 🧹🤭</p>
+          </a>
+        </div>
+        <div class="flex-item news-card">
+          <a href="#">
+            <img src="./assets/Azzi_231209_380x380.jpeg" alt="" width="100%">
+            <h3>🚗 FELINE ROAD TRIP</h3>
+            <p><span class="news-category">Everyday Wonders </span>Epic Journey from Couch to Kitchen Leaves Paw Prints
+              on Our Hearts!</p>
+          </a>
         </div>
       </div>
     </section>
