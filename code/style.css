@@ -4,7 +4,7 @@
 
 body {
 
-    display: flex; 
+    display: flex;
     flex-direction: column;
     row-gap: 20px;
     background-color: #e7f7e6
@@ -26,7 +26,7 @@ header {
 .links ol {
 
 
-    margin:0;
+    margin: 0;
     padding: 0;
     text-indent: 0;
     list-style-type: none;
@@ -35,7 +35,7 @@ header {
     column-gap: 20px;
     font-family: Comfortaa;
     font-weight: 500;
-    
+
 }
 
 .links a {
@@ -53,14 +53,11 @@ header {
 }
 
 .intro-image {
-    width: 100%;    
-   
+    width: 100%;
+
 }
 
-
-
 .intro-text {
-
     background-color: #a0ecf6a5;
     height: 50%;
     position: absolute;
@@ -68,23 +65,19 @@ header {
     bottom: 3px;
     right: 0;
 }
-.intro-text h2 {
 
-  
+.intro-text h2 {
     font-family: "Comfortaa";
     font-weight: "500";
     font-size: 18px;
 }
-  
-    
-.intro-text p {
 
+
+.intro-text p {
     font-family: "Comfortaa";
     font-weight: "300";
     font-size: 13px;
 }
-
-
 
 h1 {
     font-family: "Nerko One";
@@ -96,36 +89,31 @@ h1 {
 
 .big-news {
     font-family: "Comfortaa";
-
-
 }
 
 .small-news {
     font-family: "Comfortaa";
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
     column-gap: 30px;
     align-items: center;
-    
-    
 }
 
 .small-news h2 {
     font-size: 18px;
 }
 
-.small-news p {font-weight: 300;
+.small-news p {
+    font-weight: 300;
     font-size: 13px;
 }
 
 .small-news:nth-child(odd) img {
-    
     border: 5px solid #f2e189;
 }
 
 .small-news:nth-child(even) img {
-    
     border: 5px solid #e2a5f1;
 }
 
@@ -133,5 +121,17 @@ h1 {
     height: 100%;
     width: 100%;
     aspect-ratio: 1/1;
+
+}
+
+
+@media (min-width: 668px) {
+
+    
+body {
+
+    
+    background-color: #f2e189; 
+}
 
 }
