@@ -68,14 +68,14 @@ header {
 
 .intro-text h2 {
     font-family: "Comfortaa";
-    font-weight: "500";
+    font-weight: 500;
     font-size: 18px;
 }
 
 
 .intro-text p {
     font-family: "Comfortaa";
-    font-weight: "300";
+    font-weight: 300;
     font-size: 13px;
 }
 
@@ -128,10 +128,60 @@ h1 {
 @media (min-width: 668px) {
 
     
-body {
+    body {
+        background-color: #f3dff5; 
+    }
 
+    .logo {
+        height: 80px;
+        width: 160px;
+    }
     
-    background-color: #f2e189; 
+
+    h1 {
+        font-family: "Nerko One";
+        color: #A0ECF6;
+        font-size: 60px;
+        margin: 0;
+    }
+    .links ol {
+    
+    
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        column-gap: 60px;
+        font-family: Comfortaa;
+        font-weight: 500;
+    
+    }
+
+    .sheep {
+        font-size: 50px;
+    }
+
+    .intro-text {
+
+        position: absolute; 
+        background-color: transparent;
+        left: 20px
+    }
+
+    .intro-text h2 {
+        font-family: "Comfortaa";
+        font-weight: "500";
+        font-size: 50px;
+        color: white;
+    }
+
+    .intro-text p {
+        font-family: "Comfortaa";
+        font-weight: "300";
+        font-size: 15px;
+        color: white;
+    }
 }
 
-}
