@@ -1,23 +1,419 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/android-chrome-192x192.png"
+    />
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+
+    <script
+      src="https://kit.fontawesome.com/c38d857281.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Tuscan Cuisine Chronicles</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <main>
+      <header class="nav-mobile">
+        <div class="nav-mobile-wrap">
+          <input type="checkbox" id="checkbox" />
+          <nav>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.tavolartegusto.it/">
+                  More Recipes</a
+                >
+                <i
+                  class="fa-solid fa-pizza-slice fa-bounce nav-icon"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.tavolartegusto.it/?s=toscana"
+                >
+                  Tuscan Highlights</a
+                >
+                <i
+                  class="fa-solid fa-cheese fa-bounce nav-icon"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+            </ul>
+          </nav>
+          <label for="checkbox" class="mobile-nav-bars">
+            <i class="fa-solid fa-bars bars-icon" style="color: #bc4f22"></i>
+          </label>
+        </div>
+        <div class="logo-wrap">
+          <a href="index.html">
+            <img
+              src="./assets/Red Beige Vintage Spaghetti Illustration Italian Food Logo (1).png"
+              class="logo-mobile"
+              alt="logo"
+            />
+          </a>
+        </div>
+      </header>
+      <!-- hero section START -->
+      <section class="hero-section">
+        <div class="hero-text-wrapper">
+          <h3 class="hero-title">Welcome to Tuscan Cuisine Chronicles!</h3>
+          <p class="hero-text">Explore Timeless Recipes & Culinary Tales</p>
+          <a
+            href="https://www.tavolartegusto.it/?s=toscana"
+            class="hero-button"
+          >
+            Let's dig into some recipes >>>
+          </a>
+        </div>
+      </section>
+      <!-- hero section END -->
+      <!-- News section START -->
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+      <section>
+        <ul class="cards">
+          <!-- 1st CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/Ribollita-Ricetta-Ribollita-toscana.webp"
+                  alt="vegetable and bread soup"
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/ribollita-ricetta-originale-toscana/
+                  ribollita"
+                    >Ribollita Soup</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Ribollita (Tuscan Ribollita) is a warm and hearty first
+                    course typical of poor Tuscan cuisine: it is a soup of stale
+                    bread and vegetables whose main ingredients are black
+                    cabbage, savoy cabbage and beans.
+                  </p>
+                  <p>
+                    According to peasant tradition, it was prepared on Fridays,
+                    the lean day, by putting together the leftovers from the
+                    previous day and then simmered several times over a low
+                    fire; first with vegetables alone, then with the addition of
+                    hard bread, hence the name "ribollita" : the more it is
+                    cooked, the better it gets for the following days!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 2nd CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/Cantucci-Ricetta-Cantucci-.webp"
+                  alt=" Dry Cookies "
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/ricetta-cantucci/"
+                    >Cantucci Cokkies</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Cantucci (Cantuccini) also known as "Biscotti di Prato" are
+                    typical sweets of traditional Tuscan cuisine : these are dry
+                    almond cookies, which are made by slicing strands of dough
+                    while still warm and then baked again a few minutes, where
+                    the Tozzetti will take on a rustic and slightly golden
+                    appearance!
+                  </p>
+                  <p>
+                    Fragrant and fragrant, Cantucci, just like Cavallucci, are
+                    usually accompanied with some excellent Vin santo or Vin
+                    brulè! They are wonderful!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 3rd CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/liver-souce.jpg" alt=" brown-sauce " />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.bravetuscany.com/it/ricette/crostini-di-fegatini-toscani-la-ricetta-autentica-che-conquista-il-palato/"
+                    >Liver Croutons</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Tuscan liver crostini represent one of the most celebrated
+                    and beloved dishes of regional cuisine. These delicious
+                    appetizers are made with chicken livers, crispy Tuscan bread
+                    and a selection of ingredients that combine perfectly to
+                    create a unique flavor.
+                  </p>
+                  <p>
+                    The origin of Tuscan liver crostini goes back a long way and
+                    is rooted in the region's peasant tradition. During the
+                    Middle Ages, the noble classes could afford to consume
+                    animal liver, which was considered a valuable food.
+                    Peasants, on the other hand, used less noble parts of the
+                    animal, such as the liver, to avoid waste. To make crostini,
+                    Tuscan peasants would cook the liver in a pan with garlic,
+                    sage, butter and other flavorings until it was soft and
+                    tasty. Afterwards, they would spread the liver cream on
+                    toasted Tuscan bread, thus creating Tuscan liver crostini.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 4th CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/panforte.webp" alt=" spiced-sweet-bread " />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/panforte-ricetta-originale/"
+                    >Panforte Spiced Cake</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Panforte is a Christmas cake typical of the city of Siena
+                    and the Tuscan tradition. It is a low bread made with
+                    almonds, candied fruit, sugar and honey enriched with
+                    spices, then baked in the oven on a sheet of wafer; where it
+                    will take on a soft to crispy texture and the unmistakable
+                    pungent scent and honeyed taste! A unique treat that has
+                    medieval origins.
+                  </p>
+                  <p>
+                    In its ancient version it was prepared in monasteries and
+                    was a similar flatbread made with water, honey and fresh
+                    fruit ; which after a few days of fermentation turned into a
+                    sour bread precisely "panes fortis." It was in 1550, that
+                    Sister Berta, to refresh the Sienese fighters after a siege,
+                    enriched the recipe with candied fruit, almonds and spices,
+                    giving the cake the flavor we all know today!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 5th CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/cavallucci.webp"
+                  alt=" Dry-spiced-Cookies "
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/cavallucci-senesi/"
+                    >Cavallucci Cokkies</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Cavallucci are exquisite sweets, typical of Tuscan pastries,
+                    particularly from Siena; made from flour, water, sugar,
+                    spices, nuts and candied fruit; then baked in the oven where
+                    they take on the appearance of round cookies, slightly
+                    flattened in the center, incredibly fragrant, with a soft,
+                    chewy texture and a delicious rustic flavor!
+                  </p>
+                  <p>
+                    In short, a real goodness that has distant origins; already
+                    in the court of Lorenzo the Magnificent they were sold in
+                    taverns and consumed by drivers on horseback, hence the name
+                    cavallucci. Today they have become traditional of the
+                    Christmas season along with Cantucci and Ricciarelli.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 6th CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/pappa-al-pomodoro.webp" alt="tomatoe-soup" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/pappa-al-pomodoro/"
+                    >Tomatoe Tuscan Soup
+                  </a>
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Pappa al pomodoro is a poor first course typical of Tuscan
+                    peasant cuisine; based on stale Tuscan unsalted bread,
+                    slowly cooked in peeled tomatoes, vegetable broth, basil,
+                    extra virgin olive oil; where all the ingredients blend
+                    together forming a real creamy, enveloping, super fragrant
+                    'pappa', where at times you can still feel the soft pieces.
+                  </p>
+                  <p>
+                    A delicacy in its simplicity, which in days gone by was
+                    prepared by peasants to recycle stale bread soon became
+                    popular and well-known even abroad thanks to the song W la
+                    pappa al pomodoro sung by Rita Pavone in 1965.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 7th CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/Gnudi.webp" alt="fresh-veggie-pasta" />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/gnudi-ricetta-originale/"
+                    >Gnudi Fresh Pasta</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Gnudi are a typical first course of Tuscan cuisine,
+                    particularly of Siena and Grosseto. They are large,
+                    elongated-shaped gnocchi made with ricotta, spinach, and
+                    parmesan cheese. From the Tuscan dialect they are called
+                    "gnudi" which means "naked" ; that is, stripped of the egg
+                    pasta sheet typical of Ravioli, so they are made exclusively
+                    with the contents of the filling!
+                  </p>
+                  <p>
+                    With a very soft texture to the bite, fragrant, flavorful,
+                    they are a unique goodness that has poor peasant origins,
+                    handed down from family to family. Usually after being
+                    blanched a few minutes in water they are seasoned with
+                    butter and sage !
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 8th CARD -->
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/fagioli-all-uccelletto.webp"
+                  alt="beans-in-souce"
+                />
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a
+                    href="https://www.tavolartegusto.it/ricetta/fagioli-all-uccelletto/"
+                    >Uccelletto Beans</a
+                  >
+                </h2>
+                <div class="card-text">
+                  <p>
+                    Fagioli all'uccelletto are a rich and hearty vegetarian side
+                    dish, typical of poor Tuscan cuisine; made with cannellini
+                    beans, tomato puree, garlic, oil and sage leaves; which
+                    cooked slowly together, result in a warm, comforting and
+                    juicy terrine; a goodness that has its roots in peasant
+                    tradition; when not being able to afford meat, they cooked
+                    beans with the same flavors as fowl and game; that's why
+                    they are called Fagioli all'uccelletto .
+                  </p>
+                  <p>
+                    Ideal for pairing with main courses of all kinds, such as
+                    Pork Loin and Beer Chicken ; they are also perfect as a main
+                    course, accompanied by homemade bread or slices of Focaccia
+                    or some tasty Polenta!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- News section END -->
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+        <!-- Newsletter Form -->
+
+        <section class="form-wrapper">
+          <div class="container">
+            <div class="image-form-wrapper"></div>
+            <div class="form-text-wrapper">
+              <h3>Subscribe Now</h3>
+              <h2>Delivered Fresh to Your Inbox!</h2>
+              <form class="form" name="Subscribe" method="post" netlify>
+                <input
+                  class="email"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email..."
+                  required
+                />
+                <input type="submit" value="Subscribe" class="subscribe" />
+              </form>
+              <p style="font-weight: bold">
+                No Worries, you can unsubscribe at any moment!
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer  -->
+    <footer>
+      <div class="copyright">
+        <i class="fa-solid fa-copyright" style="color: #bc4f22"></i>
+        <span style="color: #bc4f22">2024 - Created by Vittoria Matteoli</span>
+      </div>
+      <div class="follow">
+        <i
+          class="social-icon fa-brands fa-github fa-spin-pulse"
+          style="color: #bc4f22"
+          href="https://github.com/vittoriamatteoli"
+        ></i>
+        <i
+          class="social-icon fa-brands fa-linkedin fa-spin-pulse"
+          style="color: #bc4f22"
+          href="https://www.linkedin.com/in/vittoria-m-8878aa2a1"
+        ></i>
+        <i
+          class="social-icon fa-brands fa-stack-overflow fa-spin-pulse"
+          style="color: #bc4f22"
+          href="https://stackoverflow.com/users/23100403/vittoria-matteoli"
+        ></i>
+      </div>
+    </footer>
   </body>
 </html>
