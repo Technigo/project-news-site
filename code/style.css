@@ -91,6 +91,13 @@ h1 {
     font-family: "Comfortaa";
 }
 
+.feed {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
 .small-news {
     font-family: "Comfortaa";
     display: grid;
@@ -118,9 +125,9 @@ h1 {
 }
 
 .small-news img {
-    height: 100%;
     width: 100%;
     aspect-ratio: 1/1;
+    object-fit: cover;
 
 }
 
@@ -183,5 +190,24 @@ h1 {
         font-size: 15px;
         color: white;
     }
+
+
+
+    .small-news {
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;    
+   }
+
+    .feed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+        
+    }
+
+
 }
 
