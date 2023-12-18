@@ -134,16 +134,16 @@ h1 {
 
 @media (min-width: 668px) {
 
-    
+
     body {
-        background-color: #f3dff5; 
+        background-color: #f3dff5;
     }
 
     .logo {
         height: 80px;
         width: 160px;
     }
-    
+
 
     h1 {
         font-family: "Nerko One";
@@ -151,9 +151,10 @@ h1 {
         font-size: 60px;
         margin: 0;
     }
+
     .links ol {
-    
-    
+
+
         margin: 0;
         padding: 0;
         text-indent: 0;
@@ -163,7 +164,7 @@ h1 {
         column-gap: 60px;
         font-family: Comfortaa;
         font-weight: 500;
-    
+
     }
 
     .sheep {
@@ -172,7 +173,7 @@ h1 {
 
     .intro-text {
 
-        position: absolute; 
+        position: absolute;
         background-color: transparent;
         left: 20px
     }
@@ -194,20 +195,62 @@ h1 {
 
 
     .small-news {
-        
+
         display: flex;
         flex-direction: column;
-        max-width: 40%;    
-   }
+        max-width: 40%;
+    }
+
 
     .feed {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex-direction: row;
-        
+
     }
 
 
 }
 
+@media (min-width: 1024px) {
+
+
+    .intro {
+        font-family: "Comfortaa";
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        column-gap: 30px;
+        align-items: center;
+    }
+
+.intro-text {
+    position: unset;
+    
+}
+
+.intro-text h2 {
+
+    color: black;
+}
+
+.intro-text p {
+
+    color: black;
+}
+
+
+.small-news {
+
+    max-width: 21%;
+}
+
+.small-news img:hover {
+
+    filter: hue-rotate(270deg);
+}
+
+
+
+}
