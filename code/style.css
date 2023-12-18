@@ -167,6 +167,12 @@ h1 {
 
     }
 
+    .links a {
+        text-decoration: none;
+        color: #e2a5f1;
+        font-size: 25px;
+    }
+
     .sheep {
         font-size: 50px;
     }
@@ -215,6 +221,28 @@ h1 {
 
 @media (min-width: 1024px) {
 
+
+    body {
+        background-color: #faf9d9;
+    }
+
+    .logo {
+        height: 125px;
+        width: 250px;
+    }
+
+
+    h1 {
+       
+        font-size: 100px;
+      
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #e2a5f1;
+        font-size: 30px;
+    }
 
     .intro {
         font-family: "Comfortaa";
