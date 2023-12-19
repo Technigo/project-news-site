@@ -1,284 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap");
 
 body {
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    background-color: #e7f7e6
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: #e7f7e6;
 }
 
 header {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .logo {
-    height: 40px;
-    width: 70px;
+  height: 40px;
+  width: 70px;
 }
 
 .links ol {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  font-family: Comfortaa;
+  font-weight: 500;
+}
 
+.links a {
+  text-decoration: none;
+  color: #e2a5f1;
+}
 
+.intro {
+  position: relative;
+}
+
+.sheep {
+  font-size: 30px;
+}
+
+.intro-image {
+  width: 100%;
+}
+
+.intro-text {
+  background-color: #a0ecf6a5;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  right: 0;
+}
+
+.intro-text h2 {
+  font-family: "Comfortaa";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.intro-text p {
+  font-family: "Comfortaa";
+  font-weight: 300;
+  font-size: 13px;
+}
+
+h1 {
+  font-family: "Nerko One";
+  color: #a0ecf6;
+  font-size: 40px;
+  margin: 0;
+}
+
+.big-news {
+  font-family: "Comfortaa";
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.small-news {
+  font-family: "Comfortaa";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 30px;
+  align-items: center;
+}
+
+.small-news h2 {
+  font-size: 18px;
+}
+
+.small-news p {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.small-news:nth-child(odd) img {
+  border: 5px solid #f2e189;
+}
+
+.small-news:nth-child(even) img {
+  border: 5px solid #e2a5f1;
+}
+
+.small-news img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media (min-width: 668px) {
+  body {
+    background-color: #f3dff5;
+  }
+
+  .logo {
+    height: 80px;
+    width: 160px;
+  }
+
+  h1 {
+    font-family: "Nerko One";
+    color: #a0ecf6;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .links ol {
     margin: 0;
     padding: 0;
     text-indent: 0;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 60px;
     font-family: Comfortaa;
     font-weight: 500;
+  }
 
-}
-
-.links a {
+  .links a {
     text-decoration: none;
     color: #e2a5f1;
-}
+    font-size: 25px;
+  }
 
-.intro {
-    position: relative;
+  .sheep {
+    font-size: 50px;
+  }
 
-}
-
-.sheep {
-    font-size: 30px;
-}
-
-.intro-image {
-    width: 100%;
-
-}
-
-.intro-text {
-    background-color: #a0ecf6a5;
-    height: 50%;
+  .intro-text {
     position: absolute;
-    left: 0;
-    bottom: 3px;
-    right: 0;
-}
+    background-color: transparent;
+    left: 20px;
+  }
 
-.intro-text h2 {
+  .intro-text h2 {
     font-family: "Comfortaa";
-    font-weight: 500;
-    font-size: 18px;
-}
+    font-weight: "500";
+    font-size: 50px;
+    color: white;
+  }
 
-
-.intro-text p {
+  .intro-text p {
     font-family: "Comfortaa";
-    font-weight: 300;
-    font-size: 13px;
-}
+    font-weight: "300";
+    font-size: 15px;
+    color: white;
+  }
 
-h1 {
-    font-family: "Nerko One";
-    color: #A0ECF6;
-    font-size: 40px;
-    margin: 0;
-}
-
-
-.big-news {
-    font-family: "Comfortaa";
-}
-
-.feed {
-
+  .small-news {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    max-width: 40%;
+  }
+
+  .feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }
 
-.small-news {
+@media (min-width: 1024px) {
+  body {
+    background-color: #faf9d9;
+  }
+
+  .logo {
+    height: 125px;
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: #e2a5f1;
+    font-size: 30px;
+  }
+
+  .intro {
     font-family: "Comfortaa";
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     column-gap: 30px;
     align-items: center;
-}
+  }
 
-.small-news h2 {
-    font-size: 18px;
-}
+  .intro-text {
+    position: unset;
+  }
 
-.small-news p {
-    font-weight: 300;
-    font-size: 13px;
-}
+  .intro-text h2 {
+    color: black;
+  }
 
-.small-news:nth-child(odd) img {
-    border: 5px solid #f2e189;
-}
+  .intro-text p {
+    color: black;
+  }
 
-.small-news:nth-child(even) img {
-    border: 5px solid #e2a5f1;
-}
+  .small-news {
+    max-width: 21%;
+  }
 
-.small-news img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-
-}
-
-
-@media (min-width: 668px) {
-
-
-    body {
-        background-color: #f3dff5;
-    }
-
-    .logo {
-        height: 80px;
-        width: 160px;
-    }
-
-
-    h1 {
-        font-family: "Nerko One";
-        color: #A0ECF6;
-        font-size: 60px;
-        margin: 0;
-    }
-
-    .links ol {
-
-
-        margin: 0;
-        padding: 0;
-        text-indent: 0;
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        column-gap: 60px;
-        font-family: Comfortaa;
-        font-weight: 500;
-
-    }
-
-    .links a {
-        text-decoration: none;
-        color: #e2a5f1;
-        font-size: 25px;
-    }
-
-    .sheep {
-        font-size: 50px;
-    }
-
-    .intro-text {
-
-        position: absolute;
-        background-color: transparent;
-        left: 20px
-    }
-
-    .intro-text h2 {
-        font-family: "Comfortaa";
-        font-weight: "500";
-        font-size: 50px;
-        color: white;
-    }
-
-    .intro-text p {
-        font-family: "Comfortaa";
-        font-weight: "300";
-        font-size: 15px;
-        color: white;
-    }
-
-
-
-    .small-news {
-
-        display: flex;
-        flex-direction: column;
-        max-width: 40%;
-    }
-
-
-    .feed {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        flex-direction: row;
-
-    }
-
-
-}
-
-@media (min-width: 1024px) {
-
-
-    body {
-        background-color: #faf9d9;
-    }
-
-    .logo {
-        height: 125px;
-        width: 250px;
-    }
-
-
-    h1 {
-
-        font-size: 100px;
-
-    }
-
-    .links a {
-        text-decoration: none;
-        color: #e2a5f1;
-        font-size: 30px;
-    }
-
-    .intro {
-        font-family: "Comfortaa";
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        column-gap: 30px;
-        align-items: center;
-    }
-
-    .intro-text {
-        position: unset;
-
-    }
-
-    .intro-text h2 {
-
-        color: black;
-    }
-
-    .intro-text p {
-
-        color: black;
-    }
-
-
-    .small-news {
-
-        max-width: 21%;
-    }
-
-    .small-news img:hover {
-
-        filter: hue-rotate(270deg);
-    }
-
-
-
+  .small-news img:hover {
+    filter: hue-rotate(270deg);
+  }
 }
