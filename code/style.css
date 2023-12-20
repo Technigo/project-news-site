@@ -9,6 +9,14 @@ body {
   background-color: #e7f7e6;
 }
 
+h1 {
+  font-family: "Nerko One";
+  color: #a0ecf6;
+  font-size: 40px;
+  margin: 0;
+}
+
+
 header {
   display: flex;
   column-gap: 10px;
@@ -20,6 +28,9 @@ header {
   height: 40px;
   width: 70px;
 }
+
+
+
 
 .links ol {
   margin: 0;
@@ -38,10 +49,6 @@ header {
   color: #e2a5f1;
 }
 
-.intro {
-  position: relative;
-}
-
 .sheep {
   font-size: 30px;
 }
@@ -49,6 +56,12 @@ header {
 .intro-image {
   width: 100%;
 }
+
+
+.intro {
+  position: relative;
+}
+
 
 .intro-text {
   background-color: #a0ecf6a5;
@@ -69,13 +82,6 @@ header {
   font-family: "Comfortaa";
   font-weight: 300;
   font-size: 13px;
-}
-
-h1 {
-  font-family: "Nerko One";
-  color: #a0ecf6;
-  font-size: 40px;
-  margin: 0;
 }
 
 .big-news {
