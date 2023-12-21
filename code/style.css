@@ -65,14 +65,19 @@ main {
 }
 #checkbox:checked ~ nav ul {
   max-height: 18rem;
-  padding: 1rem 0;
   transition: all 0.5s;
+  font-size: auto;
+  text-align: left;
+  font-size: 13px;
 }
 
 .nav-mobile-wrap nav ul {
   list-style-type: none;
   max-height: 0;
   overflow: hidden;
+  font-size: auto;
+  text-align: left;
+  font-size: 13px;
 }
 .nav-mobile-wrap a {
   color: white;
@@ -142,7 +147,7 @@ main {
 /* styling cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: auto;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -195,6 +200,7 @@ main {
 h2.card-title,
 p {
   margin: 1.2rem 0;
+  text-align: center;
 }
 h2.card-title,
 a {
@@ -210,6 +216,7 @@ a {
   grid-column: 1;
 }
 .container {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -231,6 +238,7 @@ a {
   justify-items: center;
   padding: 5px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form {
@@ -285,4 +293,77 @@ footer {
 }
 .social-icon {
   margin: auto;
+}
+.empty-column {
+  display: none;
+}
+@media (min-width: 668px) and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+  #checkbox:checked ~ nav ul {
+    font-size: 14px;
+  }
+
+  .nav-mobile-wrap nav ul {
+    font-size: 14px;
+  }
+  .hero-text-wrapper {
+    padding: 80px;
+  }
+  .cards {
+    grid-template-columns: auto auto;
+  }
+  .container {
+    padding: 50px;
+  }
+  .empty-column {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+  .hero-text-wrapper {
+    padding: 80px;
+  }
+  .logo-mobile {
+    width: 127px;
+    height: 127px;
+  }
+  #checkbox:checked ~ nav ul {
+    font-size: 15px;
+  }
+
+  .nav-mobile-wrap nav ul {
+    font-size: 15px;
+  }
+  .bars-icon {
+    font-size: 45px;
+  }
+  .cards {
+    grid-template-columns: auto auto auto auto;
+  }
+  .container {
+    padding: 50px;
+  }
+  .empty-column {
+    display: flex;
+  }
+  footer {
+    grid-template-columns: 50% 40% 10%;
+  }
+}
+@media (max-width: 370px) {
+  #checkbox:checked ~ nav ul {
+    font-size: 7px;
+  }
+  .bars-icon {
+    font-size: 15px;
+  }
+  .nav-mobile-wrap nav ul {
+    font-size: auto;
+  }
 }
