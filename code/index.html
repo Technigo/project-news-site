@@ -24,69 +24,70 @@
 </head>
 
 <body>
-  <header class="flex-container navbar">
-    <!-- Some kind of logo and navbar -->
-    <div class="nav-brand">
-      <ul class="flex-container">
-        <li class="flex-item"><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt=""></li>
-        <li class="flex-item">
-          <h1>AZZImews</h1>
-        </li>
-      </ul>
-    </div>
-    <nav class="flex-item flex-container">
-      <div class="flex-item menu">
+  <div class="wrapper">
+    <header role="menubar" class="navbar flex-container">
+      <!-- Some kind of logo and navbar -->
+      <div class="nav-brand">
         <ul class="flex-container">
-          <li class="nav-item"><a href="#">Adventures</a></li>
-          <li class="nav-item"><a href="#">Tales</a></li>
-          <li class="nav-item"><a href="#">Everyday</a></li>
+          <li class="flex-item"><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt=""></li>
+          <li class="flex-item">
+            <h1>AZZImews</h1>
+          </li>
         </ul>
       </div>
-      <div class="flex-item sub-menu">
-        <ul class="flex-container">
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-          <li class="nav-item signup"><a href="#">Sign up</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="grid-container">
-    <!--------------- The big news content --------------->
-    <section class="big-news grid-item">
-      <div class="flex-container news-card">
-        <div class="flex-item">
-          <p class="extra"> Extra! Extra! Extra!</p>
-          <video autoplay muted aria-controls="">
-            <source src="./assets/azzi_480.mp4">
-          </video>
-        </div>
-        <div class="flex-item">
-          <a href="#">
-            <h2>🚨 BREAKING MEWS</h2>
-            <h3>SPURR-FECTION - Adorable Serenade Takes the Internet by Storm</h3>
-          </a>
-          <hr>
-          <ul>
-            <li><a href="#" class="related-news">
-                <p>PURRENDEZVOUS WITH AZZI: Dive Into the Heartwarming World of Azzi's Purr-fect Serenade</p>
-              </a></li>
-            <li><a href="#" class="related-news">
-                <p>PUURSUING THE VIRTUAL VIRAL THRONE: Azzi's Purr-fect Serenade Launches Him into Internet Stardom</p>
-              </a></li>
-            <li><a href="#" class="related-news">
-                <p>CAT-NIPPLE OF THE DAY: Azzi's Purr-fect Serenade Inspires Global Trend in Cute Cat Videos</p>
-              </a></li>
+      <nav class="flex-item flex-container">
+        <div class="nav-menu-main flex-item">
+          <ul class="flex-container">
+            <li class="nav-item"><a href="#">Adventures</a></li>
+            <li class="nav-item"><a href="#">Tales</a></li>
+            <li class="nav-item"><a href="#">Everyday</a></li>
           </ul>
         </div>
-      </div>
-    </section>
-    <!----------- The other news  ----------------->
-    <section class="grid-item grid-container ">
-      <!--------- Aside on big screens --------------->
-      <aside>
-        <div id="just-in" class="news-card">
+        <div class="flex-item nav-menu-sub">
+          <ul class="flex-container">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item signup"><a href="#">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="grid-container">
+      <!--------------- The big news content --------------->
+      <section class="big-news">
+        <div class="flex-container news-card">
+          <div class="flex-item">
+            <p class="extra"> Extra! Extra! Extra!</p>
+            <video autoplay muted aria-controls="">
+              <source src="./assets/azzi_480.mp4">
+            </video>
+          </div>
+          <div class="flex-item">
+            <a href="#">
+              <h2>🚨 BREAKING MEWS</h2>
+              <h3>SPURR-FECTION - Adorable Serenade Takes the Internet by Storm</h3>
+            </a>
+            <hr>
+            <ul>
+              <li><a href="#" class="related-news">
+                  <p>PURRENDEZVOUS WITH AZZI: Dive Into the Heartwarming World of Azzi's Purr-fect Serenade</p>
+                </a></li>
+              <li><a href="#" class="related-news">
+                  <p>PUURSUING THE VIRTUAL VIRAL THRONE: Azzi's Purr-fect Serenade Launches Him into Internet Stardom
+                  </p>
+                </a></li>
+              <li><a href="#" class="related-news">
+                  <p>CAT-NIPPLE OF THE DAY: Azzi's Purr-fect Serenade Inspires Global Trend in Cute Cat Videos</p>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!----------- The other news  ----------------->
+      <!------ Aside on big screens ----------->
+      <aside class="flex-container">
+        <div id="just-in" class="news-card flex-item">
           <h2 class="aside-heading">This just in</h2>
           <ul>
             <li class="aside-item">
@@ -137,7 +138,7 @@
             </li>
           </ul>
         </div>
-        <div id="popular-reads" class="news-card">
+        <div id="popular-reads" class="news-card flex-item">
           <h2 class="aside-heading">Popular Reads</h2>
           <ul>
             <li class="aside-item">
@@ -166,8 +167,7 @@
         </div>
       </aside>
       <!--------------- News items ------------------------>
-      <div class="grid-item flex-container other-news">
-
+      <section class="other-news flex-container">
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_climbing_380x304.jpg" alt="Azzi climbing in window" width="100%">
@@ -228,7 +228,8 @@
           <a href="#">
             <img src="./assets/Azzi_giftwrapping_380x304.jpeg" alt="Azzi tearing christmas wrapping" width="100%">
             <h3>HOLIDAY HIJINKS</h3>
-            <p><span class="news-category">Everyday Wonders </span>Holiday Gift Wrapping Interrupted by Merry Fur-helper
+            <p><span class="news-category">Everyday Wonders </span>Holiday Gift Wrapping Interrupted by Merry
+              Fur-helper
             </p>
           </a>
         </div>
@@ -236,7 +237,8 @@
           <a href="#">
             <img src="./assets/Azzi_dishwasher_380x304.jpeg" alt="Azzi hiding in dishwasher" width="100%">
             <h3>DISHWASHER DISCOVERY</h3>
-            <p><span class="news-category">Whisker-Whirling Adventures </span>Quest for the Purr-fect Hideout Unveiled!
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Quest for the Purr-fect Hideout
+              Unveiled!
             </p>
           </a>
         </div>
@@ -267,34 +269,34 @@
               on Our Hearts</p>
           </a>
         </div>
+      </section>
+    </main>
+
+    <a class="nav-top" href="#" aria-hidden="true"><i class="fa-solid fa-circle-up fa-2xl"></i></a>
+
+    <footer class="flex-container">
+      <div class="flex-item nav-brand">
+        <li class="flex-item"><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt="Azzimews"></li>
       </div>
-    </section>
-  </main>
+      <div class="flex-item">
+        <h4>Contact us</h4>
+        <ul>
+          <li><a href="tel:">Call our tipline</a></li>
+          <li><a href="mailto:sofia@hopagarden.com">Send tip</a></li>
+          <li><a href="mailto:">Report problem</a></li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <h4>🐾 **Welcome to Azzi's Adventure Chronicle!** 🐾</h4>
+        <p>
 
-  <a class="nav-top" href="#" aria-hidden="true"><i class="fa-solid fa-circle-up fa-2xl"></i></a>
+          Meet Azzi, the furry luminary of our heartwarming tale. From the tiniest of paws to the grandiose leaps of his
+          feline prowess, Azzi's journey has been nothing short of extraordinary. Join us as we whisk you away into the
+          enchanting world of this whiskered wonder, starting from the very beginning.</p>
+      </div>
 
-  <footer class="flex-container">
-    <div class="flex-item nav-brand">
-      <li class="flex-item"><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt="Azzimews"></li>
-    </div>
-    <div class="flex-item">
-      <h4>Contact us</h4>
-      <ul>
-        <li><a href="tel:">Call our tipline</a></li>
-        <li><a href="mailto:sofia@hopagarden.com">Send tip</a></li>
-        <li><a href="mailto:">Report problem</a></li>
-      </ul>
-    </div>
-    <div class="flex-item">
-      <h4>🐾 **Welcome to Azzi's Adventure Chronicle!** 🐾</h4>
-      <p>
-
-        Meet Azzi, the furry luminary of our heartwarming tale. From the tiniest of paws to the grandiose leaps of his
-        feline prowess, Azzi's journey has been nothing short of extraordinary. Join us as we whisk you away into the
-        enchanting world of this whiskered wonder, starting from the very beginning.</p>
-    </div>
-
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

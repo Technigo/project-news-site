@@ -37,6 +37,11 @@ main {
   max-width: 1400px;
   margin: 1rem auto !important;
   padding: 0 1%;
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
 }
 
 img {
@@ -121,15 +126,24 @@ hr {
 
 /* Layout */
 
+.wrapper {
+  display: grid;
+  grid-template: repeat(3, 1fr) 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
 .grid-container {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template: repeat(3, 1fr) 1fr;
   gap: 10px;
-}
-
-.grid-item {
-  grid-column: 1 / span 1;
+  grid-template-areas:
+    "big-news"
+    "aside"
+    "other-news";
 }
 
 .flex-container {
@@ -149,11 +163,7 @@ hr {
 
 /* Header, menu, navigation & footer */
 
-header {
-  width: 100vw;
-  padding: 10px;
-  box-sizing: inherit;
-}
+header {}
 
 header>* {
   flex-grow: 1;
@@ -162,6 +172,7 @@ header>* {
 footer {
   background-color: var(--secondary-color);
   color: var(--contrast-color-light);
+  grid-area: footer;
 }
 
 .logo {
@@ -170,6 +181,7 @@ footer {
 }
 
 .navbar {
+  grid-area: header;
   z-index: 99;
   position: sticky;
   top: 0;
@@ -177,6 +189,7 @@ footer {
   width: 100vw;
   background-color: var(--secondary-color);
   height: 100px;
+  padding: 10px;
 }
 
 .navbar ul {
@@ -205,11 +218,11 @@ footer {
   font-weight: 600;
 }
 
-.menu {
-  flex-grow: 2;
+.nav-menu-main {
+  flex-grow: 1;
 }
 
-.sub-menu {
+.nav-menu-sub {
   display: none;
 }
 
@@ -235,11 +248,13 @@ footer {
 }
 
 .big-news {
+  grid-area: big-news;
   text-align: center;
 
 }
 
 .other-news {
+  grid-area: other-news;
   gap: 0.5rem;
   align-items: baseline;
 }
@@ -299,10 +314,11 @@ footer {
 @media all and (min-width: 668px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-item {
-    grid-column: 1 / span 2;
+    grid-template-areas:
+      "big-news big-news"
+      "aside aside"
+      "other-news other-news"
+    ;
   }
 
   .big-news .flex-item {
@@ -315,19 +331,18 @@ footer {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .navbar {
     height: auto;
   }
 
-  .sub-menu {
+  .nav-menu-sub {
     display: inherit;
   }
 
   .other-news {
-    grid-area: 2 / 1 / auto / 3;
     align-items: stretch;
   }
 
@@ -342,18 +357,9 @@ footer {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-  }
-
-  .grid-item {
-    grid-column: 1 / span 4;
-  }
-
-  aside {
-    grid-column: 4;
-  }
-
-  .sub-menu {
-    display: inherit;
+    grid-template-areas:
+      "big-news big-news big-news big-news"
+      "other-news other-news other-news aside";
   }
 
   footer.flex-container {
@@ -365,7 +371,6 @@ footer {
   }
 
   .other-news {
-    grid-area: 1 / 1 / auto / 4;
     align-items: stretch;
   }
 
