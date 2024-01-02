@@ -2,6 +2,7 @@ html {
   background: whitesmoke;
   color: black;
   font-size: 15px;
+  width: 100%;
 }
 body {
   font-family: monospace;
@@ -96,6 +97,7 @@ main {
 }
 
 .hero-section {
+  overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -137,15 +139,16 @@ main {
   border-radius: 0;
 }
 
-.main-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* styling cards */
+.cards-container {
+  overflow: hidden;
+  width: 100%;
+}
 .cards {
+  animation-name: animate-fade;
+  animation-duration: 3.5s;
+  animation-delay: 0.9s;
+  animation-iteration-count: 1;
   display: grid;
   grid-template-columns: auto;
   list-style: none;
@@ -209,6 +212,17 @@ a {
   color: black;
   text-align: center;
 }
+/* fade-in-animation */
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* styling form */
 
 .form-wrapper {
