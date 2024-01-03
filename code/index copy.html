@@ -12,8 +12,6 @@
     content="Current, fun and trending news from the kitten Azzi. Read all about his adventures at Azzimews!">
   <link rel="icon" href="./assets/shield-cat-solid.svg" sizes="any" type="image/svg+xml">
 
-  <script src="script.js"></script>
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,59 +21,58 @@
 
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/de4c4c2e83.js" crossorigin="anonymous"></script>
+
+  <script src="script.js" async></script>
 </head>
 
 <body>
   <div class="wrapper">
-
-    <!-- Some kind of logo and navbar -->
-    <header role="menubar" class="navbar flex-container">
-      <div class="nav-brand">
-        <ul class="flex-container">
-          <li class=""><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt=""></li>
-          <li class="flex-item">
-            <h1>AZZImews</h1>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-desktop">
-        <nav class="flex-container">
-          <div class="nav-menu-main">
-            <ul class="flex-container">
-              <li class="nav-item"><a href="#">Whisker-Whirling Adventures</a></li>
-              <li class="nav-item"><a href="#">Heartwarming Tales</a></li>
-              <li class="nav-item"><a href="#">Everyday Wonders</a></li>
-            </ul>
-          </div>
-          <div class="nav-menu-sub">
-            <ul class="flex-container">
+    <header>
+      <!-- Some kind of logo and navbar -->
+      <div role="menubar" class="navbar nav-top flex-container">
+        <div class="nav-brand">
+          <ul class="flex-container">
+            <li class=""><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt=""></li>
+            <li class="flex-item">
+              <h1>AZZImews</h1>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-desktop">
+          <nav class="flex-container">
+            <div class="nav-menu-main">
+              <ul class="flex-container">
+                <li class="nav-item"><a href="#">Adventures</a></li>
+                <li class="nav-item"><a href="#">Tales</a></li>
+                <li class="nav-item"><a href="#">Everyday</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu-sub">
+              <ul class="flex-container">
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item signup"><a href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="menu-toggle">
+          <a href="javascript:void(0)" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </a>
+        </div>
+        <div id="menu-drawer" class="menu-drawer">
+          <nav class="nav-menu-main">
+            <ul class="">
+              <li class="nav-item"><a href="#">Adventures</a></li>
+              <li class="nav-item"><a href="#">Tales</a></li>
+              <li class="nav-item"><a href="#">Everyday</a></li>
               <li class="nav-item"><a href="#">About</a></li>
               <li class="nav-item"><a href="#">Contact</a></li>
               <li class="nav-item signup"><a href="#">Sign up</a></li>
             </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="menu-toggle">
-        <a href="javascript:void(0)" onclick="toggleMenu()">
-          <i class="fa-solid fa-bars fa-2xl"></i>
-        </a>
-      </div>
-      <div id="menu-drawer" class="menu-drawer">
-        <nav>
-          <ul class="nav-menu-main">
-            <li class="nav-item icon"><a href="javascript:void(0)" onclick="toggleMenu()"><i
-                  class="fa-solid fa-xmark fa-2xl"></i></a></li>
-            <li class="nav-item"><a href="#">Whisker-Whirling Adventures</a></li>
-            <li class="nav-item"><a href="#">Heartwarming Tales</a></li>
-            <li class="nav-item"><a href="#">Everyday Wonders</a></li>
-          </ul>
-          <ul>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-            <li class="nav-item signup"><a href="#">Sign up</a></li>
-          </ul>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -112,7 +109,7 @@
       </section>
       <!----------- The other news  ----------------->
       <!------ Aside on big screens ----------->
-      <aside>
+      <aside class="flex-container">
         <div id="just-in" class="news-card flex-item">
           <h2 class="aside-heading">This just in</h2>
           <ul>
@@ -234,6 +231,7 @@
               Results Are Adorable</p>
           </a>
         </div>
+
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_computer_380x304.jpg" alt="Azzi sleeping by work computer" width="100%">
@@ -296,43 +294,35 @@
         </div>
       </section>
       <div>
-        <a class="scroll-top" href="#" aria-hidden="true"><i class="fa-solid fa-circle-up fa-2xl"></i></a>
+        <button class="scroll-top" href="#" aria-hidden="true"><i class="fa-solid fa-circle-up fa-2xl"></i></button>
       </div>
     </main>
 
-    <!-- Footer -->
+
+
     <footer>
-      <div class="footer-brand">
-        <img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt="Azzimews">
+      <div>
+        <li class=""><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt="Azzimews"></li>
       </div>
-      <nav class="footer-links flex-container">
-        <div>
-          <h4>Contact us</h4>
-          <ul>
-            <li><a href="tel:000">Call our tipline</a></li>
-            <li><a href="mailto:">Email tip</a></li>
-            <li><a href="mailto:sofia@hopagarden.com">Report problem</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>About</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="">Advertise</a></li>
-            <li><a href="">Terms of Service</a></li>
-            <li><a href="">Site Map</a></li>
-          </ul>
-        </div>
+      <nav class="footer-links">
+        <h4>Contact us</h4>
+        <ul>
+          <li><a href="tel:000">Call our tipline</a></li>
+          <li><a href="mailto:">Email tip</a></li>
+          <li><a href="mailto:sofia@hopagarden.com">Report problem</a></li>
+        </ul>
       </nav>
-      <div class="footer-text">
+      <div class="">
         <h4>🐾 **Welcome to Azzi's Adventure Chronicle!** 🐾</h4>
         <p>
           Meet Azzi, the furry luminary of our heartwarming tale. From the tiniest of paws to the grandiose leaps of his
           feline prowess, Azzi's journey has been nothing short of extraordinary. Join us as we whisk you away into the
           enchanting world of this whiskered wonder, starting from the very beginning.</p>
       </div>
+
     </footer>
   </div>
+
 </body>
 
 </html>
