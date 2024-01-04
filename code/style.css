@@ -16,7 +16,6 @@ h1 {
   margin: 0;
 }
 
-
 header {
   display: flex;
   column-gap: 10px;
@@ -28,9 +27,6 @@ header {
   height: 40px;
   width: 70px;
 }
-
-
-
 
 .links ol {
   margin: 0;
@@ -57,11 +53,9 @@ header {
   width: 100%;
 }
 
-
 .intro {
   position: relative;
 }
-
 
 .intro-text {
   background-color: #a0ecf6a5;
@@ -100,16 +94,18 @@ header {
   grid-template-columns: 1fr 1fr;
 
   column-gap: 30px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .small-news h2 {
+  margin: 0;
   font-size: 18px;
 }
 
 .small-news p {
   font-weight: 300;
   font-size: 13px;
+  margin-bottom: 0px;
 }
 
 .small-news:nth-child(odd) img {
@@ -126,6 +122,22 @@ header {
   object-fit: cover;
 }
 
+footer {
+  margin-top: 50px;
+}
+
+footer h3 {
+  font-family: Comfortaa;
+  font-weight: 500;
+  text-decoration: none;
+  color: #e2a5f1;
+}
+
+footer p {
+  font-family: "Comfortaa";
+  font-weight: 300;
+  font-size: 13px;
+}
 @media (min-width: 668px) {
   body {
     background-color: #f3dff5;
@@ -144,13 +156,10 @@ header {
   }
 
   .links ol {
-   
     column-gap: 60px;
-    
   }
 
   .links a {
-    
     font-size: 25px;
   }
 
@@ -182,6 +191,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 40%;
+    row-gap: 20px;
   }
 
   .feed {
@@ -189,6 +199,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
+  }
+
+  footer {
+    margin-left: 30px;
   }
 }
 
@@ -207,8 +221,11 @@ header {
   }
 
   .links a {
-    
     font-size: 30px;
+  }
+
+  .links a:hover {
+    color: #f2e189;
   }
 
   .intro {
