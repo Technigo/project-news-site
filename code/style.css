@@ -1,12 +1,15 @@
-header {
-  display: grid;
-  grid-template-columns: 64px auto auto;
-  margin: 0px 16px;
-  font-family: "Calibri Light", sans-serif;
+/* Common styles for all screen sizes */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header-logo {
-  grid-column: 1 / 2;
+/* Header styles */
+.header-content {
+  display: grid;
+  grid-template-columns: 64px auto auto;
+  margin-right: 16px;
+  font-family: "Calibri Light", sans-serif;
 }
 
 .header-logo img {
@@ -25,133 +28,125 @@ header {
 .header-links {
   grid-column: 3 / 4;
   margin-top: auto;
-  justify-self: right;
   display: inline-flex;
   gap: 16px;
   font-size: 16px;
 }
 
-.body1-parent { 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  margin: 32px 16px;
-  gap: 16px;
-  color: dimgray;
-  font-family: "Calibri Light", sans-serif;
-}
-
-.body1-child {
+.body1-parent {
   display: flex;
-  justify-content: center;
-  border: 1px solid lightgray;
-  border-radius: 16px;
-  padding: 16px;
+  align-items: center;
+  margin: 48px 32px;
+  background-color: antiquewhite;
+  border-radius: 5%;
 }
 
 #body1-image {
-  max-width: 50%;
-  height: 100%;
-  border: 1px solid lightgray;
-  border-radius: 8px;
+  max-width: 80%;
+  margin-left: 10%;
+  height: 250px;
 }
 
-#body1-text {
-  flex-direction: column;
-  justify-content: left;
+.body1-child-text {
+  width: 100%;
+}
+.body2-parent {
+  margin: 50px 0 0 50px;
 }
 
-#body1-button {
-  align-self: center;
-  margin: 8px;
-  padding: 8px;
-  color: dimgray;
-  border-color: transparent;
-  width: 128px;
+.body2-images {
+  max-width: 90%;
+  }
+
+.body2-child {
+  background-color: rgb(224, 218, 208);
+  border-radius: 5%;
+  margin-right: 50px;
+  text-align: center;
+}
+
+/* Media queries for tablets and above */
+@media (min-width: 768px) {
+  .header-links {
+    font-size: 18px;
+    gap: 60px;
+  }
+
+  .body1-parent {
+    display: flex;
+    align-items: center;
+    margin: 48px 32px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+  }
+
+  #body1-image {
+    max-width: 90%;
+
+  }
+
+  .body1-child-text {
+    width: 60%;
+    margin-left: 24px;
+  }
+
+  .body2-parent {
+    margin-top: 50px;
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .body2-images {
+    max-width: 80%;
+    max-height: 100%;
+  }
+
+  .body2-child {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+/* Media queries for desktops and above */
+@media (min-width: 1024px) {
+.header-content {
+ margin: 0 100px 0 100px;
+}
+.header-links {
+  font-size: 20px;
+  justify-self: end;
+}
+
+.body1-parent {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 64px 48px;
+  background-color: antiquewhite;
+}
+
+#body1-image {
+  max-width: 80%;
+  height: 80%;
+}
+
+.body1-child-text {
+  margin-right: 100px;
+}
+.body2-images {
+  max-width: 80%;
+  max-height: 50%;
 }
 
 .body2-parent {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
-  margin: 32px 16px;
-  gap: 16px;
-  color: dimgray;
-  font-family: "Calibri Light", sans-serif;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  margin: 64px 48px;
 }
-
 .body2-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid lightgray;
-  border-radius: 16px;
-  padding: 16px;
+  text-align: center;
+  margin-left: 100px;
 }
-
-.body2-images {
-  align-self: center;
-  max-width: 50%;
-  height: auto;
-}
-
-
-/* For tablets and above */
-@media (min-width: 768px) {
-  .header-links {
-      font-size: 18px;
-  }
-
-  .body1-parent {
-      grid-template-columns: repeat(3, 1fr);
-      margin: 48px 32px;
-      gap: 24px;/
-  }
-
-  #body1-image {
-      max-width: 75%;
-  }
-
-  .body2-images {
-      max-width: 75%;
-  }
-
-  .body2-parent {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(1, auto);
-      margin: 48px 32px;
-      gap: 24px;
-  }
-}
-
-/* For desktops and above */
-@media (min-width: 1024px) {
-  .header {
-      grid-template-columns: 64px auto auto auto;
-  }
-
-  .header-links {
-      font-size: 20px;
-  }
-
-  .body1-parent {
-      grid-template-columns: repeat(4, 1fr);
-      margin: 64px 48px;
-      gap: 32px;
-  }
-
-  #body1-image {
-      max-width: 80%;
-  }
-
-  .body2-images {
-      max-width: 80%;
-  }
-
-  .body2-parent {
-      grid-template-columns: repeat(5, auto);
-      grid-template-rows: repeat(2, auto);
-      margin: 64px 48px;
-      gap: 32px;
-  }
 }
