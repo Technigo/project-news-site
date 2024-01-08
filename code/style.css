@@ -1,4 +1,33 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bae1ff;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+  border: 2px solid pink;
+  background-color: aqua;
+  display: flex;
+}
+
+nav {
+  background-color: black;
+  padding: 50px;
+  margin: 0px;
+  border: 2px solid blue;
+}
+
+/* Create a responsive design with the following views: Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px). Mobile < 667px.
+Tablet 668 px > 1024px. Skriv då @media (min-width: 667px) and (max-width: 1024px)    }
+Desktop <1024px 
+ */
+a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 24px;
 }
