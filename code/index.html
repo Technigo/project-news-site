@@ -32,40 +32,41 @@
     <header role="menubar" class="navbar flex-container">
       <div class="nav-brand">
         <ul class="flex-container">
-          <li class=""><img role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt=""></li>
+          <li>
+            <img id="logo-test" role="logo" class="logo" src="./assets/shield-cat-solid.svg" alt="Azzimews logo">
+          </li>
           <li class="flex-item">
             <h1>AZZImews</h1>
           </li>
         </ul>
       </div>
-      <div class="nav-desktop">
-        <nav class="flex-container">
-          <div class="nav-menu-main">
-            <ul class="flex-container">
-              <li class="nav-item"><a href="#">Whisker-Whirling Adventures</a></li>
-              <li class="nav-item"><a href="#">Heartwarming Tales</a></li>
-              <li class="nav-item"><a href="#">Everyday Wonders</a></li>
-            </ul>
-          </div>
-          <div class="nav-menu-sub">
-            <ul class="flex-container">
-              <li class="nav-item"><a href="#">About</a></li>
-              <li class="nav-item"><a href="#">Contact</a></li>
-              <li class="nav-item signup"><a href="#">Sign up</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="nav-menu-main nav-desktop">
+        <ul class="flex-container">
+          <li class="nav-item"><a href="#">Whisker-Whirling Adventures</a></li>
+          <li class="nav-item"><a href="#">Heartwarming Tales</a></li>
+          <li class="nav-item"><a href="#">Everyday Wonders</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-menu-sub nav-desktop">
+        <ul class="flex-container">
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item signup"><a href="#">Sign up</a></li>
+        </ul>
+      </nav>
       <div class="menu-toggle">
-        <a href="javascript:void(0)" onclick="toggleMenu()">
+        <a id="menu-toggle" href="javascript:void(0)" onclick="toggleMenu()">
           <i class="fa-solid fa-bars fa-2xl"></i>
         </a>
       </div>
       <div id="menu-drawer" class="menu-drawer">
         <nav>
           <ul class="nav-menu-main">
-            <li class="nav-item icon"><a href="javascript:void(0)" onclick="toggleMenu()"><i
-                  class="fa-solid fa-xmark fa-2xl"></i></a></li>
+            <li class="nav-item icon">
+              <a href="javascript:void(0)" onclick="toggleMenu()">
+                <i class="fa-solid fa-xmark fa-2xl"></i>
+              </a>
+            </li>
             <li class="nav-item"><a href="#">Whisker-Whirling Adventures</a></li>
             <li class="nav-item"><a href="#">Heartwarming Tales</a></li>
             <li class="nav-item"><a href="#">Everyday Wonders</a></li>
@@ -197,79 +198,82 @@
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_climbing_380x304.jpg" alt="Azzi climbing in window" width="100%">
-            <h3>SPACE CAT AZZI</h3>
-            <p><span class="news-category">Whisker-Whirling Adventures </span>Feline Explorer Conquered the Untamed
-              Heights of the Bookshelf Galaxy!</p>
+            <h3>Purr-sonal Triumph in Gravity-Defying Feat</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Feline explorer conquered the untamed
+              heights of the bookshelf galaxy.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_hello_380x304.jpg" alt="" width="100%">
-            <h3>PAW-SITIVELY HEROIC</h3>
-            <p><span class="news-category">Heartwarming Tales </span>Tiny Toy Mouse Rescued, Melts Hearts Across the
-              Nation</p>
+            <h3>Tiny Toy Mouse Rescued, Melts Hearts Across the
+              Nation</h3>
+            <p><span class="news-category">Heartwarming Tales </span>Heroic act captures the nation's admiration for his
+              paw-sitively heartening deeds.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_sleeping_380x304.jpg" alt="Azzi sleeping" width="100%">
-            <h3>RAINBOW NAPS</h3>
-            <p><span class="news-category">Heartwarming Tales </span>Midday Siesta Turns Into a Technicolor Dream –
-              Witness the Magic</p>
+            <h3>Midday Siesta Turns Into a Technicolor Dream – Witness the Magic</h3>
+            <p><span class="news-category">Heartwarming Tales </span> Enchanting spectacle of Azzi's snoozing captivates
+              onlookers, turning an ordinary nap into a mesmerizing display of feline charm.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_bowl_380x304.JPG" alt="" width="100%">
-            <h3>MEOW-SICAL PRODIGY</h3>
-            <p><span class="news-category">Heartwarming Tales </span>Late-Night Serenade Takes the Neighborhood by
-              Storm</p>
+            <h3>Late-Night Serenade Takes the Neighborhood by Storm</h3>
+            <p><span class="news-category">Heartwarming Tales </span>Azzi, the neighborhood's meow-sical prodigy,
+              orchestrates a nocturnal performance that resonates throughout the community.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_hiding_380x304.jpeg" alt="Azzi hiding in food bag" width="100%">
-            <h3>SUSHI SAMURAI</h3>
-            <p><span class="news-category">Everyday Wonders </span>Azzi Attempts to Master the Art of Stealing Sushi –
-              Results Are Adorable</p>
+            <h3>Azzi Attempts to Master the Art of Stealing Sushi –
+              Results Are Adorable</h3>
+            <p><span class="news-category">Everyday Wonders </span>Endearing endeavor showcases prowess in the culinary
+              arts, leaving a lasting impression on kitchen spectators.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_computer_380x304.jpg" alt="Azzi sleeping by work computer" width="100%">
-            <h3>NAPTIME NAVIGATION</h3>
-            <p><span class="news-category">Everyday Wonders </span>Sweet Dreams Adrift in a Sea of Pixels</p>
+            <h3>Sweet Dreams Adrift in a Sea of Pixels</h3>
+            <p><span class="news-category">Everyday Wonders </span>The resident feline dreamweaver, has been spotted
+              indulging in a luxurious catnap, nestled beside the warm hum of the computer.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_toiletpaper_380x304.jpg" alt="Azzi playing with toilet paper" width="100%">
-            <h3>TOILET PAPER TYCOON</h3>
-            <p><span class="news-category">Whisker-Whirling Adventures </span>Everyday Essentials Turns Into Playtime
-              Extravaganza</p>
+            <h3>Everyday Essentials Turns Into Playtime
+              Extravaganza</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Toilet paper tycoon transforms the humble
+              bathroom into a playground of epic proportions.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_giftwrapping_380x304.jpeg" alt="Azzi tearing christmas wrapping" width="100%">
-            <h3>HOLIDAY HIJINKS</h3>
-            <p><span class="news-category">Everyday Wonders </span>Holiday Gift Wrapping Interrupted by Merry
-              Fur-helper
-            </p>
+            <h3>Holiday Gift Wrapping Interrupted by Merry
+              Fur-helper</h3>
+            <p><span class="news-category">Everyday Wonders </span>Festive feline lends a paw, or should we say a
+              paw-full, in the wrapping of Christmas magic.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
             <img src="./assets/Azzi_dishwasher_380x304.jpeg" alt="Azzi hiding in dishwasher" width="100%">
-            <h3>DISHWASHER DISCOVERY</h3>
-            <p><span class="news-category">Whisker-Whirling Adventures </span>Quest for the Purr-fect Hideout
-              Unveiled!
-            </p>
+            <h3>Quest for the Purr-fect Hideout
+              Unveiled!</h3>
+            <p><span class="news-category">Whisker-Whirling Adventures </span>Azzi, the adventurous whiskered wonder,
+              has been caught red-pawed peeking out from an unexpected nook – the dishwasher.</p>
           </a>
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
-            <img src="" alt="" width="100%">
             <h3>CAT-ASTROPHE AVERTED</h3>
             <p><span class="news-category">Whisker-Whirling Adventures </span>Hilarious Encounter with a Feather
               Duster
@@ -278,7 +282,6 @@
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
-            <img src="" alt="" width="100%">
             <h3>FURRY CLEANING FAIRY</h3>
             <p><span class="news-category">Everyday Wonders </span>Unconventional Approach to Dusting Leaves Everyone
               in
@@ -287,7 +290,6 @@
         </div>
         <div class="flex-item news-card news-item">
           <a href="#">
-            <img src="" alt="" width="100%">
             <h3>FELINE ROAD TRIP</h3>
             <p><span class="news-category">Everyday Wonders </span>Epic Journey from Couch to Kitchen Leaves Paw
               Prints
