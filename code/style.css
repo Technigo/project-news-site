@@ -2,15 +2,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 header {
   background-color: #6ec0ff;
+  margin: 0 0 24px 0;
+
 }
 
 body {
   background-color: #bae1ff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 li {
@@ -23,9 +25,10 @@ a {
 }
 
 .navbar {
-  min height: 70px;
+  min-height: 70px;
   padding: 0 24px;
   margin-bottom: 3px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,10 +64,47 @@ nav-link {
 }
 
 
+.welcome div,
+h1 {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  text-align: center;
+}
+
+.main-article-body {
+  background-color: #ceeaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 50px;
+  overflow: hidden;
+}
+
+.main-article img {
+  width: 60%;
+}
+
+.article-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  place-items: center;
+}
+
+
+.article-image {
+  width: 50%;
+  text-align: center;
+}
+
+.article-title .article-description .article-link
 
 /* Create a responsive design with the following views: Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px). Mobile < 667px.
-Tablet 668 px > 1024px. Skriv då @media (min-width: 667px) and (max-width: 1024px)    }
-Desktop <1024px 
  */
 a {
   color: white;
@@ -73,8 +113,8 @@ a {
   padding: 24px;
 }
 
-/* On tablets and bigger screens, from 668px and up*/
-@media (min-width: 668px) {
+/* On tablets from 667 > 1024px*/
+@media (min-width: 667px) and (max-width: 1024px) {
   .hamburger-menu {
     display: none;
   }
@@ -83,3 +123,5 @@ a {
     display: flex;
   }
 }
+
+@media (min-width:1025px) {}
