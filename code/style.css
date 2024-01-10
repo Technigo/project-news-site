@@ -1,21 +1,66 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #6ec0ff;
 }
 
 body {
   background-color: #bae1ff;
-  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-header {}
+li {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .navbar {
-  background-color: green;
-  padding: 20px;
-  border: 5px solid blue;
-
+  min height: 70px;
+  padding: 0 24px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
+
+.nav-menu {
+  display: none;
+  justify-content: space-between;
+  align-content: center;
+  gap: 60px;
+
+}
+
+nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: #bae1ff;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0px;
+  background-color: white;
+}
+
+
 
 /* Create a responsive design with the following views: Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px). Mobile < 667px.
 Tablet 668 px > 1024px. Skriv då @media (min-width: 667px) and (max-width: 1024px)    }
@@ -26,4 +71,15 @@ a {
   font-size: 24px;
   text-decoration: none;
   padding: 24px;
+}
+
+/* On tablets and bigger screens, from 668px and up*/
+@media (min-width: 668px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
 }
