@@ -1,4 +1,142 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: linear-gradient(to right, pink, orange);
+  font-family: helvetica;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+img {
+  width: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+.navbar {
+  background-color: rgb(248, 118, 11);
+  height: 70px;
+  padding: 0 30px;
+}
+
+.navbar h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  padding: 9px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: darkred;
+  border-bottom: 3px solid darkred;
+}
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+}
+
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-1 {
+    grid-column: 1/ span 2;
+  }
+
+  .item-1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  min-height: 100%;
+  background: rgb(245, 171, 102);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card article {
+  padding: 20px;
+  display: flex;
+
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card p {
+  flex: 1;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
 }

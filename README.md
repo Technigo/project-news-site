@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to build a news site. Containing a header with a logo and navbar. And a big news section and a grid of cards with other news.
 
 ## The problem
 
