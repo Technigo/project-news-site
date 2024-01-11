@@ -2,126 +2,98 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-header {
-  background-color: #6ec0ff;
-  margin: 0 0 24px 0;
-
-}
-
-body {
-  background-color: #bae1ff;
-}
-
-li {
+  text-decoration: none;
   list-style: none;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #bae1ff;
 }
 
-.navbar {
-  min-height: 70px;
-  padding: 0 24px;
-  margin-bottom: 3px;
+nav {
+  height: 75px;
   width: 100%;
+  background-color: #6ec0ff;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
   align-items: center;
+  width: auto;
+  margin: 6px;
+}
+
+.logo {
+  color: white;
+  margin-left: 20px;
+}
+
+.navlist {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 75px;
+  background: #ceeaff;
+  float: right;
+  text-align: center;
+  transition: all .5s;
 
 }
 
-.nav-menu {
-  display: none;
-  justify-content: space-between;
-  align-content: center;
-  gap: 60px;
-
+.navlist li {
+  opacity: 0;
+  line-height: 20px;
+  margin: 30px 0px;
+  transition: all .5s;
 }
 
-nav-link {
-  transition: 0.7s ease;
+.navlist li a {
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
 }
 
-.nav-link:hover {
-  color: #bae1ff;
+.navlist li a.active,
+.navlist li a:hover {
+  color: #6ec0ff;
+  transition: 0.5s;
 }
 
 .hamburger-menu {
-  cursor: pointer;
-}
-
-.bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0px;
-  background-color: white;
-}
-
-
-.welcome div,
-h1 {
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
-.welcome p {
-  text-align: center;
-}
-
-.main-article-body {
-  background-color: #ceeaff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  margin: 50px;
-  overflow: hidden;
-}
-
-.main-article img {
-  width: 60%;
-}
-
-.article-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  place-items: center;
-}
-
-
-.article-image {
-  width: 50%;
-  text-align: center;
-}
-
-.article-title .article-description .article-link
-
-/* Create a responsive design with the following views: Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px). Mobile < 667px.
- */
-a {
+  font-size: 20px;
   color: white;
-  font-size: 24px;
-  text-decoration: none;
-  padding: 24px;
+  float: right;
+  line-height: 75px;
+  margin-right: 40px;
+  cursor: pointer;
+
 }
 
-/* On tablets from 667 > 1024px*/
+#check {
+  display: none;
+}
+
+#check:checked~.navlist {
+  height: 100vh;
+}
+
+#check:checked~.navlist li {
+  opacity: 1;
+}
+
 @media (min-width: 667px) and (max-width: 1024px) {
+
   .hamburger-menu {
     display: none;
   }
 
-  .nav-menu {
-    display: flex;
-  }
-}
+  .navlist {
+    position: relative;
 
-@media (min-width:1025px) {}
+  }
+
+}

@@ -18,43 +18,28 @@
 
 <body>
   <header>
-    <!-- This is the start of the header with navigation bar, logo and links -->
-    <nav class="navbar">
-
+    <!-- This is the start of the navigation bar-->
+    <nav>
       <!-- This is the logo-->
-      <a class="logo" href="#Puppy-news-logo">
-        <i class="fa-solid fa-dog">
-        </i>
-      </a>
-
-      <!-- This is the menu for mobile -->
-      <div class="hamburger-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <div class="logo-container">
+        <a class="logo" href="#Puppy-news-logo">
+          <i class="fa-solid fa-dog"> </i>
+        </a>
       </div>
 
-      <!-- This is the menu for desktop and tablet -->
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="#news"> News
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about"> About
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#archive"> Archive
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"> Contact
-          </a>
-        </li>
-      </ul>
+      <!-- This is the menu for mobile -->
+      <input type="checkbox" id="check">
+      <label for="check" class="hamburger-menu">
+        <i class="fa-solid fa-bars"> </i>
+      </label>
 
+      <!-- This is the menu for desktop and tablet -->
+      <ul class="navlist">
+        <li> <a class="active" href="#news"> News </a> </li>
+        <li> <a href="#about"> About </a> </li>
+        <li> <a href="#archive"> Archive </a> </li>
+        <li> <a href="#contact"> Contact </a> </li>
+      </ul>
     </nav>
   </header>
   <!--End of header and start of main-->
@@ -72,7 +57,7 @@
 
     <section class="main-article">
       <!-- The main article -->
-      <div class="main-article-body">
+      <div id="main-article-body">
         <img src="./small-puppy.JPG" alt="Picture of small puppy">
         <h2> 4 week old Nellie</h2>
         <p> la la la la </p>
