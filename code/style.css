@@ -6,11 +6,35 @@
   list-style: none;
 }
 
+:root {
+
+  /*Root-tags*/
+  --heading02: 18px;
+  --anchor-tags: 16px;
+  --paragraph: 14px;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: #bae1ff;
-  font-size: 14px;
+  font-size: var(--paragraph)
 }
+
+h2 {
+  font-size: var(--heading02)
+}
+
+p {
+  font-size: var(--paragraph)
+}
+
+a {
+  font-size: var(--anchor-tags);
+  color: white;
+  background-color: #ceeaff;
+
+}
+
 
 nav {
   border-bottom: 1px;
@@ -49,12 +73,6 @@ nav {
   line-height: 30px;
   margin: 50px 0px;
   transition: all .5s;
-}
-
-.navlist li a {
-  color: white;
-  font-size: 16px;
-
 }
 
 .navlist li a.active,
@@ -105,8 +123,38 @@ main {
 
 .welcome div p {
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.3;
 }
+
+.main-article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+#main-article-body {
+  background-color: #ceeaff;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#main-article-body img {
+  width: 70%;
+  height: auto;
+  padding-top: 3rem;
+}
+
+#main-article-body a {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #6ec0ff;
+  margin-top: 0.3rem;
+}
+
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .logo-container {
