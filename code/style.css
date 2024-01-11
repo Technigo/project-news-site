@@ -9,12 +9,14 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: #bae1ff;
+  font-size: 14px;
 }
 
 nav {
+  border-bottom: 1px;
+  background-color: #6ec0ff;
   height: 75px;
   width: 100%;
-  background-color: #6ec0ff;
   display: flex;
   justify-content: space-between;
 }
@@ -23,12 +25,12 @@ nav {
   display: flex;
   align-items: center;
   width: auto;
-  margin: 6px;
+  margin: 0;
 }
 
 .logo {
   color: white;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 .navlist {
@@ -40,20 +42,19 @@ nav {
   float: right;
   text-align: center;
   transition: all .5s;
-
 }
 
 .navlist li {
   opacity: 0;
-  line-height: 20px;
-  margin: 30px 0px;
+  line-height: 30px;
+  margin: 50px 0px;
   transition: all .5s;
 }
 
 .navlist li a {
-  font-weight: bold;
   color: white;
   font-size: 16px;
+
 }
 
 .navlist li a.active,
@@ -62,6 +63,7 @@ nav {
   transition: 0.5s;
 }
 
+/* this is the hamburger-menu*/
 .hamburger-menu {
   display: block;
   font-size: 20px;
@@ -70,7 +72,6 @@ nav {
   line-height: 75px;
   margin-right: 40px;
   cursor: pointer;
-
 }
 
 #check {
@@ -85,7 +86,40 @@ nav {
   opacity: 1;
 }
 
+main {
+  padding: 1.5rem;
+}
+
+/* Limiting the welcome-section width isn't larger than 667px and making sure it is aligned in the middle*/
+.welcome {
+  max-width: 667px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1.5rem;
+}
+
+.welcome div h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.welcome div p {
+  text-align: center;
+  line-height: 1.5;
+}
+
 @media (min-width: 667px) and (max-width: 1024px) {
+  .logo-container {
+    margin-left: 25px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  nav {
+    height: 85px;
+  }
 
   .hamburger-menu {
     display: none;
@@ -93,7 +127,68 @@ nav {
 
   .navlist {
     position: relative;
+    height: 85px;
+    top: 0;
+    text-align: right;
+    margin-right: 30px;
+    transition: none;
+    background-color: #6ec0ff;
+  }
 
+  .navlist li {
+    display: inline-block;
+    opacity: 1;
+    line-height: 85px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .navlist li a.active,
+  .navlist li a:hover {
+    color: white;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo-container {
+    margin-left: 30px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  nav {
+    height: 85px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navlist {
+    position: relative;
+    height: 85px;
+    top: 0;
+    float: right;
+    text-align: right;
+    margin-right: 50px;
+    transition: none;
+    background-color: #6ec0ff;
+
+  }
+
+  .navlist li {
+    display: inline-block;
+    opacity: 1;
+    line-height: 85px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .navlist li a.active,
+  .navlist li a:hover {
+    color: white;
   }
 
 }
