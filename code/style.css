@@ -31,7 +31,6 @@ p {
 a {
   font-size: var(--anchor-tags);
   color: white;
-  background-color: #ceeaff;
 
 }
 
@@ -155,6 +154,34 @@ main {
   margin-top: 0.3rem;
 }
 
+.other-articles {
+  display: grid;
+  grid-template-columns: (5, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.article-body {
+  background-color: #ceeaff;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.article-body img {
+  width: 60%;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.article-body a {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #6ec0ff;
+  margin-top: 0.3rem;
+}
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .logo-container {
