@@ -20,4 +20,6 @@ The main layout is created using grid, while the content is aligned with flexbox
 Since I had a lot of time, I stretch the requirements - mainly to try out things I wanted to learn. Having more time and knowledge, I would have used more js. For example, I wanted to arrange the 'Most read' based on clicks, and the 'Latest' based on dates. Also, I saw that others don't really use 'onClick' to open the menu, so I want to know how that works.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Deployed to Netlify -> https://sofias-news-site.netlify.app/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8c37f92-2203-4706-aed0-87f6d0565f12/deploy-status?branch=master)](https://app.netlify.com/sites/mellifluous-chebakia-ca79b1/deploys)
