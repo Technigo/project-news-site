@@ -15,4 +15,4 @@ Trying to use Figma for low fidelity wireframe and try to start building the web
 The biggest struggle was the responsive design and implementing a hamburger menu.
 
 ## View it live
-You can view the final project here as soon as it's done.
+https://gossip-gazette.netlify.app/
