@@ -1,23 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hreflang="x-default">
+    <title> The Gossip Gazette | Your News Platform </title>
+    <link rel="icon" type="image/x-icon" href="assets/gossip-gazette-logo.png">
+    <meta name="description" content="The latest tea exclusively here on your news platform.">
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header class="header">
+      <div class="header-image">
+        <img class="logo" src="assets/gossip-gazette-long-transparent.png" alt="The Gossip Gazette Logo">
+      </div>
+      <nav>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+          <ul class="topnav">
+            <li><a href="home" class="active">Home</a></li>
+            <li><a href="top-news.html">Top News</a></li>
+            <li><a href="local-gossip.html">Local Gossip</a></li>
+            <li><a href="international-scandals.html">International Scandals</a></li>
+         </ul>
+      </nav>  
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+     <div class="main-title">
+        <h1 class="top-title">The Gossip Gazette – News people talk about</h1>
+      </div>
+    <main class="container">
+      <article class="big-news">
+        <img class="big-news-image" src="assets/pexels-alena-darmel-6940093.jpg" alt="sentient AI" style="width: 100%;" >
+        <h2 class="big-news-title">AI successfully integrated in society</h2> 
+          <p>First sentient robot is officially a New York citizen. It has passed the immigration interview without being noticed as a robot.</p>
+      </article>
+      <div class="item item-1">
+        <img class="small-news-img" src="assets/shoes.jpg" alt="black and white shoes" style="width: 100%;">
+         <h3 class="item-title">Big Foot's shoe size revealed</h3>
+          <p>There are new evidence of how large Big Foot's foot was. All we know about Big Foot shoe size.</p>
+      </div>
+      <div class="item item-2">
+        <img class="small-news-img" src="assets/handshake-business.jpg" alt="handshake" style="width: 100%;">
+        <h3 class="item-title">Sweden and Switzerland fusion</h3>
+          <p>It is decided – Switzerland and Sweden will be one country to avoid further confusion.</p>
+      </div>
+      <div class="item item-3">
+        <img class="small-news-img" src="assets/lotto-balls.jpg" alt="colorful lotto balls" style="width: 100%;">
+        <h3 class="item-title">19-year old wins 7 billion Euro</h3> 
+          <p>The high school student cracked the jackpot of 7 billion Euro last week. </p>
+      </div>
+      <div class="item item-4">
+        <img class="small-news-img" src="assets/train.jpg" alt="black and white shoes" style="width: 100%;">
+        <h3 class="item-title">Hamburg to Seoul in 6 Hours</h3>
+          <p>New high-speed train from Germany to South Korea will has its first commercial ride in 2025.</p>
+      </div>
+      <div class="item item-5">
+        <img class="small-news-img" src="assets/kid-playing-video-games.jpg" alt="kid is playing video games" style="width: 100%;">
+        <h3 class="item-title">Video games mandatory in school</h3>
+          <p>Summer 2024 Children from 3rd grade will have video games as a school subject.</p>
+      </div>
+      <div class="item item-6">
+        <img class="small-news-img" src="assets/apple-ipod.jpg" alt="iPod in silver" style="width: 100%;">
+        <h3 class="item-title">Apple is going back to the roots</h3>
+          <p>The legendary iPod gets a revival. The little divices from the past are popular than ever.</p>
+      </div>
+      <div class="item item-7">
+        <img class="small-news-img" src="assets/dancing-kids.jpg" alt="girls dancing in group" style="width: 100%;">
+        <h3 class="item-title">Kids are flossing again</h3>
+          <p>Viral trend: Flossing is having a comeback. Thanks to TikTok the old trend is back for 2024.</p>
+      </div>
+      <div class="item item-8">
+        <img class="small-news-img" src="assets/cut-orange.jpg" alt="oranges cut" style="width: 100%;">
+        <h3 class="item-title">New super fruit discovered</h3>                
+          <p>Honduras has a power fruit that gives you all the vitamins you need with only one bite.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy;2024 The Gossip Gazette. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://github.com/ohitsnathalie">
+          <img src="assets/github.png" alt="github"> 
+        </a>
+        <a href="https://www.linkedin.com/in/nathalie-tu/">
+          <img src="assets/linkedin.png" alt="linkedin">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

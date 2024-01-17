@@ -1,12 +1,18 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+First project is about creating a news or magazine website with responsive design. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+It should contain a header with name of the site, a logo and a navigation bar.
+
+Requierments for the project:
+- Containing CSS Grid and Flexbox
+- Responsive design (Desktop 4 columns, tablet 2 columns, mobile 1 column (it should look good on devices from 320px width up to 1600px))
+- The site is build with a header, main news article, and a grid of news articles.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Trying to use Figma for low fidelity wireframe and try to start building the website as soon as possible.
+The biggest struggle was the responsive design and implementing a hamburger menu.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+You can view the final project here as soon as it's done.
