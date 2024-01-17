@@ -1,4 +1,88 @@
-html {
-  background: #0025ff;
+body {
+  background-color: peachpuff;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+
+}
+
+h1 {
+  color: rgb(47, 47, 204);
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  display: flex;
+  justify-content: column;
+  flex-direction: column;
+  border: solid rgb(67, 5, 130);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(67, 67, 238);
+}
+
+.navigation-bar-img {
+  display: flex;
+  flex-direction: flex-start;
+  padding: 20px;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  margin-right: 20px;
+  color: #fff;
+
+}
+
+.navigation-bar-title {
+  display: flex;
+  justify-content: center;
+}
+
+
+.instagram-story-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  border-radius: 5px;
+  border: 2px solid blue;
+  background-color: peachpuff;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* This is just an example för setting up media queries
+/* this is for tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
+  body {
+    background: blue;
+  }
+
+  h1 {
+    color: #fff;
+  }
+}
+
+/* this is for desktop */
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: pink;
+
+  }
 }
