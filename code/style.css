@@ -135,7 +135,6 @@ hr {
 
 .wrapper {
   display: grid;
-  grid-template: repeat(3, 1fr) 1fr;
   grid-template-areas:
     "header"
     "main"
@@ -145,7 +144,6 @@ hr {
 .grid-container {
   margin: 0;
   display: grid;
-  grid-template: repeat(3, 1fr) 1fr;
   gap: 10px;
   grid-template-areas:
     "big-news"
@@ -160,6 +158,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
 }
 
 .flex-item {
@@ -468,7 +467,7 @@ footer li {
 }
 
 /* for desktops */
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .nav-menu-main {
     order: 2;
   }
