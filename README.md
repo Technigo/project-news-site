@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I created a 1-pager website for digging into the Bagel world, including the feature article about how bagel becomes popular and articles aside that are related to the baking, culture and recommendations of Bagel.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started by designing the structure, then pick the theme color of the website. Without saying, I also encountered obstacles, such as how to center the items, when to use grid vs Flexbox, how to create a hamburger-like nav bar etc.
+I googled a lot along the way, also viewed several brilliant examples provided by the instructions.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
