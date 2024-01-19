@@ -3,10 +3,17 @@ html {
   color: #fff;
 }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
 .main-nav {
   display: inline;
+  align-self: center;
 }
 
 a {
   text-decoration: none;
+  display: block;
 }
