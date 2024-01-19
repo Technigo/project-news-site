@@ -1,6 +1,9 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 20px;
 }
 
 .header {
@@ -16,4 +19,11 @@ html {
 a {
   text-decoration: none;
   display: block;
+}
+
+.big-news {
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+  align-items: center;
+  justify-content: center;
 }
