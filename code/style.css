@@ -22,8 +22,22 @@ a {
 }
 
 .big-news {
+  margin: 20px;
   display: grid;
   grid-template-rows: 25% 50% 25%;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  grid-template-areas:
+    "gridrow1"
+    "lucerne"
+    "gridrow3";
+}
+
+.lucerne {
+  grid-area: lucerne;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
