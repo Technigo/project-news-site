@@ -1,5 +1,5 @@
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: palegoldenrod;
   /*box-sizing: border-box;*/
 }
@@ -20,7 +20,7 @@ body {
 
 a {
   text-decoration: none;
-  display: block;
+  /*display: block;*/
 }
 
 p {
@@ -56,4 +56,12 @@ img {
     'head-lakecon head-lucann head-willisau head-basel'
     'img-lakecon img-lucann img-willisau img-basel'
     'p-lakecon p-lucann p-willisau p-basel';*/
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
