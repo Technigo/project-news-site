@@ -1,6 +1,7 @@
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: palegoldenrod;
+  /*box-sizing: border-box;*/
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .main-nav {
@@ -27,7 +28,7 @@ p {
 }
 
 .big-news {
-  margin: 20px;
+  margin: 20px 0;
   display: grid;
   grid-template-rows: 25% 50% 25%;
   align-items: center;
@@ -36,15 +37,23 @@ p {
   max-height: 100%;
 }
 
-.lucerne {
+img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
 .other-news {
-  margin: 20px;
+  margin: 20px 0;
   display: grid;
+  /*grid-template-columns: repeat(4, 25%);*/
+  grid-template-rows: repeat(4, 25%);
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   max-height: 100%;
+  /*grid-template-areas:
+    'head-lakecon head-lucann head-willisau head-basel'
+    'img-lakecon img-lucann img-willisau img-basel'
+    'p-lakecon p-lucann p-willisau p-basel';*/
 }
