@@ -106,15 +106,26 @@ footer {
 @media (min-width: 668px) {
   .other-news {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
+    grid-template-areas:
+      'head-lakecon head-lucann'
+      'img-lakecon img-lucann'
+      'p-lakecon p-lucann'
+      'head-willisau head-basel'
+      'img-willisau img-basel'
+      'p-willisau p-basel';
   }
 }
 
 @media (min-width: 1024px) {
   .other-news {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 20px
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      'head-lakecon head-lucann head-willisau head-basel'
+      'img-lakecon img-lucann img-willisau img-basel'
+      'p-lakecon p-lucann p-willisau p-basel';
   }
 }
