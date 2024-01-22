@@ -46,8 +46,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   grid-column: span 4;
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
 }
 .photo-display {
   width: 100%;
@@ -73,14 +73,20 @@ h2 {
 .small-news {
   grid-column: span 4;
   width: 90%;
-  height: 90%;
   justify-content: center;
-  margin: 20px;
+  border: 2px dotted;
+  margin: 0px 10px 20px 10px;
+}
+.small-news h3 {
+  padding-left: 10px;
+}
+.small-news p {
+  padding: 10px;
 }
 .small-news img {
   width:80%;
   float: left;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 @media (min-width: 667px) {
@@ -94,8 +100,11 @@ h2 {
     font-size: 48px;
     padding-top: 20px;
   }
+  .main-menu {
+    margin-top: 10px;
+  }
   .big-news {
-      display: inline;
+    display: inline;
   }
   h2 {
     margin: 0px;
@@ -118,7 +127,7 @@ h2 {
 
 @media (min-width: 1025px) {
   .big-news img {
-      width: 300px;
+    width: 300px;
   }
   .small-news {
     grid-column: span 1;
