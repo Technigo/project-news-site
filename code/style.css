@@ -1,9 +1,8 @@
 body {
   background-color: aliceblue;
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  margin: 0px;
 }
 h2, h3 {
     font-family: 'Playpen Sans', cursive;
@@ -15,7 +14,10 @@ p {
 header {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: 1fr 5fr 40%;
+  grid-template-columns: 1fr 5fr 1fr;
+  height: 100px;
+  border-bottom:2px solid black;
+  padding-bottom: 10px;
 }
 .logo {
   height: 100px;
@@ -24,6 +26,8 @@ header {
 h1 {
   font-family: 'Almendra SC', serif;
   font-size: 40px;
+  margin: 0px;
+  padding-top: 10px;
 }
 .main-menu {
   margin-top: 30px;
@@ -42,7 +46,6 @@ h1 {
   justify-content: center;
   flex-direction: column;
   grid-column: span 4;
-  border:2px solid black;
   margin: 10px;
   padding: 10px;
 }
@@ -80,9 +83,16 @@ h2 {
   margin-right: 10px;
 }
 
-@media (min-width: 667px) and (max-width: 1024px) {
-  body {
-      background-color: aquamarine;
+@media (min-width: 667px) {
+  header {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 5fr 40%;
+    height: 80px;
+  }
+  h1 {
+    font-size: 48px;
+    padding-top: 20px;
   }
   .big-news {
       display: inline;
@@ -96,37 +106,21 @@ h2 {
     float: left;
     width: 300px;
   }
-  .small-news {
-    grid-column: span 2;
-  }
   .small-news img {
       width: 40%;
   }
 }
+@media (min-width: 667px) and (max-width: 1024px) {
+  .small-news {
+    grid-column: span 2;
+  }
+}
 
 @media (min-width: 1025px) {
-  body {
-      background-color: plum;
-  }
   .big-news img {
       width: 300px;
   }
-  .big-news {
-      display: inline
-  }
-  .photo-display {
-    float: left;
-    width: 300px;
-  }
-  h2 {
-    margin: 0px;
-    padding: 20px 0px 10px 0px;
-    font-size: 30px;
-  }
   .small-news {
     grid-column: span 1;
-  }
-  .small-news img {
-      width: 40%;
   }
 }
