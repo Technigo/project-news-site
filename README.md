@@ -1,12 +1,18 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+My newsite is about plants, because I love plants. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I had some problems with the tags, I was getting lost and forget to close some tags, and hence the outcom was not as I wished. So I went throug it again.
+
+Anothe issue I had with the pictures. I wasn´t able to manipulate the size in CSS so I decide to do it in HTML.
+
+I wanted to make some nice caption but for some reason, it didn´t worked. When I was trying the same language in Code Pen, there it was working but not here. So I gave up on it. 
+
+I used a lot CodePen as a side project where I can test out things. 
+
+If I would have more time and patience, probably I would work more on getting the design I want it with the some extra features.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
