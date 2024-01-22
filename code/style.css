@@ -1,12 +1,14 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: palegoldenrod;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 body {
   margin: 20px;
 }
+
+/*All things header coming up*/
 
 .header {
   display: flex;
@@ -16,19 +18,21 @@ body {
 }
 
 .main-nav {
+  align-self: right;
   display: flex;
-  align-self: center;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+  display: none;
 }
 
 li {
   display: inline;
-  overflow: hidden;
+
 }
 
 .menu label {
@@ -53,10 +57,13 @@ p {
   text-align: justify;
 }
 
+/*Big News coming up*/
+
 .big-news {
   margin: 20px 0;
   display: grid;
   grid-template-rows: 25% 50% 25%;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   max-width: 100%;
@@ -69,10 +76,12 @@ img {
   object-fit: cover;
 }
 
+/*other news coming up*/
+
 .other-news {
   margin: 20px 0;
   display: grid;
-  /*grid-template-columns: repeat(4, 25%);*/
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 25%);
   align-items: center;
   justify-content: center;
@@ -90,4 +99,22 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/*Responsive Design coming up */
+
+@media (min-width: 668px) {
+  .other-news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .other-news {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px
+  }
 }
