@@ -1,4 +1,4 @@
-# News Site "Welcome to Ocean News"
+# News Site "Welcom to your daily ocean update!"
 
 A newssite about the ocean and its problems and challenges.  
 The newssite is based on a grid layout. Flexbox is used to style the content of the newscards. The big news spans 4 columns in desktop, 2 in tablet and one in mobile size.
