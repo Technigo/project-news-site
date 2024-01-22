@@ -11,11 +11,37 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .main-nav {
-  display: inline;
+  display: flex;
   align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  display: inline;
+  overflow: hidden;
+}
+
+.menu label {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+#menu {
+  display: none;
 }
 
 a {
