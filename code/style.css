@@ -82,15 +82,24 @@ img {
   margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: auto;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   max-height: 100%;
-  /*grid-template-areas:
-    'head-lakecon head-lucann head-willisau head-basel'
-    'img-lakecon img-lucann img-willisau img-basel'
-    'p-lakecon p-lucann p-willisau p-basel';*/
+  grid-template-areas:
+    'head-lakecon'
+    'img-lakecon'
+    'p-lakecon'
+    'head-lucann'
+    'img-lucann'
+    'p-lucann'
+    'head-willisau'
+    'img-willisau'
+    'p-willisau'
+    'head-basel'
+    'img-basel'
+    'p-basel';
 }
 
 footer {
@@ -106,7 +115,7 @@ footer {
 @media (min-width: 668px) {
   .other-news {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto;
     grid-gap: 20px;
     grid-template-areas:
       'head-lakecon head-lucann'
@@ -121,11 +130,61 @@ footer {
 @media (min-width: 1024px) {
   .other-news {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
     grid-template-areas:
       'head-lakecon head-lucann head-willisau head-basel'
       'img-lakecon img-lucann img-willisau img-basel'
       'p-lakecon p-lucann p-willisau p-basel';
   }
+}
+
+/* Grid areas*/
+
+.head-lakecon {
+  grid-area: head-lakecon;
+}
+
+.img-lakecon {
+  grid-area: img-lakecon;
+}
+
+.p-lakecon {
+  grid-area: p-lakecon;
+}
+
+.head-lucann {
+  grid-area: head-lucann;
+}
+
+.img-lucann {
+  grid-area: img-lucann;
+}
+
+.p-lucann {
+  grid-area: p-lucann;
+}
+
+.head-willisau {
+  grid-area: head-willisau;
+}
+
+.img-willisau {
+  grid-area: img-willisau;
+}
+
+.p-willisau {
+  grid-area: p-willisau;
+}
+
+.head-basel {
+  grid-area: head-basel;
+}
+
+.img-basel {
+  grid-area: img-basel;
+}
+
+.p-basel {
+  grid-area: p-basel;
 }
