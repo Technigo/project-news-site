@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Make a news page and style with grid or flex
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I found grids challenging when we started up in august, and I still prefer flexbox more. Also now that we work in styled components, I see why this long code was hard to navigate.
+
+Going back to this project I kept all the code in media quieries (both what was needed there and not) as it was a long time ago from when I did the project and it was hard to remember what was what.
 
 ## View it live
-https://app.netlify.com/sites/mirela-news-site
+https://mirela-news-site.netlify.app/
