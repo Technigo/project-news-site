@@ -5,22 +5,25 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 25%);
 }
-h1 {
-  font-family: 'Almendra SC', serif;}
 h2, h3 {
-  font-family: 'Playpen Sans', cursive;
+    font-family: 'Playpen Sans', cursive;
 }
 p {
   font-family: 'Montserrat', sans-serif;
 }
+
 header {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: 1fr 40% 40%;
+  grid-template-columns: 1fr 5fr 40%;
 }
 .logo {
   height: 100px;
   width: 100px;
+}
+h1 {
+  font-family: 'Almendra SC', serif;
+  font-size: 40px;
 }
 .main-menu {
   margin-top: 30px;
@@ -29,28 +32,49 @@ header {
   justify-content: flex-end;
 }
 .main-menu a{
-  color: red;
+  color: black;
   margin: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
-section{
+
+.big-news {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.big-news {
   grid-column: span 4;
   border:2px solid black;
   margin: 10px;
   padding: 10px;
 }
-.smallnews {
+.photo-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 10px;
+}
+.caption {
+  margin: 0px;
+  font-size: 10px;
+}
+.main-picture {
+  width: 100%;
+}
+h2 {
+  font-size: 20px;
+}
+.main-news-article {
+  font-size: 16px;
+  margin-top: 0px;
+}
+.small-news {
   grid-column: span 4;
   width: 90%;
   height: 90%;
   justify-content: center;
   margin: 20px;
 }
-img {
+.small-news img {
   width:80%;
   float: left;
   margin-right: 10px;
@@ -60,14 +84,22 @@ img {
   body {
       background-color: aquamarine;
   }
-  section{
-      flex-direction: row;
-      flex-wrap: wrap;
+  .big-news {
+      display: inline;
   }
-  .smallnews {
+  h2 {
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+  }
+  .photo-display {
+    float: left;
+    width: 300px;
+  }
+  .small-news {
     grid-column: span 2;
   }
-  img {
+  .small-news img {
       width: 40%;
   }
 }
@@ -76,17 +108,25 @@ img {
   body {
       background-color: plum;
   }
-  .bignews img {
-      width: 300px
+  .big-news img {
+      width: 300px;
   }
-  section{
-      flex-direction: row;
-      flex-wrap: wrap;
+  .big-news {
+      display: inline
   }
-  .smallnews {
+  .photo-display {
+    float: left;
+    width: 300px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+  }
+  .small-news {
     grid-column: span 1;
   }
-  img {
+  .small-news img {
       width: 40%;
   }
 }
