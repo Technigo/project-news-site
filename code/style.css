@@ -13,8 +13,6 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .main-nav {
@@ -24,8 +22,6 @@ body {
 
 ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
   overflow: hidden;
   display: none;
 }
@@ -36,7 +32,7 @@ li {
 }
 
 .menu label {
-  display: none;
+  /*display: none;*/
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +120,21 @@ footer {
       'head-willisau head-basel'
       'img-willisau img-basel'
       'p-willisau p-basel';
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  ul {
+    display: contents;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li {
+    padding: 10px;
   }
 }
 
