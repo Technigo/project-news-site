@@ -9,4 +9,4 @@ Buttons are used to link out to a detailed newspage. Here I used an external sou
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://genuine-fudge-1dae4b-ocean-news.netlify.app/
