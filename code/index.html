@@ -3,21 +3,304 @@
   <head>
     <meta charset="utf-8" />
     <!-- Change the title below -->
-    <title>News Site</title>
+    <title>Ocean News</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <section class="content-container">
+      <header>
+        <div class="menu-wrapper">
+          <img class="logo" src="pictures/logo-blue.png" alt="logo header" />
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+          <!-- NAVIGATION START-->
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#">Ocean Conservation</a></li>
+            <li><a href="#">Climate Change</a></li>
+            <li><a href="#">Take Action</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <!-- NAVIGATION END -->
 
-    <section class="">
-      <!-- The other news  -->
+        <div class="welcome">
+          <h1>Welcome to your daily Ocean Update!</h1>
+        </div>
+      </header>
+
+      <!-- big news -->
+      <section class="big-news big-flex-container">
+        <div class="big-image">
+          <img class="img-fit" src="pictures/ocean.jpg" alt="close up" />
+        </div>
+
+        <div class="big-text">
+          <p><span class="category">World Ocean Day</span></p>
+          <h2>
+            <a
+              href="https://www.un.org/en/observances/oceans-day/background"
+              target="_blank"
+            >
+              <span class="underline">Why Ocean matters</span></a
+            >
+          </h2>
+          <hr />
+          <p>
+            The world's oceans – their temperature, chemistry, currents and life
+            – drive global systems that make the Earth habitable for humankind.
+            Our rainwater, drinking water, weather, climate, coastlines, much of
+            our food, and even the oxygen in the air we breathe, are all
+            ultimately provided and regulated by the sea. Throughout history,
+            oceans and seas have been vital conduits for trade and
+            transportation.
+          </p>
+          <h4>
+            <a
+              href="https://www.un.org/en/observances/oceans-day/background"
+              target="_blank"
+              ><span class="underline">Learn more </span></a
+            >
+          </h4>
+        </div>
+      </section>
+
+      <!-- small news -->
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/champions.jpg" alt="reef" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Ocean Conservation</span></p>
+          <h3>The oceans are divers. Their champions should be too</h3>
+          <hr />
+          <p>
+            Ocean Conservation will succeed only when everyone is part of the
+            effort.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.nytimes.com/2023/12/05/special-series/ocean-conservation-global-south-diversity.html"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/nasa.jpg" alt="reef" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Climate Change</span></p>
+          <h3>Climate change will shift the oceans' colours</h3>
+          <hr />
+          <p>
+            In the next century, satellites will watch as the ocean's blues and
+            greens intensify.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.nationalgeographic.com/environment/article/climate-change-alters-oceans-blues-greens"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/reef.jpg" alt="reef" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Coral Reefs</span></p>
+          <h3>Why are coral reefs important?</h3>
+          <hr />
+          <p>
+            Coral reefs provide an important ecosystem for life underwater,
+            protect coastal areas and provide a crucial source of income fo
+            millions of people.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.nhm.ac.uk/discover/quick-questions/why-are-coral-reefs-important.html"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/glacier.jpg" alt="glacier" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Ocean Conservation</span></p>
+          <h3>Ocean threats</h3>
+          <hr />
+          <p>
+            These types of human interference present the biggest threat to
+            oceans
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.nationalgeographic.com/environment/article/ocean-threats"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img
+            class="img-fit-small"
+            src="pictures/underwater.jpg"
+            alt="underwater"
+          />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Climate Change</span></p>
+          <h3>
+            Uncharted waters: what do the recent record marine heatwaves mean
+            for the oceans?
+          </h3>
+          <hr />
+          <p>
+            In the summer of 2023, humanity has lived through the hottest month
+            its history, but the effects of the heatwaves stretch far beyond the
+            land.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.oceancare.org/en/stories_and_news/marine-heatwaves/"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/anemone.jpg" alt="anemone" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Tourism</span></p>
+          <h3>
+            Can tourism positively impact climate change in the Indian Ocean?
+          </h3>
+          <hr />
+          <p>
+            The Indian Ocean is on the front line of climate change. Can tourism
+            here be part of a more sustainable future?
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.nationalgeographic.com/travel/article/tourism-positive-impact-climate-change-indian-ocean"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/nets.jpg" alt="nets" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Fishing</span></p>
+          <h3>Time to phase out bottom trawling</h3>
+          <hr />
+          <p>
+            Did you know, that on ot the most destructive fishing methods -
+            bottom trawling - is still taking place even within Marine Protected
+            Areas (MPAs)?
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.oceancare.org/en/stories_and_news/eu-phase-out-bottom-trawling/"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="small-news small-flex-container">
+        <div class="small-image">
+          <img class="img-fit-small" src="pictures/plastic.jpg" alt="plastic" />
+        </div>
+        <div class="small-text">
+          <p><span class="category">Take Action</span></p>
+          <h3>How to reduce ocean plastic pollution in 2024</h3>
+          <hr />
+          <p>
+            As we enter 2024, consider a new year's resolution to help reduce
+            plastic pollution.
+          </p>
+          <div class="button-wrapper">
+            <a
+              href="https://www.mcsuk.org/news/how-to-reduce-ocean-plastic-pollution/"
+              target="_blank"
+              class="news-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-wrapper">
+          <div class="logo-wrapper">
+            <a href="#top">
+              <img
+                class="logo"
+                src="pictures/logo-blue.png"
+                alt="logo footer"
+                onmouseover="src='pictures/logo-grey.png'"
+                onmouseout="src='pictures/logo-blue.png'"
+            /></a>
+            <p class="footer-text">by Eliane for Technigo Bootcamp</p>
+          </div>
+          <div class="social-buttons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                class="btn"
+                src="pictures/facebook-grey.png"
+                alt="facebook"
+                onmouseover="src='pictures/facebook-blue.png'"
+                onmouseout="src='pictures/facebook-grey.png'"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                class="btn"
+                src="pictures/instagram-grey.png"
+                alt="instagram"
+                onmouseover="src='pictures/instagram-blue.png'"
+                onmouseout="src='pictures/instagram-grey.png'"
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img
+                class="btn"
+                src="pictures/linkedin-grey.png"
+                alt="linkedin"
+                onmouseover="src='pictures/linkedin-blue.png'"
+                onmouseout="src='pictures/linkedin-grey.png'"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
