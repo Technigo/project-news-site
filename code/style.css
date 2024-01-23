@@ -33,6 +33,9 @@ h1 {
   margin: 0px;
   padding-top: 10px;
 }
+.site-subtitle {
+  display: none;
+}
 .main-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,12 +56,13 @@ h1 {
   margin: 10px 10px 0px 10px;
   padding: 10px 10px 0px 10px;
 }
+.big-news .photo-display {
+  margin-right: 10px;
+}
 .photo-display {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  float: left;
-  margin-right: 10px;
+  align-items: center;
 }
 .caption {
   margin: 0px;
@@ -92,12 +96,12 @@ button {
 .small-news h3 {
   padding-left: 10px;
 }
-.small-news p {
+.small-news>p {
   padding: 10px;
 }
 .small-news img {
-  width:80%;
-  margin: 10px 10px 0px 10px;
+  width: 90%;
+  margin: 10px 0px 0px 0px;
 }
 
 @media (min-width: 667px) {
@@ -126,18 +130,22 @@ button {
   h2 {
     margin: 0px;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 36px;
   }
-  .photo-display {
+  .big-news .photo-display {
     float: left;
     width: 300px;
   }
+  .small-news .photo-display {
+    float: left;
+    width: 180px;
+  }
+  .caption {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
   .small-news {
     display: inline-block;
-  }
-  .small-news img {
-      width: 40%;
-      float: left;
   }
 }
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -149,6 +157,11 @@ button {
 @media (min-width: 1025px) {
   h1 {
     font-size: 48px;
+    display: block;
+    padding: 0;
+  }
+  .site-subtitle {
+    display: block;
   }
   .big-news img {
     width: 300px;
