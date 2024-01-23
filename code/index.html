@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kirby</title>
+  <meta name="description" content="The site to explain the cutest dog, Kirby.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+
+  <!---Header----->
+  <header id="header" class="wrapper">
+    <h1 class="site-title">KIRBY<a href="index.html"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">TOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!---Main News----->
+  <section class="container wrapper">
+    <h3 class="head">Kirby, why are you so cute?</h3>
+    <div class="txt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+    <figure class="img">
+      <img src="img/main-news-header.jpg" alt="">
+    </figure>
+  </section>
+
+  <!---Articles----->
+  <section id="articles" class="wrapper">
+    <h2 class="section-title">NEWS</h2>
+    <div class="grid-container">
+      <div class="article">
+        <img src="img/img1.jpg" alt="News1-header-image">
+        <h3 class="content-title">New dog treats!</h3>
+        <p>New series of turkey dog treats are available!</p>
+      </div>
+      <div class="article">
+        <img src="img/img2.jpg" alt="News2-header-image">
+        <h3 class="content-title">Where is the sunshine?</h3>
+        <p>Kirby misses the sunshine...</p>
+      </div>
+      <div class="article">
+        <img src="img/img3.jpg" alt="News3-header-image">
+        <h3 class="content-title">I don't want to walk!</h3>
+        <p>-10 degree is too cold to walk outside...</p>
+      </div>
+      <div class="article">
+        <img src="img/img4.jpg" alt="News4-header-image">
+        <h3 class="content-title">A dog bed is not enough!</h3>
+        <p>Kirby prefers human's bed more than her own bed...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2024 Mai Kanetaka</p>
+  </footer>
+</body>
 </html>
