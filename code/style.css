@@ -17,7 +17,7 @@ p {
 header {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 6fr 3fr;
   background-color: #7EB486;
   height: 100px;
   border-bottom:2px solid black;
@@ -29,15 +29,14 @@ header {
 }
 h1 {
   font-family: 'Rubik Doodle Shadow', system-ui;
-  font-size: 40px;
+  font-size: 36px;
   margin: 0px;
   padding-top: 10px;
 }
 .main-menu {
-  margin-top: 30px;
-  margin-left: 20px;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .main-menu a{
   color: black;
@@ -109,11 +108,14 @@ button {
     height: 80px;
   }
   h1 {
-    font-size: 48px;
+    font-size: 40px;
     padding-top: 20px;
   }
   .main-menu {
     margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
   }
   .main-menu a{
     font-size: 16px;
@@ -145,6 +147,9 @@ button {
 }
 
 @media (min-width: 1025px) {
+  h1 {
+    font-size: 48px;
+  }
   .big-news img {
     width: 300px;
   }
