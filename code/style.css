@@ -39,6 +39,7 @@ h1 {
   color: black;
   margin: 10px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
 }
 
 .big-news {
@@ -70,6 +71,11 @@ h2 {
   font-size: 16px;
   margin-top: 0px;
 }
+button {
+  float: right;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
 .small-news {
   grid-column: span 4;
   width: 90%;
@@ -85,7 +91,6 @@ h2 {
 }
 .small-news img {
   width:80%;
-  float: left;
   margin: 10px;
 }
 
@@ -103,6 +108,9 @@ h2 {
   .main-menu {
     margin-top: 10px;
   }
+  .main-menu a{
+    font-size: 16px;
+  }
   .big-news {
     display: inline;
   }
@@ -117,6 +125,7 @@ h2 {
   }
   .small-news img {
       width: 40%;
+      float: left;
   }
 }
 @media (min-width: 667px) and (max-width: 1024px) {
