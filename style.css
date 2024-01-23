@@ -224,15 +224,19 @@ html {background-color: pink;
 @media (min-width: 1025px) {
   body {
     background: pink;
+    Height: 100vw;
   }
     .grid-parent,
   .grid-parent1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
+    height: 80px;
+    padding: 40px;
   }
   .grid-item,
   .grid-item1 {
     font-size: 18px;
+  
   }
   .flex-parent {
     padding: 20px; 
@@ -261,8 +265,8 @@ html {background-color: pink;
   .grid-header,
   .header.grid,
   .header,
-  .secondparagraph,
  .introparagraph {
-    font-size: 24px; 
+    font-size: 18px; 
   }
+
 }
