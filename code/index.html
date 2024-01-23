@@ -16,17 +16,17 @@
     <!-- Some kind of logo and navbar -->
     <div class="header">
       <a href="#"><img class=logoimg src="./assets/fasnacht-logo.jpg" alt="Fasnacht Logo" height="100px"></a>
-      <input id="menu" type="checkbox">
       <nav class="main-nav">
-        <ul>
-          <li><button><a href="#">What is Fasnacht?</a></button></li>
-          <li><button><a href="#">Where to celebrate?</a></button></li>
-          <li><button><a href="#">Archive</a></button></li>
-          <li><button><a href="#">Copyright & Impressum</a></button></li>
-        </ul>
+        <label class="menu-label" for="menu" tabindex="0"><img id=hamburger width="50" height="100"
+            src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" /></label>
+        <input id="menu" type="checkbox">
+        <div id="navitems">
+          <button class="item"><a href="#">What is Fasnacht?</a></button>
+          <button class="item"><a href="#">Where to celebrate?</a></button>
+          <button class="item"><a href="#">Archive</a></button>
+          <button class="item"><a href="#">Copyright & Impressum</a></button>
+        </div>
       </nav>
-      <label class="menu-label" for="menu" tabindex="0"><img id=hamburger width="50" height="100"
-          src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" /></label>
     </div>
   </header>
 
@@ -58,7 +58,7 @@
       <p>For the Swabian-Alemannic carnival guilds, the carnival begins on January 6. On this day,
         the
         big carnival
-        proclamation in the old town of Constance is traditionally on the agenda.</p>
+        proclamation of Constance is traditionally on the agenda.</p>
       <button><a
           href="https://www.suedkurier.de/region/kreis-konstanz/konstanz/fastnacht/termine-fasnacht-2024-konstanz;art1369001,11361493">To
           the news</a></button>

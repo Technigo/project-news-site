@@ -1,5 +1,5 @@
 html {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: palegoldenrod;
   box-sizing: border-box;
 }
@@ -14,34 +14,56 @@ body {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+  align-items: center;
 }
 
-ul {
-  list-style-type: none;
-  display: none;
-}
-
-li {
-  display: inline;
-
-}
-
-.menu label {
-  cursor: pointer;
+#navitems button {
+  display: block;
+  width: 100%;
 }
 
 #menu {
   display: none;
 }
 
+.menu label {
+  cursor: pointer;
+}
+
+#navitems {
+  display: none;
+}
+
+#menu:checked~#navitems {
+  display: block;
+}
+
+.item {
+  border-radius: 30%;
+  padding: 10px;
+  background-color: gold;
+  border-style: dotted;
+  margin: 10px;
+}
+
+/*general rules*/
+
 a {
   text-decoration: none;
   color: black;
-  /*display: block;*/
 }
 
 p {
   text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+h2 {
+  text-align: center;
 }
 
 /*Big News coming up*/
@@ -117,20 +139,9 @@ footer {
     display: none;
   }
 
-  ul {
+  #navitems {
     display: contents;
     display: flex;
-  }
-
-  li {
-    padding: 10px;
-  }
-
-  nav ul li button {
-    border-radius: 30%;
-    padding: 10px;
-    background-color: gold;
-    border-style: dotted;
   }
 }
 
