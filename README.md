@@ -1,12 +1,16 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is a web-based news site dedicated to my dog, Kirby, created as part of an assignment to build a classic magazine or newspaper site. The site features a dynamic layout that adjusts to different device screens - mobile, tablet, and desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was to develop a responsive news site that adapts seamlessly to various screen sizes. I started by sketching a basic layout to visualize the placement of elements like the header, navbar, and news cards. The main focus was to ensure a user-friendly interface across all devices.
+
+I used HTML and CSS. HTML was the backbone, structuring the website with a header, navbar, big news section, and a grid of news cards. CSS played a crucial role in styling and creating a responsive design using media queries. This ensured that the layout changes appropriately for desktops (four cards in a row), tablets (two cards in a row), and mobile devices (one card per row).
+
+For me, the challenge was ensuring that the layout appeared consistent yet suitable for different devices. Media queries were extensively used to adjust the styles based on the device's screen size. I learned a lot about responsive web design and the importance of testing on various devices.
+If I had more time, I would like to implement a more interactive user experience, perhaps adding animations or a section for live updates. 
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Feel free to explore Kirby's news site and see the responsive design. The project is deployed in netlify.
