@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   flex-flow: row;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #navitems button {
@@ -44,6 +45,44 @@ body {
   background-color: gold;
   border-style: dotted;
   margin: 10px;
+}
+
+/*News Banner*/
+
+.bannerwrapper {
+  background-color: gold;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-name: banner;
+  height: 100px;
+}
+
+.banneritem {
+  font-size: 200%;
+  margin: 0 100px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+@keyframes banner {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200%, 0, 0)
+  }
+
 }
 
 /*general rules*/
