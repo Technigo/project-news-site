@@ -14,4 +14,4 @@ Use Media Queries for making the design responsive while working mobile first
 Style everything in CSS and link the file in the HTML Head
 
 ## View it live
-Here comes the link: XYZ
+https://linda-f-project-news-site.netlify.app/
