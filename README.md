@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project this week is building a news site.
+My news site is gonna be about Fasnacht - The Swiss Carnival.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The steps I took to build the news site:
+Paint a wire frame of the whole project on paper.
+Start with building everything in HTML. 
+Use Flexbox in the Navigation bar
+Use CSS Grid for building the site
+Use Media Queries for making the design responsive while working mobile first
+Style everything in CSS and link the file in the HTML Head
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://linda-f-project-news-site.netlify.app/
