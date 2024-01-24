@@ -15,10 +15,10 @@ p {
 }
 
 header {
-  grid-column: span 4;
+  grid-column: span 5;
   display: grid;
   grid-template-columns: 2fr 6fr 3fr;
-  background-color: #7EB486;
+  background: linear-gradient( to left top, #7EB486, white);
   height: 100px;
   border-bottom:2px solid black;
   padding-bottom: 10px;
@@ -79,10 +79,16 @@ h2 {
   margin-top: 0px;
 }
 button {
-  float: right;
-  margin: 20px;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   display: inline;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.main-button {
+  float: right;
 }
 .small-news {
   grid-column: span 4;
@@ -98,6 +104,7 @@ button {
 }
 .small-news>p {
   padding: 10px;
+  margin: 0;
 }
 .small-news img {
   width: 90%;
