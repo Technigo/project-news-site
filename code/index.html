@@ -1,23 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>A Bonsai life</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1"
+    charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="header-container">
+        <a rel="starting page" href="index.html"><h1>BONSAI TIMES</h1></a>
+        
+        <div class="topnav">
+        <a class="active" href="index.html">News</a>
+        <a href="#archive">Archive</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="about.html">About</a>
+      </div>
+
+    </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+<section class="newsFront">
+  <div class="slideshow-container">
+   <div class="mySlides fade">
+    <img src="./images/bonsai.172136.horisont.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade"> 
+    <img src="./images/43-WhitePine1625-1.horisont.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="./images/bonsai-img.horis.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+ let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+<div class="slideText">
+  <h2>The living art of Bonsai</h2>
+  <h3></h3>
+</div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="categories">
+      <div class="categoryBox"><a href="techniques.html">Techniques</a></div>
+      <div class="categoryBox"><a href="care.html">Care</a></div>
+      <div class="categoryBox"><a href="treespeciec.html">Tree species</a></div>
+      <div class="categoryBox"><a href="bonsaiartist.html">Bonsai artists</a></div>
+      <div class="categoryBox"><a href="history.html">History</a></div>
+      <div class="categoryBox"><a href="inspiration.html">Inspiration</a></div>
+    </section>
+
+<section class="headlines">
+  <h2>Learn the bonsai way</h2>
+  <h3>Follow the latest news of the bonsai society </h3>
+<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
+</section>
+<section class="rowArticles">
+  <div class="img-column">
+    <img src="./images/04-Juniper-ebensperger.jpg" style="width:100%">
+    <img src="./images/juniper-bonsai-rock-omiya.jfif" style="width:100%">
+    <img src="./images/7e851694-b98f-6db6-5ec0-7287ed0ca5e0_1024x1024.jpg" style="width:100%">
+  </div>
+  <div class="img-column">
+    <img src="./images/photo-1627347902083-edbcaa5c4286.jfif" style="width:100%">
+    <img src="./images/3388114954_1f6e49d25e_z_310x@2x.jpg" style="width:100%">
+  </div>
+  <div class="img-column">
+    <img src="./images/artificial-bonsai-tree.jpg" style="width:100%">
+    <img src="./images/bonsai.1.jpg" style="width:100%">
+    <img src="./images/ccbd8ca24e78e509092af753272310d1.jpg" style="width:100%">
+  </div>
+  <div class="img-column">
+    <img src="./images/bonsai3..jpg" style="width:100%">
+    <img src="./images/juniper-bonsai-the-classic-choice-for-beginners-19517f7a-8ae1-42b3-845f-5a7a2aa0a327.jpg" style="width:100%">
+  <img src="./images/How-to-Create-a-Cascade-Bonsai-Feature.jpg" style="width:100%">
+  </div>
+
+</section>
+
+    <section class="video-section">
+      <div class="video-text">
+        <h2>Instruction video</h2><p>this is an instruction video about</p>
+      </div>
+      <div class="instruction-video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/rLaFu3pHsi4?si=0AkoP9O701X-ng6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="video-text">
+        <h2>Instruction video</h2><p>this is an instruction video about</p>
+      </div>
+      <div class="instruction-video"><iframe width="711" height="400" src="https://www.youtube.com/embed/r4hEPHEJTYU?si=vom_NGqrWe-5hDgW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="video-text">
+        <h2>Instruction video</h2><p>this is an instruction video about</p>
+      </div>
+      <div class="instruction-video"><iframe width="711" height="400" src="https://www.youtube.com/embed/__ZYsymsdn8?si=VdqXXJuIRlVvIHRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+   
     </section>
   </body>
 </html>
