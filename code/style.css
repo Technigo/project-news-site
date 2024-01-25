@@ -1,4 +1,147 @@
-html {
-  background: #0025ff;
-  color: #fff;
+.navbar {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid grey;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+#navbar-img {
+    width: 150px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(37, 33, 33, 0.928);
+}
+
+.header-title {
+    font-family: brush script mt, cursive;
+    font-size: 6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.big-news {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    border: solid 1px;
+    padding: 10px;
+}
+
+.main-card-title {
+    margin-left: 50px;
+    margin-right: 10px;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    margin-top: 1px;
+    width: auto;
+}
+
+#main-card-button {
+    margin-left: 50px;
+}
+
+.main-card-text {
+    margin-left: 30px;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin-top: 1px;
+    width: auto;
+}
+
+.small-news-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    grid-gap: 10px;
+}
+
+.small-card {
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid blue
+}
+
+.small-card-img {
+    box-sizing: border-box;
+
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.small-card-header {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 5px;
+    border: solid red;
+}
+
+.small-card-text {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    border: solid yellow;
+}
+
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer-item {
+    display: inline;
+}
+
+#technigo-logo {
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* Smart phones */
+@media only screen and (max-width: 667px) {
+    .small-news-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets */
+@media only screen (min-width: 668px) and (max-width: 1024px) {
+    .small-card {
+        grid-temmplate-column: 1fr 1fr;
+    }
+
+
 }
