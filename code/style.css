@@ -1,4 +1,75 @@
-html {
-  background: #0025ff;
+
+.container {
+  align-items: center;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 100%;
+}
+
+header {
+  position: sticky;
+}
+
+header h1 {
+  color: #568A62;
+  font-family: "Autour One";
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+
+header img {
+  border-bottom: 2px solid #95C699;
+  border-top: 2px solid #95C699;
+  height: 15px;
+  padding: 5px 0 5px 0;
+}
+
+.header-mobile {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: inline-block;
+}
+
+.dropdown-menu-icon {
+  border: none;
+  color: #568A62;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 20px 5px;
+}
+
+.dropdown-menu-content {
+  background-color: #95C699;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  display: none;
+  font-family: "Autour One";
+  min-width: 150px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-menu-content a {
+  color: #fff;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown-menu:hover .dropdown-menu-content {
+  display: block;
+}
+
+.dropdown-menu-content a:hover {
+  background-color: #568A62 ;
   color: #fff;
 }
