@@ -14,15 +14,25 @@
 <body>
   <header>
     <!--navbar and logo-->
-    <img id="navbar-img" src="./assets/dog tail logo.jpg" alt="dog tail for logo">
-    <nav class="navbar">
-      <ul id="nav-list">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#About">About</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-        <li class="nav-item"><a href="#Subscribe">Subscribe</a></li>
-      </ul>
-    </nav>
+    <div class="navbar-container">
+      <img class="navbar-image" src="./assets/dog tail logo.jpg" alt="dog tail for logo">
+      <nav class="navbar">
+        <ul id="nav-list">
+          <li class="nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Subscribe">Subscribe</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="header-title">
       <span>The Daily Tails</span>
@@ -31,102 +41,151 @@
 
   <section class="big-news">
     <!-- The big news content -->
-    <div class="main-card-image">
-      <a href="link to article"><img src="./assets/dog-scientist.jpg" class="feature-image"></a>
+
+    <div class="main-card-content">
+      <a href="link to article">
+        <img class="feature-image" src="./assets/dog-scientist.jpg" alt="dog looking through microscope">
+      </a>
+    </div>
+
+    <div class=" main-card-content">
+        <h2 class="main-card-title">
+          <a href="link to article">Nine Lives</a>
+        </h2>
+        <div>
+          <button class="main-card-button">Share
+          </button>
+        </div>
     </div>
 
     <div class="main-card-content">
-      <h2 class="main-card-title"><a href="link to article">Nine Lives</a></h2>
-      <button id="main-card-button">Read more</button>
-    </div>
-
-    <div class="main-card-content">
-      <p class="main-card-text"><a href="link to article" alt="dog scientist id=" nine-lives-title">Ground-breaking
+      <p class="main-card-text">
+        <a href="link to article">Ground-breaking
           discovery allows canines to live 9x longer than the average lifetime. Read how you and your pups can be a part
-          of this miracle.</a></p>
+          of this miracle.</a>
+      </p>
     </div>
 
   </section>
 
-  <section class="small-news-container">
-    <!-- The other news  -->
+  <section>
+    <h2 class="big-small-news-divider">More top stories</h2>
+  </section>
 
+  <!-- The other news  -->
+  <section class="small-news-container">
     <div class="small-card">
       <a href="link to article">
-        <img src="./assets/yorkie singing.jpg" class="small-card-img" alt="dog singing"></a>
-      <h3 class="small-card-header"><a href="link to article">Yodeling Yorkie</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">Famous singer Yodeling Yorkie fills every seat at his first
-          concert of his European Tour.</a></p>
+        <img src="./assets/yorkie singing.jpg" class="small-card-img" alt="dog singing">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Yodeling Yorkie</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">Famous singer Yodeling Yorkie fills every seat at his first concert of his European
+          Tour.</a>
+      </p>
     </div>
 
     <div class="small-card">
       <a href="link to article">
         <img src="./assets/paw mittens.jpg" class="small-card-img" alt="mittens with dog"></a>
-      <h3 class="small-card-header"><a href="link to article">10 Best Paw Warmers</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">Keep you paws toasty and crack free with these best selling
-          warmers.</a></p>
-    </div>
-
-    <div class="small-card">
-      <a href="link to article">
-        <img src="./assets/potty train dog.jpg" class="small-card-img" alt=" dog toilet"></a>
-      <h3 class="small-card-header"><a href="link to article">Puppy Training</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">How to train your 8 week pup from ruining carpets.</a></p>
-    </div>
-
-    <div class="small-card">
-      <a href="link to article">
-        <img src="./assets/dog sniff tree.jpg" class="small-card-img" alt=" dog sniff tree"></a>
-      <h3 class="small-card-header"><a href="link to article">Secret Sniff Spots</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">Find the best sniff spots around Stockholm.</a></p>
-    </div>
-
-    <div class="small-card">
-      <a href="link to article">
-        <img src="./assets/dog kibble.jpg" class="small-card-img" alt=" dog kibble"></a>
-      <h3 class=" small card header"><a href="link to article">New Kibble Flavor</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">Biggest canine food manufacturer releases new flavor.</a>
+      <h3 class="small-card-header">
+        <a href="link to article">10 Best Paw Warmers</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">Keep you paws toasty and crack free with these best selling warmers.</a>
       </p>
     </div>
 
     <div class="small-card">
       <a href="link to article">
-        <img src="./assets/jail cell.jpg" class="small-card-img" alt=" jail cell"></a>
-      <h3 class="small-card-header"><a href="link to article">Most Wanted Caught</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">Pawlice have caught the most wanted criminal of all time.
-          What will happen next?</a></p>
-    </div>
-
-    <div class="small-card">
-      <a href="link to article">
-        <img src="./assets/heart lights.jpg" class="small-card-img" alt=" heart lights"></a>
-      <h3 class="small-card-header"><a href="link to article">Not Just Another Love Story</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">How these two found each other during a time of crisis.</a>
+        <img src="./assets/potty train dog.jpg" class="small-card-img" alt=" dog toilet">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Puppy Training</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">How to train your 8 week pup from ruining carpets.</a>
       </p>
     </div>
 
     <div class="small-card">
       <a href="link to article">
-        <img src="./assets/dog park.jpg" class="small-card-img" alt=" two dogs sniffing"></a>
-      <h3 class="small-card-header"><a href="link to article">Dog Park Ettiquette</a></h3>
-      <p><a class="small-card-text" target="_blank" href="">The proper way to greet fellow furrends at the dog park.</a>
+        <img src="./assets/dog sniff tree.jpg" class="small-card-img" alt=" dog sniff tree">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Secret Sniff Spots</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">Find the best sniff spots around Stockholm.</a>
+      </p>
+    </div>
+
+    <div class="small-card">
+      <a href="link to article">
+        <img src="./assets/dog kibble.jpg" class="small-card-img" alt=" dog kibble">
+      </a>
+      <h3 class=" small card header">
+        <a href="link to article">New Kibble Flavor</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">Biggest canine food manufacturer releases new flavor.</a>
+      </p>
+    </div>
+
+    <div class="small-card">
+      <a href="link to article">
+        <img src="./assets/jail cell.jpg" class="small-card-img" alt=" jail cell">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Most Wanted Caught</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">Pawlice have caught the most wanted criminal of all time. What will happen next?</a>
+      </p>
+    </div>
+
+    <div class="small-card">
+      <a href="link to article">
+        <img src="./assets/heart lights.jpg" class="small-card-img" alt=" heart lights">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Not Just Another Love Story</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">How these two found each other during a time of crisis.</a>
+      </p>
+    </div>
+
+    <div class="small-card">
+      <a href="link to article">
+        <img src="./assets/dog park.jpg" class="small-card-img" alt=" two dogs sniffing">
+      </a>
+      <h3 class="small-card-header">
+        <a href="link to article">Dog Park Ettiquette</a>
+      </h3>
+      <p class="small-card-text">
+        <a target="_blank" href="">The proper way to greet fellow furrends at the dog park.</a>
       </p>
     </div>
 
   </section>
 
   <footer class="footer">
+
     <div class="footer-div">
-      <span>Created by Ji Yoo | Spring 2024</span>
+      <p class="creator">By Ji Yoo |</p>
+      <p class="creator">Spring 2024</p>
     </div>
 
     <div class="footer-div">
       <a href="">
-        <img id="technigo-logo" src="assets/logo.svg" alt="technigo logo"></a>
+        <img class="technigo-logo" src="assets/logo.svg" alt="technigo logo"></a>
     </div>
 
-    <div class="footer-div" id="footer-list">
-      <ul>
+    <div class="footer-div">
+      <ul class="footer-list">
         <li class="footer-item"><a class="linkedin" href="">Linkedin</a></li>
         <li class="footer-item"><a href="#facebook">Facebook</a></li>
         <li class="footer-item"><a href="#instagram">Instagram</a></li>
