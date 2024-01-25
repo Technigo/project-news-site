@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>A Bonsai life</title>
+    <title>Bonsai times</title>
     <meta name="viewport"
     content="width=device-width, initial-scale=1"
     charset="UTF-8">
   <link rel="stylesheet" href="style.css" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -22,15 +25,15 @@
     </div>
     </header>
 
-<section class="newsFront">
+<section class="news-front">
   <div class="slideshow-container">
-   <div class="mySlides fade">
+   <div class="my-slides fade">
     <img src="./images/bonsai.172136.horisont.jpg" style="width:100%">
   </div>
-  <div class="mySlides fade"> 
+  <div class="my-slides fade"> 
     <img src="./images/43-WhitePine1625-1.horisont.jpg" style="width:100%">
   </div>
-  <div class="mySlides fade">
+  <div class="my-slides fade">
     <img src="./images/bonsai-img.horis.jpg" style="width:100%">
   </div>
 </div>
@@ -41,7 +44,7 @@ showSlides();
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("my-slides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -51,14 +54,15 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 </script>
-<div class="slideText">
-  <h2>The living art of Bonsai</h2>
-  <h3></h3>
+<div class="slide-text">
+  <h2>LATEST NEWS OF THE BONSAI WORLD</h2>
+  <h3>Keep up with the most recent events, trends and happenings in the bonsai society.</h3>
+<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
 </div>
     </section>
 
     <section class="categories">
-      <div class="categoryBox"><a href="techniques.html">Techniques</a></div>
+      <div class="category-box"><a href="techniques.html">Techniques</a></div>
       <div class="categoryBox"><a href="care.html">Care</a></div>
       <div class="categoryBox"><a href="treespeciec.html">Tree species</a></div>
       <div class="categoryBox"><a href="bonsaiartist.html">Bonsai artists</a></div>
@@ -71,7 +75,7 @@ function showSlides() {
   <h3>Follow the latest news of the bonsai society </h3>
 <p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
 </section>
-<section class="rowArticles">
+<section class="row-articles">
   <div class="img-column">
     <img src="./images/04-Juniper-ebensperger.jpg" style="width:100%">
     <img src="./images/juniper-bonsai-rock-omiya.jfif" style="width:100%">
