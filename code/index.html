@@ -1,23 +1,138 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gamla Banken News</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue">
   </head>
+  
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <!-- Navigation bar with links -->
+    <nav class="navbar">
+    <ul> 
+      <li>
+        <a href="https://gamlabanken.work">Gamlabanken.work</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/gamlabankencoworking">Instagram</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61553327470945">Facebook</a>
+      </li>
+    </ul>
+    </nav>
+      
+      <!-- Header with logo and name -->
+      <section class="header">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="assets/logo-black.png" alt="Gamla Banken Logo">
+          </div>
+          <div class="grid-item">
+            <h1>Gamla Banken Coworking</h1>
+            <h2>Latest news & Updates</h2>
+          </div>
+        </div>
+      </section>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+      <!-- The latest news section -->
+      <section class="latest-news-box">
+        <div class="latest-news">
+          <img src="assets/flex-platser.jpg" alt="bord med stolar hos gamla banken coworking">
+        </div>
+        <div class="latest-news">
+          <div class="news-text">
+          <h3>Nya FLEX-platser!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere, magna ut iaculis congue, odio dolor facilisis tortor, ut pellentesque purus augue et ligula. Proin viverra fermentum egestas. Sed semper libero tincidunt metus euismod, porttitor rutrum velit sagittis. In varius libero justo, in aliquet nunc semper vitae. Etiam eros magna, cursus ut facilisis pulvinar, dignissim et tellus. Pellentesque eget tristique libero. Morbi porta euismod tincidunt. Morbi ipsum nunc, ornare facilisis posuere quis, posuere sit amet neque. Aenean viverra scelerisque lacinia. Mauris non justo tincidunt, pellentesque tortor non, pharetra risus. Praesent lacus.</p>
+          <a href="none">Läs mer</a>
+        </div>
+        </div>  
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- Dotted divider  -->
+      <hr class="dotted">
+  
+      <!-- The smaller news cards  -->
+      <section class="news-cards">
+        <div class="news">
+          <img src="assets/platser.jpg" alt="skrivbord med skrivbordsstolar hos gamla banken coworking">
+          <h3>Kom och joina!</h3>
+          <p>Är du inte säker på att Gamla Banken är en plats för dig. Kom och provsitt vetja!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/fler-platser.jpg" alt="skrivbord och texten fler latser">
+          <h3>Vi har fler platser</h3>
+          <p>Vi kickstartar 2024 med två nya platser. Vi välkomnar Elias och Johanna till sina nya skrivbord.</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/aw.jpg" alt="texten aw workshop föreläsning">  
+          <h3>Roliga planer</h3>
+          <p>Vi hoppas kunna göra mycket kul här i lokalen framöver. Kanske en AW? En workshop? Eller varför inte en föreläsning? Hör av dig om du vill hitta på någonting kul!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/helg.jpg" alt="hund som gäspar och texten trevlig helg">
+          <h3>Trevlig helg!</h3>
+          <p>Nu tar vi helg hörrni. Vi ses på måndag!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/leverans.jpg" alt="lastbil och texten leverans">
+          <h3>Leverans</h3>
+          <p>Fler skrivord åt folket!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/lokalt.jpg" alt="texten heja lokalt!">
+          <h3>Lokala favoriter</h3>
+          <p>Vi gillar ju att stötta det lokala - våra vänner här i Gagnef och Dalarna. Här är några av våra favoritkompisar:</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/gott-nytt-ar-stories.jpg" alt="ikon med konfetti och texten gott nytt år">
+          <h3>Gott nytt år!</h3>
+          <p>Vi ses i januari 2024!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/tack.jpg" alt="lussebullar ocg godis med texten tack">
+          <h3>Julmys</h3>
+          <p>Tusen tack alla som kom och myste riktigt juligt med oss. Vi hade så trevligt att inte enda bild togs.</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/hacker.jpg" alt="man vid skrivbord med dator och flera skärmar">
+          <h3>Hacker</h3>
+          <p>Love kör dubbla skärmar. Två kör en skärm. Och ett gäng här på Gamla Banken nöjer sig med sin laptop.</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/skylt.jpg" alt="fasad med skylt med gamla banken coworkings logga">
+          <h3>Ja men titta!</h3>
+          <p>En liten skylt har kommit upp - heja heja!</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/hej.jpg" alt="skylt med texten hej på en förstärkare">
+          <h3>Välkommen!</h3>
+          <p>Hej och välkommen till Gamla Banken.</p>
+          <a href="none">Läs mer</a>
+        </div>
+        <div class="news">
+          <img src="assets/gamla-banken-moodbard.jpg" alt="moodboard över inredning på gamla banken coworking">
+          <h3>Moodboard</h3>
+          <p>Bakom kulisserna planeras det för fullt. Färger, möbler, inredning, stil. You name it!</p>
+          <a href="none">Läs mer</a>
+        </div>
+      </section>
   </body>
 </html>

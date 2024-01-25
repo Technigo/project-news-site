@@ -1,4 +1,201 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* Styling for body - general for all */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+/* Styling for navigation bar */
+.navbar ul {
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 70px 15px 0px;
+  text-align: right;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  padding: 10px;
+}
+
+/* Styling for header */
+.header {
+  font-family: "Bebas Neue";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 17%; 
+}
+
+.grid-item h1 {
+  font-size: 400%;
+  margin: 17% 0 0 0;
+  padding-left: 8%; 
+}
+
+.grid-item h2 {
+  font-size: 300%;
+  margin: 0 0 0 0;
+  padding-left: 8%;
+} 
+
+/* Styling for section with latest  news */
+.latest-news-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.latest-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 41.7%;
+  height: 420px;
+  margin-bottom: 30px;
+}
+
+.news-text {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  width: 80%;
+}
+
+.latest-news img {
+  width: 100%;
+}
+
+.latest-news h3 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.latest-news p {
+  text-align: left;
+
+}
+
+.news-text a {
+  font-style: italic;
+}
+
+/* Styling for dotted divider */
+hr.dotted {
+  border-top: 2px dotted black;
+  width: 20%;
+}
+
+/* Styling for section with news cards */
+.news-cards {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.news {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+  margin: 30px 7px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news img {
+  width: 100%;
+  height: 100%;
+}
+
+.news h3 {
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 25px 10px 0 10px;
+  
+}
+
+.news p {
+  color: black;
+  text-align: left;
+  margin: 20px 10px 20px 10px;
+
+}
+
+.news a {
+  font-style: italic;
+  margin-left: 10px;
+}
+
+/* Responsive design making four news cards show on desktop, two on tablet and one on smartphone */
+@media screen and (max-width: 666px) {
+  .news {
+    width: 90%;
+  }
+
+  .navbar ul {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  } 
+
+  .grid-item img {
+    max-width: 150%;
+    height: auto;
+    padding-left: 0%; 
+  }
+
+  .grid-item h1 {
+    font-size: 300%;
+    margin: 17% 0 0 0;
+    padding-left: 13%; 
+  }
+
+  .grid-item h2 {
+    font-size: 200%;
+    margin: 0 0 0 0;
+    padding-left: 13%;
+  } 
+}
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  .news {
+    width: 40%;
+  }
+  
+  .navbar ul {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  } 
+
+  .grid-item h1 {
+    font-size: 250%;
+    margin: 17% 0 0 0;
+    padding-left: 5%; 
+  }
+  
+  .grid-item h2 {
+    font-size: 200%;
+    margin: 0 0 0 0;
+    padding-left: 5%;
+  } 
 }

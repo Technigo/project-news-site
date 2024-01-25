@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A news site covering news and updates from Gamla Banken Coworking.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Started by making a rough sketch on paper to get the main structure. After that I started buildning from the top and worked my way down with html and css. I created segment or areas using Flexbox and CSS Grid that I filled with content.
+
+I ended with making the content responsive. With this project I stared by coding for desktop - next time I will try to code it mobile first.
+
+If I had more time I would try to change the links in the navigation bar to icons instead of text.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
