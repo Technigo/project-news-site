@@ -14,6 +14,7 @@ p {
   margin-top: 0px;
 }
 
+/* header styling */
 header {
   grid-column: span 5;
   display: grid;
@@ -48,9 +49,10 @@ h1 {
   font-size: 12px;
 }
 
+/* big-news styling */
 .big-news {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   grid-column: span 4;
   margin: 10px 10px 0px 10px;
@@ -58,15 +60,6 @@ h1 {
 }
 .big-news .photo-display {
   margin-right: 10px;
-}
-.photo-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.caption {
-  margin: 0px;
-  font-size: 10px;
 }
 .main-picture {
   width: 100%;
@@ -78,18 +71,31 @@ h2 {
   font-size: 16px;
   margin-top: 0px;
 }
-button {
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-  display: inline;
-}
-.button {
-  display: flex;
-  justify-content: center;
-}
 .main-button {
   float: right;
 }
+
+/* styling both big-news and small-news */
+.photo-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caption {
+  margin: 0px;
+  font-size: 10px;
+}
+button {
+  margin-bottom: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #aee1b5;
+  border-radius: 50%;
+  border-style: double;
+  width: 95px;
+}
+
+/* small-news styling */
 .small-news {
   grid-column: span 4;
   width: 90%;
@@ -101,6 +107,8 @@ button {
 }
 .small-news h3 {
   padding-left: 10px;
+  background-color: #aee1b5;
+  width: 96%;
 }
 .small-news>p {
   padding: 10px;
@@ -110,7 +118,12 @@ button {
   width: 90%;
   margin: 10px 0px 0px 0px;
 }
+.button {
+  display: flex;
+  justify-content: center;
+}
 
+/* media queries start */
 @media (min-width: 667px) {
   header {
     grid-column: span 4;
@@ -155,12 +168,23 @@ button {
     display: inline-block;
   }
 }
+@media (max-width: 360px) {
+  header {
+    grid-template-columns: 2fr 1fr 4fr;
+    background: linear-gradient( to left top, #7EB486, white);
+    height: 100px;
+    border-bottom:2px solid black;
+    padding-bottom: 10px;
+  }
+  h1 {
+    display: none;
+  }
+}
 @media (min-width: 667px) and (max-width: 1024px) {
   .small-news {
     grid-column: span 2;
   }
 }
-
 @media (min-width: 1025px) {
   h1 {
     font-size: 48px;
