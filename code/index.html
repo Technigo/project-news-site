@@ -9,19 +9,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-  </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
   <body>
     <header>
       <div class="header-container">
-        <a rel="starting page" href="index.html"><h1>BONSAI TIMES</h1></a>
+        <a class="title" rel="starting page" href="index.html"><h1>BONSAI TIMES</h1></a>
         
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
         <a class="active" href="index.html">News</a>
         <a href="#archive">Archive</a>
         <a href="instructions.html">Instructions</a>
         <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
     </div>
     </header>
 
@@ -55,7 +68,7 @@ function showSlides() {
 }
 </script>
 <div class="slide-text">
-  <h2>LATEST NEWS OF THE BONSAI WORLD</h2>
+  <h2><span>LATEST NEWS OF THE BONSAI WORLD</span></h2>
   <h3>Keep up with the most recent events, trends and happenings in the bonsai society.</h3>
 <p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
 </div>

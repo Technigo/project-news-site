@@ -16,6 +16,11 @@ header {
   background-color: white;
 }
 
+h1 {
+  color: black;
+  float: left;
+}
+
 .header-container {
 display: flex;
 justify-content: space-between;
@@ -25,9 +30,8 @@ margin: 2px 2px 2px 10px;
 }
 
 @media (max-width: 767px) {
-  .header-container {
-  flex-direction: column;
-
+.title h1 {
+  font-size: 0.99em;
 }
 }
 
@@ -52,18 +56,32 @@ margin: 2px 2px 2px 10px;
 
 }
 
-@media (max-width: 767px) {
-  .topnav {
-  padding: 15px;
-  flex-direction: column;
-
-}
+.topnav .icon {
+  display: none;
 }
 
-h1 {
-  color: black;
-  float: left;
+@media screen and (max-width: 767px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 .news-front {
   display: flex;
   flex-direction: row;
@@ -106,9 +124,10 @@ h1 {
 }
 
 .slide-text {
-  border: 1px solid;
+  border-left: 3px solid;
   width: 30%;
   margin-left: 10px;
+  padding: 0 20px 20px 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -116,8 +135,26 @@ h1 {
     width: 100%;
     max-width: 100%;
     margin-left: 0px;
+    border-bottom: 3px solid;
   }
 }
+
+@media screen and (max-width: 767px) {
+.slide-text h2 {
+  font-size: 0.95em;
+  margin-right: 20px;
+
+}
+}
+
+@media screen and (max-width: 767px) {
+  .slide-text h2 span {
+    background-color:rgba(84, 119, 90, 0.486); 
+    padding: 3px;
+  
+  
+  }
+  }
 
 .categories {
   width: 70%;
