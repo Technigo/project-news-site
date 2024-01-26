@@ -6,12 +6,11 @@ html {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 200;
 }
 
 body {
-  /*'DM Sans', sans-serif;*/
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 200;
 }
 
 p {
@@ -30,6 +29,7 @@ h1 {
   margin: 0px;
   padding: 5px 20px 10px 20px;
   font-size: 32pt;
+  font-weight: 200;
 }
 
 h1 span {
@@ -37,7 +37,16 @@ h1 span {
   font-style: italic;
   font-weight: 600;
   color: #f7ede2;
+  transform: skew(-15deg);
   -webkit-transform: skew(-15deg);
+}
+
+h2 {
+  font-weight: 200;
+}
+
+h3 {
+  font-weight: 200;
 }
 
 nav li {
