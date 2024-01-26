@@ -65,7 +65,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 41.7%;
+  width: 44%;
   height: 420px;
   margin-bottom: 30px;
 }
@@ -77,7 +77,8 @@ a:hover {
 }
 
 .latest-news img {
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .latest-news h3 {
@@ -147,8 +148,26 @@ hr.dotted {
   margin-left: 10px;
 }
 
-/* Responsive design making four news cards show on desktop, two on tablet and one on smartphone */
+/* Responsive design making one news cards in a row show on smartphone and the latest news section show as a column instead of a row. */
 @media screen and (max-width: 666px) {
+  .latest-news-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-news {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .latest-news img {
+    width: 80%;
+    height: 100%
+  }
+  
   .news {
     width: 90%;
   }
@@ -177,7 +196,27 @@ hr.dotted {
   } 
 }
 
+/* Responsive design making two news cards in a row show on tablet and the latest news section show as a column instead of a row. */
+
 @media screen and (min-width: 667px) and (max-width: 1024px) {
+  .latest-news-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-news {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .latest-news img {
+    width: 80%;
+    height: 100%
+  }
+  
   .news {
     width: 40%;
   }
