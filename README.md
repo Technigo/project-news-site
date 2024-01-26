@@ -11,3 +11,5 @@ I ended with making the content responsive. With this project I stared by coding
 If I had more time I would try to change the links in the navigation bar to icons instead of text.
 
 ## View it live
+
+https://news-site-gamlabanken.netlify.app
