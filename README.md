@@ -11,4 +11,5 @@ After a while I started to see how CSS works with all its features and it's amaz
 
 ## View it live
 
+https://65b422025b9715168e8097f6--bucolic-boba-53dbff.netlify.app/
 
