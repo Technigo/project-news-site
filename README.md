@@ -11,4 +11,4 @@ After a while I started to see how CSS works with all its features and it's amaz
 
 ## View it live
 
-https://app.netlify.com/sites/glowing-mandazi-df5864/deploys/65b418ea61304e1b2d72f555
+
