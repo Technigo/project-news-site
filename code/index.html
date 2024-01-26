@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&family=Archivo:ital,wght@0,100;0,200;0,700;0,800;0,900;1,200&family=Poppins:wght@100;200;300&family=Sora:wght@100,200;300&display=swap" rel="stylesheet">
 </head>
   <body>
     <header>
@@ -41,19 +44,30 @@
 <section class="news-front">
   <div class="slideshow-container">
    <div class="my-slides fade">
-    <img src="./images/bonsai.172136.horisont.jpg" style="width:100%">
+    <a href="stolen.html"><img src="./images/GettyImages-598322873-409b66c4895d492eb28fde9e752d98ad.jpg" style="width:100%">
+    <p>26.01.2024 10:56</p><h3>Stolen tree</h3><h4>A 400 year old Bonsai was stolen this thursday</h4>
+  </a>
   </div>
   <div class="my-slides fade"> 
-    <img src="./images/43-WhitePine1625-1.horisont.jpg" style="width:100%">
+    <a href="vandalism.html"><img src="./images/bonsai-img.vanl.jpg" style="width:100%">
+      <p>26.01.2024 10:45</p><h3>Famous Bonsai artis has his garden vandalized</h3><h4>Could be based on personal vendetta</h4>
+    </a>
   </div>
   <div class="my-slides fade">
-    <img src="./images/bonsai-img.horis.jpg" style="width:100%">
+    <a href="herbicide.html"><img src="./images/43-WhitePine1625-1.jpg" style="width:100%">
+      <p>25.01.2024 07:28</p><h3>Several trees targeted and posioned to death</h3><h4>At least 23 trees are dead</h4>
+    </a>
+  </div>
+  <div class="my-slides fade" id="last-image">
+    <a href="competition.html"><img src="./images/0D8A6785-2.jpg" style="width:100%">
+      <p>25.01.2024 16:34</p><h3>Winners for the Prestigious award The Trophy</h3><h4>See which trees that won</h4>
+    </a>
   </div>
 </div>
 
 <script>
  let slideIndex = 0;
-showSlides();
+showSlides(); 
 
 function showSlides() {
   let i;
@@ -67,64 +81,101 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 </script>
-<div class="slide-text">
-  <h2><span>LATEST NEWS OF THE BONSAI WORLD</span></h2>
-  <h3>Keep up with the most recent events, trends and happenings in the bonsai society.</h3>
-<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
+
+<div class="slide-text-column">
+  <div class="slide-text"><h3><span>LATEST NEWS OF THE BONSAI WORLD</span></h3></div>
+  <a href="stolen.html"><div class="headlines">
+    <h3><span>Another Stolen bonsai tree</span> The tree is 400 years old and like a child to the owners. </h3>
+  <p>Plea to the thieves: "Please water the plant"</p></a>
+  </div>
+  <a href="vandalism.html"><div class="headlines">
+    <h3><span>BONSAI VANDALISM:</span> Famous American Bonsai Artist Ryan Neil had his garden attacked and vandalized. </h3>
+  <p>Suspect in custody.</p>
+  </div></a>
+  <a href="herbicide.html"><div class="headlines" id="second-to-last">
+  <h3><span>Serial tree killer</span> A deadly case of herbicide has Victoria police on the lookout for a serial tree killer in Canada's garden city.</h3>
+  <p>Investigators discovered holes drilled into the bases of of at least 23 tree trunks.</p></div></a>
+  <a href="competition.html"><div class="headlines" id="last">
+    <h3><span>The winning trees</span> of 2023 The Throphy Exhibition </h3>
+    <p>See the highest rated trees of the famous exhibition which took place in Genk, Belgium.</p></div></a>
 </div>
     </section>
 
-    <section class="categories">
-      <div class="category-box"><a href="techniques.html">Techniques</a></div>
-      <div class="categoryBox"><a href="care.html">Care</a></div>
-      <div class="categoryBox"><a href="treespeciec.html">Tree species</a></div>
-      <div class="categoryBox"><a href="bonsaiartist.html">Bonsai artists</a></div>
-      <div class="categoryBox"><a href="history.html">History</a></div>
-      <div class="categoryBox"><a href="inspiration.html">Inspiration</a></div>
-    </section>
-
-<section class="headlines">
-  <h2>Learn the bonsai way</h2>
-  <h3>Follow the latest news of the bonsai society </h3>
-<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
+<section class="articles-archive">
+  <h2>Previous articles</h2>
 </section>
 <section class="row-articles">
   <div class="img-column">
     <img src="./images/04-Juniper-ebensperger.jpg" style="width:100%">
+    <div class="article-text"><p>05.01.2024</p><h3>Bonsai tree 1</h3><h4>Find out about this tree</h4></div>
     <img src="./images/juniper-bonsai-rock-omiya.jfif" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
     <img src="./images/7e851694-b98f-6db6-5ec0-7287ed0ca5e0_1024x1024.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
   </div>
   <div class="img-column">
     <img src="./images/photo-1627347902083-edbcaa5c4286.jfif" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
     <img src="./images/3388114954_1f6e49d25e_z_310x@2x.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
   </div>
   <div class="img-column">
     <img src="./images/artificial-bonsai-tree.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
     <img src="./images/bonsai.1.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
     <img src="./images/ccbd8ca24e78e509092af753272310d1.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
   </div>
   <div class="img-column">
     <img src="./images/bonsai3..jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
     <img src="./images/juniper-bonsai-the-classic-choice-for-beginners-19517f7a-8ae1-42b3-845f-5a7a2aa0a327.jpg" style="width:100%">
+    <div class="article-text"><h4>Find out about this tree</h4></div>
   <img src="./images/How-to-Create-a-Cascade-Bonsai-Feature.jpg" style="width:100%">
+  <div class="article-text"><h4>Find out about this tree</h4></div>
   </div>
 
 </section>
 
+
+<section class="categories">
+  <div class="category-column">
+  <div class="category-box"><a href="techniques.html">Techniques</a></div>
+  <div class="category-box"><a href="care.html">Care</a></div>
+  <div class="category-box"><a href="treespeciec.html">Tree species</a></div>
+</div>
+  <div class="category-column">
+  <div class="category-box"><a href="bonsaiartist.html">Bonsai Artists</a></div>
+  <div class="category-box"><a href="history.html">History</a></div>
+  <div class="category-box"><a href="inspiration.html">Inspiration</a></div>
+</div>
+</section>
+
     <section class="video-section">
+      <div class="instruction-video"><iframe width="711" height="400" src="https://www.youtube.com/embed/rLaFu3pHsi4?si=0AkoP9O701X-ng6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
       <div class="video-text">
-        <h2>Instruction video</h2><p>this is an instruction video about</p>
+        <h2><span>Learn how to create a Juniper Bonsai</span></h2>
+        <p>this is an instruction video about</p>
       </div>
-      <div class="instruction-video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/rLaFu3pHsi4?si=0AkoP9O701X-ng6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-      <div class="video-text">
-        <h2>Instruction video</h2><p>this is an instruction video about</p>
-      </div>
+
       <div class="instruction-video"><iframe width="711" height="400" src="https://www.youtube.com/embed/r4hEPHEJTYU?si=vom_NGqrWe-5hDgW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
       <div class="video-text">
-        <h2>Instruction video</h2><p>this is an instruction video about</p>
-      </div>
+      <h2><span>Visit Masahiko Kimura's Bonsai garden</span></h2>
+      <p>this is an instruction video about</p>
+    </div> 
+    
       <div class="instruction-video"><iframe width="711" height="400" src="https://www.youtube.com/embed/__ZYsymsdn8?si=VdqXXJuIRlVvIHRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-   
+      <div class="video-text">
+        <h2><span>Repotting of Ponderosa Bonsai</span></h2>
+        <p>this is an instruction video about</p>
+    </div>
     </section>
+
+    <h2>Learn the bonsai way</h2>
+  <h3>Follow the latest news of the bonsai society </h3>
+<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
+<h3>Keep up with the most recent events, trends and happenings in the bonsai society.</h3>
+<p>Learn tips and tricks on pruning and shaping, grow and show your own miniature tree</p>
   </body>
 </html>
