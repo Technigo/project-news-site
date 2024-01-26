@@ -2,12 +2,11 @@ body {
   background-color: #FCFFEF;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  margin: 0px;
+  margin: 0;
 }
 h2, h3 {
   font-family: 'Nunito', sans-serif;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 p {
   font-family: 'Montserrat', sans-serif;
@@ -31,8 +30,7 @@ header {
 h1 {
   font-family: 'Rubik Doodle Shadow', system-ui;
   font-size: 36px;
-  margin: 0px;
-  padding-top: 10px;
+  margin: 10px 0 0 10px;
 }
 .site-subtitle {
   display: none;
@@ -55,8 +53,8 @@ h1 {
   align-items: center;
   flex-direction: column;
   grid-column: span 4;
-  margin: 10px 10px 0px 10px;
-  padding: 10px 10px 0px 10px;
+  margin: 10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
 .big-news .photo-display {
   margin-right: 10px;
@@ -69,7 +67,6 @@ h2 {
 }
 .main-news-article {
   font-size: 16px;
-  margin-top: 0px;
 }
 .main-button {
   float: right;
@@ -129,14 +126,14 @@ button {
     grid-column: span 4;
     display: grid;
     grid-template-columns: 1fr 5fr 40%;
-    height: 80px;
+    height: 90px;
   }
   h1 {
     font-size: 40px;
     padding-top: 20px;
   }
   .main-menu {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     display: flex;
     justify-content: flex-end;
@@ -162,6 +159,8 @@ button {
   }
   .caption {
     align-self: flex-start;
+  }
+  .small-news .caption {
     padding-left: 10px;
   }
   .small-news {

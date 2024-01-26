@@ -1,8 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project.
-
-This project is a news site, for news about vegetarian eating.
+This project is a news site, for news about vegetarian food.
 
 ## The problem
 
@@ -13,6 +11,10 @@ I had troubles getting the responsive feature to work, so I added different back
 It was hard to get the layout to work as I wanted it to, both for the header and the main news section. I had to try both flexbox and grid to see the different results and then go for the one closest to my intentions (and in the main news sections, the float property geve me wath I wanted). I also tried dividing the page into sections in several different ways, to see how it changed the outcome.
 
 I realised that a lot of my styling was the same for tablet and desktop version. Instead of repeating myself in two different media queries I decided to make one media query for everything bigger than a mobile. Then I have two smaller media queries with the css that is unique for tablet or desktop.
+
+I wish I knew how to collapse the nav bar into an accordian, but instead I made a grid for it to fit on mobile screens, which I think is an okay solution.
+
+If I had more time I would make sure the buttons in the small news were aligned.
 
 ## View it live
 
