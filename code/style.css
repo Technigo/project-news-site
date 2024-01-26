@@ -376,6 +376,18 @@ background-color: rgb(0, 0, 0);
   }
 }  
 
+@media screen and (min-width: 768px) and (max-width: 900px)
+{
+  .video-section {
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;  
+    margin: 20px;
+    gap: 10px;
+    font-size: 0.75em;
+  }
+}  
+
 .instruction-video {
   background-color: pink;
 }
