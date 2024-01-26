@@ -45,7 +45,7 @@ h1 {
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin: 0 280px;
+margin: 0 15%;
 
 }
 
@@ -55,6 +55,11 @@ margin: 0 280px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .header-container {
+margin: 0 30%;
+  }
+}
 
 .topnav {
   overflow: hidden;
@@ -358,7 +363,7 @@ background-color: rgb(0, 0, 0);
 
 .video-section {
     height: 1500px;
-    margin: 10px 280px;
+    margin: 10px 15%;
     display: grid;
     gap: 20px;
     grid-template-columns: 2fr 1fr;
@@ -379,7 +384,7 @@ background-color: rgb(0, 0, 0);
 @media screen and (min-width: 768px) and (max-width: 900px)
 {
   .video-section {
-    height: 1200px;
+    height: 1400px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;  
     margin: 20px;
