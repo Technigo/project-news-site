@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Created a news site about dog new's from a dog's world. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I wrote the base code for desktop instead of mobile, as recommended. Next time, I will do mobile first.
+I planned a general layout, then began writing the HTML and then CSS. If I had more time I would've started with mobile first and also added more styling.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sprightly-croquembouche-f86126.netlify.app/
