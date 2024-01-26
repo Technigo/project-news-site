@@ -7,8 +7,7 @@
     border-bottom: 1.5px solid rgb(128, 128, 128, .7);
     font-size: 15px;
     font-weight: 600;
-    padding: 10px;
-    padding-bottom: 15px;
+    padding: 10px 5px 10px 5px;
 }
 
 .navbar-image {
@@ -16,14 +15,13 @@
     height: 120px;
 }
 
-
 .nav-item {
     display: inline;
 }
 
 a {
     text-decoration: none;
-    color: rgba(37, 33, 33, 0.928);
+    color: rgba(37, 33, 33, .8);
 }
 
 .header-title {
@@ -32,6 +30,7 @@ a {
     font-weight: 400;
     text-align: center;
     padding: 15px;
+    color: rgba(37, 33, 33, .8);
 
 }
 
@@ -39,22 +38,18 @@ a {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .feature-image {
-    border: solid 1px;
-    padding: 10px;
+    border: 10px solid rgba(225, 223, 62, 0.358);
 }
 
 .main-card-title {
     margin-left: 50px;
     margin-right: 10px;
-    flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3rem;
-    margin-top: 1px;
-    width: auto;
 }
 
 .main-card-button {
@@ -63,35 +58,34 @@ a {
 
 .main-card-text {
     margin-left: 30px;
-    flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
-    margin-top: 1px;
-    width: auto;
 }
 
-.big-small-news-divider {
+.news-divider {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     text-align: center;
+    color: rgba(37, 33, 33, .8);
     border-top: 2px dotted rgba(0, 0, 0, 0.418);
     border-bottom: 2px dotted rgba(0, 0, 0, 0.418);
     padding: 15px;
-
 }
 
 .small-news-container {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: flex-start;
     grid-gap: 10px;
+    border-bottom: 1.5px solid rgb(128, 128, 128, .7);
+    padding-bottom: 20px;
 }
 
 .small-card {
     box-sizing: border-box;
-    padding: 10px;
-    border: solid blue
+    border: 10px solid rgb(177, 150, 217, .5);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .small-card-img {
@@ -102,18 +96,14 @@ a {
 }
 
 .small-card-header {
-
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 5px;
-    border: solid red;
+    margin-bottom: 0;
 }
 
 .small-card-text {
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    border: solid yellow;
+    margin-top: 0;
 }
 
 .footer {
@@ -122,14 +112,12 @@ a {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    margin: 10px;
+    padding: 5px 10px 10px 0;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
+    color: rgba(37, 33, 33, .8);
 }
 
 .creator {
@@ -141,7 +129,6 @@ a {
 }
 
 .technigo-logo {
-    box-sizing: border-box;
     width: 50px;
 }
 
@@ -149,7 +136,6 @@ a {
 @media only screen and (max-width: 667px) {
     .nav-item {
         display: block;
-
     }
 
     .header-title {
@@ -184,7 +170,6 @@ a {
         grid-template-columns: 300px;
         justify-content: center;
         align-content: space-between;
-
     }
 
     .small-card-img {
@@ -194,7 +179,6 @@ a {
     .footer {
         font-size: 12px;
         margin: 0;
-
     }
 
     .creator {
