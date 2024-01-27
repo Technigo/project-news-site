@@ -41,7 +41,11 @@
     }
 
     .card-image{
-        width: 12rem;
+        flex-basis: 33%;
         object-fit: cover;
+    }
+
+    .card-content {
+        flex-basis: 66%;
     }
 }
