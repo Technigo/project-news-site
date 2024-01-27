@@ -103,12 +103,13 @@ p {
 }
 
 .big-article-image {
+  flex: 30%;
   width: 100%;
   object-fit: cover;
 }
 
 .big-article-text{
-  flex: 50%;
+  flex: 40%;
   padding: 2rem;
   line-height: 1.5;
   margin-top: 0;
@@ -196,7 +197,9 @@ footer{
   }
 
   .big-article-image {
-    width: 50%;
+    width: 40%;
+
+    object-fit: cover;
   }
 
   .big-article-text p{
