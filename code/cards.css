@@ -42,11 +42,11 @@
     }
 
     .card-image{
-        flex-basis: 25%;
         object-fit: cover;
     }
 
     .card-content{
         flex-basis: 75%;
+        min-width: 200px;
     }
 }
