@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is my first project in the Technigo Web Development Bootcamp. The assignment was to create a multi platform friendly news site, so I created Travel Today, a site where you can find fun and informative articles about traveling.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The biggest challenge here was understanding how to use media queries. More specifically how to best structure the HTML in order for the media queries to only target certain content on the site. Using divs and naming classes in a pedagogical manner helped a lot! Aesthetic improvements I think are needed:
+Same size of all images in the smaller news cards.
+Menu buttons should not stay highlighted after clicking on mobile.
+Full opacity on the text in the news cards.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the Travel Today site: https://65b32ac26283c37153428abb--creative-salmiakki-b52d98.netlify.app

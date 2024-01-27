@@ -1,4 +1,124 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #FFEBCD;
+  color: #000000;
+
+}
+
+.header {
+  overflow: hidden;
+  background-color: #BDB76B;
+  padding: 20px 10px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2E8B57;
+}
+
+.header a {
+  float: left;
+  color: bisque;
+  text-align: center;
+  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-right a:hover {
+  background-color: #808000;
+  color: bisque;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 667px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+section {
+  font-size: 1.25rem;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked>* {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.image-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+}
+
+.card {
+  aspect-ratio: 1 / 1.5;
+}
+
+.card__content {
+  background: white;
+  opacity: 0.65;
+  align-self: end;
+  margin: .5rem .5rem 2rem;
+  padding: .5rem;
+  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+  cursor: pointer;
+}
+
+.card__title {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.card__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (min-width: 40em) {
+
+  .card.featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .card.featured .card__img {
+    aspect-ratio: 1 / 1.25;
+  }
 }
