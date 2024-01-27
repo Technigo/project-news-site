@@ -1,53 +1,49 @@
-
 .container {
-  align-items: center;
   display: grid;
-  flex-direction: column;
   grid-template-columns: 100%;
+  grid-template-rows: repeat (6, 20%);
+  gap: 5px;
 }
 
-header {
+.header-for-mobile {
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: 
+  "sitename menu-icon"
+  "header-decorative-image header-decorative-image";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat (2, 1fr);
+  justify-content: space-between;
   position: sticky;
+  top: 0;
 }
 
 header h1 {
-  color: #568A62;
+  color: #335D38;
   font-family: "Autour One";
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
 }
 
-header img {
-  border-bottom: 2px solid #95C699;
-  border-top: 2px solid #95C699;
-  height: 15px;
-  padding: 5px 0 5px 0;
-}
-
-.header-mobile {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  width: 100%;
-}
-
 .dropdown-menu {
+  align-self: center;
+  justify-self: flex-end;
   display: inline-block;
+  padding-right: 0;
 }
 
 .dropdown-menu-icon {
   border: none;
-  color: #568A62;
+  color: #335D38;
   cursor: pointer;
   margin-left: 20px;
   padding: 20px 5px;
 }
 
 .dropdown-menu-content {
-  background-color: #95C699;
+  background-color: #B7BAA0;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   display: none;
   font-family: "Autour One";
@@ -70,6 +66,16 @@ header img {
 }
 
 .dropdown-menu-content a:hover {
-  background-color: #568A62 ;
+  background-color: #335D38 ;
   color: #fff;
+}
+
+.header-decorative-image {
+ border-bottom: 2px solid #335D38;
+ border-top: 2px solid #335D38;
+ grid-area: header-decorative-image;
+ grid-column: span 2;
+ padding: 5px 0 5px 0;
+ height: auto;
+ max-width: 100%;
 }
