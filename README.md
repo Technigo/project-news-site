@@ -9,3 +9,5 @@ I used CSS flex to manage the nav bar, aswell as the content containers. And CSS
 ## View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+link to the Netlify deployment: https://master--ornate-toffee-66ece1.netlify.app/
