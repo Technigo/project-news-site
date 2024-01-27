@@ -125,7 +125,7 @@ margin: 0 30%;
   align-self: center;
   margin-top: 0;
   height: auto;
-  max-height: 1500px;
+  max-height: 2000px;
 }
 }
 
@@ -133,6 +133,16 @@ margin: 0 30%;
   width: 50%;
   overflow: scroll;
 }
+
+@media screen and (max-width: 767px) {
+  .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    overflow: hidden;
+  }
+}
+
 
 .my-slides {
   display: none;
@@ -147,14 +157,6 @@ margin: 0 30%;
   }
 }
 
-
-@media screen and (max-width: 767px) {
-  .slideshow-container {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
-}
 
 .fade {
   animation-name: fade;
@@ -198,6 +200,7 @@ margin: 0 30%;
   width: 20%;
   margin-left: 10px;
   padding: 0 20px;
+  overflow: scroll;
 }
 
 @media screen and (max-width: 767px) {
@@ -208,6 +211,7 @@ margin: 0 30%;
     border: 3px solid;;
     padding-top: 20px;
     font-size: 0.9em;
+    overflow: hidden;
   }
 }
 
