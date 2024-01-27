@@ -10,3 +10,5 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://65b0d10ae446a55e0942f25e--tangerine-kleicha-3c5f1e.netlify.app
