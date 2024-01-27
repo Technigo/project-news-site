@@ -79,3 +79,36 @@ header h1 {
  height: auto;
  max-width: 100%;
 }
+
+.big-news-box {
+  background-color: #B7BAA0;
+  border: 3px solid #335D38;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.news-textbox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text--center {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Autour One";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Noto Sans";
+  margin: 10px 0;
+  padding: 0 10px;
+}
