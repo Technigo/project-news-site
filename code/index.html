@@ -1,23 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cards.css" />
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <!-- Navbar with links and logo-->
+    <nav class="nav-phone">
+      <div class="nav-title">
+        <a href="index.html"><h1>Raglan News</h1></a>
+      </div>
+      <div class="nav-child">
+        <a href="index.html"
+          ><img src="assets/RaglanLogoWhite.png" alt="Logo"
+        /></a>
+      </div>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+      <div class="dropdown">
+        <div class="dropbtn"><img src="assets/menu.png" /></div>
+        <div class="dropdown-content">
+          <a href="#">World News</a>
+          <a href="#">Sports</a>
+          <a href="#">Commerce</a>
+          <a href="#">Weather</a>
+        </div>
+      </div>
+    </nav>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <nav class="nav-tablet">
+      <div class="nav-link"><a href="#Home">World News</a></div>
+      <div class="nav-link"><a href="#Home">Sports</a></div>
+      <div class="navigation-logo">
+        <a href="index.html"
+          ><img src="assets/RaglanLogoWhite.png" alt="Logo"
+        /></a>
+      </div>
+      <div class="nav-link"><a href="#Home">Commerce</a></div>
+      <div class="nav-link"><a href="#Home">Weather</a></div>
+    </nav>
+
+    <nav class="nav-desktop">
+      <div class="nav-left">
+        <a href="index.html"
+          ><img src="assets/RaglanLogoWhite.png" alt="Logo"
+        /></a>
+      </div>
+
+      <div class="nav-left">
+        <a href="index.html"><h1>Raglan News</h1></a>
+      </div>
+
+      <div class="nav-right push">
+        <a class="nav-link" href="#Home">World News</a>
+      </div>
+      <div class="nav-right"><a href="#Home">Sports</a></div>
+      <div class="nav-right"><a href="#Home">Commerce</a></div>
+      <div class="nav-right"><a href="#Home">Weather</a></div>
+    </nav>
+
+    <div class="big-article-container">
+      <img
+        class="big-article-image"
+        src="images/coffeebook.jpg"
+        alt="Cup of coffe with a book on a table"
+      />
+      <div class="big-article-text">
+        <h1>Caffeinated readers are taking over the world</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus
+          nunc et ipsum fermentum viverra. Phasellus eget dolor consequat enim
+          scelerisque blandit. Integer non nulla nisl. Praesent sed elit
+          vulputate, efficitur justo vitae, auctor quam. Donec consectetur
+          sapien enim, id suscipit turpis efficitur in. Praesent lobortis
+          ultrices nisl in molestie. Suspendisse in commodo turpis. Quisque
+          scelerisque quam non tincidunt mollis. Nulla vitae sodales velit, in
+          dictum elit.
+        </p>
+        <button class="donate-button">Donate to end the suffering</button>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img
+          src="images/greenteapot.jpg"
+          alt="Green tea in ceramic teapot"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h2>The pot is hot</h2>
+          <p>The pot is indeed scolding hot...</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="images/looseleaf.jpg"
+          alt="Loose leaf tea in a glas"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h2>Gettin' loose</h2>
+          <p>Do you strain it out?...</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/rooibos.jpg" alt="Rooibos tea" class="card-image" />
+        <div class="card-content">
+          <h2>All bark, no bite</h2>
+          <p>Tree shavings have never had such a mild...</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="images/teabags.jpg"
+          alt="Teabags surrounding glasmug"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h2>Bag'em boys</h2>
+          <p>The convenience really beats everything...</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/teasmall.jpg" alt="" class="card-image" />
+        <div class="card-content">
+          <h2>Tea reading</h2>
+          <p>The best way to enjoy a good book...</p>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <!-- Footer to tie page together -->
+  <footer>© 2024 - Martin Jönsson</footer>
 </html>

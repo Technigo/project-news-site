@@ -1,0 +1,36 @@
+.cards{
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.card-content {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.card-content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card-content h2{
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
