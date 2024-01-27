@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+News site project for the Webdevelopment boot camp in 2024.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used CSS flex to manage the nav bar, aswell as the content containers. And CSS Grid to style the article cards. Tried to stick as close as I could to the example layout provided by Technigo.
 
 ## View it live
+
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
