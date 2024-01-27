@@ -10,6 +10,7 @@ Color palette
 */
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: Arial;
@@ -69,7 +70,7 @@ p {
   right: 0px;
   background-color: #f9f9f9;
   min-width: 8rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
   z-index: 1;
 }
 
@@ -98,7 +99,7 @@ p {
   display:flex;
   flex-direction: column;
   background-color: #f9f9f9;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .big-article-image {
@@ -146,6 +147,7 @@ footer{
   background-color: #242038;
   color:#725AC1;
   text-align:end;
+  margin-top: 0;
 }
 
 /* Tablet style */

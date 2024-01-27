@@ -2,13 +2,13 @@
     margin: 0 auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
     font-family: sans-serif;
 }
 
 .card{
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background: #fafafa;
 }
 
@@ -33,4 +33,15 @@
     padding: 1rem;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        display:flex;
+    }
+
+    .card-image{
+        width: 12rem;
+        object-fit: cover;
+    }
 }
