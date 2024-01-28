@@ -17,5 +17,5 @@ At one point, some Flexbox-features didn't want to work in Firefox and I could n
 If I had more time, I would have used it to polish the aesthetic style of the site, like adding patterned borders between sections. 
 
 ## View it live
-https://main--chic-pithivier-3304b0.netlify.app/
+https://imaginative-croissant-f2713d.netlify.app/
 
