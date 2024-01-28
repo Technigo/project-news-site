@@ -248,7 +248,7 @@ header {
 
 }
 
-.head-news-img {
+.head-news-img.mobile {
     margin-top: 10px;
     display: flex;
     width: 50%;
@@ -257,7 +257,9 @@ header {
 
     
 }
-
+.head-news-img {
+        display: none;
+    }
 
 .head-news-text{
     grid-column: span 1;
@@ -394,6 +396,10 @@ header {
         display: flex;
         padding-left: 20px;
        
+    }
+
+    .head-news-img-mobile{
+        display: none;
     }
     
     
@@ -546,7 +552,9 @@ header {
        
     }
 
-   
+   .head-news-img-mobile{
+        display: none;
+    }
     
     .head-news-read {
         font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
