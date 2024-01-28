@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+First technigo project creating a news site about plants.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used Figma for planning my project and also pen and paper which was really good. I had a lot of problems on the way but managed to google around and solve most of them. If I would have more time and I would not have spilled water on my computer so I needed to send it on reparation I would have more time and be less stressed so no more drinking water next to my computer. BIG LESSON!
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+news-site-plants.netlify.app
