@@ -340,7 +340,6 @@ font-size: 0.7em;
   justify-content: space-around;
   margin: 40px 15%;
   width: 70%;
-  background-color: rgb(185, 93, 81);
   padding: 20px;
 }
 
@@ -359,7 +358,7 @@ font-size: 0.7em;
 
 @media screen and (max-width: 900px){
   .category-column {
- flex-direction: column;
+  flex-direction: column;
   }
   }
 
@@ -413,12 +412,12 @@ background-color: rgb(0, 0, 0);
 
 @media screen and (max-width: 900px) {
   .video-section {
-    height: 1000px;
+    height: 2500px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;  
-    margin: 20px;
+    margin: 10px 10%;
     gap: 10px;
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
 }
 
@@ -452,7 +451,7 @@ background-color: rgb(0, 0, 0);
 @media screen and (max-width: 767px) {
   .video-text {
     padding: 20px;
-    overflow: hidden;
+    font-size: 0.9em;
   }
 }
 
@@ -470,7 +469,7 @@ background-color: rgb(0, 0, 0);
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
-  padding: 0 25px;
+  padding: 0 40px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -499,7 +498,7 @@ background-color: rgb(0, 0, 0);
 }
 
 .button-1:active {
-  background-color: #ffdeda;
+  background-color: #ad5147;
   outline: 0;
 }
 
@@ -507,10 +506,17 @@ background-color: rgb(0, 0, 0);
   outline: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .button-1 {
-    padding: 0 40px;
+    padding: 0 25px;
+    height: 38px;
+    font-size: 10px;
   }
+}
+@media (max-width: 767px) {
+  .button-1:after {
+    height: 38px;
+}
 }
 
 
