@@ -2,22 +2,221 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+          <!-- Navigation starts here -->
 
-    <section class="big-news">
-      <!-- The big news content -->
+      <nav>
+        <div class="navbar-container">
+          <div class="logo-image">
+            <a href="./index.html"><img
+          src="./assets/icons/icons8-rocket-64.png" 
+          alt="logo image"></a>
+          <div class="logo-text">
+            <p>ROCKET NEWS</p>
+          </div>
+          </div>
+        </div>
+          
+        
+          
+          <!-- Menu for mobile -->
+
+          <div class="hamburger-menu">
+            <a href="./index.html">
+              <img 
+              src="./assets/icons/icons8-hamburger-menu-50.png" 
+              alt="Hamburger menu icon">
+            </a>
+          </div>
+
+             <!-- Menu for tablet and desktop -->  
+             
+          <div class="desktop-menu">
+            <a class="menu-links" href="./articles.html">ARTICLES</a>
+            <a class="menu-links" href="./discover.html">DISCOVER</a>
+            <a class="menu-links" href="./about.html">ABOUT</a>
+          </div>
+      </nav>
+
+
+      <!-- Hero image starts here -->  
+        <section class="hero-container">
+          <a class="link-to-article"
+            href="https://phys.org/news/2024-01-salad-space-healthy-choice.html">
+          <img 
+          class="hero-image"
+          src="./assets/imgs/space-big-news.jpg" 
+          alt="Hero image of space">
+
+          <div class="hero-article">
+            <h1>Salad in space?</h1></a>
+            <p>New research says it's not a healthy choice. Researchers at the University of Delaware are looking at how plants grown in space are more prone to infections of Salmonella compared to plants not grown in space or grown under gravity simulations.</p>
+              <p>Credit: Evan Krape / University of Delaware</p>
+            <button class="read-more-button" 
+            onclick="location.href='https://phys.org/news/2024-01-salad-space-healthy-choice.html'" type="button">
+              Read more</button>
+            </div>
+        </section>
+      
+        </header>
+
+      
+        <!-- Other articles starts here-->  
+
+
+<main>
+  <div class="news-section">
+    <section class="article-container">
+      <div class="article-one">
+      <a 
+        class="link-to-article"
+        href="https://phys.org/news/2024-01-astronomers-accretion-outburst-young-variable.html">
+        <img 
+        class="article-pictures"
+        src="./assets/imgs/space1.jpg" 
+        alt="Man looking up in space">
+        <h2>Astronomers observe accretion outburst of a young variable star</h2></a>
+        <p>Using various ground-based facilities and space telescopes, astronomers have observed an accretion outburst that recently occurred on a young variable star known as V1741 Sgr.</p> 
+        <p class="name-date">Tomasz Nowakowski  |  January 24, 2024</p>
+      </div>
+       </section>
+  
+    <section class="article-container">
+     <div class="article-two">
+       <a 
+         class="link-to-article"
+         href="https://spacenews.com/japans-slim-achieved-pinpoint-moon-landing-with-just-one-working-engine/">
+        <img class="article-pictures"
+          src="./assets/imgs/space2.jpg" 
+          alt="Picture of moon">
+          <h2>Japan's SLIM achieved pinpoint moon landing with just one working engine</h2></a>
+          <p>Japan's SLIM lander achieved its goal of an accurate moon landing moon with only one of two main thrusters operating, JAXA stated Thursday.</p> 
+          <p class="name-date">Andrew Jones  |  January 25, 2024</p>
+        </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="article-container">
+      <div class="article-three">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/china-to-launch-queqiao-2-moon-relay-satellite-in-early-2024/">
+          <img class="article-pictures" 
+           src="./assets/imgs/space3.jpg" 
+           alt="Satellite in space">
+           <h2>China to launch Queqiao-2 moon relay satellite in early 2024</h2></a>
+           <p>China is preparing to place a new communications satellite in lunar orbit to facilitate ambitious upcoming moon landing missions.</p> 
+           <p class="name-date">Andrew Jones  |  October 17, 2023</p>
+          </div>
+     </section>
+
+     <section class="article-container">
+      <div class="article-four">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/industry-report-calls-for-greater-use-of-ai-to-extract-untapped-value-from-satellite-data/">
+          <img class="article-pictures"
+           src="./assets/imgs/space4.jpg" 
+           alt="Picture of a satellite">
+           <h2>Industry report calls for greater use of AI to extract untapped value from satellite data</h2></a>
+           <p>Companies in the Earth observation satellite industry are looking for climate-focused customers that could leverage data from space to generate value for their businesses and for the planet.</p> 
+           <p class="name-date">Sandra Erwin  |  January 22, 2024</p>
+          </div>
+     </section>
+
+     <section class="article-container">
+      <div class="article-five">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/momentus-low-on-cash-delays-next-mission/">
+          <img class="article-pictures" 
+           src="./assets/imgs/space5.jpg" 
+           alt="Stars in the sky">
+           <h2>Momentus, low on cash, delays next mission</h2></a>
+           <p>ORLANDO, Fla. — In-space transportation company Momentus has postponed the next flight of its space tug and laid off a fifth of its staff to conserve its dwindling cash reserves.</p> 
+           <p class="name-date">Jeff Foust  |  January 12, 2024</p>
+          </div>
+     </section>
+
+     <section class="article-container">
+      <div class="article-six">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/europe-considers-launching-copernicus-satellite-on-falcon-9/">
+          <img class="article-pictures" 
+           src="./assets/imgs/space6.jpg" 
+           alt="Satellite in space">
+           <h2>Europe considers launching Copernicus satellite on Falcon 9</h2></a>
+           <p>ORLANDO, Fla. — Europe may shift the launch of a Copernicus Earth observation satellite to SpaceX’s Falcon 9 to avoid further delays in getting it into orbit.</p> 
+           <p class="name-date">Jeff Foust  |  January 12, 2024</p>
+          </div>
+     </section>
+
+     <section class="article-container">
+      <div class="article-seven">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/peregrine-lander-suffers-anomaly-after-launch/">
+          <img class="article-pictures" 
+           src="./assets/imgs/space7.jpg" 
+           alt="Rocket launch">
+           <h2>Peregrine lander suffers anomaly after launch</h2></a>
+           <p>NEW ORLEANS — Astrobotic's Peregrine spacecraft will not be able to attempt a landing on the moon because of a fuel leak shortly after its Jan. 8 launch.</p> 
+           <p class="name-date">Jeff Foust  |  January 8, 2024</p>
+          </div>
+     </section>
+
+     <section class="article-container">
+      <div class="article-eight">
+        <a 
+          class="link-to-article"
+          href="https://spacenews.com/vulcan-centaur-launches-peregrine-lunar-lander-on-inaugural-mission/">
+          <img class="article-pictures"
+           src="./assets/imgs/space8.jpg" 
+           alt="Space rocket">
+           <h2>Vulcan Centaur launches Peregrine lunar lander on inaugural mission</h2></a>
+           <p>KENNEDY SPACE CENTER, Fla. — United Launch Alliance's Vulcan Centaur soared into night skies on its long-awaited first launch Jan. 8, carrying a commercial lunar lander.</p> 
+           <p class="name-date">Jeff Foust  |  January 8, 2024</p>
+          </div>
+     </section>
+    </div>
+
+    <section class="newsletter">
+      <img src="./assets/icons/icons8-rocket-64.png" alt="icon of a rocket">
+      <p class="sign-up-text">Sign up for Rocket News newsletter</p>
+        <p class="small-text">Get news about astronomy & space delivered to your inbox every week</p>
+      <button class="subscribe-button" 
+      onclick="location.href='link to newsletter'" type="button">
+        Subscribe to newsletters</button>
     </section>
+
+    <!--Footer starts here--> 
+
+    <footer>
+      <div class="social-media-icons">
+        <ul>
+          <a href="www.facebook.com"><img src="./assets/icons/icons8-facebook-30.png" alt="Facebook icon"></a>
+          <a href="www.instagram.com"><img src="./assets/icons/icons8-instagram-24.png" alt="Instagram icon"></a>
+          <a href="www.twitter.com"><img src="./assets/icons/icons8-twitter-24.png" alt="Twitter icon"></a>
+          <a href="www.youtube.com"><img src="./assets/icons/icons8-youtube-24.png" alt="YouTube icon"></a>
+        </ul>
+      </div>
+
+      <div class="icons">
+        <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+        <a target="_blank" href="https://unsplash.com/">Images from Unsplash</a>
+      </div> 
+
+      <div class="all-rights-reserved">
+        <p>Rocket News © 2024. All rights reserved.</p>  
+      </div>
+    </footer>
+
   </body>
 </html>
+
