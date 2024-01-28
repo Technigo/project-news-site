@@ -1,359 +1,243 @@
 body {
-  background-color: peachpuff;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
+  background-color: rgb(255, 194, 115);
+  color: rgb(229, 105, 105);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8 1fr);
+  font-family: 'sora', sans-serif;
+}
 
+footer {
+  display: grid;
+  grid-column: 1;
+  grid-row: 8;
 }
 
 h1 {
-  align-items: flex-start;
-  color: rgb(47, 47, 204);
+  color: rgb(193, 85, 139);
   font-size: 90px;
   margin: 5px;
   padding: 5px;
 }
 
 p {
-  display: flex;
-  justify-content: column;
-  flex-direction: column;
-  /*
-  border: solid rgb(67, 5, 130);
-  border-radius: 5px;
-  padding: 20px;
-  height: 550px;
-  width: 350px;
-  */
+  color: rgb(229, 105, 105);
+  font-size: 20px;
 }
-
 
 a {
   text-decoration: none;
-  color: rgb(67, 67, 238);
+  color: rgb(255, 223, 158);
+  font-size: 20px;
 }
 
 .navigation-bar-img {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
-  padding: 20px;
+  align-items: flex-start;
+  margin: 20px;
 }
 
 .navigation-bar {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-flow: row-reverse nowrap;
+  align-items: flex-end;
   gap: 50px;
   margin-right: 20px;
-  color: #fff;
+}
 
+.about {
+  order: 3;
+}
+
+.more-ideas {
+  order: 2;
+}
+
+.your-turn {
+  order: 1;
 }
 
 .navigation-bar-title {
   display: flex;
-  justify-content: center;
-  margin: 20px;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin: 5px;
 
 }
 
-.text-box-flex {
+.text-box-grid {
   display: flex;
-  flex-flow: column wrap-reverse;
-  align-items: flex-start;
-  /* border only used for structure */
-  /* 
-  border: 5px solid black; 
-  margin: 30px;
+  flex-flow: row wrap;
   padding: 20px;
-  */
+  margin: 5px;
+}
+
+.nested-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.pic-box-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(250, 195, 146);
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .brainstorm-button {
   display: flex;
-  align-self: flex-start;
-  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
-  border: 2px solid black;
-  background-color: white;
+  border: 1px solid rgb(250, 195, 146);
+  background-color: rgb(193, 85, 139);
+  color: rgb(255, 223, 158);
   padding: 5px;
 }
 
-.instagram-story-img {
+.instagram-story-img-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 10px;
-  /*  
-  border: 5px solid black;
-  */
-  padding: 20px;
-  margin: 50px;
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.instagram-story-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .idea-button {
   display: flex;
   align-self: flex-end;
+  align-items: center;
   border-radius: 5px;
   border: 2px solid black;
   background-color: rgb(255, 255, 255);
-  padding: 5px;
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .instagram-button {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
-  background-color: peachpuff;
+  background-color: rgb(193, 85, 139);
   border: 1px solid rgb(250, 195, 146);
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 120px;
+  height: 95px;
   padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
 }
 
 /* this is for tablet */
 @media (min-width: 668px) and (max-width: 1024px) {
   body {
-    background-color: peachpuff;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8 1fr);
 
-  }
-
-  h1 {
-    align-items: flex-start;
-    color: rgb(47, 47, 204);
-    font-size: 90px;
-    margin: 5px;
-    padding: 5px;
   }
 
   p {
     display: flex;
     justify-content: column;
     flex-direction: column;
-    /*
-    border: solid rgb(67, 5, 130);
-    border-radius: 5px;
-    padding: 20px;
-    height: 550px;
-    width: 350px;
-    */
   }
 
+  /* ÅTERKOM */
+  /*navigation-bar-img {
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+        justify-content: flex-start;
+    }
 
-  a {
-    text-decoration: none;
-    color: rgb(67, 67, 238);
-  }
+    .navigation-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 50px;
+        margin-right: 20px;
+        color: #fff;
 
-  .navigation-bar-img {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    padding: 20px;
-  }
+    }
 
-  .navigation-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 50px;
-    margin-right: 20px;
-    color: #fff;
+    .navigation-bar-title {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
 
-  }
+    }*/
 
-  .navigation-bar-title {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-
-  }
-
-
-
-
-  .text-box-flex {
-    display: flex;
-    flex-flow: column wrap-reverse;
-    align-items: flex-start;
-    /* border only used for structure */
-    /* 
-    border: 5px solid black; 
-    margin: 30px;
-    padding: 20px;
-    */
+  .text-box-grid {
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
   }
 
   .brainstorm-button {
     display: flex;
-    align-self: flex-start;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
-    border: 2px solid black;
-    background-color: white;
-    padding: 5px;
-  }
-
-  .instagram-story-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    /*  
-    border: 5px solid black;
-    */
-    padding: 20px;
-    margin: 50px;
-  }
-
-  .idea-button {
-    display: flex;
-    align-self: flex-end;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    height: 90px;
-    width: 90px;
-  }
-
-  .instagram-button {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    background-color: peachpuff;
     border: 1px solid rgb(250, 195, 146);
-    border-radius: 10px;
-    padding: 10px;
-  }
-}
-
-
-
-
-/* this is for desktop */
-@media (min-width: 1025px) {
-  body {
-    background-color: peachpuff;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-
-  }
-
-  h1 {
-    align-items: flex-start;
-    color: rgb(47, 47, 204);
-    font-size: 90px;
-    margin: 5px;
+    background-color: rgb(193, 85, 139);
+    color: rgb(255, 223, 158);
     padding: 5px;
   }
 
-  p {
-    display: flex;
-    justify-content: column;
-    flex-direction: column;
-    /*
-    border: solid rgb(67, 5, 130);
-    border-radius: 5px;
-    padding: 20px;
-    height: 550px;
-    width: 350px;
-    */
-  }
-
-
-  a {
-    text-decoration: none;
-    color: rgb(67, 67, 238);
-  }
-
-  .navigation-bar-img {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    padding: 20px;
-  }
-
-  .navigation-bar {
+  /* WHY ISN'T THIS WORKING? */
+  .pic-box-grid {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 50px;
-    margin-right: 20px;
-    color: #fff;
-
-  }
-
-  .navigation-bar-title {
-    display: flex;
     justify-content: center;
-    margin: 20px;
-
-  }
-
-
-
-
-  .text-box-flex {
-    display: flex;
-    flex-flow: column wrap-reverse;
-    align-items: flex-start;
-    /* border only used for structure */
-    /* 
-    border: 5px solid black; 
-    margin: 30px;
-    padding: 20px;
-    */
-  }
-
-  .brainstorm-button {
-    display: flex;
-    align-self: flex-start;
-    flex-direction: row-reverse;
+    align-items: center;
     border-radius: 5px;
-    border: 2px solid black;
-    background-color: white;
-    padding: 5px;
-  }
-
-  .instagram-story-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding: 20px;
-    margin: 50px;
-  }
-
-  .idea-button {
-    display: flex;
-    align-self: flex-end;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    height: 90px;
-    width: 90px;
-  }
-
-  .instagram-button {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    background-color: peachpuff;
     border: 1px solid rgb(250, 195, 146);
-    border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
   }
-}
+
+  /* this is for desktop */
+  @media (min-width: 1025px) {
+    .nested-grid {
+      display: flex;
+      flex-flow: row wrap-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .brainstorm-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      border: 1px solid rgb(250, 195, 146);
+      background-color: rgb(193, 85, 139);
+      color: rgb(255, 223, 158);
+      padding: 5px;
+    }
+  }
