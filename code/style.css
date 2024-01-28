@@ -1,18 +1,12 @@
-.container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat (6, 20%);
-  gap: 5px;
-}
 
-.header-for-mobile {
+.header-mobile {
   background-color: #fff;
   display: grid;
   grid-template-areas: 
   "sitename menu-icon"
   "header-decorative-image header-decorative-image";
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat (2, 1fr);
+  grid-template-rows: 2fr 1fr
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -23,8 +17,16 @@ header h1 {
   font-family: "Autour One";
   font-size: 30px;
   text-transform: uppercase;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+header p {
+  color: #335D38;
+  font-family: "Autour One";
+  font-size: 12px;
+  margin: 0 0 5px 10px;
+  padding: 0;
 }
 
 .dropdown-menu {
@@ -82,33 +84,74 @@ header h1 {
 
 .big-news-box {
   background-color: #B7BAA0;
+  color: #fff;
   border: 3px solid #335D38;
-  
   display: flex;
   flex-direction: column;
   padding: 0 0 10px 0;
-  color: #fff;
   text-decoration: none;
+}
+
+.news-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.small-news-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #335D38;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  text-decoration: none;
+  width: 100%;
 }
 
 .news-textbox {
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.news-button {
+  background-color: #335D38;
+  border: 1px solid #C1C3AC;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Noto Sans";
+  margin: 0 auto 10px auto;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.small-news-box img {
+  align-self: center;
+  padding-top: 10px;
+  width: 80%;
 }
 
 .text--center {
   text-align: center;
 }
 
+.font-color {
+  color: #335D38;
+}
+
 h2 {
   font-family: "Autour One";
   font-size: 20px;
   text-transform: uppercase;
+  padding: 0 3px;
 }
 
 p {
   font-family: "Noto Sans";
-  margin: 10px 0;
+  margin-top: 0;
   padding: 0 10px;
 }
