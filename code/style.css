@@ -1,15 +1,23 @@
-
-.header-mobile {
+.header-box {
   background-color: #fff;
   display: grid;
-  grid-template-areas: 
-  "sitename menu-icon"
-  "header-decorative-image header-decorative-image";
+  grid-template-areas:
+    "sitename menu-icon"
+    "header-decorative-image header-decorative-image";
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1.5fr 1fr;
   justify-content: space-between;
   position: sticky;
   top: 0;
+}
+
+footer {
+  align-items: center;
+  background-color: #335D38;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
 }
 
 header h1 {
@@ -29,6 +37,7 @@ header p {
   padding: 0;
 }
 
+/*dropdown menu for mobile and tablets*/
 .dropdown-menu {
   align-self: center;
   justify-self: flex-end;
@@ -46,7 +55,7 @@ header p {
 
 .dropdown-menu-content {
   background-color: #B7BAA0;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   display: none;
   font-family: "Autour One";
   min-width: 150px;
@@ -68,18 +77,42 @@ header p {
 }
 
 .dropdown-menu-content a:hover {
-  background-color: #335D38 ;
+  background-color: #335D38;
+  color: #fff;
+}
+
+/*menu for desktops*/
+.desktop-menu {
+  align-self: center;
+  justify-self: center;
+  display: none;
+  margin: 5px;
+}
+
+.desktop-menu a {
+  color: #335D38;
+  cursor: pointer;
+  font-family: "Autour One";
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.desktop-menu a:hover {
+  background-color: #335D38;
+  border-radius: 5px;
   color: #fff;
 }
 
 .header-decorative-image {
- border-bottom: 2px solid #335D38;
- border-top: 2px solid #335D38;
- grid-area: header-decorative-image;
- grid-column: span 2;
- padding: 5px 0 5px 0;
- height: auto;
- max-width: 100%;
+  border-bottom: 2px solid #335D38;
+  border-top: 2px solid #335D38;
+  grid-area: header-decorative-image;
+  grid-column: span 2;
+  padding: 5px 0 5px 0;
+  height: auto;
+  max-width: 100%;
 }
 
 .big-news-box {
@@ -96,6 +129,7 @@ header p {
   width: 100%;
 }
 
+/*the layout for the small news boxes*/
 .news-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -130,7 +164,6 @@ header p {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 
 .small-news-box img {
@@ -155,6 +188,10 @@ h2 {
   font-size: 20px;
   text-transform: uppercase;
   padding: 0 3px;
+}
+
+footer p {
+  margin: 5px;
 }
 
 p {
@@ -186,39 +223,47 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-    .big-news-box {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0;
-    }
+  .big-news-box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
 
-    .big-news-box img {
-      width: 60%;
-    }
+  .big-news-box img {
+    width: 60%;
+  }
 
-    .news-button {
-      margin: 10px 0 0 0;
-      padding: 10px 25px;
-    }
+  .news-button {
+    margin: 10px 0 0 0;
+    padding: 10px 25px;
+  }
 
-    .news-button:hover {
-      background-color: #fff;
-      border: 5px dotted #335D38;
-      border-radius: 5px;
-      color: #335D38;
-      padding: 15px 40px;
+  .news-button:hover {
+    background-color: #fff;
+    border: 5px dotted #335D38;
+    border-radius: 5px;
+    color: #335D38;
+    padding: 15px 40px;
+  }
 
-    }
-
-    .small-news-box:hover {
-      background-color: #335D38;
-      color: #fff;
-    }
+  .small-news-box:hover {
+    background-color: #335D38;
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .header-box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.25fr 1fr;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
   .news-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -226,5 +271,13 @@ p {
   .news-textbox p {
     padding: 0 15px;
     text-align: center;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: inline-block;
   }
 }
