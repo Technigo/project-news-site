@@ -16,6 +16,8 @@ I wish I knew how to collapse the nav bar into an accordian, but instead I made 
 
 If I had more time I would make sure the buttons in the small news were aligned.
 
+I've learned why it is good to know the lauout from the beginning, because it was much harder to fit a new element into the layout when it was already done, than to first put all the elements in place and then style. Especially with all the margins and ppaddings to ajust.
+
 ## View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
