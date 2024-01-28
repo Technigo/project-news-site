@@ -2,22 +2,140 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants are for everyone</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
+
     <header>
-      <!-- Some kind of logo and navbar -->
+      <!-- Heading -->
+     <div class="heading">
+        <img src="assets/logo-pic.png" width="100px" height="100px" alt="Tiny plant">
+        <h1>Plants are for everyone</h1>
+     </div>
+
+      <!--Navbar--> 
+      <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="https://www.almanac.com/content/birth-month-flowers-and-their-meanings">News</a></li>
+            <li><a href=" https://www.bbcearth.com/quiz/what-sort-of-plant-are-you">Quiz</a></li>
+            <li><a href=" https://greenchoiceflowers.com/blogs/blog/how-to-become-a-flower-expert-online-guide-to-floristry-training">Learn</a></li>
+        </ul>
+      </div>
+
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<section class="big-news">
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <!-- flowers of the month -->
+     <div class="month-heading">
+      <h2>Flowers of the month</h2>
+     </div>
+
+      <!-- Carnation -->
+    <div class="carnation flower">
+      <img src="assets/carnation.png" width="200px" height="200px" alt="Carnation">
+      <p><strong>Carnation</strong><br>The carnation is often referred to as "the flower of the gods".</p>
+    </div>
+
+      <!-- Snowdrop -->
+    <div class="snowdrop flower">
+      <img src="assets/snowdrop.png" width="200px" height="200px" alt="Snowdrop">
+      <p><strong>Snowdrop</strong><br>The snowdrops are used to symbolize sympathy and celebration.</p>
+    </div>
+
+    <div class="month-info">
+        <p id="birth-flowers-info">Just like gemstones every month has one or two birth flowers. Find out which ones are your <a href="https://www.almanac.com/content/birth-month-flowers-and-their-meanings">birth flowers.</a></p>
+    </div>
+
+</section>
+
+    <!-- Section of all articles -->
+<section class="other-news">
+    <!-- Quiz -->
+    <div class="quiz info" id="quiz-news">
+        <h3>What type of plant are you?</h3>
+        <img src="assets/big-picture.png" width="300px" height="300px" alt="Different plants">
+        <a href=" https://www.bbcearth.com/quiz/what-sort-of-plant-are-you">
+        <button type="button">Take the Quiz</button></a>
+    </div>
+
+      <!-- Leafy greens -->
+    <div class="news info" id="greens-news">
+        <h3>Beautiful leafy greens</h3>
+      <a href="https://bloomscape.com/plant-care/9-easiest-houseplants-anyone-can-grow/">
+        <img src="assets/leafy-greens.png" width="300px" height="300px" alt="Green indoor plant">
+      </a>
+      <p>These ones are suited for people who does not want to spend a lot of time caring for their plants but still want to fill their home with beautiful plants.</p>
+    </div>
+
+      <!-- Beginner garden -->
+    <div class="news info" id="beginner-garden-news">
+      <h3>Flowers for your beginner garden</h3>
+      <a href="https://www.gardendesign.com/flowers/easy.html">
+        <img src="assets/sunflower.png" width="300px" height="300px" alt="Sunflower">
+      </a>
+      <p>These are some of the flowers that can easily be managed by a beginner who wants to grow a fantastic flower garden</p>
+    </div>
+
+        <!-- Expert -->
+    <div class="news info" class="expert-news">
+      <h3>Looking for a challenge</h3>
+      <a href="https://www.ruralsprout.com/hardest-flowers-to-grow/">
+        <img src="assets/gardenia.png" width="300px" height="300px" alt="Gardenia">
+      </a>
+      <p>The flowers that are considered the hardest ones to make grow. They will take a lot of time and effort but the lovely flowers will be worth it.</p>
+    </div>
+
+    <!-- fertilizer -->
+    <div class="news info" id="fertilizer-news">
+        <h3>Fertilizer</h3>
+        <a href="https://standishmilling.com/blogs/articles/how-to-choose-the-right-fertilizer-buying-guide"> 
+            <img src="assets/fertilizer.png" width="300px" height="300px" alt="Fertilizers">
+        </a>
+        <p>To be able to grow your plants to their full potential you might need to use fertilizers. There are a lot to choose from and it can be difficult.</p>
+    </div>
+    
+    <!-- soil -->
+    <div class="news info" id="soil-news">
+        <h3>Soil</h3>
+        <a href="https://www.ugaoo.com/blogs/garden-maintenance/a-gardeners-guide-choosing-the-right-soil-for-your-garden"> 
+            <img src="assets/soil.png" width="300px" height="300px" alt="Hands holding soil">
+        </a>
+        <p>There are varieties of soil you can buy when you want to start building your garden. Here you can learn more about which one to choose for your purposes.</p>
+    </div>
+    
+    <!-- beginner -->
+    <div class="news info" id="beginner-news">
+        <h3>For the beginner</h3>
+        <a href="https://www.housebeautiful.com/uk/garden/a32173671/gardening-for-beginners/"> 
+            <img src="assets/beginner.png" width="300px" height="300px" alt="Gardening tools">
+        </a>
+        <p>Learn basic gardening with these tasks.</p>
+    </div>
+    
+    <!-- ambitious -->
+    <div class="news info" id="ambitious-news">
+        <h3>For the ambitious</h3>
+        <a href="https://greenchoiceflowers.com/blogs/blog/how-to-become-a-flower-expert-online-guide-to-floristry-training"> 
+            <img src="assets/ambitious.png" width="300px" height="300px" alt="Plants starting to grow">
+        </a>
+        <p>Become a flower expert with this online course.</p>
+    </div>
+
+</section>
+
+
+
+    <!-- Created by and logo -->
+<section class="footer">
+
+    <img src="assets/technigo-logo.svg" width="120px" height="70px" alt="Technigo logo">
+    <h4>Created by Paula Jungåker</h4>
+
+</section>
   </body>
 </html>
