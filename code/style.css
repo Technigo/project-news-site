@@ -6,7 +6,7 @@
   "sitename menu-icon"
   "header-decorative-image header-decorative-image";
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr
+  grid-template-rows: 1.5fr 1fr;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -83,7 +83,7 @@ header p {
 }
 
 .big-news-box {
-  background-color: #B7BAA0;
+  background-color: #335D38;
   color: #fff;
   border: 3px solid #335D38;
   display: flex;
@@ -92,10 +92,13 @@ header p {
   text-decoration: none;
 }
 
+.big-news-box img {
+  width: 100%;
+}
+
 .news-grid {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .small-news-box {
@@ -105,7 +108,8 @@ header p {
   flex-direction: column;
   margin: 10px auto;
   text-decoration: none;
-  width: 100%;
+  padding: 10px;
+  width: 90%;
 }
 
 .news-textbox {
@@ -117,10 +121,10 @@ header p {
 
 .news-button {
   background-color: #335D38;
-  border: 1px solid #C1C3AC;
   border-radius: 5px;
+  border: 3px dotted #fff;
   color: #fff;
-  font-family: "Noto Sans";
+  font-family: "Autour One";
   margin: 0 auto 10px auto;
   padding: 5px 20px;
   text-align: center;
@@ -131,8 +135,7 @@ header p {
 
 .small-news-box img {
   align-self: center;
-  padding-top: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 .text--center {
@@ -141,6 +144,10 @@ header p {
 
 .font-color {
   color: #335D38;
+}
+
+.no-margin-below {
+  margin: 20px 0 0 0;
 }
 
 h2 {
@@ -154,4 +161,70 @@ p {
   font-family: "Noto Sans";
   margin-top: 0;
   padding: 0 10px;
+}
+
+@media only screen and (min-width: 576px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .tablet-fontsize {
+    font-size: 25px;
+  }
+
+  .dropdown-menu-icon {
+    margin-right: 20px;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .big-news-box {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .big-news-box img {
+      width: 60%;
+    }
+
+    .news-button {
+      margin: 10px 0 0 0;
+      padding: 10px 25px;
+    }
+
+    .news-button:hover {
+      background-color: #fff;
+      border: 5px dotted #335D38;
+      border-radius: 5px;
+      color: #335D38;
+      padding: 15px 40px;
+
+    }
+
+    .small-news-box:hover {
+      background-color: #335D38;
+      color: #fff;
+    }
+}
+
+@media screen and (min-width: 992px) {
+  .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .news-textbox p {
+    padding: 0 15px;
+    text-align: center;
+  }
 }
