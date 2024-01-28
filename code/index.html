@@ -1,23 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="theme-color" content="#F28482">
+
+  <title>SuccyNews</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Besley&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap">
+</head>
+
+<body>
+  <header>
+    <h1>succy<span>news</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#archive">archive</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <i id="hamburger-menu" class="material-icons" style="font-size:36px">menu</i>
+  </header>
+
+  <main>
     <section class="big-news">
       <!-- The big news content -->
+      <img class="big-news-image" src="./images/echeveria.jpg" alt="picture of echeveria">
+      <div class="big-news-text">
+        <h2>Nice and juicy</h2>
+        <p>Fleshy leaves, stems or roots are unique features that allow these plants to thrive in arid environments.
+          Beauty without a fuzz you say? Well, yes please!
+        </p>
+      </div>
     </section>
 
-    <section class="">
+    <section class="news-grid">
       <!-- The other news  -->
+      <div class="news-item">
+        <img src="./images/euphorbia-ingens.jpg" alt="picture of euphorbia ingens">
+        <h3>Cactus or not? </h3>
+        <p>What is often mistaken for a cactus is actually a spieces from a whole different continent. In this article
+          we try to clear out the confusion between cacti and euphorbias </p>
+      </div>
+      <div class="news-item">
+        <img src="./images/repot1.jpg" alt="picture of cuttings">
+        <h3>Time to repot! </h3>
+        <p>Gravel, sand or store bought cacti mix? How to handle a plant covered in spines? We guide you through the art
+          of repotting succulents.</p>
+      </div>
+      <div class="news-item">
+        <img src="./images/gymnocalycium.jpg" alt="picture of gymnocalycium">
+        <h3>Beginner friendly cacti</h3>
+        <p>Don't know where to start? We've got you covered! Take a look at this list to find your new prickly friend.
+          Maybe it's an adorable Gymnocalycium Bruchii?
+        </p>
+      </div>
+      <div class="news-item">
+        <img src="./images/lithops.jpg" alt="picture of living stones">
+        <h3>Lithops - How to grow living stones</h3>
+        <p>Lithops have a very particular growing season. Here's how to care for the plants through their different
+          growth cycle stages.</p>
+      </div>
+      <div class="news-item">
+        <img src="./images/senecio.jpg" alt="picture of senecio">
+        <h3>A real drama queen</h3>
+        <p>Senecio grandiflorus, or The Queen of the Night is a legend among cactuslovers everywhere. Its impressive
+          giant yellow and white flowers can grow up to 30cm (!!!) large. Each individual bud opens completely during
+          only one single night. </p>
+      </div>
+      <div class="news-item">
+        <img src="./images/cylindropuntia.jpg" alt="picture of cylindropuntia">
+        <h3>Don't mess with us</h3>
+        <p>Why spines instead of leaves? "They can be a defense mechanism to discourage herbivores - animals that eat
+          plants - from eating the cactus.
+          But, also, spines create shade!" explains Kimberlie McCue.</p>
+      </div>
+      <div class="news-item">
+        <img src="./images/opuntia.jpg" alt="picture of prickly pear cactus">
+        <h3>Cactus that you can eat?</h3>
+        <p>Prickly pear cactus has been a Mexican and Central American dietary staple for thousands of years. Its flavor
+          is often compared to that of a melon or a kiwi, sometimes with a hint of bubblegum.</p>
+      </div>
+      <div class="news-item">
+        <img src="./images/moorten.jpg" alt="moorten botanical garden">
+        <h3>World's first cactarium</h3>
+        <p>Moorten Botanical Garden is a living museum of desert lore with more than 3000 varieties of plants. The
+          Moortens have invited us to a special exhibition of rare plants seen nowhere else.</p>
+      </div>
     </section>
-  </body>
+  </main>
+
+  <footer>
+    <p>© 2024 SuccyNews</p>
+    <img src="./logo.svg" alt="technigo logo">
+  </footer>
+</body>
+
 </html>
