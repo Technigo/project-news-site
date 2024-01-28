@@ -211,7 +211,7 @@ header {
 @media (max-width: 480px){
  
 .grid-parent-head-news {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 440px);
     gap:5px;
@@ -251,8 +251,8 @@ header {
     grid-column: span 1;
     margin-top: 10px;
     display: flex;
-    width: 310px;
-    height: auto;
+    width: 60%;
+    height: 60%;
 
     
 }
