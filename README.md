@@ -11,6 +11,7 @@ During the project, main problem was that I realized unclear concept of CSS, for
 I draw the layout and made plan on paper as the instruction mentioned. Read previous students' project, read their code in order to learn. Then I back to read materials again. It helped me to understand deeply. 
 I tried to write the code by myself. When I was confused about Flex-direction, I tried all the possibility to see what would happen. I also post questions on stack overflow. Learned how to ask questions. 
 If I had more time, I would test my code of resposive design more. Practice more different layout by grid and flex. Also I would  read more code of different website, this helped me a lot. 
+For HTML, if I had more time, I would try more different way to make buttons more interesting as well as navbar. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the link to my deployed project https://trista-news-site.netlify.app
