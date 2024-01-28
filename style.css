@@ -1,0 +1,711 @@
+/* Body */
+body {
+    margin: 20px 0 20px;
+    background: linear-gradient(to right, #e9f5fd, #9ea3a0);
+}
+
+/* "Back To Top"-Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+    background-color: #2a2a2a;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #5B8499; 
+}
+  
+.back-to-top a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.back-to-top i {
+    font-size: 15px;
+}
+
+/* Header */
+header, .nav {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #F8F8F8;
+    position: relative;
+    padding: 10px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    border-bottom: 1.3px solid black;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav a {
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    color: #5B8499;
+}
+
+.nav-btn {
+    display: none; 
+}
+
+/* Styling for dropdown container in navigation bar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 12px;
+    background-color: inherit;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F8F8F8;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 5px;
+}
+
+.dropdown-content a {
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #5B8499;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive design, header + navigation bar for mobile screens */
+@media (max-width: 667px) {
+    body, header, .nav, main {
+        background-color: #F8F8F8;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    header::before {
+        border-bottom: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        display: none; 
+        margin: 8px;
+        font-size: 13px;
+    }
+
+    .nav-btn {
+        display: block;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    .nav.active a {
+        font-size: 7px;
+        display: block; 
+    }
+
+   .nav .dropdown {
+        margin: 8px;
+        display: none;
+    }
+
+    .nav .dropdown .dropbtn {
+        display: block;
+        font-size: 7px; 
+    }
+
+    .nav .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .nav.active .dropdown {
+        display: block;
+    }
+    }
+
+/* Responsive design, header + navigation bar for tablet screens */
+@media (min-width: 668px) and (max-width: 1024px) {
+    header, .nav {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    header img {
+        width: 60%;
+    }
+
+    .nav {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .nav a {
+        margin: 7px;
+    }
+}
+
+/* Responsive design, navigation bar for laptop/computer screens */
+@media (min-width: 1700px) and (max-width: 2560px) {
+    .nav {
+        font-size: 15px;
+    }
+}
+
+/* Feature section */
+.feature {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    background: #F8F8F8;
+    width: 86%;
+    padding: 2%;
+    margin: auto;
+}
+
+.feature-image, .feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #b3b3b3;
+    height: 100%; 
+    background: #ffffff;
+}
+
+.feature-image {
+    grid-column: span 4;
+    border-right: none;
+}
+
+.feature-image img {
+    display: block;
+    max-width: 100%;
+    height: 100%; 
+}
+
+.feature-text {
+    grid-column: span 2;
+    border-left: none;
+}
+
+.feature-text h1 {
+    font-size: 40px;
+    font-family: "Aileron Bold";
+    color: #333;
+    text-align: right; 
+    padding-right: 8%;
+    line-height: 0.8; 
+    letter-spacing: -2.2px; 
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.feature-text h1:hover {
+    text-shadow: 1px 1px 2px rgb(88, 88, 88); 
+}
+
+.feature-text p {
+    font-size: 14px; 
+    font-family: "Aileron";
+    color: #333; 
+    text-align: center;
+    padding-right: 15px;
+}
+
+/* Responsive design, feature section for mobile screens */
+@media (max-width: 667px) {
+    .feature {
+        width: 85%;
+        grid-template-columns: 1fr; 
+    }
+
+    .feature-image, .feature-text {
+        height: 100%;
+        grid-column: span 1;
+        border: 1px solid #b3b3b3;
+        object-fit: cover; 
+    }
+
+    .feature-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .feature-text {
+        border-top: none; 
+    }
+
+    .feature-text h1 {
+        font-size: 16px;
+        padding-top: 2px;
+        letter-spacing: -1.5px; 
+    }
+
+    .feature-text h1 a {
+        text-decoration: none !important;
+    }
+
+    .feature-text p {
+        font-size: 8px;
+        padding-top: 0px;
+        padding-right: 5px;
+    }
+}
+
+/* Responsive design, feature section for tablet screens */
+@media (min-width: 668px) and (max-width: 1024px) {
+    .feature-image, .feature-text {
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feature-text h1 {
+        font-size: 26px;
+        padding-top: 10px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+        padding-top: 2px;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+}
+
+/* Responsive design, feature section for laptop/computer screens */
+@media (min-width: 1700px) and (max-width: 2560px) {
+    .feature-text h1 {
+        font-size: 50px;
+    }
+
+    .feature-text p {
+        font-size: 20px;
+    }
+}
+/* End of feature section */
+
+/* Articles section */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    background: #F8F8F8;
+    width: 86.4%;
+    padding-left: 1.8%;
+    padding-right: 1.8%;
+    margin: auto;
+}
+
+.news-box {
+    background: #ffffff;
+    height: 400 px;
+    grid-column: span 1;
+    border: 1px solid #b3b3b3;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 35px;
+}
+
+.news-box img {
+    max-width: 100%;
+}
+
+.news-box h2 {
+    font-size: 20px; 
+    font-family: "Aileron Bold";
+    color: #333; 
+    text-align: center;
+    line-height: 0.9; 
+    letter-spacing: -1px; 
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.news-box h2:hover {
+    text-shadow: 1px 1px 2px rgb(88, 88, 88); 
+}
+
+.news-box h2 a {
+    color: #333; 
+    text-decoration: none; 
+}
+
+.news-box p {
+    font-size: 14px; 
+    font-family: "Aileron";
+    color: #333; 
+    text-align: center;
+}
+
+/* Responsive design, articles section for mobile screens */
+@media (max-width: 667px) {
+    .articles {
+        background: #F8F8F8;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .news-box {
+        height: 50%;
+        margin-bottom: 5px;
+    }
+
+    .news-box h2 {
+        font-size: 14px; 
+    }
+
+    .news-box p {
+        font-size: 8px;
+    }
+}
+
+/* Responsive design, articles section for tablet screens */
+@media (min-width: 668px) and (max-width: 1024px) {
+    .articles {
+        background: #F8F8F8;
+        width: 86.3%;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive design, articles section for laptop/computer screens */
+@media (min-width: 1700px) and (max-width: 2560px) {
+    .news-box {
+        margin-bottom: 60px;
+    }
+    
+    .news-box h2 {
+        font-size: 35px;
+    }
+
+    .news-box p {
+        font-size: 20px;
+    }
+}
+/* End of articles section */
+
+/* Footer */
+footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%; 
+    height: 0.4px;
+    background-color: black;
+}
+
+/* Footer categories */
+.footer-links {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-categories a {
+    margin: 0 10px;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    text-decoration: none;
+}
+
+.footer-categories a:hover {
+    color: #5B8499;
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+/* Footer content & styling */
+.about {
+    width: 60%;
+}
+
+.socials {
+    width: 35%;
+    position: relative;
+    padding-left: 15px; 
+}
+
+.socials::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 50%; 
+    border-left: 1px solid #333; 
+}
+
+.about h4,
+.socials h4 {
+    color: #000000;
+    font-size: 15px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.socials h4 span {
+    font-weight: normal;
+    margin-right: 2px;
+}
+
+.about p, .socials p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    color: #000000;
+    font-size: 11px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    margin-left: 25px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: #5B8499;
+}
+
+.copyright {
+    margin-top: 5px;
+    padding-right: 40px;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
+/* Responsive design, footer for mobile screens */
+@media (max-width: 667px) {
+    footer::before {
+        display: none;
+    }
+
+    .footer-categories a {
+        font-size: 6px;
+    }
+
+    .footer-container {
+        flex-direction: row; 
+    }
+
+    .about,
+    .socials {
+        width: 100%; 
+        font-size: 12px !important; 
+        padding-right: 20px;
+    }
+
+    .about h4,
+    .socials h4 {
+        font-size: 10px !important;
+    }
+
+    .about p,
+    .socials p {
+        font-size: 6px !important; 
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .social-icons a {
+        font-size: 10px !important; 
+    }
+
+    .copyright {
+        text-align: left; 
+        padding-right: 0; 
+    }
+}
+
+/* Responsive design, footer section for laptop/computer screens */
+@media (min-width: 1700px) and (max-width: 2560px) {
+    .footer-categories a {
+        font-size: 12px;
+    }
+
+    .about h4,
+    .socials h4 {
+        font-size: 20px !important; 
+    }
+
+    .about p,
+    .socials p {
+        font-size: 15px !important; 
+    }
+}
+/* End of footer styling */
+
+/* Newsletter pop up + subscription button */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    width: 50%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 70%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-content input[type="email"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #A6B7C1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.modal-content button:hover {
+    background-color: #5B8499;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icelandic Odyssey Magazine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/YOUR-CORRECT-KIT-ID.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <img src="logo.png" alt="Icelandic Odyssey Magazine Logotype"/>
+</header>
+
+<!-- Navigation bar -->
+<nav class="nav">
+    <a href="#">DESTINATIONS</a>
+    <a href="#">ACTIVITIES</a>
+    <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+        <button class="dropbtn">TIPS & LOCAL INSIGHT</button>
+        <div class="dropdown-content" id="tipsDropdown">
+            <a href="#">TRAVELER'S INSIGHTS</a>
+            <a href="#">READER'S NUGGETS</a>
+            <a href="#">SAFETY ADVICE</a>
+        </div>
+    </div>
+    <a href="https://www.inspiredbyiceland.com/events" target="_blank">EVENTS & FESTIVALS</a>
+    <a href="https://en.vedur.is/" target="_blank">WEATHER FORECAST</a>
+    <a href="#" onclick="openPopup()">NEWSLETTER</a>
+
+
+    <!-- Navigation button for smaller screens -->
+    <div class="nav-btn" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<!-- Start of news section -->
+<main>
+    <!-- Feature section -->
+    <section class="feature">
+        <div class="feature-image">
+            <img src="featureimg.png" alt="Explore Iceland Big News Picture">
+        </div>
+
+        <div class="feature-text">
+            <h1>“Iceland is a magical and mystical country which ranks highly on the bucket list of many travellers”</h1>
+            <p>The Land of Fire and Ice, is home to glaciers and volcanos. It’s equally beautiful in the summer, when you can witness the Midnight Sun, or in the winter, when the temperatures are lowest but you have the best chance of seeing the Northern Lights. With so many things to see and do, here’s our top tips on getting the most out of your travel experience.</p>
+        </div>
+    </section>
+    <!-- End of feature section -->
+        <!-- Articles section -->
+        <section class="articles">
+            <div class="news-box">
+                <img src="news1.png" alt="Skógafoss Waterfall">
+                <div>
+                    <h2><a href="https://www.geysir.is/chasing-waterfalls-exploring-icelands-breathtaking-cascades/" target="_blank">Chasing waterfalls? Embark on a journey through the country’s most mesmerizing waterfalls.</a></h2>
+                    <p>The raw power and sheer beauty of these falls paint an unparalleled portrait of Iceland's diverse geography. Chasing waterfalls offers more than visual marvels; it's an opportunity to connect with the essence of a land sculpted by ancient forces.</p>
+                </div>
+            </div>
+        
+            <div class="news-box">
+                <img src="news2.png" alt="ReykjavíkS">
+                <div>
+                    <h2><a href="https://reykjaviktips.com/things-to-do-in-reykjavik.html?gad_source=1&gclid=CjwKCAiA-vOsBhAAEiwAIWR0TUSRl9Adt5zWFoVsUi8bMwO_aQVTLWwjq7CwF9nZ78fkuyNtwrC31xoC6mwQAvD_BwE" target="_blank">Reykjavík City Tour: Explore the capital’s charms with engaging sightseeing.</a></h2>
+                    <p>Explore Reykjavík on a city tour and immerse yourself in the captivating allure of the capital. This delightful exploration unfolds the city’s charms through engaging sightseeing, providing a firsthand experience of its unique character and attractions.</p>
+                </div>
+            </div>
+        
+            <div class="news-box">
+                <img src="news3.png" alt="Blue Lagoon">
+                <div>
+                    <h2><a href="https://www.adventurouskate.com/welcome-to-the-blue-lagoon/" target="_blank">Navigating the Blue Lagoon: A comprehensive guide to ensure a blissful experience with essential do’s and don’ts.</a></h2>
+                    <p>Unlock the magic of Blue Lagoon: Elevate your experience with expert tips, must-do’s, and common pitfalls to avoid. Immerse yourself in bliss, make every moment count, and transform your visit into an unforgettable oasis of relaxation and pure enjoyment.</p>
+                </div>
+            </div>
+        
+            <div class="news-box">
+                <img src="news4.png" alt="Iceland Road">
+                <div>
+                    <h2><a href="https://guidetoiceland.is/travel-info/driving-in-iceland" target="_blank">Discover the allure of Iceland’s open roads: Road trips surge in popularity.</a></h2>
+                    <p>Do you yearn for freedom and flexibility, longing to immerse yourself deeply in nature? If so, we highly recommend exploring at your own pace by taking the wheel and driving yourself around.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End of articles section -->
+    
+</main>
+<!-- End of news section -->
+
+<!-- Footer -->
+<footer>
+    <!-- Footer categories -->
+    <div class="footer-links">
+        <div class="footer-categories">
+            <a href="#">LANGUAGES</a>
+            <a href="#">LEGAL TERMS</a>
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">SITE MAP</a>
+        </div>
+    </div>
+    <!-- Footer container -->
+    <div class="footer-container">
+        <div class="about">
+            <h4>ABOUT US</h4>
+            <p>Icelandic Odyssey Magazine is your premier travel guide to the mesmerizing landscapes and rich culture of Iceland. Discover the best tips on must-see attractions, unforgettable experiences, and local insights. Let us be your trusted companion, offering guidance on what to explore, enjoy, and avoid in this captivating realm of natural wonders.</p>
+        </div>
+        <div class="socials">
+            <h4><span>CONNECT ON</span> SOCIAL MEDIA</h4>
+            <div class="social-icons">
+                <a target="_blank" title="Facebook" href="https://www.facebook.com/your-facebook-url">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a target="_blank" title="Instagram" href="https://www.instagram.com/your-instagram-url">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a target="_blank" title="Twitter" href="https://www.twitter.com/your-twitter-url">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/your-linkedin-url">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">Copyright © 2024 - Created by Cornelia Dahlin</p>
+        </div>
+</footer>
+
+<!-- "Back To Top-button" -->
+<div class="back-to-top" id="backToTopBtn">
+    <a href="#">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+<!-- Newsletter modal -->
+<div id="newsletterModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="newsletter.png" alt="Newsletter Image">
+        <form id="newsletterForm">
+            <input type="email" id="email" name="email" placeholder="Your e-mail address" autocomplete="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
