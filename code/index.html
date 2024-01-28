@@ -1,23 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--Meta tags (dont forget the meta tag for responsiveness)-->
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Title of the news site -->
+    <title>Gondor Gazette</title>
+    
+    <!--Importing CSS-->
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Adding some fun fonts-->
+    <link href="https://fonts.cdnfonts.com/css/aniron" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/aniron');</style>
   </head>
+
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <header class="header-tablet-mobile">
+      <!--Navbar for mobile-->
+      <div class="nav-flex">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="fa fa-bars"></span>
+        </label>
+        <nav class="hamburger-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>  
+      <div>    
+        <img class="logo-tablet-mobile" src="./logo-mobile.svg" alt="Gondor Gazette">
+      </div>
+      
+    </header>
+    <header class="header-desktop">
+    <!-- Logo-->
+      <div>    
+        <img class="logo-desktop" src="./logo-desktop.svg" alt="Gondor Gazette">
+      </div>
+
+      <!--Navbar for desktop-->
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">World</a></li>
+          <li><a href="">Travel</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="big-news">
+    <!--Main news grid-->
+    <main class="news-grid">
+      
       <!-- The big news content -->
-    </section>
+      <section class="news headline-flex-desktop headline-flex-tablet-mobile">
+        <img src="./assets/aragorn-2.jpg" alt="King Aragorn II">
+        <div class="headline-text-desktop">
+          <h1>20 year anniversary!</h1>
+          <h3>King Elessar Telcontar looks back on two decades on the throne</h3>
+          <p>A member of the Fellowship of the Ring, hero of Helm's Deep, Pelennor Fields, and the Battle of the Morannon — King Aragorn II has come a long way from his Strider days.</p> 
+          <p>Take a stroll through memory lane as we list the top 10 moments of our beloved King. Some obvious choices, but some that may surprise you!</p>
+        </div>
+      </section>
 
-    <section class="">
       <!-- The other news  -->
-    </section>
+      <div class="news news-2-flex">
+        <img src="./assets/wizard-spotting.jpg" alt="Blue wizard in Rhûn">
+        <h2>Blue wizard spotted?</h2>
+        <h4>One of the long lost Blue Wizards rumoured to have been seen in the East</h4>
+        <p>Centuries after vanishing off the face of Middle-earth, is it possible that one of the Blues has returned?</p>
+      </div>
+
+      <div class="news news-2-flex">
+        <img src="./assets/hobbiton.jpg" alt="The Shire">
+        <h2>Shire: Mayor Gamgee wins third term</h2>
+        <h4>Samwise Gamgee elected as Mayor of Michel Delving for a third time</h4>
+        <p>Honoured hero and father-of-twelve has proven yet again that he has the hobbits' trust. One can only assume that time-management is one of his biggest strengths!</p>
+      </div>
+      
+      <div class="news news-3-flex">
+        <img src="./assets/osgiliath.jpg" alt="Osgiliath arch">
+        <h3>Marvelous architecture revealed</h3>
+        <h4>Osgiliath restoration offers a window to the glory of the past</h4>
+      </div>
+
+      <div class="news news-3-flex">
+        <img src="./assets/erebor.jpg" alt="Old map of Erebor">
+        <h3>Lonely Mountain no longer as lonely</h3>
+        <h4>Bilateral trade and tourist relations between Erebor and Gondor on steady increase</h4>
+      </div>
+      
+      <div class="news news-3-flex">
+        <img src="./assets/ithilien.jpg" alt="Ithilien">
+        <h3>Visit the beautiful forests of Ithilien</h3>  
+        <h4>Enjoy the beauty of Emyn Arnen and experience historical sites like Henneth Annûn</h4>
+      </div>
+      
+      <div class="news news-3-flex">
+        <img src="./assets/lake-evendim.jpg" alt="Lake Evendim">
+        <h3>Evendim Song Contest</h3>
+        <h4>Send us your songs inspired by Lake Evendim and be part of a competition to win a trip to the fabled city of Annúminas</h4>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-tablet-mobile footer-desktop">
+      <li><a href = "mailto: gondorgazette@gg.gr">Contact us</a></li> 
+      <li>Member of the <a href="https://www.technigo.io/"><button>Technigo</button></a> Group</li>
+      <li>© Gondor Gazette</li>
+    </footer>
+
   </body>
 </html>
