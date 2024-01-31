@@ -15,4 +15,4 @@ I used a lot CodePen as a side project where I can test out things.
 If I would have more time and patience, probably I would work more on getting the design I want it with the some extra features.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+ecobloomnews.netlify.app
