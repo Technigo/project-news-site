@@ -1,12 +1,23 @@
-# News Site
+ <img src="./code/assets/screenshot.png" alt="Screenshot Hero">
 
-Replace this readme with your own information about your project. 
+# Project Overview
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+For this project my main focus was on responsive design and the layout techniques of CSS Grid and Flexbox.
 
-## The problem
+## Project Focus
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+### Hero Section with Flexbox
+
+Implemented CSS Flexbox to easily center the content in the hero section.
+
+### Latest News Section Position
+
+Implemented CSS Position for this section since I wanted some of the images extend beyond their usual boundaries.
+
+### Top Stories Grid Layout
+
+Implemented a responsive grid layout using CSS Grid, providing easy control over the number of columns based on the viewport size.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+[Vogue Magazine](https://project-technigo-news-site.netlify.app)

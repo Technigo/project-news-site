@@ -1,23 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vogue</title>
+    <!-- optimize font loading performance -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap"
+    />
+
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <script src="./script.js"></script>
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="logo"><img src="./assets/logo.svg" alt="Vogue Logo" /></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">FASHION</a></li>
+          <li><a href="/">BEAUTY</a></li>
+          <li><a href="/">CULTURE</a></li>
+          <li><a href="/">RUNWAY</a></li>
+        </ul>
+        <div class="close"><img src="./assets/close.svg" alt="Close" /></div>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1><span>PARIS</span> <span>FASHION WEEK</span></h1>
+          <p>The 10 Octobler 2025 and 12 October 2025</p>
+          <p>
+            Get the latest on Paris Fashion Week from Vogue. PFW will take over
+            the city of Paris from February 27 to March 7, 2023. See all the
+            best street style, front row fashion and backstage moments from
+            Paris Fashion Week here.
+          </p>
+          <button>Looking for PFW tickets? Click here.</button>
+        </div>
+      </section>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <section class="latest-news">
+        <div class="content-box">
+          <h2>Behind The Scenes At Couture Fashion Week</h2>
+          <p>
+            That’s a wrap on another blockbuster Couture Fashion Week in
+            Paris—but what’s it like to attend the shows as a Vogue France
+            editor? Watch as Head of Editorial Content Eugénie Trochu, Senior
+            Market Editor Thomas Delage, and Social and Video Editor Hugo
+            Compain take us from the office to the frow in this brand new
+            fashion week vlog, exclusively for Vogue Club members…
+          </p>
+        </div>
+        <div class="images-box">
+          <img
+            class="img-1"
+            src="./assets/latest-news/img-1.jpg"
+            alt="Latest news image"
+          />
+          <img
+            class="img-2"
+            src="./assets/latest-news/img-2.jpg"
+            alt="Latest news image"
+          />
+          <img
+            class="img-3"
+            src="./assets/latest-news/img-3.jpg"
+            alt="Latest news image"
+          />
+          <img
+            class="img-4"
+            src="./assets/latest-news/img-4.jpg"
+            alt="Latest news image"
+          />
+        </div>
+      </section>
+      <section class="top-stories">
+        <h2>TOP STORIES</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-1.jpg"
+              alt="Top Story Image"
+              class="large-image"
+            />
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-2.jpg"
+              alt="Top Story Image"
+              class="small-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-3.jpg"
+              alt="Top Story Image"
+              class="small-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-4.jpg"
+              alt="Top Story Image"
+              class="small-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-5.jpg"
+              alt="Top Story Image"
+              class="small-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-6.jpg"
+              alt="Top Story Image"
+              class="row-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-7.jpg"
+              alt="Top Story Image"
+              class="row-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-8.jpg"
+              alt="Top Story Image"
+              class="row-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+          <div class="grid-item">
+            <img
+              src="./assets/top-stories/img-9.jpg"
+              alt="Top Story Image"
+              class="row-image"
+            />
+            <p>COUTURE FASHION WEEK</p>
+            <p>BY HANNAH JACKSON</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="/">GLAMOUR</a>
+        <a href="/">VOGUE PARIS</a>
+        <a href="/">AD</a>
+        <a href="/">VANITY FAIR</a>
+      </div>
+    </footer>
   </body>
 </html>
