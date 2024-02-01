@@ -8,5 +8,4 @@ I started by designing the structure, then pick the theme color of the website. 
 I googled a lot along the way, also viewed several brilliant examples provided by the instructions.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 https://master--effulgent-meringue-98cdde.netlify.app/

@@ -1,4 +1,4 @@
-/* Universal Settings */
+/* Universal Settings - Mobile first approach */
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,8 @@ html {
 
 body {
   margin: 0;
-
+  overflow-x: hidden;
+  height: 100%;
 }
 
 a {
@@ -36,11 +37,15 @@ nav {
   width: 100%;
   justify-content: space-between;
   font-size: 20px;
-  background-color: #e5caaa;
+  background-color: #f5c181;
 }
 
 
 /* Desktop navbar Settings */
+
+.desktop-nav {
+  display: none;
+}
 
 .desktop-and-tablet-menu a:hover {
   background-color: #84b4e1;
@@ -63,38 +68,82 @@ nav {
 .mobile-nav {
   background-color: #f5c181;
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-icon {
-  display: none;
-  cursor: pointer;
+.mobile-nav-icon {
+  cursor: grab;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-content {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  align-self: start;
+  overflow-x: hidden;
+  width: 100%;
+  display: none;
+  background-color: #f5c181
 }
 
+ul {
+  list-style: none;
+  padding: 1px 0 1px 0;
+  text-align: center;
+}
 .nav-content li {
-  margin: 0 15px;
+  margin: 10px 0;
 }
 
 .nav-content li:hover {
   background-color: #84b4e1;
+  border-radius: 10px;
+  border: #e5caaa 3px solid;
+}
+
+.mobile-nav-icon:hover + .nav-content, .nav-content:hover {
+  display: block;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.video-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 12rem;
+  width: auto;
+}
+
+.video-container video {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.headline {
+  display: flex;
+  z-index: 2;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  /* display: flex; */
   font-size: 50px;
   padding: 30px 30px;
-  text-align: center;
-  background-color: #84b4e1;
-  margin-bottom: 0;
-  text-wrap: nowrap;
+  color: rgba(255, 255, 255, 0.875);
 }
 
 
@@ -114,14 +163,17 @@ h1 {
 
 .animated-text {
   align-self: center;
-  font-size: 20px;
+  font-size: 1rem;
+  display: block;
+  text-wrap: nowrap;
+  /* font-size: 20px; */
 }
 .animated-img {
   padding: 1rem;
 }
 
 
-.header-img {
+.feature-article {
   display: flex;
   align-content: space-between;
   align-items: center;
@@ -129,24 +181,48 @@ h1 {
   flex-direction: column;
   margin-bottom: 20px;
   flex-wrap: nowrap;
+  border: #84b4e1 10px solid;
+  border-style: double;
+  margin: 1rem;
+  padding: 2rem;
+
 }
-.header-img img{
+.feature-article img{
   border-color: #f5c181;
-  /* border-width: 1rem; */
   object-fit: cover;
   width: 100%;
+  height: auto;
 }
 
-.header-img a {
+.feature-article a {
   color: black;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin-bottom: 1rem;
   margin-top: 20px;
+  /* font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px; */
 }
 .big-news p{
-  font-size: 20px;
+  font-size: 0.75rem;
   width: 100%;
   text-align: center;
+  letter-spacing: 1px;
+}
+
+.news-cards a {
+  font-size: 14px;
+}
+
+
+.news-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+  border: #f5c181 5px solid;
+  padding: 1.5rem;
+  margin: 1rem;
 }
 
 /* Universal hover effect for news cards headlines*/
@@ -155,94 +231,68 @@ h1 {
   color: #6a1d1d;
 }
 
+.news-cards img {
+  object-fit: cover;
+  width: 100%;
+  height: 15rem;
+}
+
+
+
 /* News cards & Menu resized for Desktop*/
 @media (min-width: 769px) {
   .news-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 2rem;
-    margin-top: 2rem;
-    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .news-cards img{
-    object-fit: cover;
-    width: 100%;
-    height: 40rem;
+    height: 30rem;
   }  
 
   .mobile-nav {
     display: none;
   }
+  .desktop-nav {
+    display: flex;
+  }
 
+  .video-container {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .feature-article a {
+    font-size: 2rem
+  }
+
+  .feature-article p {
+    font-size: 1rem;
+  }
 }
 
 /* News cards & Menu resized for Tablet*/
 @media (min-width: 501px) and (max-width: 768px) {
   .news-cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(350px, 1fr));
-    grid-gap: 2rem;
-    margin-top: 2rem;
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   .news-cards img{
-    object-fit: cover;
-    width: 100%;
     height: 25rem;
   }  
 
   .mobile-nav {
     display: none;
   }
-}
 
-/* News cards & Menu resized for Mobile*/
-@media only screen and (max-width: 500px) {
-  .news-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  .news-cards img{
-    object-fit: cover;
-    width: 100%;
-    height: 15rem;
-  }
   .desktop-nav {
-    display: none;
-  }
-  .nav-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    background-color: #f5c181;
-  }
-  .mobile-nav {
     display: flex;
-    justify-content: stretch;
-  }
-  .nav-content li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .nav-icon {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .nav-icon:hover + .nav-content, .nav-content:hover {
-    display: block;
   }
 
 }
+
 
 
 /* footer settings */
