@@ -1,28 +1,124 @@
-body {
+* {
   background-color: rgb(255, 194, 115);
   color: rgb(229, 105, 105);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8 1fr);
   font-family: 'sora', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 223, 158);
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+  color: rgb(193, 85, 139);
+  font-size: 45px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.header-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+.navigation-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  gap: 50px;
+  margin-right: 20px;
+
+}
+
+.instagram-button {
+  background-color: rgb(193, 85, 139);
+  border: 1px solid rgb(250, 195, 146);
+  border-radius: 5px;
+  width: 120px;
+  height: 95px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brainstorm-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(250, 195, 146);
+  background-color: rgb(193, 85, 139);
+  color: rgb(255, 223, 158);
+  padding: 10px;
+}
+
+/*width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid rgb(250, 195, 146);
+  background-color: rgb(193, 85, 139);
+  color: rgb(255, 223, 158);
+  padding: 5px;
+}
+*/
+
+.question-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+/* Tablet */
+@media (min-width: 668px) {
+  .header h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(193, 85, 139);
+    font-size: 90px;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
+/* body {
+  background-color: rgb(255, 194, 115);
+  color: rgb(229, 105, 105);
+  font-family: 'sora', sans-serif;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8 1fr); 
+
 }
 
 footer {
   display: grid;
   grid-column: 1;
   grid-row: 8;
-}
-
-h1 {
-  color: rgb(193, 85, 139);
-  font-size: 90px;
-  margin: 5px;
-  padding: 5px;
-}
-
-p {
-  color: rgb(229, 105, 105);
-  font-size: 20px;
 }
 
 a {
@@ -33,7 +129,7 @@ a {
 
 .navigation-bar-img {
   display: flex;
-  flex-direction: row-reverse;
+  flex-flow: row-reverse wrap-reverse;
   align-items: flex-start;
   margin: 20px;
 }
@@ -45,6 +141,26 @@ a {
   gap: 50px;
   margin-right: 20px;
 }
+
+.navigation-bar-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: rgb(193, 85, 139);
+  font-size: 90px;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+/* why doesn't it fit in 320? */
+/*.navigation-bar-title {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
 
 .about {
   order: 3;
@@ -58,7 +174,7 @@ a {
   order: 1;
 }
 
-.navigation-bar-title {
+/*.navigation-bar-title {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -66,11 +182,22 @@ a {
 
 }
 
+.navigation-bar-title h1 {
+  color: rgb(193, 85, 139);
+  font-size: 90px;
+  margin: 5px;
+  padding: 5px;
+  align-items: flex-start;
+}
+
+
 .text-box-grid {
   display: flex;
   flex-flow: row wrap;
   padding: 20px;
   margin: 5px;
+  color: rgb(229, 105, 105);
+  font-size: 20px;
 }
 
 .nested-grid {
@@ -147,7 +274,8 @@ a {
 }
 
 /* this is for tablet */
-@media (min-width: 668px) and (max-width: 1024px) {
+/*
+@media (min-width: 668px) {
   body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,10 +287,10 @@ a {
     display: flex;
     justify-content: column;
     flex-direction: column;
-  }
+  }*/
 
-  /* ÅTERKOM */
-  /*navigation-bar-img {
+/* ÅTERKOM */
+/*navigation-bar-img {
         display: flex;
         flex-flow: row-reverse wrap-reverse;
         justify-content: flex-start;
@@ -184,7 +312,7 @@ a {
         margin: 20px;
 
     }*/
-
+/*
   .text-box-grid {
     display: grid;
     grid-column: 1;
@@ -206,6 +334,7 @@ a {
   }
 
   /* WHY ISN'T THIS WORKING? */
+/*
   .pic-box-grid {
     display: flex;
     flex-direction: row;
@@ -219,25 +348,62 @@ a {
   }
 
   /* this is for desktop */
-  @media (min-width: 1025px) {
-    .nested-grid {
-      display: flex;
-      flex-flow: row wrap-reverse;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+/*@media (min-width: 1025px) {
+  /* body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(8 1fr); }*/
 
-    .brainstorm-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      width: 300px;
-      height: 300px;
-      border-radius: 5px;
-      border: 1px solid rgb(250, 195, 146);
-      background-color: rgb(193, 85, 139);
-      color: rgb(255, 223, 158);
-      padding: 5px;
-    }
+
+/*.header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
+
+  .navigation-bar-img {
+    display: grid;
+    grid-column: 5;
+    margin: 0;
+  }
+
+  .navigation-bar {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column: 1/5;
+  }
+
+  .navigation-bar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: rgb(193, 85, 139);
+    font-size: 90px;
+    margin: 5px;
+    padding: 5px;
+
+  }
+
+  .nested-grid {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .brainstorm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 195, 146);
+    background-color: rgb(193, 85, 139);
+    color: rgb(255, 223, 158);
+    padding: 5px;
+  }
+  */
