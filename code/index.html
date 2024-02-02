@@ -13,7 +13,7 @@
 <body>
   <!-- Header and navigation bar relative URLs, img and h1 -->
   <header>
-    <div class="header">
+    <div class="header-container">
       <nav class="header-img">
         <img src="images/instagram-logo.png" alt="black-and-white-instagram-logo" width="30px" height="30px">
       </nav>
@@ -22,48 +22,50 @@
         <a href="#more-ideas" class="more-ideas">More ideas</a>
         <a href="#your-turn" your-turn>Your turn!</a>
       </nav>
-      <h1>The Brainstorming Project!</h1>
+      <div class="header-h1">
+        <h1>The Brainstorming Project!</h1>
+      </div>
     </div>
   </header>
-  <div>
+  <div class="button-wrapper">
     <button class="brainstorm-button">Brainstorm with me!</button>
   </div>
   <!-- text-section -->
   <section>
-    <p class="text">In the early days of 2024, when people where still eating leftovers from Christmas and
-      realizing how
-      poor they
-      where after splurging throughout December even though society was in the middle of the next global Great
-      Depression™ a few people in Sweden entered a project that wasn’t a project until... it was a project.<br>
-      The author of this webpage was so fully immersed in learning how to code, that all the creativity she had
-      and
-      that needed to be released and was the main reason for her career change, disappeared. Left in her brain was
-      only Flexbox Froggy and the question if she had watered her real plants or if she only had played Grid
-      Garden.
-      Also, had she had a drink of water herself? Probably not. <br> As her mind was blank, she reached out to her
-      friends on the social media platform Instagram with the question:
-      “What should I write about?” with the intention of designing a news site based on one of the answers. Fast
-      forward to the next morning when her DM was full of fantastic and hilarious suggestions and thus the birth
-      of
-      the Brainstorming Project!<br>
-      This website will show all the answers in Swedish, but as I continue to learn through out this Boot camp
-      experience I have the intention to code som kind of translation function because there has to be one -
-      right?
-      Also, wouldn’t in be cool to have a function where you can continue brainstorming on this website?
-    </p>
+    <div class="text-container">
+      <p class="text">In the early days of 2024, when people where still eating leftovers from Christmas and
+        realizing how
+        poor they
+        where after splurging throughout December even though society was in the middle of the next global Great
+        Depression™ a few people in Sweden entered a project that wasn’t a project until... it was a project.<br>
+        The author of this webpage was so fully immersed in learning how to code, that all the creativity she had
+        and
+        that needed to be released and was the main reason for her career change, disappeared. Left in her brain was
+        only Flexbox Froggy and the question if she had watered her real plants or if she only had played Grid
+        Garden.
+        Also, had she had a drink of water herself? Probably not. <br> As her mind was blank, she reached out to her
+        friends on the social media platform Instagram with the question:
+        “What should I write about?” with the intention of designing a news site based on one of the answers. Fast
+        forward to the next morning when her DM was full of fantastic and hilarious suggestions and thus the birth
+        of
+        the Brainstorming Project!<br>
+        This website will show all the answers in Swedish, but as I continue to learn through out this Boot camp
+        experience I have the intention to code som kind of translation function because there has to be one -
+        right?
+        Also, wouldn’t in be cool to have a function where you can continue brainstorming on this website?
+      </p>
+    </div>
   </section>
   <!-- picture section -->
-  <!-- first five pic visible on mobile with class="mobile" -->
+  <!-- first four pic visible on mobile with class="mobile" -->
   <section>
-    <div class="mobile">
-      <img src="images/image0 (kopia).jpeg" alt="picture of question box" width="200px" height="120px">
-      <img src="images/hemulen.jpg" alt="picture-of-hemulen-text" height="200px" width="200px">
-      <img src="images/CVI.jpg" alt="picture-of-cvi-text" height="200px" width="200px">
-      <img src="images/friggebodar.jpg" alt="picture-of-friggebodar-text" height="200px" width="200px">
-      <img src="images/ekar.jpg" alt="picture-of-ekar-text" height="200px" width="200px">
+    <div class="image-container">
+      <img src="images/image0 (kopia).jpeg" alt="picture of question box" width="200px" height="120px" class="image">
+      <img src="images/hemulen.jpg" alt="picture-of-hemulen-text" height="200px" width="200px" class="image">
+      <img src="images/CVI.jpg" alt="picture-of-cvi-text" height="200px" width="200px" class="image">
+      <img src="images/friggebodar.jpg" alt="picture-of-friggebodar-text" height="200px" width="200px" class="image">
+      <img src="images/ekar.jpg" alt="picture-of-ekar-text" height="200px" width="200px" class="image-mobile">
       <img src="images/harry-styes.jpg" alt="picture-of-harrystyles-text" height="200px" width="200px">
-    </div>
-    <div class="instagram-story-img">
       <img src="images/invasiva-arter.jpg" alt="picture-of-invasiva-text" height="200px" width="200px">
       <img src="images/isbad.jpg" alt="picture-of-isbad-text" height="200px" width="200px">
       <img src="images/komododrakar.jpg" alt="picture-of-komododrakar-text" height="200px" width="200px">
@@ -78,8 +80,6 @@
       <img src="images/Twin-peaks.jpg" alt="picture-of-twinpeaks-text" height="200px" width="200px">
       <img src="images/pandor.jpg" alt="picture-of-pandor-text" height="200px" width="200px">
       <img src="images/sengångare.jpg" alt="picture-of-sengångare-text" height="200px" width="200px">
-    </div>
-    <div class="mobile">
       <button class="idea-button">View more ideas! Click here!</button>
     </div>
   </section>

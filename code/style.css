@@ -11,25 +11,24 @@ a {
   font-size: 20px;
 }
 
-.header {
+.header-container {
   display: flex;
-  flex-flow: row wrap;
-}
-
-.header h1 {
-  display: flex;
-  align-items: center;
-  color: rgb(193, 85, 139);
-  font-size: 45px;
-  margin: 5px;
-  padding: 5px;
+  flex-flow: row-reverse wrap;
+  margin: 10px;
 }
 
 .header-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin: 20px;
+}
+
+.header-h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: rgb(193, 85, 139);
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .navigation-bar {
@@ -41,76 +40,49 @@ a {
 
 }
 
-.instagram-button {
-  border: 3px solid rgb(193, 85, 139);
-  border-radius: 5px;
-  width: 120px;
-  height: 95px;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 20px;
-}
-
-footer {
+.button-wrapper {
   display: flex;
-  justify-content: flex-end;
-}
-
-.text {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 5px;
-}
-
-/* I NEED HELP */
-.brainstorm-button {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 50px;
+}
+
+.brainstorm-button {
+  padding: 40px;
   background-color: rgb(193, 85, 139);
   color: rgb(255, 223, 158);
   border: none;
   font-size: 20px;
   width: 200px;
   height: 200px;
+  box-shadow: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-/* alt to brainstorm-button */
-/*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*font-size: 40px;
-  border-radius: 5px;
-  border: 1px solid rgb(250, 195, 146);
-  background-color: rgb(193, 85, 139);
-  color: rgb(255, 223, 158);
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  border: 20px solid rgb(193, 85, 139);
-  padding: 10px;}*/
-/*width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  border: 1px solid rgb(250, 195, 146);
-  background-color: rgb(193, 85, 139);
-  color: rgb(255, 223, 158);
-  padding: 5px;
+.text-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px;
 }
-*/
+
+.text {
+  font-size: 20px;
+
+}
 
 .instagram-story-img {
   display: none;
 }
 
-.mobile {
+.image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin: 0 auto;
+}
+
+.image {
+  box-shadow: 0 0 5px white;
 }
 
 .idea-button {
@@ -130,225 +102,16 @@ footer {
 
 }
 
-/* Tablet */
-@media (min-width: 668px) {
-  .header h1 {
-    display: flex;
-    justify-content: flex-start;
-    color: rgb(193, 85, 139);
-    font-size: 90px;
-    margin: 5px;
-    padding: 5px;
-  }
-
-  .text {
-    margin-bottom: 30px;
-  }
-
-  .mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
-    margin-bottom: 10px;
-  }
-
-  .instagram-story-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .header h1 {
-    display: flex;
-    justify-content: flex-start;
-    color: rgb(193, 85, 139);
-    font-size: 90px;
-    margin: 5px;
-    padding: 5px;
-  }
-
-  .mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: ;
-  }
-
-  .instagram-story-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-}
-
-
-
-
-
-
-/* body {
-  background-color: rgb(255, 194, 115);
-  color: rgb(229, 105, 105);
-  font-family: 'sora', sans-serif;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8 1fr); 
-
-}
-
 footer {
-  display: grid;
-  grid-column: 1;
-  grid-row: 8;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(255, 223, 158);
-  font-size: 20px;
-}
-
-.navigation-bar-img {
   display: flex;
-  flex-flow: row-reverse wrap-reverse;
-  align-items: flex-start;
-  margin: 20px;
-}
+  justify-content: flex-end;
 
-.navigation-bar {
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  align-items: flex-end;
-  gap: 50px;
-  margin-right: 20px;
-}
-
-.navigation-bar-title h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  color: rgb(193, 85, 139);
-  font-size: 90px;
-  margin: 5px;
-  padding: 5px;
-
-}
-
-/* why doesn't it fit in 320? */
-/*.navigation-bar-title {
-  display: flex;
-  justify-content: flex-start;
-
-}
-
-
-.about {
-  order: 3;
-}
-
-.more-ideas {
-  order: 2;
-}
-
-.your-turn {
-  order: 1;
-}
-
-/*.navigation-bar-title {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  margin: 5px;
-
-}
-
-.navigation-bar-title h1 {
-  color: rgb(193, 85, 139);
-  font-size: 90px;
-  margin: 5px;
-  padding: 5px;
-  align-items: flex-start;
-}
-
-
-.text-box-grid {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 20px;
-  margin: 5px;
-  color: rgb(229, 105, 105);
-  font-size: 20px;
-}
-
-.nested-grid {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-.pic-box-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  border: 1px solid rgb(250, 195, 146);
-  padding: 5px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.brainstorm-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  border: 1px solid rgb(250, 195, 146);
-  background-color: rgb(193, 85, 139);
-  color: rgb(255, 223, 158);
-  padding: 5px;
-}
-
-.instagram-story-img-box {
-  display: grid;
-  grid-column: 1;
-  grid-row: 7;
-}
-
-.instagram-story-img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.idea-button {
-  display: flex;
-  align-self: flex-end;
-  align-items: center;
-  border-radius: 5px;
-  border: 2px solid black;
-  background-color: rgb(255, 255, 255);
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .instagram-button {
-  background-color: rgb(193, 85, 139);
-  border: 1px solid rgb(250, 195, 146);
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(193, 85, 139);
   border-radius: 5px;
   width: 120px;
   height: 95px;
@@ -357,137 +120,42 @@ a {
   margin-top: 20px;
 }
 
-/* this is for tablet */
-/*
+/* Tablet */
 @media (min-width: 668px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8 1fr);
-
-  }
-
-  p {
+  .header-h1 {
     display: flex;
-    justify-content: column;
-    flex-direction: column;
-  }*/
-
-/* ÅTERKOM */
-/*navigation-bar-img {
-        display: flex;
-        flex-flow: row-reverse wrap-reverse;
-        justify-content: flex-start;
-    }
-
-    .navigation-bar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 50px;
-        margin-right: 20px;
-        color: #fff;
-
-    }
-
-    .navigation-bar-title {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-
-    }*/
-/*
-  .text-box-grid {
-    display: grid;
-    grid-column: 1;
-    grid-row: 5;
-  }
-
-  .brainstorm-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    border: 1px solid rgb(250, 195, 146);
-    background-color: rgb(193, 85, 139);
-    color: rgb(255, 223, 158);
-    padding: 5px;
-  }
-
-  /* WHY ISN'T THIS WORKING? */
-/*
-  .pic-box-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid rgb(250, 195, 146);
-    padding: 5px;
-    margin-top: 30px;
-    margin-left: 10px;
-  }
-
-  /* this is for desktop */
-/*@media (min-width: 1025px) {
-  /* body {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(8 1fr); }*/
-
-
-/*.header {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-column-start: 1;
-    grid-column-end: 5;
-  }
-
-  .navigation-bar-img {
-    display: grid;
-    grid-column: 5;
-    margin: 0;
-  }
-
-  .navigation-bar {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-column: 1/5;
-  }
-
-  .navigation-bar-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
+    justify-content: flex-start;
     color: rgb(193, 85, 139);
-    font-size: 90px;
+    font-size: 50px;
     margin: 5px;
     padding: 5px;
-
   }
 
-  .nested-grid {
-    display: flex;
-    flex-flow: row wrap-reverse;
-    justify-content: space-evenly;
-    align-items: center;
+  .text {
+    margin-bottom: 30px;
   }
 
-  .brainstorm-button {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-h1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    border: 1px solid rgb(250, 195, 146);
-    background-color: rgb(193, 85, 139);
-    color: rgb(255, 223, 158);
+    justify-content: flex-start;
+    color: rgb(193, 85, 139);
+    font-size: 60px;
+    margin: 5px;
     padding: 5px;
   }
-  */
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (200px, 1fr));
+  }
