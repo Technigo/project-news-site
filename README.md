@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a news site about books containing a navbar, a header, a main article and a grid of article cards. It has three levels of responsiveness - mobile (<767px), tablet (<991px) and desktop (>991px).
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used flexbox, CSS Grid and media queries as per the assignment instruction. I started by planning the site a bit (wireframing) but I started coding too quickly, before I was done planning. If I had more time, I would change the code to mobile-first, add a drop-down column to the mobile and tablet navbar, make things look nicer in general, and take time to actually understand what I'm doing rather to solve problems quickly. I'm not sure I have used best practice and pretty sure I've broken the DRY principle.
+
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+Link to the project: https://amazing-chimera-d6ed2a.netlify.app
+
