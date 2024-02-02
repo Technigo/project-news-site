@@ -1,4 +1,369 @@
-html {
-  background: #0025ff;
-  color: #fff;
+:root { 
+  --bg-1: #f8b4959d; 
+  --bg-2: #f6727fe9; 
+  --bg-3: #c06c84f3; 
+  --bg-4: #6c5b7cf3; 
 }
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  background-color: rgb(222, 225, 226);
+  background-image: url(assets/background-map.png);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+img {
+  max-height: 300px;
+}
+header{
+  background-color: var(--bg-4);
+  width: 100%;
+  position: fixed;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 80px;
+  padding:20px 20px;
+  background-color: var(--bg-4);
+  width: 100%;
+  color: white;
+}
+.footer-content a{
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px; 
+  color: white;
+  text-decoration: none;
+}
+div a:hover, footer a{
+  color: var(--bg-2);
+  font-size: bold;    
+}   
+.logo-technigo{
+  position: absolute;
+  max-height: 30px;
+}
+a img{
+  max-height: 30px;
+}
+/* ----------------------------------MEDIA QUERIES-------------------------------- */
+/* -----------------------MOBILE SCREENS 360px to 670xp 1column--------------------------- */
+@media (max-width: 670px){
+  header{
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  header input, label{
+    display: block;
+  }
+  nav{
+    position: absolute;
+    top:100%;
+    width: 100%;
+    display: none;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-4);
+  }
+  nav ul li{
+    list-style: none;
+    padding:5px 40px;
+    display: inline-block;
+  }
+  .nav-links li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+  }
+  .nav-links li a:hover{
+    color: var(--bg-2);
+    font-size: bold;    
+  }
+  .nav-links li a::after{
+    content: "";
+    color: var(--bg-2);
+    width: 100%;
+    height: 3px;
+    top: 0;   
+  }
+  .nav-toggle:checked ~ nav{
+    display: block;
+  }
+  .nav-toggle{
+    display: none;
+  }
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after,
+  .nav-toggle-label span{
+    display: block;
+    position: relative;
+    background-color: white;
+    height: 3px;
+    width: 2em;
+    border-radius: 2px;
+    margin: 10px;
+  }
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  .nav-toggle-label::before{
+    bottom: 7px;
+  }
+  .nav-toggle-label::after{
+    top: 7px;
+  }
+  .logo-png{
+    height: 100px;
+    filter: invert(100%);
+    padding: 3px 5px;
+  }
+  .breaking-news-container{
+    display: none;
+  }
+  .content{
+    padding: 120px 30px;
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    max-width: 1500px;
+    grid-template-columns: 1fr;    
+  }
+  .content div{
+    background-color: var(--bg-1);
+    border-radius: 25px 25px 0 25px;
+    padding: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  }
+  div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 0;
+  }
+  #main-item{
+    padding: 5px;
+    background-color: #f6727fe9;
+    color: white;
+  }
+  div h1 {
+    padding: 0 15px;
+  }
+  .item-10{
+    padding: 10px;
+  }
+}
+/* -----------------------TABLET SCREENS 671px to 1024xp 2 colums-------------------------- */
+@media (min-width:671px) and (max-width:1024px) {
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: .8em;
+  }
+  header input, label{
+    display: none;
+  }
+  nav ul{
+    display: flex;
+    padding-left: 0;
+  }
+  nav ul li{
+    list-style: none;
+    padding:20px;
+    display: inline-block;
+  }
+  .nav-links li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+  }
+  .nav-links li a:hover{
+    color: var(--bg-2);
+    font-size: bold;    
+  }
+  .nav-links li a::after{
+    content: "";
+    color: var(--bg-2);
+    width: 100%;
+    height: 3px;
+    top: 0;   
+  }
+  .logo-png{
+    height: 100px;
+    filter: invert(100%);
+    padding: 3px 5px;
+  }
+  .breaking-news-container{
+    display: none;
+  }
+  .content{
+    padding: 120px 50px;
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    max-width: 1500px;
+    grid-template-columns: 1fr 1fr;    
+  }
+  .content div{
+    background-color: var(--bg-1);
+    border-radius: 25px 25px 0 25px;
+    padding: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  }
+  div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 0;
+  }
+  #main-item{
+    grid-area: 1/1/2/3;
+    padding: 5px;
+    background-color: #f6727fe9;
+    color: white;
+  }
+  div h1, span{
+    padding: 0 15px;
+  }
+  .item-10{
+    grid-area: 6/1/7/3;
+    padding: 10px;
+  }
+}
+/* -----------------------PC SCREENS >1024px 4 columns ------------------------------------- */
+@media (min-width: 1024px){
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  header input, label{
+    display: none;
+  }
+  nav ul{
+    display: flex;
+    padding-left: 0;
+  }
+  nav ul li{
+    list-style: none;
+    padding:20px;
+    display: inline-block;
+  }
+  .nav-links li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+  }
+  .nav-links li a:hover{
+    color: var(--bg-2);
+    font-size: bold;    
+  }
+  .nav-links li a::after{
+    content: "";
+    color: var(--bg-2);
+    width: 100%;
+    height: 3px;
+    top: 0;   
+  }
+  .logo-png{
+    filter: invert(100%);
+    padding: 3px 5px;
+  }
+  .breaking-news-container{
+    display: none;
+  }
+  .content{
+    padding: 120px 50px;
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    max-width: 1500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+  }
+  .content div{
+    background-color: var(--bg-1);
+    border-radius: 25px 25px 0 25px;
+    padding: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  }
+  div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 0;
+  }
+  #main-item{
+    grid-area: 1/1/2/3;
+    padding: 5px;
+    background-color: #f6727fe9;
+    color: white;
+  }
+  .item-10{
+    grid-area: 3/3/4/5;
+    padding: 10px;
+  }
+}
+
