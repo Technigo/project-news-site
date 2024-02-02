@@ -104,11 +104,27 @@ h1::before {
 
 h2,
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
   font-size: 1.5rem;
+}
+
+.news-category,
+.h5 {
+  text-transform: uppercase;
+  display: inline;
+  font-weight: 600;
+}
+
+.news-category {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+}
+
+.h5 {
+  color: var(--details-color-2);
 }
 
 a {
@@ -200,7 +216,7 @@ footer li {
 }
 
 .footer-text {
-  display: none;
+  width: 100%;
 }
 
 .logo {
@@ -345,14 +361,6 @@ footer li {
   margin-top: -5em;
 }
 
-.news-category {
-  text-transform: uppercase;
-  display: inline;
-  font-weight: 600;
-  color: var(--secondary-color);
-  font-size: 0.875rem;
-}
-
 .aside-heading::after {
   background-color: var(--secondary-color);
   width: 30%;
@@ -370,11 +378,6 @@ footer li {
 
 /* for tablets */
 @media all and (min-width: 668px) {
-
-  /* Typhography */
-  h2 {
-    font-size: 3rem;
-  }
 
   /* Layout */
   .grid-container {
@@ -428,7 +431,12 @@ footer li {
 }
 
 /* for screens larger than tablet */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
+
+  h2,
+  .h2 {
+    font-size: 4rem;
+  }
 
   /* Layout */
   .grid-container {
@@ -450,6 +458,10 @@ footer li {
 
   .nav-desktop {
     display: block;
+  }
+
+  .footer-text {
+    width: 50%;
   }
 
   /* News */
