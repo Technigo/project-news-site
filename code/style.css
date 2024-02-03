@@ -23,7 +23,6 @@ body,
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 1em 1em;
   grid-auto-flow: row;
@@ -68,6 +67,7 @@ h2 {
 
 h1 {
   font-weight: 600;
+  color: #ffe8d6;
 }
 
 h2 {
@@ -89,17 +89,6 @@ h3 {
   text-decoration: underline;
 }
 
-/*
-.navigation a {
-    color: #ffe8d6;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    color: #6b705cd8;
-    text-decoration: underline;
-}
-*/
 a {
   color: #694f41;
   text-decoration: none;
@@ -116,8 +105,7 @@ a:focus {
 a:hover,
 a:active {
   text-decoration: underline;
-  /*color: #a5a58d;*/
-  color: #ffe8d6;
+  color: #6b705cd8;
 
 }
 
@@ -171,27 +159,19 @@ footer h2 {
 
 /*hero styles */
 
-
-
-
 .card.hero {
   grid-column: 1/4;
   grid-row: 1/3;
-  height: 28em;
   object-fit: cover;
   object-position: 100% 5%;
   float: left;
-  padding: 0 1em 5em 1em;
-
-
+  padding: 0 1em 1em 1em;
 }
 
 .hero figcaption {
   font-size: 0.9em;
   font-weight: 300;
   justify-content: flex-start;
-
-
 }
 
 .hero h2 {
@@ -204,13 +184,11 @@ footer h2 {
 .hero h3 {
   margin-bottom: 1em;
   font-size: 2em;
-
 }
 
 .hero p {
   font-size: 1.2em;
-
-
+  min-height: 0;
 }
 
 .cover.hero {
@@ -232,12 +210,9 @@ footer h2 {
 
 .cover.runnerup {
   width: 100%;
-  /*height: 28em;*/
   object-fit: cover;
   object-position: 100% 5%;
-  padding: 1em;
   margin-top: -1em;
-
 }
 
 
@@ -254,12 +229,47 @@ footer h2 {
 }
 
 
-@media(min-width:768px) and (max-width:1024px) {
+@media(min-width:996px) and (max-width:1156px) {
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: main;
+  }
+
+  .card.hero {
+    grid-column: 1/3;
+    grid-row: 1;
+    height: auto;
+  }
+
+  .cover.hero {
+    float: left;
+    width: 50%;
+  }
+
+
+  .card.runnerup {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+
+
+}
+
+@media(min-width:768px) and (max-width:995px) {
 
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 1em 1em;
     grid-auto-flow: row;
@@ -274,6 +284,7 @@ footer h2 {
   .card.hero {
     grid-column: 1/3;
     grid-row: 1;
+    height: auto;
   }
 
   .card.runnerup {
@@ -283,20 +294,16 @@ footer h2 {
 
   .hero figcaption {
     font-size: 0.8em;
-
-
   }
 
 
 
   .hero h2 {
     font-size: 4em;
-
   }
 
   .hero h3 {
     font-size: 2em;
-
   }
 
   .hero p {
@@ -307,21 +314,16 @@ footer h2 {
   .cover.hero {
     width: 50%;
     height: 31em;
-
   }
 
   .runnerup figcaption {
     font-size: 0.8em;
-
-    /*float: right;*/
   }
 
   .cover.runnerup {
     width: 50%;
     float: right;
     margin: -2em -1em 0 0;
-
-
   }
 
 }
@@ -333,7 +335,7 @@ footer h2 {
     display: grid;
     grid-template-columns: 0.1em 1fr 1fr 1fr 1fr 0.11em;
     grid-template-rows: minmax(7em, 15em) auto minmax(5em, 7em);
-    gap: 1em 1em;
+    gap: 0.5em 0em;
     grid-auto-flow: row;
     grid-template-areas:
       ". header header header header ."
@@ -345,7 +347,6 @@ footer h2 {
   .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr (auto);
     grid-template-rows: auto;
     gap: 1em 1em;
     grid-auto-flow: row;
@@ -357,9 +358,17 @@ footer h2 {
     grid-area: main;
   }
 
+  .card {
+    max-width: 90vw;
+    padding: 0 1em;
+  }
+
+
   .card.hero {
     grid-column: 1;
     grid-row: 1;
+    height: auto;
+    padding: 0em 1em 1em 1em;
   }
 
   .card.runnerup {
@@ -371,18 +380,15 @@ footer h2 {
     font-size: 0.8em;
     float: right;
     margin-top: -1em;
-
   }
 
   .hero h2 {
     font-size: 2.5em;
     padding-bottom: 0.2em;
-
   }
 
   .hero h3 {
     font-size: 1.2em;
-
   }
 
   .hero p {
@@ -394,18 +400,19 @@ footer h2 {
     height: 15em;
   }
 
+  .card.runnerup {
+    padding: 0em 1em 1em 1em;
+  }
 
   .runnerup figcaption {
     font-size: 0.8em;
     float: right;
-    margin-top: -1em;
   }
 
   .cover.runnerup {
     width: 100%;
     float: right;
-    margin: -2em -1em 0em 1em;
-
+    margin: 0;
   }
 
   .runnerup h2 {
@@ -415,7 +422,6 @@ footer h2 {
 
   .menuname>a:nth-child(1) {
     visibility: visible;
-
   }
 
   nav.navigation a {
@@ -424,11 +430,14 @@ footer h2 {
     height: 1.5rem;
     text-decoration: none;
     background-color: #cb997e;
-
   }
 
+
   nav.navigation h1 a:hover {
-    color: #ffe8d6;
+    color: #64564c;
+    text-decoration: none;
+    background: #cb997e;
+    font-weight: 600;
   }
 
   nav.navigation a:visited {
@@ -436,14 +445,10 @@ footer h2 {
     color: #64564c;
   }
 
-
-
-
   nav.navigation a:hover {
     background: #ffe8d6;
     color: #cb997e;
     font-weight: 500;
-
   }
 
   nav.navigation ul {
@@ -455,13 +460,11 @@ footer h2 {
     width: 100vw;
     text-align: center;
     padding: 0;
-
   }
 
   nav.navigation li:hover .dropdown>li {
     display: block;
     top: 1rem;
-
   }
 
   .dropdown {
@@ -477,4 +480,7 @@ footer h2 {
     position: relative;
   }
 
+  footer ul.navigation {
+    padding: 0;
+  }
 }
