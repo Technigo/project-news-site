@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love is Blind Nation</title>
+</head>
+<body>
+  <div class="outer-wrapper">
     <header>
-      <!-- Some kind of logo and navbar -->
+        <div class="top-header">
+        <h1>Love is Blind Nation</h1>
+      </div>
+        <nav>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Chat</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <main>
+      <article class="main-article">
+          <h2>EXCLUSIVE: Girls tell all! The epic after show where we get answers to all our questions. Who is still married? Who broke up? Who had a baby?</h2>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+          <a href="https://www.aftonbladet.se/nojesbladet/a/GMkeKx/love-is-blind-sverige-har-spelades-det-in-och-fem-andra-saker-om-netflix-serien" class="girls tell">
+          <img src="assets/all-girls.webp" alt="Large Image" class="large-image">
+          </a>
+          <div class="image-row">
+              <div class="image-container">
+                  <img src="assets/sergio.webp" alt="Small Image 1" class="small-image">
+                  <a href="https://www.djsergiorincon.se/" class="image-text">"I am having a Spanish baby" - Interview with Sergio</a>
+              </div>
+              <div class="image-container">
+                  <img src="assets/Christofer.webp" alt="Small Image 2" class="small-image">
+                  <a href="https://veckorevyn.com/film-och-serier/det-heter-love-is-blind-deltagarna-pa-instagram/" class="image-text">Interview with Christofer - "I wear a skirt"</a>
+              </div>
+              <div class="image-container">
+                  <img src="assets/belly.webp" alt="Small Image 3" class="small-image">
+                  <a href="https://www.kalles.se/produkter/?gclid=CjwKCAiA5L2tBhBTEiwAdSxJX8Kv5atnbvDmj8lPOWTc3jCXXgiD8nQ19GiQ7_7ismPmKVN0NE1cqRoCzncQAvD_BwE" class="image-text">She is all about belly-dancing - Meira in an interview</a>
+              </div>
+          </div>
+  
+          <div class="image-row">
+              <div class="image-container">
+                  <img src="assets/my-hearts-joy.avif" alt="Small Image 4" class="smaller-image">
+                  <a href="https://www.sommarlovet.se/lyrics/sanger-pa-skolavslutningen/uti-var-hage//" class="image-text">Christofer on his love for Catja - the joy of the heart and eternal longing</a>
+              </div>
+              <div class="image-container">
+                  <img src="assets/sad.jpeg" alt="Small Image 5" class="smaller-image">
+                  <a href="https://en.wikipedia.org/wiki/Cry_Me_a_River_(Justin_Timberlake_song)" class="image-text">"The dog is my life!" - Krissy-Lee tell all about her best friend</a>
+              </div>
+              <div class="image-container">
+                  <img src="assets/Sergio_Amanda.jpeg" alt="Small Image 6" class="smaller-image">
+                  <a href="https://www.djsergiorincon.se/" class="image-text">Amanda can't stand the loft - "We are looking for an apartment with a bedroom" </a>
+              </div>
+          </div>
+      </article>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+
+      </main>
+  
+    <footer>
+      <div class="outer-container">
+        <div class="footer-left">
+          <p>© LIBN. All rights reserved. </p>
+          <img src="assets/logo-love.png" alt="heart" class="heart-logo">
+        </div>
+        <div class="footer-right">
+          <p>Follow us</p>
+          <a href="https://twitter.com/?lang=sv" class="img twitter">
+          <img src="assets/Logo_of_Twitter.svg.png" alt="Twitter" class="twitter-logo">
+          </a>
+          <a href="https://www.facebook.com/?locale=sv_SE" class="img facebook">
+          <img src="assets/Facebook_Logo.png.webp" alt="Facebook" class="facebook-logo">
+        </a>
+      </div>
+  </footer>
+</div>
+</body>
 </html>
