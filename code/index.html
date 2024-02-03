@@ -1,23 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Veganomnomnomicon</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Spectral:ital,wght@0,200;0,400;0,500;0,800;1,200;1,500;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
     <header>
-      <!-- Some kind of logo and navbar -->
+      <nav class="navigation">
+        <h1> <a href="index.html">Veganomnomnomicon</a></h1>
+        <ul>
+          <li class="menuname"><a href="#">Menu</a>
+
+            <ul class="dropdown">
+              <li><a href="#news">News</a></li>
+              <li><a href="#recipes">Recipes</a>
+              <li><a href="#about">About</a></li>
+              <li> <a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="main">
+      <article class="card hero">
+
+        <figure>
+          <img class="cover hero" src="assets/manierecoat.webp" />
+          <figcaption class="hero">Oversized ribbed plush jacket with lapel</figcaption>
+        </figure>
+
+        <h2>Style</h2>
+        <h3>Get smoking hot this winter</h3>
+        <p>We adore the new coats and jackets from Maniere Devoir. Beautiful garments 100% cruelty free! </p>
+        <p>We love
+          this faux fur jacket in cream, what about you?
+          Find your favorite
+          <a href="https://www.manieredevoir.com/en-no/collections/woman-coats-jackets-winter-sale"> here!
+          </a>
+        </p>
+
+      </article>
+      <article class="card runnerup">
+
+        <figure>
+          <img class="cover runnerup" src="assets/ark.jpeg">
+          <figcaption>Looks like a meadow, tastes like heaven</figcaption>
+        </figure>
+        <h2>Restaurants</h2>
+        <h3>Vegan Michelin restaurant</h3>
+        <p> This restaurant dissolves vegan stereotypes and exceeds expectations; Substanable and delicious -
+          are you even a vegan if you haven't visited
+          <a href="https://www.restaurantark.dk/eat">ARK?</a>
+        </p>
+      </article>
+      <article class="card">
+        <h2>Travel</h2>
+        <h3>Planning a cruelty free vacation?</h3>
+        <p>Nourish your soul, body and mind at
+          <a href="https://www.thefarmatsanbenito.com/">The Farm at San Benito
+        </p>
+        <figure>
+          <img class="cover" src="assets/vacation.jpeg">
+          <figcaption>A life-transformative healing holiday</figcaption></a>
+        </figure>
+      </article>
+      <article class="card">
+        <h2>Recipes</h2>
+        <h3>Featured Recipe for january</h3>
+        <p>This was the definite winner at new years! Get the full recipe <a name="recipes"
+            href="https://biancazapatka.com/en/vegan-chicken-drumsticks/">here
+            <figure>
+              <img class="cover" src="assets/recipe.webp">
+              <figcaption>Delicious recipe from bianca Zapatka </figcaption>
+          </a>
+          </figure>
+      </article>
+      <article class="card">
+        <h2>News</h2>
+        <h3>Latest in vegan tech</h3>
+        <p>Who plans to produce 1,000 tonnes of 3D Printed Plant-Based Bacon in 2024? <a name="news"
+            href="https://vegconomist.com/">Find
+            out
+            <figure>
+              <img class="cover" src="assets/bacon.jpeg">
+              <figcaption>Cocuus bacon looks almost too real </figcaption>
+          </a>
+          </figure>
+      </article>
+      <article class="card">
+        <h2>Health</h2>
+        <h3>Start 2024 right!</h3>
+        <p>Figure out which blood tests you should take yearly
+          <a href="https://vojo.health/vegan-blood-test/"> here.
+            <figure>
+              <img class="cover" src="assets/bloodtest.png">
+              <figcaption>Do you know what to check beside B12? </figcaption>
+          </a>
+          </figure>
+      </article>
+      <article class="card">
+        <h2>Events</h2>
+        <h3>New year new you!</h3>
+        <p>Vegancurious? Do you want some help getting started? look no further; join veganuary
+          <a href="https://veganuary.com/"> here.
+            <figure>
+              <img class="cover" src="assets/signup.jpeg">
+              <figcaption>Get a free cookbook!</figcaption>
+          </a>
+          </figure>
+      </article>
+      <article class="card">
+        <h2>Adopt</h2>
+        <h3>In need of a new friend?</h3>
+        <p>Adopt don't shop! Too many animals are in need of an owner. Find your new friend
+          <a href="https://dooa.no/adopsjon/"> here.
+            <figure>
+              <img class="cover" src="assets/adopt.jpeg">
+              <figcaption>Your new furry friend?</figcaption>
+          </a>
+          </figure>
+      </article>
+      <article class="card">
+        <h2>Movies</h2>
+        <h3>Netflix and think!</h3>
+        <p><a href="https://this-is-vegan.com/en/netflix-and-think-the-best-vegan-documentaries-in-2023/"> Here
+          </a>is an overview of vegan documentaries and vegan movies that await you and where you can find
+          them.
+        <figure>
+          <img class="cover" src="assets/movie.webp">
+          <figcaption>This is Vegan have curated a list of vegan movies to watch</figcaption>
+          </a>
+        </figure>
+      </article>
+      <article class="card">
+        <h2>Books</h2>
+        <h3>Best vegan books for 2023</h3>
+        <p>From tantalizing new vegan cookbooks to cutting-edge nutrition research, there is no shortage of good
+          reads that traverse the intersection of health and plant-based lifestyles
+          <a href="https://www.forksoverknives.com/wellness/best-vegan-books-of-2023/"> here.
+            <figure>
+              <img class="cover" src="assets/veganbook.png">
+              <figcaption>Forks over knives recommended reading - How to not age</figcaption>
+          </a>
+          </figure>
+      </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+    <footer>
+      <ul class="navigation">
+        <li><a name="contact" href="mailto:hi@veganomnomnomicon.com">Email me</a></li>
+        <li><a name="about" href="https://www.instagram.com/veganomnomicon?igsh=cDFob2U0Y3k2bWt5&utm_source=qr">Follow
+            me
+            on
+            instagram</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </footer>
+
+  </section>
+</body>
+
 </html>
