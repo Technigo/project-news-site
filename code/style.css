@@ -1,66 +1,65 @@
-/* Reset of base styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Styles for the page */
+
 body {
   margin: 0;
   padding: 0;
   font-family: Futura, Avant Garde;
-  background-color: #4E0687; /* Background color for the page */
-  color: #333; /* Text color */
+  background-color: #4E0687;
+  color: #333;
 }
 
 header {
-  background-color: #70309E; /* Example background color for the header */
-  color: #B89C67; /* Example text color for the header */
-  text-align: center; /* Center aligns the text in the header */
+  background-color: #70309E;
+  color: #B89C67;
+  text-align: center;
 }
 
 .top-header {
   display: flex;
-  justify-content: center; /* Centers the content */
-  align-items: center; /* Vertical centering */
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   text-shadow:
-    0 0 2px #fff, /* White shine for brightness */
-    0 0 5px #fff, /* Additional white shine to enhance brightness */
-    1px 1px 1px #B89C67, /* Small shimmering effect with the same color as text */
-    2px 2px 2px rgba(0, 0, 0, 0.1), /* Small shadow for depth */
-    0 0 25px #B89C67, /* Large glowing effect to enhance the metallic feel */
-    0 0 5px #B89C67, /* Smaller glowing effect to enhance the metallic feel */
-    -1px -1px 1px #fff, /* Small white border to give the appearance of light on top */
-    -2px -2px 1px rgba(255, 255, 255, 0.5); /* Softer white border to enhance light reflection */
-
+    0 0 2px #fff, 
+    0 0 5px #fff,
+    1px 1px 1px #B89C67,
+    2px 2px 2px rgba(0, 0, 0, 0.1),
+    0 0 25px #B89C67,
+    0 0 5px #B89C67,
+    -1px -1px 1px #fff,
+    -2px -2px 1px rgba(255, 255, 255, 0.5);
   padding: 10px;
   display: flex;
   font-size: 40px;
   font-style: bold;
   justify-content: center;
   align-items: relative;
-  background-color: #70309E; /* Background color for header */
-  color: #B89C67; /* Text color for header */
+  background-color: #70309E;
+  color: #B89C67;
 }
 
 nav {
-  /* Styles for the navigation menu */
-  margin-top: 0px; /* Adds space above the navigation menu */
+
+  margin-top: 0px;
 }
 
 nav ul {
   list-style: none;
   padding: 10px;
   display: flex;
-  justify-content: center; /* Centers the navigation menu */
-  flex-wrap: wrap; /* Allows the navigation menu to wrap on smaller screens */
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 20px;
 }
 
 nav ul li {
-  margin: 0 10px; /* Provides space between navigation links */
+  margin: 0 10px;
 }
 
 nav a {
@@ -78,31 +77,31 @@ main {
 }
 
 .main-article {
-  text-align: left; /* Centers the content in the article */
+  text-align: left;
   color: #B89C67;
-  /* Additional styles for main-article */
+
 }
 
 .large-image {
-  max-width: 100%; /* Ensures the image does not exceed the article's width */
-  height: auto; /* Maintains the image's proportions */
-  margin-bottom: 20px; /* Adds space below the large image */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-/* Base styles for .image-row */
+
 .image-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers the images */
+  justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
 }
 
-/* Style for each .image-container */
+
 .image-container {
-  flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
-  max-width: calc(25% - 20px); /* 4 images per row with a 20px gap */
-  text-align: center; /* Centers the content in the container */
+  flex: 1 1 200px;
+  max-width: calc(25% - 20px);
+  text-align: center;
 }
 
 /* Adjustment for tablets */
@@ -115,105 +114,105 @@ main {
 /* Adjustment for mobile devices */
 @media (max-width: 767px) {
   .image-container {
-    max-width: 100%; /* 1 image per row on mobile devices */
+    max-width: 100%;
   }
 }
 
 .small-image {
-  max-width: 100%; /* Ensures the image does not exceed the container's width */
-  height: auto; /* Maintains the image's proportions */
+  max-width: 100%;
+  height: auto;
 }
 
 .smaller-image {
-  max-width: 300px; /* Ange den maximala bredden du vill ha för bilderna */
-  max-height: 300px; /* Ange den maximala höjden du vill ha för bilderna */
+  max-width: 300px;
+  max-height: 300px;
 
 }
 
 .image-text {
-  display: block; /* Makes the link a block element */
-  background-color: #FFFFFF; /* Background color for the text, adjust as needed */
-  color: #000000; /* Text color, adjust as needed */
-  text-decoration: none; /* Removes the underline */
-  padding: 6px; /* Adds some space around the text */
-  margin-top: 0px; /* Space between the image and text */
-  border-radius: 5px; /* Adds a rounded edge to the text block if desired */
+  display: block;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-decoration: none;
+  padding: 6px;
+  margin-top: 0px;
+  border-radius: 5px; 
 }
 
 .image-text:hover {
-  background-color: #70309E; /* Changes background color on hover */
-  color: #B89C67; /* Changes text color on hover */
+  background-color: #70309E;
+  color: #B89C67;
 }
 
 footer { 
-  background-color: #70309E; /* Example background color */
-  color: #B89C67; /* Example text color */
+  background-color: #70309E;
+  color: #B89C67;
   padding: 20px 0;
   width: 100%;
 }
 
 .outer-container {
   display: flex;
-  justify-content: space-between; /* Positions content on the left and right edges */
-  align-items: center; /* Vertically centers content */
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
 }
 
 .search-container {
   display: grid;
-  grid-template-columns: 1fr auto; /* A wide column for input and a narrower one for the button */
-  gap: 10px; /* Space between input and button */
+  grid-template-columns: 1fr auto;
+  gap: 10px;
   padding: 20px;
-  max-width: 1000px; /* Same width as the rest of the content */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #searchInput {
   padding: 10px;
-  font-size: 16px; /* Adjust as needed */
-  border: 1px solid #ddd; /* Adjust as needed */
-  border-radius: 4px; /* Adjust as needed */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 #searchButton {
   padding: 10px 20px;
-  background-color: #70309E; /* Adjust as needed */
+  background-color: #70309E;
   color: white;
   border: none;
-  border-radius: 4px; /* Adjust as needed */
+  border-radius: 4px;
   cursor: pointer;
 }
 
 #searchButton:hover {
-  background-color: #5a2d6f; /* Darker color on hover */
+  background-color: #5a2d6f;
 }
 
 .footer-left {
-  display: flex; /* Uses Flexbox */
-  align-items: center; /* Vertically centers elements */
-  justify-content: start; /* Starts content from the left */
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .heart-logo {
-  width: 30px; /* Adjusts logo size */
-  height: auto; /* Maintains image proportions */
-  margin-left: 10px; /* Adds space to the left of the logo */
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
 }
 
 .footer-right {
-  display: flex; /* Uses Flexbox */
-  align-items: center; /* Vertically centers elements */
-  justify-content: start; /* Starts content from the left */
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .twitter-logo {
-  width: 30px; /* Adjusts logo size */
-  height: auto; /* Maintains image proportions */
-  margin-left: 10px; /* Adds space to the left of the logo */
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
 }
 
 .facebook-logo {
-  width: 30px; /* Adjusts logo size */
-  height: auto; /* Maintains image proportions */
-  margin-left: 10px; /* Adds space to the left of the logo */
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
 }
