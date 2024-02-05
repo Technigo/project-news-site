@@ -10,4 +10,4 @@ Describe how you approached to problem, and what tools and techniques you used t
 * Struggling with when and where to use flexbox and grid. learnt that flexbox is good for complex and specific layouts. Grid is better for overall page layout and responsive design where you want to control the layout on different screens. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Deployed on Netlify: https://master--strong-panda-92a81e.netlify.app/
