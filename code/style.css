@@ -1,4 +1,384 @@
 html {
-  background: #0025ff;
+  background: #eaecf3;
   color: #fff;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 8px;
+}
+
+header {
+  background-color: white;
+  padding: 2px 18px 2px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  max-height: 60px;
+  object-fit: cover;
+}
+
+nav {
+  display: none;
+}
+
+.mobile {
+  display: inline;
+  font-size: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 16px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  display: inline;
+  border: 1px gray solid;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 70%;
+}
+
+.secondary-button {
+  background: transparent;
+  color: black;
+}
+
+.image-main {
+  width: 100%;
+}
+
+.flex-text {
+  max-width: 100%;
+  background-color: black;
+  padding: 2px 10%;
+  font-size: 70%;
+}
+
+.grid-item-text {
+  display: none;
+}
+
+.image-small {
+
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-vertical {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.big-grid-item {
+  background-color: black;
+  color: white;
+  font-size: 70%;
+  padding: 2px 12px 2px 12px;
+}
+
+footer {
+  background: whitesmoke;
+  color: black;
+  padding: 2px 2px;
+  font-size: 60%;
+}
+
+@media(min-width:667px) and (max-width:1024px) {
+  body {
+    display: flex;
+    margin: 10px 20px;
+  }
+
+  header {
+    background-color: white;
+    padding: 2px 18px 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .logo {
+    width: 38%;
+    max-height: 100px;
+    object-fit: cover;
+  }
+
+  nav {
+    display: inline;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    padding-right: 6px;
+    font-size: 70%;
+  }
+
+  button {
+    display: inline;
+    background-color: black;
+    border: 1px gray solid;
+    border-radius: 50px;
+    padding: 4px 6px;
+    color: white;
+    font-size: 70%;
+  }
+
+  .secondary-button {
+    background: transparent;
+    color: black;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .flex-parent {
+    background: white;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-child {
+    background: black;
+    margin: 5px;
+    height: 460px;
+  }
+
+  .flex-text {
+    background: black;
+    max-width: 25%;
+    margin: 5px;
+    height: 460px;
+    padding: 5px 20px;
+    font-size: 90%;
+  }
+
+  .image-main {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .grid-parent {
+    background: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 20% 20% 20% 10% 10%;
+  }
+
+  .grid-item {
+    background: black;
+    margin: 5px;
+    color: black;
+    font-size: 80%;
+  }
+
+  .image-small {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%
+  }
+
+  .grid-item-text {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 4px 20px;
+    margin: 5px;
+  }
+
+  .grid-item-vertical {
+    grid-area: 2 / 2 / span 2 / 3;
+    background-color: white;
+    margin: 5px;
+  }
+
+  .image-vertical {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .big-grid-item {
+    grid-column: span 2;
+    color: black;
+    font-size: 80%;
+    height: auto;
+    align-items: center;
+    color: white;
+  }
+
+  footer {
+    background: black;
+    padding: 4px 20px;
+    font-size: 70%;
+    color: white;
+  }
+}
+
+@media(min-width:1024px) {
+  body {
+    margin: 10px auto;
+    max-width: 1300px;
+  }
+
+  header {
+    background-color: white;
+    padding: 2px 18px 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+
+  .logo {
+    width: 40%;
+    max-height: 100px;
+    object-fit: cover;
+  }
+
+  nav {
+    display: inline;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    padding-right: 32px;
+    font-size: 100%;
+  }
+
+  button {
+    display: inline;
+    background-color: black;
+    border: 1px gray solid;
+    border-radius: 50px;
+    padding: 6px 12px;
+    color: white;
+    font-size: 100%;
+  }
+
+  .secondary-button {
+    background: transparent;
+    color: black;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .flex-parent {
+    background: white;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-child {
+    background: black;
+    width: 70%;
+    height: 480px;
+    margin: 5px;
+  }
+
+  .flex-text {
+    background: black;
+    max-width: 25%;
+    margin: 5px;
+    height: 460px;
+    padding: 10px 3%;
+    font-size: 100%;
+  }
+
+  .image-main {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-parent {
+    background: white;
+    width: 100%;
+    height: 640px;
+    margin: 0px 0 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 36% 36% 28%;
+  }
+
+  .grid-item {
+    background: white;
+    margin: 5px;
+    color: black;
+    max-width: 100%;
+    font-size: 100%;
+    cursor: pointer;
+  }
+
+  .image-small {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-item-text {
+    display: block;
+    background-color: white;
+    color: black;
+    max-width: 100%;
+    margin: 5px;
+    font-size: 100%;
+    padding: 4px 3%;
+  }
+
+  .grid-item-vertical {
+    grid-area: 1 / 4 / span 2 / 5;
+    background-color: white;
+    max-width: 100%;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .image-vertical {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .big-grid-item {
+    background-color: black;
+    grid-column: span 2;
+    font-size: 90%;
+    padding: 2px 20px 2px 20px;
+    color: white;
+    max-height: 100%;
+  }
+
+  footer {
+    background: black;
+    align-items: center;
+    font-size: 80%;
+    color: white;
+  }
+
 }
