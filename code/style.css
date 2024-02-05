@@ -1,4 +1,161 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  background-color: rgb(255, 194, 115);
+  color: rgb(229, 105, 105);
+  font-family: 'sora', sans-serif;
+
 }
+
+a {
+  text-decoration: none;
+  color: rgb(255, 223, 158);
+  font-size: 20px;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  margin: 10px;
+}
+
+.header-img {
+  margin: 20px;
+}
+
+.header-h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: rgb(193, 85, 139);
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  gap: 50px;
+  margin-right: 20px;
+
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.brainstorm-button {
+  padding: 40px;
+  background-color: rgb(193, 85, 139);
+  color: rgb(255, 223, 158);
+  border: none;
+  font-size: 20px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px;
+}
+
+.text {
+  font-size: 20px;
+
+}
+
+.instagram-story-img {
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.image {
+  box-shadow: 0 0 5px white;
+}
+
+.idea-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-bottom: 40px solid black;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 20px;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.instagram-button {
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(193, 85, 139);
+  border-radius: 5px;
+  width: 120px;
+  height: 95px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+/* Tablet */
+@media (min-width: 668px) {
+  .header-h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(193, 85, 139);
+    font-size: 50px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .text {
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(193, 85, 139);
+    font-size: 60px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+  }
