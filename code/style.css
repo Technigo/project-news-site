@@ -316,21 +316,27 @@ footer {
   }
 
   .logo img {
-    margin-top: 10px; /* Adjusted margin for smaller screens */
-    margin-left: 10px; /* Adjusted margin for smaller screens */
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
   nav .logo p {
-    font-size: 20px; /* Adjusted font size for smaller screens */
+    font-size: 20px;
   }
 
   nav li a {
-    font-size: 14px; /* Adjusted font size for smaller screens */
+    font-size: 14px;
     padding: 0px 10px;
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1601px) {
+  .box {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
   .box {
     grid-template-columns: repeat(4, 25%);
   }
