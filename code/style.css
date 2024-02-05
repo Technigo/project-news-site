@@ -1,4 +1,36 @@
 html {
-  background: #0025ff;
+  background: rgb(206, 222, 189);
   color: #fff;
 }
+
+.logo {
+  font-family:'Dancing Script', cursive;
+  color: rgb(67, 83, 52);
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 50px;
+  text-decoration: none;
+  background-color: none;
+  padding-top: 25px;
+  padding-bottom: 3px;
+}
+.navbar{
+  text-align: center;
+  }
+ 
+ .navbar li{
+   display: inline;
+ }
+ 
+ .navbar li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(67, 83, 52);
+ }
