@@ -2,22 +2,107 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Comarca - News Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+  <!-- Nav bar  -->
+    <header> 
+      <img class="logo-png" src="assets/logo-news.png" alt="logo">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul class="nav-links">
+          <li><a class="fancy-nav" href="#">Politics</a></li>
+          <li><a class="fancy-nav" href="#">Ring Watch</a></li>
+          <li><a class="fancy-nav" href="#">Celebritys</a></li>
+          <li><a class="fancy-nav" href="#">Hobbit Life</a></li>
+          <li><a class="fancy-nav" href="#">Sports</a></li>
+          <li><a class="fancy-nav" href="#">Weather</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
-
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <!-- Breaking news  -->
+    <div class="breaking-news-container"> 
+      <div class="big-heading">
+        <I>BREAKING NEWS</I>
+      </div>
+      <div class="text-update">
+        <ul>
+          <li>🤍 Hobbits Unite to Form International Second Breakfast Club 🤍</li>
+          <li>RIGTH NOW! Middle-earth's First Cooking Show live</li>
+          <li>HOT! Gandalf accepting Saurons mud cage fight</li>
+          <li>LIFE! Orcs straiking for better wages</li>
+          <li id="bar-not-working"> BREAKING NEWS BAR NOT WORKING IN MOBILES!!</li>  
+        </ul>
+      </div>
+    </div>
+    <!-- The other news  -->
+    <div class="content"> 
+      <div class="item-1" id="main-item">
+        <img src="assets/01-you-shall-not-sign.png" alt="You should not pass sign">
+        <h1>Gandalf Admits: 'You Shall Not Pass' Sign Outside His House Just a Prank</h1>
+        <span>Neighbors Unamused by Bridge Traffic Jam. Leaving many to question the wizard's sense of humor</span>        
+      </div>
+      <div class="item-2">
+        <img src="assets/02-ring-line.jpg" alt="saurons-ring-line">
+        <h1>Sauron Starts New Fashion Trend with 'One Ring to Rule Them Al</h1>
+        <span>Jewelry Line - Elves Skeptical, Dwarves Already in Line</span>
+      </div>
+      <div class="item-3">
+        <img src="assets/03-hobbit-bbq.jpg" alt="hobbit-bbq">
+        <h1>Hobbit Hole B&B Opens in the Shire </h1>
+        <span>Yelp Reviews Rave about Comfortable Beds and Elevensies Buffet</span>        
+      </div>
+      <div class="item-4">
+        <img src="assets/04-old-tree.jpg" alt="old-tree">
+        <h1>Entmoot Concludes with Ents Voting on 'Tree of the Year'</h1>
+        <span>Awkward Silence as Winner is Announced: 'Old Man Willow'</span>        
+      </div>
+      <div class="item-5">
+        <img src="assets/05-hair-gel.png" alt="legolas-hair-gel">        
+        <h1>lven Tabloid Exposé: Legolas Spotted Using Hair Gel </h1>
+        <span>'I'm Just Immortal, Not Immune to Bad Hair Days,' He Confesses</span>        
+      </div>     
+      <div class="item-6">
+        <img src="assets/06-orc-comedy.webp" alt="orc-comedy-teather">        
+        <h1>Orc Comedy Club Opens in Mordor</h1>
+        <span>Headlining Act: 'Why Did the Nazgûl Cross the Road?</span>        
+      </div>
+      <div class="item-7">
+        <img src="assets/07-gollum-fitness.jpg" alt="gollum-fitness">       
+        <h1>Gollum Launches Fitness DVD</h1>
+        <span>'The Precious Workout: One Ring to Tone Them All'</span>        
+      </div>
+      <div class="item-8">        
+        <img src="assets/08-retreat-from-moscow.jpg" alt="weather">
+        <h1>Rohan Weather Forecast: Eomer Predicts 100% Chance of Epic Battles</h1>
+        <span>Riders Urged to Bring Extra Spears and Snacks</span>        
+      </div>
+      <div class="item-9">
+        <img src="assets/09-lottery.jpg" alt="lottery">        
+        <h1>Bilbo Baggins Wins Lottery</h1>
+        <span>Plans Lavish 'Unexpected Party 2.0' with Fireworks</span>        
+      </div>
+      <div class="item-10">
+        <img src="assets/10-karaoke-night.jpg" alt="karaoke">
+        <h1>Dwarven Karaoke Night in Khazad-dûm Goes Horribly Wrong</h1>
+        <span> Gimli's Rendition of 'I Will Survive' Causes Cave Collapse</span>        
+      </div>     
+    </div>
+    <footer>
+      <div class="footer-content">
+        <img class="logo-technigo" src="assets/logo.svg" alt="logo-technigo">
+        <a href="mailto:arnauvidal@gmail.com">© 2024 Arnau Vidal</a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/arnau-vidal-i-huix-4266a940" target="_blank"><img class="logo-png" src="assets/linkedin-icon.png"></a>
+          <a href="https://github.com/vidalhuix/vidalhuix" target="_blank"><img class="logo-png" src="assets/github-icon.webp" alt=""></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
