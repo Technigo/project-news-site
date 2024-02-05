@@ -3,8 +3,13 @@ html {
   color: #fff;
 }
 
+header{
+  background-color: white;
+}
+
 .logo {
   font-family:'Dancing Script', cursive;
+  background-color: white;
   color: rgb(67, 83, 52);
   text-align: center;
   width: 100%;
@@ -16,6 +21,7 @@ html {
   padding-bottom: 3px;
 }
 .navbar{
+  background-color: white;
   text-align: center;
   }
  
@@ -79,7 +85,6 @@ html {
   font-weight: bold;
   background-color: rgb(67, 83, 52);
   text-align: center;
-  color: 435334;
   font-size: 50;
   padding: 20px 20px 20px 20px;
 }
@@ -87,7 +92,6 @@ html {
 .container-news {
   display: flex;
   width: 100%;
-  max-width: 800px;
   margin: auto;
   position: relative;
 }
@@ -98,7 +102,7 @@ html {
   padding: 5px;
 
 }
-.container-news h4,p{
+.container-news {
   display: block;
   width: 100px;
   height: 100px;
@@ -106,7 +110,6 @@ html {
   color: black;
   justify-content: left;
   text-align: left;
-
 }
 
 img {
@@ -127,6 +130,8 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
 .col-33 {
@@ -135,9 +140,7 @@ img {
   box-sizing: border-box;
   padding: 0 15px;
 }
-.col-33:nth-child(3n+1){
-  clear: both;
-}
+
 .col-33 h3{
   color: black;
   font-weight: bold;
@@ -150,5 +153,129 @@ img {
   justify-content: left;
   color: #484848;
   margin: 15px 15px 15px 15px;
+}
 
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  background: rgb(67, 83, 52);
+}
+
+footer h4{
+  color: white;
+  font-size: 10px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  .sender-picture{
+    display: flex;
+    width: 100%;
+    border-radius: 400px;
+  }
+  .title-news{
+    font-size: 50px;
+  }
+
+  .col-33 {
+    border: 1px solid gray;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .col-33 h3{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .col-33 p{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
+
+  }
+  .hero-text h1,
+  p{
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  .sender-picture{
+    display: flex;
+    width: 100%;
+    border-radius: 200px;
+  }
+
+  .col-33 {
+    width: 50%;
+  }
+  .hero-text h1{
+    font-size: 40px;
+  }
+   .discover{
+    display: none;
+   }
+  }
+@media screen and (min-width: 320px) and (max-width: 667px){
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+    .hero-text h1, p{
+      width: 100%;
+      height: auto;
+    }
+    .discover{
+      width: 100%;
+      height: auto;
+    }
+    .sender-picture{
+      display: flex;
+      width: 50%;
+      border-radius: 200px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 100px;
+
+    }
+      .col-33 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      width: 100%;
+      height: 342px;
+      gap: 0;
+      justify-content: center;
+      text-align: left;
+      padding-top: 50px;
+      margin-bottom: 40px;
+    
+    }
+    .col-33 h3{
+      display: flex;
+      text-align: left;
+      word-wrap: break-word;
+    }
+    .col-33 p{
+      display: flex;
+      text-indent: 50px;
+      text-align: left;
+      letter-spacing: 1px;   
+     }
 }
