@@ -97,24 +97,26 @@ main {
   margin-bottom: 20px;
 }
 
-
+/* Mobile */
 .image-container {
-  flex: 1 1 200px;
-  max-width: calc(25% - 20px);
+  max-width: 100%;
+  margin: 10px;
   text-align: center;
 }
 
-/* Adjustment for tablets */
-@media (min-width: 768px) {
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1200px) {
   .image-container {
-    max-width: calc(50% - 20px); /* 2 images per row on tablets */
+    max-width: 300px;
+    margin: 10px
   }
 }
 
-/* Adjustment for mobile devices */
-@media (max-width: 767px) {
+/* Desktop */
+@media (min-width: 1201px) {
   .image-container {
-    max-width: 100%;
+    max-width: 400px;
+    margin: 10px;
   }
 }
 
