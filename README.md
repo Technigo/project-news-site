@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+A news site about Makeup.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Started with CSS grid but got more comfortable with Flex Box. I used the Precourse notions and some youtube videos. I planned the layout on paper, and it looks like i wnated it to look like. 
+If I had more time I would have fixed the images that arent showing up in the Netlify version.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+To view the project go to :
+https://glittering-gingersnap-960b56.netlify.app/
