@@ -192,6 +192,40 @@ button:hover {
   margin-top: 30px;
 }
 
+@media (min-width: 320px) {
+  .heading {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 10px;
+  }
+
+  .big-news img {
+   width: 200px;
+}
+
+.carnation {
+  grid-column: 2 / 4;
+}
+
+.snowdrop {
+  grid-column: 2 / 4;
+}
+
+.info {
+  margin: 0 20px 0 20px;
+}
+
+.info img {
+  width: 224px;
+}
+
+.info p {
+  padding: 0 20px 0 20px;
+}
+}
+
 @media (min-width: 667px) and (max-width: 1024px) {
 
   .other-news {
