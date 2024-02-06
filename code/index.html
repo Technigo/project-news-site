@@ -1,23 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>first project technigo: news site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+</meta>
+<header>
+  <!-- navbar -->
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <navbar>
+        <div class="nav-list">
+        <li class="nav-item">
+          <div id="navlogo"><img src="assets/logoproject.jpg"></a>
+        <li class="nav-item">
+          <a href="#">News</a>
+        <li class="nav-item">
+          <a href="#">Contribute</a>
+        <li class="nav-item">
+          <a href="#">Subscribe</a>
+        <li class="nav-item">
+          <a href="#">Contact</a>
+        </lidiv>
+   </navbar>
+</header>
+<hr>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<!-- big news -->
+<main>
+  <div class="container">
+    <div class="bignews-container">
+      <div class="bignews-content">
+        <img src="/assets/bignews.jpeg" alt="ainewsarticle" />
+        <span>
+          <h1>The AI-Fueled Future of Work Needs Humans More Than Ever</h1>
+          <p>
+            Much like the internet did in the 1990s, AI is going to change the very definition of work. While change can
+            be scary, if the last three years taught us anything, it can also be an opportunity to reinvent how we do
+            things. I believe the best way to manage the changes ahead for employees and employers alike is to adopt a
+            skills-first mindset.As for employers, the rise of AI only increases the importance of a skills-based
+            approach to hiring and developing talent. People are learning AI skills at a rapid clip, with the number of
+            AI-skilled members now nine times larger than it was in 2016. And there is a hunger to put these newly
+            developed skills into practice: LinkedIn job posts that mention artificial intelligence or generative AI
+            have seen 17 percent greater application growth over the past two years than job posts with no mentions of
+            the technology. The leaders that focus on these skills when hiring (rather than just the degree someone has
+            earned or jobs they’ve had) will unlock more potential and be more agile as the way we do work continues to
+            change.
+          <a href="https://www.wired.com/story/the-ai-fueled-future-of-work-needs-humans-more-than-ever/">Continue reading..</a></p>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+        </span>
+      </div>
+    </div>
+  </div>
+</main>
+</header>
+
+
+<!--small news-->
+<section id="main-articles">
+  <div class="container">
+    <hr>
+      <h2>
+        <span class="material-symbols-outlined">
+      public </span>Latest News</h2>
+
+    <div class="articles-container">
+      <article class="card">
+        <img src="assets/fourth.jpg.webp" alt="" />
+        <h3>
+          <a href="https://www.artificialintelligence-news.com/2024/01/24/ncsc-ai-significantly-boost-cyber-threats-next-two-years/">AI
+            to significantly boost cyber threats over next two years.</a>
+        </h3>
+        <p>
+          The centre warns of a surge in ransomware attacks in particular; involving hackers deploying malicious
+          software to encrypt a victim’s files or entire system and demanding a ransom payment for the decryption key.
+        </p>
+      </article>
+
+      <article class="card">
+        <img src="/assets/first.jpeg">
+        <h3>
+          <a href="https://www.wsj.com/tech/ai/how-we-can-control-ai-327eeecf?mod=ai_news_article_pos2">How we can
+            control AI.</a>
+        </h3>
+        <p>
+          The technology’s rapid advance threatens to overwhelm all efforts at regulation. We need our best tech experts
+          competing to rein in AI as fast as companies are competing to build it.
+        </p>
+      </article>
+
+      <article class="card">
+        <img src="assets/second.jpeg" alt="" />
+        <h3>
+          <a href="https://techcrunch.com/2024/1/30/chatgpt-everything-to-know-about-the-ai-chatbot/">Everything you
+            need to know about ChatGPT.</a>
+        </h3>
+        <p>
+          ChatGPT, OpenAI’s text-generating AI chatbot, has taken the world by storm. What started as a tool to
+          hyper-charge productivity through writing essays and code with short text prompts has evolved into a behemoth
+          used by more than 92% of Fortune 500 companies for more wide-ranging needs
+        </p>
+      </article>
+
+      <article class="card">
+        <img src="assets/third.jpeg" alt="" />
+        <h3>
+          <a href="https://techcrunch.com/2024/01/17/deepminds-latest-ai-can-solve-geometry-problems/
+              ">DeepMind’s latest AI can solve geometry problems.
+          </a>
+        </h3>
+        <p>
+          DeepMind today unveiled AlphaGeometry — a system that the lab claims can solve as many geometry problems as
+          the average International Mathematical Olympiad gold medalist
+        </p>
+      </article>
+    </div>
+    </body>
+    
+    <div class="footer">
+      <p><span class="material-symbols-outlined">
+        copyright
+        </span>Ida.S 2024</p>
+    </div>
 </html>

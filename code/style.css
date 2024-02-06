@@ -1,4 +1,190 @@
-html {
-  background: #0025ff;
-  color: #fff;
+body {
+  min-height: 100vh;
+  background: white;
+  color: #070707;
+  font-size: large;
+  font-weight: 350;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+
+.nav-list {
+  background: white;
+  padding: 1px;
+  border-radius: 25px 10px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap:wrap;
 }
+
+
+.nav-item {
+  list-style: none;
+  margin-right: 100px;
+}
+
+
+.nav-item a {
+  color: black;
+  font-weight: 600;
+  text-decoration:none;
+
+}
+
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.text {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+
+#navlogo {
+  max-width: 60%;
+  max-height: 40%;
+}
+
+
+#main-articles .container .articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+  padding: 10px;
+  width: 100%;
+}
+  
+
+.bignews-container {
+  margin:40px;
+  display:grid;
+  grid-template-columns: repeat (4, 1fr);
+  padding:15px;
+}
+
+
+img[src*="bignews"] {
+width:40%;
+height:100%;
+float:left;
+margin-right:20px;
+vertical-align:middle;
+}
+
+
+span {
+  height: 100%;
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+h1 {
+  text-align: center;
+  color:rgb(88, 201, 229);
+}
+
+
+h2 {
+  text-align:left;
+  width:100%;
+  color: rgb(88, 201, 229);
+}
+
+
+a:link {
+  text-decoration: none;
+  color:black;
+}
+
+
+a:visited{
+  color:black;
+}
+
+a:hover {
+  color: rgb(88, 201, 229);
+}
+
+
+a:active {
+  color:rgb(88, 201, 229)
+}
+
+  
+.footer {
+  color:rgb(88, 201, 229);
+  text-align: center;
+  width:100%;
+  border-top: solid thin black;
+}
+
+
+@media (min-width: 667px) and (max-width: 1024px) { #main-articles .container .articles-container {
+  
+  grid-template-columns: 1fr 1fr;
+    grid-template-areas: " item1 "
+                         " item3 "
+                         " item2 "
+                         " item4"; }
+ }
+
+ 
+ @media (max-width: 667px) {
+   #main-articles .container   .articles-container {
+      grid-template-columns: 1fr;
+        grid-template-areas: " item1 "
+                             " item3 "
+                             " item2 "
+                             "item4";}
+}
+
+
+@media (max-width: 667px) {
+img[src*="bignews"]{
+width:auto;
+height: auto;
+  }
+}
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  img[src*="bignews"]{
+    width:auto;
+    height:auto;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .nav-list {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:space-evenly;
+  }
+}
+ 
+
+@media (max-width: 667px) {
+ .nav-item:first-child{
+  width:auto;
+  height: auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+    }
+  }
+
+  
+
+
