@@ -169,7 +169,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   .box {
     grid-template-columns: repeat(2, 1fr);
   }
