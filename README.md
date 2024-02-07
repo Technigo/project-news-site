@@ -16,4 +16,4 @@ I struggled for over a week with responsiveness and especially with my navbar wh
 I'm still focusing on spending as much of my time learning the basics of html, css and responsiveness to catch up and understanding it better.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://shiny-mandazi-ea0999.netlify.app/
