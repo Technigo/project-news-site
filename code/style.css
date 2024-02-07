@@ -1,15 +1,11 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Futura, Avant Garde;
+  font-family: 'Futura', 'Avant Garde', sans-serif;
   background-color: #4E0687;
   color: #333;
 }
@@ -18,44 +14,25 @@ header {
   background-color: #70309E;
   color: #B89C67;
   text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 8px 6px -6px #B89C67; /* Lägger till en skugga för lite djup */
+
+  /* Skapar en glimrande eller skimrande effekt på texten */
+  text-shadow: 1px 1px 2px #fff, 0 0 25px #B89C67, 0 0 5px #B89C67;
 }
 
-.top-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  text-shadow:
-    0 0 2px #fff, 
-    0 0 5px #fff,
-    1px 1px 1px #B89C67,
-    2px 2px 2px rgba(0, 0, 0, 0.1),
-    0 0 25px #B89C67,
-    0 0 5px #B89C67,
-    -1px -1px 1px #fff,
-    -2px -2px 1px rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  display: flex;
-  font-size: 40px;
-  font-style: bold;
-  justify-content: center;
-  align-items: relative;
-  background-color: #70309E;
-  color: #B89C67;
-}
+.top-header h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
 
-nav {
-
-  margin-top: 0px;
 }
 
 nav ul {
   list-style: none;
-  padding: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 20px;
+  padding: 10px;
 }
 
 nav ul li {
@@ -69,76 +46,55 @@ nav a {
 }
 
 main {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 20px auto;
   padding: 20px;
-  display: grid;
-  gap: 20px;
 }
 
 .main-article {
   text-align: left;
   color: #B89C67;
-
 }
 
-.large-image {
-  max-width: 100%;
+.large-image, .small-image, .smaller-image {
+  width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  display: block;
+  border: 20px;
 }
-
 
 .image-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
   margin-bottom: 20px;
 }
 
-/* Mobile */
+@media (min-width: 600px) {
+  .image-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .image-container {
-  max-width: 100%;
-  margin: 10px;
-  text-align: center;
-}
-
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1200px) {
-  .image-container {
-    max-width: 300px;
-    margin: 10px
-  }
-}
-
-/* Desktop */
-@media (min-width: 1201px) {
-  .image-container {
-    max-width: 400px;
-    margin: 10px;
-  }
-}
-
-.small-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.smaller-image {
-  max-width: 300px;
-  max-height: 300px;
-
+  margin: 5px;
 }
 
 .image-text {
-  display: block;
   background-color: #FFFFFF;
   color: #000000;
   text-decoration: none;
   padding: 6px;
-  margin-top: 0px;
-  border-radius: 5px; 
+  border-radius: 5px;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .image-text:hover {
@@ -146,31 +102,16 @@ main {
   color: #B89C67;
 }
 
-footer { 
-  background-color: #70309E;
-  color: #B89C67;
-  padding: 20px 0;
-  width: 100%;
-}
-
-.outer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
 .search-container {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 #searchInput {
+  flex: 1;
   padding: 10px;
+  margin-right: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -189,32 +130,50 @@ footer {
   background-color: #5a2d6f;
 }
 
-.footer-left {
+footer {
+  background-color: #70309E;
+  color: #B89C67;
+  padding: 20px ;
+  text-align: center;
+}
+
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left, .footer-right {
   display: flex;
   align-items: center;
-  justify-content: start;
 }
 
-.heart-logo {
+.heart-logo, .twitter-logo, .facebook-logo {
   width: 30px;
   height: auto;
   margin-left: 10px;
 }
 
-.footer-right {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
+@media (max-width: 600px) {
+  .top-header h1 {
+    font-size: 24px;
+  }
 
-.twitter-logo {
-  width: 30px;
-  height: auto;
-  margin-left: 10px;
-}
+  nav ul {
+    flex-direction: column;
+  }
 
-.facebook-logo {
-  width: 30px;
-  height: auto;
-  margin-left: 10px;
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .outer-container {
+    flex-direction: column;
+  }
+
+  .footer-left, .footer-right {
+    margin-bottom: 10px;
+  }
 }
