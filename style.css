@@ -41,7 +41,7 @@ header{
   color: rgb(67, 83, 52);
  }
  .hero-image {
-  background-image: url(Home.png);
+  background-image: url(code/assets/Home.png);
   height: 500px;
   background-size: cover;
   display: flex;
@@ -57,7 +57,7 @@ header{
   transform: translate(-50%, -50%);
   text-align: center;
   color: white; 
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .hero-text h1 {
@@ -74,11 +74,10 @@ header{
   font-size: 1.0em; 
   border: none;
   border-radius: 15px;
-  cursor: pointer;
-  padding-left: 10px;
-  padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  cursor: pointer;
+
 }
 .title-news{
   font-family: Arial, Helvetica, sans-serif;
@@ -88,7 +87,44 @@ header{
   font-size: 50;
   padding: 20px 20px 20px 20px;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+  background-color:rgb(158, 179, 132);
+}
 
+.grid-container > div {
+  display: flex;
+  background-color:rgb(158, 179, 132);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.text-article {
+  grid-column: 1;
+}
+
+.text-article p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  align-items: left;
+  justify-items: left;
+}
+.text-article b{
+  font-size: 30px;
+}
+
+.picture-news {
+  grid-column: 2;
+  width: 100%;
+  height: auto;
+}
+  .text-article,
+  .picture-news {
+    grid-column: auto;
+}
 .container-news {
   display: flex;
   width: 100%;
@@ -100,7 +136,6 @@ header{
   width: 100px;
   height: 100px;
   padding: 5px;
-
 }
 .container-news {
   display: block;
@@ -111,53 +146,45 @@ header{
   justify-content: left;
   text-align: left;
 }
-
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
-  border-radius: 8px; 
 }
 .sender-picture-container {
   margin-right: 10px;
 }
-
 .sender-picture {
   object-fit: cover;
   border-radius: 100px;
 }
-
 .grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
-
 .col-33 {
   width: 33.33%;
   float: left;
   box-sizing: border-box;
   padding: 0 15px;
 }
-
 .col-33 h3{
   color: black;
   font-weight: bold;
   justify-content: center;
   align-items: center;
 }
-
 .col-33 p{
   text-align: left;
   justify-content: left;
   color: #484848;
   margin: 15px 15px 15px 15px;
 }
-
 footer{
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
+  margin-top: 50px;
   text-align: center;
   width: 100%;
   display: block;
@@ -171,11 +198,20 @@ footer h4{
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .hero-image img {
     width: 100%;
     height: auto;
   }
+  .discover{
+    width: 60%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+  }
+  .text-article,
+  .picture-news {
+    grid-column: auto;
+}
   .sender-picture{
     display: flex;
     width: 100%;
@@ -211,27 +247,36 @@ footer h4{
   }
 }
 
-@media screen and (min-width: 678px) and (max-width: 1024px) {
+@media screen and (min-width: 668px) and (max-width: 1024px) {
   .hero-image img {
     width: 100%;
     height: auto;
+    margin: 5px 5px 5px 5px;
+  }
+  .discover{
+    width: 100%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    margin-top: none;
+    margin-bottom: 10px;
   }
   .sender-picture{
     display: flex;
     width: 100%;
     border-radius: 200px;
   }
-
   .col-33 {
     width: 50%;
   }
   .hero-text h1{
     font-size: 40px;
   }
-   .discover{
-    display: none;
-   }
-  }
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 667px){
   .hero-image img {
     width: 100%;
@@ -245,6 +290,11 @@ footer h4{
       width: 100%;
       height: auto;
     }
+    .grid-container {
+      grid-template-columns: auto;
+      margin-top: none;
+      margin-bottom: 10px;
+    }
     .sender-picture{
       display: flex;
       width: 50%;
@@ -252,7 +302,6 @@ footer h4{
       justify-content: center;
       align-items: center;
       margin-left: 100px;
-
     }
       .col-33 {
       display: flex;
@@ -265,7 +314,6 @@ footer h4{
       text-align: left;
       padding-top: 50px;
       margin-bottom: 40px;
-    
     }
     .col-33 h3{
       display: flex;
