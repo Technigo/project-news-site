@@ -12,8 +12,6 @@
     content="Current, fun and trending news from the kitten Azzi. Read all about his adventures at Azzimews!">
   <link rel="icon" href="./assets/shield-cat-solid.svg" sizes="any" type="image/svg+xml">
 
-  <script src="./script.js"></script>
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +53,7 @@
         </ul>
       </nav>
       <div class="menu-toggle">
-        <a id="menu-toggle" href="javascript:void(0)" onclick="toggleMenu()">
+        <a id="menu-icon">
           <i class="fa-solid fa-bars fa-2xl"></i>
         </a>
       </div>
@@ -63,7 +61,7 @@
         <nav>
           <ul class="nav-menu-main">
             <li class="nav-item icon">
-              <a href="javascript:void(0)" onclick="toggleMenu()">
+              <a id="menu-close">
                 <i class="fa-solid fa-xmark fa-2xl"></i>
               </a>
             </li>
@@ -338,6 +336,7 @@
       </div>
     </footer>
   </div>
+  <script src="./script.js" async></script>
 </body>
 
 </html>
