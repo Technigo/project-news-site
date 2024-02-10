@@ -1,23 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Change the title below -->
+  <title>Daily Frontend</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+  <header>
+    <img class="logo" src="logoinuse.png" alt="logo">
+    <nav class="top">
+      <a href="">News</a>
+      <a href="">Sweden</a>
+      <a href="">World</a>
+      <a href="">Design</a>
+      <a href="">Career</a>
+    </nav>
+    <div class="mobile">
+      <a href="">News</a>
+      <a href="">More</a>
+    </div>
+    <div class="button-container">
+      <button class="primary-button">Premium</button>
+      <button class="secondary-button">Log in</button>
+    </div>
+
+  </header>
+
+  <section class="flex-parent">
+    <!-- The big news content -->
+    <div class="flex-child">
+      <img class="image-main"
+        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="highlight">
+    </div>
+
+    <div class="flex-text">
+      <h1>Daily News Highlight</h1>
+      <p>The impact of AI tools to front-end code</p>
+      <p>React Native Fork Supports Development on Apple Vision Pro</p>
+      <p>New to the web platform in February
+      <p>5 CSS snippets every front-end developer should know in 2024 </p>
+      <p>12 Modern CSS One-Line Upgrades</p>
+      <p>How to Build a Server-Side React App Using Vite and Express</p>
+    </div>
+  </section>
+
+  <section class="grid-parent">
+    <!-- The other news  -->
+    <div class="grid-item-text">
+      <h3>How to Build a Server-Side React App Using Vite and Express</h3>
+      <p>A demo of server-side rendering and server-side data fetching without using a framework — showing what
+        React-powered frameworks...
+      </p>
+    </div>
+
+    <div class="grid-item">
+      <img class="image-small"
+        src="https://images.unsplash.com/photo-1548612864-608486a7ec05?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="2">
+    </div>
+
+    <div class="grid-item">
+      <img class="image-small"
+        src="https://plus.unsplash.com/premium_photo-1706303405008-23273bc5688b?q=80&w=3869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="3">
+    </div>
+
+    <div class="grid-item-vertical">
+      <img class="image-vertical"
+        src="https://plus.unsplash.com/premium_photo-1663047504447-d54e624ef2d5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="womansketching">
+    </div>
+
+    <div class="grid-item">
+      <img class="image-small"
+        src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="5">
+    </div>
+
+    <div class="grid-item">
+      <img class="image-small"
+        src="https://images.unsplash.com/photo-1573496546735-c274b1fd186b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="womanintech">
+    </div>
+
+    <div class="grid-item-text">
+      <h3>Drupal Creator: Websites Needed More Than Ever in the AI Era</h3>
+      <p>Generative AI is an existential threat to websites. Which begs the question: are websites still relevant?
+        Drupal's Dries Buytaert says yes!
+      </p>
+    </div>
+
+    <div class="grid-item big-grid-item">
+      <h3>Dev News: Deno Decorates, Pre-Rendering Added to Nuxt</h3>
+      <p>New releases galore this week. Deno supports decorators, Astro features more control over HTML output, and Nuxt
+        has better cookie reactivity.The Deno team released Deno v. 1.40 this week, calling it a “significant step
+        forward...
+      </p>
+    </div>
+
+    <div class="grid-item big-grid-item">
+      <h3>Keep It Simple, Frameworks: Netlify CEO Praises Astro, Remix</h3>
+      <p>
+        At TheJam.dev virtual conference this week, Netlify CEO Matt Biilmann said that Jamstack needs to lose the
+        complexity and get simple again.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Technigo Pre-course Newsite By Jing.
+  </footer>
+</body>
+
 </html>
