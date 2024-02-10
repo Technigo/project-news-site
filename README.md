@@ -8,5 +8,4 @@ I used flexbox and CSS grid to style the webpage. Then main challenge is how ada
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 https://frontendinfo.netlify.app/
