@@ -1,4 +1,147 @@
-html {
-  background: #0025ff;
-  color: #fff;
+* {
+  padding: 0; 
+  margin: 0;
+}
+
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #264653;
+}
+
+.logo {
+  margin: .5em;
+}
+
+.navbar  {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .5rem;
+}
+
+.navbar a:hover {
+    color: #2a9d8f;
+}
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: .5em auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.card {
+  min-height: 100%;
+  background: #f4a261;
+  box-shadow: 0 1px 3px #264653;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #264653;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -3px;
+  box-shadow: 0 4px 5px #264653;
+}
+
+.card article {
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card p {
+  flex: 1;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #264653;
+}
+
+footer {
+  text-align: center;
+  color: #264653;
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: .3em, 0;
+}
+  
+  .navbar  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 666px) {
+  .logo {
+    margin: .25em 0;
+}
+  
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .navbar a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid #2a9d8f; 
+    border-bottom: 1px solid #2a9d8f; 
+  }
+  
+  .navbar li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 667px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-1 {
+    grid-column: 1/ span 2;
+  }
+
+  .item-1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
