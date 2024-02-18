@@ -39,16 +39,12 @@
   margin: 0.5em 0.5em auto;
 }
 
-.card {
+.card, .card-big, .card-tall {
   background-size: cover;
 }
 
-.card-big {
-  background-size: cover;
-}
-
-.card-tall {
-  background-size: cover;
+.card:hover, .card-big:hover, .card-tall:hover {
+  box-shadow: 0 4px 5px #264653;
 }
 
 article {
@@ -60,14 +56,14 @@ article {
 
 h1 {
   font-size: 20px;
-  margin: 0;
   color: #264653;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 footer {
   text-align: center;
   color: #264653;
+  padding: 5px;
 }
 
 
