@@ -2,22 +2,83 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Change the title below -->
-    <title>News Site</title>
+    <title>Toddler World</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
+      <div class="flex-container">
+        <a href="#"><img src="assets/toddler-logo.png" alt="Logo" class="logo"></a>
+        <ul class="navbar">
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
-
     <section class="">
-      <!-- The other news  -->
+      <!-- The news  -->
+      <div class="grid-container">
+       
+        <div class="card-big" style="background-image: url(assets/preschool.jpg)">
+          <article>
+            <h1>Starting preschool - all you need to know</h1>
+            <p>We've got you covered!</p>
+          </article>
+        </div>
+       
+        <div class="card-tall" style="background-image: url(assets/stroller.jpg)">
+          <article>
+            <h1>The 10 best travel strollers</h1>
+            <p>We have tried them all! From budget to premium.</p>
+          </article>
+        
+        </div>
+        <div class="card-tall" style="background-image: url(assets/artist.jpg)">
+          <article>
+            <h1>The young artist</h1>
+            <p>Encourage your children to express themselves through art.</p>
+          </article>
+        </div>
+        
+        <div class="card" style="background-image: url(assets/blw.jpg)">
+          <article>
+            <h1>What is baby-led weaning?</h1>
+            <p>Introduce your baby to solids with this method.</p>
+          </article>
+        </div>
+       
+        <div class="card" style="background-image: url(assets/reading.jpg)">
+          <article>
+            <h1>Toddler's favourite books</h1>
+            <p>Develop your child's love for reading.</p>
+          </article>
+        </div>
+       
+        <div class="card" style="background-image: url(assets/playground.jpg)">
+          <article>
+            <h1>Mind-blowing playgrounds</h1>
+            <p>You'll be amazed by these wonderful playgrounds.</p>
+          </article>
+        </div>
+       
+        <div class="card" style="background-image: url(assets/viking.jpg)">
+          <article>
+            <h1>10 unique Nordic baby names</h1>
+            <p>Name your little one after Vikings and Norse gods.</p>
+          </article>
+        </div>
+      </div>
     </section>
   </body>
+
+  <footer>Copyright © 2024 Toddler Publishers</footer>
+
 </html>
