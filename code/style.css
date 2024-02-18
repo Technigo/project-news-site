@@ -34,8 +34,9 @@
 
 .grid-container {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0.5em;
   grid-auto-rows: 240px;
+  margin: 0.5em 0.5em auto;
 }
 
 .card {
@@ -49,6 +50,26 @@
 .card-tall {
   background-size: cover;
 }
+
+article {
+  display: flex;
+  flex-direction: column;
+  background: rgb(244, 162, 97, 0.6);
+  padding: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #264653;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #264653;
+}
+
 
 @media (max-width: 1024px) {
   .flex-container {
@@ -86,14 +107,14 @@
   }
 }
 
-@media screen and (min-width: 667px) {
+@media (min-width: 667px) {
   .card-big {
-    grid-row: span 2 / auto;
-    grid-column: span 2 / auto;
+    grid-row: span 2;
+    grid-column: span 2;
   }
 
   .card-tall {
-    grid-row: span 2 / auto;
+    grid-row: span 2;
   }
 }
 
