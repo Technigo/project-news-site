@@ -1,12 +1,10 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+On this project I would like to present a small glance to mexican cusine, starting with the history and the rich variations it is taking. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Getting the ideas flowing on how I wanted the webpage looked, was my first strugling situation. After that, remembering the hierarchy of the elements was my next strugling situation and my final situation was adapting the image all in one size; I got support from the pre-course inforamtion, videos and codepen examples.  
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://kaleidoscopic-pothos-ffa50c.netlify.app/
