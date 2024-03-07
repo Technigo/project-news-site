@@ -3,7 +3,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 h2, h3 {
   font-family: 'Nunito', sans-serif;
@@ -123,8 +123,7 @@ button {
   margin: 0;
 }
 .small-news img {
-  height: 200px;
-  width: 225px;
+  height: 250px;
   margin-top: 10px;
   object-fit: cover;
 }
@@ -173,7 +172,13 @@ button {
   }
   .big-news .photo-display {
     float: left;
-    width: 300px;
+    height: 600px;
+  }
+  .big-news .photo-display img {
+    max-width: 250px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
   }
   .small-news .photo-display {
     float: left;
@@ -205,7 +210,7 @@ button {
   .site-subtitle {
     display: block;
   }
-  .big-news {
+  .big-news-sections {
     max-width: 800px;
   }
   .small-news-section {
