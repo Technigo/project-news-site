@@ -266,7 +266,7 @@ header {
 .quote p {
   font-size: 18px;
   padding-left: 175px;
-  s font-style: italic;
+  font-style: italic;
   align-items: center;
   justify-content: center;
 
@@ -362,4 +362,71 @@ header {
 
 
 
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+.other-news {
+  grid-template-columns: repeat(4, 1fr);
+  /* 2 columns on tablets */
+}
+
+
+@media (max-width: 992px) {
+  .dropdown_menu {
+    left: unset;
+    right: 0;
+    width: 100%;
+  }
+
+  .navbar .logo a {
+    font-size: 1.2rem;
+    /* Adjust logo size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .other-news {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .other-news {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 column on mobile */
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar .logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
 }
