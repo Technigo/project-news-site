@@ -2,6 +2,20 @@ html {
   background: #ffff;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 25px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 25px;
+}
+
 h1 {
   color: black;
   text-align: center;
@@ -13,5 +27,5 @@ h2 {
 
 .white-box {
   background-color: aquamarine;
-  padding: 25px;
+  margin: 25px;
 }
