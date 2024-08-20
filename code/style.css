@@ -3,15 +3,45 @@ html {
   color: #000;
 }
 
+body {
+  margin: 0;
+}
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
+  justify-items: center;
   gap: 1.75rem;
+}
+
+.grid-wrapper--main {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .grid-wrapper > * {
   grid-column: col-start / span 12;
 }
+
+.grid-wrapper .grid-container {
+  max-width: 1268px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ********************
+  Helpers
+******************** */
+
+.inline {
+  display: inline;
+}
+
+/* ********************
+  Cards
+******************** */
 
 @media (min-width: 668px) {
   .card-item {
@@ -20,6 +50,7 @@ html {
 }
 
 @media (min-width: 1025px) {
+  
   .card-item {
     grid-column: span 3;
   }
