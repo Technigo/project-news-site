@@ -1,19 +1,6 @@
-html {
-  background: #ffff;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 100%;
-  margin: 25px;
-}
-
 img {
   display: block;
-  max-width: 100%;
-  margin: 25px;
+  width: 200px
 }
 
 h1 {
@@ -25,7 +12,59 @@ h2 {
   color: black;
 }
 
-.white-box {
+.logo-and-nav-bar {
   background-color: aquamarine;
   margin: 25px;
+}
+
+/* .News {
+  border: 5px solid blue;
+  height: 1000px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: right;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-news {
+  margin: 20px;
+  border: 10px solid yellow;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-news-1 {
+  background-color: beige
+}
+
+.main-news-2 {
+  background-color: azure;
+}
+
+.main-news-3 {
+  background-color: brown;
+} */
+
+.News {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 50px;
+  margin: 50px;
+}
+
+.main-news-2 {
+  grid-column: 2 / 4;
+}
+
+.main-news-image {
+  width: 100%;
+  object-fit: cover;
 }
