@@ -1,5 +1,33 @@
 html {
   background-color: transparent;
-  background-image: linear-gradient(170deg, #FDC5F2 0, #F8F8F8 800px);
+  background-image: linear-gradient(180deg, #FDC5F2 0, #F8F8F8 800px);
   color: #000;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #077707;
+  margin: 0;
+}
+.main-logo>span {
+  font-size: 55px;
+  font-style: italic;
+  color: #045804;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+}
+.nav-desktop {
+  width: 400px;
+}
+.nav-desktop>ul {
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
 }
