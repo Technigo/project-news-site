@@ -1,4 +1,54 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: lightpink;
+  color: black;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+header {
+  background-color: antiquewhite;
+  grid-column: span 8;
+
+  img {
+    width: 70px;
+  }
+}
+
+.big-news {
+  background-color: antiquewhite;
+  grid-column: span 4;
+
+  img {
+    width: 30%;
+  }
+}
+
+
+.small-news {
+  background-color: antiquewhite;
+  grid-column: span 2;
+}
+
+footer {
+  grid-column: span 8;
+}
+
+@media (max-width: 667px) {
+  .big-news {
+    grid-column: span 8;
+  }
+
+  .small-news {
+    grid-column: span 8;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .small-news {
+    grid-column: span 4;
+  }
 }
