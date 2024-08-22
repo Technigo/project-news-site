@@ -5,38 +5,60 @@ html {
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0 15px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 10px;
 }
 
 header {
-  grid-column: span 8;
+  grid-column: span 12;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   img {
-    width: 70px;
+    width: 105px;
   }
 }
 
+/* Bara länkarna i headern/navigation bar */
 .header-link {
   padding: 0 20px;
+  font-weight: bold;
+  color: black;
+  font-size: 90%;
 }
 
+.link-4 {
+  display: box;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
 
+/* Alla länkar är utan linje under */
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 270%;
+}
 
 .big-news {
   background-color: antiquewhite;
-  grid-column: span 4;
+  grid-column: span 6;
 
   img {
-    width: 30%;
+    width: 100%;
+    height: 100%;
+
   }
 }
 
 .content {
-  padding: 10%;
+  padding: 5% 5% 10% 5%;
 
 }
 
@@ -45,6 +67,7 @@ button {
   padding: 10px 20px;
   margin-top: 20px;
   border: none;
+  border-radius: 20px;
   background: lightpink;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,14 +77,14 @@ button {
 
 .small-news {
   background-color: antiquewhite;
-  grid-column: span 2;
+  grid-column: span 3;
   display: flex;
   padding: 5%;
   flex-direction: column;
 }
 
 footer {
-  grid-column: span 8;
+  grid-column: span 12;
 }
 
 @media (max-width: 667px) {
@@ -70,16 +93,16 @@ footer {
   }
 
   .big-news {
-    grid-column: span 8;
+    grid-column: span 12;
   }
 
   .small-news {
-    grid-column: span 8;
+    grid-column: span 12;
   }
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
   .small-news {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
