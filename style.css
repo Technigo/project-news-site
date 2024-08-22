@@ -1,0 +1,41 @@
+html {
+
+    color: #fff;
+}
+
+
+.card-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* En kolumn layout för mobiler */
+    /* Mellanrum mellan grid-elementen */
+    text-align: left;
+    /* Text och knapp vänsterställda */
+    padding: 70px;
+    background-color: #f5f5f5;
+
+}
+
+.card-news img {
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    /* Centrerar bilden */
+}
+
+.card-text {
+    justify-self: left;
+    color: black;
+    margin-bottom: 80px;
+
+}
+
+.card-button {
+
+    padding: 10px 20px;
+    background-color: #080b0d;
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
