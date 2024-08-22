@@ -4,19 +4,27 @@ html {
 }
 
 body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
 }
 
 header {
-  background-color: antiquewhite;
   grid-column: span 8;
+  display: flex;
+  justify-content: space-between;
 
   img {
     width: 70px;
   }
 }
+
+.header-link {
+  padding: 0 20px;
+}
+
+
 
 .big-news {
   background-color: antiquewhite;
@@ -27,10 +35,29 @@ header {
   }
 }
 
+.content {
+  padding: 10%;
+
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background: lightpink;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
 
 .small-news {
   background-color: antiquewhite;
   grid-column: span 2;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
 }
 
 footer {
@@ -38,6 +65,10 @@ footer {
 }
 
 @media (max-width: 667px) {
+  .header-link {
+    display: none;
+  }
+
   .big-news {
     grid-column: span 8;
   }
