@@ -10,25 +10,54 @@
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
-       <p class="main-logo"><span>V</span>egenews</p>
-       <nav class="nav-desktop">
-          <ul>
-            <li class="nav-menu-item-desktop">News</li>
-            <li class="nav-menu-item-desktop">About us</li>
-            <li class="nav-menu-item-desktop">Corses</li>
-            <li class="nav-menu-item-desktop btn-nav">Log in</li>
-          </ul>
-       </nav>
+      <div class="header-content-width">
+          <p class="main-logo"><span>V</span>egnews</p>
+          <!-- menu desktop -->
+          <nav class="nav-desktop">
+            <ul>
+              <li class="nav-menu-item-desktop">News</li>
+              <li class="nav-menu-item-desktop">About us</li>
+              <li class="nav-menu-item-desktop">Courses</li>
+              <li class="nav-menu-item-desktop btn-nav">Log in</li>
+            </ul>
+          </nav>
+          <!-- menu tablet/mobile -->
+          <nav class="nav-small-screen">
+            <ul>
+              <li class="nav-menu-item-desktop">---</li>
+              <li class="nav-menu-item-desktop">---</li>
+              <li class="nav-menu-item-desktop">---</li>
+              <li class="nav-menu-item-desktop btn-nav">Log in</li>
+            </ul>
+          </nav>
+      </div>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
-      <h1 class="header-news-h1">Stick a fork in me - i'm done</h1>
-      <h3 class="header-news-h3">How to cook vegetables properly</h3>
+      <div class="big-news-content-width">
+        <div class="big-news-img">
+          <img src="./assets/stick-a-fork-in-me.jpg" alt="">
+        </div>
+        <div class="big-news-text">
+          <h1 class="header-news-h1">Stick a fork in me - i'm done</h1>
+          <h3 class="header-news-h3">- How to cook vegetables properly</h3>
+          <p>Some text..</p>
+          <a href="" target="_blank"><button>Click me!</button></a>
+        </div>
+      </div>
     </section>
 
-    <section class="">
+    <section class="small-box-news">
       <!-- The other news  -->
+       <div class="small-box-news-item">1</div>
+       <div class="small-box-news-item">2</div>
+       <div class="small-box-news-item">3</div>
+       <div class="small-box-news-item">4</div>
+       <div class="small-box-news-item">5</div>
+       <div class="small-box-news-item">6</div>
+       <div class="small-box-news-item">7</div>
+       <div class="small-box-news-item">8</div>
     </section>
   </body>
 </html>
