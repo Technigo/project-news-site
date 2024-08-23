@@ -11,6 +11,13 @@ header {
   padding: 10px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
 .logo img {
   max-width: 100%;
   height: auto;
@@ -62,6 +69,29 @@ header {
   width: 25px;
   margin-bottom: 4px;
 }
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.big-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  color: black;
+}
+
+.big-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 @media screen and (max-width: 667px) {
   .nav-menu {
