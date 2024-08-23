@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Breaks</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+</head>
+<body>
     <header>
-      <!-- Some kind of logo and navbar -->
+        <div class="logo">
+            <img src="ocean_breaks_logo_transparent.png" alt="Logo" width="100"> 
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav>
+            <a href="https://www.bodhisurfyoga.com/surf-quotes" target="_blank" >Quotes</a>
+            <a href="https://www.surfertoday.com/surfing/the-best-surfing-quotes-of-all-time" target="_blank" >Inspiration</a>
+            <a href="https://www.thewave.com/photos/" target="_blank" >Photos</a>
+            <a href="https://www.rapturecamps.com/blog/top-10-surfing-destinations-in-the-world/ " target="_blank" >Places</a>
+        </nav>
+        <div class="hero-text">
+            <h1>let's . make . WAVES</h1>
+            <div class="sub-text">
+                <span>EXPLORE THE OCEAN WITH US</span>
+            </div>
+        </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <div class="grid">
+        <div class="grid-item">
+            <a href="https://www.surfer.com/" target="_blank">
+                <img src="https://images.pexels.com/photos/2959611/pexels-photo-2959611.jpeg" alt="Surfer catching a wave">
+                <p><i><strong>"Feelings are much like waves. We can't stop them from coming but we can choose which one to surf"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.surfnewsnetwork.com/" target="blank">
+                <img src="https://images.pexels.com/photos/1650732/pexels-photo-1650732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Group of surfers">
+                <p><i><strong>"Courage doesn't mean you don't get afraid. Courage means you don't let fear stop you"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://stabmag.com/" target="_blank">
+                <img src="https://images.pexels.com/photos/3876324/pexels-photo-3876324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Surfer and sunset">
+                <p><i><strong>"Waves are not measured in feet and inches, they are measured in increments of fear"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.surfline.com/surf-news" target="blank">
+                <img src="https://images.pexels.com/photos/147414/pexels-photo-147414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ocean waves">
+                <p><i><strong>"Surfing is the most blissful experience you can have on this planet, a taste of heaven"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.bbc.com/news/topics/cn54nd8d4dpt" target="_blank">
+                <img src="https://images.unsplash.com/photo-1459745930869-b3d0d72c3cbb?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Small wave">
+                <p><i><strong>"It's through the aperture of my connection to surfing that I feel and see and therefore believe in the world’s magic and transfigurative power, its divinity"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.theinertia.com/" target="_blank">
+                <img src="https://images.unsplash.com/photo-1586996292898-71f4036c4e07?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sunset surfing">
+                <p><i><strong>"One might rightly say surfriding is prayer of a higher order, that the sea is a beautiful church, the wave a silent sermon"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.surfertoday.com/" target="_blank">
+                <img src="https://images.unsplash.com/photo-1534633109472-5a21cd6fe7ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning surf">
+                <p><i><strong>"What makes a surfer stylish is perfect technique, precise timing, and the intangible — a projection of personality, spirit, and confidence"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.euronews.com/tag/surfing" target="_blank">
+                <img src="https://images.pexels.com/photos/4322427/pexels-photo-4322427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Deep blue">
+                <p><i><strong>"Surfing is simultaneously challenging, calming, healing, and humbling. It both magnifies and microscopically sharpens your focus. It reveals a strength from within that otherwise might remain hidden. And it offers a space for meditation and perspective. Each time you enter the water, you return to the shore — transformed"</strong></i></p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.independent.co.uk/topic/surfing" target="_blank">
+                <img src="https://images.pexels.com/photos/4321461/pexels-photo-4321461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Wave power">
+                <p><i><strong>"Tying to explain color to a blind person and trying to explain surfing to someone who’s never surfed are very similar things. You can talk for days, but you probably won’t hit the mark. The inability to describe something is proof that it is f-ing amazing"</strong></i></p>
+            </a>
+        </div>
+    </div>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <p class="name">
+                    <img src="sparkles_blue.png" alt="Sparkle" class="sparkle-icon">
+                    <strong>Jacqueline Kelly Hunt</strong>
+                    <img src="sparkles_blue.png" alt="Sparkle" class="sparkle-icon">
+                </p>
+                <div class="social-icons">
+                    <a href="https://github.com/jacquelinekellyhunt" target="_blank">
+                        <img src="github-logo.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="www.linkedin.com/in/jacqueline-kelly-hunt-abb091226e" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
