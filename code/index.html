@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/code/assets/favicon.svg" />
+    <link rel=”mask-icon” href=”/code/assets/favicon.svg” color=”#000000">
   </head>
   <body>
     <div class="grid-wrapper grid-wrapper--main">
@@ -20,7 +22,6 @@
           alt="The Featherington"
           src="/code/assets/featherington-logo.svg"
         />
-        <!-- Some kind of logo and navbar -->
         <nav class="top-header__nav">
           <ul>
             <li><a href="https://google.se">Top stories</a></li>
@@ -33,12 +34,17 @@
             </li>
           </ul>
         </nav>
+        <nav class="top-header__mobile-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </nav>
       </header>
 
-      <section class="hero grid-container-large">
+      <section class="hero grid-container--large">
         <div class="hero__content">
           <div class="article-meta">
-            <a href="#category" class="article-meta__category">Exotic birds</a>
+            <a href="#category" class="article-meta__category">Behavior</a>
             <span class="divider-bullet">∙</span>
             <p class="inline">6 min read</p>
           </div>
@@ -73,19 +79,22 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                The secret life of Puffins: New discoveries in coastal habitats
-              </h3>
-              <p class="text-small">
-                Puffins, with their colorful beaks and charming appearance, are
-                more than just iconic seabirds. Recent studies along coastal
-                cliffs are revealing surprising behaviors...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category">Behavior</a>
                 <span class="divider-bullet">∙</span>
                 <p class="inline">12 min read</p>
               </div>
+              <h3>
+                The secret life of Puffins: New discoveries in coastal habitats
+              </h3>
+              <p class="card-item__description text-small">
+                Puffins, with their colorful beaks and charming appearance, are
+                more than just iconic seabirds. Recent studies along coastal
+                cliffs are revealing surprising behaviors...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item">
@@ -97,15 +106,6 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                Eagles on the rise: The comeback of North America's majestic
-                predators
-              </h3>
-              <p class="text-small">
-                Once endangered, eagle populations in North America are making a
-                remarkable recovery. Conservation efforts have played a critical
-                role, and recent surveys show...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category"
                   >North America</a
@@ -113,6 +113,18 @@
                 <span class="divider-bullet">∙</span>
                 <p class="inline">9 min read</p>
               </div>
+              <h3>
+                Eagles on the rise: The comeback of North America's majestic
+                predators
+              </h3>
+              <p class="card-item__description text-small">
+                Once endangered, eagle populations in North America are making a
+                remarkable recovery. Conservation efforts have played a critical
+                role, and recent surveys show...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item card-item--large border-radius-lg">
@@ -124,19 +136,22 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>Understanding flamingo social behavior</h3>
-              <p>
-                Flamingos are renowned for their vibrant pink plumage and group
-                dynamics. Recent research has provided new insights into how
-                these birds form and maintain their large flocks, shedding light
-                on the social behaviors that play a crucial role in their
-                survival.
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category">Behavior</a>
                 <span class="divider-bullet">∙</span>
                 <p class="inline">4 min read</p>
               </div>
+              <h3>Understanding flamingo social behavior</h3>
+              <p class="card-item__description">
+                Flamingos are renowned for their vibrant pink plumage and group
+                dynamics. Recent research has provided new insights into how
+                these birds form and maintain their large flocks, shedding light
+                on the social behaviors that play a crucial role in their
+                survival.
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item">
@@ -148,15 +163,6 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                Penguin populations in peril: Climate change threatens
-                Antarctica’s iconic birds
-              </h3>
-              <p class="text-small">
-                Penguins are facing growing threats as climate change alters
-                their Antarctic habitats. Melting ice and shifting food sources
-                are impacting their populations in ways...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category"
                   >Climate change</a
@@ -164,6 +170,18 @@
                 <span class="divider-bullet">∙</span>
                 <p class="inline">7 min read</p>
               </div>
+              <h3>
+                Penguin populations in peril: Climate change threatens
+                Antarctica’s iconic birds
+              </h3>
+              <p class="card-item__description text-small">
+                Penguins are facing growing threats as climate change alters
+                their Antarctic habitats. Melting ice and shifting food sources
+                are impacting their populations in ways...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item">
@@ -175,15 +193,6 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                The secret songs of warblers: Decoding their complex
-                communication
-              </h3>
-              <p class="text-small">
-                Warblers, with their intricate songs, are not just beautiful to
-                listen to—they’re also communicating in ways we’re only
-                beginning to understand. New studies are revealing...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category"
                   >Communication</a
@@ -191,6 +200,18 @@
                 <span class="divider-bullet">∙</span>
                 <p class="inline">12 min read</p>
               </div>
+              <h3>
+                The secret songs of warblers: Decoding their complex
+                communication
+              </h3>
+              <p class="card-item__description text-small">
+                Warblers, with their intricate songs, are not just beautiful to
+                listen to—they’re also communicating in ways we’re only
+                beginning to understand. New studies are revealing...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item">
@@ -202,19 +223,22 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                Owls in the dark: How these nocturnal hunters navigate the night
-              </h3>
-              <p class="text-small">
-                Owls are masters of the night, with their silent flight and keen
-                senses. Scientists are uncovering new details about how these
-                nocturnal predators hunt in complete...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category">Movement</a>
                 <span class="divider-bullet">∙</span>
                 <p class="inline">9 min read</p>
               </div>
+              <h3>
+                Owls in the dark: How these nocturnal hunters navigate the night
+              </h3>
+              <p class="card-item__description text-small">
+                Owls are masters of the night, with their silent flight and keen
+                senses. Scientists are uncovering new details about how these
+                nocturnal predators hunt in complete...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
           <div class="card-item">
@@ -226,14 +250,6 @@
               />
             </div>
             <div class="card-item__content">
-              <h3>
-                Songbird serenade: The impact of urbanization on their melodies
-              </h3>
-              <p class="text-small">
-                Songbirds bring life to our mornings with their melodies, but
-                urbanization is changing the way they sing. New research is
-                exploring how city life is affecting their songs...
-              </p>
               <div class="article-meta text-small">
                 <a href="#category" class="article-meta__category"
                   >Communication</a
@@ -241,12 +257,35 @@
                 <span class="divider-bullet">∙</span>
                 <p class="inline">4 min read</p>
               </div>
+              <h3>
+                Songbird serenade: The impact of urbanization on their melodies
+              </h3>
+              <p class="card-item__description text-small">
+                Songbirds bring life to our mornings with their melodies, but
+                urbanization is changing the way they sing. New research is
+                exploring how city life is affecting their songs...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <footer>My footer</footer>
     </div>
+    <footer class="grid-wrapper">
+      <div class="footer__outer grid-container grid-container--large">
+        <div class="grid-wrapper">
+          <div class="footer__inner grid-container">
+            <img
+              class="footer__logo"
+              alt="The Featherington"
+              src="/code/assets/featherington-logo-inverted.svg"
+            />
+            <p>Discover. Admire. Conserve.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
