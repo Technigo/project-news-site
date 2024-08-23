@@ -6,6 +6,10 @@ The layout should feature a main news section and a grid of news cards, which ad
 
 ## The problem
 
+I started out by searching for some inspiration for the layout. I then sketched out a rough idea in Figma on how I wanted it to look. I chose my theme based on the fact that birds are pretty and finding good, free images of them is quite easy.
+
+I used ChatGPT to create topics for me and also a preamble to each article.
+
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ## View it live
