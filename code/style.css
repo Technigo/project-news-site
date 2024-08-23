@@ -1,4 +1,76 @@
 html {
-  background: #0025ff;
+  background: #ffff;
   color: #fff;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+.nav-menu .subscribe a {
+  color: hotpink;
+}
+
+.hamburger {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding: 5px;
+}
+
+.hamburger-layer {
+  background: hotpink;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 667px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 668px) and (max-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
 }
