@@ -14,8 +14,8 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
   padding: 20px;
+  border: 2px solid black;
 }
 
 .logo img {
@@ -35,7 +35,7 @@ main {
   list-style: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .nav-menu li a {
@@ -70,20 +70,37 @@ main {
   margin-bottom: 4px;
 }
 
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+.text-content a {
+  text-decoration: none;
+  color: inherit;
 }
 
-h3 {
+.text-content h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  margin-top: -3px;
+  margin-bottom: -12px;
+}
+
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3vw;
+  margin-bottom: -2px;
+}
+
+.text-content p {
+  font-size: 2vw;
 }
 
 .big-news {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit);
+  /* grid-template-rows: auto auto; */
   color: black;
+  /* 
+  border: 2px solid black; */
+  margin-bottom: 20px;
 }
 
 .big-image {
@@ -92,6 +109,37 @@ h3 {
   object-fit: cover;
 }
 
+.other-news {
+  display: flex;
+  flex-direction: column;
+  background-color: hotpink;
+}
+
+.other-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.other-text {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 4vw;
+  padding: 5px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.other-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.other-text p {
+  font-size: 3vw;
+  text-align: right;
+  margin-top: -20px;
+}
 
 @media screen and (max-width: 667px) {
   .nav-menu {
@@ -103,4 +151,5 @@ h3 {
   .hamburger {
     display: none;
   }
+
 }
