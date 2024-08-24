@@ -6,11 +6,13 @@ The layout should feature a main news section and a grid of news cards, which ad
 
 ## The problem
 
-I started out by searching for some inspiration for the layout. I then sketched out a rough idea in Figma on how I wanted it to look. I chose my theme based on the fact that birds are pretty and finding good, free images of them is quite easy.
+I started out by searching for some inspiration for the layout. I then sketched out a rough idea in Figma on how I wanted it to look. I chose my theme based on the fact that birds are pretty and that finding good, free images of them is quite easy.
 
-I used ChatGPT to create topics for me and also a preamble to each article.
+My next step was to plan out my HTML structure and what decide which parts were going to be CSS Grid and Flexbox. I decided to try creating a standard 12 column grid using CSS Grid and using Flexbox for different elements within my grid.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I used ChatGPT to create topics for me and also preambles for each article. I found images on Unsplash.
+
+If I would have more time I would look into the sizing of the cards on mobile. The flamingo story got very tall on mobile due to the image size.
 
 ## View it live
 

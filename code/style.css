@@ -231,7 +231,6 @@ a:not(.button):hover {
 
 .button > span {
   overflow: hidden;
-	/* mix-blend-mode: difference; */
 }
 
 .button:hover > span > span {
@@ -264,6 +263,8 @@ a:not(.button):hover {
   position: fixed;
   z-index: 10;
   top: 0;
+  left: 0;
+  right: 0;
 
   display: flex;
   align-items: center;
@@ -271,6 +272,7 @@ a:not(.button):hover {
   gap: 1.25rem;
   width: 100%;
 
+  margin: auto;
   padding: 1rem 1.25rem;
   background-color: var(--white);
 }
@@ -297,7 +299,6 @@ a:not(.button):hover {
 @media (min-width: 1025px) {
 
   .top-header {
-    width: calc(100% - 140px);
     padding: 1.75rem;
   }
 
