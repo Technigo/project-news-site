@@ -1,4 +1,162 @@
-html {
-  background: #0025ff;
-  color: #fff;
+img {
+  display: block;
+  width: 100%;
 }
+
+body {
+  background-color:#e8e8e8;
+  color: #915c6e;
+  margin: auto;
+  font-family: arial, helvetica, sans-serif;
+}
+
+header {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  background-color: #e8e8e8;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+nav {
+  color:#915c6e; 
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+ a { 
+  text-decoration: none;
+  color: #181b14; 
+}
+
+@media (max-width: 667px) {
+
+
+}
+
+.top-section {
+  font-size: 40px;
+  background-color: #915c6e;
+  color: #434736;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+  .latest-news-container {
+    border: 2px solid;
+    margin: 50px 100px 50px 100px; 
+    display: flex;
+    gap: 1em;
+    
+  }
+ 
+  
+  .latest-news-card {
+    border: 2px solid;
+    
+    }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 3px;
+  }
+  
+  .latest-news-card-content {
+    padding: 0px 1px 0px 5px;
+    font-size: 10px;
+    width: 95%
+  }
+
+.latest-news-card-content h2 {
+  color: #181b14;
+}
+
+.latest-news-card-content p {
+  color: #434736;
+}
+
+@media (max-width: 667px) {
+  .latest-news-card-content h2 {
+    color:hotpink;
+  }
+
+
+}
+
+.articles-container {
+  border: 2px solid;
+  margin: 50px 70px 50px 70px; 
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.article-card {
+  display: flex;
+  border: 2px solid;
+  
+}
+
+.article-card-next {
+  display: flex;
+  border: 2px solid;
+  display: flex;
+  flex-direction: row-reverse
+  
+}
+
+.articles-card-image {
+  width: 50%;
+  border-radius: 3px;
+}
+
+.articles-card-content {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.articles-card-content h3 {
+  font-size: 35px;
+  color: #434736
+}
+
+@media (max-width: 995px) {
+  .article-card {
+    display: flex;
+ 
+    border: 2px solid;
+  }
+
+}
+
+@media (max-width: 995px) {
+  .article-card-next {
+    display: flex;
+  
+    border: 2px solid;
+  }
+
+}
+
+@media (max-width: 995px) {
+  .articles-card-content h3 {
+    color:hotpink;
+    font-size: 10px;
+  }
+
+}
+  
