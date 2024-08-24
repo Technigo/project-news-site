@@ -1,12 +1,17 @@
 # News Site
 
-Replace this readme with your own information about your project. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+News web site:
+We were tasked to make a website with responsive design, using both grid and flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+
+-Planing: I started by creating a sketch on Figma to get an idea on how the website should look.
+-Approach: first i gather inspiration online, how to make different grids and flexboxes. I started experimenting with different css styles to design different containers. A lot of time was spent on alligning the text, and make everything look good. 
+-Techniques: I used primarly flexbox and grid, I used illustrator to create the logo and adjust the size of the images, I asked a lot to chatgpt, google, I read a lot on w3shools, blogs and watched tutorials.
+-Future: I would like to go more to detal for example with the buttons's corner rounded, and make everything more harmonious, I also want to be better at pushing my changes to Github 
+
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
