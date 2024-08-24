@@ -80,7 +80,7 @@ main {
   font-weight: bold;
   font-size: 5vw;
   margin-top: -3px;
-  margin-bottom: -12px;
+  margin-bottom: -16px;
 }
 
 h5 {
@@ -90,7 +90,9 @@ h5 {
 }
 
 .text-content p {
-  font-size: 2vw;
+  font-size: 3vw;
+  padding-bottom: 2vw;
+  border-bottom: 3px solid #444;
 }
 
 .big-news {
@@ -112,13 +114,13 @@ h5 {
 .other-news {
   display: flex;
   flex-direction: column;
-  background-color: hotpink;
 }
 
 .other-image {
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: -10px;
 }
 
 .other-text {
@@ -126,7 +128,7 @@ h5 {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-size: 4vw;
   padding: 5px;
-  margin-top: -20px;
+  margin-top: -12px;
   margin-bottom: 10px;
 }
 
@@ -139,6 +141,28 @@ h5 {
   font-size: 3vw;
   text-align: right;
   margin-top: -20px;
+  margin-bottom: 10px;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #444;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.footer-text {
+  color: magenta;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 667px) {
