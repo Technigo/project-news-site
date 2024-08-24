@@ -24,7 +24,7 @@ header {
   margin: 0;
 }
 .main-logo>span {
-  font-size: 55px;
+  font-size: 65px;
   font-style: italic;
   color: #1e391e;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,7 +44,25 @@ header {
   font-weight: 600;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
 }
+.nav-menu-item-desktop:hover {
+  border-bottom: #4c6051 solid 2px;
+}
+.btn-nav {
+  background-color: #1e391e;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.btn-nav:hover {
+  background-color: #4c6051;
+}
+
 /* big news section */
 .big-news {
   margin: 2rem 3.5rem;
@@ -63,10 +81,13 @@ header {
   font-size: 3.3rem;
   text-transform: uppercase;
   color: #1e391e;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
 }
 .big-news-text>h3 {
   font-size: 1.6rem;
   color: #000;
+  padding-bottom: 20px;
 }
 .big-news-btn {
   background-color: #1e391e;
@@ -85,7 +106,7 @@ header {
   margin: 4rem 3.5rem 2.5rem;
   color: #1e391e;
   border-bottom: #4c6051 2px solid;
-  padding-bottom: 15px
+  padding-bottom: 15px;
 }
 
 /* small box news */
@@ -116,6 +137,20 @@ header {
   font-size: 1.1rem;
   margin: 0;
 }
+.small-news-btn:hover {
+  background-color: #4c6051;
+  font-weight: 600;
+}
+/* sign up */
+.flex-div-sign-up {
+  margin: 100px 0;
+  text-align: center;
+}
+.sign-up-h2 {
+  color: #1e391e;
+  font-size: 1.9rem;
+  padding-bottom: 15px;
+}
 
 /* footer */
 footer {
@@ -131,11 +166,20 @@ footer>div>p {
 
 @media only screen and (max-width: 1024px) {
   .nav-small-screen {
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
   .nav-small-screen>ul {
     list-style: none;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    cursor: pointer;
+  }
+  .nav-menu-item-small-screen {
+    width: 30px;
+    border-bottom: #000 3px solid;
   }
   .nav-desktop {
     display: none;
@@ -158,5 +202,20 @@ footer>div>p {
   }
   .big-news {
     margin: 2rem 2.5rem;
+  }
+  .small-box-news-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  .small-box-news-item>div {
+    width: 40%;
+  }
+  .small-box-news-item-img {
+    width: 50%;
+    height: 200px;
+  }
+  .divider-h2 {
+    margin: 4rem 2.5rem 2.5rem;
   }
 }
