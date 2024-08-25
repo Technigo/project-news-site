@@ -8,15 +8,16 @@ html {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: fixed;
   align-content: center;
   align-items: center;
   border-bottom: 5px solid pink;
   border-top: 5px solid pink;
-  padding: 5px;
   background-color: whitesmoke;
   color: black;
-  height: 3%;
+  height: 15%;
+  width: 100%;
 }
 
 img {
@@ -40,6 +41,7 @@ nav {
   display: none;
 }
 
+
 .hamburger-layer {
   background-color: rgb(219, 13, 151);
   height: 6px;
@@ -53,6 +55,7 @@ main {
   gap: 5px;
   margin: 1% 5%;
   background-color: rgb(40, 40, 40);
+  padding-top: 5%;
 }
 
 .big-news {
