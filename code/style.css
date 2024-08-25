@@ -1,4 +1,221 @@
 html {
-  background: #0025ff;
+  box-sizing: border-box;
+  background-color: #c1b8a9;
+  color: #000;
+}
+body {
+  margin: 0;
+}
+/* header */
+header {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: #4c6051 2px solid;
+}
+.header-content-width {
+  margin: 0 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4c6051;
+  margin: 0;
+}
+.main-logo>span {
+  font-size: 65px;
+  font-style: italic;
+  color: #1e391e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+}
+.nav-small-screen {
+  display: none;
+}
+
+.nav-desktop {
+  width: 400px;
+}
+.nav-desktop>ul {
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-menu-item-desktop:hover {
+  border-bottom: #4c6051 solid 2px;
+}
+.btn-nav {
+  background-color: #1e391e;
   color: #fff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.btn-nav:hover {
+  background-color: #4c6051;
+}
+
+/* big news section */
+.big-news {
+  margin: 2rem 3.5rem;
+}
+.big-news-content-width {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 35px;
+}
+.big-news-img>img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.big-news-text>h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: #1e391e;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+.big-news-text>h3 {
+  font-size: 1.6rem;
+  color: #000;
+  padding-bottom: 20px;
+}
+.big-news-btn {
+  background-color: #1e391e;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.big-news-btn:hover {
+  background-color: #4c6051;
+  font-weight: 600;
+}
+/* divider h2 */
+.divider-h2 {
+  margin: 4rem 3.5rem 2.5rem;
+  color: #1e391e;
+  border-bottom: #4c6051 2px solid;
+  padding-bottom: 15px;
+}
+
+/* small box news */
+.small-box-news {
+  margin: 0 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 15px;
+}
+.small-box-news-item {
+  border-bottom: #1e391e 2px solid;
+  padding: 0 0 10px;;
+} 
+.small-box-news-item>p {
+  font-style: italic;
+}
+.small-box-news-item-img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.small-news-btn {
+  background-color: #1e391e;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.small-news-btn:hover {
+  background-color: #4c6051;
+  font-weight: 600;
+}
+/* sign up */
+.flex-div-sign-up {
+  margin: 100px 0;
+  text-align: center;
+}
+.sign-up-h2 {
+  color: #1e391e;
+  font-size: 1.9rem;
+  padding-bottom: 15px;
+}
+
+/* footer */
+footer {
+  background-color: #1e391e;
+  color: #fff;
+  margin: 70px 0 0;
+}
+footer>div>p {
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-small-screen {
+    display: flex;
+    align-items: center;
+  }
+  .nav-small-screen>ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    cursor: pointer;
+  }
+  .nav-menu-item-small-screen {
+    width: 30px;
+    border-bottom: #000 3px solid;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .small-box-news {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .big-news-content-width {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .small-box-news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-content-width,
+  .small-box-news {
+    margin: 0 2.5rem;
+  }
+  .big-news {
+    margin: 2rem 2.5rem;
+  }
+  .small-box-news-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+  .small-box-news-item>div {
+    width: 40%;
+  }
+  .small-box-news-item-img {
+    width: 50%;
+    height: 200px;
+  }
+  .divider-h2 {
+    margin: 4rem 2.5rem 2.5rem;
+  }
 }
