@@ -1,4 +1,137 @@
-html {
-  background: #0025ff;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   color: #fff;
+  background-color: #000; /* Fond noir */
 }
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Définir la couleur du texte à blanc pour un contraste élevé avec le fond noir */
+    background-color: #000; /* Arrière-plan noir */
+}
+.festival iframe,
+footer iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.header-content {
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: space-between; /* Espacement entre le logo et le texte */
+  padding: 20px; /* Ajoute un peu d'espace autour des éléments internes */
+}
+
+#logo img {
+  width: 100px; /* Taille du logo */
+  height: auto; /* Maintient les proportions */
+}
+
+header h1, header h2 {
+  margin: 0; /* Enlève la marge par défaut des titres */
+  padding-left: 20px; /* Ajoute un peu d'espace à gauche des titres pour les séparer du logo */
+}
+
+header {
+  background-color: #378d20;
+  color: white;
+}
+
+#main {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+h3 {
+  color: #a233d1;
+}
+
+p {
+  margin-bottom: 15px;
+}
+#artists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  background-color: #220404;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.festival {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments horizontalement */
+  background-color: #1e0303;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 26px;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer h3 {
+  color: #f8f9fa;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  padding: 10px 0;
+}
+
+footer a {
+  color: lightblue;
+}
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .header-content, .festival, footer {
+      padding: 15px;
+  }
+
+  h1, h2, h3 {
+      font-size: smaller; /* Réduit la taille des titres sur les petits écrans */
+  }
+}
+
+
