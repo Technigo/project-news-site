@@ -1,11 +1,14 @@
 img {
   display: block;
-  width: 200px
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
 h1 {
-  color: black;
+  color: white;
   text-align: center;
+  font-size: xx-large;
 }
 
 h2 {
@@ -13,50 +16,69 @@ h2 {
 }
 
 .logo-and-nav-bar {
-  background-color: aquamarine;
+  background-color: #177082;
   margin: 25px;
 }
 
-/* .News {
-  border: 5px solid blue;
-  height: 1000px;
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: right;
-  flex-direction: column;
-  gap: 20px;
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.main-news {
-  margin: 20px;
-  border: 10px solid yellow;
-  border-radius: 5px;
-  padding: 10px;
-  width: 300px;
-  height: 300px;
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header styles */
+.header {
+  color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
+  position: relative;
+  text-align: center;
 }
 
-.main-news-1 {
-  background-color: beige
+/* Navigation bar */
+.nav ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
-.main-news-2 {
-  background-color: azure;
+.nav ul li {
+  display: flex;
+  justify-items: center;
+  flex-grow: 1;
+
 }
 
-.main-news-3 {
-  background-color: brown;
-} */
+.nav ul li a {
+  color: rgb(241, 238, 238);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.nav ul li a:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
 
 .News {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 400px);
-  gap: 50px;
+  gap: 1.5rem;
+  padding-block: 50px;
   margin: 50px;
 }
 
@@ -64,7 +86,32 @@ h2 {
   grid-column: 2 / 4;
 }
 
-.main-news-image {
-  width: 100%;
-  object-fit: cover;
+/* Desktop (4 columns) */
+@media (min-width: 1024px) {
+  .News {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablet (2 columns) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .News {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 767px) {
+  .News {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #177082;
+  padding: 2rem;
+  font-size: 0.75rem;
+  font-family: 'Raleway', sans-serif;
 }
