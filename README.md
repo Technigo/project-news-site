@@ -10,4 +10,4 @@ A problem in the current version is that the images used are sometimes displayed
 next steps: customize the images; link logo and big text; make the menu clickable in the mobile and tablet view; add contact buttons (till example linkedin);
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://newspage-gitte.netlify.app/
