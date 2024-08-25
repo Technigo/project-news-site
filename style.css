@@ -6,11 +6,8 @@
  body {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: #333333;
- }
-
- main {
-   padding: 0 0.5rem;
-   width: 95%;
+   background-color: #8B4513;
+   ;
  }
 
  header {
@@ -21,6 +18,86 @@
    color: white;
    padding: 10px;
    text-align: center;
+ }
+
+ /*The top navigation */
+ .topnav {
+   background-color: #333;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-around;
+   /*Same space between subjects in menu*/
+ }
+
+ /* Style the links in the navigation bar */
+ .topnav a {
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #04AA6D;
+   color: white;
+ }
+
+ /*Hamburger menu */
+
+ .hamburger-menu {
+   color: #f2f2f2;
+   font-size: 17px;
+   padding: 14px 16px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   position: relative;
+ }
+
+ .hamburger-menu .menu-content {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   background-color: rgba(51, 51, 51, 0.8);
+   z-index: 1;
+ }
+
+ .hamburger-menu.active .menu-content {
+   display: block;
+ }
+
+ .hamburger-menu .menu-content a {
+   display: block;
+   padding: 14px;
+   text-align: left;
+   color: white;
+   text-decoration: none;
+ }
+
+ .hamburger-menu .menu-content a:hover {
+   background-color: rgba(221, 221, 221, 0.8);
+   color: black;
+ }
+
+ .hamburger-menu:hover {
+   background-color: #ddd;
+   color: black;
+ }
+
+ main {
+   padding: 0 0.5rem;
+   width: 95%;
+   background-color: #8B4513;
  }
 
  .big-news {
@@ -112,10 +189,37 @@
    padding: 10px;
  }
 
- .minor-news button {}
+ body {
+   background-color: #8B4513;
+ }
+
+ h1 {
+   font-size: 45px;
+   color: #D2691E;
+ }
+
+ .container {
+   width: 100%;
+   padding: 10px;
+ }
+
+ .minor-news {
+   width: 90%;
+   height: 95%;
+ }
 
  /* Mobile */
  @media (max-width: 500px) {
+   .topnav {
+     display: none;
+     /*Hide tablet and desktop menu*/
+   }
+
+   .hamburger-menu {
+     display: block;
+     /*Show hamburger menu*/
+   }
+
    .big-news {
      grid-template-columns: 1fr;
      padding: 15px;
@@ -142,27 +246,26 @@
    }
  }
 
- body {
-   background-color: #8B4513;
- }
-
- h1 {
-   font-size: 45px;
-   color: #D2691E;
- }
-
- .container {
-   width: 100%;
-   padding: 10px;
- }
-
- .minor-news {
-   width: 90%;
-   height: 95%;
- }
-
  /* Tablet */
  @media (min-width: 501px) and (max-width: 1024px) {
+   .topnav {
+     justify-content: space-around;
+     /*Same space between subjects in menu*/
+   }
+
+   .topnav a {
+     font-size: calc(12px + 1vw);
+     /*Font size adjusts to screen*/
+     padding: 12px 10px;
+     flex-grow: 1;
+     /*Gives each link equal space*/
+   }
+
+   .hamburger-menu {
+     display: none;
+     /*Hide hamburger menu*/
+   }
+
    .big-news {
      grid-template-columns: 1fr;
      grid-gap: 10px;
@@ -198,6 +301,11 @@
 
  /* Desktop */
  @media (min-width: 1025px) {
+   .hamburger-menu {
+     display: none;
+     /*Hide hamburger menu*/
+   }
+
    .minor-news-container {
      grid-template-columns: repeat(4, 1fr);
    }
@@ -215,7 +323,4 @@
  footer p {
    color: #A8D5BA;
    text-align: center;
-
  }
-
- /* Comment comment*/

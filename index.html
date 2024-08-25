@@ -16,6 +16,30 @@
     <h1>Welcome to Farmer's news</h1>-->
     <img src="assets/Farmers_news_transparent.png" alt="Logo" style="width: 200px; height: auto;">
   </header>
+  <!-- Hamburger menu for mobile...-->
+  <div class="hamburger-menu">
+    ☰ Home
+    <div class="menu-content">
+      <a href="#home">Home</a>
+      <a href="#Tools and Vehicles">Tools and Vehicles</a>
+      <a href="#Agriculture">Agriculture</a>
+      <a href="#Forestry">Forestry</a>
+      <a href="#Farm animals">Farm animals</a>
+      <a href="#Work environment">Work environment</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <!-- Main menu other devices -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#Tools and Vehicles">Tools and Vehicles</a>
+    <a href="#Agriculture">Agriculture</a>
+    <a href="#Forestry">Forestry</a>
+    <a href="#Farm animals">Farm animals</a>
+    <a href="#Work environment">Work environment</a>
+    <a href="#contact">Contact</a>
+  </div>
+  </header>
   <main>
     <section class="big-news">
       <!-- The big news content -->
@@ -23,7 +47,8 @@
       <div class="big-news-content">
         <h1>Award-Winning Farmer</h1>
         <p>A local Hero Honored for Agricultural Excellence. In a special ceremony, an elderly female farmer was
-          recognized for her outstanding contributions to the community's agriculture. With years of dedication and hard
+          recognized for her outstanding contributions to the community's agriculture. With years of dedication and
+          hard
           work, she has become a beloved figure in the area. Her trophy, shining brightly in the sun, symbolizes not
           just her success, but the heart and soul she has poured into her farm.</p>
     </section>
@@ -68,6 +93,11 @@
       </div>
     </section>
   </main>
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+  </script>
 </body>
 <footer>
   <p>2024-08-23 - Johanna Eriksson </p>
