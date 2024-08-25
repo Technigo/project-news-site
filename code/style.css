@@ -15,14 +15,6 @@ img {
 }
 
 /* Typography */
-h1 {
-  text-align: center;
-  font-size: 46px;
-  font-weight: normal;
-  margin-bottom: 5px;
-  margin-top: 8px;
-  color: black;
-}
 
 h2 {
   font-weight: normal;
@@ -322,7 +314,13 @@ section.fourth {
     flex: 1 1 100%;
   }
 
+  .big-news-content h2 {
+    font-size:20px;
+
+  }
+
   /* Two columns for collage news on mobile */
+
   .collage-news-content .card {
     flex: 0 0 calc(50% - 0.5rem);
   }
@@ -426,4 +424,5 @@ section.fourth {
   .mobile-menu-icon {
     display: none;
   }
+  
 }
