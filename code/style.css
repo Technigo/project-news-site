@@ -1,4 +1,198 @@
 html {
-  background: #0025ff;
-  color: #fff;
+  background: #ffd3cb;
+  color: rgb(38, 38, 38);
+}
+
+/* Appliceras för hela sidan. Här har jag använt display: grid för att lägga grunden av rutnät över hela hemsidan*/
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+
+/* här är min header/nav bar */
+header {
+  margin: 5px 0 10px 0;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 150px;
+  }
+}
+
+/* Bara länkarna i headern/navigation bar */
+.header-link {
+  padding: 0 15px;
+  font-weight: bold;
+  color: black;
+  font-size: 90%;
+}
+
+/* gör så att det blir understruket i navbar länkarna när jag drar pekaren över */
+.header-link:hover {
+  text-decoration: underline;
+
+}
+
+/* Så att inte hamburgermenyn syns i desktop */
+.hamburger-menu {
+  display: none;
+}
+
+/* enbart sista länken som har fått annan styling och ser ut som en knapp, har också lagt till animering på sista cod-raden */
+.link-4 {
+  display: box;
+  padding: 10px 20px;
+  border-radius: 20px;
+  animation: colorChange 3s infinite;
+
+}
+
+/* tillhör animeringen  */
+@keyframes colorChange {
+  0% {
+    background-color: lightsteelblue;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+/* Alla länkar är utan linje under */
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 320%;
+}
+
+/* styling av bild och text tillsammans i den första stora huvudnyheten */
+.big-news {
+  background-color: rgb(225, 238, 237);
+  grid-column: span 6;
+
+  p {
+    font-size: 120%;
+    line-height: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 0;
+
+  }
+}
+
+/* styling av bara bilden, här la jag en bakgrundsfärg så att när jag rundade hörnen på bilden så syntes ingen blå bakgrund */
+.picture {
+  background-color: #ffd3cb;
+}
+
+/* la padding runt texten så den blev lite mer centrerad, och avrundade ett hörn */
+.content {
+  padding: 0 7% 5% 7%;
+  border-radius: 0 15px 0 0;
+
+}
+
+/* styling av knapp på "big news" */
+button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+  background: #fac9c0;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* så att det blir "suddigt" över knappen när man håller på den */
+button:hover {
+  opacity: 0.7;
+
+}
+
+/* styling av alla smånyheterna så de ser lika dana ut */
+.small-news {
+  background-color: rgb(225, 238, 237);
+  color: rgb(38, 38, 38);
+  grid-column: span 3;
+  display: flex;
+  border: 15px solid antiquewhite;
+  flex-direction: column;
+
+  p {
+    padding: 0 3% 0 3%;
+  }
+
+  h3 {
+    padding: 0 3% 0 3%;
+  }
+
+}
+
+/* små nyheterna blir suddiga när man håller pekaren på */
+.small-news:hover {
+  opacity: 0.7;
+}
+
+footer {
+  margin: 10px 0 10px 0;
+  grid-column: span 12;
+
+  h4 {
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+}
+
+/* för mobiltelefoner */
+@media (max-width: 667px) {
+  .header-link {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    font-size: 30px;
+  }
+
+  .big-news {
+    grid-column: span 12;
+  }
+
+  .picture img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .content {
+    border-radius: 0;
+  }
+
+  .small-news {
+    grid-column: span 12;
+  }
+}
+
+/* för surfplattor */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .small-news {
+    grid-column: span 6;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
 }
