@@ -1,3 +1,24 @@
+/* Desktop (4 columns) */
+@media (min-width: 1024px) {
+  .News {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablet (2 columns) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .News {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 767px) {
+  .News {
+    grid-template-columns: 1fr;
+  }
+}
+
 img {
   display: block;
   width: 300px;
@@ -9,6 +30,7 @@ h1 {
   color: white;
   text-align: center;
   font-size: xx-large;
+  margin-top: 25px;
 }
 
 h2 {
@@ -18,8 +40,19 @@ h2 {
 .logo-and-nav-bar {
   background-color: #177082;
   margin: 25px;
+  padding-top: 10px;
+  margin-inline: auto;
 }
 
+.newspaper-logo {
+  display: block;
+  width: 45px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 25px;
+}
 
 body,
 ul,
@@ -50,6 +83,7 @@ body {
   justify-items: center;
   align-items: center;
   text-align: center;
+
 }
 
 .nav ul li {
@@ -84,27 +118,6 @@ body {
 
 .main-news-2 {
   grid-column: 2 / 4;
-}
-
-/* Desktop (4 columns) */
-@media (min-width: 1024px) {
-  .News {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* Tablet (2 columns) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .News {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile (1 column) */
-@media (max-width: 767px) {
-  .News {
-    grid-template-columns: 1fr;
-  }
 }
 
 footer {
