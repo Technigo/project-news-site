@@ -1,12 +1,13 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This assignment is about learning how to properly plan and make a website using css grid and flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+When working on this project I came across a lot of difficulties, most of my problems I manage to solve with the help of W3Schools 
+or other websites. I planned it on a piece of paper. If I had more time I would love to try out some animation in css.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+https://master--chimerical-cucurucho-69c124.netlify.app/
