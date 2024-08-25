@@ -1,4 +1,426 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*logo style same on header and footer*/
+.logo img {
+    max-width: 50px;
+    padding-left: 15px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+header .search-bar .search-icon img {
+    max-width: 30px;
+    height: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    color: pink;
+    transition: .3s;
+}
+
+
+header .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .hamburger-menu span {
+    background: #fff;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+    border-radius: 2px;
+}
+
+/* Main news section */
+.main-news {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main-news article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.main-news h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* News grid */
+.news-grid {
+    display: grid;
+    gap: 20px;
+    margin: 20px;
+}
+
+.news-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-card img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Main a:hover */
+.container a {
+    text-decoration: none;
+}
+
+.container h3:hover, a:hover {
+    text-decoration: underline;
+    color: #333;
+    }
+
+.summary-text {
+  padding-bottom: 10px;
+}
+
+/*General styling for the text under <samll> */
+.small-text {
+    color: #757575;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Styling the links inside <small> */
+.small-text a {
+    color: #757575; /* Same gray color for links */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for the links */
+.small-text a:hover {
+    color: #333; /* Darker gray on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Subscription Section Styling */
+.subscribe-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subscribe-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;    
+  }
+
+.footer-links li {
+    margin-left: 20px;
+  }
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+  }
+
+.footer-links a:hover {
+    text-decoration: underline;
+  }
+
+.social-media {
+    display: flex;
+    padding: 10px;
+}
+
+.social-media a {
+    margin-left: 10px;
+}
+
+.social-media img {
+    max-width: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive styles for smartphones (320px-766px) */
+@media (max-width: 766px) {
+    header nav {
+        flex-grow: 0;
+    }
+   
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    header .nav-links.active {
+        display: flex;
+    }
+    
+    header .search-bar {
+      display: flex;
+      flex-grow: 0;
+      align-items: center;
+    }
+
+    header .search-bar input {
+        display: none;
+    }
+    
+    header .search-icon {
+      margin-right: 20px;
+    }
+
+    header .hamburger-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .summary-text {
+        display: none;
+}
+
+  }
+
+/* Responsive styles for tablets and desktops (768px and above) */
+@media (min-width: 768px) {
+    header .hamburger-menu {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .nav-links {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    header .search-bar {
+        max-width: none;
+        flex-grow: 1;
+    }
+
+    header .search-icon {
+        display: none;
+    }
+    
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-card {
+        height: 300px;
+    }
+
+    .news-card img {
+        height: 150px;
+    }
+
+    }
+
+/* Responsive styles for desktops (1025px-1600px) */
+@media (min-width: 1025px) {
+    .news-grid {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+
+    header {
+        padding: 10px 0;
+    }
+    
+    header .search-bar {
+        max-width: none;
+        margin-right: 15px;
+        flex-grow: 1;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    /* General styling for news-card */
+    .news-card {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; /* Ensures all cards are the same height */
+    }
+
+    .news-card img {
+        width: 100%;
+        object-fit: cover;
+        height: 150px; /* Set a fixed height for the image */
+        margin-bottom: 10px;
+    }
+
+    .news-card h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px; /* Takes up remaining space, pushing the .block element down */
+        flex-grow: 1;
+    }
+
+    .container, footer {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    header,
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

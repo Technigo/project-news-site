@@ -1,23 +1,176 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
 
-    <section class="big-news">
-      <!-- The big news content -->
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>XingS News site | All about Architecture Design</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Don't forget the meta tag for responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <!-- Header spans full width -->
+  <header class="homepage">
+    <div class="logo">
+      <a href="#homepage" id="logo"><img src="assets/logo.png" alt="XingS Logo"></a>
+      <!--how to add a link to an image: https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet-->
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="search-bar">
+        <a href="#" class="search-icon"><img src="assets/search-icon.png" alt="Search"></a>
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!--Main spans maxwidth 1280px-->
+  <main class="container">
+    <section class="main-news">
+      <article>
+        <a href="https://www.pexels.com/search/architectural%20design/">
+          <img src="assets/main-news.jpg" alt="Main News Image">
+          <h2>The Rise of Sustainable Architecture</h2>
+        </a>
+        <p class="summary-text"><i>How architects are integrating eco-friendly materials and energy-efficient designs to
+            create
+            buildings that are both <b>beautiful</b> and <b>sustainable</b>.</i> </p>
+        <small class="small-text"><a href="#practice">Practice</a> • <a href="#tools">Tools</a></small>
+
+      </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="news-grid">
+      <article class="news-card">
+        <a href="#"><img src="assets/news1.jpg" alt="News Image 1">
+          <h3>Bridging the Gap: Iconic Modern Bridges Around the World</h3>
+        </a>
+        <small class="small-text"><a href="#practice">Practice</a> • <a href="#tools">Tools</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news2.jpg" alt="News Image 2">
+          <h3>Revolutionizing Urban Spaces with Vertical Gardens</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news3.jpg" alt="News Image 3">
+          <h3>Biophilic Design: Connecting People with Nature</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news4.jpg" alt="News Image 4">
+          <h3>The Beauty of Brutalism: Revisiting a Controversial Style</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news5.jpg" alt="News Image 5">
+          <h3>Cultural Heritage Meets Modern Design in New Museums</h3>
+        </a>
+        <small class="small-text"><a href="#practice">Practice</a> • <a href="#tools">Tools</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news6.jpg" alt="News Image 6">
+          <h3>Minimalist Masterpieces: Less is More in Contemporary Design</h3>
+        </a>
+        <small class="small-text"><a href="#practice">Practice</a> • <a href="#tools">Tools</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news7.jpg" alt="News Image 7">
+          <h3>Reviving the Past: The Trend of Adaptive Reuse in Architecture</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news8.jpg" alt="News Image 8">
+          <h3>Iconic Skyscrapers That Define Modern Skylines</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news9.jpg" alt="News Image 9">
+          <h3>Sculpting Spaces: The Art of Curved Architecture</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news10.jpg" alt="News Image 10">
+          <h3>The Role of Architecture in Disaster Resilience</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news11.jpg" alt="News Image 11">
+          <h3>The Impact of 3D Printing on Architectural Design</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <article class="news-card">
+        <a href="#"><img src="assets/news12.jpg" alt="News Image 12">
+          <h3>Smart Homes: The Future of Residential Architecture</h3>
+        </a>
+        <small class="small-text"><a href="#innovation">Innovation</a> • <a href="#urban">Urban</a></small>
+      </article>
+      <!-- Add more news cards if needed -->
     </section>
-  </body>
+    <!--Add more section with different function maybe-->
+    <section class="subscribe-section">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest news and updates directly in your inbox.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer spans full width -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <a href="#" id="logo"><img src="assets/logo.png" alt="XingS Logo"></a>
+      </div>
+      <nav>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/github-icon.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 XingS Architecture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to the JavaScript file -->
+  <script src="./script.js"></script>
+
+</body>
+
 </html>

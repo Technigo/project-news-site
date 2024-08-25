@@ -19,6 +19,9 @@ This is a news site about Architecture design and image which is built by Xing Y
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. 
     HTML & CSS
+    Structure: 
+    Class: <container>--><grid>--><item>--><cell> with text and a href
+    Try to imbeded grid in 
 
 How did you plan? 
     I learn from others such as the html structure from https://optimistic-bohr-c8ad3d.netlify.app/ and css style sheet from https://optimistic-bohr-c8ad3d.netlify.app/ as well as the website layout from https://architizer.com/
