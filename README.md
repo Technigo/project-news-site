@@ -1,12 +1,12 @@
 # News Site
 
-Replace this readme with your own information about your project. 
+A news site to practice CSS Grid and Flexbox layout. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I have tested my way and tried to find solutions along the way, mainly by going back to the course material but also by googling solutions.
 
+If I had more time I would have liked to improve the responsive design and spend more time on the overall appearance of the page.
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://66cad036882f3dbda1c736bc--bejewelled-bubblegum-a74c42.netlify.app/
