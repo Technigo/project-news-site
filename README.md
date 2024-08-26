@@ -8,5 +8,5 @@ I started by sketching on paper and then adding it step by step, first  HTML and
 
 I think the media queries in combination with using Flexbox and Grid was tricky.  If I had more time I would dig deeper into media queries as well as both Flexbox and Grid and how to combine them all in the best way to make the site even more responsive. 
 
-
+See my page here https://thesweetscoop.netlify.app/ 
 
