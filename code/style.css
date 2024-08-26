@@ -10,7 +10,7 @@ html {
 body {
   color: #131212;
   padding: 10px 15px;
-  /* adds padding around the entire page*/
+
 }
 
 /* Logo image */
@@ -139,7 +139,7 @@ article a {
 }
 
 /* Tablets and mobiles */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   main section:first-of-type {
     flex-direction: column;
   }
