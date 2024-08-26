@@ -1,12 +1,6 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The assignment was to create a classic magazine or newspaper site. The site should contain a header with the name of the site, a logo and a navbar. This should also change depending on if you visit the site from a mobile, tablet or desktop. Further, the site should have a big news section and a grid of cards with other news. On desktop-sized screens, there should be four cards in a row, two in a row on tablets and on mobile, there should just be one card on each row.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://universe2news.netlify.app
