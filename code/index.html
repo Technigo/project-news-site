@@ -1,23 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Featherington</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel=”mask-icon” href=”./assets/favicon.svg” color=”#000000">
   </head>
   <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+    <main class="grid-wrapper grid-wrapper--main">
+      <header class="top-header grid-container">
+        <img
+          class="top-header__logo"
+          alt="The Featherington"
+          src="./assets/featherington-logo.svg"
+        />
+        <nav class="top-header__nav">
+          <ul>
+            <li><a href="#top-stories">Top stories</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a class="button" href="#subscribe"
+                ><span><span>Subscribe</span></span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="top-header__mobile-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </nav>
+      </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+      <section class="hero grid-container--large">
+        <article class="hero__content">
+          <div class="article-meta">
+            <a href="#category" class="article-meta__category">Behavior</a>
+            <span class="divider-bullet">∙</span>
+            <p class="inline">6 min read</p>
+          </div>
+          <h1>Mysteries of the Hummingbird migration uncovered</h1>
+          <p class="text-large">
+            Hummingbirds undertake remarkable migratory journeys that have long
+            puzzled researchers. Recent studies are beginning to uncover the
+            details of their travel routes and the factors that guide them.
+          </p>
+          <a class="button" href="#read-more"
+            ><span><span>Read full story</span></span></a
+          >
+        </article>
+        <div class="hero__image">
+          <img
+            class="object-fit-cover"
+            src="./assets/hummingbird-green-ecuador.jpg"
+            alt="Green hummingbird from Ecuador"
+          />
+        </div>
+      </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <section class="articles grid-container">
+        <h2>Hot off the nest</h2>
+        <div class="grid-wrapper">
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/puffins.jpg"
+                alt="Two puffins on green grass"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category">Behavior</a>
+                <span class="divider-bullet">∙</span>
+                <p class="inline">12 min read</p>
+              </div>
+              <h3>
+                The secret life of Puffins: New discoveries in coastal habitats
+              </h3>
+              <p class="article__description text-small">
+                Puffins, with their colorful beaks and charming appearance, are
+                more than just iconic seabirds. Recent studies along coastal
+                cliffs are revealing surprising behaviors...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/eagle.jpg"
+                alt="The head of an eagle"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category"
+                  >North America</a
+                >
+                <span class="divider-bullet">∙</span>
+                <p class="inline">9 min read</p>
+              </div>
+              <h3>
+                Eagles on the rise: The comeback of North America's majestic
+                predators
+              </h3>
+              <p class="article__description text-small">
+                Once endangered, eagle populations in North America are making a
+                remarkable recovery. Conservation efforts have played a critical
+                role, and recent surveys show...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article article--large border-radius-lg">
+            <div class="article__image">
+              <img
+                class="object-fit-cover"
+                src="./assets/flamingo.jpg"
+                alt="Songbird sitting on a branch"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category">Behavior</a>
+                <span class="divider-bullet">∙</span>
+                <p class="inline">4 min read</p>
+              </div>
+              <h3>Understanding flamingo social behavior</h3>
+              <p class="article__description">
+                Flamingos are renowned for their vibrant pink plumage and group
+                dynamics. Recent research has provided new insights into how
+                these birds form and maintain their large flocks, shedding light
+                on the social behaviors that play a crucial role in their
+                survival.
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/penguin.jpg"
+                alt="Two penguins facing each other"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category"
+                  >Climate change</a
+                >
+                <span class="divider-bullet">∙</span>
+                <p class="inline">7 min read</p>
+              </div>
+              <h3>
+                Penguin populations in peril: Climate change threatens
+                Antarctica’s iconic birds
+              </h3>
+              <p class="article__description text-small">
+                Penguins are facing growing threats as climate change alters
+                their Antarctic habitats. Melting ice and shifting food sources
+                are impacting their populations in ways...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/warbler.jpg"
+                alt="Warbler sitting on a branch"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category"
+                  >Communication</a
+                >
+                <span class="divider-bullet">∙</span>
+                <p class="inline">12 min read</p>
+              </div>
+              <h3>
+                The secret songs of warblers: Decoding their complex
+                communication
+              </h3>
+              <p class="article__description text-small">
+                Warblers, with their intricate songs, are not just beautiful to
+                listen to—they’re also communicating in ways we’re only
+                beginning to understand. New studies are revealing...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/owl.jpg"
+                alt="The head of an owl"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category">Movement</a>
+                <span class="divider-bullet">∙</span>
+                <p class="inline">9 min read</p>
+              </div>
+              <h3>
+                Owls in the dark: How these nocturnal hunters navigate the night
+              </h3>
+              <p class="article__description text-small">
+                Owls are masters of the night, with their silent flight and keen
+                senses. Scientists are uncovering new details about how these
+                nocturnal predators hunt in complete...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__image">
+              <img
+                class="border-radius-lg"
+                src="./assets/songbird.jpg"
+                alt="Songbird sitting on a branch"
+              />
+            </div>
+            <div class="article__content">
+              <div class="article-meta text-small">
+                <a href="#category" class="article-meta__category"
+                  >Communication</a
+                >
+                <span class="divider-bullet">∙</span>
+                <p class="inline">4 min read</p>
+              </div>
+              <h3>
+                Songbird serenade: The impact of urbanization on their melodies
+              </h3>
+              <p class="article__description text-small">
+                Songbirds bring life to our mornings with their melodies, but
+                urbanization is changing the way they sing. New research is
+                exploring how city life is affecting their songs...
+                <a class="button button--small" href="#link"
+                  ><span><span>Read full story</span></span></a
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="grid-wrapper">
+      <div class="footer__outer grid-container grid-container--large">
+        <div class="grid-wrapper">
+          <div class="footer__inner grid-container">
+            <img
+              class="footer__logo"
+              alt="The Featherington"
+              src="./assets/featherington-logo-inverted.svg"
+            />
+            <p>Discover. Admire. Conserve.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
