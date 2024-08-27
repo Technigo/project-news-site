@@ -9,7 +9,6 @@ html {
 .header {
   display: flex;
   justify-content: space-around;
-  position: fixed;
   align-content: center;
   align-items: center;
   border-bottom: 5px solid pink;
@@ -22,7 +21,8 @@ html {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .header-headline {
