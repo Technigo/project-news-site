@@ -139,12 +139,11 @@ h3 {
   }
 }
 
-p, .text-default {
+p {
   font-size: 1rem;
 }
 
-.text-large,
-.text-large p {
+.text-large {
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -159,11 +158,6 @@ p, .text-default {
 .text-small,
 .text-small p {
   font-size: 0.875rem;
-}
-
-p strong {
-  font-weight: 700;
-  color: var(--black);
 }
 
 a {
