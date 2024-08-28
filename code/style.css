@@ -5,8 +5,7 @@ html {
 
 header {
   background-color: aliceblue;
-  min-width: 370px;
-  margin: 10px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -38,7 +37,7 @@ p {
 
 .grid-header {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;
 }
 
@@ -48,6 +47,7 @@ p {
   max-width: 75px;
   max-height: 75px;
   padding: 4px;
+  margin: 0 auto;
 }
 
 .logo-site-name {
@@ -55,7 +55,8 @@ p {
 }
 
 .nav-bar {
-  grid-column: 8 / 9;
+  grid-column: 6 / 7;
+  align-items: center;
 }
 
 a {
@@ -82,10 +83,10 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  margin: 10px;
-  min-width: 370px;
+  width: 100%;
   border-radius: 20px;
   max-height: 500px;
+  margin: 8px 0;
 }
 
 .big-news-img {
@@ -107,8 +108,8 @@ a {
   justify-items: center;
   align-items: center;
   text-align: start;
-  margin: 10px;
-  min-width: 370px;
+  margin: 8px 0;
+  width: 100%;
   gap: 4px;
   border-radius: 20px;
   max-height: fit-content;
@@ -161,7 +162,7 @@ img {
 @media (min-width: 668px) and (max-width:1024px) {
 
   .nav-bar {
-    grid-column: 7 / 9;
+    grid-column: 6 / 7;
   }
 
   .nav-links {
@@ -181,7 +182,7 @@ img {
     text-align: start;
     gap: 2px;
     margin: 10px;
-    min-width: 370px;
+    width: 100%;
     border-radius: 20px;
     max-height: 30%;
   }
@@ -199,7 +200,7 @@ img {
     justify-items: center;
     text-align: start;
     margin: 10px;
-    min-width: 370px;
+    width: 100%;
     gap: 1px;
     border-radius: 20px;
     max-height: fit-content;
@@ -243,7 +244,7 @@ img {
 
 
   .nav-bar {
-    grid-column: 7 / 9;
+    grid-column: 6 / 7;
   }
 
   .nav-links {
@@ -263,7 +264,7 @@ img {
     text-align: start;
     gap: 2px;
     margin: 10px;
-    min-width: 370px;
+    width: 100%;
     border-radius: 20px;
     max-height: 30%;
   }
@@ -282,7 +283,7 @@ img {
     align-items: flex-start;
     text-align: start;
     margin: 10px;
-    min-width: 370px;
+    width: 100%;
     gap: 1px;
     background-color: rgb(252, 227, 239);
     border-radius: 20px;
