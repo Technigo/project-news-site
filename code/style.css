@@ -169,9 +169,17 @@ h2 {
   padding: 20px;
 }
 
+
 .social-media {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.social-icon img {
+  max-width: 100%;
+  height: auto;
+
 }
 
 .footer-text {
@@ -187,6 +195,10 @@ h2 {
 @media (max-width: 667px) {
   .nav-menu {
     display: none;
+  }
+
+  .social-icon img {
+    width: 50px;
   }
 }
 

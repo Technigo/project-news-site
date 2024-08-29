@@ -9,3 +9,4 @@ The first step was to brainstorm a concept for a magazine and then sketch out th
 ## Netlify
 
 https://guitarvibes.netlify.app/
+
