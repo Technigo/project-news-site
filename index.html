@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Farmer's News</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="Assets/Farmers_news_transparent.png" alt="Logo" style="width: 200px; height: auto;">
+  </header>
+  <!-- Hamburger menu for mobile...-->
+  <div class="hamburger-menu">
+    ☰ Home
+    <div class="menu-content">
+      <a href="#home">Home</a>
+      <a href="#Tools and Vehicles">Tools and Vehicles</a>
+      <a href="#Agriculture">Agriculture</a>
+      <a href="#Forestry">Forestry</a>
+      <a href="#Farm animals">Farm animals</a>
+      <a href="#Work environment">Work environment</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <!-- Main menu other devices -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#Tools and Vehicles">Tools and Vehicles</a>
+    <a href="#Agriculture">Agriculture</a>
+    <a href="#Forestry">Forestry</a>
+    <a href="#Farm animals">Farm animals</a>
+    <a href="#Work environment">Work environment</a>
+    <a href="#contact">Contact</a>
+  </div>
+  </header>
+  <main>
+    <section class="big-news">
+      <!-- The big news content -->
+      <img src="Assets/FarmerJoey.webp" alt="Award-Winning" />
+      <div class="big-news-content">
+        <h1>Award-Winning Farmer</h1>
+        <p>A local Hero Honored for Agricultural Excellence. In a special ceremony, an elderly female farmer was
+          recognized for her outstanding contributions to the community's agriculture. With years of dedication and
+          hard
+          work, she has become a beloved figure in the area. Her trophy, shining brightly in the sun, symbolizes not
+          just her success, but the heart and soul she has poured into her farm.</p>
+    </section>
+
+    <!-- Minor news section -->
+    <section class="minor-news-container">
+      <!-- Minor news items -->
+      <div class="minor-news">
+        <img src="Assets/PIG.webp" alt="Escape Artist: Pig" />
+        <div class="minor-news-content">
+          <h2>Escape Artist: Pig Breaks Free from Farm, Causes Havoc</h2>
+          <p>Early this morning, a mischievous pig made a daring escape...</p>
+          <button>Read more</button>
+        </div>
+      </div>
+
+      <div class="minor-news">
+        <img src="Assets/Cow moooh.webp" alt="Moo-dy Morning: Cow" />
+        <div class="minor-news-content">
+          <h2>Moo-dy Morning: Cow's Loud Mooing Wakes Up the Neighborhood</h2>
+          <p>Residents of a quiet village were in for a surprise when a cow...</p>
+          <button>Read more</button>
+        </div>
+      </div>
+
+      <div class="minor-news">
+        <img src="Assets/Horsie.webp" alt="Unlikely Friends: Horse and Dog" />
+        <div class="minor-news-content">
+          <h2>Unlikely Friends: Horse and Dog Form Heartwarming Bond</h2>
+          <p>In a heartwarming display of friendship, a horse and a small dog...</p>
+          <button>Read more</button>
+        </div>
+      </div>
+
+      <div class="minor-news">
+        <img src="Assets/Tractor.webp" alt="Farm Mishap: Tractor" />
+        <div class="minor-news-content">
+          <h2>Farm Mishap: Tractor Takes an Unexpected Detour into Ditch</h2>
+          <p>A routine day on the farm took a turn when a tractor veered off...</p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+<footer>
+  <p>2024-08-23 - Johanna Eriksson </p>
+</footer>
+
+</html>
