@@ -8,5 +8,4 @@ I made a sketch with the different layots depending on the screen size. I then d
 
 ## View it live
 
-https://66c9d983551a8990bcfede3c--chipper-kelpie-4e8539.netlify.app/
-
+https://chipper-kelpie-4e8539.netlify.app/
