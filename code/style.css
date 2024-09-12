@@ -1,4 +1,163 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/*html {
+  background-color: white
+}*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  color: #131212;
+  padding: 10px 15px;
+}
+
+/* Logo image */
+header div img {
+  display: block;
+  max-width: 100%;
+  width: 80px;
+  height: auto;
+}
+
+/* Logotype and heading*/
+header div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Navigation bar */
+
+
+nav ul li {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 20px;
+  list-style: none;
+  gap: 1rem;
+  background-color: #7badb1;
+  border-radius: 15px/20px;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0 15px;
+
+}
+
+.nav-list a {
+
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main section h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0c0c0c;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+/* Flexbox main news article */
+
+main section:first-of-type {
+
+  display: flex;
+  background-color: #f8fafa;
+  margin: 15px 0;
+  padding: 15px;
+  padding-left: 15px;
+  border-radius: 10px/10px;
+}
+
+main section:first-of-type img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px/10px;
+}
+
+main section:first-of-type div {
+  padding-left: 15px;
+}
+
+button {
+  background-color: #7badb1;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px/10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Grid other news articles */
+main section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+article {
+  padding: 20px;
+  background-color:  #7badb1;
+  border-radius: 10px 10px;
+  margin: 10px 10px 10px 10px;
+  color: white; 
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px 10px;
+}
+
+article a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+
+
+/* ------------------------------------Media Queries--------------------------------------- */
+
+/* desktop screen */
+@media (max-width: 1200px) {
+  main section:last-of-type {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
+
+/* Tablets and mobiles */
+@media (max-width: 800px) {
+  main section:first-of-type {
+    flex-direction: column;
+  }
+
+  main section:first-of-type div {
+    padding-left: 0;
+  }
+
+  main section:last-of-type {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  main section:last-of-type {
+    grid-template-columns: 1fr;
+  }
 }
