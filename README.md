@@ -1,6 +1,6 @@
 # News Site
 
-The assignment was to create a news site.I've created a news website about a music production software creating music synthesizer plug-ins and named it "Magic Synth".
+The assignment was to create a news site. I've created a news website about a music production software creating music synthesizer plug-ins and named it "Magic Synth".
 
 ## The problem
 
