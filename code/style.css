@@ -2,7 +2,6 @@ html {
   background: white;
 }
 
-
 #title {
   color: black;
   font-weight: 900;
@@ -185,7 +184,7 @@ footer {
 }
 
 /*desktop, 4 columns*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
 
   .header-grid-container,
   .synth-main-article-grid-container {
