@@ -10,3 +10,4 @@ I think the media queries in combination with using Flexbox and Grid was tricky.
 
 See my page here https://thesweetscoop.netlify.app/ 
 
+See the updated accessibility version here https://project-news-site-a11y--thesweetscoop.netlify.app/
