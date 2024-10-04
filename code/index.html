@@ -36,9 +36,18 @@
     <!-- Main image of synthesizer -->
     <div>
       <img 
-        class="img" 
-        src="./assets/synth.webp" 
-        alt="Image of a synthesizer with the text 'Synth Magic' displayed">
+      class="img" 
+      src="./assets/synth.webp" 
+      alt="Image of a synthesizer with the text 'Synth Magic' displayed"
+      srcset="
+        ./assets/synth-small.webp 320w, 
+        ./assets/synth-medium.webp 768w, 
+        ./assets/synth-large.webp 1024w"
+      sizes="
+        (max-width: 767px) 100vw, 
+        (min-width: 768px) and (max-width: 1023px) 50vw, 
+        (min-width: 1024px) and (max-width: 1600px) 50vw"
+      loading="lazy">
     </div>
 
      <!-- Main article -->
