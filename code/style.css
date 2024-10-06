@@ -2,104 +2,91 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #fff;
-  background-color: #000; /* Fond noir */
+  background-color: #000; /* Black background */
 }
 
-* 
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #fff; /* Définir la couleur du texte à blanc pour un contraste élevé avec le fond noir */
-    background-color: #000; /* Arrière-plan noir */
-}
-.festival iframe,
-footer iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-}
-
-
 img, iframe {
   max-width: 100%;
-  height: auto;
+  height: auto; /* Ensure responsive images and iframes */
 }
 
 a {
-  color: #007bff;
+  color: #007bff; /* Link color */
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
 }
+
 .header-content {
   display: flex;
-  align-items: center; /* Centre les éléments verticalement */
-  justify-content: space-between; /* Espacement entre le logo et le texte */
-  padding: 20px; /* Ajoute un peu d'espace autour des éléments internes */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Space between logo and text */
+  padding: 20px; /* Add padding around header */
 }
 
 #logo img {
-  width: 100px; /* Taille du logo */
-  height: auto; /* Maintient les proportions */
+  width: 100px; /* Logo size */
+  height: auto; /* Keep logo proportions */
 }
 
 header h1, header h2 {
-  margin: 0; /* Enlève la marge par défaut des titres */
-  padding-left: 20px; /* Ajoute un peu d'espace à gauche des titres pour les séparer du logo */
+  margin: 0; /* Remove default margin */
+  padding-left: 20px; /* Space between titles and logo */
 }
 
 header {
-  background-color: #378d20;
-  color: white;
+  background-color: #378d20; /* Header background color */
+  color: white; /* Header text color */
 }
 
 #main {
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Main section background */
 }
 
 h3 {
-  color: #a233d1;
+  color: #a233d1; /* H3 color */
 }
 
 p {
   margin-bottom: 15px;
 }
+
 #artists {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
   gap: 20px;
   padding: 20px;
 }
 
 article {
-  background-color: #220404;
+  background-color: #220404; /* Article background */
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */
 }
+
 .festival {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre les éléments horizontalement */
-  background-color: #1e0303;
+  align-items: center; /* Center items horizontally */
+  background-color: #1e0303; /* Festival section background */
   padding: 30px;
   margin-top: 30px;
-  border-radius: 26px;
+  border-radius: 26px; /* Rounded corners */
 }
 
-
 footer {
-  background-color: #343a40;
-  color: #fff;
-  text-align: center;
+  background-color: #343a40; /* Footer background */
+  color: #fff; /* Footer text color */
+  text-align: center; /* Center text */
   padding: 20px;
   margin-top: 20px;
 }
@@ -109,7 +96,7 @@ footer h3 {
 }
 
 footer ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points */
   padding: 0;
 }
 
@@ -118,20 +105,44 @@ footer li {
 }
 
 footer a {
-  color: lightblue;
+  color: lightblue; /* Link color in footer */
 }
+
 @media (max-width: 768px) {
   body {
-      padding: 10px;
+    padding: 10px;
   }
 
   .header-content, .festival, footer {
-      padding: 15px;
+    padding: 15px;
   }
 
   h1, h2, h3 {
-      font-size: smaller; /* Réduit la taille des titres sur les petits écrans */
+    font-size: smaller; /* Reduce font size on small screens */
   }
 }
 
+@media (min-width: 1200px) {
+  .header-content {
+    padding: 40px;
+  }
 
+  #logo img {
+    width: 150px; /* Larger logo on big screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    flex-direction: column; /* Stack header content vertically on small screens */
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem; /* Smaller text on very small screens */
+  }
+
+  article {
+    padding: 15px; /* Less padding in articles on small screens */
+  }
+}
