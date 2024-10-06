@@ -1,10 +1,8 @@
 # News Site
-
-The assignment was to create a news site. I've created a news website about a music production software creating music synthesizer plug-ins and named it "Magic Synth".
+The assignment was to improve the accesibility on one of our previous projects. I chose to work on my news site project. 
 
 ## The problem
-
-When I approached problems I used a combination of methods to try to solve them. I went through the material on disco, used google, chatgpt and the inspector. After many trials and errors I kept moving forward. I tried to do a sketch by pen and paper first but for me it was easier to get the hang of it by going startight into coding. With the new knowledge I have now I think it would be great to plan before I start to code next time. If I had more time I would develop the website more and change some styling elements.
+For me everything went quite smooth this week apart from the images. I researched about formats, compression and changing the sizes. Lighthouse kept flagging that one of my images could be even smaller after I had re-sized it and changed to the format I wanted which made me a bit confused. I used squoosh to change format and sizes but I felt like sometimes it compromised on the quality of the images which made it look blurry on the site. I think it looks okay now but I've spent a lot of time on that this week. Since I wanted to use the inspector and watch my changes on the deployed site, I've done a lot of commits which might look a bit messy on github. 
 
 ## View it live
-https://66c918deb3f6bc35c72f6e91--effulgent-empanada-6d5956.netlify.app/
+https://67028c384213c4000827a34d--effulgent-empanada-6d5956.netlify.app/
