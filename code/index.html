@@ -1,23 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Discover the latest in fashion, beauty, culture, and entertainment at The Chai Magazine. Stay updated with current events and explore our editorials.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Chai Magazine</title>
+   
+</head>
+
+<body>
+
+    <!-- Accessible Header -->
+    <header class="hero" role="banner">
+        <div class="hero-h1">
+            <h1>The Chai Magazine</h1>
+        </div>
+
+        <!-- Accessible Navbar -->
+        <nav class="navbar" aria-label="Main Navigation">
+            <button class="hamburger-menu" aria-expanded="false" aria-controls="main-navigation" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" id="main-navigation">
+                <li><a href="https://www.vogue.com/fashion" aria-label="Fashion Section">Fashion</a></li>
+                <li><a href="https://www.vogue.com/beauty" aria-label="Beauty Section">Beauty</a></li>
+                <li><a href="https://www.vogue.com/culture" aria-label="Culture Section">Culture</a></li>
+                <li><a href="https://www.vogue.com/living" aria-label="Business Section">Business</a></li>
+                <li><a href="https://www.vogue.com/fashion-shows" aria-label="Technology Section">Technology</a></li>
+                <li><a href="https://www.vogue.com/vogue-club" aria-label="Sports Section">Sports</a></li>
+                <li><a href="https://www.vogue.com/photovogue" aria-label="Entertainment Section">Entertainment</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <!-- Accessible Main Content -->
+    <main>
+        <section class="container">
+            <h2>Trending Stories</h2>
+            <div class="grid">
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.mos.cms.futurecdn.net/sVhpf7DSDZkZK2dePdLDL8-1200-80.jpg.webp" alt="Netflix's 3 Body Problem movie picture">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Everything You Need to Know About the 2024 Emmys</a></h3>
+                    <p>Here’s your cheat sheet for the 76th Emmy Awards, from the date to the biggest contenders in all the major categories.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://la28.org/content/dam/latwentyeight/LA28VenuePlanMainPage.jpg" alt="LA Olympic venues">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">We’ve Got Some 2028 Los Angeles Olympics Suggestions</a></h3>
+                    <p>After two thrilling weeks of athletic prowess, hand-knit sweaters, and celebrity sightings aplenty, we can finally bid adieu to Paris 2024—and look ahead to the next Summer Games.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://billboardphilippines.com/wp-content/uploads/2024/08/Snapinstaapp_453965467_906706214848727_5941524599181643989_n_1080.jpg" alt="Laufey & The Chicago Philharmonic Orchestra">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">10 Of The Biggest (And Best) Performances From Lollapalooza 2024</a></h3>
+                    <p>From punk veterans like Blink-182 to rising stars like Chappell Roan, here are our picks for the ten best sets from this year’s Lollapalooza.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-skincare-line-glow-oasis.jpg?v=1666895341" alt="Skincare">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Eco-Friendly Skincare Tips for Summer</a></h3>
+                    <p>As summer intensifies, so does the need for effective skincare. Protect your skin with eco-friendly products and avoid sun damage.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://assets.vogue.com/photos/66c9ed3397b4b34ebea6c4f0/16:9/pass/VO0623_TheGet_16%2520(1).jpg" alt="Bieber's Baby">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Hailey and Justin Bieber Welcome Their First Baby—And Reveal the Name</a></h3>
+                    <p>Hailey and Justin Bieber welcomed their first child and revealed the name as Jack Blues Bieber in a sweet Instagram post.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/leo-final-65c53b0ab6f6f.jpg?resize=1200" alt="August Horoscope">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Strive to Be Inspired: Your August Horoscope Is Here</a></h3>
+                    <p>Your August 2024 horoscope offers advice for each zodiac sign on handling work-related stress and reassessing romantic commitments.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.hola.com/us/horizon/landscape/0d644beb888f-quot-broker-les-bonnes-etoiles-quot-red-carpet-the-75th-annual-cannes-film-festi.jpg" alt="Bella Hadid">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Bella Hadid Trades Cowgirl Chic for Goddess Dressing</a></h3>
+                    <p>Bella Hadid traded in her denim cutoffs and cowboy boots for high-octane glamour in a vintage Dior dress at a recent event.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.oxfordlearning.com/wp-content/uploads/2020/10/GettyImages-1183375221-1-scaled.jpg" alt="Procrastination Tips">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">6 Ways to Stop Procrastinating and Express Your Excellence</a></h3>
+                    <p>This article offers strategies to help readers overcome procrastination and cultivate a mindset geared towards excellence.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.historicdowntownsanford.com/wp-content/uploads/2019/08/header-city.jpg" alt="Sanford, Florida">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">Discover Sanford, Florida: A Gateway to Adventure</a></h3>
+                    <p>Sanford, Florida, is highlighted as a charming destination with historic architecture and proximity to major theme parks.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/fall24-boot-trends-index-66c61bd4eb3b0.jpg?crop=0.889xw:1.00xh;0.0561xw,0&resize=2048" alt="Fall Boot Trends">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">I Can’t Stop Thinking About These Chic Fall Boot Trends</a></h3>
+                    <p>With temperatures dropping, it’s time to start thinking about the chic fall 2024 boot trends and how to style them this season.</p>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/beauty-of-joseon-calming-serum2-66c504275a57b.jpg?crop=1.00xw:0.502xh;0,0.181xh&resize=1200" alt="Korean Skin Care">
+                    </a>
+                    <h3><a href="#" target="_blank" rel="noopener noreferrer">The 7 Best Korean Skin Care Products for Acne-Prone Skin</a></h3>
+                    <p>This article highlights the best Korean skin care products for acne-prone skin, offering effective solutions for blemishes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body
+    <!-- Accessible Footer -->
+   <footer>
+  <div class="Author">
+    <span> <h3>Created by Cholpon Abdyrakhman ⭐ <h3> </span>
+  </div>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
-</html>
+</footer>
+  </html>
