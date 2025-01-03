@@ -1,23 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="en">
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <title>Sherrys Sports News</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+<body>
+  <header class="header">
+    <div class="title">
+      Sports News
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="https://www.skysports.com/" aria-label="Latest news section">Football</a></li>
+        <li><a href="https://www.skysports.com/" aria-label="Travel section with destination guides">Golf</a></li>
+        <li><a href="https://www.skysports.com/" aria-label="About our company">Formula1</a></li>
+        <li><a href="https://www.skysports.com/" aria-label="Contact us page">Tennis</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      ☰
+    </div>
+  </header>
+
+  <div class="big-card">
+    <img class="card-image big" src="assets/images/premiere-league.jpg" alt="A picture of Manchester Uniteds team ">
+    <div class="text-content big">
+      <h3 class="article-h3">Manchester United Triumphs with Last-Minute Goal!</h3>
+      <p>
+        Manchester United fans erupted in celebration as the team clinched the Premier League title with a last-minute
+        goal at Old Trafford. The decisive goal crowned them Premier League champions, marking a triumphant return to
+        glory for the club.
+      </p>
+      <ul>
+        <li><a href="https://www.skysports.com/" class="button" aria-label="Read more about Manchester Uniteds win">Read
+            more</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div class="card">
+      <img class="card-image" src="assets/images/formula1-pic.avif" alt="Formula1 race">
+      <div class="text-content">
+        <h3>Formula1</h3>
+        <p>The 2025 F1 season features fierce competition, innovation, and thrilling races at iconic tracks.</p>
+        <ul>
+          <li><a href="http://skysports.com/" class="button" aria-label="Read more about formula1 2025">Read
+              more</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="assets/images/tennisroger-pic.webp" alt="Roger Federer in Tennis Court">
+      <div class="text-content">
+        <h3>Tennis</h3>
+        <p>Roger Federer announces retirement, leaving a legacy of unmatched grace, success, and tennis excellence.</p>
+        <ul>
+          <li><a href="http://skysports.com/" class="button"
+              aria-label="Read more about Roger Federers accomplishments">Read more</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="assets/images/manchester-football.webp"
+        alt="Sir Alex Fergusson and Cristiano Ronaldo">
+      <div class="text-content">
+        <h3>Football</h3>
+        <p>Cristiano Ronaldo reunites with Sir Alex Ferguson, reflecting on shared glory and Manchester United legacy.
+        </p>
+        <ul>
+          <li><a href="http://skysports.com/" class="button"
+              aria-label="Read more about Sir Alexs influence on Cristiano Ronaldo">Read more</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="assets/images/golf-Tiger-Woods.jpg" alt="Tiger Woods happy on tennis court">
+      <div class="text-content">
+        <h3>Golf</h3>
+        <p>Tiger Woods aims for comeback, focusing on recovery and returning to top form in golf.</p>
+        <ul>
+          <li><a href="http://skysports.com/" class="button" aria-label="Read more about Tiger Woods comeback">Read
+              more</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

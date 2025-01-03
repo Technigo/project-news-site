@@ -1,12 +1,9 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project/assignment was to create a News Site to practise grid and flexbox. I created a Sports News Site and made it responsive so that it looks well structured on desktop, tablet and mobile.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It was challenging with the mediaquery that took time because of expermenting with the min and max width.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sherrysportsnews123.netlify.app/
