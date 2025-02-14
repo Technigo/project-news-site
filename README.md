@@ -1,12 +1,22 @@
 # News Site
-
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a website centered around the topic of "weaving," created as part of a boot camp project. The primary goal of the project was to practice HTML and CSS, with a focus on creating a responsive layout that adjusts seamlessly across different devices, from mobile to desktop.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+One of the key challenges in the current version is that some of the images appear distorted, especially when displayed on different screen sizes. Additionally, there are several areas that need improvement, including:
+
+Interactive elements: Making the logo and large headlines clickable.
+
+Mobile Navigation: Implementing a fully functional hamburger menu that works on mobile and tablet views.
+
+Additional Features: Adding contact buttons (such as LinkedIn) and improving overall usability.
+
+# Technologies Used
+HTML5: For structuring the content.
+
+CSS: For styling and layout, including flexbox and grid systems for responsiveness.
+
+Responsive Design: Media queries to adjust the layout based on device screen sizes (mobile, tablet, desktop).
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://newspage-gitte.netlify.app/
