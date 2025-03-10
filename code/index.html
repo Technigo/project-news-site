@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <!-- meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Rainbow Magazine</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
+    <!-- For importing social media icons to footer-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/icons8-rainbow-80.png" alt="Rainbow logo image">
+            <div class="logo-text">
+                <p>The
+                    </br>Rainbow
+                    </br>Magazine</p>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button class="login-button" href="#">LogIn</button></li>
+        </ul>
+    </nav>
+    <header class="main-header">
+        <section class="hero-container">
+
+            <div class="hero-image"><img src="assets/simon-berger-twukN12EN7c-unsplash.jpg" alt="Rainbow over lake">
+            </div>
+
+            <div class="WelcomeArticle">
+                <h1>SOMEWHERE OVER THE RAINBOW </h1>
+                <h3> What is the key to a colorful rainbow?</h3>
+            </div>
+        </section>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
-    </section>
+    <main>
+        <section class="articles">
+            <div class="article" id="Article1">
+                <figure>
+                    <img src="assets/david-brooke-martin-t_ZdxJsE8iM-unsplash.jpg" alt="Colorful sky above mountains">
+                </figure>
+                <h2>THE MOST FAMILIAR RAINBOW</h2>
+                <p>The most familiar type rainbow is produced when sunlight strikes raindrops in front of a viewer at a
+                    precise angle (42 degrees). Rainbows can also be viewed around fog, sea spray, or waterfalls.
+                </p>
+            </div>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+            <div class="article" id="Article2">
+                <figure>
+                    <img src="assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg" alt="Sky with clouds">
+                </figure>
+                <h2>THE RAINBOW DOESN'T EXIST</h2>
+                <p>A rainbow is an optical illusion—it does not actually exist in a specific spot in the sky. The
+                    appearance of a rainbow depends on where you're standing and where the sun (or other source of
+                    light) is shining.
+                </p>
+            </div>
+
+            <div class="article" id="Article3">
+                <figure>
+                    <img src="assets/austin-schmid-r7zjJ63kAPU-unsplash.jpg" alt="Rainbow over mountains">
+                </figure>
+                <h2>THE COLORS OF THE RAINBOW</h2>
+                <p>The colors on a primary rainbow are always in order of their wavelength, from longest to
+                    shortest: red, orange, yellow, green, blue, and violet.</p>
+            </div>
+
+            <div class="article" id="Article4">
+                <figure>
+                    <img src="assets/arwin-neil-baichoo-Lows8NVoXFA-unsplash.jpg" alt="Sky with clouds and rainbow">
+                </figure>
+                <h2>RAINBOWS NEAR AND FAR</h2>
+                <p>Some scientists think rainbows also exist on Titan, one of the moons of the planet Saturn. Titan has
+                    a wet surface and humid clouds. The sun is also visible from Titan, so it has all the ingredients
+                    for rainbows.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>The Origin of the Rainbow</p>
+        </div>
+        <div class="footer-bar">
+            <ul>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>

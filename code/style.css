@@ -1,4 +1,261 @@
 html {
-  background: #0025ff;
-  color: #fff;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+:root {
+    --main-radius: 25px;
+    --main-margin: 0.2rem;
+}
+
+* {
+    color: #FFFDD0;
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+nav {
+    height: 8rem;
+    display: flex;
+    background: #D499AB;
+    border-radius: var(--main-radius);
+}
+
+/*Styling logo*/
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.logo-text {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Styling Navigation Links*/
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+
+.nav-links li a:hover {
+    color: #61DAFB;
+    cursor: pointer;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/*Styling Button*/
+.login-button {
+    background-color: transparent;
+    border: 2px solid #FFFDD0;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    color: #61DAFB;
+}
+
+/*Styling Hamburger-menu*/
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #FFFDD0;
+    margin: 5px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+.hero-container {
+    background: #E3C495;
+    border-radius: var(--main-radius);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: var(--main-margin);
+
+}
+
+.WelcomeArticle {
+    flex: 1;
+    color: #FFFDD0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero-container img {
+    width: 250px;
+    object-fit: cover;
+    vertical-align: middle;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: var(--main-radius);
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "article1"
+        "article2"
+        "article3"
+        "article4";
+    grid-gap: 0.2rem;
+    list-style: none;
+}
+
+.article {
+    border-radius: var(--main-radius);
+    padding: 1rem;
+}
+
+.article>figure {
+    margin: 0;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: var(--main-radius);
+}
+
+.article>figure>img {
+    width: 100%;
+}
+
+.article>h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0.5rem;
+    color: #FFFDD0;
+    text-align: center;
+}
+
+.article>p {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0.5rem;
+    color: #FFFDD0;
+    text-align: center;
+}
+
+#Article1 {
+    background: #E3E2C3;
+    grid-area: article1;
+}
+
+#Article2 {
+    background: #A2C0A9;
+    grid-area: article2;
+}
+
+#Article3 {
+    background: #819BAF;
+    grid-area: article3;
+}
+
+#Article4 {
+    background: #767098;
+    grid-area: article4;
+}
+
+footer {
+    background: #D499AB;
+    grid-area: footer;
+    display: flow-root;
+    border-radius: var(--main-radius);
+    color: #FFFDD0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: var(--main-margin);
+}
+
+.footer-bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D499AB;
+}
+
+.footer-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-bar li {
+    margin: 10px 10px 10px 10px;
+}
+
+/*hover doesn't work!*/
+.footer-bar li a:hover {
+    color: #222;
+}
+
+/* Tablet */
+@media (min-width: 551px) and (max-width: 768px) {
+    .articles {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "article1 article2"
+            "article3 article4"
+    }
+
+}
+
+
+/* Normal -The responsiveness of the page doesn't work correctly between 769px to 960px. All the grid is not visible. Something with the content?*/
+@media (min-width: 769px) and (max-width: 1600px) {
+    .articles {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "article1 article2 article3 article4";
+    }
+
 }
