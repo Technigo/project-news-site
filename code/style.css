@@ -249,7 +249,7 @@ footer {
 }
 
 
-/* Normal The responsiveness of the page doesn't work correctly between 769px to 960px. All the grid is not visible. Something with the content?*/
+/* Normal -The responsiveness of the page doesn't work correctly between 769px to 960px. All the grid is not visible. Something with the content?*/
 @media (min-width: 769px) and (max-width: 1600px) {
     .articles {
         grid-template-columns: repeat(4, 1fr);
@@ -257,14 +257,5 @@ footer {
         grid-template-areas:
             "article1 article2 article3 article4";
     }
-
-    /*.hero-container figure {
-        width: 100%;
-        max-width: 400px;
-        object-fit: cover;
-        vertical-align: middle;
-        padding: 1rem 1rem 1rem 1rem;
-        border-radius: var(--main-radius);
-    }*/
 
 }
