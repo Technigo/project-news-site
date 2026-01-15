@@ -1,12 +1,11 @@
 # News Site
 
-Replace this readme with your own information about your project. 
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a news-website using html, css grid and flexbox.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started this course and project year ago and only now have the time to complete. So I had to start refreshing what I previously learned.
+I continued with the draft I had. I used AI to help me with the logo and texts. I also used chatGPT and Perplexity to help me sort out what was wrong with my code and suggest solutions to what I wanted to achieve. I spent many hours testing everything.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+(https://project-news-site-jeanette-w.pages.dev/)
